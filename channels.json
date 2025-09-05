@@ -1,0 +1,36 @@
+[
+  {
+    "name": "beIN SPORTS (1080p)",
+    "logoUrl": "assets/logos/bein_logo.png",
+    "channels": [
+      {
+        "name": "beIN SPORTS 1",
+        "logoUrl": "assets/logos/bein_channel_logo.png",
+        "servers": [
+          { "Server 1": "your_real_link_for_bein_1" },
+          { "Server 2": "your_second_link_for_bein_1" }
+        ]
+      },
+      {
+        "name": "beIN SPORTS 2",
+        "logoUrl": "assets/logos/bein_2_logo.png",
+        "servers": [
+          { "Server 1": "your_real_link_for_bein_2" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SSC SPORTS",
+    "logoUrl": "assets/logos/ssc_logo.png",
+    "channels": [
+      {
+        "name": "SSC SPORTS 1",
+        "logoUrl": "assets/logos/ssc_channel_logo.png",
+        "servers": [
+          { "Server 1": "your_real_link_for_ssc_1" }
+        ]
+      }
+    ]
+  }
+]
