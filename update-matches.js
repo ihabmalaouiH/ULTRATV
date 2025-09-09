@@ -2,7 +2,7 @@ const axios = require('axios');
 const fs = require('fs');
 
 // --- Configuration ---
-const API_KEY = process.env.API_SPORTS_KEY;
+const API_KEY = 'a42e10c9521e21e90a8845a1a36e998f'; // Your key is now here
 const API_HOST = 'v3.football.api-sports.io';
 
 // --- Add the League IDs you consider important ---
