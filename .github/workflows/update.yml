@@ -1,0 +1,21 @@
+name: Update Daily Matches
+on:
+  schedule:
+    - cron: '0 5 * * *' # Runs every day at 5 AM UTC
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: npm install axios
+      - run: node update-matches.js
+        env:
+          API_SPORTS_KEY: ${{ secrets.API_SPORTS_KEY }}
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "chore: Update daily matches"
+          file_pattern: matches.json
