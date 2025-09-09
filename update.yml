@@ -1,0 +1,34 @@
+name: Update Daily Matches
+
+on:
+  schedule:
+    # This runs the script every day at 05:00 UTC (around 6 AM Algeria time)
+    - cron: '0 5 * * *'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Dependencies
+        run: npm install axios
+
+      - name: Run Script to Update Matches
+        run: node update-matches.js
+        env:
+          API_SPORTS_KEY: ${{ secrets.API_SPORTS_KEY }}
+
+      - name: Commit and Push if changed
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "chore: Update daily matches"
+          file_pattern: matches.json
