@@ -1,44 +1,37 @@
 import express from "express";
 import fetch from "node-fetch";
+import * as cheerio from "cheerio";
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
-// قائمة القنوات الناقلة (تضيفها حسب ما تحب)
-const channels = [
-  { name: "beIN SPORTS 1", logoUrl: "assets/logos/bein1.png" },
-  { name: "beIN SPORTS 2", logoUrl: "assets/logos/bein2.png" },
-  { name: "SSC 1", logoUrl: "assets/logos/ssc1.png" }
-];
-
-// دالة تجيب المباريات من SofaScore
-async function getMatches() {
-  const url = "https://api.sofascore.com/api/v1/sport/football/scheduled-events";
-  const response = await fetch(url);
-  const data = await response.json();
-
-  // نحول البيانات لشكل منظم
-  const matches = data.events.map(event => ({
-    league: event.tournament.name,
-    home: event.homeTeam.name,
-    away: event.awayTeam.name,
-    time: new Date(event.startTimestamp * 1000).toISOString(),
-    channels: channels // نفس القنوات لكل مباراة (تقدر تغيرها لاحقاً)
-  }));
-
-  return matches;
-}
-
-// API Endpoint
-app.get("/matches", async (req, res) => {
+app.get("/api/matches", async (req, res) => {
   try {
-    const matches = await getMatches();
-    res.json(matches);
-  } catch (error) {
-    res.status(500).json({ error: "خطأ في جلب البيانات" });
+    const response = await fetch("https://jdwel.com/");
+    const html = await response.text();
+    const $ = cheerio.load(html);
+
+    let matches = [];
+
+    $(".match-card").each((i, el) => {
+      const competition = $(el).find(".competition-name").text().trim();
+      const home = $(el).find(".team-home .team-name").text().trim();
+      const away = $(el).find(".team-away .team-name").text().trim();
+      const time = $(el).find(".match-time").text().trim();
+      const status = $(el).find(".match-status").text().trim();
+
+      if (home && away) {
+        matches.push({ competition, home, away, time, status });
+      }
+    });
+
+    res.json({
+      date: new Date().toISOString().slice(0, 10),
+      matches
+    });
+
+  } catch (err) {
+    res.status(500).json({ error: "فشل الجلب", details: err.message });
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`✅ API شغّال على http://localhost:${PORT}`);
-});
+app.listen(3000, () => console.log("✅ API يعمل على http://localhost:3000/api/matches"));
