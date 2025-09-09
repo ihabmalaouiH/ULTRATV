@@ -1,21 +1,73 @@
 [
   {
-    "name": "beIN SPORTS (1080p)",
+    "name": "beIN SPORTS (1080P)",
     "logoUrl": "assets/logos/bein_logo.png",
     "channels": [
       {
         "name": "beIN SPORTS 1",
-        "logoUrl": "assets/logos/bein_channel_logo.png",
+        "logoUrl": "assets/logos/bein1.png",
         "servers": [
-          { "Server 1": "http://bdd00.4rouwanda-shop.store/live/918454578001/index.m3u8?t=ruXVLGU34c0VwpWRePDaSw&e=1756859549" },
-          { "Server 2": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/7749" }
+          { "Server 1": "your_1080p_link_here" },
+          { "Server 2": "backup_1080p_link" }
         ]
       },
       {
         "name": "beIN SPORTS 2",
-        "logoUrl": "assets/logos/bein_2_logo.png",
+        "logoUrl": "assets/logos/bein2.png",
         "servers": [
-          { "Server 1": "your_real_link_for_bein_2" }
+          { "Server 1": "your_1080p_link_here" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "beIN SPORTS (720P)",
+    "logoUrl": "assets/logos/bein_logo.png",
+    "channels": [
+      {
+        "name": "beIN SPORTS 1",
+        "logoUrl": "assets/logos/bein1.png",
+        "servers": [
+          { "Server 1": "your_720p_link_here" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "beIN SPORTS (360P)",
+    "logoUrl": "assets/logos/bein_logo.png",
+    "channels": [
+      {
+        "name": "beIN SPORTS 1",
+        "logoUrl": "assets/logos/bein1.png",
+        "servers": [
+          { "Server 1": "your_360p_link_here" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "beIN SPORTS (244P)",
+    "logoUrl": "assets/logos/bein_logo.png",
+    "channels": [
+      {
+        "name": "beIN SPORTS 1",
+        "logoUrl": "assets/logos/bein1.png",
+        "servers": [
+          { "Server 1": "your_244p_link_here" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "beIN ENTERTAINMENT",
+    "logoUrl": "assets/logos/bein_ent.png",
+    "channels": [
+      {
+        "name": "beIN MOVIES 1",
+        "logoUrl": "assets/logos/bein_movies1.png",
+        "servers": [
+          { "Server 1": "your_link_here" }
         ]
       }
     ]
@@ -26,9 +78,100 @@
     "channels": [
       {
         "name": "SSC SPORTS 1",
-        "logoUrl": "assets/logos/ssc_channel_logo.png",
+        "logoUrl": "assets/logos/ssc1.png",
         "servers": [
-          { "Server 1": "your_real_link_for_ssc_1" }
+          { "Server 1": "your_ssc_link_here" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ARABIC CHANNELS",
+    "logoUrl": "assets/logos/arabic.png",
+    "channels": [
+      {
+        "name": "Al Arabiya",
+        "logoUrl": "assets/logos/alarabiya.png",
+        "servers": [
+          { "Server 1": "your_arabic_channel_link" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MBC CHANNELS",
+    "logoUrl": "assets/logos/mbc.png",
+    "channels": [
+      {
+        "name": "MBC 1",
+        "logoUrl": "assets/logos/mbc1.png",
+        "servers": [
+          { "Server 1": "your_mbc1_link" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FRANCE CHANNELS",
+    "logoUrl": "assets/logos/france.png",
+    "channels": [
+      {
+        "name": "TF1",
+        "logoUrl": "assets/logos/tf1.png",
+        "servers": [
+          { "Server 1": "your_france_channel_link" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TURKISH CHANNELS",
+    "logoUrl": "assets/logos/turkish.png",
+    "channels": [
+      {
+        "name": "TRT 1",
+        "logoUrl": "assets/logos/trt1.png",
+        "servers": [
+          { "Server 1": "your_turkish_channel_link" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "KIDS CHANNELS",
+    "logoUrl": "assets/logos/kids.png",
+    "channels": [
+      {
+        "name": "Cartoon Network",
+        "logoUrl": "assets/logos/cartoon.png",
+        "servers": [
+          { "Server 1": "your_kids_channel_link" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WEYYAK",
+    "logoUrl": "assets/logos/weyyak.png",
+    "channels": [
+      {
+        "name": "Drama Channel",
+        "logoUrl": "assets/logos/drama.png",
+        "servers": [
+          { "Server 1": "your_weyyak_link" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SHAHID VIP",
+    "logoUrl": "assets/logos/shahid.png",
+    "channels": [
+      {
+        "name": "Shahid Originals",
+        "logoUrl": "assets/logos/shahid_orig.png",
+        "servers": [
+          { "Server 1": "your_shahid_link" }
         ]
       }
     ]
