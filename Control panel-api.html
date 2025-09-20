@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>لوحة التحكم - توليد مباريات</title>
+<style>
+  body{font-family:system-ui,Arial;background:#0f172a;color:#e5e7eb;padding:20px}
+  h1{font-size:20px;margin-bottom:12px}
+  button,input,select{padding:8px 12px;margin:4px;border-radius:8px;border:1px solid #334155;background:#1e293b;color:#e5e7eb;cursor:pointer}
+  table{width:100%;margin-top:16px;border-collapse:collapse;background:#0b1220}
+  th,td{border:1px solid #334155;padding:8px;text-align:center}
+  th{background:#1e293b}
+  textarea{width:100%;height:200px;margin-top:16px;background:#0b1220;color:#e5e7eb;padding:10px;border-radius:10px}
+  img{width:32px;height:32px;border-radius:6px}
+</style>
+</head>
+<body>
+
+<h1>🎯 لوحة التحكم - توليد JSON مباريات</h1>
+
+<label>📅 التاريخ: <input type="date" id="date"></label>
+<!-- 🔴 أزلنا زر "جلب المباريات" -->
+<button onclick="saveToGitHub()">💾 حفظ في GitHub</button>
+<button onclick="clearFile()">🗑️ مسح الملف</button>
+<button onclick="loadFromGitHub()">📥 عرض الملف من GitHub</button>
+
+<table id="matches">
+  <thead>
+    <tr>
+      <th>✔️</th>
+      <th>الفريق 1</th>
+      <th></th>
+      <th>الفريق 2</th>
+      <th>الدوري</th>
+      <th>الوقت</th>
+      <th>القناة</th>
+      <th>المعلق</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<h3>📦 JSON الناتج</h3>
+<textarea id="output" readonly></textarea>
+
+<script>
+const API_KEY = "a42e10c9521e21e90a8845a1a36e998f"; 
+const API_URL = "https://v3.football.api-sports.io/fixtures";
+
+// 🔑 بيانات GitHub
+const GITHUB_TOKEN = "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";
+const REPO = "ihabmalaouiH/ULTRATV";
+const FILE_PATH = "matches.json";
+const BRANCH = "main";
+
+function todayISO(){
+  return new Date().toISOString().slice(0,10);
+}
+document.getElementById("date").value = todayISO();
+
+async function fetchMatches(force = false){
+  const date = document.getElementById("date").value;
+  const tbody = document.querySelector("#matches tbody");
+
+  // ✅ تحقق إذا عندنا بيانات مخزنة لنفس اليوم
+  const cached = localStorage.getItem("matches_" + date);
+  if (cached && !force) {
+    renderMatches(JSON.parse(cached));
+    return;
+  }
+
+  tbody.innerHTML = "<tr><td colspan='8'>⏳ جاري التحميل...</td></tr>";
+
+  try {
+    const res = await fetch(`${API_URL}?date=${date}`, {
+      headers: { "x-apisports-key": API_KEY }
+    });
+    const data = await res.json();
+
+    if (!data.response || data.response.length === 0) {
+      tbody.innerHTML = "<tr><td colspan='8'>لا توجد مباريات</td></tr>";
+      return;
+    }
+
+    // ✅ خزّن البيانات في localStorage ليوم واحد
+    localStorage.setItem("matches_" + date, JSON.stringify(data.response));
+
+    renderMatches(data.response);
+
+  } catch (err) {
+    console.error(err);
+    tbody.innerHTML = "<tr><td colspan='8'>⚠️ فشل الجلب</td></tr>";
+  }
+}
+
+function renderMatches(matches){
+  const tbody = document.querySelector("#matches tbody");
+  tbody.innerHTML = "";
+  matches.forEach(ev => {
+    const team1Name = ev.teams.home.name;
+    const team2Name = ev.teams.away.name;
+    const team1Logo = ev.teams.home.logo || "assets/default_team.png";
+    const team2Logo = ev.teams.away.logo || "assets/default_team.png";
+    const league = ev.league.name;
+    const startTime = ev.fixture.timestamp;
+    const timeLocal = new Date(startTime * 1000).toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td><input type="checkbox"></td>
+      <td>${team1Name} <br><img src="${team1Logo}" alt=""></td>
+      <td>VS</td>
+      <td>${team2Name} <br><img src="${team2Logo}" alt=""></td>
+      <td>${league}</td>
+      <td>${timeLocal}</td>
+      <td><input type="text" placeholder="القناة"></td>
+      <td><input type="text" placeholder="المعلق"></td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+function generateJSON(){
+  const rows = document.querySelectorAll("#matches tbody tr");
+  const arr = [];
+  rows.forEach(row => {
+    const checkbox = row.querySelector("input[type='checkbox']");
+    if (!checkbox || !checkbox.checked) return;
+
+    const cells = row.querySelectorAll("td");
+    const team1Name = cells[1].innerText.split("\n")[0];
+    const team2Name = cells[3].innerText.split("\n")[0];
+    const team1Logo = cells[1].querySelector("img")?.src;
+    const team2Logo = cells[3].querySelector("img")?.src;
+    const league = cells[4].innerText;
+    const timeLocal = cells[5].innerText;
+    const startTime = Date.parse(new Date().toDateString() + " " + timeLocal) / 1000;
+    const channel = cells[6].querySelector("input").value || "";
+    const commentator = cells[7].querySelector("input").value || "";
+
+    arr.push({
+      team1Name,
+      team1Logo,
+      team2Name,
+      team2Logo,
+      status: "Not Started",
+      league,
+      score: "",
+      startTime,
+      isLive: false,
+      channel,
+      commentator
+    });
+  });
+  document.getElementById("output").value = JSON.stringify(arr, null, 2);
+}
+
+setInterval(generateJSON, 2000);
+
+// ✅ رفع الملف لـ GitHub
+async function saveToGitHub() {
+  const json = document.getElementById("output").value.trim();
+  if (!json || json === "[]") {
+    alert("⚠️ لا يوجد بيانات لحفظها!");
+    return;
+  }
+
+  const content = btoa(unescape(encodeURIComponent(json))); 
+  const message = "update matches.json";
+
+  let sha = null;
+  const check = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}?ref=${BRANCH}`, {
+    headers: { "Authorization": `token ${GITHUB_TOKEN}` }
+  });
+  if (check.status === 200) {
+    const data = await check.json();
+    sha = data.sha;
+  }
+
+  const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}`, {
+    method: "PUT",
+    headers: {
+      "Authorization": `token ${GITHUB_TOKEN}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ message, content, branch: BRANCH, sha })
+  });
+
+  if (res.ok) {
+    alert("✅ تم الحفظ في GitHub!");
+  } else {
+    const err = await res.json();
+    console.error(err);
+    alert("⚠️ فشل الحفظ: " + (err.message || JSON.stringify(err)));
+  }
+}
+
+// ✅ زر لمسح الملف
+async function clearFile() {
+  const emptyContent = btoa("[]"); 
+  const message = "clear matches.json";
+
+  let sha = null;
+  const check = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}?ref=${BRANCH}`, {
+    headers: { "Authorization": `token ${GITHUB_TOKEN}` }
+  });
+  if (check.status === 200) {
+    const data = await check.json();
+    sha = data.sha;
+  }
+
+  const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}`, {
+    method: "PUT",
+    headers: {
+      "Authorization": `token ${GITHUB_TOKEN}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ message, content: emptyContent, branch: BRANCH, sha })
+  });
+
+  if (res.ok) {
+    alert("🗑️ تم مسح الملف في GitHub!");
+    document.getElementById("output").value = "[]";
+  } else {
+    const err = await res.json();
+    console.error(err);
+    alert("⚠️ فشل مسح الملف: " + JSON.stringify(err));
+  }
+}
+
+// ✅ زر لعرض الملف من GitHub
+async function loadFromGitHub() {
+  try {
+    const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}?ref=${BRANCH}`, {
+      headers: { "Authorization": `token ${GITHUB_TOKEN}` }
+    });
+    if (res.status === 200) {
+      const data = await res.json();
+      const content = atob(data.content);
+      document.getElementById("output").value = content;
+      alert("📥 تم جلب الملف من GitHub!");
+    } else {
+      alert("⚠️ لم يتم العثور على الملف.");
+    }
+  } catch (err) {
+    console.error(err);
+    alert("⚠️ فشل في جلب الملف.");
+  }
+}
+
+// ✅ استدعاء تلقائي عند فتح الصفحة
+window.addEventListener("load", () => fetchMatches());
+</script>
+
+</body>
+</html>
