@@ -57,6 +57,10 @@
         <div class="header"><h1>لوحة تحكم API القنوات (نسخة متكاملة)</h1></div>
         <div class="form-section">
             <h2>إدارة الباقات والقنوات</h2>
+            <div class="form-group" style="display: flex; gap: 10px;">
+                <button id="import-btn" style="flex: 1;">📂 استيراد JSON</button>
+                <button id="export-btn" style="flex: 1;">📁 تصدير JSON</button>
+            </div>
             <div class="form-group" style="background: #fff8f8; padding: 15px; border-radius: 8px; border: 1px solid var(--btn-border);">
                 <h3>إضافة باقة جديدة</h3>
                 <input type="text" id="category-name" placeholder="اسم الباقة" required><br>
@@ -154,7 +158,7 @@
                         </div>
                     </div>
                     <div class="channels-list" data-cat-index="${catIndex}">
-                        ${category.channels.map((channel, chIndex) => `
+                        ${(category.channels || []).map((channel, chIndex) => `
                             <div class="channel-card">
                                 <div class="card-header" style="cursor: default;">
                                     <h4>${channel.name}</h4>
@@ -199,6 +203,38 @@
                 nameInput.value = ''; logoInput.value = '';
                 render(); saveData(); showToast('تمت إضافة الباقة بنجاح');
             } else { showToast('الرجاء إدخال اسم وشعار الباقة', 'error'); }
+        });
+        
+        document.getElementById('export-btn').addEventListener('click', () => {
+            if (data.length === 0) { showToast('لا توجد بيانات لتصديرها', 'error'); return; }
+            const jsonString = JSON.stringify(data, null, 2);
+            const blob = new Blob([jsonString], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url; a.download = 'channels.json';
+            document.body.appendChild(a); a.click();
+            document.body.removeChild(a); URL.revokeObjectURL(url);
+            showToast('تم تصدير الملف بنجاح');
+        });
+
+        document.getElementById('import-btn').addEventListener('click', () => {
+            const input = document.createElement('input');
+            input.type = 'file'; input.accept = '.json';
+            input.onchange = e => {
+                const file = e.target.files[0]; if (!file) return;
+                const reader = new FileReader();
+                reader.onload = event => {
+                    try {
+                        const importedData = JSON.parse(event.target.result);
+                        if (Array.isArray(importedData)) {
+                            data = importedData; render(); saveData();
+                            showToast('تم استيراد الملف بنجاح');
+                        } else { showToast('الملف غير صالح', 'error'); }
+                    } catch (err) { showToast('خطأ في قراءة الملف', 'error'); }
+                };
+                reader.readAsText(file);
+            };
+            input.click();
         });
 
         categoriesContainer.addEventListener('click', e => {
