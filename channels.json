@@ -5,34 +5,49 @@
     "channels": [
       {
         "name": "beIN SPORTS 1",
-        "logoUrl": "assets/logos/bein1.png",
+        "logoUrl": "https://ultrav.me/sport1.png",
         "servers": [
-          { "Server 1": "http://bdd00.4rouwanda-shop.store/live/918454578001/index.m3u8?t=ruXVLGU34c0VwpWRePDaSw&e=1756859549" },
-          { "Server 2": "https://wo.cma.footballii.ir/hls2/b1_src.m3u8" }
+          {
+            "Server 1": "http://bdd00.4rouwanda-shop.store/live/918454578001/index.m3u8?t=ruXVLGU34c0VwpWRePDaSw&e=1756859549"
+          },
+          {
+            "Server 2": "https://wo.cma.footballii.ir/hls2/b1_src.m3u8"
+          }
         ]
       },
       {
         "name": "beIN SPORTS 2",
-        "logoUrl": "assets/logos/bein2.png",
+        "logoUrl": "https://ultrav.me/sport%202.png",
         "servers": [
-          { "Server 1": "http://forevertv.me:8080/live/lYwssOLAp2wnil/dCzLREc8PSimNM/433257.ts" }
+          {
+            "Server 1": "http://het115a.4rouwanda-shop.store/live/69854211/index.m3u8"
+          },
+          {
+            "Server 2": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222935/a58149e6e6e4f64ca03908052453f1b7/222935_1216.ts"
+          }
         ]
       },
       {
         "name": "beIN SPORTS 3",
-        "logoUrl": "https://i.ibb.co/gDF001Q/bein-3-premium.png",
+        "logoUrl": "https://ultrav.me/sport%203.png",
         "servers": [
           {
-            "Server 1": "ضع رابط السيرفر هنا"
+            "Server 1": "http://het117a.4rouwanda-shop.store/live/645587700/index.m3u8"
+          },
+          {
+            "Server 2": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222936/77a9303fba430490aa3308a266d747b9/222936_1.ts"
           }
         ]
       },
       {
         "name": "beIN SPORTS 4",
-        "logoUrl": "https://i.ibb.co/d5m0VzD/bein4.png",
+        "logoUrl": "https://ultrav.me/sport%204.png",
         "servers": [
           {
-            "Server 1": "ضع رابط السيرفر هنا"
+            "Server 1": "http://het120a.4rouwanda-shop.store/live/9787488847/index.m3u8"
+          },
+          {
+            "Server 2": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222937/801a00eea3203a06c909924682175d46/222937_6.ts"
           }
         ]
       },
@@ -127,7 +142,9 @@
         "name": "beIN SPORTS 1",
         "logoUrl": "assets/logos/bein1.png",
         "servers": [
-          { "Server 1": "https://ultrav.me/UltraBein1.m3u8" }
+          {
+            "Server 1": "https://ultrav.me/UltraBein1.m3u8"
+          }
         ]
       }
     ]
@@ -140,7 +157,9 @@
         "name": "beIN SPORTS 1",
         "logoUrl": "assets/logos/bein1.png",
         "servers": [
-          { "Server 1": "your_360p_link_here" }
+          {
+            "Server 1": "your_360p_link_here"
+          }
         ]
       }
     ]
@@ -153,7 +172,9 @@
         "name": "beIN SPORTS 1",
         "logoUrl": "assets/logos/bein1.png",
         "servers": [
-          { "Server 1": "your_244p_link_here" }
+          {
+            "Server 1": "your_244p_link_here"
+          }
         ]
       }
     ]
@@ -166,7 +187,9 @@
         "name": "beIN MOVIES 1",
         "logoUrl": "assets/logos/bein_movies1.png",
         "servers": [
-          { "Server 1": "your_link_here" }
+          {
+            "Server 1": "your_link_here"
+          }
         ]
       }
     ]
@@ -179,7 +202,9 @@
         "name": "SSC SPORTS 1",
         "logoUrl": "assets/logos/ssc1.png",
         "servers": [
-          { "Server 1": "your_ssc_link_here" }
+          {
+            "Server 1": "your_ssc_link_here"
+          }
         ]
       }
     ]
@@ -192,7 +217,9 @@
         "name": "Al Arabiya",
         "logoUrl": "assets/logos/alarabiya.png",
         "servers": [
-          { "Server 1": "your_arabic_channel_link" }
+          {
+            "Server 1": "your_arabic_channel_link"
+          }
         ]
       }
     ]
@@ -205,7 +232,9 @@
         "name": "MBC 1",
         "logoUrl": "assets/logos/mbc1.png",
         "servers": [
-          { "Server 1": "your_mbc1_link" }
+          {
+            "Server 1": "your_mbc1_link"
+          }
         ]
       }
     ]
@@ -218,7 +247,9 @@
         "name": "TF1",
         "logoUrl": "assets/logos/tf1.png",
         "servers": [
-          { "Server 1": "your_france_channel_link" }
+          {
+            "Server 1": "your_france_channel_link"
+          }
         ]
       }
     ]
@@ -231,7 +262,9 @@
         "name": "TRT 1",
         "logoUrl": "assets/logos/trt1.png",
         "servers": [
-          { "Server 1": "your_turkish_channel_link" }
+          {
+            "Server 1": "your_turkish_channel_link"
+          }
         ]
       }
     ]
@@ -244,7 +277,9 @@
         "name": "Cartoon Network",
         "logoUrl": "assets/logos/cartoon.png",
         "servers": [
-          { "Server 1": "your_kids_channel_link" }
+          {
+            "Server 1": "your_kids_channel_link"
+          }
         ]
       }
     ]
@@ -257,7 +292,9 @@
         "name": "Drama Channel",
         "logoUrl": "assets/logos/drama.png",
         "servers": [
-          { "Server 1": "your_weyyak_link" }
+          {
+            "Server 1": "your_weyyak_link"
+          }
         ]
       }
     ]
@@ -270,7 +307,9 @@
         "name": "Shahid Originals",
         "logoUrl": "assets/logos/shahid_orig.png",
         "servers": [
-          { "Server 1": "your_shahid_link" }
+          {
+            "Server 1": "your_shahid_link"
+          }
         ]
       }
     ]
