@@ -214,12 +214,20 @@
       {
         "name": "SSC 2",
         "logoUrl": "https://ultrav.me/ssc.png",
-        "servers": []
+        "servers": [
+          {
+            "Server 1": "http://176.119.29.71/a6eb89ef-f2e3-469f-894e-0636b30f5376.m3u8"
+          }
+        ]
       },
       {
         "name": "SSC 3",
         "logoUrl": "https://ultrav.me/ssc.png",
-        "servers": []
+        "servers": [
+          {
+            "Server 1": "http://176.119.29.71/b7a59ebd-09af-4dd8-aba3-9aef29a30e81.m3u8"
+          }
+        ]
       },
       {
         "name": "SSC 4",
@@ -239,17 +247,29 @@
       {
         "name": "SSC Extra 1",
         "logoUrl": "https://ultrav.me/ssc.png",
-        "servers": []
+        "servers": [
+          {
+            "Server 1": "http://185.243.154.198/live/play/VTFWclNsUkNORWxzY0ZCMFkyTjRUV3hUYWxkNWVFOTBURmxuZDFaWFJ5OXFUV2x0TUVKVVV6STFPRDA9/255473"
+          }
+        ]
       },
       {
         "name": "SSC Extra 2",
         "logoUrl": "https://ultrav.me/ssc.png",
-        "servers": []
+        "servers": [
+          {
+            "Server 1": "http://185.243.154.198/live/play/VTFWclNsUkNORWxzY0ZCMFkyTjRUV3hUYWxkNWVFOTBURmxuZDFaWFJ5OXFUV2x0TUVKVVV6STFPRDA9/255473"
+          }
+        ]
       },
       {
         "name": "SSC Extra 3",
         "logoUrl": "https://ultrav.me/ssc.png",
-        "servers": []
+        "servers": [
+          {
+            "Server 1": "http://185.243.154.198/live/play/VTFWclNsUkNORWxzY0ZCMFkyTjRUV3hUYWxkNWVFOTBURmxuZDFaWFJ5OXFUV2x0TUVKVVV6STFPRDA9/255473"
+          }
+        ]
       }
     ]
   },
