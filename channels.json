@@ -301,12 +301,17 @@
     "channels": [
       {
         "name": "MBC 1",
-        "logoUrl": "assets/logos/mbc1.png",
+        "logoUrl": "https://i.imgur.com/8rXQgLs.png",
         "servers": [
           {
-            "Server 1": "your_mbc1_link"
+            "Server 1": "https://mbc1-enc.edgenextcdn.net/out/v1/0965e4d7deae49179172426cbfb3bc5e/index.m3u8"
           }
         ]
+      },
+      {
+        "name": "MBC 2",
+        "logoUrl": "https://i.imgur.com/u1jUxMn.png",
+        "servers": []
       }
     ]
   },
