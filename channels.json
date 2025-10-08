@@ -370,6 +370,96 @@
             "Server 1": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-2/754931856515075b0aabf0e583495c68/index.m3u8"
           }
         ]
+      },
+      {
+        "name": "MBC Drama",
+        "logoUrl": "https://i.imgur.com/nFqKeTN.png",
+        "servers": [
+          {
+            "Server 1": "https://mbc1-enc.edgenextcdn.net/out/v1/b0b3a0e6750d4408bb86d703d5feffd1/index.m3u8"
+          }
+        ]
+      },
+      {
+        "name": "MBC Drama +",
+        "logoUrl": "https://i.imgur.com/0oEHbGn.png",
+        "servers": [
+          {
+            "Server 1": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-plus-drama/e37251ec2aac8f6c98f75cd0fa37cd28/index.m3u8"
+          }
+        ]
+      },
+      {
+        "name": "MBC Variety",
+        "logoUrl": "https://i.imgur.com/iwTJils.png",
+        "servers": [
+          {
+            "Server 1": "https://games1.elahmad.xyz/tv757_www.elahmad.com_mbc_variety/index.m3u8?token=44bea332cc159770b4b9bc7f536fd1be659dd897-aedf8bf46c04355baa46773c48a0935e-1759960477-1759949677"
+          }
+        ]
+      },
+      {
+        "name": "MBC Action",
+        "logoUrl": "https://i.imgur.com/QGemcEd.png",
+        "servers": [
+          {
+            "Server 1": "https://m3u.iranvids.com:443/mbc-action/output.m3u8"
+          }
+        ]
+      },
+      {
+        "name": "MBC Max",
+        "logoUrl": "https://i.imgur.com/rNqrqxx.png",
+        "servers": [
+          {
+            "Server 1": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1656"
+          }
+        ]
+      },
+      {
+        "name": "MBC Bollywood",
+        "logoUrl": "https://i.imgur.com/UNeDNse.png",
+        "servers": [
+          {
+            "Server 1": "https://shd-gcp-live.edgenextcdn.net:443/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8"
+          }
+        ]
+      },
+      {
+        "name": "MBC Persia",
+        "logoUrl": "https://i.imgur.com/JaqmKPR.png",
+        "servers": [
+          {
+            "Server 1": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-persia/818ee8e4b592dc497608f066d825bfb4/index.m3u8"
+          }
+        ]
+      },
+      {
+        "name": "MBC FM",
+        "logoUrl": "https://i.imgur.com/JDRsdIT.png",
+        "servers": [
+          {
+            "Server 1": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-fm/3f36f7db6086acf058dc51681c87f8ad/index.m3u8"
+          }
+        ]
+      },
+      {
+        "name": "Panorama FM",
+        "logoUrl": "https://i.imgur.com/RqWNiyL.png",
+        "servers": [
+          {
+            "Server 1": "http://213.57.91.138:8000/play/a05l"
+          }
+        ]
+      },
+      {
+        "name": "Wanasah",
+        "logoUrl": "https://i.imgur.com/l8nAmVh.png",
+        "servers": [
+          {
+            "Server 1": "http://213.57.91.138:8000/play/a05l"
+          }
+        ]
       }
     ]
   },
