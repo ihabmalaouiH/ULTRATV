@@ -1,94 +1,74 @@
 [
   {
-    "team1Name": "ساو تومي وبرينسيبي",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1508.png",
-    "team2Name": "تونس",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/33.png",
-    "startTime": 1760112000,
-    "time": "19:00",
-    "league": "تصفيات كأس العالم - إفريقيا",
-    "channel": "Alwan 2",
-    "commentator": "لم يحدد",
-    "servers": [
-      {
-        "Server 1 HD": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/mKyLK6eaZP_NRvj-x1yup0h2_jE4AvC2yHPdy0ODQavo5GQ-1dl_XoJ2Htfqpx6OrXuldLlv2FuLrqopN16cTQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live"
-      }
-    ]
-  },
-  {
-    "team1Name": "السودان",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/279.png",
-    "team2Name": "موريتانيا",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/676.png",
-    "startTime": 1760101200,
-    "time": "16:00",
-    "league": "تصفيات كأس العالم - إفريقيا",
-    "channel": "Alwan 2",
-    "commentator": "لم يحدد",
-    "servers": [
-      {
-        "Server 1 HD": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/mKyLK6eaZP_NRvj-x1yup0h2_jE4AvC2yHPdy0ODQavo5GQ-1dl_XoJ2Htfqpx6OrXuldLlv2FuLrqopN16cTQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live"
-      }
-    ]
-  },
-  {
-    "team1Name": "ألمانيا",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/59.png",
-    "team2Name": "لوكسمبورج",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/405.png",
-    "startTime": 1760121900,
-    "time": "21:45",
+    "num": 1,
+    "team1Name": "إسبانيا",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/48.png",
+    "team2Name": "جورجيا",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/398.png",
+    "startTime": 1760208300,
     "league": "تصفيات كأس العالم 2026 - أوروبا",
-    "channel": "beIN SPORTS 2",
-    "commentator": "علي محمد علي",
+    "channel": "beIN SPORTS 3",
+    "commentator": "حسن العيدروس",
     "servers": []
   },
   {
-    "team1Name": "السويد",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/63.png",
-    "team2Name": "سويسرا",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/273.png",
-    "startTime": 1760121900,
-    "time": "21:45",
+    "num": 2,
+    "team1Name": "بلغاريا",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/275.png",
+    "team2Name": "تركيا",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/52.png",
+    "startTime": 1760208300,
     "league": "تصفيات كأس العالم 2026 - أوروبا",
-    "channel": "beIN SPORTS 4",
+    "channel": "beIN SPORTS 7",
     "commentator": "أحمد البلوشي",
     "servers": []
   },
   {
-    "team1Name": "بلجيكا",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/70.png",
-    "team2Name": "مقدونيا الشمالية",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/395.png",
-    "startTime": 1760121900,
-    "time": "21:45",
+    "num": 3,
+    "team1Name": "إستونيا",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/403.png",
+    "team2Name": "إيطاليا",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/64.png",
+    "startTime": 1760208300,
     "league": "تصفيات كأس العالم 2026 - أوروبا",
-    "channel": "beIN SPORTS 3",
+    "channel": "beIN SPORTS 4",
+    "commentator": "علي محمد علي",
+    "servers": []
+  },
+  {
+    "num": 4,
+    "team1Name": "البرتغال",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/58.png",
+    "team2Name": "أيرلندا الشمالية",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/803.png",
+    "startTime": 1760208300,
+    "league": "تصفيات كأس العالم 2026 - أوروبا",
+    "channel": "beIN SPORTS 5",
+    "commentator": "جواد بدة",
+    "servers": []
+  },
+  {
+    "num": 5,
+    "team1Name": "العراق",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/740.png",
+    "team2Name": "إندونيسيا",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/281.png",
+    "startTime": 1760211000,
+    "league": "تصفيات كأس العالم - آسيا",
+    "channel": "beIN SPORTS 2",
     "commentator": "عامر الخوذيري",
     "servers": []
   },
   {
-    "team1Name": "أيسلندا",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/415.png",
-    "team2Name": "أوكرانيا",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/400.png",
-    "startTime": 1760121900,
-    "time": "21:45",
-    "league": "تصفيات كأس العالم 2026 - أوروبا",
-    "channel": "beIN SPORTS 5",
-    "commentator": "محمد بركات",
-    "servers": []
-  },
-  {
-    "team1Name": "فرنسا",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/437.png",
-    "team2Name": "أذربيجان",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/419.png",
-    "startTime": 1760121900,
-    "time": "21:45",
-    "league": "تصفيات كأس العالم 2026 - أوروبا",
+    "num": 6,
+    "team1Name": "الإمارات",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1245.png",
+    "team2Name": "عمان",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/296.png",
+    "startTime": 1760202900,
+    "league": "تصفيات كأس العالم - آسيا",
     "channel": "beIN SPORTS 1",
-    "commentator": "علي الكعبي",
+    "commentator": "عصام الشوالي",
     "servers": []
   }
 ]
