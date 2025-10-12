@@ -4,19 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clappr Player</title>
-    
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr-hlsjs-playback@latest/dist/hlsjs-playback.min.js"></script>
-    
     <style>
         body, html { margin: 0; padding: 0; height: 100%; width: 100%; background-color: #000; }
         #player { width: 100%; height: 100%; }
     </style>
 </head>
 <body>
-
     <div id="player"></div>
-
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const playerElement = document.getElementById('player');
@@ -26,24 +22,17 @@
             if (streamUrl) {
                 streamUrl = decodeURIComponent(streamUrl);
 
-                // --- ✅ التغيير الرئيسي هنا: استخدام بروكسي مختلف وأكثر استقراراً ---
-                const proxyUrl = 'https://cors.eu.org/';
-                const proxiedStreamUrl = proxyUrl + streamUrl; // لا نحتاج لتشفير الرابط مرة أخرى مع هذا البروكسي
+                // --- ✅ التغيير الرئيسي: استخدام سيرفر البروكسي الخاص بك ---
+                const yourProxyServerUrl = 'https://your-proxy-name.glitch.me'; // <--- !! غيّر هذا الرابط
+                const proxiedStreamUrl = `${yourProxyServerUrl}/proxy?url=${encodeURIComponent(streamUrl)}`;
 
-                // تهيئة مشغل Clappr مع إضافة الـ plugin
                 const player = new Clappr.Player({
                     source: proxiedStreamUrl,
                     parentId: "#player",
                     width: '100%',
                     height: '100%',
                     autoPlay: true,
-                    plugins: {
-                        playback: [HlsjsPlayback]
-                    },
-                    hlsjsConfig: {
-                        // إعدادات متقدمة لتحسين الأداء
-                        maxMaxBufferLength: 60,
-                    },
+                    plugins: { playback: [HlsjsPlayback] },
                 });
 
             } else {
@@ -51,6 +40,5 @@
             }
         });
     </script>
-
 </body>
 </html>
