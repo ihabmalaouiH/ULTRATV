@@ -6,6 +6,7 @@
     <title>Clappr Player</title>
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr-hlsjs-playback@latest/dist/hlsjs-playback.min.js"></script>
     
     <style>
         body, html {
@@ -28,31 +29,30 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const playerElement = document.getElementById('player');
-            
-            // قراءة رابط البث من رابط الصفحة
             const params = new URLSearchParams(window.location.search);
             let streamUrl = params.get('stream');
 
             if (streamUrl) {
-                // فك تشفير الرابط القادم من البوت
                 streamUrl = decodeURIComponent(streamUrl);
-
-                // استخدام البروكسي لمحاولة تجاوز مشاكل الحماية
                 const proxyUrl = 'https://corsproxy.io/?';
                 const proxiedStreamUrl = proxyUrl + encodeURIComponent(streamUrl);
 
-                // تهيئة مشغل Clappr
+                // تهيئة مشغل Clappr مع إضافة الـ plugin
                 const player = new Clappr.Player({
-                    source: proxiedStreamUrl, // رابط البث
-                    parentId: "#player",      // مكان وضع المشغل
+                    source: proxiedStreamUrl,
+                    parentId: "#player",
                     width: '100%',
                     height: '100%',
-                    autoPlay: true,           // تشغيل تلقائي
-                    poster: 'https://i.ibb.co/L8y26Vn/placeholder.png', // صورة تظهر قبل بدء التحميل
-                    clapprLogo: 'https://clappr.io/img/logo-symbol.png', // يمكنك إزالة هذا السطر لإخفاء شعار Clappr
+                    autoPlay: true,
+                    // ✅ This is the crucial addition
+                    // نخبر Clappr أن يستخدم الـ plugin الذي أضفناه
+                    plugins: {
+                        playback: [HlsjsPlayback]
+                    },
                     hlsjsConfig: {
-                        // إعدادات متقدمة إذا احتجت لها
+                        // إعدادات متقدمة لتحسين الأداء
                         maxMaxBufferLength: 60,
+                        abrEwmaDefaultEstimate: 5000000, // Start with a higher quality guess
                     },
                 });
 
