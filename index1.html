@@ -11,58 +11,92 @@
             padding: 0;
             height: 100%;
             background-color: #000;
+            overflow: hidden; /* لمنع ظهور أي scrollbars */
+        }
+        #player-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: sans-serif;
-            color: white;
         }
         video {
             width: 100%;
             height: 100%;
         }
-        #message {
-            display: none; /* يتم إظهاره فقط عند عدم وجود رابط */
+        #play-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 10;
+        }
+        #play-button {
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-left: 80px solid rgba(200, 200, 200, 0.8);
+            transition: transform 0.2s;
+        }
+        #play-overlay:hover #play-button {
+            transform: scale(1.1);
+        }
+        .hidden {
+            display: none !important;
         }
     </style>
 </head>
 <body>
 
-    <video id="videoPlayer" controls autoplay></video>
-    <div id="message">
-        <h1>عذراً، لم يتم تحديد رابط للبث.</h1>
+    <div id="player-container">
+        <div id="play-overlay">
+            <div id="play-button"></div>
+        </div>
+        <video id="videoPlayer" controls></video>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const video = document.getElementById('videoPlayer');
-            const messageDiv = document.getElementById('message');
+            const playOverlay = document.getElementById('play-overlay');
             
-            // 1. قراءة رابط البث من رابط الصفحة
             const params = new URLSearchParams(window.location.search);
-            const streamUrl = params.get('stream'); // سنقوم بتمرير الرابط تحت اسم "stream"
+            let streamUrl = params.get('stream');
 
             if (streamUrl) {
-                // 2. التحقق إذا كان المتصفح يدعم HLS
+                // فك تشفير الرابط أولاً
+                streamUrl = decodeURIComponent(streamUrl);
+
+                // استخدام بروكسي وسيط لمحاولة تجاوز مشاكل CORS
+                // هذا يزيد من فرصة عمل الرابط
+                const proxyUrl = 'https://corsproxy.io/?';
+                const proxiedStreamUrl = proxyUrl + encodeURIComponent(streamUrl);
+
                 if (Hls.isSupported()) {
                     const hls = new Hls();
-                    hls.loadSource(decodeURIComponent(streamUrl));
+                    hls.loadSource(proxiedStreamUrl);
                     hls.attachMedia(video);
-                    hls.on(Hls.Events.MANIFEST_PARSED, () => {
-                        video.play();
-                    });
                 } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                    // للمتصفحات التي تدعم HLS أصلاً (مثل Safari)
-                    video.src = decodeURIComponent(streamUrl);
-                    video.addEventListener('loadedmetadata', () => {
-                        video.play();
-                    });
+                    video.src = proxiedStreamUrl;
                 }
             } else {
-                // إذا لم يتم تمرير رابط، نعرض رسالة خطأ
-                video.style.display = 'none';
-                messageDiv.style.display = 'block';
+                // في حال عدم وجود رابط، يتم إخفاء المشغل وإظهار رسالة
+                document.getElementById('player-container').innerHTML = '<h1 style="color:white;">عذراً، لم يتم تحديد رابط للبث.</h1>';
             }
+
+            // عند الضغط على زر التشغيل الكبير
+            playOverlay.addEventListener('click', () => {
+                playOverlay.classList.add('hidden'); // إخفاء الزر
+                video.play(); // تشغيل الفيديو
+            });
         });
     </script>
 
