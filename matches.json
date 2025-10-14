@@ -1,28 +1,174 @@
 [
   {
     "num": 1,
-    "team1Name": "تونس",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/33.png",
-    "team2Name": "ناميبيا",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/673.png",
-    "startTime": 1760360400,
+    "team1Name": "المغرب",
+    "team1Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6916.png",
+    "team2Name": "الكونغو",
+    "team2Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6898.png",
+    "startTime": 1760468400,
     "league": "تصفيات كأس العالم - إفريقيا",
     "channel": "MBC 5",
-    "commentator": "رياض الحمروني",
+    "commentator": "عصام عبده",
     "servers": [
-      { "Multi": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-5/ee6b000cee0629411b666ab26cb13e9b/index.m3u8" }
+      { "Multi Stream": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-5/ee6b000cee0629411b666ab26cb13e9b/index.m3u8" },
+      { "HD": "https://tgn.bozztv.com/eshgtv-trn09/ga-mchannel5/index.m3u8" }
     ]
   },
   {
     "num": 2,
-    "team1Name": "أيرلندا الشمالية",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/803.png",
-    "team2Name": "ألمانيا",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/59.png",
-    "startTime": 1760381100,
+    "team1Name": "السنغال",
+    "team1Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6922.png",
+    "team2Name": "موريتانيا",
+    "team2Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8670.png",
+    "startTime": 1760468400,
+    "league": "تصفيات كأس العالم - إفريقيا",
+    "channel": "SHAHID VIP",
+    "commentator": "عبدالعزيز الزيد",
+    "servers": []
+  },
+  {
+    "num": 3,
+    "team1Name": "الجزائر",
+    "team1Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6891.png",
+    "team2Name": "أوغندا",
+    "team2Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6929.png",
+    "startTime": 1760457600,
+    "league": "تصفيات كأس العالم - إفريقيا",
+    "channel": "SHAHID VIP",
+    "commentator": "أنيس السحباني",
+    "servers": [
+      { "Multi Restream": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/AjszvAx-84vQ1uXSaM7CMT6NwBDRkBQTFRSLZtdVAS1bmCwFnlH_xo9fl8UTKrjioaXROVRWw2J7OP-ujn_gdQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" }
+    ]
+  },
+  {
+    "num": 4,
+    "team1Name": "تركيا",
+    "team1Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8629.png",
+    "team2Name": "جورجيا",
+    "team2Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8477.png",
+    "startTime": 1760467500,
     "league": "تصفيات كأس العالم 2026 - أوروبا",
-    "channel": "beIN SPORTS 1",
+    "channel": "beIN 6 HD",
+    "commentator": "نوفل باشي ",
+    "servers": [
+      { "HD CAX": "https://js2.didou.space/2033e44d-fb78-4d1d-87c5-e113009f710a.m3u8" },
+      { "HD FAM": "http://het117a.4rouwanda-shop.store/live/1515000000/index.m3u8" },
+      { "SD FAM": "http://het105a.4rouwanda-shop.store/live/788550011/index.m3u8" },
+      { "LOW FAM": "http://het109a.4rouwanda-shop.store/live/9883322/index.m3u8" },
+      { "MejarServer 1080p": "https://cdnfest.com/G6-1080p/video.m3u8" },
+      { "MejarServer 900p": "https://cdnfest.com/G6-720p/video.m3u8?token=2ZRvum5RxIweG3" },
+      { "MejarServer 576p": "https://cdnfest.com/G6-480p/video.m3u8" }
+    ]
+  },
+  {
+    "num": 5,
+    "team1Name": "إسبانيا",
+    "team1Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8633.png",
+    "team2Name": "بلغاريا",
+    "team2Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8470.png",
+    "startTime": 1760467500,
+    "league": "تصفيات كأس العالم 2026 - أوروبا",
+    "channel": "beIN 3 HD",
+    "commentator": "أحمد البلوشي",
+    "servers": [
+      { "HD FAM": "http://het119a.4rouwanda-shop.store/live/645587700/index.m3u8" },
+      { "SD FAM": "http://het000.4rouwanda-shop.store/live/161988840/index.m3u8" },
+      { "LOW FAM": "http://het101a.4rouwanda-shop.store/live/551818447/index.m3u8" },
+      { "Multi 50 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/FaHwyrWnrGsFFeiOgKPHwp4dB7QyX5LFukElCaWiSf98ea7ASScv2TTpVTUC6thlayolodQ__NKcp65XnQLrxA/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
+      { "MejarServer 1080p": "https://cdnfest.com/G3-1080p/video.m3u8" },
+      { "MejarServer 900p": "https://cdnfest.com/G3-720p/video.m3u8?token=2ZRvum5RxIweG3" },
+      { "MejarServer 576p": "https://cdnfest.com/G3-480p/video.m3u8?token=2ZRvum5RxIweG3" },
+      { "سيرفر 1": "http://135.125.109.73:9000/beinsport3_.m3u8" },
+      { "سيرفر 2": "https://js2.didou.space/29c30b88-b77a-46da-8f46-212ba02af5d7.m3u8" },
+      { "سيرفر 3": "https://js2.didou.space/d461442c-174d-413a-8f60-041e6dd4f9cc.m3u8" },
+      { "سيرفر 4": "https://qanat5.site/upload/images/logo3.zip" }
+    ]
+  },
+  {
+    "num": 6,
+    "team1Name": "لاتفيا",
+    "team1Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8487.png",
+    "team2Name": "إنجلترا",
+    "team2Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png",
+    "startTime": 1760467500,
+    "league": "تصفيات كأس العالم 2026 - أوروبا",
+    "channel": "beIN 4 HD",
+    "commentator": "جواد بدة ",
+    "servers": [
+      { "HD FAM": "http://het000.4rouwanda-shop.store/live/9787488847/index.m3u8" },
+      { "SD FAM": "http://het114a.4rouwanda-shop.store/live/0103088447/index.m3u8" },
+      { "LOW FAM": "http://het000.4rouwanda-shop.store/live/131326625/index.m3u8" },
+      { "Multi": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/E4pDv_ROKIB5JP_UsI3QMVQsiVckhQbhv10mX1inHhBN9jjb8h0PFSItVfjTw_X-c8qOwU_aMvHMiMkO06pwXw/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
+      { "MejarServer 1080p": "https://cdnfest.com/G4-1080p/video.m3u8" },
+      { "MejarServer 900p": "https://cdnfest.com/G4-720p/video.m3u8?token=2ZRvum5RxIweG3" },
+      { "MejarServer 576p": "https://cdnfest.com/G3-480p/video.m3u8?token=2ZRvum5RxIweG3" },
+      { "سيرفر 1": "http://135.125.109.73:9000/beinsport4_.m3u8" },
+      { "سيرفر 2": "https://js2.didou.space/6f91c9ad-073b-46da-ab15-f537f6bea3e2.m3u8" },
+      { "سيرفر 3": "https://js2.didou.space/e09943ac-48bc-4ac7-80cd-050e846dd7ad.m3u8" },
+      { "سيرفر 5": "https://qanat5.site/upload/images/logo4.zip" }
+    ]
+  },
+  {
+    "num": 7,
+    "team1Name": "البرتغال",
+    "team1Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8602.png",
+    "team2Name": "المجر",
+    "team2Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8481.png",
+    "startTime": 1760467500,
+    "league": "تصفيات كأس العالم 2026 - أوروبا",
+    "channel": "beIN 5 HD",
+    "commentator": "محمد بركات",
+    "servers": [
+      { "HD FAM": "http://het110a.4rouwanda-shop.store/live/610303030/index.m3u8" },
+      { "SD FAM": "http://het117a.4rouwanda-shop.store/live/115451004/index.m3u8" },
+      { "LOW FAM": "http://het107a.4rouwanda-shop.store/live/181818444/index.m3u8" },
+      { "Multi 30 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/xMUzckpPzrlD1HFxVgu2NtL6AgYeoAA85OMeJiQbiCjdp8mZU0fRTarA8hdZWnNIWTUeJr0-6K2Pnv4qInZ2Kw/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
+      { "MejarServer 1080p": "https://cdnfest.com/G5-1080p/video.m3u8" },
+      { "MejarServer 900p": "https://cdnfest.com/G5-720p/video.m3u8?token=2ZRvum5RxIweG3" },
+      { "MejarServer 576p": "https://cdnfest.com/G5-480p/video.m3u8?token=2ZRvum5RxIweG3" }
+    ]
+  },
+  {
+    "num": 8,
+    "team1Name": "السعودية",
+    "team1Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10056.png",
+    "team2Name": "العراق",
+    "team2Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8050.png",
+    "startTime": 1760467500,
+    "league": "تصفيات كأس العالم - آسيا",
+    "channel": "beIN 2 HD",
     "commentator": "عصام الشوالي",
+    "servers": [
+      { "HD FAM": "http://het107a.4rouwanda-shop.store/live/69854211/index.m3u8" },
+      { "SD FAM": "http://het109a.4rouwanda-shop.store/live/10011244/index.m3u8" },
+      { "LOW FAM": "http://het109a.4rouwanda-shop.store/live/4798998070/index.m3u8" },
+      { "Multi 50 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/ei2JffRnU7aYFqDFAJkZ2V-C-0zz2pdijc42VAu-tE6WC53X5-lDY1jozK3iCSuWlC9b0V5ch9NRjRwHD-58nQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
+      { "Multi 50 fps 2": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/u0cP7XXQ49Osjptzeh_lMFlSLzJ_5qICRZtB4FK7m14LwvwxSJgZyt2kMfOm4A2a8Z3fwvdQS7-7FRzXyiXrdA/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
+      { "Multi 30 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/Wdxs1fmyYlVQCiy-5XVVqEBgZ9PkfQr9TfeSv3DgaRm5TKiB5nU0UW35-XyRmlX6_tHBwm3y_jF1ch6jTUNGTQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
+      { "SD Family": "https://ac.yallaliveshoot.info/bein2/index.m3u8" },
+      { "MejarServer 1080p": "https://cdnfest.com/G2-1080p/video.m3u8" },
+      { "MejarServer 900p": "https://cdnfest.com/G2-720p/video.m3u8?token=2ZRvum5RxIweG3" },
+      { "MejarServer 576p": "https://cdnfest.com/G2-480p/video.m3u8?token=2ZRvum5RxIweG3" },
+      { "سيرفر 1": "https://wikinew.newkso.ru/wiki/uMJXBt6vb5/mono.m3u8" },
+      { "سيرفر 2": "https://dokko1new.newkso.ru/dokko1/premium92/mono.m3u8" },
+      { "سيرفر 3": "http://176.119.29.35/01ed3a36-03b2-4f64-9dfa-dea3df61b611.m3u8" },
+      { "سيرفر 4": "https://js2.didou.space/28a459e7-83c3-45c7-bac3-55d524b2a64b.m3u8" },
+      { "سيرفر 5": "https://a8.bein-match.tech/broadcast/p6t3R5Thd8oJe7pKZ-AdMQ/1760214168/1760213914/1/bein2.m3u8" },
+      { "سيرفر 6": "https://cdnfest.com/G2-480p/video.m3u8?token=2ZRvum5RxIweG3" },
+      { "سيرفر 7": "https://qanat5.site/upload/images/logo2.zip" },
+      { "Multi TOD 60 fps": "" }
+    ]
+  },
+  {
+    "num": 9,
+    "team1Name": "قطر",
+    "team1Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10055.png",
+    "team2Name": "الإمارات",
+    "team2Logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10059.png",
+    "startTime": 1760462100,
+    "league": "تصفيات كأس العالم - آسيا",
+    "channel": "beIN 1 HD",
+    "commentator": "حسن العيدروس ",
     "servers": [
       { "HD FAM": "http://het107a.4rouwanda-shop.store/live/918454578001/index.m3u8" },
       { "SD FAM": "http://het000.4rouwanda-shop.store/live/978480008877005/index.m3u8" },
@@ -36,97 +182,8 @@
       { "سيرفر 3": "http://176.119.29.42/0c55573d-12d8-43af-823b-25c94d67b190.m3u8" },
       { "سيرفر 4": "http://1789-181.123091763.it.com/live/527418_.m3u8" },
       { "سيرفر 5": "http://7955e15a.rostelekom.xyz/iptv/L58NZSUP5Z4Z98/6123/index.m3u8" },
-      { "سيرفر 6": "http://176.119.29.54/131f26d9-afb0-480e-8690-e46007de9fc8.m3u8" }
-    ]
-  },
-  {
-    "num": 3,
-    "team1Name": "سلوفينيا",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/49.png",
-    "team2Name": "سويسرا",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/273.png",
-    "startTime": 1760381100,
-    "league": "تصفيات كأس العالم 2026 - أوروبا",
-    "channel": "beIN SPORTS 6",
-    "commentator": "أحمد فؤاد",
-    "servers": [
-      { "HD FAM": "http://het117a.4rouwanda-shop.store/live/1515000000/index.m3u8" },
-      { "SD FAM": "http://het105a.4rouwanda-shop.store/live/788550011/index.m3u8" },
-      { "LOW FAM": "http://het109a.4rouwanda-shop.store/live/9883322/index.m3u8" },
-      { "MejarServer 1080p": "https://cdnfest.com/G6-1080p/video.m3u8" },
-      { "MejarServer 900p": "https://cdnfest.com/G6-720p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "MejarServer 576p": "https://cdnfest.com/G6-480p/video.m3u8" }
-    ]
-  },
-  {
-    "num": 4,
-    "team1Name": "أوكرانيا",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/400.png",
-    "team2Name": "أذربيجان",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/419.png",
-    "startTime": 1760381100,
-    "league": "تصفيات كأس العالم 2026 - أوروبا",
-    "channel": "beIN SPORTS 4",
-    "commentator": "جواد بدة",
-    "servers": [
-      { "HD FAM": "http://het000.4rouwanda-shop.store/live/9787488847/index.m3u8" },
-      { "SD FAM": "http://het114a.4rouwanda-shop.store/live/0103088447/index.m3u8" },
-      { "LOW FAM": "http://het000.4rouwanda-shop.store/live/131326625/index.m3u8" },
-      { "MejarServer 1080p": "https://cdnfest.com/G4-1080p/video.m3u8" },
-      { "MejarServer 900p": "https://cdnfest.com/G4-720p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "MejarServer 576p": "https://cdnfest.com/G3-480p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "سيرفر 1": "http://135.125.109.73:9000/beinsport4_.m3u8" },
-      { "سيرفر 2": "https://js2.didou.space/6f91c9ad-073b-486a-ab15-f537f6bea3e2.m3u8" },
-      { "سيرفر 3": "https://js2.didou.space/e09943ac-48bc-4ac7-80cd-050e846dd7ad.m3u8" }
-    ]
-  },
-  {
-    "num": 5,
-    "team1Name": "أيسلندا",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/415.png",
-    "team2Name": "فرنسا",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/437.png",
-    "startTime": 1760381100,
-    "league": "تصفيات كأس العالم 2026 - أوروبا",
-    "channel": "beIN SPORTS 2",
-    "commentator": "عامر الخوذيري",
-    "servers": [
-      { "HD FAM": "http://het107a.4rouwanda-shop.store/live/69854211/index.m3u8" },
-      { "SD FAM": "http://het109a.4rouwanda-shop.store/live/10011244/index.m3u8" },
-      { "LOW FAM": "http://het109a.4rouwanda-shop.store/live/4798998070/index.m3u8" },
-      { "Family": "https://ac.yallaliveshoot.info/bein2/index.m3u8" },
-      { "MejarServer 1080p": "https://cdnfest.com/G2-1080p/video.m3u8" },
-      { "MejarServer 900p": "https://cdnfest.com/G2-720p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "MejarServer 576p": "https://cdnfest.com/G2-480p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "سيرفر 1": "https://wikinew.newkso.ru/wiki/uMJXBt6vb5/mono.m3u8" },
-      { "سيرفر 2": "https://dokko1new.newkso.ru/dokko1/premium92/mono.m3u8" },
-      { "سيرفر 3": "http://176.119.29.35/01ed3a36-03b2-4f64-9dfa-dea3df61b611.m3u8" },
-      { "سيرفر 4": "https://js2.didou.space/28a459e7-83c3-45c7-bac3-55d524b2a64b.m3u8" },
-      { "سيرفر 5": "https://a8.bein-match.tech/broadcast/p6t3R5Thd8oJe7pKZ-AdMQ/1760214168/1760213914/1/bein2.m3u8" },
-      { "سيرفر 6": "https://cdnfest.com/G2-480p/video.m3u8?token=2ZRvum5RxIweG3" }
-    ]
-  },
-  {
-    "num": 6,
-    "team1Name": "ويلز",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/420.png",
-    "team2Name": "بلجيكا",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/70.png",
-    "startTime": 1760381100,
-    "league": "تصفيات كأس العالم 2026 - أوروبا",
-    "channel": "beIN SPORTS 3",
-    "commentator": "حسن العيدروس",
-    "servers": [
-      { "HD FAM": "http://het119a.4rouwanda-shop.store/live/645587700/index.m3u8" },
-      { "SD FAM": "http://het000.4rouwanda-shop.store/live/161988840/index.m3u8" },
-      { "LOW FAM": "http://het101a.4rouwanda-shop.store/live/551818447/index.m3u8" },
-      { "Multi 50 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/dez_U5BfWRmZ7SHr64Ex8gRuZCNRn6jKKNauohrNG3UcQvEu1yGkqWKTdruVRr8MotSUKFlJ3QAaI1u5NzoJcA/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
-      { "MejarServer 1080p": "https://cdnfest.com/G3-1080p/video.m3u8" },
-      { "MejarServer 900p": "https://cdnfest.com/G3-720p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "MejarServer 576p": "https://cdnfest.com/G3-480p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "سيرفر 1": "http://135.125.109.73:9000/beinsport3_.m3u8" },
-      { "سيرفر 2": "https://js2.didou.space/29c30b88-b77a-46da-8f46-212ba02af5d7.m3u8" },
-      { "سيرفر 3": "https://js2.didou.space/d461442c-174d-413a-8f60-041e6dd4f9cc.m3u8" }
+      { "سيرفر 6": "http://176.119.29.54/131f26d9-afb0-480e-8690-e46007de9fc8.m3u8" },
+      { "سيرفر 7": "https://qanat5.site/upload/images/logo1.zip" }
     ]
   }
 ]
