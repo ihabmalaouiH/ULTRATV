@@ -9,23 +9,10 @@
     "league": "كأس العالم للشباب | تحت 20",
     "channel": "beIN Global",
     "commentator": "جواد بدة",
-    "servers": []
-  },
-  {
-    "num": 2,
-    "team1Name": "بورتوريكو",
-    "team1Logo": "https://jdwel.com/image/teams/269.png",
-    "team2Name": "الأرجنتين",
-    "team2Logo": "https://jdwel.com/image/teams/flag_argentina_v2.png",
-    "startTime": 1760486400,
-    "league": "مباراة ودية",
-    "channel": "Tyc Sport 1",
-    "commentator": "تعليق أجنبي",
     "servers": [
-      { "1": "https://wikinew.newkso.ru/wiki/L9D0UhftRl/mono.m3u8" },
-      { "2": "https://taktikora.live/hls/live2/index.m3u8" },
-      { "3": "https://y.yallaliveshoot.online/rai/index.m3u8" },
-      { "4": "https://ddy6new.newkso.ru/ddy6/premium746/mono.m3u8" }
+      {
+        "ULTRA VIP": "https://s4.news-api-gen.lol:443//bein_sports/index.m3u8?token=a2527e45e7427f90e85389534a6298833e7b1a16-99f5aee2d564c5d584ba89a3907726de-1760537355-1760526555&remote=105.235.128.27/bein_sports/index.m3u8?token=84bed54e5f3873fa68eec176f09df5b988e9e53f-2ec3da65b0211c666f2803f8144151c7-1760537355-1760526555&remote=105.235.128.27"
+      }
     ]
   }
 ]
