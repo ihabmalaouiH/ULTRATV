@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لوحة تحكم (مع أزرار الترتيب)</title>
+    <title>لوحة تحكم (إصدار مطور)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
@@ -21,8 +21,8 @@
         h1, h2 { margin: 0; }
         h3, h4, h5 { color: var(--header-bg); }
         .form-section, .output-section { background: var(--card-bg); padding: 25px; border-radius: 12px; box-shadow: var(--shadow); }
-        input[type="text"], input[type="url"] { width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; box-sizing: border-box; }
-        input:focus { outline: none; border-color: var(--header-bg); }
+        input[type="text"], input[type="url"], select { width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; box-sizing: border-box; background-color: white; }
+        input:focus, select:focus { outline: none; border-color: var(--header-bg); }
         button { background-color: var(--btn-bg); color: var(--btn-text); border: 2px solid var(--btn-border); padding: 10px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.3s; }
         button:hover { background-color: var(--header-bg); color: var(--text-color); border-color: var(--header-bg); }
         button.action-btn { background: transparent; border: 1px solid #ccc; color: #555; padding: 6px 10px; font-size: 1em; margin: 0 2px; }
@@ -41,8 +41,10 @@
         .server-item {
             font-size: 0.9em; padding: 8px; background: #f1f1f1; border-radius: 4px;
             margin-top: 5px; display: flex; justify-content: space-between;
-            align-items: center; word-break: break-all;
+            align-items: center; word-break: break-all; gap: 8px;
         }
+        .server-item span { flex-grow: 1; }
+        .server-item .actions { display: flex; gap: 4px; }
         .output-section pre { background-color: #2d2d2d; color: #f0f0f0; padding: 20px; border-radius: 8px; white-space: pre-wrap; word-wrap: break-word; max-height: 600px; overflow-y: auto; }
         .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.5); }
         .modal-content { background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 500px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
@@ -57,31 +59,32 @@
 </head>
 <body>
     <div class="container">
-        <div class="header"><h1>لوحة تحكم (مع أزرار الترتيب)</h1></div>
+        <div class="header"><h1>لوحة تحكم (إصدار مطور)</h1></div>
         <div class="form-section">
             <h2>إدارة الباقات والقنوات</h2>
             <div class="form-group" style="display: flex; gap: 10px;">
-                <button id="import-btn" style="flex: 1;">📂 استيراد JSON</button>
-                <button id="export-btn" style="flex: 1;">📁 تصدير JSON</button>
+                <button id="import-btn" style="flex: 1;">📂 استيراد</button>
+                <button id="export-btn" style="flex: 1;">📁 تصدير</button>
             </div>
             <div class="form-group" style="background: #fff8f8; padding: 15px; border-radius: 8px; border: 1px solid var(--btn-border);">
                 <h3>إضافة باقة جديدة</h3>
                 <input type="text" id="category-name" placeholder="اسم الباقة" required><br>
                 <input type="url" id="category-logo" placeholder="رابط شعار الباقة" required style="margin-top: 10px;">
-                <button id="add-category-btn" style="margin-top: 10px;">إضافة الباقة</button>
+                <button id="add-category-btn" style="margin-top: 10px;">إضافة باقة</button>
             </div>
             <div id="categories-container"></div>
         </div>
         <div class="output-section">
             <h2>النتيجة النهائية (JSON)</h2>
             <button id="generate-json-btn">نسخ الكود</button>
-            <button id="clear-all-btn" class="delete-btn" style="float: left; padding: 10px 18px;">مسح كل البيانات</button>
+            <button id="clear-all-btn" class="delete-btn" style="float: left; padding: 10px 18px;">مسح الكل</button>
             <pre><code id="json-output">[]</code></pre>
         </div>
     </div>
+
     <div id="editModal" class="modal">
         <div class="modal-content">
-            <div class="modal-header"><span class="close-btn">&times;</span><h2 id="modal-title">تعديل العنصر</h2></div>
+            <div class="modal-header"><span class="close-btn" data-modal="edit">&times;</span><h2 id="modal-title">تعديل العنصر</h2></div>
             <div style="padding: 20px 0;">
                 <input type="text" id="edit-name" placeholder="الاسم" style="margin-bottom: 10px;">
                 <input type="url" id="edit-logoUrl" placeholder="رابط الشعار">
@@ -89,16 +92,42 @@
             <button id="save-edit-btn">حفظ التغييرات</button>
         </div>
     </div>
+
+    <div id="editServerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header"><span class="close-btn" data-modal="server">&times;</span><h2>تعديل السيرفر</h2></div>
+            <div style="padding: 20px 0;">
+                <input type="text" id="edit-server-name" placeholder="اسم السيرفر" style="margin-bottom: 10px;">
+                <input type="url" id="edit-server-url" placeholder="رابط السيرفر">
+            </div>
+            <button id="save-server-edit-btn">حفظ التغييرات</button>
+        </div>
+    </div>
+    
+    <div id="copyChannelModal" class="modal">
+         <div class="modal-content">
+            <div class="modal-header"><span class="close-btn" data-modal="copy">&times;</span><h2>نسخ القناة إلى...</h2></div>
+            <div style="padding: 20px 0;">
+                <label for="copy-destination-category">اختر الباقة الهدف:</label>
+                <select id="copy-destination-category" style="margin-top: 10px;"></select>
+            </div>
+            <button id="confirm-copy-btn">تأكيد النسخ</button>
+        </div>
+    </div>
+
     <div id="toast-container"></div>
 
     <script>
     document.addEventListener('DOMContentLoaded', () => {
         const categoriesContainer = document.getElementById('categories-container');
         const jsonOutput = document.getElementById('json-output');
-        const modal = document.getElementById('editModal');
-        const closeBtn = document.querySelector('.close-btn');
+        const modals = {
+            edit: document.getElementById('editModal'),
+            server: document.getElementById('editServerModal'),
+            copy: document.getElementById('copyChannelModal')
+        };
         let data = [];
-        let editContext = {};
+        let context = {};
 
         const showToast = (message, type = 'success') => {
             const container = document.getElementById('toast-container');
@@ -113,19 +142,13 @@
             }, 3000);
         };
 
-        const saveData = () => {
-            localStorage.setItem('channelsApiData', JSON.stringify(data));
-        };
-
+        const saveData = () => { localStorage.setItem('channelsApiData', JSON.stringify(data)); };
         const loadData = () => {
             const savedData = localStorage.getItem('channelsApiData');
             if (savedData) { try { data = JSON.parse(savedData); } catch(e) { data = []; } }
             render();
         };
-
-        const updateJsonOutput = () => {
-            jsonOutput.textContent = JSON.stringify(data, null, 2);
-        };
+        const updateJsonOutput = () => { jsonOutput.textContent = JSON.stringify(data, null, 2); };
 
         const render = () => {
             categoriesContainer.innerHTML = '';
@@ -135,8 +158,7 @@
                 categoryCard.innerHTML = `
                     <div class="card-header">
                         <div class="card-header-title" data-action="toggle-collapse">
-                            <span class="toggle-icon">▼</span>
-                            <h3>${category.name}</h3>
+                            <span class="toggle-icon">▼</span><h3>${category.name}</h3>
                         </div>
                         <div class="actions">
                             <div class="order-buttons">
@@ -157,6 +179,7 @@
                                             <button class="action-btn" data-type="channel" data-action="move-up" data-cat-index="${catIndex}" data-ch-index="${chIndex}" ${chIndex === 0 ? 'disabled' : ''}>🔼</button>
                                             <button class="action-btn" data-type="channel" data-action="move-down" data-cat-index="${catIndex}" data-ch-index="${chIndex}" ${chIndex === category.channels.length - 1 ? 'disabled' : ''}>🔽</button>
                                         </div>
+                                        <button class="action-btn" data-type="channel" data-action="copy" data-cat-index="${catIndex}" data-ch-index="${chIndex}">📋</button>
                                         <button class="action-btn" data-type="channel" data-action="edit" data-cat-index="${catIndex}" data-ch-index="${chIndex}">✏️</button>
                                         <button class="action-btn delete-btn" data-type="channel" data-action="delete" data-cat-index="${catIndex}" data-ch-index="${chIndex}">🗑️</button>
                                     </div>
@@ -166,7 +189,10 @@
                                         const serverName = Object.keys(server)[0];
                                         return `<div class="server-item">
                                                     <span><strong>${serverName}:</strong> ${server[serverName]}</span>
-                                                    <button class="delete-btn" data-type="server" data-action="delete" data-cat-index="${catIndex}" data-ch-index="${chIndex}" data-srv-index="${srvIndex}" style="padding: 2px 6px;">x</button>
+                                                    <div class="actions">
+                                                        <button class="action-btn" data-type="server" data-action="edit" data-cat-index="${catIndex}" data-ch-index="${chIndex}" data-srv-index="${srvIndex}">✏️</button>
+                                                        <button class="action-btn delete-btn" data-type="server" data-action="delete" data-cat-index="${catIndex}" data-ch-index="${chIndex}" data-srv-index="${srvIndex}">🗑️</button>
+                                                    </div>
                                                 </div>`;
                                     }).join('')}
                                 </div>
@@ -237,25 +263,61 @@
 
             if (button) {
                 const { catIndex, chIndex, srvIndex, type, action } = button.dataset;
-                const catIdx = parseInt(catIndex);
-                const chIdx = parseInt(chIndex);
+                const catIdx = parseInt(catIndex), chIdx = parseInt(chIndex), srvIdx = parseInt(srvIndex);
 
-                if (action === 'move-up') {
-                    if (type === 'category' && catIdx > 0) {
-                        [data[catIdx], data[catIdx - 1]] = [data[catIdx - 1], data[catIdx]];
-                    } else if (type === 'channel' && chIdx > 0) {
+                if (action === 'move-up' || action === 'move-down') {
+                    const isUp = action === 'move-up';
+                    if (type === 'category') {
+                        const swapIdx = isUp ? catIdx - 1 : catIdx + 1;
+                        if (swapIdx >= 0 && swapIdx < data.length) {
+                            [data[catIdx], data[swapIdx]] = [data[swapIdx], data[catIdx]];
+                        }
+                    } else if (type === 'channel') {
                         const channels = data[catIdx].channels;
-                        [channels[chIdx], channels[chIdx - 1]] = [channels[chIdx - 1], channels[chIdx]];
+                        const swapIdx = isUp ? chIdx - 1 : chIdx + 1;
+                        if (swapIdx >= 0 && swapIdx < channels.length) {
+                            [channels[chIdx], channels[swapIdx]] = [channels[swapIdx], channels[chIdx]];
+                        }
                     }
                     render(); saveData();
-                } else if (action === 'move-down') {
-                    if (type === 'category' && catIdx < data.length - 1) {
-                        [data[catIdx], data[catIdx + 1]] = [data[catIdx + 1], data[catIdx]];
-                    } else if (type === 'channel' && chIdx < data[catIdx].channels.length - 1) {
-                        const channels = data[catIdx].channels;
-                        [channels[chIdx], channels[chIdx + 1]] = [channels[chIdx + 1], channels[chIdx]];
+                } else if (action === 'edit') {
+                    context = { type, catIndex, chIndex, srvIndex };
+                    if (type === 'server') {
+                        const server = data[catIdx].channels[chIdx].servers[srvIdx];
+                        const serverName = Object.keys(server)[0];
+                        document.getElementById('edit-server-name').value = serverName;
+                        document.getElementById('edit-server-url').value = server[serverName];
+                        modals.server.style.display = 'block';
+                    } else {
+                        const item = type === 'category' ? data[catIdx] : data[catIdx].channels[chIdx];
+                        document.getElementById('edit-name').value = item.name;
+                        document.getElementById('edit-logoUrl').value = item.logoUrl;
+                        modals.edit.style.display = 'block';
                     }
-                    render(); saveData();
+                } else if (action === 'copy') {
+                    context = { type, catIndex, chIndex };
+                    const select = document.getElementById('copy-destination-category');
+                    select.innerHTML = '';
+                    data.forEach((cat, index) => {
+                        if (index !== catIdx) {
+                            const option = document.createElement('option');
+                            option.value = index;
+                            option.textContent = cat.name;
+                            select.appendChild(option);
+                        }
+                    });
+                    if(select.options.length > 0) {
+                        modals.copy.style.display = 'block';
+                    } else {
+                        showToast('لا توجد باقة أخرى للنسخ إليها', 'error');
+                    }
+                } else if (action === 'delete') {
+                    if (confirm('هل أنت متأكد من الحذف؟')) {
+                        if (type === 'server') data[catIdx].channels[chIdx].servers.splice(srvIdx, 1);
+                        else if (type === 'channel') data[catIdx].channels.splice(chIdx, 1);
+                        else if (type === 'category') data.splice(catIdx, 1);
+                        render(); saveData(); showToast('تم الحذف', 'error');
+                    }
                 } else if (button.classList.contains('add-channel-btn')) {
                     const card = button.closest('.category-card');
                     const nameInput = card.querySelector('.channel-name-input'), logoInput = card.querySelector('.channel-logo-input');
@@ -271,40 +333,57 @@
                         data[catIdx].channels[chIdx].servers.push({ [nameInput.value.trim()]: urlInput.value.trim() });
                         render(); saveData(); showToast('تمت إضافة السيرفر');
                     } else { showToast('الرجاء إدخال اسم ورابط السيرفر', 'error'); }
-                } else if (action === 'delete') {
-                    if (confirm('هل أنت متأكد من الحذف؟')) {
-                        if (type === 'server') data[catIdx].channels[chIdx].servers.splice(srvIndex, 1);
-                        else if (type === 'channel') data[catIdx].channels.splice(chIdx, 1);
-                        else if (type === 'category') data.splice(catIdx, 1);
-                        render(); saveData(); showToast('تم الحذف', 'error');
-                    }
-                } else if (action === 'edit') {
-                    editContext = { type, catIndex, chIndex };
-                    const item = type === 'category' ? data[catIdx] : data[catIdx].channels[chIdx];
-                    document.getElementById('edit-name').value = item.name;
-                    document.getElementById('edit-logoUrl').value = item.logoUrl;
-                    modal.style.display = 'block';
                 }
             } else if (headerTitle) {
                 const categoryCard = headerTitle.closest('.category-card');
-                if (categoryCard) {
-                    categoryCard.classList.toggle('collapsed');
-                }
+                if (categoryCard) { categoryCard.classList.toggle('collapsed'); }
             }
         });
 
-        closeBtn.onclick = () => modal.style.display = 'none';
-        window.onclick = (e) => { if (e.target == modal) modal.style.display = 'none'; };
+        document.querySelectorAll('.close-btn').forEach(btn => {
+            btn.onclick = () => { modals[btn.dataset.modal].style.display = 'none'; };
+        });
+        window.onclick = (e) => {
+            if (e.target.classList.contains('modal')) { e.target.style.display = 'none'; }
+        };
+
         document.getElementById('save-edit-btn').addEventListener('click', () => {
-            const { type, catIndex, chIndex } = editContext;
+            const { type, catIndex, chIndex } = context;
             const catIdx = parseInt(catIndex), chIdx = parseInt(chIndex);
             const newName = document.getElementById('edit-name').value.trim();
             const newLogoUrl = document.getElementById('edit-logoUrl').value.trim();
             if (!newName || !newLogoUrl) { showToast('لا يمكن ترك الحقول فارغة', 'error'); return; }
             const item = type === 'category' ? data[catIdx] : data[catIdx].channels[chIdx];
             item.name = newName; item.logoUrl = newLogoUrl;
-            modal.style.display = 'none';
+            modals.edit.style.display = 'none';
             render(); saveData(); showToast('تم حفظ التعديلات');
+        });
+        
+        document.getElementById('save-server-edit-btn').addEventListener('click', () => {
+            const { catIndex, chIndex, srvIndex } = context;
+            const catIdx = parseInt(catIndex), chIdx = parseInt(chIndex), srvIdx = parseInt(srvIndex);
+            const newName = document.getElementById('edit-server-name').value.trim();
+            const newUrl = document.getElementById('edit-server-url').value.trim();
+            if (!newName || !newUrl) { showToast('لا يمكن ترك الحقول فارغة', 'error'); return; }
+            data[catIdx].channels[chIdx].servers[srvIdx] = { [newName]: newUrl };
+            modals.server.style.display = 'none';
+            render(); saveData(); showToast('تم حفظ تعديلات السيرفر');
+        });
+
+        document.getElementById('confirm-copy-btn').addEventListener('click', () => {
+            const { catIndex, chIndex } = context;
+            const sourceCatIdx = parseInt(catIndex), sourceChIdx = parseInt(chIndex);
+            const destCatIdx = parseInt(document.getElementById('copy-destination-category').value);
+            
+            if (isNaN(destCatIdx)) { showToast('الرجاء اختيار باقة هدف', 'error'); return; }
+
+            const channelToCopy = data[sourceCatIdx].channels[sourceChIdx];
+            const deepCopiedChannel = JSON.parse(JSON.stringify(channelToCopy));
+            data[destCatIdx].channels.push(deepCopiedChannel);
+
+            modals.copy.style.display = 'none';
+            render(); saveData();
+            showToast(`تم نسخ قناة "${channelToCopy.name}" بنجاح`);
         });
 
         document.getElementById('generate-json-btn').addEventListener('click', (e) => {
