@@ -134,9 +134,9 @@
     "commentator": "غير محدد",
     "servers": [
       { "Multi": "https://liveakgr.alkassdigital.net/hls/live/2097037/Alkass1nutre/master.m3u8" },
-      { "FHD": "" },
-      { "HD": "" },
-      { "SD": "" }
+      { "FHD": "https://liveakgr.alkassdigital.net:443/hls/live/2097037/Alkass1nutre/master1080.m3u8" },
+      { "HD": "https://liveakgr.alkassdigital.net/hls/live/2097037/Alkass1nutre/master.m3u8" },
+      { "SD": "https://liveakgr.alkassdigital.net:443/hls/live/2097037/Alkass1nutre/master340.m3u8" }
     ]
   }
 ]
