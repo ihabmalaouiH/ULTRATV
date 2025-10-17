@@ -1,28 +1,113 @@
 [
   {
     "num": 1,
-    "team1Name": "ريال أوفييدو",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/2478.png",
-    "team2Name": "إسبانيول",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/119.png",
-    "startTime": 1760727600,
-    "league": "الدوري الإسباني",
-    "channel": "beIN SPORTS 3",
-    "commentator": "محمد بركات",
-    "servers": [
-      { "HD FAM": "http://het119a.4rouwanda-shop.store/live/645587700/index.m3u8" },
-      { "SD FAM": "http://het000.4rouwanda-shop.store/live/161988840/index.m3u8" },
-      { "LOW FAM": "http://het101a.4rouwanda-shop.store/live/551818447/index.m3u8" },
-      { "Ultra Server 1080p": "https://cdnfest.com/G3-1080p/video.m3u8" },
-      { "Ultra Server 900p": "https://cdnfest.com/G3-720p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "Ultra Server 576p": "https://cdnfest.com/G3-480p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "سيرفر 1": "http://135.125.109.73:9000/beinsport3_.m3u8" },
-      { "سيرفر 2": "https://js2.didou.space/29c30b88-b77a-46da-8f46-212ba02af5d7.m3u8" },
-      { "سيرفر 3": "https://js2.didou.space/d461442c-174d-413a-8f60-041e6dd4f9cc.m3u8" }
-    ]
+    "team1Name": "الشرطة",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/13729.png",
+    "team2Name": "الهلال",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/458.png",
+    "startTime": 1760702400,
+    "league": "دوري أبطال إفريقيا",
+    "channel": "غير محدد",
+    "commentator": "غير محدد",
+    "servers": []
   },
   {
     "num": 2,
+    "team1Name": "الشارقة",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/872.png",
+    "team2Name": "الظفرة",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/867.png",
+    "startTime": 1760706300,
+    "league": "الدوري الإماراتي",
+    "channel": "Dubai Sport 2",
+    "commentator": "عبدالحميد الجسمي",
+    "servers": [
+      { "Multi": "https://dmitwlvvll.cdn.mangomolo.com/dubaisportshd/smil:dubaisportshd.smil/index.m3u8" },
+      { "HD": "https://dmitwlvvll.cdn.mangomolo.com:443/dubaisportshd/smil:dubaisportshd.smil/chunklist_b1600000.m3u8" },
+      { "SD": "https://dmitwlvvll.cdn.mangomolo.com:443/dubaisportshd/smil:dubaisportshd.smil/chunklist_b1300000.m3u8" },
+      { "Low": "https://dmitwlvvll.cdn.mangomolo.com:443/dubaisportshd/smil:dubaisportshd.smil/chunklist_b300000.m3u8" }
+    ]
+  },
+  {
+    "num": 3,
+    "team1Name": "المنستيري",
+    "team1Logo": "https://media.api-sports.io/football/teams/992.png",
+    "team2Name": "شبيبة القبائل",
+    "team2Logo": "https://media.api-sports.io/football/teams/918.png",
+    "startTime": 1760709600,
+    "league": "دوري أبطال أفريقيا | الأدوار الإقصائية",
+    "channel": "غير محدد",
+    "commentator": "الوطنية 2",
+    "servers": [
+      {
+        "TN2": ""
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "team1Name": "الفيحاء",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1445.png",
+    "team2Name": "الاتحاد",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/175.png",
+    "startTime": 1760713500,
+    "league": "الدوري السعودي للمحترفين",
+    "channel": "Thamania 2",
+    "commentator": "مشاري القرني",
+    "servers": [
+      { "Multi | جودة تلقائية": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/5v6M8Vjif9k0EkG7XMMtx5U0JO5phjxlHxOjuiLG7SI3olEGyYtbqpXKm-7GQVqccKpIuabW6C7Q2xvra4hpiQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
+      { "Restream HD": "http://1789-181.123091763.it.com/live/595243_.m3u8" }
+    ]
+  },
+  {
+    "num": 5,
+    "team1Name": "الغرافة",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/970.png",
+    "team2Name": "السيلية",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1139.png",
+    "startTime": 1760718600,
+    "league": "دوري نجوم قطر",
+    "channel": "Al Kass 1",
+    "commentator": "غير محدد",
+    "servers": [
+      { "Multi": "https://liveakgr.alkassdigital.net/hls/live/2097037/Alkass1nutre/master.m3u8" },
+      { "FHD": "https://liveakgr.alkassdigital.net:443/hls/live/2097037/Alkass1nutre/master1080.m3u8" },
+      { "HD": "https://liveakgr.alkassdigital.net/hls/live/2097037/Alkass1nutre/master.m3u8" },
+      { "SD": "https://liveakgr.alkassdigital.net:443/hls/live/2097037/Alkass1nutre/master340.m3u8" }
+    ]
+  },
+  {
+    "num": 6,
+    "team1Name": "الأهلي",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/270.png",
+    "team2Name": "الشباب",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/180.png",
+    "startTime": 1760724000,
+    "league": "الدوري السعودي للمحترفين",
+    "channel": "Thamania 1",
+    "commentator": "عبدالله الحربي",
+    "servers": [
+      { "Multi | جودة تلقائية": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/bPLO7ia9ZDeYg0_xdzT1cpU-0zld58UUwf4YRf_oADnCceRdz1WOUWh1uy8yaDGqyGkrmcQ-DURr0RuoeBnwAw/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
+      { "Live | سيرفر خارجي": "http://1789-181.123091763.it.com/live/310421_.m3u8" },
+      { "Live | سيرفر خارجي 2": "https://m.dencreak.com/meta/18785.m3u8" }
+    ]
+  },
+  {
+    "num": 7,
+    "team1Name": "يونيون برلين",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/2110.png",
+    "team2Name": "بوروسيا مونشنغلادباخ",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/164.png",
+    "startTime": 1760725800,
+    "league": "الدوري الألماني",
+    "channel": "Mbc Action",
+    "commentator": "رياض الحمروني",
+    "servers": [
+      { "HD": "https://m3u.iranvids.com/mbc-action/output.m3u8" }
+    ]
+  },
+  {
+    "num": 8,
     "team1Name": "باريس",
     "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/237.png",
     "team2Name": "ستراسبورج",
@@ -49,94 +134,25 @@
     ]
   },
   {
-    "num": 3,
-    "team1Name": "يونيون برلين",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/2110.png",
-    "team2Name": "بوروسيا مونشنغلادباخ",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/164.png",
-    "startTime": 1760725800,
-    "league": "الدوري الألماني",
-    "channel": "Mbc Action",
-    "commentator": "رياض الحمروني",
+    "num": 9,
+    "team1Name": "ريال أوفييدو",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/2478.png",
+    "team2Name": "إسبانيول",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/119.png",
+    "startTime": 1760727600,
+    "league": "الدوري الإسباني",
+    "channel": "beIN SPORTS 3",
+    "commentator": "محمد بركات",
     "servers": [
-      { "HD": "https://m3u.iranvids.com/mbc-action/output.m3u8" }
-    ]
-  },
-  {
-    "num": 4,
-    "team1Name": "الأهلي",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/270.png",
-    "team2Name": "الشباب",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/180.png",
-    "startTime": 1760724000,
-    "league": "الدوري السعودي للمحترفين",
-    "channel": "Thamania 1",
-    "commentator": "عبدالله الحربي",
-    "servers": [
-      { "Multi | جودة تلقائية": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/bPLO7ia9ZDeYg0_xdzT1cpU-0zld58UUwf4YRf_oADnCceRdz1WOUWh1uy8yaDGqyGkrmcQ-DURr0RuoeBnwAw/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
-      { "Live | سيرفر خارجي": "http://1789-181.123091763.it.com/live/310421_.m3u8" },
-      { "Live | سيرفر خارجي 2": "https://m.dencreak.com/meta/18785.m3u8" }
-    ]
-  },
-  {
-    "num": 5,
-    "team1Name": "الفيحاء",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1445.png",
-    "team2Name": "الاتحاد",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/175.png",
-    "startTime": 1760713500,
-    "league": "الدوري السعودي للمحترفين",
-    "channel": "Thamania 2",
-    "commentator": "مشاري القرني",
-    "servers": [
-      { "Multi | جودة تلقائية": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/5v6M8Vjif9k0EkG7XMMtx5U0JO5phjxlHxOjuiLG7SI3olEGyYtbqpXKm-7GQVqccKpIuabW6C7Q2xvra4hpiQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
-      { "Restream HD": "http://1789-181.123091763.it.com/live/595243_.m3u8" }
-    ]
-  },
-  {
-    "num": 6,
-    "team1Name": "الشرطة",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/13729.png",
-    "team2Name": "الهلال",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/458.png",
-    "startTime": 1760702400,
-    "league": "دوري أبطال إفريقيا",
-    "channel": "غير محدد",
-    "commentator": "غير محدد",
-    "servers": []
-  },
-  {
-    "num": 7,
-    "team1Name": "الشارقة",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/872.png",
-    "team2Name": "الظفرة",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/867.png",
-    "startTime": 1760706300,
-    "league": "الدوري الإماراتي",
-    "channel": "Dubai Sport 2",
-    "commentator": "عبدالحميد الجسمي",
-    "servers": [
-      { "Multi": "https://dmitwlvvll.cdn.mangomolo.com/dubaisportshd/smil:dubaisportshd.smil/index.m3u8" },
-      { "HD": "https://dmitwlvvll.cdn.mangomolo.com:443/dubaisportshd/smil:dubaisportshd.smil/chunklist_b1600000.m3u8" },
-      { "SD": "https://dmitwlvvll.cdn.mangomolo.com:443/dubaisportshd/smil:dubaisportshd.smil/chunklist_b1300000.m3u8" },
-      { "Low": "https://dmitwlvvll.cdn.mangomolo.com:443/dubaisportshd/smil:dubaisportshd.smil/chunklist_b300000.m3u8" }
-    ]
-  },
-  {
-    "num": 8,
-    "team1Name": "الغرافة",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/970.png",
-    "team2Name": "السيلية",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1139.png",
-    "startTime": 1760718600,
-    "league": "دوري نجوم قطر",
-    "channel": "Al Kass 1",
-    "commentator": "غير محدد",
-    "servers": [
-      { "Multi": "https://liveakgr.alkassdigital.net/hls/live/2097037/Alkass1nutre/master.m3u8" },
-      { "FHD": "https://liveakgr.alkassdigital.net:443/hls/live/2097037/Alkass1nutre/master1080.m3u8" },
-      { "HD": "https://liveakgr.alkassdigital.net/hls/live/2097037/Alkass1nutre/master.m3u8" },
-      { "SD": "https://liveakgr.alkassdigital.net:443/hls/live/2097037/Alkass1nutre/master340.m3u8" }
+      { "HD FAM": "http://het119a.4rouwanda-shop.store/live/645587700/index.m3u8" },
+      { "SD FAM": "http://het000.4rouwanda-shop.store/live/161988840/index.m3u8" },
+      { "LOW FAM": "http://het101a.4rouwanda-shop.store/live/551818447/index.m3u8" },
+      { "Ultra Server 1080p": "https://cdnfest.com/G3-1080p/video.m3u8" },
+      { "Ultra Server 900p": "https://cdnfest.com/G3-720p/video.m3u8?token=2ZRvum5RxIweG3" },
+      { "Ultra Server 576p": "https://cdnfest.com/G3-480p/video.m3u8?token=2ZRvum5RxIweG3" },
+      { "سيرفر 1": "http://135.125.109.73:9000/beinsport3_.m3u8" },
+      { "سيرفر 2": "https://js2.didou.space/29c30b88-b77a-46da-8f46-212ba02af5d7.m3u8" },
+      { "سيرفر 3": "https://js2.didou.space/d461442c-174d-413a-8f60-041e6dd4f9cc.m3u8" }
     ]
   }
 ]
