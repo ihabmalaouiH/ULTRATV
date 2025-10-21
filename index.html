@@ -74,7 +74,7 @@
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         h1, h2, h3 { color: var(--dark-red); }
 
-        /* === تحسين: شاشة البداية (Preloader) === */
+        /* === شاشة البداية (Preloader) === */
         .preloader { 
             position: fixed; 
             top: 0; 
@@ -84,7 +84,7 @@
             background-color: var(--dark-red); 
             z-index: 9999; 
             display: flex; 
-            flex-direction: column; /* لوضع النص تحت الأيقونة */
+            flex-direction: column; 
             justify-content: center; 
             align-items: center; 
             transition: opacity 0.7s ease, visibility 0.7s ease; 
@@ -93,7 +93,7 @@
             font-size: 4rem; 
             color: white; 
             animation: spin 1.5s linear infinite; 
-            margin-bottom: 20px; /* مسافة بين الأيقونة والنص */
+            margin-bottom: 20px; 
         }
         .preloader span {
             color: white;
@@ -106,7 +106,7 @@
             visibility: hidden; 
         }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-        /* === نهاية تحسين Preloader === */
+        /* === نهاية Preloader === */
 
         .main-header { position: fixed; top: 0; right: 0; width: 100%; padding: 20px 40px; display: flex; justify-content: center; align-items: center; z-index: 1000; transition: background-color 0.3s ease; }
         .main-header.scrolled { background-color: var(--dark-red); box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
@@ -295,22 +295,22 @@
             margin: 0 auto;
             background-color: #fff;
             border: 1px solid rgba(135, 0, 0, 0.1);
-            border-radius: 10px;
+            border-radius: 10px; 
             box-shadow: 0 5px 20px rgba(135, 0, 0, 0.07);
-            overflow: hidden;
+            overflow: hidden; 
         }
         .versions-table {
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: collapse; 
         }
         .versions-table th, .versions-table td {
-            padding: 18px 15px;
-            border-bottom: 1px solid #eee;
+            padding: 18px 15px; 
+            border-bottom: 1px solid #eee; 
             text-align: center;
             vertical-align: middle;
         }
         .versions-table tr:last-child td {
-            border-bottom: none;
+            border-bottom: none; 
         }
         .versions-table thead {
             background-color: var(--dark-red);
@@ -320,7 +320,7 @@
             font-weight: 700;
             font-size: 1.1rem;
         }
-        .versions-table td:first-child {
+        .versions-table td:first-child { 
             font-weight: 700;
             color: var(--dark-text);
         }
@@ -334,13 +334,13 @@
         .status-pill {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
+            justify-content: center; 
             gap: 8px;
             font-weight: 700;
             font-size: 0.9rem;
             padding: 8px 14px;
             border-radius: 50px;
-            min-width: 130px;
+            min-width: 130px; 
         }
         .status-pill i {
             font-size: 1rem;
@@ -566,6 +566,7 @@
                 background: none; 
                 border: none; 
                 box-shadow: none; 
+                overflow: visible; 
             }
             .versions-table {
                 display: block; 
@@ -576,44 +577,36 @@
                 display: block;
                 width: 100% !important; 
                 text-align: right !important;
-                border: none; /* إزالة حدود الجدول الافتراضية */
+                border: none; 
             }
             .versions-table tr {
-                background-color: #fff; /* خلفية بيضاء لكل سطر (بطاقة) */
+                background-color: #fff; 
                 border: 1px solid rgba(135, 0, 0, 0.1);
                 border-radius: 10px;
                 box-shadow: 0 5px 15px rgba(135, 0, 0, 0.05);
                 margin-bottom: 15px;
-                padding: 15px; /* بادنج داخلي للبطاقة */
+                padding: 15px; 
             }
             .versions-table td {
-                padding: 10px 0; /* بادنج رأسي فقط للخلايا */
-                border-bottom: 1px solid #eee; /* خط بين معلومات البطاقة */
-                display: flex; /* لترتيب الحالة بشكل أفضل */
+                padding: 10px 0; 
+                border-bottom: 1px solid #eee; 
+                display: flex; 
                 justify-content: space-between;
                 align-items: center;
             }
             .versions-table td:last-child {
                 border-bottom: none;
             }
-            /* إضافة عناوين وهمية باستخدام ::before */
-            .versions-table td:nth-of-type(1)::before {
-                content: "الإصدار";
+            .versions-table td::before {
                 font-weight: 700;
                 color: var(--dark-red);
             }
-            .versions-table td:nth-of-type(2)::before {
-                content: "الاسم الرمزي";
-                font-weight: 700;
-                color: var(--dark-red);
-            }
-            .versions-table td:nth-of-type(3)::before {
-                content: "الحالة";
-                font-weight: 700;
-                color: var(--dark-red);
-            }
+            .versions-table td:nth-of-type(1)::before { content: "الإصدار"; }
+            .versions-table td:nth-of-type(2)::before { content: "الاسم الرمزي"; }
+            .versions-table td:nth-of-type(3)::before { content: "الحالة"; }
+
             .versions-table tfoot { display: none; } 
-            .versions-footer { display: block; } 
+            .versions-footer { display: block; } /* إظهار النص الخاص بالموبايل */
             .status-pill {
                 margin-right: auto; 
             }
@@ -627,6 +620,8 @@
         <i class="fas fa-futbol"></i>
         <span>ULTRA TV</span> 
     </div>
+
+
     <header class="main-header">
         <div class="nav-container">
             <a href="index.html" class="logo">ULTRA TV</a>
@@ -805,6 +800,7 @@
 
             </div>
         </section>
+        
         <section class="faq" id="faq">
             <div class="container">
                 <h2 class="hidden">الأسئلة الشائعة</h2>
@@ -902,12 +898,15 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const preloader = document.querySelector('.preloader');
-            window.addEventListener('load', () => {
-                setTimeout(() => {
-                    preloader.classList.add('hidden');
-                }, 500); // يمكنك زيادة الوقت قليلاً إذا أردت رؤية الشعار أطول
-            });
             
+            // --- تعديل كود Preloader (الحل الصحيح) ---
+            setTimeout(() => {
+                if (preloader) { 
+                     preloader.classList.add('hidden');
+                }
+            }, 800); // تأخير بسيط للسماح ببدء العرض
+            // --- نهاية تعديل Preloader ---
+
             const header = document.querySelector('.main-header');
             const hamburger = document.querySelector('.hamburger');
             const navLinks = document.querySelector('.nav-links');
@@ -1015,11 +1014,12 @@
                 });
             });
 
+            // --- الكود الخاص بنسخ النص (المصحح) ---
             const copyBtn = document.getElementById('copyBtn');
             const appCode = document.getElementById('appCode');
             const copyFeedback = document.getElementById('copyFeedback');
-            if (copyBtn) {
-                copyBtn.addEventListener('click', () => {
+            if (copyBtn) { // بداية الشرط
+                copyBtn.addEventListener('click', () => { // بداية المستمع
                     navigator.clipboard.writeText(appCode.innerText).then(() => {
                         copyFeedback.classList.add('visible');
                         setTimeout(() => {
@@ -1027,10 +1027,12 @@
                         }, 2000);
                     }).catch(err => {
                         console.error('Failed to copy: ', err);
-                    });
-                }
-            }
-        });
+                    }); // نهاية .catch
+                }); // نهاية المستمع addEventListener
+            } // <-- المكان الصحيح لإغلاق الشرط if
+            // --- نهاية كود نسخ النص ---
+
+        }); // نهاية DOMContentLoaded
     </script>
 </body>
 </html>
