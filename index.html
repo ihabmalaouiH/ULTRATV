@@ -37,7 +37,7 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
+        /* html { scroll-behavior: smooth; } */
         body { 
             font-family: 'Cairo', sans-serif; 
             background-color: var(--main-bg); 
@@ -76,35 +76,13 @@
 
         /* === شاشة البداية (Preloader) === */
         .preloader { 
-            position: fixed; 
-            top: 0; 
-            left: 0; 
-            width: 100%; 
-            height: 100%; 
-            background-color: var(--dark-red); 
-            z-index: 9999; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center; 
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--dark-red); z-index: 9999; 
+            display: flex; flex-direction: column; justify-content: center; align-items: center; 
             transition: opacity 0.7s ease, visibility 0.7s ease; 
         }
-        .preloader i { 
-            font-size: 4rem; 
-            color: white; 
-            animation: spin 1.5s linear infinite; 
-            margin-bottom: 20px; 
-        }
-        .preloader span {
-            color: white;
-            font-size: 1.8rem;
-            font-weight: 700;
-            opacity: 0.8;
-        }
-        .preloader.hidden { 
-            opacity: 0; 
-            visibility: hidden; 
-        }
+        .preloader i { font-size: 4rem; color: white; animation: spin 1.5s linear infinite; margin-bottom: 20px; }
+        .preloader span { color: white; font-size: 1.8rem; font-weight: 700; opacity: 0.8; }
+        .preloader.hidden { opacity: 0; visibility: hidden; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
         /* === نهاية Preloader === */
 
@@ -115,7 +93,7 @@
         .nav-container { width: 100%; display: flex; justify-content: center; align-items: center; position: relative; }
         
         .nav-links { display: flex; list-style: none; gap: 30px; }
-        .nav-links a { color: var(--text-color); text-decoration: none; font-weight: 700; transition: color 0.3s; padding: 5px 0; border-bottom: 2px solid transparent; }
+        .nav-links a { color: var(--text-color); text-decoration: none; font-weight: 700; transition: color 0.3s; padding: 5px 0; border-bottom: 2px solid transparent; cursor: pointer; }
         .nav-links a:hover { color: var(--btn-border); }
         .nav-links a.nav-active { color: var(--btn-border); border-bottom-color: var(--btn-border); }
         
@@ -128,369 +106,117 @@
         .hero { 
             height: 100vh; 
             background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1579952363873-27f3bade9f55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG9OTby1wYWdlfHx8fGVufDB8fHx8fA%D%3D%3D&auto=format&fit=crop&w=1935&q=80'); 
-            background-size: cover; 
-            background-position: center; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center; 
-            text-align: center; 
-            color: var(--text-color); 
-            padding: 20px; 
-            position: relative;
-            z-index: 2;
+            background-size: cover; background-position: center; 
+            display: flex; flex-direction: column; justify-content: center; align-items: center; 
+            text-align: center; color: var(--text-color); padding: 20px; 
+            position: relative; z-index: 2;
         }
         .hero h1 { font-size: 4.5rem; font-weight: 900; color: var(--text-color); margin-bottom: 20px; }
         .hero p { font-size: 1.5rem; margin-bottom: 40px; max-width: 600px; }
         .cta-button { background-color: var(--btn-bg); color: var(--btn-text); border: 2px solid var(--btn-border); padding: 15px 40px; font-size: 1.2rem; font-weight: 700; text-decoration: none; border-radius: 50px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 0 20px rgba(250, 162, 162, 0.5); display: inline-flex; align-items: center; justify-content: center; gap: 10px; }
         .cta-button:hover { background-color: var(--btn-text); color: var(--btn-bg); transform: translateY(-5px) scale(1.05); box-shadow: 0 8px 25px rgba(0,0,0,0.3); }
 
-        section { 
-            scroll-margin-top: 80px; 
-            position: relative;
-            z-index: 2;
-        }
+        section { position: relative; z-index: 2; }
         
         .features, .screenshots, .installation-steps, .countdown, .versions, .faq, .downloader-code, .download-section { 
-            padding: 100px 0; 
-            text-align: center; 
+            padding: 100px 0; text-align: center; 
         }
         
         .features h2, .screenshots h2, .installation-steps h2, .countdown h2, .versions h2, .faq h2, .downloader-code h2, .download-section h2 { 
-            font-size: 2.8rem; 
-            margin-bottom: 60px; 
+            font-size: 2.8rem; margin-bottom: 60px; 
         }
 
         /* --- قسم المميزات --- */
-        .features-grid {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        .feature-item {
-            background-color: #fff;
-            border: 1px solid rgba(135, 0, 0, 0.1);
-            border-radius: 15px;
-            padding: 30px;
-            max-width: 280px;
-            box-shadow: 0 8px 25px rgba(135, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .feature-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(135, 0, 0, 0.15);
-        }
-        .feature-icon {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            background-color: rgba(135, 0, 0, 0.08);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 25px auto;
-        }
-        .feature-item i {
-            font-size: 2.5rem;
-            color: var(--dark-red);
-            margin-bottom: 0;
-        }
-        .feature-item h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
+        .features-grid { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+        .feature-item { background-color: #fff; border: 1px solid rgba(135, 0, 0, 0.1); border-radius: 15px; padding: 30px; max-width: 280px; box-shadow: 0 8px 25px rgba(135, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .feature-item:hover { transform: translateY(-10px); box-shadow: 0 15px 35px rgba(135, 0, 0, 0.15); }
+        .feature-icon { width: 70px; height: 70px; border-radius: 50%; background-color: rgba(135, 0, 0, 0.08); display: flex; align-items: center; justify-content: center; margin: 0 auto 25px auto; }
+        .feature-item i { font-size: 2.5rem; color: var(--dark-red); margin-bottom: 0; }
+        .feature-item h3 { font-size: 1.5rem; margin-bottom: 10px; }
         
         /* --- العد التنازلي --- */
         .countdown h2 { margin-bottom: 40px; }
-        .countdown-timer { 
-            display: flex; 
-            justify-content: center; 
-            gap: 25px; 
-            flex-wrap: wrap; 
-        }
-        .timer-box { 
-            background: linear-gradient(145deg, #ffffff, #fff5f5);
-            padding: 25px; 
-            border-radius: 15px; 
-            box-shadow: 0 8px 25px rgba(135, 0, 0, 0.1);
-            min-width: 130px; 
-            min-height: 130px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border: 1px solid rgba(135, 0, 0, 0.1);
-        }
-        .timer-box .number { 
-            font-size: 3.5rem; 
-            font-weight: 900; 
-            color: var(--dark-red); 
-            line-height: 1;
-        }
-        .timer-box .label { 
-            font-size: 0.9rem; 
-            color: #666; 
-            margin-top: 8px; 
-            text-transform: uppercase;
-        }
-        #seconds-box {
-            animation: pulse 2s infinite ease-in-out;
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); box-shadow: 0 8px 25px rgba(135, 0, 0, 0.1); }
-            50% { transform: scale(1.03); box-shadow: 0 12px 30px rgba(135, 0, 0, 0.15); }
-            100% { transform: scale(1); box-shadow: 0 8px 25px rgba(135, 0, 0, 0.1); }
-        }
+        .countdown-timer { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; }
+        .timer-box { background: linear-gradient(145deg, #ffffff, #fff5f5); padding: 25px; border-radius: 15px; box-shadow: 0 8px 25px rgba(135, 0, 0, 0.1); min-width: 130px; min-height: 130px; display: flex; flex-direction: column; justify-content: center; border: 1px solid rgba(135, 0, 0, 0.1); }
+        .timer-box .number { font-size: 3.5rem; font-weight: 900; color: var(--dark-red); line-height: 1; }
+        .timer-box .label { font-size: 0.9rem; color: #666; margin-top: 8px; text-transform: uppercase; }
+        #seconds-box { animation: pulse 2s infinite ease-in-out; }
+        @keyframes pulse { 0% { transform: scale(1); box-shadow: 0 8px 25px rgba(135, 0, 0, 0.1); } 50% { transform: scale(1.03); box-shadow: 0 12px 30px rgba(135, 0, 0, 0.15); } 100% { transform: scale(1); box-shadow: 0 8px 25px rgba(135, 0, 0, 0.1); } }
 
         /* --- قسم لقطات التطبيق --- */
-        .screenshots {
-            overflow: hidden;
-        }
-        .screenshots-grid {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0;
-            flex-wrap: wrap;
-            padding: 20px 0;
-        }
-        .screenshot-wrapper {
-            transition: transform 0.3s ease, z-index 0.3s ease;
-            z-index: 1;
-        }
-        .screenshot-img {
-            height: 500px;
-            border-radius: 25px;
-            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
-            transition: transform 0.3s ease;
-            border: 4px solid #fff;
-        }
-        
+        .screenshots { overflow: hidden; }
+        .screenshots-grid { display: flex; justify-content: center; align-items: center; gap: 0; flex-wrap: wrap; padding: 20px 0; }
+        .screenshot-wrapper { transition: transform 0.3s ease, z-index 0.3s ease; z-index: 1; }
+        .screenshot-img { height: 500px; border-radius: 25px; box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease; border: 4px solid #fff; }
         .screenshot-wrapper:nth-child(1) { transform: rotate(-5deg); }
-        .screenshot-wrapper:nth-child(2) {
-            transform: rotate(2deg) scale(1.05);
-            z-index: 2;
-            margin-inline: -40px;
-        }
+        .screenshot-wrapper:nth-child(2) { transform: rotate(2deg) scale(1.05); z-index: 2; margin-inline: -40px; }
         .screenshot-wrapper:nth-child(3) { transform: rotate(4deg); }
-        .screenshot-wrapper:hover {
-            transform: scale(1.1) rotate(0deg) !important;
-            z-index: 3;
-        }
+        .screenshot-wrapper:hover { transform: scale(1.1) rotate(0deg) !important; z-index: 3; }
 
+        /* === قسم كود التحميل المباشر === */
+        /* .downloader-code { background-color: #ffffff; <-- تم الحذف } */
+        .downloader-code { padding: 80px 0; }
+        .downloader-code h2 { margin-bottom: 20px; }
+        .downloader-code > .container > p { font-size: 1.1rem; margin-bottom: 40px; max-width: 600px; margin-inline: auto; color: #555; }
+        .code-display-box { background-color: #ffffff; /* تغيير الخلفية هنا لتكون بيضاء */ border: 1px solid var(--btn-border); border-radius: 15px; padding: 30px 40px; max-width: 500px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 5px 20px rgba(135, 0, 0, 0.07); /* تعديل الظل */ position: relative; }
+        .code-icon { font-size: 2rem; color: var(--dark-red); margin-left: 20px; }
+        .code-text { font-size: 2.5rem; font-weight: 700; color: var(--dark-red); letter-spacing: 5px; flex-grow: 1; text-align: center; }
+        .copy-btn-code { background: none; border: none; font-size: 1.8rem; cursor: pointer; color: var(--dark-red); padding: 10px; transition: color 0.3s ease; }
+        .copy-btn-code:hover { color: #c82333; }
+        .copy-feedback-code { position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: var(--dark-text); color: white; padding: 5px 10px; border-radius: 5px; opacity: 0; transition: opacity 0.3s; font-size: 0.9rem; white-space: nowrap; }
+        .copy-feedback-code.visible { opacity: 1; }
+        /* === نهاية كود التحميل === */
 
-        .downloader-code p { font-size: 1.2rem; margin-bottom: 30px; }
-        .code-container { position: relative; display: inline-block; }
-        .code-box { background-color: white; border: 2px dashed var(--btn-border); border-radius: 10px; padding: 20px 40px; font-size: 2.5rem; font-weight: 700; color: var(--dark-red); letter-spacing: 5px; }
-        .copy-btn { position: absolute; top: 50%; right: -60px; transform: translateY(-50%); background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--dark-red); }
-        .copy-feedback { position: absolute; top: -40px; left: 50%; transform: translateX(-50%); background-color: var(--dark-text); color: white; padding: 5px 10px; border-radius: 5px; opacity: 0; transition: opacity 0.3s; }
-        .copy-feedback.visible { opacity: 1; }
+        /* === قسم كيفية التثبيت (APK) === */
+        .installation-steps ol { list-style: none; padding: 0; max-width: 700px; margin: 0 auto; counter-reset: steps-counter; }
+        .installation-steps li { background-color: #fff; border: 1px solid rgba(135, 0, 0, 0.1); border-radius: 10px; padding: 25px; margin-bottom: 20px; box-shadow: 0 5px 20px rgba(135, 0, 0, 0.07); text-align: right; font-size: 1.1rem; line-height: 1.7; position: relative; padding-right: 70px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .installation-steps li:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(135, 0, 0, 0.12); }
+        .installation-steps li::before { counter-increment: steps-counter; content: counter(steps-counter); position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background-color: var(--dark-red); color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.2rem; }
+        .step-content { display: flex; align-items: center; }
+        .step-content i { font-size: 1.5rem; margin-left: 15px; color: var(--dark-red); opacity: 0.8; width: 25px; text-align: center; }
+        /* === نهاية كيفية التثبيت === */
         
-        .installation-steps ol { display: inline-block; text-align: right; max-width: 600px; margin: 0 auto; }
-        .installation-steps li { font-size: 1.2rem; margin-bottom: 20px; line-height: 1.6; }
-        
-        /* === تصميم جدول الإصدارات (النسخة المحسنة) === */
-        .table-container {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: #fff;
-            border: 1px solid rgba(135, 0, 0, 0.1);
-            border-radius: 10px; 
-            box-shadow: 0 5px 20px rgba(135, 0, 0, 0.07);
-            overflow: hidden; 
-        }
-        .versions-table {
-            width: 100%;
-            border-collapse: collapse; 
-        }
-        .versions-table th, .versions-table td {
-            padding: 18px 15px; 
-            border-bottom: 1px solid #eee; 
-            text-align: center;
-            vertical-align: middle;
-        }
-        .versions-table tr:last-child td {
-            border-bottom: none; 
-        }
-        .versions-table thead {
-            background-color: var(--dark-red);
-            color: white;
-        }
-        .versions-table th {
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
-        .versions-table td:first-child { 
-            font-weight: 700;
-            color: var(--dark-text);
-        }
-        .versions-table tfoot {
-            font-weight: 700;
-            color: var(--dark-text);
-            background-color: #f9f9f9;
-            border-top: 2px solid #eee;
-        }
-
-        .status-pill {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center; 
-            gap: 8px;
-            font-weight: 700;
-            font-size: 0.9rem;
-            padding: 8px 14px;
-            border-radius: 50px;
-            min-width: 130px; 
-        }
-        .status-pill i {
-            font-size: 1rem;
-        }
-        .status-pill.status-full {
-            color: var(--supported-color);
-            background-color: rgba(40, 167, 69, 0.1);
-        }
-        .status-pill.status-limited {
-            color: #b98900;
-            background-color: rgba(255, 193, 7, 0.15);
-        }
-        .status-pill.status-unsupported {
-            color: var(--unsupported-color);
-            background-color: rgba(220, 53, 69, 0.1);
-        }
-        /* === نهاية تصميم الإصدارات === */
-
+        /* === تصميم جدول الإصدارات === */
+        .table-container { max-width: 900px; margin: 0 auto; background-color: #fff; border: 1px solid rgba(135, 0, 0, 0.1); border-radius: 10px; box-shadow: 0 5px 20px rgba(135, 0, 0, 0.07); overflow: hidden; }
+        .versions-table { width: 100%; border-collapse: collapse; }
+        .versions-table th, .versions-table td { padding: 18px 15px; border-bottom: 1px solid #eee; text-align: center; vertical-align: middle; }
+        .versions-table tr:last-child td { border-bottom: none; }
+        .versions-table thead { background-color: var(--dark-red); color: white; }
+        .versions-table th { font-weight: 700; font-size: 1.1rem; }
+        .versions-table td:first-child { font-weight: 700; color: var(--dark-text); }
+        .versions-table tfoot { font-weight: 700; color: var(--dark-text); background-color: #f9f9f9; border-top: 2px solid #eee; }
+        .status-pill { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; font-size: 0.9rem; padding: 8px 14px; border-radius: 50px; min-width: 130px; }
+        .status-pill i { font-size: 1rem; }
+        .status-pill.status-full { color: var(--supported-color); background-color: rgba(40, 167, 69, 0.1); }
+        .status-pill.status-limited { color: #b98900; background-color: rgba(255, 193, 7, 0.15); }
+        .status-pill.status-unsupported { color: var(--unsupported-color); background-color: rgba(220, 53, 69, 0.1); }
+        /* === نهاية الإصدارات === */
 
         /* === تصميم الأسئلة الشائعة (FAQ) === */
-        .faq-accordion { 
-            max-width: 800px; 
-            margin: 0 auto; 
-        }
-        
-        .faq-item {
-            background-color: #ffffff;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            box-shadow: 0 5px 20px rgba(135, 0, 0, 0.07);
-            border: 1px solid rgba(135, 0, 0, 0.1);
-            overflow: hidden;
-            transition: box-shadow 0.3s ease;
-        }
-        .faq-item:hover {
-            box-shadow: 0 8px 25px rgba(135, 0, 0, 0.12);
-        }
-
-        .faq-question { 
-            background: none; 
-            border: none; 
-            width: 100%; 
-            text-align: right; 
-            padding: 20px 25px;
-            font-family: 'Cairo', sans-serif; 
-            font-size: 1.2rem; 
-            font-weight: 700; 
-            color: var(--dark-red); 
-            cursor: pointer; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-        }
-        .faq-question i { 
-            transition: transform 0.3s ease; 
-            color: var(--dark-red);
-        }
-        .faq-question.active i { 
-            transform: rotate(180deg); 
-        }
-        
-        .faq-answer { 
-            max-height: 0; 
-            overflow: hidden; 
-            transition: max-height 0.3s ease-out, padding 0.3s ease-out; 
-            background-color: #fff; 
-            padding: 0 25px;
-            color: #444;
-        }
-        .faq-answer p { 
-            padding: 0;
-            text-align: right; 
-            line-height: 1.7; 
-        }
-        .faq-question.active + .faq-answer {
-            padding: 0 25px 20px 25px;
-        }
-        /* === نهاية تصميم FAQ === */
+        .faq-accordion { max-width: 800px; margin: 0 auto; }
+        .faq-item { background-color: #ffffff; border-radius: 10px; margin-bottom: 15px; box-shadow: 0 5px 20px rgba(135, 0, 0, 0.07); border: 1px solid rgba(135, 0, 0, 0.1); overflow: hidden; transition: box-shadow 0.3s ease; }
+        .faq-item:hover { box-shadow: 0 8px 25px rgba(135, 0, 0, 0.12); }
+        .faq-question { background: none; border: none; width: 100%; text-align: right; padding: 20px 25px; font-family: 'Cairo', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--dark-red); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-question i { transition: transform 0.3s ease; color: var(--dark-red); }
+        .faq-question.active i { transform: rotate(180deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out, padding 0.3s ease-out; background-color: #fff; padding: 0 25px; color: #444; }
+        .faq-answer p { padding: 0; text-align: right; line-height: 1.7; }
+        .faq-question.active + .faq-answer { padding: 0 25px 20px 25px; }
+        /* === نهاية FAQ === */
         
         /* === قسم التحميل المدمج === */
-        .download-section > .container > p {
-            font-size: 1.2rem; 
-            margin-bottom: 60px; 
-            max-width: 600px; 
-            margin-inline: auto; 
-            color: #555;
-        }
+        .download-section > .container > p { font-size: 1.2rem; margin-bottom: 60px; max-width: 600px; margin-inline: auto; color: #555; }
+        .download-box-unified { background-color: #ffffff; border: 1px solid var(--btn-border); border-radius: 20px; box-shadow: 0 10px 40px rgba(135, 0, 0, 0.1); max-width: 900px; margin: 0 auto; display: flex; overflow: hidden; }
+        .download-option { flex: 1; padding: 50px 40px; display: flex; flex-direction: column; align-items: center; }
+        .download-option i { font-size: 3rem; color: var(--dark-red); margin-bottom: 20px; }
+        .download-option h3 { font-size: 1.8rem; margin-bottom: 15px; }
+        .download-option p { font-size: 1rem; color: #555; line-height: 1.6; margin-bottom: 30px; flex-grow: 1; }
+        .download-option .cta-button { width: 100%; }
+        .divider { width: 1px; background-color: rgba(135, 0, 0, 0.15); align-self: stretch; }
+        /* === نهاية قسم التحميل === */
 
-        .download-box-unified {
-            background-color: #ffffff;
-            border: 1px solid var(--btn-border);
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(135, 0, 0, 0.1);
-            max-width: 900px;
-            margin: 0 auto;
-            display: flex;
-            overflow: hidden;
-        }
-
-        .download-option {
-            flex: 1;
-            padding: 50px 40px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .download-option i {
-            font-size: 3rem;
-            color: var(--dark-red);
-            margin-bottom: 20px;
-        }
-        .download-option h3 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-        }
-        .download-option p {
-            font-size: 1rem;
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            flex-grow: 1;
-        }
-        .download-option .cta-button {
-            width: 100%;
-        }
-        
-        .divider {
-            width: 1px;
-            background-color: rgba(135, 0, 0, 0.15);
-            align-self: stretch;
-        }
-        /* === نهاية قسم التحميل المدمج === */
-
-
-        .main-footer { 
-            background-image: linear-gradient(to top, #6e0000, var(--dark-red)); 
-            color: var(--text-color); 
-            text-align: center; 
-            padding: 40px 20px;
-            position: relative;
-            z-index: 2;
-        }
-        .footer-links { 
-            margin-top: 15px;
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            gap: 20px; 
-            flex-wrap: wrap; 
-        }
+        .main-footer { background-image: linear-gradient(to top, #6e0000, var(--dark-red)); color: var(--text-color); text-align: center; padding: 40px 20px; position: relative; z-index: 2; }
+        .footer-links { margin-top: 15px; display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; }
         .footer-links a { color: var(--btn-border); text-decoration: none; }
         .footer-links p { font-size: 0.9rem; margin-bottom: 0; }
 
@@ -508,7 +234,7 @@
         .cta-button:focus-visible,
         .nav-links a:focus-visible,
         .faq-question:focus-visible,
-        .copy-btn:focus-visible,
+        .copy-btn-code:focus-visible, 
         .back-to-top:focus-visible,
         .cookie-accept-btn:focus-visible,
         .hamburger:focus-visible {
@@ -533,83 +259,43 @@
             
             .screenshots-grid { gap: 30px; }
             .screenshot-img { height: 400px; }
-            .screenshot-wrapper:nth-child(2) {
-                margin-inline: 0;
-            }
-            .screenshot-wrapper:nth-child(1),
-            .screenshot-wrapper:nth-child(2),
-            .screenshot-wrapper:nth-child(3) {
-                transform: rotate(0deg);
-            }
-            .screenshot-wrapper:hover {
-                 transform: scale(1.05) !important;
-            }
+            .screenshot-wrapper:nth-child(2) { margin-inline: 0; }
+            .screenshot-wrapper:nth-child(1), .screenshot-wrapper:nth-child(2), .screenshot-wrapper:nth-child(3) { transform: rotate(0deg); }
+            .screenshot-wrapper:hover { transform: scale(1.05) !important; }
 
             .main-header { padding: 15px 20px; }
             .cookie-banner { flex-direction: column; text-align: center; gap: 15px; }
-            .copy-btn { right: -50px; }
             
-            .download-box-unified {
-                flex-direction: column;
-            }
-            .divider {
-                width: 80%;
-                height: 1px;
-                margin: 0 auto;
-            }
-            .download-option {
-                padding: 40px;
-            }
+            .download-box-unified { flex-direction: column; }
+            .divider { width: 80%; height: 1px; margin: 0 auto; }
+            .download-option { padding: 40px; }
+
+            /* كود التحميل المباشر (موبايل) */
+            .code-display-box { padding: 20px; flex-direction: column; gap: 15px; }
+            .code-icon { margin-left: 0; margin-bottom: 10px; }
+            .copy-btn-code { position: static; }
+            .copy-feedback-code { bottom: -30px; }
+
+            /* كيفية التثبيت (موبايل) */
+            .installation-steps li { padding-right: 60px; }
+            .installation-steps li::before { right: 15px; width: 30px; height: 30px; font-size: 1rem; }
+            .step-content i { font-size: 1.2rem; margin-left: 10px; }
 
             /* --- قسم الإصدارات (موبايل) --- */
-            .versions .table-container { 
-                background: none; 
-                border: none; 
-                box-shadow: none; 
-                overflow: visible; 
-            }
-            .versions-table {
-                display: block; 
-                width: 100%;
-            }
+            .versions .table-container { background: none; border: none; box-shadow: none; overflow: visible; }
+            .versions-table { display: block; width: 100%; }
             .versions-table thead { display: none; } 
-            .versions-table tbody, .versions-table tr, .versions-table td {
-                display: block;
-                width: 100% !important; 
-                text-align: right !important;
-                border: none; 
-            }
-            .versions-table tr {
-                background-color: #fff; 
-                border: 1px solid rgba(135, 0, 0, 0.1);
-                border-radius: 10px;
-                box-shadow: 0 5px 15px rgba(135, 0, 0, 0.05);
-                margin-bottom: 15px;
-                padding: 15px; 
-            }
-            .versions-table td {
-                padding: 10px 0; 
-                border-bottom: 1px solid #eee; 
-                display: flex; 
-                justify-content: space-between;
-                align-items: center;
-            }
-            .versions-table td:last-child {
-                border-bottom: none;
-            }
-            .versions-table td::before {
-                font-weight: 700;
-                color: var(--dark-red);
-            }
+            .versions-table tbody, .versions-table tr, .versions-table td { display: block; width: 100% !important; text-align: right !important; border: none; }
+            .versions-table tr { background-color: #fff; border: 1px solid rgba(135, 0, 0, 0.1); border-radius: 10px; box-shadow: 0 5px 15px rgba(135, 0, 0, 0.05); margin-bottom: 15px; padding: 15px; }
+            .versions-table td { padding: 10px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+            .versions-table td:last-child { border-bottom: none; }
+            .versions-table td::before { font-weight: 700; color: var(--dark-red); }
             .versions-table td:nth-of-type(1)::before { content: "الإصدار"; }
             .versions-table td:nth-of-type(2)::before { content: "الاسم الرمزي"; }
             .versions-table td:nth-of-type(3)::before { content: "الحالة"; }
-
             .versions-table tfoot { display: none; } 
-            .versions-footer { display: block; } /* إظهار النص الخاص بالموبايل */
-            .status-pill {
-                margin-right: auto; 
-            }
+            .versions-footer { display: block; } 
+            .status-pill { margin-right: auto; }
 
         }
     </style>
@@ -654,38 +340,10 @@
             <div class="container">
                 <h2 class="hidden">أهم المميزات</h2>
                 <div class="features-grid">
-                    
-                    <div class="feature-item hidden">
-                        <div class="feature-icon">
-                            <i class="fas fa-futbol"></i>
-                        </div>
-                        <h3>مباريات مباشرة</h3>
-                        <p>لا تفوّت أي مباراة. بث مباشر لجميع الدوريات والبطولات الكبرى.</p>
-                    </div>
-                    
-                    <div class="feature-item hidden">
-                        <div class="feature-icon">
-                            <i class="fas fa-tv"></i>
-                        </div>
-                        <h3>آلاف القنوات</h3>
-                        <p>مجموعة واسعة من القنوات الرياضية والترفيهية والإخبارية بين يديك.</p>
-                    </div>
-                    
-                    <div class="feature-item hidden">
-                        <div class="feature-icon">
-                            <i class="fas fa-signal"></i> </div>
-                        <h3>جودة عالية</h3>
-                        <p>استمتع بمشاهدة فائقة الوضوح HD وبدون تقطيع لتجربة لا مثيل لها.</p>
-                    </div>
-                    
-                    <div class="feature-item hidden">
-                        <div class="feature-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h3>سهل الاستخدام</h3>
-                        <p>واجهة عصرية وبسيطة تتيح لك الوصول إلى ما تريد بأسرع وقت ممكن.</p>
-                    </div>
-                    
+                    <div class="feature-item hidden"><div class="feature-icon"><i class="fas fa-futbol"></i></div><h3>مباريات مباشرة</h3><p>لا تفوّت أي مباراة. بث مباشر لجميع الدوريات والبطولات الكبرى.</p></div>
+                    <div class="feature-item hidden"><div class="feature-icon"><i class="fas fa-tv"></i></div><h3>آلاف القنوات</h3><p>مجموعة واسعة من القنوات الرياضية والترفيهية والإخبارية بين يديك.</p></div>
+                    <div class="feature-item hidden"><div class="feature-icon"><i class="fas fa-signal"></i></div><h3>جودة عالية</h3><p>استمتع بمشاهدة فائقة الوضوح HD وبدون تقطيع لتجربة لا مثيل لها.</p></div>
+                    <div class="feature-item hidden"><div class="feature-icon"><i class="fas fa-mobile-alt"></i></div><h3>سهل الاستخدام</h3><p>واجهة عصرية وبسيطة تتيح لك الوصول إلى ما تريد بأسرع وقت ممكن.</p></div>
                 </div>
             </div>
         </section>
@@ -706,98 +364,61 @@
             <div class="container">
                 <h2 class="hidden">لقطات من التطبيق</h2>
                 <div class="screenshots-grid hidden">
-                    <div class="screenshot-wrapper">
-                        <img loading="lazy" src="https://i.imgur.com/XvTl4jD.jpeg" alt="شاشة مباريات التطبيق" class="screenshot-img">
-                    </div>
-                    <div class="screenshot-wrapper">
-                        <img loading="lazy" src="https://i.imgur.com/aYNQlQR.jpeg" alt="قائمة قنوات التطبيق" class="screenshot-img">
-                    </div>
-                    <div class="screenshot-wrapper">
-                        <img loading="lazy" src="https://i.imgur.com/cy7uUU9.jpeg" alt="شاشة مشاهدة البث" class="screenshot-img">
-                    </div>
+                    <div class="screenshot-wrapper"><img loading="lazy" src="https://i.imgur.com/XvTl4jD.jpeg" alt="شاشة مباريات التطبيق" class="screenshot-img"></div>
+                    <div class="screenshot-wrapper"><img loading="lazy" src="https://i.imgur.com/aYNQlQR.jpeg" alt="قائمة قنوات التطبيق" class="screenshot-img"></div>
+                    <div class="screenshot-wrapper"><img loading="lazy" src="https://i.imgur.com/cy7uUU9.jpeg" alt="شاشة مشاهدة البث" class="screenshot-img"></div>
                 </div>
             </div>
         </section>
 
-
         <section class="installation-steps" id="installation">
-            <div class="container"> <h2 class="hidden">كيفية التثبيت (APK)</h2> <ol class="hidden"> <li>بعد تحميل الملف، اذهب إلى <strong>إعدادات</strong> هاتفك.</li> <li>ابحث عن قسم <strong>الأمان والخصوصية</strong>.</li> <li>ابحث عن خيار <strong>"تثبيت التطبيقات غير المعروفة"</strong> وفعّله.</li> <li>الآن، افتح الملف الذي قمت بتحميله واضغط على <strong>"تثبيت"</strong>.</li> </ol> </div>
+            <div class="container"> 
+                <h2 class="hidden">كيفية التثبيت (APK)</h2> 
+                <ol class="hidden"> 
+                    <li><div class="step-content"><i class="fas fa-cog"></i><span>بعد تحميل الملف، اذهب إلى <strong>إعدادات</strong> هاتفك.</span></div></li> 
+                    <li><div class="step-content"><i class="fas fa-shield-alt"></i><span>ابحث عن قسم <strong>الأمان والخصوصية</strong>.</span></div></li> 
+                    <li><div class="step-content"><i class="fas fa-user-lock"></i><span>ابحث عن خيار <strong>"تثبيت التطبيقات غير المعروفة"</strong> أو "مصادر غير معروفة" وفعّله لتطبيق المتصفح أو مدير الملفات الذي تستخدمه.</span></div></li> 
+                    <li><div class="step-content"><i class="fas fa-download"></i><span>الآن، افتح الملف الذي قمت بتحميله (عادةً في مجلد التنزيلات) واضغط على <strong>"تثبيت"</strong>.</span></div></li> 
+                </ol> 
+            </div>
         </section>
-        
         <section class="downloader-code" id="downloader-code">
             <div class="container">
                 <h2 class="hidden">كود التحميل المباشر</h2>
                 <p class="hidden">أدخل هذا الكود في تطبيق Downloader على جهاز التلفاز لتحميل التطبيق مباشرة.</p>
-                <div class="code-container hidden">
-                    <div class="code-box" id="appCode">1356248</div>
-                    <button class="copy-btn" id="copyBtn" aria-label="نسخ الكود"><i class="fas fa-copy"></i></button>
-                    <div class="copy-feedback" id="copyFeedback">تم النسخ!</div>
+                <div class="code-display-box hidden">
+                    <i class="fas fa-download code-icon"></i>
+                    <span class="code-text" id="appCode">1356248</span>
+                    <button class="copy-btn-code" id="copyBtn" aria-label="نسخ الكود"><i class="fas fa-copy"></i></button>
+                    <div class="copy-feedback-code" id="copyFeedback">تم النسخ!</div>
                 </div>
             </div>
         </section>
-
-        <section class="versions" id="versions">
+         <section class="versions" id="versions">
             <div class="container">
                 <h2 class="hidden">إصدارات أندرويد المدعومة</h2>
                 
                 <div class="table-container hidden">
                     <table class="versions-table">
                         <thead>
-                            <tr>
-                                <th>إصدار أندرويد</th>
-                                <th>الاسم الرمزي</th>
-                                <th>حالة الدعم</th>
-                            </tr>
+                            <tr><th>إصدار أندرويد</th><th>الاسم الرمزي</th><th>حالة الدعم</th></tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Android 15</td>
-                                <td>Vanilla Ice Cream</td>
-                                <td><span class="status-pill status-full"><i class="fas fa-check-circle"></i> مدعوم بالكامل</span></td>
-                            </tr>
-                            <tr>
-                                <td>Android 14</td>
-                                <td>Upside Down Cake</td>
-                                <td><span class="status-pill status-full"><i class="fas fa-check-circle"></i> مدعوم بالكامل</span></td>
-                            </tr>
-                            <tr>
-                                <td>Android 13</td>
-                                <td>Tiramisu</td>
-                                <td><span class="status-pill status-full"><i class="fas fa-check-circle"></i> مدعوم بالكامل</span></td>
-                            </tr>
-                            <tr>
-                                <td>Android 12</td>
-                                <td>Snow Cone</td>
-                                <td><span class="status-pill status-full"><i class="fas fa-check-circle"></i> مدعوم بالكامل</span></td>
-                            </tr>
-                            <tr>
-                                <td>Android 11</td>
-                                <td>Red Velvet Cake</td>
-                                <td><span class="status-pill status-full"><i class="fas fa-check-circle"></i> مدعوم</span></td>
-                            </tr>
-                            <tr>
-                                <td>Android 10</td>
-                                <td>Queen Cake</td>
-                                <td><span class="status-pill status-full"><i class="fas fa-check-circle"></i> مدعوم</span></td>
-                            </tr>
-                            <tr>
-                                <td>Android 9</td>
-                                <td>Pie</td>
-                                <td><span class="status-pill status-limited"><i class="fas fa-exclamation-triangle"></i> دعم محدود</span></td>
-                            </tr>
-                            <tr>
-                                <td>Android 8</td>
-                                <td>Oreo</td>
-                                <td><span class="status-pill status-unsupported"><i class="fas fa-times-circle"></i> غير مدعوم</span></td>
-                            </tr>
+                            <tr><td>Android 15</td><td>Vanilla Ice Cream</td><td><span class="status-pill status-full"><i class="fas fa-check-circle"></i> مدعوم بالكامل</span></td></tr>
+                            <tr><td>Android 14</td><td>Upside Down Cake</td><td><span class="status-pill status-full"><i class="fas fa-check-circle"></i> مدعوم بالكامل</span></td></tr>
+                            <tr><td>Android 13</td><td>Tiramisu</td><td><span class="status-pill status-full"><i class="fas fa-check-circle"></i> مدعوم بالكامل</span></td></tr>
+                            <tr><td>Android 12</td><td>Snow Cone</td><td><span class="status-pill status-full"><i class="fas fa-check-circle"></i> مدعوم بالكامل</span></td></tr>
+                            <tr><td>Android 11</td><td>Red Velvet Cake</td><td><span class="status-pill status-full"><i class="fas fa-check-circle"></i> مدعوم</span></td></tr>
+                            <tr><td>Android 10</td><td>Queen Cake</td><td><span class="status-pill status-full"><i class="fas fa-check-circle"></i> مدعوم</span></td></tr>
+                            <tr><td>Android 9</td><td>Pie</td><td><span class="status-pill status-limited"><i class="fas fa-exclamation-triangle"></i> دعم محدود</span></td></tr>
+                            <tr><td>Android 8</td><td>Oreo</td><td><span class="status-pill status-unsupported"><i class="fas fa-times-circle"></i> غير مدعوم</span></td></tr>
                         </tbody>
                         <tfoot>
                             <tr><td colspan="3">الحد الأدنى الموصى به: Android 10 أو أحدث للحصول على أفضل تجربة.</td></tr>
                         </tfoot>
                     </table>
                 </div>
-                 <p class="versions-footer hidden" style="display: none;">الحد الأدنى الموصى به: Android 10 أو أحدث للحصول على أفضل تجربة.</p>
-
+                <p class="versions-footer hidden" style="display: none;">الحد الأدنى الموصى به: Android 10 أو أحدث للحصول على أفضل تجربة.</p>
             </div>
         </section>
         
@@ -807,43 +428,20 @@
                 <div class="faq-accordion hidden">
                     
                     <div class="faq-item">
-                        <button class="faq-question" id="faq-q-1" aria-expanded="false" aria-controls="faq-a-1">
-                            <span>هل تطبيق ULTRA TV مجاني بالكامل؟</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="faq-answer" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
-                            <p>نعم، التطبيق مجاني تمامًا ويهدف لتوفير الوصول إلى المحتوى الرياضي والترفيهي للجميع.</p>
-                        </div>
+                        <button class="faq-question" id="faq-q-1" aria-expanded="false" aria-controls="faq-a-1"><span>هل تطبيق ULTRA TV مجاني بالكامل؟</span><i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer" id="faq-a-1" role="region" aria-labelledby="faq-q-1"><p>نعم، التطبيق مجاني تمامًا ويهدف لتوفير الوصول إلى المحتوى الرياضي والترفيهي للجميع.</p></div>
                     </div>
-                    
                     <div class="faq-item">
-                        <button class="faq-question" id="faq-q-2" aria-expanded="false" aria-controls="faq-a-2">
-                            <span>هل التطبيق آمن للتثبيت على جهازي؟</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="faq-answer" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
-                            <p>نعم، نحن نضمن أن ملف APK الخاص بنا خالٍ من أي برمجيات ضارة. نوصي دائمًا بالتحميل من موقعنا الرسمي فقط لضمان الأمان.</p>
-                        </div>
+                        <button class="faq-question" id="faq-q-2" aria-expanded="false" aria-controls="faq-a-2"><span>هل التطبيق آمن للتثبيت على جهازي؟</span><i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer" id="faq-a-2" role="region" aria-labelledby="faq-q-2"><p>نعم، نحن نضمن أن ملف APK الخاص بنا خالٍ من أي برمجيات ضارة. نوصي دائمًا بالتحميل من موقعنا الرسمي فقط لضمان الأمان.</p></div>
                     </div>
-                    
                     <div class="faq-item">
-                        <button class="faq-question" id="faq-q-3" aria-expanded="false" aria-controls="faq-a-3">
-                            <span>لماذا التطبيق غير موجود على متجر Google Play؟</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="faq-answer" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
-                            <p>بسبب طبيعة المحتوى الذي يقدمه التطبيق، فإن سياسات متجر Google Play لا تسمح بنشره. لذلك، يتم توفيره كملف APK للتحميل المباشر.</p>
-                        </div>
+                        <button class="faq-question" id="faq-q-3" aria-expanded="false" aria-controls="faq-a-3"><span>لماذا التطبيق غير موجود على متجر Google Play؟</span><i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer" id="faq-a-3" role="region" aria-labelledby="faq-q-3"><p>بسبب طبيعة المحتوى الذي يقدمه التطبيق، فإن سياسات متجر Google Play لا تسمح بنشره. لذلك، يتم توفيره كملف APK للتحميل المباشر.</p></div>
                     </div>
-                    
                     <div class="faq-item">
-                        <button class="faq-question" id="faq-q-4" aria-expanded="false" aria-controls="faq-a-4">
-                            <span>ماذا أفعل إذا واجهت مشكلة في التثبيت أو التشغيل؟</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="faq-answer" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
-                            <p>أولاً، تأكد من أنك تتبع خطوات التثبيت المذكورة في الأعلى، خاصة تفعيل خيار "تثبيت التطبيقات غير المعروفة". إذا استمرت المشكلة، تأكد من أن إصدار أندرويد لديك مدعوم (Android 9 أو أحدث).</p>
-                        </div>
+                        <button class="faq-question" id="faq-q-4" aria-expanded="false" aria-controls="faq-a-4"><span>ماذا أفعل إذا واجهت مشكلة في التثبيت أو التشغيل؟</span><i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer" id="faq-a-4" role="region" aria-labelledby="faq-q-4"><p>أولاً، تأكد من أنك تتبع خطوات التثبيت المذكورة في الأعلى، خاصة تفعيل خيار "تثبيت التطبيقات غير المعروفة". إذا استمرت المشكلة، تأكد من أن إصدار أندرويد لديك مدعوم (Android 9 أو أحدث).</p></div>
                     </div>
 
                 </div>
@@ -858,26 +456,12 @@
             <p class="hidden">قم بتحميل تطبيق ULTRA TV الآن واستمتع بعالم من الترفيه.</p>
             
             <div class="download-box-unified hidden">
-                <div class="download-option">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>للهاتف (APK)</h3>
-                    <p>نسخة مصممة للهواتف والأجهزة اللوحية التي تعمل بنظام أندرويد.</p>
-                    <a href="https://ultrav.me/ultraTV_1.0x.apk" class="cta-button">تحميل الآن</a>
-                </div>
-                
+                <div class="download-option"><i class="fas fa-mobile-alt"></i><h3>للهاتف (APK)</h3><p>نسخة مصممة للهواتف والأجهزة اللوحية التي تعمل بنظام أندرويد.</p><a href="https://ultrav.me/ultraTV_1.0x.apk" class="cta-button">تحميل الآن</a></div>
                 <div class="divider"></div>
-
-                <div class="download-option">
-                    <i class="fas fa-tv"></i>
-                    <h3>للتلفاز (APK)</h3>
-                    <p>نسخة خاصة مصممة للشاشات الكبيرة وأجهزة Android TV.</p>
-                    <a href="https://ultrav.me/ultraTV_1.0x.apk" class="cta-button">تحميل الآن</a>
-                </div>
+                <div class="download-option"><i class="fas fa-tv"></i><h3>للتلفاز (APK)</h3><p>نسخة خاصة مصممة للشاشات الكبيرة وأجهزة Android TV.</p><a href="https://ultrav.me/ultraTV_1.0x.apk" class="cta-button">تحميل الآن</a></div>
             </div>
-
         </div>
     </section>
-
 
     <footer class="main-footer">
         <div class="container">
@@ -898,14 +482,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const preloader = document.querySelector('.preloader');
-            
-            // --- تعديل كود Preloader (الحل الصحيح) ---
-            setTimeout(() => {
-                if (preloader) { 
-                     preloader.classList.add('hidden');
-                }
-            }, 800); // تأخير بسيط للسماح ببدء العرض
-            // --- نهاية تعديل Preloader ---
+            setTimeout(() => { if (preloader) { preloader.classList.add('hidden'); } }, 800); 
 
             const header = document.querySelector('.main-header');
             const hamburger = document.querySelector('.hamburger');
@@ -931,13 +508,24 @@
                 navLinks.classList.toggle('active');
                 hamburger.classList.toggle('active');
             });
-            document.querySelectorAll('.nav-links a').forEach(link => { 
-                link.addEventListener('click', () => { 
+
+            // --- التمرير السلس بدون تغيير الرابط ---
+            document.querySelectorAll('a[href^="index.html#"], a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
                     if (navLinks.classList.contains('active')) {
                         navLinks.classList.remove('active');
-                        hamburger.classList.remove('active');
+                        if (hamburger) { hamburger.classList.remove('active'); }
                     }
-                }); 
+                    const targetId = this.getAttribute('href').split('#')[1];
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        const headerOffset = header ? header.offsetHeight : 80; 
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+                    }
+                });
             });
 
             window.addEventListener('scroll', () => {
@@ -945,26 +533,24 @@
                 else { backToTopButton.classList.remove('visible'); }
             });
 
+            // كود تلوين الرابط النشط في القائمة
             const sectionsWithId = document.querySelectorAll('main section[id], .download-section[id]');
             const navScrollObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
-                    const id = entry.target.getAttribute('id');
-                    const navLink = document.querySelector(`nav .nav-links a[href="index.html#${id}"]`);
-                    
-                    if (entry.isIntersecting && navLink) {
-                        navLi.forEach(a => a.classList.remove('nav-active'));
-                        navLink.classList.add('nav-active');
+                    if(entry.isIntersecting){
+                         const id = entry.target.getAttribute('id');
+                         const navLink = document.querySelector(`nav .nav-links a[href="index.html#${id}"]`);
+                         if (navLink) {
+                             navLi.forEach(a => a.classList.remove('nav-active'));
+                             navLink.classList.add('nav-active');
+                         }
                     }
                 });
-            }, { 
-                rootMargin: '-100px 0px -70% 0px'
-            });
+            }, { rootMargin: '-100px 0px -70% 0px' });
             sectionsWithId.forEach(section => navScrollObserver.observe(section));
             
             setTimeout(() => {
-                if (!localStorage.getItem('cookieAccepted')) {
-                    cookieBanner.classList.add('visible');
-                }
+                if (!localStorage.getItem('cookieAccepted')) { cookieBanner.classList.add('visible'); }
             }, 2000);
             
             acceptCookieBtn.addEventListener('click', () => {
@@ -994,9 +580,7 @@
                 if (distance < 0) {
                     clearInterval(x);
                     const countdownContainer = document.getElementById("countdown");
-                    if (countdownContainer) {
-                         countdownContainer.innerHTML = "<div class='container'><h2>لقد بدأ الحدث!</h2></div>";
-                    }
+                    if (countdownContainer) { countdownContainer.innerHTML = "<div class='container'><h2>لقد بدأ الحدث!</h2></div>"; }
                 }
             }, 1000);
 
@@ -1005,31 +589,23 @@
                     const answer = question.nextElementSibling;
                     const isActive = question.classList.toggle('active');
                     question.setAttribute('aria-expanded', isActive);
-                    
-                    if (isActive) {
-                        answer.style.maxHeight = answer.scrollHeight + 'px';
-                    } else {
-                        answer.style.maxHeight = '0';
-                    }
+                    if (isActive) { answer.style.maxHeight = answer.scrollHeight + 'px'; } 
+                    else { answer.style.maxHeight = '0'; }
                 });
             });
 
-            // --- الكود الخاص بنسخ النص (المصحح) ---
-            const copyBtn = document.getElementById('copyBtn');
+            // --- كود نسخ النص (الجديد والمحسن) ---
+            const copyBtn = document.getElementById('copyBtn'); 
             const appCode = document.getElementById('appCode');
-            const copyFeedback = document.getElementById('copyFeedback');
-            if (copyBtn) { // بداية الشرط
-                copyBtn.addEventListener('click', () => { // بداية المستمع
+            const copyFeedback = document.getElementById('copyFeedback'); 
+            if (copyBtn && appCode && copyFeedback) { 
+                copyBtn.addEventListener('click', () => { 
                     navigator.clipboard.writeText(appCode.innerText).then(() => {
                         copyFeedback.classList.add('visible');
-                        setTimeout(() => {
-                            copyFeedback.classList.remove('visible');
-                        }, 2000);
-                    }).catch(err => {
-                        console.error('Failed to copy: ', err);
-                    }); // نهاية .catch
-                }); // نهاية المستمع addEventListener
-            } // <-- المكان الصحيح لإغلاق الشرط if
+                        setTimeout(() => { copyFeedback.classList.remove('visible'); }, 2000);
+                    }).catch(err => { console.error('Failed to copy: ', err); }); 
+                }); 
+            } 
             // --- نهاية كود نسخ النص ---
 
         }); // نهاية DOMContentLoaded
