@@ -1,26 +1,6 @@
 [
   {
     "num": 1,
-    "team1Name": "جوا",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/12855.png",
-    "team2Name": "النصر",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/177.png",
-    "startTime": 1761140700,
-    "league": "دوري أبطال آسيا 2",
-    "channel": "beIN SPORTS 1",
-    "commentator": "عبد الله الغامدي",
-    "servers": [
-      { "متعدد | Multi 50FPS": "https://tigan.live/playlist.m3u8" },
-      { "Ultra Server 1080p": "https://cdnfest.com/G1-1080p/video.m3u8" },
-      { "Ultra Server 900p": "https://cdnfest.com/G1-720p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "Ultra Server 576p": "https://cdnfest.com/G1-480p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "MULTI": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/EFCJj9z_WPtobKImcvt5wG2_NKurIOHCi13Pvd5iUE4ylcWcna-dvTyBR3WU8qtV9o22dCtW83F1TBPxJ7mXFg/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
-      { "1080": "http://het000.4rouwanda-shop.store/live/918454578001/index.m3u8" },
-      { "MULTI 2": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/EtHwt_IhGU1UMa-EZObDQRc8Y8jJWJaSGdqzA3dfxjWcdAUlNAHHGzvp5lJtFUvc0TjtlLo1mKkK7B0ETl277A/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" }
-    ]
-  },
-  {
-    "num": 2,
     "team1Name": "الأهلي",
     "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1.png",
     "team2Name": "الاتحاد السكندري",
@@ -30,11 +10,13 @@
     "channel": "ON SPORT 1",
     "commentator": "بلال علام",
     "servers": [
-      { "MULTI": "https://fastly.live.brightcove.com/6378118291112/eu-central-1/6416013238001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiYWwyM3BiLmVncmVzcy5haGc3NmwiLCJhY2NvdW50X2lkIjoiNjQxNjAxMzIzODAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2NDE2MDEzMjM4MDAxIl0sImp0aSI6IjYzNzgxMTgyOTExMTIifQ._ZZxeGOq44Zp8M-HjzE7KWd6l8cI8PccXALwz1IcZ18/playlist-hls.m3u8" }
+      {
+        "MULTI": "https://fastly.live.brightcove.com/6378118291112/eu-central-1/6416013238001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiYWwyM3BiLmVncmVzcy5haGc3NmwiLCJhY2NvdW50X2lkIjoiNjQxNjAxMzIzODAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2NDE2MDEzMjM4MDAxIl0sImp0aSI6IjYzNzgxMTgyOTExMTIifQ._ZZxeGOq44Zp8M-HjzE7KWd6l8cI8PccXALwz1IcZ18/playlist-hls.m3u8"
+      }
     ]
   },
   {
-    "num": 3,
+    "num": 2,
     "team1Name": "جالاطا سراي",
     "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/217.png",
     "team2Name": "بودو/جليمت",
@@ -50,7 +32,7 @@
     ]
   },
   {
-    "num": 4,
+    "num": 3,
     "team1Name": "أتلتيك بلباو",
     "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/116.png",
     "team2Name": "كاراباج أجدام",
@@ -66,7 +48,7 @@
     ]
   },
   {
-    "num": 5,
+    "num": 4,
     "team1Name": "المصري",
     "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/8.png",
     "team2Name": "سموحة",
@@ -82,7 +64,7 @@
     ]
   },
   {
-    "num": 6,
+    "num": 5,
     "team1Name": "بايرن ميونيخ",
     "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/153.png",
     "team2Name": "كلوب بروج",
@@ -98,7 +80,7 @@
     ]
   },
   {
-    "num": 7,
+    "num": 6,
     "team1Name": "تشيلسي",
     "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/89.png",
     "team2Name": "أياكس",
@@ -114,7 +96,7 @@
     ]
   },
   {
-    "num": 8,
+    "num": 7,
     "team1Name": "آينتراخت فرانكفورت",
     "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/196.png",
     "team2Name": "ليفربول",
@@ -130,7 +112,7 @@
     ]
   },
   {
-    "num": 9,
+    "num": 8,
     "team1Name": "موناكو",
     "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/210.png",
     "team2Name": "توتنام هوتسبر",
@@ -146,7 +128,7 @@
     ]
   },
   {
-    "num": 10,
+    "num": 9,
     "team1Name": "ريال مدريد",
     "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/110.png",
     "team2Name": "يوفنتوس",
@@ -156,16 +138,16 @@
     "channel": "beIN SPORTS 1",
     "commentator": "عصام الشوالي",
     "servers": [
-      { "TOD": "http://vipmax-tv.net:8080//live/6864kns2610/ccfGbtPyVk/677595.m3u8" },
       { "الفجر FHD": "https://cdnfest.com/ftv1-1080p-castx/video.m3u8?token=2ZRvum5RxIweG3" },
       { "الفجر HD": "https://cdnfest.com/ftv1-720p-castx/video.m3u8?token=2ZRvum5RxIweG3" },
       { "متعدد | Multi 50FPS": "https://tigan.live/playlist.m3u8" },
+      { "Ultra Server 1080p": "https://cdnfest.com/G1-1080p/video.m3u8" },
       { "Ultra Server 900p": "https://cdnfest.com/G1-720p/video.m3u8?token=2ZRvum5RxIweG3" },
       { "Ultra Server 576p": "https://cdnfest.com/G1-480p/video.m3u8?token=2ZRvum5RxIweG3" }
     ]
   },
   {
-    "num": 11,
+    "num": 10,
     "team1Name": "سبورتنج لشبونة",
     "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/535.png",
     "team2Name": "أولمبيك مارسيليا",
@@ -181,7 +163,7 @@
     ]
   },
   {
-    "num": 12,
+    "num": 11,
     "team1Name": "أتالانتا",
     "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/128.png",
     "team2Name": "سلافيا براج",
