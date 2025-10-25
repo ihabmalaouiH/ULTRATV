@@ -239,7 +239,7 @@
     "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/177.png",
     "startTime": 1761415200,
     "league": "الدوري السعودي للمحترفين",
-    "channel": "ثمانية 1",
+    "channel": "ثمانية",
     "commentator": "فارس عوض",
     "servers": [
       { "Multi 30 Fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/e7g_YfBQne5-AGeYSKt2jPcy30Wi55S90lztVw_lKnqcXUqUgrbhEA8FhKb2lQrkhKb-V4e5FYT0oDE6bemL_g/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
@@ -322,6 +322,8 @@
     "league": "الدوري البرتغالي",
     "channel": "الكويت الرياضية",
     "commentator": "جعفر الصليح",
-    "servers": []
+    "servers": [
+      { "HD": "https://kwtspta.cdn.mangomolo.com/sp/smil:sp.stream.smil/chunklist.m3u8" }
+    ]
   }
 ]
