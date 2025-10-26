@@ -1,151 +1,260 @@
 [
   {
     "num": 1,
-    "team1Name": "جيرونا",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/2014.png",
-    "team2Name": "ريال أوفييدو",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/2478.png",
-    "startTime": 1761393600,
+    "team1Name": "ريال مايوركا",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/121.png",
+    "team2Name": "ليفانتي",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/314.png",
+    "startTime": 1761483600,
     "league": "الدوري الإسباني",
-    "channel": "beIN SPORTS 2",
-    "commentator": "محمد السعدي",
+    "channel": "beIN SPORTS 8",
+    "commentator": "مصطفى ناظم",
     "servers": [
-      { "HD FAM": "http://het107a.4rouwanda-shop.store/live/69854211/index.m3u8" },
-      { "SD FAM": "http://het109a.4rouwanda-shop.store/live/10011244/index.m3u8" },
-      { "LOW FAM": "http://het109a.4rouwanda-shop.store/live/4798998070/index.m3u8" },
-      { "Ultra Server 1080p": "https://cdnfest.com/G2-1080p-cast/video.m3u8" },
-      { "Ultra Server 900p": "https://cdnfest.com/G2-720p-cast/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "Ultra Server 576p": "https://cdnfest.com/G2-480p-cast/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "beIN 2 IRAQ": "https://stream.supertv.gg:3001/supertv/sport/stv1/ch2/adaptive.m3u8" }
+      {
+        "1": "https://hz.dencreak.com/bn8.m3u8"
+      },
+      {
+        "2": "http://134.19.178.202/bein-8/tracks-v1a1/mono.ts.m3u8"
+      }
     ]
   },
   {
     "num": 2,
-    "team1Name": "بارما",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/139.png",
-    "team2Name": "كومو",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/132.png",
-    "startTime": 1761397200,
-    "league": "الدوري الإيطالي",
-    "channel": "StarzPlay 1",
-    "commentator": "فيصل الهندي",
+    "team1Name": "أرسنال",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/83.png",
+    "team2Name": "كريستال بالاس",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/299.png",
+    "startTime": 1761487200,
+    "league": "الدوري الإنجليزي الممتاز",
+    "channel": "beIN SPORTS 2",
+    "commentator": "محمد بركات",
     "servers": [
-      { "Multi Shaha 1": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/1GU4u0dUsmJ0PSBt2MYSKZ2145blNnbKtFWxd6ikxYAg46kDBuTUgF7r7XYW-cZtmoBdqaU4-u1h6oOZLjw17g/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" }
+      {
+        "HD FAM": "http://het107a.4rouwanda-shop.store/live/69854211/index.m3u8"
+      },
+      {
+        "SD FAM": "http://het109a.4rouwanda-shop.store/live/10011244/index.m3u8"
+      },
+      {
+        "LOW FAM": "http://het109a.4rouwanda-shop.store/live/4798998070/index.m3u8"
+      },
+      {
+        "Multi 50 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/ICHOMx6wmdYRi3WdaBcImL6V130Y3oa4KzK0GAxWmQEF9w6b45siV0AfkNjgI4iNymj0W9WCXgO6mqa-aXtDXA/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live"
+      },
+      {
+        "SD Family": "https://ac.yallaliveshoot.info/bein2/index.m3u8"
+      },
+      {
+        "Ultra Server 1080p": "https://cdnfest.com/G2-1080p-cast/video.m3u8"
+      },
+      {
+        "Ultra Server 900p": "https://cdnfest.com/G2-720p-cast/video.m3u8?token=2ZRvum5RxIweG3"
+      },
+      {
+        "Ultra Server 576p": "https://cdnfest.com/G2-480p-cast/video.m3u8?token=2ZRvum5RxIweG3"
+      },
+      {
+        "beIN 2 IRAQ": "https://stream.supertv.gg:3001/supertv/sport/stv1/ch2/adaptive.m3u8"
+      }
     ]
   },
   {
     "num": 3,
-    "team1Name": "بوروسيا مونشنغلادباخ",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/164.png",
-    "team2Name": "بايرن ميونيخ",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/153.png",
-    "startTime": 1761399000,
-    "league": "الدوري الألماني",
-    "channel": "Shahid Sports 1",
-    "commentator": "منير العتيبي",
-    "servers": []
+    "team1Name": "أستون فيلا",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/84.png",
+    "team2Name": "مانشستر سيتي",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/94.png",
+    "startTime": 1761487200,
+    "league": "الدوري الإنجليزي الممتاز",
+    "channel": "beIN SPORTS 3",
+    "commentator": "علي الكعبي",
+    "servers": [
+      {
+        "HD FAM": "http://het119a.4rouwanda-shop.store/live/645587700/index.m3u8"
+      },
+      {
+        "SD FAM": "http://het000.4rouwanda-shop.store/live/161988840/index.m3u8"
+      },
+      {
+        "LOW FAM": "http://het101a.4rouwanda-shop.store/live/551818447/index.m3u8"
+      },
+      {
+        "Multi 50 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/8bz5QoCSKKg5BOoHI9lPUcPyx3kHkopT6gooFlKr1vOAgU6qsL0y13ue91goaAUzewZchaXjU02LJlz0up_tjQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live"
+      },
+      {
+        "Ultra Server 1080p": "https://cdnfest.com/G3-1080p/video.m3u8"
+      },
+      {
+        "Ultra Server 900p": "https://cdnfest.com/G3-720p/video.m3u8?token=2ZRvum5RxIweG3"
+      },
+      {
+        "Ultra Server 576p": "https://cdnfest.com/G3-480p/video.m3u8?token=2ZRvum5RxIweG3"
+      },
+      {
+        "beIN 3 IRAQ": "https://stream.supertv.gg:3001/supertv/sport/stv1/ch3/adaptive.m3u8"
+      }
+    ]
   },
   {
     "num": 4,
-    "team1Name": "نيوكاسل يونايتد",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/97.png",
-    "team2Name": "فولهام",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/91.png",
-    "startTime": 1761400800,
+    "team1Name": "بورنموث",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1453.png",
+    "team2Name": "نوتنجهام فورست",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1423.png",
+    "startTime": 1761487200,
     "league": "الدوري الإنجليزي الممتاز",
-    "channel": "beIN SPORTS 3",
-    "commentator": "أحمد عبده",
+    "channel": "beIN SPORTS 5",
+    "commentator": "باسم الزير",
     "servers": [
-      { "HD FAM": "http://het119a.4rouwanda-shop.store/live/645587700/index.m3u8" },
-      { "SD FAM": "http://het000.4rouwanda-shop.store/live/161988840/index.m3u8" },
-      { "LOW FAM": "http://het101a.4rouwanda-shop.store/live/551818447/index.m3u8" },
-      { "Multi 50 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/8bz5QoCSKKg5BOoHI9lPUcPyx3kHkopT6gooFlKr1vOAgU6qsL0y13ue91goaAUzewZchaXjU02LJlz0up_tjQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
-      { "Ultra Server 1080p": "https://cdnfest.com/G3-1080p/video.m3u8" },
-      { "Ultra Server 900p": "https://cdnfest.com/G3-720p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "Ultra Server 576p": "https://cdnfest.com/G3-480p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "beIN 3 IRAQ": "https://stream.supertv.gg:3001/supertv/sport/stv1/ch3/adaptive.m3u8" }
+      {
+        "HD FAM": "http://het110a.4rouwanda-shop.store/live/610303030/index.m3u8"
+      },
+      {
+        "SD FAM": "http://het117a.4rouwanda-shop.store/live/115451004/index.m3u8"
+      },
+      {
+        "LOW FAM": "http://het107a.4rouwanda-shop.store/live/181818444/index.m3u8"
+      },
+      {
+        "Ultra Server 1080p": "https://cdnfest.com/G5-1080p/video.m3u8"
+      },
+      {
+        "Ultra Server 900p": "https://cdnfest.com/G5-720p/video.m3u8?token=2ZRvum5RxIweG3"
+      },
+      {
+        "Ultra Server 576p": "https://cdnfest.com/G5-480p/video.m3u8?token=2ZRvum5RxIweG3"
+      }
     ]
   },
   {
     "num": 5,
-    "team1Name": "تشيلسي",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/89.png",
-    "team2Name": "سندرلاند",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/100.png",
-    "startTime": 1761400800,
+    "team1Name": "ولفرهامبتون",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1028.png",
+    "team2Name": "بيرنلي",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/992.png",
+    "startTime": 1761487200,
     "league": "الدوري الإنجليزي الممتاز",
-    "channel": "beIN SPORTS 1",
-    "commentator": "عامر الخوذيري",
+    "channel": "beIN SPORTS 4",
+    "commentator": "جواد بدة",
     "servers": [
-      { "HD FAM": "http://het107a.4rouwanda-shop.store/live/918454578001/index.m3u8" },
-      { "SD FAM": "http://het000.4rouwanda-shop.store/live/978480008877005/index.m3u8" },
-      { "LOW FAM": "http://het107a.4rouwanda-shop.store/live/31009988005/index.m3u8" },
-      { "Multi 50 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/b9TbTEsbpIhY11o5La63FabzoluHdkO8liugd5qxxaLp7qBUdFUKfDgnnypRe3IIH4E4W9zNu0snhDKJaWf1Ww/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
-      { "متعدد | Ultra Server": "https://horizonsport.site/Content/Channel/sport-ch-01/HLS/playlist.m3u8" },
-      { "Ultra Server 1080p": "https://cdnfest.com/G1-1080p/video.m3u8" },
-      { "Ultra Server 900p": "https://cdnfest.com/G1-720p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "Ultra Server 576p": "https://cdnfest.com/G1-480p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "beIN 1 IRAQ": "https://stream.supertv.gg:3001/supertv/sport/stv1/ch1/adaptive.m3u8" }
+      {
+        "HD FAM": "http://het000.4rouwanda-shop.store/live/9787488847/index.m3u8"
+      },
+      {
+        "SD FAM": "http://het114a.4rouwanda-shop.store/live/0103088447/index.m3u8"
+      },
+      {
+        "LOW FAM": "http://het000.4rouwanda-shop.store/live/131326625/index.m3u8"
+      },
+      {
+        "Ultra Server 1080p": "https://cdnfest.com/G4-1080p/video.m3u8"
+      },
+      {
+        "Ultra Server 900p": "https://cdnfest.com/G4-720p/video.m3u8?token=2ZRvum5RxIweG3"
+      },
+      {
+        "Ultra Server 576p": "https://cdnfest.com/G4-480p/video.m3u8?token=2ZRvum5RxIweG3"
+      }
     ]
   },
   {
     "num": 6,
-    "team1Name": "إسبانيول",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/119.png",
-    "team2Name": "إلتشي",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1393.png",
-    "startTime": 1761401700,
-    "league": "الدوري الإسباني",
-    "channel": "beIN SPORTS 5",
-    "commentator": "نوفل باشي",
+    "team1Name": "ساسولو",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1396.png",
+    "team2Name": "روما",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/143.png",
+    "startTime": 1761487200,
+    "league": "الدوري الإيطالي",
+    "channel": "StarzPlay 1",
+    "commentator": "حازم عبدالسلام",
     "servers": [
-      { "HD FAM": "http://het110a.4rouwanda-shop.store/live/610303030/index.m3u8" },
-      { "SD FAM": "http://het117a.4rouwanda-shop.store/live/115451004/index.m3u8" },
-      { "LOW FAM": "http://het107a.4rouwanda-shop.store/live/181818444/index.m3u8" },
-      { "Ultra Server 1080p": "https://cdnfest.com/G5-1080p/video.m3u8" },
-      { "Ultra Server 900p": "https://cdnfest.com/G5-720p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "Ultra Server 576p": "https://cdnfest.com/G5-480p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "beIN 5 IRAQ": "https://stream.supertv.gg:3001/supertv/sport/stv1/ch5/adaptive.m3u8" }
+      {
+        "Multi Shaha 1": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/Y1NrxzSvbDAEuUmeIbN7zMWQrgj5GEo96AYdmRMLPt4gaDMtKh9VQpK4FjRNAgR1A7POzEp1ti0VNSOvF-n-Zg/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live"
+      }
     ]
   },
   {
     "num": 7,
-    "team1Name": "الأهلي",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/426.png",
-    "team2Name": "الغرافة",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/970.png",
-    "startTime": 1761402600,
-    "league": "دوري نجوم قطر",
-    "channel": "الكأس 2",
-    "commentator": "منتصر الأزهري",
+    "team1Name": "ليل",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/310.png",
+    "team2Name": "ميتز",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/311.png",
+    "startTime": 1761487200,
+    "league": "الدوري الفرنسي",
+    "channel": "beIN SPORTS 5",
+    "commentator": "غير محدد",
     "servers": [
-      { "Multi": "https://liveeu-gcp.alkassdigital.net/alkass2-p/main.m3u8" }
+      {
+        "HD FAM": "http://het110a.4rouwanda-shop.store/live/610303030/index.m3u8"
+      },
+      {
+        "SD FAM": "http://het117a.4rouwanda-shop.store/live/115451004/index.m3u8"
+      },
+      {
+        "LOW FAM": "http://het107a.4rouwanda-shop.store/live/181818444/index.m3u8"
+      },
+      {
+        "Ultra Server 1080p": "https://cdnfest.com/G5-1080p/video.m3u8"
+      },
+      {
+        "Ultra Server 900p": "https://cdnfest.com/G5-720p/video.m3u8?token=2ZRvum5RxIweG3"
+      },
+      {
+        "Ultra Server 576p": "https://cdnfest.com/G5-480p/video.m3u8?token=2ZRvum5RxIweG3"
+      }
     ]
   },
   {
     "num": 8,
-    "team1Name": "الدحيل",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/2034.png",
-    "team2Name": "الشمال",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1263.png",
-    "startTime": 1761402600,
-    "league": "دوري نجوم قطر",
-    "channel": "الكأس 1",
-    "commentator": "سمير المعيرفي",
-    "servers": [
-      { "الكأس1": "https://liveeu-gcp.alkassdigital.net/alkass1-p/main.m3u8" }
-    ]
+    "team1Name": "باير ليفركوزن",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/156.png",
+    "team2Name": "فرايبورج",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/195.png",
+    "startTime": 1761489000,
+    "league": "الدوري الألماني",
+    "channel": "Shahid Sports 1",
+    "commentator": "رياض الحمروني",
+    "servers": []
   },
   {
     "num": 9,
-    "team1Name": "ستاد بريست 29",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1037.png",
-    "team2Name": "باريس سان جيرمان",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/237.png",
-    "startTime": 1761404400,
-    "league": "الدوري الفرنسي",
+    "team1Name": "ريال مدريد",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/110.png",
+    "team2Name": "برشلونة",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/111.png",
+    "startTime": 1761491700,
+    "league": "الدوري الإسباني",
+    "channel": "beIN SPORTS 1",
+    "commentator": "حفيظ دراجي",
+    "servers": [
+      { "HD FAM": "http://het107a.4rouwanda-shop.store/live/918454578001/index.m3u8" },
+      { "SD FAM": "http://het000.4rouwanda-shop.store/live/978480008877005/index.m3u8" },
+      { "LOW FAM": "http://het107a.4rouwanda-shop.store/live/31009988005/index.m3u8" },
+      { "Multi 30 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/tFtPlVj5BHoH7aKJtgKO2RuAWZvbMs6FdssyASTdTzVTXccP5qKUv95z_t-YbBPdu6Mk0X1iZlJlaVeqDwIEhw/non_transcode/us-west-2/periscope-replay-direct-live/master_dynamic_highlatency.m3u8?type=live" },
+      { "Ultra Server 900p": "https://cdnfest.com/G1-720p/video.m3u8?token=2ZRvum5RxIweG3" },
+      { "Ultra Server 576p": "https://cdnfest.com/G1-480p/video.m3u8?token=2ZRvum5RxIweG3" },
+      { "متعدد | Ultra Server": "https://horizonsport.site/Content/Channel/sport-ch-01/HLS/playlist.m3u8" },
+      { "سيرفر 1": "https://ab.footballii.ir/hls2/bein1.m3u8" },
+      { "سيرفر 2": "https://dokko1new.newkso.ru/dokko1/premium91/mono.m3u8" },
+      { "سيرفر 3": "http://176.119.29.42/0c55573d-12d8-43af-823b-25c94d67b190.m3u8" },
+      { "سيرفر 4": "http://1789-181.123091763.it.com/live/527418_.m3u8" },
+      { "سيرفر 5": "http://7955e15a.rostelekom.xyz/iptv/L58NZSUP5Z4Z98/6123/index.m3u8" },
+      { "سيرفر 6": "http://176.119.29.54/131f26d9-afb0-480e-8690-e46007de9fc8.m3u8" },
+      { "Multi 50 FPS TOD": "https://tigan.live/mejar.m3u8" },
+      { "beIN 1 IRAQ": "https://stream.supertv.gg:3001/supertv/sport/stv1/ch1/adaptive.m3u8" },
+      { "ALWAN TV 1 Local": "https://mejarserver.site/Test/index.m3u8" }
+    ]
+  },
+  {
+    "num": 10,
+    "team1Name": "إيفرتون",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/90.png",
+    "team2Name": "توتنهام",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/101.png",
+    "startTime": 1761496200,
+    "league": "الدوري الإنجليزي الممتاز",
     "channel": "beIN SPORTS 2",
-    "commentator": "أحمد البلوشي",
+    "commentator": "احمد البلوشي",
     "servers": [
       { "HD FAM": "http://het107a.4rouwanda-shop.store/live/69854211/index.m3u8" },
       { "SD FAM": "http://het109a.4rouwanda-shop.store/live/10011244/index.m3u8" },
@@ -159,185 +268,68 @@
     ]
   },
   {
-    "num": 10,
-    "team1Name": "نابولي",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/757.png",
-    "team2Name": "إنتر",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/134.png",
-    "startTime": 1761408000,
-    "league": "الدوري الإيطالي",
-    "channel": "منصة شاشا",
-    "commentator": "رؤوف خليف",
-    "servers": [
-      { "Multi Shaha 1": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/1GU4u0dUsmJ0PSBt2MYSKZ2145blNnbKtFWxd6ikxYAg46kDBuTUgF7r7XYW-cZtmoBdqaU4-u1h6oOZLjw17g/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" }
-    ]
-  },
-  {
     "num": 11,
-    "team1Name": "أتلتيك بلباو",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/116.png",
-    "team2Name": "خيتافي",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/317.png",
-    "startTime": 1761409800,
+    "team1Name": "أوساسونا",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/118.png",
+    "team2Name": "سيلتا فيجو",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/117.png",
+    "startTime": 1761499800,
     "league": "الدوري الإسباني",
     "channel": "beIN SPORTS 3",
-    "commentator": "احمد فؤاد",
+    "commentator": "منتصر الأزهري",
     "servers": [
-      { "HD FAM": "http://het119a.4rouwanda-shop.store/live/645587700/index.m3u8" },
-      { "SD FAM": "http://het000.4rouwanda-shop.store/live/161988840/index.m3u8" },
-      { "LOW FAM": "http://het101a.4rouwanda-shop.store/live/551818447/index.m3u8" },
-      { "Multi 50 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/8bz5QoCSKKg5BOoHI9lPUcPyx3kHkopT6gooFlKr1vOAgU6qsL0y13ue91goaAUzewZchaXjU02LJlz0up_tjQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
       { "Ultra Server 1080p": "https://cdnfest.com/G3-1080p/video.m3u8" },
       { "Ultra Server 900p": "https://cdnfest.com/G3-720p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "Ultra Server 576p": "https://cdnfest.com/G3-480p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "beIN 3 IRAQ": "https://stream.supertv.gg:3001/supertv/sport/stv1/ch3/adaptive.m3u8" }
+      { "Ultra Server 576p": "https://cdnfest.com/G3-480p/video.m3u8?token=2ZRvum5RxIweG3" }
     ]
   },
   {
     "num": 12,
-    "team1Name": "مانشستر يونايتد",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/95.png",
-    "team2Name": "برايتون",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1426.png",
-    "startTime": 1761409800,
-    "league": "الدوري الإنجليزي الممتاز",
-    "channel": "beIN SPORTS 1",
-    "commentator": "حفيظ دراجي",
+    "team1Name": "لاتسيو",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/136.png",
+    "team2Name": "يوفنتوس",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/135.png",
+    "startTime": 1761507900,
+    "league": "الدوري الإيطالي",
+    "channel": "StarzPlay 1",
+    "commentator": "فارس عوض",
     "servers": [
-      { "HD FAM": "http://het107a.4rouwanda-shop.store/live/918454578001/index.m3u8" },
-      { "SD FAM": "http://het000.4rouwanda-shop.store/live/978480008877005/index.m3u8" },
-      { "LOW FAM": "http://het107a.4rouwanda-shop.store/live/31009988005/index.m3u8" },
-      { "Multi 50 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/b9TbTEsbpIhY11o5La63FabzoluHdkO8liugd5qxxaLp7qBUdFUKfDgnnypRe3IIH4E4W9zNu0snhDKJaWf1Ww/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
-      { "متعدد | Ultra Server": "https://horizonsport.site/Content/Channel/sport-ch-01/HLS/playlist.m3u8" },
-      { "Ultra Server 1080p": "https://cdnfest.com/G1-1080p/video.m3u8" },
-      { "Ultra Server 900p": "https://cdnfest.com/G1-720p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "Ultra Server 576p": "https://cdnfest.com/G1-480p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "beIN 1 IRAQ": "https://stream.supertv.gg:3001/supertv/sport/stv1/ch1/adaptive.m3u8" }
+      { "Multi Shaha 1": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/Y1NrxzSvbDAEuUmeIbN7zMWQrgj5GEo96AYdmRMLPt4gaDMtKh9VQpK4FjRNAgR1A7POzEp1ti0VNSOvF-n-Zg/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" }
     ]
   },
   {
     "num": 13,
-    "team1Name": "بوروسيا دورتموند",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/154.png",
-    "team2Name": "كولن",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/194.png",
-    "startTime": 1761409800,
-    "league": "الدوري الألماني",
-    "channel": "MBC ACTION",
-    "commentator": "عبدالله الشهري",
-    "servers": [
-      {
-        "HD": "http://portal.geniptv.com:8080/dmtndmtnkimo/a7GPMeArdf/2428"
-      }
-    ]
-  },
-  {
-    "num": 14,
-    "team1Name": "الأهلي",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1.png",
-    "team2Name": "إيجل نوار ماكامبا",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/12676.png",
-    "startTime": 1761411600,
-    "league": "دوري أبطال إفريقيا",
-    "channel": "On Sport 1",
-    "commentator": "محمد عفيفي",
-    "servers": [
-      { "1": "https://ddy6.newkso.ru/ddy6/premium611/mono.m3u8" },
-      { "2": "https://zbz.koooooralive.com/on1/index.m3u8" },
-      { "3": "https://6.6-asbas.sbs/hls/1/stream.m3u8" },
-      { "4": "https://cdn1.yallaboom.online/live/ontime/chunks.m3u8?nimblesessionid=126664" }
-    ]
-  },
-  {
-    "num": 15,
-    "team1Name": "الحزم",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/521.png",
-    "team2Name": "النصر",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/177.png",
-    "startTime": 1761415200,
-    "league": "الدوري السعودي للمحترفين",
-    "channel": "ثمانية",
-    "commentator": "فارس عوض",
-    "servers": [
-      { "Multi 30 Fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/e7g_YfBQne5-AGeYSKt2jPcy30Wi55S90lztVw_lKnqcXUqUgrbhEA8FhKb2lQrkhKb-V4e5FYT0oDE6bemL_g/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
-      { "Multi 30 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/8_1Q3O-324WRBy5VppqKwsFacG2AN7ekNfqiYI7zJBwrWfK6tcdvBXnsWWI0daqBw_tU4q2Ot2ppZvjQy241yw/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
-      { "Multi Ultra Server": "https://tigan.live/video.m3u8" },
-      { "1080p Ultra Server": "https://tigan.live/live/1080p/index.m3u8" },
-      { "720p Ultra Server": "https://tigan.live/live/720p/index.m3u8" },
-      { "360p Ultra Server": "https://tigan.live/live/360p/index.m3u8" },
-      { "144p Ultra Server": "https://tigan.live/live/144p/index.m3u8" },
-      { "Multi | متعدد": "https://hdr.remotv.xyz/tmh/s1/tmh1.m3u8" },
-      { "4K Ultra Server": "https://cdnfest.com/thmanyah-1/index.fmp4.m3u8" }
-    ]
-  },
-  {
-    "num": 16,
-    "team1Name": " شبيبة القبائل",
-    "team1Logo": "https://media.api-sports.io/football/teams/918.png",
-    "team2Name": "المنستيري",
-    "team2Logo": "https://media.api-sports.io/football/teams/992.png",
-    "startTime": 1761415200,
-    "league": "دوري أبطال أفريقيا",
-    "channel": "غير معروف ",
-    "commentator": "غير معروف ",
-    "servers": [
-      {"SevIhab": "https://games2.elahmad.xyz/tv760_www.elahmad.com_alegria_6/index.m3u8?token=0cd1f92aed3e1ca88d3a6ad1b4016d42b1bfa6dd-d71c1f463e33d5b49b16e5b71851206f-1761386677-1761375877"}
-    ]
-  },
-  {
-    "num": 17,
-    "team1Name": "برينتفورد",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1920.png",
-    "team2Name": "ليفربول",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/93.png",
-    "startTime": 1761418800,
-    "league": "الدوري الإنجليزي الممتاز",
-    "channel": "beIN SPORTS 1",
-    "commentator": "علي الكعبي",
-    "servers": [
-      { "HD FAM": "http://het107a.4rouwanda-shop.store/live/918454578001/index.m3u8" },
-      { "SD FAM": "http://het000.4rouwanda-shop.store/live/978480008877005/index.m3u8" },
-      { "LOW FAM": "http://het107a.4rouwanda-shop.store/live/31009988005/index.m3u8" },
-      { "Multi 50 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/b9TbTEsbpIhY11o5La63FabzoluHdkO8liugd5qxxaLp7qBUdFUKfDgnnypRe3IIH4E4W9zNu0snhDKJaWf1Ww/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live" },
-      { "متعدد | Ultra Server": "https://horizonsport.site/Content/Channel/sport-ch-01/HLS/playlist.m3u8" },
-      { "Ultra Server 1080p": "https://cdnfest.com/G1-1080p/video.m3u8" },
-      { "Ultra Server 900p": "https://cdnfest.com/G1-720p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "Ultra Server 576p": "https://cdnfest.com/G1-480p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "beIN 1 IRAQ": "https://stream.supertv.gg:3001/supertv/sport/stv1/ch1/adaptive.m3u8" }
-    ]
-  },
-  {
-    "num": 18,
-    "team1Name": "لانس",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/309.png",
-    "team2Name": "أولمبيك مارسيليا",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/222.png",
-    "startTime": 1761419100,
+    "team1Name": "أولمبيك ليون",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/211.png",
+    "team2Name": "ستراسبورج",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/300.png",
+    "startTime": 1761507900,
     "league": "الدوري الفرنسي",
     "channel": "beIN SPORTS 4",
-    "commentator": "عامر الخوذيري",
+    "commentator": "غير محدد",
     "servers": [
       { "HD FAM": "http://het000.4rouwanda-shop.store/live/9787488847/index.m3u8" },
       { "SD FAM": "http://het114a.4rouwanda-shop.store/live/0103088447/index.m3u8" },
       { "LOW FAM": "http://het000.4rouwanda-shop.store/live/131326625/index.m3u8" },
       { "Ultra Server 1080p": "https://cdnfest.com/G4-1080p/video.m3u8" },
       { "Ultra Server 900p": "https://cdnfest.com/G4-720p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "Ultra Server 576p": "https://cdnfest.com/G4-480p/video.m3u8?token=2ZRvum5RxIweG3" },
-      { "beIN 4 IRAQ": "https://stream.supertv.gg:3001/supertv/sport/stv1/ch4/adaptive.m3u8" }
+      { "Ultra Server 576p": "https://cdnfest.com/G4-480p/video.m3u8?token=2ZRvum5RxIweG3" }
     ]
   },
   {
-    "num": 19,
-    "team1Name": "بنفيكا",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/332.png",
-    "team2Name": "أروكا",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1441.png",
-    "startTime": 1761420600,
-    "league": "الدوري البرتغالي",
-    "channel": "الكويت الرياضية",
-    "commentator": "جعفر الصليح",
+    "num": 14,
+    "team1Name": "رايو فاليكانو",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/122.png",
+    "team2Name": "ديبورتيفو ألافيس",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/115.png",
+    "startTime": 1761595200,
+    "league": "الدوري الإسباني",
+    "channel": "beIN SPORTS 3",
+    "commentator": "عبدالله الغامدي",
     "servers": [
-      { "HD": "https://kwtspta.cdn.mangomolo.com/sp/smil:sp.stream.smil/chunklist.m3u8" }
+      { "Ultra Server 1080p": "https://cdnfest.com/G3-1080p/video.m3u8" },
+      { "Ultra Server 900p": "https://cdnfest.com/G3-720p/video.m3u8?token=2ZRvum5RxIweG3" },
+      { "Ultra Server 576p": "https://cdnfest.com/G3-480p/video.m3u8?token=2ZRvum5RxIweG3" }
     ]
   }
 ]
