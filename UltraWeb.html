@@ -77,7 +77,7 @@
         /* Notification Styles */
         .telegram-notification {
             position: fixed;
-            bottom: 160px; /* تم الرفع لإفساح المجال لزر التضمين */
+            bottom: 160px;
             right: 15px;
             background: rgba(0, 136, 204, 0.95);
             color: white;
@@ -167,13 +167,12 @@
             z-index: 9999;
         }
         
-        /* --- ⭐️ هذا هو التعديل المطلوب ⭐️ --- */
         /* كود الكتابة الثابتة (Watermark) */
         .player-watermark {
             position: absolute;
-            bottom: 80px;  /* المسافة من الأسفل (لترك مساحة لشريط التحكم) */
-            left: 50%;     /* في المنتصف أفقياً */
-            transform: translateX(-50%); /* لضمان التوسيط المثالي */
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
             color: white;
             font-family: 'Cairo', sans-serif;
             font-size: 16px;
@@ -233,10 +232,45 @@
             transform: translateX(0);
         }
         
+        /* --- ⭐️ الإضافة الجديدة: زر إلغاء كتم الصوت ⭐️ --- */
+        .unmute-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            border: 2px solid white;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 99;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            opacity: 0; /* ابدأ شفافاً */
+            pointer-events: none; /* ابدأ معطلاً */
+        }
+        .unmute-button:hover {
+            background: rgba(0, 136, 204, 0.9);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        .unmute-button.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
     </style>
 </head>
 <body>
-    <div id="jwplayerDiv"></div>
+    <div id="jwplayerDiv">
+        <div id="unmuteBtn" class="unmute-button">
+            <i class="fas fa-volume-mute"></i>
+        </div>
+    </div>
     
     <div class="player-watermark">ULTRA TV APP</div>
     
@@ -263,6 +297,10 @@
     </div>
     
     <script>
+        // --- ⭐️ هام ⭐️ ---
+        // هذا هو الكود الذي يجب عليك "تعتيمه" (Obfuscate) باستخدام موقع مثل obfuscator.io
+        // قبل رفعه إلى السيرفر.
+        
         let isExpanded = true;
         const expandSvg = `<svg fill="#ffffff" version="1.1" id="expand_icon" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 100 100" xml:space="preserve"><g><path d="M22.661,20.5H36c1.104,0,2-0.896,2-2s-0.896-2-2-2H19c-1.104,0-2.5,1.276-2.5,2.381v17c0,1.104,0.896,2,2,2s2-0.896,2-2V24.876l16.042,15.791c0.391,0.391,1.027,0.586,1.539,0.586s1.086-0.195,1.477-0.586c0.781-0.781,0.812-2.237,0.031-3.019L22.661,20.5z"/><path d="M83,16.5H66c-1.104,0-2,0.896-2,2s0.896,2,2,2h12.605L61.647,37.648c-0.781,0.781-0.781,2.142,0,2.923c0.39,0.391,0.902,0.633,1.414,0.633s0.774-0.171,1.164-0.562l16.274-16.5v11.738c0,1.104,0.896,2,2,2s2-0.896,2-2v-17C84.5,17.776,84.104,16.5,83,16.5z"/><path d="M36.542,60.962L20.5,76.754V65.881c0-1.104-0.896-2-2-2s-2,0.896-2,2v17c0,1.104,1.396,1.619,2.5,1.619h17c1.104,0,2-0.896,2-2s-0.896-2-2-2H22.529L39.62,63.6c0.781-0.781,0.656-1.951-0.125-2.732C38.715,60.086,37.322,60.181,36.542,60.962z"/><path d="M82.5,63.881c-1.104,0-2,0.896-2,2v11.606L64.226,60.962c-0.78-0.781-1.923-0.781-2.703,0c-0.781,0.781-0.719,1.856,0.062,2.638l17.152,16.9H66c-1.104,0-2,0.896-2,2s0.896,2,2,2h17c1.104,0,1.5-0.515,1.5-1.619v-17C84.5,64.776,83.604,63.881,82.5,63.881z"/></g></svg>`;
 
@@ -308,37 +346,53 @@
             });
         }
 
+        // 1. الدالة الأساسية لجلب الإعدادات السرية
         function setupPlayer() {
-            const playerConfig = {
-                file: "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/6mavWS5PNXXNq-U2m_nv3LZkirzlwAr9tsn1EHoWAkApUQzqDLg2tiIJds94YnV4S12NjUhhySCNayxRsmTNRQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live",
-                
-                // !! ⭐️ غيّر هذا الرابط إلى صورة الغلاف (البوستر) الخاصة بك ⭐️ !!
-                poster: "https://your-site.com/poster-image.jpg", 
-                
-                width: "100%",
-                height: "100%",
-                autostart: true,
-                mute: true,
-                volume: 100,
-                playbackRateControls: true,
-                playbackRates: [0.5, 1, 1.25, 1.5, 2],
-                
-                // تخصيص الألوان
-                skin: {
-                    active: '#0088cc',
-                    inactive: '#ffffff',
-                    background: 'rgba(0, 0, 0, 0.7)'
-                },
-                
-                drm: {
-                    clearkey: {
-                        keyId: "d84c325f36814f39bbe59080272b10c3",
-                        key: "550727de4c96ef1ecff874905493580f"
+            fetch('get_stream.php')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        console.error('Error fetching stream:', data.error);
+                        const playerContainer = document.getElementById('jwplayerDiv');
+                        const errorDiv = document.createElement('div');
+                        errorDiv.className = 'player-error-message';
+                        errorDiv.innerHTML = `وصول غير مصرح به ⛔️
+                                             <br>
+                                             <small>لا يمكن تشغيل البث من هذا النطاق.</small>`;
+                        playerContainer.appendChild(errorDiv);
+                        return;
                     }
-                }
-            };
 
-            const player = jwplayer("jwplayerDiv").setup(playerConfig);
+                    const baseConfig = {
+                        // !! ⭐️ غيّر هذا الرابط إلى صورة الغلاف (البوستر) الخاصة بك ⭐️ !!
+                        poster: "https://your-site.com/poster-image.jpg", 
+                        width: "100%",
+                        height: "100%",
+                        autostart: true,
+                        mute: true, // يجب أن يبدأ مكتوماً ليضمن التشغيل التلقائي
+                        volume: 100,
+                        playbackRateControls: true,
+                        playbackRates: [0.5, 1, 1.25, 1.5, 2],
+                        skin: {
+                            active: '#0088cc',
+                            inactive: '#ffffff',
+                            background: 'rgba(0, 0, 0, 0.7)'
+                        }
+                    };
+
+                    const playerConfig = { ...baseConfig, ...data };
+                    const player = jwplayer("jwplayerDiv").setup(playerConfig);
+
+                    setupPlayerEvents(player);
+                })
+                .catch(error => {
+                    console.error('Failed to load player configuration:', error);
+                });
+        }
+
+        // 2. دالة لإضافة الأحداث بعد تشغيل المشغل
+        function setupPlayerEvents(player) {
+            const unmuteButton = document.getElementById('unmuteBtn');
 
             player.on('ready', function() {
                 const videoElement = document.querySelector("#jwplayerDiv video");
@@ -346,21 +400,82 @@
                     videoElement.style.objectFit = 'fill';
                 }
                 showNotification();
+                
+                // ⭐️ إظهار زر كتم الصوت إذا كان مكتوماً
+                if (player.getMute()) {
+                    unmuteButton.classList.add('visible');
+                }
             });
 
-            return player;
+            // ⭐️ عند الضغط على زر إلغاء الكتم
+            unmuteButton.addEventListener('click', function() {
+                player.setMute(false);
+            });
+
+            // ⭐️ عند تغيير حالة الصوت (سواء من الزر أو من شريط التحكم)
+            player.on('mute', function(event) {
+                if (event.mute) {
+                    unmuteButton.classList.add('visible');
+                } else {
+                    unmuteButton.classList.remove('visible');
+                }
+            });
+
+            // إلغاء الزر الأيمن
+            document.getElementById('jwplayerDiv').addEventListener('contextmenu', e => e.preventDefault());
+
+            // كود زر التمدد
+            player.addButton(expandSvg, 'تمدد الفيديو', function() {
+                toggleExpand();
+            }, 'expandButton');
+
+            // إيقاف المشغل عند إغلاق الصفحة
+            window.addEventListener("beforeunload", function() {
+                player.stop();
+            });
+            document.addEventListener("visibilitychange", function() {
+                if (document.hidden) {
+                    player.stop();
+                }
+            });
+
+            // معالجة الأخطاء مع إعادة المحاولة
+            player.on('error', function(error) {
+                console.error("فشل تشغيل الفيديو: " + error.message);
+                
+                const playerContainer = document.getElementById('jwplayerDiv');
+                const oldError = playerContainer.querySelector('.player-error-message');
+                if (oldError) {
+                    oldError.remove();
+                }
+                
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'player-error-message';
+                errorDiv.innerHTML = `حدث انقطاع في البث 💔
+                                     <br>
+                                     جاري إعادة الاتصال تلقائياً...`;
+                playerContainer.appendChild(errorDiv);
+
+                setTimeout(function() {
+                    player.load();
+                }, 5000);
+            });
+
+            // إخفاء رسالة الخطأ عند نجاح الاتصال
+            player.on('play', function() {
+                const playerContainer = document.getElementById('jwplayerDiv');
+                const error = playerContainer.querySelector('.player-error-message');
+                if (error) {
+                    error.remove();
+                }
+            });
         }
-
-        const player = setupPlayer();
-
-        // إلغاء الزر الأيمن
-        document.getElementById('jwplayerDiv').addEventListener('contextmenu', e => e.preventDefault());
-
-        // كود زر التمدد
-        player.addButton(expandSvg, 'تمدد الفيديو', function() {
-            toggleExpand();
-        }, 'expandButton');
-
+        
+        // 3. بدء تشغيل كل شيء
+        setupPlayer();
+        
+        
+        // --- دوال زر التمدد ---
         function toggleExpand() {
             const videoElement = document.querySelector("#jwplayerDiv video");
             if (!videoElement)
@@ -376,50 +491,6 @@
                 button.setAttribute('aria-label', isExpanded ? 'تصغير الفيديو' : 'تمدد الفيديو');
             }
         }
-
-        // إيقاف المشغل عند إغلاق الصفحة
-        window.addEventListener("beforeunload", function() {
-            player.stop();
-        });
-        document.addEventListener("visibilitychange", function() {
-            if (document.hidden) {
-                player.stop();
-            }
-        });
-
-        // معالجة الأخطاء مع إعادة المحاولة
-        player.on('error', function(error) {
-            console.error("فشل تشغيل الفيديو: " + error.message);
-            
-            const playerContainer = document.getElementById('jwplayerDiv');
-            
-            const oldError = playerContainer.querySelector('.player-error-message');
-            if (oldError) {
-                oldError.remove();
-            }
-            
-            const errorDiv = document.createElement('div');
-            errorDiv.className = 'player-error-message';
-            errorDiv.innerHTML = `حدث انقطاع في البث 💔
-                                 <br>
-                                 جاري إعادة الاتصال تلقائياً...`;
-            playerContainer.appendChild(errorDiv);
-
-            // محاولة إعادة التحميل بعد 5 ثوانٍ
-            setTimeout(function() {
-                player.load();
-            }, 5000);
-        });
-
-        // إخفاء رسالة الخطأ عند نجاح الاتصال
-        player.on('play', function() {
-            const playerContainer = document.getElementById('jwplayerDiv');
-            const error = playerContainer.querySelector('.player-error-message');
-            if (error) {
-                error.remove();
-            }
-        });
-        
     </script>
 </body>
 </html>
