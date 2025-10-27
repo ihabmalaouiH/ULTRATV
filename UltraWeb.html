@@ -342,7 +342,7 @@
         // 1. الدالة الأساسية لجلب الإعدادات السرية
         function setupPlayer() {
             // ⭐️ تغيير: جلب الإعدادات من الدالة السحابية ⭐️
-            fetch('/api/get_stream.js') // <-- هذا هو الرابط
+            fetch('get_stream.js') // <-- هذا هو الرابط
                 .then(response => response.json())
                 .then(data => {
                     if (data.error) {
