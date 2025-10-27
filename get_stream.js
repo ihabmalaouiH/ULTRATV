@@ -7,7 +7,7 @@ export default function handler(request, response) {
     // --- ⭐️ الخطوة الأهم: التحقق من الدومين ⭐️ ---
     // !! ⭐️ قم بتغيير هذا الرابط إلى رابط موقعك الرسمي ⭐️ !!
     // مثال: 'ultra-tv-app.vercel.app' أو 'my-site.net'
-    const allowedDomain = 'YOUR-WEBSITE-DOMAIN.com';
+    const allowedDomain = 'ultrav.me';
     
     // Vercel تستخدم 'x-forwarded-host' أو 'host'
     // Netlify تستخدم 'host'
