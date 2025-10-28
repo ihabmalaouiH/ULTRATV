@@ -5,26 +5,40 @@
 <title>لوحة التحكم - توليد مباريات</title>
 <style>
   body{font-family:system-ui,Arial;background:#0f172a;color:#e5e7eb;padding:20px}
-  h1{font-size:20px;margin-bottom:12px}
+  h1,h3{font-size:20px;margin-bottom:12px; border-bottom: 1px solid #334155; padding-bottom: 8px;}
+  .controls > * {vertical-align: middle;}
   button,input,select{padding:8px 12px;margin:4px;border-radius:8px;border:1px solid #334155;background:#1e293b;color:#e5e7eb;cursor:pointer}
+  #searchInput{width: 220px;}
   table{width:100%;margin-top:16px;border-collapse:collapse;background:#0b1220}
   th,td{border:1px solid #334155;padding:8px;text-align:center}
   th{background:#1e293b}
-  textarea{width:100%;height:200px;margin-top:16px;background:#0b1220;color:#e5e7eb;padding:10px;border-radius:10px}
-  img{width:32px;height:32px;border-radius:6px}
+  textarea{width:100%;background:#0b1220;color:#e5e7eb;padding:10px;border-radius:10px; border:1px solid #334155;}
+  #output { height: 200px; }
+  #bulkInput { height: 120px; margin-top: 10px; }
+  .bulk-container { margin: 20px 0; padding: 15px; background: #1e293b; border-radius: 8px;}
+  img{width:32px;height:32px;border-radius:6px;vertical-align:middle;margin-right:8px;}
 </style>
 </head>
 <body>
 
 <h1>🎯 لوحة التحكم - توليد JSON مباريات</h1>
 
-<label>📅 التاريخ: <input type="date" id="date"></label>
-<!-- 🔴 أزلنا زر "جلب المباريات" -->
-<button onclick="saveToGitHub()">💾 حفظ في GitHub</button>
-<button onclick="clearFile()">🗑️ مسح الملف</button>
-<button onclick="loadFromGitHub()">📥 عرض الملف من GitHub</button>
+<div class="controls">
+    <label>📅 التاريخ: <input type="date" id="date"></label>
+    <input type="text" id="searchInput" placeholder="ابحث عن فريق أو دوري...">
+    <button onclick="saveToGitHub()">💾 حفظ في GitHub</button>
+    <button onclick="clearFileInGitHub()">🗑️ مسح الملف</button>
+    <button onclick="loadFromGitHub()">📥 عرض الملف من GitHub</button>
+</div>
 
-<table id="matches">
+<div class="bulk-container">
+    <h3>📝 الإدخال والتحديد التلقائي</h3>
+    <textarea id="bulkInput" placeholder="ضع قائمة المباريات هنا، كل مباراة في سطر.&#10;التنسيق: الفريق الأول ضد الفريق الثاني, القناة, المعلق"></textarea>
+    <button onclick="processBulkInput()">🔍 بحث وتحديد تلقائي</button>
+</div>
+
+
+<table id="matchesTable">
   <thead>
     <tr>
       <th>✔️</th>
@@ -44,212 +58,243 @@
 <textarea id="output" readonly></textarea>
 
 <script>
-const API_KEY = "66e3a49095e0519ab1f48f1d3a34f50c"; 
-const API_URL = "https://v3.football.api-sports.io/fixtures";
+// --- الإعدادات الرئيسية ---
+const config = {
+    footballApi: { key: "66e3a49095e0519ab1f48f1d3a34f50c", url: "https://v3.football.api-sports.io/fixtures" },
+    github: { token: "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", repo: "ihabmalaouiH/ULTRATV", filePath: "matches.json", branch: "main" }
+};
 
-// 🔑 بيانات GitHub
-const GITHUB_TOKEN = "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";
-const REPO = "ihabmalaouiH/ULTRATV";
-const FILE_PATH = "matches.json";
-const BRANCH = "main";
+// --- العناصر الأساسية في الصفحة ---
+const dateInput = document.getElementById("date");
+const searchInput = document.getElementById("searchInput");
+const bulkInput = document.getElementById("bulkInput");
+const matchesTbody = document.querySelector("#matchesTable tbody");
+const outputTextarea = document.getElementById("output");
 
-function todayISO(){
-  return new Date().toISOString().slice(0,10);
-}
-document.getElementById("date").value = todayISO();
-
-async function fetchMatches(force = false){
-  const date = document.getElementById("date").value;
-  const tbody = document.querySelector("#matches tbody");
-
-  // ✅ تحقق إذا عندنا بيانات مخزنة لنفس اليوم
-  const cached = localStorage.getItem("matches_" + date);
-  if (cached && !force) {
-    renderMatches(JSON.parse(cached));
-    return;
-  }
-
-  tbody.innerHTML = "<tr><td colspan='8'>⏳ جاري التحميل...</td></tr>";
-
-  try {
-    const res = await fetch(`${API_URL}?date=${date}`, {
-      headers: { "x-apisports-key": API_KEY }
-    });
-    const data = await res.json();
-
-    if (!data.response || data.response.length === 0) {
-      tbody.innerHTML = "<tr><td colspan='8'>لا توجد مباريات</td></tr>";
-      return;
+/**
+ * ✅ دالة جديدة لمعالجة الإدخال الجماعي والبحث والتحديد التلقائي
+ */
+function processBulkInput() {
+    const lines = bulkInput.value.trim().split('\n');
+    if (lines.length === 0 || lines[0] === '') {
+        return alert("الرجاء إدخال قائمة المباريات أولاً.");
     }
 
-    // ✅ خزّن البيانات في localStorage ليوم واحد
-    localStorage.setItem("matches_" + date, JSON.stringify(data.response));
+    const allRows = Array.from(matchesTbody.querySelectorAll('tr'));
+    let foundCount = 0;
+    const notFound = [];
 
-    renderMatches(data.response);
+    lines.forEach(line => {
+        const parts = line.split(',');
+        if (parts.length < 3) return;
 
-  } catch (err) {
-    console.error(err);
-    tbody.innerHTML = "<tr><td colspan='8'>⚠️ فشل الجلب</td></tr>";
-  }
-}
+        const matchText = parts[0].toLowerCase().trim();
+        const teams = matchText.split(' ضد ');
+        if (teams.length < 2) return;
+        
+        const team1Query = teams[0].trim();
+        const team2Query = teams[1].trim();
+        const channel = parts[1].trim();
+        const commentator = parts[2].trim();
 
-function renderMatches(matches){
-  const tbody = document.querySelector("#matches tbody");
-  tbody.innerHTML = "";
-  matches.forEach(ev => {
-    const team1Name = ev.teams.home.name;
-    const team2Name = ev.teams.away.name;
-    const team1Logo = ev.teams.home.logo || "assets/default_team.png";
-    const team2Logo = ev.teams.away.logo || "assets/default_team.png";
-    const league = ev.league.name;
-    const startTime = ev.fixture.timestamp;
-    const timeLocal = new Date(startTime * 1000).toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+        const foundRow = allRows.find(row => {
+            if (!row.dataset.team1Name) return false;
+            const team1Name = row.dataset.team1Name.toLowerCase();
+            const team2Name = row.dataset.team2Name.toLowerCase();
+            
+            // تحقق من الترتيبين (فريق أ ضد ب) أو (فريق ب ضد أ)
+            const matchOrder1 = team1Name.includes(team1Query) && team2Name.includes(team2Query);
+            const matchOrder2 = team1Name.includes(team2Query) && team2Name.includes(team1Query);
 
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td><input type="checkbox"></td>
-      <td>${team1Name} <br><img src="${team1Logo}" alt=""></td>
-      <td>VS</td>
-      <td>${team2Name} <br><img src="${team2Logo}" alt=""></td>
-      <td>${league}</td>
-      <td>${timeLocal}</td>
-      <td><input type="text" placeholder="القناة"></td>
-      <td><input type="text" placeholder="المعلق"></td>
-    `;
-    tbody.appendChild(tr);
-  });
-}
+            return matchOrder1 || matchOrder2;
+        });
 
-function generateJSON(){
-  const rows = document.querySelectorAll("#matches tbody tr");
-  const arr = [];
-  rows.forEach(row => {
-    const checkbox = row.querySelector("input[type='checkbox']");
-    if (!checkbox || !checkbox.checked) return;
-
-    const cells = row.querySelectorAll("td");
-    const team1Name = cells[1].innerText.split("\n")[0];
-    const team2Name = cells[3].innerText.split("\n")[0];
-    const team1Logo = cells[1].querySelector("img")?.src;
-    const team2Logo = cells[3].querySelector("img")?.src;
-    const league = cells[4].innerText;
-    const timeLocal = cells[5].innerText;
-    const startTime = Date.parse(new Date().toDateString() + " " + timeLocal) / 1000;
-    const channel = cells[6].querySelector("input").value || "";
-    const commentator = cells[7].querySelector("input").value || "";
-
-    arr.push({
-      team1Name,
-      team1Logo,
-      team2Name,
-      team2Logo,
-      status: "Not Started",
-      league,
-      score: "",
-      startTime,
-      isLive: false,
-      channel,
-      commentator
+        if (foundRow) {
+            foundRow.querySelector("input[type='checkbox']").checked = true;
+            foundRow.querySelector(".channel-input").value = channel;
+            foundRow.querySelector(".commentator-input").value = commentator;
+            foundCount++;
+        } else {
+            notFound.push(matchText);
+        }
     });
-  });
-  document.getElementById("output").value = JSON.stringify(arr, null, 2);
+    
+    // تحديث JSON بعد التحديد
+    generateJSON();
+
+    // عرض تقرير بالنتائج
+    let report = `✅ تم العثور على وتحديث ${foundCount} مباراة.\n`;
+    if (notFound.length > 0) {
+        report += `\n⚠️ لم يتم العثور على المباريات التالية:\n- ${notFound.join('\n- ')}`;
+    }
+    alert(report);
 }
 
-setInterval(generateJSON, 2000);
 
-// ✅ رفع الملف لـ GitHub
+async function fetchMatches() {
+    const date = dateInput.value;
+    const cacheKey = "matches_" + date;
+    
+    try {
+        const cachedData = localStorage.getItem(cacheKey);
+        if (cachedData) { return renderMatches(JSON.parse(cachedData)); }
+    } catch(e) { console.warn("لم يتم قراءة الذاكرة المؤقتة:", e); }
+
+    matchesTbody.innerHTML = `<tr><td colspan="8">⏳ جاري التحميل...</td></tr>`;
+    try {
+        const res = await fetch(`${config.footballApi.url}?date=${date}`, { headers: { "x-apisports-key": config.footballApi.key } });
+        const data = await res.json();
+
+        if (!res.ok) {
+            let errorMsg = data.message || Object.entries(data.errors || {}).map(([k, v]) => `${k}: ${v}`).join(', ');
+            throw new Error(errorMsg || 'خطأ غير معروف');
+        }
+
+        if (!data.response || data.response.length === 0) {
+            return matchesTbody.innerHTML = `<tr><td colspan="8">لا توجد مباريات لهذا اليوم.</td></tr>`;
+        }
+
+        try {
+            localStorage.setItem(cacheKey, JSON.stringify(data.response));
+        } catch (e) {
+            if (e.name === 'QuotaExceededError') {
+                console.warn('تحذير: حجم بيانات المباريات كبير جدًا ولا يمكن تخزينه مؤقتًا.');
+            } else {
+                console.error('فشل التخزين المؤقت:', e);
+            }
+        }
+        
+        renderMatches(data.response);
+    } catch (err) {
+        console.error("Fetch Error:", err);
+        matchesTbody.innerHTML = `<tr><td colspan="8">⚠️ فشل في جلب البيانات: ${err.message}</td></tr>`;
+    }
+}
+
+function renderMatches(matches) {
+    matchesTbody.innerHTML = "";
+    matches.forEach(match => {
+        const tr = document.createElement("tr");
+        tr.dataset.team1Name = match.teams.home.name;
+        tr.dataset.team1Logo = match.teams.home.logo || "assets/default_team.png";
+        tr.dataset.team2Name = match.teams.away.name;
+        tr.dataset.team2Logo = match.teams.away.logo || "assets/default_team.png";
+        tr.dataset.league = match.league.name;
+        tr.dataset.startTime = match.fixture.timestamp;
+
+        const timeLocal = new Date(match.fixture.timestamp * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+        tr.innerHTML = `
+            <td><input type="checkbox"></td>
+            <td><img src="${tr.dataset.team1Logo}" alt=""> ${tr.dataset.team1Name}</td>
+            <td>VS</td>
+            <td><img src="${tr.dataset.team2Logo}" alt=""> ${tr.dataset.team2Name}</td>
+            <td>${tr.dataset.league}</td>
+            <td>${timeLocal}</td>
+            <td><input type="text" placeholder="القناة" class="channel-input"></td>
+            <td><input type="text" placeholder="المعلق" class="commentator-input"></td>
+        `;
+        matchesTbody.appendChild(tr);
+    });
+    filterMatches();
+}
+
+function filterMatches() {
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    const rows = matchesTbody.querySelectorAll('tr');
+    rows.forEach(row => {
+        if (row.querySelectorAll('td').length > 1) {
+            const rowText = (row.dataset.team1Name + row.dataset.team2Name + row.dataset.league).toLowerCase();
+            row.style.display = rowText.includes(searchTerm) ? '' : 'none';
+        }
+    });
+}
+
+function generateJSON() {
+    const selectedRows = document.querySelectorAll("#matchesTable tbody input[type='checkbox']:checked");
+    const matchesArray = [];
+    selectedRows.forEach(checkbox => {
+        const row = checkbox.closest("tr");
+        if (row.style.display === 'none') return; 
+        const data = row.dataset;
+        matchesArray.push({
+            team1Name: data.team1Name, team1Logo: data.team1Logo,
+            team2Name: data.team2Name, team2Logo: data.team2Logo,
+            status: "Not Started", league: data.league, score: "",
+            startTime: parseInt(data.startTime, 10), isLive: false,
+            channel: row.querySelector(".channel-input").value || "",
+            commentator: row.querySelector(".commentator-input").value || ""
+        });
+    });
+    outputTextarea.value = JSON.stringify(matchesArray, null, 2);
+}
+
+// --- دوال التعامل مع GitHub (بدون تغيير) ---
+async function updateGitHubFile(content, message) { /* ... الكود هنا كما هو ... */ }
+async function saveToGitHub() { /* ... الكود هنا كما هو ... */ }
+async function clearFileInGitHub() { /* ... الكود هنا كما هو ... */ }
+async function loadFromGitHub() { /* ... الكود هنا كما هو ... */ }
+// ملاحظة: تم إخفاء كود دوال GitHub للاختصار، لكنه موجود بالكامل في الكود المرفق أعلاه.
+async function updateGitHubFile(content, message) {
+    const GITHUB_API_URL = `https://api.github.com/repos/${config.github.repo}/contents/${config.github.filePath}`;
+    const headers = {"Authorization": `token ${config.github.token}`, "Content-Type": "application/json"};
+    try {
+        let sha = null;
+        const fileRes = await fetch(`${GITHUB_API_URL}?ref=${config.github.branch}`, { headers });
+        if (fileRes.ok) { sha = (await fileRes.json()).sha; }
+        const res = await fetch(GITHUB_API_URL, {method: "PUT", headers, body: JSON.stringify({ message, content, branch: config.github.branch, sha })});
+        if (res.ok) return { success: true };
+        const err = await res.json();
+        return { success: false, error: err.message || JSON.stringify(err) };
+    } catch (err) {
+        console.error("GitHub Update Error:", err);
+        return { success: false, error: "حدث خطأ في الشبكة." };
+    }
+}
 async function saveToGitHub() {
-  const json = document.getElementById("output").value.trim();
-  if (!json || json === "[]") {
-    alert("⚠️ لا يوجد بيانات لحفظها!");
-    return;
-  }
-
-  const content = btoa(unescape(encodeURIComponent(json))); 
-  const message = "update matches.json";
-
-  let sha = null;
-  const check = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}?ref=${BRANCH}`, {
-    headers: { "Authorization": `token ${GITHUB_TOKEN}` }
-  });
-  if (check.status === 200) {
-    const data = await check.json();
-    sha = data.sha;
-  }
-
-  const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}`, {
-    method: "PUT",
-    headers: {
-      "Authorization": `token ${GITHUB_TOKEN}`,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ message, content, branch: BRANCH, sha })
-  });
-
-  if (res.ok) {
-    alert("✅ تم الحفظ في GitHub!");
-  } else {
-    const err = await res.json();
-    console.error(err);
-    alert("⚠️ فشل الحفظ: " + (err.message || JSON.stringify(err)));
-  }
+    const json = outputTextarea.value.trim();
+    if (!json || json === "[]") return alert("⚠️ لا يوجد بيانات لحفظها!");
+    const content = btoa(unescape(encodeURIComponent(json)));
+    const result = await updateGitHubFile(content, "update matches.json");
+    alert(result.success ? "✅ تم الحفظ في GitHub!" : "⚠️ فشل الحفظ: " + result.error);
 }
-
-// ✅ زر لمسح الملف
-async function clearFile() {
-  const emptyContent = btoa("[]"); 
-  const message = "clear matches.json";
-
-  let sha = null;
-  const check = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}?ref=${BRANCH}`, {
-    headers: { "Authorization": `token ${GITHUB_TOKEN}` }
-  });
-  if (check.status === 200) {
-    const data = await check.json();
-    sha = data.sha;
-  }
-
-  const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}`, {
-    method: "PUT",
-    headers: {
-      "Authorization": `token ${GITHUB_TOKEN}`,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ message, content: emptyContent, branch: BRANCH, sha })
-  });
-
-  if (res.ok) {
-    alert("🗑️ تم مسح الملف في GitHub!");
-    document.getElementById("output").value = "[]";
-  } else {
-    const err = await res.json();
-    console.error(err);
-    alert("⚠️ فشل مسح الملف: " + JSON.stringify(err));
-  }
-}
-
-// ✅ زر لعرض الملف من GitHub
-async function loadFromGitHub() {
-  try {
-    const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}?ref=${BRANCH}`, {
-      headers: { "Authorization": `token ${GITHUB_TOKEN}` }
-    });
-    if (res.status === 200) {
-      const data = await res.json();
-      const content = atob(data.content);
-      document.getElementById("output").value = content;
-      alert("📥 تم جلب الملف من GitHub!");
+async function clearFileInGitHub() {
+    const emptyContent = btoa("[]");
+    const result = await updateGitHubFile(emptyContent, "clear matches.json");
+    if (result.success) {
+        outputTextarea.value = "[]";
+        alert("🗑️ تم مسح الملف في GitHub!");
     } else {
-      alert("⚠️ لم يتم العثور على الملف.");
+        alert("⚠️ فشل مسح الملف: " + result.error);
     }
-  } catch (err) {
-    console.error(err);
-    alert("⚠️ فشل في جلب الملف.");
-  }
+}
+async function loadFromGitHub() {
+    try {
+        const res = await fetch(`https://api.github.com/repos/${config.github.repo}/contents/${config.github.filePath}?ref=${config.github.branch}`, {headers: {"Authorization": `token ${config.github.token}`}});
+        if (res.ok) {
+            const data = await res.json();
+            outputTextarea.value = atob(data.content);
+            alert("📥 تم جلب الملف من GitHub!");
+        } else {
+            alert("⚠️ لم يتم العثور على الملف.");
+        }
+    } catch (err) {
+        console.error("GitHub Load Error:", err);
+        alert("⚠️ فشل في جلب الملف.");
+    }
 }
 
-// ✅ استدعاء تلقائي عند فتح الصفحة
-window.addEventListener("load", () => fetchMatches());
+
+// --- بدء تشغيل السكربت ---
+function initialize() {
+    dateInput.value = new Date().toISOString().slice(0, 10);
+    dateInput.addEventListener('change', fetchMatches);
+    matchesTbody.addEventListener('input', generateJSON);
+    searchInput.addEventListener('input', filterMatches);
+    fetchMatches();
+}
+
+initialize();
 </script>
 
 </body>
