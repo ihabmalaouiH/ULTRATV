@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لوحة تحكم (إصدار مطور)</title>
+    <title>لوحة تحكم (الإصدار النهائي الكامل)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
@@ -21,20 +21,22 @@
         h1, h2 { margin: 0; }
         h3, h4, h5 { color: var(--header-bg); }
         .form-section, .output-section { background: var(--card-bg); padding: 25px; border-radius: 12px; box-shadow: var(--shadow); }
-        input[type="text"], input[type="url"], select { width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; box-sizing: border-box; background-color: white; }
-        input:focus, select:focus { outline: none; border-color: var(--header-bg); }
+        input[type="text"], input[type="url"], input[type="password"], select, textarea { width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; box-sizing: border-box; background-color: white; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: var(--header-bg); }
         button { background-color: var(--btn-bg); color: var(--btn-text); border: 2px solid var(--btn-border); padding: 10px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.3s; }
         button:hover { background-color: var(--header-bg); color: var(--text-color); border-color: var(--header-bg); }
         button.action-btn { background: transparent; border: 1px solid #ccc; color: #555; padding: 6px 10px; font-size: 1em; margin: 0 2px; }
         button:disabled { opacity: 0.4; cursor: not-allowed; }
         button.delete-btn { border-color: #ffb8b8; color: #d90429; }
+        button.github-save-btn { background-color: #28a745; color: white; border-color: #28a745; }
+        button.github-save-btn:hover { background-color: #218838; border-color: #218838; }
         .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
         .card-header-title { display: flex; align-items: center; gap: 8px; cursor: pointer;}
         .card-header .actions { display: flex; align-items: center; gap: 4px; }
         .order-buttons { border-right: 1px solid #ddd; padding-right: 8px; margin-right: 8px; display: flex; gap: 4px; }
         .toggle-icon { transition: transform 0.3s; }
         .category-card.collapsed .toggle-icon { transform: rotate(-90deg); }
-        .category-card.collapsed .channels-list, .category-card.collapsed .add-channel-form { display: none; }
+        .category-card.collapsed .channels-list { display: none; }
         #categories-container { margin-top: 20px; }
         .category-card { border: 1px solid var(--border-color); border-radius: 8px; padding: 15px; margin-bottom: 15px; background-color: white; }
         .channel-card { background: #fffafc; margin: 10px 0; border: 1px solid #eee; padding: 15px; border-radius: 8px; }
@@ -46,6 +48,9 @@
         .server-item span { flex-grow: 1; }
         .server-item .actions { display: flex; gap: 4px; }
         .output-section pre { background-color: #2d2d2d; color: #f0f0f0; padding: 20px; border-radius: 8px; white-space: pre-wrap; word-wrap: break-word; max-height: 600px; overflow-y: auto; }
+        .form-container.collapsed .form-fields { display: none; }
+        .form-container.collapsed .toggle-icon { transform: rotate(-90deg); }
+        .form-container .card-header-title { padding: 0; margin-bottom: 10px; }
         .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.5); }
         .modal-content { background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 500px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
         .modal-header { padding-bottom: 10px; border-bottom: 1px solid #ddd; }
@@ -59,12 +64,18 @@
 </head>
 <body>
     <div class="container">
-        <div class="header"><h1>لوحة تحكم (إصدار مطور)</h1></div>
+        <div class="header"><h1>لوحة تحكم (الإصدار النهائي الكامل)</h1></div>
         <div class="form-section">
             <h2>إدارة الباقات والقنوات</h2>
+            
+            <div class="form-group">
+                <input type="text" id="search-bar" placeholder="🔍 ابحث عن باقة أو قناة..." style="width: 100%; border-color: var(--header-bg);">
+            </div>
+            
             <div class="form-group" style="display: flex; gap: 10px;">
                 <button id="import-btn" style="flex: 1;">📂 استيراد</button>
                 <button id="export-btn" style="flex: 1;">📁 تصدير</button>
+                <button id="github-settings-btn" style="flex: 1;">⚙️ إعدادات الربط</button>
             </div>
             <div class="form-group" style="background: #fff8f8; padding: 15px; border-radius: 8px; border: 1px solid var(--btn-border);">
                 <h3>إضافة باقة جديدة</h3>
@@ -77,6 +88,7 @@
         <div class="output-section">
             <h2>النتيجة النهائية (JSON)</h2>
             <button id="generate-json-btn">نسخ الكود</button>
+            <button id="github-save-btn" class="github-save-btn" style="display: none;">⬆️ حفظ إلى GitHub</button>
             <button id="clear-all-btn" class="delete-btn" style="float: left; padding: 10px 18px;">مسح الكل</button>
             <pre><code id="json-output">[]</code></pre>
         </div>
@@ -114,6 +126,34 @@
             <button id="confirm-copy-btn">تأكيد النسخ</button>
         </div>
     </div>
+    
+    <div id="bulkAddServerModal" class="modal">
+         <div class="modal-content">
+            <div class="modal-header"><span class="close-btn" data-modal="bulk">&times;</span><h2>إضافة سيرفرات مجمعة</h2></div>
+            <div style="padding: 20px 0;">
+                <label for="bulk-server-links">ألصق الروابط هنا (كل رابط في سطر جديد):</label>
+                <textarea id="bulk-server-links" rows="10" style="margin-top: 10px;"></textarea>
+            </div>
+            <button id="save-bulk-servers-btn">إضافة السيرفرات</button>
+        </div>
+    </div>
+    
+    <div id="githubSettingsModal" class="modal">
+         <div class="modal-content">
+            <div class="modal-header"><span class="close-btn" data-modal="github">&times;</span><h2>إعدادات الربط بـ GitHub</h2></div>
+            <div style="padding: 20px 0; display: flex; flex-direction: column; gap: 10px;">
+                <label>اسم المستخدم (Your Username):</label>
+                <input type="text" id="github-user" placeholder="e.g., mohamed-ali">
+                <label>اسم المستودع (Repo Name):</label>
+                <input type="text" id="github-repo" placeholder="e.g., ultra-tv-api">
+                <label>مسار الملف (File Path):</label>
+                <input type="text" id="github-path" placeholder="e.g., channels.json">
+                <label>المفتاح السري (Personal Access Token):</label>
+                <input type="password" id="github-token" placeholder="يبدأ بـ ghp_...">
+            </div>
+            <button id="save-github-settings-btn">حفظ الإعدادات</button>
+        </div>
+    </div>
 
     <div id="toast-container"></div>
 
@@ -121,13 +161,18 @@
     document.addEventListener('DOMContentLoaded', () => {
         const categoriesContainer = document.getElementById('categories-container');
         const jsonOutput = document.getElementById('json-output');
+        const searchBar = document.getElementById('search-bar');
+        const githubSaveBtn = document.getElementById('github-save-btn');
         const modals = {
             edit: document.getElementById('editModal'),
             server: document.getElementById('editServerModal'),
-            copy: document.getElementById('copyChannelModal')
+            copy: document.getElementById('copyChannelModal'),
+            bulk: document.getElementById('bulkAddServerModal'),
+            github: document.getElementById('githubSettingsModal')
         };
         let data = [];
         let context = {};
+        let githubConfig = {};
 
         const showToast = (message, type = 'success') => {
             const container = document.getElementById('toast-container');
@@ -196,24 +241,60 @@
                                                 </div>`;
                                     }).join('')}
                                 </div>
-                                <div class="form-group" style="margin-top: 15px; background: #fafafa; padding: 10px; border-radius: 6px;">
-                                    <h5>إضافة سيرفر جديد</h5>
-                                    <input type="text" placeholder="اسم السيرفر (Server 1)" class="server-name-input"><br>
-                                    <input type="url" placeholder="رابط السيرفر" class="server-url-input" style="margin-top: 5px;">
-                                    <button class="add-server-btn" data-cat-index="${catIndex}" data-ch-index="${chIndex}" style="margin-top: 5px; padding: 8px 12px;">إضافة سيرفر</button>
+                                <div class="form-group form-container collapsed" style="margin-top: 15px; background: #fafafa; padding: 10px; border-radius: 6px;">
+                                    <h5 class="card-header-title" data-action="toggle-form">
+                                        <span class="toggle-icon">▼</span>إضافة سيرفر جديد
+                                    </h5>
+                                    <div class="form-fields">
+                                        <input type="text" placeholder="اسم السيرفر (Server 1)" class="server-name-input"><br>
+                                        <input type="url" placeholder="رابط السيرفر" class="server-url-input" style="margin-top: 5px;">
+                                        <button class="add-server-btn" data-cat-index="${catIndex}" data-ch-index="${chIndex}" style="margin-top: 5px; padding: 8px 12px;">إضافة سيرفر</button>
+                                    </div>
+                                </div>
+                                <div class="form-group form-container collapsed" style="margin-top: 10px; background: #fafafa; padding: 10px; border-radius: 6px;">
+                                    <h5 class="card-header-title" data-action="toggle-form">
+                                        <span class="toggle-icon">▼</span>إضافة سيرفرات مجمعة
+                                    </h5>
+                                    <div class="form-fields">
+                                        <button class="add-bulk-server-btn" data-cat-index="${catIndex}" data-ch-index="${chIndex}" style="margin-top: 5px; padding: 8px 12px; width:100%;">فتح نافذة الإضافة المجمعة</button>
+                                    </div>
                                 </div>
                             </div>`).join('')}
                     </div>
-                    <div class="form-group add-channel-form" style="margin-top: 20px;">
-                        <h4>إضافة قناة جديدة</h4>
-                        <input type="text" placeholder="اسم القناة" class="channel-name-input"><br>
-                        <input type="url" placeholder="رابط شعار القناة" class="channel-logo-input" style="margin-top: 5px;">
-                        <button class="add-channel-btn" data-cat-index="${catIndex}" style="margin-top: 5px;">إضافة قناة</button>
+                    <div class="form-group add-channel-form form-container collapsed" style="margin-top: 20px;">
+                        <h4 class="card-header-title" data-action="toggle-form">
+                            <span class="toggle-icon">▼</span>إضافة قناة جديدة
+                        </h4>
+                        <div class="form-fields">
+                            <input type="text" placeholder="اسم القناة" class="channel-name-input"><br>
+                            <input type="url" placeholder="رابط شعار القناة" class="channel-logo-input" style="margin-top: 5px;">
+                            <button class="add-channel-btn" data-cat-index="${catIndex}" style="margin-top: 5px;">إضافة قناة</button>
+                        </div>
                     </div>`;
                 categoriesContainer.appendChild(categoryCard);
             });
             updateJsonOutput();
+            handleSearch(); // Re-apply search filter after render
         };
+
+        const handleSearch = () => {
+            const query = searchBar.value.toLowerCase().trim();
+            document.querySelectorAll('.category-card').forEach(catCard => {
+                const catName = catCard.querySelector('h3').textContent.toLowerCase();
+                let catHasVisibleChannel = false;
+                
+                catCard.querySelectorAll('.channel-card').forEach(chCard => {
+                    const chName = chCard.querySelector('h4').textContent.toLowerCase();
+                    const isMatch = chName.includes(query);
+                    chCard.style.display = isMatch ? 'block' : 'none';
+                    if (isMatch) catHasVisibleChannel = true;
+                });
+
+                if (catName.includes(query) || catHasVisibleChannel) catCard.style.display = 'block';
+                else catCard.style.display = 'none';
+            });
+        };
+        searchBar.addEventListener('keyup', handleSearch);
 
         document.getElementById('add-category-btn').addEventListener('click', () => {
             const nameInput = document.getElementById('category-name'), logoInput = document.getElementById('category-logo');
@@ -269,15 +350,11 @@
                     const isUp = action === 'move-up';
                     if (type === 'category') {
                         const swapIdx = isUp ? catIdx - 1 : catIdx + 1;
-                        if (swapIdx >= 0 && swapIdx < data.length) {
-                            [data[catIdx], data[swapIdx]] = [data[swapIdx], data[catIdx]];
-                        }
+                        if (swapIdx >= 0 && swapIdx < data.length) { [data[catIdx], data[swapIdx]] = [data[swapIdx], data[catIdx]]; }
                     } else if (type === 'channel') {
                         const channels = data[catIdx].channels;
                         const swapIdx = isUp ? chIdx - 1 : chIdx + 1;
-                        if (swapIdx >= 0 && swapIdx < channels.length) {
-                            [channels[chIdx], channels[swapIdx]] = [channels[swapIdx], channels[chIdx]];
-                        }
+                        if (swapIdx >= 0 && swapIdx < channels.length) { [channels[chIdx], channels[swapIdx]] = [channels[swapIdx], channels[chIdx]]; }
                     }
                     render(); saveData();
                 } else if (action === 'edit') {
@@ -306,11 +383,8 @@
                             select.appendChild(option);
                         }
                     });
-                    if(select.options.length > 0) {
-                        modals.copy.style.display = 'block';
-                    } else {
-                        showToast('لا توجد باقة أخرى للنسخ إليها', 'error');
-                    }
+                    if(select.options.length > 0) { modals.copy.style.display = 'block'; }
+                    else { showToast('لا توجد باقة أخرى للنسخ إليها', 'error'); }
                 } else if (action === 'delete') {
                     if (confirm('هل أنت متأكد من الحذف؟')) {
                         if (type === 'server') data[catIdx].channels[chIdx].servers.splice(srvIdx, 1);
@@ -319,27 +393,134 @@
                         render(); saveData(); showToast('تم الحذف', 'error');
                     }
                 } else if (button.classList.contains('add-channel-btn')) {
-                    const card = button.closest('.category-card');
+                    const card = button.closest('.form-container');
                     const nameInput = card.querySelector('.channel-name-input'), logoInput = card.querySelector('.channel-logo-input');
                     if (nameInput.value.trim() && logoInput.value.trim()) {
                         data[catIdx].channels.push({ name: nameInput.value.trim(), logoUrl: logoInput.value.trim(), servers: [] });
                         render(); saveData(); showToast('تمت إضافة القناة');
                     } else { showToast('الرجاء إدخال اسم وشعار القناة', 'error'); }
                 } else if (button.classList.contains('add-server-btn')) {
-                    const card = button.closest('.channel-card');
+                    const card = button.closest('.form-container');
                     const nameInput = card.querySelector('.server-name-input'), urlInput = card.querySelector('.server-url-input');
                     if (nameInput.value.trim() && urlInput.value.trim()) {
                         if (!data[catIdx].channels[chIdx].servers) { data[catIdx].channels[chIdx].servers = []; }
                         data[catIdx].channels[chIdx].servers.push({ [nameInput.value.trim()]: urlInput.value.trim() });
                         render(); saveData(); showToast('تمت إضافة السيرفر');
                     } else { showToast('الرجاء إدخال اسم ورابط السيرفر', 'error'); }
+                } else if (button.classList.contains('add-bulk-server-btn')) {
+                    context = { catIndex, chIndex };
+                    document.getElementById('bulk-server-links').value = '';
+                    modals.bulk.style.display = 'block';
                 }
             } else if (headerTitle) {
-                const categoryCard = headerTitle.closest('.category-card');
-                if (categoryCard) { categoryCard.classList.toggle('collapsed'); }
+                const action = headerTitle.dataset.action;
+                if (action === 'toggle-collapse') {
+                    const categoryCard = headerTitle.closest('.category-card');
+                    if (categoryCard) categoryCard.classList.toggle('collapsed');
+                } else if (action === 'toggle-form') {
+                    const formContainer = headerTitle.closest('.form-container');
+                    if (formContainer) formContainer.classList.toggle('collapsed');
+                }
             }
         });
 
+        // --- GitHub Settings Logic ---
+        const loadGithubConfig = () => {
+            const config = localStorage.getItem('githubConfig');
+            if(config) {
+                githubConfig = JSON.parse(config);
+                document.getElementById('github-user').value = githubConfig.user || '';
+                document.getElementById('github-repo').value = githubConfig.repo || '';
+                document.getElementById('github-path').value = githubConfig.path || '';
+                document.getElementById('github-token').value = githubConfig.token || '';
+                githubSaveBtn.style.display = 'inline-block';
+            }
+        };
+
+        document.getElementById('github-settings-btn').addEventListener('click', () => {
+            modals.github.style.display = 'block';
+        });
+
+        document.getElementById('save-github-settings-btn').addEventListener('click', () => {
+            githubConfig = {
+                user: document.getElementById('github-user').value.trim(),
+                repo: document.getElementById('github-repo').value.trim(),
+                path: document.getElementById('github-path').value.trim(),
+                token: document.getElementById('github-token').value.trim()
+            };
+            if (!githubConfig.user || !githubConfig.repo || !githubConfig.path || !githubConfig.token) {
+                showToast('الرجاء ملء جميع الحقول', 'error');
+                return;
+            }
+            localStorage.setItem('githubConfig', JSON.stringify(githubConfig));
+            githubSaveBtn.style.display = 'inline-block';
+            modals.github.style.display = 'none';
+            showToast('تم حفظ الإعدادات بنجاح');
+        });
+
+        githubSaveBtn.addEventListener('click', async () => {
+            const { user, repo, path, token } = githubConfig;
+            if (!user || !repo || !path || !token) {
+                showToast('الرجاء ضبط إعدادات الربط أولاً', 'error');
+                return;
+            }
+
+            githubSaveBtn.textContent = 'جاري الحفظ...';
+            githubSaveBtn.disabled = true;
+
+            const apiUrl = `https://api.github.com/repos/${user}/${repo}/contents/${path}`;
+            const fileContent = JSON.stringify(data, null, 2);
+            const encodedContent = btoa(unescape(encodeURIComponent(fileContent)));
+            
+            try {
+                let sha;
+                try {
+                    const getRes = await fetch(apiUrl, {
+                        headers: { 'Authorization': `token ${token}` }
+                    });
+                    if (getRes.ok) {
+                        const fileData = await getRes.json();
+                        sha = fileData.sha;
+                    } else if (getRes.status !== 404) {
+                        throw new Error(`فشل في جلب الملف: ${getRes.statusText}`);
+                    }
+                } catch (e) {
+                     showToast(`خطأ في جلب الملف: ${e.message}`, 'error');
+                     // Don't stop here, proceed to create the file
+                }
+
+                const commitMessage = `تحديث ملف القنوات من لوحة التحكم - ${new Date().toLocaleString()}`;
+                const body = {
+                    message: commitMessage,
+                    content: encodedContent,
+                    sha: sha
+                };
+                
+                const putRes = await fetch(apiUrl, {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': `token ${token}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(body)
+                });
+
+                if (putRes.ok) {
+                    showToast('تم الحفظ في GitHub بنجاح!');
+                } else {
+                    const error = await putRes.json();
+                    showToast(`فشل الحفظ: ${error.message}`, 'error');
+                }
+
+            } catch (err) {
+                showToast(`خطأ فادح: ${err.message}`, 'error');
+            } finally {
+                githubSaveBtn.textContent = '⬆️ حفظ إلى GitHub';
+                githubSaveBtn.disabled = false;
+            }
+        });
+
+        // --- All Modal Listeners ---
         document.querySelectorAll('.close-btn').forEach(btn => {
             btn.onclick = () => { modals[btn.dataset.modal].style.display = 'none'; };
         });
@@ -374,16 +555,29 @@
             const { catIndex, chIndex } = context;
             const sourceCatIdx = parseInt(catIndex), sourceChIdx = parseInt(chIndex);
             const destCatIdx = parseInt(document.getElementById('copy-destination-category').value);
-            
             if (isNaN(destCatIdx)) { showToast('الرجاء اختيار باقة هدف', 'error'); return; }
-
             const channelToCopy = data[sourceCatIdx].channels[sourceChIdx];
             const deepCopiedChannel = JSON.parse(JSON.stringify(channelToCopy));
             data[destCatIdx].channels.push(deepCopiedChannel);
-
             modals.copy.style.display = 'none';
             render(); saveData();
             showToast(`تم نسخ قناة "${channelToCopy.name}" بنجاح`);
+        });
+        
+        document.getElementById('save-bulk-servers-btn').addEventListener('click', () => {
+            const { catIndex, chIndex } = context;
+            const catIdx = parseInt(catIndex), chIdx = parseInt(chIndex);
+            const links = document.getElementById('bulk-server-links').value.split('\n').filter(link => link.trim() !== '');
+            if (links.length === 0) { showToast('الرجاء لصق رابط واحد على الأقل', 'error'); return; }
+            if (!data[catIdx].channels[chIdx].servers) { data[catIdx].channels[chIdx].servers = []; }
+            const existingServers = data[catIdx].channels[chIdx].servers;
+            links.forEach(link => {
+                const serverName = `Server ${existingServers.length + 1}`;
+                existingServers.push({ [serverName]: link.trim() });
+            });
+            modals.bulk.style.display = 'none';
+            render(); saveData();
+            showToast(`تمت إضافة ${links.length} سيرفرات بنجاح`);
         });
 
         document.getElementById('generate-json-btn').addEventListener('click', (e) => {
@@ -395,11 +589,16 @@
         });
         document.getElementById('clear-all-btn').addEventListener('click', () => {
             if (confirm('تحذير: سيتم حذف جميع البيانات نهائياً. هل أنت متأكد؟')) {
-                data = []; localStorage.removeItem('channelsApiData');
-                render(); showToast('تم مسح جميع البيانات', 'error');
+                data = []; 
+                localStorage.removeItem('channelsApiData');
+                localStorage.removeItem('githubConfig');
+                render(); 
+                githubSaveBtn.style.display = 'none';
+                showToast('تم مسح جميع البيانات', 'error');
             }
         });
 
+        loadGithubConfig();
         loadData();
     });
     </script>
