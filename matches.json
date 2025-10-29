@@ -1,340 +1,418 @@
 [
   {
-    "team1Name": "JS Saoura",
+    "num": 1,
+    "team1Name": "شبيبة الساورة",
     "team1Logo": "https://media.api-sports.io/football/teams/914.png",
-    "team2Name": "JS Kabylie",
+    "team2Name": "شبيبة القبائل",
     "team2Logo": "https://media.api-sports.io/football/teams/918.png",
-    "status": "Not Started",
-    "league": "Ligue 1",
-    "score": "",
     "startTime": 1761750000,
-    "isLive": false,
+    "league": "الدوري الجزائري",
     "channel": "",
-    "commentator": "غير معروف "
+    "commentator": "غير معروف ",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Al Shorta",
+    "num": 2,
+    "team1Name": "الشرطة",
     "team1Logo": "https://media.api-sports.io/football/teams/5242.png",
-    "team2Name": "Al-Karma",
+    "team2Name": "الكرمة",
     "team2Logo": "https://media.api-sports.io/football/teams/25063.png",
-    "status": "Not Started",
-    "league": "Iraqi League",
-    "score": "",
     "startTime": 1761750000,
-    "isLive": false,
+    "league": "الدوري العراقي",
     "channel": "",
-    "commentator": "عباس هادي"
+    "commentator": "عباس هادي",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Petrojet",
+    "num": 3,
+    "team1Name": "بتروجيت",
     "team1Logo": "https://media.api-sports.io/football/teams/1041.png",
-    "team2Name": "Al Ahly",
+    "team2Name": "الأهلي",
     "team2Logo": "https://media.api-sports.io/football/teams/1577.png",
-    "status": "Not Started",
-    "league": "Premier League",
-    "score": "",
     "startTime": 1761757200,
-    "isLive": false,
+    "league": "الدوري المصري الممتاز",
     "channel": "ON Sport 1",
-    "commentator": "أيمن الكاشف"
+    "commentator": "أيمن الكاشف",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "SC Paderborn 07",
+    "num": 4,
+    "team1Name": "بادربورن 07",
     "team1Logo": "https://media.api-sports.io/football/teams/185.png",
-    "team2Name": "Bayer Leverkusen",
+    "team2Name": "باير ليفركوزن",
     "team2Logo": "https://media.api-sports.io/football/teams/168.png",
-    "status": "Not Started",
-    "league": "DFB Pokal",
-    "score": "",
     "startTime": 1761757200,
-    "isLive": false,
+    "league": "كأس ألمانيا",
     "channel": "",
-    "commentator": "حازم عبدالسلام"
+    "commentator": "حازم عبدالسلام",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Como",
+    "num": 5,
+    "team1Name": "كومو",
     "team1Logo": "https://media.api-sports.io/football/teams/895.png",
-    "team2Name": "Verona",
+    "team2Name": "فيرونا",
     "team2Logo": "https://media.api-sports.io/football/teams/504.png",
-    "status": "Not Started",
-    "league": "Serie A",
-    "score": "",
     "startTime": 1761759000,
-    "isLive": false,
+    "league": "الدوري الإيطالي",
     "channel": "",
-    "commentator": "محمد أبو كبده"
+    "commentator": "محمد أبو كبده",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Juventus",
+    "num": 6,
+    "team1Name": "يوفنتوس",
     "team1Logo": "https://media.api-sports.io/football/teams/496.png",
-    "team2Name": "Udinese",
+    "team2Name": "أودينيزي",
     "team2Logo": "https://media.api-sports.io/football/teams/494.png",
-    "status": "Not Started",
-    "league": "Serie A",
-    "score": "",
     "startTime": 1761759000,
-    "isLive": false,
+    "league": "الدوري الإيطالي",
     "channel": "",
-    "commentator": "محمد الشامسي"
+    "commentator": "محمد الشامسي",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "AS Roma",
+    "num": 7,
+    "team1Name": "روما",
     "team1Logo": "https://media.api-sports.io/football/teams/497.png",
-    "team2Name": "Parma",
+    "team2Name": "بارما",
     "team2Logo": "https://media.api-sports.io/football/teams/523.png",
-    "status": "Not Started",
-    "league": "Serie A",
-    "score": "",
     "startTime": 1761759000,
-    "isLive": false,
+    "league": "الدوري الإيطالي",
     "channel": "",
-    "commentator": "فيصل الهندي"
+    "commentator": "فيصل الهندي",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Le Havre",
+    "num": 8,
+    "team1Name": "لو هافر",
     "team1Logo": "https://media.api-sports.io/football/teams/111.png",
-    "team2Name": "Stade Brestois 29",
+    "team2Name": "ستاد بريست",
     "team2Logo": "https://media.api-sports.io/football/teams/106.png",
-    "status": "Not Started",
-    "league": "Ligue 1",
-    "score": "",
     "startTime": 1761760800,
-    "isLive": false,
+    "league": "الدوري الفرنسي",
     "channel": "",
-    "commentator": "محمد السعدي"
+    "commentator": "محمد السعدي",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Lorient",
+    "num": 9,
+    "team1Name": "لوريان",
     "team1Logo": "https://media.api-sports.io/football/teams/97.png",
-    "team2Name": "Paris Saint Germain",
+    "team2Name": "باريس سان جيرمان",
     "team2Logo": "https://media.api-sports.io/football/teams/85.png",
-    "status": "Not Started",
-    "league": "Ligue 1",
-    "score": "",
     "startTime": 1761760800,
-    "isLive": false,
+    "league": "الدوري الفرنسي",
     "channel": "",
-    "commentator": "عامر الخوذيري"
+    "commentator": "عامر الخوذيري",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Metz",
+    "num": 10,
+    "team1Name": "ميتز",
     "team1Logo": "https://media.api-sports.io/football/teams/112.png",
-    "team2Name": "Lens",
+    "team2Name": "لانس",
     "team2Logo": "https://media.api-sports.io/football/teams/116.png",
-    "status": "Not Started",
-    "league": "Ligue 1",
-    "score": "",
     "startTime": 1761760800,
-    "isLive": false,
+    "league": "الدوري الفرنسي",
     "channel": "",
-    "commentator": "باسم الزير"
+    "commentator": "باسم الزير",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Nice",
+    "num": 11,
+    "team1Name": "نيس",
     "team1Logo": "https://media.api-sports.io/football/teams/84.png",
-    "team2Name": "Lille",
+    "team2Name": "ليل",
     "team2Logo": "https://media.api-sports.io/football/teams/79.png",
-    "status": "Not Started",
-    "league": "Ligue 1",
-    "score": "",
     "startTime": 1761760800,
-    "isLive": false,
+    "league": "الدوري الفرنسي",
     "channel": "",
-    "commentator": "أحمد عبده"
+    "commentator": "أحمد عبده",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Al Wihdat",
+    "num": 12,
+    "team1Name": "الوحدات",
     "team1Logo": "https://media.api-sports.io/football/teams/4537.png",
-    "team2Name": "Muharraq",
+    "team2Name": "المحرق",
     "team2Logo": "https://media.api-sports.io/football/teams/5488.png",
-    "status": "Not Started",
-    "league": "AFC Cup",
-    "score": "",
     "startTime": 1761761700,
-    "isLive": false,
+    "league": "كأس الاتحاد الآسيوي",
     "channel": "",
-    "commentator": "أحمد البلوشي"
+    "commentator": "أحمد البلوشي",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Bologna",
+    "num": 13,
+    "team1Name": "بولونيا",
     "team1Logo": "https://media.api-sports.io/football/teams/500.png",
-    "team2Name": "Torino",
+    "team2Name": "تورينو",
     "team2Logo": "https://media.api-sports.io/football/teams/503.png",
-    "status": "Not Started",
-    "league": "Serie A",
-    "score": "",
     "startTime": 1761767100,
-    "isLive": false,
+    "league": "الدوري الإيطالي",
     "channel": "",
-    "commentator": "ميشيل سعد"
+    "commentator": "ميشيل سعد",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Genoa",
+    "num": 14,
+    "team1Name": "جنوى",
     "team1Logo": "https://media.api-sports.io/football/teams/495.png",
-    "team2Name": "Cremonese",
+    "team2Name": "كريمونيزي",
     "team2Logo": "https://media.api-sports.io/football/teams/520.png",
-    "status": "Not Started",
-    "league": "Serie A",
-    "score": "",
     "startTime": 1761767100,
-    "isLive": false,
+    "league": "الدوري الإيطالي",
     "channel": "",
-    "commentator": "غازي العمري"
+    "commentator": "غازي العمري",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Inter",
+    "num": 15,
+    "team1Name": "إنتر",
     "team1Logo": "https://media.api-sports.io/football/teams/505.png",
-    "team2Name": "Fiorentina",
+    "team2Name": "فيورنتينا",
     "team2Logo": "https://media.api-sports.io/football/teams/502.png",
-    "status": "Not Started",
-    "league": "Serie A",
-    "score": "",
     "startTime": 1761767100,
-    "isLive": false,
+    "league": "الدوري الإيطالي",
     "channel": "",
-    "commentator": "عيسى الحربين"
+    "commentator": "عيسى الحربين",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "1.FC Köln",
+    "num": 16,
+    "team1Name": "كولن",
     "team1Logo": "https://media.api-sports.io/football/teams/192.png",
-    "team2Name": "Bayern München",
+    "team2Name": "بايرن ميونخ",
     "team2Logo": "https://media.api-sports.io/football/teams/157.png",
-    "status": "Not Started",
-    "league": "DFB Pokal",
-    "score": "",
     "startTime": 1761767100,
-    "isLive": false,
+    "league": "كأس ألمانيا",
     "channel": "",
-    "commentator": "عبدالله السعدي"
+    "commentator": "عبدالله السعدي",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Swansea",
+    "num": 17,
+    "team1Name": "سوانزي سيتي",
     "team1Logo": "https://media.api-sports.io/football/teams/76.png",
-    "team2Name": "Manchester City",
+    "team2Name": "مانشستر سيتي",
     "team2Logo": "https://media.api-sports.io/football/teams/50.png",
-    "status": "Not Started",
-    "league": "League Cup",
-    "score": "",
     "startTime": 1761767100,
-    "isLive": false,
+    "league": "كأس الرابطة الإنجليزية",
     "channel": "",
-    "commentator": "جواد بدة"
+    "commentator": "جواد بدة",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Liverpool",
+    "num": 18,
+    "team1Name": "ليفربول",
     "team1Logo": "https://media.api-sports.io/football/teams/40.png",
-    "team2Name": "Crystal Palace",
+    "team2Name": "كريستال بالاس",
     "team2Logo": "https://media.api-sports.io/football/teams/52.png",
-    "status": "Not Started",
-    "league": "League Cup",
-    "score": "",
     "startTime": 1761767100,
-    "isLive": false,
+    "league": "كأس الرابطة الإنجليزية",
     "channel": "",
-    "commentator": "علي محمد علي"
+    "commentator": "علي محمد علي",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Arsenal",
+    "num": 19,
+    "team1Name": "أرسنال",
     "team1Logo": "https://media.api-sports.io/football/teams/42.png",
-    "team2Name": "Brighton",
+    "team2Name": "برايتون",
     "team2Logo": "https://media.api-sports.io/football/teams/51.png",
-    "status": "Not Started",
-    "league": "League Cup",
-    "score": "",
     "startTime": 1761767100,
-    "isLive": false,
+    "league": "كأس الرابطة الإنجليزية",
     "channel": "",
-    "commentator": "حفيظ دراجي"
+    "commentator": "حفيظ دراجي",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Wolves",
+    "num": 20,
+    "team1Name": "ولفرهامبتون",
     "team1Logo": "https://media.api-sports.io/football/teams/39.png",
-    "team2Name": "Chelsea",
+    "team2Name": "تشيلسي",
     "team2Logo": "https://media.api-sports.io/football/teams/49.png",
-    "status": "Not Started",
-    "league": "League Cup",
-    "score": "",
     "startTime": 1761767100,
-    "isLive": false,
+    "league": "كأس الرابطة الإنجليزية",
     "channel": "",
-    "commentator": "محمد المبروكي"
+    "commentator": "محمد المبروكي",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Newcastle",
+    "num": 21,
+    "team1Name": "نيوكاسل",
     "team1Logo": "https://media.api-sports.io/football/teams/34.png",
-    "team2Name": "Tottenham",
+    "team2Name": "توتنهام",
     "team2Logo": "https://media.api-sports.io/football/teams/47.png",
-    "status": "Not Started",
-    "league": "League Cup",
-    "score": "",
     "startTime": 1761768000,
-    "isLive": false,
+    "league": "كأس الرابطة الإنجليزية",
     "channel": "",
-    "commentator": "محمد بركات"
+    "commentator": "محمد بركات",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Marseille",
+    "num": 22,
+    "team1Name": "مارسيليا",
     "team1Logo": "https://media.api-sports.io/football/teams/81.png",
-    "team2Name": "Angers",
+    "team2Name": "أنجيه",
     "team2Logo": "https://media.api-sports.io/football/teams/77.png",
-    "status": "Not Started",
-    "league": "Ligue 1",
-    "score": "",
     "startTime": 1761768300,
-    "isLive": false,
+    "league": "الدوري الفرنسي",
     "channel": "",
-    "commentator": "عبدالله الغامدي"
+    "commentator": "عبدالله الغامدي",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Nantes",
+    "num": 23,
+    "team1Name": "نانت",
     "team1Logo": "https://media.api-sports.io/football/teams/83.png",
-    "team2Name": "Monaco",
+    "team2Name": "موناكو",
     "team2Logo": "https://media.api-sports.io/football/teams/91.png",
-    "status": "Not Started",
-    "league": "Ligue 1",
-    "score": "",
     "startTime": 1761768300,
-    "isLive": false,
+    "league": "الدوري الفرنسي",
     "channel": "",
-    "commentator": "نوفل باشي"
+    "commentator": "نوفل باشي",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Paris FC",
+    "num": 24,
+    "team1Name": "باريس إف سي",
     "team1Logo": "https://media.api-sports.io/football/teams/114.png",
-    "team2Name": "Lyon",
+    "team2Name": "ليون",
     "team2Logo": "https://media.api-sports.io/football/teams/80.png",
-    "status": "Not Started",
-    "league": "Ligue 1",
-    "score": "",
     "startTime": 1761768300,
-    "isLive": false,
+    "league": "الدوري الفرنسي",
     "channel": "",
-    "commentator": "منتصر الأزهري"
+    "commentator": "منتصر الأزهري",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Strasbourg",
+    "num": 25,
+    "team1Name": "ستراسبورج",
     "team1Logo": "https://media.api-sports.io/football/teams/95.png",
-    "team2Name": "Auxerre",
+    "team2Name": "أوكسير",
     "team2Logo": "https://media.api-sports.io/football/teams/108.png",
-    "status": "Not Started",
-    "league": "Ligue 1",
-    "score": "",
     "startTime": 1761768300,
-    "isLive": false,
+    "league": "الدوري الفرنسي",
     "channel": "",
-    "commentator": "مصطفى ناظم"
+    "commentator": "مصطفى ناظم",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   },
   {
-    "team1Name": "Toulouse",
+    "num": 26,
+    "team1Name": "تولوز",
     "team1Logo": "https://media.api-sports.io/football/teams/96.png",
-    "team2Name": "Rennes",
+    "team2Name": "رين",
     "team2Logo": "https://media.api-sports.io/football/teams/94.png",
-    "status": "Not Started",
-    "league": "Ligue 1",
-    "score": "",
     "startTime": 1761768300,
-    "isLive": false,
+    "league": "الدوري الفرنسي",
     "channel": "",
-    "commentator": "محمد فوزي"
+    "commentator": "محمد فوزي",
+    "servers": [
+      {
+        "hd": ""
+      }
+    ]
   }
 ]
