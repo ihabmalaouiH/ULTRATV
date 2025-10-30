@@ -1,418 +1,116 @@
 [
   {
     "num": 1,
-    "team1Name": "شبيبة الساورة",
-    "team1Logo": "https://media.api-sports.io/football/teams/914.png",
-    "team2Name": "شبيبة القبائل",
-    "team2Logo": "https://media.api-sports.io/football/teams/918.png",
-    "startTime": 1761750000,
-    "league": "الدوري الجزائري",
-    "channel": "ENTV",
-    "commentator": "غير معروف ",
+    "team1Name": "الأخدود",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/12747.png",
+    "team2Name": "الهلال",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/269.png",
+    "startTime": 1761664200,
+    "league": "كأس خادم الحرمين الشريفين",
+    "channel": "ثمانية 3",
+    "commentator": "عبدالله الحربي",
     "servers": [
       {
-        "hd": "https://stream.mux.com/2ooAA0100ug01awSr7Gid2qLJZVVKzV7vuCS4ymQOr3U2U.m3u8?redundant_streams=true"
+        "4K Ultra Server": "https://cdnfest.com/thmanyah-3/index.fmp4.m3u8"
       }
     ]
   },
   {
     "num": 2,
-    "team1Name": "الشرطة",
-    "team1Logo": "https://media.api-sports.io/football/teams/5242.png",
-    "team2Name": "الكرمة",
-    "team2Logo": "https://media.api-sports.io/football/teams/25063.png",
-    "startTime": 1761750000,
-    "league": "الدوري العراقي",
-    "channel": "العراقية الرياضية",
-    "commentator": "عباس هادي",
-    "servers": [
-      {
-        "hd": "https://s3.news-api-gen.lol/iraq_sport/index.m3u8?token=d1ef715832c04b21afcb3db050bb3f40809bbd0d-25f8435e93a70d1c68ed0825cdc2ad7d-1761751640-1761740840"
-      }
-    ]
+    "team1Name": "ليتشي",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/204.png",
+    "team2Name": "نابولي",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/757.png",
+    "startTime": 1761672600,
+    "league": "الدوري الإيطالي",
+    "channel": "StarzPlay 1",
+    "commentator": "حازم عبدالسلام",
+    "servers": []
   },
   {
     "num": 3,
-    "team1Name": "بتروجيت",
-    "team1Logo": "https://media.api-sports.io/football/teams/1041.png",
-    "team2Name": "الأهلي",
-    "team2Logo": "https://media.api-sports.io/football/teams/1577.png",
-    "startTime": 1761757200,
-    "league": "الدوري المصري الممتاز",
-    "channel": "ON Sport 1",
-    "commentator": "أيمن الكاشف",
+    "team1Name": "آينتراخت فرانكفورت",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/196.png",
+    "team2Name": "بوروسيا دورتموند",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/154.png",
+    "startTime": 1761672600,
+    "league": "كأس ألمانيا",
+    "channel": "أبو ظبي الرياضية HD 1",
+    "commentator": "محمد الشامسي",
     "servers": [
       {
-        "hd": "https://scontent.falg2-2.fna.fbcdn.net/hvideo-cco-pnb/_nc_cat-109/_nc_sr_t-4/v/rASeCgmrahgu77IeFMctAesqI1-l2r5NaOt4s14uCfCde4A/_nc_ohc-m3senzK_tjYQ7kNvwGMgWR9/live-dash/dash-abr5/1345036044332271.mpd?_nc_eui2=AeHIYCsRNCpU5vb_XxOxeQcfecAX6oyYkgV5wBfqjJiSBeYk104G2v1clnyBqGb4Bj--cliZzPeKH0R6sRMlmvHA&_nc_zt=28&ccb=2-4&ms=m_CTPA&sc_t=1&oh=00_Afdz-rFGu2ypI-V_4yXC2Zqr_PMHITHs4iAS8T0x331HEQ&oe=69040657&_nc_eh=2%2Cbde98264c10e9987b31351e4dcc07919%2CAUSgAsUoBkP6NAOyQ_2O5oAop_6r9ky2dSDxvJcr7NSRBEbForY17KHF07uaJet2_20"
+        "Multi": "https://vo-live-media.cdb.cdn.orange.com/Content/Channel/AbuDhabiSportsChannel1/HLS/index.m3u8"
+      },
+      {
+        "FHD": "https://vo-live-media.cdb.cdn.orange.com/Content/Channel/AbuDhabiSportsChannel1/HLS/stream_04/index.m3u8"
       }
     ]
   },
   {
     "num": 4,
-    "team1Name": "بادربورن 07",
-    "team1Logo": "https://media.api-sports.io/football/teams/185.png",
-    "team2Name": "باير ليفركوزن",
-    "team2Logo": "https://media.api-sports.io/football/teams/168.png",
-    "startTime": 1761757200,
-    "league": "كأس ألمانيا",
-    "channel": "أبو ظبي الرياضية 1",
-    "commentator": "حازم عبدالسلام",
+    "team1Name": "النصر",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/177.png",
+    "team2Name": "الاتحاد",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/175.png",
+    "startTime": 1761674400,
+    "league": "كأس خادم الحرمين الشريفين",
+    "channel": "ثمانية 1",
+    "commentator": "مشاري القرني",
     "servers": [
       {
-        "hd": "https://vo-live-media.cdb.cdn.orange.com/Content/Channel/AbuDhabiSportsChannel1/HLS/index.m3u8"
+        "Multi": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hLS/4iEOOL61lG8oyeyFIMmfAtnofqbzBN4p6AJWBXIK72sKgHdR1n5We9qXLW3sEGyG0YtPFgAnIIopRSdV5U_jQw/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live"
+      },
+      {
+        "4K Ultra Server": "https://cdnfest.com/thmanyah-1/index.fmp4.m3u8"
       }
     ]
   },
   {
     "num": 5,
-    "team1Name": "كومو",
-    "team1Logo": "https://media.api-sports.io/football/teams/895.png",
-    "team2Name": "فيرونا",
-    "team2Logo": "https://media.api-sports.io/football/teams/504.png",
-    "startTime": 1761759000,
+    "team1Name": "أتالانتا",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/128.png",
+    "team2Name": "ميلان",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/137.png",
+    "startTime": 1761680700,
     "league": "الدوري الإيطالي",
-    "channel": "StarzPlay",
-    "commentator": "محمد أبو كبده",
-    "servers": [
-      {
-        "hd": "https://sps2.starzplayarabia.com/out/v1/15e7d1ffb99746dda03f71dbbbc3c08b/index.mpd/117c29396ec6fd295880013241a466e1:3dfb883251884e66d784111877c44b13"
-      }
-    ]
+    "channel": "StarzPlay 1",
+    "commentator": "فارس عوض",
+    "servers": []
   },
   {
     "num": 6,
-    "team1Name": "يوفنتوس",
-    "team1Logo": "https://media.api-sports.io/football/teams/496.png",
-    "team2Name": "أودينيزي",
-    "team2Logo": "https://media.api-sports.io/football/teams/494.png",
-    "startTime": 1761759000,
-    "league": "الدوري الإيطالي",
-    "channel": "StarzPlay",
-    "commentator": "محمد الشامسي",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
+    "team1Name": "ويكومب",
+    "team1Logo": "https://media.api-sports.io/football/teams/1358.png",
+    "team2Name": "فولهام",
+    "team2Logo": "https://media.api-sports.io/football/teams/36.png",
+    "startTime": 1761680700,
+    "league": "كأس الرابطة الإنجليزية",
+    "channel": "beIN SPORTS 1",
+    "commentator": "نوفل باشي",
+    "servers": []
   },
   {
     "num": 7,
-    "team1Name": "روما",
-    "team1Logo": "https://media.api-sports.io/football/teams/497.png",
-    "team2Name": "بارما",
-    "team2Logo": "https://media.api-sports.io/football/teams/523.png",
-    "startTime": 1761759000,
-    "league": "الدوري الإيطالي",
-    "channel": "StarzPlay",
-    "commentator": "فيصل الهندي",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
+    "team1Name": "غريمسبي تاون",
+    "team1Logo": "https://media.api-sports.io/football/teams/1365.png",
+    "team2Name": "برينتفورد",
+    "team2Logo": "https://media.api-sports.io/football/teams/55.png",
+    "startTime": 1761680700,
+    "league": "كأس الرابطة الإنجليزية",
+    "channel": "beIN SPORTS 2",
+    "commentator": "أحمد عبده",
+    "servers": []
   },
   {
     "num": 8,
-    "team1Name": "لو هافر",
-    "team1Logo": "https://media.api-sports.io/football/teams/111.png",
-    "team2Name": "ستاد بريست",
-    "team2Logo": "https://media.api-sports.io/football/teams/106.png",
-    "startTime": 1761760800,
-    "league": "الدوري الفرنسي",
-    "channel": "beIN XTRA 2",
-    "commentator": "محمد السعدي",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
-  },
-  {
-    "num": 9,
-    "team1Name": "لوريان",
-    "team1Logo": "https://media.api-sports.io/football/teams/97.png",
-    "team2Name": "باريس سان جيرمان",
-    "team2Logo": "https://media.api-sports.io/football/teams/85.png",
-    "startTime": 1761760800,
-    "league": "الدوري الفرنسي",
-    "channel": "beIN SPORTS 1",
-    "commentator": "عامر الخوذيري",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
-  },
-  {
-    "num": 10,
-    "team1Name": "ميتز",
-    "team1Logo": "https://media.api-sports.io/football/teams/112.png",
-    "team2Name": "لانس",
-    "team2Logo": "https://media.api-sports.io/football/teams/116.png",
-    "startTime": 1761760800,
-    "league": "الدوري الفرنسي",
-    "channel": "beIN SPORTS 4",
-    "commentator": "باسم الزير",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
-  },
-  {
-    "num": 11,
-    "team1Name": "نيس",
-    "team1Logo": "https://media.api-sports.io/football/teams/84.png",
-    "team2Name": "ليل",
-    "team2Logo": "https://media.api-sports.io/football/teams/79.png",
-    "startTime": 1761760800,
-    "league": "الدوري الفرنسي",
-    "channel": "beIN XTRA 1",
-    "commentator": "أحمد عبده",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
-  },
-  {
-    "num": 12,
-    "team1Name": "الوحدات",
-    "team1Logo": "https://media.api-sports.io/football/teams/4537.png",
-    "team2Name": "المحرق",
-    "team2Logo": "https://media.api-sports.io/football/teams/5488.png",
-    "startTime": 1761761700,
-    "league": "كأس الاتحاد الآسيوي",
-    "channel": "beIN SPORTS 5",
-    "commentator": "أحمد البلوشي",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
-  },
-  {
-    "num": 13,
-    "team1Name": "بولونيا",
-    "team1Logo": "https://media.api-sports.io/football/teams/500.png",
-    "team2Name": "تورينو",
-    "team2Logo": "https://media.api-sports.io/football/teams/503.png",
-    "startTime": 1761767100,
-    "league": "الدوري الإيطالي",
-    "channel": "StarzPlay",
-    "commentator": "ميشيل سعد",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
-  },
-  {
-    "num": 14,
-    "team1Name": "جنوى",
-    "team1Logo": "https://media.api-sports.io/football/teams/495.png",
-    "team2Name": "كريمونيزي",
-    "team2Logo": "https://media.api-sports.io/football/teams/520.png",
-    "startTime": 1761767100,
-    "league": "الدوري الإيطالي",
-    "channel": "StarzPlay",
-    "commentator": "غازي العمري",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
-  },
-  {
-    "num": 15,
-    "team1Name": "إنتر",
-    "team1Logo": "https://media.api-sports.io/football/teams/505.png",
-    "team2Name": "فيورنتينا",
-    "team2Logo": "https://media.api-sports.io/football/teams/502.png",
-    "startTime": 1761767100,
-    "league": "الدوري الإيطالي",
-    "channel": "StarzPlay",
-    "commentator": "عيسى الحربين",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
-  },
-  {
-    "num": 16,
-    "team1Name": "كولن",
-    "team1Logo": "https://media.api-sports.io/football/teams/192.png",
-    "team2Name": "بايرن ميونخ",
-    "team2Logo": "https://media.api-sports.io/football/teams/157.png",
-    "startTime": 1761767100,
-    "league": "كأس ألمانيا",
-    "channel": "أبو ظبي الرياضية 1",
-    "commentator": "عبدالله السعدي",
-    "servers": [
-      {
-        "hd": "https://vo-live-media.cdb.cdn.orange.com/Content/Channel/AbuDhabiSportsChannel1/HLS/index.m3u8"
-      }
-    ]
-  },
-  {
-    "num": 17,
-    "team1Name": "سوانزي سيتي",
-    "team1Logo": "https://media.api-sports.io/football/teams/76.png",
-    "team2Name": "مانشستر سيتي",
-    "team2Logo": "https://media.api-sports.io/football/teams/50.png",
-    "startTime": 1761767100,
-    "league": "كأس الرابطة الإنجليزية",
-    "channel": "beIN SPORTS 6",
-    "commentator": "جواد بدة",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
-  },
-  {
-    "num": 18,
-    "team1Name": "ليفربول",
-    "team1Logo": "https://media.api-sports.io/football/teams/40.png",
-    "team2Name": "كريستال بالاس",
-    "team2Logo": "https://media.api-sports.io/football/teams/52.png",
-    "startTime": 1761767100,
-    "league": "كأس الرابطة الإنجليزية",
-    "channel": "beIN SPORTS 2",
-    "commentator": "علي محمد علي",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
-  },
-  {
-    "num": 19,
-    "team1Name": "أرسنال",
-    "team1Logo": "https://media.api-sports.io/football/teams/42.png",
-    "team2Name": "برايتون",
-    "team2Logo": "https://media.api-sports.io/football/teams/51.png",
-    "startTime": 1761767100,
+    "team1Name": "ريكسهام",
+    "team1Logo": "https://media.api-sports.io/football/teams/1837.png",
+    "team2Name": "كارديف سيتي",
+    "team2Logo": "https://media.api-sports.io/football/teams/43.png",
+    "startTime": 1761681600,
     "league": "كأس الرابطة الإنجليزية",
     "channel": "beIN SPORTS 3",
-    "commentator": "حفيظ دراجي",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
-  },
-  {
-    "num": 20,
-    "team1Name": "ولفرهامبتون",
-    "team1Logo": "https://media.api-sports.io/football/teams/39.png",
-    "team2Name": "تشيلسي",
-    "team2Logo": "https://media.api-sports.io/football/teams/49.png",
-    "startTime": 1761767100,
-    "league": "كأس الرابطة الإنجليزية",
-    "channel": "beIN SPORTS 7",
-    "commentator": "محمد المبروكي",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
-  },
-  {
-    "num": 21,
-    "team1Name": "نيوكاسل",
-    "team1Logo": "https://media.api-sports.io/football/teams/34.png",
-    "team2Name": "توتنهام",
-    "team2Logo": "https://media.api-sports.io/football/teams/47.png",
-    "startTime": 1761768000,
-    "league": "كأس الرابطة الإنجليزية",
-    "channel": "beIN SPORTS 9",
-    "commentator": "محمد بركات",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
-  },
-  {
-    "num": 22,
-    "team1Name": "مارسيليا",
-    "team1Logo": "https://media.api-sports.io/football/teams/81.png",
-    "team2Name": "أنجيه",
-    "team2Logo": "https://media.api-sports.io/football/teams/77.png",
-    "startTime": 1761768300,
-    "league": "الدوري الفرنسي",
-    "channel": "beIN XTRA 1",
-    "commentator": "عبدالله الغامدي",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
-  },
-  {
-    "num": 23,
-    "team1Name": "نانت",
-    "team1Logo": "https://media.api-sports.io/football/teams/83.png",
-    "team2Name": "موناكو",
-    "team2Logo": "https://media.api-sports.io/football/teams/91.png",
-    "startTime": 1761768300,
-    "league": "الدوري الفرنسي",
-    "channel": "beIN XTRA 2",
-    "commentator": "نوفل باشي",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
-  },
-  {
-    "num": 24,
-    "team1Name": "باريس إف سي",
-    "team1Logo": "https://media.api-sports.io/football/teams/114.png",
-    "team2Name": "ليون",
-    "team2Logo": "https://media.api-sports.io/football/teams/80.png",
-    "startTime": 1761768300,
-    "league": "الدوري الفرنسي",
-    "channel": "beIN SPORTS 4",
-    "commentator": "منتصر الأزهري",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
-  },
-  {
-    "num": 25,
-    "team1Name": "ستراسبورج",
-    "team1Logo": "https://media.api-sports.io/football/teams/95.png",
-    "team2Name": "أوكسير",
-    "team2Logo": "https://media.api-sports.io/football/teams/108.png",
-    "startTime": 1761768300,
-    "league": "الدوري الفرنسي",
-    "channel": "beIN XTRA 3",
-    "commentator": "مصطفى ناظم",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
-  },
-  {
-    "num": 26,
-    "team1Name": "تولوز",
-    "team1Logo": "https://media.api-sports.io/football/teams/96.png",
-    "team2Name": "رين",
-    "team2Logo": "https://media.api-sports.io/football/teams/94.png",
-    "startTime": 1761768300,
-    "league": "الدوري الفرنسي",
-    "channel": "beIN XTRA 4",
-    "commentator": "محمد فوزي",
-    "servers": [
-      {
-        "hd": ""
-      }
-    ]
+    "commentator": "أحمد البلوشي",
+    "servers": []
   }
 ]
