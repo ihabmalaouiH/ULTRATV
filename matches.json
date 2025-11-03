@@ -44,38 +44,7 @@
     "league": "دوري أبطال آسيا للنخبة",
     "channel": "beIN SPORTS 1",
     "commentator": "باسم الزير",
-    "servers": [
-      {
-        "FHD G": "http://176.119.29.7:80/0c55573d-12d8-43af-823b-25c94d67b190.m3u8"
-      },
-      {
-        "SD FAM": "http://a502.variety-buy.store/api/channel/24"
-      },
-      {
-        "LOW FAM": "http://a502.variety-buy.store/api/channel/43"
-      },
-      {
-        "Multi Earthlink": "http://stream.mytvplus.net:7002/sport/ch1/adaptive.m3u8"
-      },
-      {
-        "Multi 30 fps": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/3QNscjaMLFhhEk8WYgExyvkEV55xwUzwwB5T79g-RuYUJwLDqSyqPcqxzWHX1EWakI5ljk54J8CvVy2ftr3UvA/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-private/st_master_dynamic_highlatency.m3u8?type=live"
-      },
-      {
-        "Multi 50 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/68IaWfB6rXdcqLDqKOvhBbKj0Rf5VtKgcERGX7dxYhHG_kUFFGLQ9nrz7D2GhUcfW_fABKI8WG2cjWZkIOSSLg/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-private/st_master_dynamic_highlatency.m3u8?type=live"
-      },
-      {
-        "Multi Fajer 30 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/QppqjDaWR4-Y-wvGr3yfVV8FOlwl62A3Y98hqCQuSH1eRwLsC0fAMvqBsr4jkIcvPCuUO2E_jTv4ZK6H6FgHXQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-private/st_master_dynamic_highlatency.m3u8?type=live"
-      },
-      {
-        "ALWAN TV 1": "https://cdnfest.com/Alwan-Sport-1-HD/index.m3u8"
-      },
-      {
-        "ALWAN TV 1+": "https://cdnfest.com/Test/index.m3u8"
-      },
-      {
-        "beIN 1 IRAQ": "https://stream.supertv.gg:3001/supertv/sport/stv1/ch1/adaptive.m3u8"
-      }
-    ]
+    "servers": []
   },
   {
     "num": 4,
@@ -87,14 +56,7 @@
     "league": "كأس العالم للناشئين تحت 17 عام",
     "channel": "ALWAN 6 HD",
     "commentator": "عصام الشوالي",
-    "servers": [
-      {
-        "CAST RESTREAM 1": "https://cdnfest.com/AL6-No/index.m3u8"
-      },
-      {
-        "CAST RESTREAM 2": "https://cdnfest.com/Alwan-Sport-6-HD/index.fmp4.m3u8"
-      }
-    ]
+    "servers": []
   },
   {
     "num": 5,
@@ -106,11 +68,7 @@
     "league": "كأس العالم للناشئين تحت 17 عام",
     "channel": "beIN Global",
     "commentator": "احمد البلوشي",
-    "servers": [
-      {
-        "CAST X": "https://cdnfest.com/Global-no/index.m3u8"
-      }
-    ]
+    "servers": []
   },
   {
     "num": 6,
@@ -122,47 +80,7 @@
     "league": "دوري أبطال آسيا للنخبة",
     "channel": "beIN SPORTS 2",
     "commentator": "حفيظ دراجي",
-    "servers": [
-      {
-        "HD FAM": "http://a502.variety-buy.store/api/channel/5"
-      },
-      {
-        "SD FAM": "http://a502.variety-buy.store/api/channel/25"
-      },
-      {
-        "LOW FAM": "http://a502.variety-buy.store/api/channel/44"
-      },
-      {
-        "Multi Earthlink": "http://stream.mytvplus.net:7003/sport/ch2/adaptive.m3u8"
-      },
-      {
-        "Multi 1": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/i_NquMU6zI797XWcw1o9E28zi2y5c8Dl6UyLOfcPU30Pfb6KrR_6XFWLIsB0pCYEd5SKhQrsxOdUBCmPD8wcPg/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-private/st_master_dynamic_highlatency.m3u8?type=live"
-      },
-      {
-        "Multi 2": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/iLp0gRwKAFF2KR8G2L6udcQLyH0HzHzkuggxWmApioWBspaF751dOVVad5YiOqmdFW_4YMGDXI5tShimcc8ZzA/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-private/st_master_dynamic_highlatency.m3u8?type=live"
-      },
-      {
-        "Multi 4": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/QppqjDaWR4-Y-wvGr3yfVV8FOlwl62A3Y98hqCQuSH1eRwLsC0fAMvqBsr4jkIcvPCuUO2E_jTv4ZK6H6FgHXQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-private/st_master_dynamic_highlatency.m3u8?type=live"
-      },
-      {
-        "Multi 5": "https://prod-fastly-eu-west-3.video.pscp.tv/Transcoding/v1/hls/8ZQMGE1K2HBJNNznyuFNSR56BDeekcVxnXM1-Cy8RbKLMazmRwN4gjwYT2JMCxJ7vqInKxicGYAAf9Ukmkw-Fw/non_transcode/eu-west-3/periscope-replay-direct-prod-eu-west-3-private/st_master_dynamic_highlatency.m3u8?type=live"
-      },
-      {
-        "Multi تأخير قليل": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/i_NquMU6zI797XWcw1o9E28zi2y5c8Dl6UyLOfcPU30Pfb6KrR_6XFWLIsB0pCYEd5SKhQrsxOdUBCmPD8wcPg/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-private/st_master_dynamic_lowlatency.m3u8?type=live"
-      },
-      {
-        "Ultra Server 1080p": "https://cdnfest.com/G2-1080p-cast/video.m3u8"
-      },
-      {
-        "Ultra Server 900p": "https://cdnfest.com/G2-720p-cast/video.m3u8?token=2ZRvum5RxIweG3"
-      },
-      {
-        "Ultra Server 576p": "https://cdnfest.com/G2-480p-cast/video.m3u8?token=2ZRvum5RxIweG3"
-      },
-      {
-        "beIN 2 IRAQ": "https://stream.supertv.gg:3001/supertv/sport/stv1/ch2/adaptive.m3u8"
-      }
-    ]
+    "servers": []
   },
   {
     "num": 7,
@@ -202,38 +120,7 @@
     "league": "دوري أبطال آسيا للنخبة",
     "channel": "beIN SPORTS 1",
     "commentator": "حسن العيدروس",
-    "servers": [
-      {
-        "HD FAM": "http://a502.variety-buy.store/api/channel/4"
-      },
-      {
-        "SD FAM": "http://a502.variety-buy.store/api/channel/24"
-      },
-      {
-        "LOW FAM": "http://a502.variety-buy.store/api/channel/43"
-      },
-      {
-        "Multi Earthlink": "http://stream.mytvplus.net:7002/sport/ch1/adaptive.m3u8"
-      },
-      {
-        "Multi 30 fps": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/3QNscjaMLFhhEk8WYgExyvkEV55xwUzwwB5T79g-RuYUJwLDqSyqPcqxzWHX1EWakI5ljk54J8CvVy2ftr3UvA/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-private/st_master_dynamic_highlatency.m3u8?type=live"
-      },
-      {
-        "Multi 50 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/68IaWfB6rXdcqLDqKOvhBbKj0Rf5VtKgcERGX7dxYhHG_kUFFGLQ9nrz7D2GhUcfW_fABKI8WG2cjWZkIOSSLg/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-private/st_master_dynamic_highlatency.m3u8?type=live"
-      },
-      {
-        "Multi Fajer 30 fps": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/QppqjDaWR4-Y-wvGr3yfVV8FOlwl62A3Y98hqCQuSH1eRwLsC0fAMvqBsr4jkIcvPCuUO2E_jTv4ZK6H6FgHXQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-private/st_master_dynamic_highlatency.m3u8?type=live"
-      },
-      {
-        "ALWAN TV 1": "https://cdnfest.com/Alwan-Sport-1-HD/index.m3u8"
-      },
-      {
-        "ALWAN TV 1+": "https://cdnfest.com/Test/index.m3u8"
-      },
-      {
-        "beIN 1 IRAQ": "https://stream.supertv.gg:3001/supertv/sport/stv1/ch1/adaptive.m3u8"
-      }
-    ]
+    "servers": []
   },
   {
     "num": 10,
@@ -257,47 +144,7 @@
     "league": "الدوري الإنجليزي الممتاز",
     "channel": "beIN SPORTS 2",
     "commentator": "علي محمد علي",
-    "servers": [
-      {
-        "HD FAM": "http://a502.variety-buy.store/api/channel/5"
-      },
-      {
-        "SD FAM": "http://a502.variety-buy.store/api/channel/25"
-      },
-      {
-        "LOW FAM": "http://a502.variety-buy.store/api/channel/44"
-      },
-      {
-        "Multi Earthlink": "http://stream.mytvplus.net:7003/sport/ch2/adaptive.m3u8"
-      },
-      {
-        "Multi 1": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/i_NquMU6zI797XWcw1o9E28zi2y5c8Dl6UyLOfcPU30Pfb6KrR_6XFWLIsB0pCYEd5SKhQrsxOdUBCmPD8wcPg/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-private/st_master_dynamic_highlatency.m3u8?type=live"
-      },
-      {
-        "Multi 2": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/iLp0gRwKAFF2KR8G2L6udcQLyH0HzHzkuggxWmApioWBspaF751dOVVad5YiOqmdFW_4YMGDXI5tShimcc8ZzA/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-private/st_master_dynamic_highlatency.m3u8?type=live"
-      },
-      {
-        "Multi 4": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/QppqjDaWR4-Y-wvGr3yfVV8FOlwl62A3Y98hqCQuSH1eRwLsC0fAMvqBsr4jkIcvPCuUO2E_jTv4ZK6H6FgHXQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-private/st_master_dynamic_highlatency.m3u8?type=live"
-      },
-      {
-        "Multi 5": "https://prod-fastly-eu-west-3.video.pscp.tv/Transcoding/v1/hls/8ZQMGE1K2HBJNNznyuFNSR56BDeekcVxnXM1-Cy8RbKLMazmRwN4gjwYT2JMCxJ7vqInKxicGYAAf9Ukmkw-Fw/non_transcode/eu-west-3/periscope-replay-direct-prod-eu-west-3-private/st_master_dynamic_highlatency.m3u8?type=live"
-      },
-      {
-        "Multi تأخير قليل": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/i_NquMU6zI797XWcw1o9E28zi2y5c8Dl6UyLOfcPU30Pfb6KrR_6XFWLIsB0pCYEd5SKhQrsxOdUBCmPD8wcPg/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-private/st_master_dynamic_lowlatency.m3u8?type=live"
-      },
-      {
-        "Ultra Server 1080p": "https://cdnfest.com/G2-1080p-cast/video.m3u8"
-      },
-      {
-        "Ultra Server 900p": "https://cdnfest.com/G2-720p-cast/video.m3u8?token=2ZRvum5RxIweG3"
-      },
-      {
-        "Ultra Server 576p": "https://cdnfest.com/G2-480p-cast/video.m3u8?token=2ZRvum5RxIweG3"
-      },
-      {
-        "beIN 2 IRAQ": "https://stream.supertv.gg:3001/supertv/sport/stv1/ch2/adaptive.m3u8"
-      }
-    ]
+    "servers": []
   },
   {
     "num": 12,
@@ -309,19 +156,6 @@
     "league": "الدوري الإسباني",
     "channel": "beIN SPORTS 3",
     "commentator": "محمد مبروك",
-    "servers": [
-      {
-        "Multi | متعدد": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/9Vojx8bCWB6K92B5-Xaz4NAyw3JslxwaMMGxaRlwON4LQRj8OPR0OGI4ZnD9OU--bp3taKYPIkuJB1812GkE2w/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-private/st_master_dynamic_highlatency.m3u8?type=live"
-      },
-      {
-        "Ultra Server 1080p": "https://cdnfest.com/G3-1080p/video.m3u8"
-      },
-      {
-        "Ultra Server 900p": "https://cdnfest.com/G3-720p/video.m3u8?token=2ZRvum5RxIweG3"
-      },
-      {
-        "Ultra Server 576p": "https://cdnfest.com/G3-480p/video.m3u8?token=2ZRvum5RxIweG3"
-      }
-    ]
+    "servers": []
   }
 ]
