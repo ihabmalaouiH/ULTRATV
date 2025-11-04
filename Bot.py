@@ -8,8 +8,9 @@ import json
 import logging
 import time
 from telegram import Update
-from telegram.ext import Updater, CommandHandler, CallbackContext
 
+# (v20) هذا هو السطر الصحيح للإصدار الحديث
+from telegram.ext import Application, CommandHandler, CallbackContext
 # --- 1. إعدادات التليجرام وجيت هاب (الرجاء ملء هذه) ---
 
 # !!! تحذير: لا تنشر هذه المفاتيح علناً !!!
