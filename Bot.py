@@ -242,5 +242,27 @@ def main():
     print("سيتم الفحص التلقائي كل 5 دقائق.")
     application.run_polling()
 
+# --- (جديد) خادم الويب لإرضاء Render ---
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    # هذه الصفحة تثبت فقط أن الخدمة تعمل
+    return 'البوت قيد التشغيل في الخلفية!'
+
+def start_web_server():
+    # Render سيوفر متغير PORT تلقائياً
+    port = int(os.environ.get('PORT', 8080))
+    app.run(host='0.0.0.0', port=port)
+
+# --- (جديد) التنفيذ الرئيسي ---
 if __name__ == '__main__':
-    main()
+    # 1. تشغيل البوت (الذي غيرنا اسمه إلى run_bot) في "ثريد" منفصل
+    print("جاري تشغيل البوت في الخلفية...")
+    bot_thread = threading.Thread(target=run_bot)
+    bot_thread.daemon = True
+    bot_thread.start()
+
+    # 2. تشغيل خادم الويب (هذا ما يحتاجه Render ليبقى سعيداً)
+    print("جاري تشغيل خادم الويب لربط المنفذ...")
+    start_web_server()
