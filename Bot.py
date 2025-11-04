@@ -10,20 +10,26 @@ import time
 from telegram import Update
 
 # (v20) هذا هو السطر الصحيح للإصدار الحديث
-from telegram.ext import Application, CommandHandler, CallbackContext
-# --- 1. إعدادات التليجرام وجيت هاب (الرجاء ملء هذه) ---
+from telegram.ext import Application, CommandHandler, CallbackContext 
 
-# !!! تحذير: لا تنشر هذه المفاتيح علناً !!!
-# (استخدم مفاتيح جديدة بعد أن قمت بإلغاء القديمة)
-BOT_TOKEN = "8407076175:AAHPF-CCGLEkqaC6Srydl3Iu6rbHhf6XK8Y" 
-ADMIN_USER_ID = 8421187425 # هذا حسابك
-GITHUB_TOKEN = "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"
-GITHUB_REPO = "ihabmalaouiH/ULTRATV"
-GITHUB_FILE_PATH = "matches.json"
+# --- 1. إعدادات التليجرام وجيت هاب (تُقرأ من Render) ---
+
+BOT_TOKEN = os.environ.get("8407076175:AAHPF-CCGLEkqaC6Srydl3Iu6rbHhf6XK8Y")
+# استخدمنا int() لتحويل النص إلى رقم
+ADMIN_USER_ID = int(os.environ.get("8421187425")) 
+GITHUB_TOKEN = os.environ.get("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")
+GITHUB_REPO = os.environ.get("GITHUB_REPO", "ihabmalaouiH/ULTRATV")
+GITHUB_FILE_PATH = os.environ.get("GITHUB_FILE_PATH", "matches.json")
 COMMIT_MESSAGE = "Auto-update matches list"
 
+# التأكد من وجود التوكنز
+if not BOT_TOKEN or not GITHUB_TOKEN or not ADMIN_USER_ID:
+    print("خطأ: واحد أو أكثر من متغيرات البيئة (BOT_TOKEN, GITHUB_TOKEN, ADMIN_USER_ID) غير موجود.")
+    # هذا السطر سيوقف البوت إذا لم يجد المفاتيح في Render
+    exit(1) 
+
 # --- 2. الكود الخاص بك (سحب البيانات وفك التشفير) ---
-# (لا تغيير هنا، تم نسخها كما هي)
+# (لا تغيير هنا)
 def fetch_and_decrypt_matches():
     url = "https://a502.variety-buy.store/api/events"
     custom_headers = {
@@ -119,35 +125,39 @@ def upload_to_github(json_data_string):
         return False, str(e)
 
 # --- 5. دوال البوت (Telegram Handlers) ---
-# (لا تغيير هنا)
+
 def is_admin(update: Update):
+    # نستخدم ADMIN_USER_ID الرقمي الذي قرأناه من Render
     return update.message.from_user.id == ADMIN_USER_ID
 
-def start(update: Update, context: CallbackContext):
+# (التصحيح: إضافة async)
+async def start(update: Update, context: CallbackContext):
     if not is_admin(update): return
-    update.message.reply_text('أهلاً بك! أنا البوت الخاص بك. يتم الفحص تلقائياً كل 5 دقائق. استخدم /update للفحص اليدوي.')
+    # نستخدم .reply_text (وليس reply.text)
+    await update.message.reply_text('أهلاً بك! أنا البوت الخاص بك. يتم الفحص تلقائياً كل 5 دقائق. استخدم /update للفحص اليدوي.')
 
-def update_matches(update: Update, context: CallbackContext):
+# (التصحيح: إضافة async)
+async def update_matches(update: Update, context: CallbackContext):
     if not is_admin(update): return
-    msg = update.message.reply_text('... جاري الفحص اليدوي ...')
+    msg = await update.message.reply_text('... جاري الفحص اليدوي ...')
 
     # استدعاء الدالة الأساسية للفحص
-    changes_found = check_for_updates_and_upload(context)
+    # (نستخدم await لأننا سنقوم بإرسال رسائل منها)
+    changes_found = await check_for_updates_and_upload(context)
 
     if changes_found is None:
-        msg.edit_text('حدث خطأ أثناء سحب البيانات من المصدر.')
+        await msg.edit_text('حدث خطأ أثناء سحب البيانات من المصدر.')
     elif changes_found:
-        msg.edit_text('✅ تم الفحص اليدوي ووجدت تحديثات. تم الرفع.')
+        await msg.edit_text('✅ تم الفحص اليدوي ووجدت تحديثات. تم الرفع.')
     else:
-        msg.edit_text('ℹ️ تم الفحص اليدوي. لا توجد تغييرات.')
+        await msg.edit_text('ℹ️ تم الفحص اليدوي. لا توجد تغييرات.')
 
 # --- 6. (جديد) دالة جلب الملف القديم للمقارنة ---
+# (لا تغيير هنا)
 def get_current_github_data():
     """
     يجلب الملف الحالي من GitHub للمقارنة.
     """
-    # نستخدم raw.githubusercontent.com للقراءة المباشرة
-    # افترضت أن الفرع (branch) هو 'main'. غيّره إذا كان اسم الفرع مختلفاً.
     url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/main/{GITHUB_FILE_PATH}"
     try:
         r = requests.get(url, timeout=10)
@@ -161,112 +171,94 @@ def get_current_github_data():
         return None
 
 # --- 7. (جديد) دالة الفحص والمقارنة والرفع ---
-def check_for_updates_and_upload(context: CallbackContext):
+# (التصحيح: إضافة async)
+async def check_for_updates_and_upload(context: CallbackContext):
     """
-    الدالة الأساسية التي تقوم بكل العمل:
-    1. تجلب البيانات القديمة من GitHub.
-    2. تجلب البيانات الجديدة من الـ API.
-    3. تقارن بينهما.
-    4. ترفع إذا كان هناك اختلاف.
-    5. ترسل رسالة للـ Admin إذا نجح الرفع.
+    الدالة الأساسية التي تقوم بكل العمل.
     """
     print("بدء الفحص...")
 
-    # 1. جلب البيانات القديمة
     old_data = get_current_github_data()
-
-    # 2. جلب البيانات الجديدة
     source_data = fetch_and_decrypt_matches()
+    
     if not source_data:
         print("فشل سحب البيانات الجديدة.")
-        return None # إشارة لوجود خطأ
-
+        return None 
+    
     transformed_data = transform_data(source_data)
+    
     if not transformed_data:
         print("فشل تحويل البيانات الجديدة.")
-        return None # إشارة لوجود خطأ
+        return None 
 
-    # 3. المقارنة (هذا هو طلبك الأساسي)
     if old_data == transformed_data:
         print("لا توجد تغييرات.")
-        return False # إشارة لعدم وجود تغيير
+        return False 
 
     print("!!! تم اكتشاف تغييرات !!!")
 
-    # 4. الرفع (لأن البيانات مختلفة)
     final_json_string = json.dumps(transformed_data, indent=2, ensure_ascii=False)
     success, result = upload_to_github(final_json_string)
 
     if success:
         print("تم الرفع بنجاح.")
-        # 5. إرسال إشعار للـ Admin
         try:
-            context.bot.send_message(
+            # (نستخدم await لأنها عملية غير متزامنة)
+            await context.bot.send_message(
                 chat_id=ADMIN_USER_ID, 
                 text=f'✅ تحديث تلقائي ناجح!\n\nتم رصد تغييرات ورفعها إلى GitHub.\n{result}',
                 disable_web_page_preview=True
             )
         except Exception as e:
             print(f"فشل إرسال رسالة تليجرام: {e}")
-        return True # إشارة لوجود تغيير
+        return True 
     else:
         print("فشل الرفع.")
         try:
-            context.bot.send_message(
+            # (نستخدم await)
+            await context.bot.send_message(
                 chat_id=ADMIN_USER_ID, 
                 text=f'❌ فشل التحديث التلقائي!\n\nتم رصد تغييرات، ولكن فشل الرفع إلى GitHub.\nالخطأ: {result}'
             )
         except Exception as e:
             print(f"فشل إرسال رسالة تليجرام: {e}")
-        return None # إشارة لوجود خطأ
+        return None 
 
-# --- 8. (معدل) دالة تشغيل البوت والجدولة ---
-# --- 8. (معدل) دالة تشغيل البوت والجدولة (بإصدار v20.x) ---
-
-# قم بإضافة هذا السطر في أعلى الملف مع باقي الـ imports
-from telegram.ext import Application 
+# --- 8. (معدل) دالة تشغيل البوت والجدولة (v20.x) ---
 
 def run_bot():
-    # 1. طريقة الإنشاء الجديدة (بدون use_context)
+    """الدالة التي تشغل البوت"""
     application = Application.builder().token(BOT_TOKEN).build()
-
-    # 2. الوصول إلى الجدولة
+    
     job_queue = application.job_queue 
 
-    # 3. إضافة الأوامر اليدوية
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("update", update_matches)) 
 
-    # 4. إضافة المؤقت (الفحص التلقائي)
     # interval=300 (5 دقائق).
     job_queue.run_repeating(check_for_updates_and_upload, interval=300, first=10)
 
-    # 5. تشغيل البوت
     print("البوت قيد التشغيل...")
     print("سيتم الفحص التلقائي كل 5 دقائق.")
     application.run_polling()
 
-# --- (جديد) خادم الويب لإرضاء Render ---
+# --- 9. (جديد) خادم الويب لإرضاء Render ---
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    # هذه الصفحة تثبت فقط أن الخدمة تعمل
     return 'البوت قيد التشغيل في الخلفية!'
 
 def start_web_server():
-    # Render سيوفر متغير PORT تلقائياً
     port = int(os.environ.get('PORT', 8080))
     app.run(host='0.0.0.0', port=port)
 
-# --- (جديد) التنفيذ الرئيسي ---
+# --- 10. (جديد) التنفيذ الرئيسي ---
 if __name__ == '__main__':
-    # 1. تشغيل البوت (الذي غيرنا اسمه إلى run_bot) في "ثريد" منفصل
     print("جاري تشغيل البوت في الخلفية...")
     bot_thread = threading.Thread(target=run_bot)
     bot_thread.daemon = True
     bot_thread.start()
 
-    # 2. تشغيل خادم الويب (هذا ما يحتاجه Render ليبقى سعيداً)
     print("جاري تشغيل خادم الويب لربط المنفذ...")
     start_web_server()
