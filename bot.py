@@ -217,27 +217,30 @@ def check_for_updates_and_upload(context: CallbackContext):
         return None # إشارة لوجود خطأ
 
 # --- 8. (معدل) دالة تشغيل البوت والجدولة ---
+# --- 8. (معدل) دالة تشغيل البوت والجدولة (بإصدار v20.x) ---
+
+# قم بإضافة هذا السطر في أعلى الملف مع باقي الـ imports
+from telegram.ext import Application 
+
 def main():
-    updater = Updater(BOT_TOKEN, use_context=True)
-    dispatcher = updater.dispatcher
-    job_queue = updater.job_queue # للجدولة
+    # 1. طريقة الإنشاء الجديدة (بدون use_context)
+    application = Application.builder().token(BOT_TOKEN).build()
 
-    # إضافة الأوامر اليدوية
-    dispatcher.add_handler(CommandHandler("start", start))
-    dispatcher.add_handler(CommandHandler("update", update_matches)) 
+    # 2. الوصول إلى الجدولة
+    job_queue = application.job_queue 
 
-    # --- هذا هو الجزء الأهم ---
-    # جدولة دالة الفحص التلقائي
-    # interval=300 يعني 300 ثانية (5 دقائق)
-    # first=10 يعني ابدأ أول فحص بعد 10 ثوانٍ من تشغيل البوت
-    # غيّر interval=300 إلى 60 إذا أردت دقيقة واحدة (لكن كن حذراً من الحظر)
+    # 3. إضافة الأوامر اليدوية
+    application.add_handler(CommandHandler("start", start))
+    application.add_handler(CommandHandler("update", update_matches)) 
+
+    # 4. إضافة المؤقت (الفحص التلقائي)
+    # interval=300 (5 دقائق).
     job_queue.run_repeating(check_for_updates_and_upload, interval=300, first=10)
 
-    # تشغيل البوت
+    # 5. تشغيل البوت
     print("البوت قيد التشغيل...")
     print("سيتم الفحص التلقائي كل 5 دقائق.")
-    updater.start_polling()
-    updater.idle()
+    application.run_polling()
 
 if __name__ == '__main__':
     main()
