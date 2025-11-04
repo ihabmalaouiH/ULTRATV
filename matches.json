@@ -180,7 +180,11 @@
     "league": "دوري أبطال أوروبا",
     "channel": "beIN SPORTS 1",
     "commentator": "عصام الشوالي",
-    "servers": []
+    "servers": [
+      {
+        "HD": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/2rhA_ojcRvZBJVMZfCo9KhwDZTs9pASDSwv069B3RaVu24teXJC1WRLDHCwsOmT3mHgZfWsKpJY_O5NMdp2Gzg/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-private/st_master_dynamic_highlatency.m3u8?type=live"
+      }
+    ]
   },
   {
     "num": 15,
