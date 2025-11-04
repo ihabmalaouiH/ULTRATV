@@ -1,3 +1,6 @@
+import threading
+import os
+from flask import Flask
 import requests
 import base64
 from itertools import cycle
@@ -222,7 +225,7 @@ def check_for_updates_and_upload(context: CallbackContext):
 # قم بإضافة هذا السطر في أعلى الملف مع باقي الـ imports
 from telegram.ext import Application 
 
-def main():
+def run_bot():
     # 1. طريقة الإنشاء الجديدة (بدون use_context)
     application = Application.builder().token(BOT_TOKEN).build()
 
