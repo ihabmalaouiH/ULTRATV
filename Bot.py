@@ -14,10 +14,10 @@ from telegram.ext import Application, CommandHandler, CallbackContext
 
 # --- 1. إعدادات التليجرام وجيت هاب (تُقرأ من Render) ---
 
-BOT_TOKEN = os.environ.get("8407076175:AAHPF-CCGLEkqaC6Srydl3Iu6rbHhf6XK8Y")
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 # استخدمنا int() لتحويل النص إلى رقم
-ADMIN_USER_ID = int(os.environ.get("8421187425")) 
-GITHUB_TOKEN = os.environ.get("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")
+ADMIN_USER_ID = int(os.environ.get("ADMIN_USER_ID")) 
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
 GITHUB_REPO = os.environ.get("GITHUB_REPO", "ihabmalaouiH/ULTRATV")
 GITHUB_FILE_PATH = os.environ.get("GITHUB_FILE_PATH", "matches.json")
 COMMIT_MESSAGE = "Auto-update matches list"
