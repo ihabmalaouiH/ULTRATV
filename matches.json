@@ -153,7 +153,11 @@
     "league": "دوري أبطال أوروبا",
     "channel": "beIN SPORTS 1",
     "commentator": "علي الكعبي",
-    "servers": []
+    "servers": [
+      {
+        "HD": "https://prod-fastly-eu-west-3.video.pscp.tv:443/Transcoding/v1/hls/8ZQMGE1K2HBJNNznyuFNSR56BDeekcVxnXM1-Cy8RbKLMazmRwN4gjwYT2JMCxJ7vqInKxicGYAAf9Ukmkw-Fw/non_transcode/eu-west-3/periscope-replay-direct-prod-eu-west-3-private/st_master_dynamic_highlatency.m3u8?type=live"
+      }
+    ]
   },
   {
     "num": 14,
