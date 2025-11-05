@@ -226,22 +226,36 @@ async def check_for_updates_and_upload(context: CallbackContext):
 
 # --- 8. (معدل) دالة تشغيل البوت والجدولة (v20.x) ---
 
+# --- 8. (معدل) دالة تشغيل البوت والجدولة (مع مصيدة أخطاء) ---
+
 def run_bot():
     """الدالة التي تشغل البوت"""
-    application = Application.builder().token(BOT_TOKEN).build()
+    try:
+        print("Bot Thread: بدء إعداد البوت...")
+        application = Application.builder().token(BOT_TOKEN).build()
+        
+        job_queue = application.job_queue 
+        
+        if job_queue is None:
+            print("Bot Thread: خطأ! JobQueue is None. تأكد من 'python-telegram-bot[job-queue]' في requirements.txt")
+            return # الخروج من الثريد
+
+        application.add_handler(CommandHandler("start", start))
+        application.add_handler(CommandHandler("update", update_matches)) 
+
+        job_queue.run_repeating(check_for_updates_and_upload, interval=300, first=10)
+
+        print("Bot Thread: البوت قيد التشغيل (run_polling)...")
+        print("Bot Thread: سيتم الفحص التلقائي كل 5 دقائق.")
+        application.run_polling()
     
-    job_queue = application.job_queue 
-
-    application.add_handler(CommandHandler("start", start))
-    application.add_handler(CommandHandler("update", update_matches)) 
-
-    # interval=300 (5 دقائق).
-    job_queue.run_repeating(check_for_updates_and_upload, interval=300, first=10)
-
-    print("البوت قيد التشغيل...")
-    print("سيتم الفحص التلقائي كل 5 دقائق.")
-    application.run_polling()
-
+    except Exception as e:
+        # هذا سيلتقط أي خطأ (مثل خطأ في التوكن) ويطبعه في سجلات Render
+        print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+        print(f"Bot Thread: حدث انهيار كامل للبوت: {e}")
+        print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+        import traceback
+        traceback.print_exc() # طباعة الخطأ بالتفصيل
 # --- 9. (جديد) خادم الويب لإرضاء Render ---
 app = Flask(__name__)
 
