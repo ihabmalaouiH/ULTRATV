@@ -269,10 +269,14 @@ def start_web_server():
 
 # --- 10. (جديد) التنفيذ الرئيسي ---
 if __name__ == '__main__':
-    print("جاري تشغيل البوت في الخلفية...")
-    bot_thread = threading.Thread(target=run_bot)
-    bot_thread.daemon = True
-    bot_thread.start()
+    # 1. تشغيل خادم الويب (Flask) في "ثريد" منفصل
+    # (Flask لا يحتاج أن يكون في الثريد الرئيسي)
+    print("جاري تشغيل خادم الويب في الخلفية...")
+    web_server_thread = threading.Thread(target=start_web_server)
+    web_server_thread.daemon = True
+    web_server_thread.start()
 
-    print("جاري تشغيل خادم الويب لربط المنفذ...")
-    start_web_server()
+    # 2. تشغيل البوت (Telegram) في الثريد الرئيسي
+    # (هذا هو ما تحتاجه مكتبة التليجرام لحل الخطأ)
+    print("جاري تشغيل البوت في الثريد الرئيسي...")
+    run_bot()
