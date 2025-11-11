@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدول المباريات الاحترافي V32 (الإصلاح النهائي)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <meta name="description" content="Yalla Matches - تابع جدول المباريات مباشرة">
+    <meta name="theme-color" content="#111827">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="https://d.top4top.io/p_3602z951b1.png"> <style>
+        body {
+            font-family: 'Inter', 'Cairo', sans-serif;
+            @apply bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300 antialiased;
+        }
+        :root { color-scheme: light; }
+        html.dark { color-scheme: dark; }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { @apply bg-gray-200 dark:bg-gray-800 rounded-lg; }
+        ::-webkit-scrollbar-thumb { @apply bg-gray-400 dark:bg-gray-600 rounded-lg; }
+        
+        input[type="date"]::-webkit-calendar-picker-indicator { display: none; -webkit-appearance: none; }
+        #date-display-btn:disabled { opacity: 1; cursor: default; }
+
+        #live-filter-btn.active {
+            @apply bg-red-100 dark:bg-red-900/50 text-red-600 dark:text-red-400 border-red-300 dark:border-red-700;
+        }
+        
+        /* حركة الطي السلسة */
+        .league-toggle-icon { transition: transform 0.3s ease-in-out; }
+        .league-toggle-button[aria-expanded="false"] .league-toggle-icon {
+            transform: rotate(-90deg);
+        }
+        .league-matches-grid {
+            display: grid;
+            grid-template-rows: 1fr;
+            transition: grid-template-rows 0.3s ease-in-out;
+        }
+        .league-matches-grid.collapsed {
+            grid-template-rows: 0fr;
+        }
+        .league-matches-grid > div {
+            overflow: hidden;
+        }
+        
+        /* حركة الظهور للبطاقات */
+        .fade-in-up {
+            animation: fadeInUp 0.5s ease-out forwards;
+            opacity: 0;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* تصميم زر التبديل (Toggle Switch) */
+        .toggle-switch {
+            @apply relative inline-flex items-center h-6 rounded-full w-11 cursor-pointer transition-colors;
+        }
+        .toggle-switch-dot {
+            @apply inline-block w-4 h-4 transform bg-white rounded-full transition-transform;
+        }
+        input:checked + .toggle-switch {
+            @apply bg-blue-600;
+        }
+        input:checked + .toggle-switch .toggle-switch-dot {
+            transform: translateX(20px); /* RTL: transform: translateX(-20px); */
+        }
+        
+        .favorite-star-btn { @apply text-gray-400 dark:text-gray-600 transition-colors; }
+        .favorite-star-btn:hover { @apply text-yellow-500; }
+        .favorite-star-btn.favorited { @apply text-yellow-400 dark:text-yellow-500; }
+
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <header class="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg border-b border-gray-200/50 dark:border-gray-800/50 shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center h-[69px]">
+            
+            <div class="flex-1 flex justify-start">
+                <a href="#" id="logo-btn" class="cursor-pointer">
+                    <h1 class="text-3xl font-bold hidden md:block">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300">Yalla</span>
+                        <span class="text-gray-800 dark:text-white">Matches</span>
+                    </h1>
+                    <div class="md:hidden p-2 rounded-full bg-blue-600 text-white">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="flex items-center space-x-2 rtl:space-x-reverse justify-center flex-1 md:flex-none">
+                
+                <button id="next-day-btn" class="p-2 rounded-full text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                </button>
+
+                <div class="flex items-center rounded-lg bg-gray-100 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700/50">
+                    <button id="date-display-btn" class="p-2 px-3 transition-colors hover:bg-gray-200 dark:hover:bg-gray-700/50 rounded-r-md disabled:hover:bg-transparent dark:disabled:hover:bg-transparent disabled:opacity-50 disabled:cursor-not-allowed">
+                        <span id="date-display" class="text-sm font-semibold text-gray-800 dark:text-white whitespace-nowrap">اليوم</span>
+                    </button>
+                    <div class="w-px h-5 bg-gray-300 dark:bg-gray-700"></div>
+                    <button id="calendar-icon-btn" class="p-2 transition-colors hover:bg-gray-200 dark:hover:bg-gray-700/50 rounded-l-md disabled:opacity-30 disabled:cursor-not-allowed">
+                        <svg class="w-5 h-5 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                    </button>
+                </div>
+                
+                <button id="prev-day-btn" class="p-2 rounded-full text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+                </button>
+                
+                <input type="date" id="date-picker" class="hidden">
+            </div>
+
+            <div class="flex-1 flex justify-end items-center space-x-1 rtl:space-x-reverse">
+                <button id="live-filter-btn" class="flex items-center space-x-1 rtl:space-x-reverse p-2 px-3 rounded-lg border border-transparent transition-colors">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                    </span>
+                    <span class="text-sm font-semibold whitespace-nowrap">مباشر</span>
+                </button>
+                <button id="settings-btn" class="p-2 rounded-full text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="cors-warning" class="container mx-auto px-4 mt-4 hidden">...</div>
+    <div id="error-message" class="container mx-auto px-4 mt-4 hidden">...</div>
+
+    <div id="loading-indicator" class="... hidden">...</div>
+
+    <main class="container mx-auto px-4 py-6 transition-opacity duration-300">
+        
+        <div class="relative mb-6">
+            <input type="search" id="search-input" placeholder="ابحث عن فريق أو دوري..." class="w-full p-3 pe-10 text-sm font-semibold bg-white dark:bg-slate-900 border border-gray-200 dark:border-gray-700/50 rounded-xl shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            <span class="absolute top-1/2 -translate-y-1/2 end-3 text-gray-400">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+            </span>
+        </div>
+        
+        <div id="matches-container" class="space-y-6">
+            </div>
+    </main>
+    
+    <footer class="mt-12 py-8 bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+                © 2025 Yalla Matches. جميع الحقوق محفوظة.
+            </p>
+            <div class="flex justify-center space-x-4 rtl:space-x-reverse mt-4">
+                <a href="#" class="text-gray-500 hover:text-blue-500">سياسة الخصوصية</a>
+                <a href="#" class="text-gray-500 hover:text-blue-500">اتصل بنا</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <button id="scroll-to-top-btn" class="hidden fixed bottom-6 end-6 bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg transition-all duration-300 z-50">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+    </button>
+    
+    <div id="settings-modal" class="fixed inset-0 z-[60] flex items-center justify-center p-4 hidden">
+        <div id="settings-overlay" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+        <div class="relative z-10 w-full max-w-sm bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6">
+            <div class="flex justify-between items-center pb-3 border-b border-gray-200 dark:border-gray-700">
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">الإعدادات</h3>
+                <button id="settings-close-btn" class="p-1 rounded-full text-gray-500 hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+            </div>
+            <div class="space-y-4 pt-4">
+                <div class="flex justify-between items-center">
+                    <label for="dark-mode-toggle" class="text-sm font-semibold text-gray-700 dark:text-gray-300">الوضع الليلي</label>
+                    <input type="checkbox" id="dark-mode-toggle" class="hidden"/>
+                    <label for="dark-mode-toggle" class="toggle-switch bg-gray-300 dark:bg-gray-700">
+                        <span class="toggle-switch-dot"></span>
+                    </label>
+                </div>
+                <div class="flex justify-between items-center">
+                    <label for="language-select" class="text-sm font-semibold text-gray-700 dark:text-gray-300">اللغة</label>
+                    <select id="language-select" class="w-1/2 p-2 text-sm bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                        <option value="ar">العربية</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+                <div class="flex justify-between items-center">
+                    <label for="timezone-select" class="text-sm font-semibold text-gray-700 dark:text-gray-300">المنطقة الزمنية</label>
+                    <select id="timezone-select" class="w-1/2 p-2 text-sm bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                        <option value="%2B01%3A00">توقيت وسط أوروبا (CET+1)</option>
+                        <option value="%2B02%3A00">توقيت شرق أوروبا (EET+2)</option>
+                        <option value="%2B03%3A00">توقيت السعودية (AST+3)</option>
+                        <option value="%2B00%3A00">توقيت جرينتش (GMT/UTC)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // --- الثوابت ---
+        const API_BASE_URL = "https://www.yalla-shoot-365.com/matches/npm/";
+        const IMAGE_BASE_URL = "https://www.yalla-shoot-365.com";
+        const MOCK_DATA = { 
+            "STING-WEB-Matches": [
+                { "Cup-id": 1, "Cup-Name": "الدوري الإنجليزي", "Cup-Logo": "/assets/images/cup-logo/?id=1", "Match-id": 1005, "Team-Right": { "Name": "مانشستر سيتي", "Logo": "/assets/images/team-logo/?id=5", "Goal": 3 }, "Team-Left": { "Name": "ليفربول", "Logo": "/assets/images/team-logo/?id=4", "Goal": 0 }, "Time-Start": "2025-11-09T17:00", "Time-End": "...", "Time-Now": 66, "Match-Status": "مباشر" }, 
+                { "Cup-id": 1, "Cup-Name": "الدوري الإنجليزي", "Cup-Logo": "/assets/images/cup-logo/?id=1", "Match-id": 1006, "Team-Right": { "Name": "كريستال بالاس", "Logo": "/assets/images/team-logo/?id=10", "Goal": 0 }, "Team-Left": { "Name": "برايتون", "Logo": "/assets/images/team-logo/?id=11", "Goal": 0 }, "Time-Start": "2025-11-09T14:00", "Time-End": "...", "Time-Now": 90, "Match-Status": "انتهت" }, 
+                { "Cup-id": 2, "Cup-Name": "الدوري الإسباني", "Cup-Logo": "/assets/images/cup-logo/?id=2", "Match-id": 2001, "Team-Right": { "Name": "ريال مايوركا", "Logo": "/assets/images/team-logo/?id=20", "Goal": 1 }, "Team-Left": { "Name": "خيتافي", "Logo": "/assets/images/team-logo/?id=21", "Goal": 0 }, "Time-Start": "2025-11-09T18:30", "Time-End": "...", "Time-Now": 28, "Match-Status": "الشوط الأول" }, 
+                { "Cup-id": 2, "Cup-Name": "الدوري الإسباني", "Cup-Logo": "/assets/images/cup-logo/?id=2", "Match-id": 2002, "Team-Right": { "Name": "ريال مدريد", "Logo": "/assets/images/team-logo/?id=22", "Goal": 0 }, "Team-Left": { "Name": "برشلونة", "Logo": "/assets/images/team-logo/?id=23", "Goal": 0 }, "Time-Start": "2025-11-09T22:00", "Time-End": "...", "Time-Now": 0, "Match-Status": "لم تبدأ" },
+                { "Cup-id": 113, "Cup-Name": "الدوري البرازيلي", "Cup-Logo": "/assets/images/cup-logo/?id=113", "Match-id": 4380305, "Team-Right": { "Name": "نادي أتلتيكو باراناينسي", "Logo": "/assets/images/team-logo/?id=1227", "Goal": 1 }, "Team-Left": { "Name": "جوفينتود", "Logo": "/assets/images/team-logo/?id=1775", "Goal": 2 }, "Time-Start": "2025-11-08T22:00", "Time-End": "2025-11-09T00:00", "Time-Now": 90, "Match-Status": "انتهت" },
+            ]
+        };
+
+        // --- عناصر الواجهة ---
+        const datePicker = document.getElementById('date-picker');
+        const matchesContainer = document.getElementById('matches-container');
+        const loadingIndicator = document.getElementById('loading-indicator');
+        const corsWarning = document.getElementById('cors-warning');
+        const errorMessage = document.getElementById('error-message'); 
+        const errorText = document.getElementById('error-text');     
+        const dateDisplayBtn = document.getElementById('date-display-btn'); 
+        const dateDisplay = document.getElementById('date-display');
+        const prevDayBtn = document.getElementById('prev-day-btn');
+        const nextDayBtn = document.getElementById('next-day-btn');
+        const calendarIconBtn = document.getElementById('calendar-icon-btn'); 
+        const settingsBtn = document.getElementById('settings-btn');
+        const settingsModal = document.getElementById('settings-modal');
+        const settingsOverlay = document.getElementById('settings-overlay');
+        const settingsCloseBtn = document.getElementById('settings-close-btn');
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const languageSelect = document.getElementById('language-select');
+        const timezoneSelect = document.getElementById('timezone-select');
+        const liveFilterBtn = document.getElementById('live-filter-btn');
+        const scrollToTopBtn = document.getElementById('scroll-to-top-btn');
+        const logoBtn = document.getElementById('logo-btn');
+        const searchInput = document.getElementById('search-input');
+        
+        let currentDate = new Date(); 
+        let autoRefreshInterval = null;
+        let isLiveFilterActive = false;
+        let allFetchedMatches = [];
+        let favoriteLeagues = new Set(JSON.parse(localStorage.getItem('favoriteLeagues')) || []);
+
+        // 💎 V27: تم إلغاء الذاكرة لضمان الفتح التلقائي
+        // let leagueCollapseStates = JSON.parse(localStorage.getItem('leagueCollapseStates')) || {};
+
+        // ... (دوال: formatDateToYYYYMMDD, getTodayDateObject, showError, hideMessages) ...
+        function formatDateToYYYYMMDD(date) { const y = date.getFullYear(), m = String(date.getMonth() + 1).padStart(2, '0'), d = String(date.getDate()).padStart(2, '0'); return `${y}-${m}-${d}`; }
+        function getTodayDateObject() { const today = new Date(); today.setHours(0, 0, 0, 0); return today; }
+        function showError(message) { skeletonLoader.classList.add('hidden'); matchesContainer.innerHTML = ''; errorText.textContent = message; errorMessage.classList.remove('hidden'); }
+        function hideMessages() { corsWarning.classList.add('hidden'); errorMessage.classList.add('hidden'); }
+
+        // --- دالة مساعدة لتحديد حالة المباراة (لإعادة الاستخدام) ---
+        function getMatchStatusInfo(match) {
+            const status = match['Match-Status'];
+            const time = match['Time-Now'];
+            const isFinished = status === 'انتهت' || status === 'انتهت لتو' || status === 'انتهت المباراة';
+            const notStarted = status === 'لم تبدأ';
+            const specificLiveStatuses = ['الشوط الأول', 'الشوط الثاني', 'شوط', 'استراحة', 'وقت إضافي', 'ضربات جزاء'];
+            const isSpecificLive = specificLiveStatuses.includes(status);
+            const isGenericLive = (status === 'مباشر' || (time > 0 && !notStarted)) && !isFinished && !isSpecificLive;
+            const isLive = isSpecificLive || isGenericLive;
+            return { isFinished, notStarted, isLive, isSpecificLive, isGenericLive, status, time };
+        }
+
+        // --- دالة تحديد أولوية الفرز (الترتيب الاحترافي) ---
+        function getMatchSortPriority(match) {
+            const info = getMatchStatusInfo(match);
+            if (info.isLive) return 1;
+            if (info.notStarted) return 2;
+            if (info.isFinished) return 3;
+            return 4;
+        }
+
+        // --- "صندوق الحالة" (تصميم V19) ---
+        function createStatusBox(match) {
+            const { isFinished, notStarted, isLive, status, time } = getMatchStatusInfo(match);
+            if (isLive) { return `<div class="flex flex-col items-center justify-center w-20"><span class="text-lg font-bold text-green-500 animate-pulse">'${time}</span></div>`; }
+            if (isFinished) { return `<div class="flex flex-col items-center justify-center w-20"><span class="text-sm font-semibold text-gray-500 dark:text-gray-400">FT</span><span class="text-xs text-gray-400 dark:text-gray-500 mt-1">${status}</span></div>`; }
+            if (notStarted) { const startTime = new Date(match['Time-Start']).toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit', hour12: false }); return `<div class="flex flex-col items-center justify-center w-20"><span class="text-lg font-bold text-blue-600 dark:text-blue-400">${startTime}</span><span class="text-xs text-gray-400 dark:text-gray-500 mt-1">${status}</span></div>`; }
+            return `<div class="flex flex-col items-center justify-center w-20"><span class="text-sm font-semibold text-yellow-500">${status}</span></div>`;
+        }
+        
+        // --- "بطاقة المباراة" (V21 - إبراز الفائز + قابلة للنقر) ---
+        function createMatchCard(match) {
+            const teamLeftLogo = IMAGE_BASE_URL + match['Team-Left'].Logo, teamLeftName = match['Team-Left'].Name;
+            const teamRightLogo = IMAGE_BASE_URL + match['Team-Right'].Logo, teamRightName = match['Team-Right'].Name;
+            const statusBoxHtml = createStatusBox(match);
+            const { isFinished } = getMatchStatusInfo(match);
+            const nameLengthThreshold = 13;
+            const rightFontClass = teamRightName.length > nameLengthThreshold ? 'text-xs' : 'text-sm';
+            const leftFontClass = teamLeftName.length > nameLengthThreshold ? 'text-xs' : 'text-sm';
+            let rightScoreClass = 'text-gray-800 dark:text-white', leftScoreClass = 'text-gray-800 dark:text-white';
+            if (isFinished) {
+                if (match['Team-Right'].Goal > match['Team-Left'].Goal) {
+                    rightScoreClass = 'text-blue-500 dark:text-blue-400 font-bold'; leftScoreClass = 'text-gray-500 dark:text-gray-400';
+                } else if (match['Team-Left'].Goal > match['Team-Right'].Goal) {
+                    leftScoreClass = 'text-blue-500 dark:text-blue-400 font-bold'; rightScoreClass = 'text-gray-500 dark:text-gray-400';
+                }
+            }
+            return `
+                <div class="bg-white dark:bg-slate-900 rounded-2xl p-4 md:p-6 shadow-md transition-all hover:shadow-lg hover:scale-[1.01] duration-200 cursor-pointer" 
+                     data-match-id="${match['Match-id']}" 
+                     onclick="handleMatchClick(${match['Match-id']})">
+                    <div class="flex justify-between items-center">
+                        <div class="flex-1 flex flex-col items-center justify-center min-w-0 px-2">
+                            <img src="${teamRightLogo}" alt="${teamRightName}" class="w-10 h-10 md:w-12 md:h-12 object-contain" onerror="this.src='https://placehold.co/48x48/eee/aaa?text=R'; this.onerror=null;">
+                            <span class="font-semibold text-center mt-2 w-full ${rightFontClass} h-10 flex items-center justify-center leading-tight" title="${teamRightName}">${teamRightName}</span>
+                        </div>
+                        <span class="text-3xl md:text-4xl font-bold ${rightScoreClass}">${match['Team-Right'].Goal}</span>
+                        <div class="flex-shrink-0 mx-2 md:mx-4">${statusBoxHtml}</div>
+                        <span class="text-3xl md:text-4xl font-bold ${leftScoreClass}">${match['Team-Left'].Goal}</span>
+                        <div class="flex-1 flex flex-col items-center justify-center min-w-0 px-2">
+                            <img src="${teamLeftLogo}" alt="${teamLeftName}" class="w-10 h-10 md:w-12 md:h-12 object-contain" onerror="this.src='https://placehold.co/48x48/eee/aaa?text=L'; this.onerror=null;">
+                            <span class="font-semibold text-center mt-2 w-full ${leftFontClass} h-10 flex items-center justify-center leading-tight" title="${teamLeftName}">${teamLeftName}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // 💎 V22: إصلاح النقر على المباراة
+        function handleMatchClick(matchId) {
+            window.location.href = `match.html?id=${matchId}`;
+        }
+
+        // 💎 --- "مجموعة الدوري" (V30 - مع رأس لاصق ونجمة مفضلة) --- 💎
+        function createLeagueGroup(leagueName, leagueData, leagueId) {
+            const leagueLogo = IMAGE_BASE_URL + leagueData.logo;
+            
+            leagueData.matches.sort((a, b) => {
+                const priorityA = getMatchSortPriority(a); const priorityB = getMatchSortPriority(b);
+                if (priorityA !== priorityB) return priorityA - priorityB;
+                const timeA = new Date(a['Time-Start']).getTime() || 0; const timeB = new Date(b['Time-Start']).getTime() || 0;
+                return timeA - timeB;
+            });
+            
+            const matchesHtml = leagueData.matches.map(createMatchCard).join('<div class="my-2"></div>'); 
+            
+            // 💎 V27: الافتراضي دائمًا مفتوح
+            const isExpanded = true; 
+            const collapsedClass = '';
+            const isFavorited = favoriteLeagues.has(leagueId);
+            
+            return `
+                <section class="fade-in-up">
+                    <button 
+                        class="league-toggle-button flex justify-between items-center w-full p-4 bg-white dark:bg-slate-900 rounded-xl shadow-md cursor-pointer sticky top-[69px] z-40" 
+                        aria-expanded="${isExpanded}" 
+                        aria-controls="league-matches-${leagueId}" 
+                        data-league-id="${leagueId}"
+                    >
+                        <div class="flex items-center space-x-3 rtl:space-x-reverse min-w-0">
+                            <img src="${leagueLogo}" alt="${leagueName}" class="w-8 h-8 object-contain flex-shrink-0" onerror="this.src='https://placehold.co/40x40/eee/aaa?text=C'; this.onerror=null;">
+                            <span class="text-xl font-extrabold text-gray-800 dark:text-gray-100 truncate">${leagueName}</span>
+                        </div>
+                        <div class="flex items-center">
+                            <button class="favorite-star-btn p-2 ${isFavorited ? 'favorited' : ''}" data-league-id="${leagueId}" onclick="toggleFavorite(event, '${leagueId}')">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                            </button>
+                            <svg class="league-toggle-icon w-6 h-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                        </div>
+                    </button>
+                    <div id="league-matches-${leagueId}" class="league-matches-grid ${collapsedClass}">
+                        <div class="space-y-3 mt-3">${matchesHtml}</div>
+                    </div>
+                </section>
+            `;
+        }
+        
+        // ... (دوال الهيكل العظمي: createSkeletonCard, createSkeletonLeague, renderSkeletons) ...
+        function createSkeletonCard() { return `<div class="bg-white dark:bg-slate-900 rounded-2xl p-4 md:p-6 shadow-md animate-pulse"><div class="flex justify-between items-center"><div class="flex-1 flex flex-col items-center justify-center min-w-0 px-2"><div class="w-12 h-12 bg-gray-200 dark:bg-gray-700 rounded-full"></div><div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-3/4 mt-2"></div></div><div class="h-8 bg-gray-200 dark:bg-gray-700 rounded w-10 mx-2"></div><div class="flex-shrink-0 mx-2 md:mx-4 w-20 h-10 bg-gray-200 dark:bg-gray-700 rounded-md"></div><div class="h-8 bg-gray-200 dark:bg-gray-700 rounded w-10 mx-2"></div><div class="flex-1 flex flex-col items-center justify-center min-w-0 px-2"><div class="w-12 h-12 bg-gray-200 dark:bg-gray-700 rounded-full"></div><div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-3/4 mt-2"></div></div></div></div>`; }
+        function createSkeletonLeague() { return `<section><div class="flex justify-between items-center w-full p-4 bg-white dark:bg-slate-900 rounded-xl shadow-md animate-pulse"><div class="flex items-center space-x-3 rtl:space-x-reverse"><div class="w-8 h-8 bg-gray-200 dark:bg-gray-700 rounded-full"></div><div class="h-6 bg-gray-200 dark:bg-gray-700 rounded w-32"></div></div><div class="w-6 h-6 bg-gray-200 dark:bg-gray-700 rounded-md"></div></div><div class="space-y-3 mt-3">${createSkeletonCard()}${createSkeletonCard()}</div></section>`; }
+        function renderSkeletons() { matchesContainer.innerHTML = `${createSkeletonLeague()}${createSkeletonLeague()}`; loadingIndicator.classList.add('hidden'); }
+
+
+        // 💎 --- دالة العرض (V29 - تدعم الفلتر والبحث والترتيب بالمفضلة) ---
+        function renderMatches(matches) {
+            let matchesToRender = matches;
+            
+            const searchTerm = searchInput.value.toLowerCase();
+            if (searchTerm) {
+                matchesToRender = matchesToRender.filter(match => 
+                    match['Cup-Name'].toLowerCase().includes(searchTerm) ||
+                    match['Team-Left'].Name.toLowerCase().includes(searchTerm) ||
+                    match['Team-Right'].Name.toLowerCase().includes(searchTerm)
+                );
+            }
+            
+            if (isLiveFilterActive) {
+                matchesToRender = matchesToRender.filter(match => getMatchStatusInfo(match).isLive);
+            }
+            
+            if (!matchesToRender || matchesToRender.length === 0) {
+                const isToday = currentDate.getTime() === getTodayDateObject().getTime();
+                let message = "لا توجد مباريات لهذا اليوم";
+                if (searchTerm) message = "لا توجد نتائج بحث مطابقة";
+                else if (isLiveFilterActive) message = "لا توجد مباريات مباشرة حاليًا";
+                
+                const backToTodayBtn = !isToday ? `<button id="go-to-today-btn" class="mt-4 px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 transition-colors">العودة إلى اليوم</button>` : '';
+                matchesContainer.innerHTML = `<div class="flex flex-col items-center justify-center h-64 text-gray-500 dark:text-gray-400 bg-white dark:bg-slate-900 rounded-2xl shadow-lg p-8"><svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg><span class="mt-4 text-xl font-semibold">${message}</span>${backToTodayBtn}</div>`;
+                const goToTodayBtn = document.getElementById('go-to-today-btn');
+                if (goToTodayBtn) {
+                    goToTodayBtn.addEventListener('click', () => {
+                        currentDate = getTodayDateObject();
+                        updatePageForDate(currentDate);
+                    });
+                }
+                return;
+            }
+            
+            const leagues = new Map();
+            matchesToRender.forEach(match => {
+                const leagueName = match['Cup-Name'];
+                if (!leagues.has(leagueName)) { leagues.set(leagueName, { logo: match['Cup-Logo'], matches: [] }); }
+                leagues.get(leagueName).matches.push(match);
+            });
+            
+            const leagueEntries = Array.from(leagues.entries());
+            leagueEntries.sort((a, b) => {
+                const leagueIdA = "league_" + a[0].replace(/\s/g, '_');
+                const leagueIdB = "league_" + b[0].replace(/\s/g, '_');
+                const isFavA = favoriteLeagues.has(leagueIdA) ? 1 : 0;
+                const isFavB = favoriteLeagues.has(leagueIdB) ? 1 : 0;
+                return isFavB - isFavA;
+            });
+
+            matchesContainer.innerHTML = '';
+            leagueEntries.forEach(([leagueName, leagueData]) => {
+                const leagueId = "league_" + leagueName.replace(/\s/g, '_');
+                const leagueGroupHtml = createLeagueGroup(leagueName, leagueData, leagueId);
+                matchesContainer.innerHTML += leagueGroupHtml;
+            });
+            addCollapseListeners();
+        }
+
+        // 💎 --- دالة ربط أحداث الطي (V27 - الإصلاح: مفتوحة دائمًا) --- 💎
+        function addCollapseListeners() {
+            document.querySelectorAll('.league-toggle-button').forEach(button => {
+                const targetElement = document.getElementById(button.getAttribute('aria-controls'));
+
+                // ✅ جعلها مفتوحة افتراضيًا
+                button.setAttribute('aria-expanded', 'true');
+                targetElement.classList.remove('collapsed');
+                
+                // إضافة المستمع للنقر
+                button.addEventListener('click', () => {
+                    const isExpanded = button.getAttribute('aria-expanded') === 'true';
+                    if (isExpanded) {
+                        button.setAttribute('aria-expanded', 'false');
+                        targetElement.classList.add('collapsed');
+                    } else {
+                        button.setAttribute('aria-expanded', 'true');
+                        targetElement.classList.remove('collapsed');
+                    }
+                });
+            });
+        }
+        
+        // 💎 V29: دالة النقر على النجمة المفضلة
+        function toggleFavorite(event, leagueId) {
+            event.stopPropagation();
+            if (favoriteLeagues.has(leagueId)) {
+                favoriteLeagues.delete(leagueId);
+            } else {
+                favoriteLeagues.add(leagueId);
+            }
+            localStorage.setItem('favoriteLeagues', JSON.stringify(Array.from(favoriteLeagues)));
+            renderMatches(allFetchedMatches);
+        }
+
+
+        // 💎 --- دالة جلب المباريات الرئيسية (V29) ---
+        async function fetchMatches(dateString, isAutoRefresh = false) {
+            if (!isAutoRefresh) {
+                renderSkeletons();
+            }
+            hideMessages();
+            const savedLang = (localStorage.getItem('language') || 'ar') === 'en' ? 1 : 27;
+            const savedTimezone = localStorage.getItem('timezone') || '%2B01%3A00';
+            const apiUrl = `${API_BASE_URL}?date=${dateString}&lang=${savedLang}&time=${savedTimezone}`;
+            try {
+                // await new Promise(resolve => setTimeout(resolve, 1000));
+                const response = await fetch(apiUrl);
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                const data = await response.json();
+                allFetchedMatches = data['STING-WEB-Matches'] || [];
+                renderMatches(allFetchedMatches);
+            } catch (error) {
+                console.error('Fetch Error:', error);
+                if (error.name === 'TypeError') {
+                    corsWarning.classList.remove('hidden');
+                    allFetchedMatches = MOCK_DATA['STING-WEB-Matches'] || [];
+                    renderMatches(allFetchedMatches);
+                } else {
+                    showError(error.message);
+                }
+            }
+        }
+        
+        // --- دالة لتحديث عرض التاريخ (V22) ---
+        function updateDateDisplay(dateObject) {
+            const today = getTodayDateObject();
+            const yesterday = getTodayDateObject(); yesterday.setDate(yesterday.getDate() - 1);
+            const tomorrow = getTodayDateObject(); tomorrow.setDate(tomorrow.getDate() + 1);
+            dateObject.setHours(0, 0, 0, 0);
+            let isToday = false;
+            if (dateObject.getTime() === today.getTime()) {
+                dateDisplay.textContent = 'اليوم'; isToday = true;
+            } else if (dateObject.getTime() === yesterday.getTime()) {
+                dateDisplay.textContent = 'الأمس';
+            } else if (dateObject.getTime() === tomorrow.getTime()) {
+                dateDisplay.textContent = 'غداً';
+            } else {
+                dateDisplay.textContent = dateObject.toLocaleDateString('ar-EG-u-nu-latn', { day: 'numeric', month: 'long' });
+            }
+            if (isToday) {
+                dateDisplayBtn.disabled = true; dateDisplay.classList.add('text-blue-500', 'font-bold');
+            } else {
+                dateDisplayBtn.disabled = false; dateDisplay.classList.remove('text-blue-500', 'font-bold');
+            }
+            if (!isToday && isLiveFilterActive) {
+                isLiveFilterActive = false; liveFilterBtn.classList.remove('active');
+            }
+            liveFilterBtn.classList.toggle('hidden', !isToday);
+            clearInterval(autoRefreshInterval); 
+            if (isToday) {
+                autoRefreshInterval = setInterval(() => {
+                    console.log("Auto-refreshing live matches...");
+                    fetchMatches(formatDateToYYYYMMDD(new Date()), true); 
+                }, 60000); 
+            }
+        }
+
+        // --- دالة لتحديث الصفحة بناءً على التاريخ ---
+        function updatePageForDate(dateObject) {
+            const dateString = formatDateToYYYYMMDD(dateObject);
+            datePicker.value = dateString;
+            updateDateDisplay(dateObject); 
+            const disableDateNav = isLiveFilterActive;
+            prevDayBtn.disabled = disableDateNav;
+            nextDayBtn.disabled = disableDateNav;
+            calendarIconBtn.disabled = disableDateNav;
+            dateDisplayBtn.disabled = disableDateNav || (dateObject.getTime() === getTodayDateObject().getTime());
+            searchInput.value = "";
+            fetchMatches(dateString, false);
+        }
+
+        // --- دالة لتحديث أيقونات الوضع الليلي/المضيء ---
+        function updateThemeIcons(isDark) {
+            darkIcon.classList.toggle('hidden', isDark);
+            lightIcon.classList.toggle('hidden', !isDark);
+        }
+
+        // --- ربط الأحداث (V29) ---
+        document.addEventListener('DOMContentLoaded', () => {
+            currentDate = getTodayDateObject();
+            
+            const savedLang = localStorage.getItem('language') || 'ar';
+            languageSelect.value = savedLang;
+            
+            const savedTimezone = localStorage.getItem('timezone') || '%2B01%3A00';
+            timezoneSelect.value = savedTimezone;
+            
+            let isDark;
+            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                isDark = true;
+                document.documentElement.classList.add('dark');
+            } else {
+                isDark = false;
+                document.documentElement.classList.remove('dark');
+            }
+            updateThemeIcons(isDark);
+            darkModeToggle.checked = isDark;
+            
+            updatePageForDate(currentDate); 
+        });
+        
+        searchInput.addEventListener('input', () => {
+            renderMatches(allFetchedMatches);
+        });
+        
+        settingsBtn.addEventListener('click', () => settingsModal.classList.remove('hidden'));
+        settingsOverlay.addEventListener('click', () => settingsModal.classList.add('hidden'));
+        settingsCloseBtn.addEventListener('click', () => settingsModal.classList.add('hidden'));
+
+        darkModeToggle.addEventListener('change', (e) => {
+            const isDark = e.target.checked;
+            document.documentElement.classList.toggle('dark', isDark);
+            localStorage.theme = isDark ? 'dark' : 'light';
+            updateThemeIcons(isDark);
+        });
+        
+        languageSelect.addEventListener('change', (e) => {
+            localStorage.setItem('language', e.target.value);
+            updatePageForDate(currentDate);
+            settingsModal.classList.add('hidden');
+        });
+        
+        timezoneSelect.addEventListener('change', (e) => {
+            localStorage.setItem('timezone', e.target.value);
+            updatePageForDate(currentDate);
+            settingsModal.classList.add('hidden');
+        });
+        
+        liveFilterBtn.addEventListener('click', () => {
+            isLiveFilterActive = !isLiveFilterActive;
+            liveFilterBtn.classList.toggle('active', isLiveFilterActive);
+            updatePageForDate(getTodayDateObject()); 
+        });
+        
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                scrollToTopBtn.classList.remove('hidden');
+            } else {
+                scrollToTopBtn.classList.add('hidden');
+            }
+        });
+
+        calendarIconBtn.addEventListener('click', () => {
+            try { datePicker.showPicker(); } catch (error) { datePicker.click(); }
+        });
+        
+        dateDisplayBtn.addEventListener('click', () => {
+            currentDate = getTodayDateObject();
+            updatePageForDate(currentDate);
+        });
+
+        datePicker.addEventListener('change', () => {
+            currentDate = new Date(datePicker.value + 'T12:00:00');
+            updatePageForDate(currentDate);
+        });
+
+        prevDayBtn.addEventListener('click', () => {
+            currentDate.setDate(currentDate.getDate() - 1);
+            updatePageForDate(currentDate);
+        });
+
+        nextDayBtn.addEventListener('click', () => {
+            currentDate.setDate(currentDate.getDate() + 1);
+            updatePageForDate(currentDate);
+        });
+        
+        logoBtn.addEventListener('click', (e) => {
+            e.preventDefault(); 
+            if (isLiveFilterActive) {
+                isLiveFilterActive = false;
+                liveFilterBtn.classList.remove('active');
+            }
+            searchInput.value = "";
+            currentDate = getTodayDateObject();
+            updatePageForDate(currentDate);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+    </script>
+</body>
+</html>
