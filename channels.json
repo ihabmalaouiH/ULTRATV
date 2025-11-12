@@ -20,10 +20,10 @@
             "url": "http://176.119.29.7:80/0c55573d-12d8-43af-823b-25c94d67b190.m3u8"
           },
           {
-            "name": "DRM",
-            "url": "https://shahid-sports-1-enc.edgenextcdn.net/out/v1/0169cfa282614ebe97ef0201da87bb04/index.mpd",
-            "scheme": "clearkey",
-            "license": "ab081a704aad41829b1123b09b6ecafd:dd51609092fff15e68b91debf5d591f9"
+  "name": "DRM",
+  "url": "https://shahid-sports-1-enc.edgenextcdn.net/out/v1/0169cfa282614ebe97ef0201da87bb04/index.mpd",
+  "drm_scheme": "clearkey",
+  "drm_license_key": "ab081a704aad41829b1123b09b6ecafd:dd51609092fff15e68b91debf5d591f9"
           }
         ]
       },
