@@ -31,26 +31,26 @@
         ]
       }
     ]
-  }
-]
+  },
+  {
+    "name": "beIN SPORTS 2",
+    "logoUrl": "https://ultrav.me/sport%202.png",
+    "servers": [
+      {
+        "name": "HD",
+        "url": "https://www.youtube.com/live/umCCh6e7eXI?si=orCIk3yZQQTQYyju"
       },
       {
-        "name": "beIN SPORTS 2",
-        "logoUrl": "https://ultrav.me/sport%202.png",
-        "servers": [
-          {
-            "name": "HD",
-            "url": "https://www.youtube.com/live/umCCh6e7eXI?si=orCIk3yZQQTQYyju"
-          },
-          {
-            "name": "FHD",
-            "url": "http://117.55.202.221:25461/live/golden12/golden12/222894.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
-          },
-          {
-            "name": "G",
-            "url": "http://176.119.29.7/01ed3a36-03b2-4f64-9dfa-dea3df61b611.m3u8"
-          }
-        ]
+        "name": "FHD",
+        "url": "http://117.55.202.221:25461/live/golden12/golden12/222894.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
+      },
+      {
+        "name": "G",
+        "url": "http://176.119.29.7/01ed3a36-03b2-4f64-9dfa-dea3df61b611.m3u8"
+      }
+    ]
+  }
+]
       },
       {
         "name": "beIN SPORTS 3",
