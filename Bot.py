@@ -8,6 +8,7 @@ import json
 import logging
 import time
 from telegram import Update
+import io # <-- (جديد) لإرسال الملفات
 
 # (v20) هذا هو السطر الصحيح للإصدار الحديث
 from telegram.ext import Application, CommandHandler, CallbackContext 
@@ -25,7 +26,6 @@ COMMIT_MESSAGE = "Auto-update matches list"
 # التأكد من وجود التوكنز
 if not BOT_TOKEN or not GITHUB_TOKEN or not ADMIN_USER_ID:
     print("خطأ: واحد أو أكثر من متغيرات البيئة (BOT_TOKEN, GITHUB_TOKEN, ADMIN_USER_ID) غير موجود.")
-    # هذا السطر سيوقف البوت إذا لم يجد المفاتيح في Render
     exit(1) 
 
 # --- 2. الكود الخاص بك (سحب البيانات وفك التشفير) ---
@@ -127,22 +127,16 @@ def upload_to_github(json_data_string):
 # --- 5. دوال البوت (Telegram Handlers) ---
 
 def is_admin(update: Update):
-    # نستخدم ADMIN_USER_ID الرقمي الذي قرأناه من Render
     return update.message.from_user.id == ADMIN_USER_ID
 
-# (التصحيح: إضافة async)
 async def start(update: Update, context: CallbackContext):
     if not is_admin(update): return
-    # نستخدم .reply_text (وليس reply.text)
-    await update.message.reply_text('أهلاً بك! أنا البوت الخاص بك. يتم الفحص تلقائياً كل 5 دقائق. استخدم /update للفحص اليدوي.')
+    await update.message.reply_text('أهلاً بك! أنا البوت الخاص بك. يتم الفحص تلقائياً كل 5 دقائق. استخدم /update للفحص اليدوي أو /getmatches لسحب البيانات الآن.')
 
-# (التصحيح: إضافة async)
 async def update_matches(update: Update, context: CallbackContext):
     if not is_admin(update): return
     msg = await update.message.reply_text('... جاري الفحص اليدوي ...')
 
-    # استدعاء الدالة الأساسية للفحص
-    # (نستخدم await لأننا سنقوم بإرسال رسائل منها)
     changes_found = await check_for_updates_and_upload(context)
 
     if changes_found is None:
@@ -152,32 +146,67 @@ async def update_matches(update: Update, context: CallbackContext):
     else:
         await msg.edit_text('ℹ️ تم الفحص اليدوي. لا توجد تغييرات.')
 
+# --- (جديد) دالة /getmatches ---
+async def get_matches(update: Update, context: CallbackContext):
+    if not is_admin(update): return
+    
+    msg = await update.message.reply_text('... جاري سحب البيانات وفك تشفيرها ...')
+
+    # 1. سحب البيانات
+    source_data = fetch_and_decrypt_matches()
+    if not source_data:
+        await msg.edit_text('حدث خطأ أثناء سحب البيانات من المصدر.')
+        return
+
+    # 2. تحويل البيانات
+    transformed_data = transform_data(source_data)
+    if not transformed_data:
+        await msg.edit_text('حدث خطأ أثناء تحويل تنسيق البيانات.')
+        return
+
+    try:
+        # 3. تحويل القائمة النهائية إلى JSON
+        final_json_string = json.dumps(transformed_data, indent=2, ensure_ascii=False)
+        
+        # 4. تحويل النص إلى ملف في الذاكرة
+        json_bytes = final_json_string.encode('utf-8')
+        file_buffer = io.BytesIO(json_bytes)
+        
+        # 5. إرسال الملف
+        await context.bot.send_document(
+            chat_id=update.effective_chat.id,
+            document=file_buffer,
+            filename="matches.json",
+            caption="هذه هي قائمة المباريات المسحوبة حالياً من الـ API."
+        )
+        
+        # 6. حذف رسالة "جاري العمل"
+        await msg.delete()
+
+    except Exception as e:
+        print(f"خطأ في /getmatches: {e}")
+        await msg.edit_text(f'حدث خطأ أثناء إعداد الملف: {e}')
+
+
 # --- 6. (جديد) دالة جلب الملف القديم للمقارنة ---
 # (لا تغيير هنا)
 def get_current_github_data():
-    """
-    يجلب الملف الحالي من GitHub للمقارنة.
-    """
     url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/main/{GITHUB_FILE_PATH}"
     try:
         r = requests.get(url, timeout=10)
         if r.status_code == 200:
-            return r.json() # إرجاع البيانات كـ JSON
+            return r.json() 
         else:
             print("الملف غير موجود على GitHub بعد، سأعتبره فارغاً.")
-            return None # الملف غير موجود
+            return None 
     except Exception as e:
         print(f"خطأ في جلب الملف القديم: {e}")
         return None
 
 # --- 7. (جديد) دالة الفحص والمقارنة والرفع ---
-# (التصحيح: إضافة async)
+# (لا تغيير هنا، async موجودة)
 async def check_for_updates_and_upload(context: CallbackContext):
-    """
-    الدالة الأساسية التي تقوم بكل العمل.
-    """
     print("بدء الفحص...")
-
     old_data = get_current_github_data()
     source_data = fetch_and_decrypt_matches()
     
@@ -203,7 +232,6 @@ async def check_for_updates_and_upload(context: CallbackContext):
     if success:
         print("تم الرفع بنجاح.")
         try:
-            # (نستخدم await لأنها عملية غير متزامنة)
             await context.bot.send_message(
                 chat_id=ADMIN_USER_ID, 
                 text=f'✅ تحديث تلقائي ناجح!\n\nتم رصد تغييرات ورفعها إلى GitHub.\n{result}',
@@ -215,7 +243,6 @@ async def check_for_updates_and_upload(context: CallbackContext):
     else:
         print("فشل الرفع.")
         try:
-            # (نستخدم await)
             await context.bot.send_message(
                 chat_id=ADMIN_USER_ID, 
                 text=f'❌ فشل التحديث التلقائي!\n\nتم رصد تغييرات، ولكن فشل الرفع إلى GitHub.\nالخطأ: {result}'
@@ -225,8 +252,6 @@ async def check_for_updates_and_upload(context: CallbackContext):
         return None 
 
 # --- 8. (معدل) دالة تشغيل البوت والجدولة (v20.x) ---
-
-# --- 8. (معدل) دالة تشغيل البوت والجدولة (مع مصيدة أخطاء) ---
 
 def run_bot():
     """الدالة التي تشغل البوت"""
@@ -238,10 +263,13 @@ def run_bot():
         
         if job_queue is None:
             print("Bot Thread: خطأ! JobQueue is None. تأكد من 'python-telegram-bot[job-queue]' في requirements.txt")
-            return # الخروج من الثريد
+            return 
 
         application.add_handler(CommandHandler("start", start))
         application.add_handler(CommandHandler("update", update_matches)) 
+        
+        # --- (جديد) إضافة الأمر ---
+        application.add_handler(CommandHandler("getmatches", get_matches)) 
 
         job_queue.run_repeating(check_for_updates_and_upload, interval=300, first=10)
 
@@ -250,12 +278,12 @@ def run_bot():
         application.run_polling()
     
     except Exception as e:
-        # هذا سيلتقط أي خطأ (مثل خطأ في التوكن) ويطبعه في سجلات Render
         print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
         print(f"Bot Thread: حدث انهيار كامل للبوت: {e}")
         print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
         import traceback
-        traceback.print_exc() # طباعة الخطأ بالتفصيل
+        traceback.print_exc() 
+
 # --- 9. (جديد) خادم الويب لإرضاء Render ---
 app = Flask(__name__)
 
@@ -267,16 +295,14 @@ def start_web_server():
     port = int(os.environ.get('PORT', 8080))
     app.run(host='0.0.0.0', port=port)
 
-# --- 10. (جديد) التنفيذ الرئيسي ---
+# --- 10. (جديد) التنفيذ الرئيسي (المصحح للـ Threads) ---
 if __name__ == '__main__':
     # 1. تشغيل خادم الويب (Flask) في "ثريد" منفصل
-    # (Flask لا يحتاج أن يكون في الثريد الرئيسي)
     print("جاري تشغيل خادم الويب في الخلفية...")
     web_server_thread = threading.Thread(target=start_web_server)
     web_server_thread.daemon = True
     web_server_thread.start()
 
     # 2. تشغيل البوت (Telegram) في الثريد الرئيسي
-    # (هذا هو ما تحتاجه مكتبة التليجرام لحل الخطأ)
     print("جاري تشغيل البوت في الثريد الرئيسي...")
     run_bot()
