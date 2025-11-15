@@ -8,25 +8,13 @@
         "logoUrl": "https://ultrav.me/sport%201.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://superintendent.whatevergos.com:8080/live/ABDULLAH/aHVzDrpCMh/142774.m3u8"
+            "HD": "http://superintendent.whatevergos.com:8080/live/ABDULLAH/aHVzDrpCMh/142774.m3u8"
           },
           {
-            "name": "FHD",
-            "url": "https://balance.footballii.ir/hls2/bein1.m3u8"
+            "FHD": "https://balance.footballii.ir/hls2/bein1.m3u8"
           },
           {
-            "name": "G",
-            "url": "http://176.119.29.7:80/0c55573d-12d8-43af-823b-25c94d67b190.m3u8"
-          },
-          {
-            "name": "سيرفر 2",
-            "url": "https://shahid-sports-1-enc.edgenextcdn.net/out/v1/0169cfa282614ebe97ef0201da87bb04/index.mpd",
-            "scheme": "clearkey",
-            "license": "ab081a704aad41829b1123b09b6ecafd:dd51609092fff15e68b91debf5d591f9",
-            "headers": {
-              "tod-drm": "true"
-            }
+            "G": "http://176.119.29.7:80/0c55573d-12d8-43af-823b-25c94d67b190.m3u8"
           }
         ]
       },
@@ -35,16 +23,13 @@
         "logoUrl": "https://ultrav.me/sport%202.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "https://www.youtube.com/live/umCCh6e7eXI?si=orCIk3yZQQTQYyju"
+            "HD": "https://www.youtube.com/live/umCCh6e7eXI?si=orCIk3yZQQTQYyju"
           },
           {
-            "name": "FHD",
-            "url": "http://117.55.202.221:25461/live/golden12/golden12/222894.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
+            "FHD": "http://117.55.202.221:25461/live/golden12/golden12/222894.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
           },
           {
-            "name": "G",
-            "url": "http://176.119.29.7/01ed3a36-03b2-4f64-9dfa-dea3df61b611.m3u8"
+            "G": "http://176.119.29.7/01ed3a36-03b2-4f64-9dfa-dea3df61b611.m3u8"
           }
         ]
       },
@@ -53,16 +38,13 @@
         "logoUrl": "https://ultrav.me/sport%203.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://het117a.4rouwanda-shop.store/live/645587700/index.m3u8"
+            "HD": "http://het117a.4rouwanda-shop.store/live/645587700/index.m3u8"
           },
           {
-            "name": "FHD",
-            "url": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222936/77a9303fba430490aa3308a266d747b9/222936_1.ts"
+            "FHD": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222936/77a9303fba430490aa3308a266d747b9/222936_1.ts"
           },
           {
-            "name": "G",
-            "url": "http://176.119.29.54/d461442c-174d-413a-8f60-041e6dd4f9cc.m3u8"
+            "G": "http://176.119.29.54/d461442c-174d-413a-8f60-041e6dd4f9cc.m3u8"
           }
         ]
       },
@@ -71,16 +53,13 @@
         "logoUrl": "https://ultrav.me/sport%204.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://het120a.4rouwanda-shop.store/live/9787488847/index.m3u8"
+            "HD": "http://het120a.4rouwanda-shop.store/live/9787488847/index.m3u8"
           },
           {
-            "name": "FHD",
-            "url": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222937/801a00eea3203a06c909924682175d46/222937_6.ts"
+            "FHD": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222937/801a00eea3203a06c909924682175d46/222937_6.ts"
           },
           {
-            "name": "G",
-            "url": "http://176.119.29.54/6f91c9ad-073b-486a-ab15-f537f6bea3e2.m3u8"
+            "G": "http://176.119.29.54/6f91c9ad-073b-486a-ab15-f537f6bea3e2.m3u8"
           }
         ]
       },
@@ -89,16 +68,13 @@
         "logoUrl": "https://ultrav.me/sport%205.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://het119a.4rouwanda-shop.store/live/610303030/index.m3u8"
+            "HD": "http://het119a.4rouwanda-shop.store/live/610303030/index.m3u8"
           },
           {
-            "name": "FHD",
-            "url": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/502"
+            "FHD": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/502"
           },
           {
-            "name": "G",
-            "url": "http://176.119.29.54/d3f51267-8b0f-4e6d-baef-239e6625dd45.m3u8"
+            "G": "http://176.119.29.54/d3f51267-8b0f-4e6d-baef-239e6625dd45.m3u8"
           }
         ]
       },
@@ -107,16 +83,13 @@
         "logoUrl": "https://ultrav.me/sport%206.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://het100a.4rouwanda-shop.store/live/1515000000/index.m3u8"
+            "HD": "http://het100a.4rouwanda-shop.store/live/1515000000/index.m3u8"
           },
           {
-            "name": "FHD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1121794"
+            "FHD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1121794"
           },
           {
-            "name": "G",
-            "url": "http://176.119.29.54/ff452afc-2486-4906-a44c-9c19f60223ed.m3u8"
+            "G": "http://176.119.29.54/ff452afc-2486-4906-a44c-9c19f60223ed.m3u8"
           }
         ]
       },
@@ -125,12 +98,10 @@
         "logoUrl": "https://ultrav.me/sport%207.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "https://koragoal.xyz/hls/bN-7/720P/index.m3u8"
+            "HD": "https://koragoal.xyz/hls/bN-7/720P/index.m3u8"
           },
           {
-            "name": "FHD",
-            "url": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/504"
+            "FHD": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/504"
           }
         ]
       },
@@ -139,12 +110,10 @@
         "logoUrl": "https://ultrav.me/sport%208.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://79.127.227.25:9088/live/43821821/DeTb7tPuihpo7m/8.m3u8?token=UTlycE9PcWgzUzhSVHpP"
+            "HD": "http://79.127.227.25:9088/live/43821821/DeTb7tPuihpo7m/8.m3u8?token=UTlycE9PcWgzUzhSVHpP"
           },
           {
-            "name": "FHD",
-            "url": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/505"
+            "FHD": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/505"
           }
         ]
       },
@@ -153,8 +122,7 @@
         "logoUrl": "https://ultrav.me/sport%209.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://117.55.202.221:25461/live/golden12/golden12/222942.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
+            "HD": "http://117.55.202.221:25461/live/golden12/golden12/222942.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
           }
         ]
       },
@@ -163,12 +131,10 @@
         "logoUrl": "https://ultrav.me/sport%20xstra1.png",
         "servers": [
           {
-            "name": "FHD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/117125"
+            "FHD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/117125"
           },
           {
-            "name": "HD",
-            "url": "https://s2.news-api-gen.lol/xtra1/index.m3u8?token=5e21a1c82100fc6f982fb8b7a4f8d289c796d05a-7857c66ac1cb8b57e21c870755149bb0-1759349002-1759338202&remote=105.235.128.240/xtra1/index.m3u8?token=8cc7212298cdd531c026cc6b5709412f4e6762d6-a99ad12b6d2d5e75d01b0c4cf4246240-1759349002-1759338202&remote=105.235.128.240"
+            "HD": "https://s2.news-api-gen.lol/xtra1/index.m3u8?token=5e21a1c82100fc6f982fb8b7a4f8d289c796d05a-7857c66ac1cb8b57e21c870755149bb0-1759349002-1759338202&remote=105.235.128.240/xtra1/index.m3u8?token=8cc7212298cdd531c026cc6b5709412f4e6762d6-a99ad12b6d2d5e75d01b0c4cf4246240-1759349002-1759338202&remote=105.235.128.240"
           }
         ]
       },
@@ -177,8 +143,7 @@
         "logoUrl": "https://ultrav.me/sport%20xstra2.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/117130"
+            "HD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/117130"
           }
         ]
       },
@@ -187,8 +152,7 @@
         "logoUrl": "https://ultrav.me/sport%20xstra3.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/3"
+            "HD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/3"
           }
         ]
       },
@@ -197,8 +161,7 @@
         "logoUrl": "https://i.imgur.com/TJBVpXF.png",
         "servers": [
           {
-            "name": "FHD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/35522"
+            "FHD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/35522"
           }
         ]
       },
@@ -207,8 +170,7 @@
         "logoUrl": "https://i.imgur.com/TJBVpXF.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/11017"
+            "HD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/11017"
           }
         ]
       },
@@ -217,8 +179,7 @@
         "logoUrl": "https://i.imgur.com/Oy1F6vL.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/50150"
+            "HD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/50150"
           }
         ]
       },
@@ -227,8 +188,7 @@
         "logoUrl": "https://i.imgur.com/hl7wWU2.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/2531"
+            "HD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/2531"
           }
         ]
       },
@@ -237,8 +197,7 @@
         "logoUrl": "https://i.imgur.com/V6XRfDq.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/10369"
+            "HD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/10369"
           }
         ]
       },
@@ -247,8 +206,7 @@
         "logoUrl": "https://i.imgur.com/Pms9gd3.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "https://mo3ad.xyz/live/mo3ad626/mo3ad626/496.ts"
+            "HD": "https://mo3ad.xyz/live/mo3ad626/mo3ad626/496.ts"
           }
         ]
       },
@@ -257,8 +215,7 @@
         "logoUrl": "https://i.imgur.com/Kg6uX1n.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "https://manifest.googlevideo.com:443/api/manifest/hls_playlist/expire/1761661500/ei/3H0AaYW8FL6DvdIPubvr-Aw/ip/105.235.130.92/id/AiQasdSrZVo.1/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr2---sn-f5u5opt5q15-5abz.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/gcr/dz/bui/AdEuB5RoAZF4QNhrt5VsepIZd2t_h0-xhRYO_j-mV2SXz-Eq9MtVfqUNan4vggum5_ZFZYtq2rH_9ZDZ/spc/6b0G_BXx-zbvfnJhoGhk_4vGJ2PpDe2rNZ6M-KEYfeLORvUxPN-okoNSx5DIedXzcjNuryi8OFG-YQ/vprv/1/playlist_type/DVR/initcwndbps/312500/met/1761639902,/mh/ql/mm/44/mn/sn-f5u5opt5q15-5abz/ms/lva/mv/m/mvi/2/pl/25/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51331020,51552689,51565115,51565681,51580968/mt/1761639405/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,gcr,bui,spc,vprv,playlist_type/sig/AJfQdSswRQIhAI89fvix0iz7onEI29CfBE6UkLs37q2Iez9w0K75CMLdAiAz23EnzxPHkhxs3ZqBo25tYk8-5YbpTXOaq0biqsIt7A%3D%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRQIgTCmsOiJg4yKjxtcFy_H4gdNw2vHG9NY7NS34N6La-8kCIQDEYlNz9_A5hzlQMFYo1CH8jOcL16YqhCGEaeT-xCi_wg%3D%3D/playlist/index.m3u8"
+            "HD": "https://manifest.googlevideo.com:443/api/manifest/hls_playlist/expire/1761661500/ei/3H0AaYW8FL6DvdIPubvr-Aw/ip/105.235.130.92/id/AiQasdSrZVo.1/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr2---sn-f5u5opt5q15-5abz.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/gcr/dz/bui/AdEuB5RoAZF4QNhrt5VsepIZd2t_h0-xhRYO_j-mV2SXz-Eq9MtVfqUNan4vggum5_ZFZYtq2rH_9ZDZ/spc/6b0G_BXx-zbvfnJhoGhk_4vGJ2PpDe2rNZ6M-KEYfeLORvUxPN-okoNSx5DIedXzcjNuryi8OFG-YQ/vprv/1/playlist_type/DVR/initcwndbps/312500/met/1761639902,/mh/ql/mm/44/mn/sn-f5u5opt5q15-5abz/ms/lva/mv/m/mvi/2/pl/25/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51331020,51552689,51565115,51565681,51580968/mt/1761639405/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,gcr,bui,spc,vprv,playlist_type/sig/AJfQdSswRQIhAI89fvix0iz7onEI29CfBE6UkLs37q2Iez9w0K75CMLdAiAz23EnzxPHkhxs3ZqBo25tYk8-5YbpTXOaq0biqsIt7A%3D%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRQIgTCmsOiJg4yKjxtcFy_H4gdNw2vHG9NY7NS34N6La-8kCIQDEYlNz9_A5hzlQMFYo1CH8jOcL16YqhCGEaeT-xCi_wg%3D%3D/playlist/index.m3u8"
           }
         ]
       }
@@ -273,12 +230,10 @@
         "logoUrl": "https://ultrav.me/sport%201.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://bdd00.4rouwanda-shop.store/live/918454578001/index.m3u8?t=ruXVLGU34c0VwpWRePDaSw&e=1756859549"
+            "Server 1": "http://bdd00.4rouwanda-shop.store/live/918454578001/index.m3u8?t=ruXVLGU34c0VwpWRePDaSw&e=1756859549"
           },
           {
-            "name": "Server 2",
-            "url": "https://balance.footballii.ir/hls2/bein1.m3u8"
+            "Server 2": "https://balance.footballii.ir/hls2/bein1.m3u8"
           }
         ]
       },
@@ -287,12 +242,10 @@
         "logoUrl": "https://ultrav.me/sport%202.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://het115a.4rouwanda-shop.store/live/69854211/index.m3u8"
+            "Server 1": "http://het115a.4rouwanda-shop.store/live/69854211/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "http://117.55.202.221:25461/live/golden12/golden12/222894.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
+            "Server 2": "http://117.55.202.221:25461/live/golden12/golden12/222894.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
           }
         ]
       },
@@ -301,12 +254,10 @@
         "logoUrl": "https://ultrav.me/sport%203.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://het117a.4rouwanda-shop.store/live/645587700/index.m3u8"
+            "Server 1": "http://het117a.4rouwanda-shop.store/live/645587700/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222936/77a9303fba430490aa3308a266d747b9/222936_1.ts"
+            "Server 2": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222936/77a9303fba430490aa3308a266d747b9/222936_1.ts"
           }
         ]
       },
@@ -315,12 +266,10 @@
         "logoUrl": "https://ultrav.me/sport%204.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://het120a.4rouwanda-shop.store/live/9787488847/index.m3u8"
+            "Server 1": "http://het120a.4rouwanda-shop.store/live/9787488847/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222937/801a00eea3203a06c909924682175d46/222937_6.ts"
+            "Server 2": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222937/801a00eea3203a06c909924682175d46/222937_6.ts"
           }
         ]
       },
@@ -329,12 +278,10 @@
         "logoUrl": "https://ultrav.me/sport%205.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://het119a.4rouwanda-shop.store/live/610303030/index.m3u8"
+            "Server 1": "http://het119a.4rouwanda-shop.store/live/610303030/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/502"
+            "Server 2": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/502"
           }
         ]
       },
@@ -343,12 +290,10 @@
         "logoUrl": "https://ultrav.me/sport%206.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://het100a.4rouwanda-shop.store/live/1515000000/index.m3u8"
+            "Server 1": "http://het100a.4rouwanda-shop.store/live/1515000000/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1121794"
+            "Server 2": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1121794"
           }
         ]
       },
@@ -357,12 +302,10 @@
         "logoUrl": "https://ultrav.me/sport%207.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "https://koragoal.xyz/hls/bN-7/720P/index.m3u8"
+            "Server 1": "https://koragoal.xyz/hls/bN-7/720P/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/504"
+            "Server 2": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/504"
           }
         ]
       },
@@ -371,12 +314,10 @@
         "logoUrl": "https://ultrav.me/sport%208.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://79.127.227.25:9088/live/43821821/DeTb7tPuihpo7m/8.m3u8?token=UTlycE9PcWgzUzhSVHpP"
+            "Server 1": "http://79.127.227.25:9088/live/43821821/DeTb7tPuihpo7m/8.m3u8?token=UTlycE9PcWgzUzhSVHpP"
           },
           {
-            "name": "Server 2",
-            "url": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/505"
+            "Server 2": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/505"
           }
         ]
       },
@@ -385,8 +326,7 @@
         "logoUrl": "https://ultrav.me/sport%209.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://117.55.202.221:25461/live/golden12/golden12/222942.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
+            "Server 1": "http://117.55.202.221:25461/live/golden12/golden12/222942.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
           }
         ]
       },
@@ -395,12 +335,10 @@
         "logoUrl": "https://ultrav.me/sport%20xstra1.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/117125"
+            "Server 1": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/117125"
           },
           {
-            "name": "Server 2",
-            "url": "https://s2.news-api-gen.lol/xtra1/index.m3u8?token=5e21a1c82100fc6f982fb8b7a4f8d289c796d05a-7857c66ac1cb8b57e21c870755149bb0-1759349002-1759338202&remote=105.235.128.240/xtra1/index.m3u8?token=8cc7212298cdd531c026cc6b5709412f4e6762d6-a99ad12b6d2d5e75d01b0c4cf4246240-1759349002-1759338202&remote=105.235.128.240"
+            "Server 2": "https://s2.news-api-gen.lol/xtra1/index.m3u8?token=5e21a1c82100fc6f982fb8b7a4f8d289c796d05a-7857c66ac1cb8b57e21c870755149bb0-1759349002-1759338202&remote=105.235.128.240/xtra1/index.m3u8?token=8cc7212298cdd531c026cc6b5709412f4e6762d6-a99ad12b6d2d5e75d01b0c4cf4246240-1759349002-1759338202&remote=105.235.128.240"
           }
         ]
       },
@@ -409,8 +347,7 @@
         "logoUrl": "https://ultrav.me/sport%20xstra2.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/117130"
+            "Server 1": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/117130"
           }
         ]
       },
@@ -419,8 +356,7 @@
         "logoUrl": "https://ultrav.me/sport%20xstra3.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/3"
+            "Server 1": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/3"
           }
         ]
       }
@@ -435,12 +371,10 @@
         "logoUrl": "https://ultrav.me/sport%201.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://bdd00.4rouwanda-shop.store/live/918454578001/index.m3u8?t=ruXVLGU34c0VwpWRePDaSw&e=1756859549"
+            "Server 1": "http://bdd00.4rouwanda-shop.store/live/918454578001/index.m3u8?t=ruXVLGU34c0VwpWRePDaSw&e=1756859549"
           },
           {
-            "name": "Server 2",
-            "url": "https://balance.footballii.ir/hls2/bein1.m3u8"
+            "Server 2": "https://balance.footballii.ir/hls2/bein1.m3u8"
           }
         ]
       },
@@ -449,12 +383,10 @@
         "logoUrl": "https://ultrav.me/sport%202.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://het115a.4rouwanda-shop.store/live/69854211/index.m3u8"
+            "Server 1": "http://het115a.4rouwanda-shop.store/live/69854211/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "http://117.55.202.221:25461/live/golden12/golden12/222894.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
+            "Server 2": "http://117.55.202.221:25461/live/golden12/golden12/222894.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
           }
         ]
       },
@@ -463,12 +395,10 @@
         "logoUrl": "https://ultrav.me/sport%203.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://het117a.4rouwanda-shop.store/live/645587700/index.m3u8"
+            "Server 1": "http://het117a.4rouwanda-shop.store/live/645587700/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222936/77a9303fba430490aa3308a266d747b9/222936_1.ts"
+            "Server 2": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222936/77a9303fba430490aa3308a266d747b9/222936_1.ts"
           }
         ]
       },
@@ -477,12 +407,10 @@
         "logoUrl": "https://ultrav.me/sport%204.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://het120a.4rouwanda-shop.store/live/9787488847/index.m3u8"
+            "Server 1": "http://het120a.4rouwanda-shop.store/live/9787488847/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222937/801a00eea3203a06c909924682175d46/222937_6.ts"
+            "Server 2": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222937/801a00eea3203a06c909924682175d46/222937_6.ts"
           }
         ]
       },
@@ -491,12 +419,10 @@
         "logoUrl": "https://ultrav.me/sport%205.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://het119a.4rouwanda-shop.store/live/610303030/index.m3u8"
+            "Server 1": "http://het119a.4rouwanda-shop.store/live/610303030/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/502"
+            "Server 2": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/502"
           }
         ]
       },
@@ -505,12 +431,10 @@
         "logoUrl": "https://ultrav.me/sport%206.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://het100a.4rouwanda-shop.store/live/1515000000/index.m3u8"
+            "Server 1": "http://het100a.4rouwanda-shop.store/live/1515000000/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1121794"
+            "Server 2": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1121794"
           }
         ]
       },
@@ -519,12 +443,10 @@
         "logoUrl": "https://ultrav.me/sport%207.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "https://koragoal.xyz/hls/bN-7/720P/index.m3u8"
+            "Server 1": "https://koragoal.xyz/hls/bN-7/720P/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/504"
+            "Server 2": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/504"
           }
         ]
       },
@@ -533,12 +455,10 @@
         "logoUrl": "https://ultrav.me/sport%208.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://79.127.227.25:9088/live/43821821/DeTb7tPuihpo7m/8.m3u8?token=UTlycE9PcWgzUzhSVHpP"
+            "Server 1": "http://79.127.227.25:9088/live/43821821/DeTb7tPuihpo7m/8.m3u8?token=UTlycE9PcWgzUzhSVHpP"
           },
           {
-            "name": "Server 2",
-            "url": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/505"
+            "Server 2": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/505"
           }
         ]
       },
@@ -547,8 +467,7 @@
         "logoUrl": "https://ultrav.me/sport%209.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://117.55.202.221:25461/live/golden12/golden12/222942.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
+            "Server 1": "http://117.55.202.221:25461/live/golden12/golden12/222942.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
           }
         ]
       },
@@ -557,12 +476,10 @@
         "logoUrl": "https://ultrav.me/sport%20xstra1.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/117125"
+            "Server 1": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/117125"
           },
           {
-            "name": "Server 2",
-            "url": "https://s2.news-api-gen.lol/xtra1/index.m3u8?token=5e21a1c82100fc6f982fb8b7a4f8d289c796d05a-7857c66ac1cb8b57e21c870755149bb0-1759349002-1759338202&remote=105.235.128.240/xtra1/index.m3u8?token=8cc7212298cdd531c026cc6b5709412f4e6762d6-a99ad12b6d2d5e75d01b0c4cf4246240-1759349002-1759338202&remote=105.235.128.240"
+            "Server 2": "https://s2.news-api-gen.lol/xtra1/index.m3u8?token=5e21a1c82100fc6f982fb8b7a4f8d289c796d05a-7857c66ac1cb8b57e21c870755149bb0-1759349002-1759338202&remote=105.235.128.240/xtra1/index.m3u8?token=8cc7212298cdd531c026cc6b5709412f4e6762d6-a99ad12b6d2d5e75d01b0c4cf4246240-1759349002-1759338202&remote=105.235.128.240"
           }
         ]
       },
@@ -571,8 +488,7 @@
         "logoUrl": "https://ultrav.me/sport%20xstra2.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/117130"
+            "Server 1": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/117130"
           }
         ]
       },
@@ -581,8 +497,7 @@
         "logoUrl": "https://ultrav.me/sport%20xstra3.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/3"
+            "Server 1": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/3"
           }
         ]
       }
@@ -597,12 +512,10 @@
         "logoUrl": "https://ultrav.me/sport%201.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://bdd00.4rouwanda-shop.store/live/918454578001/index.m3u8?t=ruXVLGU34c0VwpWRePDaSw&e=1756859549"
+            "Server 1": "http://bdd00.4rouwanda-shop.store/live/918454578001/index.m3u8?t=ruXVLGU34c0VwpWRePDaSw&e=1756859549"
           },
           {
-            "name": "Server 2",
-            "url": "https://balance.footballii.ir/hls2/bein1.m3u8"
+            "Server 2": "https://balance.footballii.ir/hls2/bein1.m3u8"
           }
         ]
       },
@@ -611,12 +524,10 @@
         "logoUrl": "https://ultrav.me/sport%202.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://het115a.4rouwanda-shop.store/live/69854211/index.m3u8"
+            "Server 1": "http://het115a.4rouwanda-shop.store/live/69854211/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "http://117.55.202.221:25461/live/golden12/golden12/222894.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
+            "Server 2": "http://117.55.202.221:25461/live/golden12/golden12/222894.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
           }
         ]
       },
@@ -625,12 +536,10 @@
         "logoUrl": "https://ultrav.me/sport%203.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://het117a.4rouwanda-shop.store/live/645587700/index.m3u8"
+            "Server 1": "http://het117a.4rouwanda-shop.store/live/645587700/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222936/77a9303fba430490aa3308a266d747b9/222936_1.ts"
+            "Server 2": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222936/77a9303fba430490aa3308a266d747b9/222936_1.ts"
           }
         ]
       },
@@ -639,12 +548,10 @@
         "logoUrl": "https://ultrav.me/sport%204.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://het120a.4rouwanda-shop.store/live/9787488847/index.m3u8"
+            "Server 1": "http://het120a.4rouwanda-shop.store/live/9787488847/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222937/801a00eea3203a06c909924682175d46/222937_6.ts"
+            "Server 2": "http://117.55.202.221:25461/hlsr/TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b/golden12/golden12/222937/801a00eea3203a06c909924682175d46/222937_6.ts"
           }
         ]
       },
@@ -653,12 +560,10 @@
         "logoUrl": "https://ultrav.me/sport%205.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://het119a.4rouwanda-shop.store/live/610303030/index.m3u8"
+            "Server 1": "http://het119a.4rouwanda-shop.store/live/610303030/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/502"
+            "Server 2": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/502"
           }
         ]
       },
@@ -667,12 +572,10 @@
         "logoUrl": "https://ultrav.me/sport%206.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://het100a.4rouwanda-shop.store/live/1515000000/index.m3u8"
+            "Server 1": "http://het100a.4rouwanda-shop.store/live/1515000000/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1121794"
+            "Server 2": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1121794"
           }
         ]
       },
@@ -681,12 +584,10 @@
         "logoUrl": "https://ultrav.me/sport%207.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "https://koragoal.xyz/hls/bN-7/720P/index.m3u8"
+            "Server 1": "https://koragoal.xyz/hls/bN-7/720P/index.m3u8"
           },
           {
-            "name": "Server 2",
-            "url": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/504"
+            "Server 2": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/504"
           }
         ]
       },
@@ -695,12 +596,10 @@
         "logoUrl": "https://ultrav.me/sport%208.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://79.127.227.25:9088/live/43821821/DeTb7tPuihpo7m/8.m3u8?token=UTlycE9PcWgzUzhSVHpP"
+            "Server 1": "http://79.127.227.25:9088/live/43821821/DeTb7tPuihpo7m/8.m3u8?token=UTlycE9PcWgzUzhSVHpP"
           },
           {
-            "name": "Server 2",
-            "url": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/505"
+            "Server 2": "https://mo3ad.xyz:443/mo3ad511/mo3ad511/505"
           }
         ]
       },
@@ -709,8 +608,7 @@
         "logoUrl": "https://ultrav.me/sport%209.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://117.55.202.221:25461/live/golden12/golden12/222942.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
+            "Server 1": "http://117.55.202.221:25461/live/golden12/golden12/222942.m3u8?token=TBRaUBVYFlgaUgkAVgpQB1NUXQNVXwcFUFIEUgdRAAdRVAYDBwYHAQ9AHBZBRxNXVg5nDAUbXgIBBQkHBU4TF0RTQG4PVBZYGlECBwIGVBAbQUwMDFxGCgQdEkFbBhNYWUNeXUoSURpMB0JaU18+VlIVUQYEG15eQV1cHRANXz1TU19QCFQWWBpTEhgQWhJCFVlWEA1VSBJWWERDUxZUQA1YR10KHBYBVxdeQEBKQwgVKXdHTRsBSEBUXkJbDV9ADRRfAhMIFk4aC0NrQFYSRkUGWQgES0YKFgESHRAPUBpoVV1fCFVXFlENXkcQCUMDFU8aCA5XDURbQ29BWwYTWFlDXl0b"
           }
         ]
       },
@@ -719,12 +617,10 @@
         "logoUrl": "https://ultrav.me/sport%20xstra1.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/117125"
+            "Server 1": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/117125"
           },
           {
-            "name": "Server 2",
-            "url": "https://s2.news-api-gen.lol/xtra1/index.m3u8?token=5e21a1c82100fc6f982fb8b7a4f8d289c796d05a-7857c66ac1cb8b57e21c870755149bb0-1759349002-1759338202&remote=105.235.128.240/xtra1/index.m3u8?token=8cc7212298cdd531c026cc6b5709412f4e6762d6-a99ad12b6d2d5e75d01b0c4cf4246240-1759349002-1759338202&remote=105.235.128.240"
+            "Server 2": "https://s2.news-api-gen.lol/xtra1/index.m3u8?token=5e21a1c82100fc6f982fb8b7a4f8d289c796d05a-7857c66ac1cb8b57e21c870755149bb0-1759349002-1759338202&remote=105.235.128.240/xtra1/index.m3u8?token=8cc7212298cdd531c026cc6b5709412f4e6762d6-a99ad12b6d2d5e75d01b0c4cf4246240-1759349002-1759338202&remote=105.235.128.240"
           }
         ]
       },
@@ -733,8 +629,7 @@
         "logoUrl": "https://ultrav.me/sport%20xstra2.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/117130"
+            "Server 1": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/117130"
           }
         ]
       },
@@ -743,8 +638,7 @@
         "logoUrl": "https://ultrav.me/sport%20xstra3.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/3"
+            "Server 1": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/3"
           }
         ]
       }
@@ -759,8 +653,7 @@
         "logoUrl": "https://i.imgur.com/3tyLS17.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/13115"
+            "Server 1": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/13115"
           }
         ]
       },
@@ -769,8 +662,7 @@
         "logoUrl": "https://i.imgur.com/BoJM5eQ.png",
         "servers": [
           {
-            "name": "1",
-            "url": "http://apk.arabic-ch.space/live/075/index.m3u8"
+            "1": "http://apk.arabic-ch.space/live/075/index.m3u8"
           }
         ]
       },
@@ -779,8 +671,7 @@
         "logoUrl": "https://i.imgur.com/nOCvSmJ.png",
         "servers": [
           {
-            "name": "1",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1254"
+            "1": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1254"
           }
         ]
       },
@@ -789,12 +680,10 @@
         "logoUrl": "https://i.imgur.com/Hyxufh9.png",
         "servers": [
           {
-            "name": "FHD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/14551"
+            "FHD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/14551"
           },
           {
-            "name": "HD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/73783"
+            "HD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/73783"
           }
         ]
       },
@@ -803,12 +692,10 @@
         "logoUrl": "https://i.imgur.com/IzukcHB.png",
         "servers": [
           {
-            "name": "1",
-            "url": "http://4kplus.info:80/live/34975256443483347803/nw29rc1xv5wfl6ioktfh/14553.m3u8"
+            "1": "http://4kplus.info:80/live/34975256443483347803/nw29rc1xv5wfl6ioktfh/14553.m3u8"
           },
           {
-            "name": "2",
-            "url": "http://apk.arabic-ch.space/live/072/index.m3u8"
+            "2": "http://apk.arabic-ch.space/live/072/index.m3u8"
           }
         ]
       },
@@ -817,8 +704,7 @@
         "logoUrl": "https://i.imgur.com/owU8nt7.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/2530"
+            "HD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/2530"
           }
         ]
       },
@@ -827,8 +713,7 @@
         "logoUrl": "https://i.imgur.com/A7LT5Mk.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1250"
+            "HD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1250"
           }
         ]
       },
@@ -837,8 +722,7 @@
         "logoUrl": "https://i.imgur.com/kFA9sBQ.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/14558"
+            "HD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/14558"
           }
         ]
       },
@@ -847,8 +731,7 @@
         "logoUrl": "https://i.imgur.com/M5bxasA.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/18"
+            "HD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/18"
           }
         ]
       },
@@ -857,8 +740,7 @@
         "logoUrl": "https://i.imgur.com/4qYp0KL.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/21"
+            "HD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/21"
           }
         ]
       },
@@ -867,8 +749,7 @@
         "logoUrl": "https://i.imgur.com/CifalO7.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/19"
+            "HD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/19"
           }
         ]
       },
@@ -877,8 +758,7 @@
         "logoUrl": "https://i.imgur.com/W4iXNf0.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/20"
+            "HD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/20"
           }
         ]
       },
@@ -887,94 +767,7 @@
         "logoUrl": "https://i.imgur.com/dsW0GZ7.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/142519"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "SSC SPORTS",
-    "logoUrl": "https://i.imgur.com/ZmDYqug.png",
-    "channels": [
-      {
-        "name": "SSC News",
-        "logoUrl": "https://ultrav.me/ssc.png",
-        "servers": []
-      },
-      {
-        "name": "SSC 1",
-        "logoUrl": "https://ultrav.me/ssc.png",
-        "servers": [
-          {
-            "name": "Server 1",
-            "url": "http://117.55.202.221:25461/live/9826635982053225/acf65469f018/178950.m3u8?token=TBRaUBVYFlgaVAQAClZTCwUCWQRUX1IBBQgEVQJWAVoCUgcEVFMDVg1AHBZBRxNXVg5nDAUbXgIBBQgDAk4TF0RTQG4PVBZYGlAABQAAWRAbQUwMDFxGCgQdEkFbBhNYFQQFCVQFFk4aB0hAV0EPU1s8XAAXUAdVFgteRF4OHUBYWG1VA11VDFxAChYDEU0QXhBIR1tXEVxYHRJTWxZDA0NTEAtEAgBTCEAcFlFcFFxDEUFHWxsufxYdElRKFlQMRF9dX0QKFg8LFwgWHhEIQWgRXRYVSwFRWVRCEwhAAUAbFF9QHm9XDVYMVVdGWg5cREECR1AbSBJZXl5YRg1DPUdfVhNcEgVSAFQHFk8="
-          }
-        ]
-      },
-      {
-        "name": "SSC 2",
-        "logoUrl": "https://ultrav.me/ssc.png",
-        "servers": [
-          {
-            "name": "Server 1",
-            "url": "http://176.119.29.71/a6eb89ef-f2e3-469f-894e-0636b30f5376.m3u8"
-          }
-        ]
-      },
-      {
-        "name": "SSC 3",
-        "logoUrl": "https://ultrav.me/ssc.png",
-        "servers": [
-          {
-            "name": "Server 1",
-            "url": "http://176.119.29.71/b7a59ebd-09af-4dd8-aba3-9aef29a30e81.m3u8"
-          }
-        ]
-      },
-      {
-        "name": "SSC 4",
-        "logoUrl": "https://ultrav.me/ssc.png",
-        "servers": []
-      },
-      {
-        "name": "SSC 4",
-        "logoUrl": "https://ultrav.me/ssc.png",
-        "servers": []
-      },
-      {
-        "name": "SSC 5",
-        "logoUrl": "https://ultrav.me/ssc.png",
-        "servers": []
-      },
-      {
-        "name": "SSC Extra 1",
-        "logoUrl": "https://ultrav.me/ssc.png",
-        "servers": [
-          {
-            "name": "Server 1",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/255479"
-          }
-        ]
-      },
-      {
-        "name": "SSC Extra 2",
-        "logoUrl": "https://ultrav.me/ssc.png",
-        "servers": [
-          {
-            "name": "Server 1",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/255479"
-          }
-        ]
-      },
-      {
-        "name": "SSC Extra 3",
-        "logoUrl": "https://ultrav.me/ssc.png",
-        "servers": [
-          {
-            "name": "Server 1",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/255479"
+            "HD": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/142519"
           }
         ]
       }
@@ -989,16 +782,13 @@
         "logoUrl": "https://i.imgur.com/34sWRv4.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1597497"
+            "Server 1": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1597497"
           },
           {
-            "name": "Server 2",
-            "url": "https://z.yalla1shoot.xyz:6444/th1/index.m3u8"
+            "Server 2": "https://z.yalla1shoot.xyz:6444/th1/index.m3u8"
           },
           {
-            "name": "Server 3",
-            "url": "http://cmc.best-ott.me:80/live/bein_4K_STRONG/g32mXj2/1519405.m3u8"
+            "Server 3": "http://cmc.best-ott.me:80/live/bein_4K_STRONG/g32mXj2/1519405.m3u8"
           }
         ]
       },
@@ -1007,16 +797,13 @@
         "logoUrl": "https://i.imgur.com/34sWRv4.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://185.245.1.80/hls/c6e186168ce9faaab3fe4a77705119fc/1519404_2248.ts"
+            "Server 1": "http://185.245.1.80/hls/c6e186168ce9faaab3fe4a77705119fc/1519404_2248.ts"
           },
           {
-            "name": "Server 2",
-            "url": "https://z.yalla1shoot.xyz:6444/th2/index.m3u8"
+            "Server 2": "https://z.yalla1shoot.xyz:6444/th2/index.m3u8"
           },
           {
-            "name": "Server 3",
-            "url": "http://cmc.best-ott.me:80/live/bein_4K_STRONG/g32mXj2/1519404.m3u8"
+            "Server 3": "http://cmc.best-ott.me:80/live/bein_4K_STRONG/g32mXj2/1519404.m3u8"
           }
         ]
       },
@@ -1025,16 +812,13 @@
         "logoUrl": "https://i.imgur.com/34sWRv4.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1597571"
+            "Server 1": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1597571"
           },
           {
-            "name": "Server 2",
-            "url": "https://z.yalla1shoot.xyz:6444/th3/index.m3u8"
+            "Server 2": "https://z.yalla1shoot.xyz:6444/th3/index.m3u8"
           },
           {
-            "name": "Server 3",
-            "url": "http://cmc.best-ott.me:80/live/bein_4K_STRONG/g32mXj2/1519403.m3u8"
+            "Server 3": "http://cmc.best-ott.me:80/live/bein_4K_STRONG/g32mXj2/1519403.m3u8"
           }
         ]
       }
@@ -1049,8 +833,7 @@
         "logoUrl": "assets/logos/alarabiya.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "your_arabic_channel_link"
+            "Server 1": "your_arabic_channel_link"
           }
         ]
       }
@@ -1065,8 +848,7 @@
         "logoUrl": "https://i.imgur.com/8rXQgLs.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "https://mbc1-enc.edgenextcdn.net/out/v1/0965e4d7deae49179172426cbfb3bc5e/index.m3u8"
+            "Server 1": "https://mbc1-enc.edgenextcdn.net/out/v1/0965e4d7deae49179172426cbfb3bc5e/index.m3u8"
           }
         ]
       },
@@ -1075,8 +857,7 @@
         "logoUrl": "https://i.imgur.com/u1jUxMn.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1653"
+            "Server 1": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1653"
           }
         ]
       },
@@ -1085,8 +866,7 @@
         "logoUrl": "https://i.imgur.com/iHFvE8Z.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-3-usa/5d58265a862a476dc7f97694addb5ded/index.m3u8"
+            "Server 1": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-3-usa/5d58265a862a476dc7f97694addb5ded/index.m3u8"
           }
         ]
       },
@@ -1095,8 +875,7 @@
         "logoUrl": "https://i.imgur.com/NetBN3I.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-4/24f134f1cd63db9346439e96b86ca6ed/index.m3u8"
+            "Server 1": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-4/24f134f1cd63db9346439e96b86ca6ed/index.m3u8"
           }
         ]
       },
@@ -1105,8 +884,7 @@
         "logoUrl": "https://i.imgur.com/EZfXD4k.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-5/ee6b000cee0629411b666ab26cb13e9b/index.m3u8"
+            "Server 1": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-5/ee6b000cee0629411b666ab26cb13e9b/index.m3u8"
           }
         ]
       },
@@ -1115,8 +893,7 @@
         "logoUrl": "https://i.imgur.com/cxDgaaa.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-iraq/e38c44b1b43474e1c39cb5b90203691e/index.m3u8"
+            "Server 1": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-iraq/e38c44b1b43474e1c39cb5b90203691e/index.m3u8"
           }
         ]
       },
@@ -1125,8 +902,7 @@
         "logoUrl": "https://i.imgur.com/znuzkDN.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-usa/cd8d40acdab28aac0582faa3bd3983f1/index.m3u8"
+            "Server 1": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-usa/cd8d40acdab28aac0582faa3bd3983f1/index.m3u8"
           }
         ]
       },
@@ -1135,8 +911,7 @@
         "logoUrl": "https://i.imgur.com/YvcwJjW.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-2/754931856515075b0aabf0e583495c68/index.m3u8"
+            "Server 1": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-2/754931856515075b0aabf0e583495c68/index.m3u8"
           }
         ]
       },
@@ -1145,8 +920,7 @@
         "logoUrl": "https://i.imgur.com/nFqKeTN.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "https://mbc1-enc.edgenextcdn.net/out/v1/b0b3a0e6750d4408bb86d703d5feffd1/index.m3u8"
+            "Server 1": "https://mbc1-enc.edgenextcdn.net/out/v1/b0b3a0e6750d4408bb86d703d5feffd1/index.m3u8"
           }
         ]
       },
@@ -1155,8 +929,7 @@
         "logoUrl": "https://i.imgur.com/0oEHbGn.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-plus-drama/e37251ec2aac8f6c98f75cd0fa37cd28/index.m3u8"
+            "Server 1": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-plus-drama/e37251ec2aac8f6c98f75cd0fa37cd28/index.m3u8"
           }
         ]
       },
@@ -1165,8 +938,7 @@
         "logoUrl": "https://i.imgur.com/iwTJils.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "https://games1.elahmad.xyz/tv757_www.elahmad.com_mbc_variety/index.m3u8?token=44bea332cc159770b4b9bc7f536fd1be659dd897-aedf8bf46c04355baa46773c48a0935e-1759960477-1759949677"
+            "Server 1": "https://games1.elahmad.xyz/tv757_www.elahmad.com_mbc_variety/index.m3u8?token=44bea332cc159770b4b9bc7f536fd1be659dd897-aedf8bf46c04355baa46773c48a0935e-1759960477-1759949677"
           }
         ]
       },
@@ -1175,8 +947,7 @@
         "logoUrl": "https://i.imgur.com/QGemcEd.png",
         "servers": [
           {
-            "name": "1",
-            "url": "http://portal.geniptv.com:8080/dmtndmtnkimo/a7GPMeArdf/2428"
+            "1": "http://portal.geniptv.com:8080/dmtndmtnkimo/a7GPMeArdf/2428"
           }
         ]
       },
@@ -1185,12 +956,10 @@
         "logoUrl": "https://i.imgur.com/rNqrqxx.png",
         "servers": [
           {
-            "name": "HD",
-            "url": "http://4kplus.info:80/live/34975256443483347803/nw29rc1xv5wfl6ioktfh/54933.m3u8"
+            "HD": "http://4kplus.info:80/live/34975256443483347803/nw29rc1xv5wfl6ioktfh/54933.m3u8"
           },
           {
-            "name": "2",
-            "url": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1656"
+            "2": "http://top102856-4k.org:8080/abderahimkangoo201/pk6o5g2s9o/1656"
           }
         ]
       },
@@ -1199,8 +968,7 @@
         "logoUrl": "https://i.imgur.com/UNeDNse.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "https://shd-gcp-live.edgenextcdn.net:443/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8"
+            "Server 1": "https://shd-gcp-live.edgenextcdn.net:443/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8"
           }
         ]
       },
@@ -1209,8 +977,7 @@
         "logoUrl": "https://i.imgur.com/JaqmKPR.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-persia/818ee8e4b592dc497608f066d825bfb4/index.m3u8"
+            "Server 1": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-persia/818ee8e4b592dc497608f066d825bfb4/index.m3u8"
           }
         ]
       },
@@ -1219,8 +986,7 @@
         "logoUrl": "https://i.imgur.com/JDRsdIT.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-fm/3f36f7db6086acf058dc51681c87f8ad/index.m3u8"
+            "Server 1": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-fm/3f36f7db6086acf058dc51681c87f8ad/index.m3u8"
           }
         ]
       },
@@ -1229,8 +995,7 @@
         "logoUrl": "https://i.imgur.com/RqWNiyL.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://213.57.91.138:8000/play/a05l"
+            "Server 1": "http://213.57.91.138:8000/play/a05l"
           }
         ]
       },
@@ -1239,8 +1004,7 @@
         "logoUrl": "https://i.imgur.com/l8nAmVh.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://213.57.91.138:8000/play/a05l"
+            "Server 1": "http://213.57.91.138:8000/play/a05l"
           }
         ]
       }
@@ -1255,8 +1019,7 @@
         "logoUrl": "assets/logos/cartoon.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "your_kids_channel_link"
+            "Server 1": "your_kids_channel_link"
           }
         ]
       }
@@ -1293,8 +1056,7 @@
         "logoUrl": "assets/logos/tf1.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "your_france_channel_link"
+            "Server 1": "your_france_channel_link"
           }
         ]
       }
@@ -1309,8 +1071,7 @@
         "logoUrl": "assets/logos/trt1.png",
         "servers": [
           {
-            "name": "Server 1",
-            "url": "http://176.119.29.7:80/0c55573d-12d8-43af-823b-25c94d67b190.m3u8"
+            "Server 1": "http://176.119.29.7:80/0c55573d-12d8-43af-823b-25c94d67b190.m3u8"
           }
         ]
       }
