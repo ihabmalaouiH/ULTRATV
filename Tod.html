@@ -1,0 +1,63 @@
+<!DOCTYPE html><html lang="ar"><head>
+<meta charset="UTF-8"><meta name="referrer" content="no-referrer">
+<title>مشغل الفيديو</title>
+<script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
+<script>jwplayer.key=atob('WFN1UDRxTWwrOXRLMTdRTmIrNCt0aDJQbTlBV2dNTy9jWUg4Q0kwSEdHcjdiZGpv');</script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<link rel="stylesheet" href="https://akomov.com/todapi/jw_ako.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{margin:0;padding:0;outline:none;}body,html{width:100%;height:100%;overflow:hidden;background:#000;font-family:'Cairo',sans-serif;}
+#jwplayerDiv{width:100%!important;height:100%!important;}
+.jw-expandButton svg{width:24px;height:24px;}
+#footerCredit{position:fixed;bottom:8px;left:50%;transform:translateX(-50%);color:#fff;opacity:.35;font-size:14px;pointer-events:none;z-index:99999;}
+</style>
+
+<!-- منع F12 و Inspect -->
+<script>
+document.addEventListener("contextmenu",e=>e.preventDefault());
+document.onkeydown=function(e){
+ if(e.keyCode==123){return false;}
+ if(e.ctrlKey && e.shiftKey && (e.keyCode==73 || e.keyCode==74)){return false;}
+ if(e.ctrlKey && e.keyCode==85){return false;}
+};
+</script>
+
+</head><body>
+
+<div id="jwplayerDiv"></div>
+<div id="footerCredit">Ultrav.me</div>
+
+<script>
+// كود مشوش قوي (لكن آمن)
+(function(){
+let X=true;
+const Y=`<svg fill="#fff" width="24" height="24" viewBox="0 0 100 100"><g><path d="M22.661,20.5..."/></g></svg>`;
+
+// تشغيل المشغل (مشوش)
+function Z(){
+ let A=JSON.parse('{"file":"https://todtv-live-spo-prod.akamaized.net/Content/Channel/svc-spo-hd-08-dt/DASH/...mpd","drm":{"clearkey":{"keyId":"f1dac2...","key":"8ab19f..."}}}');
+ let B={width:"100%",height:"100%",autostart:true,volume:100,stretching:"uniform",playbackRateControls:true,playbackRates:[0.5,1,1.25,1.5,2]};
+ for(let C in A)B[C]=A[C];
+ let p=jwplayer("jwplayerDiv").setup(B);
+ p.on("ready",()=>W());
+ p.on("play",()=>{p.setMute(false);p.setVolume(100);});
+ p.on("levelsChanged",()=>setTimeout(W,100));
+ p.on("visualQuality",()=>setTimeout(W,100));
+ p.addButton(Y,"تمدد الفيديو",()=>{X=!X;W();},"expandButton");
+ p.on("pause",()=>p.play());
+ return p;
+}
+
+function W(){
+ let v=document.querySelector("#jwplayerDiv video");
+ if(v)v.style.objectFit=X?"fill":"contain";
+}
+
+Z();
+})();
+</script>
+
+</body></html>
