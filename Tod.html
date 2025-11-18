@@ -1,63 +1,118 @@
-<!DOCTYPE html><html lang="ar"><head>
-<meta charset="UTF-8"><meta name="referrer" content="no-referrer">
-<title>مشغل الفيديو</title>
-<script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
-<script>jwplayer.key=atob('WFN1UDRxTWwrOXRLMTdRTmIrNCt0aDJQbTlBV2dNTy9jWUg4Q0kwSEdHcjdiZGpv');</script>
-<link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-<link rel="stylesheet" href="https://akomov.com/todapi/jw_ako.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="referrer" content="no-referrer" />
+  <title>مشغل الفيديو</title>
+  
+  <script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
+  <script>jwplayer.key = atob('WFN1UDRxTWwrOXRLMTdRTmIrNCt0aDJQbTlBV2dNTy9jWUg4Q0kwSEdHcjdiZGpv');</script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://akomov.com/todapi/jw_ako.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    * { margin: 0; padding: 0; outline: none; }
+    body, html { width: 100%; height: 100%; overflow: hidden; background-color: black; font-family: 'Cairo', sans-serif; }
+    #jwplayerDiv { width: 100%!important; height: 100%!important; }
+    .jw-expandButton svg { width: 24px; height: 24px; }
 
-<style>
-*{margin:0;padding:0;outline:none;}body,html{width:100%;height:100%;overflow:hidden;background:#000;font-family:'Cairo',sans-serif;}
-#jwplayerDiv{width:100%!important;height:100%!important;}
-.jw-expandButton svg{width:24px;height:24px;}
-#footerCredit{position:fixed;bottom:8px;left:50%;transform:translateX(-50%);color:#fff;opacity:.35;font-size:14px;pointer-events:none;z-index:99999;}
-</style>
+    /* حقوق الموقع أسفل الفيديو */
+    #footerCredit {
+      position: fixed;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #ffffff;
+      opacity: 0.35;
+      font-size: 14px;
+      pointer-events: none;
+      font-family: 'Cairo', sans-serif;
+      z-index: 99999;
+    }
+  </style>
+</head>
 
-<!-- منع F12 و Inspect -->
-<script>
-document.addEventListener("contextmenu",e=>e.preventDefault());
-document.onkeydown=function(e){
- if(e.keyCode==123){return false;}
- if(e.ctrlKey && e.shiftKey && (e.keyCode==73 || e.keyCode==74)){return false;}
- if(e.ctrlKey && e.keyCode==85){return false;}
-};
-</script>
+<body>
 
-</head><body>
+  <div id="jwplayerDiv"></div>
 
-<div id="jwplayerDiv"></div>
-<div id="footerCredit">Ultrav.me</div>
+  <!-- حقوق Ultrav.me -->
+  <div id="footerCredit">Ultrav.me</div>
 
-<script>
-// كود مشوش قوي (لكن آمن)
-(function(){
-let X=true;
-const Y=`<svg fill="#fff" width="24" height="24" viewBox="0 0 100 100"><g><path d="M22.661,20.5..."/></g></svg>`;
+  <script>
+    let isExpanded = true; 
+    const expandSvg = `<svg fill="#ffffff" version="1.1" id="expand_icon" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 100 100" xml:space="preserve">
+      <g>
+        <path d="M22.661,20.5H36c1.104,0,2-0.896,2-2s-0.896-2-2-2H19c-1.104,0-2.5,1.276-2.5,2.381v17c0,1.104,0.896,2,2,2s2-0.896,2-2V24.876l16.042,15.791c0.391,0.391,1.027,0.586,1.539,0.586s1.086-0.195,1.477-0.586c0.781-0.781,0.812-2.237,0.031-3.019L22.661,20.5z"/>
+        <path d="M83,16.5H66c-1.104,0-2,0.896-2,2s0.896,2,2,2h12.605L61.647,37.648c-0.781,0.781-0.781,2.142,0,2.923c0.39,0.391,0.902,0.633,1.414,0.633s0.774-0.171,1.164-0.562l16.274-16.5v11.738c0,1.104,0.896,2,2,2s2-0.896,2-2v-17C84.5,17.776,84.104,16.5,83,16.5z"/>
+        <path d="M36.542,60.962L20.5,76.754V65.881c0-1.104-0.896-2-2-2s-2,0.896-2,2v17c1.104,0,1.396,1.619,2.5,1.619h17c1.104,0,2-0.896,2-2s-0.896-2-2-2H22.529L39.62,63.6c0.781-0.781,0.656-1.951-0.125-2.732C38.715,60.086,37.322,60.181,36.542,60.962z"/>
+        <path d="M82.5,63.881c-1.104,0-2,0.896-2,2v11.606L64.226,60.962c-0.78-0.781-1.923-0.781-2.703,0c-0.781,0.781-0.719,1.856,0.062,2.638l17.152,16.9H66c-1.104,0-2,0.896-2,2s0.896,2,2,2h17c1.104,0,1.5-0.515,1.5-1.619v-17C84.5,64.776,83.604,63.881,82.5,63.881z"/>
+      </g>
+    </svg>`;
 
-// تشغيل المشغل (مشوش)
-function Z(){
- let A=JSON.parse('{"file":"https://todtv-live-spo-prod.akamaized.net/Content/Channel/svc-spo-hd-08-dt/DASH/...mpd","drm":{"clearkey":{"keyId":"f1dac2...","key":"8ab19f..."}}}');
- let B={width:"100%",height:"100%",autostart:true,volume:100,stretching:"uniform",playbackRateControls:true,playbackRates:[0.5,1,1.25,1.5,2]};
- for(let C in A)B[C]=A[C];
- let p=jwplayer("jwplayerDiv").setup(B);
- p.on("ready",()=>W());
- p.on("play",()=>{p.setMute(false);p.setVolume(100);});
- p.on("levelsChanged",()=>setTimeout(W,100));
- p.on("visualQuality",()=>setTimeout(W,100));
- p.addButton(Y,"تمدد الفيديو",()=>{X=!X;W();},"expandButton");
- p.on("pause",()=>p.play());
- return p;
-}
+    function setupPlayer() {
+      const sensitiveConfig = JSON.parse('{"file":"https://todtv-live-spo-prod.akamaized.net/Content/Channel/svc-spo-hd-08-dt/DASH/hdntl=exp=1763497360~acl=*%2fContent%2fChannel%2fsvc-spo-hd-08-dt%2fDASH%2f*~id=063a9525-85b7-44e1-bcb3-169e504319df~data=hdntl,aXA9MTU2LjIwMS43Ny4xMTAsYXVkPW1lbmE~hmac=9c093638922924f6fe9e5540ccc1638ed1a851dee47322b60eaa91cac8ca77a9/playlist_ha.mpd?start=1763478008000&end=1763493600000","drm":{"clearkey":{"keyId":"f1dac2f937c9338f8e7c33963d06c489","key":"8ab19f639fe1552c7463f4b978c41c9d"}}}');
+      
+      const playerConfig = {
+        ...sensitiveConfig,
+        width: "100%",
+        height: "100%",
+        autostart: true,
+        mute: false,
+        volume: 100,
+        stretching: "uniform",
+        playbackRateControls: true,
+        playbackRates: [0.5, 1, 1.25, 1.5, 2],
+      };
+      
+      const player = jwplayer("jwplayerDiv").setup(playerConfig);
+      player.on('ready', function() { applyObjectFit(); });
+      return player;
+    }
+    
+    var player = setupPlayer();
 
-function W(){
- let v=document.querySelector("#jwplayerDiv video");
- if(v)v.style.objectFit=X?"fill":"contain";
-}
+    player.on("play", function () {
+      player.setMute(false);
+      player.setVolume(100);
+    });
 
-Z();
-})();
-</script>
+    function applyObjectFit() {
+      const videoElement = document.querySelector("#jwplayerDiv video");
+      if (!videoElement) return;
+      videoElement.style.objectFit = isExpanded ? 'fill' : 'contain';
+    }
 
-</body></html>
+    player.on("levelsChanged", function () { setTimeout(applyObjectFit, 100); });
+    player.on("visualQuality", function () { setTimeout(applyObjectFit, 100); });
+
+    player.addButton(expandSvg, 'تمدد الفيديو', function() { toggleExpand(); }, 'expandButton');
+    
+    function toggleExpand() {
+      isExpanded = !isExpanded;
+      applyObjectFit();
+      updateExpandButtonTooltip();
+    }
+    
+    function updateExpandButtonTooltip() {
+      const button = document.querySelector('.jw-expandButton');
+      if (button) {
+        button.setAttribute('aria-label', isExpanded ? 'تصغير الفيديو' : 'تمدد الفيديو');
+      }
+    }
+    
+    player.on('pause', function() { player.play(); });
+    
+    window.addEventListener("beforeunload", function () { player.stop(); });
+    document.addEventListener("visibilitychange", function() {
+      if (document.hidden) { player.stop(); }
+    });
+    
+    player.on('error', function(error) { console.error("فشل تشغيل الفيديو: " + error.message); });
+  </script>
+
+</body>
+</html>
