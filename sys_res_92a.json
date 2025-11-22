@@ -1,54 +1,323 @@
 [
   {
-    "team1Name": "Mes Kerman",
-    "team1Logo": "https://media.api-sports.io/football/teams/2718.png",
-    "team2Name": "Sepahan FC",
-    "team2Logo": "https://media.api-sports.io/football/teams/2744.png",
-    "status": "Not Started",
-    "league": "Hazfi Cup",
-    "score": "",
-    "startTime": 1763722800,
+    "team1Name": "نيوكاسل يونايتد",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/97.png",
+    "team2Name": "مانشستر سيتي",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/94.png",
+    "status": "20:30",
+    "league": "الدوري الإنجليزي الممتاز",
+    "score": null,
+    "startTime": "1763832600083",
     "isLive": false,
-    "channel": "",
-    "commentator": ""
+    "channel": "beIN 1 HD",
+    "commentator": "علي سعيد الكعبي ",
+    "servers": [
+      {
+        "license": "",
+        "headers": "{\"user-agent\":\"Mozilla\\/5.0 (Linux; Android 10; K) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/119.0.0.0 Safari\\/537.36\",\"referer\":\"http:\\/\\/web.mytvplus.net\\/\",\"origin\":\"http:\\/\\/web.mytvplus.net\"}",
+        "scheme": "",
+        "otherHeaders": "origin=http://web.mytvplus.net",
+        "isWeb": "false",
+        "name": "Multi Earthlink",
+        "Referer": "http://web.mytvplus.net/",
+        "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+        "position": "2000000",
+        "url": "http://stream.mytvplus.net:7002/sport/ch1/adaptive.m3u8"
+      },
+      {
+        "license": "",
+        "headers": "{}",
+        "scheme": "",
+        "otherHeaders": "",
+        "isWeb": "false",
+        "name": "Multi Auto",
+        "Referer": "",
+        "userAgent": "",
+        "position": "0",
+        "url": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/Ozl9eei_79-HW10_b6E_0SY-Gp74OtjT_lFme7LPF92Bjs4TtYOqVvL7QbDPPfTKdJyaOg-gf7CSGMX5SDZRFQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live"
+      }
+    ]
   },
   {
-    "team1Name": "Austria U17",
-    "team1Logo": "https://media.api-sports.io/football/teams/17939.png",
-    "team2Name": "Japan U17",
-    "team2Logo": "https://media.api-sports.io/football/teams/12511.png",
-    "status": "Not Started",
-    "league": "World Cup - U17",
-    "score": "",
-    "startTime": 1763728200,
+    "team1Name": "برايتون",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1426.png",
+    "team2Name": "برينتفورد",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1920.png",
+    "status": "18:00",
+    "league": "الدوري الإنجليزي الممتاز",
+    "score": null,
+    "startTime": "1763823600045",
     "isLive": false,
-    "channel": "",
-    "commentator": ""
+    "channel": "beIN 4 HD",
+    "commentator": "مصطفى كاظم ",
+    "servers": [
+      {
+        "license": "",
+        "headers": "{}",
+        "scheme": "",
+        "otherHeaders": "",
+        "isWeb": "false",
+        "name": "Multi | متعدد",
+        "Referer": "",
+        "userAgent": "",
+        "position": "0",
+        "url": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/Ltr8v6Im6igDbY54rUftBXc-a5ieiObCaRZz6fe-CwUsyl8UkGHvkwCb-HYB9HQ-fwtDQly0AU5cspYAYJ5JpA/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live"
+      }
+    ]
   },
   {
-    "team1Name": "Al Hilal Omdurman",
-    "team1Logo": "https://media.api-sports.io/football/teams/5237.png",
-    "team2Name": "MC Alger",
-    "team2Logo": "https://media.api-sports.io/football/teams/906.png",
-    "status": "Not Started",
-    "league": "CAF Champions League",
-    "score": "",
-    "startTime": 1763730000,
+    "team1Name": "فولام",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/91.png",
+    "team2Name": "سندرلاند",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/100.png",
+    "status": "18:00",
+    "league": "الدوري الإنجليزي الممتاز",
+    "score": null,
+    "startTime": "1763823600979",
     "isLive": false,
-    "channel": "beIN SPORTS 1",
-    "commentator": "محمد بركات"
+    "channel": "beIN 3 HD",
+    "commentator": "احمد عبده ",
+    "servers": [
+      {
+        "license": "",
+        "headers": "{}",
+        "scheme": "",
+        "otherHeaders": "",
+        "isWeb": "false",
+        "name": "Multi 30 fps",
+        "Referer": "",
+        "userAgent": "",
+        "position": "0",
+        "url": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/SCvqwDbYBSj4qrXNdhvJNJcRaFFyPI4GQGJWe733CCZbrV2YhcY6OwRfrkngwzuYNLT2Ogz2FoVFMcqmM0bLQw/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live"
+      }
+    ]
   },
   {
-    "team1Name": "Portugal U17",
-    "team1Logo": "https://media.api-sports.io/football/teams/17971.png",
-    "team2Name": "Switzerland U17",
-    "team2Logo": "https://media.api-sports.io/football/teams/17981.png",
-    "status": "Not Started",
-    "league": "World Cup - U17",
-    "score": "",
-    "startTime": 1763736300,
+    "team1Name": "ليفربول",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/93.png",
+    "team2Name": "نوتنجهام فورست",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1423.png",
+    "status": "18:00",
+    "league": "الدوري الإنجليزي الممتاز",
+    "score": null,
+    "startTime": "1763823600491",
     "isLive": false,
-    "channel": "",
-    "commentator": ""
+    "channel": "beIN 2 HD",
+    "commentator": "احمد البلوشي ",
+    "servers": [
+      {
+        "license": "",
+        "headers": "{}",
+        "scheme": "",
+        "otherHeaders": "",
+        "isWeb": "false",
+        "name": "Multi تلقائي",
+        "Referer": "",
+        "userAgent": "",
+        "position": "3",
+        "url": "https://prod-fastly-us-west-2.video.pscp.tv/Transcoding/v1/hls/Uk_PeXiWU-UckWFCxg12oq84JH0XWk_AH3tavDeudr1LdEOYu8XGWbZwduqoIePL9tIbHTl_EmEncHVtHX4yyQ/non_transcode/us-west-2/periscope-replay-direct-prod-us-west-2-public/master_dynamic_highlatency.m3u8?type=live"
+      }
+    ]
+  },
+  {
+    "team1Name": "بيرنلي",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/992.png",
+    "team2Name": "تشيلسي",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/89.png",
+    "status": "15:30",
+    "league": "الدوري الإنجليزي الممتاز",
+    "score": null,
+    "startTime": "1763814600589",
+    "isLive": false,
+    "channel": "beIN 1 HD",
+    "commentator": "علي محمد علي ",
+    "servers": [
+      {
+        "license": "",
+        "headers": "{\"user-agent\":\"Mozilla\\/5.0 (Linux; Android 10; K) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/119.0.0.0 Safari\\/537.36\",\"referer\":\"http:\\/\\/web.mytvplus.net\\/\",\"origin\":\"http:\\/\\/web.mytvplus.net\"}",
+        "scheme": "",
+        "otherHeaders": "origin=http://web.mytvplus.net",
+        "isWeb": "false",
+        "name": "Multi Earthlink",
+        "Referer": "http://web.mytvplus.net/",
+        "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+        "position": "2000000",
+        "url": "http://stream.mytvplus.net:7002/sport/ch1/adaptive.m3u8"
+      }
+    ]
+  },
+  {
+    "team1Name": "فياريال",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/127.png",
+    "team2Name": "ريال مايوركا",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/121.png",
+    "status": "22:00",
+    "league": "الدوري الإسباني",
+    "score": null,
+    "startTime": "1763838000560",
+    "isLive": false,
+    "channel": "beIN 2 HD",
+    "commentator": "منتصر الأزهري ",
+    "servers": [
+      {
+        "license": "",
+        "headers": "{}",
+        "scheme": "",
+        "otherHeaders": "",
+        "isWeb": "false",
+        "name": "Multi تلقائي",
+        "Referer": "",
+        "userAgent": "",
+        "position": "3",
+        "url": "https://prod-fastly-us-west-2.video.pscp.tv/Transcoding/v1/hls/Uk_PeXiWU-UckWFCxg12oq84JH0XWk_AH3tavDeudr1LdEOYu8XGWbZwduqoIePL9tIbHTl_EmEncHVtHX4yyQ/non_transcode/us-west-2/periscope-replay-direct-prod-us-west-2-public/master_dynamic_highlatency.m3u8?type=live"
+      }
+    ]
+  },
+  {
+    "team1Name": "أوساسونا",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/118.png",
+    "team2Name": "ريال سوسيداد",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/124.png",
+    "status": "20:30",
+    "league": "الدوري الإسباني",
+    "score": null,
+    "startTime": "1763832600964",
+    "isLive": false,
+    "channel": "beIN 2 HD",
+    "commentator": "نوفل باشي ",
+    "servers": [
+      {
+        "license": "",
+        "headers": "{}",
+        "scheme": "",
+        "otherHeaders": "",
+        "isWeb": "false",
+        "name": "Multi تلقائي",
+        "Referer": "",
+        "userAgent": "",
+        "position": "3",
+        "url": "https://prod-fastly-us-west-2.video.pscp.tv/Transcoding/v1/hls/Uk_PeXiWU-UckWFCxg12oq84JH0XWk_AH3tavDeudr1LdEOYu8XGWbZwduqoIePL9tIbHTl_EmEncHVtHX4yyQ/non_transcode/us-west-2/periscope-replay-direct-prod-us-west-2-public/master_dynamic_highlatency.m3u8?type=live"
+      }
+    ]
+  },
+  {
+    "team1Name": "برشلونة",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/111.png",
+    "team2Name": "أتليتك بلباو",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/116.png",
+    "status": "18:15",
+    "league": "الدوري الإسباني",
+    "score": null,
+    "startTime": "1763824500082",
+    "isLive": false,
+    "channel": "beIN 1 HD",
+    "commentator": "حسن العيدروس ",
+    "servers": [
+      {
+        "license": "",
+        "headers": "{\"user-agent\":\"Mozilla\\/5.0 (Linux; Android 10; K) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/119.0.0.0 Safari\\/537.36\",\"referer\":\"http:\\/\\/web.mytvplus.net\\/\",\"origin\":\"http:\\/\\/web.mytvplus.net\"}",
+        "scheme": "",
+        "otherHeaders": "origin=http://web.mytvplus.net",
+        "isWeb": "false",
+        "name": "Multi Earthlink",
+        "Referer": "http://web.mytvplus.net/",
+        "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+        "position": "2000000",
+        "url": "http://stream.mytvplus.net:7002/sport/ch1/adaptive.m3u8"
+      }
+    ]
+  },
+  {
+    "team1Name": "الأهلي",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1.png",
+    "team2Name": "شبيبة القبائل",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/239.png",
+    "status": "19:00",
+    "league": "دوري أبطال إفريقيا",
+    "score": null,
+    "startTime": "1763827200795",
+    "isLive": false,
+    "channel": "beIN 5 HD",
+    "commentator": "خليل البلوشي ",
+    "servers": [
+      {
+        "license": "",
+        "headers": "{\"user-agent\":\"Mozilla\\/5.0 (Linux; Android 10; K) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/119.0.0.0 Safari\\/537.36\",\"referer\":\"http:\\/\\/web.mytvplus.net\\/\",\"origin\":\"http:\\/\\/web.mytvplus.net\"}",
+        "scheme": "",
+        "otherHeaders": "origin=http://web.mytvplus.net",
+        "isWeb": "false",
+        "name": "Multi Earthlink",
+        "Referer": "http://web.mytvplus.net/",
+        "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+        "position": "87640678487",
+        "url": "http://stream.mytvplus.net:7006/sport/ch5/adaptive.m3u8"
+      },
+      {
+        "license": "",
+        "headers": "{}",
+        "scheme": "",
+        "otherHeaders": "",
+        "isWeb": "false",
+        "name": "Multi | متعدد",
+        "Referer": "",
+        "userAgent": "",
+        "position": "0",
+        "url": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/8gdmab4EhEKQcmFLfbCZjVGlfdbNdakIdHJI7SKVvhf86YG2nU2A23OemSIcuFlWhWwWuohBrijviFbVJPQq_w/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live"
+      }
+    ]
+  },
+  {
+    "team1Name": "الترجي",
+    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/254.png",
+    "team2Name": "استاد مالي",
+    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/711.png",
+    "status": "19:00",
+    "league": "دوري أبطال إفريقيا",
+    "score": null,
+    "startTime": "1763827200450",
+    "isLive": false,
+    "channel": "beIN 6 HD",
+    "commentator": "عصام الشوالي ",
+    "servers": [
+      {
+        "license": "",
+        "headers": "{}",
+        "scheme": "",
+        "otherHeaders": "",
+        "isWeb": "false",
+        "name": "Multi | متعدد",
+        "Referer": "",
+        "userAgent": "",
+        "position": "0",
+        "url": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/ghSbtNkrZD5CCoDc3gEVMn11uhNDgaHT0ADw8A1urW6cs-rj7mYAwGtzZFGTBuripigrU2Q13v_C349_6GCnNw/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live"
+      }
+    ]
+  },
+  {
+    "team1Name": "الفتح",
+    "team1Logo": "https://jdwel.com/image/teams/1105.png",
+    "team2Name": "الهلال",
+    "team2Logo": "https://jdwel.com/image/teams/2761.png",
+    "status": "17:50",
+    "league": "الدوري السعودي للمحترفين",
+    "score": null,
+    "startTime": "1763823000160",
+    "isLive": false,
+    "channel": "ثمانية 1",
+    "commentator": "فارس عوض ",
+    "servers": [
+      {
+        "license": "",
+        "headers": "{}",
+        "scheme": "",
+        "otherHeaders": "",
+        "isWeb": "false",
+        "name": "Multi Restream",
+        "Referer": "",
+        "userAgent": "",
+        "position": "0",
+        "url": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/8MTlQKCmqGzjS3JskYlgoYL8fqzVg0iEbGVlqgnZQ3AWFl5n2WT9FCz6bU-1q-PxevJx23opseyB4Bx4lqglDQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live"
+      }
+    ]
   }
 ]
