@@ -1,232 +1,80 @@
 [
   {
-    "team1Name": "نيوكاسل يونايتد",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/97.png",
-    "team2Name": "مانشستر سيتي",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/94.png",
-    "status": "20:30",
-    "league": "الدوري الإنجليزي الممتاز",
+    "team1Name": "Stade Brestois 29",
+    "team1Logo": "https://media.api-sports.io/football/teams/106.png",
+    "team2Name": "Metz",
+    "team2Logo": "https://media.api-sports.io/football/teams/112.png",
+    "status": "Not Started",
+    "league": "Ligue 1",
     "score": "",
-    "startTime": 1763832600083,
+    "startTime": 1763914500,
     "isLive": false,
-    "channel": "beIN 1 HD",
-    "commentator": "علي سعيد الكعبي ",
-    "servers": [
-      {
-        "name": "Multi Earthlink",
-        "url": "http://stream.mytvplus.net:7002/sport/ch1/adaptive.m3u8",
-        "headers": {
-          "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-          "referer": "http://web.mytvplus.net/",
-          "origin": "http://web.mytvplus.net"
-        }
-      },
-      {
-        "name": "Multi Auto",
-        "url": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/Ozl9eei_79-HW10_b6E_0SY-Gp74OtjT_lFme7LPF92Bjs4TtYOqVvL7QbDPPfTKdJyaOg-gf7CSGMX5SDZRFQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live",
-        "headers": {}
-      },
-      {
-        "name": "MejarServer 1080p",
-        "url": "https://cdnfest.com/G1-1080p/playlist.mpd",
-        "headers": {
-          "user-agent": "This Channel For Mejar Server",
-          "referer": "https://cast-x.site/",
-          "origin": "https://cast-x.site/"
-        }
-      }
-    ]
+    "channel": "",
+    "commentator": ""
   },
   {
-    "team1Name": "برايتون",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1426.png",
-    "team2Name": "برينتفورد",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1920.png",
-    "status": "18:00",
-    "league": "الدوري الإنجليزي الممتاز",
+    "team1Name": "Nantes",
+    "team1Logo": "https://media.api-sports.io/football/teams/83.png",
+    "team2Name": "Lorient",
+    "team2Logo": "https://media.api-sports.io/football/teams/97.png",
+    "status": "Not Started",
+    "league": "Ligue 1",
     "score": "",
-    "startTime": 1763823600045,
+    "startTime": 1763914500,
     "isLive": false,
-    "channel": "beIN 4 HD",
-    "commentator": "مصطفى كاظم ",
-    "servers": [
-      {
-        "name": "Multi | متعدد",
-        "url": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/Ltr8v6Im6igDbY54rUftBXc-a5ieiObCaRZz6fe-CwUsyl8UkGHvkwCb-HYB9HQ-fwtDQly0AU5cspYAYJ5JpA/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live",
-        "headers": {}
-      },
-      {
-        "name": "MejarServer 1080p",
-        "url": "https://cdnfest.com/G4-1080p/playlist.mpd",
-        "headers": {
-          "user-agent": "This Channel For Mejar Server",
-          "referer": "https://cast-x.site/",
-          "origin": "https://cast-x.site/"
-        }
-      }
-    ]
+    "channel": "",
+    "commentator": ""
   },
   {
-    "team1Name": "فولام",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/91.png",
-    "team2Name": "سندرلاند",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/100.png",
-    "status": "18:00",
-    "league": "الدوري الإنجليزي الممتاز",
+    "team1Name": "Toulouse",
+    "team1Logo": "https://media.api-sports.io/football/teams/96.png",
+    "team2Name": "Angers",
+    "team2Logo": "https://media.api-sports.io/football/teams/77.png",
+    "status": "Not Started",
+    "league": "Ligue 1",
     "score": "",
-    "startTime": 1763823600979,
+    "startTime": 1763914500,
     "isLive": false,
-    "channel": "beIN 3 HD",
-    "commentator": "احمد عبده ",
-    "servers": [
-      {
-        "name": "Multi 30 fps",
-        "url": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/SCvqwDbYBSj4qrXNdhvJNJcRaFFyPI4GQGJWe733CCZbrV2YhcY6OwRfrkngwzuYNLT2Ogz2FoVFMcqmM0bLQw/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live",
-        "headers": {}
-      },
-      {
-        "name": "MejarServer 1080p",
-        "url": "https://cdnfest.com/G3-1080p/playlist.mpd",
-        "headers": {
-          "user-agent": "This Channel For Mejar Server",
-          "referer": "https://cast-x.site/",
-          "origin": "https://cast-x.site/"
-        }
-      }
-    ]
+    "channel": "",
+    "commentator": ""
   },
   {
-    "team1Name": "ليفربول",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/93.png",
-    "team2Name": "نوتنجهام فورست",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1423.png",
-    "status": "18:00",
-    "league": "الدوري الإنجليزي الممتاز",
+    "team1Name": "Arsenal",
+    "team1Logo": "https://media.api-sports.io/football/teams/42.png",
+    "team2Name": "Tottenham",
+    "team2Logo": "https://media.api-sports.io/football/teams/47.png",
+    "status": "Not Started",
+    "league": "Premier League",
     "score": "",
-    "startTime": 1763823600491,
+    "startTime": 1763915400,
     "isLive": false,
-    "channel": "beIN 2 HD",
-    "commentator": "احمد البلوشي ",
-    "servers": [
-      {
-        "name": "Multi تلقائي",
-        "url": "https://prod-fastly-us-west-2.video.pscp.tv/Transcoding/v1/hls/Uk_PeXiWU-UckWFCxg12oq84JH0XWk_AH3tavDeudr1LdEOYu8XGWbZwduqoIePL9tIbHTl_EmEncHVtHX4yyQ/non_transcode/us-west-2/periscope-replay-direct-prod-us-west-2-public/master_dynamic_highlatency.m3u8?type=live",
-        "headers": {}
-      },
-      {
-        "name": "MejarServer 1080p",
-        "url": "https://cdnfest.com/G2-1080p-cast/playlist.mpd",
-        "headers": {
-          "user-agent": "This Channel For Mejar Server",
-          "referer": "https://cast-x.site/",
-          "origin": "https://cast-x.site/",
-          "tod-drm": "true"
-        }
-      }
-    ]
+    "channel": "",
+    "commentator": ""
   },
   {
-    "team1Name": "بيرنلي",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/992.png",
-    "team2Name": "تشيلسي",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/89.png",
-    "status": "15:30",
-    "league": "الدوري الإنجليزي الممتاز",
+    "team1Name": "Lille",
+    "team1Logo": "https://media.api-sports.io/football/teams/79.png",
+    "team2Name": "Paris FC",
+    "team2Logo": "https://media.api-sports.io/football/teams/114.png",
+    "status": "Not Started",
+    "league": "Ligue 1",
     "score": "",
-    "startTime": 1763814600589,
+    "startTime": 1763927100,
     "isLive": false,
-    "channel": "beIN 1 HD",
-    "commentator": "علي محمد علي ",
-    "servers": [
-      {
-        "name": "Multi Earthlink",
-        "url": "http://stream.mytvplus.net:7002/sport/ch1/adaptive.m3u8",
-        "headers": {
-          "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-          "referer": "http://web.mytvplus.net/",
-          "origin": "http://web.mytvplus.net"
-        }
-      }
-    ]
+    "channel": "",
+    "commentator": ""
   },
   {
-    "team1Name": "نابو لي",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/757.png",
-    "team2Name": "أتالانتا",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/128.png",
-    "status": "22:45",
-    "league": "الدوري الإيطالي",
+    "team1Name": "Elche",
+    "team1Logo": "https://media.api-sports.io/football/teams/797.png",
+    "team2Name": "Real Madrid",
+    "team2Logo": "https://media.api-sports.io/football/teams/541.png",
+    "status": "Not Started",
+    "league": "La Liga",
     "score": "",
-    "startTime": 1763840700482,
+    "startTime": 1763928000,
     "isLive": false,
-    "channel": "StarzPlay 1",
-    "commentator": "حازم عبدالسلام ",
-    "servers": [
-      {
-        "name": "Multi 1",
-        "url": "https://akmrwb-live.cdn.intigral-ott.net/STC/STC.isml/manifest.mpd",
-        "scheme": "clearkey",
-        "license": "47f0ab58f5a81c20b5b69dc494cbe102:1e0719da653c2b4652f0b0bf84d96c74",
-        "headers": {}
-      },
-      {
-        "name": "Multi STARz Play",
-        "url": "https://sps1.starzplayarabia.com/out/v1/eee188845e9543699fd24e5a9890c6e2/index.mpd",
-        "scheme": "clearkey",
-        "license": "b253c726c24c7c94a3ddf9b1907e2c76:097963d6ad73c3d712a104981de0ed42",
-        "headers": {
-          "tod-drm": "true"
-        }
-      }
-    ]
-  },
-  {
-    "team1Name": "الأهلي",
-    "team1Logo": "https://semedia.filgoal.com/Photos/Team/Medium/1.png",
-    "team2Name": "شبيبة القبائل",
-    "team2Logo": "https://semedia.filgoal.com/Photos/Team/Medium/239.png",
-    "status": "19:00",
-    "league": "دوري أبطال إفريقيا",
-    "score": "",
-    "startTime": 1763827200795,
-    "isLive": false,
-    "channel": "beIN 5 HD",
-    "commentator": "خليل البلوشي ",
-    "servers": [
-      {
-        "name": "Multi Earthlink",
-        "url": "http://stream.mytvplus.net:7006/sport/ch5/adaptive.m3u8",
-        "headers": {
-          "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-          "referer": "http://web.mytvplus.net/",
-          "origin": "http://web.mytvplus.net"
-        }
-      }
-    ]
-  },
-  {
-    "team1Name": "الفتح",
-    "team1Logo": "https://jdwel.com/image/teams/1105.png",
-    "team2Name": "الهلال",
-    "team2Logo": "https://jdwel.com/image/teams/2761.png",
-    "status": "17:50",
-    "league": "الدوري السعودي للمحترفين",
-    "score": "",
-    "startTime": 1763823000160,
-    "isLive": false,
-    "channel": "ثمانية 1",
-    "commentator": "فارس عوض ",
-    "servers": [
-      {
-        "name": "Multi Restream",
-        "url": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/8MTlQKCmqGzjS3JskYlgoYL8fqzVg0iEbGVlqgnZQ3AWFl5n2WT9FCz6bU-1q-PxevJx23opseyB4Bx4lqglDQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live",
-        "headers": {}
-      },
-      {
-        "name": "HD",
-        "url": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/sv22cH11HQcYlgSyr_W1r049qnNtpn4qZoMzfqhyS6hWlLKecyQMys_vzLuL4hKG26pCzlN9EIM2SFpaDcKh9Q/transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJFbmNvZGVyU2V0dGluZyI6ImVuY29kZXJfc2V0dGluZ183MjBwMzBfMTAiLCJIZWlnaHQiOjcyMCwiS2JwcyI6Mjc1MCwiV2lkdGgiOjEyODB9.ldktM4fCFRfkP4ZEBfZPKtlAUNAcTPkoz994YJAzWpE/dynamic_highlatency.m3u8?type=live",
-        "headers": {}
-      }
-    ]
+    "channel": "",
+    "commentator": ""
   }
 ]
