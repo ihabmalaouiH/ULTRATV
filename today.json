@@ -267,29 +267,6 @@
     "competition": "كأس الكونفدرالية الأفريقية",
     "matches": [
       {
-        "id": "222689",
-        "time": "2025-11-28 13:00",
-        "status": "لم تبدأ",
-        "home": {
-          "id": "4955",
-          "name": "أزام",
-          "score": "0",
-          "logo": "https://jdwel.com/image/teams/4955.png"
-        },
-        "away": {
-          "id": "3154",
-          "name": "الوداد الرياضي",
-          "score": "0",
-          "logo": "https://jdwel.com/image/teams/3154.png"
-        },
-        "channels": [
-          {
-            "channel": "beIN SPORTS 5",
-            "commentator": "جواد بدة"
-          }
-        ]
-      },
-      {
         "id": "222694",
         "time": "2025-11-28 16:00",
         "status": "لم تبدأ",
@@ -309,6 +286,29 @@
           {
             "channel": "beIN SPORTS 7",
             "commentator": "علي محمد علي"
+          }
+        ]
+      },
+      {
+        "id": "222689",
+        "time": "2025-11-28 19:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "4955",
+          "name": "أزام",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4955.png"
+        },
+        "away": {
+          "id": "3154",
+          "name": "الوداد الرياضي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3154.png"
+        },
+        "channels": [
+          {
+            "channel": "beIN SPORTS 5",
+            "commentator": "جواد بدة"
           }
         ]
       },
@@ -961,7 +961,7 @@
       {
         "id": "218397",
         "time": "2025-11-28 11:35",
-        "status": "42′",
+        "status": "بين الشوطين",
         "home": {
           "id": null,
           "name": "بريزبان روار",
@@ -1128,7 +1128,16 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/371.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "السعودية الرياضية 3",
+            "commentator": "علي الربيع"
+          },
+          {
+            "channel": "منصة +SAFF",
+            "commentator": null
+          }
+        ]
       },
       {
         "id": "214719",
@@ -1146,7 +1155,12 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/sau_arar_v2.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "منصة +SAFF",
+            "commentator": null
+          }
+        ]
       }
     ]
   },
@@ -1169,7 +1183,12 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/951.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "منصة +SAFF",
+            "commentator": null
+          }
+        ]
       }
     ]
   },
@@ -1446,11 +1465,11 @@
       {
         "id": "214032",
         "time": "2025-11-28 11:30",
-        "status": "48′ [+2]",
+        "status": "بين الشوطين",
         "home": {
           "id": null,
           "name": "الكويت",
-          "score": "2",
+          "score": "3",
           "logo": "https://jdwel.com/image/teams/flag_kuwait_v2.png"
         },
         "away": {
@@ -1464,7 +1483,7 @@
       {
         "id": "214048",
         "time": "2025-11-28 12:00",
-        "status": "16′",
+        "status": "26′",
         "home": {
           "id": "57",
           "name": "باكستان",
@@ -1474,7 +1493,7 @@
         "away": {
           "id": "37",
           "name": "اليمن",
-          "score": "0",
+          "score": "3",
           "logo": "https://jdwel.com/image/teams/37.png"
         },
         "channels": []
@@ -1482,7 +1501,7 @@
       {
         "id": "214050",
         "time": "2025-11-28 12:00",
-        "status": "16′",
+        "status": "26′",
         "home": {
           "id": "240",
           "name": "كمبوديا",
@@ -1500,7 +1519,7 @@
       {
         "id": "214058",
         "time": "2025-11-28 12:00",
-        "status": "18′",
+        "status": "28′",
         "home": {
           "id": "66",
           "name": "ماليزيا",
@@ -2380,7 +2399,7 @@
       {
         "id": "209358",
         "time": "2025-11-28 11:30",
-        "status": "48′ [+9]",
+        "status": "بين الشوطين",
         "home": {
           "id": "4827",
           "name": "بهايانكارا",
