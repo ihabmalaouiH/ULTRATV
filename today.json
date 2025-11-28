@@ -83,7 +83,7 @@
       {
         "id": "220054",
         "time": "2025-11-28 20:30",
-        "status": "84′",
+        "status": "94′ [+5]",
         "home": {
           "id": "3404",
           "name": "الأهلي",
@@ -139,7 +139,7 @@
       {
         "id": "198611",
         "time": "2025-11-28 22:30",
-        "status": "تبدأ قريباً",
+        "status": "0′",
         "home": {
           "id": "2634",
           "name": "بوروسيا مونشنغلادباخ",
@@ -203,7 +203,7 @@
       {
         "id": "222671",
         "time": "2025-11-28 22:00",
-        "status": "20′",
+        "status": "30′",
         "home": {
           "id": "1183",
           "name": "الجيش الملكي",
@@ -226,7 +226,7 @@
       {
         "id": "222673",
         "time": "2025-11-28 22:00",
-        "status": "19′",
+        "status": "29′",
         "home": {
           "id": "1409",
           "name": "مولودية الجزائر",
@@ -252,24 +252,6 @@
     "competition": "كأس الكونفدرالية الأفريقية",
     "matches": [
       {
-        "id": "222689",
-        "time": "2025-11-28 13:00",
-        "status": "انتهت",
-        "home": {
-          "id": "4955",
-          "name": "أزام",
-          "score": "0",
-          "logo": "https://jdwel.com/image/teams/4955.png"
-        },
-        "away": {
-          "id": "3154",
-          "name": "الوداد الرياضي",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/3154.png"
-        },
-        "channels": []
-      },
-      {
         "id": "222694",
         "time": "2025-11-28 16:00",
         "status": "انتهت",
@@ -284,6 +266,24 @@
           "name": "المصري البورسعيدي",
           "score": "3",
           "logo": "https://jdwel.com/image/teams/301.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222689",
+        "time": "2025-11-28 19:00",
+        "status": "انتهت",
+        "home": {
+          "id": "4955",
+          "name": "أزام",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4955.png"
+        },
+        "away": {
+          "id": "3154",
+          "name": "الوداد الرياضي",
+          "score": "1",
+          "logo": "https://jdwel.com/image/teams/3154.png"
         },
         "channels": []
       },
@@ -377,11 +377,11 @@
       {
         "id": "198939",
         "time": "2025-11-28 22:00",
-        "status": "19′",
+        "status": "29′",
         "home": {
           "id": null,
           "name": "زفوله",
-          "score": "0",
+          "score": "1",
           "logo": "https://jdwel.com/image/teams/net_pec_zwolle.png"
         },
         "away": {
@@ -451,7 +451,7 @@
       {
         "id": "203673",
         "time": "2025-11-28 22:30",
-        "status": "تبدأ قريباً",
+        "status": "لم تبدأ",
         "home": {
           "id": null,
           "name": "سبورتينغ خيخون",
@@ -643,7 +643,7 @@
       {
         "id": "195934",
         "time": "2025-11-28 21:00",
-        "status": "60′",
+        "status": "70′",
         "home": {
           "id": null,
           "name": "سونويوسك",
@@ -884,7 +884,7 @@
       {
         "id": "212653",
         "time": "2025-11-28 20:30",
-        "status": "89′",
+        "status": "انتهت",
         "home": {
           "id": "2447",
           "name": "ريتشاردز باي",
@@ -959,24 +959,6 @@
         "channels": []
       },
       {
-        "id": "214722",
-        "time": "2025-11-28 15:20",
-        "status": "انتهت",
-        "home": {
-          "id": "3303",
-          "name": "الريان",
-          "score": "0",
-          "logo": "https://jdwel.com/image/teams/3303.png"
-        },
-        "away": {
-          "id": null,
-          "name": "القوس",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/sau_al_qous.png"
-        },
-        "channels": []
-      },
-      {
         "id": "214660",
         "time": "2025-11-28 15:20",
         "status": "انتهت",
@@ -991,6 +973,24 @@
           "name": "مضر",
           "score": "1",
           "logo": "https://jdwel.com/image/teams/sau_mudhar.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "214722",
+        "time": "2025-11-28 15:20",
+        "status": "انتهت",
+        "home": {
+          "id": "3303",
+          "name": "الريان",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3303.png"
+        },
+        "away": {
+          "id": null,
+          "name": "القوس",
+          "score": "2",
+          "logo": "https://jdwel.com/image/teams/sau_al_qous.png"
         },
         "channels": []
       },
@@ -1246,7 +1246,7 @@
       {
         "id": "211122",
         "time": "2025-11-28 22:30",
-        "status": "تبدأ قريباً",
+        "status": "لم تبدأ",
         "home": {
           "id": null,
           "name": "تشيزينا",
@@ -1269,7 +1269,7 @@
       {
         "id": "201051",
         "time": "2025-11-28 20:30",
-        "status": "86′",
+        "status": "96′ [+7]",
         "home": {
           "id": "3263",
           "name": "شالكه 04",
@@ -1282,17 +1282,12 @@
           "score": "1",
           "logo": "https://jdwel.com/image/teams/3264.png"
         },
-        "channels": [
-          {
-            "channel": "شاهد",
-            "commentator": "تعليق ألماني"
-          }
-        ]
+        "channels": []
       },
       {
         "id": "201052",
         "time": "2025-11-28 20:30",
-        "status": "91′ [+7]",
+        "status": "انتهت",
         "home": {
           "id": null,
           "name": "هانوفر 96",
@@ -1642,6 +1637,24 @@
         "channels": []
       },
       {
+        "id": "215655",
+        "time": "2025-11-28 15:30",
+        "status": "انتهت",
+        "home": {
+          "id": "2459",
+          "name": "أبو قير للأسمدة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2459.png"
+        },
+        "away": {
+          "id": "52",
+          "name": "وي",
+          "score": "1",
+          "logo": "https://jdwel.com/image/teams/52.png"
+        },
+        "channels": []
+      },
+      {
         "id": "215656",
         "time": "2025-11-28 15:30",
         "status": "انتهت",
@@ -1656,6 +1669,24 @@
           "name": "أسوان",
           "score": "0",
           "logo": "https://jdwel.com/image/teams/3214.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "215657",
+        "time": "2025-11-28 15:30",
+        "status": "انتهت",
+        "home": {
+          "id": null,
+          "name": "بلدية المحلة",
+          "score": "1",
+          "logo": "https://jdwel.com/image/teams/egy_baladiyat_almehalla.png"
+        },
+        "away": {
+          "id": "3213",
+          "name": "الداخلية",
+          "score": "1",
+          "logo": "https://jdwel.com/image/teams/3213.png"
         },
         "channels": []
       },
@@ -1857,7 +1888,7 @@
       {
         "id": "196148",
         "time": "2025-11-28 22:00",
-        "status": "19′",
+        "status": "29′",
         "home": {
           "id": null,
           "name": "نيريجهيهازا سبارتاكوس",
@@ -1867,7 +1898,7 @@
         "away": {
           "id": "2334",
           "name": "ديبريسين",
-          "score": "1",
+          "score": "2",
           "logo": "https://jdwel.com/image/teams/2334.png"
         },
         "channels": []
@@ -1903,11 +1934,11 @@
       {
         "id": "201407",
         "time": "2025-11-28 22:00",
-        "status": "19′",
+        "status": "29′",
         "home": {
           "id": null,
           "name": "دن بوش",
-          "score": "1",
+          "score": "2",
           "logo": "https://jdwel.com/image/teams/net_fc_den_bosch.png"
         },
         "away": {
@@ -1921,7 +1952,7 @@
       {
         "id": "201408",
         "time": "2025-11-28 22:00",
-        "status": "18′",
+        "status": "28′",
         "home": {
           "id": null,
           "name": "دوردريخت",
@@ -1939,11 +1970,11 @@
       {
         "id": "201409",
         "time": "2025-11-28 22:00",
-        "status": "18′",
+        "status": "28′",
         "home": {
           "id": "1666",
           "name": "إيمن",
-          "score": "0",
+          "score": "1",
           "logo": "https://jdwel.com/image/teams/1666.png"
         },
         "away": {
@@ -1957,7 +1988,7 @@
       {
         "id": "201410",
         "time": "2025-11-28 22:00",
-        "status": "20′",
+        "status": "30′",
         "home": {
           "id": null,
           "name": "كامبور",
@@ -1975,7 +2006,7 @@
       {
         "id": "201411",
         "time": "2025-11-28 22:00",
-        "status": "18′",
+        "status": "28′",
         "home": {
           "id": null,
           "name": "فينلو",
@@ -2016,7 +2047,7 @@
       {
         "id": "195678",
         "time": "2025-11-28 22:30",
-        "status": "تبدأ قريباً",
+        "status": "0′",
         "home": {
           "id": "3324",
           "name": "رادومياك رادوم",
@@ -2062,7 +2093,7 @@
       {
         "id": "204726",
         "time": "2025-11-28 21:30",
-        "status": "48′ [+3]",
+        "status": "بين الشوطين",
         "home": {
           "id": "2538",
           "name": "رابيد بوخارست",
@@ -2444,11 +2475,11 @@
       {
         "id": "223540",
         "time": "2025-11-28 21:00",
-        "status": "56′",
+        "status": "66′",
         "home": {
           "id": null,
           "name": "سويسرا",
-          "score": "0",
+          "score": "1",
           "logo": "https://jdwel.com/image/teams/flag_switzerland_v2.png"
         },
         "away": {
