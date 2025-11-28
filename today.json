@@ -269,7 +269,7 @@
       {
         "id": "222694",
         "time": "2025-11-28 16:00",
-        "status": "73′",
+        "status": "79′",
         "home": {
           "id": null,
           "name": "زيسكو يونايتد",
@@ -379,7 +379,7 @@
       {
         "id": "213184",
         "time": "2025-11-28 17:25",
-        "status": "7′",
+        "status": "14′",
         "home": {
           "id": null,
           "name": "الجبيل",
@@ -527,7 +527,7 @@
       {
         "id": "216492",
         "time": "2025-11-28 17:30",
-        "status": "1′",
+        "status": "8′",
         "home": {
           "id": "1110",
           "name": "الأهلي",
@@ -596,11 +596,11 @@
       {
         "id": "216584",
         "time": "2025-11-28 17:00",
-        "status": "32′",
+        "status": "39′",
         "home": {
           "id": null,
           "name": "البقعة",
-          "score": "0",
+          "score": "1",
           "logo": "https://jdwel.com/image/teams/jor_al_buqaa.png"
         },
         "away": {
@@ -733,7 +733,7 @@
       {
         "id": "222588",
         "time": "2025-11-28 15:30",
-        "status": "98′ [+4]",
+        "status": "انتهت",
         "home": {
           "id": "2166",
           "name": "آذر شمس قزوين",
@@ -743,7 +743,7 @@
         "away": {
           "id": "1176",
           "name": "برسبوليس",
-          "score": "3",
+          "score": "2",
           "logo": "https://jdwel.com/image/teams/1176.png"
         },
         "channels": []
@@ -751,7 +751,7 @@
       {
         "id": "222589",
         "time": "2025-11-28 16:00",
-        "status": "64′",
+        "status": "71′",
         "home": {
           "id": "1925",
           "name": "ذوب آهن أصفهان",
@@ -787,7 +787,7 @@
       {
         "id": "222590",
         "time": "2025-11-28 17:30",
-        "status": "4′",
+        "status": "11′",
         "home": {
           "id": "1928",
           "name": "استقلال خوزستان",
@@ -987,7 +987,12 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/sau_arar_v2.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "منصة +SAFF",
+            "commentator": null
+          }
+        ]
       },
       {
         "id": "214720",
@@ -1064,7 +1069,7 @@
       {
         "id": "214724",
         "time": "2025-11-28 15:30",
-        "status": "81′",
+        "status": "88′ [+2]",
         "home": {
           "id": null,
           "name": "بيشة",
@@ -1218,17 +1223,17 @@
       {
         "id": "219152",
         "time": "2025-11-28 15:15",
-        "status": "لم تبدأ",
+        "status": "انتهت",
         "home": {
           "id": "2797",
           "name": "الرائد",
-          "score": "0",
+          "score": "2",
           "logo": "https://jdwel.com/image/teams/2797.png"
         },
         "away": {
           "id": null,
           "name": "الطائي",
-          "score": "0",
+          "score": "4",
           "logo": "https://jdwel.com/image/teams/sau_altaee_v3.png"
         },
         "channels": []
@@ -1236,17 +1241,17 @@
       {
         "id": "219153",
         "time": "2025-11-28 15:20",
-        "status": "لم تبدأ",
+        "status": "انتهت",
         "home": {
           "id": "776",
           "name": "العروبة",
-          "score": "0",
+          "score": "1",
           "logo": "https://jdwel.com/image/teams/776.png"
         },
         "away": {
           "id": null,
           "name": "التعاون",
-          "score": "0",
+          "score": "3",
           "logo": "https://jdwel.com/image/teams/sau_al_taawon_v2.png"
         },
         "channels": []
@@ -1254,11 +1259,11 @@
       {
         "id": "219154",
         "time": "2025-11-28 15:30",
-        "status": "لم تبدأ",
+        "status": "انتهت",
         "home": {
           "id": null,
           "name": "الوطن",
-          "score": "0",
+          "score": "2",
           "logo": "https://jdwel.com/image/teams/sau_alwatan.png"
         },
         "away": {
@@ -1272,17 +1277,17 @@
       {
         "id": "219155",
         "time": "2025-11-28 15:35",
-        "status": "لم تبدأ",
+        "status": "انتهت",
         "home": {
           "id": "2799",
           "name": "أحد",
-          "score": "0",
+          "score": "2",
           "logo": "https://jdwel.com/image/teams/2799.png"
         },
         "away": {
           "id": null,
           "name": "الحزم",
-          "score": "0",
+          "score": "1",
           "logo": "https://jdwel.com/image/teams/sau_al_hazm_v2.png"
         },
         "channels": []
@@ -1593,7 +1598,7 @@
       {
         "id": "214078",
         "time": "2025-11-28 16:00",
-        "status": "72′",
+        "status": "79′",
         "home": {
           "id": "49",
           "name": "الفلبين",
@@ -1603,7 +1608,7 @@
         "away": {
           "id": null,
           "name": "أستراليا",
-          "score": "3",
+          "score": "5",
           "logo": "https://jdwel.com/image/teams/flag_australia_v2.png"
         },
         "channels": []
@@ -1611,7 +1616,7 @@
       {
         "id": "223494",
         "time": "2025-11-28 16:00",
-        "status": "71′",
+        "status": "77′",
         "home": {
           "id": "67",
           "name": "قرغيزستان",
@@ -1629,7 +1634,7 @@
       {
         "id": "214069",
         "time": "2025-11-28 17:00",
-        "status": "32′",
+        "status": "39′",
         "home": {
           "id": "60",
           "name": "الهند",
@@ -1639,7 +1644,7 @@
         "away": {
           "id": null,
           "name": "لبنان",
-          "score": "1",
+          "score": "2",
           "logo": "https://jdwel.com/image/teams/flag_lebanon_v2.png"
         },
         "channels": []
@@ -1688,7 +1693,7 @@
       {
         "id": "215656",
         "time": "2025-11-28 15:30",
-        "status": "96′ [+2]",
+        "status": "انتهت",
         "home": {
           "id": "1745",
           "name": "مسار",
@@ -1706,17 +1711,17 @@
       {
         "id": "215657",
         "time": "2025-11-28 15:30",
-        "status": "لم تبدأ",
+        "status": "انتهت",
         "home": {
           "id": null,
           "name": "بلدية المحلة",
-          "score": "0",
+          "score": "1",
           "logo": "https://jdwel.com/image/teams/egy_baladiyat_almehalla.png"
         },
         "away": {
           "id": "3213",
           "name": "الداخلية",
-          "score": "0",
+          "score": "1",
           "logo": "https://jdwel.com/image/teams/3213.png"
         },
         "channels": []
@@ -1724,7 +1729,7 @@
       {
         "id": "215659",
         "time": "2025-11-28 15:30",
-        "status": "89′",
+        "status": "96′ [+1]",
         "home": {
           "id": "372",
           "name": "الإنتاج الحربي",
@@ -1760,7 +1765,7 @@
       {
         "id": "215940",
         "time": "2025-11-28 15:30",
-        "status": "99′ [+3]",
+        "status": "انتهت",
         "home": {
           "id": "318",
           "name": "المنصورة",
@@ -1778,7 +1783,7 @@
       {
         "id": "215941",
         "time": "2025-11-28 15:30",
-        "status": "92′ [+1]",
+        "status": "انتهت",
         "home": {
           "id": null,
           "name": "طنطا",
@@ -1801,7 +1806,7 @@
       {
         "id": "223442",
         "time": "2025-11-28 17:00",
-        "status": "27′",
+        "status": "34′",
         "home": {
           "id": "4192",
           "name": "مولودية بجاية",
@@ -1819,7 +1824,7 @@
       {
         "id": "223444",
         "time": "2025-11-28 17:00",
-        "status": "33′",
+        "status": "40′",
         "home": {
           "id": "4194",
           "name": "شباب عين تيموشنت",
@@ -1837,7 +1842,7 @@
       {
         "id": "223446",
         "time": "2025-11-28 17:00",
-        "status": "32′",
+        "status": "38′",
         "home": {
           "id": "990",
           "name": "مولودية سعيدة",
@@ -1855,7 +1860,7 @@
       {
         "id": "223447",
         "time": "2025-11-28 17:00",
-        "status": "28′",
+        "status": "35′",
         "home": {
           "id": "4193",
           "name": "وداد مستغانم",
@@ -1873,7 +1878,7 @@
       {
         "id": "223448",
         "time": "2025-11-28 17:00",
-        "status": "32′",
+        "status": "39′",
         "home": {
           "id": "3884",
           "name": "إتحاد بشار الجديد",
@@ -2170,7 +2175,7 @@
       {
         "id": "218113",
         "time": "2025-11-28 16:00",
-        "status": "75′",
+        "status": "82′",
         "home": {
           "id": "2530",
           "name": "لوكوموتيف صوفيا",
