@@ -1746,20 +1746,7 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/1166.png"
         },
-        "channels": [
-          {
-            "channel": "أبوظبي الرياضية 1",
-            "commentator": "محمد الشامسي"
-          },
-          {
-            "channel": "دبي الرياضية 1",
-            "commentator": "حماد العنزي"
-          },
-          {
-            "channel": "الشارقة الرياضية",
-            "commentator": "موسى عيد"
-          }
-        ]
+        "channels": []
       }
     ]
   },
@@ -3281,7 +3268,12 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/2797.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "منصة +SAFF",
+            "commentator": null
+          }
+        ]
       }
     ]
   },
