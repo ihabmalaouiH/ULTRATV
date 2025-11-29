@@ -755,7 +755,12 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/sau_al_wahda.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "منصة ثمانية",
+            "commentator": "سلطان الحربي"
+          }
+        ]
       },
       {
         "id": "213186",
@@ -796,7 +801,12 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/2452.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "ثمانية",
+            "commentator": "فارس عوض"
+          }
+        ]
       }
     ]
   },
@@ -1736,7 +1746,20 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/1166.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "أبوظبي الرياضية 1",
+            "commentator": "محمد الشامسي"
+          },
+          {
+            "channel": "دبي الرياضية 1",
+            "commentator": "حماد العنزي"
+          },
+          {
+            "channel": "الشارقة الرياضية",
+            "commentator": "موسى عيد"
+          }
+        ]
       }
     ]
   },
@@ -1818,12 +1841,7 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/2928.png"
         },
-        "channels": [
-          {
-            "channel": "الأردن الرياضية",
-            "commentator": "خالد الخوالدة"
-          }
-        ]
+        "channels": []
       }
     ]
   },
@@ -2629,12 +2647,7 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/2764.png"
         },
-        "channels": [
-          {
-            "channel": "beIN SPORTS 2",
-            "commentator": "باسم الزير"
-          }
-        ]
+        "channels": []
       }
     ]
   },
@@ -2862,7 +2875,7 @@
       {
         "id": "218399",
         "time": "2025-11-29 09:00",
-        "status": "45′",
+        "status": "55′",
         "home": {
           "id": "1254",
           "name": "سنترال كوست مارينرز",
@@ -3011,12 +3024,7 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/sau_al_taraji.png"
         },
-        "channels": [
-          {
-            "channel": "منصة +SAFF",
-            "commentator": null
-          }
-        ]
+        "channels": []
       },
       {
         "id": "214727",
@@ -3142,12 +3150,7 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/4935.png"
         },
-        "channels": [
-          {
-            "channel": "منصة +SAFF",
-            "commentator": null
-          }
-        ]
+        "channels": []
       }
     ]
   },
@@ -3188,12 +3191,7 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/2216.png"
         },
-        "channels": [
-          {
-            "channel": "منصة +SAFF",
-            "commentator": null
-          }
-        ]
+        "channels": []
       },
       {
         "id": "216891",
@@ -4689,7 +4687,7 @@
       {
         "id": "209361",
         "time": "2025-11-29 09:30",
-        "status": "31′",
+        "status": "41′",
         "home": {
           "id": "825",
           "name": "مالوت يونايتد",
