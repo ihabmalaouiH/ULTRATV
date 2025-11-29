@@ -778,12 +778,7 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/2876.png"
         },
-        "channels": [
-          {
-            "channel": "منصة ثمانية",
-            "commentator": "هيثم طحطوح"
-          }
-        ]
+        "channels": []
       },
       {
         "id": "213187",
@@ -801,12 +796,7 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/2452.png"
         },
-        "channels": [
-          {
-            "channel": "ثمانية",
-            "commentator": "فارس عوض"
-          }
-        ]
+        "channels": []
       }
     ]
   },
@@ -2820,7 +2810,7 @@
       },
       {
         "id": "223508",
-        "time": "2025-11-30 04:00",
+        "time": "2025-11-30 04:05",
         "status": "لم تبدأ",
         "home": {
           "id": "2048",
@@ -2862,7 +2852,7 @@
       {
         "id": "218399",
         "time": "2025-11-29 09:00",
-        "status": "65′",
+        "status": "70′",
         "home": {
           "id": "1254",
           "name": "سنترال كوست مارينرز",
@@ -3029,7 +3019,12 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/2798.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "منصة +SAFF",
+            "commentator": null
+          }
+        ]
       },
       {
         "id": "214728",
@@ -3065,7 +3060,12 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/sau_afief.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "منصة +SAFF",
+            "commentator": null
+          }
+        ]
       },
       {
         "id": "214730",
@@ -4630,6 +4630,24 @@
   {
     "competition": "الدوري الأوزبكي سوبر",
     "matches": [
+      {
+        "id": "214547",
+        "time": "2025-11-29 13:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1249",
+          "name": "ناساف كارشي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1249.png"
+        },
+        "away": {
+          "id": "2154",
+          "name": "دينامو سمرقند",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2154.png"
+        },
+        "channels": []
+      },
       {
         "id": "214548",
         "time": "2025-11-29 13:00",
