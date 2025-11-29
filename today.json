@@ -570,7 +570,12 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/2630.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "شاهد",
+            "commentator": "عبدالعزيز السبر"
+          }
+        ]
       },
       {
         "id": "198610",
@@ -588,7 +593,16 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/1326.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "شاهد",
+            "commentator": "أحمد النفيسة"
+          },
+          {
+            "channel": "MBC Action",
+            "commentator": "أحمد النفيسة"
+          }
+        ]
       }
     ]
   },
@@ -910,12 +924,7 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/1442.png"
         },
-        "channels": [
-          {
-            "channel": "الكويت الرياضية",
-            "commentator": "راشد الدوسري"
-          }
-        ]
+        "channels": []
       },
       {
         "id": "206497",
@@ -956,12 +965,7 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/3101.png"
         },
-        "channels": [
-          {
-            "channel": "beIN SPORTS 3",
-            "commentator": "محمد السعدي"
-          }
-        ]
+        "channels": []
       },
       {
         "id": "199333",
@@ -3079,12 +3083,7 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/sau_al_rawdhah.png"
         },
-        "channels": [
-          {
-            "channel": "منصة +SAFF",
-            "commentator": null
-          }
-        ]
+        "channels": []
       },
       {
         "id": "214566",
@@ -3179,12 +3178,7 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/2216.png"
         },
-        "channels": [
-          {
-            "channel": "منصة +SAFF",
-            "commentator": null
-          }
-        ]
+        "channels": []
       },
       {
         "id": "216891",
@@ -3202,7 +3196,12 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/sau_al_taawon_v2.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "منصة +SAFF",
+            "commentator": null
+          }
+        ]
       },
       {
         "id": "216892",
@@ -3274,12 +3273,7 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/2797.png"
         },
-        "channels": [
-          {
-            "channel": "منصة +SAFF",
-            "commentator": null
-          }
-        ]
+        "channels": []
       }
     ]
   },
