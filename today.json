@@ -593,7 +593,16 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/1326.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "شاهد",
+            "commentator": "أحمد النفيسة"
+          },
+          {
+            "channel": "MBC Action",
+            "commentator": "أحمد النفيسة"
+          }
+        ]
       }
     ]
   },
@@ -3002,7 +3011,12 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/sau_al_taraji.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "منصة +SAFF",
+            "commentator": null
+          }
+        ]
       },
       {
         "id": "214727",
@@ -3187,7 +3201,12 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/sau_al_taawon_v2.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "منصة +SAFF",
+            "commentator": null
+          }
+        ]
       },
       {
         "id": "216892",
@@ -4683,7 +4702,7 @@
       {
         "id": "209361",
         "time": "2025-11-29 09:30",
-        "status": "93′ [+7]",
+        "status": "98′ [+7]",
         "home": {
           "id": "825",
           "name": "مالوت يونايتد",
@@ -4873,34 +4892,11 @@
     ]
   },
   {
-    "competition": "الدوري الاسترالي للسيدات الدرجة A",
-    "matches": [
-      {
-        "id": "218545",
-        "time": "2025-11-29 08:00",
-        "status": "بإنتظار التحديث",
-        "home": {
-          "id": "1812",
-          "name": "كانبيرا يونايتد",
-          "score": "0",
-          "logo": "https://jdwel.com/image/teams/1812.png"
-        },
-        "away": {
-          "id": "1046",
-          "name": "سيدني",
-          "score": "0",
-          "logo": "https://jdwel.com/image/teams/1046.png"
-        },
-        "channels": []
-      }
-    ]
-  },
-  {
     "competition": "الدوري النيوزيلندي للسيدات",
     "matches": [
       {
         "id": "223531",
-        "time": "2025-11-29 08:00",
+        "time": "2025-11-29 04:30",
         "status": "انتهت",
         "home": {
           "id": "435",
