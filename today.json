@@ -1,27 +1,216 @@
 [
   {
-    "competition": "الدوري الإسباني الدرجة الأولى",
+    "competition": "الدوري الإنجليزي الممتاز",
     "matches": [
       {
-        "id": "202054",
-        "time": "2025-11-28 23:00",
-        "status": "45′",
+        "id": "196818",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "1081",
-          "name": "خيتافي",
+          "id": "2650",
+          "name": "برينتفورد",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/1081.png"
+          "logo": "https://jdwel.com/image/teams/2650.png"
         },
         "away": {
-          "id": "2151",
-          "name": "إلتشي",
+          "id": "3060",
+          "name": "بيرنلي",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/2151.png"
+          "logo": "https://jdwel.com/image/teams/3060.png"
+        },
+        "channels": [
+          {
+            "channel": "beIN SPORTS 6",
+            "commentator": "عبدالله الغامدي"
+          }
+        ]
+      },
+      {
+        "id": "196822",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2185",
+          "name": "مانشستر سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2185.png"
+        },
+        "away": {
+          "id": "1675",
+          "name": "ليدز يونايتد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1675.png"
         },
         "channels": [
           {
             "channel": "beIN SPORTS 3",
-            "commentator": "سمير اليعقوبي"
+            "commentator": "علي محمد علي"
+          }
+        ]
+      },
+      {
+        "id": "196824",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3206",
+          "name": "سندرلاند",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3206.png"
+        },
+        "away": {
+          "id": "1555",
+          "name": "بورنموث",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1555.png"
+        },
+        "channels": [
+          {
+            "channel": "beIN SPORTS 5",
+            "commentator": "محمد بركات"
+          }
+        ]
+      },
+      {
+        "id": "196821",
+        "time": "2025-11-29 20:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1684",
+          "name": "إيفرتون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1684.png"
+        },
+        "away": {
+          "id": "3061",
+          "name": "نيوكاسل يونايتد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3061.png"
+        },
+        "channels": [
+          {
+            "channel": "beIN SPORTS 1",
+            "commentator": "حسن العيدروس"
+          }
+        ]
+      },
+      {
+        "id": "196825",
+        "time": "2025-11-29 23:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1018",
+          "name": "توتنهام هوتسبير",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1018.png"
+        },
+        "away": {
+          "id": "280",
+          "name": "فولهام",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/280.png"
+        },
+        "channels": [
+          {
+            "channel": "beIN SPORTS 1",
+            "commentator": "علي الكعبي"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "competition": "الدوري الإسباني الدرجة الأولى",
+    "matches": [
+      {
+        "id": "202048",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "ريال مايوركا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/spa_mallorca.png"
+        },
+        "away": {
+          "id": "1556",
+          "name": "أوساسونا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1556.png"
+        },
+        "channels": [
+          {
+            "channel": "beIN SPORTS 4",
+            "commentator": "محمد مبروكي"
+          }
+        ]
+      },
+      {
+        "id": "202051",
+        "time": "2025-11-29 18:15",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3337",
+          "name": "برشلونة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3337.png"
+        },
+        "away": {
+          "id": "4507",
+          "name": "ديبورتيفو ألافيس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4507.png"
+        },
+        "channels": [
+          {
+            "channel": "beIN SPORTS 1",
+            "commentator": "عامر الخوذيري"
+          }
+        ]
+      },
+      {
+        "id": "202052",
+        "time": "2025-11-29 20:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "ليفانتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/spa_levante.png"
+        },
+        "away": {
+          "id": "2033",
+          "name": "أتلتيك بيلباو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2033.png"
+        },
+        "channels": [
+          {
+            "channel": "beIN SPORTS 3",
+            "commentator": "مصطفى علوان"
+          }
+        ]
+      },
+      {
+        "id": "202045",
+        "time": "2025-11-29 23:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "716",
+          "name": "أتلتيكو مدريد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/716.png"
+        },
+        "away": {
+          "id": null,
+          "name": "ريال أوفييدو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/spa_real_oviedo.png"
+        },
+        "channels": [
+          {
+            "channel": "beIN SPORTS 3",
+            "commentator": "خليل البلوشي"
           }
         ]
       }
@@ -31,22 +220,57 @@
     "competition": "الدوري الإيطالي الدرجة الأولى",
     "matches": [
       {
-        "id": "195270",
-        "time": "2025-11-28 22:45",
-        "status": "58′",
+        "id": "195271",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "2520",
-          "name": "كومو",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/2520.png"
+          "id": "320",
+          "name": "جنوى",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/320.png"
         },
         "away": {
-          "id": "3886",
-          "name": "ساسولو",
+          "id": null,
+          "name": "هيلاس فيرونا",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/3886.png"
+          "logo": "https://jdwel.com/image/teams/ita_hellas_verona_v2.png"
         },
         "channels": [
+          {
+            "channel": "الرابعة الرياضية +1",
+            "commentator": "وليد عسول"
+          },
+          {
+            "channel": "STARZPLAY",
+            "commentator": "أحمد جعفر"
+          },
+          {
+            "channel": "STC TV",
+            "commentator": "أحمد جعفر"
+          }
+        ]
+      },
+      {
+        "id": "195275",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3335",
+          "name": "بارما",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3335.png"
+        },
+        "away": {
+          "id": "4574",
+          "name": "أودينيزي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4574.png"
+        },
+        "channels": [
+          {
+            "channel": "الرابعة الرياضية 2",
+            "commentator": "محمد قيس"
+          },
           {
             "channel": "STARZPLAY",
             "commentator": "حازم عبدالسلام"
@@ -56,6 +280,76 @@
             "commentator": "حازم عبدالسلام"
           }
         ]
+      },
+      {
+        "id": "195272",
+        "time": "2025-11-29 20:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "882",
+          "name": "يوفنتوس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/882.png"
+        },
+        "away": {
+          "id": "155",
+          "name": "كالياري",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/155.png"
+        },
+        "channels": [
+          {
+            "channel": "الرابعة الرياضية +1",
+            "commentator": "عادل المسعودي"
+          },
+          {
+            "channel": "STARZPLAY",
+            "commentator": "أحمد الحامد"
+          },
+          {
+            "channel": "منصة شاشا",
+            "commentator": "هاني الشهري"
+          },
+          {
+            "channel": "STC TV",
+            "commentator": "أحمد الحامد"
+          }
+        ]
+      },
+      {
+        "id": "195274",
+        "time": "2025-11-29 22:45",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2433",
+          "name": "ميلان",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2433.png"
+        },
+        "away": {
+          "id": null,
+          "name": "لاتسيو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/ita_lazio.png"
+        },
+        "channels": [
+          {
+            "channel": "الرابعة الرياضية 2",
+            "commentator": "منير بكر"
+          },
+          {
+            "channel": "STARZPLAY",
+            "commentator": "فارس عوض"
+          },
+          {
+            "channel": "منصة شاشا",
+            "commentator": "رؤوف خليف"
+          },
+          {
+            "channel": "STC TV",
+            "commentator": "فارس عوض"
+          }
+        ]
       }
     ]
   },
@@ -63,40 +357,50 @@
     "competition": "كأس خادم الحرمين الشريفين كأس الملك السعودي",
     "matches": [
       {
-        "id": "220051",
-        "time": "2025-11-28 17:50",
-        "status": "انتهت",
+        "id": "220053",
+        "time": "2025-11-29 17:40",
+        "status": "لم تبدأ",
         "home": {
-          "id": "3873",
-          "name": "الخلود",
-          "score": "4",
-          "logo": "https://jdwel.com/image/teams/3873.png"
+          "id": "2761",
+          "name": "الهلال",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2761.png"
         },
         "away": {
-          "id": "2840",
-          "name": "الخليج",
-          "score": "3",
-          "logo": "https://jdwel.com/image/teams/2840.png"
+          "id": "1105",
+          "name": "الفتح",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1105.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "ثمانية",
+            "commentator": "مشاري القرني"
+          }
+        ]
       },
       {
-        "id": "220054",
-        "time": "2025-11-28 20:30",
-        "status": "انتهت",
+        "id": "220052",
+        "time": "2025-11-29 20:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": "3404",
-          "name": "الأهلي",
-          "score": "3",
-          "logo": "https://jdwel.com/image/teams/3404.png"
+          "id": "2839",
+          "name": "الاتحاد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2839.png"
         },
         "away": {
-          "id": "2216",
-          "name": "القادسية",
-          "score": "3",
-          "logo": "https://jdwel.com/image/teams/2216.png"
+          "id": "2213",
+          "name": "الشباب",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2213.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "ثمانية",
+            "commentator": "فهد العتيبي"
+          }
+        ]
       }
     ]
   },
@@ -104,25 +408,71 @@
     "competition": "الدوري الفرنسي الدرجة الأولى",
     "matches": [
       {
-        "id": "198423",
-        "time": "2025-11-28 22:45",
-        "status": "63′",
+        "id": "198420",
+        "time": "2025-11-29 19:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "3454",
-          "name": "ميتز",
+          "id": "1129",
+          "name": "موناكو",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/3454.png"
+          "logo": "https://jdwel.com/image/teams/1129.png"
         },
         "away": {
-          "id": "2037",
-          "name": "ستاد رين",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/2037.png"
+          "id": "2347",
+          "name": "باريس سان جيرمان",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2347.png"
         },
         "channels": [
           {
             "channel": "beIN SPORTS 4",
-            "commentator": "أحمد عبده"
+            "commentator": "أحمد البلوشي"
+          }
+        ]
+      },
+      {
+        "id": "198426",
+        "time": "2025-11-29 21:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3560",
+          "name": "باريس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3560.png"
+        },
+        "away": {
+          "id": "341",
+          "name": "أوكسير",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/341.png"
+        },
+        "channels": [
+          {
+            "channel": "beIN SPORTS 5",
+            "commentator": "جواد بدة"
+          }
+        ]
+      },
+      {
+        "id": "198424",
+        "time": "2025-11-29 23:05",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2868",
+          "name": "مارسيليا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2868.png"
+        },
+        "away": {
+          "id": "2966",
+          "name": "تولوز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2966.png"
+        },
+        "channels": [
+          {
+            "channel": "beIN SPORTS 4",
+            "commentator": "نوفل باشي"
           }
         ]
       }
@@ -132,25 +482,125 @@
     "competition": "الدوري الألماني الدرجة الأولى",
     "matches": [
       {
-        "id": "198611",
-        "time": "2025-11-28 22:30",
-        "status": "77′",
+        "id": "198609",
+        "time": "2025-11-29 17:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": "2634",
-          "name": "بوروسيا مونشنغلادباخ",
+          "id": "2632",
+          "name": "يونيون برلين",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/2634.png"
+          "logo": "https://jdwel.com/image/teams/2632.png"
         },
         "away": {
-          "id": "2849",
-          "name": "لايبزيغ",
+          "id": "3223",
+          "name": "هايدنهايم",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/2849.png"
+          "logo": "https://jdwel.com/image/teams/3223.png"
         },
         "channels": [
           {
             "channel": "شاهد",
-            "commentator": "عيسى الزدجالي"
+            "commentator": "محمد الخامسي"
+          }
+        ]
+      },
+      {
+        "id": "198613",
+        "time": "2025-11-29 17:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1300",
+          "name": "بايرن ميونخ",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1300.png"
+        },
+        "away": {
+          "id": "3225",
+          "name": "سانت باولي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3225.png"
+        },
+        "channels": [
+          {
+            "channel": "شاهد",
+            "commentator": "فهد الدريبي"
+          },
+          {
+            "channel": "MBC Action",
+            "commentator": "فهد الدريبي"
+          }
+        ]
+      },
+      {
+        "id": "198616",
+        "time": "2025-11-29 17:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2633",
+          "name": "فيردر بريمن",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2633.png"
+        },
+        "away": {
+          "id": "2148",
+          "name": "كولن",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2148.png"
+        },
+        "channels": [
+          {
+            "channel": "شاهد",
+            "commentator": "عائد العصيمي"
+          }
+        ]
+      },
+      {
+        "id": "198617",
+        "time": "2025-11-29 17:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3224",
+          "name": "هوفنهايم",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3224.png"
+        },
+        "away": {
+          "id": "2630",
+          "name": "أوغسبورغ",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2630.png"
+        },
+        "channels": [
+          {
+            "channel": "شاهد",
+            "commentator": "عبدالعزيز السبر"
+          }
+        ]
+      },
+      {
+        "id": "198610",
+        "time": "2025-11-29 20:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2146",
+          "name": "باير ليفركوزن",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2146.png"
+        },
+        "away": {
+          "id": "1326",
+          "name": "بوروسيا دورتموند",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1326.png"
+        },
+        "channels": [
+          {
+            "channel": "شاهد",
+            "commentator": "أحمد النفيسة"
+          },
+          {
+            "channel": "MBC Action",
+            "commentator": "أحمد النفيسة"
           }
         ]
       }
@@ -160,76 +610,50 @@
     "competition": "دوري أبطال أفريقيا",
     "matches": [
       {
-        "id": "222672",
-        "time": "2025-11-28 19:00",
-        "status": "انتهت",
+        "id": "222675",
+        "time": "2025-11-29 19:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "335",
-          "name": "شبيبة القبائل",
+          "id": null,
+          "name": "بيترو أتلتيكو",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/335.png"
+          "logo": "https://jdwel.com/image/teams/ang_petro_de_luanda.png"
         },
         "away": {
-          "id": "1412",
-          "name": "يونغ أفريكانز",
+          "id": "1182",
+          "name": "الترجي الرياضي التونسي",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/1412.png"
+          "logo": "https://jdwel.com/image/teams/1182.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "beIN SPORTS 2",
+            "commentator": "عصام الشوالي"
+          }
+        ]
       },
       {
-        "id": "222677",
-        "time": "2025-11-28 19:00",
-        "status": "انتهت",
+        "id": "222678",
+        "time": "2025-11-29 19:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "4956",
-          "name": "ريفرز يونايتد",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/4956.png"
-        },
-        "away": {
-          "id": "2186",
-          "name": "نهضة بركان",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/2186.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "222671",
-        "time": "2025-11-28 22:00",
-        "status": "انتهت",
-        "home": {
-          "id": "1183",
-          "name": "الجيش الملكي",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/1183.png"
-        },
-        "away": {
-          "id": "1253",
-          "name": "الأهلي",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/1253.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "222673",
-        "time": "2025-11-28 22:00",
-        "status": "انتهت",
-        "home": {
-          "id": "1409",
-          "name": "مولودية الجزائر",
+          "id": "4957",
+          "name": "باور ديناموز",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/1409.png"
+          "logo": "https://jdwel.com/image/teams/4957.png"
         },
         "away": {
-          "id": "1411",
-          "name": "ماميلودي صن داونز",
+          "id": "2524",
+          "name": "بيراميدز",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/1411.png"
+          "logo": "https://jdwel.com/image/teams/2524.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "beIN SPORTS XTRA 1",
+            "commentator": "أحمد عبده"
+          }
+        ]
       }
     ]
   },
@@ -237,61 +661,76 @@
     "competition": "كأس الكونفدرالية الأفريقية",
     "matches": [
       {
-        "id": "222694",
-        "time": "2025-11-28 16:00",
-        "status": "انتهت",
-        "home": {
-          "id": null,
-          "name": "زيسكو يونايتد",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/zam_zesco_united.png"
-        },
-        "away": {
-          "id": "301",
-          "name": "المصري البورسعيدي",
-          "score": "3",
-          "logo": "https://jdwel.com/image/teams/301.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "222689",
-        "time": "2025-11-28 19:00",
-        "status": "انتهت",
-        "home": {
-          "id": "4955",
-          "name": "أزام",
-          "score": "0",
-          "logo": "https://jdwel.com/image/teams/4955.png"
-        },
-        "away": {
-          "id": "3154",
-          "name": "الوداد الرياضي",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/3154.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "222687",
-        "time": "2025-11-28 22:00",
+        "id": "222691",
+        "time": "2025-11-29 16:00",
         "status": "لم تبدأ",
         "home": {
-          "id": "2578",
-          "name": "أولمبيك أسفي",
+          "id": "4954",
+          "name": "أوتوهو",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/2578.png"
+          "logo": "https://jdwel.com/image/teams/4954.png"
         },
         "away": {
-          "id": "1113",
-          "name": "إتحاد الجزائر",
+          "id": "1852",
+          "name": "شباب بلوزداد",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/1113.png"
+          "logo": "https://jdwel.com/image/teams/1852.png"
         },
         "channels": [
           {
-            "channel": "beIN SPORTS 5",
-            "commentator": "نوفل باشي"
+            "channel": "beIN SPORTS 9",
+            "commentator": "حفيظ دراجي"
+          }
+        ]
+      },
+      {
+        "id": "222693",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1611",
+          "name": "كايزر تشيفز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1611.png"
+        },
+        "away": {
+          "id": "339",
+          "name": "الزمالك",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/339.png"
+        },
+        "channels": [
+          {
+            "channel": "beIN SPORTS 2",
+            "commentator": "محمد فوزي"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "competition": "كأس مصر",
+    "matches": [
+      {
+        "id": "223519",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "الاتحاد السكندري",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/egy_al_ittihad_v2.png"
+        },
+        "away": {
+          "id": "3844",
+          "name": "كهرباء الإسماعيلية",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3844.png"
+        },
+        "channels": [
+          {
+            "channel": "أون سبورت 1",
+            "commentator": "عصام عبده"
           }
         ]
       }
@@ -301,58 +740,73 @@
     "competition": "دوري الدرجة الأولى السعودي يلو",
     "matches": [
       {
-        "id": "213182",
-        "time": "2025-11-28 15:05",
-        "status": "انتهت",
+        "id": "213185",
+        "time": "2025-11-29 15:20",
+        "status": "لم تبدأ",
         "home": {
-          "id": "4203",
-          "name": "الدرعية",
-          "score": "5",
-          "logo": "https://jdwel.com/image/teams/4203.png"
-        },
-        "away": {
-          "id": "3238",
-          "name": "العربي",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/3238.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "213183",
-        "time": "2025-11-28 15:05",
-        "status": "انتهت",
-        "home": {
-          "id": "4765",
-          "name": "الأنوار",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/4765.png"
+          "id": "2797",
+          "name": "الرائد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2797.png"
         },
         "away": {
           "id": null,
-          "name": "الزلفي",
+          "name": "الوحدة",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/sau_al_zulfi.png"
+          "logo": "https://jdwel.com/image/teams/sau_al_wahda.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "منصة ثمانية",
+            "commentator": "سلطان الحربي"
+          }
+        ]
       },
       {
-        "id": "213184",
-        "time": "2025-11-28 17:25",
-        "status": "انتهت",
+        "id": "213186",
+        "time": "2025-11-29 15:20",
+        "status": "لم تبدأ",
         "home": {
-          "id": null,
-          "name": "الجبيل",
+          "id": "776",
+          "name": "العروبة",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/sau_aljubail.png"
+          "logo": "https://jdwel.com/image/teams/776.png"
         },
         "away": {
-          "id": "3215",
-          "name": "الفيصلي",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/3215.png"
+          "id": "2876",
+          "name": "الباطن",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2876.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "منصة ثمانية",
+            "commentator": "هيثم طحطوح"
+          }
+        ]
+      },
+      {
+        "id": "213187",
+        "time": "2025-11-29 15:20",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "الطائي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sau_altaee_v3.png"
+        },
+        "away": {
+          "id": "2452",
+          "name": "الجبلين",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2452.png"
+        },
+        "channels": [
+          {
+            "channel": "ثمانية",
+            "commentator": "فارس عوض"
+          }
+        ]
       }
     ]
   },
@@ -360,20 +814,56 @@
     "competition": "الدوري الهولندي الممتاز",
     "matches": [
       {
-        "id": "198939",
-        "time": "2025-11-28 22:00",
-        "status": "انتهت",
+        "id": "198934",
+        "time": "2025-11-29 18:30",
+        "status": "لم تبدأ",
         "home": {
           "id": null,
-          "name": "زفوله",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/net_pec_zwolle.png"
+          "name": "إكسلسيور",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/net_excelsior.png"
         },
         "away": {
-          "id": "1296",
-          "name": "هيرنفين",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/1296.png"
+          "id": null,
+          "name": "ناك بريدا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/net_nac_breda.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "198936",
+        "time": "2025-11-29 20:45",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "فورتونا سيتارد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/net_fortuna_sittard.png"
+        },
+        "away": {
+          "id": null,
+          "name": "هيراكليس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/net_heracles.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "198938",
+        "time": "2025-11-29 23:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1664",
+          "name": "إن إي سي نيميخن",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1664.png"
+        },
+        "away": {
+          "id": "1305",
+          "name": "سبارتا روتردام",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1305.png"
         },
         "channels": []
       }
@@ -383,20 +873,74 @@
     "competition": "الدوري البرتغالي الممتاز",
     "matches": [
       {
-        "id": "206501",
-        "time": "2025-11-28 23:15",
-        "status": "بين الشوطين",
+        "id": "206493",
+        "time": "2025-11-29 18:30",
+        "status": "لم تبدأ",
         "home": {
           "id": null,
-          "name": "فيتوريا غيمارايش",
-          "score": "3",
-          "logo": "https://jdwel.com/image/teams/por_vitoria_guimaraes.png"
+          "name": "كاسا بيا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/por_casa_pia.png"
         },
         "away": {
-          "id": "23",
-          "name": "اي في اس",
+          "id": "4952",
+          "name": "ألفيركا",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/23.png"
+          "logo": "https://jdwel.com/image/teams/4952.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "206498",
+        "time": "2025-11-29 18:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "موريرنسي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/por_moreirense.png"
+        },
+        "away": {
+          "id": "1445",
+          "name": "فاماليكاو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1445.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "206494",
+        "time": "2025-11-29 21:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "4575",
+          "name": "ناسيونال",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4575.png"
+        },
+        "away": {
+          "id": "1442",
+          "name": "بنفيكا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1442.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "206497",
+        "time": "2025-11-29 23:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1233",
+          "name": "جيل فيسنتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1233.png"
+        },
+        "away": {
+          "id": "3456",
+          "name": "تونديلا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3456.png"
         },
         "channels": []
       }
@@ -406,27 +950,608 @@
     "competition": "تشامبيونشيب البطولة الإنجليزية",
     "matches": [
       {
-        "id": "199332",
-        "time": "2025-11-28 23:00",
-        "status": "47′",
+        "id": "199328",
+        "time": "2025-11-29 15:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": null,
-          "name": "أكسفورد يونايتد",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/eng_oxford_united_v2.png"
+          "id": "1757",
+          "name": "ليستر سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1757.png"
         },
         "away": {
-          "id": "1756",
-          "name": "إيبسويتش تاون",
+          "id": "3101",
+          "name": "شيفيلد يونايتد",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/1756.png"
+          "logo": "https://jdwel.com/image/teams/3101.png"
         },
-        "channels": [
-          {
-            "channel": "beIN SPORTS 2",
-            "commentator": "باسم الزير"
-          }
-        ]
+        "channels": []
+      },
+      {
+        "id": "199333",
+        "time": "2025-11-29 15:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2168",
+          "name": "بورتسموث",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2168.png"
+        },
+        "away": {
+          "id": "4705",
+          "name": "بريستول سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4705.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199335",
+        "time": "2025-11-29 15:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1028",
+          "name": "ستوك سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1028.png"
+        },
+        "away": {
+          "id": "2626",
+          "name": "هال سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2626.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199327",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3155",
+          "name": "كوفنتري سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3155.png"
+        },
+        "away": {
+          "id": null,
+          "name": "تشارلتون أثلتيك",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_charlton_athletic.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199329",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "4704",
+          "name": "ميدلزبره",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4704.png"
+        },
+        "away": {
+          "id": "2627",
+          "name": "ديربي كاونتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2627.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199330",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2443",
+          "name": "ميلوول",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2443.png"
+        },
+        "away": {
+          "id": "3014",
+          "name": "ساوثهامبتون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3014.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199331",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2225",
+          "name": "نورويتش سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2225.png"
+        },
+        "away": {
+          "id": "1122",
+          "name": "كوينز بارك رينجرز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1122.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199334",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "895",
+          "name": "شيفيلد وينزداي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/895.png"
+        },
+        "away": {
+          "id": "3250",
+          "name": "بريستون نورث إيند",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3250.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199336",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1683",
+          "name": "وست بروميتش ألبيون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1683.png"
+        },
+        "away": {
+          "id": "1838",
+          "name": "سوانزي سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1838.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199337",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3130",
+          "name": "ريكسهام",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3130.png"
+        },
+        "away": {
+          "id": "1226",
+          "name": "بلاكبيرن روفرز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1226.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "الدوري الإنجليزي الدرجة الثانية",
+    "matches": [
+      {
+        "id": "199878",
+        "time": "2025-11-29 15:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1677",
+          "name": "بلاكبول",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1677.png"
+        },
+        "away": {
+          "id": "1676",
+          "name": "ريدنغ",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1676.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199888",
+        "time": "2025-11-29 15:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3131",
+          "name": "ستوكبورت كاونتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3131.png"
+        },
+        "away": {
+          "id": "2629",
+          "name": "بارنسلي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2629.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199879",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "4844",
+          "name": "برادفورد سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4844.png"
+        },
+        "away": {
+          "id": "3412",
+          "name": "إكستر سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3412.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199880",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "4733",
+          "name": "بيرتن ألبيون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4733.png"
+        },
+        "away": {
+          "id": null,
+          "name": "ليتون أورينت",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_leyton_orient.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199881",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "4818",
+          "name": "كارديف سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4818.png"
+        },
+        "away": {
+          "id": null,
+          "name": "مانسفيلد تاون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_mansfield_town.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199882",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "4845",
+          "name": "دونكاستر روفرز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4845.png"
+        },
+        "away": {
+          "id": null,
+          "name": "بيتربورو يونايتد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_peterborough_united.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199883",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3152",
+          "name": "هدرسفيلد تاون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3152.png"
+        },
+        "away": {
+          "id": "1030",
+          "name": "ويمبلدون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1030.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199884",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1119",
+          "name": "لينكولن سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1119.png"
+        },
+        "away": {
+          "id": "1108",
+          "name": "بورت فايل",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1108.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199885",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1114",
+          "name": "لوتون تاون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1114.png"
+        },
+        "away": {
+          "id": "2628",
+          "name": "بولتون واندررز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2628.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199886",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "بليموث أرجايل",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_plymouth.png"
+        },
+        "away": {
+          "id": "1088",
+          "name": "نورثامبتون تاون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1088.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199887",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "روثيرهام يونايتد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_rotherham_united.png"
+        },
+        "away": {
+          "id": null,
+          "name": "ويكمب وندررز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_wycombe_wanderers.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "199889",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3205",
+          "name": "ويغان أتلتيك",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3205.png"
+        },
+        "away": {
+          "id": "3204",
+          "name": "ستيفيناغ",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3204.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "الدوري الإنجليزي الدرجة الثالثة",
+    "matches": [
+      {
+        "id": "200430",
+        "time": "2025-11-29 15:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "أكرينغتون ستانلي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_accrington_stanley.png"
+        },
+        "away": {
+          "id": "3411",
+          "name": "أولدهام أثليتيك",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3411.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "200437",
+        "time": "2025-11-29 15:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3207",
+          "name": "ميلتون كينز دونز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3207.png"
+        },
+        "away": {
+          "id": null,
+          "name": "فليتوود تاون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_fleetwood_town.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "200431",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "بارنت",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_barnet.png"
+        },
+        "away": {
+          "id": "3279",
+          "name": "هاروغيت تاون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3279.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "200432",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "بريستول روفرز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_bristol_rovers.png"
+        },
+        "away": {
+          "id": "4531",
+          "name": "نوتس كاونتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4531.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "200433",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "4734",
+          "name": "كامبريدج يونايتد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4734.png"
+        },
+        "away": {
+          "id": null,
+          "name": "كرو ألكساندرا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_crewe_alexandra.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "200434",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "تشيسترفيلد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_chesterfield.png"
+        },
+        "away": {
+          "id": "3280",
+          "name": "سويندون تاون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3280.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "200435",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1090",
+          "name": "كولتشستر يونايتد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1090.png"
+        },
+        "away": {
+          "id": null,
+          "name": "تشيلتنهام تاون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_cheltenham_town.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "200438",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "نيوبورت كاونتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_newport_county.png"
+        },
+        "away": {
+          "id": "1093",
+          "name": "بارو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1093.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "200439",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1",
+          "name": "سالفورد سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1.png"
+        },
+        "away": {
+          "id": null,
+          "name": "كراولي تاون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_crawley_town.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "200440",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1029",
+          "name": "شروزبري تاون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1029.png"
+        },
+        "away": {
+          "id": null,
+          "name": "غيلينغهام",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_gillingham.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "200441",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "ولسول",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/eng_walsall.png"
+        },
+        "away": {
+          "id": "1092",
+          "name": "بروملي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1092.png"
+        },
+        "channels": []
       }
     ]
   },
@@ -434,20 +1559,92 @@
     "competition": "الدوري الإسباني الدرجة الثانية",
     "matches": [
       {
-        "id": "203673",
-        "time": "2025-11-28 22:30",
-        "status": "77′",
+        "id": "203663",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": null,
-          "name": "سبورتينغ خيخون",
+          "id": "824",
+          "name": "ثيوتا",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/spa_sporting_gijon.png"
+          "logo": "https://jdwel.com/image/teams/824.png"
         },
         "away": {
-          "id": "3457",
-          "name": "أندورا",
+          "id": "4767",
+          "name": "بورغوس",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/3457.png"
+          "logo": "https://jdwel.com/image/teams/4767.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "203668",
+        "time": "2025-11-29 18:15",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3458",
+          "name": "كولتورال ليونيسا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3458.png"
+        },
+        "away": {
+          "id": null,
+          "name": "غرناطة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/spa_granada.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "203664",
+        "time": "2025-11-29 20:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2160",
+          "name": "ألباسيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2160.png"
+        },
+        "away": {
+          "id": "2156",
+          "name": "ديبورتيفو لاكورونيا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2156.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "203665",
+        "time": "2025-11-29 20:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2183",
+          "name": "ألميريا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2183.png"
+        },
+        "away": {
+          "id": "1027",
+          "name": "هويسكا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1027.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "203671",
+        "time": "2025-11-29 23:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2167",
+          "name": "ريال بلد الوليد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2167.png"
+        },
+        "away": {
+          "id": "1084",
+          "name": "مالقا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1084.png"
         },
         "channels": []
       }
@@ -457,20 +1654,97 @@
     "competition": "الدوري البلجيكي الدرجة الأولى",
     "matches": [
       {
-        "id": "197485",
-        "time": "2025-11-28 22:45",
-        "status": "62′",
+        "id": "197482",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
         "home": {
           "id": null,
-          "name": "ميشيلن",
+          "name": "دندر",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/bel_mechelen.png"
+          "logo": "https://jdwel.com/image/teams/bel_dender.png"
         },
         "away": {
           "id": null,
-          "name": "ستاندر دو لياج",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/bel_standard_liege.png"
+          "name": "فيستيرلو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/bel_westerlo.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "197488",
+        "time": "2025-11-29 20:15",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "زولته فاريجيم",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/bel_zulte-waregem.png"
+        },
+        "away": {
+          "id": "494",
+          "name": "سيركل بروج",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/494.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "197486",
+        "time": "2025-11-29 22:45",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "رويال شارلروا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/bel_sporting_charleroi.png"
+        },
+        "away": {
+          "id": "3376",
+          "name": "لا لوفيير",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3376.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "كأس مصرف أبو ظبي الإسلامي",
+    "matches": [
+      {
+        "id": "221527",
+        "time": "2025-11-29 15:40",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "النصر",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/uni_al_nasr_v2.png"
+        },
+        "away": {
+          "id": "2802",
+          "name": "شباب الأهلي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2802.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222014",
+        "time": "2025-11-29 18:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2760",
+          "name": "العين",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2760.png"
+        },
+        "away": {
+          "id": "1166",
+          "name": "الشارقة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1166.png"
         },
         "channels": []
       }
@@ -480,56 +1754,56 @@
     "competition": "كأس QSL القطرية",
     "matches": [
       {
-        "id": "216492",
-        "time": "2025-11-28 17:30",
-        "status": "انتهت",
+        "id": "216495",
+        "time": "2025-11-29 17:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": "1110",
-          "name": "الأهلي",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/1110.png"
+          "id": "2878",
+          "name": "الوعب",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2878.png"
         },
         "away": {
-          "id": "161",
-          "name": "معيذر",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/161.png"
+          "id": "2348",
+          "name": "أم صلال",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2348.png"
         },
         "channels": []
       },
       {
-        "id": "216489",
-        "time": "2025-11-28 19:30",
-        "status": "انتهت",
+        "id": "216496",
+        "time": "2025-11-29 19:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": "2795",
-          "name": "الشمال",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/2795.png"
+          "id": "792",
+          "name": "الخريطيات",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/792.png"
         },
         "away": {
-          "id": "2994",
-          "name": "الريان",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/2994.png"
+          "id": "4852",
+          "name": "السيلية",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4852.png"
         },
         "channels": []
       },
       {
-        "id": "216494",
-        "time": "2025-11-28 19:30",
-        "status": "انتهت",
+        "id": "216497",
+        "time": "2025-11-29 19:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": "2995",
-          "name": "الغرافة",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/2995.png"
+          "id": "2996",
+          "name": "الخور",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2996.png"
         },
         "away": {
-          "id": "3208",
-          "name": "لوسيل",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/3208.png"
+          "id": "2794",
+          "name": "العربي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2794.png"
         },
         "channels": []
       }
@@ -539,38 +1813,61 @@
     "competition": "درع الاتحاد الأردني",
     "matches": [
       {
-        "id": "216584",
-        "time": "2025-11-28 17:00",
-        "status": "انتهت",
+        "id": "216586",
+        "time": "2025-11-29 18:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": null,
-          "name": "البقعة",
-          "score": "3",
-          "logo": "https://jdwel.com/image/teams/jor_al_buqaa.png"
+          "id": "2923",
+          "name": "شباب الأردن",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2923.png"
         },
         "away": {
-          "id": "3670",
-          "name": "سما السرحان",
+          "id": "2928",
+          "name": "الرمثا",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/3670.png"
+          "logo": "https://jdwel.com/image/teams/2928.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "الدوري اللبناني الممتاز",
+    "matches": [
+      {
+        "id": "217628",
+        "time": "2025-11-29 14:15",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "4166",
+          "name": "جويا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4166.png"
+        },
+        "away": {
+          "id": "130",
+          "name": "الحكمة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/130.png"
         },
         "channels": []
       },
       {
-        "id": "216585",
-        "time": "2025-11-28 20:00",
-        "status": "انتهت",
+        "id": "217629",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": null,
-          "name": "الفيصلي",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/jor_al_faysali.png"
+          "id": "2958",
+          "name": "العهد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2958.png"
         },
         "away": {
-          "id": "2925",
-          "name": "الأهلي",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/2925.png"
+          "id": null,
+          "name": "الأنصار",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/leb_al_ansar_v2.png"
         },
         "channels": []
       }
@@ -580,20 +1877,192 @@
     "competition": "الدوري التركي الممتاز",
     "matches": [
       {
-        "id": "204084",
-        "time": "2025-11-28 20:00",
-        "status": "انتهت",
+        "id": "204079",
+        "time": "2025-11-29 14:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2345",
+          "name": "ريزه سبور",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2345.png"
+        },
+        "away": {
+          "id": "1510",
+          "name": "كايسري سبور",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1510.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "204082",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1508",
+          "name": "غازي عنتاب",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1508.png"
+        },
+        "away": {
+          "id": "4731",
+          "name": "إيوبسبور",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4731.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "204083",
+        "time": "2025-11-29 20:00",
+        "status": "لم تبدأ",
         "home": {
           "id": null,
-          "name": "كوجالي سبور",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/tur_kocaelispor.png"
+          "name": "قاسم باشا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/tur_kasimpasa.png"
+        },
+        "away": {
+          "id": "2640",
+          "name": "إسطنبول باشاكشهر",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2640.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "204086",
+        "time": "2025-11-29 20:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "4730",
+          "name": "طرابزون سبور",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4730.png"
         },
         "away": {
           "id": null,
-          "name": "غنتشلربيرليغي",
+          "name": "قونيا سبور",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/tur_genclerbirligi.png"
+          "logo": "https://jdwel.com/image/teams/tur_konyaspor.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "الدوري الروسي الممتاز",
+    "matches": [
+      {
+        "id": "197730",
+        "time": "2025-11-29 14:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "811",
+          "name": "أكرون تولياتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/811.png"
+        },
+        "away": {
+          "id": "1841",
+          "name": "نيجني نوفغورود",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1841.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "209588",
+        "time": "2025-11-29 16:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "سسكا موسكو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/rus_cska_moskva.png"
+        },
+        "away": {
+          "id": "1496",
+          "name": "أورينبورغ",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1496.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "197731",
+        "time": "2025-11-29 19:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "بالتيكا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/rus_baltika.png"
+        },
+        "away": {
+          "id": "1494",
+          "name": "سبارتاك موسكو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1494.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "الدوري الإسكتلندي للمحترفين",
+    "matches": [
+      {
+        "id": "198051",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1096",
+          "name": "دندي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1096.png"
+        },
+        "away": {
+          "id": null,
+          "name": "سانت ميرين",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sco_st__mirren.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "198055",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "ماذرويل",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sco_motherwell.png"
+        },
+        "away": {
+          "id": null,
+          "name": "هارتس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sco_hearts.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "198053",
+        "time": "2025-11-29 20:45",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1505",
+          "name": "كيلمارنوك",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1505.png"
+        },
+        "away": {
+          "id": null,
+          "name": "دندي يونايتد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sco_dundee_united.png"
         },
         "channels": []
       }
@@ -603,43 +2072,485 @@
     "competition": "كأس إسكتلندا",
     "matches": [
       {
-        "id": "222745",
-        "time": "2025-11-28 22:45",
-        "status": "66′",
+        "id": "222746",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "4692",
-          "name": "لينليثغو روز",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/4692.png"
+          "id": "3477",
+          "name": "سانت جونستون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3477.png"
         },
         "away": {
-          "id": "3479",
-          "name": "كوينز بارك",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/3479.png"
+          "id": "3478",
+          "name": "كوف رينجرز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3478.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222747",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "678",
+          "name": "بانكس أو دي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/678.png"
+        },
+        "away": {
+          "id": "1814",
+          "name": "روس كاونتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1814.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222748",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "فوفار أثليتيك",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sco_forfar_athletic.png"
+        },
+        "away": {
+          "id": "3481",
+          "name": "بارتيك ثيستل",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3481.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222749",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3520",
+          "name": "ريث روفرز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3520.png"
+        },
+        "away": {
+          "id": null,
+          "name": "ألوا أثليتيك",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sco_alloa_athletic.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222750",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3514",
+          "name": "أير يونايتد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3514.png"
+        },
+        "away": {
+          "id": null,
+          "name": "توريف يونايتد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sco_turriff_united.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222751",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3484",
+          "name": "أيردريونيانس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3484.png"
+        },
+        "away": {
+          "id": null,
+          "name": "هاميلتون أكاديميكال",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sco_hamilton_academical.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222752",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3515",
+          "name": "دونفرملين أثلتيك",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3515.png"
+        },
+        "away": {
+          "id": "3482",
+          "name": "كوين أوف ساوث",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3482.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222753",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3521",
+          "name": "بيترهيد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3521.png"
+        },
+        "away": {
+          "id": null,
+          "name": "غرينوك مورتون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sco_greenock_morton.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222754",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3522",
+          "name": "إيست فايف",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3522.png"
+        },
+        "away": {
+          "id": null,
+          "name": "اربوراث",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sco_arbroath.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222755",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3305",
+          "name": "كيلتي هارتز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3305.png"
+        },
+        "away": {
+          "id": null,
+          "name": "بريتشين سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sco_brechin_city.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222756",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "4274",
+          "name": "ترانت جونيورز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4274.png"
+        },
+        "away": {
+          "id": "3519",
+          "name": "إنفيرنيس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3519.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222757",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3518",
+          "name": "إلغين سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3518.png"
+        },
+        "away": {
+          "id": null,
+          "name": "ستيرلينغ ألبيون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sco_stirling_albion.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222758",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3516",
+          "name": "بونيريغ روز أثلتيك",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3516.png"
+        },
+        "away": {
+          "id": "3480",
+          "name": "سبارتنز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3480.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222759",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "4716",
+          "name": "كاملون جونيورز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4716.png"
+        },
+        "away": {
+          "id": "3475",
+          "name": "إدنبرة سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3475.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222760",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "دامبارتون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sco_dumbarton.png"
+        },
+        "away": {
+          "id": "4393",
+          "name": "أوخنليك تالبوت",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4393.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222761",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "ستين هاوس ميور",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sco_stenhousemuir.png"
+        },
+        "away": {
+          "id": null,
+          "name": "كلاتشناكودين",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sco_clachnacuddin.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222762",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3513",
+          "name": "أننان اثلتيك",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3513.png"
+        },
+        "away": {
+          "id": "3837",
+          "name": "بوكي ثيسل",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3837.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222763",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "بنبورب",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/placeholder.png"
+        },
+        "away": {
+          "id": null,
+          "name": "مونتروز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sco_montrose.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222764",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3483",
+          "name": "سترانراير",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3483.png"
+        },
+        "away": {
+          "id": "1975",
+          "name": "كلايدبانك",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1975.png"
         },
         "channels": []
       }
     ]
   },
   {
-    "competition": "الدوري الدنماركي السوبر",
+    "competition": "الدوري السويسري الممتاز",
     "matches": [
       {
-        "id": "195934",
-        "time": "2025-11-28 21:00",
-        "status": "انتهت",
+        "id": "204919",
+        "time": "2025-11-29 20:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": null,
-          "name": "سونويوسك",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/den_sonderjyske.png"
+          "id": "2850",
+          "name": "لوغانو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2850.png"
         },
         "away": {
-          "id": "3429",
-          "name": "فيبورغ",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/3429.png"
+          "id": "2326",
+          "name": "سيون",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2326.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "204921",
+        "time": "2025-11-29 20:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1277",
+          "name": "زيوريخ",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1277.png"
+        },
+        "away": {
+          "id": "1289",
+          "name": "غراسهوبر زيوريخ",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1289.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "204917",
+        "time": "2025-11-29 22:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2852",
+          "name": "لوزيرن",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2852.png"
+        },
+        "away": {
+          "id": null,
+          "name": "فينترتور",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/swi_winterthur.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "الدوري اليوناني السوبر",
+    "matches": [
+      {
+        "id": "206599",
+        "time": "2025-11-29 18:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2310",
+          "name": "أوميلوس هراكليوس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2310.png"
+        },
+        "away": {
+          "id": null,
+          "name": "فولوس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/gre_volos_nfc.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "206601",
+        "time": "2025-11-29 20:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2307",
+          "name": "آريس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2307.png"
+        },
+        "away": {
+          "id": "3545",
+          "name": "أثليتيكي لاريسا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3545.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "206602",
+        "time": "2025-11-29 20:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3543",
+          "name": "كيفيسيا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3543.png"
+        },
+        "away": {
+          "id": "2308",
+          "name": "بانسيرايكوس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2308.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "الدوري السويدي الممتاز",
+    "matches": [
+      {
+        "id": "223145",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "نوركوبينغ",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/swe_norrkoping.png"
+        },
+        "away": {
+          "id": null,
+          "name": "أورغريته",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/swe_orgryte.png"
         },
         "channels": []
       }
@@ -649,74 +2560,79 @@
     "competition": "الدوري الإيراني للمحترفين",
     "matches": [
       {
-        "id": "222587",
-        "time": "2025-11-28 15:00",
-        "status": "انتهت",
+        "id": "222591",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "4514",
-          "name": "بيكان",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/4514.png"
+          "id": "1926",
+          "name": "ألمنيوم أراك",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1926.png"
         },
         "away": {
-          "id": "1930",
-          "name": "ملوان",
+          "id": "4513",
+          "name": "فجر سباسي",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/1930.png"
+          "logo": "https://jdwel.com/image/teams/4513.png"
         },
         "channels": []
       },
       {
-        "id": "222588",
-        "time": "2025-11-28 15:30",
-        "status": "انتهت",
+        "id": "222592",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1181",
+          "name": "تراكتور",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1181.png"
+        },
+        "away": {
+          "id": "943",
+          "name": "شادورمالو يزد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/943.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "222593",
+        "time": "2025-11-29 17:30",
+        "status": "ألغيت",
         "home": {
           "id": "2166",
           "name": "آذر شمس قزوين",
-          "score": "1",
+          "score": "0",
           "logo": "https://jdwel.com/image/teams/2166.png"
         },
         "away": {
-          "id": "1176",
-          "name": "برسبوليس",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/1176.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "222589",
-        "time": "2025-11-28 16:00",
-        "status": "انتهت",
-        "home": {
-          "id": "1925",
-          "name": "ذوب آهن أصفهان",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/1925.png"
-        },
-        "away": {
-          "id": "2745",
-          "name": "خيبر خرم آباد",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/2745.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "222590",
-        "time": "2025-11-28 17:30",
-        "status": "انتهت",
-        "home": {
-          "id": "1928",
-          "name": "استقلال خوزستان",
+          "id": null,
+          "name": "سباهان أصفهان",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/1928.png"
+          "logo": "https://jdwel.com/image/teams/ira_sepahan.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "كوبا ليبرتادوريس",
+    "matches": [
+      {
+        "id": "219511",
+        "time": "2025-11-30 00:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2762",
+          "name": "بالميراس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2762.png"
         },
         "away": {
-          "id": "1927",
-          "name": "غل غهر سيرجان",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/1927.png"
+          "id": "2764",
+          "name": "فلامنغو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2764.png"
         },
         "channels": []
       }
@@ -726,37 +2642,19 @@
     "competition": "الدوري البرازيلي الدرجة الأولى",
     "matches": [
       {
-        "id": "190779",
-        "time": "2025-11-28 02:30",
-        "status": "انتهت",
-        "home": {
-          "id": null,
-          "name": "فلومينينسي",
-          "score": "6",
-          "logo": "https://jdwel.com/image/teams/bra_fluminense.png"
-        },
-        "away": {
-          "id": "2763",
-          "name": "ساو باولو",
-          "score": "0",
-          "logo": "https://jdwel.com/image/teams/2763.png"
-        },
-        "channels": []
-      },
-      {
         "id": "190788",
         "time": "2025-11-29 01:00",
-        "status": "لم تبدأ",
+        "status": "انتهت",
         "home": {
           "id": "4809",
           "name": "جوفينتود",
-          "score": "0",
+          "score": "1",
           "logo": "https://jdwel.com/image/teams/4809.png"
         },
         "away": {
           "id": "3056",
           "name": "باهيا",
-          "score": "0",
+          "score": "1",
           "logo": "https://jdwel.com/image/teams/3056.png"
         },
         "channels": []
@@ -764,17 +2662,17 @@
       {
         "id": "190780",
         "time": "2025-11-29 01:30",
-        "status": "لم تبدأ",
+        "status": "انتهت",
         "home": {
           "id": "891",
           "name": "فاسكو دا غاما",
-          "score": "0",
+          "score": "5",
           "logo": "https://jdwel.com/image/teams/891.png"
         },
         "away": {
           "id": "889",
           "name": "إنترناسيونال",
-          "score": "0",
+          "score": "1",
           "logo": "https://jdwel.com/image/teams/889.png"
         },
         "channels": []
@@ -782,11 +2680,11 @@
       {
         "id": "190782",
         "time": "2025-11-29 03:30",
-        "status": "لم تبدأ",
+        "status": "انتهت",
         "home": {
           "id": "1446",
           "name": "سانتوس",
-          "score": "0",
+          "score": "3",
           "logo": "https://jdwel.com/image/teams/1446.png"
         },
         "away": {
@@ -796,6 +2694,106 @@
           "logo": "https://jdwel.com/image/teams/bra_sport_recife.png"
         },
         "channels": []
+      },
+      {
+        "id": "190786",
+        "time": "2025-11-29 22:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "892",
+          "name": "فيتوريا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/892.png"
+        },
+        "away": {
+          "id": "2765",
+          "name": "ميراسول",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2765.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "190787",
+        "time": "2025-11-30 03:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "سييارا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/bra_ceara.png"
+        },
+        "away": {
+          "id": "886",
+          "name": "كروزيرو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/886.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "الدوري الأمريكي MLS",
+    "matches": [
+      {
+        "id": "223522",
+        "time": "2025-11-30 02:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "إنتر ميامي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/usa_inter_miami.png"
+        },
+        "away": {
+          "id": "1853",
+          "name": "نيويورك سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1853.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "223523",
+        "time": "2025-11-30 05:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1865",
+          "name": "سان دييغو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1865.png"
+        },
+        "away": {
+          "id": "98",
+          "name": "فانكوفر وايتكابس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/98.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "الدوري الأرجنتيني الممتاز",
+    "matches": [
+      {
+        "id": "223534",
+        "time": "2025-11-30 03:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "879",
+          "name": "سينترال كوردوبا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/879.png"
+        },
+        "away": {
+          "id": "4740",
+          "name": "إستوديانتس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4740.png"
+        },
+        "channels": []
       }
     ]
   },
@@ -803,20 +2801,38 @@
     "competition": "الدوري المكسيكي الممتاز",
     "matches": [
       {
-        "id": "223060",
-        "time": "2025-11-28 05:07",
-        "status": "انتهت",
+        "id": "223131",
+        "time": "2025-11-30 02:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "2068",
-          "name": "غوادالاخارا",
+          "id": "1761",
+          "name": "كلوب أميريكا",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/2068.png"
+          "logo": "https://jdwel.com/image/teams/1761.png"
         },
         "away": {
-          "id": null,
-          "name": "كروز آزول",
+          "id": "3336",
+          "name": "مونتيري",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/mex_cruz_azul.png"
+          "logo": "https://jdwel.com/image/teams/3336.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "223508",
+        "time": "2025-11-30 04:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2048",
+          "name": "تولوكا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2048.png"
+        },
+        "away": {
+          "id": "2188",
+          "name": "خواريز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2188.png"
         },
         "channels": []
       }
@@ -826,20 +2842,74 @@
     "competition": "الدوري الأسترالي الدرجة A",
     "matches": [
       {
-        "id": "218397",
-        "time": "2025-11-28 11:35",
+        "id": "218398",
+        "time": "2025-11-29 07:00",
         "status": "انتهت",
         "home": {
-          "id": null,
-          "name": "بريزبان روار",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/aus_brisbane_roar.png"
+          "id": "2045",
+          "name": "ويلينغتون فينيكس",
+          "score": "2",
+          "logo": "https://jdwel.com/image/teams/2045.png"
         },
         "away": {
-          "id": "1766",
-          "name": "ميلبورن فيكتوري",
+          "id": "1765",
+          "name": "أديلايد يونايتد",
+          "score": "1",
+          "logo": "https://jdwel.com/image/teams/1765.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "218399",
+        "time": "2025-11-29 09:00",
+        "status": "45′",
+        "home": {
+          "id": "1254",
+          "name": "سنترال كوست مارينرز",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/1766.png"
+          "logo": "https://jdwel.com/image/teams/1254.png"
+        },
+        "away": {
+          "id": null,
+          "name": "ميلبورن سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/aus_melbourne_city.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "218400",
+        "time": "2025-11-29 11:35",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1003",
+          "name": "ويسترن سيدني وانديريرز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1003.png"
+        },
+        "away": {
+          "id": "1046",
+          "name": "سيدني",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1046.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "218401",
+        "time": "2025-11-30 05:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "829",
+          "name": "أوكلاند",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/829.png"
+        },
+        "away": {
+          "id": null,
+          "name": "نيوكاسل جيتس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/aus_newcastle_jets.png"
         },
         "channels": []
       }
@@ -849,20 +2919,74 @@
     "competition": "دوري جنوب أفريقيا",
     "matches": [
       {
-        "id": "212653",
-        "time": "2025-11-28 20:30",
-        "status": "انتهت",
+        "id": "212655",
+        "time": "2025-11-29 16:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": "2447",
-          "name": "ريتشاردز باي",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/2447.png"
+          "id": "3821",
+          "name": "دوربان سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3821.png"
         },
         "away": {
-          "id": "1615",
-          "name": "أمازولو",
+          "id": "1188",
+          "name": "أورلاندو بيراتس",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/1615.png"
+          "logo": "https://jdwel.com/image/teams/1188.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "212654",
+        "time": "2025-11-29 19:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1609",
+          "name": "بولوكوان سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1609.png"
+        },
+        "away": {
+          "id": "142",
+          "name": "تي إس جالاكسي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/142.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "212656",
+        "time": "2025-11-29 19:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3822",
+          "name": "سيويليلي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3822.png"
+        },
+        "away": {
+          "id": "2756",
+          "name": "شيبا يونايتد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2756.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "212657",
+        "time": "2025-11-29 21:15",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1411",
+          "name": "ماميلودي صن داونز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1411.png"
+        },
+        "away": {
+          "id": "3819",
+          "name": "أوربت كوليج",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3819.png"
         },
         "channels": []
       }
@@ -872,148 +2996,153 @@
     "competition": "دوري الدرجة الثانية السعودي",
     "matches": [
       {
-        "id": "214718",
-        "time": "2025-11-28 14:50",
-        "status": "انتهت",
+        "id": "214726",
+        "time": "2025-11-29 14:50",
+        "status": "لم تبدأ",
         "home": {
-          "id": "3239",
-          "name": "الصفا",
+          "id": "3241",
+          "name": "الساحل",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/3239.png"
+          "logo": "https://jdwel.com/image/teams/3241.png"
         },
         "away": {
-          "id": "1126",
-          "name": "حطين",
+          "id": null,
+          "name": "الترجي",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/1126.png"
+          "logo": "https://jdwel.com/image/teams/sau_al_taraji.png"
         },
         "channels": []
       },
       {
-        "id": "214720",
-        "time": "2025-11-28 15:15",
-        "status": "انتهت",
+        "id": "214727",
+        "time": "2025-11-29 14:55",
+        "status": "لم تبدأ",
         "home": {
-          "id": "593",
-          "name": "الغوطة",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/593.png"
-        },
-        "away": {
-          "id": null,
-          "name": "هجر",
+          "id": "951",
+          "name": "الجيل",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/sau_hajer.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "214721",
-        "time": "2025-11-28 15:15",
-        "status": "انتهت",
-        "home": {
-          "id": "3321",
-          "name": "اللواء",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/3321.png"
+          "logo": "https://jdwel.com/image/teams/951.png"
         },
         "away": {
-          "id": "4520",
-          "name": "وج",
-          "score": "4",
-          "logo": "https://jdwel.com/image/teams/4520.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "214660",
-        "time": "2025-11-28 15:20",
-        "status": "انتهت",
-        "home": {
-          "id": "3947",
-          "name": "القلعة",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/3947.png"
-        },
-        "away": {
-          "id": null,
-          "name": "مضر",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/sau_mudhar.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "214722",
-        "time": "2025-11-28 15:20",
-        "status": "انتهت",
-        "home": {
-          "id": "3303",
-          "name": "الريان",
+          "id": "2798",
+          "name": "الشعلة",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/3303.png"
-        },
-        "away": {
-          "id": null,
-          "name": "القوس",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/sau_al_qous.png"
+          "logo": "https://jdwel.com/image/teams/2798.png"
         },
         "channels": []
       },
       {
-        "id": "214724",
-        "time": "2025-11-28 15:30",
-        "status": "انتهت",
+        "id": "214728",
+        "time": "2025-11-29 15:05",
+        "status": "لم تبدأ",
         "home": {
           "id": null,
-          "name": "بيشة",
+          "name": "الشرق",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/sau_bisha.png"
+          "logo": "https://jdwel.com/image/teams/sau_al_sharq.png"
         },
         "away": {
-          "id": null,
-          "name": "النعيرية",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/sau_alnairyah.png"
+          "id": "3240",
+          "name": "نجران",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3240.png"
         },
         "channels": []
       },
       {
-        "id": "214725",
-        "time": "2025-11-28 15:35",
-        "status": "انتهت",
+        "id": "214729",
+        "time": "2025-11-29 15:05",
+        "status": "لم تبدأ",
         "home": {
-          "id": "2799",
-          "name": "أحد",
+          "id": null,
+          "name": "السد",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/2799.png"
+          "logo": "https://jdwel.com/image/teams/sau_al-sadd.png"
         },
         "away": {
-          "id": "371",
-          "name": "الصقر",
-          "score": "4",
-          "logo": "https://jdwel.com/image/teams/371.png"
+          "id": null,
+          "name": "عفيف",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sau_afief.png"
         },
         "channels": []
       },
       {
-        "id": "214719",
-        "time": "2025-11-28 17:40",
-        "status": "انتهت",
+        "id": "214730",
+        "time": "2025-11-29 15:10",
+        "status": "لم تبدأ",
         "home": {
           "id": null,
-          "name": "الكوكب",
+          "name": "الوشم",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/sau_al-kawkab.png"
+          "logo": "https://jdwel.com/image/teams/sau_al-washm_v2.png"
         },
         "away": {
           "id": null,
-          "name": "عرعر",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/sau_arar_v2.png"
+          "name": "الروضة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sau_al_rawdhah.png"
         },
         "channels": []
+      },
+      {
+        "id": "214566",
+        "time": "2025-11-29 15:15",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3946",
+          "name": "جبة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3946.png"
+        },
+        "away": {
+          "id": null,
+          "name": "طويق",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sau_tuwaiq.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "214732",
+        "time": "2025-11-29 15:35",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3242",
+          "name": "العين",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3242.png"
+        },
+        "away": {
+          "id": "11",
+          "name": "النجوم",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/11.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "214733",
+        "time": "2025-11-29 15:40",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "379",
+          "name": "الإنتصار",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/379.png"
+        },
+        "away": {
+          "id": "4935",
+          "name": "جرش",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4935.png"
+        },
+        "channels": [
+          {
+            "channel": "منصة +SAFF",
+            "commentator": null
+          }
+        ]
       }
     ]
   },
@@ -1021,109 +3150,14 @@
     "competition": "الدوري السعودي للشباب تحت 18 سنة",
     "matches": [
       {
-        "id": "216888",
-        "time": "2025-11-28 18:55",
-        "status": "انتهت",
-        "home": {
-          "id": "2450",
-          "name": "العدالة",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/2450.png"
-        },
-        "away": {
-          "id": "951",
-          "name": "الجيل",
-          "score": "0",
-          "logo": "https://jdwel.com/image/teams/951.png"
-        },
-        "channels": []
-      }
-    ]
-  },
-  {
-    "competition": "الدوري السعودي للناشئين تحت 17 سنة",
-    "matches": [
-      {
-        "id": "219147",
-        "time": "2025-11-28 14:50",
-        "status": "انتهت",
+        "id": "216889",
+        "time": "2025-11-29 14:50",
+        "status": "لم تبدأ",
         "home": {
           "id": "2215",
           "name": "الاتفاق",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/2215.png"
-        },
-        "away": {
-          "id": "2876",
-          "name": "الباطن",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/2876.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "219148",
-        "time": "2025-11-28 14:55",
-        "status": "انتهت",
-        "home": {
-          "id": "1105",
-          "name": "الفتح",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/1105.png"
-        },
-        "away": {
-          "id": "2451",
-          "name": "أبها",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/2451.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "219149",
-        "time": "2025-11-28 15:05",
-        "status": "انتهت",
-        "home": {
-          "id": "3169",
-          "name": "النصر",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/3169.png"
-        },
-        "away": {
-          "id": "2216",
-          "name": "القادسية",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/2216.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "219150",
-        "time": "2025-11-28 15:05",
-        "status": "انتهت",
-        "home": {
-          "id": "2761",
-          "name": "الهلال",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/2761.png"
-        },
-        "away": {
-          "id": "2839",
-          "name": "الاتحاد",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/2839.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "219151",
-        "time": "2025-11-28 15:05",
-        "status": "انتهت",
-        "home": {
-          "id": "2213",
-          "name": "الشباب",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/2213.png"
+          "logo": "https://jdwel.com/image/teams/2215.png"
         },
         "away": {
           "id": "3404",
@@ -1131,77 +3165,118 @@
           "score": "0",
           "logo": "https://jdwel.com/image/teams/3404.png"
         },
-        "channels": []
+        "channels": [
+          {
+            "channel": "منصة +SAFF",
+            "commentator": null
+          }
+        ]
       },
       {
-        "id": "219152",
-        "time": "2025-11-28 15:15",
-        "status": "انتهت",
+        "id": "216890",
+        "time": "2025-11-29 14:55",
+        "status": "لم تبدأ",
         "home": {
-          "id": "2797",
-          "name": "الرائد",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/2797.png"
+          "id": "1105",
+          "name": "الفتح",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1105.png"
         },
         "away": {
-          "id": null,
-          "name": "الطائي",
-          "score": "4",
-          "logo": "https://jdwel.com/image/teams/sau_altaee_v3.png"
+          "id": "2216",
+          "name": "القادسية",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2216.png"
         },
         "channels": []
       },
       {
-        "id": "219153",
-        "time": "2025-11-28 15:20",
-        "status": "انتهت",
+        "id": "216891",
+        "time": "2025-11-29 15:05",
+        "status": "لم تبدأ",
         "home": {
-          "id": "776",
-          "name": "العروبة",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/776.png"
+          "id": "3169",
+          "name": "النصر",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3169.png"
         },
         "away": {
           "id": null,
           "name": "التعاون",
-          "score": "3",
+          "score": "0",
           "logo": "https://jdwel.com/image/teams/sau_al_taawon_v2.png"
         },
         "channels": []
       },
       {
-        "id": "219154",
-        "time": "2025-11-28 15:30",
-        "status": "انتهت",
+        "id": "216892",
+        "time": "2025-11-29 15:05",
+        "status": "لم تبدأ",
         "home": {
-          "id": null,
-          "name": "الوطن",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/sau_alwatan.png"
+          "id": "2761",
+          "name": "الهلال",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2761.png"
         },
         "away": {
-          "id": "2840",
-          "name": "الخليج",
+          "id": null,
+          "name": "الوطن",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/2840.png"
+          "logo": "https://jdwel.com/image/teams/sau_alwatan.png"
         },
         "channels": []
       },
       {
-        "id": "219155",
-        "time": "2025-11-28 15:35",
-        "status": "انتهت",
+        "id": "216893",
+        "time": "2025-11-29 18:20",
+        "status": "لم تبدأ",
         "home": {
-          "id": "2799",
-          "name": "أحد",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/2799.png"
+          "id": "2839",
+          "name": "الاتحاد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2839.png"
+        },
+        "away": {
+          "id": "2213",
+          "name": "الشباب",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2213.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "216894",
+        "time": "2025-11-29 19:20",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "776",
+          "name": "العروبة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/776.png"
         },
         "away": {
           "id": null,
           "name": "الحزم",
-          "score": "1",
+          "score": "0",
           "logo": "https://jdwel.com/image/teams/sau_al_hazm_v2.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "216895",
+        "time": "2025-11-29 19:40",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "الوحدة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/sau_al_wahda.png"
+        },
+        "away": {
+          "id": "2797",
+          "name": "الرائد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2797.png"
         },
         "channels": []
       }
@@ -1211,20 +3286,128 @@
     "competition": "الدوري الإيطالي الدرجة الثانية الدرجة B",
     "matches": [
       {
-        "id": "211122",
-        "time": "2025-11-28 22:30",
-        "status": "77′",
+        "id": "211119",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": null,
-          "name": "تشيزينا",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/ita_cesena.png"
+          "id": "2046",
+          "name": "إمبولي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2046.png"
         },
         "away": {
-          "id": "1115",
-          "name": "مودينا",
+          "id": "3133",
+          "name": "باري",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/1115.png"
+          "logo": "https://jdwel.com/image/teams/3133.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "211120",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "بيسكارا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/ita_pescara.png"
+        },
+        "away": {
+          "id": "3888",
+          "name": "كالتشيو بادوفا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3888.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "211123",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "328",
+          "name": "سودتيرول",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/328.png"
+        },
+        "away": {
+          "id": "4736",
+          "name": "أفيلينو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4736.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "211124",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3358",
+          "name": "فينيزيا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3358.png"
+        },
+        "away": {
+          "id": null,
+          "name": "مانتوفا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/ita_mantova.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "211125",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "ريجيانا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/ita_reggiana.png"
+        },
+        "away": {
+          "id": "1124",
+          "name": "فروسينوني",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1124.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "211118",
+        "time": "2025-11-29 19:15",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "كاتانزارو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/ita_catanzaro.png"
+        },
+        "away": {
+          "id": "3887",
+          "name": "فيرتوس إينتيلا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3887.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "211126",
+        "time": "2025-11-29 21:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1116",
+          "name": "باليرمو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1116.png"
+        },
+        "away": {
+          "id": "1125",
+          "name": "كاراريسي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1125.png"
         },
         "channels": []
       }
@@ -1234,498 +3417,151 @@
     "competition": "الدوري الألماني الدرجة الثانية",
     "matches": [
       {
-        "id": "201051",
-        "time": "2025-11-28 20:30",
-        "status": "انتهت",
+        "id": "201050",
+        "time": "2025-11-29 15:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "3263",
-          "name": "شالكه 04",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/3263.png"
+          "id": null,
+          "name": "آينتراخت براونشفايغ",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/ger_eintracht_braunschweig.png"
         },
         "away": {
-          "id": "3264",
-          "name": "بادربورن",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/3264.png"
+          "id": "1534",
+          "name": "كايزرسلاوترن",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1534.png"
         },
         "channels": []
       },
       {
-        "id": "201052",
-        "time": "2025-11-28 20:30",
-        "status": "انتهت",
+        "id": "201053",
+        "time": "2025-11-29 15:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": null,
-          "name": "هانوفر 96",
-          "score": "3",
-          "logo": "https://jdwel.com/image/teams/ger_hannover_96.png"
+          "id": "2147",
+          "name": "هولشتاين كيل",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2147.png"
         },
         "away": {
           "id": null,
-          "name": "كارلشروهر",
+          "name": "هيرتا برلين",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/ger_karlsruher_sc.png"
+          "logo": "https://jdwel.com/image/teams/ger_hertha_bsc.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "201055",
+        "time": "2025-11-29 15:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "غرويثر فورت",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/ger_greuther_furth_v2.png"
+        },
+        "away": {
+          "id": "3696",
+          "name": "بوخوم",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3696.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "201048",
+        "time": "2025-11-29 22:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "ماغديبورغ",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/ger_magdeburg.png"
+        },
+        "away": {
+          "id": "1291",
+          "name": "نورنبيرغ",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1291.png"
         },
         "channels": []
       }
     ]
   },
   {
-    "competition": "تصفيات كأس آسيا للناشئين تحت 17 سنة",
+    "competition": "الدوري المغربي القسم الثاني البطولة الإحترافية",
     "matches": [
       {
-        "id": "214019",
-        "time": "2025-11-28 09:00",
-        "status": "انتهت",
+        "id": "223499",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "242",
-          "name": "بروناي",
+          "id": "1037",
+          "name": "شباب السوالم",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/242.png"
+          "logo": "https://jdwel.com/image/teams/1037.png"
         },
         "away": {
-          "id": "241",
-          "name": "تيمور الشرقية",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/241.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "214018",
-        "time": "2025-11-28 10:00",
-        "status": "انتهت",
-        "home": {
-          "id": "184",
-          "name": "بنجلاديش",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/184.png"
-        },
-        "away": {
-          "id": null,
-          "name": "البحرين",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/flag_bahrain_v2.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "214032",
-        "time": "2025-11-28 11:30",
-        "status": "انتهت",
-        "home": {
-          "id": null,
-          "name": "الكويت",
-          "score": "5",
-          "logo": "https://jdwel.com/image/teams/flag_kuwait_v2.png"
-        },
-        "away": {
-          "id": "70",
-          "name": "المالديف",
+          "id": "2788",
+          "name": "شباب المحمدية",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/70.png"
+          "logo": "https://jdwel.com/image/teams/2788.png"
         },
         "channels": []
       },
       {
-        "id": "214048",
-        "time": "2025-11-28 12:00",
-        "status": "انتهت",
+        "id": "223500",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "57",
-          "name": "باكستان",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/57.png"
-        },
-        "away": {
-          "id": "37",
-          "name": "اليمن",
-          "score": "5",
-          "logo": "https://jdwel.com/image/teams/37.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "214050",
-        "time": "2025-11-28 12:00",
-        "status": "انتهت",
-        "home": {
-          "id": "240",
-          "name": "كمبوديا",
-          "score": "5",
-          "logo": "https://jdwel.com/image/teams/240.png"
-        },
-        "away": {
-          "id": "510",
-          "name": "غوام",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/510.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "214058",
-        "time": "2025-11-28 12:00",
-        "status": "انتهت",
-        "home": {
-          "id": "66",
-          "name": "ماليزيا",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/66.png"
-        },
-        "away": {
-          "id": "64",
-          "name": "سنغافورة",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/64.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "214088",
-        "time": "2025-11-28 12:30",
-        "status": "انتهت",
-        "home": {
-          "id": "69",
-          "name": "ميانمار",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/69.png"
-        },
-        "away": {
-          "id": null,
-          "name": "عمان",
+          "id": "2748",
+          "name": "شباب المسيرة",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/flag_oman_v2.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "214068",
-        "time": "2025-11-28 14:00",
-        "status": "انتهت",
-        "home": {
-          "id": null,
-          "name": "فلسطين",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/flag_palestine_v2.png"
+          "logo": "https://jdwel.com/image/teams/2748.png"
         },
         "away": {
-          "id": null,
-          "name": "إيران",
-          "score": "3",
-          "logo": "https://jdwel.com/image/teams/flag_iran_v2.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "223491",
-        "time": "2025-11-28 14:35",
-        "status": "انتهت",
-        "home": {
-          "id": "62",
-          "name": "الصين",
-          "score": "8",
-          "logo": "https://jdwel.com/image/teams/62.png"
-        },
-        "away": {
-          "id": "72",
-          "name": "سريلانكا",
+          "id": "3244",
+          "name": "شباب بن جرير",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/72.png"
+          "logo": "https://jdwel.com/image/teams/3244.png"
         },
         "channels": []
       },
       {
-        "id": "214027",
-        "time": "2025-11-28 15:00",
-        "status": "انتهت",
+        "id": "223501",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "73",
-          "name": "هونغ كونغ",
-          "score": "4",
-          "logo": "https://jdwel.com/image/teams/73.png"
-        },
-        "away": {
-          "id": "997",
-          "name": "جزر ماريانا الشمالية",
+          "id": "386",
+          "name": "وداد تمارة",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/997.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "223492",
-        "time": "2025-11-28 15:00",
-        "status": "انتهت",
-        "home": {
-          "id": null,
-          "name": "فيتنام",
-          "score": "4",
-          "logo": "https://jdwel.com/image/teams/flag_vietnam_v2.png"
+          "logo": "https://jdwel.com/image/teams/386.png"
         },
         "away": {
-          "id": "250",
-          "name": "ماكاو",
+          "id": "3245",
+          "name": "شباب أطلس خنيفرة",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/250.png"
+          "logo": "https://jdwel.com/image/teams/3245.png"
         },
         "channels": []
       },
       {
-        "id": "214089",
-        "time": "2025-11-28 15:30",
-        "status": "انتهت",
+        "id": "223502",
+        "time": "2025-11-29 20:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "61",
-          "name": "أفغانستان",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/61.png"
-        },
-        "away": {
-          "id": "71",
-          "name": "نيبال",
+          "id": "2480",
+          "name": "مولودية وجدة",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/71.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "223493",
-        "time": "2025-11-28 15:30",
-        "status": "انتهت",
-        "home": {
-          "id": "63",
-          "name": "تايلاند",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/63.png"
+          "logo": "https://jdwel.com/image/teams/2480.png"
         },
         "away": {
-          "id": "68",
-          "name": "تركمانستان",
-          "score": "3",
-          "logo": "https://jdwel.com/image/teams/68.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "214078",
-        "time": "2025-11-28 16:00",
-        "status": "انتهت",
-        "home": {
-          "id": "49",
-          "name": "الفلبين",
+          "id": "2482",
+          "name": "رجاء بني ملال",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/49.png"
-        },
-        "away": {
-          "id": null,
-          "name": "أستراليا",
-          "score": "6",
-          "logo": "https://jdwel.com/image/teams/flag_australia_v2.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "223494",
-        "time": "2025-11-28 16:00",
-        "status": "انتهت",
-        "home": {
-          "id": "67",
-          "name": "قرغيزستان",
-          "score": "3",
-          "logo": "https://jdwel.com/image/teams/67.png"
-        },
-        "away": {
-          "id": "246",
-          "name": "لاوس",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/246.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "214069",
-        "time": "2025-11-28 17:00",
-        "status": "انتهت",
-        "home": {
-          "id": "60",
-          "name": "الهند",
-          "score": "0",
-          "logo": "https://jdwel.com/image/teams/60.png"
-        },
-        "away": {
-          "id": null,
-          "name": "لبنان",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/flag_lebanon_v2.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "214079",
-        "time": "2025-11-28 19:00",
-        "status": "انتهت",
-        "home": {
-          "id": null,
-          "name": "العراق",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/flag_iraq_v2.png"
-        },
-        "away": {
-          "id": "243",
-          "name": "بوتان",
-          "score": "0",
-          "logo": "https://jdwel.com/image/teams/243.png"
-        },
-        "channels": []
-      }
-    ]
-  },
-  {
-    "competition": "الدوري المصري الدرجة الثانية (أ)",
-    "matches": [
-      {
-        "id": "215654",
-        "time": "2025-11-28 15:30",
-        "status": "انتهت",
-        "home": {
-          "id": "4706",
-          "name": "القناة",
-          "score": "3",
-          "logo": "https://jdwel.com/image/teams/4706.png"
-        },
-        "away": {
-          "id": "1792",
-          "name": "مالية كفر الزيات",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/1792.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "215655",
-        "time": "2025-11-28 15:30",
-        "status": "انتهت",
-        "home": {
-          "id": "2459",
-          "name": "أبو قير للأسمدة",
-          "score": "0",
-          "logo": "https://jdwel.com/image/teams/2459.png"
-        },
-        "away": {
-          "id": "52",
-          "name": "وي",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/52.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "215656",
-        "time": "2025-11-28 15:30",
-        "status": "انتهت",
-        "home": {
-          "id": "1745",
-          "name": "مسار",
-          "score": "0",
-          "logo": "https://jdwel.com/image/teams/1745.png"
-        },
-        "away": {
-          "id": "3214",
-          "name": "أسوان",
-          "score": "0",
-          "logo": "https://jdwel.com/image/teams/3214.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "215657",
-        "time": "2025-11-28 15:30",
-        "status": "انتهت",
-        "home": {
-          "id": null,
-          "name": "بلدية المحلة",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/egy_baladiyat_almehalla.png"
-        },
-        "away": {
-          "id": "3213",
-          "name": "الداخلية",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/3213.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "215659",
-        "time": "2025-11-28 15:30",
-        "status": "انتهت",
-        "home": {
-          "id": "372",
-          "name": "الإنتاج الحربي",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/372.png"
-        },
-        "away": {
-          "id": "638",
-          "name": "ديروط",
-          "score": "0",
-          "logo": "https://jdwel.com/image/teams/638.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "215939",
-        "time": "2025-11-28 15:30",
-        "status": "انتهت",
-        "home": {
-          "id": "312",
-          "name": "بترول أسيوط",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/312.png"
-        },
-        "away": {
-          "id": "3284",
-          "name": "الترسانة",
-          "score": "0",
-          "logo": "https://jdwel.com/image/teams/3284.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "215940",
-        "time": "2025-11-28 15:30",
-        "status": "انتهت",
-        "home": {
-          "id": "318",
-          "name": "المنصورة",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/318.png"
-        },
-        "away": {
-          "id": "55",
-          "name": "راية",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/55.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "215941",
-        "time": "2025-11-28 15:30",
-        "status": "انتهت",
-        "home": {
-          "id": null,
-          "name": "طنطا",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/egy_tanta.png"
-        },
-        "away": {
-          "id": "3285",
-          "name": "لاڤيينا",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/3285.png"
+          "logo": "https://jdwel.com/image/teams/2482.png"
         },
         "channels": []
       }
@@ -1735,92 +3571,295 @@
     "competition": "الدوري الجزائري القسم الثاني",
     "matches": [
       {
-        "id": "223442",
-        "time": "2025-11-28 17:00",
-        "status": "انتهت",
+        "id": "223441",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "4192",
-          "name": "مولودية بجاية",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/4192.png"
+          "id": "2490",
+          "name": "مولودية قسنطينة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2490.png"
         },
         "away": {
-          "id": "2620",
-          "name": "شباب برج منايل",
+          "id": "3097",
+          "name": "إتحاد عنابة",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/2620.png"
+          "logo": "https://jdwel.com/image/teams/3097.png"
         },
         "channels": []
       },
       {
-        "id": "223444",
-        "time": "2025-11-28 17:00",
-        "status": "انتهت",
+        "id": "223443",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "4194",
-          "name": "شباب عين تيموشنت",
+          "id": "2623",
+          "name": "إتحاد الحراش",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/4194.png"
+          "logo": "https://jdwel.com/image/teams/2623.png"
         },
         "away": {
-          "id": "2783",
-          "name": "نصر حسين داي",
+          "id": "4177",
+          "name": "شبيبة تيقصراين",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/2783.png"
+          "logo": "https://jdwel.com/image/teams/4177.png"
         },
         "channels": []
       },
       {
-        "id": "223446",
-        "time": "2025-11-28 17:00",
-        "status": "انتهت",
+        "id": "223445",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "990",
-          "name": "مولودية سعيدة",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/990.png"
-        },
-        "away": {
-          "id": "272",
-          "name": "جمعية وهران",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/272.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "223447",
-        "time": "2025-11-28 17:00",
-        "status": "انتهت",
-        "home": {
-          "id": "4193",
-          "name": "وداد مستغانم",
-          "score": "3",
-          "logo": "https://jdwel.com/image/teams/4193.png"
-        },
-        "away": {
-          "id": "539",
-          "name": "غالي معسكر",
+          "id": "1193",
+          "name": "رائد القبة",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/539.png"
+          "logo": "https://jdwel.com/image/teams/1193.png"
+        },
+        "away": {
+          "id": "2836",
+          "name": "شبيبة تيارت",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2836.png"
         },
         "channels": []
       },
       {
-        "id": "223448",
-        "time": "2025-11-28 17:00",
-        "status": "انتهت",
+        "id": "223449",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "3884",
-          "name": "إتحاد بشار الجديد",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/3884.png"
+          "id": "670",
+          "name": "شبيبة الأبيار",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/670.png"
         },
         "away": {
-          "id": "4190",
-          "name": "وداد تلمسان",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/4190.png"
+          "id": "607",
+          "name": "نجم القليعة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/607.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "223451",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3210",
+          "name": "إتحاد بسكرة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3210.png"
+        },
+        "away": {
+          "id": "2492",
+          "name": "مولودية باتنة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2492.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "223452",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2619",
+          "name": "نادي التلاغمة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2619.png"
+        },
+        "away": {
+          "id": "1107",
+          "name": "نجم مقرة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1107.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "223453",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3885",
+          "name": "شبيبة جيجل",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3885.png"
+        },
+        "away": {
+          "id": "2489",
+          "name": "جمعية الخروب",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2489.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "223454",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2618",
+          "name": "شباب باتنة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2618.png"
+        },
+        "away": {
+          "id": "4176",
+          "name": "نجم بني والبان",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4176.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "223456",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "4191",
+          "name": "شباب بني ثور",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4191.png"
+        },
+        "away": {
+          "id": "2617",
+          "name": "هلال شلغوم العيد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2617.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "223457",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "4189",
+          "name": "شباب أدرار",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4189.png"
+        },
+        "away": {
+          "id": "3098",
+          "name": "أمل الأربعاء",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3098.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "الدوري التونسي الدرجة الثانية الرابطة المحترفة الثانية",
+    "matches": [
+      {
+        "id": "223458",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1190",
+          "name": "إتحاد تطاوين",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1190.png"
+        },
+        "away": {
+          "id": "3340",
+          "name": "مكارم المهدية",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3340.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "223459",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2462",
+          "name": "منزل بورقيبة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2462.png"
+        },
+        "away": {
+          "id": "2464",
+          "name": "حمام الأنف",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2464.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "223460",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2758",
+          "name": "حمام سوسة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2758.png"
+        },
+        "away": {
+          "id": "411",
+          "name": "المحيط القرقني",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/411.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "223461",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2477",
+          "name": "سكك الحديد الصفاقسي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2477.png"
+        },
+        "away": {
+          "id": "2471",
+          "name": "الهلال الرياضي بمساكن",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2471.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "223463",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3287",
+          "name": "الهلال الشابي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3287.png"
+        },
+        "away": {
+          "id": "1002",
+          "name": "بعث بوحجلة",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1002.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "223464",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2470",
+          "name": "الكوكب الرياضي بعقارب",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2470.png"
+        },
+        "away": {
+          "id": "4517",
+          "name": "إتحاد بوسالم",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4517.png"
         },
         "channels": []
       }
@@ -1830,20 +3869,38 @@
     "competition": "الدوري الكرواتي الممتاز",
     "matches": [
       {
-        "id": "197049",
-        "time": "2025-11-28 20:00",
-        "status": "انتهت",
+        "id": "197048",
+        "time": "2025-11-29 17:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": "3431",
-          "name": "فوكوفار",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/3431.png"
+          "id": "3432",
+          "name": "هايدوك سبليت",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3432.png"
         },
         "away": {
+          "id": "2355",
+          "name": "فارازدين",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2355.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "197050",
+        "time": "2025-11-29 20:15",
+        "status": "لم تبدأ",
+        "home": {
           "id": null,
-          "name": "أوسييك",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/cro_osijek.png"
+          "name": "إسترا 1961",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/cro_istra_1961.png"
+        },
+        "away": {
+          "id": "2356",
+          "name": "سلافن بيلوبو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2356.png"
         },
         "channels": []
       }
@@ -1853,20 +3910,56 @@
     "competition": "الدوري المجري الممتاز",
     "matches": [
       {
-        "id": "196148",
-        "time": "2025-11-28 22:00",
-        "status": "انتهت",
+        "id": "196150",
+        "time": "2025-11-29 14:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": null,
-          "name": "نيريجهيهازا سبارتاكوس",
+          "id": "2333",
+          "name": "زالايغيرزيغي تورنا إغيليت",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/hun_nyiregyhaza_spartacus.png"
+          "logo": "https://jdwel.com/image/teams/2333.png"
         },
         "away": {
-          "id": "2334",
-          "name": "ديبريسين",
-          "score": "3",
-          "logo": "https://jdwel.com/image/teams/2334.png"
+          "id": "2328",
+          "name": "باكسي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2328.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "196145",
+        "time": "2025-11-29 16:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "4816",
+          "name": "كوزينباركيكا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4816.png"
+        },
+        "away": {
+          "id": null,
+          "name": "ديوسغيوري",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/hun_diosgyőr.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "196081",
+        "time": "2025-11-29 18:15",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "4815",
+          "name": "غيور تورنا أوزتالي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4815.png"
+        },
+        "away": {
+          "id": "2329",
+          "name": "بودابست",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2329.png"
         },
         "channels": []
       }
@@ -1876,20 +3969,133 @@
     "competition": "الدوري الصربي الممتاز",
     "matches": [
       {
-        "id": "196387",
-        "time": "2025-11-28 19:00",
-        "status": "انتهت",
+        "id": "196393",
+        "time": "2025-11-29 15:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "2550",
-          "name": "تشوكاريتشكي",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/2550.png"
+          "id": "2552",
+          "name": "زليزنكار بانسيفو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2552.png"
         },
         "away": {
-          "id": "2553",
-          "name": "IMT نوفي بيوغراد",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/2553.png"
+          "id": "2547",
+          "name": "رادنيتشكي كراغوييفاتس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2547.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "196388",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "ملادوست لوتشاني",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/ser_mladost_lu__ani.png"
+        },
+        "away": {
+          "id": null,
+          "name": "رادنيتشكي نيش",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/ser_radnički_nis.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "196392",
+        "time": "2025-11-29 18:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2549",
+          "name": "فويفودينا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2549.png"
+        },
+        "away": {
+          "id": null,
+          "name": "سبارتاك زلايتبور",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/ser_spartak_subotica.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "196389",
+        "time": "2025-11-29 19:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "نوفي بازار",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/ser_novi_pazar.png"
+        },
+        "away": {
+          "id": "2551",
+          "name": "نابريداك",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2551.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "196390",
+        "time": "2025-11-29 20:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3151",
+          "name": "بارتيزان",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3151.png"
+        },
+        "away": {
+          "id": "3332",
+          "name": "يافور إيفانييتسا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3332.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "الدوري البرتغالي الدرجة الثانية",
+    "matches": [
+      {
+        "id": "217835",
+        "time": "2025-11-29 14:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2054",
+          "name": "أكاديميكو فيسيو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2054.png"
+        },
+        "away": {
+          "id": "4737",
+          "name": "بينافيل",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4737.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "217833",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "أوليفيرنسي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/por_ud_oliveirense.png"
+        },
+        "away": {
+          "id": "2401",
+          "name": "ليتشويس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2401.png"
         },
         "channels": []
       }
@@ -1899,92 +4105,79 @@
     "competition": "الدوري الهولندي الدرجة الأولى",
     "matches": [
       {
-        "id": "201407",
-        "time": "2025-11-28 22:00",
-        "status": "انتهت",
+        "id": "201412",
+        "time": "2025-11-29 18:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": null,
-          "name": "دن بوش",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/net_fc_den_bosch.png"
-        },
-        "away": {
-          "id": "1297",
-          "name": "فيلم تو تيلبورغ",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/1297.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "201408",
-        "time": "2025-11-28 22:00",
-        "status": "انتهت",
-        "home": {
-          "id": null,
-          "name": "دوردريخت",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/net_fc_dordrecht.png"
-        },
-        "away": {
-          "id": "1306",
-          "name": "أوتريخت ب",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/1306.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "201409",
-        "time": "2025-11-28 22:00",
-        "status": "انتهت",
-        "home": {
-          "id": "1666",
-          "name": "إيمن",
-          "score": "4",
-          "logo": "https://jdwel.com/image/teams/1666.png"
-        },
-        "away": {
-          "id": null,
-          "name": "إي زد ألكمار ب",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/net_az.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "201410",
-        "time": "2025-11-28 22:00",
-        "status": "انتهت",
-        "home": {
-          "id": null,
-          "name": "كامبور",
+          "id": "1667",
+          "name": "أوس",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/net_sc_cambuur.png"
+          "logo": "https://jdwel.com/image/teams/1667.png"
         },
         "away": {
           "id": null,
-          "name": "هيلموند سبورت",
+          "name": "ألمير سيتي",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/net_helmond_sport.png"
+          "logo": "https://jdwel.com/image/teams/net_almere_city.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "الدوري النمساوي الممتاز",
+    "matches": [
+      {
+        "id": "201701",
+        "time": "2025-11-29 19:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3360",
+          "name": "أوستريا فيينا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3360.png"
+        },
+        "away": {
+          "id": "581",
+          "name": "فاتينس تيرول",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/581.png"
         },
         "channels": []
       },
       {
-        "id": "201411",
-        "time": "2025-11-28 22:00",
-        "status": "انتهت",
+        "id": "201702",
+        "time": "2025-11-29 19:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": null,
-          "name": "فينلو",
+          "id": "687",
+          "name": "غراتزر أي كاي",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/net_vvv-venlo.png"
+          "logo": "https://jdwel.com/image/teams/687.png"
         },
         "away": {
-          "id": "1504",
-          "name": "أدو دين هاغ",
-          "score": "3",
-          "logo": "https://jdwel.com/image/teams/1504.png"
+          "id": null,
+          "name": "بلاو فايس لينتس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/aus_blau-weis_linz.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "201705",
+        "time": "2025-11-29 19:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3416",
+          "name": "رييد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3416.png"
+        },
+        "away": {
+          "id": "2319",
+          "name": "ولفسبرجر",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2319.png"
         },
         "channels": []
       }
@@ -1994,38 +4187,133 @@
     "competition": "الدوري البولندي الممتاز",
     "matches": [
       {
-        "id": "195677",
-        "time": "2025-11-28 20:00",
-        "status": "انتهت",
+        "id": "215286",
+        "time": "2025-11-29 16:45",
+        "status": "لم تبدأ",
         "home": {
           "id": null,
-          "name": "بياست غليويس",
+          "name": "ليخيا غدانسك",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/pol_piast_gliwice.png"
+          "logo": "https://jdwel.com/image/teams/pol_lechia_gdańsk.png"
         },
         "away": {
           "id": null,
-          "name": "فيدزيف وودغ",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/pol_widzew_lodz.png"
+          "name": "نييسيزا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/pol_nieciecza.png"
         },
         "channels": []
       },
       {
-        "id": "195678",
-        "time": "2025-11-28 22:30",
-        "status": "78′",
+        "id": "195674",
+        "time": "2025-11-29 19:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": "3324",
-          "name": "رادومياك رادوم",
-          "score": "4",
-          "logo": "https://jdwel.com/image/teams/3324.png"
+          "id": null,
+          "name": "كورونا كيلسي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/pol_korona_kielce.png"
         },
         "away": {
-          "id": "2318",
-          "name": "غورنيك زابجه",
+          "id": "2859",
+          "name": "كراكوفيا",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/2318.png"
+          "logo": "https://jdwel.com/image/teams/2859.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "195672",
+        "time": "2025-11-29 22:15",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3713",
+          "name": "كاتوايس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3713.png"
+        },
+        "away": {
+          "id": "3323",
+          "name": "بوغون شتشتين",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3323.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "الدوري التشيكي الممتاز",
+    "matches": [
+      {
+        "id": "203073",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1842",
+          "name": "هراديتس كرالوفيه",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1842.png"
+        },
+        "away": {
+          "id": "2030",
+          "name": "يابلونك",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2030.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "203076",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3139",
+          "name": "زلين",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3139.png"
+        },
+        "away": {
+          "id": null,
+          "name": "كارفينا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/cze_karvina.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "203093",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2863",
+          "name": "بانيك أوسترافا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2863.png"
+        },
+        "away": {
+          "id": "2644",
+          "name": "دوكلا براغ",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2644.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "203077",
+        "time": "2025-11-29 20:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1019",
+          "name": "سلافيا براغ",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1019.png"
+        },
+        "away": {
+          "id": "2153",
+          "name": "سلوفاكو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2153.png"
         },
         "channels": []
       }
@@ -2035,20 +4323,38 @@
     "competition": "الدوري الأوكراني الممتاز",
     "matches": [
       {
-        "id": "204375",
-        "time": "2025-11-28 19:00",
-        "status": "انتهت",
+        "id": "204373",
+        "time": "2025-11-29 16:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": "2636",
-          "name": "أوبولون كييف",
+          "id": "2637",
+          "name": "تشيركاسي",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/2636.png"
+          "logo": "https://jdwel.com/image/teams/2637.png"
         },
         "away": {
-          "id": "1843",
-          "name": "كولوس كوفاليفكا",
+          "id": "3463",
+          "name": "كودريفكا",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/1843.png"
+          "logo": "https://jdwel.com/image/teams/3463.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "204374",
+        "time": "2025-11-29 19:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1844",
+          "name": "فيريش",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1844.png"
+        },
+        "away": {
+          "id": null,
+          "name": "كارباتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/ukr_karpaty.png"
         },
         "channels": []
       }
@@ -2058,20 +4364,38 @@
     "competition": "الدوري الروماني سوبر",
     "matches": [
       {
-        "id": "204726",
-        "time": "2025-11-28 21:30",
-        "status": "انتهت",
+        "id": "204721",
+        "time": "2025-11-29 17:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": "2538",
-          "name": "رابيد بوخارست",
-          "score": "4",
-          "logo": "https://jdwel.com/image/teams/2538.png"
+          "id": "761",
+          "name": "أرجيس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/761.png"
         },
         "away": {
-          "id": "3418",
-          "name": "كسيكسزيريدا",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/3418.png"
+          "id": null,
+          "name": "كلوج",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/rom_cfr_cluj.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "204722",
+        "time": "2025-11-29 21:45",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2539",
+          "name": "دينامو بوخارست",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2539.png"
+        },
+        "away": {
+          "id": "2540",
+          "name": "أوتيلول",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2540.png"
         },
         "channels": []
       }
@@ -2081,20 +4405,38 @@
     "competition": "الدوري السلوفيني الممتاز",
     "matches": [
       {
-        "id": "202422",
-        "time": "2025-11-28 19:30",
-        "status": "انتهت",
+        "id": "202426",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "3419",
-          "name": "ألوميني",
+          "id": "441",
+          "name": "مورا",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/3419.png"
+          "logo": "https://jdwel.com/image/teams/441.png"
         },
         "away": {
-          "id": "613",
-          "name": "بريموري",
+          "id": "4850",
+          "name": "ماريبور",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/613.png"
+          "logo": "https://jdwel.com/image/teams/4850.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "202425",
+        "time": "2025-11-29 19:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3410",
+          "name": "أولمبيا ليوبليانا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3410.png"
+        },
+        "away": {
+          "id": "2360",
+          "name": "رادوملي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2360.png"
         },
         "channels": []
       }
@@ -2104,38 +4446,133 @@
     "competition": "الدوري البلغاري الأول",
     "matches": [
       {
-        "id": "218113",
-        "time": "2025-11-28 16:00",
-        "status": "انتهت",
+        "id": "218109",
+        "time": "2025-11-29 13:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": "2530",
-          "name": "لوكوموتيف صوفيا",
+          "id": "2526",
+          "name": "سسكا صوفيا 1948",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/2530.png"
+          "logo": "https://jdwel.com/image/teams/2526.png"
         },
         "away": {
-          "id": "2532",
-          "name": "أردا",
+          "id": null,
+          "name": "بيروي",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/2532.png"
+          "logo": "https://jdwel.com/image/teams/bul_beroe.png"
         },
         "channels": []
       },
       {
-        "id": "218110",
-        "time": "2025-11-28 18:30",
-        "status": "انتهت",
+        "id": "218116",
+        "time": "2025-11-29 16:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "2528",
-          "name": "لوكوموتيف بلوديف",
+          "id": null,
+          "name": "بوتيف بلوفديف",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/2528.png"
+          "logo": "https://jdwel.com/image/teams/bul_botev_plovdiv.png"
         },
         "away": {
-          "id": "3331",
-          "name": "مونتانا",
+          "id": null,
+          "name": "تشيرنو مور فارنا",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/3331.png"
+          "logo": "https://jdwel.com/image/teams/bul_cherno_more.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "218111",
+        "time": "2025-11-29 18:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2645",
+          "name": "سبارتاك فارنا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2645.png"
+        },
+        "away": {
+          "id": null,
+          "name": "سسكا صوفيا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/bul_cska_sofia.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "الدوري السلوفاكي الأول",
+    "matches": [
+      {
+        "id": "197931",
+        "time": "2025-11-29 17:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3378",
+          "name": "تاتران بريشوف",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3378.png"
+        },
+        "away": {
+          "id": "2366",
+          "name": "سكاليكا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2366.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "197933",
+        "time": "2025-11-29 17:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2362",
+          "name": "سبارتاك ترنافا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2362.png"
+        },
+        "away": {
+          "id": "625",
+          "name": "كومارنو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/625.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "197935",
+        "time": "2025-11-29 17:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "روجومبيروك",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/slo_ružomberok.png"
+        },
+        "away": {
+          "id": "478",
+          "name": "كوشيتسه",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/478.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "197932",
+        "time": "2025-11-29 20:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3372",
+          "name": "ترنسين",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3372.png"
+        },
+        "away": {
+          "id": "2361",
+          "name": "داك",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2361.png"
         },
         "channels": []
       }
@@ -2145,38 +4582,97 @@
     "competition": "دوري السوبر الألباني",
     "matches": [
       {
-        "id": "209679",
-        "time": "2025-11-28 20:00",
-        "status": "انتهت",
+        "id": "209678",
+        "time": "2025-11-29 15:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": null,
-          "name": "فلازنيا شكودر",
+          "id": "808",
+          "name": "بيليس بالش",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/alb_vllaznia_shkoder.png"
+          "logo": "https://jdwel.com/image/teams/808.png"
         },
         "away": {
-          "id": "4813",
-          "name": "تيوتا دورس",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/4813.png"
+          "id": "2544",
+          "name": "دينامو سيتي",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2544.png"
         },
         "channels": []
       },
       {
-        "id": "209682",
-        "time": "2025-11-28 20:00",
-        "status": "انتهت",
+        "id": "209681",
+        "time": "2025-11-29 15:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": "809",
-          "name": "AF البساني",
+          "id": null,
+          "name": "تيرانا",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/809.png"
+          "logo": "https://jdwel.com/image/teams/alb_tirana.png"
         },
         "away": {
-          "id": "3542",
-          "name": "بارتيزاني تيرانا",
+          "id": "2545",
+          "name": "إيجناتيا روجوزين",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/3542.png"
+          "logo": "https://jdwel.com/image/teams/2545.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "209680",
+        "time": "2025-11-29 18:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "4814",
+          "name": "فلامورتاري",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4814.png"
+        },
+        "away": {
+          "id": "3648",
+          "name": "فورا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3648.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "الدوري الأوزبكي سوبر",
+    "matches": [
+      {
+        "id": "214548",
+        "time": "2025-11-29 13:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1849",
+          "name": "كويزلكام",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1849.png"
+        },
+        "away": {
+          "id": "2135",
+          "name": "شورتان",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2135.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "214549",
+        "time": "2025-11-29 13:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "1850",
+          "name": "نافباخور",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1850.png"
+        },
+        "away": {
+          "id": "1475",
+          "name": "باختاكور",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1475.png"
         },
         "channels": []
       }
@@ -2186,38 +4682,56 @@
     "competition": "الدوري الإندونيسي سوبر",
     "matches": [
       {
-        "id": "209358",
-        "time": "2025-11-28 11:30",
-        "status": "انتهت",
+        "id": "209361",
+        "time": "2025-11-29 09:30",
+        "status": "31′",
         "home": {
-          "id": "4827",
-          "name": "بهايانكارا",
+          "id": "825",
+          "name": "مالوت يونايتد",
           "score": "1",
-          "logo": "https://jdwel.com/image/teams/4827.png"
+          "logo": "https://jdwel.com/image/teams/825.png"
         },
         "away": {
-          "id": "524",
-          "name": "بيرسيبايا سورابايا",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/524.png"
+          "id": "2089",
+          "name": "آريما كرونوس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2089.png"
         },
         "channels": []
       },
       {
-        "id": "209359",
-        "time": "2025-11-28 15:00",
-        "status": "انتهت",
+        "id": "209360",
+        "time": "2025-11-29 11:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": "2085",
-          "name": "بيرسيجا",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/2085.png"
+          "id": "523",
+          "name": "ديوا يونايتد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/523.png"
         },
         "away": {
-          "id": "4828",
-          "name": "بيسيم يوجياكارتا",
+          "id": "2084",
+          "name": "بيرسيتا",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/4828.png"
+          "logo": "https://jdwel.com/image/teams/2084.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "209362",
+        "time": "2025-11-29 15:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "531",
+          "name": "بيرسيس سولو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/531.png"
+        },
+        "away": {
+          "id": "2088",
+          "name": "بي إس إم ماكاسار",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2088.png"
         },
         "channels": []
       }
@@ -2227,20 +4741,74 @@
     "competition": "الدوري التايلندي",
     "matches": [
       {
-        "id": "217229",
-        "time": "2025-11-28 15:00",
-        "status": "انتهت",
+        "id": "217230",
+        "time": "2025-11-29 14:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "2092",
-          "name": "PT براشواب",
+          "id": "3075",
+          "name": "أوثاي ثاني",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/2092.png"
+          "logo": "https://jdwel.com/image/teams/3075.png"
         },
         "away": {
+          "id": "3074",
+          "name": "ناخون راتشاسيما مازدا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3074.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "217231",
+        "time": "2025-11-29 14:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "3682",
+          "name": "أيوثايا يونايتد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3682.png"
+        },
+        "away": {
+          "id": "444",
+          "name": "لامفون وريور",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/444.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "217232",
+        "time": "2025-11-29 15:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "2449",
+          "name": "رايونغ",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/2449.png"
+        },
+        "away": {
+          "id": "4817",
+          "name": "تشونبوري",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/4817.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "217233",
+        "time": "2025-11-29 15:30",
+        "status": "لم تبدأ",
+        "home": {
           "id": null,
-          "name": "بورت",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/tha_port.png"
+          "name": "تشيانغراي يونايتد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/tha_chiangrai_united.png"
+        },
+        "away": {
+          "id": "3072",
+          "name": "موانغثونغ يونايتد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3072.png"
         },
         "channels": []
       }
@@ -2250,20 +4818,102 @@
     "competition": "دوري البوسنة والهرسك الممتاز",
     "matches": [
       {
-        "id": "204582",
-        "time": "2025-11-28 20:00",
-        "status": "انتهت",
+        "id": "204580",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "724",
-          "name": "سلوجا دوبوج",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/724.png"
+          "id": "766",
+          "name": "بوراتس بانيا لوكا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/766.png"
         },
         "away": {
-          "id": "857",
-          "name": "رادنيك بيلينا",
+          "id": "851",
+          "name": "جيلييزنيتشار ساراييفو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/851.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "204581",
+        "time": "2025-11-29 18:00",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "858",
+          "name": "FK ساراييفو",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/858.png"
+        },
+        "away": {
+          "id": "856",
+          "name": "شيروكي برييغ",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/856.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "204583",
+        "time": "2025-11-29 20:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": "855",
+          "name": "فيليز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/855.png"
+        },
+        "away": {
+          "id": "3448",
+          "name": "رودار برييدور",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/3448.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "الدوري الاسترالي للسيدات الدرجة A",
+    "matches": [
+      {
+        "id": "218545",
+        "time": "2025-11-29 08:00",
+        "status": "بإنتظار التحديث",
+        "home": {
+          "id": "1812",
+          "name": "كانبيرا يونايتد",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1812.png"
+        },
+        "away": {
+          "id": "1046",
+          "name": "سيدني",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/1046.png"
+        },
+        "channels": []
+      }
+    ]
+  },
+  {
+    "competition": "الدوري النيوزيلندي للسيدات",
+    "matches": [
+      {
+        "id": "223531",
+        "time": "2025-11-29 08:00",
+        "status": "انتهت",
+        "home": {
+          "id": "435",
+          "name": "أوكلاند يونايتد",
           "score": "1",
-          "logo": "https://jdwel.com/image/teams/857.png"
+          "logo": "https://jdwel.com/image/teams/435.png"
+        },
+        "away": {
+          "id": "436",
+          "name": "إيسترين سوبربز",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/436.png"
         },
         "channels": []
       }
@@ -2273,110 +4923,92 @@
     "competition": "وديات منتخبات سيدات",
     "matches": [
       {
-        "id": "223542",
-        "time": "2025-11-28 11:30",
-        "status": "انتهت",
+        "id": "223543",
+        "time": "2025-11-29 15:00",
+        "status": "لم تبدأ",
         "home": {
           "id": null,
-          "name": "أستراليا",
-          "score": "5",
-          "logo": "https://jdwel.com/image/teams/flag_australia_v2.png"
-        },
-        "away": {
-          "id": "39",
-          "name": "نيوزيلندا",
+          "name": "الولايات المتحدة",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/39.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "223537",
-        "time": "2025-11-28 14:00",
-        "status": "انتهت",
-        "home": {
-          "id": null,
-          "name": "أوكرانيا",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/flag_ukraine.png"
+          "logo": "https://jdwel.com/image/teams/flag_united_states.png"
         },
         "away": {
-          "id": "40",
-          "name": "اسكتلندا",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/40.png"
-        },
-        "channels": []
-      },
-      {
-        "id": "223538",
-        "time": "2025-11-28 15:00",
-        "status": "انتهت",
-        "home": {
-          "id": "4218",
-          "name": "التشيك",
+          "id": "56",
+          "name": "إيطاليا",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/4218.png"
-        },
-        "away": {
-          "id": null,
-          "name": "صربيا",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/flag_serbia_v2.png"
+          "logo": "https://jdwel.com/image/teams/56.png"
         },
         "channels": []
       },
       {
-        "id": "223539",
-        "time": "2025-11-28 19:45",
-        "status": "انتهت",
+        "id": "223545",
+        "time": "2025-11-29 15:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": null,
-          "name": "بولندا",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/flag_poland_v2.png"
-        },
-        "away": {
-          "id": "204",
-          "name": "سلوفينيا",
+          "id": "167",
+          "name": "أذربيجان",
           "score": "0",
-          "logo": "https://jdwel.com/image/teams/204.png"
+          "logo": "https://jdwel.com/image/teams/167.png"
+        },
+        "away": {
+          "id": "66",
+          "name": "ماليزيا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/66.png"
         },
         "channels": []
       },
       {
-        "id": "223540",
-        "time": "2025-11-28 21:00",
-        "status": "انتهت",
+        "id": "223546",
+        "time": "2025-11-29 15:30",
+        "status": "لم تبدأ",
         "home": {
-          "id": null,
-          "name": "سويسرا",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/flag_switzerland_v2.png"
+          "id": "185",
+          "name": "إندونيسيا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/185.png"
         },
         "away": {
-          "id": "43",
-          "name": "بلجيكا",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/43.png"
+          "id": "186",
+          "name": "تايوان",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/186.png"
         },
         "channels": []
       },
       {
-        "id": "223541",
-        "time": "2025-11-28 22:45",
-        "status": "62′",
+        "id": "223547",
+        "time": "2025-11-29 17:00",
+        "status": "لم تبدأ",
         "home": {
-          "id": "2562",
-          "name": "البرتغال",
-          "score": "1",
-          "logo": "https://jdwel.com/image/teams/2562.png"
+          "id": "221",
+          "name": "اليونان",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/221.png"
+        },
+        "away": {
+          "id": "225",
+          "name": "بيلاروس",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/225.png"
+        },
+        "channels": []
+      },
+      {
+        "id": "223544",
+        "time": "2025-11-29 21:30",
+        "status": "لم تبدأ",
+        "home": {
+          "id": null,
+          "name": "اليابان",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/flag_japan_v2.png"
         },
         "away": {
           "id": null,
-          "name": "هولندا",
-          "score": "2",
-          "logo": "https://jdwel.com/image/teams/flag_netherlands_v2.png"
+          "name": "كندا",
+          "score": "0",
+          "logo": "https://jdwel.com/image/teams/flag_canada_v2.png"
         },
         "channels": []
       }
