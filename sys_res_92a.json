@@ -359,5 +359,36 @@
     "channel": "beIN SPORTS 4",
     "commentator": "نوفل باشي",
     "servers": []
+  },
+  
+  {
+    "team1Name": "النصر",
+    "team1Logo": "https://jdwel.com/image/teams/uni_al_nasr_v2.png",
+    "team2Name": "شباب الأهلي",
+    "team2Logo": "https://jdwel.com/image/teams/2802.png",
+    "startTime": 1764420000,
+    "league": "كأس مصرف أبو ظبي الإسلامي",
+    "channel": "دبي الرياضية 1",
+    "commentator": "راشد عبدالرحمن",
+    "servers": [
+      {
+        "HD": "https://dmidspta.cdn.mgmlcdn.com/dubaisports/smil:dubaisports.stream.smil/chunklist.m3u8"
+      }
+    ]
+  },
+  {
+    "team1Name": "العين",
+    "team1Logo": "https://jdwel.com/image/teams/2760.png",
+    "team2Name": "الشارقة",
+    "team2Logo": "https://jdwel.com/image/teams/1166.png",
+    "startTime": 1764430200,
+    "league": "كأس مصرف أبو ظبي الإسلامي",
+    "channel": "دبي الرياضية 1",
+    "commentator": "حماد العنزي",
+    "servers": [
+      {
+        "HD": "https://dmidspta.cdn.mgmlcdn.com/dubaisports/smil:dubaisports.stream.smil/chunklist.m3u8"
+      }
+    ]
   }
 ]
