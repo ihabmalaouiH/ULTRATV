@@ -206,7 +206,11 @@
     "league": "الدوري الإسباني",
     "channel": "beIN SPORTS 1",
     "commentator": "حسن العيدروس",
-    "servers": []
+    "servers": [
+      {
+        "TOD": "https://prod-fastly-eu-central-1.video.pscp.tv:443/Transcoding/v1/hls/SpaOJwvX5sC4nBfyRRzJHx-Jef0cJFVi35Ep_Zoq2BHwU2-yviD4ew56M1PoBhwpJpCTulPEBEOzHXfnwClMww/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live"
+      }
+    ]
   },
   {
     "team1Name": "بورتو",
@@ -219,7 +223,7 @@
     "commentator": "إبراهيم الهشال",
     "servers": [
       {
-        "https://kwtspta.cdn.mangomolo.com/sp/smil:sp.stream.smil/chunklist.m3u8": "HD"
+        "HD": "https://kwtspta.cdn.mangomolo.com/sp/smil:sp.stream.smil/chunklist.m3u8"
       }
     ]
   }
