@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="قم بتحميل تطبيق ULTRA TV الآن واستمتع بمشاهدة مباشرة لجميع المباريات والقنوات العالمية بجودة عالية. نسخة متوفرة للهاتف وAndroid TV.">
     <meta name="keywords" content="ULTRA TV, تحميل, تطبيق, مشاهدة, مباريات, بث مباشر, قنوات, رياضة, APK, Android TV">
-    <title>تحميل تطبيق ULTRA TV - الإصدار الذكي</title>
+    <title>تحميل تطبيق ULTRA TV</title>
     
     <link rel="icon" href="https://ultrav.me/logo.png" type="image/png">
     
@@ -77,14 +77,76 @@
 
         /* === شاشة البداية (Preloader) === */
         .preloader { 
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--dark-red); z-index: 9999; 
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+            background: radial-gradient(circle at center, #a30000, #5c0000); 
+            z-index: 9999; 
             display: flex; flex-direction: column; justify-content: center; align-items: center; 
-            transition: opacity 0.7s ease, visibility 0.7s ease; 
+            transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out; 
         }
-        .preloader i { font-size: 4rem; color: white; animation: spin 1.5s linear infinite; margin-bottom: 20px; }
-        .preloader span { color: white; font-size: 1.8rem; font-weight: 700; opacity: 0.8; }
+
+        .loader-icon-container {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .loader-icon-container i { 
+            font-size: 3.5rem; 
+            color: white; 
+            z-index: 2; 
+            animation: floatIcon 3s ease-in-out infinite; 
+            filter: drop-shadow(0 0 10px rgba(0,0,0,0.3));
+        }
+
+        .ripple {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            opacity: 0;
+            animation: rippleEffect 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+        }
+        .ripple:nth-child(2) { animation-delay: 0.5s; }
+        .ripple:nth-child(3) { animation-delay: 1s; }
+
+        .preloader-title { 
+            color: white; 
+            font-size: 2.5rem; 
+            font-weight: 900; 
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: fadeInUp 1s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .preloader-subtitle {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+            margin-top: 5px;
+            animation: fadeInUp 1s ease-out 0.3s forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
         .preloader.hidden { opacity: 0; visibility: hidden; }
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        @keyframes rippleEffect {
+            0% { transform: scale(0.8); opacity: 1; border-width: 4px; }
+            100% { transform: scale(2.5); opacity: 0; border-width: 0px; }
+        }
+        @keyframes floatIcon {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(5deg); }
+        }
+        @keyframes fadeInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
         /* === نهاية Preloader === */
 
         .main-header { position: fixed; top: 0; right: 0; width: 100%; padding: 20px 40px; display: flex; justify-content: center; align-items: center; z-index: 1000; transition: background-color 0.3s ease; }
@@ -115,7 +177,7 @@
         .hero h1 { font-size: 4.5rem; font-weight: 900; color: var(--text-color); margin-bottom: 20px; }
         .hero p { font-size: 1.5rem; margin-bottom: 40px; max-width: 600px; }
         
-        /* New: Smart TV Badge */
+        /* Smart TV Badge */
         .tv-badge {
             background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(5px);
@@ -136,11 +198,11 @@
 
         section { position: relative; z-index: 2; }
         
-        .features, .screenshots, .installation-steps, .countdown, .versions, .faq, .downloader-code, .download-section, .video-showcase { 
+        .features, .screenshots, .installation-steps, .countdown, .versions, .faq, .downloader-code, .download-section { 
             padding: 100px 0; text-align: center; 
         }
         
-        .features h2, .screenshots h2, .installation-steps h2, .countdown h2, .versions h2, .faq h2, .downloader-code h2, .download-section h2, .video-showcase h2 { 
+        .features h2, .screenshots h2, .installation-steps h2, .countdown h2, .versions h2, .faq h2, .downloader-code h2, .download-section h2 { 
             font-size: 2.8rem; margin-bottom: 60px; 
         }
 
@@ -152,58 +214,6 @@
         .feature-item i { font-size: 2.5rem; color: var(--dark-red); margin-bottom: 0; }
         .feature-item h3 { font-size: 1.5rem; margin-bottom: 10px; }
 
-        /* --- New: قسم الفيديو (Unusual Video) --- */
-        .video-wrapper {
-            position: relative;
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 50px rgba(135, 0, 0, 0.3);
-            border: 4px solid var(--dark-text);
-            background: #000;
-        }
-        .video-wrapper::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            border: 2px solid rgba(255,255,255,0.1);
-            border-radius: 16px;
-            pointer-events: none;
-            z-index: 10;
-        }
-        .tv-stand {
-            width: 200px;
-            height: 20px;
-            background: #333;
-            margin: 0 auto;
-            border-radius: 0 0 20px 20px;
-            margin-top: -2px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-        .promo-video {
-            width: 100%;
-            display: block;
-            opacity: 0.8;
-            transition: opacity 0.5s;
-        }
-        .video-wrapper:hover .promo-video { opacity: 1; }
-        .video-overlay {
-            position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 5;
-            pointer-events: none;
-        }
-        .play-icon {
-            font-size: 4rem;
-            color: rgba(255,255,255,0.8);
-            filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
-            animation: pulse-play 2s infinite;
-        }
-        @keyframes pulse-play { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
-        
         /* --- العد التنازلي --- */
         .countdown h2 { margin-bottom: 40px; }
         .countdown-timer { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; }
@@ -269,7 +279,7 @@
         .faq-answer p { padding: 0; text-align: right; line-height: 1.7; }
         .faq-question.active + .faq-answer { padding: 0 25px 20px 25px; }
         
-        /* === NEW: قسم التحميل المطور (Professional Cards) === */
+        /* === قسم التحميل المطور (Professional Cards) === */
         .download-section > .container > p { font-size: 1.2rem; margin-bottom: 60px; max-width: 600px; margin-inline: auto; color: #555; }
         .download-cards-container {
             display: flex;
@@ -327,14 +337,77 @@
         }
         .tv-card .card-badge { background: #6f42c1; } /* لون مميز للتلفاز */
         
-        .qr-placeholder {
-            margin-top: 15px;
-            font-size: 0.8rem;
-            color: #888;
+        /* NEW: Version Badge Styling */
+        .version-badge {
+            display: inline-block;
+            background-color: rgba(135, 0, 0, 0.1);
+            color: var(--dark-red);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            border: 1px solid rgba(135, 0, 0, 0.2);
+        }
+        .version-badge i { font-size: 0.8rem; margin-left: 5px; }
+
+        /* QR Code Styling (Interactive) */
+        .qr-wrapper {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .qr-toggle-btn {
+            background: none;
+            border: none;
+            color: #555;
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.9rem;
+            cursor: pointer;
             display: flex;
             align-items: center;
             gap: 5px;
-            cursor: default;
+            transition: color 0.3s;
+            padding: 10px;
+            text-decoration: underline;
+        }
+        .qr-toggle-btn:hover { color: var(--dark-red); }
+        
+        /* QR Popup (Modal Style inside card) */
+        .qr-popup {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, opacity 0.4s ease-out;
+            opacity: 0;
+            text-align: center;
+            width: 100%;
+        }
+        .qr-popup.active {
+            max-height: 300px;
+            opacity: 1;
+            margin-top: 15px;
+        }
+        
+        .qr-box {
+            background: #fff;
+            padding: 15px;
+            border-radius: 15px;
+            border: 2px dashed var(--btn-border);
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .qr-img {
+            width: 150px;
+            height: 150px;
+            display: block;
+        }
+        .qr-text {
+            font-size: 0.85rem;
+            color: #777;
+            margin-top: 10px;
         }
 
         .main-footer { background-image: linear-gradient(to top, #6e0000, var(--dark-red)); color: var(--text-color); text-align: center; padding: 40px 20px; position: relative; z-index: 2; }
@@ -424,8 +497,13 @@
 <body>
     
     <div class="preloader">
-        <i class="fas fa-futbol"></i>
-        <span>ULTRA TV</span> 
+        <div class="loader-icon-container">
+            <div class="ripple"></div>
+            <div class="ripple"></div>
+            <i class="fas fa-futbol"></i>
+        </div>
+        <div class="preloader-title">ULTRA TV</div>
+        <div class="preloader-subtitle">بوابتك لعالم الرياضة</div>
     </div>
 
 
@@ -435,7 +513,6 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html#features">المميزات</a></li>
-                    <li><a href="index.html#video">معاينة</a></li>
                     <li><a href="index.html#versions">الأنظمة</a></li>
                     <li><a href="index.html#faq">الأسئلة</a></li>
                     <li><a href="privacy.html">سياسة الخصوصية</a></li>
@@ -469,22 +546,6 @@
                     <div class="feature-item hidden"><div class="feature-icon"><i class="fas fa-signal"></i></div><h3>جودة عالية</h3><p>استمتع بمشاهدة فائقة الوضوح HD وبدون تقطيع لتجربة لا مثيل لها.</p></div>
                     <div class="feature-item hidden"><div class="feature-icon"><i class="fas fa-mobile-alt"></i></div><h3>سهل الاستخدام</h3><p>واجهة عصرية وبسيطة تتيح لك الوصول إلى ما تريد بأسرع وقت ممكن.</p></div>
                 </div>
-            </div>
-        </section>
-
-        <section class="video-showcase" id="video">
-            <div class="container">
-                <h2 class="hidden">معاينة حية</h2>
-                <div class="video-wrapper hidden">
-                    <video class="promo-video" autoplay muted loop playsinline poster="https://i.imgur.com/cy7uUU9.jpeg">
-                        <source src="https://media.istockphoto.com/id/1364367332/video/abstract-background-with-interweaving-of-colored-lines.mp4?s=mp4-640x640-is&k=20&c=6a7yXy_q-XzQJzQZzQZzQZzQZzQZzQZzQZzQZzQZzQ=" type="video/mp4">
-                        متصفحك لا يدعم الفيديو.
-                    </video>
-                    <div class="video-overlay">
-                        <i class="fas fa-play-circle play-icon"></i>
-                    </div>
-                </div>
-                <div class="tv-stand hidden"></div>
             </div>
         </section>
 
@@ -596,6 +657,9 @@
                 <div class="download-card">
                     <span class="card-badge">الأكثر شيوعاً</span>
                     <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+                    
+                    <div class="version-badge"><i class="fas fa-code-branch"></i> الإصدار v2.1x</div>
+
                     <h3 class="card-title">للهاتف (Mobile)</h3>
                     <p class="card-desc">نسخة خفيفة وسريعة مخصصة للهواتف والأجهزة اللوحية بنظام أندرويد.</p>
                     <a href="/android" class="cta-button"><i class="fas fa-download"></i> تحميل APK</a>
@@ -604,10 +668,25 @@
                 <div class="download-card tv-card">
                     <span class="card-badge">نسخة التلفاز</span>
                     <div class="card-icon"><i class="fas fa-tv"></i></div>
+                    
+                    <div class="version-badge"><i class="fas fa-code-branch"></i> الإصدار v2.1x</div>
+
                     <h3 class="card-title">للتلفاز (Smart TV)</h3>
                     <p class="card-desc">واجهة مكيفة للشاشات الكبيرة، تدعم الريموت كونترول وأجهزة Android Box.</p>
                     <a href="/tv" class="cta-button"><i class="fas fa-download"></i> تحميل APK</a>
-                    <div class="qr-placeholder"><i class="fas fa-qrcode"></i> امسح الكود (قريباً)</div>
+                    
+                    <div class="qr-wrapper">
+                        <button class="qr-toggle-btn" id="qrToggleBtn">
+                            <i class="fas fa-qrcode"></i> عرض رمز الاستجابة السريع
+                        </button>
+                        
+                        <div class="qr-popup" id="qrPopup">
+                            <div class="qr-box">
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ultrav.me/tv" alt="QR Code" class="qr-img">
+                                <p class="qr-text">امسح الكود للتحميل</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -632,7 +711,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const preloader = document.querySelector('.preloader');
-            setTimeout(() => { if (preloader) { preloader.classList.add('hidden'); } }, 800); 
+            setTimeout(() => { if (preloader) { preloader.classList.add('hidden'); } }, 1200); 
 
             const header = document.querySelector('.main-header');
             const hamburger = document.querySelector('.hamburger');
@@ -755,7 +834,23 @@
                         setTimeout(() => { copyFeedback.classList.remove('visible'); }, 2000);
                     }).catch(err => { console.error('Failed to copy: ', err); }); 
                 }); 
-            } 
+            }
+            
+            // --- كود زر QR Code الجديد ---
+            const qrToggleBtn = document.getElementById('qrToggleBtn');
+            const qrPopup = document.getElementById('qrPopup');
+            
+            if(qrToggleBtn && qrPopup) {
+                qrToggleBtn.addEventListener('click', () => {
+                    qrPopup.classList.toggle('active');
+                    // تغيير نص الزر
+                    if(qrPopup.classList.contains('active')) {
+                        qrToggleBtn.innerHTML = '<i class="fas fa-times"></i> إخفاء رمز الاستجابة السريع';
+                    } else {
+                        qrToggleBtn.innerHTML = '<i class="fas fa-qrcode"></i> عرض رمز الاستجابة السريع';
+                    }
+                });
+            }
         }); 
     </script>
 </body>
