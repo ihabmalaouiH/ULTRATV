@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="قم بتحميل تطبيق ULTRA TV الآن واستمتع بمشاهدة مباشرة لجميع المباريات والقنوات العالمية بجودة عالية. نسخة متوفرة للهاتف وAndroid TV.">
     <meta name="keywords" content="ULTRA TV, تحميل, تطبيق, مشاهدة, مباريات, بث مباشر, قنوات, رياضة, APK, Android TV">
-    <title>تحميل تطبيق ULTRA TV</title>
+    <title>تحميل تطبيق ULTRA TV - الإصدار الذكي</title>
     
     <link rel="icon" href="https://ultrav.me/logo.png" type="image/png">
     
@@ -34,6 +34,7 @@
             --supported-color: #28a745;
             --partial-color: #ffc107;
             --unsupported-color: #dc3545;
+            --glass-bg: rgba(255, 255, 255, 0.95);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -113,16 +114,33 @@
         }
         .hero h1 { font-size: 4.5rem; font-weight: 900; color: var(--text-color); margin-bottom: 20px; }
         .hero p { font-size: 1.5rem; margin-bottom: 40px; max-width: 600px; }
+        
+        /* New: Smart TV Badge */
+        .tv-badge {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            padding: 8px 20px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.5);
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0px); } }
+
         .cta-button { background-color: var(--btn-bg); color: var(--btn-text); border: 2px solid var(--btn-border); padding: 15px 40px; font-size: 1.2rem; font-weight: 700; text-decoration: none; border-radius: 50px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 0 20px rgba(250, 162, 162, 0.5); display: inline-flex; align-items: center; justify-content: center; gap: 10px; }
         .cta-button:hover { background-color: var(--btn-text); color: var(--btn-bg); transform: translateY(-5px) scale(1.05); box-shadow: 0 8px 25px rgba(0,0,0,0.3); }
 
         section { position: relative; z-index: 2; }
         
-        .features, .screenshots, .installation-steps, .countdown, .versions, .faq, .downloader-code, .download-section { 
+        .features, .screenshots, .installation-steps, .countdown, .versions, .faq, .downloader-code, .download-section, .video-showcase { 
             padding: 100px 0; text-align: center; 
         }
         
-        .features h2, .screenshots h2, .installation-steps h2, .countdown h2, .versions h2, .faq h2, .downloader-code h2, .download-section h2 { 
+        .features h2, .screenshots h2, .installation-steps h2, .countdown h2, .versions h2, .faq h2, .downloader-code h2, .download-section h2, .video-showcase h2 { 
             font-size: 2.8rem; margin-bottom: 60px; 
         }
 
@@ -133,6 +151,58 @@
         .feature-icon { width: 70px; height: 70px; border-radius: 50%; background-color: rgba(135, 0, 0, 0.08); display: flex; align-items: center; justify-content: center; margin: 0 auto 25px auto; }
         .feature-item i { font-size: 2.5rem; color: var(--dark-red); margin-bottom: 0; }
         .feature-item h3 { font-size: 1.5rem; margin-bottom: 10px; }
+
+        /* --- New: قسم الفيديو (Unusual Video) --- */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(135, 0, 0, 0.3);
+            border: 4px solid var(--dark-text);
+            background: #000;
+        }
+        .video-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            border: 2px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            pointer-events: none;
+            z-index: 10;
+        }
+        .tv-stand {
+            width: 200px;
+            height: 20px;
+            background: #333;
+            margin: 0 auto;
+            border-radius: 0 0 20px 20px;
+            margin-top: -2px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .promo-video {
+            width: 100%;
+            display: block;
+            opacity: 0.8;
+            transition: opacity 0.5s;
+        }
+        .video-wrapper:hover .promo-video { opacity: 1; }
+        .video-overlay {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+            pointer-events: none;
+        }
+        .play-icon {
+            font-size: 4rem;
+            color: rgba(255,255,255,0.8);
+            filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+            animation: pulse-play 2s infinite;
+        }
+        @keyframes pulse-play { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
         
         /* --- العد التنازلي --- */
         .countdown h2 { margin-bottom: 40px; }
@@ -154,18 +224,16 @@
         .screenshot-wrapper:hover { transform: scale(1.1) rotate(0deg) !important; z-index: 3; }
 
         /* === قسم كود التحميل المباشر === */
-        /* .downloader-code { background-color: #ffffff; <-- تم الحذف } */
         .downloader-code { padding: 80px 0; }
         .downloader-code h2 { margin-bottom: 20px; }
         .downloader-code > .container > p { font-size: 1.1rem; margin-bottom: 40px; max-width: 600px; margin-inline: auto; color: #555; }
-        .code-display-box { background-color: #ffffff; /* تغيير الخلفية هنا لتكون بيضاء */ border: 1px solid var(--btn-border); border-radius: 15px; padding: 30px 40px; max-width: 500px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 5px 20px rgba(135, 0, 0, 0.07); /* تعديل الظل */ position: relative; }
+        .code-display-box { background-color: #ffffff; border: 1px solid var(--btn-border); border-radius: 15px; padding: 30px 40px; max-width: 500px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 5px 20px rgba(135, 0, 0, 0.07); position: relative; }
         .code-icon { font-size: 2rem; color: var(--dark-red); margin-left: 20px; }
         .code-text { font-size: 2.5rem; font-weight: 700; color: var(--dark-red); letter-spacing: 5px; flex-grow: 1; text-align: center; }
         .copy-btn-code { background: none; border: none; font-size: 1.8rem; cursor: pointer; color: var(--dark-red); padding: 10px; transition: color 0.3s ease; }
         .copy-btn-code:hover { color: #c82333; }
         .copy-feedback-code { position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background-color: var(--dark-text); color: white; padding: 5px 10px; border-radius: 5px; opacity: 0; transition: opacity 0.3s; font-size: 0.9rem; white-space: nowrap; }
         .copy-feedback-code.visible { opacity: 1; }
-        /* === نهاية كود التحميل === */
 
         /* === قسم كيفية التثبيت (APK) === */
         .installation-steps ol { list-style: none; padding: 0; max-width: 700px; margin: 0 auto; counter-reset: steps-counter; }
@@ -174,7 +242,6 @@
         .installation-steps li::before { counter-increment: steps-counter; content: counter(steps-counter); position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background-color: var(--dark-red); color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.2rem; }
         .step-content { display: flex; align-items: center; }
         .step-content i { font-size: 1.5rem; margin-left: 15px; color: var(--dark-red); opacity: 0.8; width: 25px; text-align: center; }
-        /* === نهاية كيفية التثبيت === */
         
         /* === تصميم جدول الإصدارات === */
         .table-container { max-width: 900px; margin: 0 auto; background-color: #fff; border: 1px solid rgba(135, 0, 0, 0.1); border-radius: 10px; box-shadow: 0 5px 20px rgba(135, 0, 0, 0.07); overflow: hidden; }
@@ -190,7 +257,6 @@
         .status-pill.status-full { color: var(--supported-color); background-color: rgba(40, 167, 69, 0.1); }
         .status-pill.status-limited { color: #b98900; background-color: rgba(255, 193, 7, 0.15); }
         .status-pill.status-unsupported { color: var(--unsupported-color); background-color: rgba(220, 53, 69, 0.1); }
-        /* === نهاية الإصدارات === */
 
         /* === تصميم الأسئلة الشائعة (FAQ) === */
         .faq-accordion { max-width: 800px; margin: 0 auto; }
@@ -202,18 +268,74 @@
         .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out, padding 0.3s ease-out; background-color: #fff; padding: 0 25px; color: #444; }
         .faq-answer p { padding: 0; text-align: right; line-height: 1.7; }
         .faq-question.active + .faq-answer { padding: 0 25px 20px 25px; }
-        /* === نهاية FAQ === */
         
-        /* === قسم التحميل المدمج === */
+        /* === NEW: قسم التحميل المطور (Professional Cards) === */
         .download-section > .container > p { font-size: 1.2rem; margin-bottom: 60px; max-width: 600px; margin-inline: auto; color: #555; }
-        .download-box-unified { background-color: #ffffff; border: 1px solid var(--btn-border); border-radius: 20px; box-shadow: 0 10px 40px rgba(135, 0, 0, 0.1); max-width: 900px; margin: 0 auto; display: flex; overflow: hidden; }
-        .download-option { flex: 1; padding: 50px 40px; display: flex; flex-direction: column; align-items: center; }
-        .download-option i { font-size: 3rem; color: var(--dark-red); margin-bottom: 20px; }
-        .download-option h3 { font-size: 1.8rem; margin-bottom: 15px; }
-        .download-option p { font-size: 1rem; color: #555; line-height: 1.6; margin-bottom: 30px; flex-grow: 1; }
-        .download-option .cta-button { width: 100%; }
-        .divider { width: 1px; background-color: rgba(135, 0, 0, 0.15); align-self: stretch; }
-        /* === نهاية قسم التحميل === */
+        .download-cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .download-card {
+            background-color: var(--glass-bg);
+            border: 2px solid transparent;
+            border-radius: 20px;
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .download-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(135, 0, 0, 0.15);
+            border-color: var(--btn-border);
+        }
+        .card-icon {
+            font-size: 3.5rem;
+            color: var(--dark-red);
+            margin-bottom: 20px;
+            background: rgba(135, 0, 0, 0.05);
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s;
+        }
+        .download-card:hover .card-icon { transform: scale(1.1); background: rgba(135, 0, 0, 0.1); }
+        .card-title { font-size: 1.8rem; margin-bottom: 10px; color: var(--dark-text); }
+        .card-desc { font-size: 1rem; color: #666; margin-bottom: 30px; line-height: 1.6; }
+        .card-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #28a745;
+            color: white;
+            font-size: 0.75rem;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: 700;
+        }
+        .tv-card .card-badge { background: #6f42c1; } /* لون مميز للتلفاز */
+        
+        .qr-placeholder {
+            margin-top: 15px;
+            font-size: 0.8rem;
+            color: #888;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: default;
+        }
 
         .main-footer { background-image: linear-gradient(to top, #6e0000, var(--dark-red)); color: var(--text-color); text-align: center; padding: 40px 20px; position: relative; z-index: 2; }
         .footer-links { margin-top: 15px; display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; }
@@ -266,9 +388,8 @@
             .main-header { padding: 15px 20px; }
             .cookie-banner { flex-direction: column; text-align: center; gap: 15px; }
             
-            .download-box-unified { flex-direction: column; }
-            .divider { width: 80%; height: 1px; margin: 0 auto; }
-            .download-option { padding: 40px; }
+            /* تعديل الموبايل للكروت */
+            .download-cards-container { flex-direction: column; align-items: center; }
 
             /* كود التحميل المباشر (موبايل) */
             .code-display-box { padding: 20px; flex-direction: column; gap: 15px; }
@@ -314,9 +435,9 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html#features">المميزات</a></li>
-                    <li><a href="index.html#screenshots">لقطات التطبيق</a></li>
-                    <li><a href="index.html#versions">الأنظمة المدعومة</a></li>
-                    <li><a href="index.html#faq">الأسئلة الشائعة</a></li>
+                    <li><a href="index.html#video">معاينة</a></li>
+                    <li><a href="index.html#versions">الأنظمة</a></li>
+                    <li><a href="index.html#faq">الأسئلة</a></li>
                     <li><a href="privacy.html">سياسة الخصوصية</a></li>
                     <li><a href="index.html#download">التحميل</a></li>
                 </ul>
@@ -331,6 +452,9 @@
 
     <main>
         <section class="hero" id="hero">
+            <div class="tv-badge hidden">
+                <i class="fas fa-tv"></i> متوفر الآن على الشاشات الذكية
+            </div>
             <h1>ULTRA TV</h1>
             <p>وجهتك الأولى لمشاهدة جميع المباريات والقنوات العالمية مباشرة بجودة عالية.</p>
             <a href="#download" class="cta-button">حمّل التطبيق الآن</a>
@@ -341,10 +465,26 @@
                 <h2 class="hidden">أهم المميزات</h2>
                 <div class="features-grid">
                     <div class="feature-item hidden"><div class="feature-icon"><i class="fas fa-futbol"></i></div><h3>مباريات مباشرة</h3><p>لا تفوّت أي مباراة. بث مباشر لجميع الدوريات والبطولات الكبرى.</p></div>
-                    <div class="feature-item hidden"><div class="feature-icon"><i class="fas fa-tv"></i></div><h3>آلاف القنوات</h3><p>مجموعة واسعة من القنوات الرياضية والترفيهية والإخبارية بين يديك.</p></div>
+                    <div class="feature-item hidden"><div class="feature-icon"><i class="fas fa-tv"></i></div><h3>Smart TV</h3><p>دعم كامل لشاشات Android TV وتجربة مشاهدة سينمائية.</p></div>
                     <div class="feature-item hidden"><div class="feature-icon"><i class="fas fa-signal"></i></div><h3>جودة عالية</h3><p>استمتع بمشاهدة فائقة الوضوح HD وبدون تقطيع لتجربة لا مثيل لها.</p></div>
                     <div class="feature-item hidden"><div class="feature-icon"><i class="fas fa-mobile-alt"></i></div><h3>سهل الاستخدام</h3><p>واجهة عصرية وبسيطة تتيح لك الوصول إلى ما تريد بأسرع وقت ممكن.</p></div>
                 </div>
+            </div>
+        </section>
+
+        <section class="video-showcase" id="video">
+            <div class="container">
+                <h2 class="hidden">معاينة حية</h2>
+                <div class="video-wrapper hidden">
+                    <video class="promo-video" autoplay muted loop playsinline poster="https://i.imgur.com/cy7uUU9.jpeg">
+                        <source src="https://media.istockphoto.com/id/1364367332/video/abstract-background-with-interweaving-of-colored-lines.mp4?s=mp4-640x640-is&k=20&c=6a7yXy_q-XzQJzQZzQZzQZzQZzQZzQZzQZzQZzQZzQ=" type="video/mp4">
+                        متصفحك لا يدعم الفيديو.
+                    </video>
+                    <div class="video-overlay">
+                        <i class="fas fa-play-circle play-icon"></i>
+                    </div>
+                </div>
+                <div class="tv-stand hidden"></div>
             </div>
         </section>
 
@@ -377,15 +517,16 @@
                 <ol class="hidden"> 
                     <li><div class="step-content"><i class="fas fa-cog"></i><span>بعد تحميل الملف، اذهب إلى <strong>إعدادات</strong> هاتفك.</span></div></li> 
                     <li><div class="step-content"><i class="fas fa-shield-alt"></i><span>ابحث عن قسم <strong>الأمان والخصوصية</strong>.</span></div></li> 
-                    <li><div class="step-content"><i class="fas fa-user-lock"></i><span>ابحث عن خيار <strong>"تثبيت التطبيقات غير المعروفة"</strong> أو "مصادر غير معروفة" وفعّله لتطبيق المتصفح أو مدير الملفات الذي تستخدمه.</span></div></li> 
-                    <li><div class="step-content"><i class="fas fa-download"></i><span>الآن، افتح الملف الذي قمت بتحميله (عادةً في مجلد التنزيلات) واضغط على <strong>"تثبيت"</strong>.</span></div></li> 
+                    <li><div class="step-content"><i class="fas fa-user-lock"></i><span>ابحث عن خيار <strong>"تثبيت التطبيقات غير المعروفة"</strong> وفعّله.</span></div></li> 
+                    <li><div class="step-content"><i class="fas fa-download"></i><span>الآن، افتح الملف واضغط على <strong>"تثبيت"</strong>.</span></div></li> 
                 </ol> 
             </div>
         </section>
+        
         <section class="downloader-code" id="downloader-code">
             <div class="container">
-                <h2 class="hidden">كود التحميل المباشر</h2>
-                <p class="hidden">أدخل هذا الكود في تطبيق Downloader على جهاز التلفاز لتحميل التطبيق مباشرة.</p>
+                <h2 class="hidden">كود التحميل المباشر للتلفاز</h2>
+                <p class="hidden">أدخل هذا الكود في تطبيق Downloader على جهاز Android TV.</p>
                 <div class="code-display-box hidden">
                     <i class="fas fa-download code-icon"></i>
                     <span class="code-text" id="appCode">1720012</span>
@@ -394,6 +535,7 @@
                 </div>
             </div>
         </section>
+
          <section class="versions" id="versions">
             <div class="container">
                 <h2 class="hidden">إصدارات أندرويد المدعومة</h2>
@@ -411,14 +553,13 @@
                             <tr><td>Android 11</td><td>Red Velvet Cake</td><td><span class="status-pill status-full"><i class="fas fa-check-circle"></i> مدعوم</span></td></tr>
                             <tr><td>Android 10</td><td>Queen Cake</td><td><span class="status-pill status-full"><i class="fas fa-check-circle"></i> مدعوم</span></td></tr>
                             <tr><td>Android 9</td><td>Pie</td><td><span class="status-pill status-limited"><i class="fas fa-exclamation-triangle"></i> دعم محدود</span></td></tr>
-                            <tr><td>Android 8</td><td>Oreo</td><td><span class="status-pill status-unsupported"><i class="fas fa-times-circle"></i> غير مدعوم</span></td></tr>
                         </tbody>
                         <tfoot>
                             <tr><td colspan="3">الحد الأدنى الموصى به: Android 10 أو أحدث للحصول على أفضل تجربة.</td></tr>
                         </tfoot>
                     </table>
                 </div>
-                <p class="versions-footer hidden" style="display: none;">الحد الأدنى الموصى به: Android 10 أو أحدث للحصول على أفضل تجربة.</p>
+                <p class="versions-footer hidden" style="display: none;">الحد الأدنى الموصى به: Android 10 أو أحدث.</p>
             </div>
         </section>
         
@@ -432,16 +573,12 @@
                         <div class="faq-answer" id="faq-a-1" role="region" aria-labelledby="faq-q-1"><p>نعم، التطبيق مجاني تمامًا ويهدف لتوفير الوصول إلى المحتوى الرياضي والترفيهي للجميع.</p></div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question" id="faq-q-2" aria-expanded="false" aria-controls="faq-a-2"><span>هل التطبيق آمن للتثبيت على جهازي؟</span><i class="fas fa-chevron-down"></i></button>
-                        <div class="faq-answer" id="faq-a-2" role="region" aria-labelledby="faq-q-2"><p>نعم، نحن نضمن أن ملف APK الخاص بنا خالٍ من أي برمجيات ضارة. نوصي دائمًا بالتحميل من موقعنا الرسمي فقط لضمان الأمان.</p></div>
+                        <button class="faq-question" id="faq-q-2" aria-expanded="false" aria-controls="faq-a-2"><span>هل يدعم التطبيق شاشات سمارت؟</span><i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer" id="faq-a-2" role="region" aria-labelledby="faq-q-2"><p>نعم، التطبيق يدعم جميع شاشات Android TV و Google TV وأجهزة TV Box.</p></div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question" id="faq-q-3" aria-expanded="false" aria-controls="faq-a-3"><span>لماذا التطبيق غير موجود على متجر Google Play؟</span><i class="fas fa-chevron-down"></i></button>
-                        <div class="faq-answer" id="faq-a-3" role="region" aria-labelledby="faq-q-3"><p>بسبب طبيعة المحتوى الذي يقدمه التطبيق، فإن سياسات متجر Google Play لا تسمح بنشره. لذلك، يتم توفيره كملف APK للتحميل المباشر.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" id="faq-q-4" aria-expanded="false" aria-controls="faq-a-4"><span>ماذا أفعل إذا واجهت مشكلة في التثبيت أو التشغيل؟</span><i class="fas fa-chevron-down"></i></button>
-                        <div class="faq-answer" id="faq-a-4" role="region" aria-labelledby="faq-q-4"><p>أولاً، تأكد من أنك تتبع خطوات التثبيت المذكورة في الأعلى، خاصة تفعيل خيار "تثبيت التطبيقات غير المعروفة". إذا استمرت المشكلة، تأكد من أن إصدار أندرويد لديك مدعوم (Android 9 أو أحدث).</p></div>
+                        <button class="faq-question" id="faq-q-3" aria-expanded="false" aria-controls="faq-a-3"><span>لماذا التطبيق غير موجود على متجر Play؟</span><i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer" id="faq-a-3" role="region" aria-labelledby="faq-q-3"><p>بسبب طبيعة المحتوى الذي يقدمه التطبيق، فإن سياسات المتاجر الرسمية قد لا تسمح بنشره.</p></div>
                     </div>
 
                 </div>
@@ -452,13 +589,26 @@
     
     <section class="download-section" id="download">
         <div class="container">
-            <h2 class="hidden">هل أنت جاهز للمشاهدة؟</h2>
-            <p class="hidden">قم بتحميل تطبيق ULTRA TV الآن واستمتع بعالم من الترفيه.</p>
+            <h2 class="hidden">اختر نسختك المفضلة</h2>
+            <p class="hidden">استمتع بالمشاهدة على هاتفك المحمول أو شاشة منزلك الذكية.</p>
             
-            <div class="download-box-unified hidden">
-                <div class="download-option"><i class="fas fa-mobile-alt"></i><h3>للهاتف (APK)</h3><p>نسخة مصممة للهواتف والأجهزة اللوحية التي تعمل بنظام أندرويد.</p><a href="/android" class="cta-button">تحميل الآن</a></div>
-                <div class="divider"></div>
-                <div class="download-option"><i class="fas fa-tv"></i><h3>للتلفاز (APK)</h3><p>نسخة خاصة مصممة للشاشات الكبيرة وأجهزة Android TV.</p><a href="/tv" class="cta-button">تحميل الآن</a></div>
+            <div class="download-cards-container hidden">
+                <div class="download-card">
+                    <span class="card-badge">الأكثر شيوعاً</span>
+                    <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 class="card-title">للهاتف (Mobile)</h3>
+                    <p class="card-desc">نسخة خفيفة وسريعة مخصصة للهواتف والأجهزة اللوحية بنظام أندرويد.</p>
+                    <a href="/android" class="cta-button"><i class="fas fa-download"></i> تحميل APK</a>
+                </div>
+
+                <div class="download-card tv-card">
+                    <span class="card-badge">نسخة التلفاز</span>
+                    <div class="card-icon"><i class="fas fa-tv"></i></div>
+                    <h3 class="card-title">للتلفاز (Smart TV)</h3>
+                    <p class="card-desc">واجهة مكيفة للشاشات الكبيرة، تدعم الريموت كونترول وأجهزة Android Box.</p>
+                    <a href="/tv" class="cta-button"><i class="fas fa-download"></i> تحميل APK</a>
+                    <div class="qr-placeholder"><i class="fas fa-qrcode"></i> امسح الكود (قريباً)</div>
+                </div>
             </div>
         </div>
     </section>
@@ -594,7 +744,7 @@
                 });
             });
 
-            // --- كود نسخ النص (الجديد والمحسن) ---
+            // --- كود نسخ النص ---
             const copyBtn = document.getElementById('copyBtn'); 
             const appCode = document.getElementById('appCode');
             const copyFeedback = document.getElementById('copyFeedback'); 
@@ -606,9 +756,7 @@
                     }).catch(err => { console.error('Failed to copy: ', err); }); 
                 }); 
             } 
-            // --- نهاية كود نسخ النص ---
-
-        }); // نهاية DOMContentLoaded
+        }); 
     </script>
 </body>
 </html>
