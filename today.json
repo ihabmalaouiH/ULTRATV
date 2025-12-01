@@ -60,6 +60,27 @@
     ]
   },
   {
+    "url": "https://www.ysscores.com/ar/match/4844260/FC-Arouca-vs-SC-Braga",
+    "info": {
+      "championship": "الدوري البرتغالي الممتاز",
+      "round": "12 - مباراة الذهاب",
+      "stadium": "الملعب البلدي أروكا",
+      "time": "09:15 مساءً",
+      "date": "الاثنين 01-12-2025"
+    },
+    "teams": {
+      "home": {
+        "name": "أروكا",
+        "logo": "https://imgs.ysscores.com/teams/128/8931690385659.png"
+      },
+      "away": {
+        "name": "سبورتينغ براغا",
+        "logo": "https://imgs.ysscores.com/teams/128/2631690385875.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "url": "https://www.ysscores.com/ar/match/4842433/Fenerbahce-vs-Galatasaray",
     "info": {
       "championship": "الدوري التركي الممتاز",
@@ -184,60 +205,6 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/93044207/Tunisia-vs-Syria",
-    "info": {
-      "championship": "كأس العرب",
-      "round": "1",
-      "stadium": "استاد أحمد بن علي",
-      "time": "02:00 مساءً",
-      "date": "الاثنين 01-12-2025"
-    },
-    "teams": {
-      "home": {
-        "name": "تونس",
-        "logo": "https://imgs.ysscores.com/teams/128/8201763117043.png"
-      },
-      "away": {
-        "name": "سوريا",
-        "logo": "https://imgs.ysscores.com/teams/128/1671763149753.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Xtra 1",
-        "commentator": "أحمد البلوشي"
-      },
-      {
-        "channel": "الكأس 1",
-        "commentator": "خالد الغول"
-      },
-      {
-        "channel": "الكأس 1",
-        "commentator": "سعود الحريري"
-      },
-      {
-        "channel": "أبو ظبي الرياضية 1",
-        "commentator": "أحمد الحامد"
-      },
-      {
-        "channel": "الكويت الرياضية",
-        "commentator": "إبراهيم الهشال"
-      },
-      {
-        "channel": "دبي الرياضية 1",
-        "commentator": "رؤوف خليف"
-      },
-      {
-        "channel": "منصة شاشا",
-        "commentator": "علي دراج"
-      },
-      {
-        "channel": "الجزائرية السادسة",
-        "commentator": "أمين رزاوي"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/38191101/Qatar-vs-Palestine",
     "info": {
       "championship": "كأس العرب",
@@ -292,28 +259,56 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/44365630/Talaea-El-Gaish-vs-Sekka-El-Hadid",
+    "url": "https://www.ysscores.com/ar/match/93044207/Tunisia-vs-Syria",
     "info": {
-      "championship": "كأس مصر",
-      "round": "دور الـ 32",
-      "stadium": "ستاد جهاز الرياضة العسكري",
-      "time": "06:30 مساءً",
+      "championship": "كأس العرب",
+      "round": "1",
+      "stadium": "استاد أحمد بن علي",
+      "time": "02:00 مساءً",
       "date": "الاثنين 01-12-2025"
     },
     "teams": {
       "home": {
-        "name": "طلائع الجيش",
-        "logo": "https://imgs.ysscores.com/teams/128/5871731000840.png"
+        "name": "تونس",
+        "logo": "https://imgs.ysscores.com/teams/128/8201763117043.png"
       },
       "away": {
-        "name": "السكة الحديد",
-        "logo": "https://imgs.ysscores.com/teams/128/8381696284624.png"
+        "name": "سوريا",
+        "logo": "https://imgs.ysscores.com/teams/128/1671763149753.png"
       }
     },
     "channels": [
       {
-        "channel": "ON Sport 2",
-        "commentator": "طارق حسن"
+        "channel": "beIN Xtra 1",
+        "commentator": "أحمد البلوشي"
+      },
+      {
+        "channel": "الكأس 1",
+        "commentator": "خالد الغول"
+      },
+      {
+        "channel": "الكأس 1",
+        "commentator": "سعود الحريري"
+      },
+      {
+        "channel": "أبو ظبي الرياضية 1",
+        "commentator": "أحمد الحامد"
+      },
+      {
+        "channel": "الكويت الرياضية",
+        "commentator": "إبراهيم الهشال"
+      },
+      {
+        "channel": "دبي الرياضية 1",
+        "commentator": "رؤوف خليف"
+      },
+      {
+        "channel": "منصة شاشا",
+        "commentator": "علي دراج"
+      },
+      {
+        "channel": "الجزائرية السادسة",
+        "commentator": "أمين رزاوي"
       }
     ]
   },
@@ -340,6 +335,32 @@
       {
         "channel": "ON Sport 1",
         "commentator": "محمد الكواليني"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/44365630/Talaea-El-Gaish-vs-Sekka-El-Hadid",
+    "info": {
+      "championship": "كأس مصر",
+      "round": "دور الـ 32",
+      "stadium": "ستاد جهاز الرياضة العسكري",
+      "time": "06:30 مساءً",
+      "date": "الاثنين 01-12-2025"
+    },
+    "teams": {
+      "home": {
+        "name": "طلائع الجيش",
+        "logo": "https://imgs.ysscores.com/teams/128/5871731000840.png"
+      },
+      "away": {
+        "name": "السكة الحديد",
+        "logo": "https://imgs.ysscores.com/teams/128/8381696284624.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 2",
+        "commentator": "طارق حسن"
       }
     ]
   }
