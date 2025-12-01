@@ -205,60 +205,6 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/38191101/Qatar-vs-Palestine",
-    "info": {
-      "championship": "كأس العرب",
-      "round": "1",
-      "stadium": "استاد البيت",
-      "time": "04:45 مساءً",
-      "date": "الاثنين 01-12-2025"
-    },
-    "teams": {
-      "home": {
-        "name": "قطر",
-        "logo": "https://imgs.ysscores.com/teams/128/3451763085544.png"
-      },
-      "away": {
-        "name": "فلسطين",
-        "logo": "https://imgs.ysscores.com/teams/128/9311763084802.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الجزائرية الرابعة",
-        "commentator": "علي جعفر"
-      },
-      {
-        "channel": "بي إن سبورت HD",
-        "commentator": "علي سعيد الكعبي"
-      },
-      {
-        "channel": "الكأس 1",
-        "commentator": "خليل البلوشي"
-      },
-      {
-        "channel": "الكأس 1",
-        "commentator": "سمير اليعقوبي"
-      },
-      {
-        "channel": "أبو ظبي الرياضية 1",
-        "commentator": "عيسى الحربين"
-      },
-      {
-        "channel": "دبي الرياضية 1",
-        "commentator": "أحمد الشحي"
-      },
-      {
-        "channel": "منصة شاشا",
-        "commentator": "فهد العتيبي"
-      },
-      {
-        "channel": "الكويت الرياضية",
-        "commentator": "راشد الدوسري"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/93044207/Tunisia-vs-Syria",
     "info": {
       "championship": "كأس العرب",
@@ -313,28 +259,56 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/44365630/Talaea-El-Gaish-vs-Sekka-El-Hadid",
+    "url": "https://www.ysscores.com/ar/match/38191101/Qatar-vs-Palestine",
     "info": {
-      "championship": "كأس مصر",
-      "round": "دور الـ 32",
-      "stadium": "ستاد جهاز الرياضة العسكري",
-      "time": "06:30 مساءً",
+      "championship": "كأس العرب",
+      "round": "1",
+      "stadium": "استاد البيت",
+      "time": "04:45 مساءً",
       "date": "الاثنين 01-12-2025"
     },
     "teams": {
       "home": {
-        "name": "طلائع الجيش",
-        "logo": "https://imgs.ysscores.com/teams/128/5871731000840.png"
+        "name": "قطر",
+        "logo": "https://imgs.ysscores.com/teams/128/3451763085544.png"
       },
       "away": {
-        "name": "السكة الحديد",
-        "logo": "https://imgs.ysscores.com/teams/128/8381696284624.png"
+        "name": "فلسطين",
+        "logo": "https://imgs.ysscores.com/teams/128/9311763084802.png"
       }
     },
     "channels": [
       {
-        "channel": "ON Sport 2",
-        "commentator": "طارق حسن"
+        "channel": "الجزائرية الرابعة",
+        "commentator": "علي جعفر"
+      },
+      {
+        "channel": "بي إن سبورت HD",
+        "commentator": "علي سعيد الكعبي"
+      },
+      {
+        "channel": "الكأس 1",
+        "commentator": "خليل البلوشي"
+      },
+      {
+        "channel": "الكأس 1",
+        "commentator": "سمير اليعقوبي"
+      },
+      {
+        "channel": "أبو ظبي الرياضية 1",
+        "commentator": "عيسى الحربين"
+      },
+      {
+        "channel": "دبي الرياضية 1",
+        "commentator": "أحمد الشحي"
+      },
+      {
+        "channel": "منصة شاشا",
+        "commentator": "فهد العتيبي"
+      },
+      {
+        "channel": "الكويت الرياضية",
+        "commentator": "راشد الدوسري"
       }
     ]
   },
@@ -361,6 +335,32 @@
       {
         "channel": "ON Sport 1",
         "commentator": "محمد الكواليني"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/44365630/Talaea-El-Gaish-vs-Sekka-El-Hadid",
+    "info": {
+      "championship": "كأس مصر",
+      "round": "دور الـ 32",
+      "stadium": "ستاد جهاز الرياضة العسكري",
+      "time": "06:30 مساءً",
+      "date": "الاثنين 01-12-2025"
+    },
+    "teams": {
+      "home": {
+        "name": "طلائع الجيش",
+        "logo": "https://imgs.ysscores.com/teams/128/5871731000840.png"
+      },
+      "away": {
+        "name": "السكة الحديد",
+        "logo": "https://imgs.ysscores.com/teams/128/8381696284624.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 2",
+        "commentator": "طارق حسن"
       }
     ]
   }
