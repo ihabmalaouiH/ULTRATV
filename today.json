@@ -205,60 +205,6 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/93044207/Tunisia-vs-Syria",
-    "info": {
-      "championship": "كأس العرب",
-      "round": "1",
-      "stadium": "استاد أحمد بن علي",
-      "time": "02:00 مساءً",
-      "date": "الاثنين 01-12-2025"
-    },
-    "teams": {
-      "home": {
-        "name": "تونس",
-        "logo": "https://imgs.ysscores.com/teams/128/8201763117043.png"
-      },
-      "away": {
-        "name": "سوريا",
-        "logo": "https://imgs.ysscores.com/teams/128/1671763149753.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Xtra 1",
-        "commentator": "أحمد البلوشي"
-      },
-      {
-        "channel": "الكأس 1",
-        "commentator": "خالد الغول"
-      },
-      {
-        "channel": "الكأس 1",
-        "commentator": "سعود الحريري"
-      },
-      {
-        "channel": "أبو ظبي الرياضية 1",
-        "commentator": "أحمد الحامد"
-      },
-      {
-        "channel": "الكويت الرياضية",
-        "commentator": "إبراهيم الهشال"
-      },
-      {
-        "channel": "دبي الرياضية 1",
-        "commentator": "رؤوف خليف"
-      },
-      {
-        "channel": "منصة شاشا",
-        "commentator": "علي دراج"
-      },
-      {
-        "channel": "الجزائرية السادسة",
-        "commentator": "أمين رزاوي"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/38191101/Qatar-vs-Palestine",
     "info": {
       "championship": "كأس العرب",
@@ -313,28 +259,56 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/41382534/Harras-El-Hodoud-vs-Ismaily-SC",
+    "url": "https://www.ysscores.com/ar/match/93044207/Tunisia-vs-Syria",
     "info": {
-      "championship": "كأس مصر",
-      "round": "دور الـ 32",
-      "stadium": "استاد حرس الحدود",
-      "time": "04:00 مساءً",
+      "championship": "كأس العرب",
+      "round": "1",
+      "stadium": "استاد أحمد بن علي",
+      "time": "02:00 مساءً",
       "date": "الاثنين 01-12-2025"
     },
     "teams": {
       "home": {
-        "name": "حرس الحدود",
-        "logo": "https://imgs.ysscores.com/teams/128/4381694082139.png"
+        "name": "تونس",
+        "logo": "https://imgs.ysscores.com/teams/128/8201763117043.png"
       },
       "away": {
-        "name": "الإسماعيلي",
-        "logo": "https://imgs.ysscores.com/teams/128/6781694082759.png"
+        "name": "سوريا",
+        "logo": "https://imgs.ysscores.com/teams/128/1671763149753.png"
       }
     },
     "channels": [
       {
-        "channel": "ON Sport 1",
-        "commentator": "محمد الكواليني"
+        "channel": "beIN Xtra 1",
+        "commentator": "أحمد البلوشي"
+      },
+      {
+        "channel": "الكأس 1",
+        "commentator": "خالد الغول"
+      },
+      {
+        "channel": "الكأس 1",
+        "commentator": "سعود الحريري"
+      },
+      {
+        "channel": "أبو ظبي الرياضية 1",
+        "commentator": "أحمد الحامد"
+      },
+      {
+        "channel": "الكويت الرياضية",
+        "commentator": "إبراهيم الهشال"
+      },
+      {
+        "channel": "دبي الرياضية 1",
+        "commentator": "رؤوف خليف"
+      },
+      {
+        "channel": "منصة شاشا",
+        "commentator": "علي دراج"
+      },
+      {
+        "channel": "الجزائرية السادسة",
+        "commentator": "أمين رزاوي"
       }
     ]
   },
@@ -361,6 +335,32 @@
       {
         "channel": "ON Sport 2",
         "commentator": "طارق حسن"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/41382534/Harras-El-Hodoud-vs-Ismaily-SC",
+    "info": {
+      "championship": "كأس مصر",
+      "round": "دور الـ 32",
+      "stadium": "استاد حرس الحدود",
+      "time": "04:00 مساءً",
+      "date": "الاثنين 01-12-2025"
+    },
+    "teams": {
+      "home": {
+        "name": "حرس الحدود",
+        "logo": "https://imgs.ysscores.com/teams/128/4381694082139.png"
+      },
+      "away": {
+        "name": "الإسماعيلي",
+        "logo": "https://imgs.ysscores.com/teams/128/6781694082759.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 1",
+        "commentator": "محمد الكواليني"
       }
     ]
   }
