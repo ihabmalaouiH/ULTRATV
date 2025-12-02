@@ -1,4 +1,4 @@
-name: Ultra TV 24/7 (Fixed)
+name: Ultra TV 24/7 (Final Fix)
 on:
   workflow_dispatch: # زر التشغيل اليدوي
 
@@ -8,14 +8,11 @@ jobs:
     timeout-minutes: 360 # 6 ساعات
 
     steps:
-    - name: Setup Tools
+    - name: Setup Tools & Fonts
       run: |
         sudo apt-get update
-        sudo apt-get install -y ffmpeg python3 wget
-
-    - name: Download Font (Fixed Link)
-      # تم تصحيح الرابط هنا ليعمل بنجاح
-      run: wget https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/Roboto-Bold.ttf -O font.ttf
+        # هنا نثبت الخط رسمياً من النظام (fonts-roboto) لضمان وجوده دائماً
+        sudo apt-get install -y ffmpeg python3 fonts-roboto
 
     - name: Start Broadcast
       run: |
@@ -25,7 +22,7 @@ jobs:
         python3 -m http.server 8080 &
         
         # 2. تشغيل النفق (Serveo)
-        # هام: إذا لم يعمل الرابط، غير كلمة ihab-ultra-tv لاسم آخر
+        # ملاحظة: غير اسم الرابط (ihab-ultra-tv) إذا كان محجوزاً
         ssh -o StrictHostKeyChecking=no -R ihab-ultra-tv:80:localhost:8080 serveo.net &
         sleep 10
         
@@ -35,6 +32,11 @@ jobs:
         echo "-----------------------------------------------------"
         
         # 4. تشغيل البث (FFmpeg)
-        # ملاحظة: تأكد أن رابط القناة (lionzhd...) ما زال يعمل، وإلا استبدله
+        # ملاحظة: تم تحديث مسار الخط ليقرأ من ملفات النظام مباشرة
         ffmpeg -re -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5 -timeout 20000000 \
-        -i "
+        -i "http://lionzhd.com:2095/wadaniab/ww050732/237456" \
+        -vf "drawtext=text='Ultra.me':fontfile='/usr/share/fonts/truetype/roboto/hinted/Roboto-Bold.ttf':fontsize=40:fontcolor=white:alpha=0.5:x=(w-tw)/2:y=h-th-20:shadowcolor=black:shadowx=2:shadowy=2" \
+        -c:v libx264 -preset ultrafast -crf 28 -maxrate 2500k -bufsize 5000k \
+        -c:a aac -ar 44100 -b:a 128k \
+        -f hls -hls_time 4 -hls_list_size 5 -hls_flags delete_segments \
+        -hls_segment_filename "segment_%03d.ts" ihabTV.m3u8
