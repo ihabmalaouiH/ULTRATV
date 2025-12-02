@@ -1,0 +1,43 @@
+name: Ultra TV 24/7 (6 Hours Run)
+on:
+  workflow_dispatch: # زر التشغيل اليدوي
+
+jobs:
+  stream:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360 # أقصى مدة 6 ساعات
+
+    steps:
+    - name: Setup Tools
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y ffmpeg python3 wget
+
+    - name: Download Font
+      run: wget https://github.com/google/fonts/raw/main/apache/roboto/Roboto-Bold.ttf -O font.ttf
+
+    - name: Start Broadcast
+      run: |
+        # 1. تشغيل السيرفر الداخلي
+        mkdir stream
+        cd stream
+        python3 -m http.server 8080 &
+        
+        # 2. تشغيل النفق (Serveo) للحصول على رابط
+        # ملاحظة: غير كلمة ultra-tv-live لاسم فريد خاص بك
+        ssh -o StrictHostKeyChecking=no -R ultra-tv-live:80:localhost:8080 serveo.net &
+        sleep 10
+        
+        # 3. عرض الرابط في السجلات
+        echo "-----------------------------------------------------"
+        echo " YOUR LINK: https://ultra-tv-live.serveo.net/ihabTV.m3u8 "
+        echo "-----------------------------------------------------"
+        
+        # 4. تشغيل البث (FFmpeg)
+        ffmpeg -re -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5 -timeout 20000000 \
+        -i "http://lionzhd.com:2095/wadaniab/ww050732/237456" \
+        -vf "drawtext=text='Ultra.me':fontfile='../font.ttf':fontsize=40:fontcolor=white:alpha=0.5:x=(w-tw)/2:y=h-th-20:shadowcolor=black:shadowx=2:shadowy=2" \
+        -c:v libx264 -preset ultrafast -crf 28 -maxrate 2500k -bufsize 5000k \
+        -c:a aac -ar 44100 -b:a 128k \
+        -f hls -hls_time 4 -hls_list_size 5 -hls_flags delete_segments \
+        -hls_segment_filename "segment_%03d.ts" ihabTV.m3u8
