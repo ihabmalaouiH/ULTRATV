@@ -14,6 +14,7 @@
       }
     ]
   },
+  
   {
     "team1Name": "مصر",
     "team1Logo": "https://imgs.ysscores.com/teams/128/9301763071949.png",
@@ -21,9 +22,13 @@
     "team2Logo": "https://imgs.ysscores.com/teams/128/7891763081821.png",
     "startTime": 1764685800,
     "league": "كأس العرب",
-    "channel": "MBC Masr 2",
-    "commentator": "مدحت شلبي",
-    "servers": []
+    "channel": "beIN SPORTS",
+    "commentator": "حفيظ دراجي",
+    "servers": [
+      {
+        "Hd": "http://vlc.news:9000/live/ebrr3e19vm6m/ss9i3z1le3bz/350869.m3u8"
+      }
+    ]
   },
   {
     "team1Name": "مونشنغلادباخ",
