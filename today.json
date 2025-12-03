@@ -1072,6 +1072,27 @@
     "channels": []
   },
   {
+    "url": "https://www.ysscores.com/ar/match/5057229/Pontevedra-CF-vs-SD-Eibar",
+    "info": {
+      "championship": "كأس ملك إسبانيا",
+      "round": "الدور الثاني",
+      "stadium": "استاد دي باسارون",
+      "time": "09:00 مساءً",
+      "date": "الأربعاء 03-12-2025"
+    },
+    "teams": {
+      "home": {
+        "name": "بونتيفيدرا",
+        "logo": "https://imgs.ysscores.com/teams/128/3041728755690.png"
+      },
+      "away": {
+        "name": "ايبار",
+        "logo": "https://imgs.ysscores.com/teams/128/9271690825609.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "url": "https://www.ysscores.com/ar/match/5057236/Torrent-CF-vs-Real-Betis-Balompié",
     "info": {
       "championship": "كأس ملك إسبانيا",
@@ -1096,27 +1117,6 @@
         "commentator": "غير مدرج"
       }
     ]
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/5057229/Pontevedra-CF-vs-SD-Eibar",
-    "info": {
-      "championship": "كأس ملك إسبانيا",
-      "round": "الدور الثاني",
-      "stadium": "استاد دي باسارون",
-      "time": "09:00 مساءً",
-      "date": "الأربعاء 03-12-2025"
-    },
-    "teams": {
-      "home": {
-        "name": "بونتيفيدرا",
-        "logo": "https://imgs.ysscores.com/teams/128/3041728755690.png"
-      },
-      "away": {
-        "name": "ايبار",
-        "logo": "https://imgs.ysscores.com/teams/128/9271690825609.png"
-      }
-    },
-    "channels": []
   },
   {
     "url": "https://www.ysscores.com/ar/match/5057217/Cultural-Leonesa-vs-FC-Andorra",
@@ -1260,32 +1260,6 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/5057232/Reus-FC-Reddis-vs-Real-Sociedad",
-    "info": {
-      "championship": "كأس ملك إسبانيا",
-      "round": "الدور الثاني",
-      "stadium": "استاد بلدية ريوس",
-      "time": "09:00 مساءً",
-      "date": "الأربعاء 03-12-2025"
-    },
-    "teams": {
-      "home": {
-        "name": "ريوس ريديس",
-        "logo": "https://imgs.ysscores.com/teams/128/1301743689130.png"
-      },
-      "away": {
-        "name": "ريال سوسيداد",
-        "logo": "https://imgs.ysscores.com/teams/128/9441690196745.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "شاهد - VIP | رياضة",
-        "commentator": "فهد عريشي"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/5057216/CD-Cieza-vs-Levante-UD",
     "info": {
       "championship": "كأس ملك إسبانيا",
@@ -1308,6 +1282,32 @@
       {
         "channel": "شاهد - VIP | رياضة",
         "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/5057232/Reus-FC-Reddis-vs-Real-Sociedad",
+    "info": {
+      "championship": "كأس ملك إسبانيا",
+      "round": "الدور الثاني",
+      "stadium": "استاد بلدية ريوس",
+      "time": "09:00 مساءً",
+      "date": "الأربعاء 03-12-2025"
+    },
+    "teams": {
+      "home": {
+        "name": "ريوس ريديس",
+        "logo": "https://imgs.ysscores.com/teams/128/1301743689130.png"
+      },
+      "away": {
+        "name": "ريال سوسيداد",
+        "logo": "https://imgs.ysscores.com/teams/128/9441690196745.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "شاهد - VIP | رياضة",
+        "commentator": "فهد عريشي"
       }
     ]
   }
