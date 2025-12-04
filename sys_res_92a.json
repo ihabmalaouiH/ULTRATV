@@ -1,135 +1,57 @@
 [
   {
-    "team1Name": "الجزائر",
-    "team1Logo": "https://imgs.ysscores.com/teams/128/2341763066345.png",
-    "team2Name": "السودان",
-    "team2Logo": "https://imgs.ysscores.com/teams/128/6511763087361.png",
-    "startTime": 1764763200,
-    "league": "كأس العرب",
-    "channel": "beIN SPORTS",
-    "commentator": "عصام الشوالي",
-    "servers": [
-      {
-        "HD": "http://lionzhd.com:2095/wadaniab/ww050732/237456"
-      }
-    ]
-  },
-  {
     "team1Name": "العراق",
     "team1Logo": "https://imgs.ysscores.com/teams/128/8191763081021.png",
-    "team2Name": "البحرين",
-    "team2Logo": "https://imgs.ysscores.com/teams/128/9791763068542.png",
-    "startTime": 1764772200,
-    "league": "كأس العرب",
-    "channel": "beIN SPORTS",
-    "commentator": "حفيظ دراجي",
-    "servers": [
-      {
-        "HD": "https://live.ultrav.me/index.m3u8"
-      }
-    ]
+    "team2Name": "اليمن",
+    "team2Logo": "https://imgs.ysscores.com/teams/128/621763118201.png",
+    "startTime": 1764848700,
+    "league": "كأس الخليج تحت 23 سنة",
+    "channel": "الكأس 3",
+    "commentator": "جابر المري",
+    "servers": []
   },
   {
-    "team1Name": "نابولي",
-    "team1Logo": "https://imgs.ysscores.com/teams/128/9521720636634.png",
-    "team2Name": "كالياري",
-    "team2Logo": "https://imgs.ysscores.com/teams/128/7311690283001.png",
-    "startTime": 1764781200,
+    "team1Name": "الإمارات",
+    "team1Logo": "https://imgs.ysscores.com/teams/128/9431763117463.png",
+    "team2Name": "عُمان",
+    "team2Logo": "https://imgs.ysscores.com/teams/128/7281763084559.png",
+    "startTime": 1764849600,
+    "league": "كأس الخليج تحت 23 سنة",
+    "channel": "الكأس 4",
+    "commentator": "قاسم الشمري",
+    "servers": []
+  },
+  {
+    "team1Name": "فلسطين",
+    "team1Logo": "https://imgs.ysscores.com/teams/128/9311763084802.png",
+    "team2Name": "تونس",
+    "team2Logo": "https://imgs.ysscores.com/teams/128/8201763117043.png",
+    "startTime": 1764858600,
+    "league": "كأس العرب",
+    "channel": "beIN SPORTS",
+    "commentator": "علي محمد علي",
+    "servers": []
+  },
+  {
+    "team1Name": "مان يونايتد",
+    "team1Logo": "https://imgs.ysscores.com/teams/128/4871690119302.png",
+    "team2Name": "وست هام",
+    "team2Logo": "https://imgs.ysscores.com/teams/128/7191690118603.png",
+    "startTime": 1764878400,
+    "league": "الدوري الإنجليزي الممتاز",
+    "channel": "beIN SPORTS 1",
+    "commentator": "عامر الخوذيري",
+    "servers": []
+  },
+  {
+    "team1Name": "لاتسيو",
+    "team1Logo": "https://imgs.ysscores.com/teams/128/5111690283002.png",
+    "team2Name": "ميلان",
+    "team2Logo": "https://imgs.ysscores.com/teams/128/3181690283002.png",
+    "startTime": 1764878400,
     "league": "كأس إيطاليا",
     "channel": "MBC Action",
-    "commentator": "غازي العمري",
-    "servers": []
-  },
-  {
-    "team1Name": "الأردن",
-    "team1Logo": "https://imgs.ysscores.com/teams/128/1821763081406.png",
-    "team2Name": "الإمارات",
-    "team2Logo": "https://imgs.ysscores.com/teams/128/9431763117463.png",
-    "startTime": 1764781200,
-    "league": "كأس العرب",
-    "channel": "beIN SPORTS",
-    "commentator": "عامر الخوذيري",
-    "servers": [
-      {
-        "HD": "https://live.ultrav.me/index.m3u8"
-      }
-    ]
-  },
-  {
-    "team1Name": "أتلتيك بلباو",
-    "team1Logo": "https://imgs.ysscores.com/teams/128/1061690197944.png",
-    "team2Name": "ريال مدريد",
-    "team2Logo": "https://imgs.ysscores.com/teams/128/1871690196746.png",
-    "startTime": 1764784800,
-    "league": "الدوري الإسباني",
-    "channel": "beIN SPORTS 1",
-    "commentator": "علي سعيد الكعبي",
-    "servers": []
-  },
-  {
-    "team1Name": "بيرنلي",
-    "team1Logo": "https://imgs.ysscores.com/teams/128/7301690118156.png",
-    "team2Name": "كريستال بالاس",
-    "team2Logo": "https://imgs.ysscores.com/teams/128/6121690118883.png",
-    "startTime": 1764790200,
-    "league": "الدوري الإنجليزي الممتاز",
-    "channel": "beIN SPORTS 4",
-    "commentator": "أحمد عبده",
-    "servers": []
-  },
-  {
-    "team1Name": "برايتون",
-    "team1Logo": "https://imgs.ysscores.com/teams/128/2271696710594.png",
-    "team2Name": "أستون فيلا",
-    "team2Logo": "https://imgs.ysscores.com/teams/128/9921723414870.png",
-    "startTime": 1764790200,
-    "league": "الدوري الإنجليزي الممتاز",
-    "channel": "beIN SPORTS 3",
-    "commentator": "نوفل باشي",
-    "servers": []
-  },
-  {
-    "team1Name": "وولفرهامبتون",
-    "team1Logo": "https://imgs.ysscores.com/teams/128/9631690118479.png",
-    "team2Name": "نوتينغهام",
-    "team2Logo": "https://imgs.ysscores.com/teams/128/7741690119007.png",
-    "startTime": 1764790200,
-    "league": "الدوري الإنجليزي الممتاز",
-    "channel": "beIN SPORTS 5",
-    "commentator": "باسم الزير",
-    "servers": []
-  },
-  {
-    "team1Name": "أرسنال",
-    "team1Logo": "https://imgs.ysscores.com/teams/128/1701690118820.png",
-    "team2Name": "برينتفورد",
-    "team2Logo": "https://imgs.ysscores.com/teams/128/4791690118957.png",
-    "startTime": 1764790200,
-    "league": "الدوري الإنجليزي الممتاز",
-    "channel": "beIN SPORTS 2",
-    "commentator": "حسن العيدروس",
-    "servers": []
-  },
-  {
-    "team1Name": "ليدز يونايتد",
-    "team1Logo": "https://imgs.ysscores.com/teams/128/4691690458244.png",
-    "team2Name": "تشيلسي",
-    "team2Logo": "https://imgs.ysscores.com/teams/128/2571690118280.png",
-    "startTime": 1764792900,
-    "league": "الدوري الإنجليزي الممتاز",
-    "channel": "beIN SPORTS 6",
-    "commentator": "عبدالله الغامدي",
-    "servers": []
-  },
-  {
-    "team1Name": "ليفربول",
-    "team1Logo": "https://imgs.ysscores.com/teams/128/4081724601375.png",
-    "team2Name": "سندرلاند",
-    "team2Logo": "https://imgs.ysscores.com/teams/128/10001690823905.png",
-    "startTime": 1764792900,
-    "league": "الدوري الإنجليزي الممتاز",
-    "channel": "beIN SPORTS 1",
-    "commentator": "عامر الخوذيري",
+    "commentator": "محمد أبو كبده",
     "servers": []
   }
 ]
