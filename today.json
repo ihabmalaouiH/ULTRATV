@@ -243,27 +243,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/49517950/AS-Khroub-vs-Olympique-Akbou",
-    "info": {
-      "championship": "كأس الجزائر",
-      "round": "دور الـ 64",
-      "stadium": "ملعب عبد الحميد حمداني",
-      "time": "02:00 مساءً",
-      "date": "الخميس 04-12-2025"
-    },
-    "teams": {
-      "home": {
-        "name": "جمعية الخروب",
-        "logo": "https://imgs.ysscores.com/teams/128/141744506037.png"
-      },
-      "away": {
-        "name": "أولمبيك أقبو",
-        "logo": "https://imgs.ysscores.com/teams/128/5351721202195.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/75779644/NC-Magra-vs-USM-Alger",
     "info": {
       "championship": "كأس الجزائر",
@@ -288,6 +267,27 @@
         "commentator": "غير مدرج"
       }
     ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/49517950/AS-Khroub-vs-Olympique-Akbou",
+    "info": {
+      "championship": "كأس الجزائر",
+      "round": "دور الـ 64",
+      "stadium": "ملعب عبد الحميد حمداني",
+      "time": "02:00 مساءً",
+      "date": "الخميس 04-12-2025"
+    },
+    "teams": {
+      "home": {
+        "name": "جمعية الخروب",
+        "logo": "https://imgs.ysscores.com/teams/128/141744506037.png"
+      },
+      "away": {
+        "name": "أولمبيك أقبو",
+        "logo": "https://imgs.ysscores.com/teams/128/5351721202195.png"
+      }
+    },
+    "channels": []
   },
   {
     "url": "https://www.ysscores.com/ar/match/14800626/JS-Kabylie-vs-MB-Hassi-Messaoud",
@@ -445,6 +445,68 @@
     ]
   },
   {
+    "url": "https://www.ysscores.com/ar/match/57879572/Palestine-vs-Tunisia",
+    "info": {
+      "championship": "كأس العرب",
+      "round": "2",
+      "stadium": "استاد لوسيل",
+      "time": "03:30 مساءً",
+      "date": "الخميس 04-12-2025"
+    },
+    "teams": {
+      "home": {
+        "name": "فلسطين",
+        "logo": "https://imgs.ysscores.com/teams/128/9311763084802.png"
+      },
+      "away": {
+        "name": "تونس",
+        "logo": "https://imgs.ysscores.com/teams/128/8201763117043.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت HD",
+        "commentator": "علي محمد علي"
+      },
+      {
+        "channel": "الكأس 1",
+        "commentator": "سمير المعيرفي"
+      },
+      {
+        "channel": "الكأس 1",
+        "commentator": "يزن اللبابنة"
+      },
+      {
+        "channel": "دبي الرياضية 1",
+        "commentator": "رؤوف خليف"
+      },
+      {
+        "channel": "أبو ظبي الرياضية 1",
+        "commentator": "عامر عبدالله"
+      },
+      {
+        "channel": "الشارقة الرياضية",
+        "commentator": "محمد الهنائي"
+      },
+      {
+        "channel": "منصة شاشا",
+        "commentator": "هاني الشهري"
+      },
+      {
+        "channel": "عمان الرياضية",
+        "commentator": "شبيب الحبسي"
+      },
+      {
+        "channel": "الكويت الرياضية",
+        "commentator": "محمد العتيبي"
+      },
+      {
+        "channel": "الجزائرية السادسة",
+        "commentator": "بلال بيناري"
+      }
+    ]
+  },
+  {
     "url": "https://www.ysscores.com/ar/match/23468090/Syria-vs-Qatar",
     "info": {
       "championship": "كأس العرب",
@@ -507,68 +569,6 @@
       {
         "channel": "الجزائرية الأولى",
         "commentator": "وليد فرحاني"
-      }
-    ]
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/57879572/Palestine-vs-Tunisia",
-    "info": {
-      "championship": "كأس العرب",
-      "round": "2",
-      "stadium": "استاد لوسيل",
-      "time": "03:30 مساءً",
-      "date": "الخميس 04-12-2025"
-    },
-    "teams": {
-      "home": {
-        "name": "فلسطين",
-        "logo": "https://imgs.ysscores.com/teams/128/9311763084802.png"
-      },
-      "away": {
-        "name": "تونس",
-        "logo": "https://imgs.ysscores.com/teams/128/8201763117043.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت HD",
-        "commentator": "علي محمد علي"
-      },
-      {
-        "channel": "الكأس 1",
-        "commentator": "سمير المعيرفي"
-      },
-      {
-        "channel": "الكأس 1",
-        "commentator": "يزن اللبابنة"
-      },
-      {
-        "channel": "دبي الرياضية 1",
-        "commentator": "رؤوف خليف"
-      },
-      {
-        "channel": "أبو ظبي الرياضية 1",
-        "commentator": "عامر عبدالله"
-      },
-      {
-        "channel": "الشارقة الرياضية",
-        "commentator": "محمد الهنائي"
-      },
-      {
-        "channel": "منصة شاشا",
-        "commentator": "هاني الشهري"
-      },
-      {
-        "channel": "عمان الرياضية",
-        "commentator": "شبيب الحبسي"
-      },
-      {
-        "channel": "الكويت الرياضية",
-        "commentator": "محمد العتيبي"
-      },
-      {
-        "channel": "الجزائرية السادسة",
-        "commentator": "بلال بيناري"
       }
     ]
   },
@@ -641,32 +641,6 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/5046367/Yesil-Yalova-FK-Spor-Kulübü-vs-Gaziantep-FK",
-    "info": {
-      "championship": "كأس تركيا",
-      "round": "الدور الرابع",
-      "stadium": "يالوفا أتاتورك",
-      "time": "11:00 صباحاً",
-      "date": "الخميس 04-12-2025"
-    },
-    "teams": {
-      "home": {
-        "name": "ييسيل يالوفا",
-        "logo": "https://imgs.ysscores.com/teams/128/7891730214875.png"
-      },
-      "away": {
-        "name": "غازي عنتاب",
-        "logo": "https://imgs.ysscores.com/teams/128/3061690127435.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "A Spor",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/5046381/Igdir-FK-vs-Orduspor-1967-SK",
     "info": {
       "championship": "كأس تركيا",
@@ -693,22 +667,22 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/5046375/Corum-FK-vs-Alanyaspor",
+    "url": "https://www.ysscores.com/ar/match/5046367/Yesil-Yalova-FK-Spor-Kulübü-vs-Gaziantep-FK",
     "info": {
       "championship": "كأس تركيا",
       "round": "الدور الرابع",
-      "stadium": "استاد كوروم",
-      "time": "06:30 مساءً",
+      "stadium": "يالوفا أتاتورك",
+      "time": "11:00 صباحاً",
       "date": "الخميس 04-12-2025"
     },
     "teams": {
       "home": {
-        "name": "تشوروم",
-        "logo": "https://imgs.ysscores.com/teams/128/3371700671197.png"
+        "name": "ييسيل يالوفا",
+        "logo": "https://imgs.ysscores.com/teams/128/7891730214875.png"
       },
       "away": {
-        "name": "ألانيا سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/9541690127467.png"
+        "name": "غازي عنتاب",
+        "logo": "https://imgs.ysscores.com/teams/128/3061690127435.png"
       }
     },
     "channels": [
@@ -738,6 +712,32 @@
       }
     },
     "channels": []
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/5046375/Corum-FK-vs-Alanyaspor",
+    "info": {
+      "championship": "كأس تركيا",
+      "round": "الدور الرابع",
+      "stadium": "استاد كوروم",
+      "time": "06:30 مساءً",
+      "date": "الخميس 04-12-2025"
+    },
+    "teams": {
+      "home": {
+        "name": "تشوروم",
+        "logo": "https://imgs.ysscores.com/teams/128/3371700671197.png"
+      },
+      "away": {
+        "name": "ألانيا سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/9541690127467.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "A Spor",
+        "commentator": "غير مدرج"
+      }
+    ]
   },
   {
     "url": "https://www.ysscores.com/ar/match/62374449/Al-Ahli-SC-Libya-vs-Al-Ahly-SC",
@@ -792,6 +792,27 @@
     ]
   },
   {
+    "url": "https://www.ysscores.com/ar/match/5057228/SD-Ponferradina-vs-Racing-Santander",
+    "info": {
+      "championship": "كأس ملك إسبانيا",
+      "round": "الدور الثاني",
+      "stadium": "ستاد إل تورالين",
+      "time": "08:00 مساءً",
+      "date": "الخميس 04-12-2025"
+    },
+    "teams": {
+      "home": {
+        "name": "بونفيرادينا",
+        "logo": "https://imgs.ysscores.com/teams/128/671698789232.png"
+      },
+      "away": {
+        "name": "راسينغ",
+        "logo": "https://imgs.ysscores.com/teams/128/3011761516113.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "url": "https://www.ysscores.com/ar/match/5057235/CD-Tenerife-vs-Granada-CF",
     "info": {
       "championship": "كأس ملك إسبانيا",
@@ -818,25 +839,30 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/5057228/SD-Ponferradina-vs-Racing-Santander",
+    "url": "https://www.ysscores.com/ar/match/5057234/UE-Sant-Andreu-vs-Celta-de-Vigo",
     "info": {
       "championship": "كأس ملك إسبانيا",
       "round": "الدور الثاني",
-      "stadium": "ستاد إل تورالين",
-      "time": "08:00 مساءً",
+      "stadium": "إستاد نارسيس سالا",
+      "time": "09:00 مساءً",
       "date": "الخميس 04-12-2025"
     },
     "teams": {
       "home": {
-        "name": "بونفيرادينا",
-        "logo": "https://imgs.ysscores.com/teams/128/671698789232.png"
+        "name": "سانت اندرو",
+        "logo": "https://imgs.ysscores.com/teams/128/8171728755625.png"
       },
       "away": {
-        "name": "راسينغ",
-        "logo": "https://imgs.ysscores.com/teams/128/3011761516113.png"
+        "name": "سيلتا فيغو",
+        "logo": "https://imgs.ysscores.com/teams/128/9611690196747.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "شاهد - VIP | رياضة",
+        "commentator": "محمد الخامسي"
+      }
+    ]
   },
   {
     "url": "https://www.ysscores.com/ar/match/5057213/CD-Atlético-Baleares-vs-RCD-Espanyol-Barcelona",
@@ -861,32 +887,6 @@
       {
         "channel": "شاهد - VIP | رياضة",
         "commentator": "فهد الدريبي"
-      }
-    ]
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/5057234/UE-Sant-Andreu-vs-Celta-de-Vigo",
-    "info": {
-      "championship": "كأس ملك إسبانيا",
-      "round": "الدور الثاني",
-      "stadium": "إستاد نارسيس سالا",
-      "time": "09:00 مساءً",
-      "date": "الخميس 04-12-2025"
-    },
-    "teams": {
-      "home": {
-        "name": "سانت اندرو",
-        "logo": "https://imgs.ysscores.com/teams/128/8171728755625.png"
-      },
-      "away": {
-        "name": "سيلتا فيغو",
-        "logo": "https://imgs.ysscores.com/teams/128/9611690196747.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "شاهد - VIP | رياضة",
-        "commentator": "محمد الخامسي"
       }
     ]
   },
