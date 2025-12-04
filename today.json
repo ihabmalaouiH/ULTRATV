@@ -693,27 +693,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/5046377/Fethiyespor-vs-Bandirmaspor",
-    "info": {
-      "championship": "كأس تركيا",
-      "round": "الدور الرابع",
-      "stadium": "ملعب فتحية البلدي",
-      "time": "11:30 صباحاً",
-      "date": "الخميس 04-12-2025"
-    },
-    "teams": {
-      "home": {
-        "name": "فتحي سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/3911717937458.png"
-      },
-      "away": {
-        "name": "بانديرما سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/121700667489.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/5046375/Corum-FK-vs-Alanyaspor",
     "info": {
       "championship": "كأس تركيا",
@@ -740,6 +719,27 @@
     ]
   },
   {
+    "url": "https://www.ysscores.com/ar/match/5046377/Fethiyespor-vs-Bandirmaspor",
+    "info": {
+      "championship": "كأس تركيا",
+      "round": "الدور الرابع",
+      "stadium": "ملعب فتحية البلدي",
+      "time": "11:30 صباحاً",
+      "date": "الخميس 04-12-2025"
+    },
+    "teams": {
+      "home": {
+        "name": "فتحي سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/3911717937458.png"
+      },
+      "away": {
+        "name": "بانديرما سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/121700667489.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "url": "https://www.ysscores.com/ar/match/62374449/Al-Ahli-SC-Libya-vs-Al-Ahly-SC",
     "info": {
       "championship": "كأس ليبيا",
@@ -758,7 +758,12 @@
         "logo": "https://imgs.ysscores.com/teams/128/5691692543045.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "LibyaWTV",
+        "commentator": "غير مدرج"
+      }
+    ]
   },
   {
     "url": "https://www.ysscores.com/ar/match/92912655/El-Gouna-FC-vs-Petrol-Asyut",
@@ -834,32 +839,6 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/5057234/UE-Sant-Andreu-vs-Celta-de-Vigo",
-    "info": {
-      "championship": "كأس ملك إسبانيا",
-      "round": "الدور الثاني",
-      "stadium": "إستاد نارسيس سالا",
-      "time": "09:00 مساءً",
-      "date": "الخميس 04-12-2025"
-    },
-    "teams": {
-      "home": {
-        "name": "سانت اندرو",
-        "logo": "https://imgs.ysscores.com/teams/128/8171728755625.png"
-      },
-      "away": {
-        "name": "سيلتا فيغو",
-        "logo": "https://imgs.ysscores.com/teams/128/9611690196747.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "شاهد - VIP | رياضة",
-        "commentator": "محمد الخامسي"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/5057213/CD-Atlético-Baleares-vs-RCD-Espanyol-Barcelona",
     "info": {
       "championship": "كأس ملك إسبانيا",
@@ -886,6 +865,53 @@
     ]
   },
   {
+    "url": "https://www.ysscores.com/ar/match/5057234/UE-Sant-Andreu-vs-Celta-de-Vigo",
+    "info": {
+      "championship": "كأس ملك إسبانيا",
+      "round": "الدور الثاني",
+      "stadium": "إستاد نارسيس سالا",
+      "time": "09:00 مساءً",
+      "date": "الخميس 04-12-2025"
+    },
+    "teams": {
+      "home": {
+        "name": "سانت اندرو",
+        "logo": "https://imgs.ysscores.com/teams/128/8171728755625.png"
+      },
+      "away": {
+        "name": "سيلتا فيغو",
+        "logo": "https://imgs.ysscores.com/teams/128/9611690196747.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "شاهد - VIP | رياضة",
+        "commentator": "محمد الخامسي"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/5057233/CE-Sabadell-FC-vs-Deportivo-de-La-Coruña",
+    "info": {
+      "championship": "كأس ملك إسبانيا",
+      "round": "الدور الثاني",
+      "stadium": "استاد نوفا كرو",
+      "time": "07:00 مساءً",
+      "date": "الخميس 04-12-2025"
+    },
+    "teams": {
+      "home": {
+        "name": "ساباديل",
+        "logo": "https://imgs.ysscores.com/teams/128/1511739531817.png"
+      },
+      "away": {
+        "name": "ديبورتيفو لاكورونيا",
+        "logo": "https://imgs.ysscores.com/teams/128/2961698772258.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "url": "https://www.ysscores.com/ar/match/5057231/Real-Ávila-CF-vs-Rayo-Vallecano",
     "info": {
       "championship": "كأس ملك إسبانيا",
@@ -910,27 +936,6 @@
         "commentator": "غير مدرج"
       }
     ]
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/5057233/CE-Sabadell-FC-vs-Deportivo-de-La-Coruña",
-    "info": {
-      "championship": "كأس ملك إسبانيا",
-      "round": "الدور الثاني",
-      "stadium": "استاد نوفا كرو",
-      "time": "07:00 مساءً",
-      "date": "الخميس 04-12-2025"
-    },
-    "teams": {
-      "home": {
-        "name": "ساباديل",
-        "logo": "https://imgs.ysscores.com/teams/128/1511739531817.png"
-      },
-      "away": {
-        "name": "ديبورتيفو لاكورونيا",
-        "logo": "https://imgs.ysscores.com/teams/128/2961698772258.png"
-      }
-    },
-    "channels": []
   },
   {
     "url": "https://www.ysscores.com/ar/match/5057237/Real-Zaragoza-vs-Burgos-CF",
