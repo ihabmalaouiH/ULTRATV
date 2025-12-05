@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لوحة تحكم (الإصدار الاحترافي)</title>
+    <title>لوحة تحكم (الإصدار الذهبي)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
@@ -15,23 +15,14 @@
             --shadow: 0 4px 12px rgba(0,0,0,0.1);
             --stats-bg: #ffebeb;
         }
-        /* Dark Mode Variables */
-        body.dark-mode {
-            --main-bg: #1a1a1a; --header-bg: #5a0000; --text-color: #eeeeee;
-            --btn-bg: #2d2d2d; --btn-text: #ff8888; --btn-border: #5a0000;
-            --card-bg: #252525; --card-text: #f0f0f0; --border-color: #444;
-            --shadow: 0 4px 12px rgba(0,0,0,0.4);
-            --stats-bg: #333;
-        }
         
-        body { font-family: 'Cairo', sans-serif; background-color: var(--main-bg); color: var(--card-text); margin: 0; padding: 20px; transition: background 0.3s, color 0.3s; }
+        body { font-family: 'Cairo', sans-serif; background-color: var(--main-bg); color: var(--card-text); margin: 0; padding: 20px; }
         .container { max-width: 1200px; margin: auto; display: grid; grid-template-columns: 1fr; gap: 30px; }
         @media (min-width: 992px) { .container { grid-template-columns: 1fr 1fr; } }
         
         /* Header & Stats */
         .header-container { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 10px; }
         .header { background-color: var(--header-bg); color: var(--text-color); padding: 20px; border-radius: 12px; text-align: center; box-shadow: var(--shadow); position: relative; }
-        .theme-toggle { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.2); border: none; font-size: 1.2rem; cursor: pointer; padding: 8px; border-radius: 50%; color: white; }
         
         .stats-bar { display: flex; justify-content: space-around; background: var(--stats-bg); padding: 10px; border-radius: 8px; border: 1px solid var(--border-color); flex-wrap: wrap; gap: 10px; }
         .stat-item { font-size: 0.9em; font-weight: bold; display: flex; align-items: center; gap: 5px; }
@@ -40,7 +31,7 @@
         h1, h2 { margin: 0; }
         h3, h4, h5 { color: var(--header-bg); }
         .form-section, .output-section { background: var(--card-bg); padding: 25px; border-radius: 12px; box-shadow: var(--shadow); }
-        input[type="text"], input[type="url"], input[type="password"], select, textarea { width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; box-sizing: border-box; background-color: var(--card-bg); color: var(--card-text); }
+        input[type="text"], input[type="url"], input[type="password"], select, textarea { width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; box-sizing: border-box; background-color: white; }
         input:focus, select:focus, textarea:focus { outline: none; border-color: var(--header-bg); }
         
         button { background-color: var(--btn-bg); color: var(--btn-text); border: 2px solid var(--btn-border); padding: 10px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.3s; }
@@ -54,22 +45,17 @@
         .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
         .card-header-title { display: flex; align-items: center; gap: 8px; cursor: pointer;}
         .card-header .actions { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
-        .order-buttons { border-right: 1px solid #ddd; padding-right: 8px; margin-right: 8px; display: flex; gap: 4px; }
         .toggle-icon { transition: transform 0.3s; }
         .category-card.collapsed .toggle-icon { transform: rotate(-90deg); }
         .category-card.collapsed .channels-list { display: none; }
         #categories-container { margin-top: 20px; }
-        .category-card { border: 1px solid var(--border-color); border-radius: 8px; padding: 15px; margin-bottom: 15px; background-color: var(--card-bg); }
+        .category-card { border: 1px solid var(--border-color); border-radius: 8px; padding: 15px; margin-bottom: 15px; background-color: white; }
         
         .logo-preview { width: 30px; height: 30px; object-fit: contain; border-radius: 4px; background: #eee; border: 1px solid #ddd; }
         
-        /* Styles for Hidden/Maintenance */
         .channel-card { background: #fffafc; margin: 10px 0; border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; transition: all 0.3s; }
-        body.dark-mode .channel-card { background: #2f2f2f; }
-        
         .channel-card.hidden-channel { opacity: 0.6; border-style: dashed; }
         .channel-card.maintenance-channel { border: 2px solid #ff9800; background-color: #fff8e1; }
-        body.dark-mode .channel-card.maintenance-channel { background-color: #3e3220; border-color: #ffb74d; }
         
         .status-badge { font-size: 0.75em; padding: 2px 6px; border-radius: 4px; margin-right: 5px; display: inline-block; }
         .badge-hidden { background: #777; color: white; }
@@ -82,14 +68,28 @@
         }
         .server-item span { flex-grow: 1; }
         .server-item .actions { display: flex; gap: 4px; }
-        .output-section pre { background-color: #2d2d2d; color: #f0f0f0; padding: 20px; border-radius: 8px; white-space: pre-wrap; word-wrap: break-word; max-height: 600px; overflow-y: auto; text-align: left; direction: ltr; }
+        
+        /* JSON Output Fixed LTR */
+        .output-section pre { 
+            background-color: #2d2d2d; 
+            color: #f0f0f0; 
+            padding: 20px; 
+            border-radius: 8px; 
+            white-space: pre-wrap; 
+            word-wrap: break-word; 
+            max-height: 600px; 
+            overflow-y: auto; 
+            text-align: left !important; 
+            direction: ltr !important; 
+        }
+
         .form-container.collapsed .form-fields { display: none; }
         .form-container.collapsed .toggle-icon { transform: rotate(-90deg); }
         .form-container .card-header-title { padding: 0; margin-bottom: 10px; }
         
         .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.5); }
-        .modal-content { background-color: var(--card-bg); color: var(--card-text); margin: 15% auto; padding: 20px; border: 1px solid var(--border-color); width: 80%; max-width: 500px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
-        .modal-header { padding-bottom: 10px; border-bottom: 1px solid var(--border-color); }
+        .modal-content { background-color: #ffffff; margin: 10% auto; padding: 25px; border: 1px solid #888; width: 90%; max-width: 500px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .modal-header { padding-bottom: 10px; border-bottom: 1px solid var(--border-color); margin-bottom: 15px; }
         .close-btn { color: #aaa; float: left; font-size: 28px; font-weight: bold; cursor: pointer; }
         
         #toast-container { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 2000; display: flex; flex-direction: column; align-items: center; gap: 10px; }
@@ -98,15 +98,32 @@
         .toast.success { background-color: #28a745; }
         .toast.error { background-color: #dc3545; }
         
-        #scroll-top-btn { position: fixed; bottom: 20px; right: 20px; background: var(--header-bg); color: white; width: 40px; height: 40px; border-radius: 50%; border: none; font-size: 1.2rem; cursor: pointer; display: none; box-shadow: 0 2px 10px rgba(0,0,0,0.2); z-index: 900; }
+        /* Improved Scroll Top Button */
+        #scroll-top-btn { 
+            position: fixed; 
+            bottom: 30px; 
+            left: 30px; /* Moves to Left for RTL friendliness */
+            background: var(--header-bg); 
+            color: white; 
+            width: 50px; 
+            height: 50px; 
+            border-radius: 50%; 
+            border: 2px solid white;
+            font-size: 1.5rem; 
+            cursor: pointer; 
+            display: none; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+            z-index: 2100;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        #scroll-top-btn:hover { transform: scale(1.1); background-color: #a00000; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header-container">
             <div class="header">
-                <button class="theme-toggle" id="theme-toggle" title="تغيير الوضع (ليلي/نهاري)">🌙</button>
-                <h1>لوحة تحكم (الإصدار الاحترافي)</h1>
+                <h1>لوحة تحكم (الإصدار الذهبي)</h1>
             </div>
             <div class="stats-bar">
                 <div class="stat-item">📦 الباقات: <span class="stat-number" id="stat-cats">0</span></div>
@@ -177,6 +194,25 @@
             <button id="confirm-copy-btn">تأكيد النسخ</button>
         </div>
     </div>
+
+    <div id="moveItemModal" class="modal">
+        <div class="modal-content">
+           <div class="modal-header"><span class="close-btn" data-modal="move">&times;</span><h2>نقل / إعادة ترتيب</h2></div>
+           <div style="padding: 20px 0;">
+               <div id="move-category-wrapper" style="margin-bottom: 15px;">
+                   <label for="move-target-category"><strong>نقل إلى باقة:</strong></label>
+                   <select id="move-target-category" style="width: 100%; margin-top: 5px;"></select>
+               </div>
+               
+               <div>
+                   <label for="move-target-position"><strong>اختر الترتيب الجديد:</strong></label>
+                   <select id="move-target-position" style="width: 100%; margin-top: 5px;"></select>
+               </div>
+               <p style="font-size: 0.8em; color: #666; margin-top: 10px;">سيتم وضع العنصر *قبل* العنصر المختار.</p>
+           </div>
+           <button id="confirm-move-btn">تأكيد النقل</button>
+       </div>
+   </div>
     
     <div id="bulkAddServerModal" class="modal">
          <div class="modal-content">
@@ -207,7 +243,7 @@
     </div>
 
     <div id="toast-container"></div>
-    <button id="scroll-top-btn">⬆️</button>
+    <button id="scroll-top-btn" title="العودة للأعلى">⬆️</button>
 
     <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -220,29 +256,14 @@
             server: document.getElementById('editServerModal'),
             copy: document.getElementById('copyChannelModal'),
             bulk: document.getElementById('bulkAddServerModal'),
-            github: document.getElementById('githubSettingsModal')
+            github: document.getElementById('githubSettingsModal'),
+            move: document.getElementById('moveItemModal') // New Modal
         };
         let data = [];
         let context = {};
         let githubConfig = {};
 
-        // --- New Features Logic ---
-        
-        // 1. Theme Toggle
-        const themeBtn = document.getElementById('theme-toggle');
-        const toggleTheme = () => {
-            document.body.classList.toggle('dark-mode');
-            const isDark = document.body.classList.contains('dark-mode');
-            themeBtn.textContent = isDark ? '☀️' : '🌙';
-            localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        };
-        if (localStorage.getItem('theme') === 'dark') {
-            document.body.classList.add('dark-mode');
-            themeBtn.textContent = '☀️';
-        }
-        themeBtn.addEventListener('click', toggleTheme);
-
-        // 2. Scroll Top
+        // 1. Scroll Top
         const scrollTopBtn = document.getElementById('scroll-top-btn');
         window.onscroll = () => {
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -253,12 +274,10 @@
         };
         scrollTopBtn.onclick = () => { window.scrollTo({ top: 0, behavior: 'smooth' }); };
 
-        // 3. Stats Update
+        // 2. Stats Update
         const updateStats = () => {
             const catCount = data.length;
-            let chCount = 0;
-            let hiddenCount = 0;
-            let maintCount = 0;
+            let chCount = 0, hiddenCount = 0, maintCount = 0;
             data.forEach(cat => {
                 if (cat.channels) {
                     chCount += cat.channels.length;
@@ -273,7 +292,6 @@
             document.getElementById('stat-hidden').textContent = hiddenCount;
             document.getElementById('stat-maint').textContent = maintCount;
         };
-        // -------------------------
 
         const showToast = (message, type = 'success') => {
             const container = document.getElementById('toast-container');
@@ -301,7 +319,6 @@
             data.forEach((category, catIndex) => {
                 const categoryCard = document.createElement('div');
                 categoryCard.className = 'category-card';
-                // Added Logo Preview
                 const catLogo = category.logoUrl ? `<img src="${category.logoUrl}" class="logo-preview" onerror="this.style.display='none'">` : '';
                 
                 categoryCard.innerHTML = `
@@ -312,10 +329,8 @@
                             <h3>${category.name}</h3>
                         </div>
                         <div class="actions">
-                            <div class="order-buttons">
-                                <button class="action-btn" data-type="category" data-action="move-up" data-cat-index="${catIndex}" ${catIndex === 0 ? 'disabled' : ''}>🔼</button>
-                                <button class="action-btn" data-type="category" data-action="move-down" data-cat-index="${catIndex}" ${catIndex === data.length - 1 ? 'disabled' : ''}>🔽</button>
-                            </div>
+                            <button class="action-btn" data-type="category" data-action="move-custom" data-cat-index="${catIndex}" title="نقل / تغيير الترتيب">⇄ نقل</button>
+                            <div style="width:1px; background:#ddd; height:20px; margin:0 5px;"></div>
                             <button class="action-btn" data-type="category" data-action="edit" data-cat-index="${catIndex}">✏️</button>
                             <button class="action-btn delete-btn" data-type="category" data-action="delete" data-cat-index="${catIndex}">🗑️</button>
                         </div>
@@ -326,7 +341,6 @@
                             const isMaintenance = channel.isMaintenance ? 'maintenance-channel' : '';
                             const hiddenBadge = channel.isHidden ? '<span class="status-badge badge-hidden">مخفية</span>' : '';
                             const maintBadge = channel.isMaintenance ? '<span class="status-badge badge-maint">صيانة</span>' : '';
-                            // Added Logo Preview for Channel
                             const chLogo = channel.logoUrl ? `<img src="${channel.logoUrl}" class="logo-preview" onerror="this.style.display='none'">` : '';
 
                             return `
@@ -346,10 +360,8 @@
                                         </button>
                                         <div style="width:1px; background:#ddd; height:20px; margin:0 5px;"></div>
                                         
-                                        <div class="order-buttons">
-                                            <button class="action-btn" data-type="channel" data-action="move-up" data-cat-index="${catIndex}" data-ch-index="${chIndex}" ${chIndex === 0 ? 'disabled' : ''}>🔼</button>
-                                            <button class="action-btn" data-type="channel" data-action="move-down" data-cat-index="${catIndex}" data-ch-index="${chIndex}" ${chIndex === category.channels.length - 1 ? 'disabled' : ''}>🔽</button>
-                                        </div>
+                                        <button class="action-btn" data-type="channel" data-action="move-custom" data-cat-index="${catIndex}" data-ch-index="${chIndex}" title="نقل / تغيير الترتيب">⇄ نقل</button>
+                                        
                                         <button class="action-btn" data-type="channel" data-action="copy" data-cat-index="${catIndex}" data-ch-index="${chIndex}">📋</button>
                                         <button class="action-btn" data-type="channel" data-action="edit" data-cat-index="${catIndex}" data-ch-index="${chIndex}">✏️</button>
                                         <button class="action-btn delete-btn" data-type="channel" data-action="delete" data-cat-index="${catIndex}" data-ch-index="${chIndex}">🗑️</button>
@@ -401,7 +413,7 @@
                 categoriesContainer.appendChild(categoryCard);
             });
             updateJsonOutput();
-            updateStats(); // Call stats update
+            updateStats();
             handleSearch();
         };
 
@@ -424,46 +436,37 @@
         };
         searchBar.addEventListener('keyup', handleSearch);
 
-        document.getElementById('add-category-btn').addEventListener('click', () => {
-            const nameInput = document.getElementById('category-name'), logoInput = document.getElementById('category-logo');
-            if (nameInput.value.trim() && logoInput.value.trim()) {
-                data.push({ name: nameInput.value.trim(), logoUrl: logoInput.value.trim(), channels: [] });
-                nameInput.value = ''; logoInput.value = '';
-                render(); saveData(); showToast('تمت إضافة الباقة بنجاح');
-            } else { showToast('الرجاء إدخال اسم وشعار الباقة', 'error'); }
-        });
-        
-        document.getElementById('export-btn').addEventListener('click', () => {
-            if (data.length === 0) { showToast('لا توجد بيانات لتصديرها', 'error'); return; }
-            const jsonString = JSON.stringify(data, null, 2);
-            const blob = new Blob([jsonString], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url; a.download = 'channels.json';
-            document.body.appendChild(a); a.click();
-            document.body.removeChild(a); URL.revokeObjectURL(url);
-            showToast('تم تصدير الملف بنجاح');
-        });
+        // --- NEW: Handle Populate Positions Logic ---
+        const populatePositions = (targetCatIndex, isCategoryMove) => {
+            const posSelect = document.getElementById('move-target-position');
+            posSelect.innerHTML = '';
+            
+            let listLength = 0;
+            let listItems = [];
 
-        document.getElementById('import-btn').addEventListener('click', () => {
-            const input = document.createElement('input');
-            input.type = 'file'; input.accept = '.json';
-            input.onchange = e => {
-                const file = e.target.files[0]; if (!file) return;
-                const reader = new FileReader();
-                reader.onload = event => {
-                    try {
-                        const importedData = JSON.parse(event.target.result);
-                        if (Array.isArray(importedData)) {
-                            data = importedData; render(); saveData();
-                            showToast('تم استيراد الملف بنجاح');
-                        } else { showToast('الملف غير صالح', 'error'); }
-                    } catch (err) { showToast('خطأ في قراءة الملف', 'error'); }
-                };
-                reader.readAsText(file);
-            };
-            input.click();
-        });
+            if (isCategoryMove) {
+                listLength = data.length;
+                listItems = data;
+            } else {
+                listLength = data[targetCatIndex].channels.length;
+                listItems = data[targetCatIndex].channels;
+            }
+
+            // Populate options
+            for (let i = 0; i < listLength; i++) {
+                const option = document.createElement('option');
+                option.value = i;
+                const name = listItems[i].name || `Element ${i}`;
+                option.textContent = `قبل: ${name}`;
+                posSelect.appendChild(option);
+            }
+            
+            // Add "Last" option
+            const lastOption = document.createElement('option');
+            lastOption.value = listLength;
+            lastOption.textContent = 'في النهاية (آخر عنصر)';
+            posSelect.appendChild(lastOption);
+        };
 
         categoriesContainer.addEventListener('click', e => {
             const target = e.target;
@@ -474,17 +477,42 @@
                 const { catIndex, chIndex, srvIndex, type, action } = button.dataset;
                 const catIdx = parseInt(catIndex), chIdx = parseInt(chIndex), srvIdx = parseInt(srvIndex);
 
-                if (action === 'move-up' || action === 'move-down') {
-                    const isUp = action === 'move-up';
+                if (action === 'move-custom') {
+                    // Logic for the new Move Modal
+                    context = { type, catIndex, chIndex };
+                    const catWrapper = document.getElementById('move-category-wrapper');
+                    const catSelect = document.getElementById('move-target-category');
+                    const posSelect = document.getElementById('move-target-position');
+
                     if (type === 'category') {
-                        const swapIdx = isUp ? catIdx - 1 : catIdx + 1;
-                        if (swapIdx >= 0 && swapIdx < data.length) { [data[catIdx], data[swapIdx]] = [data[swapIdx], data[catIdx]]; }
+                        catWrapper.style.display = 'none'; // No category select for categories
+                        populatePositions(null, true);
+                        // Pre-select current position
+                        posSelect.value = catIdx; 
                     } else if (type === 'channel') {
-                        const channels = data[catIdx].channels;
-                        const swapIdx = isUp ? chIdx - 1 : chIdx + 1;
-                        if (swapIdx >= 0 && swapIdx < channels.length) { [channels[chIdx], channels[swapIdx]] = [channels[swapIdx], channels[chIdx]]; }
+                        catWrapper.style.display = 'block';
+                        catSelect.innerHTML = '';
+                        // Populate categories
+                        data.forEach((cat, idx) => {
+                            const option = document.createElement('option');
+                            option.value = idx;
+                            option.textContent = cat.name;
+                            catSelect.appendChild(option);
+                        });
+                        catSelect.value = catIdx; // Select current category
+                        
+                        // Populate positions based on current category initially
+                        populatePositions(catIdx, false);
+                        // Pre-select current position
+                        posSelect.value = chIdx;
+
+                        // Change positions when category changes
+                        catSelect.onchange = () => {
+                            populatePositions(parseInt(catSelect.value), false);
+                        };
                     }
-                    render(); saveData();
+                    modals.move.style.display = 'block';
+
                 } else if (action === 'edit') {
                     context = { type, catIndex, chIndex, srvIndex };
                     if (type === 'server') {
@@ -559,8 +587,85 @@
                 }
             }
         });
+        
+        // --- Confirm Move Button Logic ---
+        document.getElementById('confirm-move-btn').addEventListener('click', () => {
+            const { type, catIndex, chIndex } = context;
+            const oldCatIdx = parseInt(catIndex);
+            const oldChIdx = parseInt(chIndex);
+            
+            const newPos = parseInt(document.getElementById('move-target-position').value);
 
-        // --- GitHub Settings Logic ---
+            if (type === 'category') {
+                if (newPos === oldCatIdx || newPos === oldCatIdx + 1) {
+                    // Moving to same place (logic differs slightly for splice, but simplified: do nothing if same)
+                     modals.move.style.display = 'none'; return;
+                }
+                const itemToMove = data.splice(oldCatIdx, 1)[0];
+                // Adjust index if we removed an item before the new index
+                const adjustedPos = (oldCatIdx < newPos) ? newPos - 1 : newPos;
+                data.splice(adjustedPos, 0, itemToMove);
+
+            } else if (type === 'channel') {
+                const newCatIdx = parseInt(document.getElementById('move-target-category').value);
+                const itemToMove = data[oldCatIdx].channels.splice(oldChIdx, 1)[0];
+                
+                // If moving within same category, adjust index
+                let adjustedPos = newPos;
+                if (oldCatIdx === newCatIdx && oldChIdx < newPos) {
+                     adjustedPos = newPos - 1;
+                }
+                
+                if (!data[newCatIdx].channels) data[newCatIdx].channels = [];
+                data[newCatIdx].channels.splice(adjustedPos, 0, itemToMove);
+            }
+
+            modals.move.style.display = 'none';
+            render(); saveData(); showToast('تم نقل العنصر بنجاح');
+        });
+
+        document.getElementById('add-category-btn').addEventListener('click', () => {
+            const nameInput = document.getElementById('category-name'), logoInput = document.getElementById('category-logo');
+            if (nameInput.value.trim() && logoInput.value.trim()) {
+                data.push({ name: nameInput.value.trim(), logoUrl: logoInput.value.trim(), channels: [] });
+                nameInput.value = ''; logoInput.value = '';
+                render(); saveData(); showToast('تمت إضافة الباقة بنجاح');
+            } else { showToast('الرجاء إدخال اسم وشعار الباقة', 'error'); }
+        });
+        
+        document.getElementById('export-btn').addEventListener('click', () => {
+            if (data.length === 0) { showToast('لا توجد بيانات لتصديرها', 'error'); return; }
+            const jsonString = JSON.stringify(data, null, 2);
+            const blob = new Blob([jsonString], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url; a.download = 'channels.json';
+            document.body.appendChild(a); a.click();
+            document.body.removeChild(a); URL.revokeObjectURL(url);
+            showToast('تم تصدير الملف بنجاح');
+        });
+
+        document.getElementById('import-btn').addEventListener('click', () => {
+            const input = document.createElement('input');
+            input.type = 'file'; input.accept = '.json';
+            input.onchange = e => {
+                const file = e.target.files[0]; if (!file) return;
+                const reader = new FileReader();
+                reader.onload = event => {
+                    try {
+                        const importedData = JSON.parse(event.target.result);
+                        if (Array.isArray(importedData)) {
+                            data = importedData; render(); saveData();
+                            showToast('تم استيراد الملف بنجاح');
+                        } else { showToast('الملف غير صالح', 'error'); }
+                    } catch (err) { showToast('خطأ في قراءة الملف', 'error'); }
+                };
+                reader.readAsText(file);
+            };
+            input.click();
+        });
+
+        // --- GitHub Settings & Modals ---
         const loadGithubConfig = () => {
             const config = localStorage.getItem('githubConfig');
             if(config) {
@@ -573,9 +678,7 @@
             }
         };
 
-        document.getElementById('github-settings-btn').addEventListener('click', () => {
-            modals.github.style.display = 'block';
-        });
+        document.getElementById('github-settings-btn').addEventListener('click', () => { modals.github.style.display = 'block'; });
 
         document.getElementById('save-github-settings-btn').addEventListener('click', () => {
             githubConfig = {
@@ -585,8 +688,7 @@
                 token: document.getElementById('github-token').value.trim()
             };
             if (!githubConfig.user || !githubConfig.repo || !githubConfig.path || !githubConfig.token) {
-                showToast('الرجاء ملء جميع الحقول', 'error');
-                return;
+                showToast('الرجاء ملء جميع الحقول', 'error'); return;
             }
             localStorage.setItem('githubConfig', JSON.stringify(githubConfig));
             githubSaveBtn.style.display = 'inline-block';
@@ -596,10 +698,7 @@
 
         githubSaveBtn.addEventListener('click', async () => {
             const { user, repo, path, token } = githubConfig;
-            if (!user || !repo || !path || !token) {
-                showToast('الرجاء ضبط إعدادات الربط أولاً', 'error');
-                return;
-            }
+            if (!user || !repo || !path || !token) { showToast('الرجاء ضبط إعدادات الربط أولاً', 'error'); return; }
 
             githubSaveBtn.textContent = 'جاري الحفظ...';
             githubSaveBtn.disabled = true;
@@ -611,51 +710,27 @@
             try {
                 let sha;
                 try {
-                    const getRes = await fetch(apiUrl, {
-                        headers: { 'Authorization': `token ${token}` }
-                    });
-                    if (getRes.ok) {
-                        const fileData = await getRes.json();
-                        sha = fileData.sha;
-                    } else if (getRes.status !== 404) {
-                        throw new Error(`فشل في جلب الملف: ${getRes.statusText}`);
-                    }
-                } catch (e) {
-                      showToast(`خطأ في جلب الملف: ${e.message}`, 'error');
-                }
+                    const getRes = await fetch(apiUrl, { headers: { 'Authorization': `token ${token}` } });
+                    if (getRes.ok) { const fileData = await getRes.json(); sha = fileData.sha; }
+                } catch (e) { console.log(e); }
 
-                const commitMessage = `تحديث ملف القنوات من لوحة التحكم - ${new Date().toLocaleString()}`;
-                const body = {
-                    message: commitMessage,
-                    content: encodedContent,
-                    sha: sha
-                };
+                const commitMessage = `تحديث ملف القنوات - ${new Date().toLocaleString()}`;
+                const body = { message: commitMessage, content: encodedContent, sha: sha };
                 
                 const putRes = await fetch(apiUrl, {
                     method: 'PUT',
-                    headers: {
-                        'Authorization': `token ${token}`,
-                        'Content-Type': 'application/json'
-                    },
+                    headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
                     body: JSON.stringify(body)
                 });
 
-                if (putRes.ok) {
-                    showToast('تم الحفظ في GitHub بنجاح!');
-                } else {
-                    const error = await putRes.json();
-                    showToast(`فشل الحفظ: ${error.message}`, 'error');
-                }
+                if (putRes.ok) { showToast('تم الحفظ في GitHub بنجاح!'); }
+                else { const error = await putRes.json(); showToast(`فشل الحفظ: ${error.message}`, 'error'); }
 
-            } catch (err) {
-                showToast(`خطأ فادح: ${err.message}`, 'error');
-            } finally {
-                githubSaveBtn.textContent = '⬆️ حفظ إلى GitHub';
-                githubSaveBtn.disabled = false;
-            }
+            } catch (err) { showToast(`خطأ فادح: ${err.message}`, 'error'); } 
+            finally { githubSaveBtn.textContent = '⬆️ حفظ إلى GitHub'; githubSaveBtn.disabled = false; }
         });
 
-        // --- All Modal Listeners ---
+        // Modal Close Logic
         document.querySelectorAll('.close-btn').forEach(btn => {
             btn.onclick = () => { modals[btn.dataset.modal].style.display = 'none'; };
         });
@@ -663,6 +738,7 @@
             if (e.target.classList.contains('modal')) { e.target.style.display = 'none'; }
         };
 
+        // Edit Save
         document.getElementById('save-edit-btn').addEventListener('click', () => {
             const { type, catIndex, chIndex } = context;
             const catIdx = parseInt(catIndex), chIdx = parseInt(chIndex);
