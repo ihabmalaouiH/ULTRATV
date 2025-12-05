@@ -6,82 +6,128 @@
       {
         "name": "الكأس 1",
         "logoUrl": "https://i.imgur.com/cBWOonB.png",
-        "servers": []
+        "servers": [
+          {
+            "HD": "https://liveeu-gcp.alkassdigital.net/alkass1-p/main.m3u8"
+          }
+        ]
       },
       {
         "name": "الكأس 2",
         "logoUrl": "https://i.imgur.com/cBWOonB.png",
-        "servers": []
+        "servers": [
+          {
+            "HD": "https://liveeu-gcp.alkassdigital.net/alkass2-p/main.m3u8"
+          }
+        ]
       },
       {
         "name": "الكأس 3",
         "logoUrl": "https://i.imgur.com/cBWOonB.png",
-        "servers": []
+        "servers": [
+          {
+            "HD": "https://liveeu-gcp.alkassdigital.net/alkass3-p/main.m3u8"
+          }
+        ]
       },
       {
         "name": "الكأس 4",
         "logoUrl": "https://i.imgur.com/cBWOonB.png",
-        "servers": []
+        "servers": [
+          {
+            "HD": "https://liveeu-gcp.alkassdigital.net/alkass4-p/main.m3u8"
+          }
+        ]
       },
       {
         "name": "الكأس 5",
         "logoUrl": "https://i.imgur.com/cBWOonB.png",
-        "servers": []
+        "servers": [
+          {
+            "HD": "https://liveeu-gcp.alkassdigital.net/alkass5-p/main.m3u8"
+          }
+        ]
       },
       {
         "name": "الكأس 6",
         "logoUrl": "https://i.imgur.com/cBWOonB.png",
-        "servers": []
-      },
-      {
-        "name": "الكأس 7",
-        "logoUrl": "https://i.imgur.com/cBWOonB.png",
-        "servers": []
+        "servers": [
+          {
+            "HD": "https://liveeu-gcp.alkassdigital.net/alkass6-p/main.m3u8"
+          }
+        ]
       },
       {
         "name": "الكأس 8",
         "logoUrl": "https://i.imgur.com/cBWOonB.png",
-        "servers": []
-      },
-      {
-        "name": "الكأس 9",
-        "logoUrl": "https://i.imgur.com/DduR8Wd.png",
-        "servers": []
+        "servers": [
+          {
+            "HD": "https://liveakgr.alkassdigital.net/hls/live/2097037/Alkass8vau/master.m3u8"
+          }
+        ]
       },
       {
         "name": "دبي الرياضية 1",
         "logoUrl": "https://i.imgur.com/jYeTAIQ.png",
-        "servers": []
+        "servers": [
+          {
+            "HD": "https://dmidspta.cdn.mgmlcdn.com/dubaisports/smil:dubaisports.stream.smil/chunklist.m3u8"
+          }
+        ]
       },
       {
         "name": "دبي الرياضية 2",
         "logoUrl": "https://i.imgur.com/jYeTAIQ.png",
-        "servers": []
+        "servers": [
+          {
+            "HD": "https://dmitwlvvll.cdn.mgmlcdn.com/dubaisportshd/smil:dubaisportshd.smil/chunklist.m3u8"
+          }
+        ]
       },
       {
         "name": "دبي الرياضية 3",
         "logoUrl": "https://i.imgur.com/GeTVQ3D.png",
-        "servers": []
+        "servers": [
+          {
+            "HD": "https://dmitwlvvll.cdn.mgmlcdn.com/dubaisportshd5/smil:dubaisportshd5.smil/chunklist.m3u8"
+          }
+        ]
       },
       {
         "name": "أبو ظبي الرياضية 1",
         "logoUrl": "https://i.imgur.com/8NX47eN.png",
-        "servers": []
+        "servers": [
+          {
+            "HD": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/abudhabi_sports_1/abudhabi_sports_1_hls_nd/index.m3u8"
+          }
+        ]
       },
       {
         "name": "أبو ظبي الرياضية 2",
         "logoUrl": "https://i.imgur.com/8NX47eN.png",
-        "servers": []
+        "servers": [
+          {
+            "HD": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/abudhabi_sports_2/abudhabi_sports_2_hls_nd/index.m3u8"
+          }
+        ]
       },
       {
         "name": "الكويت الرياضية 1",
         "logoUrl": "https://i.imgur.com/KMQOfPw.png",
-        "servers": []
+        "servers": [
+          {
+            "HD": "https://kwtalmta.cdn.mangomolo.com/sp/smil:sp.stream.smil/chunklist.m3u8"
+          }
+        ]
       },
       {
         "name": "الكويت الرياضية 2",
         "logoUrl": "https://i.imgur.com/KMQOfPw.png",
-        "servers": []
+        "servers": [
+          {
+            "HD": "https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist.m3u8"
+          }
+        ]
       }
     ]
   },
