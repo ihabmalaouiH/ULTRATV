@@ -206,27 +206,6 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4815348/Excelsior-Rotterdam-vs-FC-Groningen",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "فان دونغ دي رو",
-      "time": "08:00 مساءً",
-      "date": "الجمعة 05-12-2025"
-    },
-    "teams": {
-      "home": {
-        "name": "إكسيلسيور",
-        "logo": "https://imgs.ysscores.com/teams/128/1001690996436.png"
-      },
-      "away": {
-        "name": "غرونينغن",
-        "logo": "https://imgs.ysscores.com/teams/128/10001690370535.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/57742218/Al-Ahli-(Amman)-vs-Al-Hussein-SC-(Irbid)",
     "info": {
       "championship": "درع الإتحاد الأردني",
@@ -641,6 +620,40 @@
       {
         "channel": "الشارقة الرياضية 2",
         "commentator": "محمد الهنائي"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/31360738/Al-Nasr-SC-(UAE)-vs-Al-Ain-FC",
+    "info": {
+      "championship": "كأس مصرف أبوظبي الإسلامي",
+      "round": "نصف نهائي - مباراة الذهاب",
+      "stadium": "استاد آل مكتوم",
+      "time": "01:50 مساءً",
+      "date": "الجمعة 05-12-2025"
+    },
+    "teams": {
+      "home": {
+        "name": "النصر",
+        "logo": "https://imgs.ysscores.com/teams/128/7031758628390.png"
+      },
+      "away": {
+        "name": "العين",
+        "logo": "https://imgs.ysscores.com/teams/128/4661724620117.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "أبو ظبي الرياضية 2",
+        "commentator": "أحمد الحامد"
+      },
+      {
+        "channel": "دبي الرياضية 2",
+        "commentator": "عبدالحميد الجسمي"
+      },
+      {
+        "channel": "الشارقة الرياضية 2",
+        "commentator": "محمد سليمان"
       }
     ]
   }
