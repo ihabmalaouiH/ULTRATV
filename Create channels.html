@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لوحة تحكم (الإصدار المطور)</title>
+    <title>لوحة تحكم (الإصدار الاحترافي)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
@@ -13,23 +13,44 @@
             --btn-bg: #ffffff; --btn-text: #870000; --btn-border: #faa2a2;
             --card-bg: #ffffff; --card-text: #333; --border-color: #e0e0e0;
             --shadow: 0 4px 12px rgba(0,0,0,0.1);
+            --stats-bg: #ffebeb;
         }
-        body { font-family: 'Cairo', sans-serif; background-color: var(--main-bg); color: var(--card-text); margin: 0; padding: 20px; }
+        /* Dark Mode Variables */
+        body.dark-mode {
+            --main-bg: #1a1a1a; --header-bg: #5a0000; --text-color: #eeeeee;
+            --btn-bg: #2d2d2d; --btn-text: #ff8888; --btn-border: #5a0000;
+            --card-bg: #252525; --card-text: #f0f0f0; --border-color: #444;
+            --shadow: 0 4px 12px rgba(0,0,0,0.4);
+            --stats-bg: #333;
+        }
+        
+        body { font-family: 'Cairo', sans-serif; background-color: var(--main-bg); color: var(--card-text); margin: 0; padding: 20px; transition: background 0.3s, color 0.3s; }
         .container { max-width: 1200px; margin: auto; display: grid; grid-template-columns: 1fr; gap: 30px; }
         @media (min-width: 992px) { .container { grid-template-columns: 1fr 1fr; } }
-        .header { grid-column: 1 / -1; background-color: var(--header-bg); color: var(--text-color); padding: 20px; border-radius: 12px; text-align: center; box-shadow: var(--shadow); }
+        
+        /* Header & Stats */
+        .header-container { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 10px; }
+        .header { background-color: var(--header-bg); color: var(--text-color); padding: 20px; border-radius: 12px; text-align: center; box-shadow: var(--shadow); position: relative; }
+        .theme-toggle { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.2); border: none; font-size: 1.2rem; cursor: pointer; padding: 8px; border-radius: 50%; color: white; }
+        
+        .stats-bar { display: flex; justify-content: space-around; background: var(--stats-bg); padding: 10px; border-radius: 8px; border: 1px solid var(--border-color); flex-wrap: wrap; gap: 10px; }
+        .stat-item { font-size: 0.9em; font-weight: bold; display: flex; align-items: center; gap: 5px; }
+        .stat-number { background: var(--header-bg); color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.8em; }
+
         h1, h2 { margin: 0; }
         h3, h4, h5 { color: var(--header-bg); }
         .form-section, .output-section { background: var(--card-bg); padding: 25px; border-radius: 12px; box-shadow: var(--shadow); }
-        input[type="text"], input[type="url"], input[type="password"], select, textarea { width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; box-sizing: border-box; background-color: white; }
+        input[type="text"], input[type="url"], input[type="password"], select, textarea { width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; box-sizing: border-box; background-color: var(--card-bg); color: var(--card-text); }
         input:focus, select:focus, textarea:focus { outline: none; border-color: var(--header-bg); }
+        
         button { background-color: var(--btn-bg); color: var(--btn-text); border: 2px solid var(--btn-border); padding: 10px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.3s; }
         button:hover { background-color: var(--header-bg); color: var(--text-color); border-color: var(--header-bg); }
-        button.action-btn { background: transparent; border: 1px solid #ccc; color: #555; padding: 6px 10px; font-size: 1em; margin: 0 2px; }
+        button.action-btn { background: transparent; border: 1px solid var(--border-color); color: var(--card-text); padding: 6px 10px; font-size: 1em; margin: 0 2px; }
         button:disabled { opacity: 0.4; cursor: not-allowed; }
         button.delete-btn { border-color: #ffb8b8; color: #d90429; }
         button.github-save-btn { background-color: #28a745; color: white; border-color: #28a745; }
         button.github-save-btn:hover { background-color: #218838; border-color: #218838; }
+        
         .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
         .card-header-title { display: flex; align-items: center; gap: 8px; cursor: pointer;}
         .card-header .actions { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
@@ -38,41 +59,63 @@
         .category-card.collapsed .toggle-icon { transform: rotate(-90deg); }
         .category-card.collapsed .channels-list { display: none; }
         #categories-container { margin-top: 20px; }
-        .category-card { border: 1px solid var(--border-color); border-radius: 8px; padding: 15px; margin-bottom: 15px; background-color: white; }
+        .category-card { border: 1px solid var(--border-color); border-radius: 8px; padding: 15px; margin-bottom: 15px; background-color: var(--card-bg); }
         
-        /* New Styles for Hidden/Maintenance */
-        .channel-card { background: #fffafc; margin: 10px 0; border: 1px solid #eee; padding: 15px; border-radius: 8px; transition: all 0.3s; }
-        .channel-card.hidden-channel { opacity: 0.6; background-color: #f0f0f0; border-style: dashed; }
+        .logo-preview { width: 30px; height: 30px; object-fit: contain; border-radius: 4px; background: #eee; border: 1px solid #ddd; }
+        
+        /* Styles for Hidden/Maintenance */
+        .channel-card { background: #fffafc; margin: 10px 0; border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; transition: all 0.3s; }
+        body.dark-mode .channel-card { background: #2f2f2f; }
+        
+        .channel-card.hidden-channel { opacity: 0.6; border-style: dashed; }
         .channel-card.maintenance-channel { border: 2px solid #ff9800; background-color: #fff8e1; }
+        body.dark-mode .channel-card.maintenance-channel { background-color: #3e3220; border-color: #ffb74d; }
+        
         .status-badge { font-size: 0.75em; padding: 2px 6px; border-radius: 4px; margin-right: 5px; display: inline-block; }
         .badge-hidden { background: #777; color: white; }
         .badge-maint { background: #ff9800; color: white; }
 
         .server-item {
-            font-size: 0.9em; padding: 8px; background: #f1f1f1; border-radius: 4px;
+            font-size: 0.9em; padding: 8px; background: var(--stats-bg); border-radius: 4px;
             margin-top: 5px; display: flex; justify-content: space-between;
-            align-items: center; word-break: break-all; gap: 8px;
+            align-items: center; word-break: break-all; gap: 8px; border: 1px solid var(--border-color);
         }
         .server-item span { flex-grow: 1; }
         .server-item .actions { display: flex; gap: 4px; }
-        .output-section pre { background-color: #2d2d2d; color: #f0f0f0; padding: 20px; border-radius: 8px; white-space: pre-wrap; word-wrap: break-word; max-height: 600px; overflow-y: auto; }
+        .output-section pre { background-color: #2d2d2d; color: #f0f0f0; padding: 20px; border-radius: 8px; white-space: pre-wrap; word-wrap: break-word; max-height: 600px; overflow-y: auto; text-align: left; direction: ltr; }
         .form-container.collapsed .form-fields { display: none; }
         .form-container.collapsed .toggle-icon { transform: rotate(-90deg); }
         .form-container .card-header-title { padding: 0; margin-bottom: 10px; }
+        
         .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.5); }
-        .modal-content { background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 500px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
-        .modal-header { padding-bottom: 10px; border-bottom: 1px solid #ddd; }
+        .modal-content { background-color: var(--card-bg); color: var(--card-text); margin: 15% auto; padding: 20px; border: 1px solid var(--border-color); width: 80%; max-width: 500px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .modal-header { padding-bottom: 10px; border-bottom: 1px solid var(--border-color); }
         .close-btn { color: #aaa; float: left; font-size: 28px; font-weight: bold; cursor: pointer; }
+        
         #toast-container { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 2000; display: flex; flex-direction: column; align-items: center; gap: 10px; }
         .toast { padding: 12px 20px; border-radius: 8px; color: white; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.2); opacity: 0; transition: opacity 0.5s, transform 0.5s; transform: translateY(20px); }
         .toast.show { opacity: 1; transform: translateY(0); }
         .toast.success { background-color: #28a745; }
         .toast.error { background-color: #dc3545; }
+        
+        #scroll-top-btn { position: fixed; bottom: 20px; right: 20px; background: var(--header-bg); color: white; width: 40px; height: 40px; border-radius: 50%; border: none; font-size: 1.2rem; cursor: pointer; display: none; box-shadow: 0 2px 10px rgba(0,0,0,0.2); z-index: 900; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header"><h1>لوحة تحكم (الإصدار المطور)</h1></div>
+        <div class="header-container">
+            <div class="header">
+                <button class="theme-toggle" id="theme-toggle" title="تغيير الوضع (ليلي/نهاري)">🌙</button>
+                <h1>لوحة تحكم (الإصدار الاحترافي)</h1>
+            </div>
+            <div class="stats-bar">
+                <div class="stat-item">📦 الباقات: <span class="stat-number" id="stat-cats">0</span></div>
+                <div class="stat-item">📺 القنوات: <span class="stat-number" id="stat-channels">0</span></div>
+                <div class="stat-item">👁️ مخفية: <span class="stat-number" id="stat-hidden">0</span></div>
+                <div class="stat-item">🔧 صيانة: <span class="stat-number" id="stat-maint">0</span></div>
+            </div>
+        </div>
+
         <div class="form-section">
             <h2>إدارة الباقات والقنوات</h2>
             
@@ -85,7 +128,7 @@
                 <button id="export-btn" style="flex: 1;">📁 تصدير</button>
                 <button id="github-settings-btn" style="flex: 1;">⚙️ إعدادات الربط</button>
             </div>
-            <div class="form-group" style="background: #fff8f8; padding: 15px; border-radius: 8px; border: 1px solid var(--btn-border);">
+            <div class="form-group" style="background: var(--stats-bg); padding: 15px; border-radius: 8px; border: 1px solid var(--btn-border);">
                 <h3>إضافة باقة جديدة</h3>
                 <input type="text" id="category-name" placeholder="اسم الباقة" required><br>
                 <input type="url" id="category-logo" placeholder="رابط شعار الباقة" required style="margin-top: 10px;">
@@ -164,6 +207,7 @@
     </div>
 
     <div id="toast-container"></div>
+    <button id="scroll-top-btn">⬆️</button>
 
     <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -181,6 +225,55 @@
         let data = [];
         let context = {};
         let githubConfig = {};
+
+        // --- New Features Logic ---
+        
+        // 1. Theme Toggle
+        const themeBtn = document.getElementById('theme-toggle');
+        const toggleTheme = () => {
+            document.body.classList.toggle('dark-mode');
+            const isDark = document.body.classList.contains('dark-mode');
+            themeBtn.textContent = isDark ? '☀️' : '🌙';
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        };
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+            themeBtn.textContent = '☀️';
+        }
+        themeBtn.addEventListener('click', toggleTheme);
+
+        // 2. Scroll Top
+        const scrollTopBtn = document.getElementById('scroll-top-btn');
+        window.onscroll = () => {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+        scrollTopBtn.onclick = () => { window.scrollTo({ top: 0, behavior: 'smooth' }); };
+
+        // 3. Stats Update
+        const updateStats = () => {
+            const catCount = data.length;
+            let chCount = 0;
+            let hiddenCount = 0;
+            let maintCount = 0;
+            data.forEach(cat => {
+                if (cat.channels) {
+                    chCount += cat.channels.length;
+                    cat.channels.forEach(ch => {
+                        if (ch.isHidden) hiddenCount++;
+                        if (ch.isMaintenance) maintCount++;
+                    });
+                }
+            });
+            document.getElementById('stat-cats').textContent = catCount;
+            document.getElementById('stat-channels').textContent = chCount;
+            document.getElementById('stat-hidden').textContent = hiddenCount;
+            document.getElementById('stat-maint').textContent = maintCount;
+        };
+        // -------------------------
 
         const showToast = (message, type = 'success') => {
             const container = document.getElementById('toast-container');
@@ -208,10 +301,15 @@
             data.forEach((category, catIndex) => {
                 const categoryCard = document.createElement('div');
                 categoryCard.className = 'category-card';
+                // Added Logo Preview
+                const catLogo = category.logoUrl ? `<img src="${category.logoUrl}" class="logo-preview" onerror="this.style.display='none'">` : '';
+                
                 categoryCard.innerHTML = `
                     <div class="card-header">
                         <div class="card-header-title" data-action="toggle-collapse">
-                            <span class="toggle-icon">▼</span><h3>${category.name}</h3>
+                            <span class="toggle-icon">▼</span>
+                            ${catLogo}
+                            <h3>${category.name}</h3>
                         </div>
                         <div class="actions">
                             <div class="order-buttons">
@@ -224,21 +322,23 @@
                     </div>
                     <div class="channels-list">
                         ${(category.channels || []).map((channel, chIndex) => {
-                            // Logic for new statuses
                             const isHidden = channel.isHidden ? 'hidden-channel' : '';
                             const isMaintenance = channel.isMaintenance ? 'maintenance-channel' : '';
                             const hiddenBadge = channel.isHidden ? '<span class="status-badge badge-hidden">مخفية</span>' : '';
                             const maintBadge = channel.isMaintenance ? '<span class="status-badge badge-maint">صيانة</span>' : '';
-                            
+                            // Added Logo Preview for Channel
+                            const chLogo = channel.logoUrl ? `<img src="${channel.logoUrl}" class="logo-preview" onerror="this.style.display='none'">` : '';
+
                             return `
                             <div class="channel-card ${isHidden} ${isMaintenance}">
                                 <div class="card-header">
-                                    <h4 style="cursor: default;">
+                                    <h4 style="cursor: default; display:flex; align-items:center; gap:8px;">
                                         ${hiddenBadge}${maintBadge}
+                                        ${chLogo}
                                         ${channel.name}
                                     </h4>
                                     <div class="actions">
-                                         <button class="action-btn" data-type="channel" data-action="toggle-visibility" data-cat-index="${catIndex}" data-ch-index="${chIndex}" title="${channel.isHidden ? 'إظهار القناة' : 'إخفاء القناة'}">
+                                        <button class="action-btn" data-type="channel" data-action="toggle-visibility" data-cat-index="${catIndex}" data-ch-index="${chIndex}" title="${channel.isHidden ? 'إظهار القناة' : 'إخفاء القناة'}">
                                             ${channel.isHidden ? '👁️' : '👁️‍🗨️'}
                                         </button>
                                         <button class="action-btn" data-type="channel" data-action="toggle-maintenance" data-cat-index="${catIndex}" data-ch-index="${chIndex}" title="${channel.isMaintenance ? 'إنهاء الصيانة' : 'وضع الصيانة'}">
@@ -267,7 +367,7 @@
                                                 </div>`;
                                     }).join('')}
                                 </div>
-                                <div class="form-group form-container collapsed" style="margin-top: 15px; background: #fafafa; padding: 10px; border-radius: 6px;">
+                                <div class="form-group form-container collapsed" style="margin-top: 15px; background: var(--stats-bg); padding: 10px; border-radius: 6px;">
                                     <h5 class="card-header-title" data-action="toggle-form">
                                         <span class="toggle-icon">▼</span>إضافة سيرفر جديد
                                     </h5>
@@ -277,7 +377,7 @@
                                         <button class="add-server-btn" data-cat-index="${catIndex}" data-ch-index="${chIndex}" style="margin-top: 5px; padding: 8px 12px;">إضافة سيرفر</button>
                                     </div>
                                 </div>
-                                <div class="form-group form-container collapsed" style="margin-top: 10px; background: #fafafa; padding: 10px; border-radius: 6px;">
+                                <div class="form-group form-container collapsed" style="margin-top: 10px; background: var(--stats-bg); padding: 10px; border-radius: 6px;">
                                     <h5 class="card-header-title" data-action="toggle-form">
                                         <span class="toggle-icon">▼</span>إضافة سيرفرات مجمعة
                                     </h5>
@@ -301,7 +401,8 @@
                 categoriesContainer.appendChild(categoryCard);
             });
             updateJsonOutput();
-            handleSearch(); // Re-apply search filter after render
+            updateStats(); // Call stats update
+            handleSearch();
         };
 
         const handleSearch = () => {
@@ -413,14 +514,12 @@
                     if(select.options.length > 0) { modals.copy.style.display = 'block'; }
                     else { showToast('لا توجد باقة أخرى للنسخ إليها', 'error'); }
                 
-                // === New Actions Logic ===
                 } else if (action === 'toggle-visibility') {
                     data[catIdx].channels[chIdx].isHidden = !data[catIdx].channels[chIdx].isHidden;
                     render(); saveData(); showToast(data[catIdx].channels[chIdx].isHidden ? 'تم إخفاء القناة' : 'تم إظهار القناة');
                 } else if (action === 'toggle-maintenance') {
                     data[catIdx].channels[chIdx].isMaintenance = !data[catIdx].channels[chIdx].isMaintenance;
                     render(); saveData(); showToast(data[catIdx].channels[chIdx].isMaintenance ? 'تم تفعيل وضع الصيانة' : 'تم تعطيل وضع الصيانة');
-                // ==========================
 
                 } else if (action === 'delete') {
                     if (confirm('هل أنت متأكد من الحذف؟')) {
@@ -523,7 +622,6 @@
                     }
                 } catch (e) {
                       showToast(`خطأ في جلب الملف: ${e.message}`, 'error');
-                      // Don't stop here, proceed to create the file
                 }
 
                 const commitMessage = `تحديث ملف القنوات من لوحة التحكم - ${new Date().toLocaleString()}`;
