@@ -69,7 +69,7 @@
         .server-item span { flex-grow: 1; }
         .server-item .actions { display: flex; gap: 4px; }
         
-        /* JSON Output Fixed LTR */
+        /* JSON Output ALIGNED RIGHT */
         .output-section pre { 
             background-color: #2d2d2d; 
             color: #f0f0f0; 
@@ -79,8 +79,8 @@
             word-wrap: break-word; 
             max-height: 600px; 
             overflow-y: auto; 
-            text-align: left !important; 
-            direction: ltr !important; 
+            text-align: right !important; /* Changed to Right */
+            direction: ltr !important; /* Kept LTR for code safety, but it will sit on the right */
         }
 
         .form-container.collapsed .form-fields { display: none; }
@@ -98,11 +98,10 @@
         .toast.success { background-color: #28a745; }
         .toast.error { background-color: #dc3545; }
         
-        /* Improved Scroll Top Button */
         #scroll-top-btn { 
             position: fixed; 
             bottom: 30px; 
-            left: 30px; /* Moves to Left for RTL friendliness */
+            left: 30px; 
             background: var(--header-bg); 
             color: white; 
             width: 50px; 
@@ -257,7 +256,7 @@
             copy: document.getElementById('copyChannelModal'),
             bulk: document.getElementById('bulkAddServerModal'),
             github: document.getElementById('githubSettingsModal'),
-            move: document.getElementById('moveItemModal') // New Modal
+            move: document.getElementById('moveItemModal')
         };
         let data = [];
         let context = {};
@@ -436,7 +435,7 @@
         };
         searchBar.addEventListener('keyup', handleSearch);
 
-        // --- NEW: Handle Populate Positions Logic ---
+        // --- Populate Positions Logic ---
         const populatePositions = (targetCatIndex, isCategoryMove) => {
             const posSelect = document.getElementById('move-target-position');
             posSelect.innerHTML = '';
@@ -452,7 +451,6 @@
                 listItems = data[targetCatIndex].channels;
             }
 
-            // Populate options
             for (let i = 0; i < listLength; i++) {
                 const option = document.createElement('option');
                 option.value = i;
@@ -461,7 +459,6 @@
                 posSelect.appendChild(option);
             }
             
-            // Add "Last" option
             const lastOption = document.createElement('option');
             lastOption.value = listLength;
             lastOption.textContent = 'في النهاية (آخر عنصر)';
@@ -478,35 +475,29 @@
                 const catIdx = parseInt(catIndex), chIdx = parseInt(chIndex), srvIdx = parseInt(srvIndex);
 
                 if (action === 'move-custom') {
-                    // Logic for the new Move Modal
                     context = { type, catIndex, chIndex };
                     const catWrapper = document.getElementById('move-category-wrapper');
                     const catSelect = document.getElementById('move-target-category');
                     const posSelect = document.getElementById('move-target-position');
 
                     if (type === 'category') {
-                        catWrapper.style.display = 'none'; // No category select for categories
+                        catWrapper.style.display = 'none'; 
                         populatePositions(null, true);
-                        // Pre-select current position
                         posSelect.value = catIdx; 
                     } else if (type === 'channel') {
                         catWrapper.style.display = 'block';
                         catSelect.innerHTML = '';
-                        // Populate categories
                         data.forEach((cat, idx) => {
                             const option = document.createElement('option');
                             option.value = idx;
                             option.textContent = cat.name;
                             catSelect.appendChild(option);
                         });
-                        catSelect.value = catIdx; // Select current category
+                        catSelect.value = catIdx; 
                         
-                        // Populate positions based on current category initially
                         populatePositions(catIdx, false);
-                        // Pre-select current position
                         posSelect.value = chIdx;
 
-                        // Change positions when category changes
                         catSelect.onchange = () => {
                             populatePositions(parseInt(catSelect.value), false);
                         };
@@ -588,7 +579,6 @@
             }
         });
         
-        // --- Confirm Move Button Logic ---
         document.getElementById('confirm-move-btn').addEventListener('click', () => {
             const { type, catIndex, chIndex } = context;
             const oldCatIdx = parseInt(catIndex);
@@ -598,11 +588,9 @@
 
             if (type === 'category') {
                 if (newPos === oldCatIdx || newPos === oldCatIdx + 1) {
-                    // Moving to same place (logic differs slightly for splice, but simplified: do nothing if same)
                      modals.move.style.display = 'none'; return;
                 }
                 const itemToMove = data.splice(oldCatIdx, 1)[0];
-                // Adjust index if we removed an item before the new index
                 const adjustedPos = (oldCatIdx < newPos) ? newPos - 1 : newPos;
                 data.splice(adjustedPos, 0, itemToMove);
 
@@ -610,7 +598,6 @@
                 const newCatIdx = parseInt(document.getElementById('move-target-category').value);
                 const itemToMove = data[oldCatIdx].channels.splice(oldChIdx, 1)[0];
                 
-                // If moving within same category, adjust index
                 let adjustedPos = newPos;
                 if (oldCatIdx === newCatIdx && oldChIdx < newPos) {
                      adjustedPos = newPos - 1;
@@ -665,7 +652,6 @@
             input.click();
         });
 
-        // --- GitHub Settings & Modals ---
         const loadGithubConfig = () => {
             const config = localStorage.getItem('githubConfig');
             if(config) {
@@ -730,7 +716,6 @@
             finally { githubSaveBtn.textContent = '⬆️ حفظ إلى GitHub'; githubSaveBtn.disabled = false; }
         });
 
-        // Modal Close Logic
         document.querySelectorAll('.close-btn').forEach(btn => {
             btn.onclick = () => { modals[btn.dataset.modal].style.display = 'none'; };
         });
@@ -738,7 +723,6 @@
             if (e.target.classList.contains('modal')) { e.target.style.display = 'none'; }
         };
 
-        // Edit Save
         document.getElementById('save-edit-btn').addEventListener('click', () => {
             const { type, catIndex, chIndex } = context;
             const catIdx = parseInt(catIndex), chIdx = parseInt(chIndex);
