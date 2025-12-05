@@ -1208,7 +1208,8 @@
           {
             "Server 1": "your_kids_channel_link"
           }
-        ]
+        ],
+        "isHidden": true
       }
     ]
   },
@@ -1219,7 +1220,8 @@
       {
         "name": "Drama Channel",
         "logoUrl": "assets/logos/drama.png",
-        "servers": []
+        "servers": [],
+        "isHidden": true
       }
     ]
   },
@@ -1230,7 +1232,8 @@
       {
         "name": "Shahid Originals",
         "logoUrl": "assets/logos/shahid_orig.png",
-        "servers": []
+        "servers": [],
+        "isHidden": true
       }
     ]
   },
@@ -1245,7 +1248,8 @@
           {
             "Server 1": "your_france_channel_link"
           }
-        ]
+        ],
+        "isHidden": true
       }
     ]
   },
@@ -1260,7 +1264,8 @@
           {
             "Server 1": "http://176.119.29.7:80/0c55573d-12d8-43af-823b-25c94d67b190.m3u8"
           }
-        ]
+        ],
+        "isHidden": true
       }
     ]
   }
