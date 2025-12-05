@@ -86,7 +86,7 @@
       },
       {
         "name": "دبي الرياضية 3",
-        "logoUrl": "https://i.imgur.com/GeTVQ3D.png",
+        "logoUrl": "https://i.imgur.com/jYeTAIQ.png",
         "servers": [
           {
             "HD": "https://dmitwlvvll.cdn.mgmlcdn.com/dubaisportshd5/smil:dubaisportshd5.smil/chunklist.m3u8"
@@ -126,6 +126,24 @@
         "servers": [
           {
             "HD": "https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist.m3u8"
+          }
+        ]
+      },
+      {
+        "name": "الشارقة الرياضية",
+        "logoUrl": "https://i.imgur.com/oeA1aO0.png",
+        "servers": [
+          {
+            "HD": "https://svs.itworkscdn.net/smc4sportslive/smc4tv.smil/playlist.m3u8"
+          }
+        ]
+      },
+      {
+        "name": "shasha",
+        "logoUrl": "https://i.imgur.com/fN6mrVu.png",
+        "servers": [
+          {
+            "HD": "https://cdnfest.com:443/shasha/playlist.m3u8"
           }
         ]
       }
