@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لوحة تحكم (الإصدار النهائي الكامل)</title>
+    <title>لوحة تحكم (الإصدار المطور)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
@@ -32,14 +32,22 @@
         button.github-save-btn:hover { background-color: #218838; border-color: #218838; }
         .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
         .card-header-title { display: flex; align-items: center; gap: 8px; cursor: pointer;}
-        .card-header .actions { display: flex; align-items: center; gap: 4px; }
+        .card-header .actions { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
         .order-buttons { border-right: 1px solid #ddd; padding-right: 8px; margin-right: 8px; display: flex; gap: 4px; }
         .toggle-icon { transition: transform 0.3s; }
         .category-card.collapsed .toggle-icon { transform: rotate(-90deg); }
         .category-card.collapsed .channels-list { display: none; }
         #categories-container { margin-top: 20px; }
         .category-card { border: 1px solid var(--border-color); border-radius: 8px; padding: 15px; margin-bottom: 15px; background-color: white; }
-        .channel-card { background: #fffafc; margin: 10px 0; border: 1px solid #eee; padding: 15px; border-radius: 8px; }
+        
+        /* New Styles for Hidden/Maintenance */
+        .channel-card { background: #fffafc; margin: 10px 0; border: 1px solid #eee; padding: 15px; border-radius: 8px; transition: all 0.3s; }
+        .channel-card.hidden-channel { opacity: 0.6; background-color: #f0f0f0; border-style: dashed; }
+        .channel-card.maintenance-channel { border: 2px solid #ff9800; background-color: #fff8e1; }
+        .status-badge { font-size: 0.75em; padding: 2px 6px; border-radius: 4px; margin-right: 5px; display: inline-block; }
+        .badge-hidden { background: #777; color: white; }
+        .badge-maint { background: #ff9800; color: white; }
+
         .server-item {
             font-size: 0.9em; padding: 8px; background: #f1f1f1; border-radius: 4px;
             margin-top: 5px; display: flex; justify-content: space-between;
@@ -64,7 +72,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="header"><h1>لوحة تحكم (الإصدار النهائي الكامل)</h1></div>
+        <div class="header"><h1>لوحة تحكم (الإصدار المطور)</h1></div>
         <div class="form-section">
             <h2>إدارة الباقات والقنوات</h2>
             
@@ -215,11 +223,29 @@
                         </div>
                     </div>
                     <div class="channels-list">
-                        ${(category.channels || []).map((channel, chIndex) => `
-                            <div class="channel-card">
+                        ${(category.channels || []).map((channel, chIndex) => {
+                            // Logic for new statuses
+                            const isHidden = channel.isHidden ? 'hidden-channel' : '';
+                            const isMaintenance = channel.isMaintenance ? 'maintenance-channel' : '';
+                            const hiddenBadge = channel.isHidden ? '<span class="status-badge badge-hidden">مخفية</span>' : '';
+                            const maintBadge = channel.isMaintenance ? '<span class="status-badge badge-maint">صيانة</span>' : '';
+                            
+                            return `
+                            <div class="channel-card ${isHidden} ${isMaintenance}">
                                 <div class="card-header">
-                                    <h4 style="cursor: default;">${channel.name}</h4>
+                                    <h4 style="cursor: default;">
+                                        ${hiddenBadge}${maintBadge}
+                                        ${channel.name}
+                                    </h4>
                                     <div class="actions">
+                                         <button class="action-btn" data-type="channel" data-action="toggle-visibility" data-cat-index="${catIndex}" data-ch-index="${chIndex}" title="${channel.isHidden ? 'إظهار القناة' : 'إخفاء القناة'}">
+                                            ${channel.isHidden ? '👁️' : '👁️‍🗨️'}
+                                        </button>
+                                        <button class="action-btn" data-type="channel" data-action="toggle-maintenance" data-cat-index="${catIndex}" data-ch-index="${chIndex}" title="${channel.isMaintenance ? 'إنهاء الصيانة' : 'وضع الصيانة'}">
+                                            ${channel.isMaintenance ? '✅' : '🔧'}
+                                        </button>
+                                        <div style="width:1px; background:#ddd; height:20px; margin:0 5px;"></div>
+                                        
                                         <div class="order-buttons">
                                             <button class="action-btn" data-type="channel" data-action="move-up" data-cat-index="${catIndex}" data-ch-index="${chIndex}" ${chIndex === 0 ? 'disabled' : ''}>🔼</button>
                                             <button class="action-btn" data-type="channel" data-action="move-down" data-cat-index="${catIndex}" data-ch-index="${chIndex}" ${chIndex === category.channels.length - 1 ? 'disabled' : ''}>🔽</button>
@@ -259,7 +285,8 @@
                                         <button class="add-bulk-server-btn" data-cat-index="${catIndex}" data-ch-index="${chIndex}" style="margin-top: 5px; padding: 8px 12px; width:100%;">فتح نافذة الإضافة المجمعة</button>
                                     </div>
                                 </div>
-                            </div>`).join('')}
+                            </div>`;
+                        }).join('')}
                     </div>
                     <div class="form-group add-channel-form form-container collapsed" style="margin-top: 20px;">
                         <h4 class="card-header-title" data-action="toggle-form">
@@ -385,6 +412,16 @@
                     });
                     if(select.options.length > 0) { modals.copy.style.display = 'block'; }
                     else { showToast('لا توجد باقة أخرى للنسخ إليها', 'error'); }
+                
+                // === New Actions Logic ===
+                } else if (action === 'toggle-visibility') {
+                    data[catIdx].channels[chIdx].isHidden = !data[catIdx].channels[chIdx].isHidden;
+                    render(); saveData(); showToast(data[catIdx].channels[chIdx].isHidden ? 'تم إخفاء القناة' : 'تم إظهار القناة');
+                } else if (action === 'toggle-maintenance') {
+                    data[catIdx].channels[chIdx].isMaintenance = !data[catIdx].channels[chIdx].isMaintenance;
+                    render(); saveData(); showToast(data[catIdx].channels[chIdx].isMaintenance ? 'تم تفعيل وضع الصيانة' : 'تم تعطيل وضع الصيانة');
+                // ==========================
+
                 } else if (action === 'delete') {
                     if (confirm('هل أنت متأكد من الحذف؟')) {
                         if (type === 'server') data[catIdx].channels[chIdx].servers.splice(srvIdx, 1);
@@ -396,7 +433,7 @@
                     const card = button.closest('.form-container');
                     const nameInput = card.querySelector('.channel-name-input'), logoInput = card.querySelector('.channel-logo-input');
                     if (nameInput.value.trim() && logoInput.value.trim()) {
-                        data[catIdx].channels.push({ name: nameInput.value.trim(), logoUrl: logoInput.value.trim(), servers: [] });
+                        data[catIdx].channels.push({ name: nameInput.value.trim(), logoUrl: logoInput.value.trim(), servers: [], isHidden: false, isMaintenance: false });
                         render(); saveData(); showToast('تمت إضافة القناة');
                     } else { showToast('الرجاء إدخال اسم وشعار القناة', 'error'); }
                 } else if (button.classList.contains('add-server-btn')) {
@@ -485,8 +522,8 @@
                         throw new Error(`فشل في جلب الملف: ${getRes.statusText}`);
                     }
                 } catch (e) {
-                     showToast(`خطأ في جلب الملف: ${e.message}`, 'error');
-                     // Don't stop here, proceed to create the file
+                      showToast(`خطأ في جلب الملف: ${e.message}`, 'error');
+                      // Don't stop here, proceed to create the file
                 }
 
                 const commitMessage = `تحديث ملف القنوات من لوحة التحكم - ${new Date().toLocaleString()}`;
