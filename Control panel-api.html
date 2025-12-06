@@ -2,300 +2,591 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
-<title>لوحة التحكم - توليد مباريات</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوحة التحكم - ULTRA TV (الجزائر)</title>
 <style>
-  body{font-family:system-ui,Arial;background:#0f172a;color:#e5e7eb;padding:20px}
-  h1,h3{font-size:20px;margin-bottom:12px; border-bottom: 1px solid #334155; padding-bottom: 8px;}
-  .controls > * {vertical-align: middle;}
-  button,input,select{padding:8px 12px;margin:4px;border-radius:8px;border:1px solid #334155;background:#1e293b;color:#e5e7eb;cursor:pointer}
-  #searchInput{width: 220px;}
-  table{width:100%;margin-top:16px;border-collapse:collapse;background:#0b1220}
-  th,td{border:1px solid #334155;padding:8px;text-align:center}
-  th{background:#1e293b}
-  textarea{width:100%;background:#0b1220;color:#e5e7eb;padding:10px;border-radius:10px; border:1px solid #334155;}
-  #output { height: 200px; }
-  #bulkInput { height: 120px; margin-top: 10px; }
-  .bulk-container { margin: 20px 0; padding: 15px; background: #1e293b; border-radius: 8px;}
-  img{width:32px;height:32px;border-radius:6px;vertical-align:middle;margin-right:8px;}
+  :root {
+    --bg-dark: #0f172a;
+    --bg-card: #1e293b;
+    --border: #334155;
+    --primary: #3b82f6;
+    --success: #22c55e;
+    --warning: #eab308;
+    --danger: #ef4444;
+    --text: #f8fafc;
+    --text-muted: #94a3b8;
+  }
+  * { box-sizing: border-box; outline: none; }
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: var(--bg-dark);
+    color: var(--text);
+    padding: 20px;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  h1 { font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; color: var(--primary); }
+  .dashboard-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+  @media (min-width: 1200px) { .dashboard-grid { grid-template-columns: 3fr 1fr; } }
+
+  .controls {
+    background: var(--bg-card); padding: 15px; border-radius: 12px; border: 1px solid var(--border);
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  }
+  input, select, button, textarea {
+    padding: 10px 14px; border-radius: 8px; border: 1px solid var(--border);
+    background: #0f172a; color: var(--text); font-size: 13px; transition: all 0.2s;
+  }
+  input:focus, select:focus, textarea:focus { border-color: var(--primary); box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); }
+  
+  button { cursor: pointer; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }
+  button:hover { filter: brightness(1.1); transform: translateY(-1px); }
+  
+  .btn-primary { background: var(--primary); border-color: var(--primary); color: white; }
+  .btn-success { background: var(--success); border-color: var(--success); color: white; }
+  .btn-danger { background: var(--danger); border-color: var(--danger); color: white; }
+  .btn-github { background: #24292e; border-color: #24292e; color: white; }
+
+  .stats-bar { display: flex; gap: 15px; margin-top: 10px; font-weight: bold; color: var(--text-muted); font-size: 13px; }
+  .stat-item b { color: var(--text); margin-left: 4px; }
+
+  .table-container { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border); }
+  table { width: 100%; border-collapse: collapse; background: var(--bg-card); min-width: 1000px; }
+  th { background: #162032; padding: 12px; text-align: center; color: var(--text-muted); font-weight: 600; white-space: nowrap; }
+  td { padding: 10px; border-top: 1px solid var(--border); text-align: center; vertical-align: middle; }
+  tr:hover { background: rgba(255,255,255,0.02); }
+
+  img.team-logo { width: 36px; height: 36px; object-fit: contain; vertical-align: middle; margin: 0 5px; background: #ffffff; border-radius: 50%; padding: 2px; }
+  
+  .status-badge { padding: 4px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+  .status-finished { background: rgba(51, 65, 85, 0.5); color: #cbd5e1; border: 1px solid #334155; }
+  .status-live { background: rgba(220, 38, 38, 0.2); color: #fca5a5; border: 1px solid #7f1d1d; animation: pulse 2s infinite; }
+  .status-upcoming { background: rgba(14, 165, 233, 0.2); color: #7dd3fc; border: 1px solid #075985; }
+
+  .channel-input { width: 160px; text-align: center; color: #4ade80; font-weight: bold; }
+  .channel-select { width: 160px; text-align: center; color: #fbbf24; font-weight: bold; cursor: pointer; } 
+  .comm-input { width: 120px; text-align: center; color: #cbd5e1; }
+  
+  .output-area { position: sticky; top: 20px; }
+  textarea#output { width: 100%; height: 400px; font-family: monospace; line-height: 1.5; color: #a5b4fc; }
+
+  .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); backdrop-filter: blur(5px); }
+  .modal-content { background-color: var(--bg-card); margin: 5% auto; padding: 20px; border: 1px solid var(--border); width: 600px; border-radius: 12px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.5); }
+  .modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 15px; }
+  .server-row { display: flex; gap: 10px; margin-bottom: 10px; }
+  .server-row input { flex: 1; }
+  .server-count-badge { background: var(--primary); color: white; padding: 2px 6px; border-radius: 4px; font-size: 10px; margin-right: 5px; display: none; }
+
+  #toast-container { position: fixed; bottom: 20px; left: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px; }
+  .toast { background: var(--bg-card); border-left: 4px solid var(--primary); padding: 12px 20px; border-radius: 4px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 10px; animation: slideIn 0.3s ease-out forwards; color: #fff; }
+  .toast.success { border-color: var(--success); }
+  .toast.error { border-color: var(--danger); }
+  
+  @keyframes slideIn { from { transform: translateX(-100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+  @keyframes fadeOut { to { opacity: 0; transform: translateY(10px); } }
+  @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.6; } 100% { opacity: 1; } }
 </style>
 </head>
 <body>
 
-<h1>🎯 لوحة التحكم - توليد JSON مباريات</h1>
+<h1>🎯 لوحة التحكم <span style="font-size:14px; background:var(--success); color:black; padding:2px 8px; border-radius:4px;">ULTRA TV</span></h1>
 
-<div class="controls">
-    <label>📅 التاريخ: <input type="date" id="date"></label>
-    <input type="text" id="searchInput" placeholder="ابحث عن فريق أو دوري...">
-    <button onclick="saveToGitHub()">💾 حفظ في GitHub</button>
-    <button onclick="clearFileInGitHub()">🗑️ مسح الملف</button>
-    <button onclick="loadFromGitHub()">📥 عرض الملف من GitHub</button>
+<div class="dashboard-grid">
+    <div class="main-content">
+        <div class="controls">
+            <button class="btn-primary" onclick="fetchMatches()">🔄 تحديث البيانات</button>
+            <input type="text" id="searchInput" placeholder="بحث (فريق، دوري)..." style="width: 200px;">
+            <select id="statusFilter" onchange="filterMatches()">
+                <option value="all">🔍 الكل</option>
+                <option value="Live">🔴 مباشر</option>
+                <option value="Finished">🏁 انتهت</option>
+                <option value="Not Started">⏳ قادمة</option>
+            </select>
+            <div style="flex-grow: 1;"></div> 
+            <button class="btn-primary" onclick="processBulkInput()">📝 دمج يدوي</button>
+            <button class="btn-github" onclick="loadFromGitHub()">📥 تحميل</button>
+            <button class="btn-danger" onclick="clearFileInGitHub()">🗑️ مسح</button>
+            <button class="btn-success" onclick="saveToGitHub()">💾 نشر في GitHub</button>
+        </div>
+
+        <div class="stats-bar">
+            <span class="stat-item">المباريات: <b id="statTotal">0</b></span>
+            <span class="stat-item" style="color:#fca5a5">مباشر: <b id="statLive">0</b></span>
+            <span class="stat-item" style="color:#22c55e">تم تحديد: <b id="statSelected">0</b></span>
+        </div>
+
+        <div class="bulk-container" style="margin-top:15px; display:none;" id="bulkSection">
+            <textarea id="bulkInput" placeholder="لصق بيانات يدوية: الفريق 1 ضد الفريق 2, القناة, المعلق" style="height:80px; width:100%;"></textarea>
+        </div>
+
+        <div class="table-container" style="margin-top: 15px;">
+            <table id="matchesTable">
+                <thead>
+                    <tr>
+                        <th width="40">✔️</th>
+                        <th width="70">الحالة</th>
+                        <th>الفريق 1</th>
+                        <th width="70">النتيجة</th>
+                        <th>الفريق 2</th>
+                        <th>الدوري</th>
+                        <th width="90">الوقت (12H)</th>
+                        <th>القناة الناقلة</th>
+                        <th>المعلق</th>
+                        <th width="50">سرفرات</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="output-area">
+        <div class="controls" style="margin-bottom: 10px; justify-content: space-between;">
+            <strong>📦 JSON الناتج</strong>
+            <button onclick="copyJSON()" style="padding: 4px 8px; font-size: 11px;">📋 نسخ</button>
+        </div>
+        <textarea id="output" readonly></textarea>
+    </div>
 </div>
 
-<div class="bulk-container">
-    <h3>📝 الإدخال والتحديد التلقائي</h3>
-    <textarea id="bulkInput" placeholder="ضع قائمة المباريات هنا، كل مباراة في سطر.&#10;التنسيق: الفريق الأول ضد الفريق الثاني, القناة, المعلق"></textarea>
-    <button onclick="processBulkInput()">🔍 بحث وتحديد تلقائي</button>
+<div id="serverModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>📡 إدارة السيرفرات</h3>
+            <span style="cursor:pointer; font-size:24px;" onclick="closeServerModal()">&times;</span>
+        </div>
+        <div id="serverList"></div>
+        <div style="margin-top: 15px; display:flex; gap:10px;">
+            <button class="btn-primary" onclick="addServerLine()">+ إضافة سطر</button>
+            <div style="flex-grow:1"></div>
+            <button class="btn-success" onclick="saveServers()">حفظ وإغلاق</button>
+        </div>
+    </div>
 </div>
 
-
-<table id="matchesTable">
-  <thead>
-    <tr>
-      <th>✔️</th>
-      <th>الفريق 1</th>
-      <th></th>
-      <th>الفريق 2</th>
-      <th>الدوري</th>
-      <th>الوقت</th>
-      <th>القناة</th>
-      <th>المعلق</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<h3>📦 JSON الناتج</h3>
-<textarea id="output" readonly></textarea>
+<div id="toast-container"></div>
 
 <script>
-// --- الإعدادات الرئيسية ---
+// --- Config ---
 const config = {
-    footballApi: { key: "66e3a49095e0519ab1f48f1d3a34f50c", url: "https://v3.football.api-sports.io/fixtures" },
-    github: { token: "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", repo: "ihabmalaouiH/ULTRATV", filePath: "matches.json", branch: "main" }
+    apiUrl: "https://raw.githubusercontent.com/ihabmalaouiH/ULTRATV/refs/heads/main/today.json",
+    github: { 
+        token: "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", 
+        repo: "ihabmalaouiH/ULTRATV", 
+        filePath: "sys_res_92a.json", 
+        branch: "main" 
+    }
 };
 
-// --- العناصر الأساسية في الصفحة ---
-const dateInput = document.getElementById("date");
+// --- Elements ---
 const searchInput = document.getElementById("searchInput");
-const bulkInput = document.getElementById("bulkInput");
+const statusFilter = document.getElementById("statusFilter");
 const matchesTbody = document.querySelector("#matchesTable tbody");
 const outputTextarea = document.getElementById("output");
+let currentMatchRow = null;
 
-/**
- * ✅ دالة جديدة لمعالجة الإدخال الجماعي والبحث والتحديد التلقائي
- */
-function processBulkInput() {
-    const lines = bulkInput.value.trim().split('\n');
-    if (lines.length === 0 || lines[0] === '') {
-        return alert("الرجاء إدخال قائمة المباريات أولاً.");
-    }
+// --- Init ---
+function initialize() {
+    matchesTbody.addEventListener('change', updateStatsAndJSON);
+    matchesTbody.addEventListener('input', updateStatsAndJSON);
+    searchInput.addEventListener('input', filterMatches);
+    fetchMatches();
+}
 
-    const allRows = Array.from(matchesTbody.querySelectorAll('tr'));
-    let foundCount = 0;
-    const notFound = [];
+// --- Helper: Parse Arabic Date ---
+function parseArabicMatchTime(dateStr, timeStr) {
+    try {
+        const dateParts = dateStr.match(/(\d{2})-(\d{2})-(\d{4})/);
+        if (!dateParts) return null;
+        const year = parseInt(dateParts[3]);
+        const month = parseInt(dateParts[2]) - 1;
+        const day = parseInt(dateParts[1]);
 
-    lines.forEach(line => {
-        const parts = line.split(',');
-        if (parts.length < 3) return;
-
-        const matchText = parts[0].toLowerCase().trim();
-        const teams = matchText.split(' ضد ');
-        if (teams.length < 2) return;
+        let time = timeStr.replace('مساءً', 'PM').replace('صباحاً', 'AM')
+                          .replace('مساء', 'PM').replace('صباح', 'AM')
+                          .trim();
         
-        const team1Query = teams[0].trim();
-        const team2Query = teams[1].trim();
-        const channel = parts[1].trim();
-        const commentator = parts[2].trim();
+        let [timeRaw, modifier] = time.split(' ');
+        let [hours, minutes] = timeRaw.split(':');
+        
+        if (hours === '12') hours = '00';
+        if (modifier === 'PM') hours = parseInt(hours, 10) + 12;
+        
+        const dateObj = new Date(year, month, day, hours, minutes);
+        return dateObj;
+    } catch (e) {
+        console.error("Date Error", e);
+        return new Date();
+    }
+}
 
-        const foundRow = allRows.find(row => {
-            if (!row.dataset.team1Name) return false;
-            const team1Name = row.dataset.team1Name.toLowerCase();
-            const team2Name = row.dataset.team2Name.toLowerCase();
-            
-            // تحقق من الترتيبين (فريق أ ضد ب) أو (فريق ب ضد أ)
-            const matchOrder1 = team1Name.includes(team1Query) && team2Name.includes(team2Query);
-            const matchOrder2 = team1Name.includes(team2Query) && team2Name.includes(team1Query);
+// --- Main Fetch Logic ---
+async function fetchMatches() {
+    matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">⏳ جاري جلب البيانات...</td></tr>`;
+    try {
+        const res = await fetch(`${config.apiUrl}?t=${new Date().getTime()}`);
+        if (!res.ok) throw new Error(`HTTP Error: ${res.status}`);
+        const allMatches = await res.json(); 
 
-            return matchOrder1 || matchOrder2;
+        if (!Array.isArray(allMatches) || allMatches.length === 0) {
+            return matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">لا توجد مباريات.</td></tr>`;
+        }
+
+        allMatches.forEach(m => {
+            const dateObj = parseArabicMatchTime(m.info.date, m.info.time);
+            m._timestamp = dateObj ? dateObj.getTime() : 0;
         });
 
-        if (foundRow) {
-            foundRow.querySelector("input[type='checkbox']").checked = true;
-            foundRow.querySelector(".channel-input").value = channel;
-            foundRow.querySelector(".commentator-input").value = commentator;
-            foundCount++;
-        } else {
-            notFound.push(matchText);
-        }
-    });
-    
-    // تحديث JSON بعد التحديد
-    generateJSON();
+        allMatches.sort((a, b) => a._timestamp - b._timestamp);
+        renderMatches(allMatches);
+        showToast(`تم تحميل ${allMatches.length} مباراة`, 'success');
 
-    // عرض تقرير بالنتائج
-    let report = `✅ تم العثور على وتحديث ${foundCount} مباراة.\n`;
-    if (notFound.length > 0) {
-        report += `\n⚠️ لم يتم العثور على المباريات التالية:\n- ${notFound.join('\n- ')}`;
-    }
-    alert(report);
-}
-
-
-async function fetchMatches() {
-    const date = dateInput.value;
-    const cacheKey = "matches_" + date;
-    
-    try {
-        const cachedData = localStorage.getItem(cacheKey);
-        if (cachedData) { return renderMatches(JSON.parse(cachedData)); }
-    } catch(e) { console.warn("لم يتم قراءة الذاكرة المؤقتة:", e); }
-
-    matchesTbody.innerHTML = `<tr><td colspan="8">⏳ جاري التحميل...</td></tr>`;
-    try {
-        const res = await fetch(`${config.footballApi.url}?date=${date}`, { headers: { "x-apisports-key": config.footballApi.key } });
-        const data = await res.json();
-
-        if (!res.ok) {
-            let errorMsg = data.message || Object.entries(data.errors || {}).map(([k, v]) => `${k}: ${v}`).join(', ');
-            throw new Error(errorMsg || 'خطأ غير معروف');
-        }
-
-        if (!data.response || data.response.length === 0) {
-            return matchesTbody.innerHTML = `<tr><td colspan="8">لا توجد مباريات لهذا اليوم.</td></tr>`;
-        }
-
-        try {
-            localStorage.setItem(cacheKey, JSON.stringify(data.response));
-        } catch (e) {
-            if (e.name === 'QuotaExceededError') {
-                console.warn('تحذير: حجم بيانات المباريات كبير جدًا ولا يمكن تخزينه مؤقتًا.');
-            } else {
-                console.error('فشل التخزين المؤقت:', e);
-            }
-        }
-        
-        renderMatches(data.response);
     } catch (err) {
-        console.error("Fetch Error:", err);
-        matchesTbody.innerHTML = `<tr><td colspan="8">⚠️ فشل في جلب البيانات: ${err.message}</td></tr>`;
+        matchesTbody.innerHTML = `<tr><td colspan="10" style="color:var(--danger)">⚠️ خطأ: ${err.message}</td></tr>`;
+        showToast("فشل الاتصال", 'error');
     }
 }
 
+// --- Helper to format channel names ---
+function formatChannelName(name) {
+    if (!name) return name;
+    let formatted = name;
+    
+    // beIN SPORTS formatting
+    if (formatted.includes("بي إن سبورت") || formatted.includes("بي ان سبورت") || formatted.includes("beIN Sports")) {
+        // Replace base name and normalize case
+        formatted = formatted.replace(/بي [إا]ن سبورت|beIN Sports/gi, "beIN SPORTS");
+        // Remove 'HD' (case insensitive) and trim
+        formatted = formatted.replace(/HD/gi, "").trim();
+    }
+    
+    // Thmanyah formatting
+    if (formatted.includes("ثمانية")) {
+        formatted = formatted.replace("ثمانية", "Thmanyah").trim();
+    }
+    
+    // Additional cleanup for extra spaces
+    return formatted.replace(/\s+/g, ' ').trim();
+}
+
+// --- Render Table ---
 function renderMatches(matches) {
     matchesTbody.innerHTML = "";
-    matches.forEach(match => {
-        const tr = document.createElement("tr");
-        tr.dataset.team1Name = match.teams.home.name;
-        tr.dataset.team1Logo = match.teams.home.logo || "assets/default_team.png";
-        tr.dataset.team2Name = match.teams.away.name;
-        tr.dataset.team2Logo = match.teams.away.logo || "assets/default_team.png";
-        tr.dataset.league = match.league.name;
-        tr.dataset.startTime = match.fixture.timestamp;
+    const now = new Date().getTime();
 
-        const timeLocal = new Date(match.fixture.timestamp * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    matches.forEach(match => {
+        const team1 = match.teams.home;
+        const team2 = match.teams.away;
+        const info = match.info;
+        
+        const startTime = Math.floor(match._timestamp / 1000);
+        const matchDate = new Date(match._timestamp);
+        const timeStr = matchDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+
+        let statusBadgeClass = "status-upcoming";
+        let rawStatus = "لم تبدأ";
+        let jsonStatus = "Not Started";
+        const diffMinutes = (now - match._timestamp) / 60000;
+
+        if (diffMinutes < 0) {
+            rawStatus = "لم تبدأ";
+            statusBadgeClass = "status-upcoming";
+            jsonStatus = "Not Started";
+        } else if (diffMinutes >= 0 && diffMinutes <= 130) {
+            rawStatus = "جارية";
+            statusBadgeClass = "status-live";
+            jsonStatus = "Live";
+        } else {
+            rawStatus = "انتهت";
+            statusBadgeClass = "status-finished";
+            jsonStatus = "Finished";
+        }
+
+        const score = (jsonStatus === "Not Started") ? "VS" : `0 - 0`; 
+
+        const defaultLogo = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z'/%3E%3C/svg%3E";
+
+        // --- Channel Logic ---
+        let channelCellHTML = '';
+        let commCellHTML = '';
+        
+        if (match.channels && match.channels.length > 1) {
+            let options = match.channels.map(ch => {
+                let displayChannel = formatChannelName(ch.channel);
+                return `<option value="${displayChannel}" data-commentator="${ch.commentator}">${displayChannel}</option>`;
+            }).join('');
+            
+            channelCellHTML = `
+                <select class="channel-select" onchange="updateRowCommentator(this)">
+                    ${options}
+                </select>
+            `;
+            commCellHTML = `<input type="text" value="${match.channels[0].commentator}" class="comm-input">`;
+            
+        } else {
+            let chName = (match.channels && match.channels.length > 0) ? formatChannelName(match.channels[0].channel) : "غير معروف";
+            let commName = (match.channels && match.channels.length > 0) ? match.channels[0].commentator : "";
+            
+            channelCellHTML = `<input type="text" value="${chName}" class="channel-input">`;
+            commCellHTML = `<input type="text" value="${commName}" placeholder="المعلق" class="comm-input">`;
+        }
+
+        const tr = document.createElement("tr");
+        tr.dataset.team1Name = team1.name;
+        tr.dataset.team1Logo = team1.logo;
+        tr.dataset.team2Name = team2.name;
+        tr.dataset.team2Logo = team2.logo;
+        tr.dataset.league = info.championship;
+        tr.dataset.startTime = startTime;
+        tr.dataset.jsonStatus = jsonStatus;
+        tr.dataset.score = (score === "VS") ? "" : score;
+        tr.dataset.servers = "[]"; 
 
         tr.innerHTML = `
             <td><input type="checkbox"></td>
-            <td><img src="${tr.dataset.team1Logo}" alt=""> ${tr.dataset.team1Name}</td>
-            <td>VS</td>
-            <td><img src="${tr.dataset.team2Logo}" alt=""> ${tr.dataset.team2Name}</td>
-            <td>${tr.dataset.league}</td>
-            <td>${timeLocal}</td>
-            <td><input type="text" placeholder="القناة" class="channel-input"></td>
-            <td><input type="text" placeholder="المعلق" class="commentator-input"></td>
+            <td><span class="status-badge ${statusBadgeClass}">${rawStatus}</span></td>
+            <td style="text-align:left"><img src="${team1.logo}" class="team-logo" referrerpolicy="no-referrer" onerror="this.src='${defaultLogo}'"> ${team1.name}</td>
+            <td style="font-weight:bold; letter-spacing:2px; font-family:monospace;">${score}</td>
+            <td style="text-align:right">${team2.name} <img src="${team2.logo}" class="team-logo" referrerpolicy="no-referrer" onerror="this.src='${defaultLogo}'"></td>
+            <td style="font-size:12px; color:#94a3b8">${info.championship}</td>
+            <td dir="ltr" style="font-family:monospace; color:#fbbf24; white-space:nowrap;">${timeStr}</td>
+            <td>${channelCellHTML}</td>
+            <td>${commCellHTML}</td>
+            <td>
+                <button onclick="openServerModal(this)" style="padding:4px 8px;" class="btn-github">
+                    <span class="server-count-badge">0</span> 📡
+                </button>
+            </td>
         `;
         matchesTbody.appendChild(tr);
     });
+    updateStatsAndJSON();
     filterMatches();
 }
 
+// --- NEW FUNCTION: Update Commentator when Channel changes ---
+function updateRowCommentator(selectElement) {
+    const row = selectElement.closest('tr');
+    const commInput = row.querySelector('.comm-input');
+    const selectedOption = selectElement.options[selectElement.selectedIndex];
+    const newCommentator = selectedOption.getAttribute('data-commentator');
+    if (commInput) {
+        commInput.value = newCommentator;
+        updateStatsAndJSON();
+    }
+}
+
+// --- Server Modal Logic ---
+function openServerModal(btn) {
+    currentMatchRow = btn.closest('tr');
+    const serversData = JSON.parse(currentMatchRow.dataset.servers || "[]");
+    const container = document.getElementById("serverList");
+    container.innerHTML = "";
+    if (serversData.length > 0) {
+        serversData.forEach(srv => {
+            const name = Object.keys(srv)[0];
+            const url = Object.values(srv)[0];
+            addServerLine(name, url);
+        });
+    } else {
+        addServerLine(); 
+    }
+    document.getElementById("serverModal").style.display = "block";
+}
+
+function addServerLine(name = "", url = "") {
+    const div = document.createElement("div");
+    div.className = "server-row";
+    div.innerHTML = `
+        <input type="text" placeholder="اسم السيرفر" value="${name}" class="srv-name">
+        <input type="text" placeholder="رابط السيرفر" value="${url}" class="srv-url">
+        <button class="btn-danger" onclick="this.parentElement.remove()" style="padding: 5px 10px;">🗑️</button>
+    `;
+    document.getElementById("serverList").appendChild(div);
+}
+
+function saveServers() {
+    if (!currentMatchRow) return;
+    const rows = document.querySelectorAll("#serverList .server-row");
+    const serversArray = [];
+    rows.forEach(row => {
+        const name = row.querySelector(".srv-name").value.trim();
+        const url = row.querySelector(".srv-url").value.trim();
+        if (name && url) {
+            const obj = {};
+            obj[name] = url;
+            serversArray.push(obj);
+        }
+    });
+    currentMatchRow.dataset.servers = JSON.stringify(serversArray);
+    const badge = currentMatchRow.querySelector(".server-count-badge");
+    badge.innerText = serversArray.length;
+    badge.style.display = serversArray.length > 0 ? "inline-block" : "none";
+    if (serversArray.length > 0) {
+        currentMatchRow.querySelector("input[type='checkbox']").checked = true;
+    }
+    closeServerModal();
+    updateStatsAndJSON();
+    showToast("تم حفظ السيرفرات", "success");
+}
+
+function closeServerModal() {
+    document.getElementById("serverModal").style.display = "none";
+    currentMatchRow = null;
+}
+
+// --- Utils ---
 function filterMatches() {
-    const searchTerm = searchInput.value.toLowerCase().trim();
+    const term = searchInput.value.toLowerCase().trim();
+    const status = statusFilter.value;
     const rows = matchesTbody.querySelectorAll('tr');
     rows.forEach(row => {
-        if (row.querySelectorAll('td').length > 1) {
-            const rowText = (row.dataset.team1Name + row.dataset.team2Name + row.dataset.league).toLowerCase();
-            row.style.display = rowText.includes(searchTerm) ? '' : 'none';
-        }
+        const textMatch = (row.dataset.team1Name + row.dataset.team2Name + row.dataset.league).toLowerCase().includes(term);
+        const statusMatch = status === 'all' || row.dataset.jsonStatus === status;
+        row.style.display = (textMatch && statusMatch) ? '' : 'none';
     });
 }
 
-function generateJSON() {
-    const selectedRows = document.querySelectorAll("#matchesTable tbody input[type='checkbox']:checked");
+function updateStatsAndJSON() {
+    const allRows = matchesTbody.querySelectorAll('tr');
+    const selectedRows = matchesTbody.querySelectorAll("input[type='checkbox']:checked");
+    
+    document.getElementById("statTotal").innerText = allRows.length;
+    document.getElementById("statSelected").innerText = selectedRows.length;
+    document.getElementById("statLive").innerText = Array.from(allRows).filter(r => r.dataset.jsonStatus === "Live").length;
+
     const matchesArray = [];
     selectedRows.forEach(checkbox => {
         const row = checkbox.closest("tr");
-        if (row.style.display === 'none') return; 
-        const data = row.dataset;
+        if (row.style.display === 'none') return;
+        
+        const d = row.dataset;
+        
+        let chInput = row.querySelector(".channel-input");
+        let channelValue = "";
+        
+        if (chInput) {
+            channelValue = chInput.value;
+        } else {
+            const chSelect = row.querySelector(".channel-select");
+            channelValue = chSelect ? chSelect.value : "غير معروف";
+        }
+
+        const commInput = row.querySelector(".comm-input").value;
+        const servers = JSON.parse(d.servers || "[]");
+
         matchesArray.push({
-            team1Name: data.team1Name, team1Logo: data.team1Logo,
-            team2Name: data.team2Name, team2Logo: data.team2Logo,
-            status: "Not Started", league: data.league, score: "",
-            startTime: parseInt(data.startTime, 10), isLive: false,
-            channel: row.querySelector(".channel-input").value || "",
-            commentator: row.querySelector(".commentator-input").value || ""
+            team1Name: d.team1Name, team1Logo: d.team1Logo,
+            team2Name: d.team2Name, team2Logo: d.team2Logo,
+            startTime: parseInt(d.startTime, 10),
+            league: d.league, 
+            channel: channelValue,
+            commentator: commInput,
+            servers: servers 
         });
     });
     outputTextarea.value = JSON.stringify(matchesArray, null, 2);
 }
 
-// --- دوال التعامل مع GitHub (بدون تغيير) ---
-async function updateGitHubFile(content, message) { /* ... الكود هنا كما هو ... */ }
-async function saveToGitHub() { /* ... الكود هنا كما هو ... */ }
-async function clearFileInGitHub() { /* ... الكود هنا كما هو ... */ }
-async function loadFromGitHub() { /* ... الكود هنا كما هو ... */ }
-// ملاحظة: تم إخفاء كود دوال GitHub للاختصار، لكنه موجود بالكامل في الكود المرفق أعلاه.
-async function updateGitHubFile(content, message) {
-    const GITHUB_API_URL = `https://api.github.com/repos/${config.github.repo}/contents/${config.github.filePath}`;
+function processBulkInput() {
+    const input = document.getElementById("bulkInput");
+    if(input.parentElement.style.display === "none") {
+        input.parentElement.style.display = "block"; input.focus(); return;
+    }
+    const lines = input.value.trim().split('\n');
+    if (!input.value.trim()) return;
+    let count = 0;
+    const rows = Array.from(matchesTbody.querySelectorAll('tr'));
+    lines.forEach(line => {
+        const parts = line.split(',');
+        if (parts.length < 3) return;
+        const [matchStr, ch, comm] = parts;
+        const [t1, t2] = matchStr.toLowerCase().split(' ضد ');
+        if(!t1 || !t2) return;
+        const row = rows.find(r => {
+            const n1 = r.dataset.team1Name.toLowerCase();
+            const n2 = r.dataset.team2Name.toLowerCase();
+            return (n1.includes(t1.trim()) && n2.includes(t2.trim())) || (n1.includes(t2.trim()) && n2.includes(t1.trim()));
+        });
+        if (row) {
+            row.querySelector("input[type='checkbox']").checked = true;
+            let chField = row.querySelector(".channel-input") || row.querySelector(".channel-select");
+            
+            // Format manual input as well
+            let formattedChannel = formatChannelName(ch.trim());
+            
+            if(chField.tagName === "INPUT") {
+                chField.value = formattedChannel;
+            }
+            
+            const commField = row.querySelector(".comm-input");
+            commField.value = comm.trim();
+            count++;
+        }
+    });
+    updateStatsAndJSON();
+    showToast(`تم دمج ${count} مباراة`, 'success');
+    input.value = ""; input.parentElement.style.display = "none";
+}
+
+function copyJSON() {
+    outputTextarea.select(); document.execCommand('copy');
+    showToast('تم نسخ الكود!', 'success');
+}
+
+function showToast(msg, type = 'info') {
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    toast.innerHTML = `<span>${msg}</span>`;
+    document.getElementById('toast-container').appendChild(toast);
+    setTimeout(() => {
+        toast.style.animation = 'fadeOut 0.3s forwards';
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
+}
+
+// --- GitHub Functions ---
+async function updateGitHubFile(content, msg) {
+    const URL = `https://api.github.com/repos/${config.github.repo}/contents/${config.github.filePath}`;
     const headers = {"Authorization": `token ${config.github.token}`, "Content-Type": "application/json"};
     try {
-        let sha = null;
-        const fileRes = await fetch(`${GITHUB_API_URL}?ref=${config.github.branch}`, { headers });
-        if (fileRes.ok) { sha = (await fileRes.json()).sha; }
-        const res = await fetch(GITHUB_API_URL, {method: "PUT", headers, body: JSON.stringify({ message, content, branch: config.github.branch, sha })});
-        if (res.ok) return { success: true };
+        const refRes = await fetch(`${URL}?ref=${config.github.branch}`, { headers });
+        let sha = refRes.ok ? (await refRes.json()).sha : null;
+        const res = await fetch(URL, {method: "PUT", headers, body: JSON.stringify({ message: msg, content, branch: config.github.branch, sha })});
+        if(res.ok) return {success:true};
         const err = await res.json();
-        return { success: false, error: err.message || JSON.stringify(err) };
-    } catch (err) {
-        console.error("GitHub Update Error:", err);
-        return { success: false, error: "حدث خطأ في الشبكة." };
-    }
+        return {success:false, error: err.message};
+    } catch (e) { return {success:false, error: "Network Error"}; }
 }
+
 async function saveToGitHub() {
-    const json = outputTextarea.value.trim();
-    if (!json || json === "[]") return alert("⚠️ لا يوجد بيانات لحفظها!");
-    const content = btoa(unescape(encodeURIComponent(json)));
-    const result = await updateGitHubFile(content, "update matches.json");
-    alert(result.success ? "✅ تم الحفظ في GitHub!" : "⚠️ فشل الحفظ: " + result.error);
+    const val = outputTextarea.value;
+    if(!val || val==="[]") return showToast("لا توجد بيانات", "error");
+    showToast("جاري الحفظ...", "info");
+    const res = await updateGitHubFile(btoa(unescape(encodeURIComponent(val))), "update matches.json");
+    if(res.success) showToast("✅ تم الحفظ!", "success");
+    else showToast("❌ فشل: " + res.error, "error");
 }
+
 async function clearFileInGitHub() {
-    const emptyContent = btoa("[]");
-    const result = await updateGitHubFile(emptyContent, "clear matches.json");
-    if (result.success) {
-        outputTextarea.value = "[]";
-        alert("🗑️ تم مسح الملف في GitHub!");
-    } else {
-        alert("⚠️ فشل مسح الملف: " + result.error);
-    }
+    if(!confirm("مسح الملف؟")) return;
+    const res = await updateGitHubFile(btoa("[]"), "clear matches");
+    if(res.success) { outputTextarea.value = "[]"; showToast("🗑️ تم المسح", "success"); } 
+    else showToast("خطأ: " + res.error, "error");
 }
+
 async function loadFromGitHub() {
+    showToast("جاري التحميل...", "info");
     try {
         const res = await fetch(`https://api.github.com/repos/${config.github.repo}/contents/${config.github.filePath}?ref=${config.github.branch}`, {headers: {"Authorization": `token ${config.github.token}`}});
-        if (res.ok) {
-            const data = await res.json();
-            outputTextarea.value = atob(data.content);
-            alert("📥 تم جلب الملف من GitHub!");
-        } else {
-            alert("⚠️ لم يتم العثور على الملف.");
-        }
-    } catch (err) {
-        console.error("GitHub Load Error:", err);
-        alert("⚠️ فشل في جلب الملف.");
-    }
-}
-
-
-// --- بدء تشغيل السكربت ---
-function initialize() {
-    dateInput.value = new Date().toISOString().slice(0, 10);
-    dateInput.addEventListener('change', fetchMatches);
-    matchesTbody.addEventListener('input', generateJSON);
-    searchInput.addEventListener('input', filterMatches);
-    fetchMatches();
+        if(res.ok) { outputTextarea.value = atob((await res.json()).content); showToast("📥 تم التحميل", "success"); } 
+        else showToast("الملف غير موجود", "error");
+    } catch(e) { showToast("خطأ شبكة", "error"); }
 }
 
 initialize();
 </script>
-
 </body>
 </html>
