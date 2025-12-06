@@ -12,18 +12,18 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from github import Github, Auth
 from flask import Flask # إضافة جديدة
 from threading import Thread # إضافة جديدة
+import os  # 👈 إضافة مكتبة النظام
 
 # ==========================================
-# ⚙️ إعدادات البوت
+# ⚙️ إعدادات البوت (يتم جلبها من Environment Variables)
 # ==========================================
-GITHUB_TOKEN = "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"
-REPO_NAME = "ihabmalaouiH/ULTRATV"
-FILE_PATH_IN_REPO = "today.json"
-TELEGRAM_TOKEN = "8407076175:AAE1j1T6Ouscz9zwaowfVJPSoM6uYANMtEA"
-TELEGRAM_CHAT_ID = "8421187425"
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+REPO_NAME = os.getenv("REPO_NAME")
+FILE_PATH_IN_REPO = os.getenv("FILE_PATH_IN_REPO", "today.json") # القيمة الثانية هي الافتراضية
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-CHECK_INTERVAL = 300 
-
+CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", 300))
 # ==========================================
 # إعداد سيرفر وهمي (Flask) ليعمل على Render
 # ==========================================
