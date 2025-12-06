@@ -23,7 +23,7 @@ FILE_PATH_IN_REPO = os.getenv("FILE_PATH_IN_REPO", "today.json")
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", 300))
+CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", 60))
 
 # ==========================================
 # إعداد سيرفر وهمي (Flask) ليعمل على Render
@@ -109,44 +109,52 @@ def get_match_deep_details(match_url):
                     match_details["info"][key_en] = val
 
         # ========================================================
-        # 🔥 تحديث سحب النتيجة والحالة (بناءً على كود الموقع) 🔥
+        # 🔥 تعديل سحب النتيجة والحالة (لإصلاح مشكلة "لم تبدأ") 🔥
         # ========================================================
         
         current_score = "- : -"
-        match_status = "لم تبدأ"
-
-        # 1. سحب النتيجة (يدعم كلا الهيكليتين: الصفحة الرئيسية والتفاصيل)
-        # البحث عن الكلاسات التي ظهرت في كود الموقع: first-team-result و second-team-result
+        # 1. النتيجة: نبحث عن الكلاسات التي ظهرت في كود الموقع
         s1_tag = soup.find('div', class_=re.compile(r'first-team-result')) or soup.find('span', class_=re.compile(r'first-team-result'))
         s2_tag = soup.find('div', class_=re.compile(r'second-team-result')) or soup.find('span', class_=re.compile(r'second-team-result'))
         
         if s1_tag and s2_tag:
-            # إذا وجدنا النتائج بالأرقام
             s1 = clean_text(s1_tag.text)
             s2 = clean_text(s2_tag.text)
             if s1.isdigit() and s2.isdigit():
                 current_score = f"{s1} - {s2}"
         else:
-             # محاولة احتياطية (طريقة صفحة التفاصيل الداخلية)
              main_res = soup.find('div', class_='main-result')
              if main_res:
                  bs = main_res.find_all('b')
                  if len(bs) >= 2:
                      current_score = f"{clean_text(bs[0].text)} - {clean_text(bs[1].text)}"
 
-        # 2. سحب الحالة (مباشر، انتهت، أو قادمة)
-        # البحث عن النص داخل result-status-text كما في الكود الذي أرسلته
-        status_span = soup.find('span', class_=re.compile(r'result-status-text')) or soup.find('div', class_=re.compile(r'match-status'))
+        match_details["info"]["current_score"] = current_score
+
+        # 2. الحالة: هذا هو التعديل الهام
+        # نبحث أولاً عن حالة المباشر (live-match-status)
+        match_status = ""
         
-        if status_span and status_span.text.strip():
-            match_status = clean_text(status_span.text)
-        else:
-            # إذا كانت الحالة فارغة، نبحث عن وقت المباراة (match-date) كما في المباريات القادمة
+        live_status = soup.find('span', class_=re.compile(r'live-match-status'))
+        if live_status and live_status.text.strip():
+            match_status = clean_text(live_status.text)
+        
+        # إذا لم نجد، نبحث عن حالة النهاية (result-status-text)
+        if not match_status:
+            end_status = soup.find('span', class_=re.compile(r'result-status-text'))
+            if end_status and end_status.text.strip():
+                match_status = clean_text(end_status.text)
+        
+        # إذا لم نجد (يعني المباراة قادمة)، نسحب الوقت من (match-date)
+        if not match_status:
             date_status = soup.find('b', class_='match-date')
-            if date_status:
+            if date_status and date_status.text.strip():
                 match_status = clean_text(date_status.text)
 
-        match_details["info"]["current_score"] = current_score
+        # إذا فشل كل شيء، نستخدم الوقت الموجود في المعلومات
+        if not match_status:
+             match_status = match_details["info"].get("time", "لم تبدأ")
+
         match_details["info"]["match_status"] = match_status
         # ========================================================
 
