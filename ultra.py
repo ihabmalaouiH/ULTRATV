@@ -63,31 +63,24 @@ session.mount("http://", adapter)
 session.headers.update(HEADERS)
 
 # ==========================================
-# 🛠️ دالة تحويل الوقت للجزائر (نظام 24 ساعة)
+# 🛠️ دالة تحويل الوقت للجزائر (تصحيح 12 ظهراً و 00 ليلاً)
 # ==========================================
 def convert_to_algeria_time(time_str):
     if not time_str or ":" not in time_str:
         return time_str
     try:
-        # الكشف عن المساء/الصباح قبل التنظيف
         is_pm = "م" in time_str or "مساء" in time_str
-        is_am = "ص" in time_str or "صباح" in time_str
-
-        # استخراج الوقت الرقمي فقط
         clean_time = re.sub(r'[^0-9:]', '', time_str)
-        
         match_time = datetime.datetime.strptime(clean_time, "%H:%M")
 
-        # تحويل من 12 إلى 24 ساعة يدوياً لضمان الدقة
+        # معالجة نظام 12 ساعة
         if is_pm and match_time.hour != 12:
             match_time = match_time.replace(hour=match_time.hour + 12)
-        elif is_am and match_time.hour == 12:
+        elif not is_pm and match_time.hour == 12:
             match_time = match_time.replace(hour=0)
 
-        # إضافة 6 ساعات (الفرق بين EST والجزائر)
+        # إضافة 6 ساعات
         new_time = match_time + timedelta(hours=6) 
-        
-        # الإرجاع بنظام 24 ساعة دائماً
         return new_time.strftime("%H:%M")
     except:
         return time_str
@@ -136,17 +129,17 @@ def get_match_deep_details(match_url):
                     val_elem = parent.find_next_sibling() or parent.find('span', class_='value')
                     val = clean_text(val_elem.text) if val_elem else clean_text(parent.get_text().replace(key_ar, ''))
                     
-                    # 🔥 تحويل الوقت هنا وضمان تنسيق 24 ساعة 🔥
                     if key_en == "time":
                         val = convert_to_algeria_time(val)
                         
                     match_details["info"][key_en] = val
 
         # ========================================================
-        # 🔥 سحب النتيجة والحالة (النسخة النهائية الدقيقة) 🔥
+        # 🔥 سحب النتيجة والحالة (حل مشكلة التداخل النهائية) 🔥
         # ========================================================
         current_score = "- : -"
-        
+        match_status = ""
+
         # 1. النتيجة
         s1_tag = soup.find('div', class_=re.compile(r'first-team-result')) or soup.find('span', class_=re.compile(r'first-team-result'))
         s2_tag = soup.find('div', class_=re.compile(r'second-team-result')) or soup.find('span', class_=re.compile(r'second-team-result'))
@@ -163,23 +156,28 @@ def get_match_deep_details(match_url):
                  if len(bs) >= 2:
                      current_score = f"{clean_text(bs[0].text)} - {clean_text(bs[1].text)}"
 
-        # 2. الحالة
-        match_status = ""
-        
-        # أ. هل هي جارية؟
-        live_status = soup.find('span', class_=re.compile(r'live-match-status'))
-        if live_status and live_status.text.strip():
-            match_status = clean_text(live_status.text)
-        
-        # ب. هل انتهت؟
+        # 2. الحالة: التحقق الصارم
+        # أ. البحث عن "إنتهت" أو "نهاية" في كامل كود الصفحة إذا كانت النتيجة موجودة
+        # هذا يحل مشكلة أن الكلاس قد يكون فارغاً ولكن المباراة منتهية
+        finished_keywords = soup.find_all(string=re.compile(r'(إنتهت|نهاية|Full Time)'))
+        if finished_keywords:
+             match_status = "إنتهت المباراة"
+
+        # ب. إذا لم نجد "انتهت"، نبحث عن حالة المباشر
+        if not match_status:
+            live_status = soup.find('span', class_=re.compile(r'live-match-status'))
+            if live_status and live_status.text.strip():
+                match_status = clean_text(live_status.text)
+
+        # ج. محاولة أخيرة من الكلاسات المعتادة إذا لم نجد شيئاً بعد
         if not match_status:
             end_status_candidates = soup.find_all('span', class_=re.compile(r'result-status-text'))
             for status_item in end_status_candidates:
-                if status_item.text.strip():
+                if status_item.text.strip() and ":" not in status_item.text:
                     match_status = clean_text(status_item.text)
                     break
         
-        # ج. إذا لم نجد حالة صريحة أو كانت تحتوي على وقت (:)، فهي لم تبدأ
+        # د. الفلتر النهائي: إذا كانت فارغة أو تحتوي على وقت (:) -> لم تبدأ
         if not match_status or ":" in match_status:
              match_status = "لم تبدأ"
 
