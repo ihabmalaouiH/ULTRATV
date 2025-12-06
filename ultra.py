@@ -63,20 +63,31 @@ session.mount("http://", adapter)
 session.headers.update(HEADERS)
 
 # ==========================================
-# 🛠️ دالة تحويل الوقت للجزائر (+6 ساعات)
+# 🛠️ دالة تحويل الوقت للجزائر (نظام 24 ساعة)
 # ==========================================
 def convert_to_algeria_time(time_str):
     if not time_str or ":" not in time_str:
         return time_str
     try:
-        clean_time = time_str.replace("صباحاً", "").replace("مساءً", "").strip()
-        try:
-            match_time = datetime.datetime.strptime(clean_time, "%H:%M")
-        except ValueError:
-            match_time = datetime.datetime.strptime(clean_time, "%I:%M")
+        # الكشف عن المساء/الصباح قبل التنظيف
+        is_pm = "م" in time_str or "مساء" in time_str
+        is_am = "ص" in time_str or "صباح" in time_str
 
-        # إضافة 6 ساعات للتحويل من توقيت السيرفر (EST) إلى الجزائر
+        # استخراج الوقت الرقمي فقط
+        clean_time = re.sub(r'[^0-9:]', '', time_str)
+        
+        match_time = datetime.datetime.strptime(clean_time, "%H:%M")
+
+        # تحويل من 12 إلى 24 ساعة يدوياً لضمان الدقة
+        if is_pm and match_time.hour != 12:
+            match_time = match_time.replace(hour=match_time.hour + 12)
+        elif is_am and match_time.hour == 12:
+            match_time = match_time.replace(hour=0)
+
+        # إضافة 6 ساعات (الفرق بين EST والجزائر)
         new_time = match_time + timedelta(hours=6) 
+        
+        # الإرجاع بنظام 24 ساعة دائماً
         return new_time.strftime("%H:%M")
     except:
         return time_str
@@ -113,7 +124,7 @@ def get_match_deep_details(match_url):
             title_tag = soup.find('title')
             match_details["teams"]["full_title"] = title_tag.text.strip() if title_tag else "مباراة"
 
-        # المعلومات (مع تحويل الوقت)
+        # المعلومات
         target_keys = {"البطولة": "championship", "الجولة": "round", "ملعب المباراة": "stadium", 
                        "وقت المباراة": "time", "تاريخ المباراة": "date"}
         info_block = soup.find('div', class_='match-info') or soup
@@ -125,14 +136,14 @@ def get_match_deep_details(match_url):
                     val_elem = parent.find_next_sibling() or parent.find('span', class_='value')
                     val = clean_text(val_elem.text) if val_elem else clean_text(parent.get_text().replace(key_ar, ''))
                     
-                    # تحويل الوقت هنا
+                    # 🔥 تحويل الوقت هنا وضمان تنسيق 24 ساعة 🔥
                     if key_en == "time":
                         val = convert_to_algeria_time(val)
                         
                     match_details["info"][key_en] = val
 
         # ========================================================
-        # 🔥 سحب النتيجة والحالة (بدقة متناهية) 🔥
+        # 🔥 سحب النتيجة والحالة (النسخة النهائية الدقيقة) 🔥
         # ========================================================
         current_score = "- : -"
         
@@ -160,9 +171,8 @@ def get_match_deep_details(match_url):
         if live_status and live_status.text.strip():
             match_status = clean_text(live_status.text)
         
-        # ب. هل انتهت؟ (حل مشكلة العنصر الفارغ بالبحث عن الكل)
+        # ب. هل انتهت؟
         if not match_status:
-            # الموقع يحتوي على سبان فارغ وسبان ممتلئ، نبحث عن الممتلئ
             end_status_candidates = soup.find_all('span', class_=re.compile(r'result-status-text'))
             for status_item in end_status_candidates:
                 if status_item.text.strip():
