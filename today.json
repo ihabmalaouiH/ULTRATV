@@ -91,8 +91,8 @@
       "stadium": "ريد بول أرينا لايبزيج",
       "time": "18:30",
       "date": "السبت 06-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -386,29 +386,6 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4818848/Hibernian-FC-vs-Falkirk-FC",
-    "info": {
-      "championship": "الدوري الإسكتلندي الممتاز",
-      "round": "16 - مباراة الاياب",
-      "stadium": "إيستر رود",
-      "time": "16:00",
-      "date": "السبت 06-12-2025",
-      "current_score": "3 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "هيبرنيان",
-        "logo": "https://imgs.ysscores.com/teams/128/1801690370558.png"
-      },
-      "away": {
-        "name": "فالكريك",
-        "logo": "https://imgs.ysscores.com/teams/128/6361739396113.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4818850/Motherwell-FC-vs-Livingston-FC",
     "info": {
       "championship": "الدوري الإسكتلندي الممتاز",
@@ -427,6 +404,29 @@
       "away": {
         "name": "ليفينغستون",
         "logo": "https://imgs.ysscores.com/teams/128/5781690370518.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4818848/Hibernian-FC-vs-Falkirk-FC",
+    "info": {
+      "championship": "الدوري الإسكتلندي الممتاز",
+      "round": "16 - مباراة الاياب",
+      "stadium": "إيستر رود",
+      "time": "16:00",
+      "date": "السبت 06-12-2025",
+      "current_score": "3 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "هيبرنيان",
+        "logo": "https://imgs.ysscores.com/teams/128/1801690370558.png"
+      },
+      "away": {
+        "name": "فالكريك",
+        "logo": "https://imgs.ysscores.com/teams/128/6361739396113.png"
       }
     },
     "channels": []
@@ -456,34 +456,6 @@
       {
         "channel": "بي إن سبورت 1",
         "commentator": "جواد بدة"
-      }
-    ]
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/4813522/Newcastle-United-vs-Burnley-FC",
-    "info": {
-      "championship": "الدوري الإنجليزي الممتاز",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "سانت جيمس بارك",
-      "time": "16:00",
-      "date": "السبت 06-12-2025",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "نيوكاسل",
-        "logo": "https://imgs.ysscores.com/teams/128/3721690119405.png"
-      },
-      "away": {
-        "name": "بيرنلي",
-        "logo": "https://imgs.ysscores.com/teams/128/7301690118156.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 4",
-        "commentator": "أحمد فؤاد"
       }
     ]
   },
@@ -544,6 +516,34 @@
       {
         "channel": "beIN 4K",
         "commentator": "أحمد البلوشي"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4813522/Newcastle-United-vs-Burnley-FC",
+    "info": {
+      "championship": "الدوري الإنجليزي الممتاز",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "سانت جيمس بارك",
+      "time": "16:00",
+      "date": "السبت 06-12-2025",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "نيوكاسل",
+        "logo": "https://imgs.ysscores.com/teams/128/3721690119405.png"
+      },
+      "away": {
+        "name": "بيرنلي",
+        "logo": "https://imgs.ysscores.com/teams/128/7301690118156.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 4",
+        "commentator": "أحمد فؤاد"
       }
     ]
   },
@@ -870,34 +870,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4818451/Sint-Truidense-VV-vs-Club-Brugge-KV",
-    "info": {
-      "championship": "الدوري البلجيكي",
-      "round": "17 - مباراة الاياب",
-      "stadium": "دايو واسابي ستاين",
-      "time": "20:45",
-      "date": "السبت 06-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "سينت ترويدن",
-        "logo": "https://imgs.ysscores.com/teams/128/6271690370550.png"
-      },
-      "away": {
-        "name": "كلوب بروج",
-        "logo": "https://imgs.ysscores.com/teams/128/121690370520.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "موقع وتطبيق DAZN",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4818446/Cercle-Brugge-vs-Standard-Liège",
     "info": {
       "championship": "الدوري البلجيكي",
@@ -916,6 +888,34 @@
       "away": {
         "name": "ستاندارد لييج",
         "logo": "https://imgs.ysscores.com/teams/128/4911690370549.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "موقع وتطبيق DAZN",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4818451/Sint-Truidense-VV-vs-Club-Brugge-KV",
+    "info": {
+      "championship": "الدوري البلجيكي",
+      "round": "17 - مباراة الاياب",
+      "stadium": "دايو واسابي ستاين",
+      "time": "20:45",
+      "date": "السبت 06-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "سينت ترويدن",
+        "logo": "https://imgs.ysscores.com/teams/128/6271690370550.png"
+      },
+      "away": {
+        "name": "كلوب بروج",
+        "logo": "https://imgs.ysscores.com/teams/128/121690370520.png"
       }
     },
     "channels": [
@@ -1038,34 +1038,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4830589/FC-Nantes-vs-RC-Lens",
-    "info": {
-      "championship": "الدوري الفرنسي",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "لا بوجوار",
-      "time": "17:00",
-      "date": "السبت 06-12-2025",
-      "current_score": "1 - 1",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "نانت",
-        "logo": "https://imgs.ysscores.com/teams/128/6071690287626.png"
-      },
-      "away": {
-        "name": "لانس",
-        "logo": "https://imgs.ysscores.com/teams/128/1281690287063.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 8",
-        "commentator": "محمد نضال"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4830592/FC-Toulouse-vs-RC-Strasbourg-Alsace",
     "info": {
       "championship": "الدوري الفرنسي",
@@ -1090,6 +1062,34 @@
       {
         "channel": "بي إن سبورت 4",
         "commentator": "محمد السعدي"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4830589/FC-Nantes-vs-RC-Lens",
+    "info": {
+      "championship": "الدوري الفرنسي",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "لا بوجوار",
+      "time": "17:00",
+      "date": "السبت 06-12-2025",
+      "current_score": "1 - 1",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "نانت",
+        "logo": "https://imgs.ysscores.com/teams/128/6071690287626.png"
+      },
+      "away": {
+        "name": "لانس",
+        "logo": "https://imgs.ysscores.com/teams/128/1281690287063.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 8",
+        "commentator": "محمد نضال"
       }
     ]
   },
@@ -1122,32 +1122,27 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4815351/SC-Heerenveen-vs-PSV-Eindhoven",
+    "url": "https://www.ysscores.com/ar/match/4815352/Heracles-Almelo-vs-SC-Telstar",
     "info": {
       "championship": "الدوري الهولندي الممتاز",
       "round": "15 - مباراة الذهاب",
-      "stadium": "ايب لنسترا",
-      "time": "16:30",
+      "stadium": "إرفي أسيتو",
+      "time": "20:00",
       "date": "السبت 06-12-2025",
-      "current_score": "0 - 2",
-      "match_status": "إنتهت المباراة"
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "هيرينفين",
-        "logo": "https://imgs.ysscores.com/teams/128/6771725055096.png"
+        "name": "هيراكليس",
+        "logo": "https://imgs.ysscores.com/teams/128/2091690996504.png"
       },
       "away": {
-        "name": "آيندهوفن",
-        "logo": "https://imgs.ysscores.com/teams/128/3391690378187.png"
+        "name": "تلستار",
+        "logo": "https://imgs.ysscores.com/teams/128/4281739337303.png"
       }
     },
-    "channels": [
-      {
-        "channel": "دبي الرياضية 2",
-        "commentator": "عمر الطنيجي"
-      }
-    ]
+    "channels": []
   },
   {
     "url": "https://www.ysscores.com/ar/match/4815350/Feyenoord-Rotterdam-vs-PEC-Zwolle",
@@ -1178,27 +1173,32 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4815352/Heracles-Almelo-vs-SC-Telstar",
+    "url": "https://www.ysscores.com/ar/match/4815351/SC-Heerenveen-vs-PSV-Eindhoven",
     "info": {
       "championship": "الدوري الهولندي الممتاز",
       "round": "15 - مباراة الذهاب",
-      "stadium": "إرفي أسيتو",
-      "time": "20:00",
+      "stadium": "ايب لنسترا",
+      "time": "16:30",
       "date": "السبت 06-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 2",
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "هيراكليس",
-        "logo": "https://imgs.ysscores.com/teams/128/2091690996504.png"
+        "name": "هيرينفين",
+        "logo": "https://imgs.ysscores.com/teams/128/6771725055096.png"
       },
       "away": {
-        "name": "تلستار",
-        "logo": "https://imgs.ysscores.com/teams/128/4281739337303.png"
+        "name": "آيندهوفن",
+        "logo": "https://imgs.ysscores.com/teams/128/3391690378187.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "دبي الرياضية 2",
+        "commentator": "عمر الطنيجي"
+      }
+    ]
   },
   {
     "url": "https://www.ysscores.com/ar/match/4815353/Fortuna-Sittard-vs-Ajax-Amsterdam",
@@ -1303,52 +1303,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4825257/Sheffield-United-vs-Stoke-City",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "19 - مباراة الذهاب",
-      "stadium": "برامول لين",
-      "time": "16:00",
-      "date": "السبت 06-12-2025",
-      "current_score": "4 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "شيفيلد",
-        "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
-      },
-      "away": {
-        "name": "ستوك سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/6781690388673.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/4825256/Queens-Park-Rangers-vs-West-Bromwich-Albion",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "19 - مباراة الذهاب",
-      "stadium": "لوفتس رود",
-      "time": "16:00",
-      "date": "السبت 06-12-2025",
-      "current_score": "3 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "كوينز بارك رينجرز",
-        "logo": "https://imgs.ysscores.com/teams/128/9791690370554.png"
-      },
-      "away": {
-        "name": "وست بروميتش",
-        "logo": "https://imgs.ysscores.com/teams/128/9971690370534.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4825260/Watford-FC-vs-Norwich-City",
     "info": {
       "championship": "دوري الإنجليزية",
@@ -1367,6 +1321,29 @@
       "away": {
         "name": "نوريتش سيتي",
         "logo": "https://imgs.ysscores.com/teams/128/5201690370543.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4825257/Sheffield-United-vs-Stoke-City",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "19 - مباراة الذهاب",
+      "stadium": "برامول لين",
+      "time": "16:00",
+      "date": "السبت 06-12-2025",
+      "current_score": "4 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "شيفيلد",
+        "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
+      },
+      "away": {
+        "name": "ستوك سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/6781690388673.png"
       }
     },
     "channels": []
@@ -1400,24 +1377,24 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4825254/Ipswich-Town-vs-Coventry-City",
+    "url": "https://www.ysscores.com/ar/match/4825256/Queens-Park-Rangers-vs-West-Bromwich-Albion",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "19 - مباراة الذهاب",
-      "stadium": "بورتمان رود",
+      "stadium": "لوفتس رود",
       "time": "16:00",
       "date": "السبت 06-12-2025",
-      "current_score": "3 - 0",
+      "current_score": "3 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "إيبسويتش",
-        "logo": "https://imgs.ysscores.com/teams/128/8291690370545.png"
+        "name": "كوينز بارك رينجرز",
+        "logo": "https://imgs.ysscores.com/teams/128/9791690370554.png"
       },
       "away": {
-        "name": "كوفنتري",
-        "logo": "https://imgs.ysscores.com/teams/128/3861690370535.png"
+        "name": "وست بروميتش",
+        "logo": "https://imgs.ysscores.com/teams/128/9971690370534.png"
       }
     },
     "channels": []
@@ -1451,47 +1428,24 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4825255/Preston-North-End-vs-Wrexham-AFC",
+    "url": "https://www.ysscores.com/ar/match/4825254/Ipswich-Town-vs-Coventry-City",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "19 - مباراة الذهاب",
-      "stadium": "ديبديل",
+      "stadium": "بورتمان رود",
       "time": "16:00",
       "date": "السبت 06-12-2025",
-      "current_score": "1 - 1",
+      "current_score": "3 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "بريستون",
-        "logo": "https://imgs.ysscores.com/teams/128/4581690370523.png"
+        "name": "إيبسويتش",
+        "logo": "https://imgs.ysscores.com/teams/128/8291690370545.png"
       },
       "away": {
-        "name": "ريكسهام",
-        "logo": "https://imgs.ysscores.com/teams/128/2611690377870.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/4825249/Blackburn-Rovers-vs-Sheffield-Wednesday",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "19 - مباراة الذهاب",
-      "stadium": "إيوود بارك",
-      "time": "16:00",
-      "date": "السبت 06-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "بلاكبيرن روفرز",
-        "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
-      },
-      "away": {
-        "name": "شيفيلد وينزداي",
-        "logo": "https://imgs.ysscores.com/teams/128/2131690370554.png"
+        "name": "كوفنتري",
+        "logo": "https://imgs.ysscores.com/teams/128/3861690370535.png"
       }
     },
     "channels": []
@@ -1520,6 +1474,29 @@
     "channels": []
   },
   {
+    "url": "https://www.ysscores.com/ar/match/4825255/Preston-North-End-vs-Wrexham-AFC",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "19 - مباراة الذهاب",
+      "stadium": "ديبديل",
+      "time": "16:00",
+      "date": "السبت 06-12-2025",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بريستون",
+        "logo": "https://imgs.ysscores.com/teams/128/4581690370523.png"
+      },
+      "away": {
+        "name": "ريكسهام",
+        "logo": "https://imgs.ysscores.com/teams/128/2611690377870.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "url": "https://www.ysscores.com/ar/match/4825258/Southampton-FC-vs-Birmingham-City",
     "info": {
       "championship": "دوري الإنجليزية",
@@ -1538,6 +1515,29 @@
       "away": {
         "name": "برمنغهام",
         "logo": "https://imgs.ysscores.com/teams/128/3121690370534.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4825249/Blackburn-Rovers-vs-Sheffield-Wednesday",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "19 - مباراة الذهاب",
+      "stadium": "إيوود بارك",
+      "time": "16:00",
+      "date": "السبت 06-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "بلاكبيرن روفرز",
+        "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
+      },
+      "away": {
+        "name": "شيفيلد وينزداي",
+        "logo": "https://imgs.ysscores.com/teams/128/2131690370554.png"
       }
     },
     "channels": []
@@ -1589,29 +1589,6 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4820816/FC-St.-Gallen-1879-vs-FC-Zürich",
-    "info": {
-      "championship": "دوري السوبر السويسري",
-      "round": "16 - مباراة الاياب",
-      "stadium": "كيبون بارك",
-      "time": "20:30",
-      "date": "السبت 06-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "سانت جالين",
-        "logo": "https://imgs.ysscores.com/teams/128/9231690370555.png"
-      },
-      "away": {
-        "name": "زيورخ",
-        "logo": "https://imgs.ysscores.com/teams/128/4531690370557.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4820819/Grasshopper-Club-Zurich-vs-Servette-FC",
     "info": {
       "championship": "دوري السوبر السويسري",
@@ -1630,6 +1607,29 @@
       "away": {
         "name": "سيرفيت",
         "logo": "https://imgs.ysscores.com/teams/128/4521690823157.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4820816/FC-St.-Gallen-1879-vs-FC-Zürich",
+    "info": {
+      "championship": "دوري السوبر السويسري",
+      "round": "16 - مباراة الاياب",
+      "stadium": "كيبون بارك",
+      "time": "20:30",
+      "date": "السبت 06-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "سانت جالين",
+        "logo": "https://imgs.ysscores.com/teams/128/9231690370555.png"
+      },
+      "away": {
+        "name": "زيورخ",
+        "logo": "https://imgs.ysscores.com/teams/128/4531690370557.png"
       }
     },
     "channels": []
