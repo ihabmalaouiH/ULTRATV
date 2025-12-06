@@ -132,7 +132,7 @@ def get_match_deep_details(match_url):
                     match_details["info"][key_en] = val
 
         # ========================================================
-        # 🔥 سحب النتيجة والحالة (معدل) 🔥
+        # 🔥 سحب النتيجة والحالة (بدقة متناهية) 🔥
         # ========================================================
         current_score = "- : -"
         
@@ -169,7 +169,7 @@ def get_match_deep_details(match_url):
                     match_status = clean_text(status_item.text)
                     break
         
-        # ج. إذا لم نجد حالة صريحة أو كانت تحتوي على وقت، فهي لم تبدأ
+        # ج. إذا لم نجد حالة صريحة أو كانت تحتوي على وقت (:)، فهي لم تبدأ
         if not match_status or ":" in match_status:
              match_status = "لم تبدأ"
 
