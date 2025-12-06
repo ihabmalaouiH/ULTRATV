@@ -10,20 +10,21 @@ import time
 import hashlib
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from github import Github, Auth
-from flask import Flask # إضافة جديدة
-from threading import Thread # إضافة جديدة
-import os  # 👈 إضافة مكتبة النظام
+from flask import Flask 
+from threading import Thread 
+import os 
 
 # ==========================================
 # ⚙️ إعدادات البوت (يتم جلبها من Environment Variables)
 # ==========================================
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 REPO_NAME = os.getenv("REPO_NAME")
-FILE_PATH_IN_REPO = os.getenv("FILE_PATH_IN_REPO", "today.json") # القيمة الثانية هي الافتراضية
+FILE_PATH_IN_REPO = os.getenv("FILE_PATH_IN_REPO", "today.json") 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", 300))
+CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", 60)) # جعلت الافتراضي 60 ثانية للأفضلية
+
 # ==========================================
 # إعداد سيرفر وهمي (Flask) ليعمل على Render
 # ==========================================
@@ -34,7 +35,6 @@ def home():
     return "I am alive! The Bot is running..."
 
 def run():
-    # Render يتطلب بورت، نستخدم 8080 أو المتغير المتاح
     app.run(host='0.0.0.0', port=8080)
 
 def keep_alive():
@@ -48,8 +48,8 @@ BASE_URL = "https://www.ysscores.com"
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-    'Referer': 'https://www.google.com/',
-    'Accept-Language': 'ar,en-US;q=0.7,en;q=0.3',
+    'Referer': 'https://www.google.dz/', # تحسين بسيط: المصدر جوجل الجزائر
+    'Accept-Language': 'ar-DZ,ar;q=0.9,fr-DZ;q=0.8,fr;q=0.7,en;q=0.5', # لغة الجزائر
 }
 
 session = requests.Session()
@@ -108,29 +108,47 @@ def get_match_deep_details(match_url):
                     val = clean_text(val_elem.text) if val_elem else clean_text(parent.get_text().replace(key_ar, ''))
                     match_details["info"][key_en] = val
 
-        # --- التصحيح الجديد للنتيجة ---
+        # ========================================================
+        # 🔥 تصحيح سحب النتيجة والحالة (بناءً على HTML الجديد) 🔥
+        # ========================================================
+        
+        # 1. سحب النتيجة من <div class="main-result"> وداخلها <b>
         current_score = "- : -"
-        result_container = soup.find('div', class_='result')
-        if result_container:
-            raw_text = clean_text(result_container.text)
-            if re.search(r'\d+\s*[-:]\s*\d+', raw_text) and '%' not in raw_text:
-                current_score = raw_text
-            else:
-                spans = result_container.find_all('span')
-                score_numbers = [s.text.strip() for s in spans if s.text.strip().isdigit()]
-                if len(score_numbers) >= 2:
-                    current_score = f"{score_numbers[0]} - {score_numbers[1]}"
+        main_result_div = soup.find('div', class_='main-result')
+        
+        if main_result_div:
+            # البحث عن وسوم العريض <b> التي تحتوي الأهداف
+            score_tags = main_result_div.find_all('b')
+            if len(score_tags) >= 2:
+                # الهدف الأول (يمين) - الهدف الثاني (يسار)
+                s1 = clean_text(score_tags[0].text)
+                s2 = clean_text(score_tags[1].text)
+                
+                # التأكد أنهم أرقام لتجنب سحب نصوص خطأ
+                if s1.isdigit() and s2.isdigit():
+                    current_score = f"{s1} - {s2}"
+                else:
+                    # محاولة تنظيف إضافية
+                    current_score = f"{s1} - {s2}"
 
         match_details["info"]["current_score"] = current_score
-        match_details["info"]["match_status"] = "لم تبدأ"
-        status_div = soup.find('div', class_=re.compile(r'(match-status|status|time)'))
-        if status_div:
-            status_text = clean_text(status_div.text)
-            if status_text and len(status_text) < 20 and '%' not in status_text:
-                match_details["info"]["match_status"] = status_text
-            elif re.search(r'\d{1,2}:\d{2}', status_text):
-                 match_details["info"]["match_status"] = status_text
-        # -----------------------------
+
+        # 2. سحب الحالة من <span class="result-status-text">
+        match_status = "لم تبدأ"
+        status_span = soup.find('span', class_='result-status-text')
+        
+        if status_span:
+            st_text = clean_text(status_span.text)
+            if st_text:
+                match_status = st_text
+        else:
+            # محاولة احتياطية من الوقت
+            status_div_backup = soup.find('div', class_=re.compile(r'(match-status|status)'))
+            if status_div_backup:
+                 match_status = clean_text(status_div_backup.text)
+
+        match_details["info"]["match_status"] = match_status
+        # ========================================================
 
         # القنوات
         section_header = soup.find(string=re.compile(r'القنوات الناقلة والمعلقين'))
