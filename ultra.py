@@ -240,9 +240,15 @@ def monitor_matches():
             time.sleep(60)
 
 if __name__ == "__main__":
-    if "YOUR_GITHUB_TOKEN" in GITHUB_TOKEN:
-        print("❌ Error: Add Token")
+    # تشغيل السيرفر الوهمي في خيط منفصل
+    keep_alive()
+    
+    # التحقق من وجود التوكين قبل البدء
+    if not GITHUB_TOKEN:
+        print("❌ الخطأ: لم يتم العثور على GITHUB_TOKEN في متغيرات البيئة!")
+        print("تأكد من إضافته في إعدادات Render (Environment Variables).")
+    elif "YOUR_GITHUB_TOKEN" in GITHUB_TOKEN:
+         print("❌ الخطأ: يبدو أنك تستخدم النص الافتراضي للتوكين، يرجى وضع التوكين الصحيح.")
     else:
-        # ⚠️ تشغيل السيرفر الوهمي في الخلفية قبل بدء البوت
-        keep_alive()
+        # البدء بالمراقبة
         monitor_matches()
