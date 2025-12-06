@@ -63,18 +63,21 @@ session.mount("http://", adapter)
 session.headers.update(HEADERS)
 
 # ==========================================
-# 🛠️ دالة تحويل الوقت للجزائر
+# 🛠️ دالة تحويل الوقت (من أمريكا إلى الجزائر +6)
 # ==========================================
 def convert_to_algeria_time(time_str):
     if not time_str or ":" not in time_str:
         return time_str
     try:
+        # تنظيف النص
         clean_time = time_str.replace("صباحاً", "").replace("مساءً", "").strip()
+        # محاولة قراءة الوقت
         try:
             match_time = datetime.datetime.strptime(clean_time, "%H:%M")
         except ValueError:
             match_time = datetime.datetime.strptime(clean_time, "%I:%M")
 
+        # إضافة 6 ساعات (للتحويل من توقيت أمريكا إلى الجزائر)
         new_time = match_time + timedelta(hours=6) 
         return new_time.strftime("%H:%M")
     except:
@@ -112,7 +115,7 @@ def get_match_deep_details(match_url):
             title_tag = soup.find('title')
             match_details["teams"]["full_title"] = title_tag.text.strip() if title_tag else "مباراة"
 
-        # المعلومات
+        # المعلومات (مع تطبيق فرق التوقيت +6)
         target_keys = {"البطولة": "championship", "الجولة": "round", "ملعب المباراة": "stadium", 
                        "وقت المباراة": "time", "تاريخ المباراة": "date"}
         info_block = soup.find('div', class_='match-info') or soup
@@ -124,17 +127,18 @@ def get_match_deep_details(match_url):
                     val_elem = parent.find_next_sibling() or parent.find('span', class_='value')
                     val = clean_text(val_elem.text) if val_elem else clean_text(parent.get_text().replace(key_ar, ''))
                     
+                    # 🔥 تحويل الوقت هنا 🔥
                     if key_en == "time":
                         val = convert_to_algeria_time(val)
                         
                     match_details["info"][key_en] = val
 
         # ========================================================
-        # 🔥 سحب النتيجة والحالة (تصحيح: عدم عرض الوقت أبداً في الحالة) 🔥
+        # 🔥 النتيجة والحالة (المنطق المعدل) 🔥
         # ========================================================
         current_score = "- : -"
         
-        # 1. النتيجة
+        # 1. سحب النتيجة
         s1_tag = soup.find('div', class_=re.compile(r'first-team-result')) or soup.find('span', class_=re.compile(r'first-team-result'))
         s2_tag = soup.find('div', class_=re.compile(r'second-team-result')) or soup.find('span', class_=re.compile(r'second-team-result'))
         
@@ -150,22 +154,22 @@ def get_match_deep_details(match_url):
                  if len(bs) >= 2:
                      current_score = f"{clean_text(bs[0].text)} - {clean_text(bs[1].text)}"
 
-        # 2. الحالة
+        # 2. سحب الحالة (الأولوية: مباشر > انتهت > لم تبدأ)
         match_status = ""
         
-        # أ. هل هي جارية الآن؟
+        # أ. هل هي جارية (مباشر)؟
         live_status = soup.find('span', class_=re.compile(r'live-match-status'))
         if live_status and live_status.text.strip():
             match_status = clean_text(live_status.text)
         
-        # ب. هل انتهت أو توقفت؟
+        # ب. هل انتهت؟
         if not match_status:
             end_status = soup.find('span', class_=re.compile(r'result-status-text'))
             if end_status and end_status.text.strip():
                 match_status = clean_text(end_status.text)
 
-        # ج. التأكد من أن الحالة ليست وقتاً (إذا احتوت على : فهي غالباً وقت)
-        # إذا كانت الحالة فارغة أو تحتوي على وقت -> نكتب "لم تبدأ"
+        # ج. التأكد النهائي: إذا كانت فارغة أو تحتوي على وقت (:) فهي "لم تبدأ"
+        # هذا يمنع ظهور "02:30" في خانة الحالة
         if not match_status or ":" in match_status:
              match_status = "لم تبدأ"
 
