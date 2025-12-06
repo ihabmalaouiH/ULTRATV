@@ -130,7 +130,7 @@ def get_match_deep_details(match_url):
                     match_details["info"][key_en] = val
 
         # ========================================================
-        # 🔥 سحب النتيجة والحالة (تعديل: عدم وضع الوقت في الحالة) 🔥
+        # 🔥 سحب النتيجة والحالة (تصحيح: عدم عرض الوقت أبداً في الحالة) 🔥
         # ========================================================
         current_score = "- : -"
         
@@ -164,9 +164,9 @@ def get_match_deep_details(match_url):
             if end_status and end_status.text.strip():
                 match_status = clean_text(end_status.text)
 
-        # ج. إذا لم نجد حالة صريحة (مباشر أو انتهت)، فهي حتماً "لم تبدأ"
-        # (تم إزالة الكود الذي كان يسحب الوقت من match-date)
-        if not match_status:
+        # ج. التأكد من أن الحالة ليست وقتاً (إذا احتوت على : فهي غالباً وقت)
+        # إذا كانت الحالة فارغة أو تحتوي على وقت -> نكتب "لم تبدأ"
+        if not match_status or ":" in match_status:
              match_status = "لم تبدأ"
 
         match_details["info"]["current_score"] = current_score
@@ -281,8 +281,12 @@ def monitor_matches():
             time.sleep(60)
 
 if __name__ == "__main__":
+    # تشغيل السيرفر الوهمي في خيط منفصل
     keep_alive()
+    
+    # التحقق من وجود التوكين قبل البدء
     if not GITHUB_TOKEN:
         print("❌ Error: GITHUB_TOKEN is missing!")
     else:
+        # البدء بالمراقبة
         monitor_matches()
