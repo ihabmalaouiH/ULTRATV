@@ -25,7 +25,7 @@
     margin: 0;
     font-size: 14px;
   }
-   
+    
   h1 { font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; color: var(--primary); }
   .dashboard-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
   @media (min-width: 1200px) { .dashboard-grid { grid-template-columns: 3fr 1fr; } }
@@ -40,10 +40,10 @@
     background: #0f172a; color: var(--text); font-size: 13px; transition: all 0.2s;
   }
   input:focus, select:focus, textarea:focus { border-color: var(--primary); box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); }
-   
+    
   button { cursor: pointer; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }
   button:hover { filter: brightness(1.1); transform: translateY(-1px); }
-   
+    
   .btn-primary { background: var(--primary); border-color: var(--primary); color: white; }
   .btn-success { background: var(--success); border-color: var(--success); color: white; }
   .btn-danger { background: var(--danger); border-color: var(--danger); color: white; }
@@ -59,7 +59,7 @@
   tr:hover { background: rgba(255,255,255,0.02); }
 
   img.team-logo { width: 36px; height: 36px; object-fit: contain; vertical-align: middle; margin: 0 5px; background: #ffffff; border-radius: 50%; padding: 2px; }
-   
+    
   .status-badge { padding: 4px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; }
   .status-finished { background: rgba(51, 65, 85, 0.5); color: #cbd5e1; border: 1px solid #334155; }
   .status-live { background: rgba(220, 38, 38, 0.2); color: #fca5a5; border: 1px solid #7f1d1d; animation: pulse 2s infinite; }
@@ -68,7 +68,7 @@
   .channel-input { width: 160px; text-align: center; color: #4ade80; font-weight: bold; }
   .channel-select { width: 160px; text-align: center; color: #fbbf24; font-weight: bold; cursor: pointer; } 
   .comm-input { width: 120px; text-align: center; color: #cbd5e1; }
-   
+    
   .output-area { position: sticky; top: 20px; }
   textarea#output { width: 100%; height: 400px; font-family: monospace; line-height: 1.5; color: #a5b4fc; }
 
@@ -83,7 +83,7 @@
   .toast { background: var(--bg-card); border-left: 4px solid var(--primary); padding: 12px 20px; border-radius: 4px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 10px; animation: slideIn 0.3s ease-out forwards; color: #fff; }
   .toast.success { border-color: var(--success); }
   .toast.error { border-color: var(--danger); }
-   
+    
   @keyframes slideIn { from { transform: translateX(-100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
   @keyframes fadeOut { to { opacity: 0; transform: translateY(10px); } }
   @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.6; } 100% { opacity: 1; } }
@@ -131,7 +131,7 @@
                         <th width="70">النتيجة</th>
                         <th>الفريق 2</th>
                         <th>الدوري</th>
-                        <th width="90">الوقت (DZ)</th>
+                        <th width="90">الوقت</th>
                         <th>القناة الناقلة</th>
                         <th>المعلق</th>
                         <th width="50">سرفرات</th>
@@ -195,7 +195,7 @@ function initialize() {
     fetchMatches();
 }
 
-// --- Helper: Parse Arabic Date with Algeria Time Fix (+6H) ---
+// --- Helper: Parse Arabic Date (NO Timezone conversion) ---
 function parseArabicMatchTime(dateStr, timeStr) {
     try {
         const dateParts = dateStr.match(/(\d{2})-(\d{2})-(\d{4})/);
@@ -207,20 +207,16 @@ function parseArabicMatchTime(dateStr, timeStr) {
         let time = timeStr.replace('مساءً', 'PM').replace('صباحاً', 'AM')
                           .replace('مساء', 'PM').replace('صباح', 'AM')
                           .trim();
-         
+          
         let [timeRaw, modifier] = time.split(' ');
         let [hoursStr, minutes] = timeRaw.split(':');
         
         let hours = parseInt(hoursStr, 10);
-         
+          
         if (hours === 12) hours = 0;
         if (modifier === 'PM') hours += 12;
         
-        // ----------------------------------------------------
-        // تعديل التوقيت للجزائر: إضافة 6 ساعات
-        // المعادلة: الوقت في المصدر (06:00) + 6 = (12:00) الجزائر
-        // ----------------------------------------------------
-        hours = hours + 6; 
+        // --- تمت إزالة تحويل التوقيت ليبقى كما هو في المصدر ---
         
         const dateObj = new Date(year, month, day, hours, parseInt(minutes));
         return dateObj;
@@ -279,7 +275,7 @@ function formatChannelName(name) {
 // --- Render Table ---
 function renderMatches(matches) {
     matchesTbody.innerHTML = "";
-    const now = new Date().getTime();
+    const now = new Date().getTime(); // الوقت الحالي للحساب
 
     matches.forEach(match => {
         const team1 = match.teams.home;
@@ -288,29 +284,44 @@ function renderMatches(matches) {
         
         const startTime = Math.floor(match._timestamp / 1000);
         const matchDate = new Date(match._timestamp);
-        // عرض الوقت بتنسيق 12 ساعة
         const timeStr = matchDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
 
-        let statusBadgeClass = "status-upcoming";
-        let rawStatus = "لم تبدأ";
-        let jsonStatus = "Not Started";
+        // --- حساب الفرق الزمني للكشف الذكي عن الانتهاء ---
         const diffMinutes = (now - match._timestamp) / 60000;
 
-        if (diffMinutes < 0) {
-            rawStatus = "لم تبدأ";
-            statusBadgeClass = "status-upcoming";
-            jsonStatus = "Not Started";
-        } else if (diffMinutes >= 0 && diffMinutes <= 130) {
-            rawStatus = "جارية";
-            statusBadgeClass = "status-live";
-            jsonStatus = "Live";
-        } else {
-            rawStatus = "انتهت";
+        // --- NEW STATUS & SCORE LOGIC START ---
+        // نستخدم بيانات API مباشرة (match_status و current_score)
+        let rawStatus = info.match_status || "لم تبدأ";
+        let apiScore = info.current_score || "VS";
+
+        let statusBadgeClass = "status-upcoming";
+        let jsonStatus = "Not Started";
+
+        // تحديد حالة المباراة بناءً على النص القادم من API + الذكاء الزمني
+        // تمت إضافة "إنتهت" (بالهمزة) لتتوافق مع البيانات الجديدة
+        if (rawStatus.includes("انتهت") || rawStatus.includes("إنتهت") || rawStatus.includes("نهاية")) {
             statusBadgeClass = "status-finished";
             jsonStatus = "Finished";
-        }
+        } else if (rawStatus.includes("لم تبدأ")) {
+            
+            // --- الذكاء هنا: إذا مرت 130 دقيقة والمباراة "لم تبدأ"، نعتبرها انتهت ---
+            if (diffMinutes > 130) {
+                statusBadgeClass = "status-finished";
+                jsonStatus = "Finished";
+                rawStatus = "انتهت (توقيت)"; 
+                if (apiScore === "VS") apiScore = "0 - 0";
+            } else {
+                statusBadgeClass = "status-upcoming";
+                jsonStatus = "Not Started";
+            }
 
-        const score = (jsonStatus === "Not Started") ? "VS" : `0 - 0`; 
+        } else {
+            // أي حالة أخرى تعتبر مباشر (شوط أول، استراحة، دقائق لعب...)
+            statusBadgeClass = "status-live";
+            jsonStatus = "Live";
+            if (!apiScore || apiScore === "VS") apiScore = "0 - 0";
+        }
+        // --- NEW STATUS & SCORE LOGIC END ---
 
         const defaultLogo = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z'/%3E%3C/svg%3E";
 
@@ -347,14 +358,14 @@ function renderMatches(matches) {
         tr.dataset.league = info.championship;
         tr.dataset.startTime = startTime;
         tr.dataset.jsonStatus = jsonStatus;
-        tr.dataset.score = (score === "VS") ? "" : score;
+        tr.dataset.score = (apiScore === "VS") ? "" : apiScore;
         tr.dataset.servers = "[]"; 
 
         tr.innerHTML = `
             <td><input type="checkbox"></td>
             <td><span class="status-badge ${statusBadgeClass}">${rawStatus}</span></td>
             <td style="text-align:left"><img src="${team1.logo}" class="team-logo" referrerpolicy="no-referrer" onerror="this.src='${defaultLogo}'"> ${team1.name}</td>
-            <td style="font-weight:bold; letter-spacing:2px; font-family:monospace;">${score}</td>
+            <td style="font-weight:bold; letter-spacing:2px; font-family:monospace;">${apiScore}</td>
             <td style="text-align:right">${team2.name} <img src="${team2.logo}" class="team-logo" referrerpolicy="no-referrer" onerror="this.src='${defaultLogo}'"></td>
             <td style="font-size:12px; color:#94a3b8">${info.championship}</td>
             <td dir="ltr" style="font-family:monospace; color:#fbbf24; white-space:nowrap;">${timeStr}</td>
@@ -458,7 +469,7 @@ function filterMatches() {
 function updateStatsAndJSON() {
     const allRows = matchesTbody.querySelectorAll('tr');
     const selectedRows = matchesTbody.querySelectorAll("input[type='checkbox']:checked");
-    
+     
     document.getElementById("statTotal").innerText = allRows.length;
     document.getElementById("statSelected").innerText = selectedRows.length;
     document.getElementById("statLive").innerText = Array.from(allRows).filter(r => r.dataset.jsonStatus === "Live").length;
