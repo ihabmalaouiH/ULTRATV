@@ -208,7 +208,7 @@
       "time": "16:15",
       "date": "السبت 06-12-2025",
       "current_score": "1 - 0",
-      "match_status": "الشوط الثاني"
+      "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
@@ -386,6 +386,29 @@
     ]
   },
   {
+    "url": "https://www.ysscores.com/ar/match/4818851/St.-Mirren-FC-vs-Dundee-United-FC",
+    "info": {
+      "championship": "الدوري الإسكتلندي الممتاز",
+      "round": "16 - مباراة الاياب",
+      "stadium": "سانت ميرين بارك",
+      "time": "16:00",
+      "date": "السبت 06-12-2025",
+      "current_score": "2 - 0",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "سانت ميرين",
+        "logo": "https://imgs.ysscores.com/teams/128/1661690370541.png"
+      },
+      "away": {
+        "name": "دندي يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/1541754872814.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "url": "https://www.ysscores.com/ar/match/4818850/Motherwell-FC-vs-Livingston-FC",
     "info": {
       "championship": "الدوري الإسكتلندي الممتاز",
@@ -409,27 +432,32 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4818851/St.-Mirren-FC-vs-Dundee-United-FC",
+    "url": "https://www.ysscores.com/ar/match/4813521/Manchester-City-vs-Sunderland-AFC",
     "info": {
-      "championship": "الدوري الإسكتلندي الممتاز",
-      "round": "16 - مباراة الاياب",
-      "stadium": "سانت ميرين بارك",
+      "championship": "الدوري الإنجليزي الممتاز",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "استاد الاتحاد",
       "time": "16:00",
       "date": "السبت 06-12-2025",
-      "current_score": "2 - 0",
+      "current_score": "3 - 0",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "سانت ميرين",
-        "logo": "https://imgs.ysscores.com/teams/128/1661690370541.png"
+        "name": "مان سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/4481690118308.png"
       },
       "away": {
-        "name": "دندي يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/1541754872814.png"
+        "name": "سندرلاند",
+        "logo": "https://imgs.ysscores.com/teams/128/10001690823905.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "جواد بدة"
+      }
+    ]
   },
   {
     "url": "https://www.ysscores.com/ar/match/4813520/Leeds-United-vs-Liverpool-FC",
@@ -464,62 +492,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4813523/Tottenham-Hotspur-vs-Brentford-FC",
-    "info": {
-      "championship": "الدوري الإنجليزي الممتاز",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "استاد توتنهام هوتسبير",
-      "time": "16:00",
-      "date": "السبت 06-12-2025",
-      "current_score": "2 - 0",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "توتنهام",
-        "logo": "https://imgs.ysscores.com/teams/128/2501692467226.png"
-      },
-      "away": {
-        "name": "برينتفورد",
-        "logo": "https://imgs.ysscores.com/teams/128/4791690118957.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "عبدالله الغامدي"
-      }
-    ]
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/4813521/Manchester-City-vs-Sunderland-AFC",
-    "info": {
-      "championship": "الدوري الإنجليزي الممتاز",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "استاد الاتحاد",
-      "time": "16:00",
-      "date": "السبت 06-12-2025",
-      "current_score": "3 - 0",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "مان سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/4481690118308.png"
-      },
-      "away": {
-        "name": "سندرلاند",
-        "logo": "https://imgs.ysscores.com/teams/128/10001690823905.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "جواد بدة"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4813518/Everton-FC-vs-Nottingham-Forest",
     "info": {
       "championship": "الدوري الإنجليزي الممتاز",
@@ -544,6 +516,34 @@
       {
         "channel": "بي إن سبورت 3",
         "commentator": "منتصر الأزهري"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4813523/Tottenham-Hotspur-vs-Brentford-FC",
+    "info": {
+      "championship": "الدوري الإنجليزي الممتاز",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "استاد توتنهام هوتسبير",
+      "time": "16:00",
+      "date": "السبت 06-12-2025",
+      "current_score": "2 - 0",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "توتنهام",
+        "logo": "https://imgs.ysscores.com/teams/128/2501692467226.png"
+      },
+      "away": {
+        "name": "برينتفورد",
+        "logo": "https://imgs.ysscores.com/teams/128/4791690118957.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "عبدالله الغامدي"
       }
     ]
   },
@@ -906,7 +906,7 @@
       "time": "16:00",
       "date": "السبت 06-12-2025",
       "current_score": "1 - 2",
-      "match_status": "الشوط الثاني"
+      "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
@@ -1173,34 +1173,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4815353/Fortuna-Sittard-vs-Ajax-Amsterdam",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "استاد فورتانا سيتارد",
-      "time": "18:45",
-      "date": "السبت 06-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "فورتونا سيتارد",
-        "logo": "https://imgs.ysscores.com/teams/128/1881690997103.png"
-      },
-      "away": {
-        "name": "أياكس أمستردام",
-        "logo": "https://imgs.ysscores.com/teams/128/1361751718344.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "دبي الرياضية 2",
-        "commentator": "خليفة المرزوقي"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4815351/SC-Heerenveen-vs-PSV-Eindhoven",
     "info": {
       "championship": "الدوري الهولندي الممتاز",
@@ -1225,6 +1197,34 @@
       {
         "channel": "دبي الرياضية 2",
         "commentator": "عمر الطنيجي"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4815353/Fortuna-Sittard-vs-Ajax-Amsterdam",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "استاد فورتانا سيتارد",
+      "time": "18:45",
+      "date": "السبت 06-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "فورتونا سيتارد",
+        "logo": "https://imgs.ysscores.com/teams/128/1881690997103.png"
+      },
+      "away": {
+        "name": "أياكس أمستردام",
+        "logo": "https://imgs.ysscores.com/teams/128/1361751718344.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "دبي الرياضية 2",
+        "commentator": "خليفة المرزوقي"
       }
     ]
   },
@@ -1589,29 +1589,6 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4820819/Grasshopper-Club-Zurich-vs-Servette-FC",
-    "info": {
-      "championship": "دوري السوبر السويسري",
-      "round": "16 - مباراة الاياب",
-      "stadium": "استاد ليتزيغروند",
-      "time": "18:00",
-      "date": "السبت 06-12-2025",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "جراسهوبرز",
-        "logo": "https://imgs.ysscores.com/teams/128/5311690370548.png"
-      },
-      "away": {
-        "name": "سيرفيت",
-        "logo": "https://imgs.ysscores.com/teams/128/4521690823157.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4820814/FC-Thun-vs-FC-Luzern",
     "info": {
       "championship": "دوري السوبر السويسري",
@@ -1635,6 +1612,29 @@
     "channels": []
   },
   {
+    "url": "https://www.ysscores.com/ar/match/4820819/Grasshopper-Club-Zurich-vs-Servette-FC",
+    "info": {
+      "championship": "دوري السوبر السويسري",
+      "round": "16 - مباراة الاياب",
+      "stadium": "استاد ليتزيغروند",
+      "time": "18:00",
+      "date": "السبت 06-12-2025",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "جراسهوبرز",
+        "logo": "https://imgs.ysscores.com/teams/128/5311690370548.png"
+      },
+      "away": {
+        "name": "سيرفيت",
+        "logo": "https://imgs.ysscores.com/teams/128/4521690823157.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "url": "https://www.ysscores.com/ar/match/78133676/ES-Sétif-vs-CRB-Beni-Tamou",
     "info": {
       "championship": "كأس الجزائر",
@@ -1643,7 +1643,7 @@
       "time": "17:00",
       "date": "السبت 06-12-2025",
       "current_score": "1 - 0",
-      "match_status": "نهاية الشوط الأول"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -1653,29 +1653,6 @@
       "away": {
         "name": "بني تامو",
         "logo": "https://imgs.ysscores.com/teams/128/17643587172411.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/56640221/ES-Ben-Aknoun-vs-RA-Aïn-Defla",
-    "info": {
-      "championship": "كأس الجزائر",
-      "round": "دور الـ 32",
-      "stadium": "ملعب الدار البيضاء",
-      "time": "14:00",
-      "date": "السبت 06-12-2025",
-      "current_score": "2 - 0",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "بن عكنون",
-        "logo": "https://imgs.ysscores.com/teams/128/9561693418601.png"
-      },
-      "away": {
-        "name": "عين الدفلى",
-        "logo": "https://imgs.ysscores.com/teams/128/17643588149764.png"
       }
     },
     "channels": []
@@ -1704,64 +1681,27 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/26755176/Bahrain-vs-Algeria-B",
+    "url": "https://www.ysscores.com/ar/match/56640221/ES-Ben-Aknoun-vs-RA-Aïn-Defla",
     "info": {
-      "championship": "كأس العرب",
-      "round": "2",
-      "stadium": "استاد خليفة الدولي",
-      "time": "14:30",
+      "championship": "كأس الجزائر",
+      "round": "دور الـ 32",
+      "stadium": "ملعب الدار البيضاء",
+      "time": "14:00",
       "date": "السبت 06-12-2025",
-      "current_score": "1 - 5",
+      "current_score": "2 - 0",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "البحرين",
-        "logo": "https://imgs.ysscores.com/teams/128/9791763068542.png"
+        "name": "بن عكنون",
+        "logo": "https://imgs.ysscores.com/teams/128/9561693418601.png"
       },
       "away": {
-        "name": "الجزائر",
-        "logo": "https://imgs.ysscores.com/teams/128/2341763066345.png"
+        "name": "عين الدفلى",
+        "logo": "https://imgs.ysscores.com/teams/128/17643588149764.png"
       }
     },
-    "channels": [
-      {
-        "channel": "الجزائرية السادسة",
-        "commentator": "أمين رزاوي"
-      },
-      {
-        "channel": "بي إن سبورت HD",
-        "commentator": "علي محمد علي"
-      },
-      {
-        "channel": "الكأس 1",
-        "commentator": "خالد الغول"
-      },
-      {
-        "channel": "أبو ظبي الرياضية 1",
-        "commentator": "عيسى الحربين"
-      },
-      {
-        "channel": "دبي الرياضية 1",
-        "commentator": "حماد العنزي"
-      },
-      {
-        "channel": "الشارقة الرياضية",
-        "commentator": "محمد سليمان"
-      },
-      {
-        "channel": "عمان الرياضية",
-        "commentator": "‏راشد الشيذاني"
-      },
-      {
-        "channel": "الكويت الرياضية",
-        "commentator": "محمد النحوي"
-      },
-      {
-        "channel": "منصة شاشا",
-        "commentator": "هاني الشهري"
-      }
-    ]
+    "channels": []
   },
   {
     "url": "https://www.ysscores.com/ar/match/5030379/United-Arab-Emirates-vs-Egypt-B",
@@ -1816,6 +1756,66 @@
       {
         "channel": "عمان الرياضية",
         "commentator": "صلاح الحمداني"
+      },
+      {
+        "channel": "منصة شاشا",
+        "commentator": "هاني الشهري"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/26755176/Bahrain-vs-Algeria-B",
+    "info": {
+      "championship": "كأس العرب",
+      "round": "2",
+      "stadium": "استاد خليفة الدولي",
+      "time": "14:30",
+      "date": "السبت 06-12-2025",
+      "current_score": "1 - 5",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "البحرين",
+        "logo": "https://imgs.ysscores.com/teams/128/9791763068542.png"
+      },
+      "away": {
+        "name": "الجزائر",
+        "logo": "https://imgs.ysscores.com/teams/128/2341763066345.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الجزائرية السادسة",
+        "commentator": "أمين رزاوي"
+      },
+      {
+        "channel": "بي إن سبورت HD",
+        "commentator": "علي محمد علي"
+      },
+      {
+        "channel": "الكأس 1",
+        "commentator": "خالد الغول"
+      },
+      {
+        "channel": "أبو ظبي الرياضية 1",
+        "commentator": "عيسى الحربين"
+      },
+      {
+        "channel": "دبي الرياضية 1",
+        "commentator": "حماد العنزي"
+      },
+      {
+        "channel": "الشارقة الرياضية",
+        "commentator": "محمد سليمان"
+      },
+      {
+        "channel": "عمان الرياضية",
+        "commentator": "‏راشد الشيذاني"
+      },
+      {
+        "channel": "الكويت الرياضية",
+        "commentator": "محمد النحوي"
       },
       {
         "channel": "منصة شاشا",
