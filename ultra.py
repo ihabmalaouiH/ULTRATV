@@ -63,21 +63,19 @@ session.mount("http://", adapter)
 session.headers.update(HEADERS)
 
 # ==========================================
-# 🛠️ دالة تحويل الوقت (من أمريكا إلى الجزائر +6)
+# 🛠️ دالة تحويل الوقت للجزائر (+6 ساعات)
 # ==========================================
 def convert_to_algeria_time(time_str):
     if not time_str or ":" not in time_str:
         return time_str
     try:
-        # تنظيف النص
         clean_time = time_str.replace("صباحاً", "").replace("مساءً", "").strip()
-        # محاولة قراءة الوقت
         try:
             match_time = datetime.datetime.strptime(clean_time, "%H:%M")
         except ValueError:
             match_time = datetime.datetime.strptime(clean_time, "%I:%M")
 
-        # إضافة 6 ساعات (للتحويل من توقيت أمريكا إلى الجزائر)
+        # إضافة 6 ساعات للتحويل من توقيت السيرفر (EST) إلى الجزائر
         new_time = match_time + timedelta(hours=6) 
         return new_time.strftime("%H:%M")
     except:
@@ -115,7 +113,7 @@ def get_match_deep_details(match_url):
             title_tag = soup.find('title')
             match_details["teams"]["full_title"] = title_tag.text.strip() if title_tag else "مباراة"
 
-        # المعلومات (مع تطبيق فرق التوقيت +6)
+        # المعلومات (مع تحويل الوقت)
         target_keys = {"البطولة": "championship", "الجولة": "round", "ملعب المباراة": "stadium", 
                        "وقت المباراة": "time", "تاريخ المباراة": "date"}
         info_block = soup.find('div', class_='match-info') or soup
@@ -127,18 +125,18 @@ def get_match_deep_details(match_url):
                     val_elem = parent.find_next_sibling() or parent.find('span', class_='value')
                     val = clean_text(val_elem.text) if val_elem else clean_text(parent.get_text().replace(key_ar, ''))
                     
-                    # 🔥 تحويل الوقت هنا 🔥
+                    # تحويل الوقت هنا
                     if key_en == "time":
                         val = convert_to_algeria_time(val)
                         
                     match_details["info"][key_en] = val
 
         # ========================================================
-        # 🔥 النتيجة والحالة (المنطق المعدل) 🔥
+        # 🔥 سحب النتيجة والحالة (معدل) 🔥
         # ========================================================
         current_score = "- : -"
         
-        # 1. سحب النتيجة
+        # 1. النتيجة
         s1_tag = soup.find('div', class_=re.compile(r'first-team-result')) or soup.find('span', class_=re.compile(r'first-team-result'))
         s2_tag = soup.find('div', class_=re.compile(r'second-team-result')) or soup.find('span', class_=re.compile(r'second-team-result'))
         
@@ -154,22 +152,24 @@ def get_match_deep_details(match_url):
                  if len(bs) >= 2:
                      current_score = f"{clean_text(bs[0].text)} - {clean_text(bs[1].text)}"
 
-        # 2. سحب الحالة (الأولوية: مباشر > انتهت > لم تبدأ)
+        # 2. الحالة
         match_status = ""
         
-        # أ. هل هي جارية (مباشر)؟
+        # أ. هل هي جارية؟
         live_status = soup.find('span', class_=re.compile(r'live-match-status'))
         if live_status and live_status.text.strip():
             match_status = clean_text(live_status.text)
         
-        # ب. هل انتهت؟
+        # ب. هل انتهت؟ (حل مشكلة العنصر الفارغ بالبحث عن الكل)
         if not match_status:
-            end_status = soup.find('span', class_=re.compile(r'result-status-text'))
-            if end_status and end_status.text.strip():
-                match_status = clean_text(end_status.text)
-
-        # ج. التأكد النهائي: إذا كانت فارغة أو تحتوي على وقت (:) فهي "لم تبدأ"
-        # هذا يمنع ظهور "02:30" في خانة الحالة
+            # الموقع يحتوي على سبان فارغ وسبان ممتلئ، نبحث عن الممتلئ
+            end_status_candidates = soup.find_all('span', class_=re.compile(r'result-status-text'))
+            for status_item in end_status_candidates:
+                if status_item.text.strip():
+                    match_status = clean_text(status_item.text)
+                    break
+        
+        # ج. إذا لم نجد حالة صريحة أو كانت تحتوي على وقت، فهي لم تبدأ
         if not match_status or ":" in match_status:
              match_status = "لم تبدأ"
 
