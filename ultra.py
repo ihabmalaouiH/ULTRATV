@@ -4,6 +4,7 @@ from urllib3.util.retry import Retry
 from bs4 import BeautifulSoup
 import json
 import datetime
+from datetime import timedelta
 import re
 import sys
 import time
@@ -15,7 +16,7 @@ from threading import Thread
 import os 
 
 # ==========================================
-# ⚙️ إعدادات البوت (يتم جلبها من Environment Variables)
+# ⚙️ إعدادات البوت
 # ==========================================
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 REPO_NAME = os.getenv("REPO_NAME")
@@ -26,7 +27,7 @@ TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", 60))
 
 # ==========================================
-# إعداد سيرفر وهمي (Flask) ليعمل على Render
+# إعداد سيرفر وهمي (Flask)
 # ==========================================
 app = Flask('')
 
@@ -48,20 +49,36 @@ BASE_URL = "https://www.ysscores.com"
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-    'Referer': 'https://www.google.com/',
-    'Accept-Language': 'ar,en-US;q=0.7,en;q=0.3',
+    'Referer': 'https://www.google.dz/',
+    'Accept-Language': 'ar-DZ,ar;q=0.9,fr-DZ;q=0.8,fr;q=0.7,en;q=0.5',
 }
 
 session = requests.Session()
 retry_strategy = Retry(
-    total=3,
-    backoff_factor=1,
-    status_forcelist=[429, 500, 502, 503, 504],
+    total=3, backoff_factor=1, status_forcelist=[429, 500, 502, 503, 504],
 )
 adapter = HTTPAdapter(pool_connections=20, pool_maxsize=20, max_retries=retry_strategy)
 session.mount("https://", adapter)
 session.mount("http://", adapter)
 session.headers.update(HEADERS)
+
+# ==========================================
+# 🛠️ دالة تحويل الوقت للجزائر
+# ==========================================
+def convert_to_algeria_time(time_str):
+    if not time_str or ":" not in time_str:
+        return time_str
+    try:
+        clean_time = time_str.replace("صباحاً", "").replace("مساءً", "").strip()
+        try:
+            match_time = datetime.datetime.strptime(clean_time, "%H:%M")
+        except ValueError:
+            match_time = datetime.datetime.strptime(clean_time, "%I:%M")
+
+        new_time = match_time + timedelta(hours=6) 
+        return new_time.strftime("%H:%M")
+    except:
+        return time_str
 
 def clean_text(text):
     if text:
@@ -93,7 +110,7 @@ def get_match_deep_details(match_url):
             match_details["teams"]["away"] = {"name": t2_name, "logo": t2_img}
         else:
             title_tag = soup.find('title')
-            match_details["teams"]["full_title"] = title_tag.text.strip() if title_tag else "مباراة غير معروفة"
+            match_details["teams"]["full_title"] = title_tag.text.strip() if title_tag else "مباراة"
 
         # المعلومات
         target_keys = {"البطولة": "championship", "الجولة": "round", "ملعب المباراة": "stadium", 
@@ -106,14 +123,18 @@ def get_match_deep_details(match_url):
                     parent = label.find_parent()
                     val_elem = parent.find_next_sibling() or parent.find('span', class_='value')
                     val = clean_text(val_elem.text) if val_elem else clean_text(parent.get_text().replace(key_ar, ''))
+                    
+                    if key_en == "time":
+                        val = convert_to_algeria_time(val)
+                        
                     match_details["info"][key_en] = val
 
         # ========================================================
-        # 🔥 تعديل سحب النتيجة والحالة (لإصلاح مشكلة "لم تبدأ") 🔥
+        # 🔥 سحب النتيجة والحالة (تعديل: عدم وضع الوقت في الحالة) 🔥
         # ========================================================
-        
         current_score = "- : -"
-        # 1. النتيجة: نبحث عن الكلاسات التي ظهرت في كود الموقع
+        
+        # 1. النتيجة
         s1_tag = soup.find('div', class_=re.compile(r'first-team-result')) or soup.find('span', class_=re.compile(r'first-team-result'))
         s2_tag = soup.find('div', class_=re.compile(r'second-team-result')) or soup.find('span', class_=re.compile(r'second-team-result'))
         
@@ -129,32 +150,26 @@ def get_match_deep_details(match_url):
                  if len(bs) >= 2:
                      current_score = f"{clean_text(bs[0].text)} - {clean_text(bs[1].text)}"
 
-        match_details["info"]["current_score"] = current_score
-
-        # 2. الحالة: هذا هو التعديل الهام
-        # نبحث أولاً عن حالة المباشر (live-match-status)
+        # 2. الحالة
         match_status = ""
         
+        # أ. هل هي جارية الآن؟
         live_status = soup.find('span', class_=re.compile(r'live-match-status'))
         if live_status and live_status.text.strip():
             match_status = clean_text(live_status.text)
         
-        # إذا لم نجد، نبحث عن حالة النهاية (result-status-text)
+        # ب. هل انتهت أو توقفت؟
         if not match_status:
             end_status = soup.find('span', class_=re.compile(r'result-status-text'))
             if end_status and end_status.text.strip():
                 match_status = clean_text(end_status.text)
-        
-        # إذا لم نجد (يعني المباراة قادمة)، نسحب الوقت من (match-date)
-        if not match_status:
-            date_status = soup.find('b', class_='match-date')
-            if date_status and date_status.text.strip():
-                match_status = clean_text(date_status.text)
 
-        # إذا فشل كل شيء، نستخدم الوقت الموجود في المعلومات
+        # ج. إذا لم نجد حالة صريحة (مباشر أو انتهت)، فهي حتماً "لم تبدأ"
+        # (تم إزالة الكود الذي كان يسحب الوقت من match-date)
         if not match_status:
-             match_status = match_details["info"].get("time", "لم تبدأ")
+             match_status = "لم تبدأ"
 
+        match_details["info"]["current_score"] = current_score
         match_details["info"]["match_status"] = match_status
         # ========================================================
 
@@ -266,15 +281,8 @@ def monitor_matches():
             time.sleep(60)
 
 if __name__ == "__main__":
-    # تشغيل السيرفر الوهمي في خيط منفصل
     keep_alive()
-    
-    # التحقق من وجود التوكين قبل البدء
     if not GITHUB_TOKEN:
-        print("❌ الخطأ: لم يتم العثور على GITHUB_TOKEN في متغيرات البيئة!")
-        print("تأكد من إضافته في إعدادات Render (Environment Variables).")
-    elif "YOUR_GITHUB_TOKEN" in GITHUB_TOKEN:
-         print("❌ الخطأ: يبدو أنك تستخدم النص الافتراضي للتوكين، يرجى وضع التوكين الصحيح.")
+        print("❌ Error: GITHUB_TOKEN is missing!")
     else:
-        # البدء بالمراقبة
         monitor_matches()
