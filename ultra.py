@@ -63,7 +63,7 @@ session.mount("http://", adapter)
 session.headers.update(HEADERS)
 
 # ==========================================
-# 🛠️ دالة تحويل الوقت للجزائر (تصحيح 12 ظهراً و 00 ليلاً)
+# 🛠️ دالة تحويل الوقت
 # ==========================================
 def convert_to_algeria_time(time_str):
     if not time_str or ":" not in time_str:
@@ -73,13 +73,11 @@ def convert_to_algeria_time(time_str):
         clean_time = re.sub(r'[^0-9:]', '', time_str)
         match_time = datetime.datetime.strptime(clean_time, "%H:%M")
 
-        # معالجة نظام 12 ساعة
         if is_pm and match_time.hour != 12:
             match_time = match_time.replace(hour=match_time.hour + 12)
         elif not is_pm and match_time.hour == 12:
             match_time = match_time.replace(hour=0)
 
-        # إضافة 6 ساعات
         new_time = match_time + timedelta(hours=6) 
         return new_time.strftime("%H:%M")
     except:
@@ -98,8 +96,19 @@ def get_match_deep_details(match_url):
         response = session.get(full_url, timeout=10)
         soup = BeautifulSoup(response.text, 'html.parser')
         
+        # استخراج ID المباراة من الرابط (مهم جداً للتطبيقات)
+        # الرابط يكون مثل: /match/4829425/Team-A-vs-Team-B
+        match_id = "0"
+        id_search = re.search(r'/match/(\d+)', full_url)
+        if id_search:
+            match_id = id_search.group(1)
+
         match_details = {
-            "url": full_url, "info": {}, "teams": {}, "channels": []
+            "id": match_id,  # 👈 إضافة الـ ID هنا
+            "url": full_url, 
+            "info": {}, 
+            "teams": {}, 
+            "channels": []
         }
 
         # الفرق
@@ -117,10 +126,22 @@ def get_match_deep_details(match_url):
             title_tag = soup.find('title')
             match_details["teams"]["full_title"] = title_tag.text.strip() if title_tag else "مباراة"
 
-        # المعلومات
+        # المعلومات + محاولة سحب شعار البطولة
         target_keys = {"البطولة": "championship", "الجولة": "round", "ملعب المباراة": "stadium", 
                        "وقت المباراة": "time", "تاريخ المباراة": "date"}
         info_block = soup.find('div', class_='match-info') or soup
+        
+        # 👈 سحب شعار البطولة (جديد)
+        champ_img_url = ""
+        champ_div = soup.find('div', class_='championship-info') # محاولة تخمين الكلاس
+        if not champ_div:
+             # البحث عن الصورة بجانب اسم البطولة في القائمة
+             for img in info_block.find_all('img'):
+                 if "championship" in img.get('src', '') or "league" in img.get('src', ''):
+                     champ_img_url = img['src']
+                     break
+        match_details["info"]["league_logo"] = champ_img_url
+
         for label in info_block.find_all(string=re.compile(r'البطولة|الجولة|ملعب|وقت|تاريخ')):
             clean_lbl = clean_text(label)
             for key_ar, key_en in target_keys.items():
@@ -135,7 +156,7 @@ def get_match_deep_details(match_url):
                     match_details["info"][key_en] = val
 
         # ========================================================
-        # 🔥 سحب النتيجة والحالة (حل مشكلة التداخل النهائية) 🔥
+        # 🔥 النتيجة والحالة (المنطق المثبت) 🔥
         # ========================================================
         current_score = "- : -"
         match_status = ""
@@ -156,20 +177,16 @@ def get_match_deep_details(match_url):
                  if len(bs) >= 2:
                      current_score = f"{clean_text(bs[0].text)} - {clean_text(bs[1].text)}"
 
-        # 2. الحالة: التحقق الصارم
-        # أ. البحث عن "إنتهت" أو "نهاية" في كامل كود الصفحة إذا كانت النتيجة موجودة
-        # هذا يحل مشكلة أن الكلاس قد يكون فارغاً ولكن المباراة منتهية
+        # 2. الحالة
         finished_keywords = soup.find_all(string=re.compile(r'(إنتهت|نهاية|Full Time)'))
         if finished_keywords:
              match_status = "إنتهت المباراة"
 
-        # ب. إذا لم نجد "انتهت"، نبحث عن حالة المباشر
         if not match_status:
             live_status = soup.find('span', class_=re.compile(r'live-match-status'))
             if live_status and live_status.text.strip():
                 match_status = clean_text(live_status.text)
 
-        # ج. محاولة أخيرة من الكلاسات المعتادة إذا لم نجد شيئاً بعد
         if not match_status:
             end_status_candidates = soup.find_all('span', class_=re.compile(r'result-status-text'))
             for status_item in end_status_candidates:
@@ -177,7 +194,6 @@ def get_match_deep_details(match_url):
                     match_status = clean_text(status_item.text)
                     break
         
-        # د. الفلتر النهائي: إذا كانت فارغة أو تحتوي على وقت (:) -> لم تبدأ
         if not match_status or ":" in match_status:
              match_status = "لم تبدأ"
 
@@ -247,7 +263,15 @@ def update_github_file(content_json):
         auth = Auth.Token(GITHUB_TOKEN)
         g = Github(auth=auth)
         repo = g.get_repo(REPO_NAME)
-        content_str = json.dumps(content_json, indent=2, ensure_ascii=False)
+        # إضافة وقت التحديث للكائن الرئيسي لكي يقرأه التطبيق
+        final_payload = {
+            "last_updated": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "matches": content_json
+        }
+        content_str = json.dumps(final_payload, indent=2, ensure_ascii=False) # 👈 تم تغيير الهيكل قليلاً
+        # إذا كنت تريدها مصفوفة كما كانت سابقاً، استخدم السطر التالي بدلاً من السطرين السابقين:
+        # content_str = json.dumps(content_json, indent=2, ensure_ascii=False)
+        
         content_bytes = content_str.encode("utf-8")
         try:
             contents = repo.get_contents(FILE_PATH_IN_REPO)
@@ -277,6 +301,7 @@ def monitor_matches():
         try:
             current_data = main_scraper()
             if current_data:
+                # نحسب الهاش بناء على البيانات فقط
                 current_json_str = json.dumps(current_data, sort_keys=True)
                 current_hash = hashlib.md5(current_json_str.encode('utf-8')).hexdigest()
                 if current_hash != last_hash:
@@ -293,12 +318,8 @@ def monitor_matches():
             time.sleep(60)
 
 if __name__ == "__main__":
-    # تشغيل السيرفر الوهمي في خيط منفصل
     keep_alive()
-    
-    # التحقق من وجود التوكين قبل البدء
     if not GITHUB_TOKEN:
         print("❌ Error: GITHUB_TOKEN is missing!")
     else:
-        # البدء بالمراقبة
         monitor_matches()
