@@ -98,8 +98,18 @@ def get_match_deep_details(match_url):
         response = session.get(full_url, timeout=10)
         soup = BeautifulSoup(response.text, 'html.parser')
         
+        # استخراج ID المباراة (مفيد جداً للتطبيق)
+        match_id = "0"
+        id_search = re.search(r'/match/(\d+)', full_url)
+        if id_search:
+            match_id = id_search.group(1)
+
         match_details = {
-            "url": full_url, "info": {}, "teams": {}, "channels": []
+            "id": match_id,
+            "url": full_url, 
+            "info": {}, 
+            "teams": {}, 
+            "channels": []
         }
 
         # الفرق
@@ -135,7 +145,7 @@ def get_match_deep_details(match_url):
                     match_details["info"][key_en] = val
 
         # ========================================================
-        # 🔥 سحب النتيجة والحالة (حل مشكلة التداخل النهائية) 🔥
+        # 🔥 النتيجة والحالة (المنطق الدقيق) 🔥
         # ========================================================
         current_score = "- : -"
         match_status = ""
@@ -157,8 +167,7 @@ def get_match_deep_details(match_url):
                      current_score = f"{clean_text(bs[0].text)} - {clean_text(bs[1].text)}"
 
         # 2. الحالة: التحقق الصارم
-        # أ. البحث عن "إنتهت" أو "نهاية" في كامل كود الصفحة إذا كانت النتيجة موجودة
-        # هذا يحل مشكلة أن الكلاس قد يكون فارغاً ولكن المباراة منتهية
+        # أ. البحث عن "إنتهت" أو "نهاية"
         finished_keywords = soup.find_all(string=re.compile(r'(إنتهت|نهاية|Full Time)'))
         if finished_keywords:
              match_status = "إنتهت المباراة"
@@ -169,7 +178,7 @@ def get_match_deep_details(match_url):
             if live_status and live_status.text.strip():
                 match_status = clean_text(live_status.text)
 
-        # ج. محاولة أخيرة من الكلاسات المعتادة إذا لم نجد شيئاً بعد
+        # ج. محاولة أخيرة من الكلاسات المعتادة
         if not match_status:
             end_status_candidates = soup.find_all('span', class_=re.compile(r'result-status-text'))
             for status_item in end_status_candidates:
@@ -270,19 +279,36 @@ def send_telegram_alert(message):
 
 def monitor_matches():
     last_hash = ""
+    # 🆕 NEW: متغير لتتبع آخر يوم تم التحديث فيه بنجاح
+    last_update_day = datetime.date.min
+    
     print(f"🚀 Bot Started monitoring {BASE_URL}...")
     send_telegram_alert("🚀 Bot Started on Render.")
 
     while True:
         try:
             current_data = main_scraper()
+            # 🆕 NEW: الحصول على تاريخ اليوم الحالي
+            current_date = datetime.date.today()
+            
             if current_data:
                 current_json_str = json.dumps(current_data, sort_keys=True)
                 current_hash = hashlib.md5(current_json_str.encode('utf-8')).hexdigest()
-                if current_hash != last_hash:
-                    print("🔄 Change detected! Updating...")
+                
+                # 🆕 NEW: التحقق مما إذا كان اليوم قد تغير (لفرض التحديث عند منتصف الليل)
+                force_update = (current_date > last_update_day)
+                
+                # 🔄 MODIFIED: التحقق من تغير الهاش أو تغير اليوم
+                if current_hash != last_hash or force_update:
+                    if force_update:
+                         print("🔄 NEW DAY: Forcing update to capture today's matches list (00:00 check).")
+                    else:
+                         print("🔄 Change detected! Updating...")
+
                     if update_github_file(current_data):
                         last_hash = current_hash
+                        # 🆕 NEW: تحديث تاريخ آخر يوم تم التحديث فيه
+                        last_update_day = current_date 
                 else:
                     print("💤 No changes.")
             
