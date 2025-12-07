@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>ULTRA TV | لوحة الإدارة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Cairo', sans-serif; background-color: #0f172a; color: white; }</style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- تسجيل الدخول -->
+    <div id="loginScreen" class="fixed inset-0 bg-slate-900 flex items-center justify-center z-50">
+        <div class="bg-slate-800 p-8 rounded-xl shadow-2xl w-96 text-center border border-slate-700">
+            <img src="https://ultrav.me/LogoUltraCup.png" class="h-20 mx-auto mb-4">
+            <h2 class="text-xl font-bold mb-4">مدير النظام</h2>
+            <input type="password" id="apiKey" placeholder="Admin Key" class="w-full p-3 rounded bg-slate-700 border border-slate-600 mb-4 text-center text-white">
+            <input type="text" id="workerUrl" placeholder="رابط السيرفر (panel.ultrav.me)" class="w-full p-3 rounded bg-slate-700 border border-slate-600 mb-4 text-center text-white text-sm" value="https://panel.ultrav.me">
+            <button onclick="login()" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded font-bold transition">دخول</button>
+        </div>
+    </div>
+
+    <!-- اللوحة الرئيسية -->
+    <div id="dashboard" class="hidden max-w-6xl mx-auto">
+        
+        <!-- الرأس -->
+        <div class="flex justify-between items-center mb-8">
+            <div class="flex items-center gap-4">
+                <img src="https://ultrav.me/LogoUltraCup.png" class="h-12">
+                <h1 class="text-2xl font-bold">لوحة التحكم الشاملة</h1>
+            </div>
+            <div class="flex gap-2">
+                <button onclick="switchTab('channels')" class="tab-btn bg-blue-600 px-4 py-2 rounded-lg font-bold"><i class="fa-solid fa-tv"></i> القنوات</button>
+                <button onclick="switchTab('users')" class="tab-btn bg-slate-700 px-4 py-2 rounded-lg font-bold"><i class="fa-solid fa-users"></i> المشتركين</button>
+                <button onclick="switchTab('bans')" class="tab-btn bg-slate-700 px-4 py-2 rounded-lg font-bold text-red-400"><i class="fa-solid fa-ban"></i> المحظورين</button>
+            </div>
+        </div>
+
+        <!-- تبويب القنوات -->
+        <div id="tab-channels" class="tab-content">
+            <div class="bg-slate-800 p-6 rounded-xl mb-6 border border-slate-700">
+                <div class="flex gap-4 mb-4">
+                    <input type="text" id="chName" placeholder="اسم القناة" class="flex-1 p-2 rounded bg-slate-700 border border-slate-600">
+                    <input type="text" id="chUrl" placeholder="رابط m3u8" class="flex-1 p-2 rounded bg-slate-700 border border-slate-600">
+                    <button onclick="addChannel()" class="bg-green-600 px-6 rounded font-bold">إضافة</button>
+                </div>
+                <table class="w-full text-right"><tbody id="channelsList"></tbody></table>
+            </div>
+        </div>
+
+        <!-- تبويب المشتركين -->
+        <div id="tab-users" class="tab-content hidden">
+            <div class="bg-slate-800 p-6 rounded-xl mb-6 border border-slate-700">
+                <h3 class="font-bold mb-4 text-blue-400">إضافة مشترك جديد</h3>
+                <div class="flex gap-4 mb-4">
+                    <input type="text" id="usrName" placeholder="User" class="flex-1 p-2 rounded bg-slate-700 border border-slate-600">
+                    <input type="text" id="usrPass" placeholder="Pass" class="flex-1 p-2 rounded bg-slate-700 border border-slate-600">
+                    <button onclick="addUser()" class="bg-blue-600 px-6 rounded font-bold">إنشاء</button>
+                </div>
+                
+                <table class="w-full text-right text-sm">
+                    <thead class="bg-slate-900 text-slate-400">
+                        <tr>
+                            <th class="p-3">User</th>
+                            <th class="p-3">Pass</th>
+                            <th class="p-3">الحالة</th>
+                            <th class="p-3">آخر IP</th>
+                            <th class="p-3 text-center">تحكم</th>
+                        </tr>
+                    </thead>
+                    <tbody id="usersList" class="divide-y divide-slate-700"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- تبويب المحظورين -->
+        <div id="tab-bans" class="tab-content hidden">
+            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                <h3 class="font-bold mb-4 text-red-400">حظر IP يدوياً</h3>
+                <div class="flex gap-4 mb-4">
+                    <input type="text" id="banIPInput" placeholder="IP Address (e.g. 192.168.1.1)" class="flex-1 p-2 rounded bg-slate-700 border border-slate-600">
+                    <button onclick="manualBan()" class="bg-red-600 px-6 rounded font-bold">حظر</button>
+                </div>
+                <div id="bannedList" class="flex flex-wrap gap-2"></div>
+            </div>
+        </div>
+
+        <!-- زر الحفظ العام -->
+        <button onclick="saveAll()" class="fixed bottom-5 left-5 bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full shadow-2xl font-bold text-lg animate-bounce">
+            <i class="fa-solid fa-cloud-upload"></i> حفظ التغييرات
+        </button>
+
+    </div>
+
+    <script>
+        let data = { channels: [], users: [], banned_ips: [] };
+        let WORKER_URL = "", API_KEY = "";
+
+        async function login() {
+            API_KEY = document.getElementById('apiKey').value;
+            WORKER_URL = document.getElementById('workerUrl').value;
+            if (!WORKER_URL.startsWith('http')) WORKER_URL = 'https://' + WORKER_URL;
+
+            try {
+                const res = await fetch(`${WORKER_URL}/api/admin/get_data`, { headers: { 'Admin-Key': API_KEY } });
+                if (res.status === 401) return alert("كلمة المرور خاطئة!");
+                data = await res.json();
+                renderAll();
+                document.getElementById('loginScreen').classList.add('hidden');
+                document.getElementById('dashboard').classList.remove('hidden');
+            } catch (e) { alert("خطأ في الاتصال!"); }
+        }
+
+        function switchTab(tab) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.getElementById(`tab-${tab}`).classList.remove('hidden');
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.replace('bg-blue-600','bg-slate-700'));
+            event.target.closest('button').classList.replace('bg-slate-700','bg-blue-600');
+        }
+
+        function renderAll() {
+            // القنوات
+            document.getElementById('channelsList').innerHTML = data.channels.map((ch, i) => `
+                <tr class="hover:bg-slate-700/50">
+                    <td class="p-3 font-bold">${ch.name}</td>
+                    <td class="p-3 text-xs text-blue-300 truncate max-w-xs">${ch.stream_url}</td>
+                    <td class="p-3 text-center"><button onclick="data.channels.splice(${i},1);renderAll()" class="text-red-500"><i class="fa-solid fa-trash"></i></button></td>
+                </tr>
+            `).join('');
+
+            // المشتركين
+            document.getElementById('usersList').innerHTML = data.users.map((u, i) => `
+                <tr class="hover:bg-slate-700/50">
+                    <td class="p-3 font-bold text-yellow-400">${u.username}</td>
+                    <td class="p-3">${u.password}</td>
+                    <td class="p-3"><span class="px-2 py-1 rounded text-xs ${u.status==='active'?'bg-green-600':'bg-red-600'}">${u.status}</span></td>
+                    <td class="p-3 text-xs font-mono text-slate-300">${u.last_ip || '---'}</td>
+                    <td class="p-3 text-center flex justify-center gap-2">
+                        <button onclick="toggleUserStatus(${i})" class="text-blue-400" title="تجميد/تفعيل"><i class="fa-solid fa-power-off"></i></button>
+                        <button onclick="banUserIP(${i})" class="text-red-400" title="حظر IP هذا الشخص"><i class="fa-solid fa-ban"></i></button>
+                        <button onclick="data.users.splice(${i},1);renderAll()" class="text-slate-400"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+            `).join('');
+
+            // المحظورين
+            document.getElementById('bannedList').innerHTML = data.banned_ips.map(ip => `
+                <span class="bg-red-900/50 border border-red-700 px-3 py-1 rounded text-sm flex items-center gap-2">
+                    ${ip} <button onclick="unbanIP('${ip}')" class="text-red-200 hover:text-white">x</button>
+                </span>
+            `).join('');
+        }
+
+        // عمليات المستخدمين
+        function addUser() {
+            const u = document.getElementById('usrName').value, p = document.getElementById('usrPass').value;
+            if(u && p) { data.users.push({ username: u, password: p, status: 'active', last_ip: '', max_cons: 1 }); renderAll(); }
+        }
+        function toggleUserStatus(i) {
+            data.users[i].status = data.users[i].status === 'active' ? 'disabled' : 'active';
+            renderAll();
+        }
+        function banUserIP(i) {
+            const ip = data.users[i].last_ip;
+            if(ip && ip.length > 5) {
+                if(!data.banned_ips.includes(ip)) data.banned_ips.push(ip);
+                saveBan(ip); // حفظ فوري للحظر
+                alert(`تم حظر الـ IP: ${ip}`);
+                renderAll();
+            } else { alert("لا يوجد IP مسجل لهذا المستخدم بعد"); }
+        }
+
+        // عمليات القنوات والحظر اليدوي
+        function addChannel() {
+            const n = document.getElementById('chName').value, u = document.getElementById('chUrl').value;
+            if(n && u) {
+                data.channels.push({ num: data.channels.length+1, name: n, stream_type: "live", stream_id: Math.floor(Math.random()*9000)+1000, stream_icon: "https://ultrav.me/LogoUltraCup.png", stream_url: u, category_id: "1" });
+                renderAll();
+            }
+        }
+        function manualBan() {
+            const ip = document.getElementById('banIPInput').value;
+            if(ip) { data.banned_ips.push(ip); saveBan(ip); renderAll(); }
+        }
+        async function unbanIP(ip) {
+            data.banned_ips = data.banned_ips.filter(i => i !== ip);
+            await fetch(`${WORKER_URL}/api/admin/unban_ip`, { method: 'POST', headers: {'Admin-Key':API_KEY}, body: JSON.stringify({ip}) });
+            renderAll();
+        }
+
+        // الحفظ النهائي
+        async function saveBan(ip) {
+            await fetch(`${WORKER_URL}/api/admin/ban_ip`, { method: 'POST', headers: {'Admin-Key':API_KEY}, body: JSON.stringify({ip}) });
+        }
+        async function saveAll() {
+            await fetch(`${WORKER_URL}/api/admin/save_channels`, { method: 'POST', headers: {'Admin-Key':API_KEY}, body: JSON.stringify(data.channels) });
+            await fetch(`${WORKER_URL}/api/admin/save_users`, { method: 'POST', headers: {'Admin-Key':API_KEY}, body: JSON.stringify(data.users) });
+            alert("تم حفظ جميع البيانات في السيرفر! 💾");
+        }
+    </script>
+</body>
+</html>
