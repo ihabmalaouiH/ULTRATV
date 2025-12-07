@@ -35,8 +35,8 @@
       "stadium": "سيغنال إيدونا بارك",
       "time": "17:30",
       "date": "الأحد 07-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -67,7 +67,7 @@
       "stadium": "ميستايا",
       "time": "16:15",
       "date": "الأحد 07-12-2025",
-      "current_score": "0 - 0",
+      "current_score": "0 - 1",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -292,38 +292,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4803169/US-Cremonese-vs-US-Lecce",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "14 - مباراة الذهاب",
-      "stadium": "استاد جيوفاني زيني",
-      "time": "12:30",
-      "date": "الأحد 07-12-2025",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "كريمونيسي",
-        "logo": "https://imgs.ysscores.com/teams/128/5011690370508.png"
-      },
-      "away": {
-        "name": "ليتشي",
-        "logo": "https://imgs.ysscores.com/teams/128/9031690283003.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "StarzPlay",
-        "commentator": "أحمد الخير"
-      },
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "أحمد الخير"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4803171/SS-Lazio-vs-Bologna-FC-1909",
     "info": {
       "championship": "الدوري الإيطالي",
@@ -352,6 +320,38 @@
       {
         "channel": "تطبيق STC TV",
         "commentator": "عيسى الحربين"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4803169/US-Cremonese-vs-US-Lecce",
+    "info": {
+      "championship": "الدوري الإيطالي",
+      "round": "14 - مباراة الذهاب",
+      "stadium": "استاد جيوفاني زيني",
+      "time": "12:30",
+      "date": "الأحد 07-12-2025",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "كريمونيسي",
+        "logo": "https://imgs.ysscores.com/teams/128/5011690370508.png"
+      },
+      "away": {
+        "name": "ليتشي",
+        "logo": "https://imgs.ysscores.com/teams/128/9031690283003.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "StarzPlay",
+        "commentator": "أحمد الخير"
+      },
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "أحمد الخير"
       }
     ]
   },
@@ -886,62 +886,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4830586/Le-Havre-AC-vs-Paris-FC",
-    "info": {
-      "championship": "الدوري الفرنسي",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "ستاد أوسيان",
-      "time": "17:15",
-      "date": "الأحد 07-12-2025",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "لوهافر",
-        "logo": "https://imgs.ysscores.com/teams/128/6941691927287.png"
-      },
-      "away": {
-        "name": "نادي باريس",
-        "logo": "https://imgs.ysscores.com/teams/128/6551690370501.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "نوفل باشي"
-      }
-    ]
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/4830588/FC-Lorient-vs-Olympique-Lyon",
-    "info": {
-      "championship": "الدوري الفرنسي",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "دو موستوار",
-      "time": "20:45",
-      "date": "الأحد 07-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "لوريان",
-        "logo": "https://imgs.ysscores.com/teams/128/6891690287722.png"
-      },
-      "away": {
-        "name": "ليون",
-        "logo": "https://imgs.ysscores.com/teams/128/4081690287528.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "حسن العيدروس"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4830590/OGC-Nice-vs-Angers-SCO",
     "info": {
       "championship": "الدوري الفرنسي",
@@ -994,6 +938,62 @@
       {
         "channel": "بي إن سبورت 4",
         "commentator": "مصطفى العلوان"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4830586/Le-Havre-AC-vs-Paris-FC",
+    "info": {
+      "championship": "الدوري الفرنسي",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "ستاد أوسيان",
+      "time": "17:15",
+      "date": "الأحد 07-12-2025",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "لوهافر",
+        "logo": "https://imgs.ysscores.com/teams/128/6941691927287.png"
+      },
+      "away": {
+        "name": "نادي باريس",
+        "logo": "https://imgs.ysscores.com/teams/128/6551690370501.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "نوفل باشي"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4830588/FC-Lorient-vs-Olympique-Lyon",
+    "info": {
+      "championship": "الدوري الفرنسي",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "دو موستوار",
+      "time": "20:45",
+      "date": "الأحد 07-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "لوريان",
+        "logo": "https://imgs.ysscores.com/teams/128/6891690287722.png"
+      },
+      "away": {
+        "name": "ليون",
+        "logo": "https://imgs.ysscores.com/teams/128/4081690287528.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "حسن العيدروس"
       }
     ]
   },
@@ -1080,7 +1080,7 @@
       "time": "16:45",
       "date": "الأحد 07-12-2025",
       "current_score": "1 - 0",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1209,29 +1209,6 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4802037/Randers-FC-vs-Aarhus-GF",
-    "info": {
-      "championship": "دوري السوبر الدنماركي",
-      "round": "18 - مباراة الاياب",
-      "stadium": "سافيوس بارك راندرز",
-      "time": "16:00",
-      "date": "الأحد 07-12-2025",
-      "current_score": "1 - 2",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "راندرز",
-        "logo": "https://imgs.ysscores.com/teams/128/7291691095937.png"
-      },
-      "away": {
-        "name": "اوروس",
-        "logo": "https://imgs.ysscores.com/teams/128/5081691095768.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4802036/FC-Nordsjaelland-vs-Silkeborg-IF",
     "info": {
       "championship": "دوري السوبر الدنماركي",
@@ -1250,6 +1227,29 @@
       "away": {
         "name": "سيلكيبورج",
         "logo": "https://imgs.ysscores.com/teams/128/9451691096235.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4802037/Randers-FC-vs-Aarhus-GF",
+    "info": {
+      "championship": "دوري السوبر الدنماركي",
+      "round": "18 - مباراة الاياب",
+      "stadium": "سافيوس بارك راندرز",
+      "time": "16:00",
+      "date": "الأحد 07-12-2025",
+      "current_score": "1 - 2",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "راندرز",
+        "logo": "https://imgs.ysscores.com/teams/128/7291691095937.png"
+      },
+      "away": {
+        "name": "اوروس",
+        "logo": "https://imgs.ysscores.com/teams/128/5081691095768.png"
       }
     },
     "channels": []
@@ -1438,66 +1438,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/40731323/Syria-vs-Palestine",
-    "info": {
-      "championship": "كأس العرب",
-      "round": "3",
-      "stadium": "إستاد المدينة التعليمية",
-      "time": "18:00",
-      "date": "الأحد 07-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "سوريا",
-        "logo": "https://imgs.ysscores.com/teams/128/1671763149753.png"
-      },
-      "away": {
-        "name": "فلسطين",
-        "logo": "https://imgs.ysscores.com/teams/128/9311763084802.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Xtra 1",
-        "commentator": "حفيظ دراجي"
-      },
-      {
-        "channel": "الكأس 2",
-        "commentator": "خالد الغول"
-      },
-      {
-        "channel": "الكأس 2",
-        "commentator": "بكر علوان"
-      },
-      {
-        "channel": "أبو ظبي الرياضية 2",
-        "commentator": "بلال علام"
-      },
-      {
-        "channel": "دبي الرياضية 2",
-        "commentator": "راشد عبدالرحمن"
-      },
-      {
-        "channel": "الشارقة الرياضية 2",
-        "commentator": "محمد الهنائي"
-      },
-      {
-        "channel": "الكويت الرياضية 2",
-        "commentator": "طارق الملا"
-      },
-      {
-        "channel": "عمان الرياضية",
-        "commentator": "محمد موسى"
-      },
-      {
-        "channel": "منصة شاشا",
-        "commentator": "علي دراج"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/5030374/Qatar-vs-Tunisia",
     "info": {
       "championship": "كأس العرب",
@@ -1562,6 +1502,66 @@
       {
         "channel": "عُمان مباشر",
         "commentator": "يونس الرواحي"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/40731323/Syria-vs-Palestine",
+    "info": {
+      "championship": "كأس العرب",
+      "round": "3",
+      "stadium": "إستاد المدينة التعليمية",
+      "time": "18:00",
+      "date": "الأحد 07-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "سوريا",
+        "logo": "https://imgs.ysscores.com/teams/128/1671763149753.png"
+      },
+      "away": {
+        "name": "فلسطين",
+        "logo": "https://imgs.ysscores.com/teams/128/9311763084802.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Xtra 1",
+        "commentator": "حفيظ دراجي"
+      },
+      {
+        "channel": "الكأس 2",
+        "commentator": "خالد الغول"
+      },
+      {
+        "channel": "الكأس 2",
+        "commentator": "بكر علوان"
+      },
+      {
+        "channel": "أبو ظبي الرياضية 2",
+        "commentator": "بلال علام"
+      },
+      {
+        "channel": "دبي الرياضية 2",
+        "commentator": "راشد عبدالرحمن"
+      },
+      {
+        "channel": "الشارقة الرياضية 2",
+        "commentator": "محمد الهنائي"
+      },
+      {
+        "channel": "الكويت الرياضية 2",
+        "commentator": "طارق الملا"
+      },
+      {
+        "channel": "عمان الرياضية",
+        "commentator": "محمد موسى"
+      },
+      {
+        "channel": "منصة شاشا",
+        "commentator": "علي دراج"
       }
     ]
   }
