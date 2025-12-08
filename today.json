@@ -35,7 +35,7 @@
       "stadium": "استاد مولينيو",
       "time": "21:00",
       "date": "الاثنين 08-12-2025",
-      "current_score": "0 - 0",
+      "current_score": "0 - 1",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -183,34 +183,6 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4842443/Besiktas-JK-vs-Gaziantep-FK",
-    "info": {
-      "championship": "الدوري التركي الممتاز",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "استاد توبراس",
-      "time": "18:00",
-      "date": "الاثنين 08-12-2025",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بشكتاش",
-        "logo": "https://imgs.ysscores.com/teams/128/2171690128210.png"
-      },
-      "away": {
-        "name": "غازي عنتاب",
-        "logo": "https://imgs.ysscores.com/teams/128/3061690127435.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Sports HD 1 TR",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4842441/Alanyaspor-vs-Antalyaspor",
     "info": {
       "championship": "الدوري التركي الممتاز",
@@ -234,6 +206,34 @@
     "channels": [
       {
         "channel": "beIN Sports HD 2 TR",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4842443/Besiktas-JK-vs-Gaziantep-FK",
+    "info": {
+      "championship": "الدوري التركي الممتاز",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "استاد توبراس",
+      "time": "18:00",
+      "date": "الاثنين 08-12-2025",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بشكتاش",
+        "logo": "https://imgs.ysscores.com/teams/128/2171690128210.png"
+      },
+      "away": {
+        "name": "غازي عنتاب",
+        "logo": "https://imgs.ysscores.com/teams/128/3061690127435.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Sports HD 1 TR",
         "commentator": "غير مدرج"
       }
     ]
@@ -461,66 +461,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/26223897/Oman-vs-Comoros",
-    "info": {
-      "championship": "كأس العرب",
-      "round": "3",
-      "stadium": "استاد 974",
-      "time": "18:00",
-      "date": "الاثنين 08-12-2025",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "عُمان",
-        "logo": "https://imgs.ysscores.com/teams/128/7281763084559.png"
-      },
-      "away": {
-        "name": "جزر القمر",
-        "logo": "https://imgs.ysscores.com/teams/128/7091763070957.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "عمان الرياضية",
-        "commentator": "أحمد العجمي"
-      },
-      {
-        "channel": "beIN Xtra 1",
-        "commentator": "محمد بركات"
-      },
-      {
-        "channel": "الكأس 2",
-        "commentator": "سمير المعيرفي"
-      },
-      {
-        "channel": "الكأس 2",
-        "commentator": "جابر المري"
-      },
-      {
-        "channel": "أبو ظبي الرياضية 2",
-        "commentator": "محمد الشامسي"
-      },
-      {
-        "channel": "دبي الرياضية 3",
-        "commentator": "عمر الطنيجي"
-      },
-      {
-        "channel": "الشارقة الرياضية 2",
-        "commentator": "محمد الهنائي"
-      },
-      {
-        "channel": "الكويت الرياضية 2",
-        "commentator": "طارق الملا"
-      },
-      {
-        "channel": "منصة شاشا",
-        "commentator": "علي دراج"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/5030376/Morocco-B-vs-Saudi-Arabia",
     "info": {
       "championship": "كأس العرب",
@@ -585,6 +525,66 @@
       {
         "channel": "شاهد - VIP | رياضة",
         "commentator": "أحمد النفيسة"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/26223897/Oman-vs-Comoros",
+    "info": {
+      "championship": "كأس العرب",
+      "round": "3",
+      "stadium": "استاد 974",
+      "time": "18:00",
+      "date": "الاثنين 08-12-2025",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "عُمان",
+        "logo": "https://imgs.ysscores.com/teams/128/7281763084559.png"
+      },
+      "away": {
+        "name": "جزر القمر",
+        "logo": "https://imgs.ysscores.com/teams/128/7091763070957.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "عمان الرياضية",
+        "commentator": "أحمد العجمي"
+      },
+      {
+        "channel": "beIN Xtra 1",
+        "commentator": "محمد بركات"
+      },
+      {
+        "channel": "الكأس 2",
+        "commentator": "سمير المعيرفي"
+      },
+      {
+        "channel": "الكأس 2",
+        "commentator": "جابر المري"
+      },
+      {
+        "channel": "أبو ظبي الرياضية 2",
+        "commentator": "محمد الشامسي"
+      },
+      {
+        "channel": "دبي الرياضية 3",
+        "commentator": "عمر الطنيجي"
+      },
+      {
+        "channel": "الشارقة الرياضية 2",
+        "commentator": "محمد الهنائي"
+      },
+      {
+        "channel": "الكويت الرياضية 2",
+        "commentator": "طارق الملا"
+      },
+      {
+        "channel": "منصة شاشا",
+        "commentator": "علي دراج"
       }
     ]
   }
