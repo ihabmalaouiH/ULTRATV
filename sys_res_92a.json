@@ -8,7 +8,11 @@
     "league": "كأس العرب",
     "channel": "beIN SPORTS",
     "commentator": "علي سعيد الكعبي",
-    "servers": []
+    "servers": [
+      {
+        "HD": "https://live.ultrav.me/index.m3u8"
+      }
+    ]
   },
   {
     "team1Name": "عُمان",
@@ -19,6 +23,21 @@
     "league": "كأس العرب",
     "channel": "beIN Xtra 1",
     "commentator": "محمد بركات",
+    "servers": [
+      {
+        "HD": "https://cdn.ultrav.me/index.m3u8"
+      }
+    ]
+  },
+  {
+    "team1Name": "تورينو",
+    "team1Logo": "https://imgs.ysscores.com/teams/128/7501690283003.png",
+    "team2Name": "ميلان",
+    "team2Logo": "https://imgs.ysscores.com/teams/128/3181690283002.png",
+    "startTime": 1765223100,
+    "league": "الدوري الإيطالي",
+    "channel": "منصة شاشا",
+    "commentator": "رؤوف خليف",
     "servers": []
   },
   {
