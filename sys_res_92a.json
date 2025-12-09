@@ -11,6 +11,9 @@
     "servers": [
       {
         "HD": "https://live.ultrav.me/index.m3u8"
+      },
+      {
+        "نت ضعيف": "https://low.ultrav.me/index.m3u8"
       }
     ]
   },
@@ -67,6 +70,9 @@
     "servers": [
       {
         "HD": "https://live.ultrav.me/index.m3u8"
+      },
+      {
+        "نت ضعيف": "https://low.ultrav.me/index.m3u8"
       }
     ]
   },
@@ -82,25 +88,14 @@
     "servers": []
   },
   {
-    "team1Name": "موناكو",
-    "team1Logo": "https://imgs.ysscores.com/teams/128/3861690287583.png",
-    "team2Name": "غلطة سراي",
-    "team2Logo": "https://imgs.ysscores.com/teams/128/2081756067376.png",
+    "team1Name": "آيندهوفن",
+    "team1Logo": "https://imgs.ysscores.com/teams/128/3391690378187.png",
+    "team2Name": "أتلتيكو مدريد",
+    "team2Logo": "https://imgs.ysscores.com/teams/128/1431719588699.png",
     "startTime": 1765310400,
     "league": "دوري أبطال أوروبا",
-    "channel": "beIN SPORTS 6",
-    "commentator": "عبدالله الغامدي",
-    "servers": []
-  },
-  {
-    "team1Name": "أتلانتا",
-    "team1Logo": "https://imgs.ysscores.com/teams/128/3541690283001.png",
-    "team2Name": "تشيلسي",
-    "team2Logo": "https://imgs.ysscores.com/teams/128/2571690118280.png",
-    "startTime": 1765310400,
-    "league": "دوري أبطال أوروبا",
-    "channel": "beIN SPORTS 3",
-    "commentator": "حفيظ دراجي",
+    "channel": "beIN SPORTS 4",
+    "commentator": "محمد المبروكي",
     "servers": []
   },
   {
@@ -115,14 +110,25 @@
     "servers": []
   },
   {
-    "team1Name": "آيندهوفن",
-    "team1Logo": "https://imgs.ysscores.com/teams/128/3391690378187.png",
-    "team2Name": "أتلتيكو مدريد",
-    "team2Logo": "https://imgs.ysscores.com/teams/128/1431719588699.png",
+    "team1Name": "أتلانتا",
+    "team1Logo": "https://imgs.ysscores.com/teams/128/3541690283001.png",
+    "team2Name": "تشيلسي",
+    "team2Logo": "https://imgs.ysscores.com/teams/128/2571690118280.png",
     "startTime": 1765310400,
     "league": "دوري أبطال أوروبا",
-    "channel": "beIN SPORTS 4",
-    "commentator": "محمد المبروكي",
+    "channel": "beIN SPORTS 3",
+    "commentator": "حفيظ دراجي",
+    "servers": []
+  },
+  {
+    "team1Name": "موناكو",
+    "team1Logo": "https://imgs.ysscores.com/teams/128/3861690287583.png",
+    "team2Name": "غلطة سراي",
+    "team2Logo": "https://imgs.ysscores.com/teams/128/2081756067376.png",
+    "startTime": 1765310400,
+    "league": "دوري أبطال أوروبا",
+    "channel": "beIN SPORTS 6",
+    "commentator": "عبدالله الغامدي",
     "servers": []
   },
   {
