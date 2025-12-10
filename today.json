@@ -130,34 +130,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4947233/Qarabağ-FK-vs-Ajax-Amsterdam",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "6",
-      "stadium": "توفيق بهراموف الجمهوري",
-      "time": "18:45",
-      "date": "الأربعاء 10-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "كارباخ",
-        "logo": "https://imgs.ysscores.com/teams/128/5151690822077.png"
-      },
-      "away": {
-        "name": "أياكس أمستردام",
-        "logo": "https://imgs.ysscores.com/teams/128/1361751718344.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 7",
-        "commentator": "عامر الخوذيري"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4947174/Club-Brugge-KV-vs-Arsenal-FC",
     "info": {
       "championship": "دوري أبطال أوروبا",
@@ -186,11 +158,11 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4947116/Real-Madrid-vs-Manchester-City",
+    "url": "https://www.ysscores.com/ar/match/4947171/Bayer-04-Leverkusen-vs-Newcastle-United",
     "info": {
       "championship": "دوري أبطال أوروبا",
       "round": "6",
-      "stadium": "ملعب سانتياغو برنابيو",
+      "stadium": "باي أرينا",
       "time": "21:00",
       "date": "الأربعاء 10-12-2025",
       "current_score": "- : -",
@@ -198,18 +170,18 @@
     },
     "teams": {
       "home": {
-        "name": "ريال مدريد",
-        "logo": "https://imgs.ysscores.com/teams/128/1871690196746.png"
+        "name": "باير ليفركوزن",
+        "logo": "https://imgs.ysscores.com/teams/128/7151690288816.png"
       },
       "away": {
-        "name": "مان سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/4481690118308.png"
+        "name": "نيوكاسل",
+        "logo": "https://imgs.ysscores.com/teams/128/3721690119405.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 1",
-        "commentator": "حفيظ دراجي"
+        "channel": "بي إن سبورت 8",
+        "commentator": "عصام الشوالي"
       }
     ]
   },
@@ -270,11 +242,11 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4947171/Bayer-04-Leverkusen-vs-Newcastle-United",
+    "url": "https://www.ysscores.com/ar/match/4947202/Juventus-FC-vs-Pafos-FC",
     "info": {
       "championship": "دوري أبطال أوروبا",
       "round": "6",
-      "stadium": "باي أرينا",
+      "stadium": "أليانز ستاديوم",
       "time": "21:00",
       "date": "الأربعاء 10-12-2025",
       "current_score": "- : -",
@@ -282,18 +254,74 @@
     },
     "teams": {
       "home": {
-        "name": "باير ليفركوزن",
-        "logo": "https://imgs.ysscores.com/teams/128/7151690288816.png"
+        "name": "يوفنتوس",
+        "logo": "https://imgs.ysscores.com/teams/128/9331690283003.png"
       },
       "away": {
-        "name": "نيوكاسل",
-        "logo": "https://imgs.ysscores.com/teams/128/3721690119405.png"
+        "name": "بافوس",
+        "logo": "https://imgs.ysscores.com/teams/128/4071690370494.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 8",
-        "commentator": "عصام الشوالي"
+        "channel": "بي إن سبورت 5",
+        "commentator": "حسن العيدروس"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4947116/Real-Madrid-vs-Manchester-City",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "6",
+      "stadium": "ملعب سانتياغو برنابيو",
+      "time": "21:00",
+      "date": "الأربعاء 10-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ريال مدريد",
+        "logo": "https://imgs.ysscores.com/teams/128/1871690196746.png"
+      },
+      "away": {
+        "name": "مان سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/4481690118308.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "حفيظ دراجي"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4947233/Qarabağ-FK-vs-Ajax-Amsterdam",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "6",
+      "stadium": "توفيق بهراموف الجمهوري",
+      "time": "18:45",
+      "date": "الأربعاء 10-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "كارباخ",
+        "logo": "https://imgs.ysscores.com/teams/128/5151690822077.png"
+      },
+      "away": {
+        "name": "أياكس أمستردام",
+        "logo": "https://imgs.ysscores.com/teams/128/1361751718344.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 7",
+        "commentator": "عامر الخوذيري"
       }
     ]
   },
@@ -326,34 +354,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4947202/Juventus-FC-vs-Pafos-FC",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "6",
-      "stadium": "أليانز ستاديوم",
-      "time": "21:00",
-      "date": "الأربعاء 10-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "يوفنتوس",
-        "logo": "https://imgs.ysscores.com/teams/128/9331690283003.png"
-      },
-      "away": {
-        "name": "بافوس",
-        "logo": "https://imgs.ysscores.com/teams/128/4071690370494.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "حسن العيدروس"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4825273/Ipswich-Town-vs-Stoke-City",
     "info": {
       "championship": "دوري الإنجليزية",
@@ -372,29 +372,6 @@
       "away": {
         "name": "ستوك سيتي",
         "logo": "https://imgs.ysscores.com/teams/128/6781690388673.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/4825270/Bristol-City-vs-Leicester-City",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "20 - مباراة الذهاب",
-      "stadium": "أشتون جيت",
-      "time": "20:45",
-      "date": "الأربعاء 10-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "بريستول",
-        "logo": "https://imgs.ysscores.com/teams/128/4621690370523.png"
-      },
-      "away": {
-        "name": "ليستر سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/5531690711879.png"
       }
     },
     "channels": []
@@ -446,6 +423,29 @@
       "away": {
         "name": "ميلوول",
         "logo": "https://imgs.ysscores.com/teams/128/2181690370550.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4825270/Bristol-City-vs-Leicester-City",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "20 - مباراة الذهاب",
+      "stadium": "أشتون جيت",
+      "time": "20:45",
+      "date": "الأربعاء 10-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "بريستول",
+        "logo": "https://imgs.ysscores.com/teams/128/4621690370523.png"
+      },
+      "away": {
+        "name": "ليستر سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/5531690711879.png"
       }
     },
     "channels": []
@@ -523,30 +523,30 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/88647902/Zed-FC-vs-Smouha-SC",
+    "url": "https://www.ysscores.com/ar/match/13322233/Talaea-El-Gaish-vs-Cleopatra-FC",
     "info": {
       "championship": "كأس الرابطة المصرية",
       "round": "1",
-      "stadium": "استاد السلام",
-      "time": "19:00",
+      "stadium": "ستاد جهاز الرياضة العسكري",
+      "time": "16:00",
       "date": "الأربعاء 10-12-2025",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "نادي زد",
-        "logo": "https://imgs.ysscores.com/teams/128/8411694619351.png"
+        "name": "طلائع الجيش",
+        "logo": "https://imgs.ysscores.com/teams/128/5871731000840.png"
       },
       "away": {
-        "name": "سموحة",
-        "logo": "https://imgs.ysscores.com/teams/128/481694082088.png"
+        "name": "سيراميكا",
+        "logo": "https://imgs.ysscores.com/teams/128/631694081965.png"
       }
     },
     "channels": [
       {
         "channel": "ON Sport 2",
-        "commentator": "محمود أبو الركب"
+        "commentator": "محمد الغياتي"
       }
     ]
   },
@@ -579,30 +579,30 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/13322233/Talaea-El-Gaish-vs-Cleopatra-FC",
+    "url": "https://www.ysscores.com/ar/match/88647902/Zed-FC-vs-Smouha-SC",
     "info": {
       "championship": "كأس الرابطة المصرية",
       "round": "1",
-      "stadium": "ستاد جهاز الرياضة العسكري",
-      "time": "16:00",
+      "stadium": "استاد السلام",
+      "time": "19:00",
       "date": "الأربعاء 10-12-2025",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "طلائع الجيش",
-        "logo": "https://imgs.ysscores.com/teams/128/5871731000840.png"
+        "name": "نادي زد",
+        "logo": "https://imgs.ysscores.com/teams/128/8411694619351.png"
       },
       "away": {
-        "name": "سيراميكا",
-        "logo": "https://imgs.ysscores.com/teams/128/631694081965.png"
+        "name": "سموحة",
+        "logo": "https://imgs.ysscores.com/teams/128/481694082088.png"
       }
     },
     "channels": [
       {
         "channel": "ON Sport 2",
-        "commentator": "محمد الغياتي"
+        "commentator": "محمود أبو الركب"
       }
     ]
   },
