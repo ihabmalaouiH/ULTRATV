@@ -22,6 +22,17 @@
     "servers": []
   },
   {
+    "team1Name": "بكين",
+    "team1Logo": "https://imgs.ysscores.com/teams/128/4651739395122.png",
+    "team2Name": "ماكارثر",
+    "team2Logo": "https://imgs.ysscores.com/teams/128/5061694356027.png",
+    "startTime": 1765455300,
+    "league": "دوري أبطال آسيا 2",
+    "channel": "beIN SPORTS 3",
+    "commentator": "أحمد فؤاد",
+    "servers": []
+  },
+  {
     "team1Name": "تاي بو",
     "team1Logo": "https://imgs.ysscores.com/teams/128/3541755287068.png",
     "team2Name": "كونغ آن هانوي",
@@ -63,7 +74,14 @@
     "league": "كأس العرب",
     "channel": "beIN SPORTS",
     "commentator": "أحمد البلوشي",
-    "servers": []
+    "servers": [
+      {
+        "HD": "https://live.ultrav.me/index.m3u8"
+      },
+      {
+        "SD": "https://low.ultrav.me/index.m3u8"
+      }
+    ]
   },
   {
     "team1Name": "فلسطين",
@@ -74,7 +92,14 @@
     "league": "كأس العرب",
     "channel": "beIN SPORTS",
     "commentator": "عصام الشوالي",
-    "servers": []
+    "servers": [
+      {
+        "HD": "https://live.ultrav.me/index.m3u8"
+      },
+      {
+        "SD": "https://low.ultrav.me/index.m3u8"
+      }
+    ]
   },
   {
     "team1Name": "فرينكفاروزي",
@@ -272,6 +297,28 @@
     "league": "الدوري الأوروبي",
     "channel": "beIN Xtra 3",
     "commentator": "غير مدرج",
+    "servers": []
+  },
+  {
+    "team1Name": "سيلتك",
+    "team1Logo": "https://imgs.ysscores.com/teams/128/9291690387713.png",
+    "team2Name": "روما",
+    "team2Logo": "https://imgs.ysscores.com/teams/128/1041749305816.png",
+    "startTime": 1765483200,
+    "league": "الدوري الأوروبي",
+    "channel": "beIN SPORTS 3",
+    "commentator": "نوفل باشي",
+    "servers": []
+  },
+  {
+    "team1Name": "أبردين",
+    "team1Logo": "https://imgs.ysscores.com/teams/128/711690370527.png",
+    "team2Name": "ستراسبورغ",
+    "team2Logo": "https://imgs.ysscores.com/teams/128/8951690287872.png",
+    "startTime": 1765483200,
+    "league": "دوري المؤتمر الأوروبي",
+    "channel": "beIN Xtra 1",
+    "commentator": "عامر الخوذيري",
     "servers": []
   },
   {
