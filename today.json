@@ -171,6 +171,29 @@
     ]
   },
   {
+    "url": "https://www.ysscores.com/ar/match/4946292/WE-Sports-Club-vs-Entag-El-Harby",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "ستاد بتروسبورت",
+      "time": "13:30",
+      "date": "الجمعة 12-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "وي",
+        "logo": "https://imgs.ysscores.com/teams/128/9521696285165.png"
+      },
+      "away": {
+        "name": "الإنتاج الحربي",
+        "logo": "https://imgs.ysscores.com/teams/128/7141753648124.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "url": "https://www.ysscores.com/ar/match/4946289/Proxy-FC-vs-FC-Masar",
     "info": {
       "championship": "الدوري المصري - القسم الثاني",
@@ -194,11 +217,11 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4946292/WE-Sports-Club-vs-Entag-El-Harby",
+    "url": "https://www.ysscores.com/ar/match/4946295/Maleyat-Kafr-Elzayat-vs-El-Dakhlia-SC",
     "info": {
       "championship": "الدوري المصري - القسم الثاني",
       "round": "15 - مباراة الذهاب",
-      "stadium": "ستاد بتروسبورت",
+      "stadium": "استاد كفر الزيات",
       "time": "13:30",
       "date": "الجمعة 12-12-2025",
       "current_score": "- : -",
@@ -206,15 +229,20 @@
     },
     "teams": {
       "home": {
-        "name": "وي",
-        "logo": "https://imgs.ysscores.com/teams/128/9521696285165.png"
+        "name": "مالية كفر الزيات",
+        "logo": "https://imgs.ysscores.com/teams/128/3811753648298.png"
       },
       "away": {
-        "name": "الإنتاج الحربي",
-        "logo": "https://imgs.ysscores.com/teams/128/7141753648124.png"
+        "name": "الداخلية",
+        "logo": "https://imgs.ysscores.com/teams/128/7881694082064.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "ON Sport 2",
+        "commentator": "هشام فرحات"
+      }
+    ]
   },
   {
     "url": "https://www.ysscores.com/ar/match/4946293/Aswan-SC-vs-Qanah-FC",
@@ -261,34 +289,6 @@
       }
     },
     "channels": []
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/4946295/Maleyat-Kafr-Elzayat-vs-El-Dakhlia-SC",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "استاد كفر الزيات",
-      "time": "13:30",
-      "date": "الجمعة 12-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "مالية كفر الزيات",
-        "logo": "https://imgs.ysscores.com/teams/128/3811753648298.png"
-      },
-      "away": {
-        "name": "الداخلية",
-        "logo": "https://imgs.ysscores.com/teams/128/7881694082064.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ON Sport 2",
-        "commentator": "هشام فرحات"
-      }
-    ]
   },
   {
     "url": "https://www.ysscores.com/ar/match/4946294/Mansoura-SC-vs-Baladiyat-El-Mahalla",
@@ -443,29 +443,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/53575164/FCB-Frenda-vs-ASO-Chlef",
-    "info": {
-      "championship": "كأس الجزائر",
-      "round": "دور الـ 16",
-      "stadium": "ملعب طاهر شاووش",
-      "time": "14:30",
-      "date": "الجمعة 12-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "فرندة",
-        "logo": "https://imgs.ysscores.com/teams/128/2241746142884.png"
-      },
-      "away": {
-        "name": "أولمبي الشلف",
-        "logo": "https://imgs.ysscores.com/teams/128/2291693417692.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/91597560/US-Béchar-Djdid-vs-ES-Sétif",
     "info": {
       "championship": "كأس الجزائر",
@@ -484,6 +461,29 @@
       "away": {
         "name": "وفاق سطيف",
         "logo": "https://imgs.ysscores.com/teams/128/4981693417652.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/53575164/FCB-Frenda-vs-ASO-Chlef",
+    "info": {
+      "championship": "كأس الجزائر",
+      "round": "دور الـ 16",
+      "stadium": "ملعب طاهر شاووش",
+      "time": "14:30",
+      "date": "الجمعة 12-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "فرندة",
+        "logo": "https://imgs.ysscores.com/teams/128/2241746142884.png"
+      },
+      "away": {
+        "name": "أولمبي الشلف",
+        "logo": "https://imgs.ysscores.com/teams/128/2291693417692.png"
       }
     },
     "channels": []
