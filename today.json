@@ -171,29 +171,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4946292/WE-Sports-Club-vs-Entag-El-Harby",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "ستاد بتروسبورت",
-      "time": "13:30",
-      "date": "الجمعة 12-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "وي",
-        "logo": "https://imgs.ysscores.com/teams/128/9521696285165.png"
-      },
-      "away": {
-        "name": "الإنتاج الحربي",
-        "logo": "https://imgs.ysscores.com/teams/128/7141753648124.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4946289/Proxy-FC-vs-FC-Masar",
     "info": {
       "championship": "الدوري المصري - القسم الثاني",
@@ -217,11 +194,11 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4946290/Raya-SC-vs-Petrol-Asyut",
+    "url": "https://www.ysscores.com/ar/match/4946295/Maleyat-Kafr-Elzayat-vs-El-Dakhlia-SC",
     "info": {
       "championship": "الدوري المصري - القسم الثاني",
       "round": "15 - مباراة الذهاب",
-      "stadium": "استاد الإسكندرية",
+      "stadium": "استاد كفر الزيات",
       "time": "13:30",
       "date": "الجمعة 12-12-2025",
       "current_score": "- : -",
@@ -229,12 +206,40 @@
     },
     "teams": {
       "home": {
-        "name": "راية",
-        "logo": "https://imgs.ysscores.com/teams/128/6531696285484.png"
+        "name": "مالية كفر الزيات",
+        "logo": "https://imgs.ysscores.com/teams/128/3811753648298.png"
       },
       "away": {
-        "name": "بترول أسيوط",
-        "logo": "https://imgs.ysscores.com/teams/128/5831736286055.png"
+        "name": "الداخلية",
+        "logo": "https://imgs.ysscores.com/teams/128/7881694082064.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 2",
+        "commentator": "هشام فرحات"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4946292/WE-Sports-Club-vs-Entag-El-Harby",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "ستاد بتروسبورت",
+      "time": "13:30",
+      "date": "الجمعة 12-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "وي",
+        "logo": "https://imgs.ysscores.com/teams/128/9521696285165.png"
+      },
+      "away": {
+        "name": "الإنتاج الحربي",
+        "logo": "https://imgs.ysscores.com/teams/128/7141753648124.png"
       }
     },
     "channels": []
@@ -258,6 +263,29 @@
       "away": {
         "name": "القناة",
         "logo": "https://imgs.ysscores.com/teams/128/5821715097236.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4946290/Raya-SC-vs-Petrol-Asyut",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "استاد الإسكندرية",
+      "time": "13:30",
+      "date": "الجمعة 12-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "راية",
+        "logo": "https://imgs.ysscores.com/teams/128/6531696285484.png"
+      },
+      "away": {
+        "name": "بترول أسيوط",
+        "logo": "https://imgs.ysscores.com/teams/128/5831736286055.png"
       }
     },
     "channels": []
@@ -287,34 +315,6 @@
       {
         "channel": "ON Sport 1",
         "commentator": "محمد عزمي"
-      }
-    ]
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/4946295/Maleyat-Kafr-Elzayat-vs-El-Dakhlia-SC",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "استاد كفر الزيات",
-      "time": "13:30",
-      "date": "الجمعة 12-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "مالية كفر الزيات",
-        "logo": "https://imgs.ysscores.com/teams/128/3811753648298.png"
-      },
-      "away": {
-        "name": "الداخلية",
-        "logo": "https://imgs.ysscores.com/teams/128/7881694082064.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ON Sport 2",
-        "commentator": "هشام فرحات"
       }
     ]
   },
@@ -545,66 +545,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/47593508/Algeria-B-vs-United-Arab-Emirates",
-    "info": {
-      "championship": "كأس العرب",
-      "round": "ربع نهائي",
-      "stadium": "استاد البيت",
-      "time": "18:30",
-      "date": "الجمعة 12-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الجزائر",
-        "logo": "https://imgs.ysscores.com/teams/128/2341763066345.png"
-      },
-      "away": {
-        "name": "الإمارات",
-        "logo": "https://imgs.ysscores.com/teams/128/9431763117463.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الجزائرية السادسة",
-        "commentator": "عبدالعزيز بن سالم"
-      },
-      {
-        "channel": "أبو ظبي الرياضية 1",
-        "commentator": "عامر عبدالله"
-      },
-      {
-        "channel": "دبي الرياضية 1",
-        "commentator": "عبدالحميد الجسمي"
-      },
-      {
-        "channel": "الكأس 1",
-        "commentator": "خالد الحدي"
-      },
-      {
-        "channel": "بي إن سبورت HD",
-        "commentator": "حسن العيدروس"
-      },
-      {
-        "channel": "الكويت الرياضية",
-        "commentator": "إبراهيم الهشال"
-      },
-      {
-        "channel": "الشارقة الرياضية",
-        "commentator": "موسى عيد"
-      },
-      {
-        "channel": "عمان الرياضية",
-        "commentator": "‏راشد الشيذاني"
-      },
-      {
-        "channel": "منصة شاشا",
-        "commentator": "هاني الشهري"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/65252724/Jordan-vs-Iraq",
     "info": {
       "championship": "كأس العرب",
@@ -661,6 +601,66 @@
       {
         "channel": "منصة شاشا",
         "commentator": "علي دراج"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/47593508/Algeria-B-vs-United-Arab-Emirates",
+    "info": {
+      "championship": "كأس العرب",
+      "round": "ربع نهائي",
+      "stadium": "استاد البيت",
+      "time": "18:30",
+      "date": "الجمعة 12-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الجزائر",
+        "logo": "https://imgs.ysscores.com/teams/128/2341763066345.png"
+      },
+      "away": {
+        "name": "الإمارات",
+        "logo": "https://imgs.ysscores.com/teams/128/9431763117463.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الجزائرية السادسة",
+        "commentator": "عبدالعزيز بن سالم"
+      },
+      {
+        "channel": "أبو ظبي الرياضية 1",
+        "commentator": "عامر عبدالله"
+      },
+      {
+        "channel": "دبي الرياضية 1",
+        "commentator": "عبدالحميد الجسمي"
+      },
+      {
+        "channel": "الكأس 1",
+        "commentator": "خالد الحدي"
+      },
+      {
+        "channel": "بي إن سبورت HD",
+        "commentator": "حسن العيدروس"
+      },
+      {
+        "channel": "الكويت الرياضية",
+        "commentator": "إبراهيم الهشال"
+      },
+      {
+        "channel": "الشارقة الرياضية",
+        "commentator": "موسى عيد"
+      },
+      {
+        "channel": "عمان الرياضية",
+        "commentator": "‏راشد الشيذاني"
+      },
+      {
+        "channel": "منصة شاشا",
+        "commentator": "هاني الشهري"
       }
     ]
   },
