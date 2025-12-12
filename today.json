@@ -217,29 +217,6 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4946290/Raya-SC-vs-Petrol-Asyut",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "استاد الإسكندرية",
-      "time": "13:30",
-      "date": "الجمعة 12-12-2025",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "راية",
-        "logo": "https://imgs.ysscores.com/teams/128/6531696285484.png"
-      },
-      "away": {
-        "name": "بترول أسيوط",
-        "logo": "https://imgs.ysscores.com/teams/128/5831736286055.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4946292/WE-Sports-Club-vs-Entag-El-Harby",
     "info": {
       "championship": "الدوري المصري - القسم الثاني",
@@ -289,6 +266,29 @@
         "commentator": "هشام فرحات"
       }
     ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4946290/Raya-SC-vs-Petrol-Asyut",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "استاد الإسكندرية",
+      "time": "13:30",
+      "date": "الجمعة 12-12-2025",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "راية",
+        "logo": "https://imgs.ysscores.com/teams/128/6531696285484.png"
+      },
+      "away": {
+        "name": "بترول أسيوط",
+        "logo": "https://imgs.ysscores.com/teams/128/5831736286055.png"
+      }
+    },
+    "channels": []
   },
   {
     "url": "https://www.ysscores.com/ar/match/4946294/Mansoura-SC-vs-Baladiyat-El-Mahalla",
@@ -443,38 +443,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/64486878/USM-El-Harrach-vs-JS-Kabylie",
-    "info": {
-      "championship": "كأس الجزائر",
-      "round": "دور الـ 16",
-      "stadium": "استاد نيلسون مانديلا",
-      "time": "16:30",
-      "date": "الجمعة 12-12-2025",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "اتحاد الحراش",
-        "logo": "https://imgs.ysscores.com/teams/128/5671736163221.png"
-      },
-      "away": {
-        "name": "شبيبة القبائل",
-        "logo": "https://imgs.ysscores.com/teams/128/2261693417840.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الجزائرية الرابعة",
-        "commentator": "غير مدرج"
-      },
-      {
-        "channel": "الجزائرية الأولى",
-        "commentator": "أمين رزاوي"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/91597560/US-Béchar-Djdid-vs-ES-Sétif",
     "info": {
       "championship": "كأس الجزائر",
@@ -519,6 +487,38 @@
       }
     },
     "channels": []
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/64486878/USM-El-Harrach-vs-JS-Kabylie",
+    "info": {
+      "championship": "كأس الجزائر",
+      "round": "دور الـ 16",
+      "stadium": "استاد نيلسون مانديلا",
+      "time": "16:30",
+      "date": "الجمعة 12-12-2025",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "اتحاد الحراش",
+        "logo": "https://imgs.ysscores.com/teams/128/5671736163221.png"
+      },
+      "away": {
+        "name": "شبيبة القبائل",
+        "logo": "https://imgs.ysscores.com/teams/128/2261693417840.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الجزائرية الرابعة",
+        "commentator": "غير مدرج"
+      },
+      {
+        "channel": "الجزائرية الأولى",
+        "commentator": "أمين رزاوي"
+      }
+    ]
   },
   {
     "url": "https://www.ysscores.com/ar/match/16272440/Al-Ahly-FC-vs-Enppi-SC",
