@@ -8,7 +8,14 @@
     "league": "كأس العرب",
     "channel": "beIN SPORTS",
     "commentator": "حفيظ دراجي",
-    "servers": []
+    "servers": [
+      {
+        "HD": "https://live.ultrav.me/index.m3u8"
+      },
+      {
+        "SD": "https://low.ultrav.me/index.m3u8"
+      }
+    ]
   },
   {
     "team1Name": "قاسم باشا",
@@ -30,7 +37,14 @@
     "league": "كأس العرب",
     "channel": "beIN SPORTS",
     "commentator": "حسن العيدروس",
-    "servers": []
+    "servers": [
+      {
+        "HD": "https://live.ultrav.me/index.m3u8"
+      },
+      {
+        "SD": "https://low.ultrav.me/index.m3u8"
+      }
+    ]
   },
   {
     "team1Name": "أنجيه",
