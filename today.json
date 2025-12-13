@@ -183,8 +183,8 @@
       "stadium": "سبوتيفاي كامب نوو",
       "time": "18:30",
       "date": "السبت 13-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -917,6 +917,29 @@
     ]
   },
   {
+    "url": "https://www.ysscores.com/ar/match/4815359/FC-Groningen-vs-FC-Volendam",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "16 - مباراة الذهاب",
+      "stadium": "استاد يوروبوج",
+      "time": "18:45",
+      "date": "السبت 13-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "غرونينغن",
+        "logo": "https://imgs.ysscores.com/teams/128/10001690370535.png"
+      },
+      "away": {
+        "name": "فولندام",
+        "logo": "https://imgs.ysscores.com/teams/128/7791690824589.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "url": "https://www.ysscores.com/ar/match/4815364/SC-Telstar-vs-NEC-Nijmegen",
     "info": {
       "championship": "الدوري الهولندي الممتاز",
@@ -943,29 +966,6 @@
         "commentator": "أحمد الشحي"
       }
     ]
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/4815359/FC-Groningen-vs-FC-Volendam",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "16 - مباراة الذهاب",
-      "stadium": "استاد يوروبوج",
-      "time": "18:45",
-      "date": "السبت 13-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "غرونينغن",
-        "logo": "https://imgs.ysscores.com/teams/128/10001690370535.png"
-      },
-      "away": {
-        "name": "فولندام",
-        "logo": "https://imgs.ysscores.com/teams/128/7791690824589.png"
-      }
-    },
-    "channels": []
   },
   {
     "url": "https://www.ysscores.com/ar/match/4859093/APO-Levadiakos-vs-AE-Larisa",
@@ -1129,29 +1129,6 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4825275/Coventry-City-vs-Bristol-City",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "21 - مباراة الذهاب",
-      "stadium": "كوفنتري أرينا",
-      "time": "16:00",
-      "date": "السبت 13-12-2025",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "كوفنتري",
-        "logo": "https://imgs.ysscores.com/teams/128/3861690370535.png"
-      },
-      "away": {
-        "name": "بريستول",
-        "logo": "https://imgs.ysscores.com/teams/128/4621690370523.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4825285/Wrexham-AFC-vs-Watford-FC",
     "info": {
       "championship": "دوري الإنجليزية",
@@ -1180,24 +1157,47 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4825281/Portsmouth-FC-vs-Blackburn-Rovers",
+    "url": "https://www.ysscores.com/ar/match/4825275/Coventry-City-vs-Bristol-City",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "21 - مباراة الذهاب",
-      "stadium": "فراتون بارك",
+      "stadium": "كوفنتري أرينا",
       "time": "16:00",
+      "date": "السبت 13-12-2025",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "كوفنتري",
+        "logo": "https://imgs.ysscores.com/teams/128/3861690370535.png"
+      },
+      "away": {
+        "name": "بريستول",
+        "logo": "https://imgs.ysscores.com/teams/128/4621690370523.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4825283/Stoke-City-vs-Swansea-City",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "21 - مباراة الذهاب",
+      "stadium": "بت 365",
+      "time": "13:30",
       "date": "السبت 13-12-2025",
       "current_score": "2 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "بورتسموث",
-        "logo": "https://imgs.ysscores.com/teams/128/5401690370525.png"
+        "name": "ستوك سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/6781690388673.png"
       },
       "away": {
-        "name": "بلاكبيرن روفرز",
-        "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
+        "name": "سوانزي",
+        "logo": "https://imgs.ysscores.com/teams/128/4561723590559.png"
       }
     },
     "channels": []
@@ -1226,24 +1226,24 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4825283/Stoke-City-vs-Swansea-City",
+    "url": "https://www.ysscores.com/ar/match/4825281/Portsmouth-FC-vs-Blackburn-Rovers",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "21 - مباراة الذهاب",
-      "stadium": "بت 365",
-      "time": "13:30",
+      "stadium": "فراتون بارك",
+      "time": "16:00",
       "date": "السبت 13-12-2025",
       "current_score": "2 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "ستوك سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/6781690388673.png"
+        "name": "بورتسموث",
+        "logo": "https://imgs.ysscores.com/teams/128/5401690370525.png"
       },
       "away": {
-        "name": "سوانزي",
-        "logo": "https://imgs.ysscores.com/teams/128/4561723590559.png"
+        "name": "بلاكبيرن روفرز",
+        "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
       }
     },
     "channels": []
