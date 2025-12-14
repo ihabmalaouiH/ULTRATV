@@ -223,11 +223,11 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4813532/Nottingham-Forest-vs-Tottenham-Hotspur",
+    "url": "https://www.ysscores.com/ar/match/4813529/Crystal-Palace-vs-Manchester-City",
     "info": {
       "championship": "الدوري الإنجليزي الممتاز",
       "round": "16 - مباراة الذهاب",
-      "stadium": "سيتي غراوند",
+      "stadium": "سيلهرست بارك",
       "time": "15:00",
       "date": "الأحد 14-12-2025",
       "current_score": "- : -",
@@ -235,18 +235,46 @@
     },
     "teams": {
       "home": {
-        "name": "نوتينغهام",
-        "logo": "https://imgs.ysscores.com/teams/128/7741690119007.png"
+        "name": "كريستال بالاس",
+        "logo": "https://imgs.ysscores.com/teams/128/6121690118883.png"
       },
       "away": {
-        "name": "توتنهام",
-        "logo": "https://imgs.ysscores.com/teams/128/2501692467226.png"
+        "name": "مان سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/4481690118308.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 2",
-        "commentator": "حفيظ دراجي"
+        "channel": "بي إن سبورت 1",
+        "commentator": "عامر الخوذيري"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4813526/Brentford-FC-vs-Leeds-United",
+    "info": {
+      "championship": "الدوري الإنجليزي الممتاز",
+      "round": "16 - مباراة الذهاب",
+      "stadium": "جي تك كوميونيتي",
+      "time": "17:30",
+      "date": "الأحد 14-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "برينتفورد",
+        "logo": "https://imgs.ysscores.com/teams/128/4791690118957.png"
+      },
+      "away": {
+        "name": "ليدز يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/4691690458244.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "علي محمد علي"
       }
     ]
   },
@@ -283,39 +311,11 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4813526/Brentford-FC-vs-Leeds-United",
+    "url": "https://www.ysscores.com/ar/match/4813532/Nottingham-Forest-vs-Tottenham-Hotspur",
     "info": {
       "championship": "الدوري الإنجليزي الممتاز",
       "round": "16 - مباراة الذهاب",
-      "stadium": "جي تك كوميونيتي",
-      "time": "17:30",
-      "date": "الأحد 14-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "برينتفورد",
-        "logo": "https://imgs.ysscores.com/teams/128/4791690118957.png"
-      },
-      "away": {
-        "name": "ليدز يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/4691690458244.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "علي محمد علي"
-      }
-    ]
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/4813529/Crystal-Palace-vs-Manchester-City",
-    "info": {
-      "championship": "الدوري الإنجليزي الممتاز",
-      "round": "16 - مباراة الذهاب",
-      "stadium": "سيلهرست بارك",
+      "stadium": "سيتي غراوند",
       "time": "15:00",
       "date": "الأحد 14-12-2025",
       "current_score": "- : -",
@@ -323,18 +323,18 @@
     },
     "teams": {
       "home": {
-        "name": "كريستال بالاس",
-        "logo": "https://imgs.ysscores.com/teams/128/6121690118883.png"
+        "name": "نوتينغهام",
+        "logo": "https://imgs.ysscores.com/teams/128/7741690119007.png"
       },
       "away": {
-        "name": "مان سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/4481690118308.png"
+        "name": "توتنهام",
+        "logo": "https://imgs.ysscores.com/teams/128/2501692467226.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 1",
-        "commentator": "عامر الخوذيري"
+        "channel": "بي إن سبورت 2",
+        "commentator": "حفيظ دراجي"
       }
     ]
   },
@@ -471,42 +471,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4803187/Udinese-Calcio-vs-SSC-Napoli",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "ملعب فريولي",
-      "time": "15:00",
-      "date": "الأحد 14-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أودينيزي",
-        "logo": "https://imgs.ysscores.com/teams/128/8741690284718.png"
-      },
-      "away": {
-        "name": "نابولي",
-        "logo": "https://imgs.ysscores.com/teams/128/9521720636634.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "StarzPlay",
-        "commentator": "عيسى الحربين"
-      },
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "عيسى الحربين"
-      },
-      {
-        "channel": "منصة شاشا",
-        "commentator": "علي دراج"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4803179/Bologna-FC-1909-vs-Juventus-FC",
     "info": {
       "championship": "الدوري الإيطالي",
@@ -535,6 +499,42 @@
       {
         "channel": "تطبيق STC TV",
         "commentator": "حازم عبدالسلام"
+      },
+      {
+        "channel": "منصة شاشا",
+        "commentator": "علي دراج"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4803187/Udinese-Calcio-vs-SSC-Napoli",
+    "info": {
+      "championship": "الدوري الإيطالي",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "ملعب فريولي",
+      "time": "15:00",
+      "date": "الأحد 14-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أودينيزي",
+        "logo": "https://imgs.ysscores.com/teams/128/8741690284718.png"
+      },
+      "away": {
+        "name": "نابولي",
+        "logo": "https://imgs.ysscores.com/teams/128/9521720636634.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "StarzPlay",
+        "commentator": "عيسى الحربين"
+      },
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "عيسى الحربين"
       },
       {
         "channel": "منصة شاشا",
@@ -663,6 +663,29 @@
     ]
   },
   {
+    "url": "https://www.ysscores.com/ar/match/4818456/FCV-Dender-EH-vs-Club-Brugge-KV",
+    "info": {
+      "championship": "الدوري البلجيكي",
+      "round": "18 - مباراة الاياب",
+      "stadium": "استاد فان روي",
+      "time": "16:00",
+      "date": "الأحد 14-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ديندر",
+        "logo": "https://imgs.ysscores.com/teams/128/3071716579177.png"
+      },
+      "away": {
+        "name": "كلوب بروج",
+        "logo": "https://imgs.ysscores.com/teams/128/121690370520.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "url": "https://www.ysscores.com/ar/match/4818455/Royal-Charleroi-SC-vs-Union-Saint-Gilloise",
     "info": {
       "championship": "الدوري البلجيكي",
@@ -691,27 +714,32 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4818456/FCV-Dender-EH-vs-Club-Brugge-KV",
+    "url": "https://www.ysscores.com/ar/match/4842452/Gaziantep-FK-vs-Göztepe",
     "info": {
-      "championship": "الدوري البلجيكي",
-      "round": "18 - مباراة الاياب",
-      "stadium": "استاد فان روي",
-      "time": "16:00",
+      "championship": "الدوري التركي الممتاز",
+      "round": "16 - مباراة الذهاب",
+      "stadium": "استاد غازي عنتاب",
+      "time": "12:30",
       "date": "الأحد 14-12-2025",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "ديندر",
-        "logo": "https://imgs.ysscores.com/teams/128/3071716579177.png"
+        "name": "غازي عنتاب",
+        "logo": "https://imgs.ysscores.com/teams/128/3061690127435.png"
       },
       "away": {
-        "name": "كلوب بروج",
-        "logo": "https://imgs.ysscores.com/teams/128/121690370520.png"
+        "name": "جوزتيبي",
+        "logo": "https://imgs.ysscores.com/teams/128/8741690370493.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "beIN Sports HD 2 TR",
+        "commentator": "غير مدرج"
+      }
+    ]
   },
   {
     "url": "https://www.ysscores.com/ar/match/4842457/Samsunspor-vs-Basaksehir-FK",
@@ -742,24 +770,24 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4842452/Gaziantep-FK-vs-Göztepe",
+    "url": "https://www.ysscores.com/ar/match/4842453/Fatih-Karagümrük-vs-Kocaelispor",
     "info": {
       "championship": "الدوري التركي الممتاز",
       "round": "16 - مباراة الذهاب",
-      "stadium": "استاد غازي عنتاب",
-      "time": "12:30",
+      "stadium": "استاد فيفا التركي",
+      "time": "15:00",
       "date": "الأحد 14-12-2025",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "غازي عنتاب",
-        "logo": "https://imgs.ysscores.com/teams/128/3061690127435.png"
+        "name": "فاتح قرا جمرك",
+        "logo": "https://imgs.ysscores.com/teams/128/951690127270.png"
       },
       "away": {
-        "name": "جوزتيبي",
-        "logo": "https://imgs.ysscores.com/teams/128/8741690370493.png"
+        "name": "كوجالي",
+        "logo": "https://imgs.ysscores.com/teams/128/2131690371662.png"
       }
     },
     "channels": [
@@ -797,34 +825,6 @@
       },
       {
         "channel": "beIN Sports HD 1 TR",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/4842453/Fatih-Karagümrük-vs-Kocaelispor",
-    "info": {
-      "championship": "الدوري التركي الممتاز",
-      "round": "16 - مباراة الذهاب",
-      "stadium": "استاد فيفا التركي",
-      "time": "15:00",
-      "date": "الأحد 14-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "فاتح قرا جمرك",
-        "logo": "https://imgs.ysscores.com/teams/128/951690127270.png"
-      },
-      "away": {
-        "name": "كوجالي",
-        "logo": "https://imgs.ysscores.com/teams/128/2131690371662.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Sports HD 2 TR",
         "commentator": "غير مدرج"
       }
     ]
@@ -886,6 +886,34 @@
     ]
   },
   {
+    "url": "https://www.ysscores.com/ar/match/4830596/Olympique-Lyon-vs-Le-Havre-AC",
+    "info": {
+      "championship": "الدوري الفرنسي",
+      "round": "16 - مباراة الذهاب",
+      "stadium": "غروباما",
+      "time": "15:00",
+      "date": "الأحد 14-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ليون",
+        "logo": "https://imgs.ysscores.com/teams/128/4081690287528.png"
+      },
+      "away": {
+        "name": "لوهافر",
+        "logo": "https://imgs.ysscores.com/teams/128/6941691927287.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 6",
+        "commentator": "أحمد عبده"
+      }
+    ]
+  },
+  {
     "url": "https://www.ysscores.com/ar/match/4830595/RC-Lens-vs-OGC-Nice",
     "info": {
       "championship": "الدوري الفرنسي",
@@ -942,34 +970,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4830596/Olympique-Lyon-vs-Le-Havre-AC",
-    "info": {
-      "championship": "الدوري الفرنسي",
-      "round": "16 - مباراة الذهاب",
-      "stadium": "غروباما",
-      "time": "15:00",
-      "date": "الأحد 14-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ليون",
-        "logo": "https://imgs.ysscores.com/teams/128/4081690287528.png"
-      },
-      "away": {
-        "name": "لوهافر",
-        "logo": "https://imgs.ysscores.com/teams/128/6941691927287.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 6",
-        "commentator": "أحمد عبده"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4815363/Sparta-Rotterdam-vs-SC-Heerenveen",
     "info": {
       "championship": "الدوري الهولندي الممتاز",
@@ -1016,6 +1016,29 @@
     "channels": []
   },
   {
+    "url": "https://www.ysscores.com/ar/match/4815360/NAC-Breda-vs-FC-Utrecht",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "16 - مباراة الذهاب",
+      "stadium": "استاد رات فيرليج",
+      "time": "16:45",
+      "date": "الأحد 14-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ناك بريدا",
+        "logo": "https://imgs.ysscores.com/teams/128/6521690370538.png"
+      },
+      "away": {
+        "name": "أوترخت",
+        "logo": "https://imgs.ysscores.com/teams/128/3101690475899.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "url": "https://www.ysscores.com/ar/match/4815357/Ajax-Amsterdam-vs-Feyenoord-Rotterdam",
     "info": {
       "championship": "الدوري الهولندي الممتاز",
@@ -1042,29 +1065,6 @@
         "commentator": "عبدالحميد الجسمي"
       }
     ]
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/4815360/NAC-Breda-vs-FC-Utrecht",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "16 - مباراة الذهاب",
-      "stadium": "استاد رات فيرليج",
-      "time": "16:45",
-      "date": "الأحد 14-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ناك بريدا",
-        "logo": "https://imgs.ysscores.com/teams/128/6521690370538.png"
-      },
-      "away": {
-        "name": "أوترخت",
-        "logo": "https://imgs.ysscores.com/teams/128/3101690475899.png"
-      }
-    },
-    "channels": []
   },
   {
     "url": "https://www.ysscores.com/ar/match/4815365/Twente-Enschede-FC-vs-Go-Ahead-Eagles",
@@ -1439,42 +1439,6 @@
     "channels": []
   },
   {
-    "url": "https://www.ysscores.com/ar/match/21252134/Saudi-Arabia-U23-vs-United-Arab-Emirates-U23",
-    "info": {
-      "championship": "كأس الخليج تحت 23 سنة",
-      "round": "نصف نهائي",
-      "stadium": "ملاعب أكاديمية أسباير",
-      "time": "12:45",
-      "date": "الأحد 14-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "السعودية",
-        "logo": "https://imgs.ysscores.com/teams/128/7171763086301.png"
-      },
-      "away": {
-        "name": "الإمارات",
-        "logo": "https://imgs.ysscores.com/teams/128/9431763117463.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الكأس 3",
-        "commentator": "سعود الحريري"
-      },
-      {
-        "channel": "الكويت الرياضية",
-        "commentator": "علي الشمري"
-      },
-      {
-        "channel": "الشارقة الرياضية",
-        "commentator": "محمد الهنائي"
-      }
-    ]
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/72826776/Qatar-U23-vs-Iraq-U23",
     "info": {
       "championship": "كأس الخليج تحت 23 سنة",
@@ -1507,6 +1471,42 @@
       {
         "channel": "تطبيق مرايا 2",
         "commentator": "سالم السالمي"
+      }
+    ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/21252134/Saudi-Arabia-U23-vs-United-Arab-Emirates-U23",
+    "info": {
+      "championship": "كأس الخليج تحت 23 سنة",
+      "round": "نصف نهائي",
+      "stadium": "ملاعب أكاديمية أسباير",
+      "time": "12:45",
+      "date": "الأحد 14-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "السعودية",
+        "logo": "https://imgs.ysscores.com/teams/128/7171763086301.png"
+      },
+      "away": {
+        "name": "الإمارات",
+        "logo": "https://imgs.ysscores.com/teams/128/9431763117463.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الكأس 3",
+        "commentator": "سعود الحريري"
+      },
+      {
+        "channel": "الكويت الرياضية",
+        "commentator": "علي الشمري"
+      },
+      {
+        "channel": "الشارقة الرياضية",
+        "commentator": "محمد الهنائي"
       }
     ]
   }
