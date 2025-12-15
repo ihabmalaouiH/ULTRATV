@@ -10,34 +10,58 @@ import hashlib
 import datetime
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from github import Github, Auth
 from flask import Flask
 from threading import Thread
+
+# [NEW] استيراد مكتبات فيربيز (Firestore)
+import firebase_admin
+from firebase_admin import credentials, firestore
 
 # ==========================================
 # ⚙️ إعدادات البوت والبيئة
 # ==========================================
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-REPO_NAME = os.getenv("REPO_NAME")
-# اسم الملف الذي سيتم حفظ الترتيب فيه
-FILE_PATH_IN_REPO = os.getenv("FILE_PATH_IN_REPO", "standings.json") 
+FIREBASE_CREDENTIALS_JSON = os.getenv("FIREBASE_CREDENTIALS")
+# لم نعد بحاجة لرابط الداتا بيز مع Firestore (نستخدم اسم المشروع من ملف JSON)
+
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-# فحص كل 5 دقائق (300 ثانية) لأن الترتيب لا يتغير بسرعة المباريات
 CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", 300)) 
 
 # ==========================================
-# إعداد سيرفر وهمي (Flask) للبقاء نشطاً
+# [NEW] تهيئة اتصال Firestore
+# ==========================================
+if FIREBASE_CREDENTIALS_JSON:
+    try:
+        if not firebase_admin._apps:
+            cred_dict = json.loads(FIREBASE_CREDENTIALS_JSON)
+            cred = credentials.Certificate(cred_dict)
+            # مع Firestore لا نضع databaseURL، هو يعرف المشروع من الـ credentials
+            firebase_admin.initialize_app(cred)
+            print("✅ Firestore Initialized Successfully.")
+    except Exception as e:
+        print(f"❌ Firestore Init Error: {e}")
+
+# تعريف عميل قاعدة البيانات (Firestore Client)
+try:
+    db = firestore.client()
+except:
+    db = None
+    print("⚠️ Warning: Firestore client not initialized (Check Credentials).")
+
+# ==========================================
+# إعداد سيرفر وهمي (Flask)
 # ==========================================
 app = Flask('')
 
 @app.route('/')
 def home():
-    return "I am alive! Standings Bot is running..."
+    return "I am alive! Standings Bot (Firestore) is running..."
 
 def run():
-    app.run(host='0.0.0.0', port=8080)
+    # استخدام المنفذ الذي يحدده Render أو 8080 افتراضياً
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host='0.0.0.0', port=port)
 
 def keep_alive():
     t = Thread(target=run)
@@ -65,7 +89,7 @@ session.mount("http://", adapter)
 session.headers.update(HEADERS)
 
 # ==========================================
-# 🛠️ دوال المعالجة والسحب (Scraping Logic)
+# 🛠️ دوال المعالجة والسحب (كما هي)
 # ==========================================
 
 def clean_text(text):
@@ -73,18 +97,29 @@ def clean_text(text):
         return text.strip().replace('\n', ' ').replace('\r', '').replace('  ', ' ')
     return "0"
 
-def get_only_teams_standings(url, title_hint, logo_hint):
-    """
-    دالة ذكية لاستخراج جداول الفرق فقط وتجاهل جداول الهدافين
-    """
+def get_tournament_data(url, title_hint, logo_hint):
     full_url = url if url.startswith('http') else f"{BASE_URL}{url}"
     
+    # إنشاء ID فريد للمستند في فايرستور
+    try:
+        # نحاول أخذ الرقم والاسم من الرابط: /rank/899741/Arab-Cup -> 899741_Arab-Cup
+        parts = url.split('/rank/')
+        if len(parts) > 1:
+            doc_id = parts[1].replace('/', '_')
+        else:
+            doc_id = hashlib.md5(url.encode()).hexdigest()
+    except:
+        doc_id = hashlib.md5(url.encode()).hexdigest()
+
     champ_data = {
+        "doc_id": doc_id, # [NEW] معرف المستند
         "title": title_hint,
         "logo": logo_hint,
         "url": full_url,
         "has_standings": False,
-        "tables": [] 
+        "type": "Unknown",
+        "groups": [],
+        "matches": []
     }
 
     try:
@@ -92,179 +127,170 @@ def get_only_teams_standings(url, title_hint, logo_hint):
         response.encoding = 'utf-8'
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        # تحديث الاسم والشعار من الصفحة الداخلية للدقة
         header = soup.find('div', class_='champion-title-wrap')
         if header:
             if header.find('h3'): champ_data['title'] = clean_text(header.find('h3').text)
             if header.find('img'): champ_data['logo'] = header.find('img')['src']
 
-        # تحديد الحاوية الخاصة بالفرق (teams_rank)
-        teams_container = soup.find('div', class_=re.compile(r'teams_rank'))
-        search_context = teams_container if teams_container else soup
-
-        tables_found = search_context.find_all('div', class_='ranking-table')
+        # 1. البحث عن الجداول
+        tables_found = soup.find_all('div', class_='ranking-table')
         
-        if tables_found:
-            for tbl in tables_found:
-                # تخطي جدول الهدافين
-                if 'players-table' in tbl.get('class', []):
-                    continue 
+        # استبعاد جداول الهدافين
+        valid_tables = [t for t in tables_found if 'players-table' not in t.get('class', [])]
 
-                # معرفة اسم المجموعة (للدوريات ذات المجموعات)
-                group_name = "General Standings"
-                parent_collapse = tbl.find_parent('div', class_='collapse-item-wrap')
-                if parent_collapse:
-                    head_div = parent_collapse.find('div', class_='collapse-header')
-                    if head_div and head_div.find('span'):
-                        group_name = clean_text(head_div.find('span').text)
+        if valid_tables:
+            champ_data["type"] = "League"
+            champ_data["has_standings"] = True
+            
+            for tbl in valid_tables:
+                group_name = "General"
+                parent = tbl.find_parent('div', class_='collapse-item-wrap')
+                if parent:
+                    head = parent.find('div', class_='collapse-header')
+                    if head and head.find('span'): group_name = clean_text(head.find('span').text)
                 
-                teams_data = []
+                teams_list = []
                 rows = tbl.find_all('div', class_='rank-row')
-                
                 for row in rows:
                     if 'header' in row.get('class', []): continue
 
-                    # التأكد أن الصف لفريق وليس لاعب
                     name_div = row.find('div', class_='name')
-                    team_link = ""
-                    
-                    if name_div:
-                        a_tag = name_div.find('a')
-                        if a_tag:
-                            team_link = a_tag.get('href', '')
-                    
-                    # فلتر قوي: إذا الرابط يحتوي على player نتجاهله
-                    if "/player/" in team_link:
+                    if name_div and name_div.find('a') and "/player/" in name_div.find('a')['href']:
                         continue 
 
-                    # استخراج البيانات
                     rank = clean_text(row.find('div', class_='number').text) if row.find('div', class_='number') else "-"
                     
-                    team_name = "Unknown"
-                    team_logo = ""
-                    team_id = ""
-                    is_qualified = False
-
+                    t_name = "Unknown"
+                    t_logo = ""
+                    t_id = ""
+                    qualified = False
+                    
                     if name_div:
-                        if name_div.find('img'): team_logo = name_div.find('img')['src']
-                        if team_link: team_id = team_link.split('/')[-2]
-                        
-                        info_div = name_div.find('div', class_='info')
-                        if info_div:
-                            if info_div.find('div', class_='up-text'):
-                                is_qualified = True
-                                info_div.find('div', class_='up-text').extract()
-                            team_name = clean_text(info_div.text)
+                        if name_div.find('img'): t_logo = name_div.find('img')['src']
+                        if name_div.find('a'): t_id = name_div.find('a')['href'].split('/')[-2]
+                        info = name_div.find('div', class_='info')
+                        if info:
+                            if info.find('div', class_='up-text'):
+                                qualified = True
+                                info.find('div', class_='up-text').extract()
+                            t_name = clean_text(info.text)
 
-                    if team_name == "Unknown" and not team_id:
-                        continue
+                    if t_name == "Unknown": continue
 
-                    # الإحصائيات
                     played = clean_text(row.find('div', class_='played').text) if row.find('div', class_='played') else "0"
                     won = clean_text(row.find('div', class_='win').text) if row.find('div', class_='win') else "0"
                     draw = clean_text(row.find('div', class_='equal').text) if row.find('div', class_='equal') else "0"
                     lost = clean_text(row.find('div', class_='lose').text) if row.find('div', class_='lose') else "0"
-                    
                     goals = clean_text(row.find('div', class_='goals').text) if row.find('div', class_='goals') else "0"
                     diff = clean_text(row.find('div', class_='diff').text) if row.find('div', class_='diff') else "0"
-                    points = clean_text(row.find('div', class_='points').text) if row.find('div', class_='points') else "0"
+                    pts = clean_text(row.find('div', class_='points').text) if row.find('div', class_='points') else "0"
 
-                    teams_data.append({
-                        "rank": rank,
-                        "team_name": team_name,
-                        "team_logo": team_logo,
-                        "team_id": team_id,
-                        "qualified": is_qualified,
-                        "stats": {
-                            "played": played, "won": won, "draw": draw, "lost": lost,
-                            "goals": goals, "goal_diff": diff, "points": points
-                        }
+                    teams_list.append({
+                        "rank": rank, "team": t_name, "logo": t_logo, "id": t_id, "qualified": qualified,
+                        "stats": {"p": played, "w": won, "d": draw, "l": lost, "gs": goals, "gd": diff, "pts": pts}
                     })
                 
-                if teams_data:
-                    champ_data["tables"].append({
-                        "group_name": group_name,
-                        "teams": teams_data
-                    })
-            
-            if champ_data["tables"]:
-                champ_data["has_standings"] = True
+                if teams_list:
+                    champ_data["groups"].append({"name": group_name, "teams": teams_list})
 
-    except Exception as e:
-        print(f"Error parsing {full_url}: {e}")
-        pass 
+        # 2. البحث عن المباريات (للكؤوس)
+        if not champ_data["groups"]:
+            matches_box = soup.find_all('div', class_='item-match')
+            if not matches_box: matches_box = soup.find_all('a', class_='match-container')
+            
+            if matches_box:
+                champ_data["type"] = "Cup"
+                for m in matches_box:
+                    try:
+                        teams = m.find_all('div', class_='team-name')
+                        if len(teams) >= 2:
+                            home = clean_text(teams[0].text)
+                            away = clean_text(teams[1].text)
+                            res = m.find('div', class_='result')
+                            score = clean_text(res.text) if res else "-:-"
+                            champ_data["matches"].append({"home": home, "away": away, "score": score})
+                    except: continue
+            else:
+                champ_data["type"] = "Empty"
+
+    except Exception:
+        pass
 
     return champ_data
 
 def main_scraper():
-    """
-    الدالة الرئيسية التي تجلب قائمة الدوريات ثم تفاصيل كل دوري
-    """
-    print(f"[*] Fetching main rank list from {ALL_RANKS_URL}...")
+    print(f"[*] Fetching main rank list...")
     try:
         response = session.get(ALL_RANKS_URL, timeout=30)
         soup = BeautifulSoup(response.text, 'html.parser')
     except Exception as e:
-        print(f"[!] Connection Error: {e}")
-        return None
+        print(f"[!] Error: {e}")
+        return []
 
-    championships_list = []
+    championships = []
     items = soup.find_all('a', class_='champion-item')
-    
+    print(f"[*] Found {len(items)} championships.")
+
     for item in items:
         rank_url = item.get('rank')
         title = item.get('title')
         logo = item.find('img').get('src') if item.find('img') else ""
 
         if rank_url and "javascript" not in rank_url:
-            championships_list.append({"url": rank_url, "title": title, "logo": logo})
+            championships.append({"url": rank_url, "title": title, "logo": logo})
 
-    print(f"[*] Found {len(championships_list)} championships. Processing details...")
-    
     all_data = []
     
-    # استخدام ThreadPool لتسريع العملية
     with ThreadPoolExecutor(max_workers=10) as executor:
         future_to_url = {
-            executor.submit(get_only_teams_standings, c['url'], c['title'], c['logo']): c 
-            for c in championships_list
+            executor.submit(get_tournament_data, c['url'], c['title'], c['logo']): c 
+            for c in championships
         }
         
         for future in as_completed(future_to_url):
             data = future.result()
-            # نضيف فقط البطولات التي تحتوي على جداول فرق
-            if data['has_standings']:
-                all_data.append(data)
+            # حفظ كل شيء (دوريات وكؤوس)
+            all_data.append(data)
     
-    # ترتيب البيانات حسب الأهمية (يمكن تعديل المنطق هنا)
     return all_data
 
 # ==========================================
-# 🔄 دوال التحديث والتنبيهات
+# 🔄 دوال التحديث (Firestore Update)
 # ==========================================
 
-def update_github_file(content_json):
+def update_firestore(data_list):
+    """
+    حفظ البيانات في Cloud Firestore
+    """
+    if not db:
+        print("❌ Firestore DB client is missing.")
+        return False
+
     try:
-        auth = Auth.Token(GITHUB_TOKEN)
-        g = Github(auth=auth)
-        repo = g.get_repo(REPO_NAME)
+        # استخدام Batch Write لتقليل عدد الطلبات وزيادة السرعة
+        batch = db.batch()
+        collection_ref = db.collection('standings')
         
-        # تحويل البيانات إلى نص JSON
-        content_str = json.dumps(content_json, indent=4, ensure_ascii=False)
-        content_bytes = content_str.encode("utf-8")
+        count = 0
+        for item in data_list:
+            # نستخدم doc_id الذي أنشأناه ليكون معرف المستند
+            doc_ref = collection_ref.document(str(item['doc_id']))
+            batch.set(doc_ref, item)
+            count += 1
+            
+            # Firestore Batch limit is 500
+            if count >= 450:
+                batch.commit()
+                batch = db.batch()
+                count = 0
         
-        try:
-            # محاولة تحديث الملف الموجود
-            contents = repo.get_contents(FILE_PATH_IN_REPO)
-            repo.update_file(contents.path, f"Update Standings: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}", content_bytes, contents.sha)
-            print("✅ GitHub Updated Successfully.")
-        except:
-            # إنشاء الملف إذا لم يكن موجوداً
-            repo.create_file(FILE_PATH_IN_REPO, "Initial Standings Commit", content_bytes)
-            print("✅ GitHub File Created.")
+        if count > 0:
+            batch.commit()
+            
+        print(f"✅ Firestore Updated Successfully ({len(data_list)} docs) at {datetime.datetime.now().strftime('%H:%M')}")
         return True
     except Exception as e:
-        print(f"❌ GitHub Error: {e}")
+        print(f"❌ Firestore Update Error: {e}")
         return False
 
 def send_telegram_alert(message):
@@ -277,8 +303,8 @@ def send_telegram_alert(message):
 def monitor_standings():
     last_hash = ""
     
-    print(f"🚀 Standings Bot Started...")
-    send_telegram_alert("🚀 Standings Bot Started on Server.")
+    print(f"🚀 Standings Bot (Firestore Mode) Started...")
+    send_telegram_alert("🚀 Bot Started (Firestore Config).")
 
     while True:
         try:
@@ -286,22 +312,22 @@ def monitor_standings():
             current_data = main_scraper()
             
             if current_data:
-                # 2. إنشاء بصمة (Hash) للبيانات الحالية للمقارنة
-                current_json_str = json.dumps(current_data, sort_keys=True)
+                # 2. إنشاء بصمة (Hash)
+                # نقوم بفرز القائمة لضمان ثبات الترتيب عند إنشاء الهاش
+                current_data_sorted = sorted(current_data, key=lambda x: x['doc_id'])
+                current_json_str = json.dumps(current_data_sorted, sort_keys=True)
                 current_hash = hashlib.md5(current_json_str.encode('utf-8')).hexdigest()
                 
                 # 3. المقارنة
                 if current_hash != last_hash:
-                    print(f"🔄 Change detected in standings! Updating GitHub...")
+                    print(f"🔄 Change detected! Updating Firestore...")
                     
-                    if update_github_file(current_data):
+                    if update_firestore(current_data):
                         last_hash = current_hash
-                        # إرسال تنبيه بسيط (اختياري)
-                        send_telegram_alert(f"✅ Standings Updated: {len(current_data)} Leagues processed.")
+                        send_telegram_alert(f"✅ Updated {len(current_data)} tournaments on Firestore.")
                 else:
-                    print("💤 No changes in standings.")
+                    print("💤 No changes.")
             
-            # الانتظار قبل الفحص التالي
             time.sleep(CHECK_INTERVAL)
 
         except Exception as e:
@@ -309,12 +335,9 @@ def monitor_standings():
             time.sleep(60)
 
 if __name__ == "__main__":
-    # تشغيل السيرفر الوهمي
     keep_alive()
     
-    # التحقق من وجود التوكين
-    if not GITHUB_TOKEN:
-        print("❌ Error: GITHUB_TOKEN is missing!")
+    if not FIREBASE_CREDENTIALS_JSON:
+        print("❌ Error: FIREBASE_CREDENTIALS is missing!")
     else:
-        # تشغيل البوت
         monitor_standings()
