@@ -10,21 +10,40 @@ import sys
 import time
 import hashlib
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from github import Github, Auth
+# ✅ مكتبات Firebase Firestore
+import firebase_admin
+from firebase_admin import credentials, firestore
 from flask import Flask 
 from threading import Thread 
 import os 
 
 # ==========================================
-# ⚙️ إعدادات البوت
+# ⚙️ إعدادات البوت وقاعدة البيانات
 # ==========================================
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-REPO_NAME = os.getenv("REPO_NAME")
-FILE_PATH_IN_REPO = os.getenv("FILE_PATH_IN_REPO", "today.json") 
+# ✅ جلب مفاتيح Firebase (نحتاج فقط ملف الاعتمادات لـ Firestore)
+FIREBASE_CREDENTIALS_JSON = os.getenv("FIREBASE_CREDENTIALS")
+
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", 60))
+
+# ✅ تهيئة الاتصال بـ Cloud Firestore
+db = None
+if FIREBASE_CREDENTIALS_JSON:
+    try:
+        cred_dict = json.loads(FIREBASE_CREDENTIALS_JSON)
+        cred = credentials.Certificate(cred_dict)
+        
+        if not firebase_admin._apps:
+            firebase_admin.initialize_app(cred) # 👈 لا نحتاج URL هنا
+            
+        db = firestore.client() # 👈 إنشاء عميل Firestore
+        print("✅ Cloud Firestore Initialized Successfully.")
+    except Exception as e:
+        print(f"❌ Firestore Init Error: {e}")
+else:
+    print("⚠️ Warning: FIREBASE_CREDENTIALS missing.")
 
 # ==========================================
 # إعداد سيرفر وهمي (Flask)
@@ -33,7 +52,7 @@ app = Flask('')
 
 @app.route('/')
 def home():
-    return "I am alive! The Bot is running..."
+    return "I am alive! The Bot is running with Firestore..."
 
 def run():
     app.run(host='0.0.0.0', port=8080)
@@ -63,7 +82,7 @@ session.mount("http://", adapter)
 session.headers.update(HEADERS)
 
 # ==========================================
-# 🛠️ دالة تحويل الوقت للجزائر (تصحيح 12 ظهراً و 00 ليلاً)
+# 🛠️ دوال المعالجة (نفس الكود القديم)
 # ==========================================
 def convert_to_algeria_time(time_str):
     if not time_str or ":" not in time_str:
@@ -73,13 +92,11 @@ def convert_to_algeria_time(time_str):
         clean_time = re.sub(r'[^0-9:]', '', time_str)
         match_time = datetime.datetime.strptime(clean_time, "%H:%M")
 
-        # معالجة نظام 12 ساعة
         if is_pm and match_time.hour != 12:
             match_time = match_time.replace(hour=match_time.hour + 12)
         elif not is_pm and match_time.hour == 12:
             match_time = match_time.replace(hour=0)
 
-        # إضافة 6 ساعات
         new_time = match_time + timedelta(hours=6) 
         return new_time.strftime("%H:%M")
     except:
@@ -98,7 +115,6 @@ def get_match_deep_details(match_url):
         response = session.get(full_url, timeout=10)
         soup = BeautifulSoup(response.text, 'html.parser')
         
-        # استخراج ID المباراة (مفيد جداً للتطبيق)
         match_id = "0"
         id_search = re.search(r'/match/(\d+)', full_url)
         if id_search:
@@ -112,7 +128,6 @@ def get_match_deep_details(match_url):
             "channels": []
         }
 
-        # الفرق
         team_divs = soup.find_all('div', class_=re.compile(r'(team|club)'))
         main_teams = [t for t in team_divs if t.find('img')][:2]
         
@@ -127,7 +142,6 @@ def get_match_deep_details(match_url):
             title_tag = soup.find('title')
             match_details["teams"]["full_title"] = title_tag.text.strip() if title_tag else "مباراة"
 
-        # المعلومات
         target_keys = {"البطولة": "championship", "الجولة": "round", "ملعب المباراة": "stadium", 
                        "وقت المباراة": "time", "تاريخ المباراة": "date"}
         info_block = soup.find('div', class_='match-info') or soup
@@ -144,13 +158,9 @@ def get_match_deep_details(match_url):
                         
                     match_details["info"][key_en] = val
 
-        # ========================================================
-        # 🔥 النتيجة والحالة (المنطق الدقيق) 🔥
-        # ========================================================
         current_score = "- : -"
         match_status = ""
 
-        # 1. النتيجة
         s1_tag = soup.find('div', class_=re.compile(r'first-team-result')) or soup.find('span', class_=re.compile(r'first-team-result'))
         s2_tag = soup.find('div', class_=re.compile(r'second-team-result')) or soup.find('span', class_=re.compile(r'second-team-result'))
         
@@ -166,19 +176,15 @@ def get_match_deep_details(match_url):
                  if len(bs) >= 2:
                      current_score = f"{clean_text(bs[0].text)} - {clean_text(bs[1].text)}"
 
-        # 2. الحالة: التحقق الصارم
-        # أ. البحث عن "إنتهت" أو "نهاية"
         finished_keywords = soup.find_all(string=re.compile(r'(إنتهت|نهاية|Full Time)'))
         if finished_keywords:
              match_status = "إنتهت المباراة"
 
-        # ب. إذا لم نجد "انتهت"، نبحث عن حالة المباشر
         if not match_status:
             live_status = soup.find('span', class_=re.compile(r'live-match-status'))
             if live_status and live_status.text.strip():
                 match_status = clean_text(live_status.text)
 
-        # ج. محاولة أخيرة من الكلاسات المعتادة
         if not match_status:
             end_status_candidates = soup.find_all('span', class_=re.compile(r'result-status-text'))
             for status_item in end_status_candidates:
@@ -186,15 +192,12 @@ def get_match_deep_details(match_url):
                     match_status = clean_text(status_item.text)
                     break
         
-        # د. الفلتر النهائي: إذا كانت فارغة أو تحتوي على وقت (:) -> لم تبدأ
         if not match_status or ":" in match_status:
              match_status = "لم تبدأ"
 
         match_details["info"]["current_score"] = current_score
         match_details["info"]["match_status"] = match_status
-        # ========================================================
 
-        # القنوات
         section_header = soup.find(string=re.compile(r'القنوات الناقلة والمعلقين'))
         if section_header:
             block_container = section_header.find_parent('div', class_='match-block-item')
@@ -251,23 +254,41 @@ def main_scraper():
 
     return sorted(final_data, key=lambda x: x['info'].get('championship', ''))
 
-def update_github_file(content_json):
+# ==========================================
+# 🆕 دالة الحفظ في Cloud Firestore
+# ==========================================
+def update_firestore_db(matches_list):
+    if not db:
+        return False
+        
     try:
-        auth = Auth.Token(GITHUB_TOKEN)
-        g = Github(auth=auth)
-        repo = g.get_repo(REPO_NAME)
-        content_str = json.dumps(content_json, indent=2, ensure_ascii=False)
-        content_bytes = content_str.encode("utf-8")
-        try:
-            contents = repo.get_contents(FILE_PATH_IN_REPO)
-            repo.update_file(contents.path, f"Update matches: {datetime.datetime.now().strftime('%H:%M')}", content_bytes, contents.sha)
-            print("✅ GitHub Updated.")
-        except:
-            repo.create_file(FILE_PATH_IN_REPO, "Initial commit", content_bytes)
-            print("✅ GitHub Created.")
+        # استخدام Batch لتقليل عدد الطلبات وتسريع العملية
+        batch = db.batch()
+        collection_ref = db.collection('matches')
+
+        count = 0
+        for match in matches_list:
+            # استخدام ID المباراة كـ Document ID لضمان التحديث وليس التكرار
+            doc_id = str(match['id']) 
+            doc_ref = collection_ref.document(doc_id)
+            
+            # نقوم بحفظ بيانات المباراة كما هي
+            batch.set(doc_ref, match, merge=True)
+            count += 1
+            
+            # Firestore يسمح بـ 500 عملية في الـ Batch الواحد
+            if count >= 450:
+                batch.commit()
+                batch = db.batch()
+                count = 0
+        
+        if count > 0:
+            batch.commit()
+            
+        print(f"✅ Firestore Updated: {len(matches_list)} matches.")
         return True
     except Exception as e:
-        print(f"❌ GitHub Error: {e}")
+        print(f"❌ Firestore Error: {e}")
         return False
 
 def send_telegram_alert(message):
@@ -279,35 +300,31 @@ def send_telegram_alert(message):
 
 def monitor_matches():
     last_hash = ""
-    # 🆕 NEW: متغير لتتبع آخر يوم تم التحديث فيه بنجاح
     last_update_day = datetime.date.min
     
     print(f"🚀 Bot Started monitoring {BASE_URL}...")
-    send_telegram_alert("🚀 Bot Started on Render.")
+    send_telegram_alert("🚀 Bot Started with Cloud Firestore.")
 
     while True:
         try:
             current_data = main_scraper()
-            # 🆕 NEW: الحصول على تاريخ اليوم الحالي
             current_date = datetime.date.today()
             
             if current_data:
                 current_json_str = json.dumps(current_data, sort_keys=True)
                 current_hash = hashlib.md5(current_json_str.encode('utf-8')).hexdigest()
                 
-                # 🆕 NEW: التحقق مما إذا كان اليوم قد تغير (لفرض التحديث عند منتصف الليل)
                 force_update = (current_date > last_update_day)
                 
-                # 🔄 MODIFIED: التحقق من تغير الهاش أو تغير اليوم
                 if current_hash != last_hash or force_update:
                     if force_update:
-                         print("🔄 NEW DAY: Forcing update to capture today's matches list (00:00 check).")
+                         print("🔄 NEW DAY: Forcing update.")
                     else:
                          print("🔄 Change detected! Updating...")
 
-                    if update_github_file(current_data):
+                    # ✅ الحفظ في Cloud Firestore
+                    if update_firestore_db(current_data):
                         last_hash = current_hash
-                        # 🆕 NEW: تحديث تاريخ آخر يوم تم التحديث فيه
                         last_update_day = current_date 
                 else:
                     print("💤 No changes.")
@@ -319,12 +336,5 @@ def monitor_matches():
             time.sleep(60)
 
 if __name__ == "__main__":
-    # تشغيل السيرفر الوهمي في خيط منفصل
     keep_alive()
-    
-    # التحقق من وجود التوكين قبل البدء
-    if not GITHUB_TOKEN:
-        print("❌ Error: GITHUB_TOKEN is missing!")
-    else:
-        # البدء بالمراقبة
-        monitor_matches()
+    monitor_matches()
