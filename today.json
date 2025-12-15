@@ -115,29 +115,6 @@
     ]
   },
   {
-    "url": "https://www.ysscores.com/ar/match/4844279/CD-Nacional-vs-CD-Tondela",
-    "info": {
-      "championship": "الدوري البرتغالي الممتاز",
-      "round": "14 - مباراة الذهاب",
-      "stadium": "ملعب ماديرا",
-      "time": "18:30",
-      "date": "الاثنين 15-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ناسيونال ماديرا",
-        "logo": "https://imgs.ysscores.com/teams/128/8491698965785.png"
-      },
-      "away": {
-        "name": "تونديلا",
-        "logo": "https://imgs.ysscores.com/teams/128/3081690370568.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "url": "https://www.ysscores.com/ar/match/4844280/SC-Braga-vs-CD-Santa-Clara",
     "info": {
       "championship": "الدوري البرتغالي الممتاز",
@@ -192,6 +169,29 @@
         "commentator": "إبراهيم الهشال"
       }
     ]
+  },
+  {
+    "url": "https://www.ysscores.com/ar/match/4844279/CD-Nacional-vs-CD-Tondela",
+    "info": {
+      "championship": "الدوري البرتغالي الممتاز",
+      "round": "14 - مباراة الذهاب",
+      "stadium": "ملعب ماديرا",
+      "time": "18:30",
+      "date": "الاثنين 15-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ناسيونال ماديرا",
+        "logo": "https://imgs.ysscores.com/teams/128/8491698965785.png"
+      },
+      "away": {
+        "name": "تونديلا",
+        "logo": "https://imgs.ysscores.com/teams/128/3081690370568.png"
+      }
+    },
+    "channels": []
   },
   {
     "url": "https://www.ysscores.com/ar/match/4842451/Fenerbahce-vs-Konyaspor",
@@ -273,6 +273,74 @@
     "channels": []
   },
   {
+    "url": "https://www.ysscores.com/ar/match/54462703/Morocco-B-vs-United-Arab-Emirates",
+    "info": {
+      "championship": "كأس العرب",
+      "round": "نصف نهائي",
+      "stadium": "استاد خليفة الدولي",
+      "time": "15:30",
+      "date": "الاثنين 15-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "المغرب",
+        "logo": "https://imgs.ysscores.com/teams/128/6291763083538.png"
+      },
+      "away": {
+        "name": "الإمارات",
+        "logo": "https://imgs.ysscores.com/teams/128/9431763117463.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت HD",
+        "commentator": "عامر الخوذيري"
+      },
+      {
+        "channel": "أبو ظبي الرياضية 1",
+        "commentator": "فارس عوض"
+      },
+      {
+        "channel": "الكأس 1",
+        "commentator": "خالد الحدي"
+      },
+      {
+        "channel": "دبي الرياضية 1",
+        "commentator": "عبدالحميد الجسمي"
+      },
+      {
+        "channel": "الشارقة الرياضية",
+        "commentator": "موسى عيد"
+      },
+      {
+        "channel": "MBC مصر 2",
+        "commentator": "عصام عبده"
+      },
+      {
+        "channel": "MBC 5",
+        "commentator": "نور الدين آيت علي"
+      },
+      {
+        "channel": "عمان الرياضية",
+        "commentator": "محمد الريامي"
+      },
+      {
+        "channel": "الكويت الرياضية",
+        "commentator": "راشد الدوسري"
+      },
+      {
+        "channel": "منصة شاشا",
+        "commentator": "علي دراج"
+      },
+      {
+        "channel": "شاهد - VIP | رياضة",
+        "commentator": "عصام عبده"
+      }
+    ]
+  },
+  {
     "url": "https://www.ysscores.com/ar/match/72920553/Saudi-Arabia-vs-Jordan",
     "info": {
       "championship": "كأس العرب",
@@ -345,74 +413,6 @@
       {
         "channel": "شاهد - VIP | رياضة",
         "commentator": "أحمد النفيسة"
-      }
-    ]
-  },
-  {
-    "url": "https://www.ysscores.com/ar/match/54462703/Morocco-B-vs-United-Arab-Emirates",
-    "info": {
-      "championship": "كأس العرب",
-      "round": "نصف نهائي",
-      "stadium": "استاد خليفة الدولي",
-      "time": "15:30",
-      "date": "الاثنين 15-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "المغرب",
-        "logo": "https://imgs.ysscores.com/teams/128/6291763083538.png"
-      },
-      "away": {
-        "name": "الإمارات",
-        "logo": "https://imgs.ysscores.com/teams/128/9431763117463.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت HD",
-        "commentator": "عامر الخوذيري"
-      },
-      {
-        "channel": "أبو ظبي الرياضية 1",
-        "commentator": "فارس عوض"
-      },
-      {
-        "channel": "الكأس 1",
-        "commentator": "خالد الحدي"
-      },
-      {
-        "channel": "دبي الرياضية 1",
-        "commentator": "عبدالحميد الجسمي"
-      },
-      {
-        "channel": "الشارقة الرياضية",
-        "commentator": "موسى عيد"
-      },
-      {
-        "channel": "MBC مصر 2",
-        "commentator": "عصام عبده"
-      },
-      {
-        "channel": "MBC 5",
-        "commentator": "نور الدين آيت علي"
-      },
-      {
-        "channel": "عمان الرياضية",
-        "commentator": "محمد الريامي"
-      },
-      {
-        "channel": "الكويت الرياضية",
-        "commentator": "راشد الدوسري"
-      },
-      {
-        "channel": "منصة شاشا",
-        "commentator": "علي دراج"
-      },
-      {
-        "channel": "شاهد - VIP | رياضة",
-        "commentator": "عصام عبده"
       }
     ]
   }
