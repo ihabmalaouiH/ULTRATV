@@ -25,6 +25,7 @@ if not cred_var:
 else:
     try:
         # محاولة فك التشفير إذا كان Base64
+        # (نعرف انه Base64 إذا لم يبدأ بقوس المتعرج { )
         if not cred_var.strip().startswith("{"):
             decoded_bytes = base64.b64decode(cred_var)
             cred_json = json.loads(decoded_bytes.decode("utf-8"))
@@ -59,6 +60,7 @@ def index():
     return "✅ Bot is Running (Firestore Mode)"
 
 def run_server():
+    # Render يرسل البورت في متغير البيئة
     port = int(os.environ.get("PORT", 8080))
     app.run(host='0.0.0.0', port=port)
 
@@ -89,7 +91,7 @@ def clean_text(text):
     return text.strip().replace('\n', ' ').replace('\r', '').replace('  ', ' ') if text else "0"
 
 # ==========================================
-# 4. منطق السحب (المعدل لسحب الترتيب فقط)
+# 4. منطق السحب (نفسه تماماً)
 # ==========================================
 def get_tournament_data(url, title_hint, logo_hint):
     full_url = url if url.startswith('http') else f"{BASE_URL}{url}"
@@ -104,86 +106,91 @@ def get_tournament_data(url, title_hint, logo_hint):
         "title": title_hint,
         "logo": logo_hint,
         "url": full_url,
-        "has_standings": True, # مفترض وجود ترتيب لأننا سنفلتر الباقي
-        "type": "League",
+        "has_standings": False,
+        "type": "Unknown",
         "groups": [],
-        "matches": [] # ستبقى فارغة لأننا نهتم بالترتيب فقط
+        "matches": []
     }
 
     try:
         response = session.get(full_url, timeout=25)
         soup = BeautifulSoup(response.content, 'html.parser')
 
-        # تحديث العنوان واللوغو
         header = soup.find('div', class_='champion-title-wrap')
         if header:
             if header.find('h3'): champ_data['title'] = clean_text(header.find('h3').text)
             if header.find('img'): champ_data['logo'] = header.find('img')['src']
 
-        # البحث عن جداول الترتيب
         tables_found = soup.find_all('div', class_='ranking-table')
         valid_tables = [t for t in tables_found if 'players-table' not in t.get('class', [])]
 
-        # 🛑 التعديل الأساسي هنا:
-        # إذا لم نجد أي جدول ترتيب صالح، نقوم بإرجاع None فوراً ونتجاهل هذه البطولة
-        if not valid_tables:
-            return None 
-
-        # إذا وصلنا هنا، فهذا يعني وجود جدول ترتيب (دوري أو مجموعات)
-        for tbl in valid_tables:
-            group_name = "General"
-            parent = tbl.find_parent('div', class_='collapse-item-wrap')
-            if parent:
-                head = parent.find('div', class_='collapse-header')
-                if head and head.find('span'): group_name = clean_text(head.find('span').text)
-            
-            teams_list = []
-            rows = tbl.find_all('div', class_='rank-row')
-            for row in rows:
-                if 'header' in row.get('class', []): continue
-                name_div = row.find('div', class_='name')
+        if valid_tables:
+            champ_data["type"] = "League"
+            champ_data["has_standings"] = True
+            for tbl in valid_tables:
+                group_name = "General"
+                parent = tbl.find_parent('div', class_='collapse-item-wrap')
+                if parent:
+                    head = parent.find('div', class_='collapse-header')
+                    if head and head.find('span'): group_name = clean_text(head.find('span').text)
                 
-                # فلتر اللاعبين
-                if name_div and name_div.find('a') and "/player/" in name_div.find('a')['href']: continue 
+                teams_list = []
+                rows = tbl.find_all('div', class_='rank-row')
+                for row in rows:
+                    if 'header' in row.get('class', []): continue
+                    name_div = row.find('div', class_='name')
+                    
+                    # فلتر اللاعبين
+                    if name_div and name_div.find('a') and "/player/" in name_div.find('a')['href']: continue 
 
-                rank = clean_text(row.find('div', class_='number').text) if row.find('div', class_='number') else "-"
-                t_name, t_logo, t_id, qualified = "Unknown", "", "", False
-                
-                if name_div:
-                    if name_div.find('img'): t_logo = name_div.find('img')['src']
-                    if name_div.find('a'): t_id = name_div.find('a')['href'].split('/')[-2]
-                    info = name_div.find('div', class_='info')
-                    if info:
-                        if info.find('div', class_='up-text'):
-                            qualified = True
-                            info.find('div', class_='up-text').extract()
-                        t_name = clean_text(info.text)
+                    rank = clean_text(row.find('div', class_='number').text) if row.find('div', class_='number') else "-"
+                    t_name, t_logo, t_id, qualified = "Unknown", "", "", False
+                    
+                    if name_div:
+                        if name_div.find('img'): t_logo = name_div.find('img')['src']
+                        if name_div.find('a'): t_id = name_div.find('a')['href'].split('/')[-2]
+                        info = name_div.find('div', class_='info')
+                        if info:
+                            if info.find('div', class_='up-text'):
+                                qualified = True
+                                info.find('div', class_='up-text').extract()
+                            t_name = clean_text(info.text)
 
-                if t_name == "Unknown": continue
+                    if t_name == "Unknown": continue
 
-                played = clean_text(row.find('div', class_='played').text) if row.find('div', class_='played') else "0"
-                won = clean_text(row.find('div', class_='win').text) if row.find('div', class_='win') else "0"
-                draw = clean_text(row.find('div', class_='equal').text) if row.find('div', class_='equal') else "0"
-                lost = clean_text(row.find('div', class_='lose').text) if row.find('div', class_='lose') else "0"
-                goals = clean_text(row.find('div', class_='goals').text) if row.find('div', class_='goals') else "0"
-                diff = clean_text(row.find('div', class_='diff').text) if row.find('div', class_='diff') else "0"
-                pts = clean_text(row.find('div', class_='points').text) if row.find('div', class_='points') else "0"
+                    played = clean_text(row.find('div', class_='played').text) if row.find('div', class_='played') else "0"
+                    won = clean_text(row.find('div', class_='win').text) if row.find('div', class_='win') else "0"
+                    draw = clean_text(row.find('div', class_='equal').text) if row.find('div', class_='equal') else "0"
+                    lost = clean_text(row.find('div', class_='lose').text) if row.find('div', class_='lose') else "0"
+                    goals = clean_text(row.find('div', class_='goals').text) if row.find('div', class_='goals') else "0"
+                    diff = clean_text(row.find('div', class_='diff').text) if row.find('div', class_='diff') else "0"
+                    pts = clean_text(row.find('div', class_='points').text) if row.find('div', class_='points') else "0"
 
-                teams_list.append({
-                    "rank": rank, "team": t_name, "logo": t_logo, "id": t_id, "qualified": qualified,
-                    "stats": {"p": played, "w": won, "d": draw, "l": lost, "gs": goals, "gd": diff, "pts": pts}
-                })
-            
-            if teams_list:
-                champ_data["groups"].append({"name": group_name, "teams": teams_list})
+                    teams_list.append({
+                        "rank": rank, "team": t_name, "logo": t_logo, "id": t_id, "qualified": qualified,
+                        "stats": {"p": played, "w": won, "d": draw, "l": lost, "gs": goals, "gd": diff, "pts": pts}
+                    })
+                if teams_list:
+                    champ_data["groups"].append({"name": group_name, "teams": teams_list})
 
-        # تحقق أخير: إذا بعد كل هذا لم يتم تجميع فرق (مثلاً جدول فارغ)، نرجع None
         if not champ_data["groups"]:
-            return None
-
-    except: 
-        return None
-        
+            matches_box = soup.find_all('div', class_='item-match')
+            if not matches_box: matches_box = soup.find_all('a', class_='match-container')
+            if matches_box:
+                champ_data["type"] = "Cup"
+                for m in matches_box:
+                    try:
+                        teams = m.find_all('div', class_='team-name')
+                        if len(teams) >= 2:
+                            home = clean_text(teams[0].text)
+                            away = clean_text(teams[1].text)
+                            res = m.find('div', class_='result')
+                            score = clean_text(res.text) if res else "-:-"
+                            champ_data["matches"].append({"home": home, "away": away, "score": score})
+                    except: continue
+            else:
+                champ_data["type"] = "Empty"
+    except: pass
     return champ_data
 
 def main_scraper():
@@ -215,9 +222,7 @@ def main_scraper():
         }
         for future in as_completed(future_to_url):
             res = future.result()
-            # 🛑 التعديل الثاني: نضيف البيانات فقط إذا لم تكن None
-            if res is not None:
-                all_data.append(res)
+            all_data.append(res)
     
     return all_data
 
