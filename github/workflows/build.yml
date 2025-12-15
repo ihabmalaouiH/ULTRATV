@@ -1,0 +1,38 @@
+name: Build Universal APK
+
+on:
+  push:
+    branches: [ "main", "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Java
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'zulu'
+        java-version: '17'
+        
+    - name: Set up Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.19.0' # تأكد أن هذا الإصدار يطابق مشروعك أو استخدم 'stable'
+        channel: 'stable'
+        
+    - name: Get Dependencies
+      run: flutter pub get
+
+    - name: Build Universal APK
+      # هذا الأمر سينتج ملفاً واحداً يعمل على كل الهواتف
+      # وسيتم ضغطه لأنه في وضع Release
+      run: flutter build apk --release
+
+    - name: Upload APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: universal-app
+        path: build/app/outputs/flutter-apk/app-release.apk
