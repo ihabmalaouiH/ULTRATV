@@ -1,288 +1,321 @@
-import os
-import json
-import base64
 import requests
-import hashlib
-import time
-import datetime
-import sys
-import firebase_admin
-from firebase_admin import credentials, firestore
-from bs4 import BeautifulSoup
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from bs4 import BeautifulSoup
+import json
+import re
+import sys
+import time
+import hashlib
+import datetime
+import os
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+# === استيراد firestore كما طلبت ===
+import firebase_admin
+from firebase_admin import credentials, firestore
 from flask import Flask
 from threading import Thread
 
 # ==========================================
-# 1. تهيئة فيربيز (بنظام ذكي لكشف الأخطاء)
+# ⚙️ إعدادات البوت والبيئة
 # ==========================================
-cred_var = os.getenv("FIREBASE_CREDENTIALS")
+FIREBASE_CREDENTIALS_JSON = os.getenv("FIREBASE_CREDENTIALS") # محتوى ملف JSON الخاص بالمفتاح
 
-if not cred_var:
-    print("❌ CRITICAL ERROR: Variable 'FIREBASE_CREDENTIALS' is missing on Render!")
-else:
-    try:
-        # محاولة فك التشفير إذا كان Base64
-        # (نعرف انه Base64 إذا لم يبدأ بقوس المتعرج { )
-        if not cred_var.strip().startswith("{"):
-            decoded_bytes = base64.b64decode(cred_var)
-            cred_json = json.loads(decoded_bytes.decode("utf-8"))
-            print("✅ Detected Base64 Encoded Key.")
-        else:
-            # قراءة كود JSON مباشر
-            cred_json = json.loads(cred_var)
-            print("✅ Detected Direct JSON Key.")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-        if not firebase_admin._apps:
-            cred = credentials.Certificate(cred_json)
-            firebase_admin.initialize_app(cred)
-            print("✅ Firebase Connected Successfully!")
-            
-    except Exception as e:
-        print(f"❌ Firebase Init Failed: {e}")
-        print("💡 Hint: Ensure you pasted the FULL JSON or FULL Base64 string.")
-
-# تعريف قاعدة البيانات
-try:
-    db = firestore.client()
-except:
-    db = None
+# فحص كل 5 دقائق
+CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", 300)) 
 
 # ==========================================
-# 2. سيرفر Flask (لإبقاء البوت حياً)
+# إعداد سيرفر وهمي (Flask) للبقاء نشطاً
 # ==========================================
-app = Flask(__name__)
+app = Flask('')
 
 @app.route('/')
-def index():
-    return "✅ Bot is Running (Firestore Mode)"
+def home():
+    return "I am alive! Standings Bot is running..."
 
-def run_server():
-    # Render يرسل البورت في متغير البيئة
-    port = int(os.environ.get("PORT", 8080))
-    app.run(host='0.0.0.0', port=port)
+def run():
+    app.run(host='0.0.0.0', port=8080)
 
 def keep_alive():
-    t = Thread(target=run_server)
+    t = Thread(target=run)
     t.start()
 
 # ==========================================
-# 3. إعدادات السحب (Scraping Config)
+# 1. إعدادات الاتصال 
 # ==========================================
 BASE_URL = "https://www.ysscores.com"
 ALL_RANKS_URL = "https://www.ysscores.com/ar/rank"
-CHECK_INTERVAL = 300  # 5 دقائق
 
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
     'Referer': 'https://www.google.com/',
 }
 
 session = requests.Session()
-retry = Retry(total=5, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
-adapter = HTTPAdapter(max_retries=retry)
-session.mount('https://', adapter)
+retry_strategy = Retry(
+    total=5, backoff_factor=1, status_forcelist=[429, 500, 502, 503, 504],
+)
+adapter = HTTPAdapter(pool_connections=20, pool_maxsize=20, max_retries=retry_strategy)
+session.mount("https://", adapter)
+session.mount("http://", adapter)
 session.headers.update(HEADERS)
 
+# ==========================================
+# 🛠️ دوال المعالجة والسحب (Scraping Logic)
+# ==========================================
+
 def clean_text(text):
-    return text.strip().replace('\n', ' ').replace('\r', '').replace('  ', ' ') if text else "0"
+    if text:
+        return text.strip().replace('\n', ' ').replace('\r', '').replace('  ', ' ')
+    return "0"
 
-# ==========================================
-# 4. منطق السحب (نفسه تماماً)
-# ==========================================
-def get_tournament_data(url, title_hint, logo_hint):
+def get_only_teams_standings(url, title_hint, logo_hint):
+    """
+    تدخل هذه الدالة لأي رابط (دوري أو كأس) وتبحث عن جداول ترتيب الفرق.
+    """
     full_url = url if url.startswith('http') else f"{BASE_URL}{url}"
-    try:
-        parts = url.split('/rank/')
-        doc_id = parts[1].replace('/', '_') if len(parts) > 1 else hashlib.md5(url.encode()).hexdigest()
-    except:
-        doc_id = hashlib.md5(url.encode()).hexdigest()
-
+    
     champ_data = {
-        "doc_id": doc_id,
         "title": title_hint,
         "logo": logo_hint,
         "url": full_url,
         "has_standings": False,
-        "type": "Unknown",
-        "groups": [],
-        "matches": []
+        "tables": [] 
     }
 
     try:
-        response = session.get(full_url, timeout=25)
-        soup = BeautifulSoup(response.content, 'html.parser')
+        response = session.get(full_url, timeout=20)
+        response.encoding = 'utf-8'
+        soup = BeautifulSoup(response.text, 'html.parser')
 
+        # محاولة تحسين العنوان والشعار من الصفحة الداخلية
         header = soup.find('div', class_='champion-title-wrap')
         if header:
             if header.find('h3'): champ_data['title'] = clean_text(header.find('h3').text)
             if header.find('img'): champ_data['logo'] = header.find('img')['src']
 
-        tables_found = soup.find_all('div', class_='ranking-table')
-        valid_tables = [t for t in tables_found if 'players-table' not in t.get('class', [])]
+        # البحث عن الحاوية التي تضم الترتيب
+        teams_container = soup.find('div', class_=re.compile(r'teams_rank'))
+        search_context = teams_container if teams_container else soup
 
-        if valid_tables:
-            champ_data["type"] = "League"
-            champ_data["has_standings"] = True
-            for tbl in valid_tables:
-                group_name = "General"
-                parent = tbl.find_parent('div', class_='collapse-item-wrap')
-                if parent:
-                    head = parent.find('div', class_='collapse-header')
-                    if head and head.find('span'): group_name = clean_text(head.find('span').text)
+        # جلب جميع الجداول الموجودة في الصفحة
+        tables_found = search_context.find_all('div', class_='ranking-table')
+        
+        if tables_found:
+            for tbl in tables_found:
+                # 🛑 تجاهل جدول الهدافين
+                if 'players-table' in tbl.get('class', []):
+                    continue 
+
+                # محاولة معرفة اسم المجموعة (مهم للكؤوس مثل دوري الأبطال)
+                group_name = "General Standings"
+                parent_collapse = tbl.find_parent('div', class_='collapse-item-wrap')
+                if parent_collapse:
+                    head_div = parent_collapse.find('div', class_='collapse-header')
+                    if head_div and head_div.find('span'):
+                        group_name = clean_text(head_div.find('span').text)
                 
-                teams_list = []
+                teams_data = []
                 rows = tbl.find_all('div', class_='rank-row')
+                
                 for row in rows:
                     if 'header' in row.get('class', []): continue
-                    name_div = row.find('div', class_='name')
-                    
-                    # فلتر اللاعبين
-                    if name_div and name_div.find('a') and "/player/" in name_div.find('a')['href']: continue 
 
-                    rank = clean_text(row.find('div', class_='number').text) if row.find('div', class_='number') else "-"
-                    t_name, t_logo, t_id, qualified = "Unknown", "", "", False
+                    name_div = row.find('div', class_='name')
+                    team_link = ""
                     
                     if name_div:
-                        if name_div.find('img'): t_logo = name_div.find('img')['src']
-                        if name_div.find('a'): t_id = name_div.find('a')['href'].split('/')[-2]
-                        info = name_div.find('div', class_='info')
-                        if info:
-                            if info.find('div', class_='up-text'):
-                                qualified = True
-                                info.find('div', class_='up-text').extract()
-                            t_name = clean_text(info.text)
+                        a_tag = name_div.find('a')
+                        if a_tag:
+                            team_link = a_tag.get('href', '')
+                    
+                    # 🛑 تأكيد إضافي لتجاهل اللاعبين
+                    if "/player/" in team_link:
+                        continue 
 
-                    if t_name == "Unknown": continue
+                    rank = clean_text(row.find('div', class_='number').text) if row.find('div', class_='number') else "-"
+                    
+                    team_name = "Unknown"
+                    team_logo = ""
+                    team_id = ""
+                    is_qualified = False
 
+                    if name_div:
+                        if name_div.find('img'): team_logo = name_div.find('img')['src']
+                        if team_link: team_id = team_link.split('/')[-2]
+                        
+                        info_div = name_div.find('div', class_='info')
+                        if info_div:
+                            # التحقق مما إذا كان الفريق متأهلاً (شائع في الكؤوس)
+                            if info_div.find('div', class_='up-text'):
+                                is_qualified = True
+                                info_div.find('div', class_='up-text').extract()
+                            team_name = clean_text(info_div.text)
+
+                    if team_name == "Unknown" and not team_id:
+                        continue
+
+                    # قراءة الإحصائيات
                     played = clean_text(row.find('div', class_='played').text) if row.find('div', class_='played') else "0"
                     won = clean_text(row.find('div', class_='win').text) if row.find('div', class_='win') else "0"
                     draw = clean_text(row.find('div', class_='equal').text) if row.find('div', class_='equal') else "0"
                     lost = clean_text(row.find('div', class_='lose').text) if row.find('div', class_='lose') else "0"
+                    
                     goals = clean_text(row.find('div', class_='goals').text) if row.find('div', class_='goals') else "0"
                     diff = clean_text(row.find('div', class_='diff').text) if row.find('div', class_='diff') else "0"
-                    pts = clean_text(row.find('div', class_='points').text) if row.find('div', class_='points') else "0"
+                    points = clean_text(row.find('div', class_='points').text) if row.find('div', class_='points') else "0"
 
-                    teams_list.append({
-                        "rank": rank, "team": t_name, "logo": t_logo, "id": t_id, "qualified": qualified,
-                        "stats": {"p": played, "w": won, "d": draw, "l": lost, "gs": goals, "gd": diff, "pts": pts}
+                    teams_data.append({
+                        "rank": rank,
+                        "team_name": team_name,
+                        "team_logo": team_logo,
+                        "team_id": team_id,
+                        "qualified": is_qualified,
+                        "stats": {
+                            "played": played, "won": won, "draw": draw, "lost": lost,
+                            "goals": goals, "goal_diff": diff, "points": points
+                        }
                     })
-                if teams_list:
-                    champ_data["groups"].append({"name": group_name, "teams": teams_list})
+                
+                # إذا وجدنا فرقاً في هذا الجدول، نضيفه
+                if teams_data:
+                    champ_data["tables"].append({
+                        "group_name": group_name,
+                        "teams": teams_data
+                    })
+            
+            # إذا وجدنا أي جدول فرق في الصفحة، نضع العلامة True
+            if champ_data["tables"]:
+                champ_data["has_standings"] = True
 
-        if not champ_data["groups"]:
-            matches_box = soup.find_all('div', class_='item-match')
-            if not matches_box: matches_box = soup.find_all('a', class_='match-container')
-            if matches_box:
-                champ_data["type"] = "Cup"
-                for m in matches_box:
-                    try:
-                        teams = m.find_all('div', class_='team-name')
-                        if len(teams) >= 2:
-                            home = clean_text(teams[0].text)
-                            away = clean_text(teams[1].text)
-                            res = m.find('div', class_='result')
-                            score = clean_text(res.text) if res else "-:-"
-                            champ_data["matches"].append({"home": home, "away": away, "score": score})
-                    except: continue
-            else:
-                champ_data["type"] = "Empty"
-    except: pass
+    except Exception as e:
+        print(f"Error parsing {full_url}: {e}")
+        pass 
+
     return champ_data
 
 def main_scraper():
-    print("[*] Starting scrape cycle...")
+    print(f"[*] Fetching ALL championships/cups from {ALL_RANKS_URL}...")
     try:
         response = session.get(ALL_RANKS_URL, timeout=30)
-        soup = BeautifulSoup(response.content, 'html.parser')
+        soup = BeautifulSoup(response.text, 'html.parser')
     except Exception as e:
-        print(f"Error fetching main list: {e}")
-        return []
+        print(f"[!] Connection Error: {e}")
+        return None
 
-    championships = []
+    championships_list = []
+    # هنا نجلب كل العناصر بغض النظر عن كونها دوري أو كأس
     items = soup.find_all('a', class_='champion-item')
-    print(f"[*] Found {len(items)} items.")
-
+    
     for item in items:
         rank_url = item.get('rank')
         title = item.get('title')
         logo = item.find('img').get('src') if item.find('img') else ""
-        if rank_url and "javascript" not in rank_url:
-            championships.append({"url": rank_url, "title": title, "logo": logo})
 
+        if rank_url and "javascript" not in rank_url:
+            championships_list.append({"url": rank_url, "title": title, "logo": logo})
+
+    print(f"[*] Found {len(championships_list)} items. Processing details to check for standings...")
+    
     all_data = []
-    # تقليل عدد العمال لتجنب الحظر أو الضغط على الذاكرة
-    with ThreadPoolExecutor(max_workers=5) as executor:
+    
+    # استخدام ThreadPool لتسريع فحص العدد الكبير من الروابط
+    with ThreadPoolExecutor(max_workers=10) as executor:
         future_to_url = {
-            executor.submit(get_tournament_data, c['url'], c['title'], c['logo']): c 
-            for c in championships
+            executor.submit(get_only_teams_standings, c['url'], c['title'], c['logo']): c 
+            for c in championships_list
         }
+        
         for future in as_completed(future_to_url):
-            res = future.result()
-            all_data.append(res)
+            data = future.result()
+            # الشرط الوحيد للإضافة: وجود جدول ترتيب فرق
+            if data['has_standings']:
+                all_data.append(data)
     
     return all_data
 
 # ==========================================
-# 5. التحديث والحلقة (Loop)
+# 🔄 دوال التحديث (Firestore) والتنبيهات
 # ==========================================
-def update_firestore(data_list):
-    if not db:
-        print("❌ Cannot update: DB is None.")
-        return False
+
+def update_firestore_db(content_json):
+    """
+    دالة لحفظ البيانات في Cloud Firestore
+    """
     try:
-        batch = db.batch()
-        col = db.collection('standings')
-        count = 0
-        total = 0
-        for item in data_list:
-            doc_ref = col.document(str(item['doc_id']))
-            batch.set(doc_ref, item)
-            count += 1
-            if count >= 400: # حد فايرستور
-                batch.commit()
-                batch = db.batch()
-                count = 0
-                print(f"Saved batch of 400...")
-        if count > 0:
-            batch.commit()
-        print(f"✅ Firestore Updated: {len(data_list)} docs.")
+        if not firebase_admin._apps:
+            if not FIREBASE_CREDENTIALS_JSON:
+                print("❌ Missing Firebase Credentials")
+                return False
+                
+            cred_dict = json.loads(FIREBASE_CREDENTIALS_JSON)
+            cred = credentials.Certificate(cred_dict)
+            firebase_admin.initialize_app(cred)
+
+        db_client = firestore.client()
+
+        # الحفظ في Firestore
+        doc_ref = db_client.collection('standings').document('all_leagues')
+        
+        doc_ref.set({
+            'leagues': content_json,
+            'last_update': datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
+        })
+
+        print("✅ Firestore Updated Successfully.")
         return True
     except Exception as e:
-        print(f"❌ DB Update Error: {e}")
+        print(f"❌ Firestore Error: {e}")
         return False
 
-def monitor():
+def send_telegram_alert(message):
+    if TELEGRAM_TOKEN and TELEGRAM_CHAT_ID:
+        url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+        data = {"chat_id": TELEGRAM_CHAT_ID, "text": message}
+        try: session.post(url, data=data, timeout=5)
+        except: pass
+
+def monitor_standings():
     last_hash = ""
-    print("🚀 Bot Started Loop.")
+    
+    print(f"🚀 Standings Bot Started (Firestore Mode)...")
+    send_telegram_alert("🚀 Standings Bot Started on Server (Firestore Mode).")
+
     while True:
         try:
-            data = main_scraper()
-            if data:
-                # الفرز لضمان ثبات الهاش
-                sorted_data = sorted(data, key=lambda x: x['doc_id'])
-                current_str = json.dumps(sorted_data, sort_keys=True)
-                current_hash = hashlib.md5(current_str.encode()).hexdigest()
+            # 1. سحب البيانات
+            current_data = main_scraper()
+            
+            if current_data:
+                # 2. إنشاء بصمة (Hash)
+                current_json_str = json.dumps(current_data, sort_keys=True)
+                current_hash = hashlib.md5(current_json_str.encode('utf-8')).hexdigest()
                 
+                # 3. المقارنة
                 if current_hash != last_hash:
-                    print("🔄 Data changed. Updating DB...")
-                    if update_firestore(data):
+                    print(f"🔄 Change detected! Updating Firestore...")
+                    
+                    if update_firestore_db(current_data):
                         last_hash = current_hash
+                        send_telegram_alert(f"✅ Standings Updated on Firestore: {len(current_data)} Competitions processed.")
                 else:
-                    print("💤 No changes.")
+                    print("💤 No changes in standings.")
             
-            # منع استهلاك المعالج بالانتظار
             time.sleep(CHECK_INTERVAL)
-            
+
         except Exception as e:
-            print(f"⚠️ Main Loop Error: {e}")
+            print(f"⚠️ Loop Error: {e}")
             time.sleep(60)
 
 if __name__ == "__main__":
     keep_alive()
-    if not os.getenv("FIREBASE_CREDENTIALS"):
-        print("❌ WARNING: FIREBASE_CREDENTIALS not set!")
-    monitor()
+    
+    if not FIREBASE_CREDENTIALS_JSON:
+        print("❌ Error: FIREBASE_CREDENTIALS env var is missing!")
+    else:
+        monitor_standings()
