@@ -230,6 +230,7 @@ def main_scraper():
 def update_firestore_db(content_json):
     """
     دالة لحفظ البيانات في Cloud Firestore مباشرة في collection 'standings'
+    مع استخدام رقم البطولة (ID) الموجود في الرابط كاسم للمستند.
     """
     try:
         if not firebase_admin._apps:
@@ -244,20 +245,25 @@ def update_firestore_db(content_json):
         db_client = firestore.client()
         collection_ref = db_client.collection('standings')
 
-        # نقوم بالمرور على كل بطولة وحفظها كمستند منفصل
-        # هذا يحقق طلبك بأن تكون البيانات مباشرة داخل standings
         for league in content_json:
-            # ننشئ ID فريد للمستند بناءً على رابط البطولة لضمان التحديث وليس التكرار
-            # نستخدم الهاش لضمان أن الاسم مقبول كـ Document ID
-            doc_id = hashlib.md5(league['url'].encode('utf-8')).hexdigest()
+            # === التغيير هنا ===
+            # استخراج الرقم (ID) من الرابط مباشرة ليكون هو اسم المستند
+            # مثال الرابط: https://www.ysscores.com/ar/rank/12345/Name
+            url = league.get('url', '')
+            match = re.search(r'/rank/(\d+)', url)
             
-            # نضيف تاريخ التحديث داخل بيانات البطولة نفسها
+            if match:
+                doc_id = match.group(1) # هذا سيأخذ الرقم 12345
+            else:
+                # في حال نادرة لم يكن هناك رقم، نستخدم الهاش لضمان عدم توقف الكود
+                doc_id = hashlib.md5(url.encode('utf-8')).hexdigest()
+            
             league['last_update'] = datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
             
-            # الحفظ: standings -> {doc_id} -> {data}
+            # الحفظ: standings -> {رقم_البطولة} -> {البيانات}
             collection_ref.document(doc_id).set(league)
 
-        print("✅ Firestore Updated Successfully (Leagues separated).")
+        print("✅ Firestore Updated Successfully (Using IDs from URLs).")
         return True
     except Exception as e:
         print(f"❌ Firestore Error: {e}")
