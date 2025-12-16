@@ -255,37 +255,58 @@ def main_scraper():
     return sorted(final_data, key=lambda x: x['info'].get('championship', ''))
 
 # ==========================================
-# 🆕 دالة الحفظ في Cloud Firestore
+# 🆕 دالة الحفظ في Cloud Firestore (المعدلة للحذف)
 # ==========================================
 def update_firestore_db(matches_list):
     if not db:
         return False
         
     try:
-        # استخدام Batch لتقليل عدد الطلبات وتسريع العملية
+        col_ref = db.collection('today')
+        
+        # 1. جلب قائمة المعرفات الموجودة حالياً في قاعدة البيانات
+        # هذا ضروري لمعرفة ما يجب حذفه
+        existing_docs = col_ref.stream()
+        existing_ids = set(doc.id for doc in existing_docs)
+        
+        # 2. استخراج المعرفات من البيانات الجديدة
+        new_ids = set(str(m['id']) for m in matches_list)
+        
+        # 3. تحديد المعرفات القديمة (التي في القاعدة وليست في الجديد)
+        ids_to_delete = existing_ids - new_ids
+        
         batch = db.batch()
-        collection_ref = db.collection('today')
-
         count = 0
+        
+        # 4. إضافة عمليات الحذف إلى الدفعة (Batch)
+        for doc_id in ids_to_delete:
+            doc_ref = col_ref.document(doc_id)
+            batch.delete(doc_ref)
+            count += 1
+            if count >= 400: # حد الأمان لفايرستور 500
+                batch.commit()
+                batch = db.batch()
+                count = 0
+
+        # 5. إضافة عمليات التحديث/الإضافة للمباريات الجديدة
         for match in matches_list:
-            # استخدام ID المباراة كـ Document ID لضمان التحديث وليس التكرار
-            doc_id = str(match['id']) 
-            doc_ref = collection_ref.document(doc_id)
+            doc_id = str(match['id'])
+            doc_ref = col_ref.document(doc_id)
             
-            # نقوم بحفظ بيانات المباراة كما هي
-            batch.set(doc_ref, match, merge=True)
+            # نستخدم set لكتابة البيانات الجديدة (تحديث كامل)
+            batch.set(doc_ref, match)
             count += 1
             
-            # Firestore يسمح بـ 500 عملية في الـ Batch الواحد
-            if count >= 450:
+            if count >= 400:
                 batch.commit()
                 batch = db.batch()
                 count = 0
         
+        # تنفيذ ما تبقى في الدفعة
         if count > 0:
             batch.commit()
             
-        print(f"✅ Firestore Updated: {len(matches_list)} matches.")
+        print(f"✅ Firestore Updated: {len(matches_list)} active matches | 🗑️ Deleted: {len(ids_to_delete)} old matches.")
         return True
     except Exception as e:
         print(f"❌ Firestore Error: {e}")
