@@ -11,7 +11,7 @@ import datetime
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# === استيراد firestore كما طلبت ===
+# === استيراد firestore ===
 import firebase_admin
 from firebase_admin import credentials, firestore
 from flask import Flask
@@ -75,9 +75,6 @@ def clean_text(text):
     return "0"
 
 def get_only_teams_standings(url, title_hint, logo_hint):
-    """
-    تدخل هذه الدالة لأي رابط (دوري أو كأس) وتبحث عن جداول ترتيب الفرق.
-    """
     full_url = url if url.startswith('http') else f"{BASE_URL}{url}"
     
     champ_data = {
@@ -93,26 +90,21 @@ def get_only_teams_standings(url, title_hint, logo_hint):
         response.encoding = 'utf-8'
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        # محاولة تحسين العنوان والشعار من الصفحة الداخلية
         header = soup.find('div', class_='champion-title-wrap')
         if header:
             if header.find('h3'): champ_data['title'] = clean_text(header.find('h3').text)
             if header.find('img'): champ_data['logo'] = header.find('img')['src']
 
-        # البحث عن الحاوية التي تضم الترتيب
         teams_container = soup.find('div', class_=re.compile(r'teams_rank'))
         search_context = teams_container if teams_container else soup
 
-        # جلب جميع الجداول الموجودة في الصفحة
         tables_found = search_context.find_all('div', class_='ranking-table')
         
         if tables_found:
             for tbl in tables_found:
-                # 🛑 تجاهل جدول الهدافين
                 if 'players-table' in tbl.get('class', []):
                     continue 
 
-                # محاولة معرفة اسم المجموعة (مهم للكؤوس مثل دوري الأبطال)
                 group_name = "General Standings"
                 parent_collapse = tbl.find_parent('div', class_='collapse-item-wrap')
                 if parent_collapse:
@@ -134,7 +126,6 @@ def get_only_teams_standings(url, title_hint, logo_hint):
                         if a_tag:
                             team_link = a_tag.get('href', '')
                     
-                    # 🛑 تأكيد إضافي لتجاهل اللاعبين
                     if "/player/" in team_link:
                         continue 
 
@@ -151,7 +142,6 @@ def get_only_teams_standings(url, title_hint, logo_hint):
                         
                         info_div = name_div.find('div', class_='info')
                         if info_div:
-                            # التحقق مما إذا كان الفريق متأهلاً (شائع في الكؤوس)
                             if info_div.find('div', class_='up-text'):
                                 is_qualified = True
                                 info_div.find('div', class_='up-text').extract()
@@ -160,7 +150,6 @@ def get_only_teams_standings(url, title_hint, logo_hint):
                     if team_name == "Unknown" and not team_id:
                         continue
 
-                    # قراءة الإحصائيات
                     played = clean_text(row.find('div', class_='played').text) if row.find('div', class_='played') else "0"
                     won = clean_text(row.find('div', class_='win').text) if row.find('div', class_='win') else "0"
                     draw = clean_text(row.find('div', class_='equal').text) if row.find('div', class_='equal') else "0"
@@ -182,14 +171,12 @@ def get_only_teams_standings(url, title_hint, logo_hint):
                         }
                     })
                 
-                # إذا وجدنا فرقاً في هذا الجدول، نضيفه
                 if teams_data:
                     champ_data["tables"].append({
                         "group_name": group_name,
                         "teams": teams_data
                     })
             
-            # إذا وجدنا أي جدول فرق في الصفحة، نضع العلامة True
             if champ_data["tables"]:
                 champ_data["has_standings"] = True
 
@@ -209,7 +196,6 @@ def main_scraper():
         return None
 
     championships_list = []
-    # هنا نجلب كل العناصر بغض النظر عن كونها دوري أو كأس
     items = soup.find_all('a', class_='champion-item')
     
     for item in items:
@@ -224,7 +210,6 @@ def main_scraper():
     
     all_data = []
     
-    # استخدام ThreadPool لتسريع فحص العدد الكبير من الروابط
     with ThreadPoolExecutor(max_workers=10) as executor:
         future_to_url = {
             executor.submit(get_only_teams_standings, c['url'], c['title'], c['logo']): c 
@@ -233,7 +218,6 @@ def main_scraper():
         
         for future in as_completed(future_to_url):
             data = future.result()
-            # الشرط الوحيد للإضافة: وجود جدول ترتيب فرق
             if data['has_standings']:
                 all_data.append(data)
     
@@ -245,7 +229,7 @@ def main_scraper():
 
 def update_firestore_db(content_json):
     """
-    دالة لحفظ البيانات في Cloud Firestore
+    دالة لحفظ البيانات في Cloud Firestore مباشرة في collection 'standings'
     """
     try:
         if not firebase_admin._apps:
@@ -258,16 +242,22 @@ def update_firestore_db(content_json):
             firebase_admin.initialize_app(cred)
 
         db_client = firestore.client()
+        collection_ref = db_client.collection('standings')
 
-        # الحفظ في Firestore
-        doc_ref = db_client.collection('standings').document('all_leagues')
-        
-        doc_ref.set({
-            'leagues': content_json,
-            'last_update': datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
-        })
+        # نقوم بالمرور على كل بطولة وحفظها كمستند منفصل
+        # هذا يحقق طلبك بأن تكون البيانات مباشرة داخل standings
+        for league in content_json:
+            # ننشئ ID فريد للمستند بناءً على رابط البطولة لضمان التحديث وليس التكرار
+            # نستخدم الهاش لضمان أن الاسم مقبول كـ Document ID
+            doc_id = hashlib.md5(league['url'].encode('utf-8')).hexdigest()
+            
+            # نضيف تاريخ التحديث داخل بيانات البطولة نفسها
+            league['last_update'] = datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
+            
+            # الحفظ: standings -> {doc_id} -> {data}
+            collection_ref.document(doc_id).set(league)
 
-        print("✅ Firestore Updated Successfully.")
+        print("✅ Firestore Updated Successfully (Leagues separated).")
         return True
     except Exception as e:
         print(f"❌ Firestore Error: {e}")
