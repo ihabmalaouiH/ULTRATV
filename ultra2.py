@@ -11,7 +11,7 @@ import datetime
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# === استيراد firestore كما طلبت ===
+# === تعديل: استيراد firestore ===
 import firebase_admin
 from firebase_admin import credentials, firestore
 from flask import Flask
@@ -25,7 +25,7 @@ FIREBASE_CREDENTIALS_JSON = os.getenv("FIREBASE_CREDENTIALS") # محتوى مل�
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-# فحص كل 5 دقائق
+# فحص كل 5 دقائق (300 ثانية)
 CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", 300)) 
 
 # ==========================================
@@ -67,6 +67,7 @@ session.headers.update(HEADERS)
 
 # ==========================================
 # 🛠️ دوال المعالجة والسحب (Scraping Logic)
+# (نفس المنطق السابق بدون تغيير)
 # ==========================================
 
 def clean_text(text):
@@ -75,9 +76,6 @@ def clean_text(text):
     return "0"
 
 def get_only_teams_standings(url, title_hint, logo_hint):
-    """
-    تدخل هذه الدالة لأي رابط (دوري أو كأس) وتبحث عن جداول ترتيب الفرق.
-    """
     full_url = url if url.startswith('http') else f"{BASE_URL}{url}"
     
     champ_data = {
@@ -93,26 +91,21 @@ def get_only_teams_standings(url, title_hint, logo_hint):
         response.encoding = 'utf-8'
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        # محاولة تحسين العنوان والشعار من الصفحة الداخلية
         header = soup.find('div', class_='champion-title-wrap')
         if header:
             if header.find('h3'): champ_data['title'] = clean_text(header.find('h3').text)
             if header.find('img'): champ_data['logo'] = header.find('img')['src']
 
-        # البحث عن الحاوية التي تضم الترتيب
         teams_container = soup.find('div', class_=re.compile(r'teams_rank'))
         search_context = teams_container if teams_container else soup
 
-        # جلب جميع الجداول الموجودة في الصفحة
         tables_found = search_context.find_all('div', class_='ranking-table')
         
         if tables_found:
             for tbl in tables_found:
-                # 🛑 تجاهل جدول الهدافين
                 if 'players-table' in tbl.get('class', []):
                     continue 
 
-                # محاولة معرفة اسم المجموعة (مهم للكؤوس مثل دوري الأبطال)
                 group_name = "General Standings"
                 parent_collapse = tbl.find_parent('div', class_='collapse-item-wrap')
                 if parent_collapse:
@@ -134,7 +127,6 @@ def get_only_teams_standings(url, title_hint, logo_hint):
                         if a_tag:
                             team_link = a_tag.get('href', '')
                     
-                    # 🛑 تأكيد إضافي لتجاهل اللاعبين
                     if "/player/" in team_link:
                         continue 
 
@@ -151,7 +143,6 @@ def get_only_teams_standings(url, title_hint, logo_hint):
                         
                         info_div = name_div.find('div', class_='info')
                         if info_div:
-                            # التحقق مما إذا كان الفريق متأهلاً (شائع في الكؤوس)
                             if info_div.find('div', class_='up-text'):
                                 is_qualified = True
                                 info_div.find('div', class_='up-text').extract()
@@ -160,7 +151,6 @@ def get_only_teams_standings(url, title_hint, logo_hint):
                     if team_name == "Unknown" and not team_id:
                         continue
 
-                    # قراءة الإحصائيات
                     played = clean_text(row.find('div', class_='played').text) if row.find('div', class_='played') else "0"
                     won = clean_text(row.find('div', class_='win').text) if row.find('div', class_='win') else "0"
                     draw = clean_text(row.find('div', class_='equal').text) if row.find('div', class_='equal') else "0"
@@ -182,14 +172,12 @@ def get_only_teams_standings(url, title_hint, logo_hint):
                         }
                     })
                 
-                # إذا وجدنا فرقاً في هذا الجدول، نضيفه
                 if teams_data:
                     champ_data["tables"].append({
                         "group_name": group_name,
                         "teams": teams_data
                     })
             
-            # إذا وجدنا أي جدول فرق في الصفحة، نضع العلامة True
             if champ_data["tables"]:
                 champ_data["has_standings"] = True
 
@@ -200,7 +188,7 @@ def get_only_teams_standings(url, title_hint, logo_hint):
     return champ_data
 
 def main_scraper():
-    print(f"[*] Fetching ALL championships/cups from {ALL_RANKS_URL}...")
+    print(f"[*] Fetching main rank list from {ALL_RANKS_URL}...")
     try:
         response = session.get(ALL_RANKS_URL, timeout=30)
         soup = BeautifulSoup(response.text, 'html.parser')
@@ -209,7 +197,6 @@ def main_scraper():
         return None
 
     championships_list = []
-    # هنا نجلب كل العناصر بغض النظر عن كونها دوري أو كأس
     items = soup.find_all('a', class_='champion-item')
     
     for item in items:
@@ -220,11 +207,10 @@ def main_scraper():
         if rank_url and "javascript" not in rank_url:
             championships_list.append({"url": rank_url, "title": title, "logo": logo})
 
-    print(f"[*] Found {len(championships_list)} items. Processing details to check for standings...")
+    print(f"[*] Found {len(championships_list)} championships. Processing details...")
     
     all_data = []
     
-    # استخدام ThreadPool لتسريع فحص العدد الكبير من الروابط
     with ThreadPoolExecutor(max_workers=10) as executor:
         future_to_url = {
             executor.submit(get_only_teams_standings, c['url'], c['title'], c['logo']): c 
@@ -233,7 +219,6 @@ def main_scraper():
         
         for future in as_completed(future_to_url):
             data = future.result()
-            # الشرط الوحيد للإضافة: وجود جدول ترتيب فرق
             if data['has_standings']:
                 all_data.append(data)
     
@@ -248,6 +233,7 @@ def update_firestore_db(content_json):
     دالة لحفظ البيانات في Cloud Firestore
     """
     try:
+        # التحقق وتجهيز الاتصال لمرة واحدة
         if not firebase_admin._apps:
             if not FIREBASE_CREDENTIALS_JSON:
                 print("❌ Missing Firebase Credentials")
@@ -257,11 +243,16 @@ def update_firestore_db(content_json):
             cred = credentials.Certificate(cred_dict)
             firebase_admin.initialize_app(cred)
 
+        # إنشاء كائن للتعامل مع قاعدة البيانات
         db_client = firestore.client()
 
-        # الحفظ في Firestore
+        # === طريقة الحفظ في Firestore ===
+        # سنحفظ البيانات في "Collection" اسمه standings
+        # وداخل "Document" اسمه "all_leagues" (أو يمكنك تغييره كما تحب)
+        
         doc_ref = db_client.collection('standings').document('all_leagues')
         
+        # حفظ البيانات (نلفها داخل قاموس لأن فيرستور يحتاج root object)
         doc_ref.set({
             'leagues': content_json,
             'last_update': datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
@@ -292,7 +283,7 @@ def monitor_standings():
             current_data = main_scraper()
             
             if current_data:
-                # 2. إنشاء بصمة (Hash)
+                # 2. إنشاء بصمة (Hash) للبيانات الحالية
                 current_json_str = json.dumps(current_data, sort_keys=True)
                 current_hash = hashlib.md5(current_json_str.encode('utf-8')).hexdigest()
                 
@@ -300,9 +291,10 @@ def monitor_standings():
                 if current_hash != last_hash:
                     print(f"🔄 Change detected! Updating Firestore...")
                     
+                    # حفظ البيانات في فيرستور
                     if update_firestore_db(current_data):
                         last_hash = current_hash
-                        send_telegram_alert(f"✅ Standings Updated on Firestore: {len(current_data)} Competitions processed.")
+                        send_telegram_alert(f"✅ Standings Updated on Firestore: {len(current_data)} Leagues processed.")
                 else:
                     print("💤 No changes in standings.")
             
