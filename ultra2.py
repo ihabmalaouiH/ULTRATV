@@ -6,7 +6,7 @@ import hashlib
 import time
 import datetime
 import sys
-import re  # ✅ تم إضافة مكتبة Regex للمعالجة المرنة
+import re  # ✅ ضروري للتعرف على الجداول المختلفة
 import firebase_admin
 from firebase_admin import credentials, firestore
 from bs4 import BeautifulSoup
@@ -17,7 +17,7 @@ from flask import Flask
 from threading import Thread
 
 # ==========================================
-# 1. تهيئة فيربيز (بنظام ذكي لكشف الأخطاء)
+# 1. تهيئة فيربيز
 # ==========================================
 cred_var = os.getenv("FIREBASE_CREDENTIALS")
 
@@ -28,10 +28,8 @@ else:
         if not cred_var.strip().startswith("{"):
             decoded_bytes = base64.b64decode(cred_var)
             cred_json = json.loads(decoded_bytes.decode("utf-8"))
-            print("✅ Detected Base64 Encoded Key.")
         else:
             cred_json = json.loads(cred_var)
-            print("✅ Detected Direct JSON Key.")
 
         if not firebase_admin._apps:
             cred = credentials.Certificate(cred_json)
@@ -40,22 +38,20 @@ else:
             
     except Exception as e:
         print(f"❌ Firebase Init Failed: {e}")
-        print("💡 Hint: Ensure you pasted the FULL JSON or FULL Base64 string.")
 
-# تعريف قاعدة البيانات
 try:
     db = firestore.client()
 except:
     db = None
 
 # ==========================================
-# 2. سيرفر Flask (لإبقاء البوت حياً)
+# 2. سيرفر Flask
 # ==========================================
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "✅ Bot is Running (Firestore Mode)"
+    return "✅ Bot is Running (Rankings Only)"
 
 def run_server():
     port = int(os.environ.get("PORT", 8080))
@@ -66,11 +62,11 @@ def keep_alive():
     t.start()
 
 # ==========================================
-# 3. إعدادات السحب (Scraping Config)
+# 3. إعدادات السحب
 # ==========================================
 BASE_URL = "https://www.ysscores.com"
 ALL_RANKS_URL = "https://www.ysscores.com/ar/rank"
-CHECK_INTERVAL = 300  # 5 دقائق
+CHECK_INTERVAL = 300 
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
@@ -88,7 +84,7 @@ def clean_text(text):
     return text.strip().replace('\n', ' ').replace('\r', '').replace('  ', ' ') if text else "0"
 
 # ==========================================
-# 4. منطق السحب (تم تحسينه ليشمل كأس العالم)
+# 4. منطق السحب (معدل لكأس العالم + الفلترة)
 # ==========================================
 def get_tournament_data(url, title_hint, logo_hint):
     full_url = url if url.startswith('http') else f"{BASE_URL}{url}"
@@ -103,10 +99,10 @@ def get_tournament_data(url, title_hint, logo_hint):
         "title": title_hint,
         "logo": logo_hint,
         "url": full_url,
-        "has_standings": False,
+        "has_standings": False, # الافتراضي خطأ حتى نجد جدولاً
         "type": "Unknown",
         "groups": [],
-        "matches": []
+        "matches": [] # لن نستخدمه لكن تركناه لعدم كسر الهيكل
     }
 
     try:
@@ -118,13 +114,14 @@ def get_tournament_data(url, title_hint, logo_hint):
             if header.find('h3'): champ_data['title'] = clean_text(header.find('h3').text)
             if header.find('img'): champ_data['logo'] = header.find('img')['src']
 
-        # ✅ تعديل 1: البحث عن الجداول بشكل أكثر مرونة (Regex)
+        # ✅ تحسين البحث عن الجداول (لحل مشكلة كأس العالم)
         tables_found = soup.find_all('div', class_=re.compile(r'ranking-table'))
         valid_tables = [t for t in tables_found if 'players-table' not in t.get('class', [])]
 
         if valid_tables:
             champ_data["type"] = "League"
-            champ_data["has_standings"] = True
+            champ_data["has_standings"] = True # ✅ تم العثور على ترتيب
+            
             for tbl in valid_tables:
                 group_name = "General"
                 parent = tbl.find_parent('div', class_='collapse-item-wrap')
@@ -133,15 +130,14 @@ def get_tournament_data(url, title_hint, logo_hint):
                     if head and head.find('span'): group_name = clean_text(head.find('span').text)
                 
                 teams_list = []
-                # ✅ تعديل 2: البحث عن الصفوف بشكل مرن
+                # ✅ تحسين البحث عن الصفوف
                 rows = tbl.find_all('div', class_=re.compile(r'rank-row'))
                 for row in rows:
                     if 'header' in row.get('class', []): continue
                     
-                    # ✅ تعديل 3: البحث عن اسم الفريق (قد يكون name أو team-name)
+                    # ✅ تحسين البحث عن الاسم (name أو team-name)
                     name_div = row.find('div', class_=re.compile(r'(name|team-name)'))
                     
-                    # فلتر اللاعبين
                     if name_div and name_div.find('a') and "/player/" in name_div.find('a')['href']: continue 
 
                     rank = clean_text(row.find('div', class_='number').text) if row.find('div', class_='number') else "-"
@@ -152,19 +148,16 @@ def get_tournament_data(url, title_hint, logo_hint):
                         if name_div.find('a'): t_id = name_div.find('a')['href'].split('/')[-2]
                         info = name_div.find('div', class_='info')
                         
-                        # في بعض الحالات الاسم يكون خارج info
                         if info:
                             if info.find('div', class_='up-text'):
                                 qualified = True
                                 info.find('div', class_='up-text').extract()
                             t_name = clean_text(info.text)
                         else:
-                            # محاولة جلب الاسم مباشرة إذا لم يوجد div.info
                             t_name = clean_text(name_div.text)
 
                     if t_name == "Unknown" or t_name == "": continue
 
-                    # البحث عن الإحصائيات (تتحمل عدم وجود الكلاسات بدقة)
                     played = clean_text(row.find('div', class_='played').text) if row.find('div', class_='played') else "0"
                     won = clean_text(row.find('div', class_='win').text) if row.find('div', class_='win') else "0"
                     draw = clean_text(row.find('div', class_='equal').text) if row.find('div', class_='equal') else "0"
@@ -180,24 +173,8 @@ def get_tournament_data(url, title_hint, logo_hint):
                 if teams_list:
                     champ_data["groups"].append({"name": group_name, "teams": teams_list})
 
-        if not champ_data["groups"]:
-            matches_box = soup.find_all('div', class_='item-match')
-            if not matches_box: matches_box = soup.find_all('a', class_='match-container')
-            if matches_box:
-                champ_data["type"] = "Cup"
-                for m in matches_box:
-                    try:
-                        teams = m.find_all('div', class_='team-name')
-                        if len(teams) >= 2:
-                            home = clean_text(teams[0].text)
-                            away = clean_text(teams[1].text)
-                            res = m.find('div', class_='result')
-                            score = clean_text(res.text) if res else "-:-"
-                            champ_data["matches"].append({"home": home, "away": away, "score": score})
-                    except: continue
-            else:
-                champ_data["type"] = "Empty"
     except: pass
+    
     return champ_data
 
 def main_scraper():
@@ -228,12 +205,15 @@ def main_scraper():
         }
         for future in as_completed(future_to_url):
             res = future.result()
-            all_data.append(res)
+            # ✅ الفلتر الحاسم: نضيف البيانات فقط إذا كان هناك ترتيب (has_standings == True)
+            if res and res.get('has_standings') and res.get('groups'):
+                all_data.append(res)
     
+    print(f"[*] Filtered down to {len(all_data)} championships with standings.")
     return all_data
 
 # ==========================================
-# 5. التحديث والحلقة (Loop)
+# 5. التحديث والحلقة
 # ==========================================
 def update_firestore(data_list):
     if not db:
@@ -247,11 +227,10 @@ def update_firestore(data_list):
             doc_ref = col.document(str(item['doc_id']))
             batch.set(doc_ref, item)
             count += 1
-            if count >= 400: # حد فايرستور
+            if count >= 400:
                 batch.commit()
                 batch = db.batch()
                 count = 0
-                print(f"Saved batch of 400...")
         if count > 0:
             batch.commit()
         print(f"✅ Firestore Updated: {len(data_list)} docs.")
@@ -262,7 +241,7 @@ def update_firestore(data_list):
 
 def monitor():
     last_hash = ""
-    print("🚀 Bot Started Loop.")
+    print("🚀 Bot Started Loop (Rankings Only).")
     while True:
         try:
             data = main_scraper()
