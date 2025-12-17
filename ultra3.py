@@ -4,7 +4,8 @@ from urllib3.util.retry import Retry
 from bs4 import BeautifulSoup
 import json
 import datetime
-from datetime import timedelta
+# ✅ إضافة timezone هنا لحل مشكلة التحذير
+from datetime import timedelta, timezone
 import re
 import sys
 import time
@@ -323,9 +324,11 @@ def monitor_matches():
         try:
             current_data = main_scraper()
             
-            # ✅ ضبط التوقيت حسب الجزائر (UTC+1) لضمان التحديث عند منتصف الليل بالضبط
-            # إذا كان السيرفر في توقيت غرينتش (UTC)، فإن الساعة 23:00 تعني 00:00 في الجزائر
-            utc_now = datetime.datetime.utcnow()
+            # ✅✅ تعديل: استخدام التوقيت الواعي بالمنطقة الزمنية لتفادي التحذير
+            # نحصل على وقت UTC الحالي بطريقة متوافقة مع النسخ الحديثة
+            utc_now = datetime.datetime.now(timezone.utc)
+            
+            # إضافة ساعة للحصول على توقيت الجزائر
             algeria_now = utc_now + timedelta(hours=1)
             current_date = algeria_now.date()
             
@@ -339,7 +342,7 @@ def monitor_matches():
                 if current_hash != last_hash or force_update:
                     if force_update:
                         print(f"🔄 NEW DAY ({current_date}): Clearing old data first...")
-                        # ✅✅ هنا التغيير المهم: حذف البيانات القديمة عند بداية اليوم الجديد
+                        # ✅✅ حذف البيانات القديمة عند بداية اليوم الجديد
                         clear_old_matches()
                         last_update_day = current_date # تحديث تاريخ آخر تحديث
                     else:
