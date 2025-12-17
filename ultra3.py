@@ -20,6 +20,7 @@ import os
 # ==========================================
 # ⚙️ إعدادات البوت وقاعدة البيانات
 # ==========================================
+# ✅ جلب مفاتيح Firebase من متغيرات البيئة
 FIREBASE_CREDENTIALS_JSON = os.getenv("FIREBASE_CREDENTIALS")
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
@@ -48,7 +49,7 @@ app = Flask('')
 
 @app.route('/')
 def home():
-    return "I am alive! The Bot is running with Firestore (Collection: today)..."
+    return "I am alive! The Bot is running with Firestore..."
 
 def run():
     app.run(host='0.0.0.0', port=8080)
@@ -258,18 +259,21 @@ def update_firestore_db(matches_list):
         return False
         
     try:
+        # استخدام Batch لضمان السرعة في التحديث
         batch = db.batch()
-        # ✅ تم تغيير اسم المجموعة من 'matches' إلى 'today'
-        collection_ref = db.collection('today') 
+        collection_ref = db.collection('matches')
 
         count = 0
         for match in matches_list:
+            # ✅ استخدام ID المباراة كـ Document ID لتجنب التكرار وضمان التحديث
             doc_id = str(match['id']) 
             doc_ref = collection_ref.document(doc_id)
             
+            # حفظ بيانات المباراة
             batch.set(doc_ref, match, merge=True)
             count += 1
             
+            # Firestore Limit: 500 ops per batch
             if count >= 450:
                 batch.commit()
                 batch = db.batch()
@@ -278,7 +282,7 @@ def update_firestore_db(matches_list):
         if count > 0:
             batch.commit()
             
-        print(f"✅ Firestore Updated (Collection: today): {len(matches_list)} matches.")
+        print(f"✅ Firestore Updated: {len(matches_list)} today.")
         return True
     except Exception as e:
         print(f"❌ Firestore Error: {e}")
@@ -296,7 +300,7 @@ def monitor_matches():
     last_update_day = datetime.date.min
     
     print(f"🚀 Bot Started monitoring {BASE_URL}...")
-    send_telegram_alert("🚀 Bot Started on Render (Firestore: today).")
+    send_telegram_alert("🚀 Bot Started on Render (Firestore).")
 
     while True:
         try:
@@ -315,6 +319,7 @@ def monitor_matches():
                     else:
                          print("🔄 Change detected! Updating...")
 
+                    # ✅ الحفظ في Cloud Firestore بدلاً من GitHub
                     if update_firestore_db(current_data):
                         last_hash = current_hash
                         last_update_day = current_date 
