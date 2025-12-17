@@ -104,14 +104,19 @@ def clean_text(text):
         return text.strip().replace('\n', ' ').replace('\r', '').replace('  ', ' ')
     return None
 
+# ==========================================
+# ✅ الدالة المحدثة (للعمل مع التصميم الجديد)
+# ==========================================
 def get_match_deep_details(match_url):
     if not match_url: return None
+    # تصحيح الرابط إذا لم يكن كاملاً
     full_url = match_url if match_url.startswith('http') else f"{BASE_URL}{match_url}"
     
     try:
         response = session.get(full_url, timeout=10)
         soup = BeautifulSoup(response.text, 'html.parser')
         
+        # استخراج ID المباراة
         match_id = "0"
         id_search = re.search(r'/match/(\d+)', full_url)
         if id_search:
@@ -125,104 +130,117 @@ def get_match_deep_details(match_url):
             "channels": []
         }
 
-        team_divs = soup.find_all('div', class_=re.compile(r'(team|club)'))
-        main_teams = [t for t in team_divs if t.find('img')][:2]
+        # 1. استخراج الفرق (التصميم الجديد)
+        # نبحث عن الحاوية الرئيسية للفرق
+        profile_details = soup.find('div', class_='match-profile-details')
+        if profile_details:
+            team_items = profile_details.find_all('div', class_='team-item')
+            if len(team_items) >= 2:
+                # الفريق الأول (عادة اليمين/صاحب الأرض)
+                t1_h3 = team_items[0].find('h3')
+                t1_img_tag = team_items[0].find('img')
+                
+                t1_name = t1_h3.get_text(strip=True) if t1_h3 else "فريق 1"
+                t1_img = t1_img_tag['src'] if t1_img_tag else ""
+                
+                # الفريق الثاني (اليسار/الضيف)
+                t2_h3 = team_items[1].find('h3')
+                t2_img_tag = team_items[1].find('img')
+
+                t2_name = t2_h3.get_text(strip=True) if t2_h3 else "فريق 2"
+                t2_img = t2_img_tag['src'] if t2_img_tag else ""
+
+                match_details["teams"]["home"] = {"name": t1_name, "logo": t1_img}
+                match_details["teams"]["away"] = {"name": t2_name, "logo": t2_img}
         
-        if len(main_teams) >= 2:
-            t1_name = main_teams[0].get_text(strip=True)
-            t1_img = main_teams[0].find('img')['src']
-            t2_name = main_teams[1].get_text(strip=True)
-            t2_img = main_teams[1].find('img')['src']
-            match_details["teams"]["home"] = {"name": t1_name, "logo": t1_img}
-            match_details["teams"]["away"] = {"name": t2_name, "logo": t2_img}
-        else:
+        # إذا فشل في إيجاد الفرق بالطريقة الجديدة، نستخدم العنوان كاحتياط
+        if not match_details["teams"]:
             title_tag = soup.find('title')
-            match_details["teams"]["full_title"] = title_tag.text.strip() if title_tag else "مباراة"
+            match_details["teams"]["full_title"] = title_tag.text.strip() if title_tag else "مباراة غير معروفة"
 
-        target_keys = {"البطولة": "championship", "الجولة": "round", "ملعب المباراة": "stadium", 
-                       "وقت المباراة": "time", "تاريخ المباراة": "date"}
-        info_block = soup.find('div', class_='match-info') or soup
-        for label in info_block.find_all(string=re.compile(r'البطولة|الجولة|ملعب|وقت|تاريخ')):
-            clean_lbl = clean_text(label)
-            for key_ar, key_en in target_keys.items():
-                if key_ar in clean_lbl:
-                    parent = label.find_parent()
-                    val_elem = parent.find_next_sibling() or parent.find('span', class_='value')
-                    val = clean_text(val_elem.text) if val_elem else clean_text(parent.get_text().replace(key_ar, ''))
-                    
-                    if key_en == "time":
-                        val = convert_to_algeria_time(val)
-                        
-                    match_details["info"][key_en] = val
+        # 2. استخراج المعلومات (البطولة، الوقت، القنوات، المعلق)
+        # الموقع الجديد يضع كل معلومة داخل div class="match-info-item"
+        info_items = soup.find_all('div', class_='match-info-item')
+        
+        # قاموس لترجمة العناوين العربية إلى مفاتيح JSON
+        key_map = {
+            "البطولة": "championship",
+            "الجولة": "round",
+            "ملعب المباراة": "stadium",
+            "وقت المباراة": "time",
+            "تاريخ المباراة": "date",
+            "القناة": "channel",
+            "المعلق": "commentator"
+        }
 
+        temp_channels = {"channel": "غير محدد", "commentator": "غير محدد"}
+        channel_found = False
+
+        for item in info_items:
+            title_div = item.find('div', class_='title')
+            content_div = item.find('div', class_='content')
+            
+            if title_div and content_div:
+                raw_title = title_div.get_text(strip=True)
+                raw_value = content_div.get_text(strip=True)
+                
+                # البحث عن المفتاح المناسب
+                for ar_key, en_key in key_map.items():
+                    if ar_key in raw_title:
+                        # معالجة خاصة للوقت
+                        if en_key == "time":
+                            match_details["info"][en_key] = convert_to_algeria_time(raw_value)
+                        # معالجة القنوات والمعلقين
+                        elif en_key == "channel":
+                            temp_channels["channel"] = clean_text(raw_value)
+                            channel_found = True
+                        elif en_key == "commentator":
+                            temp_channels["commentator"] = clean_text(raw_value)
+                            channel_found = True
+                        else:
+                            match_details["info"][en_key] = clean_text(raw_value)
+
+        # إضافة القنوات إذا وجدت
+        if channel_found:
+            match_details["channels"].append(temp_channels)
+
+        # 3. حالة المباراة والنتيجة (من التصميم الجديد)
         current_score = "- : -"
-        match_status = ""
-
-        s1_tag = soup.find('div', class_=re.compile(r'first-team-result')) or soup.find('span', class_=re.compile(r'first-team-result'))
-        s2_tag = soup.find('div', class_=re.compile(r'second-team-result')) or soup.find('span', class_=re.compile(r'second-team-result'))
+        match_status = "لم تبدأ"
         
-        if s1_tag and s2_tag:
-            s1 = clean_text(s1_tag.text)
-            s2 = clean_text(s2_tag.text)
-            if s1.isdigit() and s2.isdigit():
-                current_score = f"{s1} - {s2}"
-        else:
-             main_res = soup.find('div', class_='main-result')
-             if main_res:
-                 bs = main_res.find_all('b')
-                 if len(bs) >= 2:
-                     current_score = f"{clean_text(bs[0].text)} - {clean_text(bs[1].text)}"
-
-        finished_keywords = soup.find_all(string=re.compile(r'(إنتهت|نهاية|Full Time)'))
-        if finished_keywords:
-             match_status = "إنتهت المباراة"
-
-        if not match_status:
-            live_status = soup.find('span', class_=re.compile(r'live-match-status'))
-            if live_status and live_status.text.strip():
-                match_status = clean_text(live_status.text)
-
-        if not match_status:
-            end_status_candidates = soup.find_all('span', class_=re.compile(r'result-status-text'))
-            for status_item in end_status_candidates:
-                if status_item.text.strip() and ":" not in status_item.text:
-                    match_status = clean_text(status_item.text)
-                    break
-        
-        if not match_status or ":" in match_status:
-             match_status = "لم تبدأ"
+        # البحث في div match-details الذي يقع بين الفريقين
+        details_box = soup.find('div', class_='match-details')
+        if details_box:
+            # التحقق من الحالة (مثل "تبدأ قريباً" أو المؤقت)
+            status_span = details_box.find('span', class_='timer')
+            if status_span:
+                status_text = status_span.get_text(strip=True)
+                # إذا كان النص يحتوي على أرقام فقط (عداد تنازلي) نعتبرها لم تبدأ
+                if not re.search(r'\d{2}\s*:\s*\d{2}', status_text): 
+                     match_status = status_text
+            
+            # محاولة العثور على النتيجة إذا كانت المباراة جارية أو منتهية
+            # عادة تكون داخل هذا الصندوق كنص مباشر أو عناصر b
+            box_text = details_box.get_text(strip=True)
+            score_match = re.search(r'(\d+)\s*[:\-]\s*(\d+)', box_text)
+            
+            if score_match:
+                current_score = f"{score_match.group(1)} - {score_match.group(2)}"
+                # إذا وجدنا نتيجة، نعتبر المباراة جارية إلا إذا وجدنا كلمة انتهت
+                if "انتهت" not in box_text and "Full Time" not in box_text:
+                    match_status = "جارية"
+            
+            # فحص إضافي لحالة النهاية من كامل الصفحة
+            if soup.find(string=re.compile(r'(إنتهت المباراة|Full Time)')):
+                match_status = "إنتهت المباراة"
 
         match_details["info"]["current_score"] = current_score
         match_details["info"]["match_status"] = match_status
 
-        section_header = soup.find(string=re.compile(r'القنوات الناقلة والمعلقين'))
-        if section_header:
-            block_container = section_header.find_parent('div', class_='match-block-item')
-            if block_container:
-                channel_rows = block_container.find_all('div', class_='match-info-item sub')
-                for row in channel_rows:
-                    title_div = row.find('div', class_='title')
-                    content_div = row.find('div', class_='content')
-                    match_details["channels"].append({
-                        "channel": clean_text(title_div.text) if title_div else "غير محدد",
-                        "commentator": clean_text(content_div.text) if content_div else "غير محدد"
-                    })
-
-        if not match_details["channels"]:
-            comm_single = soup.find(string=re.compile(r'^المعلق$'))
-            ch_single = soup.find(string=re.compile(r'^القناة$'))
-            if comm_single and ch_single:
-                c_val = ch_single.find_parent().find_next_sibling()
-                m_val = comm_single.find_parent().find_next_sibling()
-                if c_val and m_val:
-                    match_details["channels"].append({
-                        "channel": clean_text(c_val.text),
-                        "commentator": clean_text(m_val.text)
-                    })
-
         return match_details
 
-    except Exception:
+    except Exception as e:
+        print(f"Error extracting details for {full_url}: {e}")
         return None
 
 def main_scraper():
@@ -237,7 +255,7 @@ def main_scraper():
     links = set()
     for a in soup.find_all('a', href=re.compile(r'/match/\d+')):
         links.add(a['href'])
-    
+     
     links_list = list(links)
     total = len(links_list)
     print(f"[*] Found {total} matches.")
@@ -298,7 +316,7 @@ def send_telegram_alert(message):
 def monitor_matches():
     last_hash = ""
     last_update_day = datetime.date.min
-    
+     
     print(f"🚀 Bot Started monitoring {BASE_URL}...")
     send_telegram_alert("🚀 Bot Started on Render (Firestore).")
 
@@ -306,7 +324,7 @@ def monitor_matches():
         try:
             current_data = main_scraper()
             current_date = datetime.date.today()
-            
+             
             if current_data:
                 current_json_str = json.dumps(current_data, sort_keys=True)
                 current_hash = hashlib.md5(current_json_str.encode('utf-8')).hexdigest()
@@ -325,7 +343,7 @@ def monitor_matches():
                         last_update_day = current_date 
                 else:
                     print("💤 No changes.")
-            
+             
             time.sleep(CHECK_INTERVAL)
 
         except Exception as e:
