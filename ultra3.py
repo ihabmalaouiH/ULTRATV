@@ -261,7 +261,7 @@ def update_firestore_db(matches_list):
     try:
         # استخدام Batch لضمان السرعة في التحديث
         batch = db.batch()
-        collection_ref = db.collection('matches')
+        collection_ref = db.collection('today')
 
         count = 0
         for match in matches_list:
