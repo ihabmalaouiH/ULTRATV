@@ -252,8 +252,25 @@ def main_scraper():
     return sorted(final_data, key=lambda x: x['info'].get('championship', ''))
 
 # ==========================================
-# 🆕 دالة الحفظ في Cloud Firestore
+# 🆕 دوال التعامل مع Cloud Firestore
 # ==========================================
+
+# ✅ دالة جديدة: حذف جميع الوثائق في مجموعة 'today' (تستخدم عند بداية يوم جديد)
+def clear_old_matches():
+    if not db: return
+    try:
+        print("🧹 Clearing old matches from Firestore...")
+        collection_ref = db.collection('today')
+        # جلب جميع الوثائق لحذفها
+        docs = collection_ref.list_documents(page_size=100)
+        deleted_count = 0
+        for doc in docs:
+            doc.delete()
+            deleted_count += 1
+        print(f"✅ Cleared {deleted_count} old matches.")
+    except Exception as e:
+        print(f"❌ Error clearing matches: {e}")
+
 def update_firestore_db(matches_list):
     if not db:
         return False
@@ -305,24 +322,32 @@ def monitor_matches():
     while True:
         try:
             current_data = main_scraper()
-            current_date = datetime.date.today()
+            
+            # ✅ ضبط التوقيت حسب الجزائر (UTC+1) لضمان التحديث عند منتصف الليل بالضبط
+            # إذا كان السيرفر في توقيت غرينتش (UTC)، فإن الساعة 23:00 تعني 00:00 في الجزائر
+            utc_now = datetime.datetime.utcnow()
+            algeria_now = utc_now + timedelta(hours=1)
+            current_date = algeria_now.date()
             
             if current_data:
                 current_json_str = json.dumps(current_data, sort_keys=True)
                 current_hash = hashlib.md5(current_json_str.encode('utf-8')).hexdigest()
                 
+                # ✅ التحقق مما إذا دخلنا يوماً جديداً (حسب توقيت الجزائر)
                 force_update = (current_date > last_update_day)
                 
                 if current_hash != last_hash or force_update:
                     if force_update:
-                         print("🔄 NEW DAY: Forcing update.")
+                        print(f"🔄 NEW DAY ({current_date}): Clearing old data first...")
+                        # ✅✅ هنا التغيير المهم: حذف البيانات القديمة عند بداية اليوم الجديد
+                        clear_old_matches()
+                        last_update_day = current_date # تحديث تاريخ آخر تحديث
                     else:
-                         print("🔄 Change detected! Updating...")
+                        print("🔄 Change detected! Updating...")
 
-                    # ✅ الحفظ في Cloud Firestore بدلاً من GitHub
+                    # ✅ الحفظ في Cloud Firestore
                     if update_firestore_db(current_data):
                         last_hash = current_hash
-                        last_update_day = current_date 
                 else:
                     print("💤 No changes.")
             
