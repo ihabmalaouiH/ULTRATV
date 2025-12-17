@@ -4,6 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>لوحة التحكم - ULTRA TV (الجزائر)</title>
+
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+
 <style>
   :root {
     --bg-dark: #0f172a;
@@ -53,7 +58,7 @@
   .btn-primary { background: var(--primary); border-color: var(--primary); color: white; }
   .btn-success { background: var(--success); border-color: var(--success); color: white; }
   .btn-danger { background: var(--danger); border-color: var(--danger); color: white; }
-  .btn-github { background: #24292e; border-color: #24292e; color: white; }
+  .btn-firebase { background: #ffca28; border-color: #ffca28; color: #000; } /* استبدال لون GitHub */
 
   /* --- شريط الإحصائيات --- */
   .stats-bar { display: flex; gap: 15px; margin-top: 10px; font-weight: bold; color: var(--text-muted); font-size: 13px; flex-wrap: wrap; }
@@ -110,6 +115,19 @@
   .server-row input { flex: 1; }
   .server-count-badge { background: var(--primary); color: white; padding: 2px 6px; border-radius: 4px; font-size: 10px; margin-right: 5px; display: none; }
 
+  /* --- Login Overlay --- */
+  #login-overlay {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: var(--bg-dark); z-index: 9999;
+        display: flex; justify-content: center; align-items: center;
+        flex-direction: column; color: white;
+  }
+  #login-box {
+        background: var(--bg-card); padding: 40px; border-radius: 15px; border: 1px solid var(--border);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5); width: 90%; max-width: 400px;
+        text-align: center;
+  }
+
   #toast-container { position: fixed; bottom: 20px; left: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px; }
   .toast { background: var(--bg-card); border-left: 4px solid var(--primary); padding: 12px 20px; border-radius: 4px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 10px; animation: slideIn 0.3s ease-out forwards; color: #fff; }
   .toast.success { border-color: var(--success); }
@@ -132,7 +150,7 @@
     .controls select { flex-grow: 1; order: 2; }
     .controls button:first-child { flex-grow: 1; order: 1; }
     .controls .spacer { display: none; }
-    .controls button.btn-primary, .controls button.btn-github, .controls button.btn-danger, .controls button.btn-success { 
+    .controls button.btn-primary, .controls button.btn-firebase, .controls button.btn-danger, .controls button.btn-success { 
         flex-grow: 1; order: 4; font-size: 12px; padding: 0 8px;
     }
   }
@@ -140,63 +158,76 @@
 </head>
 <body>
 
-<h1>🎯 لوحة التحكم <span style="font-size:14px; background:var(--success); color:black; padding:2px 8px; border-radius:4px;">ULTRA TV</span></h1>
-
-<div class="dashboard-grid">
-    <div class="main-content">
-        <div class="controls">
-            <button class="btn-primary" onclick="fetchMatches()">🔄 تحديث</button>
-            <select id="statusFilter" onchange="filterMatches()">
-                <option value="all">🔍 الكل</option>
-                <option value="Live">🔴 مباشر</option>
-                <option value="Finished">🏁 انتهت</option>
-                <option value="Not Started">⏳ قادمة</option>
-            </select>
-            <div class="spacer" style="flex-grow: 1;"></div> 
-            <input type="text" id="searchInput" placeholder="بحث (فريق، دوري)...">
-            <button class="btn-primary" onclick="processBulkInput()">📝 دمج</button>
-            <button class="btn-github" onclick="loadFromGitHub()">📥 تحميل</button>
-            <button class="btn-danger" onclick="clearFileInGitHub()">🗑️ مسح</button>
-            <button class="btn-success" onclick="saveToGitHub()">💾 نشر</button>
-        </div>
-
-        <div class="stats-bar">
-            <span class="stat-item">المباريات: <b id="statTotal">0</b></span>
-            <span class="stat-item" style="color:#fca5a5">مباشر: <b id="statLive">0</b></span>
-            <span class="stat-item" style="color:#22c55e">تم تحديد: <b id="statSelected">0</b></span>
-        </div>
-
-        <div class="bulk-container" style="margin-top:15px; display:none;" id="bulkSection">
-            <textarea id="bulkInput" placeholder="لصق بيانات يدوية: الفريق 1 ضد الفريق 2, القناة, المعلق" style="height:80px; width:100%;"></textarea>
-        </div>
-
-        <div class="table-container" style="margin-top: 15px;">
-            <table id="matchesTable">
-                <thead>
-                    <tr>
-                        <th width="40">✔️</th>
-                        <th width="70">الحالة</th>
-                        <th>الفريق 1</th>
-                        <th width="70">النتيجة</th>
-                        <th>الفريق 2</th>
-                        <th>الدوري</th>
-                        <th width="90">الوقت</th>
-                        <th>القناة الناقلة</th>
-                        <th>المعلق</th>
-                        <th width="50">سرفرات</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
+<div id="login-overlay">
+    <div id="login-box">
+        <h2 style="color: var(--primary);">تسجيل دخول الأدمن 🔒</h2>
+        <input type="email" id="login-email" placeholder="البريد الإلكتروني" style="margin-bottom: 10px; width:100%;">
+        <input type="password" id="login-pass" placeholder="كلمة المرور" style="margin-bottom: 20px; width:100%;">
+        <button id="login-btn" class="btn-primary" style="width: 100%;">دخول</button>
+        <p id="login-error" style="color: var(--danger); margin-top: 10px; font-size: 0.9em;"></p>
     </div>
+</div>
 
-    <div class="output-area">
-        <div class="controls" style="margin-bottom: 10px; justify-content: space-between;">
-            <strong>📦 JSON الناتج</strong>
-            <button onclick="copyJSON()" style="padding: 4px 8px; font-size: 11px;">📋 نسخ</button>
+<div id="main-dashboard" style="display:none;"> <h1>🎯 لوحة التحكم <span style="font-size:14px; background:var(--success); color:black; padding:2px 8px; border-radius:4px;">ULTRA TV</span></h1>
+
+    <div class="dashboard-grid">
+        <div class="main-content">
+            <div class="controls">
+                <button class="btn-primary" onclick="fetchMatches()">🔄 تحديث (من Firebase Today)</button>
+                <select id="statusFilter" onchange="filterMatches()">
+                    <option value="all">🔍 الكل</option>
+                    <option value="Live">🔴 مباشر</option>
+                    <option value="Finished">🏁 انتهت</option>
+                    <option value="Not Started">⏳ قادمة</option>
+                </select>
+                <div class="spacer" style="flex-grow: 1;"></div> 
+                <input type="text" id="searchInput" placeholder="بحث (فريق، دوري)...">
+                <button class="btn-primary" onclick="processBulkInput()">📝 دمج</button>
+                <button class="btn-firebase" onclick="loadFromFirebase()">📥 عرض المحفوظ (Matches)</button>
+                <button class="btn-danger" onclick="clearFirebase()">🗑️ مسح الكل</button>
+                <button class="btn-success" onclick="saveToFirebase()">🔥 نشر في Firebase</button>
+                
+                <button onclick="firebase.auth().signOut()" style="background:transparent; border:1px solid #999;">خروج</button>
+            </div>
+
+            <div class="stats-bar">
+                <span class="stat-item">المباريات: <b id="statTotal">0</b></span>
+                <span class="stat-item" style="color:#fca5a5">مباشر: <b id="statLive">0</b></span>
+                <span class="stat-item" style="color:#22c55e">تم تحديد: <b id="statSelected">0</b></span>
+            </div>
+
+            <div class="bulk-container" style="margin-top:15px; display:none;" id="bulkSection">
+                <textarea id="bulkInput" placeholder="لصق بيانات يدوية: الفريق 1 ضد الفريق 2, القناة, المعلق" style="height:80px; width:100%;"></textarea>
+            </div>
+
+            <div class="table-container" style="margin-top: 15px;">
+                <table id="matchesTable">
+                    <thead>
+                        <tr>
+                            <th width="40">✔️</th>
+                            <th width="70">الحالة</th>
+                            <th>الفريق 1</th>
+                            <th width="70">النتيجة</th>
+                            <th>الفريق 2</th>
+                            <th>الدوري</th>
+                            <th width="90">الوقت</th>
+                            <th>القناة الناقلة</th>
+                            <th>المعلق</th>
+                            <th width="50">سرفرات</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
         </div>
-        <textarea id="output" readonly></textarea>
+
+        <div class="output-area">
+            <div class="controls" style="margin-bottom: 10px; justify-content: space-between;">
+                <strong>📦 JSON الناتج</strong>
+                <button onclick="copyJSON()" style="padding: 4px 8px; font-size: 11px;">📋 نسخ</button>
+            </div>
+            <textarea id="output" readonly></textarea>
+        </div>
     </div>
 </div>
 
@@ -218,16 +249,21 @@
 <div id="toast-container"></div>
 
 <script>
-// --- Config ---
-const config = {
-    apiUrl: "https://raw.githubusercontent.com/ihabmalaouiH/ULTRATV/refs/heads/main/today.json",
-    github: { 
-        token: "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", 
-        repo: "ihabmalaouiH/ULTRATV", 
-        filePath: "sys_res_92a.json", 
-        branch: "main" 
-    }
+// ⚠️⚠️⚠️ إعدادات Firebase هنا ⚠️⚠️⚠️
+const firebaseConfig = {
+  apiKey: "AIzaSyBBf2ock2SHzeLu27oh0rlxwgLmxHINjIk",
+  authDomain: "ultra-tv-c23ea.firebaseapp.com",
+  projectId: "ultra-tv-c23ea",
+  storageBucket: "ultra-tv-c23ea.firebasestorage.app",
+  messagingSenderId: "253161044450",
+  appId: "1:253161044450:web:66a15956cde240c1de21bb",
+  measurementId: "G-3GX39BE7C1"
 };
+
+// تهيئة Firebase
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+const auth = firebase.auth();
 
 // --- Elements ---
 const searchInput = document.getElementById("searchInput");
@@ -236,12 +272,104 @@ const matchesTbody = document.querySelector("#matchesTable tbody");
 const outputTextarea = document.getElementById("output");
 let currentMatchRow = null;
 
-// --- Init ---
+// --- Init & Auth ---
+document.addEventListener('DOMContentLoaded', () => {
+    const loginOverlay = document.getElementById('login-overlay');
+    const mainDashboard = document.getElementById('main-dashboard');
+
+    auth.onAuthStateChanged((user) => {
+        if (user) {
+            loginOverlay.style.display = 'none';
+            mainDashboard.style.display = 'block';
+            initialize();
+            showToast(`مرحباً ${user.email}`, 'success');
+        } else {
+            loginOverlay.style.display = 'flex';
+            mainDashboard.style.display = 'none';
+        }
+    });
+
+    document.getElementById('login-btn').addEventListener('click', () => {
+        const email = document.getElementById('login-email').value;
+        const pass = document.getElementById('login-pass').value;
+        auth.signInWithEmailAndPassword(email, pass).catch(e => {
+            document.getElementById('login-error').textContent = "خطأ: " + e.message;
+        });
+    });
+});
+
 function initialize() {
     matchesTbody.addEventListener('change', updateStatsAndJSON);
     matchesTbody.addEventListener('input', updateStatsAndJSON);
     searchInput.addEventListener('input', filterMatches);
-    fetchMatches();
+    // جلب البيانات من مجموعة today في فايربيس بدلاً من API
+    fetchMatches(); 
+}
+
+// --- Firebase Functions ---
+
+async function saveToFirebase() {
+    const val = outputTextarea.value;
+    if(!val || val==="[]") return showToast("لا توجد بيانات (JSON فارغ)", "error");
+    
+    if(!confirm("سيتم حذف المباريات القديمة (في matches) واستبدالها بالقائمة الحالية. هل أنت متأكد؟")) return;
+
+    showToast("جاري النشر في Firebase...", "info");
+    
+    try {
+        const matches = JSON.parse(val);
+        
+        // 1. حذف المباريات القديمة من مجموعة matches
+        const snapshot = await db.collection('matches').get();
+        const batchDelete = db.batch();
+        snapshot.docs.forEach(doc => batchDelete.delete(doc.ref));
+        await batchDelete.commit();
+
+        // 2. إضافة المباريات الجديدة
+        let count = 0;
+        for (const match of matches) {
+            await db.collection('matches').add(match);
+            count++;
+        }
+
+        showToast(`✅ تم نشر ${count} مباراة بنجاح!`, "success");
+    } catch (e) {
+        showToast("❌ خطأ أثناء الحفظ: " + e.message, "error");
+    }
+}
+
+async function clearFirebase() {
+    if(!confirm("⚠️ تحذير: سيتم مسح جميع المباريات من قاعدة البيانات نهائياً!")) return;
+    
+    try {
+        const snapshot = await db.collection('matches').get();
+        const batch = db.batch();
+        snapshot.docs.forEach(doc => batch.delete(doc.ref));
+        await batch.commit();
+        
+        outputTextarea.value = "[]";
+        showToast("🗑️ تم مسح قاعدة البيانات", "success");
+    } catch (e) {
+        showToast("خطأ: " + e.message, "error");
+    }
+}
+
+async function loadFromFirebase() {
+    showToast("جاري جلب المحفوظ من Firebase...", "info");
+    try {
+        const snapshot = await db.collection('matches').orderBy('startTime').get();
+        if (snapshot.empty) {
+            outputTextarea.value = "[]";
+            showToast("قاعدة البيانات فارغة", "warning");
+            return;
+        }
+        
+        const matches = snapshot.docs.map(doc => doc.data());
+        outputTextarea.value = JSON.stringify(matches, null, 2);
+        showToast(`📥 تم جلب ${matches.length} مباراة محفوظة`, "success");
+    } catch (e) {
+        showToast("خطأ شبكة: " + e.message, "error");
+    }
 }
 
 // --- Helper: Parse Arabic Date (NO Timezone conversion) ---
@@ -265,8 +393,6 @@ function parseArabicMatchTime(dateStr, timeStr) {
         if (hours === 12) hours = 0;
         if (modifier === 'PM') hours += 12;
         
-        // --- تمت إزالة تحويل التوقيت ليبقى كما هو في المصدر ---
-        
         const dateObj = new Date(year, month, day, hours, parseInt(minutes));
         return dateObj;
     } catch (e) {
@@ -275,17 +401,19 @@ function parseArabicMatchTime(dateStr, timeStr) {
     }
 }
 
-// --- Main Fetch Logic ---
+// --- Main Fetch Logic (UPDATED TO FETCH FROM FIREBASE 'today' COLLECTION) ---
 async function fetchMatches() {
-    matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">⏳ جاري جلب البيانات...</td></tr>`;
+    matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">⏳ جاري جلب البيانات من Firebase (today)...</td></tr>`;
     try {
-        const res = await fetch(`${config.apiUrl}?t=${new Date().getTime()}`);
-        if (!res.ok) throw new Error(`HTTP Error: ${res.status}`);
-        const allMatches = await res.json(); 
+        // ✅ جلب البيانات من مجموعة today
+        const snapshot = await db.collection('today').get();
 
-        if (!Array.isArray(allMatches) || allMatches.length === 0) {
-            return matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">لا توجد مباريات.</td></tr>`;
+        if (snapshot.empty) {
+            return matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">لا توجد مباريات في مجموعة 'today'.</td></tr>`;
         }
+
+        // تحويل المستندات إلى مصفوفة
+        const allMatches = snapshot.docs.map(doc => doc.data());
 
         allMatches.forEach(m => {
             const dateObj = parseArabicMatchTime(m.info.date, m.info.time);
@@ -294,11 +422,11 @@ async function fetchMatches() {
 
         allMatches.sort((a, b) => a._timestamp - b._timestamp);
         renderMatches(allMatches);
-        showToast(`تم تحميل ${allMatches.length} مباراة`, 'success');
+        showToast(`تم تحميل ${allMatches.length} مباراة من Firebase`, 'success');
 
     } catch (err) {
         matchesTbody.innerHTML = `<tr><td colspan="10" style="color:var(--danger)">⚠️ خطأ: ${err.message}</td></tr>`;
-        showToast("فشل الاتصال", 'error');
+        showToast("فشل الاتصال بـ Firebase", 'error');
     }
 }
 
@@ -330,14 +458,12 @@ function renderMatches(matches) {
         const timeStr = matchDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
 
         // --- STATUS LOGIC START (PURE API) ---
-        // استخدام النص القادم من API مباشرة (match_status)
         let rawStatus = info.match_status || "لم تبدأ";
         let apiScore = info.current_score || "VS";
 
         let statusBadgeClass = "status-upcoming";
         let jsonStatus = "Not Started";
 
-        // تحليل الحالة لتلوين البادج فقط، مع الاعتماد الكلي على نص API
         if (rawStatus.includes("انتهت") || rawStatus.includes("إنتهت") || rawStatus.includes("نهاية")) {
             statusBadgeClass = "status-finished";
             jsonStatus = "Finished";
@@ -345,7 +471,6 @@ function renderMatches(matches) {
             statusBadgeClass = "status-upcoming";
             jsonStatus = "Not Started";
         } else {
-            // أي حالة أخرى نصية (مثل: الشوط الأول، استراحة، دقيقة 80) تعتبر مباشر
             statusBadgeClass = "status-live";
             jsonStatus = "Live";
             if (!apiScore || apiScore === "VS") apiScore = "0 - 0";
@@ -354,7 +479,6 @@ function renderMatches(matches) {
 
         const defaultLogo = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z'/%3E%3C/svg%3E";
 
-        // --- Channel Logic ---
         let channelCellHTML = '';
         let commCellHTML = '';
         
@@ -495,7 +619,7 @@ function filterMatches() {
 function updateStatsAndJSON() {
     const allRows = matchesTbody.querySelectorAll('tr');
     const selectedRows = matchesTbody.querySelectorAll("input[type='checkbox']:checked");
-     
+      
     document.getElementById("statTotal").innerText = allRows.length;
     document.getElementById("statSelected").innerText = selectedRows.length;
     document.getElementById("statLive").innerText = Array.from(allRows).filter(r => r.dataset.jsonStatus === "Live").length;
@@ -526,6 +650,8 @@ function updateStatsAndJSON() {
             league: d.league, 
             channel: channelValue,
             commentator: commInput,
+            status: d.jsonStatus, 
+            score: "", // <--- ✅ النتيجة فارغة دائماً هنا
             servers: servers 
         });
     });
@@ -586,47 +712,6 @@ function showToast(msg, type = 'info') {
         setTimeout(() => toast.remove(), 300);
     }, 3000);
 }
-
-// --- GitHub Functions ---
-async function updateGitHubFile(content, msg) {
-    const URL = `https://api.github.com/repos/${config.github.repo}/contents/${config.github.filePath}`;
-    const headers = {"Authorization": `token ${config.github.token}`, "Content-Type": "application/json"};
-    try {
-        const refRes = await fetch(`${URL}?ref=${config.github.branch}`, { headers });
-        let sha = refRes.ok ? (await refRes.json()).sha : null;
-        const res = await fetch(URL, {method: "PUT", headers, body: JSON.stringify({ message: msg, content, branch: config.github.branch, sha })});
-        if(res.ok) return {success:true};
-        const err = await res.json();
-        return {success:false, error: err.message};
-    } catch (e) { return {success:false, error: "Network Error"}; }
-}
-
-async function saveToGitHub() {
-    const val = outputTextarea.value;
-    if(!val || val==="[]") return showToast("لا توجد بيانات", "error");
-    showToast("جاري الحفظ...", "info");
-    const res = await updateGitHubFile(btoa(unescape(encodeURIComponent(val))), "update matches.json");
-    if(res.success) showToast("✅ تم الحفظ!", "success");
-    else showToast("❌ فشل: " + res.error, "error");
-}
-
-async function clearFileInGitHub() {
-    if(!confirm("مسح الملف؟")) return;
-    const res = await updateGitHubFile(btoa("[]"), "clear matches");
-    if(res.success) { outputTextarea.value = "[]"; showToast("🗑️ تم المسح", "success"); } 
-    else showToast("خطأ: " + res.error, "error");
-}
-
-async function loadFromGitHub() {
-    showToast("جاري التحميل...", "info");
-    try {
-        const res = await fetch(`https://api.github.com/repos/${config.github.repo}/contents/${config.github.filePath}?ref=${config.github.branch}`, {headers: {"Authorization": `token ${config.github.token}`}});
-        if(res.ok) { outputTextarea.value = atob((await res.json()).content); showToast("📥 تم التحميل", "success"); } 
-        else showToast("الملف غير موجود", "error");
-    } catch(e) { showToast("خطأ شبكة", "error"); }
-}
-
-initialize();
 </script>
 </body>
 </html>
