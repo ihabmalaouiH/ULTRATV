@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لوحة تحكم (الإصدار الذهبي)</title>
+    <title>لوحة تحكم Ultra TV (Firebase Edition)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+
     <style>
         :root {
             --main-bg: #fff5f5; --header-bg: #870000; --text-color: #ffffff;
@@ -31,7 +36,7 @@
         h1, h2 { margin: 0; }
         h3, h4, h5 { color: var(--header-bg); }
         .form-section, .output-section { background: var(--card-bg); padding: 25px; border-radius: 12px; box-shadow: var(--shadow); }
-        input[type="text"], input[type="url"], input[type="password"], select, textarea { width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; box-sizing: border-box; background-color: white; }
+        input[type="text"], input[type="url"], input[type="password"], input[type="email"], select, textarea { width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; box-sizing: border-box; background-color: white; }
         input:focus, select:focus, textarea:focus { outline: none; border-color: var(--header-bg); }
         
         button { background-color: var(--btn-bg); color: var(--btn-text); border: 2px solid var(--btn-border); padding: 10px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.3s; }
@@ -39,8 +44,10 @@
         button.action-btn { background: transparent; border: 1px solid var(--border-color); color: var(--card-text); padding: 6px 10px; font-size: 1em; margin: 0 2px; }
         button:disabled { opacity: 0.4; cursor: not-allowed; }
         button.delete-btn { border-color: #ffb8b8; color: #d90429; }
-        button.github-save-btn { background-color: #28a745; color: white; border-color: #28a745; }
-        button.github-save-btn:hover { background-color: #218838; border-color: #218838; }
+        
+        /* Firebase Button Style */
+        button.firebase-btn { background-color: #ffca28; color: #000; border-color: #ffca28; }
+        button.firebase-btn:hover { background-color: #ffb300; border-color: #ffb300; }
         
         .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
         .card-header-title { display: flex; align-items: center; gap: 8px; cursor: pointer;}
@@ -69,7 +76,6 @@
         .server-item span { flex-grow: 1; }
         .server-item .actions { display: flex; gap: 4px; }
         
-        /* JSON Output ALIGNED RIGHT */
         .output-section pre { 
             background-color: #2d2d2d; 
             color: #f0f0f0; 
@@ -79,50 +85,59 @@
             word-wrap: break-word; 
             max-height: 600px; 
             overflow-y: auto; 
-            text-align: right !important; /* Changed to Right */
-            direction: ltr !important; /* Kept LTR for code safety, but it will sit on the right */
+            text-align: right !important;
+            direction: ltr !important; 
         }
 
         .form-container.collapsed .form-fields { display: none; }
         .form-container.collapsed .toggle-icon { transform: rotate(-90deg); }
         .form-container .card-header-title { padding: 0; margin-bottom: 10px; }
         
+        /* Modals */
         .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.5); }
         .modal-content { background-color: #ffffff; margin: 10% auto; padding: 25px; border: 1px solid #888; width: 90%; max-width: 500px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
         .modal-header { padding-bottom: 10px; border-bottom: 1px solid var(--border-color); margin-bottom: 15px; }
         .close-btn { color: #aaa; float: left; font-size: 28px; font-weight: bold; cursor: pointer; }
         
+        /* Login Overlay */
+        #login-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--header-bg); z-index: 9999;
+            display: flex; justify-content: center; align-items: center;
+            flex-direction: column; color: white;
+        }
+        #login-box {
+            background: white; padding: 40px; border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2); width: 90%; max-width: 400px;
+            text-align: center; color: #333;
+        }
+
         #toast-container { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 2000; display: flex; flex-direction: column; align-items: center; gap: 10px; }
         .toast { padding: 12px 20px; border-radius: 8px; color: white; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.2); opacity: 0; transition: opacity 0.5s, transform 0.5s; transform: translateY(20px); }
         .toast.show { opacity: 1; transform: translateY(0); }
         .toast.success { background-color: #28a745; }
         .toast.error { background-color: #dc3545; }
-        
-        #scroll-top-btn { 
-            position: fixed; 
-            bottom: 30px; 
-            left: 30px; 
-            background: var(--header-bg); 
-            color: white; 
-            width: 50px; 
-            height: 50px; 
-            border-radius: 50%; 
-            border: 2px solid white;
-            font-size: 1.5rem; 
-            cursor: pointer; 
-            display: none; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
-            z-index: 2100;
-            transition: transform 0.2s, background-color 0.2s;
-        }
-        #scroll-top-btn:hover { transform: scale(1.1); background-color: #a00000; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header-container">
+
+    <div id="login-overlay">
+        <div id="login-box">
+            <h2 style="color: var(--header-bg);">تسجيل دخول الأدمن 🔒</h2>
+            <p>لوحة التحكم محمية، يرجى تسجيل الدخول للمتابعة</p>
+            <input type="email" id="login-email" placeholder="البريد الإلكتروني" style="margin-bottom: 10px;">
+            <input type="password" id="login-pass" placeholder="كلمة المرور" style="margin-bottom: 20px;">
+            <button id="login-btn" style="width: 100%;">دخول</button>
+            <p id="login-error" style="color: red; margin-top: 10px; font-size: 0.9em;"></p>
+        </div>
+    </div>
+
+    <div class="container" id="main-dashboard" style="display: none;"> <div class="header-container">
             <div class="header">
-                <h1>لوحة تحكم (الإصدار الذهبي)</h1>
+                <div style="position: absolute; left: 20px; top: 20px;">
+                    <button onclick="firebase.auth().signOut()" style="background: rgba(255,255,255,0.2); border: 1px solid white; color: white; font-size: 0.8em;">تسجيل خروج</button>
+                </div>
+                <h1>لوحة تحكم (Firebase Edition)</h1>
             </div>
             <div class="stats-bar">
                 <div class="stat-item">📦 الباقات: <span class="stat-number" id="stat-cats">0</span></div>
@@ -139,12 +154,13 @@
                 <input type="text" id="search-bar" placeholder="🔍 ابحث عن باقة أو قناة..." style="width: 100%; border-color: var(--header-bg);">
             </div>
             
-            <div class="form-group" style="display: flex; gap: 10px;">
-                <button id="import-btn" style="flex: 1;">📂 استيراد</button>
-                <button id="export-btn" style="flex: 1;">📁 تصدير</button>
-                <button id="github-settings-btn" style="flex: 1;">⚙️ إعدادات الربط</button>
+            <div class="form-group" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <button id="firebase-sync-btn" class="firebase-btn" style="flex: 2;">🔥 حفظ التغييرات في Firebase</button>
+                <button id="import-btn" style="flex: 1;">📂 استيراد JSON</button>
+                <button id="export-btn" style="flex: 1;">📁 تصدير JSON</button>
             </div>
-            <div class="form-group" style="background: var(--stats-bg); padding: 15px; border-radius: 8px; border: 1px solid var(--btn-border);">
+            
+            <div class="form-group" style="background: var(--stats-bg); padding: 15px; border-radius: 8px; border: 1px solid var(--btn-border); margin-top: 15px;">
                 <h3>إضافة باقة جديدة</h3>
                 <input type="text" id="category-name" placeholder="اسم الباقة" required><br>
                 <input type="url" id="category-logo" placeholder="رابط شعار الباقة" required style="margin-top: 10px;">
@@ -153,10 +169,9 @@
             <div id="categories-container"></div>
         </div>
         <div class="output-section">
-            <h2>النتيجة النهائية (JSON)</h2>
+            <h2>البيانات الحالية (Local Data)</h2>
             <button id="generate-json-btn">نسخ الكود</button>
-            <button id="github-save-btn" class="github-save-btn" style="display: none;">⬆️ حفظ إلى GitHub</button>
-            <button id="clear-all-btn" class="delete-btn" style="float: left; padding: 10px 18px;">مسح الكل</button>
+            <button id="clear-all-btn" class="delete-btn" style="float: left; padding: 10px 18px;">إعادة تحميل من Firebase</button>
             <pre><code id="json-output">[]</code></pre>
         </div>
     </div>
@@ -223,57 +238,128 @@
             <button id="save-bulk-servers-btn">إضافة السيرفرات</button>
         </div>
     </div>
-    
-    <div id="githubSettingsModal" class="modal">
-         <div class="modal-content">
-            <div class="modal-header"><span class="close-btn" data-modal="github">&times;</span><h2>إعدادات الربط بـ GitHub</h2></div>
-            <div style="padding: 20px 0; display: flex; flex-direction: column; gap: 10px;">
-                <label>اسم المستخدم (Your Username):</label>
-                <input type="text" id="github-user" placeholder="e.g., mohamed-ali">
-                <label>اسم المستودع (Repo Name):</label>
-                <input type="text" id="github-repo" placeholder="e.g., ultra-tv-api">
-                <label>مسار الملف (File Path):</label>
-                <input type="text" id="github-path" placeholder="e.g., channels.json">
-                <label>المفتاح السري (Personal Access Token):</label>
-                <input type="password" id="github-token" placeholder="يبدأ بـ ghp_...">
-            </div>
-            <button id="save-github-settings-btn">حفظ الإعدادات</button>
-        </div>
-    </div>
 
     <div id="toast-container"></div>
-    <button id="scroll-top-btn" title="العودة للأعلى">⬆️</button>
 
     <script>
+    // ⚠️⚠️⚠️ منطقة الإعدادات - ضع بياناتك هنا ⚠️⚠️⚠️
+    const firebaseConfig = {
+  apiKey: "AIzaSyBBf2ock2SHzeLu27oh0rlxwgLmxHINjIk",
+  authDomain: "ultra-tv-c23ea.firebaseapp.com",
+  projectId: "ultra-tv-c23ea",
+  storageBucket: "ultra-tv-c23ea.firebasestorage.app",
+  messagingSenderId: "253161044450",
+  appId: "1:253161044450:web:66a15956cde240c1de21bb",
+  measurementId: "G-3GX39BE7C1"
+};
+
+    // تهيئة Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    const auth = firebase.auth();
+
     document.addEventListener('DOMContentLoaded', () => {
+        // Elements
         const categoriesContainer = document.getElementById('categories-container');
         const jsonOutput = document.getElementById('json-output');
         const searchBar = document.getElementById('search-bar');
-        const githubSaveBtn = document.getElementById('github-save-btn');
+        const loginOverlay = document.getElementById('login-overlay');
+        const mainDashboard = document.getElementById('main-dashboard');
+        
+        // Modals
         const modals = {
             edit: document.getElementById('editModal'),
             server: document.getElementById('editServerModal'),
             copy: document.getElementById('copyChannelModal'),
             bulk: document.getElementById('bulkAddServerModal'),
-            github: document.getElementById('githubSettingsModal'),
             move: document.getElementById('moveItemModal')
         };
+        
         let data = [];
         let context = {};
-        let githubConfig = {};
 
-        // 1. Scroll Top
-        const scrollTopBtn = document.getElementById('scroll-top-btn');
-        window.onscroll = () => {
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                scrollTopBtn.style.display = "block";
+        // --- Auth Logic ---
+        auth.onAuthStateChanged((user) => {
+            if (user) {
+                loginOverlay.style.display = 'none';
+                mainDashboard.style.display = 'grid'; // Show Dashboard
+                loadFromFirebase(); // Auto load data
+                showToast(`مرحباً ${user.email}`, 'success');
             } else {
-                scrollTopBtn.style.display = "none";
+                loginOverlay.style.display = 'flex';
+                mainDashboard.style.display = 'none';
             }
-        };
-        scrollTopBtn.onclick = () => { window.scrollTo({ top: 0, behavior: 'smooth' }); };
+        });
 
-        // 2. Stats Update
+        document.getElementById('login-btn').addEventListener('click', () => {
+            const email = document.getElementById('login-email').value;
+            const pass = document.getElementById('login-pass').value;
+            const errorMsg = document.getElementById('login-error');
+            errorMsg.textContent = "جاري الاتصال...";
+            
+            auth.signInWithEmailAndPassword(email, pass)
+            .catch((error) => {
+                errorMsg.textContent = "خطأ: " + error.message;
+            });
+        });
+
+        // --- Firebase Logic (Sync) ---
+        async function loadFromFirebase() {
+            showToast("جاري جلب البيانات من Firebase...", "success");
+            try {
+                // جلب البيانات مرتبة حسب orderId
+                const snapshot = await db.collection('categories').orderBy('orderId').get();
+                if (!snapshot.empty) {
+                    data = snapshot.docs.map(doc => doc.data());
+                    render();
+                    updateJsonOutput();
+                    showToast("تم تحديث اللوحة من قاعدة البيانات");
+                } else {
+                    showToast("قاعدة البيانات فارغة، يمكنك البدء بالإضافة", "error");
+                    data = [];
+                    render();
+                }
+            } catch (e) {
+                showToast("فشل الاتصال بـ Firebase: " + e.message, "error");
+            }
+        }
+
+        async function syncToFirebase() {
+            const btn = document.getElementById('firebase-sync-btn');
+            btn.disabled = true;
+            btn.textContent = "⏳ جاري الرفع...";
+            
+            try {
+                // 1. جلب المستندات الحالية لحذفها (لتجنب التكرار)
+                const snapshot = await db.collection('categories').get();
+                const batchDelete = db.batch();
+                snapshot.docs.forEach((doc) => {
+                    batchDelete.delete(doc.ref);
+                });
+                await batchDelete.commit();
+
+                // 2. رفع البيانات الجديدة
+                let count = 0;
+                for (let i = 0; i < data.length; i++) {
+                    const category = data[i];
+                    category.orderId = i; // ضمان الترتيب
+                    await db.collection('categories').add(category);
+                    count++;
+                }
+                
+                showToast(`✅ تم حفظ ${count} باقة في Firebase بنجاح!`);
+            } catch (e) {
+                showToast("خطأ أثناء الحفظ: " + e.message, "error");
+            } finally {
+                btn.disabled = false;
+                btn.textContent = "🔥 حفظ التغييرات في Firebase";
+            }
+        }
+
+        document.getElementById('firebase-sync-btn').addEventListener('click', syncToFirebase);
+
+        // --- Existing Dashboard Logic ---
+        
         const updateStats = () => {
             const catCount = data.length;
             let chCount = 0, hiddenCount = 0, maintCount = 0;
@@ -305,12 +391,6 @@
             }, 3000);
         };
 
-        const saveData = () => { localStorage.setItem('channelsApiData', JSON.stringify(data)); };
-        const loadData = () => {
-            const savedData = localStorage.getItem('channelsApiData');
-            if (savedData) { try { data = JSON.parse(savedData); } catch(e) { data = []; } }
-            render();
-        };
         const updateJsonOutput = () => { jsonOutput.textContent = JSON.stringify(data, null, 2); };
 
         const render = () => {
@@ -535,24 +615,24 @@
                 
                 } else if (action === 'toggle-visibility') {
                     data[catIdx].channels[chIdx].isHidden = !data[catIdx].channels[chIdx].isHidden;
-                    render(); saveData(); showToast(data[catIdx].channels[chIdx].isHidden ? 'تم إخفاء القناة' : 'تم إظهار القناة');
+                    render(); showToast(data[catIdx].channels[chIdx].isHidden ? 'تم إخفاء القناة' : 'تم إظهار القناة');
                 } else if (action === 'toggle-maintenance') {
                     data[catIdx].channels[chIdx].isMaintenance = !data[catIdx].channels[chIdx].isMaintenance;
-                    render(); saveData(); showToast(data[catIdx].channels[chIdx].isMaintenance ? 'تم تفعيل وضع الصيانة' : 'تم تعطيل وضع الصيانة');
+                    render(); showToast(data[catIdx].channels[chIdx].isMaintenance ? 'تم تفعيل وضع الصيانة' : 'تم تعطيل وضع الصيانة');
 
                 } else if (action === 'delete') {
                     if (confirm('هل أنت متأكد من الحذف؟')) {
                         if (type === 'server') data[catIdx].channels[chIdx].servers.splice(srvIdx, 1);
                         else if (type === 'channel') data[catIdx].channels.splice(chIdx, 1);
                         else if (type === 'category') data.splice(catIdx, 1);
-                        render(); saveData(); showToast('تم الحذف', 'error');
+                        render(); showToast('تم الحذف', 'error');
                     }
                 } else if (button.classList.contains('add-channel-btn')) {
                     const card = button.closest('.form-container');
                     const nameInput = card.querySelector('.channel-name-input'), logoInput = card.querySelector('.channel-logo-input');
                     if (nameInput.value.trim() && logoInput.value.trim()) {
                         data[catIdx].channels.push({ name: nameInput.value.trim(), logoUrl: logoInput.value.trim(), servers: [], isHidden: false, isMaintenance: false });
-                        render(); saveData(); showToast('تمت إضافة القناة');
+                        render(); showToast('تمت إضافة القناة');
                     } else { showToast('الرجاء إدخال اسم وشعار القناة', 'error'); }
                 } else if (button.classList.contains('add-server-btn')) {
                     const card = button.closest('.form-container');
@@ -560,7 +640,7 @@
                     if (nameInput.value.trim() && urlInput.value.trim()) {
                         if (!data[catIdx].channels[chIdx].servers) { data[catIdx].channels[chIdx].servers = []; }
                         data[catIdx].channels[chIdx].servers.push({ [nameInput.value.trim()]: urlInput.value.trim() });
-                        render(); saveData(); showToast('تمت إضافة السيرفر');
+                        render(); showToast('تمت إضافة السيرفر');
                     } else { showToast('الرجاء إدخال اسم ورابط السيرفر', 'error'); }
                 } else if (button.classList.contains('add-bulk-server-btn')) {
                     context = { catIndex, chIndex };
@@ -588,7 +668,7 @@
 
             if (type === 'category') {
                 if (newPos === oldCatIdx || newPos === oldCatIdx + 1) {
-                     modals.move.style.display = 'none'; return;
+                      modals.move.style.display = 'none'; return;
                 }
                 const itemToMove = data.splice(oldCatIdx, 1)[0];
                 const adjustedPos = (oldCatIdx < newPos) ? newPos - 1 : newPos;
@@ -600,7 +680,7 @@
                 
                 let adjustedPos = newPos;
                 if (oldCatIdx === newCatIdx && oldChIdx < newPos) {
-                     adjustedPos = newPos - 1;
+                      adjustedPos = newPos - 1;
                 }
                 
                 if (!data[newCatIdx].channels) data[newCatIdx].channels = [];
@@ -608,7 +688,7 @@
             }
 
             modals.move.style.display = 'none';
-            render(); saveData(); showToast('تم نقل العنصر بنجاح');
+            render(); showToast('تم نقل العنصر بنجاح');
         });
 
         document.getElementById('add-category-btn').addEventListener('click', () => {
@@ -616,7 +696,7 @@
             if (nameInput.value.trim() && logoInput.value.trim()) {
                 data.push({ name: nameInput.value.trim(), logoUrl: logoInput.value.trim(), channels: [] });
                 nameInput.value = ''; logoInput.value = '';
-                render(); saveData(); showToast('تمت إضافة الباقة بنجاح');
+                render(); showToast('تمت إضافة الباقة بنجاح');
             } else { showToast('الرجاء إدخال اسم وشعار الباقة', 'error'); }
         });
         
@@ -642,7 +722,7 @@
                     try {
                         const importedData = JSON.parse(event.target.result);
                         if (Array.isArray(importedData)) {
-                            data = importedData; render(); saveData();
+                            data = importedData; render();
                             showToast('تم استيراد الملف بنجاح');
                         } else { showToast('الملف غير صالح', 'error'); }
                     } catch (err) { showToast('خطأ في قراءة الملف', 'error'); }
@@ -650,70 +730,6 @@
                 reader.readAsText(file);
             };
             input.click();
-        });
-
-        const loadGithubConfig = () => {
-            const config = localStorage.getItem('githubConfig');
-            if(config) {
-                githubConfig = JSON.parse(config);
-                document.getElementById('github-user').value = githubConfig.user || '';
-                document.getElementById('github-repo').value = githubConfig.repo || '';
-                document.getElementById('github-path').value = githubConfig.path || '';
-                document.getElementById('github-token').value = githubConfig.token || '';
-                githubSaveBtn.style.display = 'inline-block';
-            }
-        };
-
-        document.getElementById('github-settings-btn').addEventListener('click', () => { modals.github.style.display = 'block'; });
-
-        document.getElementById('save-github-settings-btn').addEventListener('click', () => {
-            githubConfig = {
-                user: document.getElementById('github-user').value.trim(),
-                repo: document.getElementById('github-repo').value.trim(),
-                path: document.getElementById('github-path').value.trim(),
-                token: document.getElementById('github-token').value.trim()
-            };
-            if (!githubConfig.user || !githubConfig.repo || !githubConfig.path || !githubConfig.token) {
-                showToast('الرجاء ملء جميع الحقول', 'error'); return;
-            }
-            localStorage.setItem('githubConfig', JSON.stringify(githubConfig));
-            githubSaveBtn.style.display = 'inline-block';
-            modals.github.style.display = 'none';
-            showToast('تم حفظ الإعدادات بنجاح');
-        });
-
-        githubSaveBtn.addEventListener('click', async () => {
-            const { user, repo, path, token } = githubConfig;
-            if (!user || !repo || !path || !token) { showToast('الرجاء ضبط إعدادات الربط أولاً', 'error'); return; }
-
-            githubSaveBtn.textContent = 'جاري الحفظ...';
-            githubSaveBtn.disabled = true;
-
-            const apiUrl = `https://api.github.com/repos/${user}/${repo}/contents/${path}`;
-            const fileContent = JSON.stringify(data, null, 2);
-            const encodedContent = btoa(unescape(encodeURIComponent(fileContent)));
-            
-            try {
-                let sha;
-                try {
-                    const getRes = await fetch(apiUrl, { headers: { 'Authorization': `token ${token}` } });
-                    if (getRes.ok) { const fileData = await getRes.json(); sha = fileData.sha; }
-                } catch (e) { console.log(e); }
-
-                const commitMessage = `تحديث ملف القنوات - ${new Date().toLocaleString()}`;
-                const body = { message: commitMessage, content: encodedContent, sha: sha };
-                
-                const putRes = await fetch(apiUrl, {
-                    method: 'PUT',
-                    headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
-                    body: JSON.stringify(body)
-                });
-
-                if (putRes.ok) { showToast('تم الحفظ في GitHub بنجاح!'); }
-                else { const error = await putRes.json(); showToast(`فشل الحفظ: ${error.message}`, 'error'); }
-
-            } catch (err) { showToast(`خطأ فادح: ${err.message}`, 'error'); } 
-            finally { githubSaveBtn.textContent = '⬆️ حفظ إلى GitHub'; githubSaveBtn.disabled = false; }
         });
 
         document.querySelectorAll('.close-btn').forEach(btn => {
@@ -732,7 +748,7 @@
             const item = type === 'category' ? data[catIdx] : data[catIdx].channels[chIdx];
             item.name = newName; item.logoUrl = newLogoUrl;
             modals.edit.style.display = 'none';
-            render(); saveData(); showToast('تم حفظ التعديلات');
+            render(); showToast('تم حفظ التعديلات');
         });
         
         document.getElementById('save-server-edit-btn').addEventListener('click', () => {
@@ -743,7 +759,7 @@
             if (!newName || !newUrl) { showToast('لا يمكن ترك الحقول فارغة', 'error'); return; }
             data[catIdx].channels[chIdx].servers[srvIdx] = { [newName]: newUrl };
             modals.server.style.display = 'none';
-            render(); saveData(); showToast('تم حفظ تعديلات السيرفر');
+            render(); showToast('تم حفظ تعديلات السيرفر');
         });
 
         document.getElementById('confirm-copy-btn').addEventListener('click', () => {
@@ -755,7 +771,7 @@
             const deepCopiedChannel = JSON.parse(JSON.stringify(channelToCopy));
             data[destCatIdx].channels.push(deepCopiedChannel);
             modals.copy.style.display = 'none';
-            render(); saveData();
+            render(); 
             showToast(`تم نسخ قناة "${channelToCopy.name}" بنجاح`);
         });
         
@@ -771,7 +787,7 @@
                 existingServers.push({ [serverName]: link.trim() });
             });
             modals.bulk.style.display = 'none';
-            render(); saveData();
+            render();
             showToast(`تمت إضافة ${links.length} سيرفرات بنجاح`);
         });
 
@@ -782,20 +798,14 @@
                 setTimeout(() => { btn.textContent = 'نسخ الكود'; }, 2000);
             }).catch(() => showToast('فشل النسخ', 'error'));
         });
+
         document.getElementById('clear-all-btn').addEventListener('click', () => {
-            if (confirm('تحذير: سيتم حذف جميع البيانات نهائياً. هل أنت متأكد؟')) {
-                data = []; 
-                localStorage.removeItem('channelsApiData');
-                localStorage.removeItem('githubConfig');
-                render(); 
-                githubSaveBtn.style.display = 'none';
-                showToast('تم مسح جميع البيانات', 'error');
+            // الآن يقوم بإعادة التحميل من Firebase بدلاً من الحذف فقط
+            if (confirm('هل تريد تجاهل التغييرات المحلية وإعادة التحميل من Firebase؟')) {
+                loadFromFirebase();
             }
         });
-
-        loadGithubConfig();
-        loadData();
     });
     </script>
 </body>
-</html>
+    </html>
