@@ -20,12 +20,9 @@ import os
 # ==========================================
 # ⚙️ إعدادات البوت وقاعدة البيانات
 # ==========================================
-# ✅ جلب مفاتيح Firebase (نحتاج فقط ملف الاعتمادات لـ Firestore)
 FIREBASE_CREDENTIALS_JSON = os.getenv("FIREBASE_CREDENTIALS")
-
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
-
 CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", 60))
 
 # ✅ تهيئة الاتصال بـ Cloud Firestore
@@ -34,11 +31,9 @@ if FIREBASE_CREDENTIALS_JSON:
     try:
         cred_dict = json.loads(FIREBASE_CREDENTIALS_JSON)
         cred = credentials.Certificate(cred_dict)
-        
         if not firebase_admin._apps:
-            firebase_admin.initialize_app(cred) # 👈 لا نحتاج URL هنا
-            
-        db = firestore.client() # 👈 إنشاء عميل Firestore
+            firebase_admin.initialize_app(cred)
+        db = firestore.client()
         print("✅ Cloud Firestore Initialized Successfully.")
     except Exception as e:
         print(f"❌ Firestore Init Error: {e}")
@@ -52,7 +47,7 @@ app = Flask('')
 
 @app.route('/')
 def home():
-    return "I am alive! The Bot is running with Firestore..."
+    return "I am alive! The Bot is running with Auto-Delete old matches..."
 
 def run():
     app.run(host='0.0.0.0', port=8080)
@@ -255,58 +250,60 @@ def main_scraper():
     return sorted(final_data, key=lambda x: x['info'].get('championship', ''))
 
 # ==========================================
-# 🆕 دالة الحفظ في Cloud Firestore (المعدلة للحذف)
+# 🆕 دالة الحفظ في Cloud Firestore مع الحذف (Sync)
 # ==========================================
 def update_firestore_db(matches_list):
     if not db:
         return False
         
     try:
-        col_ref = db.collection('today')
-        
-        # 1. جلب قائمة المعرفات الموجودة حالياً في قاعدة البيانات
-        # هذا ضروري لمعرفة ما يجب حذفه
-        existing_docs = col_ref.stream()
-        existing_ids = set(doc.id for doc in existing_docs)
-        
-        # 2. استخراج المعرفات من البيانات الجديدة
-        new_ids = set(str(m['id']) for m in matches_list)
-        
-        # 3. تحديد المعرفات القديمة (التي في القاعدة وليست في الجديد)
-        ids_to_delete = existing_ids - new_ids
-        
+        collection_ref = db.collection('today')
         batch = db.batch()
         count = 0
-        
-        # 4. إضافة عمليات الحذف إلى الدفعة (Batch)
-        for doc_id in ids_to_delete:
-            doc_ref = col_ref.document(doc_id)
-            batch.delete(doc_ref)
-            count += 1
-            if count >= 400: # حد الأمان لفايرستور 500
-                batch.commit()
-                batch = db.batch()
-                count = 0
 
-        # 5. إضافة عمليات التحديث/الإضافة للمباريات الجديدة
+        # 1. جلب جميع المعرفات (IDs) الموجودة حالياً في قاعدة البيانات
+        existing_docs = collection_ref.stream()
+        existing_ids = set()
+        for doc in existing_docs:
+            existing_ids.add(doc.id)
+
+        # 2. جلب جميع المعرفات الجديدة من القائمة المحدثة
+        new_ids = set(str(match['id']) for match in matches_list)
+
+        # 3. تحديد وحذف المباريات القديمة (التي ليست موجودة في القائمة الجديدة)
+        deleted_count = 0
+        for doc_id in existing_ids:
+            if doc_id not in new_ids:
+                doc_ref = collection_ref.document(doc_id)
+                batch.delete(doc_ref)
+                count += 1
+                deleted_count += 1
+                
+                # إدارة حجم الباتش (حد 450 عملية)
+                if count >= 450:
+                    batch.commit()
+                    batch = db.batch()
+                    count = 0
+
+        # 4. إضافة أو تحديث المباريات الجديدة
         for match in matches_list:
-            doc_id = str(match['id'])
-            doc_ref = col_ref.document(doc_id)
+            doc_id = str(match['id']) 
+            doc_ref = collection_ref.document(doc_id)
             
-            # نستخدم set لكتابة البيانات الجديدة (تحديث كامل)
-            batch.set(doc_ref, match)
+            # الحفظ (دمج التحديثات)
+            batch.set(doc_ref, match, merge=True)
             count += 1
             
-            if count >= 400:
+            if count >= 450:
                 batch.commit()
                 batch = db.batch()
                 count = 0
         
-        # تنفيذ ما تبقى في الدفعة
+        # تنفيذ ما تبقى في الباتش
         if count > 0:
             batch.commit()
             
-        print(f"✅ Firestore Updated: {len(matches_list)} active matches | 🗑️ Deleted: {len(ids_to_delete)} old matches.")
+        print(f"✅ Firestore Synced: {len(matches_list)} Updated, {deleted_count} Deleted.")
         return True
     except Exception as e:
         print(f"❌ Firestore Error: {e}")
@@ -324,7 +321,7 @@ def monitor_matches():
     last_update_day = datetime.date.min
     
     print(f"🚀 Bot Started monitoring {BASE_URL}...")
-    send_telegram_alert("🚀 Bot Started with Cloud Firestore.")
+    send_telegram_alert("🚀 Bot Started with Firestore Sync.")
 
     while True:
         try:
@@ -343,7 +340,7 @@ def monitor_matches():
                     else:
                          print("🔄 Change detected! Updating...")
 
-                    # ✅ الحفظ في Cloud Firestore
+                    # ✅ الحفظ والتزامن مع الحذف
                     if update_firestore_db(current_data):
                         last_hash = current_hash
                         last_update_day = current_date 
