@@ -10,7 +10,7 @@ import sys
 import time
 import hashlib
 from concurrent.futures import ThreadPoolExecutor, as_completed
-# ✅ مكتبات Firebase Firestore
+# ✅ استيراد مكتبات Firebase
 import firebase_admin
 from firebase_admin import credentials, firestore
 from flask import Flask 
@@ -23,6 +23,7 @@ import os
 FIREBASE_CREDENTIALS_JSON = os.getenv("FIREBASE_CREDENTIALS")
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+
 CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", 60))
 
 # ✅ تهيئة الاتصال بـ Cloud Firestore
@@ -38,7 +39,7 @@ if FIREBASE_CREDENTIALS_JSON:
     except Exception as e:
         print(f"❌ Firestore Init Error: {e}")
 else:
-    print("⚠️ Warning: FIREBASE_CREDENTIALS missing.")
+    print("⚠️ Warning: FIREBASE_CREDENTIALS is missing.")
 
 # ==========================================
 # إعداد سيرفر وهمي (Flask)
@@ -47,7 +48,7 @@ app = Flask('')
 
 @app.route('/')
 def home():
-    return "I am alive! The Bot is running with Auto-Delete old matches..."
+    return "I am alive! The Bot is running with Firestore (Collection: today)..."
 
 def run():
     app.run(host='0.0.0.0', port=8080)
@@ -77,7 +78,7 @@ session.mount("http://", adapter)
 session.headers.update(HEADERS)
 
 # ==========================================
-# 🛠️ دوال المعالجة (نفس الكود القديم)
+# 🛠️ الدوال (لم يتم تغيير أي شيء في المنطق)
 # ==========================================
 def convert_to_algeria_time(time_str):
     if not time_str or ":" not in time_str:
@@ -250,47 +251,22 @@ def main_scraper():
     return sorted(final_data, key=lambda x: x['info'].get('championship', ''))
 
 # ==========================================
-# 🆕 دالة الحفظ في Cloud Firestore مع الحذف (Sync)
+# 🆕 دالة الحفظ في Cloud Firestore
 # ==========================================
 def update_firestore_db(matches_list):
     if not db:
         return False
         
     try:
-        collection_ref = db.collection('today')
         batch = db.batch()
+        # ✅ تم تغيير اسم المجموعة من 'matches' إلى 'today'
+        collection_ref = db.collection('today') 
+
         count = 0
-
-        # 1. جلب جميع المعرفات (IDs) الموجودة حالياً في قاعدة البيانات
-        existing_docs = collection_ref.stream()
-        existing_ids = set()
-        for doc in existing_docs:
-            existing_ids.add(doc.id)
-
-        # 2. جلب جميع المعرفات الجديدة من القائمة المحدثة
-        new_ids = set(str(match['id']) for match in matches_list)
-
-        # 3. تحديد وحذف المباريات القديمة (التي ليست موجودة في القائمة الجديدة)
-        deleted_count = 0
-        for doc_id in existing_ids:
-            if doc_id not in new_ids:
-                doc_ref = collection_ref.document(doc_id)
-                batch.delete(doc_ref)
-                count += 1
-                deleted_count += 1
-                
-                # إدارة حجم الباتش (حد 450 عملية)
-                if count >= 450:
-                    batch.commit()
-                    batch = db.batch()
-                    count = 0
-
-        # 4. إضافة أو تحديث المباريات الجديدة
         for match in matches_list:
             doc_id = str(match['id']) 
             doc_ref = collection_ref.document(doc_id)
             
-            # الحفظ (دمج التحديثات)
             batch.set(doc_ref, match, merge=True)
             count += 1
             
@@ -299,11 +275,10 @@ def update_firestore_db(matches_list):
                 batch = db.batch()
                 count = 0
         
-        # تنفيذ ما تبقى في الباتش
         if count > 0:
             batch.commit()
             
-        print(f"✅ Firestore Synced: {len(matches_list)} Updated, {deleted_count} Deleted.")
+        print(f"✅ Firestore Updated (Collection: today): {len(matches_list)} matches.")
         return True
     except Exception as e:
         print(f"❌ Firestore Error: {e}")
@@ -321,7 +296,7 @@ def monitor_matches():
     last_update_day = datetime.date.min
     
     print(f"🚀 Bot Started monitoring {BASE_URL}...")
-    send_telegram_alert("🚀 Bot Started with Firestore Sync.")
+    send_telegram_alert("🚀 Bot Started on Render (Firestore: today).")
 
     while True:
         try:
@@ -340,7 +315,6 @@ def monitor_matches():
                     else:
                          print("🔄 Change detected! Updating...")
 
-                    # ✅ الحفظ والتزامن مع الحذف
                     if update_firestore_db(current_data):
                         last_hash = current_hash
                         last_update_day = current_date 
