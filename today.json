@@ -53,6 +53,30 @@
     "channels": []
   },
   {
+    "id": "5098676",
+    "url": "https://www.ysscores.com/ar/match/5098676/Abu-Salim-SC-vs-Asswehly-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "1 - مباراة الذهاب",
+      "stadium": "ملعب النهر الصناعي",
+      "time": "14:30",
+      "date": "الخميس 18-12-2025",
+      "current_score": "1 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أبو سليم",
+        "logo": "https://imgs.ysscores.com/teams/128/17656585223558.png"
+      },
+      "away": {
+        "name": "السويحلي",
+        "logo": "https://imgs.ysscores.com/teams/128/17656587578495.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5098672",
     "url": "https://www.ysscores.com/ar/match/5098672/Al-Sadaqa-Shahat-SC-vs-Al-Borouq-FC",
     "info": {
@@ -96,30 +120,6 @@
       "away": {
         "name": "الأهلي",
         "logo": "https://imgs.ysscores.com/teams/128/5691692543045.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5098676",
-    "url": "https://www.ysscores.com/ar/match/5098676/Abu-Salim-SC-vs-Asswehly-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "1 - مباراة الذهاب",
-      "stadium": "ملعب النهر الصناعي",
-      "time": "14:30",
-      "date": "الخميس 18-12-2025",
-      "current_score": "1 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أبو سليم",
-        "logo": "https://imgs.ysscores.com/teams/128/17656585223558.png"
-      },
-      "away": {
-        "name": "السويحلي",
-        "logo": "https://imgs.ysscores.com/teams/128/17656587578495.png"
       }
     },
     "channels": []
@@ -173,35 +173,6 @@
     "channels": []
   },
   {
-    "id": "4907741",
-    "url": "https://www.ysscores.com/ar/match/4907741/USM-Alger-vs-ES-Ben-Aknoun",
-    "info": {
-      "championship": "الرابطة المحترفة الجزائرية الأولى",
-      "round": "13 - مباراة الذهاب",
-      "stadium": "ملعب 5 جويلية 1962",
-      "time": "20:00",
-      "date": "الخميس 18-12-2025",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "اتحاد العاصمة",
-        "logo": "https://imgs.ysscores.com/teams/128/9611695834503.png"
-      },
-      "away": {
-        "name": "بن عكنون",
-        "logo": "https://imgs.ysscores.com/teams/128/9561693418601.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الجزائرية السادسة",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "4907737",
     "url": "https://www.ysscores.com/ar/match/4907737/MB-Rouissat-vs-MC-Algiers",
     "info": {
@@ -226,6 +197,35 @@
     "channels": [
       {
         "channel": "الرياضية ويب",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "4907741",
+    "url": "https://www.ysscores.com/ar/match/4907741/USM-Alger-vs-ES-Ben-Aknoun",
+    "info": {
+      "championship": "الرابطة المحترفة الجزائرية الأولى",
+      "round": "13 - مباراة الذهاب",
+      "stadium": "ملعب 5 جويلية 1962",
+      "time": "20:00",
+      "date": "الخميس 18-12-2025",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "اتحاد العاصمة",
+        "logo": "https://imgs.ysscores.com/teams/128/9611695834503.png"
+      },
+      "away": {
+        "name": "بن عكنون",
+        "logo": "https://imgs.ysscores.com/teams/128/9561693418601.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الجزائرية السادسة",
         "commentator": "غير مدرج"
       }
     ]
@@ -264,33 +264,28 @@
     ]
   },
   {
-    "id": "4948057",
-    "url": "https://www.ysscores.com/ar/match/4948057/FC-Lausanne-Sport-vs-ACF-Fiorentina",
+    "id": "4947998",
+    "url": "https://www.ysscores.com/ar/match/4947998/Omonia-Nicosia-vs-Raków-Częstochowa",
     "info": {
       "championship": "دوري المؤتمر الأوروبي",
       "round": "6",
-      "stadium": "استاد دي لا تويلير",
+      "stadium": "استاد نيو جي أس بي",
       "time": "21:00",
       "date": "الخميس 18-12-2025",
-      "current_score": "0 - 0",
+      "current_score": "0 - 1",
       "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
-        "name": "لوزان",
-        "logo": "https://imgs.ysscores.com/teams/128/1471690370506.png"
+        "name": "نيقوسيا",
+        "logo": "https://imgs.ysscores.com/teams/128/7401723595077.png"
       },
       "away": {
-        "name": "فيورنتينا",
-        "logo": "https://imgs.ysscores.com/teams/128/1231690283002.png"
+        "name": "راكوف تشيستوخوفا",
+        "logo": "https://imgs.ysscores.com/teams/128/3981690821864.png"
       }
     },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "محمد بركات"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "4948004",
@@ -320,6 +315,141 @@
         "commentator": "محمد المبروكي"
       }
     ]
+  },
+  {
+    "id": "4947950",
+    "url": "https://www.ysscores.com/ar/match/4947950/Slovan-Bratislava-vs-BK-Häcken",
+    "info": {
+      "championship": "دوري المؤتمر الأوروبي",
+      "round": "6",
+      "stadium": "الملعب الوطني بسلوفاكيا",
+      "time": "21:00",
+      "date": "الخميس 18-12-2025",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "براتيسلافا",
+        "logo": "https://imgs.ysscores.com/teams/128/9611690821406.png"
+      },
+      "away": {
+        "name": "هاكن",
+        "logo": "https://imgs.ysscores.com/teams/128/1081690822323.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Xtra 1",
+        "commentator": "باسم الزير"
+      }
+    ]
+  },
+  {
+    "id": "4947955",
+    "url": "https://www.ysscores.com/ar/match/4947955/Legia-Warszawa-vs-Lincoln-Red-Imps-FC",
+    "info": {
+      "championship": "دوري المؤتمر الأوروبي",
+      "round": "6",
+      "stadium": "استاد الجيش البولندي",
+      "time": "21:00",
+      "date": "الخميس 18-12-2025",
+      "current_score": "1 - 0",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "ليجيا وارسو",
+        "logo": "https://imgs.ysscores.com/teams/128/2291690370535.png"
+      },
+      "away": {
+        "name": "لينكولن ريد",
+        "logo": "https://imgs.ysscores.com/teams/128/6421690818566.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Xtra 2",
+        "commentator": "محمد نضال"
+      }
+    ]
+  },
+  {
+    "id": "4948057",
+    "url": "https://www.ysscores.com/ar/match/4948057/FC-Lausanne-Sport-vs-ACF-Fiorentina",
+    "info": {
+      "championship": "دوري المؤتمر الأوروبي",
+      "round": "6",
+      "stadium": "استاد دي لا تويلير",
+      "time": "21:00",
+      "date": "الخميس 18-12-2025",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "لوزان",
+        "logo": "https://imgs.ysscores.com/teams/128/1471690370506.png"
+      },
+      "away": {
+        "name": "فيورنتينا",
+        "logo": "https://imgs.ysscores.com/teams/128/1231690283002.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "محمد بركات"
+      }
+    ]
+  },
+  {
+    "id": "4948039",
+    "url": "https://www.ysscores.com/ar/match/4948039/SK-Sigma-Olomouc-vs-Lech-Poznan",
+    "info": {
+      "championship": "دوري المؤتمر الأوروبي",
+      "round": "6",
+      "stadium": "إستاد أندروف",
+      "time": "21:00",
+      "date": "الخميس 18-12-2025",
+      "current_score": "0 - 2",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "سيغما أولوموتس",
+        "logo": "https://imgs.ysscores.com/teams/128/4961690370503.png"
+      },
+      "away": {
+        "name": "ليخ بوزنان",
+        "logo": "https://imgs.ysscores.com/teams/128/5751690370495.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4948050",
+    "url": "https://www.ysscores.com/ar/match/4948050/AEK-Larnaca-vs-Shkendija-Tetovo",
+    "info": {
+      "championship": "دوري المؤتمر الأوروبي",
+      "round": "6",
+      "stadium": "آيك أرينا",
+      "time": "21:00",
+      "date": "الخميس 18-12-2025",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "آيك لارناكا",
+        "logo": "https://imgs.ysscores.com/teams/128/4111750186389.png"
+      },
+      "away": {
+        "name": "شكينديا",
+        "logo": "https://imgs.ysscores.com/teams/128/4991751841669.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "4947962",
@@ -373,165 +503,6 @@
       }
     },
     "channels": []
-  },
-  {
-    "id": "4948050",
-    "url": "https://www.ysscores.com/ar/match/4948050/AEK-Larnaca-vs-Shkendija-Tetovo",
-    "info": {
-      "championship": "دوري المؤتمر الأوروبي",
-      "round": "6",
-      "stadium": "آيك أرينا",
-      "time": "21:00",
-      "date": "الخميس 18-12-2025",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "آيك لارناكا",
-        "logo": "https://imgs.ysscores.com/teams/128/4111750186389.png"
-      },
-      "away": {
-        "name": "شكينديا",
-        "logo": "https://imgs.ysscores.com/teams/128/4991751841669.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4947950",
-    "url": "https://www.ysscores.com/ar/match/4947950/Slovan-Bratislava-vs-BK-Häcken",
-    "info": {
-      "championship": "دوري المؤتمر الأوروبي",
-      "round": "6",
-      "stadium": "الملعب الوطني بسلوفاكيا",
-      "time": "21:00",
-      "date": "الخميس 18-12-2025",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "براتيسلافا",
-        "logo": "https://imgs.ysscores.com/teams/128/9611690821406.png"
-      },
-      "away": {
-        "name": "هاكن",
-        "logo": "https://imgs.ysscores.com/teams/128/1081690822323.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Xtra 1",
-        "commentator": "باسم الزير"
-      }
-    ]
-  },
-  {
-    "id": "4947998",
-    "url": "https://www.ysscores.com/ar/match/4947998/Omonia-Nicosia-vs-Raków-Częstochowa",
-    "info": {
-      "championship": "دوري المؤتمر الأوروبي",
-      "round": "6",
-      "stadium": "استاد نيو جي أس بي",
-      "time": "21:00",
-      "date": "الخميس 18-12-2025",
-      "current_score": "0 - 1",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "نيقوسيا",
-        "logo": "https://imgs.ysscores.com/teams/128/7401723595077.png"
-      },
-      "away": {
-        "name": "راكوف تشيستوخوفا",
-        "logo": "https://imgs.ysscores.com/teams/128/3981690821864.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4948039",
-    "url": "https://www.ysscores.com/ar/match/4948039/SK-Sigma-Olomouc-vs-Lech-Poznan",
-    "info": {
-      "championship": "دوري المؤتمر الأوروبي",
-      "round": "6",
-      "stadium": "إستاد أندروف",
-      "time": "21:00",
-      "date": "الخميس 18-12-2025",
-      "current_score": "0 - 2",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "سيغما أولوموتس",
-        "logo": "https://imgs.ysscores.com/teams/128/4961690370503.png"
-      },
-      "away": {
-        "name": "ليخ بوزنان",
-        "logo": "https://imgs.ysscores.com/teams/128/5751690370495.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4947955",
-    "url": "https://www.ysscores.com/ar/match/4947955/Legia-Warszawa-vs-Lincoln-Red-Imps-FC",
-    "info": {
-      "championship": "دوري المؤتمر الأوروبي",
-      "round": "6",
-      "stadium": "استاد الجيش البولندي",
-      "time": "21:00",
-      "date": "الخميس 18-12-2025",
-      "current_score": "1 - 0",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "ليجيا وارسو",
-        "logo": "https://imgs.ysscores.com/teams/128/2291690370535.png"
-      },
-      "away": {
-        "name": "لينكولن ريد",
-        "logo": "https://imgs.ysscores.com/teams/128/6421690818566.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Xtra 2",
-        "commentator": "محمد نضال"
-      }
-    ]
-  },
-  {
-    "id": "4947970",
-    "url": "https://www.ysscores.com/ar/match/4947970/Rayo-Vallecano-vs-FC-Drita",
-    "info": {
-      "championship": "دوري المؤتمر الأوروبي",
-      "round": "6",
-      "stadium": "تيريزا ريفيرو",
-      "time": "21:00",
-      "date": "الخميس 18-12-2025",
-      "current_score": "1 - 0",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "رايو فاليكانو",
-        "logo": "https://imgs.ysscores.com/teams/128/1511690196745.png"
-      },
-      "away": {
-        "name": "دريتا",
-        "logo": "https://imgs.ysscores.com/teams/128/3541723741880.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "محمد المبروكي"
-      }
-    ]
   },
   {
     "id": "4947946",
@@ -592,28 +563,33 @@
     ]
   },
   {
-    "id": "4948025",
-    "url": "https://www.ysscores.com/ar/match/4948025/AEK-Athens-vs-CS-Universitatea-Craiova",
+    "id": "4947970",
+    "url": "https://www.ysscores.com/ar/match/4947970/Rayo-Vallecano-vs-FC-Drita",
     "info": {
       "championship": "دوري المؤتمر الأوروبي",
       "round": "6",
-      "stadium": "آيا صوفيا",
+      "stadium": "تيريزا ريفيرو",
       "time": "21:00",
       "date": "الخميس 18-12-2025",
-      "current_score": "0 - 2",
+      "current_score": "1 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
-        "name": "أيك أثينا",
-        "logo": "https://imgs.ysscores.com/teams/128/6901694359099.png"
+        "name": "رايو فاليكانو",
+        "logo": "https://imgs.ysscores.com/teams/128/1511690196745.png"
       },
       "away": {
-        "name": "كرايوفا",
-        "logo": "https://imgs.ysscores.com/teams/128/2521753234950.png"
+        "name": "دريتا",
+        "logo": "https://imgs.ysscores.com/teams/128/3541723741880.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "محمد المبروكي"
+      }
+    ]
   },
   {
     "id": "4947964",
@@ -641,6 +617,59 @@
       {
         "channel": "بي إن سبورت 1",
         "commentator": "جواد بدة"
+      }
+    ]
+  },
+  {
+    "id": "4948025",
+    "url": "https://www.ysscores.com/ar/match/4948025/AEK-Athens-vs-CS-Universitatea-Craiova",
+    "info": {
+      "championship": "دوري المؤتمر الأوروبي",
+      "round": "6",
+      "stadium": "آيا صوفيا",
+      "time": "21:00",
+      "date": "الخميس 18-12-2025",
+      "current_score": "0 - 2",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "أيك أثينا",
+        "logo": "https://imgs.ysscores.com/teams/128/6901694359099.png"
+      },
+      "away": {
+        "name": "كرايوفا",
+        "logo": "https://imgs.ysscores.com/teams/128/2521753234950.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4947958",
+    "url": "https://www.ysscores.com/ar/match/4947958/AC-Sparta-Prague-vs-Aberdeen-FC",
+    "info": {
+      "championship": "دوري المؤتمر الأوروبي",
+      "round": "6",
+      "stadium": "ايبت أرينا",
+      "time": "21:00",
+      "date": "الخميس 18-12-2025",
+      "current_score": "2 - 0",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "سبارتا براغ",
+        "logo": "https://imgs.ysscores.com/teams/128/451690370558.png"
+      },
+      "away": {
+        "name": "أبردين",
+        "logo": "https://imgs.ysscores.com/teams/128/711690370527.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "أحمد عبده"
       }
     ]
   },
@@ -698,35 +727,6 @@
     "channels": []
   },
   {
-    "id": "4947958",
-    "url": "https://www.ysscores.com/ar/match/4947958/AC-Sparta-Prague-vs-Aberdeen-FC",
-    "info": {
-      "championship": "دوري المؤتمر الأوروبي",
-      "round": "6",
-      "stadium": "ايبت أرينا",
-      "time": "21:00",
-      "date": "الخميس 18-12-2025",
-      "current_score": "2 - 0",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "سبارتا براغ",
-        "logo": "https://imgs.ysscores.com/teams/128/451690370558.png"
-      },
-      "away": {
-        "name": "أبردين",
-        "logo": "https://imgs.ysscores.com/teams/128/711690370527.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "أحمد عبده"
-      }
-    ]
-  },
-  {
     "id": "4948001",
     "url": "https://www.ysscores.com/ar/match/4948001/1.FSV-Mainz-05-vs-Samsunspor",
     "info": {
@@ -754,6 +754,30 @@
         "commentator": "عبدالله الغامدي"
       }
     ]
+  },
+  {
+    "id": "5092920",
+    "url": "https://www.ysscores.com/ar/match/5092920/Al-Nasr-Club-vs-Oman-Club",
+    "info": {
+      "championship": "دوري المحترفين العماني",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "مجمع السعادة الرياضي",
+      "time": "15:25",
+      "date": "الخميس 18-12-2025",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "النصر",
+        "logo": "https://imgs.ysscores.com/teams/128/5661691930849.png"
+      },
+      "away": {
+        "name": "نادي عُمان",
+        "logo": "https://imgs.ysscores.com/teams/128/9041691931536.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "5092918",
@@ -785,30 +809,6 @@
     ]
   },
   {
-    "id": "5092920",
-    "url": "https://www.ysscores.com/ar/match/5092920/Al-Nasr-Club-vs-Oman-Club",
-    "info": {
-      "championship": "دوري المحترفين العماني",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "مجمع السعادة الرياضي",
-      "time": "15:25",
-      "date": "الخميس 18-12-2025",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "النصر",
-        "logo": "https://imgs.ysscores.com/teams/128/5661691930849.png"
-      },
-      "away": {
-        "name": "نادي عُمان",
-        "logo": "https://imgs.ysscores.com/teams/128/9041691931536.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5092919",
     "url": "https://www.ysscores.com/ar/match/5092919/Sur-SC-vs-Al-Seeb-Club",
     "info": {
@@ -828,6 +828,30 @@
       "away": {
         "name": "السيب",
         "logo": "https://imgs.ysscores.com/teams/128/5401691931087.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5092922",
+    "url": "https://www.ysscores.com/ar/match/5092922/Saham-Club-vs-Al-Shabab-SC-(Oman)",
+    "info": {
+      "championship": "دوري المحترفين العماني",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "المجمع الشبابي بصحار",
+      "time": "16:15",
+      "date": "الخميس 18-12-2025",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "صحم",
+        "logo": "https://imgs.ysscores.com/teams/128/1541722176368.png"
+      },
+      "away": {
+        "name": "الشباب",
+        "logo": "https://imgs.ysscores.com/teams/128/8431691931857.png"
       }
     },
     "channels": []
@@ -860,30 +884,6 @@
         "commentator": "‏راشد الشيذاني"
       }
     ]
-  },
-  {
-    "id": "5092922",
-    "url": "https://www.ysscores.com/ar/match/5092922/Saham-Club-vs-Al-Shabab-SC-(Oman)",
-    "info": {
-      "championship": "دوري المحترفين العماني",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "المجمع الشبابي بصحار",
-      "time": "16:15",
-      "date": "الخميس 18-12-2025",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "صحم",
-        "logo": "https://imgs.ysscores.com/teams/128/1541722176368.png"
-      },
-      "away": {
-        "name": "الشباب",
-        "logo": "https://imgs.ysscores.com/teams/128/8431691931857.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "5074274",
@@ -919,7 +919,7 @@
       "time": "19:45",
       "date": "الخميس 18-12-2025",
       "current_score": "2 - 3",
-      "match_status": "الانتقال الي الأشواط الإضافية"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1291,25 +1291,25 @@
     ]
   },
   {
-    "id": "5036371",
-    "url": "https://www.ysscores.com/ar/match/5036371/FC-Volendam-vs-SC-Genemuiden",
+    "id": "5036372",
+    "url": "https://www.ysscores.com/ar/match/5036372/HSC-21-Haaksbergen-vs-RKC-Waalwijk",
     "info": {
       "championship": "كأس هولندا",
       "round": "الدور الثاني",
-      "stadium": "كراس",
+      "stadium": "سبورت بارك جروت شولتنهاغن",
       "time": "20:00",
       "date": "الخميس 18-12-2025",
-      "current_score": "0 - 0",
+      "current_score": "0 - 9",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "فولندام",
-        "logo": "https://imgs.ysscores.com/teams/128/7791690824589.png"
+        "name": "إتش إس سي",
+        "logo": "https://imgs.ysscores.com/teams/128/5651717404162.png"
       },
       "away": {
-        "name": "جينيمويدن",
-        "logo": "https://imgs.ysscores.com/teams/128/331739337260.png"
+        "name": "فالفيك",
+        "logo": "https://imgs.ysscores.com/teams/128/6061690457395.png"
       }
     },
     "channels": []
@@ -1339,49 +1339,25 @@
     "channels": []
   },
   {
-    "id": "5036372",
-    "url": "https://www.ysscores.com/ar/match/5036372/HSC-21-Haaksbergen-vs-RKC-Waalwijk",
+    "id": "5036371",
+    "url": "https://www.ysscores.com/ar/match/5036371/FC-Volendam-vs-SC-Genemuiden",
     "info": {
       "championship": "كأس هولندا",
       "round": "الدور الثاني",
-      "stadium": "سبورت بارك جروت شولتنهاغن",
+      "stadium": "كراس",
       "time": "20:00",
       "date": "الخميس 18-12-2025",
-      "current_score": "0 - 9",
+      "current_score": "0 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "إتش إس سي",
-        "logo": "https://imgs.ysscores.com/teams/128/5651717404162.png"
+        "name": "فولندام",
+        "logo": "https://imgs.ysscores.com/teams/128/7791690824589.png"
       },
       "away": {
-        "name": "فالفيك",
-        "logo": "https://imgs.ysscores.com/teams/128/6061690457395.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5036375",
-    "url": "https://www.ysscores.com/ar/match/5036375/Willem-II-Tilburg-vs-Sparta-Rotterdam",
-    "info": {
-      "championship": "كأس هولندا",
-      "round": "الدور الثاني",
-      "stadium": "ملعب الملك ويليم الثاني",
-      "time": "21:00",
-      "date": "الخميس 18-12-2025",
-      "current_score": "1 - 3",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "فيليم II",
-        "logo": "https://imgs.ysscores.com/teams/128/5411690370528.png"
-      },
-      "away": {
-        "name": "روتردام",
-        "logo": "https://imgs.ysscores.com/teams/128/111690824096.png"
+        "name": "جينيمويدن",
+        "logo": "https://imgs.ysscores.com/teams/128/331739337260.png"
       }
     },
     "channels": []
@@ -1406,6 +1382,30 @@
       "away": {
         "name": "تفينتي أنشخيده",
         "logo": "https://imgs.ysscores.com/teams/128/7451690996868.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5036375",
+    "url": "https://www.ysscores.com/ar/match/5036375/Willem-II-Tilburg-vs-Sparta-Rotterdam",
+    "info": {
+      "championship": "كأس هولندا",
+      "round": "الدور الثاني",
+      "stadium": "ملعب الملك ويليم الثاني",
+      "time": "21:00",
+      "date": "الخميس 18-12-2025",
+      "current_score": "1 - 3",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "فيليم II",
+        "logo": "https://imgs.ysscores.com/teams/128/5411690370528.png"
+      },
+      "away": {
+        "name": "روتردام",
+        "logo": "https://imgs.ysscores.com/teams/128/111690824096.png"
       }
     },
     "channels": []
