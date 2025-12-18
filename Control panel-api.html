@@ -173,7 +173,7 @@
     <div class="dashboard-grid">
         <div class="main-content">
             <div class="controls">
-                <button class="btn-primary" onclick="fetchMatches()">🔄 تحديث (من Firebase Today)</button>
+                <button class="btn-primary" onclick="fetchMatches()">🔄 تحديث (API)</button>
                 <select id="statusFilter" onchange="filterMatches()">
                     <option value="all">🔍 الكل</option>
                     <option value="Live">🔴 مباشر</option>
@@ -183,7 +183,7 @@
                 <div class="spacer" style="flex-grow: 1;"></div> 
                 <input type="text" id="searchInput" placeholder="بحث (فريق، دوري)...">
                 <button class="btn-primary" onclick="processBulkInput()">📝 دمج</button>
-                <button class="btn-firebase" onclick="loadFromFirebase()">📥 عرض المحفوظ (Matches)</button>
+                <button class="btn-firebase" onclick="loadFromFirebase()">📥 عرض المحفوظ</button>
                 <button class="btn-danger" onclick="clearFirebase()">🗑️ مسح الكل</button>
                 <button class="btn-success" onclick="saveToFirebase()">🔥 نشر في Firebase</button>
                 
@@ -260,10 +260,16 @@ const firebaseConfig = {
   measurementId: "G-3GX39BE7C1"
 };
 
+
 // تهيئة Firebase
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const auth = firebase.auth();
+
+// --- Config (Original API kept) ---
+const config = {
+    apiUrl: "https://raw.githubusercontent.com/ihabmalaouiH/ULTRATV/refs/heads/main/today.json"
+};
 
 // --- Elements ---
 const searchInput = document.getElementById("searchInput");
@@ -302,30 +308,31 @@ function initialize() {
     matchesTbody.addEventListener('change', updateStatsAndJSON);
     matchesTbody.addEventListener('input', updateStatsAndJSON);
     searchInput.addEventListener('input', filterMatches);
-    // جلب البيانات من مجموعة today في فايربيس بدلاً من API
-    fetchMatches(); 
+    fetchMatches(); // Default Fetch from API
 }
 
-// --- Firebase Functions ---
+// --- Firebase Functions (Replacing GitHub) ---
 
 async function saveToFirebase() {
     const val = outputTextarea.value;
     if(!val || val==="[]") return showToast("لا توجد بيانات (JSON فارغ)", "error");
     
-    if(!confirm("سيتم حذف المباريات القديمة (في matches) واستبدالها بالقائمة الحالية. هل أنت متأكد؟")) return;
+    // تأكيد من المستخدم
+    if(!confirm("سيتم حذف المباريات القديمة في Firebase واستبدالها بالقائمة الحالية. هل أنت متأكد؟")) return;
 
-    showToast("جاري النشر في Firebase...", "info");
+    showToast("جاري الحفظ في Firebase...", "info");
     
     try {
         const matches = JSON.parse(val);
         
-        // 1. حذف المباريات القديمة من مجموعة matches
+        // 1. حذف المباريات القديمة (Batch Delete)
         const snapshot = await db.collection('matches').get();
         const batchDelete = db.batch();
         snapshot.docs.forEach(doc => batchDelete.delete(doc.ref));
         await batchDelete.commit();
 
-        // 2. إضافة المباريات الجديدة
+        // 2. إضافة المباريات الجديدة (Loop)
+        // ملاحظة: نستخدم loop عادي لضمان المعالجة، في التطبيقات الكبيرة جداً نستخدم batch
         let count = 0;
         for (const match of matches) {
             await db.collection('matches').add(match);
@@ -384,12 +391,12 @@ function parseArabicMatchTime(dateStr, timeStr) {
         let time = timeStr.replace('مساءً', 'PM').replace('صباحاً', 'AM')
                           .replace('مساء', 'PM').replace('صباح', 'AM')
                           .trim();
-          
+           
         let [timeRaw, modifier] = time.split(' ');
         let [hoursStr, minutes] = timeRaw.split(':');
         
         let hours = parseInt(hoursStr, 10);
-          
+           
         if (hours === 12) hours = 0;
         if (modifier === 'PM') hours += 12;
         
@@ -401,19 +408,17 @@ function parseArabicMatchTime(dateStr, timeStr) {
     }
 }
 
-// --- Main Fetch Logic (UPDATED TO FETCH FROM FIREBASE 'today' COLLECTION) ---
+// --- Main Fetch Logic ---
 async function fetchMatches() {
-    matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">⏳ جاري جلب البيانات من Firebase (today)...</td></tr>`;
+    matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">⏳ جاري جلب البيانات...</td></tr>`;
     try {
-        // ✅ جلب البيانات من مجموعة today
-        const snapshot = await db.collection('today').get();
+        const res = await fetch(`${config.apiUrl}?t=${new Date().getTime()}`);
+        if (!res.ok) throw new Error(`HTTP Error: ${res.status}`);
+        const allMatches = await res.json(); 
 
-        if (snapshot.empty) {
-            return matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">لا توجد مباريات في مجموعة 'today'.</td></tr>`;
+        if (!Array.isArray(allMatches) || allMatches.length === 0) {
+            return matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">لا توجد مباريات.</td></tr>`;
         }
-
-        // تحويل المستندات إلى مصفوفة
-        const allMatches = snapshot.docs.map(doc => doc.data());
 
         allMatches.forEach(m => {
             const dateObj = parseArabicMatchTime(m.info.date, m.info.time);
@@ -422,11 +427,11 @@ async function fetchMatches() {
 
         allMatches.sort((a, b) => a._timestamp - b._timestamp);
         renderMatches(allMatches);
-        showToast(`تم تحميل ${allMatches.length} مباراة من Firebase`, 'success');
+        showToast(`تم تحميل ${allMatches.length} مباراة`, 'success');
 
     } catch (err) {
         matchesTbody.innerHTML = `<tr><td colspan="10" style="color:var(--danger)">⚠️ خطأ: ${err.message}</td></tr>`;
-        showToast("فشل الاتصال بـ Firebase", 'error');
+        showToast("فشل الاتصال", 'error');
     }
 }
 
@@ -650,8 +655,8 @@ function updateStatsAndJSON() {
             league: d.league, 
             channel: channelValue,
             commentator: commInput,
-            status: d.jsonStatus, 
-            score: "", // <--- ✅ النتيجة فارغة دائماً هنا
+            status: d.jsonStatus, // تمت إضافتها للتأكد
+            score: "", // <--- تم التعديل هنا ليكون فارغاً دائماً
             servers: servers 
         });
     });
