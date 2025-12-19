@@ -80,7 +80,7 @@ def convert_to_algeria_time(time_str):
             match_time = match_time.replace(hour=0)
 
         # إضافة 6 ساعات
-        new_time = match_time + timedelta(hours=9) 
+        new_time = match_time + timedelta(hours=6) 
         return new_time.strftime("%H:%M")
     except:
         return time_str
