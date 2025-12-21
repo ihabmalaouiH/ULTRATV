@@ -301,8 +301,8 @@
       "stadium": "فيلا بارك",
       "time": "17:30",
       "date": "الأحد 21-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -838,30 +838,6 @@
     "channels": []
   },
   {
-    "id": "4815369",
-    "url": "https://www.ysscores.com/ar/match/4815369/FC-Volendam-vs-Sparta-Rotterdam",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "17 - مباراة الذهاب",
-      "stadium": "كراس",
-      "time": "16:45",
-      "date": "الأحد 21-12-2025",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "فولندام",
-        "logo": "https://imgs.ysscores.com/teams/128/7791690824589.png"
-      },
-      "away": {
-        "name": "روتردام",
-        "logo": "https://imgs.ysscores.com/teams/128/111690824096.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4815377",
     "url": "https://www.ysscores.com/ar/match/4815377/FC-Utrecht-vs-PSV-Eindhoven",
     "info": {
@@ -889,6 +865,30 @@
         "commentator": "رؤوف خليف"
       }
     ]
+  },
+  {
+    "id": "4815369",
+    "url": "https://www.ysscores.com/ar/match/4815369/FC-Volendam-vs-Sparta-Rotterdam",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "17 - مباراة الذهاب",
+      "stadium": "كراس",
+      "time": "16:45",
+      "date": "الأحد 21-12-2025",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "فولندام",
+        "logo": "https://imgs.ysscores.com/teams/128/7791690824589.png"
+      },
+      "away": {
+        "name": "روتردام",
+        "logo": "https://imgs.ysscores.com/teams/128/111690824096.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "4815370",
@@ -1034,7 +1034,7 @@
       "time": "16:25",
       "date": "الأحد 21-12-2025",
       "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -1144,30 +1144,6 @@
     "channels": []
   },
   {
-    "id": "4820835",
-    "url": "https://www.ysscores.com/ar/match/4820835/FC-Lausanne-Sport-vs-FC-Luzern",
-    "info": {
-      "championship": "دوري السوبر السويسري",
-      "round": "19 - مباراة الاياب",
-      "stadium": "استاد دي لا تويلير",
-      "time": "14:00",
-      "date": "الأحد 21-12-2025",
-      "current_score": "0 - 4",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "لوزان",
-        "logo": "https://imgs.ysscores.com/teams/128/1471690370506.png"
-      },
-      "away": {
-        "name": "لوسرن",
-        "logo": "https://imgs.ysscores.com/teams/128/7211690370556.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4820834",
     "url": "https://www.ysscores.com/ar/match/4820834/FC-Lugano-vs-BSC-Young-Boys",
     "info": {
@@ -1187,6 +1163,30 @@
       "away": {
         "name": "يانغ بويز",
         "logo": "https://imgs.ysscores.com/teams/128/851690370555.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4820835",
+    "url": "https://www.ysscores.com/ar/match/4820835/FC-Lausanne-Sport-vs-FC-Luzern",
+    "info": {
+      "championship": "دوري السوبر السويسري",
+      "round": "19 - مباراة الاياب",
+      "stadium": "استاد دي لا تويلير",
+      "time": "14:00",
+      "date": "الأحد 21-12-2025",
+      "current_score": "0 - 4",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "لوزان",
+        "logo": "https://imgs.ysscores.com/teams/128/1471690370506.png"
+      },
+      "away": {
+        "name": "لوسرن",
+        "logo": "https://imgs.ysscores.com/teams/128/7211690370556.png"
       }
     },
     "channels": []
@@ -1233,35 +1233,6 @@
     ]
   },
   {
-    "id": "5078980",
-    "url": "https://www.ysscores.com/ar/match/5078980/Football-Bourg-en-Bresse-Péronnas-vs-Olympique-Marseille",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 64",
-      "stadium": "استاد مارسيل فيرشير",
-      "time": "14:45",
-      "date": "الأحد 21-12-2025",
-      "current_score": "0 - 6",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بورج بيروناس",
-        "logo": "https://imgs.ysscores.com/teams/128/2591718349887.png"
-      },
-      "away": {
-        "name": "مارسيليا",
-        "logo": "https://imgs.ysscores.com/teams/128/6031690287269.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 4",
-        "commentator": "نوفل باشي"
-      }
-    ]
-  },
-  {
     "id": "5078994",
     "url": "https://www.ysscores.com/ar/match/5078994/RC-Strasbourg-Alsace-vs-USL-Dunkerque",
     "info": {
@@ -1287,6 +1258,35 @@
       {
         "channel": "بي إن سبورت 6",
         "commentator": "أحمد سوكو"
+      }
+    ]
+  },
+  {
+    "id": "5078980",
+    "url": "https://www.ysscores.com/ar/match/5078980/Football-Bourg-en-Bresse-Péronnas-vs-Olympique-Marseille",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 64",
+      "stadium": "استاد مارسيل فيرشير",
+      "time": "14:45",
+      "date": "الأحد 21-12-2025",
+      "current_score": "0 - 6",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بورج بيروناس",
+        "logo": "https://imgs.ysscores.com/teams/128/2591718349887.png"
+      },
+      "away": {
+        "name": "مارسيليا",
+        "logo": "https://imgs.ysscores.com/teams/128/6031690287269.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 4",
+        "commentator": "نوفل باشي"
       }
     ]
   },
@@ -1318,30 +1318,6 @@
         "commentator": "أحمد عبده"
       }
     ]
-  },
-  {
-    "id": "5078996",
-    "url": "https://www.ysscores.com/ar/match/5078996/US-Orléans-vs-FC-Dieppe",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 64",
-      "stadium": "ملعب لاسورس",
-      "time": "17:30",
-      "date": "الأحد 21-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أورليانز",
-        "logo": "https://imgs.ysscores.com/teams/128/4181690370559.png"
-      },
-      "away": {
-        "name": "دييب",
-        "logo": "https://imgs.ysscores.com/teams/128/8861703618997.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "5078983",
@@ -1381,8 +1357,8 @@
       "stadium": "روازون بارك",
       "time": "17:30",
       "date": "الأحد 21-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -1400,6 +1376,30 @@
         "commentator": "حسن العيدروس"
       }
     ]
+  },
+  {
+    "id": "5078996",
+    "url": "https://www.ysscores.com/ar/match/5078996/US-Orléans-vs-FC-Dieppe",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 64",
+      "stadium": "ملعب لاسورس",
+      "time": "17:30",
+      "date": "الأحد 21-12-2025",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "أورليانز",
+        "logo": "https://imgs.ysscores.com/teams/128/4181690370559.png"
+      },
+      "away": {
+        "name": "دييب",
+        "logo": "https://imgs.ysscores.com/teams/128/8861703618997.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "5078978",
@@ -1491,8 +1491,8 @@
       "stadium": "ملعب جان بروس",
       "time": "17:30",
       "date": "الأحد 21-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -1515,8 +1515,8 @@
       "stadium": "ستاد أوسيان",
       "time": "17:30",
       "date": "الأحد 21-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
