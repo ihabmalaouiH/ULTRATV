@@ -524,7 +524,7 @@
       "time": "19:00",
       "date": "الأحد 21-12-2025",
       "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -601,7 +601,7 @@
       "time": "19:15",
       "date": "الأحد 21-12-2025",
       "current_score": "0 - 2",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1144,30 +1144,6 @@
     "channels": []
   },
   {
-    "id": "4820834",
-    "url": "https://www.ysscores.com/ar/match/4820834/FC-Lugano-vs-BSC-Young-Boys",
-    "info": {
-      "championship": "دوري السوبر السويسري",
-      "round": "19 - مباراة الاياب",
-      "stadium": "ملعب كورناريدو",
-      "time": "16:30",
-      "date": "الأحد 21-12-2025",
-      "current_score": "3 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "لوجانو",
-        "logo": "https://imgs.ysscores.com/teams/128/571690370510.png"
-      },
-      "away": {
-        "name": "يانغ بويز",
-        "logo": "https://imgs.ysscores.com/teams/128/851690370555.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4820835",
     "url": "https://www.ysscores.com/ar/match/4820835/FC-Lausanne-Sport-vs-FC-Luzern",
     "info": {
@@ -1187,6 +1163,30 @@
       "away": {
         "name": "لوسرن",
         "logo": "https://imgs.ysscores.com/teams/128/7211690370556.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4820834",
+    "url": "https://www.ysscores.com/ar/match/4820834/FC-Lugano-vs-BSC-Young-Boys",
+    "info": {
+      "championship": "دوري السوبر السويسري",
+      "round": "19 - مباراة الاياب",
+      "stadium": "ملعب كورناريدو",
+      "time": "16:30",
+      "date": "الأحد 21-12-2025",
+      "current_score": "3 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "لوجانو",
+        "logo": "https://imgs.ysscores.com/teams/128/571690370510.png"
+      },
+      "away": {
+        "name": "يانغ بويز",
+        "logo": "https://imgs.ysscores.com/teams/128/851690370555.png"
       }
     },
     "channels": []
@@ -1262,35 +1262,6 @@
     ]
   },
   {
-    "id": "5078999",
-    "url": "https://www.ysscores.com/ar/match/5078999/US-Concarneau-vs-FC-Nantes",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 64",
-      "stadium": "ملعب جاي بيريو",
-      "time": "14:45",
-      "date": "الأحد 21-12-2025",
-      "current_score": "3 - 5",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "كونكارنيو",
-        "logo": "https://imgs.ysscores.com/teams/128/1691717493826.png"
-      },
-      "away": {
-        "name": "نانت",
-        "logo": "https://imgs.ysscores.com/teams/128/6071690287626.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 7",
-        "commentator": "أحمد عبده"
-      }
-    ]
-  },
-  {
     "id": "5078980",
     "url": "https://www.ysscores.com/ar/match/5078980/Football-Bourg-en-Bresse-Péronnas-vs-Olympique-Marseille",
     "info": {
@@ -1320,84 +1291,31 @@
     ]
   },
   {
-    "id": "5078983",
-    "url": "https://www.ysscores.com/ar/match/5078983/OGC-Nice-vs-AS-Saint-Étienne",
+    "id": "5078999",
+    "url": "https://www.ysscores.com/ar/match/5078999/US-Concarneau-vs-FC-Nantes",
     "info": {
       "championship": "كأس فرنسا",
       "round": "دور الـ 64",
-      "stadium": "أليانز ريفييرا",
+      "stadium": "ملعب جاي بيريو",
       "time": "14:45",
       "date": "الأحد 21-12-2025",
-      "current_score": "2 - 1",
+      "current_score": "3 - 5",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "نيس",
-        "logo": "https://imgs.ysscores.com/teams/128/7361690287672.png"
+        "name": "كونكارنيو",
+        "logo": "https://imgs.ysscores.com/teams/128/1691717493826.png"
       },
       "away": {
-        "name": "سانت إتيان",
-        "logo": "https://imgs.ysscores.com/teams/128/9871717020546.png"
+        "name": "نانت",
+        "logo": "https://imgs.ysscores.com/teams/128/6071690287626.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 5",
-        "commentator": "محمد بركات"
-      }
-    ]
-  },
-  {
-    "id": "5078996",
-    "url": "https://www.ysscores.com/ar/match/5078996/US-Orléans-vs-FC-Dieppe",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 64",
-      "stadium": "ملعب لاسورس",
-      "time": "17:30",
-      "date": "الأحد 21-12-2025",
-      "current_score": "3 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أورليانز",
-        "logo": "https://imgs.ysscores.com/teams/128/4181690370559.png"
-      },
-      "away": {
-        "name": "دييب",
-        "logo": "https://imgs.ysscores.com/teams/128/8861703618997.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5078978",
-    "url": "https://www.ysscores.com/ar/match/5078978/Olympique-Lyon-vs-FC-Saint-Cyr-Collonges-Au-Mont-dOr",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 64",
-      "stadium": "غروباما",
-      "time": "21:00",
-      "date": "الأحد 21-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ليون",
-        "logo": "https://imgs.ysscores.com/teams/128/4081690287528.png"
-      },
-      "away": {
-        "name": "سانت سير",
-        "logo": "https://imgs.ysscores.com/teams/128/17648502333155.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "محمد المبروكي"
+        "channel": "بي إن سبورت 7",
+        "commentator": "أحمد عبده"
       }
     ]
   },
@@ -1431,6 +1349,111 @@
     ]
   },
   {
+    "id": "5078983",
+    "url": "https://www.ysscores.com/ar/match/5078983/OGC-Nice-vs-AS-Saint-Étienne",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 64",
+      "stadium": "أليانز ريفييرا",
+      "time": "14:45",
+      "date": "الأحد 21-12-2025",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "نيس",
+        "logo": "https://imgs.ysscores.com/teams/128/7361690287672.png"
+      },
+      "away": {
+        "name": "سانت إتيان",
+        "logo": "https://imgs.ysscores.com/teams/128/9871717020546.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "محمد بركات"
+      }
+    ]
+  },
+  {
+    "id": "5078978",
+    "url": "https://www.ysscores.com/ar/match/5078978/Olympique-Lyon-vs-FC-Saint-Cyr-Collonges-Au-Mont-dOr",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 64",
+      "stadium": "غروباما",
+      "time": "21:00",
+      "date": "الأحد 21-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ليون",
+        "logo": "https://imgs.ysscores.com/teams/128/4081690287528.png"
+      },
+      "away": {
+        "name": "سانت سير",
+        "logo": "https://imgs.ysscores.com/teams/128/17648502333155.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "محمد المبروكي"
+      }
+    ]
+  },
+  {
+    "id": "5079005",
+    "url": "https://www.ysscores.com/ar/match/5079005/Montreuil-FC-vs-US-Chauvigny",
+    "info": {
+      "championship": "كأس فرنسا",
+      "stadium": "استاد مارسيل فيرشير",
+      "time": "17:30",
+      "date": "الأحد 21-12-2025",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "مونتروي",
+        "logo": "https://imgs.ysscores.com/teams/128/17648500644736.png"
+      },
+      "away": {
+        "name": "شوفيني",
+        "logo": "https://imgs.ysscores.com/teams/128/17662658508113.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5078996",
+    "url": "https://www.ysscores.com/ar/match/5078996/US-Orléans-vs-FC-Dieppe",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 64",
+      "stadium": "ملعب لاسورس",
+      "time": "17:30",
+      "date": "الأحد 21-12-2025",
+      "current_score": "3 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أورليانز",
+        "logo": "https://imgs.ysscores.com/teams/128/4181690370559.png"
+      },
+      "away": {
+        "name": "دييب",
+        "logo": "https://imgs.ysscores.com/teams/128/8861703618997.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5079006",
     "url": "https://www.ysscores.com/ar/match/5079006/Stade-Rennais-FC-vs-Les-Sables-Vendée-Football",
     "info": {
@@ -1458,29 +1481,6 @@
         "commentator": "حسن العيدروس"
       }
     ]
-  },
-  {
-    "id": "5079005",
-    "url": "https://www.ysscores.com/ar/match/5079005/Montreuil-FC-vs-US-Chauvigny",
-    "info": {
-      "championship": "كأس فرنسا",
-      "stadium": "استاد مارسيل فيرشير",
-      "time": "17:30",
-      "date": "الأحد 21-12-2025",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "مونتروي",
-        "logo": "https://imgs.ysscores.com/teams/128/17648500644736.png"
-      },
-      "away": {
-        "name": "شوفيني",
-        "logo": "https://imgs.ysscores.com/teams/128/17662658508113.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "5078986",
