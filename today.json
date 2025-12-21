@@ -99,7 +99,7 @@
       "stadium": "لا كارتوخا",
       "time": "21:00",
       "date": "الأحد 21-12-2025",
-      "current_score": "1 - 0",
+      "current_score": "2 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -326,39 +326,6 @@
     ]
   },
   {
-    "id": "4803196",
-    "url": "https://www.ysscores.com/ar/match/4803196/US-Sassuolo-vs-Torino-FC",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "16 - مباراة الذهاب",
-      "stadium": "استاد مابي",
-      "time": "15:00",
-      "date": "الأحد 21-12-2025",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ساسولو",
-        "logo": "https://imgs.ysscores.com/teams/128/731690283001.png"
-      },
-      "away": {
-        "name": "تورينو",
-        "logo": "https://imgs.ysscores.com/teams/128/7501690283003.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "محمد الشامسي"
-      },
-      {
-        "channel": "StarzPlay",
-        "commentator": "محمد الشامسي"
-      }
-    ]
-  },
-  {
     "id": "4803190",
     "url": "https://www.ysscores.com/ar/match/4803190/ACF-Fiorentina-vs-Udinese-Calcio",
     "info": {
@@ -388,6 +355,39 @@
       {
         "channel": "تطبيق STC TV",
         "commentator": "عيسى الحربين"
+      }
+    ]
+  },
+  {
+    "id": "4803196",
+    "url": "https://www.ysscores.com/ar/match/4803196/US-Sassuolo-vs-Torino-FC",
+    "info": {
+      "championship": "الدوري الإيطالي",
+      "round": "16 - مباراة الذهاب",
+      "stadium": "استاد مابي",
+      "time": "15:00",
+      "date": "الأحد 21-12-2025",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ساسولو",
+        "logo": "https://imgs.ysscores.com/teams/128/731690283001.png"
+      },
+      "away": {
+        "name": "تورينو",
+        "logo": "https://imgs.ysscores.com/teams/128/7501690283003.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "محمد الشامسي"
+      },
+      {
+        "channel": "StarzPlay",
+        "commentator": "محمد الشامسي"
       }
     ]
   },
@@ -785,30 +785,6 @@
     ]
   },
   {
-    "id": "4815371",
-    "url": "https://www.ysscores.com/ar/match/4815371/Go-Ahead-Eagles-vs-FC-Groningen",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "17 - مباراة الذهاب",
-      "stadium": "دي اديلارشورست",
-      "time": "14:30",
-      "date": "الأحد 21-12-2025",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "جو أهيد إيجلز",
-        "logo": "https://imgs.ysscores.com/teams/128/3951690996987.png"
-      },
-      "away": {
-        "name": "غرونينغن",
-        "logo": "https://imgs.ysscores.com/teams/128/10001690370535.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4815376",
     "url": "https://www.ysscores.com/ar/match/4815376/Fortuna-Sittard-vs-AZ-Alkmaar",
     "info": {
@@ -836,6 +812,30 @@
         "commentator": "محمد البدواوي"
       }
     ]
+  },
+  {
+    "id": "4815371",
+    "url": "https://www.ysscores.com/ar/match/4815371/Go-Ahead-Eagles-vs-FC-Groningen",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "17 - مباراة الذهاب",
+      "stadium": "دي اديلارشورست",
+      "time": "14:30",
+      "date": "الأحد 21-12-2025",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "جو أهيد إيجلز",
+        "logo": "https://imgs.ysscores.com/teams/128/3951690996987.png"
+      },
+      "away": {
+        "name": "غرونينغن",
+        "logo": "https://imgs.ysscores.com/teams/128/10001690370535.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "4815377",
@@ -1382,33 +1382,28 @@
     ]
   },
   {
-    "id": "5078978",
-    "url": "https://www.ysscores.com/ar/match/5078978/Olympique-Lyon-vs-FC-Saint-Cyr-Collonges-Au-Mont-dOr",
+    "id": "5078996",
+    "url": "https://www.ysscores.com/ar/match/5078996/US-Orléans-vs-FC-Dieppe",
     "info": {
       "championship": "كأس فرنسا",
       "round": "دور الـ 64",
-      "stadium": "غروباما",
-      "time": "21:00",
+      "stadium": "ملعب لاسورس",
+      "time": "17:30",
       "date": "الأحد 21-12-2025",
-      "current_score": "1 - 0",
-      "match_status": "الشوط الثاني"
+      "current_score": "3 - 0",
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "ليون",
-        "logo": "https://imgs.ysscores.com/teams/128/4081690287528.png"
+        "name": "أورليانز",
+        "logo": "https://imgs.ysscores.com/teams/128/4181690370559.png"
       },
       "away": {
-        "name": "سانت سير",
-        "logo": "https://imgs.ysscores.com/teams/128/17648502333155.png"
+        "name": "دييب",
+        "logo": "https://imgs.ysscores.com/teams/128/8861703618997.png"
       }
     },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "محمد المبروكي"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "5079006",
@@ -1440,28 +1435,33 @@
     ]
   },
   {
-    "id": "5078996",
-    "url": "https://www.ysscores.com/ar/match/5078996/US-Orléans-vs-FC-Dieppe",
+    "id": "5078978",
+    "url": "https://www.ysscores.com/ar/match/5078978/Olympique-Lyon-vs-FC-Saint-Cyr-Collonges-Au-Mont-dOr",
     "info": {
       "championship": "كأس فرنسا",
       "round": "دور الـ 64",
-      "stadium": "ملعب لاسورس",
-      "time": "17:30",
+      "stadium": "غروباما",
+      "time": "21:00",
       "date": "الأحد 21-12-2025",
-      "current_score": "3 - 0",
-      "match_status": "إنتهت المباراة"
+      "current_score": "1 - 0",
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
-        "name": "أورليانز",
-        "logo": "https://imgs.ysscores.com/teams/128/4181690370559.png"
+        "name": "ليون",
+        "logo": "https://imgs.ysscores.com/teams/128/4081690287528.png"
       },
       "away": {
-        "name": "دييب",
-        "logo": "https://imgs.ysscores.com/teams/128/8861703618997.png"
+        "name": "سانت سير",
+        "logo": "https://imgs.ysscores.com/teams/128/17648502333155.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "محمد المبروكي"
+      }
+    ]
   },
   {
     "id": "5079005",
