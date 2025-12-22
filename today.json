@@ -346,6 +346,39 @@
     "channels": []
   },
   {
+    "id": "4933465",
+    "url": "https://www.ysscores.com/ar/match/4933465/Sharjah-FC-vs-Al-Hilal-SFC",
+    "info": {
+      "championship": "دوري أبطال آسيا للنخبة",
+      "round": "6",
+      "stadium": "استاد نادي الشارقة",
+      "time": "17:00",
+      "date": "الاثنين 22-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الشارقة",
+        "logo": "https://imgs.ysscores.com/teams/128/1811690300800.png"
+      },
+      "away": {
+        "name": "الهلال",
+        "logo": "https://imgs.ysscores.com/teams/128/8761690298716.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "أحمد البلوشي"
+      },
+      {
+        "channel": "الكأس 6",
+        "commentator": "خالد الحدي"
+      }
+    ]
+  },
+  {
     "id": "4933466",
     "url": "https://www.ysscores.com/ar/match/4933466/Tractor-FC-vs-Al-Duhail-SC",
     "info": {
@@ -412,39 +445,6 @@
     ]
   },
   {
-    "id": "4933465",
-    "url": "https://www.ysscores.com/ar/match/4933465/Sharjah-FC-vs-Al-Hilal-SFC",
-    "info": {
-      "championship": "دوري أبطال آسيا للنخبة",
-      "round": "6",
-      "stadium": "استاد نادي الشارقة",
-      "time": "17:00",
-      "date": "الاثنين 22-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الشارقة",
-        "logo": "https://imgs.ysscores.com/teams/128/1811690300800.png"
-      },
-      "away": {
-        "name": "الهلال",
-        "logo": "https://imgs.ysscores.com/teams/128/8761690298716.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "أحمد البلوشي"
-      },
-      {
-        "channel": "الكأس 6",
-        "commentator": "خالد الحدي"
-      }
-    ]
-  },
-  {
     "id": "4933468",
     "url": "https://www.ysscores.com/ar/match/4933468/Al-Shorta-SC-vs-Al-Ahli-SFC",
     "info": {
@@ -478,30 +478,6 @@
     ]
   },
   {
-    "id": "4903006",
-    "url": "https://www.ysscores.com/ar/match/4903006/Al-Seeb-Club-vs-Bahla-Club",
-    "info": {
-      "championship": "دوري المحترفين العماني",
-      "round": "5 - مباراة الذهاب",
-      "stadium": "استاد السيب",
-      "time": "16:45",
-      "date": "الاثنين 22-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "السيب",
-        "logo": "https://imgs.ysscores.com/teams/128/5401691931087.png"
-      },
-      "away": {
-        "name": "بهلاء",
-        "logo": "https://imgs.ysscores.com/teams/128/3291691931416.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4903003",
     "url": "https://www.ysscores.com/ar/match/4903003/Al-Shabab-SC-(Oman)-vs-Al-Nasr-Club",
     "info": {
@@ -527,6 +503,59 @@
       {
         "channel": "عمان الرياضية",
         "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "4903006",
+    "url": "https://www.ysscores.com/ar/match/4903006/Al-Seeb-Club-vs-Bahla-Club",
+    "info": {
+      "championship": "دوري المحترفين العماني",
+      "round": "5 - مباراة الذهاب",
+      "stadium": "استاد السيب",
+      "time": "16:45",
+      "date": "الاثنين 22-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "السيب",
+        "logo": "https://imgs.ysscores.com/teams/128/5401691931087.png"
+      },
+      "away": {
+        "name": "بهلاء",
+        "logo": "https://imgs.ysscores.com/teams/128/3291691931416.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "97160359",
+    "url": "https://www.ysscores.com/ar/match/97160359/Al-Ahli-(Amman)-vs-Al-Ramtha-SC",
+    "info": {
+      "championship": "كأس الأردن",
+      "round": "ربع نهائي",
+      "stadium": "ملعب البتراء",
+      "time": "14:00",
+      "date": "الاثنين 22-12-2025",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/9281690936763.png"
+      },
+      "away": {
+        "name": "الرمثا",
+        "logo": "https://imgs.ysscores.com/teams/128/321690936881.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الأردن الرياضية",
+        "commentator": "حسين الوهادنة"
       }
     ]
   },
@@ -581,35 +610,6 @@
       }
     },
     "channels": []
-  },
-  {
-    "id": "97160359",
-    "url": "https://www.ysscores.com/ar/match/97160359/Al-Ahli-(Amman)-vs-Al-Ramtha-SC",
-    "info": {
-      "championship": "كأس الأردن",
-      "round": "ربع نهائي",
-      "stadium": "ملعب البتراء",
-      "time": "14:00",
-      "date": "الاثنين 22-12-2025",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/9281690936763.png"
-      },
-      "away": {
-        "name": "الرمثا",
-        "logo": "https://imgs.ysscores.com/teams/128/321690936881.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الأردن الرياضية",
-        "commentator": "حسين الوهادنة"
-      }
-    ]
   },
   {
     "id": "65491495",
@@ -787,8 +787,8 @@
       "stadium": "استاد الدفاع الجوي",
       "time": "16:00",
       "date": "الاثنين 22-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
