@@ -330,8 +330,8 @@
       "stadium": "ملعب 5 جويلية 1962",
       "time": "19:30",
       "date": "الاثنين 22-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -380,39 +380,6 @@
       {
         "channel": "الكأس 5",
         "commentator": "خليل البلوشي"
-      }
-    ]
-  },
-  {
-    "id": "4933465",
-    "url": "https://www.ysscores.com/ar/match/4933465/Sharjah-FC-vs-Al-Hilal-SFC",
-    "info": {
-      "championship": "دوري أبطال آسيا للنخبة",
-      "round": "6",
-      "stadium": "استاد نادي الشارقة",
-      "time": "17:00",
-      "date": "الاثنين 22-12-2025",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الشارقة",
-        "logo": "https://imgs.ysscores.com/teams/128/1811690300800.png"
-      },
-      "away": {
-        "name": "الهلال",
-        "logo": "https://imgs.ysscores.com/teams/128/8761690298716.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "أحمد البلوشي"
-      },
-      {
-        "channel": "الكأس 6",
-        "commentator": "خالد الحدي"
       }
     ]
   },
@@ -483,6 +450,39 @@
     ]
   },
   {
+    "id": "4933465",
+    "url": "https://www.ysscores.com/ar/match/4933465/Sharjah-FC-vs-Al-Hilal-SFC",
+    "info": {
+      "championship": "دوري أبطال آسيا للنخبة",
+      "round": "6",
+      "stadium": "استاد نادي الشارقة",
+      "time": "17:00",
+      "date": "الاثنين 22-12-2025",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الشارقة",
+        "logo": "https://imgs.ysscores.com/teams/128/1811690300800.png"
+      },
+      "away": {
+        "name": "الهلال",
+        "logo": "https://imgs.ysscores.com/teams/128/8761690298716.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "أحمد البلوشي"
+      },
+      {
+        "channel": "الكأس 6",
+        "commentator": "خالد الحدي"
+      }
+    ]
+  },
+  {
     "id": "4903003",
     "url": "https://www.ysscores.com/ar/match/4903003/Al-Shabab-SC-(Oman)-vs-Al-Nasr-Club",
     "info": {
@@ -541,35 +541,6 @@
     ]
   },
   {
-    "id": "45831993",
-    "url": "https://www.ysscores.com/ar/match/45831993/Al-Faisaly-SC-vs-Shabab-Al-Ordon-Club",
-    "info": {
-      "championship": "كأس الأردن",
-      "round": "ربع نهائي",
-      "stadium": "استاد الملك عبدالله",
-      "time": "16:30",
-      "date": "الاثنين 22-12-2025",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الفيصلي",
-        "logo": "https://imgs.ysscores.com/teams/128/361690936683.png"
-      },
-      "away": {
-        "name": "شباب الأردن",
-        "logo": "https://imgs.ysscores.com/teams/128/3331690936705.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الأردن الرياضية",
-        "commentator": "عماد قطيش"
-      }
-    ]
-  },
-  {
     "id": "97160359",
     "url": "https://www.ysscores.com/ar/match/97160359/Al-Ahli-(Amman)-vs-Al-Ramtha-SC",
     "info": {
@@ -620,6 +591,35 @@
       }
     },
     "channels": []
+  },
+  {
+    "id": "45831993",
+    "url": "https://www.ysscores.com/ar/match/45831993/Al-Faisaly-SC-vs-Shabab-Al-Ordon-Club",
+    "info": {
+      "championship": "كأس الأردن",
+      "round": "ربع نهائي",
+      "stadium": "استاد الملك عبدالله",
+      "time": "16:30",
+      "date": "الاثنين 22-12-2025",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الفيصلي",
+        "logo": "https://imgs.ysscores.com/teams/128/361690936683.png"
+      },
+      "away": {
+        "name": "شباب الأردن",
+        "logo": "https://imgs.ysscores.com/teams/128/3331690936705.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الأردن الرياضية",
+        "commentator": "عماد قطيش"
+      }
+    ]
   },
   {
     "id": "65491495",
