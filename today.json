@@ -95,8 +95,8 @@
       "stadium": "مجمع ديسبورتيفو دي ألفيركا",
       "time": "19:45",
       "date": "الاثنين 22-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -236,35 +236,6 @@
     ]
   },
   {
-    "id": "27957682",
-    "url": "https://www.ysscores.com/ar/match/27957682/Al-Karkh-SC-vs-Al-Gharraf-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "استاد الساحر احمد راضي",
-      "time": "14:00",
-      "date": "الاثنين 22-12-2025",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الكرخ",
-        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
-      },
-      "away": {
-        "name": "الغراف",
-        "logo": "https://imgs.ysscores.com/teams/128/6311734617665.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية الرياضية",
-        "commentator": "حسين سمير"
-      }
-    ]
-  },
-  {
     "id": "19428351",
     "url": "https://www.ysscores.com/ar/match/19428351/Diyala-SC-vs-Erbil-SC",
     "info": {
@@ -294,6 +265,35 @@
       {
         "channel": "الكأس 1",
         "commentator": "مصطفى ناظم"
+      }
+    ]
+  },
+  {
+    "id": "27957682",
+    "url": "https://www.ysscores.com/ar/match/27957682/Al-Karkh-SC-vs-Al-Gharraf-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "استاد الساحر احمد راضي",
+      "time": "14:00",
+      "date": "الاثنين 22-12-2025",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الكرخ",
+        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
+      },
+      "away": {
+        "name": "الغراف",
+        "logo": "https://imgs.ysscores.com/teams/128/6311734617665.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "حسين سمير"
       }
     ]
   },
@@ -347,39 +347,6 @@
       {
         "channel": "الجزائرية السادسة",
         "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "4933466",
-    "url": "https://www.ysscores.com/ar/match/4933466/Tractor-FC-vs-Al-Duhail-SC",
-    "info": {
-      "championship": "دوري أبطال آسيا للنخبة",
-      "round": "6",
-      "stadium": "استاد يادكار إمام",
-      "time": "17:00",
-      "date": "الاثنين 22-12-2025",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "تراكتور",
-        "logo": "https://imgs.ysscores.com/teams/128/5391722862680.png"
-      },
-      "away": {
-        "name": "الدحيل",
-        "logo": "https://imgs.ysscores.com/teams/128/3211693170386.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "عامر الخوذيري"
-      },
-      {
-        "channel": "الكأس 5",
-        "commentator": "أحمد الطيب"
       }
     ]
   },
@@ -450,6 +417,39 @@
     ]
   },
   {
+    "id": "4933466",
+    "url": "https://www.ysscores.com/ar/match/4933466/Tractor-FC-vs-Al-Duhail-SC",
+    "info": {
+      "championship": "دوري أبطال آسيا للنخبة",
+      "round": "6",
+      "stadium": "استاد يادكار إمام",
+      "time": "17:00",
+      "date": "الاثنين 22-12-2025",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "تراكتور",
+        "logo": "https://imgs.ysscores.com/teams/128/5391722862680.png"
+      },
+      "away": {
+        "name": "الدحيل",
+        "logo": "https://imgs.ysscores.com/teams/128/3211693170386.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "عامر الخوذيري"
+      },
+      {
+        "channel": "الكأس 5",
+        "commentator": "أحمد الطيب"
+      }
+    ]
+  },
+  {
     "id": "4933465",
     "url": "https://www.ysscores.com/ar/match/4933465/Sharjah-FC-vs-Al-Hilal-SFC",
     "info": {
@@ -483,35 +483,6 @@
     ]
   },
   {
-    "id": "4903003",
-    "url": "https://www.ysscores.com/ar/match/4903003/Al-Shabab-SC-(Oman)-vs-Al-Nasr-Club",
-    "info": {
-      "championship": "دوري المحترفين العماني",
-      "round": "5 - مباراة الذهاب",
-      "stadium": "استاد السيب",
-      "time": "13:45",
-      "date": "الاثنين 22-12-2025",
-      "current_score": "3 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الشباب",
-        "logo": "https://imgs.ysscores.com/teams/128/8431691931857.png"
-      },
-      "away": {
-        "name": "النصر",
-        "logo": "https://imgs.ysscores.com/teams/128/5661691930849.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "عمان الرياضية",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "4903006",
     "url": "https://www.ysscores.com/ar/match/4903006/Al-Seeb-Club-vs-Bahla-Club",
     "info": {
@@ -541,56 +512,33 @@
     ]
   },
   {
-    "id": "45831993",
-    "url": "https://www.ysscores.com/ar/match/45831993/Al-Faisaly-SC-vs-Shabab-Al-Ordon-Club",
+    "id": "4903003",
+    "url": "https://www.ysscores.com/ar/match/4903003/Al-Shabab-SC-(Oman)-vs-Al-Nasr-Club",
     "info": {
-      "championship": "كأس الأردن",
-      "round": "ربع نهائي",
-      "stadium": "استاد الملك عبدالله",
-      "time": "16:30",
+      "championship": "دوري المحترفين العماني",
+      "round": "5 - مباراة الذهاب",
+      "stadium": "استاد السيب",
+      "time": "13:45",
       "date": "الاثنين 22-12-2025",
-      "current_score": "0 - 0",
+      "current_score": "3 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الفيصلي",
-        "logo": "https://imgs.ysscores.com/teams/128/361690936683.png"
+        "name": "الشباب",
+        "logo": "https://imgs.ysscores.com/teams/128/8431691931857.png"
       },
       "away": {
-        "name": "شباب الأردن",
-        "logo": "https://imgs.ysscores.com/teams/128/3331690936705.png"
+        "name": "النصر",
+        "logo": "https://imgs.ysscores.com/teams/128/5661691930849.png"
       }
     },
     "channels": [
       {
-        "channel": "الأردن الرياضية",
-        "commentator": "عماد قطيش"
+        "channel": "عمان الرياضية",
+        "commentator": "غير مدرج"
       }
     ]
-  },
-  {
-    "id": "84032210",
-    "url": "https://www.ysscores.com/ar/match/84032210/Al-Salt-SC-vs-Al-Wehdat-SC",
-    "info": {
-      "championship": "كأس الأردن",
-      "round": "ربع نهائي",
-      "time": "14:00",
-      "date": "الاثنين 22-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "السلط",
-        "logo": "https://imgs.ysscores.com/teams/128/8341690936856.png"
-      },
-      "away": {
-        "name": "الوحدات",
-        "logo": "https://imgs.ysscores.com/teams/128/5171690936731.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "97160359",
@@ -618,6 +566,58 @@
       {
         "channel": "الأردن الرياضية",
         "commentator": "حسين الوهادنة"
+      }
+    ]
+  },
+  {
+    "id": "84032210",
+    "url": "https://www.ysscores.com/ar/match/84032210/Al-Salt-SC-vs-Al-Wehdat-SC",
+    "info": {
+      "championship": "كأس الأردن",
+      "round": "ربع نهائي",
+      "time": "14:00",
+      "date": "الاثنين 22-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "السلط",
+        "logo": "https://imgs.ysscores.com/teams/128/8341690936856.png"
+      },
+      "away": {
+        "name": "الوحدات",
+        "logo": "https://imgs.ysscores.com/teams/128/5171690936731.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "45831993",
+    "url": "https://www.ysscores.com/ar/match/45831993/Al-Faisaly-SC-vs-Shabab-Al-Ordon-Club",
+    "info": {
+      "championship": "كأس الأردن",
+      "round": "ربع نهائي",
+      "stadium": "استاد الملك عبدالله",
+      "time": "16:30",
+      "date": "الاثنين 22-12-2025",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الفيصلي",
+        "logo": "https://imgs.ysscores.com/teams/128/361690936683.png"
+      },
+      "away": {
+        "name": "شباب الأردن",
+        "logo": "https://imgs.ysscores.com/teams/128/3331690936705.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الأردن الرياضية",
+        "commentator": "عماد قطيش"
       }
     ]
   },
