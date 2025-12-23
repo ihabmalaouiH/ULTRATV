@@ -144,29 +144,6 @@
     "channels": []
   },
   {
-    "id": "4933547",
-    "url": "https://www.ysscores.com/ar/match/4933547/Mohun-Bagan-Super-Giant-vs-Sepahan-FC",
-    "info": {
-      "championship": "دوري أبطال آسيا 2",
-      "round": "6 - مباراة الاياب",
-      "time": "14:45",
-      "date": "الثلاثاء 23-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "موهون",
-        "logo": "https://imgs.ysscores.com/teams/128/4211694354762.png"
-      },
-      "away": {
-        "name": "سباهان أصفهان",
-        "logo": "https://imgs.ysscores.com/teams/128/3731693171276.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4933548",
     "url": "https://www.ysscores.com/ar/match/4933548/Al-Hussein-SC-(Irbid)-vs-Ahal-FK",
     "info": {
@@ -200,37 +177,27 @@
     ]
   },
   {
-    "id": "4933469",
-    "url": "https://www.ysscores.com/ar/match/4933469/Al-Sadd-SC-vs-Shabab-Al-Ahli-Club",
+    "id": "4933547",
+    "url": "https://www.ysscores.com/ar/match/4933547/Mohun-Bagan-Super-Giant-vs-Sepahan-FC",
     "info": {
-      "championship": "دوري أبطال آسيا للنخبة",
-      "round": "6",
-      "stadium": "استاد جاسم بن حمد",
-      "time": "17:00",
+      "championship": "دوري أبطال آسيا 2",
+      "round": "6 - مباراة الاياب",
+      "time": "14:45",
       "date": "الثلاثاء 23-12-2025",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "السد",
-        "logo": "https://imgs.ysscores.com/teams/128/6901727693223.png"
+        "name": "موهون",
+        "logo": "https://imgs.ysscores.com/teams/128/4211694354762.png"
       },
       "away": {
-        "name": "شباب الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/5261690300570.png"
+        "name": "سباهان أصفهان",
+        "logo": "https://imgs.ysscores.com/teams/128/3731693171276.png"
       }
     },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "حسن العيدروس"
-      },
-      {
-        "channel": "الكأس 5",
-        "commentator": "خالد الحدي"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "4933470",
@@ -262,6 +229,39 @@
       {
         "channel": "الكأس 6",
         "commentator": "سمير المعيرفي"
+      }
+    ]
+  },
+  {
+    "id": "4933469",
+    "url": "https://www.ysscores.com/ar/match/4933469/Al-Sadd-SC-vs-Shabab-Al-Ahli-Club",
+    "info": {
+      "championship": "دوري أبطال آسيا للنخبة",
+      "round": "6",
+      "stadium": "استاد جاسم بن حمد",
+      "time": "17:00",
+      "date": "الثلاثاء 23-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "السد",
+        "logo": "https://imgs.ysscores.com/teams/128/6901727693223.png"
+      },
+      "away": {
+        "name": "شباب الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/5261690300570.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "حسن العيدروس"
+      },
+      {
+        "channel": "الكأس 5",
+        "commentator": "خالد الحدي"
       }
     ]
   },
@@ -356,6 +356,43 @@
     ]
   },
   {
+    "id": "4721995",
+    "url": "https://www.ysscores.com/ar/match/4721995/Nigeria-vs-Tanzania",
+    "info": {
+      "championship": "كأس الأمم الأفريقية",
+      "round": "1",
+      "stadium": "المركب الرياضي لفاس",
+      "time": "18:30",
+      "date": "الثلاثاء 23-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "نيجيريا",
+        "logo": "https://imgs.ysscores.com/teams/128/9961763084205.png"
+      },
+      "away": {
+        "name": "تنزانيا",
+        "logo": "https://imgs.ysscores.com/teams/128/3241763087791.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Max 1",
+        "commentator": "علي محمد علي"
+      },
+      {
+        "channel": "beIN Max 2",
+        "commentator": "علي محمد علي"
+      },
+      {
+        "channel": "beIN Max 3",
+        "commentator": "علي محمد علي"
+      }
+    ]
+  },
+  {
     "id": "4722002",
     "url": "https://www.ysscores.com/ar/match/4722002/Democratic-Republic-of-the-Congo-vs-Benin",
     "info": {
@@ -426,43 +463,6 @@
       {
         "channel": "beIN Max 3",
         "commentator": "عصام الشوالي"
-      }
-    ]
-  },
-  {
-    "id": "4721995",
-    "url": "https://www.ysscores.com/ar/match/4721995/Nigeria-vs-Tanzania",
-    "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "1",
-      "stadium": "المركب الرياضي لفاس",
-      "time": "18:30",
-      "date": "الثلاثاء 23-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "نيجيريا",
-        "logo": "https://imgs.ysscores.com/teams/128/9961763084205.png"
-      },
-      "away": {
-        "name": "تنزانيا",
-        "logo": "https://imgs.ysscores.com/teams/128/3241763087791.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Max 1",
-        "commentator": "علي محمد علي"
-      },
-      {
-        "channel": "beIN Max 2",
-        "commentator": "علي محمد علي"
-      },
-      {
-        "channel": "beIN Max 3",
-        "commentator": "علي محمد علي"
       }
     ]
   },
@@ -598,6 +598,35 @@
     ]
   },
   {
+    "id": "77371087",
+    "url": "https://www.ysscores.com/ar/match/77371087/Modern-Sport-Club-vs-Wadi-Degla-FC",
+    "info": {
+      "championship": "كأس الرابطة المصرية",
+      "round": "3",
+      "stadium": "ستاد بتروسبورت",
+      "time": "16:00",
+      "date": "الثلاثاء 23-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "مودرن سبورت",
+        "logo": "https://imgs.ysscores.com/teams/128/5391724147326.png"
+      },
+      "away": {
+        "name": "وادي دجلة",
+        "logo": "https://imgs.ysscores.com/teams/128/2161728755640.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 2",
+        "commentator": "زياد الدكروري"
+      }
+    ]
+  },
+  {
     "id": "68234410",
     "url": "https://www.ysscores.com/ar/match/68234410/Ghazl-El-Mahalla-vs-Al-Ahly-FC",
     "info": {
@@ -627,31 +656,31 @@
     ]
   },
   {
-    "id": "77371087",
-    "url": "https://www.ysscores.com/ar/match/77371087/Modern-Sport-Club-vs-Wadi-Degla-FC",
+    "id": "5085942",
+    "url": "https://www.ysscores.com/ar/match/5085942/Fenerbahce-vs-Besiktas-JK",
     "info": {
-      "championship": "كأس الرابطة المصرية",
-      "round": "3",
-      "stadium": "ستاد بتروسبورت",
-      "time": "16:00",
+      "championship": "كأس تركيا",
+      "round": "1",
+      "stadium": "شكري سراج أوغلو",
+      "time": "18:30",
       "date": "الثلاثاء 23-12-2025",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "مودرن سبورت",
-        "logo": "https://imgs.ysscores.com/teams/128/5391724147326.png"
+        "name": "فنربخشة",
+        "logo": "https://imgs.ysscores.com/teams/128/681690127723.png"
       },
       "away": {
-        "name": "وادي دجلة",
-        "logo": "https://imgs.ysscores.com/teams/128/2161728755640.png"
+        "name": "بشكتاش",
+        "logo": "https://imgs.ysscores.com/teams/128/2171690128210.png"
       }
     },
     "channels": [
       {
-        "channel": "ON Sport 2",
-        "commentator": "زياد الدكروري"
+        "channel": "A Spor",
+        "commentator": "غير مدرج"
       }
     ]
   },
@@ -704,35 +733,6 @@
       "away": {
         "name": "أرضروم سبور",
         "logo": "https://imgs.ysscores.com/teams/128/1621700668146.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "A Spor",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "5085942",
-    "url": "https://www.ysscores.com/ar/match/5085942/Fenerbahce-vs-Besiktas-JK",
-    "info": {
-      "championship": "كأس تركيا",
-      "round": "1",
-      "stadium": "شكري سراج أوغلو",
-      "time": "18:30",
-      "date": "الثلاثاء 23-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "فنربخشة",
-        "logo": "https://imgs.ysscores.com/teams/128/681690127723.png"
-      },
-      "away": {
-        "name": "بشكتاش",
-        "logo": "https://imgs.ysscores.com/teams/128/2171690128210.png"
       }
     },
     "channels": [
