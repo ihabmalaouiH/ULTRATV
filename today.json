@@ -144,6 +144,29 @@
     "channels": []
   },
   {
+    "id": "4933547",
+    "url": "https://www.ysscores.com/ar/match/4933547/Mohun-Bagan-Super-Giant-vs-Sepahan-FC",
+    "info": {
+      "championship": "دوري أبطال آسيا 2",
+      "round": "6 - مباراة الاياب",
+      "time": "14:45",
+      "date": "الثلاثاء 23-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "موهون",
+        "logo": "https://imgs.ysscores.com/teams/128/4211694354762.png"
+      },
+      "away": {
+        "name": "سباهان أصفهان",
+        "logo": "https://imgs.ysscores.com/teams/128/3731693171276.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4933548",
     "url": "https://www.ysscores.com/ar/match/4933548/Al-Hussein-SC-(Irbid)-vs-Ahal-FK",
     "info": {
@@ -175,29 +198,6 @@
         "commentator": "يزن اللبابنة"
       }
     ]
-  },
-  {
-    "id": "4933547",
-    "url": "https://www.ysscores.com/ar/match/4933547/Mohun-Bagan-Super-Giant-vs-Sepahan-FC",
-    "info": {
-      "championship": "دوري أبطال آسيا 2",
-      "round": "6 - مباراة الاياب",
-      "time": "14:45",
-      "date": "الثلاثاء 23-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "موهون",
-        "logo": "https://imgs.ysscores.com/teams/128/4211694354762.png"
-      },
-      "away": {
-        "name": "سباهان أصفهان",
-        "logo": "https://imgs.ysscores.com/teams/128/3731693171276.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "4933470",
@@ -356,80 +356,6 @@
     ]
   },
   {
-    "id": "4721995",
-    "url": "https://www.ysscores.com/ar/match/4721995/Nigeria-vs-Tanzania",
-    "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "1",
-      "stadium": "المركب الرياضي لفاس",
-      "time": "18:30",
-      "date": "الثلاثاء 23-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "نيجيريا",
-        "logo": "https://imgs.ysscores.com/teams/128/9961763084205.png"
-      },
-      "away": {
-        "name": "تنزانيا",
-        "logo": "https://imgs.ysscores.com/teams/128/3241763087791.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Max 1",
-        "commentator": "علي محمد علي"
-      },
-      {
-        "channel": "beIN Max 2",
-        "commentator": "علي محمد علي"
-      },
-      {
-        "channel": "beIN Max 3",
-        "commentator": "علي محمد علي"
-      }
-    ]
-  },
-  {
-    "id": "4722001",
-    "url": "https://www.ysscores.com/ar/match/4722001/Senegal-vs-Botswana",
-    "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "1",
-      "stadium": "ملعب طنجة الكبير",
-      "time": "16:00",
-      "date": "الثلاثاء 23-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "السنغال",
-        "logo": "https://imgs.ysscores.com/teams/128/1831763086441.png"
-      },
-      "away": {
-        "name": "بوتسوانا",
-        "logo": "https://imgs.ysscores.com/teams/128/4041763069740.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Max 1",
-        "commentator": "حفيظ دراجي"
-      },
-      {
-        "channel": "beIN Max 2",
-        "commentator": "حفيظ دراجي"
-      },
-      {
-        "channel": "beIN Max 3",
-        "commentator": "حفيظ دراجي"
-      }
-    ]
-  },
-  {
     "id": "4721996",
     "url": "https://www.ysscores.com/ar/match/4721996/Tunisia-vs-Uganda",
     "info": {
@@ -467,6 +393,43 @@
     ]
   },
   {
+    "id": "4721995",
+    "url": "https://www.ysscores.com/ar/match/4721995/Nigeria-vs-Tanzania",
+    "info": {
+      "championship": "كأس الأمم الأفريقية",
+      "round": "1",
+      "stadium": "المركب الرياضي لفاس",
+      "time": "18:30",
+      "date": "الثلاثاء 23-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "نيجيريا",
+        "logo": "https://imgs.ysscores.com/teams/128/9961763084205.png"
+      },
+      "away": {
+        "name": "تنزانيا",
+        "logo": "https://imgs.ysscores.com/teams/128/3241763087791.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Max 1",
+        "commentator": "علي محمد علي"
+      },
+      {
+        "channel": "beIN Max 2",
+        "commentator": "علي محمد علي"
+      },
+      {
+        "channel": "beIN Max 3",
+        "commentator": "علي محمد علي"
+      }
+    ]
+  },
+  {
     "id": "4722002",
     "url": "https://www.ysscores.com/ar/match/4722002/Democratic-Republic-of-the-Congo-vs-Benin",
     "info": {
@@ -500,6 +463,43 @@
       {
         "channel": "beIN Max 3",
         "commentator": "نوفل باشي"
+      }
+    ]
+  },
+  {
+    "id": "4722001",
+    "url": "https://www.ysscores.com/ar/match/4722001/Senegal-vs-Botswana",
+    "info": {
+      "championship": "كأس الأمم الأفريقية",
+      "round": "1",
+      "stadium": "ملعب طنجة الكبير",
+      "time": "16:00",
+      "date": "الثلاثاء 23-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "السنغال",
+        "logo": "https://imgs.ysscores.com/teams/128/1831763086441.png"
+      },
+      "away": {
+        "name": "بوتسوانا",
+        "logo": "https://imgs.ysscores.com/teams/128/4041763069740.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Max 1",
+        "commentator": "حفيظ دراجي"
+      },
+      {
+        "channel": "beIN Max 2",
+        "commentator": "حفيظ دراجي"
+      },
+      {
+        "channel": "beIN Max 3",
+        "commentator": "حفيظ دراجي"
       }
     ]
   },
