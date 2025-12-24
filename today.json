@@ -1,29 +1,5 @@
 [
   {
-    "id": "5102820",
-    "url": "https://www.ysscores.com/ar/match/5102820/Libyan-Stadium-vs-Al-Watan-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "2 - مباراة الذهاب",
-      "stadium": "ملعب النهر الصناعي",
-      "time": "17:30",
-      "date": "الأربعاء 24-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الملعب الليبي",
-        "logo": "https://imgs.ysscores.com/teams/128/17656589037683.png"
-      },
-      "away": {
-        "name": "الوطن",
-        "logo": "https://imgs.ysscores.com/teams/128/17656564492479.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5102829",
     "url": "https://www.ysscores.com/ar/match/5102829/Al-Borouq-FC-vs-Al-Anwar-Al-Abyar-SC",
     "info": {
@@ -43,6 +19,30 @@
       "away": {
         "name": "الأنوار",
         "logo": "https://imgs.ysscores.com/teams/128/17656568995248.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5102820",
+    "url": "https://www.ysscores.com/ar/match/5102820/Libyan-Stadium-vs-Al-Watan-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "2 - مباراة الذهاب",
+      "stadium": "ملعب النهر الصناعي",
+      "time": "17:30",
+      "date": "الأربعاء 24-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الملعب الليبي",
+        "logo": "https://imgs.ysscores.com/teams/128/17656589037683.png"
+      },
+      "away": {
+        "name": "الوطن",
+        "logo": "https://imgs.ysscores.com/teams/128/17656564492479.png"
       }
     },
     "channels": []
@@ -129,12 +129,12 @@
     ]
   },
   {
-    "id": "4933493",
-    "url": "https://www.ysscores.com/ar/match/4933493/Al-Wasl-FC-vs-Al-Wehdat-SC",
+    "id": "4933518",
+    "url": "https://www.ysscores.com/ar/match/4933518/FK-Arkadag-vs-Al-Khaldiya-FC",
     "info": {
       "championship": "دوري أبطال آسيا 2",
       "round": "6 - مباراة الاياب",
-      "stadium": "استاد زعبيل",
+      "stadium": "استاد أركاداغ",
       "time": "17:00",
       "date": "الأربعاء 24-12-2025",
       "current_score": "- : -",
@@ -142,22 +142,22 @@
     },
     "teams": {
       "home": {
-        "name": "الوصل",
-        "logo": "https://imgs.ysscores.com/teams/128/5291690300472.png"
+        "name": "أركاداغ",
+        "logo": "https://imgs.ysscores.com/teams/128/6171755465897.png"
       },
       "away": {
-        "name": "الوحدات",
-        "logo": "https://imgs.ysscores.com/teams/128/5171690936731.png"
+        "name": "الخالدية",
+        "logo": "https://imgs.ysscores.com/teams/128/111729346393.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 3",
-        "commentator": "عامر الخوذيري"
+        "channel": "بي إن سبورت 4",
+        "commentator": "عبدالله الغامدي"
       },
       {
-        "channel": "الكأس 7",
-        "commentator": "سمير اليعقوبي"
+        "channel": "الكأس 8",
+        "commentator": "بكر علوان"
       }
     ]
   },
@@ -195,39 +195,6 @@
     ]
   },
   {
-    "id": "4933518",
-    "url": "https://www.ysscores.com/ar/match/4933518/FK-Arkadag-vs-Al-Khaldiya-FC",
-    "info": {
-      "championship": "دوري أبطال آسيا 2",
-      "round": "6 - مباراة الاياب",
-      "stadium": "استاد أركاداغ",
-      "time": "17:00",
-      "date": "الأربعاء 24-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أركاداغ",
-        "logo": "https://imgs.ysscores.com/teams/128/6171755465897.png"
-      },
-      "away": {
-        "name": "الخالدية",
-        "logo": "https://imgs.ysscores.com/teams/128/111729346393.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 4",
-        "commentator": "عبدالله الغامدي"
-      },
-      {
-        "channel": "الكأس 8",
-        "commentator": "بكر علوان"
-      }
-    ]
-  },
-  {
     "id": "4933494",
     "url": "https://www.ysscores.com/ar/match/4933494/Al-Muharraq-SC-vs-Esteghlal-FC",
     "info": {
@@ -257,6 +224,39 @@
       {
         "channel": "الكأس 9",
         "commentator": "أحمد المعمري"
+      }
+    ]
+  },
+  {
+    "id": "4933493",
+    "url": "https://www.ysscores.com/ar/match/4933493/Al-Wasl-FC-vs-Al-Wehdat-SC",
+    "info": {
+      "championship": "دوري أبطال آسيا 2",
+      "round": "6 - مباراة الاياب",
+      "stadium": "استاد زعبيل",
+      "time": "17:00",
+      "date": "الأربعاء 24-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الوصل",
+        "logo": "https://imgs.ysscores.com/teams/128/5291690300472.png"
+      },
+      "away": {
+        "name": "الوحدات",
+        "logo": "https://imgs.ysscores.com/teams/128/5171690936731.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "عامر الخوذيري"
+      },
+      {
+        "channel": "الكأس 7",
+        "commentator": "سمير اليعقوبي"
       }
     ]
   },
@@ -446,43 +446,6 @@
     ]
   },
   {
-    "id": "4722007",
-    "url": "https://www.ysscores.com/ar/match/4722007/Algeria-vs-Sudan",
-    "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "1",
-      "stadium": "ملعب مولاي الحسن",
-      "time": "16:00",
-      "date": "الأربعاء 24-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الجزائر",
-        "logo": "https://imgs.ysscores.com/teams/128/2341763066345.png"
-      },
-      "away": {
-        "name": "السودان",
-        "logo": "https://imgs.ysscores.com/teams/128/6511763087361.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Max 1",
-        "commentator": "حسن العيدروس"
-      },
-      {
-        "channel": "beIN Max 2",
-        "commentator": "حسن العيدروس"
-      },
-      {
-        "channel": "beIN Max 3",
-        "commentator": "حسن العيدروس"
-      }
-    ]
-  },
-  {
     "id": "4722013",
     "url": "https://www.ysscores.com/ar/match/4722013/Ivory-Coast-vs-Mozambique",
     "info": {
@@ -553,6 +516,43 @@
       {
         "channel": "beIN Max 3",
         "commentator": "محمد بركات"
+      }
+    ]
+  },
+  {
+    "id": "4722007",
+    "url": "https://www.ysscores.com/ar/match/4722007/Algeria-vs-Sudan",
+    "info": {
+      "championship": "كأس الأمم الأفريقية",
+      "round": "1",
+      "stadium": "ملعب مولاي الحسن",
+      "time": "16:00",
+      "date": "الأربعاء 24-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الجزائر",
+        "logo": "https://imgs.ysscores.com/teams/128/2341763066345.png"
+      },
+      "away": {
+        "name": "السودان",
+        "logo": "https://imgs.ysscores.com/teams/128/6511763087361.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Max 1",
+        "commentator": "حسن العيدروس"
+      },
+      {
+        "channel": "beIN Max 2",
+        "commentator": "حسن العيدروس"
+      },
+      {
+        "channel": "beIN Max 3",
+        "commentator": "حسن العيدروس"
       }
     ]
   },
@@ -677,6 +677,35 @@
     ]
   },
   {
+    "id": "5085836",
+    "url": "https://www.ysscores.com/ar/match/5085836/Boluspor-vs-Fethiyespor",
+    "info": {
+      "championship": "كأس تركيا",
+      "round": "1",
+      "stadium": "استاد بولو أتاتورك",
+      "time": "13:30",
+      "date": "الأربعاء 24-12-2025",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "بولو سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/5401700668616.png"
+      },
+      "away": {
+        "name": "فتحي سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/3911717937458.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "A Spor",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
     "id": "5085945",
     "url": "https://www.ysscores.com/ar/match/5085945/Ankara-Keciörengücü-vs-Beyoglu-Yeni-Carsi-FK",
     "info": {
@@ -696,35 +725,6 @@
       "away": {
         "name": "بيوغلو يني كارشي",
         "logo": "https://imgs.ysscores.com/teams/128/741700670821.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "A Spor",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "5085911",
-    "url": "https://www.ysscores.com/ar/match/5085911/Samsunspor-vs-Eyüpspor",
-    "info": {
-      "championship": "كأس تركيا",
-      "round": "1",
-      "stadium": "استاد سامسون",
-      "time": "18:30",
-      "date": "الأربعاء 24-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "سامسون سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/4911690127919.png"
-      },
-      "away": {
-        "name": "أيوب سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/891700669405.png"
       }
     },
     "channels": [
@@ -764,25 +764,25 @@
     ]
   },
   {
-    "id": "5085836",
-    "url": "https://www.ysscores.com/ar/match/5085836/Boluspor-vs-Fethiyespor",
+    "id": "5085911",
+    "url": "https://www.ysscores.com/ar/match/5085911/Samsunspor-vs-Eyüpspor",
     "info": {
       "championship": "كأس تركيا",
       "round": "1",
-      "stadium": "استاد بولو أتاتورك",
-      "time": "13:30",
+      "stadium": "استاد سامسون",
+      "time": "18:30",
       "date": "الأربعاء 24-12-2025",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "بولو سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/5401700668616.png"
+        "name": "سامسون سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/4911690127919.png"
       },
       "away": {
-        "name": "فتحي سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/3911717937458.png"
+        "name": "أيوب سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/891700669405.png"
       }
     },
     "channels": [
