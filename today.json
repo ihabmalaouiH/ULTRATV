@@ -96,72 +96,6 @@
     "channels": []
   },
   {
-    "id": "4933595",
-    "url": "https://www.ysscores.com/ar/match/4933595/FC-Goa-vs-Istiqlol-Dushanbe",
-    "info": {
-      "championship": "دوري أبطال آسيا 2",
-      "round": "6 - مباراة الاياب",
-      "stadium": "استاد جواهر لال نهرو",
-      "time": "17:00",
-      "date": "الأربعاء 24-12-2025",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "غوا",
-        "logo": "https://imgs.ysscores.com/teams/128/1021739440342.png"
-      },
-      "away": {
-        "name": "دوشنبه",
-        "logo": "https://imgs.ysscores.com/teams/128/1041693170415.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 6",
-        "commentator": "أحمد عبده"
-      },
-      {
-        "channel": "الكأس 10",
-        "commentator": "جابر المري"
-      }
-    ]
-  },
-  {
-    "id": "4933518",
-    "url": "https://www.ysscores.com/ar/match/4933518/FK-Arkadag-vs-Al-Khaldiya-FC",
-    "info": {
-      "championship": "دوري أبطال آسيا 2",
-      "round": "6 - مباراة الاياب",
-      "stadium": "استاد أركاداغ",
-      "time": "17:00",
-      "date": "الأربعاء 24-12-2025",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أركاداغ",
-        "logo": "https://imgs.ysscores.com/teams/128/6171755465897.png"
-      },
-      "away": {
-        "name": "الخالدية",
-        "logo": "https://imgs.ysscores.com/teams/128/111729346393.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 4",
-        "commentator": "عبدالله الغامدي"
-      },
-      {
-        "channel": "الكأس 8",
-        "commentator": "بكر علوان"
-      }
-    ]
-  },
-  {
     "id": "4933493",
     "url": "https://www.ysscores.com/ar/match/4933493/Al-Wasl-FC-vs-Al-Wehdat-SC",
     "info": {
@@ -191,39 +125,6 @@
       {
         "channel": "الكأس 7",
         "commentator": "سمير اليعقوبي"
-      }
-    ]
-  },
-  {
-    "id": "4933517",
-    "url": "https://www.ysscores.com/ar/match/4933517/Al-Ahli-SC-vs-FC-Andijon",
-    "info": {
-      "championship": "دوري أبطال آسيا 2",
-      "round": "6 - مباراة الاياب",
-      "stadium": "استاد الثمامة",
-      "time": "17:00",
-      "date": "الأربعاء 24-12-2025",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/5031722879444.png"
-      },
-      "away": {
-        "name": "أنديجان",
-        "logo": "https://imgs.ysscores.com/teams/128/911755465808.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "أحمد البلوشي"
-      },
-      {
-        "channel": "الكأس 5",
-        "commentator": "سعود الحريري"
       }
     ]
   },
@@ -261,6 +162,105 @@
     ]
   },
   {
+    "id": "4933518",
+    "url": "https://www.ysscores.com/ar/match/4933518/FK-Arkadag-vs-Al-Khaldiya-FC",
+    "info": {
+      "championship": "دوري أبطال آسيا 2",
+      "round": "6 - مباراة الاياب",
+      "stadium": "استاد أركاداغ",
+      "time": "17:00",
+      "date": "الأربعاء 24-12-2025",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أركاداغ",
+        "logo": "https://imgs.ysscores.com/teams/128/6171755465897.png"
+      },
+      "away": {
+        "name": "الخالدية",
+        "logo": "https://imgs.ysscores.com/teams/128/111729346393.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 4",
+        "commentator": "عبدالله الغامدي"
+      },
+      {
+        "channel": "الكأس 8",
+        "commentator": "بكر علوان"
+      }
+    ]
+  },
+  {
+    "id": "4933595",
+    "url": "https://www.ysscores.com/ar/match/4933595/FC-Goa-vs-Istiqlol-Dushanbe",
+    "info": {
+      "championship": "دوري أبطال آسيا 2",
+      "round": "6 - مباراة الاياب",
+      "stadium": "استاد جواهر لال نهرو",
+      "time": "17:00",
+      "date": "الأربعاء 24-12-2025",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "غوا",
+        "logo": "https://imgs.ysscores.com/teams/128/1021739440342.png"
+      },
+      "away": {
+        "name": "دوشنبه",
+        "logo": "https://imgs.ysscores.com/teams/128/1041693170415.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 6",
+        "commentator": "أحمد عبده"
+      },
+      {
+        "channel": "الكأس 10",
+        "commentator": "جابر المري"
+      }
+    ]
+  },
+  {
+    "id": "4933517",
+    "url": "https://www.ysscores.com/ar/match/4933517/Al-Ahli-SC-vs-FC-Andijon",
+    "info": {
+      "championship": "دوري أبطال آسيا 2",
+      "round": "6 - مباراة الاياب",
+      "stadium": "استاد الثمامة",
+      "time": "17:00",
+      "date": "الأربعاء 24-12-2025",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/5031722879444.png"
+      },
+      "away": {
+        "name": "أنديجان",
+        "logo": "https://imgs.ysscores.com/teams/128/911755465808.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "أحمد البلوشي"
+      },
+      {
+        "channel": "الكأس 5",
+        "commentator": "سعود الحريري"
+      }
+    ]
+  },
+  {
     "id": "4933596",
     "url": "https://www.ysscores.com/ar/match/4933596/Al-Nassr-FC-vs-Al-Zawraa-SC",
     "info": {
@@ -290,47 +290,6 @@
       {
         "channel": "الكأس 6",
         "commentator": "منتصر الأزهري"
-      }
-    ]
-  },
-  {
-    "id": "38209174",
-    "url": "https://www.ysscores.com/ar/match/38209174/Qadsia-SC-vs-Sitra-Club",
-    "info": {
-      "championship": "دوري أبطال الخليج",
-      "round": "4 - مباراة الاياب",
-      "stadium": "استاد محمد الحمد",
-      "time": "18:00",
-      "date": "الأربعاء 24-12-2025",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "القادسية",
-        "logo": "https://imgs.ysscores.com/teams/128/451723127217.png"
-      },
-      "away": {
-        "name": "سترة",
-        "logo": "https://imgs.ysscores.com/teams/128/3231692198181.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الكأس 2",
-        "commentator": "هيكل الصغير"
-      },
-      {
-        "channel": "أبو ظبي الرياضية 1",
-        "commentator": "حازم عبدالسلام"
-      },
-      {
-        "channel": "الكويت الرياضية",
-        "commentator": "بدر شداد"
-      },
-      {
-        "channel": "دبي الرياضية 2",
-        "commentator": "راشد عبدالرحمن"
       }
     ]
   },
@@ -372,6 +331,47 @@
       {
         "channel": "عمان الرياضية",
         "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "38209174",
+    "url": "https://www.ysscores.com/ar/match/38209174/Qadsia-SC-vs-Sitra-Club",
+    "info": {
+      "championship": "دوري أبطال الخليج",
+      "round": "4 - مباراة الاياب",
+      "stadium": "استاد محمد الحمد",
+      "time": "18:00",
+      "date": "الأربعاء 24-12-2025",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "القادسية",
+        "logo": "https://imgs.ysscores.com/teams/128/451723127217.png"
+      },
+      "away": {
+        "name": "سترة",
+        "logo": "https://imgs.ysscores.com/teams/128/3231692198181.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الكأس 2",
+        "commentator": "هيكل الصغير"
+      },
+      {
+        "channel": "أبو ظبي الرياضية 1",
+        "commentator": "حازم عبدالسلام"
+      },
+      {
+        "channel": "الكويت الرياضية",
+        "commentator": "بدر شداد"
+      },
+      {
+        "channel": "دبي الرياضية 2",
+        "commentator": "راشد عبدالرحمن"
       }
     ]
   },
@@ -442,43 +442,39 @@
     ]
   },
   {
-    "id": "4722007",
-    "url": "https://www.ysscores.com/ar/match/4722007/Algeria-vs-Sudan",
+    "id": "4722014",
+    "url": "https://www.ysscores.com/ar/match/4722014/Cameroon-vs-Gabon",
     "info": {
       "championship": "كأس الأمم الأفريقية",
       "round": "1",
-      "stadium": "ملعب مولاي الحسن",
-      "time": "16:00",
+      "stadium": "ملعب أدرار",
+      "time": "21:00",
       "date": "الأربعاء 24-12-2025",
-      "current_score": "3 - 0",
+      "current_score": "1 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الجزائر",
-        "logo": "https://imgs.ysscores.com/teams/128/2341763066345.png"
+        "name": "الكاميرون",
+        "logo": "https://imgs.ysscores.com/teams/128/1341763070498.png"
       },
       "away": {
-        "name": "السودان",
-        "logo": "https://imgs.ysscores.com/teams/128/6511763087361.png"
+        "name": "الغابون",
+        "logo": "https://imgs.ysscores.com/teams/128/8751763078081.png"
       }
     },
     "channels": [
       {
         "channel": "beIN Max 1",
-        "commentator": "حسن العيدروس"
+        "commentator": "محمد بركات"
       },
       {
         "channel": "beIN Max 2",
-        "commentator": "حسن العيدروس"
+        "commentator": "محمد بركات"
       },
       {
         "channel": "beIN Max 3",
-        "commentator": "حسن العيدروس"
-      },
-      {
-        "channel": "الجزائرية الأولى",
-        "commentator": "غير مدرج"
+        "commentator": "محمد بركات"
       }
     ]
   },
@@ -520,39 +516,43 @@
     ]
   },
   {
-    "id": "4722014",
-    "url": "https://www.ysscores.com/ar/match/4722014/Cameroon-vs-Gabon",
+    "id": "4722007",
+    "url": "https://www.ysscores.com/ar/match/4722007/Algeria-vs-Sudan",
     "info": {
       "championship": "كأس الأمم الأفريقية",
       "round": "1",
-      "stadium": "ملعب أدرار",
-      "time": "21:00",
+      "stadium": "ملعب مولاي الحسن",
+      "time": "16:00",
       "date": "الأربعاء 24-12-2025",
-      "current_score": "1 - 0",
+      "current_score": "3 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الكاميرون",
-        "logo": "https://imgs.ysscores.com/teams/128/1341763070498.png"
+        "name": "الجزائر",
+        "logo": "https://imgs.ysscores.com/teams/128/2341763066345.png"
       },
       "away": {
-        "name": "الغابون",
-        "logo": "https://imgs.ysscores.com/teams/128/8751763078081.png"
+        "name": "السودان",
+        "logo": "https://imgs.ysscores.com/teams/128/6511763087361.png"
       }
     },
     "channels": [
       {
         "channel": "beIN Max 1",
-        "commentator": "محمد بركات"
+        "commentator": "حسن العيدروس"
       },
       {
         "channel": "beIN Max 2",
-        "commentator": "محمد بركات"
+        "commentator": "حسن العيدروس"
       },
       {
         "channel": "beIN Max 3",
-        "commentator": "محمد بركات"
+        "commentator": "حسن العيدروس"
+      },
+      {
+        "channel": "الجزائرية الأولى",
+        "commentator": "غير مدرج"
       }
     ]
   },
