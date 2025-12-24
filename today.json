@@ -29,6 +29,39 @@
     ]
   },
   {
+    "id": "68223879",
+    "url": "https://www.ysscores.com/ar/match/68223879/Al-Naft-SC-vs-Al-Quwa-Al-Jawiya",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "استاد الساحر احمد راضي",
+      "time": "16:30",
+      "date": "الثلاثاء 23-12-2025",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "النفط",
+        "logo": "https://imgs.ysscores.com/teams/128/7661722514776.png"
+      },
+      "away": {
+        "name": "القوة الجوية",
+        "logo": "https://imgs.ysscores.com/teams/128/4301729966980.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "حسين الساعدي"
+      },
+      {
+        "channel": "الكأس 3",
+        "commentator": "منتصر الأزهري"
+      }
+    ]
+  },
+  {
     "id": "58655210",
     "url": "https://www.ysscores.com/ar/match/58655210/Al-Kahrbaa-Club-vs-Al-Qasim-SC",
     "info": {
@@ -83,39 +116,6 @@
       {
         "channel": "العراقية السريانية",
         "commentator": "حسين سمير"
-      }
-    ]
-  },
-  {
-    "id": "68223879",
-    "url": "https://www.ysscores.com/ar/match/68223879/Al-Naft-SC-vs-Al-Quwa-Al-Jawiya",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "استاد الساحر احمد راضي",
-      "time": "16:30",
-      "date": "الثلاثاء 23-12-2025",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "النفط",
-        "logo": "https://imgs.ysscores.com/teams/128/7661722514776.png"
-      },
-      "away": {
-        "name": "القوة الجوية",
-        "logo": "https://imgs.ysscores.com/teams/128/4301729966980.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية الرياضية",
-        "commentator": "حسين الساعدي"
-      },
-      {
-        "channel": "الكأس 3",
-        "commentator": "منتصر الأزهري"
       }
     ]
   },
@@ -357,43 +357,6 @@
     ]
   },
   {
-    "id": "4722002",
-    "url": "https://www.ysscores.com/ar/match/4722002/Democratic-Republic-of-the-Congo-vs-Benin",
-    "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "1",
-      "stadium": "ملعب البريد",
-      "time": "13:30",
-      "date": "الثلاثاء 23-12-2025",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الكونغو",
-        "logo": "https://imgs.ysscores.com/teams/128/9851763070992.png"
-      },
-      "away": {
-        "name": "بنين",
-        "logo": "https://imgs.ysscores.com/teams/128/8421763069265.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Max 1",
-        "commentator": "نوفل باشي"
-      },
-      {
-        "channel": "beIN Max 2",
-        "commentator": "نوفل باشي"
-      },
-      {
-        "channel": "beIN Max 3",
-        "commentator": "نوفل باشي"
-      }
-    ]
-  },
-  {
     "id": "4721996",
     "url": "https://www.ysscores.com/ar/match/4721996/Tunisia-vs-Uganda",
     "info": {
@@ -431,6 +394,43 @@
       {
         "channel": "القناة الأرضية الجزائرية",
         "commentator": "أمين رزاوي"
+      }
+    ]
+  },
+  {
+    "id": "4722002",
+    "url": "https://www.ysscores.com/ar/match/4722002/Democratic-Republic-of-the-Congo-vs-Benin",
+    "info": {
+      "championship": "كأس الأمم الأفريقية",
+      "round": "1",
+      "stadium": "ملعب البريد",
+      "time": "13:30",
+      "date": "الثلاثاء 23-12-2025",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الكونغو",
+        "logo": "https://imgs.ysscores.com/teams/128/9851763070992.png"
+      },
+      "away": {
+        "name": "بنين",
+        "logo": "https://imgs.ysscores.com/teams/128/8421763069265.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Max 1",
+        "commentator": "نوفل باشي"
+      },
+      {
+        "channel": "beIN Max 2",
+        "commentator": "نوفل باشي"
+      },
+      {
+        "channel": "beIN Max 3",
+        "commentator": "نوفل باشي"
       }
     ]
   },
