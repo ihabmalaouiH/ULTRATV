@@ -157,28 +157,33 @@
     ]
   },
   {
-    "id": "5102822",
-    "url": "https://www.ysscores.com/ar/match/5102822/Asswehly-SC-vs-Al-Khums-SC",
+    "id": "5102831",
+    "url": "https://www.ysscores.com/ar/match/5102831/Al-Ahly-SCSC-(Benghazi)-vs-Al-Hilal-SC",
     "info": {
       "championship": "الدوري الليبي الممتاز",
       "round": "2 - مباراة الذهاب",
-      "stadium": "ملعب مصراتة",
-      "time": "17:30",
+      "stadium": "ملعب بنغازي الدولي",
+      "time": "17:00",
       "date": "الخميس 25-12-2025",
       "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
-        "name": "السويحلي",
-        "logo": "https://imgs.ysscores.com/teams/128/17656587578495.png"
+        "name": "الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/17666732344755.png"
       },
       "away": {
-        "name": "الخمس",
-        "logo": "https://imgs.ysscores.com/teams/128/17656575035545.png"
+        "name": "الهلال",
+        "logo": "https://imgs.ysscores.com/teams/128/7131696628343.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "ليبيا الرياضية 2",
+        "commentator": "غير مدرج"
+      }
+    ]
   },
   {
     "id": "5102830",
@@ -210,33 +215,28 @@
     ]
   },
   {
-    "id": "5102831",
-    "url": "https://www.ysscores.com/ar/match/5102831/Al-Ahly-SCSC-(Benghazi)-vs-Al-Hilal-SC",
+    "id": "5102822",
+    "url": "https://www.ysscores.com/ar/match/5102822/Asswehly-SC-vs-Al-Khums-SC",
     "info": {
       "championship": "الدوري الليبي الممتاز",
       "round": "2 - مباراة الذهاب",
-      "stadium": "ملعب بنغازي الدولي",
-      "time": "17:00",
+      "stadium": "ملعب مصراتة",
+      "time": "17:30",
       "date": "الخميس 25-12-2025",
       "current_score": "0 - 0",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/17666732344755.png"
+        "name": "السويحلي",
+        "logo": "https://imgs.ysscores.com/teams/128/17656587578495.png"
       },
       "away": {
-        "name": "الهلال",
-        "logo": "https://imgs.ysscores.com/teams/128/7131696628343.png"
+        "name": "الخمس",
+        "logo": "https://imgs.ysscores.com/teams/128/17656575035545.png"
       }
     },
-    "channels": [
-      {
-        "channel": "ليبيا الرياضية 2",
-        "commentator": "غير مدرج"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "5102821",
@@ -442,35 +442,6 @@
     ]
   },
   {
-    "id": "62467042",
-    "url": "https://www.ysscores.com/ar/match/62467042/Pyramids-FC-vs-Ismaily-SC",
-    "info": {
-      "championship": "كأس الرابطة المصرية",
-      "round": "3",
-      "stadium": "استاد السلام",
-      "time": "19:00",
-      "date": "الخميس 25-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "بيراميدز",
-        "logo": "https://imgs.ysscores.com/teams/128/5771692283569.png"
-      },
-      "away": {
-        "name": "الإسماعيلي",
-        "logo": "https://imgs.ysscores.com/teams/128/6781694082759.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ON Sport 2",
-        "commentator": "عصام عبده"
-      }
-    ]
-  },
-  {
     "id": "51977089",
     "url": "https://www.ysscores.com/ar/match/51977089/Harras-El-Hodoud-vs-El-Masry-SC",
     "info": {
@@ -496,6 +467,35 @@
       {
         "channel": "ON Sport 1",
         "commentator": "طارق الأدور"
+      }
+    ]
+  },
+  {
+    "id": "62467042",
+    "url": "https://www.ysscores.com/ar/match/62467042/Pyramids-FC-vs-Ismaily-SC",
+    "info": {
+      "championship": "كأس الرابطة المصرية",
+      "round": "3",
+      "stadium": "استاد السلام",
+      "time": "19:00",
+      "date": "الخميس 25-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "بيراميدز",
+        "logo": "https://imgs.ysscores.com/teams/128/5771692283569.png"
+      },
+      "away": {
+        "name": "الإسماعيلي",
+        "logo": "https://imgs.ysscores.com/teams/128/6781694082759.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 2",
+        "commentator": "عصام عبده"
       }
     ]
   },
