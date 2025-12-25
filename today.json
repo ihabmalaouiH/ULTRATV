@@ -24,30 +24,6 @@
     "channels": []
   },
   {
-    "id": "5102829",
-    "url": "https://www.ysscores.com/ar/match/5102829/Al-Borouq-FC-vs-Al-Anwar-Al-Abyar-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "2 - مباراة الذهاب",
-      "stadium": "الوادي الكبير",
-      "time": "14:00",
-      "date": "الأربعاء 24-12-2025",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "البروق",
-        "logo": "https://imgs.ysscores.com/teams/128/17656432533307.png"
-      },
-      "away": {
-        "name": "الأنوار",
-        "logo": "https://imgs.ysscores.com/teams/128/17656568995248.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5102819",
     "url": "https://www.ysscores.com/ar/match/5102819/Al-Qadisiyah-Bani-Walid-vs-Abu-Salim-SC",
     "info": {
@@ -67,6 +43,30 @@
       "away": {
         "name": "أبو سليم",
         "logo": "https://imgs.ysscores.com/teams/128/17656585223558.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5102829",
+    "url": "https://www.ysscores.com/ar/match/5102829/Al-Borouq-FC-vs-Al-Anwar-Al-Abyar-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "2 - مباراة الذهاب",
+      "stadium": "الوادي الكبير",
+      "time": "14:00",
+      "date": "الأربعاء 24-12-2025",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "البروق",
+        "logo": "https://imgs.ysscores.com/teams/128/17656432533307.png"
+      },
+      "away": {
+        "name": "الأنوار",
+        "logo": "https://imgs.ysscores.com/teams/128/17656568995248.png"
       }
     },
     "channels": []
@@ -94,6 +94,39 @@
       }
     },
     "channels": []
+  },
+  {
+    "id": "4933595",
+    "url": "https://www.ysscores.com/ar/match/4933595/FC-Goa-vs-Istiqlol-Dushanbe",
+    "info": {
+      "championship": "دوري أبطال آسيا 2",
+      "round": "6 - مباراة الاياب",
+      "stadium": "استاد جواهر لال نهرو",
+      "time": "17:00",
+      "date": "الأربعاء 24-12-2025",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "غوا",
+        "logo": "https://imgs.ysscores.com/teams/128/1021739440342.png"
+      },
+      "away": {
+        "name": "دوشنبه",
+        "logo": "https://imgs.ysscores.com/teams/128/1041693170415.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 6",
+        "commentator": "أحمد عبده"
+      },
+      {
+        "channel": "الكأس 10",
+        "commentator": "جابر المري"
+      }
+    ]
   },
   {
     "id": "4933517",
@@ -162,35 +195,35 @@
     ]
   },
   {
-    "id": "4933595",
-    "url": "https://www.ysscores.com/ar/match/4933595/FC-Goa-vs-Istiqlol-Dushanbe",
+    "id": "4933493",
+    "url": "https://www.ysscores.com/ar/match/4933493/Al-Wasl-FC-vs-Al-Wehdat-SC",
     "info": {
       "championship": "دوري أبطال آسيا 2",
       "round": "6 - مباراة الاياب",
-      "stadium": "استاد جواهر لال نهرو",
+      "stadium": "استاد زعبيل",
       "time": "17:00",
       "date": "الأربعاء 24-12-2025",
-      "current_score": "1 - 2",
+      "current_score": "2 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "غوا",
-        "logo": "https://imgs.ysscores.com/teams/128/1021739440342.png"
+        "name": "الوصل",
+        "logo": "https://imgs.ysscores.com/teams/128/5291690300472.png"
       },
       "away": {
-        "name": "دوشنبه",
-        "logo": "https://imgs.ysscores.com/teams/128/1041693170415.png"
+        "name": "الوحدات",
+        "logo": "https://imgs.ysscores.com/teams/128/5171690936731.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 6",
-        "commentator": "أحمد عبده"
+        "channel": "بي إن سبورت 3",
+        "commentator": "عامر الخوذيري"
       },
       {
-        "channel": "الكأس 10",
-        "commentator": "جابر المري"
+        "channel": "الكأس 7",
+        "commentator": "سمير اليعقوبي"
       }
     ]
   },
@@ -257,39 +290,6 @@
       {
         "channel": "الكأس 6",
         "commentator": "منتصر الأزهري"
-      }
-    ]
-  },
-  {
-    "id": "4933493",
-    "url": "https://www.ysscores.com/ar/match/4933493/Al-Wasl-FC-vs-Al-Wehdat-SC",
-    "info": {
-      "championship": "دوري أبطال آسيا 2",
-      "round": "6 - مباراة الاياب",
-      "stadium": "استاد زعبيل",
-      "time": "17:00",
-      "date": "الأربعاء 24-12-2025",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الوصل",
-        "logo": "https://imgs.ysscores.com/teams/128/5291690300472.png"
-      },
-      "away": {
-        "name": "الوحدات",
-        "logo": "https://imgs.ysscores.com/teams/128/5171690936731.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "عامر الخوذيري"
-      },
-      {
-        "channel": "الكأس 7",
-        "commentator": "سمير اليعقوبي"
       }
     ]
   },
@@ -442,39 +442,43 @@
     ]
   },
   {
-    "id": "4722014",
-    "url": "https://www.ysscores.com/ar/match/4722014/Cameroon-vs-Gabon",
+    "id": "4722007",
+    "url": "https://www.ysscores.com/ar/match/4722007/Algeria-vs-Sudan",
     "info": {
       "championship": "كأس الأمم الأفريقية",
       "round": "1",
-      "stadium": "ملعب أدرار",
-      "time": "21:00",
+      "stadium": "ملعب مولاي الحسن",
+      "time": "16:00",
       "date": "الأربعاء 24-12-2025",
-      "current_score": "1 - 0",
+      "current_score": "3 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الكاميرون",
-        "logo": "https://imgs.ysscores.com/teams/128/1341763070498.png"
+        "name": "الجزائر",
+        "logo": "https://imgs.ysscores.com/teams/128/2341763066345.png"
       },
       "away": {
-        "name": "الغابون",
-        "logo": "https://imgs.ysscores.com/teams/128/8751763078081.png"
+        "name": "السودان",
+        "logo": "https://imgs.ysscores.com/teams/128/6511763087361.png"
       }
     },
     "channels": [
       {
         "channel": "beIN Max 1",
-        "commentator": "محمد بركات"
+        "commentator": "حسن العيدروس"
       },
       {
         "channel": "beIN Max 2",
-        "commentator": "محمد بركات"
+        "commentator": "حسن العيدروس"
       },
       {
         "channel": "beIN Max 3",
-        "commentator": "محمد بركات"
+        "commentator": "حسن العيدروس"
+      },
+      {
+        "channel": "الجزائرية الأولى",
+        "commentator": "غير مدرج"
       }
     ]
   },
@@ -516,43 +520,39 @@
     ]
   },
   {
-    "id": "4722007",
-    "url": "https://www.ysscores.com/ar/match/4722007/Algeria-vs-Sudan",
+    "id": "4722014",
+    "url": "https://www.ysscores.com/ar/match/4722014/Cameroon-vs-Gabon",
     "info": {
       "championship": "كأس الأمم الأفريقية",
       "round": "1",
-      "stadium": "ملعب مولاي الحسن",
-      "time": "16:00",
+      "stadium": "ملعب أدرار",
+      "time": "21:00",
       "date": "الأربعاء 24-12-2025",
-      "current_score": "3 - 0",
+      "current_score": "1 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الجزائر",
-        "logo": "https://imgs.ysscores.com/teams/128/2341763066345.png"
+        "name": "الكاميرون",
+        "logo": "https://imgs.ysscores.com/teams/128/1341763070498.png"
       },
       "away": {
-        "name": "السودان",
-        "logo": "https://imgs.ysscores.com/teams/128/6511763087361.png"
+        "name": "الغابون",
+        "logo": "https://imgs.ysscores.com/teams/128/8751763078081.png"
       }
     },
     "channels": [
       {
         "channel": "beIN Max 1",
-        "commentator": "حسن العيدروس"
+        "commentator": "محمد بركات"
       },
       {
         "channel": "beIN Max 2",
-        "commentator": "حسن العيدروس"
+        "commentator": "محمد بركات"
       },
       {
         "channel": "beIN Max 3",
-        "commentator": "حسن العيدروس"
-      },
-      {
-        "channel": "الجزائرية الأولى",
-        "commentator": "غير مدرج"
+        "commentator": "محمد بركات"
       }
     ]
   },
@@ -706,35 +706,6 @@
     ]
   },
   {
-    "id": "5085914",
-    "url": "https://www.ysscores.com/ar/match/5085914/Igdir-FK-vs-Aliaga-FK",
-    "info": {
-      "championship": "كأس تركيا",
-      "round": "1",
-      "stadium": "استاد إغدير",
-      "time": "11:00",
-      "date": "الأربعاء 24-12-2025",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "إغدير",
-        "logo": "https://imgs.ysscores.com/teams/128/4711718030263.png"
-      },
-      "away": {
-        "name": "ألياجا",
-        "logo": "https://imgs.ysscores.com/teams/128/9221761599684.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "A Spor",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5085945",
     "url": "https://www.ysscores.com/ar/match/5085945/Ankara-Keciörengücü-vs-Beyoglu-Yeni-Carsi-FK",
     "info": {
@@ -754,6 +725,35 @@
       "away": {
         "name": "بيوغلو يني كارشي",
         "logo": "https://imgs.ysscores.com/teams/128/741700670821.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "A Spor",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5085914",
+    "url": "https://www.ysscores.com/ar/match/5085914/Igdir-FK-vs-Aliaga-FK",
+    "info": {
+      "championship": "كأس تركيا",
+      "round": "1",
+      "stadium": "استاد إغدير",
+      "time": "11:00",
+      "date": "الأربعاء 24-12-2025",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "إغدير",
+        "logo": "https://imgs.ysscores.com/teams/128/4711718030263.png"
+      },
+      "away": {
+        "name": "ألياجا",
+        "logo": "https://imgs.ysscores.com/teams/128/9221761599684.png"
       }
     },
     "channels": [
