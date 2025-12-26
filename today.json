@@ -310,7 +310,7 @@
       "time": "12:30",
       "date": "الجمعة 26-12-2025",
       "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -387,6 +387,30 @@
     ]
   },
   {
+    "id": "5102824",
+    "url": "https://www.ysscores.com/ar/match/5102824/Al-Tersana-Tripoli-vs-Ittihad-Gharyan-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "2 - مباراة الذهاب",
+      "stadium": "ملعب النهر الصناعي",
+      "time": "17:30",
+      "date": "الجمعة 26-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الترسانة",
+        "logo": "https://imgs.ysscores.com/teams/128/17656496443244.png"
+      },
+      "away": {
+        "name": "اتحاد غريان",
+        "logo": "https://imgs.ysscores.com/teams/128/17656442401945.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5102832",
     "url": "https://www.ysscores.com/ar/match/5102832/Al-Murooj-vs-Khaleej-Sirte-SC",
     "info": {
@@ -430,30 +454,6 @@
       "away": {
         "name": "الشموع",
         "logo": "https://imgs.ysscores.com/teams/128/17660527227320.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5102824",
-    "url": "https://www.ysscores.com/ar/match/5102824/Al-Tersana-Tripoli-vs-Ittihad-Gharyan-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "2 - مباراة الذهاب",
-      "stadium": "ملعب النهر الصناعي",
-      "time": "17:30",
-      "date": "الجمعة 26-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الترسانة",
-        "logo": "https://imgs.ysscores.com/teams/128/17656496443244.png"
-      },
-      "away": {
-        "name": "اتحاد غريان",
-        "logo": "https://imgs.ysscores.com/teams/128/17656442401945.png"
       }
     },
     "channels": []
@@ -579,35 +579,6 @@
     "channels": []
   },
   {
-    "id": "4825301",
-    "url": "https://www.ysscores.com/ar/match/4825301/Middlesbrough-FC-vs-Blackburn-Rovers",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "23 - مباراة الذهاب",
-      "stadium": "ريفرسايد",
-      "time": "16:00",
-      "date": "الجمعة 26-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ميدلزبره",
-        "logo": "https://imgs.ysscores.com/teams/128/7871690370529.png"
-      },
-      "away": {
-        "name": "بلاكبيرن روفرز",
-        "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 4",
-        "commentator": "أحمد البلوشي"
-      }
-    ]
-  },
-  {
     "id": "4825309",
     "url": "https://www.ysscores.com/ar/match/4825309/Wrexham-AFC-vs-Sheffield-United",
     "info": {
@@ -661,30 +632,6 @@
     "channels": []
   },
   {
-    "id": "4825303",
-    "url": "https://www.ysscores.com/ar/match/4825303/Norwich-City-vs-Charlton-Athletic",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "23 - مباراة الذهاب",
-      "stadium": "كارو رود",
-      "time": "16:00",
-      "date": "الجمعة 26-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "نوريتش سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/5201690370543.png"
-      },
-      "away": {
-        "name": "تشارلتون أثلتيك",
-        "logo": "https://imgs.ysscores.com/teams/128/7791690370524.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4825300",
     "url": "https://www.ysscores.com/ar/match/4825300/Leicester-City-vs-Watford-FC",
     "info": {
@@ -733,12 +680,12 @@
     "channels": []
   },
   {
-    "id": "4825308",
-    "url": "https://www.ysscores.com/ar/match/4825308/West-Bromwich-Albion-vs-Bristol-City",
+    "id": "4825301",
+    "url": "https://www.ysscores.com/ar/match/4825301/Middlesbrough-FC-vs-Blackburn-Rovers",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "23 - مباراة الذهاب",
-      "stadium": "ذا هاوثورنس",
+      "stadium": "ريفرسايد",
       "time": "16:00",
       "date": "الجمعة 26-12-2025",
       "current_score": "- : -",
@@ -746,15 +693,20 @@
     },
     "teams": {
       "home": {
-        "name": "وست بروميتش",
-        "logo": "https://imgs.ysscores.com/teams/128/9971690370534.png"
+        "name": "ميدلزبره",
+        "logo": "https://imgs.ysscores.com/teams/128/7871690370529.png"
       },
       "away": {
-        "name": "بريستول",
-        "logo": "https://imgs.ysscores.com/teams/128/4621690370523.png"
+        "name": "بلاكبيرن روفرز",
+        "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "بي إن سبورت 4",
+        "commentator": "أحمد البلوشي"
+      }
+    ]
   },
   {
     "id": "4825299",
@@ -776,6 +728,54 @@
       "away": {
         "name": "سوانزي",
         "logo": "https://imgs.ysscores.com/teams/128/4561723590559.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825303",
+    "url": "https://www.ysscores.com/ar/match/4825303/Norwich-City-vs-Charlton-Athletic",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "23 - مباراة الذهاب",
+      "stadium": "كارو رود",
+      "time": "16:00",
+      "date": "الجمعة 26-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "نوريتش سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/5201690370543.png"
+      },
+      "away": {
+        "name": "تشارلتون أثلتيك",
+        "logo": "https://imgs.ysscores.com/teams/128/7791690370524.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825308",
+    "url": "https://www.ysscores.com/ar/match/4825308/West-Bromwich-Albion-vs-Bristol-City",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "23 - مباراة الذهاب",
+      "stadium": "ذا هاوثورنس",
+      "time": "16:00",
+      "date": "الجمعة 26-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "وست بروميتش",
+        "logo": "https://imgs.ysscores.com/teams/128/9971690370534.png"
+      },
+      "away": {
+        "name": "بريستول",
+        "logo": "https://imgs.ysscores.com/teams/128/4621690370523.png"
       }
     },
     "channels": []
@@ -1044,39 +1044,6 @@
     ]
   },
   {
-    "id": "4721986",
-    "url": "https://www.ysscores.com/ar/match/4721986/Zambia-vs-Comoros",
-    "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "2",
-      "stadium": "المركب الرياضي محمد الخامس",
-      "time": "18:30",
-      "date": "الجمعة 26-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "زامبيا",
-        "logo": "https://imgs.ysscores.com/teams/128/2081763118283.png"
-      },
-      "away": {
-        "name": "جزر القمر",
-        "logo": "https://imgs.ysscores.com/teams/128/7091763070957.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Max 2",
-        "commentator": "حفيظ دراجي"
-      },
-      {
-        "channel": "beIN Max 3",
-        "commentator": "حفيظ دراجي"
-      }
-    ]
-  },
-  {
     "id": "4721985",
     "url": "https://www.ysscores.com/ar/match/4721985/Morocco-vs-Mali",
     "info": {
@@ -1114,31 +1081,35 @@
     ]
   },
   {
-    "id": "96853699",
-    "url": "https://www.ysscores.com/ar/match/96853699/Muscat-Club-vs-Saham-Club",
+    "id": "4721986",
+    "url": "https://www.ysscores.com/ar/match/4721986/Zambia-vs-Comoros",
     "info": {
-      "championship": "كأس جلالة السلطان المعظم",
-      "round": "دور الـ 16",
-      "stadium": "استاد السيب",
-      "time": "13:45",
+      "championship": "كأس الأمم الأفريقية",
+      "round": "2",
+      "stadium": "المركب الرياضي محمد الخامس",
+      "time": "18:30",
       "date": "الجمعة 26-12-2025",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "مسقط",
-        "logo": "https://imgs.ysscores.com/teams/128/561747323124.png"
+        "name": "زامبيا",
+        "logo": "https://imgs.ysscores.com/teams/128/2081763118283.png"
       },
       "away": {
-        "name": "صحم",
-        "logo": "https://imgs.ysscores.com/teams/128/1541722176368.png"
+        "name": "جزر القمر",
+        "logo": "https://imgs.ysscores.com/teams/128/7091763070957.png"
       }
     },
     "channels": [
       {
-        "channel": "عمان الرياضية",
-        "commentator": "‏راشد الشيذاني"
+        "channel": "beIN Max 2",
+        "commentator": "حفيظ دراجي"
+      },
+      {
+        "channel": "beIN Max 3",
+        "commentator": "حفيظ دراجي"
       }
     ]
   },
@@ -1168,6 +1139,35 @@
       {
         "channel": "عمان الرياضية",
         "commentator": "أحمد العجمي"
+      }
+    ]
+  },
+  {
+    "id": "96853699",
+    "url": "https://www.ysscores.com/ar/match/96853699/Muscat-Club-vs-Saham-Club",
+    "info": {
+      "championship": "كأس جلالة السلطان المعظم",
+      "round": "دور الـ 16",
+      "stadium": "استاد السيب",
+      "time": "13:45",
+      "date": "الجمعة 26-12-2025",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "مسقط",
+        "logo": "https://imgs.ysscores.com/teams/128/561747323124.png"
+      },
+      "away": {
+        "name": "صحم",
+        "logo": "https://imgs.ysscores.com/teams/128/1541722176368.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "عمان الرياضية",
+        "commentator": "‏راشد الشيذاني"
       }
     ]
   },
