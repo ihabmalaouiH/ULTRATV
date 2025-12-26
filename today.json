@@ -158,7 +158,7 @@
       "time": "18:30",
       "date": "الجمعة 26-12-2025",
       "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -387,30 +387,6 @@
     ]
   },
   {
-    "id": "5102832",
-    "url": "https://www.ysscores.com/ar/match/5102832/Al-Murooj-vs-Khaleej-Sirte-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "2 - مباراة الذهاب",
-      "stadium": "ملعب المرج",
-      "time": "14:00",
-      "date": "الجمعة 26-12-2025",
-      "current_score": "4 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "المروج",
-        "logo": "https://imgs.ysscores.com/teams/128/17656616941618.png"
-      },
-      "away": {
-        "name": "الخليج",
-        "logo": "https://imgs.ysscores.com/teams/128/17656560805023.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5102827",
     "url": "https://www.ysscores.com/ar/match/5102827/Olympic-Azzawiya-SC-vs-Al-Shomooa-SC",
     "info": {
@@ -454,6 +430,30 @@
       "away": {
         "name": "اتحاد غريان",
         "logo": "https://imgs.ysscores.com/teams/128/17656442401945.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5102832",
+    "url": "https://www.ysscores.com/ar/match/5102832/Al-Murooj-vs-Khaleej-Sirte-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "2 - مباراة الذهاب",
+      "stadium": "ملعب المرج",
+      "time": "14:00",
+      "date": "الجمعة 26-12-2025",
+      "current_score": "4 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "المروج",
+        "logo": "https://imgs.ysscores.com/teams/128/17656616941618.png"
+      },
+      "away": {
+        "name": "الخليج",
+        "logo": "https://imgs.ysscores.com/teams/128/17656560805023.png"
       }
     },
     "channels": []
@@ -565,25 +565,25 @@
     ]
   },
   {
-    "id": "4825305",
-    "url": "https://www.ysscores.com/ar/match/4825305/Portsmouth-FC-vs-Queens-Park-Rangers",
+    "id": "4825304",
+    "url": "https://www.ysscores.com/ar/match/4825304/Oxford-United-vs-Southampton-FC",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "23 - مباراة الذهاب",
-      "stadium": "فراتون بارك",
+      "stadium": "استاد كاسام",
       "time": "16:00",
       "date": "الجمعة 26-12-2025",
-      "current_score": "1 - 1",
+      "current_score": "2 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "بورتسموث",
-        "logo": "https://imgs.ysscores.com/teams/128/5401690370525.png"
+        "name": "أكسفورد يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/151690370534.png"
       },
       "away": {
-        "name": "كوينز بارك رينجرز",
-        "logo": "https://imgs.ysscores.com/teams/128/9791690370554.png"
+        "name": "ساوثهامبتون",
+        "logo": "https://imgs.ysscores.com/teams/128/3521690370525.png"
       }
     },
     "channels": []
@@ -618,6 +618,54 @@
     ]
   },
   {
+    "id": "4825305",
+    "url": "https://www.ysscores.com/ar/match/4825305/Portsmouth-FC-vs-Queens-Park-Rangers",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "23 - مباراة الذهاب",
+      "stadium": "فراتون بارك",
+      "time": "16:00",
+      "date": "الجمعة 26-12-2025",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بورتسموث",
+        "logo": "https://imgs.ysscores.com/teams/128/5401690370525.png"
+      },
+      "away": {
+        "name": "كوينز بارك رينجرز",
+        "logo": "https://imgs.ysscores.com/teams/128/9791690370554.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825300",
+    "url": "https://www.ysscores.com/ar/match/4825300/Leicester-City-vs-Watford-FC",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "23 - مباراة الذهاب",
+      "stadium": "كينج باور",
+      "time": "16:00",
+      "date": "الجمعة 26-12-2025",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ليستر سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/5531690711879.png"
+      },
+      "away": {
+        "name": "واتفورد",
+        "logo": "https://imgs.ysscores.com/teams/128/3341690370541.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4825306",
     "url": "https://www.ysscores.com/ar/match/4825306/Sheffield-Wednesday-vs-Hull-City",
     "info": {
@@ -637,30 +685,6 @@
       "away": {
         "name": "هال سيتي",
         "logo": "https://imgs.ysscores.com/teams/128/3801690370535.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4825304",
-    "url": "https://www.ysscores.com/ar/match/4825304/Oxford-United-vs-Southampton-FC",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "23 - مباراة الذهاب",
-      "stadium": "استاد كاسام",
-      "time": "16:00",
-      "date": "الجمعة 26-12-2025",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أكسفورد يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/151690370534.png"
-      },
-      "away": {
-        "name": "ساوثهامبتون",
-        "logo": "https://imgs.ysscores.com/teams/128/3521690370525.png"
       }
     },
     "channels": []
@@ -693,30 +717,6 @@
         "commentator": "أحمد البلوشي"
       }
     ]
-  },
-  {
-    "id": "4825300",
-    "url": "https://www.ysscores.com/ar/match/4825300/Leicester-City-vs-Watford-FC",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "23 - مباراة الذهاب",
-      "stadium": "كينج باور",
-      "time": "16:00",
-      "date": "الجمعة 26-12-2025",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ليستر سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/5531690711879.png"
-      },
-      "away": {
-        "name": "واتفورد",
-        "logo": "https://imgs.ysscores.com/teams/128/3341690370541.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "4825308",
