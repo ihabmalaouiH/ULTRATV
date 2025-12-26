@@ -183,7 +183,7 @@
                 <div class="spacer" style="flex-grow: 1;"></div> 
                 <input type="text" id="searchInput" placeholder="بحث (فريق، دوري)...">
                 <button class="btn-primary" onclick="processBulkInput()">📝 دمج</button>
-                <button class="btn-firebase" onclick="loadFromFirebase()">📥 عرض المحفوظ</button>
+                <button class="btn-firebase" onclick="loadFromFirebase()">📥 عرض المحفوظ وتحديده</button>
                 <button class="btn-danger" onclick="clearFirebase()">🗑️ مسح الكل</button>
                 <button class="btn-success" onclick="saveToFirebase()">🔥 نشر في Firebase</button>
                 
@@ -332,7 +332,6 @@ async function saveToFirebase() {
         await batchDelete.commit();
 
         // 2. إضافة المباريات الجديدة (Loop)
-        // ملاحظة: نستخدم loop عادي لضمان المعالجة، في التطبيقات الكبيرة جداً نستخدم batch
         let count = 0;
         for (const match of matches) {
             await db.collection('matches').add(match);
@@ -361,6 +360,7 @@ async function clearFirebase() {
     }
 }
 
+// ⚠️⚠️⚠️ تم تعديل هذه الدالة لاستعادة التحديد في الجدول ⚠️⚠️⚠️
 async function loadFromFirebase() {
     showToast("جاري جلب المحفوظ من Firebase...", "info");
     try {
@@ -372,8 +372,55 @@ async function loadFromFirebase() {
         }
         
         const matches = snapshot.docs.map(doc => doc.data());
-        outputTextarea.value = JSON.stringify(matches, null, 2);
-        showToast(`📥 تم جلب ${matches.length} مباراة محفوظة`, "success");
+        
+        // هنا نبدأ عملية المطابقة مع الجدول الحالي
+        const rows = document.querySelectorAll("#matchesTable tbody tr");
+        let restoredCount = 0;
+
+        // إلغاء تحديد الكل أولاً لتجنب التكرار
+        rows.forEach(r => {
+             const chk = r.querySelector("input[type='checkbox']");
+             if(chk) chk.checked = false;
+        });
+
+        matches.forEach(savedMatch => {
+            // البحث عن الصف المطابق (الفريق 1 و الفريق 2)
+            const row = Array.from(rows).find(r => 
+                r.dataset.team1Name === savedMatch.team1Name && 
+                r.dataset.team2Name === savedMatch.team2Name
+            );
+
+            if (row) {
+                restoredCount++;
+                // 1. تحديد الـ Checkbox
+                const checkbox = row.querySelector("input[type='checkbox']");
+                if(checkbox) checkbox.checked = true;
+
+                // 2. استعادة القناة
+                const chInput = row.querySelector(".channel-input");
+                const chSelect = row.querySelector(".channel-select");
+                if(chInput) chInput.value = savedMatch.channel;
+                if(chSelect) chSelect.value = savedMatch.channel;
+
+                // 3. استعادة المعلق
+                const commInput = row.querySelector(".comm-input");
+                if(commInput) commInput.value = savedMatch.commentator;
+
+                // 4. استعادة السيرفرات والبادج
+                if(savedMatch.servers) {
+                    row.dataset.servers = JSON.stringify(savedMatch.servers);
+                    const badge = row.querySelector(".server-count-badge");
+                    if(badge) {
+                        badge.innerText = savedMatch.servers.length;
+                        badge.style.display = savedMatch.servers.length > 0 ? "inline-block" : "none";
+                    }
+                }
+            }
+        });
+
+        // تحديث النص والإحصائيات بناءً على ما تم استعادته
+        updateStatsAndJSON();
+        showToast(`📥 تم استعادة ${restoredCount} مباراة وتحديدها في الجدول`, "success");
     } catch (e) {
         showToast("خطأ شبكة: " + e.message, "error");
     }
@@ -391,12 +438,12 @@ function parseArabicMatchTime(dateStr, timeStr) {
         let time = timeStr.replace('مساءً', 'PM').replace('صباحاً', 'AM')
                           .replace('مساء', 'PM').replace('صباح', 'AM')
                           .trim();
-           
+            
         let [timeRaw, modifier] = time.split(' ');
         let [hoursStr, minutes] = timeRaw.split(':');
         
         let hours = parseInt(hoursStr, 10);
-           
+            
         if (hours === 12) hours = 0;
         if (modifier === 'PM') hours += 12;
         
