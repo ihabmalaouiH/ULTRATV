@@ -53,30 +53,6 @@
     ]
   },
   {
-    "id": "4818866",
-    "url": "https://www.ysscores.com/ar/match/4818866/Dundee-FC-vs-Falkirk-FC",
-    "info": {
-      "championship": "الدوري الإسكتلندي الممتاز",
-      "round": "19 - مباراة الاياب",
-      "stadium": "دينس بارك",
-      "time": "16:00",
-      "date": "السبت 27-12-2025",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "دندي",
-        "logo": "https://imgs.ysscores.com/teams/128/2331690370518.png"
-      },
-      "away": {
-        "name": "فالكريك",
-        "logo": "https://imgs.ysscores.com/teams/128/6361739396113.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4818864",
     "url": "https://www.ysscores.com/ar/match/4818864/Hibernian-FC-vs-Heart-of-Midlothian-FC",
     "info": {
@@ -104,6 +80,30 @@
         "commentator": "سالم السالمي"
       }
     ]
+  },
+  {
+    "id": "4818866",
+    "url": "https://www.ysscores.com/ar/match/4818866/Dundee-FC-vs-Falkirk-FC",
+    "info": {
+      "championship": "الدوري الإسكتلندي الممتاز",
+      "round": "19 - مباراة الاياب",
+      "stadium": "دينس بارك",
+      "time": "16:00",
+      "date": "السبت 27-12-2025",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "دندي",
+        "logo": "https://imgs.ysscores.com/teams/128/2331690370518.png"
+      },
+      "away": {
+        "name": "فالكريك",
+        "logo": "https://imgs.ysscores.com/teams/128/6361739396113.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "4818865",
@@ -576,7 +576,7 @@
       "stadium": "الملعب البلدي فاماليكاو",
       "time": "19:00",
       "date": "السبت 27-12-2025",
-      "current_score": "0 - 0",
+      "current_score": "1 - 0",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -1406,30 +1406,6 @@
     ]
   },
   {
-    "id": "68379263",
-    "url": "https://www.ysscores.com/ar/match/68379263/Al-Wahda-SC-(Oman)-vs-Oman-Club",
-    "info": {
-      "championship": "كأس جلالة السلطان المعظم",
-      "round": "دور الـ 16",
-      "stadium": "مجمع إبراء الرياضي",
-      "time": "13:45",
-      "date": "السبت 27-12-2025",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الوحدة",
-        "logo": "https://imgs.ysscores.com/teams/128/6851691931603.png"
-      },
-      "away": {
-        "name": "نادي عُمان",
-        "logo": "https://imgs.ysscores.com/teams/128/9041691931536.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "91944538",
     "url": "https://www.ysscores.com/ar/match/91944538/Al-Khaboura-Sports-Club-vs-Al-Nasr-Club",
     "info": {
@@ -1459,33 +1435,28 @@
     ]
   },
   {
-    "id": "15532279",
-    "url": "https://www.ysscores.com/ar/match/15532279/Al-Ahly-FC-vs-WE-Sports-Club",
+    "id": "68379263",
+    "url": "https://www.ysscores.com/ar/match/68379263/Al-Wahda-SC-(Oman)-vs-Oman-Club",
     "info": {
-      "championship": "كأس مصر",
-      "round": "دور الـ 32",
-      "stadium": "استاد السلام",
-      "time": "16:00",
+      "championship": "كأس جلالة السلطان المعظم",
+      "round": "دور الـ 16",
+      "stadium": "مجمع إبراء الرياضي",
+      "time": "13:45",
       "date": "السبت 27-12-2025",
-      "current_score": "1 - 2",
+      "current_score": "1 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/9591694714907.png"
+        "name": "الوحدة",
+        "logo": "https://imgs.ysscores.com/teams/128/6851691931603.png"
       },
       "away": {
-        "name": "وي",
-        "logo": "https://imgs.ysscores.com/teams/128/9521696285165.png"
+        "name": "نادي عُمان",
+        "logo": "https://imgs.ysscores.com/teams/128/9041691931536.png"
       }
     },
-    "channels": [
-      {
-        "channel": "ON Sport 1",
-        "commentator": "أيمن الكاشف"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "52289437",
@@ -1542,6 +1513,35 @@
       {
         "channel": "ON Sport 2",
         "commentator": "محمد الكواليني"
+      }
+    ]
+  },
+  {
+    "id": "15532279",
+    "url": "https://www.ysscores.com/ar/match/15532279/Al-Ahly-FC-vs-WE-Sports-Club",
+    "info": {
+      "championship": "كأس مصر",
+      "round": "دور الـ 32",
+      "stadium": "استاد السلام",
+      "time": "16:00",
+      "date": "السبت 27-12-2025",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/9591694714907.png"
+      },
+      "away": {
+        "name": "وي",
+        "logo": "https://imgs.ysscores.com/teams/128/9521696285165.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 1",
+        "commentator": "أيمن الكاشف"
       }
     ]
   }
