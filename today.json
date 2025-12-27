@@ -53,6 +53,30 @@
     ]
   },
   {
+    "id": "4818866",
+    "url": "https://www.ysscores.com/ar/match/4818866/Dundee-FC-vs-Falkirk-FC",
+    "info": {
+      "championship": "الدوري الإسكتلندي الممتاز",
+      "round": "19 - مباراة الاياب",
+      "stadium": "دينس بارك",
+      "time": "16:00",
+      "date": "السبت 27-12-2025",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "دندي",
+        "logo": "https://imgs.ysscores.com/teams/128/2331690370518.png"
+      },
+      "away": {
+        "name": "فالكريك",
+        "logo": "https://imgs.ysscores.com/teams/128/6361739396113.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4818864",
     "url": "https://www.ysscores.com/ar/match/4818864/Hibernian-FC-vs-Heart-of-Midlothian-FC",
     "info": {
@@ -82,28 +106,33 @@
     ]
   },
   {
-    "id": "4818866",
-    "url": "https://www.ysscores.com/ar/match/4818866/Dundee-FC-vs-Falkirk-FC",
+    "id": "4818865",
+    "url": "https://www.ysscores.com/ar/match/4818865/Aberdeen-FC-vs-Dundee-United-FC",
     "info": {
       "championship": "الدوري الإسكتلندي الممتاز",
       "round": "19 - مباراة الاياب",
-      "stadium": "دينس بارك",
-      "time": "16:00",
+      "stadium": "بيتودري",
+      "time": "18:45",
       "date": "السبت 27-12-2025",
-      "current_score": "1 - 0",
+      "current_score": "1 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "دندي",
-        "logo": "https://imgs.ysscores.com/teams/128/2331690370518.png"
+        "name": "أبردين",
+        "logo": "https://imgs.ysscores.com/teams/128/711690370527.png"
       },
       "away": {
-        "name": "فالكريك",
-        "logo": "https://imgs.ysscores.com/teams/128/6361739396113.png"
+        "name": "دندي يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/1541754872814.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "الشارقة الرياضية 2",
+        "commentator": "سالم السالمي"
+      }
+    ]
   },
   {
     "id": "4818868",
@@ -130,31 +159,31 @@
     "channels": []
   },
   {
-    "id": "4818865",
-    "url": "https://www.ysscores.com/ar/match/4818865/Aberdeen-FC-vs-Dundee-United-FC",
+    "id": "4813550",
+    "url": "https://www.ysscores.com/ar/match/4813550/Liverpool-FC-vs-Wolverhampton-Wanderers",
     "info": {
-      "championship": "الدوري الإسكتلندي الممتاز",
-      "round": "19 - مباراة الاياب",
-      "stadium": "بيتودري",
-      "time": "18:45",
+      "championship": "الدوري الإنجليزي الممتاز",
+      "round": "18 - مباراة الذهاب",
+      "stadium": "أنفيلد",
+      "time": "16:00",
       "date": "السبت 27-12-2025",
-      "current_score": "1 - 1",
+      "current_score": "2 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "أبردين",
-        "logo": "https://imgs.ysscores.com/teams/128/711690370527.png"
+        "name": "ليفربول",
+        "logo": "https://imgs.ysscores.com/teams/128/4081724601375.png"
       },
       "away": {
-        "name": "دندي يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/1541754872814.png"
+        "name": "وولفرهامبتون",
+        "logo": "https://imgs.ysscores.com/teams/128/9631690118479.png"
       }
     },
     "channels": [
       {
-        "channel": "الشارقة الرياضية 2",
-        "commentator": "سالم السالمي"
+        "channel": "بي إن سبورت 2",
+        "commentator": "حفيظ دراجي"
       }
     ]
   },
@@ -213,35 +242,6 @@
       {
         "channel": "بي إن سبورت 4",
         "commentator": "محمد بركات"
-      }
-    ]
-  },
-  {
-    "id": "4813550",
-    "url": "https://www.ysscores.com/ar/match/4813550/Liverpool-FC-vs-Wolverhampton-Wanderers",
-    "info": {
-      "championship": "الدوري الإنجليزي الممتاز",
-      "round": "18 - مباراة الذهاب",
-      "stadium": "أنفيلد",
-      "time": "16:00",
-      "date": "السبت 27-12-2025",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ليفربول",
-        "logo": "https://imgs.ysscores.com/teams/128/4081724601375.png"
-      },
-      "away": {
-        "name": "وولفرهامبتون",
-        "logo": "https://imgs.ysscores.com/teams/128/9631690118479.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "حفيظ دراجي"
       }
     ]
   },
@@ -308,6 +308,35 @@
     ]
   },
   {
+    "id": "4813547",
+    "url": "https://www.ysscores.com/ar/match/4813547/Burnley-FC-vs-Everton-FC",
+    "info": {
+      "championship": "الدوري الإنجليزي الممتاز",
+      "round": "18 - مباراة الذهاب",
+      "stadium": "تيرف مور",
+      "time": "16:00",
+      "date": "السبت 27-12-2025",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بيرنلي",
+        "logo": "https://imgs.ysscores.com/teams/128/7301690118156.png"
+      },
+      "away": {
+        "name": "إيفرتون",
+        "logo": "https://imgs.ysscores.com/teams/128/8461690118694.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "أحمد عبده"
+      }
+    ]
+  },
+  {
     "id": "4813545",
     "url": "https://www.ysscores.com/ar/match/4813545/Arsenal-FC-vs-Brighton-&-Hove-Albion",
     "info": {
@@ -337,35 +366,6 @@
       {
         "channel": "beIN 4K",
         "commentator": "حسن العيدروس"
-      }
-    ]
-  },
-  {
-    "id": "4813547",
-    "url": "https://www.ysscores.com/ar/match/4813547/Burnley-FC-vs-Everton-FC",
-    "info": {
-      "championship": "الدوري الإنجليزي الممتاز",
-      "round": "18 - مباراة الذهاب",
-      "stadium": "تيرف مور",
-      "time": "16:00",
-      "date": "السبت 27-12-2025",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بيرنلي",
-        "logo": "https://imgs.ysscores.com/teams/128/7301690118156.png"
-      },
-      "away": {
-        "name": "إيفرتون",
-        "logo": "https://imgs.ysscores.com/teams/128/8461690118694.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "أحمد عبده"
       }
     ]
   },
@@ -959,6 +959,30 @@
     "channels": []
   },
   {
+    "id": "5102835",
+    "url": "https://www.ysscores.com/ar/match/5102835/Al-Wefaq-Ly-SC-vs-Al-Akhdar-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "2 - مباراة الذهاب",
+      "stadium": "ملعب 10 يونيو إجدابيا",
+      "time": "14:00",
+      "date": "السبت 27-12-2025",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الوفاق",
+        "logo": "https://imgs.ysscores.com/teams/128/17656302717639.png"
+      },
+      "away": {
+        "name": "الأخضر",
+        "logo": "https://imgs.ysscores.com/teams/128/17659994074616.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5102826",
     "url": "https://www.ysscores.com/ar/match/5102826/Al-Ittihad-SC-vs-Abelashhar-SC",
     "info": {
@@ -988,30 +1012,6 @@
     ]
   },
   {
-    "id": "5102835",
-    "url": "https://www.ysscores.com/ar/match/5102835/Al-Wefaq-Ly-SC-vs-Al-Akhdar-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "2 - مباراة الذهاب",
-      "stadium": "ملعب 10 يونيو إجدابيا",
-      "time": "14:00",
-      "date": "السبت 27-12-2025",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الوفاق",
-        "logo": "https://imgs.ysscores.com/teams/128/17656302717639.png"
-      },
-      "away": {
-        "name": "الأخضر",
-        "logo": "https://imgs.ysscores.com/teams/128/17659994074616.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5102825",
     "url": "https://www.ysscores.com/ar/match/5102825/Shabab-Al-Ghar-vs-Al-Majd-SCC",
     "info": {
@@ -1036,35 +1036,6 @@
     "channels": []
   },
   {
-    "id": "4907747",
-    "url": "https://www.ysscores.com/ar/match/4907747/Paradou-AC-vs-MB-Rouissat",
-    "info": {
-      "championship": "الرابطة المحترفة الجزائرية الأولى",
-      "round": "14 - مباراة الذهاب",
-      "stadium": "استاد 20 أوت 1955",
-      "time": "14:00",
-      "date": "السبت 27-12-2025",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بارادو",
-        "logo": "https://imgs.ysscores.com/teams/128/3511693418113.png"
-      },
-      "away": {
-        "name": "مستقبل الرويسات",
-        "logo": "https://imgs.ysscores.com/teams/128/7271753996876.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الرياضية ويب",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "4907745",
     "url": "https://www.ysscores.com/ar/match/4907745/JS-Kabylie-vs-ASO-Chlef",
     "info": {
@@ -1084,6 +1055,35 @@
       "away": {
         "name": "أولمبي الشلف",
         "logo": "https://imgs.ysscores.com/teams/128/2291693417692.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الرياضية ويب",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "4907747",
+    "url": "https://www.ysscores.com/ar/match/4907747/Paradou-AC-vs-MB-Rouissat",
+    "info": {
+      "championship": "الرابطة المحترفة الجزائرية الأولى",
+      "round": "14 - مباراة الذهاب",
+      "stadium": "استاد 20 أوت 1955",
+      "time": "14:00",
+      "date": "السبت 27-12-2025",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بارادو",
+        "logo": "https://imgs.ysscores.com/teams/128/3511693418113.png"
+      },
+      "away": {
+        "name": "مستقبل الرويسات",
+        "logo": "https://imgs.ysscores.com/teams/128/7271753996876.png"
       }
     },
     "channels": [
@@ -1463,31 +1463,31 @@
     "channels": []
   },
   {
-    "id": "52289437",
-    "url": "https://www.ysscores.com/ar/match/52289437/Talaea-El-Gaish-vs-Kahraba-Ismailia",
+    "id": "15532279",
+    "url": "https://www.ysscores.com/ar/match/15532279/Al-Ahly-FC-vs-WE-Sports-Club",
     "info": {
       "championship": "كأس مصر",
-      "round": "دور الـ 16",
-      "stadium": "ستاد جهاز الرياضة العسكري",
+      "round": "دور الـ 32",
+      "stadium": "استاد السلام",
       "time": "16:00",
       "date": "السبت 27-12-2025",
-      "current_score": "1 - 1",
+      "current_score": "1 - 2",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "طلائع الجيش",
-        "logo": "https://imgs.ysscores.com/teams/128/5871731000840.png"
+        "name": "الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/9591694714907.png"
       },
       "away": {
-        "name": "كهرباء الإسماعيلية",
-        "logo": "https://imgs.ysscores.com/teams/128/2391753649516.png"
+        "name": "وي",
+        "logo": "https://imgs.ysscores.com/teams/128/9521696285165.png"
       }
     },
     "channels": [
       {
-        "channel": "Kora Plus",
-        "commentator": "طارق حسن"
+        "channel": "ON Sport 1",
+        "commentator": "أيمن الكاشف"
       }
     ]
   },
@@ -1521,31 +1521,31 @@
     ]
   },
   {
-    "id": "15532279",
-    "url": "https://www.ysscores.com/ar/match/15532279/Al-Ahly-FC-vs-WE-Sports-Club",
+    "id": "52289437",
+    "url": "https://www.ysscores.com/ar/match/52289437/Talaea-El-Gaish-vs-Kahraba-Ismailia",
     "info": {
       "championship": "كأس مصر",
-      "round": "دور الـ 32",
-      "stadium": "استاد السلام",
+      "round": "دور الـ 16",
+      "stadium": "ستاد جهاز الرياضة العسكري",
       "time": "16:00",
       "date": "السبت 27-12-2025",
-      "current_score": "1 - 2",
+      "current_score": "1 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/9591694714907.png"
+        "name": "طلائع الجيش",
+        "logo": "https://imgs.ysscores.com/teams/128/5871731000840.png"
       },
       "away": {
-        "name": "وي",
-        "logo": "https://imgs.ysscores.com/teams/128/9521696285165.png"
+        "name": "كهرباء الإسماعيلية",
+        "logo": "https://imgs.ysscores.com/teams/128/2391753649516.png"
       }
     },
     "channels": [
       {
-        "channel": "ON Sport 1",
-        "commentator": "أيمن الكاشف"
+        "channel": "Kora Plus",
+        "commentator": "طارق حسن"
       }
     ]
   }
