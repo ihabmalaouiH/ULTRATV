@@ -77,30 +77,6 @@
     "channels": []
   },
   {
-    "id": "4818873",
-    "url": "https://www.ysscores.com/ar/match/4818873/Livingston-FC-vs-Dundee-United-FC",
-    "info": {
-      "championship": "الدوري الإسكتلندي الممتاز",
-      "round": "20 - مباراة الاياب",
-      "stadium": "ملعب ذا هوم أوف ذا سيت فير أرينا",
-      "time": "20:45",
-      "date": "الثلاثاء 30-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ليفينغستون",
-        "logo": "https://imgs.ysscores.com/teams/128/5781690370518.png"
-      },
-      "away": {
-        "name": "دندي يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/1541754872814.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4818870",
     "url": "https://www.ysscores.com/ar/match/4818870/Dundee-FC-vs-Kilmarnock-FC",
     "info": {
@@ -120,6 +96,30 @@
       "away": {
         "name": "كيلمارنوك",
         "logo": "https://imgs.ysscores.com/teams/128/4141690370531.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4818873",
+    "url": "https://www.ysscores.com/ar/match/4818873/Livingston-FC-vs-Dundee-United-FC",
+    "info": {
+      "championship": "الدوري الإسكتلندي الممتاز",
+      "round": "20 - مباراة الاياب",
+      "stadium": "ملعب ذا هوم أوف ذا سيت فير أرينا",
+      "time": "20:45",
+      "date": "الثلاثاء 30-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ليفينغستون",
+        "logo": "https://imgs.ysscores.com/teams/128/5781690370518.png"
+      },
+      "away": {
+        "name": "دندي يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/1541754872814.png"
       }
     },
     "channels": []
@@ -154,31 +154,31 @@
     ]
   },
   {
-    "id": "4813561",
-    "url": "https://www.ysscores.com/ar/match/4813561/Manchester-United-vs-Wolverhampton-Wanderers",
+    "id": "4813558",
+    "url": "https://www.ysscores.com/ar/match/4813558/Chelsea-FC-vs-AFC-Bournemouth",
     "info": {
       "championship": "الدوري الإنجليزي الممتاز",
       "round": "19 - مباراة الاياب",
-      "stadium": "أولد ترافورد",
-      "time": "21:15",
+      "stadium": "ستامفورد بريدج",
+      "time": "20:30",
       "date": "الثلاثاء 30-12-2025",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "مان يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/4871690119302.png"
+        "name": "تشيلسي",
+        "logo": "https://imgs.ysscores.com/teams/128/2571690118280.png"
       },
       "away": {
-        "name": "وولفرهامبتون",
-        "logo": "https://imgs.ysscores.com/teams/128/9631690118479.png"
+        "name": "بورنموث",
+        "logo": "https://imgs.ysscores.com/teams/128/7651690118769.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 2",
-        "commentator": "عامر الخوذيري"
+        "channel": "بي إن سبورت 3",
+        "commentator": "حسن العيدروس"
       }
     ]
   },
@@ -212,12 +212,41 @@
     ]
   },
   {
-    "id": "4813558",
-    "url": "https://www.ysscores.com/ar/match/4813558/Chelsea-FC-vs-AFC-Bournemouth",
+    "id": "4813561",
+    "url": "https://www.ysscores.com/ar/match/4813561/Manchester-United-vs-Wolverhampton-Wanderers",
     "info": {
       "championship": "الدوري الإنجليزي الممتاز",
       "round": "19 - مباراة الاياب",
-      "stadium": "ستامفورد بريدج",
+      "stadium": "أولد ترافورد",
+      "time": "21:15",
+      "date": "الثلاثاء 30-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "مان يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/4871690119302.png"
+      },
+      "away": {
+        "name": "وولفرهامبتون",
+        "logo": "https://imgs.ysscores.com/teams/128/9631690118479.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "عامر الخوذيري"
+      }
+    ]
+  },
+  {
+    "id": "4813564",
+    "url": "https://www.ysscores.com/ar/match/4813564/West-Ham-United-vs-Brighton-&-Hove-Albion",
+    "info": {
+      "championship": "الدوري الإنجليزي الممتاز",
+      "round": "19 - مباراة الاياب",
+      "stadium": "استاد لندن الأولمبي",
       "time": "20:30",
       "date": "الثلاثاء 30-12-2025",
       "current_score": "- : -",
@@ -225,18 +254,18 @@
     },
     "teams": {
       "home": {
-        "name": "تشيلسي",
-        "logo": "https://imgs.ysscores.com/teams/128/2571690118280.png"
+        "name": "وست هام",
+        "logo": "https://imgs.ysscores.com/teams/128/7191690118603.png"
       },
       "away": {
-        "name": "بورنموث",
-        "logo": "https://imgs.ysscores.com/teams/128/7651690118769.png"
+        "name": "برايتون",
+        "logo": "https://imgs.ysscores.com/teams/128/2271696710594.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 3",
-        "commentator": "حسن العيدروس"
+        "channel": "بي إن سبورت 6",
+        "commentator": "باسم الزير"
       }
     ]
   },
@@ -274,31 +303,35 @@
     ]
   },
   {
-    "id": "4813564",
-    "url": "https://www.ysscores.com/ar/match/4813564/West-Ham-United-vs-Brighton-&-Hove-Albion",
+    "id": "4927406",
+    "url": "https://www.ysscores.com/ar/match/4927406/Al-Ettifaq-FC-vs-Al-Nassr-FC",
     "info": {
-      "championship": "الدوري الإنجليزي الممتاز",
-      "round": "19 - مباراة الاياب",
-      "stadium": "استاد لندن الأولمبي",
-      "time": "20:30",
+      "championship": "الدوري السعودي للمحترفين",
+      "round": "12 - مباراة الذهاب",
+      "stadium": "ملعب ايجو",
+      "time": "18:30",
       "date": "الثلاثاء 30-12-2025",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "وست هام",
-        "logo": "https://imgs.ysscores.com/teams/128/7191690118603.png"
+        "name": "الاتفاق",
+        "logo": "https://imgs.ysscores.com/teams/128/1151690298845.png"
       },
       "away": {
-        "name": "برايتون",
-        "logo": "https://imgs.ysscores.com/teams/128/2271696710594.png"
+        "name": "النصر",
+        "logo": "https://imgs.ysscores.com/teams/128/1371747772080.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 6",
-        "commentator": "باسم الزير"
+        "channel": "ثمانية 1",
+        "commentator": "فهد العتيبي"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "فهد العتيبي"
       }
     ]
   },
@@ -332,39 +365,6 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "محمد حسين"
-      }
-    ]
-  },
-  {
-    "id": "4927406",
-    "url": "https://www.ysscores.com/ar/match/4927406/Al-Ettifaq-FC-vs-Al-Nassr-FC",
-    "info": {
-      "championship": "الدوري السعودي للمحترفين",
-      "round": "12 - مباراة الذهاب",
-      "stadium": "ملعب ايجو",
-      "time": "18:30",
-      "date": "الثلاثاء 30-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الاتفاق",
-        "logo": "https://imgs.ysscores.com/teams/128/1151690298845.png"
-      },
-      "away": {
-        "name": "النصر",
-        "logo": "https://imgs.ysscores.com/teams/128/1371747772080.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 1",
-        "commentator": "فهد العتيبي"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "فهد العتيبي"
       }
     ]
   },
@@ -677,64 +677,6 @@
     ]
   },
   {
-    "id": "4721999",
-    "url": "https://www.ysscores.com/ar/match/4721999/Uganda-vs-Nigeria",
-    "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "3",
-      "stadium": "المركب الرياضي لفاس",
-      "time": "17:00",
-      "date": "الثلاثاء 30-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أوغندا",
-        "logo": "https://imgs.ysscores.com/teams/128/2921763117370.png"
-      },
-      "away": {
-        "name": "نيجيريا",
-        "logo": "https://imgs.ysscores.com/teams/128/9961763084205.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Max 2",
-        "commentator": "جواد بدة"
-      }
-    ]
-  },
-  {
-    "id": "4722006",
-    "url": "https://www.ysscores.com/ar/match/4722006/Botswana-vs-Democratic-Republic-of-the-Congo",
-    "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "3",
-      "stadium": "ملعب البريد",
-      "time": "20:00",
-      "date": "الثلاثاء 30-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "بوتسوانا",
-        "logo": "https://imgs.ysscores.com/teams/128/4041763069740.png"
-      },
-      "away": {
-        "name": "الكونغو",
-        "logo": "https://imgs.ysscores.com/teams/128/9851763070992.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Max 2",
-        "commentator": "أحمد عبده"
-      }
-    ]
-  },
-  {
     "id": "4722000",
     "url": "https://www.ysscores.com/ar/match/4722000/Tanzania-vs-Tunisia",
     "info": {
@@ -772,6 +714,64 @@
     ]
   },
   {
+    "id": "4722006",
+    "url": "https://www.ysscores.com/ar/match/4722006/Botswana-vs-Democratic-Republic-of-the-Congo",
+    "info": {
+      "championship": "كأس الأمم الأفريقية",
+      "round": "3",
+      "stadium": "ملعب البريد",
+      "time": "20:00",
+      "date": "الثلاثاء 30-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "بوتسوانا",
+        "logo": "https://imgs.ysscores.com/teams/128/4041763069740.png"
+      },
+      "away": {
+        "name": "الكونغو",
+        "logo": "https://imgs.ysscores.com/teams/128/9851763070992.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Max 2",
+        "commentator": "أحمد عبده"
+      }
+    ]
+  },
+  {
+    "id": "4721999",
+    "url": "https://www.ysscores.com/ar/match/4721999/Uganda-vs-Nigeria",
+    "info": {
+      "championship": "كأس الأمم الأفريقية",
+      "round": "3",
+      "stadium": "المركب الرياضي لفاس",
+      "time": "17:00",
+      "date": "الثلاثاء 30-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أوغندا",
+        "logo": "https://imgs.ysscores.com/teams/128/2921763117370.png"
+      },
+      "away": {
+        "name": "نيجيريا",
+        "logo": "https://imgs.ysscores.com/teams/128/9961763084205.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Max 2",
+        "commentator": "جواد بدة"
+      }
+    ]
+  },
+  {
     "id": "4722005",
     "url": "https://www.ysscores.com/ar/match/4722005/Benin-vs-Senegal",
     "info": {
@@ -805,35 +805,6 @@
       {
         "channel": "Bein Max 4",
         "commentator": "محمد بركات"
-      }
-    ]
-  },
-  {
-    "id": "35025137",
-    "url": "https://www.ysscores.com/ar/match/35025137/Talaea-El-Gaish-vs-Ghazl-El-Mahalla",
-    "info": {
-      "championship": "كأس الرابطة المصرية",
-      "round": "4",
-      "stadium": "ستاد جهاز الرياضة العسكري",
-      "time": "16:00",
-      "date": "الثلاثاء 30-12-2025",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "طلائع الجيش",
-        "logo": "https://imgs.ysscores.com/teams/128/5871731000840.png"
-      },
-      "away": {
-        "name": "غزل المحلة",
-        "logo": "https://imgs.ysscores.com/teams/128/9801725831886.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ON Sport 2",
-        "commentator": "محمود أبو الركب"
       }
     ]
   },
@@ -892,6 +863,35 @@
       {
         "channel": "ON Sport 1",
         "commentator": "مؤمن حسن"
+      }
+    ]
+  },
+  {
+    "id": "35025137",
+    "url": "https://www.ysscores.com/ar/match/35025137/Talaea-El-Gaish-vs-Ghazl-El-Mahalla",
+    "info": {
+      "championship": "كأس الرابطة المصرية",
+      "round": "4",
+      "stadium": "ستاد جهاز الرياضة العسكري",
+      "time": "16:00",
+      "date": "الثلاثاء 30-12-2025",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "طلائع الجيش",
+        "logo": "https://imgs.ysscores.com/teams/128/5871731000840.png"
+      },
+      "away": {
+        "name": "غزل المحلة",
+        "logo": "https://imgs.ysscores.com/teams/128/9801725831886.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 2",
+        "commentator": "محمود أبو الركب"
       }
     ]
   }
