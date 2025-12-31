@@ -273,54 +273,6 @@
     ]
   },
   {
-    "id": "5111130",
-    "url": "https://www.ysscores.com/ar/match/5111130/Al-Hilal-SC-vs-Al-Borouq-FC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "3 - مباراة الذهاب",
-      "stadium": "ملعب شهداء بنينا",
-      "time": "17:00",
-      "date": "الأربعاء 31-12-2025",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الهلال",
-        "logo": "https://imgs.ysscores.com/teams/128/7131696628343.png"
-      },
-      "away": {
-        "name": "البروق",
-        "logo": "https://imgs.ysscores.com/teams/128/17656432533307.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5111129",
-    "url": "https://www.ysscores.com/ar/match/5111129/Al-Taawon-SC-vs-Al-Ahly-SCSC-(Benghazi)",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "3 - مباراة الذهاب",
-      "stadium": "ملعب 10 يونيو إجدابيا",
-      "time": "14:00",
-      "date": "الأربعاء 31-12-2025",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "التعاون",
-        "logo": "https://imgs.ysscores.com/teams/128/17656571434987.png"
-      },
-      "away": {
-        "name": "الأهلي بنغازي",
-        "logo": "https://imgs.ysscores.com/teams/128/17666732344755.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111111",
     "url": "https://www.ysscores.com/ar/match/5111111/Al-Ahli-SC-Libya-vs-Libyan-Stadium",
     "info": {
@@ -364,6 +316,54 @@
       "away": {
         "name": "القادسية",
         "logo": "https://imgs.ysscores.com/teams/128/17656592901185.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111129",
+    "url": "https://www.ysscores.com/ar/match/5111129/Al-Taawon-SC-vs-Al-Ahly-SCSC-(Benghazi)",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "3 - مباراة الذهاب",
+      "stadium": "ملعب 10 يونيو إجدابيا",
+      "time": "14:00",
+      "date": "الأربعاء 31-12-2025",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "التعاون",
+        "logo": "https://imgs.ysscores.com/teams/128/17656571434987.png"
+      },
+      "away": {
+        "name": "الأهلي بنغازي",
+        "logo": "https://imgs.ysscores.com/teams/128/17666732344755.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111130",
+    "url": "https://www.ysscores.com/ar/match/5111130/Al-Hilal-SC-vs-Al-Borouq-FC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "3 - مباراة الذهاب",
+      "stadium": "ملعب شهداء بنينا",
+      "time": "17:00",
+      "date": "الأربعاء 31-12-2025",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الهلال",
+        "logo": "https://imgs.ysscores.com/teams/128/7131696628343.png"
+      },
+      "away": {
+        "name": "البروق",
+        "logo": "https://imgs.ysscores.com/teams/128/17656432533307.png"
       }
     },
     "channels": []
@@ -480,6 +480,47 @@
     ]
   },
   {
+    "id": "4722011",
+    "url": "https://www.ysscores.com/ar/match/4722011/Equatorial-Guinea-vs-Algeria",
+    "info": {
+      "championship": "كأس الأمم الأفريقية",
+      "round": "3",
+      "stadium": "ملعب مولاي الحسن",
+      "time": "17:00",
+      "date": "الأربعاء 31-12-2025",
+      "current_score": "1 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "غينيا الاستوائية",
+        "logo": "https://imgs.ysscores.com/teams/128/3871763072297.png"
+      },
+      "away": {
+        "name": "الجزائر",
+        "logo": "https://imgs.ysscores.com/teams/128/2341763066345.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Max 1",
+        "commentator": "حفيظ دراجي"
+      },
+      {
+        "channel": "beIN Max 3",
+        "commentator": "حفيظ دراجي"
+      },
+      {
+        "channel": "Bein Max 4",
+        "commentator": "حفيظ دراجي"
+      },
+      {
+        "channel": "القناة الأرضية الجزائرية",
+        "commentator": "بلال بيناري"
+      }
+    ]
+  },
+  {
     "id": "4722017",
     "url": "https://www.ysscores.com/ar/match/4722017/Gabon-vs-Ivory-Coast",
     "info": {
@@ -550,47 +591,6 @@
     ]
   },
   {
-    "id": "4722011",
-    "url": "https://www.ysscores.com/ar/match/4722011/Equatorial-Guinea-vs-Algeria",
-    "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "3",
-      "stadium": "ملعب مولاي الحسن",
-      "time": "17:00",
-      "date": "الأربعاء 31-12-2025",
-      "current_score": "1 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "غينيا الاستوائية",
-        "logo": "https://imgs.ysscores.com/teams/128/3871763072297.png"
-      },
-      "away": {
-        "name": "الجزائر",
-        "logo": "https://imgs.ysscores.com/teams/128/2341763066345.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Max 1",
-        "commentator": "حفيظ دراجي"
-      },
-      {
-        "channel": "beIN Max 3",
-        "commentator": "حفيظ دراجي"
-      },
-      {
-        "channel": "Bein Max 4",
-        "commentator": "حفيظ دراجي"
-      },
-      {
-        "channel": "القناة الأرضية الجزائرية",
-        "commentator": "بلال بيناري"
-      }
-    ]
-  },
-  {
     "id": "4722012",
     "url": "https://www.ysscores.com/ar/match/4722012/Sudan-vs-Burkina-Faso",
     "info": {
@@ -620,35 +620,6 @@
       {
         "channel": "يوتيوب المغربية الرياضية",
         "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "52747709",
-    "url": "https://www.ysscores.com/ar/match/52747709/Cleopatra-FC-vs-Pharco-FC",
-    "info": {
-      "championship": "كأس الرابطة المصرية",
-      "round": "4",
-      "stadium": "استاد المقاولون العرب",
-      "time": "16:00",
-      "date": "الأربعاء 31-12-2025",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "سيراميكا",
-        "logo": "https://imgs.ysscores.com/teams/128/631694081965.png"
-      },
-      "away": {
-        "name": "فاركو",
-        "logo": "https://imgs.ysscores.com/teams/128/5821694082005.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ON Sport 1",
-        "commentator": "محمد الغياتي"
       }
     ]
   },
@@ -707,6 +678,35 @@
       {
         "channel": "ON Sport 2",
         "commentator": "محمد الكواليني"
+      }
+    ]
+  },
+  {
+    "id": "52747709",
+    "url": "https://www.ysscores.com/ar/match/52747709/Cleopatra-FC-vs-Pharco-FC",
+    "info": {
+      "championship": "كأس الرابطة المصرية",
+      "round": "4",
+      "stadium": "استاد المقاولون العرب",
+      "time": "16:00",
+      "date": "الأربعاء 31-12-2025",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "سيراميكا",
+        "logo": "https://imgs.ysscores.com/teams/128/631694081965.png"
+      },
+      "away": {
+        "name": "فاركو",
+        "logo": "https://imgs.ysscores.com/teams/128/5821694082005.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 1",
+        "commentator": "محمد الغياتي"
       }
     ]
   }
