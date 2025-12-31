@@ -273,6 +273,30 @@
     ]
   },
   {
+    "id": "5111111",
+    "url": "https://www.ysscores.com/ar/match/5111111/Al-Ahli-SC-Libya-vs-Libyan-Stadium",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "3 - مباراة الذهاب",
+      "stadium": "ملعب النهر الصناعي",
+      "time": "17:30",
+      "date": "الأربعاء 31-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الأهلي طرابلس",
+        "logo": "https://imgs.ysscores.com/teams/128/9531692282352.png"
+      },
+      "away": {
+        "name": "الملعب الليبي",
+        "logo": "https://imgs.ysscores.com/teams/128/17656589037683.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5111130",
     "url": "https://www.ysscores.com/ar/match/5111130/Al-Hilal-SC-vs-Al-Borouq-FC",
     "info": {
@@ -316,30 +340,6 @@
       "away": {
         "name": "الأهلي بنغازي",
         "logo": "https://imgs.ysscores.com/teams/128/17666732344755.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5111111",
-    "url": "https://www.ysscores.com/ar/match/5111111/Al-Ahli-SC-Libya-vs-Libyan-Stadium",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "3 - مباراة الذهاب",
-      "stadium": "ملعب النهر الصناعي",
-      "time": "17:30",
-      "date": "الأربعاء 31-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الأهلي طرابلس",
-        "logo": "https://imgs.ysscores.com/teams/128/9531692282352.png"
-      },
-      "away": {
-        "name": "الملعب الليبي",
-        "logo": "https://imgs.ysscores.com/teams/128/17656589037683.png"
       }
     },
     "channels": []
@@ -480,47 +480,6 @@
     ]
   },
   {
-    "id": "4722017",
-    "url": "https://www.ysscores.com/ar/match/4722017/Gabon-vs-Ivory-Coast",
-    "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "3",
-      "stadium": "ستاد مراكش",
-      "time": "20:00",
-      "date": "الأربعاء 31-12-2025",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الغابون",
-        "logo": "https://imgs.ysscores.com/teams/128/8751763078081.png"
-      },
-      "away": {
-        "name": "كوت ديفوار",
-        "logo": "https://imgs.ysscores.com/teams/128/391763071210.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Max 1",
-        "commentator": "محمد المبروكي"
-      },
-      {
-        "channel": "beIN Max 3",
-        "commentator": "محمد المبروكي"
-      },
-      {
-        "channel": "Bein Max 4",
-        "commentator": "محمد المبروكي"
-      },
-      {
-        "channel": "المغربية (بث أرضي)",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "4722018",
     "url": "https://www.ysscores.com/ar/match/4722018/Mozambique-vs-Cameroon",
     "info": {
@@ -591,6 +550,47 @@
     ]
   },
   {
+    "id": "4722017",
+    "url": "https://www.ysscores.com/ar/match/4722017/Gabon-vs-Ivory-Coast",
+    "info": {
+      "championship": "كأس الأمم الأفريقية",
+      "round": "3",
+      "stadium": "ستاد مراكش",
+      "time": "20:00",
+      "date": "الأربعاء 31-12-2025",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الغابون",
+        "logo": "https://imgs.ysscores.com/teams/128/8751763078081.png"
+      },
+      "away": {
+        "name": "كوت ديفوار",
+        "logo": "https://imgs.ysscores.com/teams/128/391763071210.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Max 1",
+        "commentator": "محمد المبروكي"
+      },
+      {
+        "channel": "beIN Max 3",
+        "commentator": "محمد المبروكي"
+      },
+      {
+        "channel": "Bein Max 4",
+        "commentator": "محمد المبروكي"
+      },
+      {
+        "channel": "المغربية (بث أرضي)",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
     "id": "4722012",
     "url": "https://www.ysscores.com/ar/match/4722012/Sudan-vs-Burkina-Faso",
     "info": {
@@ -653,35 +653,6 @@
     ]
   },
   {
-    "id": "21171835",
-    "url": "https://www.ysscores.com/ar/match/21171835/Petrojet-vs-Bank-El-Ahly",
-    "info": {
-      "championship": "كأس الرابطة المصرية",
-      "round": "4",
-      "stadium": "ستاد بتروسبورت",
-      "time": "16:00",
-      "date": "الأربعاء 31-12-2025",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بتروجيت",
-        "logo": "https://imgs.ysscores.com/teams/128/5911730303226.png"
-      },
-      "away": {
-        "name": "البنك الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/7591694081941.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ON Sport 2",
-        "commentator": "محمد الكواليني"
-      }
-    ]
-  },
-  {
     "id": "52747709",
     "url": "https://www.ysscores.com/ar/match/52747709/Cleopatra-FC-vs-Pharco-FC",
     "info": {
@@ -707,6 +678,35 @@
       {
         "channel": "ON Sport 1",
         "commentator": "محمد الغياتي"
+      }
+    ]
+  },
+  {
+    "id": "21171835",
+    "url": "https://www.ysscores.com/ar/match/21171835/Petrojet-vs-Bank-El-Ahly",
+    "info": {
+      "championship": "كأس الرابطة المصرية",
+      "round": "4",
+      "stadium": "ستاد بتروسبورت",
+      "time": "16:00",
+      "date": "الأربعاء 31-12-2025",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بتروجيت",
+        "logo": "https://imgs.ysscores.com/teams/128/5911730303226.png"
+      },
+      "away": {
+        "name": "البنك الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/7591694081941.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 2",
+        "commentator": "محمد الكواليني"
       }
     ]
   }
