@@ -297,6 +297,30 @@
     "channels": []
   },
   {
+    "id": "5111111",
+    "url": "https://www.ysscores.com/ar/match/5111111/Al-Ahli-SC-Libya-vs-Libyan-Stadium",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "3 - مباراة الذهاب",
+      "stadium": "ملعب النهر الصناعي",
+      "time": "17:30",
+      "date": "الأربعاء 31-12-2025",
+      "current_score": "3 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الأهلي طرابلس",
+        "logo": "https://imgs.ysscores.com/teams/128/9531692282352.png"
+      },
+      "away": {
+        "name": "الملعب الليبي",
+        "logo": "https://imgs.ysscores.com/teams/128/17656589037683.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5111129",
     "url": "https://www.ysscores.com/ar/match/5111129/Al-Taawon-SC-vs-Al-Ahly-SCSC-(Benghazi)",
     "info": {
@@ -340,30 +364,6 @@
       "away": {
         "name": "القادسية",
         "logo": "https://imgs.ysscores.com/teams/128/17656592901185.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5111111",
-    "url": "https://www.ysscores.com/ar/match/5111111/Al-Ahli-SC-Libya-vs-Libyan-Stadium",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "3 - مباراة الذهاب",
-      "stadium": "ملعب النهر الصناعي",
-      "time": "17:30",
-      "date": "الأربعاء 31-12-2025",
-      "current_score": "3 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الأهلي طرابلس",
-        "logo": "https://imgs.ysscores.com/teams/128/9531692282352.png"
-      },
-      "away": {
-        "name": "الملعب الليبي",
-        "logo": "https://imgs.ysscores.com/teams/128/17656589037683.png"
       }
     },
     "channels": []
@@ -422,35 +422,6 @@
     ]
   },
   {
-    "id": "83596053",
-    "url": "https://www.ysscores.com/ar/match/83596053/Al-Diraiyah-FC-vs-Al-Jubail-Club",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "14 - مباراة الذهاب",
-      "stadium": "ملعب نادي الرياض",
-      "time": "13:15",
-      "date": "الأربعاء 31-12-2025",
-      "current_score": "5 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الدرعية",
-        "logo": "https://imgs.ysscores.com/teams/128/6711757968926.png"
-      },
-      "away": {
-        "name": "الجبيل",
-        "logo": "https://imgs.ysscores.com/teams/128/6841751106535.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "فهد العنزي"
-      }
-    ]
-  },
-  {
     "id": "45575696",
     "url": "https://www.ysscores.com/ar/match/45575696/Al-Batin-FC-vs-Abha-Club",
     "info": {
@@ -480,31 +451,31 @@
     ]
   },
   {
-    "id": "4722018",
-    "url": "https://www.ysscores.com/ar/match/4722018/Mozambique-vs-Cameroon",
+    "id": "83596053",
+    "url": "https://www.ysscores.com/ar/match/83596053/Al-Diraiyah-FC-vs-Al-Jubail-Club",
     "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "3",
-      "stadium": "ملعب أدرار",
-      "time": "20:00",
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "14 - مباراة الذهاب",
+      "stadium": "ملعب نادي الرياض",
+      "time": "13:15",
       "date": "الأربعاء 31-12-2025",
-      "current_score": "1 - 2",
+      "current_score": "5 - 2",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "موزمبيق",
-        "logo": "https://imgs.ysscores.com/teams/128/9651763083639.png"
+        "name": "الدرعية",
+        "logo": "https://imgs.ysscores.com/teams/128/6711757968926.png"
       },
       "away": {
-        "name": "الكاميرون",
-        "logo": "https://imgs.ysscores.com/teams/128/1341763070498.png"
+        "name": "الجبيل",
+        "logo": "https://imgs.ysscores.com/teams/128/6841751106535.png"
       }
     },
     "channels": [
       {
-        "channel": "beIN Max 2",
-        "commentator": "أحمد عبده"
+        "channel": "تطبيق ثمانية",
+        "commentator": "فهد العنزي"
       }
     ]
   },
@@ -591,6 +562,35 @@
     ]
   },
   {
+    "id": "4722018",
+    "url": "https://www.ysscores.com/ar/match/4722018/Mozambique-vs-Cameroon",
+    "info": {
+      "championship": "كأس الأمم الأفريقية",
+      "round": "3",
+      "stadium": "ملعب أدرار",
+      "time": "20:00",
+      "date": "الأربعاء 31-12-2025",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "موزمبيق",
+        "logo": "https://imgs.ysscores.com/teams/128/9651763083639.png"
+      },
+      "away": {
+        "name": "الكاميرون",
+        "logo": "https://imgs.ysscores.com/teams/128/1341763070498.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Max 2",
+        "commentator": "أحمد عبده"
+      }
+    ]
+  },
+  {
     "id": "4722012",
     "url": "https://www.ysscores.com/ar/match/4722012/Sudan-vs-Burkina-Faso",
     "info": {
@@ -620,35 +620,6 @@
       {
         "channel": "يوتيوب المغربية الرياضية",
         "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "14867887",
-    "url": "https://www.ysscores.com/ar/match/14867887/Zed-FC-vs-Harras-El-Hodoud",
-    "info": {
-      "championship": "كأس الرابطة المصرية",
-      "round": "4",
-      "stadium": "استاد السلام",
-      "time": "19:00",
-      "date": "الأربعاء 31-12-2025",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "نادي زد",
-        "logo": "https://imgs.ysscores.com/teams/128/8411694619351.png"
-      },
-      "away": {
-        "name": "حرس الحدود",
-        "logo": "https://imgs.ysscores.com/teams/128/4381694082139.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ON Sport 2",
-        "commentator": "محمد مصطفى عفيفي"
       }
     ]
   },
@@ -707,6 +678,35 @@
       {
         "channel": "ON Sport 2",
         "commentator": "محمد الكواليني"
+      }
+    ]
+  },
+  {
+    "id": "14867887",
+    "url": "https://www.ysscores.com/ar/match/14867887/Zed-FC-vs-Harras-El-Hodoud",
+    "info": {
+      "championship": "كأس الرابطة المصرية",
+      "round": "4",
+      "stadium": "استاد السلام",
+      "time": "19:00",
+      "date": "الأربعاء 31-12-2025",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "نادي زد",
+        "logo": "https://imgs.ysscores.com/teams/128/8411694619351.png"
+      },
+      "away": {
+        "name": "حرس الحدود",
+        "logo": "https://imgs.ysscores.com/teams/128/4381694082139.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 2",
+        "commentator": "محمد مصطفى عفيفي"
       }
     ]
   }
