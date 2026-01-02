@@ -66,39 +66,6 @@
     ]
   },
   {
-    "id": "5041039",
-    "url": "https://www.ysscores.com/ar/match/5041039/Khor-Fakkan-SSC-vs-Al-Dhafra-FC",
-    "info": {
-      "championship": "الدوري الإماراتي للمحترفين",
-      "round": "11 - مباراة الذهاب",
-      "stadium": "استاد صقر بن محمد القاسمي",
-      "time": "13:55",
-      "date": "الجمعة 02-01-2026",
-      "current_score": "2 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "خورفكان",
-        "logo": "https://imgs.ysscores.com/teams/128/8671756044964.png"
-      },
-      "away": {
-        "name": "الظفرة",
-        "logo": "https://imgs.ysscores.com/teams/128/7361755293874.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "أبو ظبي الرياضية 2",
-        "commentator": "أحمد الحوسني"
-      },
-      {
-        "channel": "دبي الرياضية 2",
-        "commentator": "أحمد الشحي"
-      }
-    ]
-  },
-  {
     "id": "5041041",
     "url": "https://www.ysscores.com/ar/match/5041041/FC-Baniyas-vs-Al-Nasr-SC-(UAE)",
     "info": {
@@ -128,6 +95,39 @@
       {
         "channel": "دبي الرياضية 2",
         "commentator": "عمر الطنيجي"
+      }
+    ]
+  },
+  {
+    "id": "5041039",
+    "url": "https://www.ysscores.com/ar/match/5041039/Khor-Fakkan-SSC-vs-Al-Dhafra-FC",
+    "info": {
+      "championship": "الدوري الإماراتي للمحترفين",
+      "round": "11 - مباراة الذهاب",
+      "stadium": "استاد صقر بن محمد القاسمي",
+      "time": "13:55",
+      "date": "الجمعة 02-01-2026",
+      "current_score": "2 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "خورفكان",
+        "logo": "https://imgs.ysscores.com/teams/128/8671756044964.png"
+      },
+      "away": {
+        "name": "الظفرة",
+        "logo": "https://imgs.ysscores.com/teams/128/7361755293874.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "أبو ظبي الرياضية 2",
+        "commentator": "أحمد الحوسني"
+      },
+      {
+        "channel": "دبي الرياضية 2",
+        "commentator": "أحمد الشحي"
       }
     ]
   },
@@ -421,7 +421,7 @@
       "time": "15:35",
       "date": "الجمعة 02-01-2026",
       "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -643,30 +643,6 @@
     "channels": []
   },
   {
-    "id": "5111173",
-    "url": "https://www.ysscores.com/ar/match/5111173/Abelashhar-SC-vs-Shabab-Al-Ghar",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "3 - مباراة الذهاب",
-      "stadium": "ملعب النهر الصناعي",
-      "time": "14:30",
-      "date": "الجمعة 02-01-2026",
-      "current_score": "1 - 2",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "أبي الأشهر",
-        "logo": "https://imgs.ysscores.com/teams/128/17656609976295.png"
-      },
-      "away": {
-        "name": "الغار",
-        "logo": "https://imgs.ysscores.com/teams/128/17656492902173.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111174",
     "url": "https://www.ysscores.com/ar/match/5111174/Al-Majd-SCC-vs-Al-Tersana-Tripoli",
     "info": {
@@ -686,6 +662,30 @@
       "away": {
         "name": "الترسانة",
         "logo": "https://imgs.ysscores.com/teams/128/17656496443244.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111173",
+    "url": "https://www.ysscores.com/ar/match/5111173/Abelashhar-SC-vs-Shabab-Al-Ghar",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "3 - مباراة الذهاب",
+      "stadium": "ملعب النهر الصناعي",
+      "time": "14:30",
+      "date": "الجمعة 02-01-2026",
+      "current_score": "1 - 2",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "أبي الأشهر",
+        "logo": "https://imgs.ysscores.com/teams/128/17656609976295.png"
+      },
+      "away": {
+        "name": "الغار",
+        "logo": "https://imgs.ysscores.com/teams/128/17656492902173.png"
       }
     },
     "channels": []
