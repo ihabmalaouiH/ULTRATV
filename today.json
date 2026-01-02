@@ -214,8 +214,8 @@
       "stadium": "استاد البحرين الوطني",
       "time": "17:00",
       "date": "الجمعة 02-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -243,8 +243,8 @@
       "stadium": "استاد الشيخ علي بن محمد آل خليفة",
       "time": "17:00",
       "date": "الجمعة 02-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -346,39 +346,6 @@
     "channels": []
   },
   {
-    "id": "4927414",
-    "url": "https://www.ysscores.com/ar/match/4927414/Al-Ahli-SFC-vs-Al-Nassr-FC",
-    "info": {
-      "championship": "الدوري السعودي للمحترفين",
-      "round": "13 - مباراة الذهاب",
-      "stadium": "ملعب الإنماء",
-      "time": "18:30",
-      "date": "الجمعة 02-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/9091751485160.png"
-      },
-      "away": {
-        "name": "النصر",
-        "logo": "https://imgs.ysscores.com/teams/128/1371747772080.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 1",
-        "commentator": "مشاري القرني"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "مشاري القرني"
-      }
-    ]
-  },
-  {
     "id": "4927420",
     "url": "https://www.ysscores.com/ar/match/4927420/Al-Najma-SC-vs-Al-Khaleej-FC",
     "info": {
@@ -408,6 +375,39 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "محمد حسين"
+      }
+    ]
+  },
+  {
+    "id": "4927414",
+    "url": "https://www.ysscores.com/ar/match/4927414/Al-Ahli-SFC-vs-Al-Nassr-FC",
+    "info": {
+      "championship": "الدوري السعودي للمحترفين",
+      "round": "13 - مباراة الذهاب",
+      "stadium": "ملعب الإنماء",
+      "time": "18:30",
+      "date": "الجمعة 02-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/9091751485160.png"
+      },
+      "away": {
+        "name": "النصر",
+        "logo": "https://imgs.ysscores.com/teams/128/1371747772080.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 1",
+        "commentator": "مشاري القرني"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "مشاري القرني"
       }
     ]
   },
@@ -445,35 +445,6 @@
     ]
   },
   {
-    "id": "93529832",
-    "url": "https://www.ysscores.com/ar/match/93529832/Taliya-SC-vs-Homs-Al-Fidaa",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "3 - مباراة الذهاب",
-      "stadium": "الملعب البلدي حماة",
-      "time": "12:30",
-      "date": "الجمعة 02-01-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الطليعة",
-        "logo": "https://imgs.ysscores.com/teams/128/17648896107718.png"
-      },
-      "away": {
-        "name": "حمص الفداء",
-        "logo": "https://imgs.ysscores.com/teams/128/8231694350200.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "تلفزيون برايم",
-        "commentator": "يزن العزي"
-      }
-    ]
-  },
-  {
     "id": "35832855",
     "url": "https://www.ysscores.com/ar/match/35832855/Al-Shorta-SC-(Syria)-vs-Al-Fotuwa-SC",
     "info": {
@@ -499,6 +470,35 @@
       {
         "channel": "تلفزيون برايم",
         "commentator": "يونس الفاعوري"
+      }
+    ]
+  },
+  {
+    "id": "93529832",
+    "url": "https://www.ysscores.com/ar/match/93529832/Taliya-SC-vs-Homs-Al-Fidaa",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "3 - مباراة الذهاب",
+      "stadium": "الملعب البلدي حماة",
+      "time": "12:30",
+      "date": "الجمعة 02-01-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الطليعة",
+        "logo": "https://imgs.ysscores.com/teams/128/17648896107718.png"
+      },
+      "away": {
+        "name": "حمص الفداء",
+        "logo": "https://imgs.ysscores.com/teams/128/8231694350200.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "تلفزيون برايم",
+        "commentator": "يزن العزي"
       }
     ]
   },
@@ -619,30 +619,6 @@
     ]
   },
   {
-    "id": "5111174",
-    "url": "https://www.ysscores.com/ar/match/5111174/Al-Majd-SCC-vs-Al-Tersana-Tripoli",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "3 - مباراة الذهاب",
-      "stadium": "ملعب النهر الصناعي",
-      "time": "18:00",
-      "date": "الجمعة 02-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "المجد",
-        "logo": "https://imgs.ysscores.com/teams/128/17656495347608.png"
-      },
-      "away": {
-        "name": "الترسانة",
-        "logo": "https://imgs.ysscores.com/teams/128/17656496443244.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111194",
     "url": "https://www.ysscores.com/ar/match/5111194/Al-Nasr-SC-vs-Andalus-FC",
     "info": {
@@ -667,25 +643,25 @@
     "channels": []
   },
   {
-    "id": "5111173",
-    "url": "https://www.ysscores.com/ar/match/5111173/Abelashhar-SC-vs-Shabab-Al-Ghar",
+    "id": "5111174",
+    "url": "https://www.ysscores.com/ar/match/5111174/Al-Majd-SCC-vs-Al-Tersana-Tripoli",
     "info": {
       "championship": "الدوري الليبي الممتاز",
       "round": "3 - مباراة الذهاب",
       "stadium": "ملعب النهر الصناعي",
-      "time": "14:30",
+      "time": "18:00",
       "date": "الجمعة 02-01-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "أبي الأشهر",
-        "logo": "https://imgs.ysscores.com/teams/128/17656609976295.png"
+        "name": "المجد",
+        "logo": "https://imgs.ysscores.com/teams/128/17656495347608.png"
       },
       "away": {
-        "name": "الغار",
-        "logo": "https://imgs.ysscores.com/teams/128/17656492902173.png"
+        "name": "الترسانة",
+        "logo": "https://imgs.ysscores.com/teams/128/17656496443244.png"
       }
     },
     "channels": []
@@ -710,6 +686,30 @@
       "away": {
         "name": "التحدي",
         "logo": "https://imgs.ysscores.com/teams/128/17656600447081.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111173",
+    "url": "https://www.ysscores.com/ar/match/5111173/Abelashhar-SC-vs-Shabab-Al-Ghar",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "3 - مباراة الذهاب",
+      "stadium": "ملعب النهر الصناعي",
+      "time": "14:30",
+      "date": "الجمعة 02-01-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أبي الأشهر",
+        "logo": "https://imgs.ysscores.com/teams/128/17656609976295.png"
+      },
+      "away": {
+        "name": "الغار",
+        "logo": "https://imgs.ysscores.com/teams/128/17656492902173.png"
       }
     },
     "channels": []
