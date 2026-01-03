@@ -643,6 +643,30 @@
     "channels": []
   },
   {
+    "id": "5111173",
+    "url": "https://www.ysscores.com/ar/match/5111173/Abelashhar-SC-vs-Shabab-Al-Ghar",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "3 - مباراة الذهاب",
+      "stadium": "ملعب النهر الصناعي",
+      "time": "14:30",
+      "date": "الجمعة 02-01-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أبي الأشهر",
+        "logo": "https://imgs.ysscores.com/teams/128/17656609976295.png"
+      },
+      "away": {
+        "name": "الغار",
+        "logo": "https://imgs.ysscores.com/teams/128/17656492902173.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5111193",
     "url": "https://www.ysscores.com/ar/match/5111193/Khaleej-Sirte-SC-vs-Al-Tahaddy-SC",
     "info": {
@@ -691,30 +715,6 @@
     "channels": []
   },
   {
-    "id": "5111173",
-    "url": "https://www.ysscores.com/ar/match/5111173/Abelashhar-SC-vs-Shabab-Al-Ghar",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "3 - مباراة الذهاب",
-      "stadium": "ملعب النهر الصناعي",
-      "time": "14:30",
-      "date": "الجمعة 02-01-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أبي الأشهر",
-        "logo": "https://imgs.ysscores.com/teams/128/17656609976295.png"
-      },
-      "away": {
-        "name": "الغار",
-        "logo": "https://imgs.ysscores.com/teams/128/17656492902173.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4946307",
     "url": "https://www.ysscores.com/ar/match/4946307/La-Viena-FC-vs-Sekka-El-Hadid",
     "info": {
@@ -737,35 +737,6 @@
       }
     },
     "channels": []
-  },
-  {
-    "id": "4946309",
-    "url": "https://www.ysscores.com/ar/match/4946309/Tersana-FC-vs-Entag-El-Harby",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "17 - مباراة الذهاب",
-      "stadium": "استاد الترسانة",
-      "time": "13:30",
-      "date": "الجمعة 02-01-2026",
-      "current_score": "4 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الترسانة",
-        "logo": "https://imgs.ysscores.com/teams/128/1081715096208.png"
-      },
-      "away": {
-        "name": "الإنتاج الحربي",
-        "logo": "https://imgs.ysscores.com/teams/128/7141753648124.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ON Sport 2",
-        "commentator": "هشام فرحات"
-      }
-    ]
   },
   {
     "id": "4946306",
@@ -793,6 +764,35 @@
       {
         "channel": "ON Sport 1",
         "commentator": "محمد عزمي"
+      }
+    ]
+  },
+  {
+    "id": "4946309",
+    "url": "https://www.ysscores.com/ar/match/4946309/Tersana-FC-vs-Entag-El-Harby",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "17 - مباراة الذهاب",
+      "stadium": "استاد الترسانة",
+      "time": "13:30",
+      "date": "الجمعة 02-01-2026",
+      "current_score": "4 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الترسانة",
+        "logo": "https://imgs.ysscores.com/teams/128/1081715096208.png"
+      },
+      "away": {
+        "name": "الإنتاج الحربي",
+        "logo": "https://imgs.ysscores.com/teams/128/7141753648124.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 2",
+        "commentator": "هشام فرحات"
       }
     ]
   },
