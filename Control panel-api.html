@@ -111,7 +111,7 @@
   .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); backdrop-filter: blur(5px); }
   .modal-content { background-color: var(--bg-card); margin: 5% auto; padding: 20px; border: 1px solid var(--border); width: 95%; max-width: 600px; border-radius: 12px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.5); }
   .modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 15px; }
-  .server-row { display: flex; gap: 10px; margin-bottom: 10px; }
+  .server-row { display: flex; gap: 10px; margin-bottom: 10px; align-items: center; }
   .server-row input { flex: 1; }
   .server-count-badge { background: var(--primary); color: white; padding: 2px 6px; border-radius: 4px; font-size: 10px; margin-right: 5px; display: none; }
 
@@ -616,15 +616,33 @@ function openServerModal(btn) {
     document.getElementById("serverModal").style.display = "block";
 }
 
+// ⚠️⚠️⚠️ دالة إضافة سطر السيرفر (تم تعديلها لإضافة أزرار الترتيب) ⚠️⚠️⚠️
 function addServerLine(name = "", url = "") {
     const div = document.createElement("div");
     div.className = "server-row";
     div.innerHTML = `
         <input type="text" placeholder="اسم السيرفر" value="${name}" class="srv-name">
         <input type="text" placeholder="رابط السيرفر" value="${url}" class="srv-url">
-        <button class="btn-danger" onclick="this.parentElement.remove()" style="padding: 5px 10px;">🗑️</button>
+        <button type="button" class="btn-primary" onclick="moveServerUp(this)" style="padding: 6px; font-size:10px; margin:0 2px;">▲</button>
+        <button type="button" class="btn-primary" onclick="moveServerDown(this)" style="padding: 6px; font-size:10px; margin:0 2px;">▼</button>
+        <button class="btn-danger" onclick="this.parentElement.remove()" style="padding: 5px 10px; margin-left: 5px;">🗑️</button>
     `;
     document.getElementById("serverList").appendChild(div);
+}
+
+// ⚠️⚠️⚠️ دالتين جديدتين للترتيب (أعلى وأسفل) ⚠️⚠️⚠️
+function moveServerUp(btn) {
+    const row = btn.parentElement;
+    if (row.previousElementSibling) {
+        row.parentNode.insertBefore(row, row.previousElementSibling);
+    }
+}
+
+function moveServerDown(btn) {
+    const row = btn.parentElement;
+    if (row.nextElementSibling) {
+        row.parentNode.insertBefore(row.nextElementSibling, row);
+    }
 }
 
 function saveServers() {
