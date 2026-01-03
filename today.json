@@ -38,7 +38,7 @@
       "time": "16:15",
       "date": "السبت 03-01-2026",
       "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -153,7 +153,7 @@
       "stadium": "ملعب فالكيرك",
       "time": "16:00",
       "date": "السبت 03-01-2026",
-      "current_score": "0 - 0",
+      "current_score": "1 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -164,6 +164,30 @@
       "away": {
         "name": "أبردين",
         "logo": "https://imgs.ysscores.com/teams/128/711690370527.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4818881",
+    "url": "https://www.ysscores.com/ar/match/4818881/Motherwell-FC-vs-St.-Mirren-FC",
+    "info": {
+      "championship": "الدوري الإسكتلندي الممتاز",
+      "round": "21 - مباراة الاياب",
+      "stadium": "فير بارك",
+      "time": "16:00",
+      "date": "السبت 03-01-2026",
+      "current_score": "2 - 0",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "ماذرويل",
+        "logo": "https://imgs.ysscores.com/teams/128/9511690370547.png"
+      },
+      "away": {
+        "name": "سانت ميرين",
+        "logo": "https://imgs.ysscores.com/teams/128/1661690370541.png"
       }
     },
     "channels": []
@@ -220,30 +244,6 @@
         "commentator": "موسى عيد"
       }
     ]
-  },
-  {
-    "id": "4818881",
-    "url": "https://www.ysscores.com/ar/match/4818881/Motherwell-FC-vs-St.-Mirren-FC",
-    "info": {
-      "championship": "الدوري الإسكتلندي الممتاز",
-      "round": "21 - مباراة الاياب",
-      "stadium": "فير بارك",
-      "time": "16:00",
-      "date": "السبت 03-01-2026",
-      "current_score": "2 - 0",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "ماذرويل",
-        "logo": "https://imgs.ysscores.com/teams/128/9511690370547.png"
-      },
-      "away": {
-        "name": "سانت ميرين",
-        "logo": "https://imgs.ysscores.com/teams/128/1661690370541.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "4818879",
@@ -530,39 +530,6 @@
     ]
   },
   {
-    "id": "4803210",
-    "url": "https://www.ysscores.com/ar/match/4803210/Como-1907-vs-Udinese-Calcio",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "18 - مباراة الذهاب",
-      "stadium": "ستاد جوزيبي سينيجاليا",
-      "time": "12:30",
-      "date": "السبت 03-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "كومو",
-        "logo": "https://imgs.ysscores.com/teams/128/8641690823614.png"
-      },
-      "away": {
-        "name": "أودينيزي",
-        "logo": "https://imgs.ysscores.com/teams/128/8741690284718.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "StarzPlay",
-        "commentator": "ميشيل سعد"
-      },
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "ميشيل سعد"
-      }
-    ]
-  },
-  {
     "id": "4803216",
     "url": "https://www.ysscores.com/ar/match/4803216/US-Sassuolo-vs-Parma-Calcio-1913",
     "info": {
@@ -625,6 +592,39 @@
       {
         "channel": "تطبيق STC TV",
         "commentator": "غازي العمري"
+      }
+    ]
+  },
+  {
+    "id": "4803210",
+    "url": "https://www.ysscores.com/ar/match/4803210/Como-1907-vs-Udinese-Calcio",
+    "info": {
+      "championship": "الدوري الإيطالي",
+      "round": "18 - مباراة الذهاب",
+      "stadium": "ستاد جوزيبي سينيجاليا",
+      "time": "12:30",
+      "date": "السبت 03-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "كومو",
+        "logo": "https://imgs.ysscores.com/teams/128/8641690823614.png"
+      },
+      "away": {
+        "name": "أودينيزي",
+        "logo": "https://imgs.ysscores.com/teams/128/8741690284718.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "StarzPlay",
+        "commentator": "ميشيل سعد"
+      },
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "ميشيل سعد"
       }
     ]
   },
@@ -724,30 +724,6 @@
     ]
   },
   {
-    "id": "4844312",
-    "url": "https://www.ysscores.com/ar/match/4844312/CD-Tondela-vs-FC-Arouca",
-    "info": {
-      "championship": "الدوري البرتغالي الممتاز",
-      "round": "17 - مباراة الذهاب",
-      "stadium": "ملعب جواو كاردوسو",
-      "time": "16:30",
-      "date": "السبت 03-01-2026",
-      "current_score": "2 - 1",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "تونديلا",
-        "logo": "https://imgs.ysscores.com/teams/128/3081690370568.png"
-      },
-      "away": {
-        "name": "أروكا",
-        "logo": "https://imgs.ysscores.com/teams/128/8931690385659.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4844313",
     "url": "https://www.ysscores.com/ar/match/4844313/CF-Estrela-Amadora-vs-SC-Braga",
     "info": {
@@ -772,25 +748,25 @@
     "channels": []
   },
   {
-    "id": "4844305",
-    "url": "https://www.ysscores.com/ar/match/4844305/Avs-Futebol-vs-Moreirense-FC",
+    "id": "4844312",
+    "url": "https://www.ysscores.com/ar/match/4844312/CD-Tondela-vs-FC-Arouca",
     "info": {
       "championship": "الدوري البرتغالي الممتاز",
       "round": "17 - مباراة الذهاب",
-      "stadium": "ملعب سي دي أفيس",
-      "time": "21:30",
+      "stadium": "ملعب جواو كاردوسو",
+      "time": "16:30",
       "date": "السبت 03-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "2 - 1",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
-        "name": "فوتبول",
-        "logo": "https://imgs.ysscores.com/teams/128/9461698965717.png"
+        "name": "تونديلا",
+        "logo": "https://imgs.ysscores.com/teams/128/3081690370568.png"
       },
       "away": {
-        "name": "موريرنسي",
-        "logo": "https://imgs.ysscores.com/teams/128/7031690386044.png"
+        "name": "أروكا",
+        "logo": "https://imgs.ysscores.com/teams/128/8931690385659.png"
       }
     },
     "channels": []
@@ -823,6 +799,30 @@
         "commentator": "محمد العتيبي"
       }
     ]
+  },
+  {
+    "id": "4844305",
+    "url": "https://www.ysscores.com/ar/match/4844305/Avs-Futebol-vs-Moreirense-FC",
+    "info": {
+      "championship": "الدوري البرتغالي الممتاز",
+      "round": "17 - مباراة الذهاب",
+      "stadium": "ملعب سي دي أفيس",
+      "time": "21:30",
+      "date": "السبت 03-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "فوتبول",
+        "logo": "https://imgs.ysscores.com/teams/128/9461698965717.png"
+      },
+      "away": {
+        "name": "موريرنسي",
+        "logo": "https://imgs.ysscores.com/teams/128/7031690386044.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "4927419",
