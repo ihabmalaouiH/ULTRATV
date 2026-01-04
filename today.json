@@ -439,7 +439,7 @@
       "time": "12:30",
       "date": "الأحد 04-01-2026",
       "current_score": "0 - 2",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -491,30 +491,6 @@
     "channels": []
   },
   {
-    "id": "4844306",
-    "url": "https://www.ysscores.com/ar/match/4844306/FC-Alverca-vs-FC-Famalicão",
-    "info": {
-      "championship": "الدوري البرتغالي الممتاز",
-      "round": "17 - مباراة الذهاب",
-      "stadium": "مجمع ديسبورتيفو دي ألفيركا",
-      "time": "21:30",
-      "date": "الأحد 04-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ألفيركا",
-        "logo": "https://imgs.ysscores.com/teams/128/3031717489561.png"
-      },
-      "away": {
-        "name": "فاماليكاو",
-        "logo": "https://imgs.ysscores.com/teams/128/701746403025.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4844308",
     "url": "https://www.ysscores.com/ar/match/4844308/CD-Santa-Clara-vs-FC-Porto",
     "info": {
@@ -542,6 +518,30 @@
         "commentator": "محمد العتيبي"
       }
     ]
+  },
+  {
+    "id": "4844306",
+    "url": "https://www.ysscores.com/ar/match/4844306/FC-Alverca-vs-FC-Famalicão",
+    "info": {
+      "championship": "الدوري البرتغالي الممتاز",
+      "round": "17 - مباراة الذهاب",
+      "stadium": "مجمع ديسبورتيفو دي ألفيركا",
+      "time": "21:30",
+      "date": "الأحد 04-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ألفيركا",
+        "logo": "https://imgs.ysscores.com/teams/128/3031717489561.png"
+      },
+      "away": {
+        "name": "فاماليكاو",
+        "logo": "https://imgs.ysscores.com/teams/128/701746403025.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "4927421",
@@ -643,35 +643,6 @@
     ]
   },
   {
-    "id": "27487927",
-    "url": "https://www.ysscores.com/ar/match/27487927/Duhok-SC-vs-Amanat-Baghdad",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "10 - مباراة الذهاب",
-      "stadium": "استاد دهوك",
-      "time": "16:30",
-      "date": "الأحد 04-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "دهوك",
-        "logo": "https://imgs.ysscores.com/teams/128/7641716672160.png"
-      },
-      "away": {
-        "name": "أمانة بغداد",
-        "logo": "https://imgs.ysscores.com/teams/128/3211698196458.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية السريانية",
-        "commentator": "يوسف جميل"
-      }
-    ]
-  },
-  {
     "id": "25478437",
     "url": "https://www.ysscores.com/ar/match/25478437/Al-Karkh-SC-vs-Mosul-SC",
     "info": {
@@ -701,35 +672,6 @@
     ]
   },
   {
-    "id": "26816919",
-    "url": "https://www.ysscores.com/ar/match/26816919/Al-Shorta-SC-vs-Zakho-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "10 - مباراة الذهاب",
-      "stadium": "ملعب نادي الشرطة (القفص)",
-      "time": "16:30",
-      "date": "الأحد 04-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الشرطة",
-        "logo": "https://imgs.ysscores.com/teams/128/8281729976264.png"
-      },
-      "away": {
-        "name": "زاخو",
-        "logo": "https://imgs.ysscores.com/teams/128/6061695656464.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية الرياضية",
-        "commentator": "جمال الدراجي"
-      }
-    ]
-  },
-  {
     "id": "47818636",
     "url": "https://www.ysscores.com/ar/match/47818636/Al-Qasim-SC-vs-Al-Talaba-SC",
     "info": {
@@ -755,6 +697,64 @@
       {
         "channel": "العراقية الكردية",
         "commentator": "حسين سمير"
+      }
+    ]
+  },
+  {
+    "id": "27487927",
+    "url": "https://www.ysscores.com/ar/match/27487927/Duhok-SC-vs-Amanat-Baghdad",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "10 - مباراة الذهاب",
+      "stadium": "استاد دهوك",
+      "time": "16:30",
+      "date": "الأحد 04-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "دهوك",
+        "logo": "https://imgs.ysscores.com/teams/128/7641716672160.png"
+      },
+      "away": {
+        "name": "أمانة بغداد",
+        "logo": "https://imgs.ysscores.com/teams/128/3211698196458.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية السريانية",
+        "commentator": "يوسف جميل"
+      }
+    ]
+  },
+  {
+    "id": "26816919",
+    "url": "https://www.ysscores.com/ar/match/26816919/Al-Shorta-SC-vs-Zakho-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "10 - مباراة الذهاب",
+      "stadium": "ملعب نادي الشرطة (القفص)",
+      "time": "16:30",
+      "date": "الأحد 04-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الشرطة",
+        "logo": "https://imgs.ysscores.com/teams/128/8281729976264.png"
+      },
+      "away": {
+        "name": "زاخو",
+        "logo": "https://imgs.ysscores.com/teams/128/6061695656464.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "جمال الدراجي"
       }
     ]
   },
@@ -986,78 +986,6 @@
     ]
   },
   {
-    "id": "4825343",
-    "url": "https://www.ysscores.com/ar/match/4825343/Portsmouth-FC-vs-Ipswich-Town",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "26 - مباراة الاياب",
-      "stadium": "فراتون بارك",
-      "time": "16:00",
-      "date": "الأحد 04-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "بورتسموث",
-        "logo": "https://imgs.ysscores.com/teams/128/5401690370525.png"
-      },
-      "away": {
-        "name": "إيبسويتش",
-        "logo": "https://imgs.ysscores.com/teams/128/8291690370545.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4825340",
-    "url": "https://www.ysscores.com/ar/match/4825340/Middlesbrough-FC-vs-Southampton-FC",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "26 - مباراة الاياب",
-      "stadium": "ريفرسايد",
-      "time": "16:00",
-      "date": "الأحد 04-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ميدلزبره",
-        "logo": "https://imgs.ysscores.com/teams/128/7871690370529.png"
-      },
-      "away": {
-        "name": "ساوثهامبتون",
-        "logo": "https://imgs.ysscores.com/teams/128/3521690370525.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4825341",
-    "url": "https://www.ysscores.com/ar/match/4825341/Millwall-FC-vs-Swansea-City",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "26 - مباراة الاياب",
-      "stadium": "استاد ذا دان",
-      "time": "16:00",
-      "date": "الأحد 04-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ميلوول",
-        "logo": "https://imgs.ysscores.com/teams/128/2181690370550.png"
-      },
-      "away": {
-        "name": "سوانزي",
-        "logo": "https://imgs.ysscores.com/teams/128/4561723590559.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4825335",
     "url": "https://www.ysscores.com/ar/match/4825335/Blackburn-Rovers-vs-Charlton-Athletic",
     "info": {
@@ -1111,12 +1039,12 @@
     ]
   },
   {
-    "id": "4825336",
-    "url": "https://www.ysscores.com/ar/match/4825336/Bristol-City-vs-Preston-North-End",
+    "id": "4825341",
+    "url": "https://www.ysscores.com/ar/match/4825341/Millwall-FC-vs-Swansea-City",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "26 - مباراة الاياب",
-      "stadium": "أشتون جيت",
+      "stadium": "استاد ذا دان",
       "time": "16:00",
       "date": "الأحد 04-01-2026",
       "current_score": "- : -",
@@ -1124,23 +1052,23 @@
     },
     "teams": {
       "home": {
-        "name": "بريستول",
-        "logo": "https://imgs.ysscores.com/teams/128/4621690370523.png"
+        "name": "ميلوول",
+        "logo": "https://imgs.ysscores.com/teams/128/2181690370550.png"
       },
       "away": {
-        "name": "بريستون",
-        "logo": "https://imgs.ysscores.com/teams/128/4581690370523.png"
+        "name": "سوانزي",
+        "logo": "https://imgs.ysscores.com/teams/128/4561723590559.png"
       }
     },
     "channels": []
   },
   {
-    "id": "4825337",
-    "url": "https://www.ysscores.com/ar/match/4825337/Derby-County-vs-Wrexham-AFC",
+    "id": "4825340",
+    "url": "https://www.ysscores.com/ar/match/4825340/Middlesbrough-FC-vs-Southampton-FC",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "26 - مباراة الاياب",
-      "stadium": "برايد بارك",
+      "stadium": "ريفرسايد",
       "time": "16:00",
       "date": "الأحد 04-01-2026",
       "current_score": "- : -",
@@ -1148,12 +1076,12 @@
     },
     "teams": {
       "home": {
-        "name": "ديربي كاونتي",
-        "logo": "https://imgs.ysscores.com/teams/128/8071690370554.png"
+        "name": "ميدلزبره",
+        "logo": "https://imgs.ysscores.com/teams/128/7871690370529.png"
       },
       "away": {
-        "name": "ريكسهام",
-        "logo": "https://imgs.ysscores.com/teams/128/2611690377870.png"
+        "name": "ساوثهامبتون",
+        "logo": "https://imgs.ysscores.com/teams/128/3521690370525.png"
       }
     },
     "channels": []
@@ -1183,6 +1111,78 @@
     "channels": []
   },
   {
+    "id": "4825336",
+    "url": "https://www.ysscores.com/ar/match/4825336/Bristol-City-vs-Preston-North-End",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "26 - مباراة الاياب",
+      "stadium": "أشتون جيت",
+      "time": "16:00",
+      "date": "الأحد 04-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "بريستول",
+        "logo": "https://imgs.ysscores.com/teams/128/4621690370523.png"
+      },
+      "away": {
+        "name": "بريستون",
+        "logo": "https://imgs.ysscores.com/teams/128/4581690370523.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825343",
+    "url": "https://www.ysscores.com/ar/match/4825343/Portsmouth-FC-vs-Ipswich-Town",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "26 - مباراة الاياب",
+      "stadium": "فراتون بارك",
+      "time": "16:00",
+      "date": "الأحد 04-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "بورتسموث",
+        "logo": "https://imgs.ysscores.com/teams/128/5401690370525.png"
+      },
+      "away": {
+        "name": "إيبسويتش",
+        "logo": "https://imgs.ysscores.com/teams/128/8291690370545.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825337",
+    "url": "https://www.ysscores.com/ar/match/4825337/Derby-County-vs-Wrexham-AFC",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "26 - مباراة الاياب",
+      "stadium": "برايد بارك",
+      "time": "16:00",
+      "date": "الأحد 04-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ديربي كاونتي",
+        "logo": "https://imgs.ysscores.com/teams/128/8071690370554.png"
+      },
+      "away": {
+        "name": "ريكسهام",
+        "logo": "https://imgs.ysscores.com/teams/128/2611690377870.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4825344",
     "url": "https://www.ysscores.com/ar/match/4825344/Queens-Park-Rangers-vs-Sheffield-Wednesday",
     "info": {
@@ -1205,6 +1205,47 @@
       }
     },
     "channels": []
+  },
+  {
+    "id": "5073458",
+    "url": "https://www.ysscores.com/ar/match/5073458/Morocco-vs-Tanzania",
+    "info": {
+      "championship": "كأس الأمم الأفريقية",
+      "round": "دور الـ 16",
+      "stadium": "المجمع الرياضي الأمير مولاي عبد الله",
+      "time": "17:00",
+      "date": "الأحد 04-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "المغرب",
+        "logo": "https://imgs.ysscores.com/teams/128/6291763083538.png"
+      },
+      "away": {
+        "name": "تنزانيا",
+        "logo": "https://imgs.ysscores.com/teams/128/3241763087791.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Max 1",
+        "commentator": "جواد بدة"
+      },
+      {
+        "channel": "beIN Max 3",
+        "commentator": "جواد بدة"
+      },
+      {
+        "channel": "beIN Max 4",
+        "commentator": "جواد بدة"
+      },
+      {
+        "channel": "المغربية (بث أرضي)",
+        "commentator": "غير مدرج"
+      }
+    ]
   },
   {
     "id": "5073459",
@@ -1248,47 +1289,6 @@
       {
         "channel": "القناة الأرضية الجزائرية",
         "commentator": "محمد جمال"
-      },
-      {
-        "channel": "المغربية (بث أرضي)",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "5073458",
-    "url": "https://www.ysscores.com/ar/match/5073458/Morocco-vs-Tanzania",
-    "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "دور الـ 16",
-      "stadium": "المجمع الرياضي الأمير مولاي عبد الله",
-      "time": "17:00",
-      "date": "الأحد 04-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "المغرب",
-        "logo": "https://imgs.ysscores.com/teams/128/6291763083538.png"
-      },
-      "away": {
-        "name": "تنزانيا",
-        "logo": "https://imgs.ysscores.com/teams/128/3241763087791.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Max 1",
-        "commentator": "جواد بدة"
-      },
-      {
-        "channel": "beIN Max 3",
-        "commentator": "جواد بدة"
-      },
-      {
-        "channel": "beIN Max 4",
-        "commentator": "جواد بدة"
       },
       {
         "channel": "المغربية (بث أرضي)",
