@@ -1,34 +1,5 @@
 [
   {
-    "id": "4837288",
-    "url": "https://www.ysscores.com/ar/match/4837288/RCD-Mallorca-vs-Girona-FC",
-    "info": {
-      "championship": "الدوري الإسباني",
-      "round": "18 - مباراة الذهاب",
-      "stadium": "إيبيروستار",
-      "time": "18:30",
-      "date": "الأحد 04-01-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ريال مايوركا",
-        "logo": "https://imgs.ysscores.com/teams/128/5291690196746.png"
-      },
-      "away": {
-        "name": "جيرونا",
-        "logo": "https://imgs.ysscores.com/teams/128/3151690196742.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "بكر علوان"
-      }
-    ]
-  },
-  {
     "id": "4837280",
     "url": "https://www.ysscores.com/ar/match/4837280/Deportivo-Alavés-vs-Real-Oviedo",
     "info": {
@@ -54,6 +25,35 @@
       {
         "channel": "بي إن سبورت 4",
         "commentator": "أحمد عبده"
+      }
+    ]
+  },
+  {
+    "id": "4837288",
+    "url": "https://www.ysscores.com/ar/match/4837288/RCD-Mallorca-vs-Girona-FC",
+    "info": {
+      "championship": "الدوري الإسباني",
+      "round": "18 - مباراة الذهاب",
+      "stadium": "إيبيروستار",
+      "time": "18:30",
+      "date": "الأحد 04-01-2026",
+      "current_score": "0 - 1",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "ريال مايوركا",
+        "logo": "https://imgs.ysscores.com/teams/128/5291690196746.png"
+      },
+      "away": {
+        "name": "جيرونا",
+        "logo": "https://imgs.ysscores.com/teams/128/3151690196742.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "بكر علوان"
       }
     ]
   },
@@ -145,35 +145,31 @@
     ]
   },
   {
-    "id": "4813569",
-    "url": "https://www.ysscores.com/ar/match/4813569/Fulham-FC-vs-Liverpool-FC",
+    "id": "4813570",
+    "url": "https://www.ysscores.com/ar/match/4813570/Leeds-United-vs-Manchester-United",
     "info": {
       "championship": "الدوري الإنجليزي الممتاز",
       "round": "20 - مباراة الذهاب",
-      "stadium": "كرافن كوتيج",
-      "time": "16:15",
+      "stadium": "إيلاند رود",
+      "time": "13:30",
       "date": "الأحد 04-01-2026",
-      "current_score": "2 - 2",
+      "current_score": "1 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "فولهام",
-        "logo": "https://imgs.ysscores.com/teams/128/4711690118927.png"
+        "name": "ليدز يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/4691690458244.png"
       },
       "away": {
-        "name": "ليفربول",
-        "logo": "https://imgs.ysscores.com/teams/128/4081724601375.png"
+        "name": "مان يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/4871690119302.png"
       }
     },
     "channels": [
       {
         "channel": "بي إن سبورت 1",
-        "commentator": "حسن العيدروس"
-      },
-      {
-        "channel": "beIN 4K",
-        "commentator": "حسن العيدروس"
+        "commentator": "عبدالله الغامدي"
       }
     ]
   },
@@ -207,31 +203,35 @@
     ]
   },
   {
-    "id": "4813570",
-    "url": "https://www.ysscores.com/ar/match/4813570/Leeds-United-vs-Manchester-United",
+    "id": "4813569",
+    "url": "https://www.ysscores.com/ar/match/4813569/Fulham-FC-vs-Liverpool-FC",
     "info": {
       "championship": "الدوري الإنجليزي الممتاز",
       "round": "20 - مباراة الذهاب",
-      "stadium": "إيلاند رود",
-      "time": "13:30",
+      "stadium": "كرافن كوتيج",
+      "time": "16:15",
       "date": "الأحد 04-01-2026",
-      "current_score": "1 - 1",
+      "current_score": "2 - 2",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "ليدز يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/4691690458244.png"
+        "name": "فولهام",
+        "logo": "https://imgs.ysscores.com/teams/128/4711690118927.png"
       },
       "away": {
-        "name": "مان يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/4871690119302.png"
+        "name": "ليفربول",
+        "logo": "https://imgs.ysscores.com/teams/128/4081724601375.png"
       }
     },
     "channels": [
       {
         "channel": "بي إن سبورت 1",
-        "commentator": "عبدالله الغامدي"
+        "commentator": "حسن العيدروس"
+      },
+      {
+        "channel": "beIN 4K",
+        "commentator": "حسن العيدروس"
       }
     ]
   },
@@ -269,35 +269,6 @@
     ]
   },
   {
-    "id": "4813572",
-    "url": "https://www.ysscores.com/ar/match/4813572/Newcastle-United-vs-Crystal-Palace",
-    "info": {
-      "championship": "الدوري الإنجليزي الممتاز",
-      "round": "20 - مباراة الذهاب",
-      "stadium": "سانت جيمس بارك",
-      "time": "16:00",
-      "date": "الأحد 04-01-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "نيوكاسل",
-        "logo": "https://imgs.ysscores.com/teams/128/3721690119405.png"
-      },
-      "away": {
-        "name": "كريستال بالاس",
-        "logo": "https://imgs.ysscores.com/teams/128/6121690118883.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 4",
-        "commentator": "محمد المبروكي"
-      }
-    ]
-  },
-  {
     "id": "4813568",
     "url": "https://www.ysscores.com/ar/match/4813568/Everton-FC-vs-Brentford-FC",
     "info": {
@@ -323,6 +294,35 @@
       {
         "channel": "بي إن سبورت 3",
         "commentator": "نوفل باشي"
+      }
+    ]
+  },
+  {
+    "id": "4813572",
+    "url": "https://www.ysscores.com/ar/match/4813572/Newcastle-United-vs-Crystal-Palace",
+    "info": {
+      "championship": "الدوري الإنجليزي الممتاز",
+      "round": "20 - مباراة الذهاب",
+      "stadium": "سانت جيمس بارك",
+      "time": "16:00",
+      "date": "الأحد 04-01-2026",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "نيوكاسل",
+        "logo": "https://imgs.ysscores.com/teams/128/3721690119405.png"
+      },
+      "away": {
+        "name": "كريستال بالاس",
+        "logo": "https://imgs.ysscores.com/teams/128/6121690118883.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 4",
+        "commentator": "محمد المبروكي"
       }
     ]
   },
@@ -586,7 +586,7 @@
       "time": "18:30",
       "date": "الأحد 04-01-2026",
       "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -701,6 +701,35 @@
     ]
   },
   {
+    "id": "47818636",
+    "url": "https://www.ysscores.com/ar/match/47818636/Al-Qasim-SC-vs-Al-Talaba-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "10 - مباراة الذهاب",
+      "stadium": "استاد المدينة الدولي",
+      "time": "14:00",
+      "date": "الأحد 04-01-2026",
+      "current_score": "0 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "القاسم",
+        "logo": "https://imgs.ysscores.com/teams/128/2661722928239.png"
+      },
+      "away": {
+        "name": "الطلبة",
+        "logo": "https://imgs.ysscores.com/teams/128/9541695656866.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الكردية",
+        "commentator": "حسين سمير"
+      }
+    ]
+  },
+  {
     "id": "26816919",
     "url": "https://www.ysscores.com/ar/match/26816919/Al-Shorta-SC-vs-Zakho-SC",
     "info": {
@@ -730,35 +759,6 @@
       {
         "channel": "الكأس 2",
         "commentator": "قاسم الشمري"
-      }
-    ]
-  },
-  {
-    "id": "47818636",
-    "url": "https://www.ysscores.com/ar/match/47818636/Al-Qasim-SC-vs-Al-Talaba-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "10 - مباراة الذهاب",
-      "stadium": "استاد المدينة الدولي",
-      "time": "14:00",
-      "date": "الأحد 04-01-2026",
-      "current_score": "0 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "القاسم",
-        "logo": "https://imgs.ysscores.com/teams/128/2661722928239.png"
-      },
-      "away": {
-        "name": "الطلبة",
-        "logo": "https://imgs.ysscores.com/teams/128/9541695656866.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية الكردية",
-        "commentator": "حسين سمير"
       }
     ]
   },
@@ -1023,30 +1023,6 @@
     ]
   },
   {
-    "id": "4825335",
-    "url": "https://www.ysscores.com/ar/match/4825335/Blackburn-Rovers-vs-Charlton-Athletic",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "26 - مباراة الاياب",
-      "stadium": "إيوود بارك",
-      "time": "16:00",
-      "date": "الأحد 04-01-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بلاكبيرن روفرز",
-        "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
-      },
-      "away": {
-        "name": "تشارلتون أثلتيك",
-        "logo": "https://imgs.ysscores.com/teams/128/7791690370524.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4825338",
     "url": "https://www.ysscores.com/ar/match/4825338/Hull-City-vs-Watford-FC",
     "info": {
@@ -1114,6 +1090,30 @@
       "away": {
         "name": "سوانزي",
         "logo": "https://imgs.ysscores.com/teams/128/4561723590559.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825335",
+    "url": "https://www.ysscores.com/ar/match/4825335/Blackburn-Rovers-vs-Charlton-Athletic",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "26 - مباراة الاياب",
+      "stadium": "إيوود بارك",
+      "time": "16:00",
+      "date": "الأحد 04-01-2026",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بلاكبيرن روفرز",
+        "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
+      },
+      "away": {
+        "name": "تشارلتون أثلتيك",
+        "logo": "https://imgs.ysscores.com/teams/128/7791690370524.png"
       }
     },
     "channels": []
