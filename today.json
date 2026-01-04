@@ -336,7 +336,7 @@
       "time": "18:00",
       "date": "الأحد 04-01-2026",
       "current_score": "0 - 1",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -356,39 +356,6 @@
       {
         "channel": "تطبيق STC TV",
         "commentator": "فيصل الهندي"
-      }
-    ]
-  },
-  {
-    "id": "4803211",
-    "url": "https://www.ysscores.com/ar/match/4803211/ACF-Fiorentina-vs-US-Cremonese",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "18 - مباراة الذهاب",
-      "stadium": "أرتيميو فرانكي",
-      "time": "15:00",
-      "date": "الأحد 04-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "فيورنتينا",
-        "logo": "https://imgs.ysscores.com/teams/128/1231690283002.png"
-      },
-      "away": {
-        "name": "كريمونيسي",
-        "logo": "https://imgs.ysscores.com/teams/128/5011690370508.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "StarzPlay",
-        "commentator": "عبدالله السعدي"
-      },
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "عبدالله السعدي"
       }
     ]
   },
@@ -426,6 +393,39 @@
       {
         "channel": "منصة شاشا",
         "commentator": "رؤوف خليف"
+      }
+    ]
+  },
+  {
+    "id": "4803211",
+    "url": "https://www.ysscores.com/ar/match/4803211/ACF-Fiorentina-vs-US-Cremonese",
+    "info": {
+      "championship": "الدوري الإيطالي",
+      "round": "18 - مباراة الذهاب",
+      "stadium": "أرتيميو فرانكي",
+      "time": "15:00",
+      "date": "الأحد 04-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "فيورنتينا",
+        "logo": "https://imgs.ysscores.com/teams/128/1231690283002.png"
+      },
+      "away": {
+        "name": "كريمونيسي",
+        "logo": "https://imgs.ysscores.com/teams/128/5011690370508.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "StarzPlay",
+        "commentator": "عبدالله السعدي"
+      },
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "عبدالله السعدي"
       }
     ]
   },
@@ -883,35 +883,6 @@
     ]
   },
   {
-    "id": "4830606",
-    "url": "https://www.ysscores.com/ar/match/4830606/Olympique-Marseille-vs-FC-Nantes",
-    "info": {
-      "championship": "الدوري الفرنسي",
-      "round": "17 - مباراة الذهاب",
-      "stadium": "فيلودروم",
-      "time": "15:00",
-      "date": "الأحد 04-01-2026",
-      "current_score": "0 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "مارسيليا",
-        "logo": "https://imgs.ysscores.com/teams/128/6031690287269.png"
-      },
-      "away": {
-        "name": "نانت",
-        "logo": "https://imgs.ysscores.com/teams/128/6071690287626.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 7",
-        "commentator": "أحمد عبده"
-      }
-    ]
-  },
-  {
     "id": "4830603",
     "url": "https://www.ysscores.com/ar/match/4830603/Le-Havre-AC-vs-Angers-SCO",
     "info": {
@@ -937,6 +908,35 @@
       {
         "channel": "بي إن سبورت 9",
         "commentator": "مصطفى ناظم"
+      }
+    ]
+  },
+  {
+    "id": "4830606",
+    "url": "https://www.ysscores.com/ar/match/4830606/Olympique-Marseille-vs-FC-Nantes",
+    "info": {
+      "championship": "الدوري الفرنسي",
+      "round": "17 - مباراة الذهاب",
+      "stadium": "فيلودروم",
+      "time": "15:00",
+      "date": "الأحد 04-01-2026",
+      "current_score": "0 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "مارسيليا",
+        "logo": "https://imgs.ysscores.com/teams/128/6031690287269.png"
+      },
+      "away": {
+        "name": "نانت",
+        "logo": "https://imgs.ysscores.com/teams/128/6071690287626.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 7",
+        "commentator": "أحمد عبده"
       }
     ]
   },
@@ -994,35 +994,6 @@
     ]
   },
   {
-    "id": "4825334",
-    "url": "https://www.ysscores.com/ar/match/4825334/Birmingham-City-vs-Coventry-City",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "26 - مباراة الاياب",
-      "stadium": "سانت أندراوس",
-      "time": "13:00",
-      "date": "الأحد 04-01-2026",
-      "current_score": "3 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "برمنغهام",
-        "logo": "https://imgs.ysscores.com/teams/128/3121690370534.png"
-      },
-      "away": {
-        "name": "كوفنتري",
-        "logo": "https://imgs.ysscores.com/teams/128/3861690370535.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "باسم الزير"
-      }
-    ]
-  },
-  {
     "id": "4825335",
     "url": "https://www.ysscores.com/ar/match/4825335/Blackburn-Rovers-vs-Charlton-Athletic",
     "info": {
@@ -1042,6 +1013,30 @@
       "away": {
         "name": "تشارلتون أثلتيك",
         "logo": "https://imgs.ysscores.com/teams/128/7791690370524.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825338",
+    "url": "https://www.ysscores.com/ar/match/4825338/Hull-City-vs-Watford-FC",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "26 - مباراة الاياب",
+      "stadium": "استاد ام كي ام",
+      "time": "16:00",
+      "date": "الأحد 04-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "هال سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/3801690370535.png"
+      },
+      "away": {
+        "name": "واتفورد",
+        "logo": "https://imgs.ysscores.com/teams/128/3341690370541.png"
       }
     },
     "channels": []
@@ -1071,28 +1066,33 @@
     "channels": []
   },
   {
-    "id": "4825338",
-    "url": "https://www.ysscores.com/ar/match/4825338/Hull-City-vs-Watford-FC",
+    "id": "4825334",
+    "url": "https://www.ysscores.com/ar/match/4825334/Birmingham-City-vs-Coventry-City",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "26 - مباراة الاياب",
-      "stadium": "استاد ام كي ام",
-      "time": "16:00",
+      "stadium": "سانت أندراوس",
+      "time": "13:00",
       "date": "الأحد 04-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "3 - 2",
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "هال سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/3801690370535.png"
+        "name": "برمنغهام",
+        "logo": "https://imgs.ysscores.com/teams/128/3121690370534.png"
       },
       "away": {
-        "name": "واتفورد",
-        "logo": "https://imgs.ysscores.com/teams/128/3341690370541.png"
+        "name": "كوفنتري",
+        "logo": "https://imgs.ysscores.com/teams/128/3861690370535.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "باسم الزير"
+      }
+    ]
   },
   {
     "id": "4825341",
@@ -1215,6 +1215,47 @@
     "channels": []
   },
   {
+    "id": "5073458",
+    "url": "https://www.ysscores.com/ar/match/5073458/Morocco-vs-Tanzania",
+    "info": {
+      "championship": "كأس الأمم الأفريقية",
+      "round": "دور الـ 16",
+      "stadium": "المجمع الرياضي الأمير مولاي عبد الله",
+      "time": "17:00",
+      "date": "الأحد 04-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "المغرب",
+        "logo": "https://imgs.ysscores.com/teams/128/6291763083538.png"
+      },
+      "away": {
+        "name": "تنزانيا",
+        "logo": "https://imgs.ysscores.com/teams/128/3241763087791.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Max 1",
+        "commentator": "جواد بدة"
+      },
+      {
+        "channel": "beIN Max 3",
+        "commentator": "جواد بدة"
+      },
+      {
+        "channel": "beIN Max 4",
+        "commentator": "جواد بدة"
+      },
+      {
+        "channel": "المغربية (بث أرضي)",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
     "id": "5073459",
     "url": "https://www.ysscores.com/ar/match/5073459/South-Africa-vs-Cameroon",
     "info": {
@@ -1256,47 +1297,6 @@
       {
         "channel": "القناة الأرضية الجزائرية",
         "commentator": "محمد جمال"
-      },
-      {
-        "channel": "المغربية (بث أرضي)",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "5073458",
-    "url": "https://www.ysscores.com/ar/match/5073458/Morocco-vs-Tanzania",
-    "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "دور الـ 16",
-      "stadium": "المجمع الرياضي الأمير مولاي عبد الله",
-      "time": "17:00",
-      "date": "الأحد 04-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "المغرب",
-        "logo": "https://imgs.ysscores.com/teams/128/6291763083538.png"
-      },
-      "away": {
-        "name": "تنزانيا",
-        "logo": "https://imgs.ysscores.com/teams/128/3241763087791.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Max 1",
-        "commentator": "جواد بدة"
-      },
-      {
-        "channel": "beIN Max 3",
-        "commentator": "جواد بدة"
-      },
-      {
-        "channel": "beIN Max 4",
-        "commentator": "جواد بدة"
       },
       {
         "channel": "المغربية (بث أرضي)",
