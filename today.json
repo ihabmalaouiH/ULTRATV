@@ -53,43 +53,6 @@
     "channels": []
   },
   {
-    "id": "5041045",
-    "url": "https://www.ysscores.com/ar/match/5041045/Al-Nasr-SC-(UAE)-vs-Sharjah-FC",
-    "info": {
-      "championship": "الدوري الإماراتي للمحترفين",
-      "round": "12 - مباراة الذهاب",
-      "stadium": "استاد آل مكتوم",
-      "time": "14:00",
-      "date": "الثلاثاء 06-01-2026",
-      "current_score": "2 - 1",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "النصر",
-        "logo": "https://imgs.ysscores.com/teams/128/7031758628390.png"
-      },
-      "away": {
-        "name": "الشارقة",
-        "logo": "https://imgs.ysscores.com/teams/128/1811690300800.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "أبو ظبي الرياضية 1",
-        "commentator": "عيسى الحربين"
-      },
-      {
-        "channel": "دبي الرياضية 1",
-        "commentator": "عبدالحميد الجسمي"
-      },
-      {
-        "channel": "الشارقة الرياضية",
-        "commentator": "موسى عيد"
-      }
-    ]
-  },
-  {
     "id": "5041046",
     "url": "https://www.ysscores.com/ar/match/5041046/Al-Wahda-FC-vs-FC-Baniyas",
     "info": {
@@ -119,6 +82,43 @@
       {
         "channel": "دبي الرياضية 1",
         "commentator": "راشد عبدالرحمن"
+      }
+    ]
+  },
+  {
+    "id": "5041045",
+    "url": "https://www.ysscores.com/ar/match/5041045/Al-Nasr-SC-(UAE)-vs-Sharjah-FC",
+    "info": {
+      "championship": "الدوري الإماراتي للمحترفين",
+      "round": "12 - مباراة الذهاب",
+      "stadium": "استاد آل مكتوم",
+      "time": "14:00",
+      "date": "الثلاثاء 06-01-2026",
+      "current_score": "2 - 2",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "النصر",
+        "logo": "https://imgs.ysscores.com/teams/128/7031758628390.png"
+      },
+      "away": {
+        "name": "الشارقة",
+        "logo": "https://imgs.ysscores.com/teams/128/1811690300800.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "أبو ظبي الرياضية 1",
+        "commentator": "عيسى الحربين"
+      },
+      {
+        "channel": "دبي الرياضية 1",
+        "commentator": "عبدالحميد الجسمي"
+      },
+      {
+        "channel": "الشارقة الرياضية",
+        "commentator": "موسى عيد"
       }
     ]
   },
@@ -156,43 +156,6 @@
     ]
   },
   {
-    "id": "4803226",
-    "url": "https://www.ysscores.com/ar/match/4803226/US-Sassuolo-vs-Juventus-FC",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "19 - مباراة الذهاب",
-      "stadium": "استاد مابي",
-      "time": "20:45",
-      "date": "الثلاثاء 06-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ساسولو",
-        "logo": "https://imgs.ysscores.com/teams/128/731690283001.png"
-      },
-      "away": {
-        "name": "يوفنتوس",
-        "logo": "https://imgs.ysscores.com/teams/128/9331690283003.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "StarzPlay",
-        "commentator": "فارس عوض"
-      },
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "فارس عوض"
-      },
-      {
-        "channel": "منصة شاشا",
-        "commentator": "رؤوف خليف"
-      }
-    ]
-  },
-  {
     "id": "4803221",
     "url": "https://www.ysscores.com/ar/match/4803221/US-Lecce-vs-AS-Roma",
     "info": {
@@ -226,6 +189,43 @@
       {
         "channel": "منصة شاشا",
         "commentator": "علي دراج"
+      }
+    ]
+  },
+  {
+    "id": "4803226",
+    "url": "https://www.ysscores.com/ar/match/4803226/US-Sassuolo-vs-Juventus-FC",
+    "info": {
+      "championship": "الدوري الإيطالي",
+      "round": "19 - مباراة الذهاب",
+      "stadium": "استاد مابي",
+      "time": "20:45",
+      "date": "الثلاثاء 06-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ساسولو",
+        "logo": "https://imgs.ysscores.com/teams/128/731690283001.png"
+      },
+      "away": {
+        "name": "يوفنتوس",
+        "logo": "https://imgs.ysscores.com/teams/128/9331690283003.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "StarzPlay",
+        "commentator": "فارس عوض"
+      },
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "فارس عوض"
+      },
+      {
+        "channel": "منصة شاشا",
+        "commentator": "رؤوف خليف"
       }
     ]
   },
@@ -487,39 +487,6 @@
     ]
   },
   {
-    "id": "86382485",
-    "url": "https://www.ysscores.com/ar/match/86382485/Al-Jabalain-FC-vs-Al-Faisaly-FC",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "استاد الأمير عبدالعزيز بن مساعد بن جلوي",
-      "time": "13:35",
-      "date": "الثلاثاء 06-01-2026",
-      "current_score": "2 - 1",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "الجبلين",
-        "logo": "https://imgs.ysscores.com/teams/128/7651691930547.png"
-      },
-      "away": {
-        "name": "الفيصلي",
-        "logo": "https://imgs.ysscores.com/teams/128/5731692998559.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 2",
-        "commentator": "مشعل الشمري"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "مشعل الشمري"
-      }
-    ]
-  },
-  {
     "id": "86427213",
     "url": "https://www.ysscores.com/ar/match/86427213/Al-Bukiryah-FC-vs-Al-Batin-FC",
     "info": {
@@ -553,28 +520,37 @@
     ]
   },
   {
-    "id": "5103859",
-    "url": "https://www.ysscores.com/ar/match/5103859/Sohar-SC-vs-Al-Nasr-Club",
+    "id": "86382485",
+    "url": "https://www.ysscores.com/ar/match/86382485/Al-Jabalain-FC-vs-Al-Faisaly-FC",
     "info": {
-      "championship": "دوري المحترفين العماني",
-      "round": "9 - مباراة الذهاب",
-      "stadium": "مجمع الرستاق الرياضي",
-      "time": "16:20",
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "استاد الأمير عبدالعزيز بن مساعد بن جلوي",
+      "time": "13:35",
       "date": "الثلاثاء 06-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "2 - 1",
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
-        "name": "صحار",
-        "logo": "https://imgs.ysscores.com/teams/128/3001691931931.png"
+        "name": "الجبلين",
+        "logo": "https://imgs.ysscores.com/teams/128/7651691930547.png"
       },
       "away": {
-        "name": "النصر",
-        "logo": "https://imgs.ysscores.com/teams/128/5661691930849.png"
+        "name": "الفيصلي",
+        "logo": "https://imgs.ysscores.com/teams/128/5731692998559.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "ثمانية 2",
+        "commentator": "مشعل الشمري"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "مشعل الشمري"
+      }
+    ]
   },
   {
     "id": "5103858",
@@ -596,6 +572,30 @@
       "away": {
         "name": "سمائل",
         "logo": "https://imgs.ysscores.com/teams/128/7331753867950.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5103859",
+    "url": "https://www.ysscores.com/ar/match/5103859/Sohar-SC-vs-Al-Nasr-Club",
+    "info": {
+      "championship": "دوري المحترفين العماني",
+      "round": "9 - مباراة الذهاب",
+      "stadium": "مجمع الرستاق الرياضي",
+      "time": "16:20",
+      "date": "الثلاثاء 06-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "صحار",
+        "logo": "https://imgs.ysscores.com/teams/128/3001691931931.png"
+      },
+      "away": {
+        "name": "النصر",
+        "logo": "https://imgs.ysscores.com/teams/128/5661691930849.png"
       }
     },
     "channels": []
