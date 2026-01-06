@@ -173,30 +173,6 @@
     "channels": []
   },
   {
-    "id": "5111150",
-    "url": "https://www.ysscores.com/ar/match/5111150/Al-Sadaqa-Shahat-SC-vs-Al-Anwar-Al-Abyar-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "الوادي الكبير",
-      "time": "14:00",
-      "date": "الاثنين 05-01-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الصداقة",
-        "logo": "https://imgs.ysscores.com/teams/128/17656583462234.png"
-      },
-      "away": {
-        "name": "الأنوار",
-        "logo": "https://imgs.ysscores.com/teams/128/17656568995248.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111113",
     "url": "https://www.ysscores.com/ar/match/5111113/Al-Dahra-Tripoli-FC-vs-Al-Watan-SC",
     "info": {
@@ -216,6 +192,30 @@
       "away": {
         "name": "الوطن",
         "logo": "https://imgs.ysscores.com/teams/128/17656564492479.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111150",
+    "url": "https://www.ysscores.com/ar/match/5111150/Al-Sadaqa-Shahat-SC-vs-Al-Anwar-Al-Abyar-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "الوادي الكبير",
+      "time": "14:00",
+      "date": "الاثنين 05-01-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الصداقة",
+        "logo": "https://imgs.ysscores.com/teams/128/17656583462234.png"
+      },
+      "away": {
+        "name": "الأنوار",
+        "logo": "https://imgs.ysscores.com/teams/128/17656568995248.png"
       }
     },
     "channels": []
@@ -389,6 +389,39 @@
     ]
   },
   {
+    "id": "57500051",
+    "url": "https://www.ysscores.com/ar/match/57500051/Abha-Club-vs-Al-Diraiyah-FC",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "استاد مدينة الأمير سلطان بن عبدالعزيز الرياضية",
+      "time": "13:45",
+      "date": "الاثنين 05-01-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أبها",
+        "logo": "https://imgs.ysscores.com/teams/128/9091690299913.png"
+      },
+      "away": {
+        "name": "الدرعية",
+        "logo": "https://imgs.ysscores.com/teams/128/6711757968926.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 1",
+        "commentator": "هيثم طحطوح"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "هيثم طحطوح"
+      }
+    ]
+  },
+  {
     "id": "29197659",
     "url": "https://www.ysscores.com/ar/match/29197659/Al-Jubail-Club-vs-Al-Arabi-SC-Saudi",
     "info": {
@@ -422,35 +455,39 @@
     ]
   },
   {
-    "id": "57500051",
-    "url": "https://www.ysscores.com/ar/match/57500051/Abha-Club-vs-Al-Diraiyah-FC",
+    "id": "5073460",
+    "url": "https://www.ysscores.com/ar/match/5073460/Egypt-vs-Benin",
     "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "استاد مدينة الأمير سلطان بن عبدالعزيز الرياضية",
-      "time": "13:45",
+      "championship": "كأس الأمم الأفريقية",
+      "round": "دور الـ 16",
+      "stadium": "ملعب أدرار",
+      "time": "17:00",
       "date": "الاثنين 05-01-2026",
-      "current_score": "2 - 1",
+      "current_score": "3 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "أبها",
-        "logo": "https://imgs.ysscores.com/teams/128/9091690299913.png"
+        "name": "مصر",
+        "logo": "https://imgs.ysscores.com/teams/128/9301763071949.png"
       },
       "away": {
-        "name": "الدرعية",
-        "logo": "https://imgs.ysscores.com/teams/128/6711757968926.png"
+        "name": "بنين",
+        "logo": "https://imgs.ysscores.com/teams/128/8421763069265.png"
       }
     },
     "channels": [
       {
-        "channel": "ثمانية 1",
-        "commentator": "هيثم طحطوح"
+        "channel": "beIN Max 1",
+        "commentator": "علي محمد علي"
       },
       {
-        "channel": "تطبيق ثمانية",
-        "commentator": "هيثم طحطوح"
+        "channel": "beIN Max 3",
+        "commentator": "علي محمد علي"
+      },
+      {
+        "channel": "المغربية (بث أرضي)",
+        "commentator": "غير مدرج"
       }
     ]
   },
@@ -496,43 +533,6 @@
     ]
   },
   {
-    "id": "5073460",
-    "url": "https://www.ysscores.com/ar/match/5073460/Egypt-vs-Benin",
-    "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "دور الـ 16",
-      "stadium": "ملعب أدرار",
-      "time": "17:00",
-      "date": "الاثنين 05-01-2026",
-      "current_score": "3 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "مصر",
-        "logo": "https://imgs.ysscores.com/teams/128/9301763071949.png"
-      },
-      "away": {
-        "name": "بنين",
-        "logo": "https://imgs.ysscores.com/teams/128/8421763069265.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Max 1",
-        "commentator": "علي محمد علي"
-      },
-      {
-        "channel": "beIN Max 3",
-        "commentator": "علي محمد علي"
-      },
-      {
-        "channel": "المغربية (بث أرضي)",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "60051252",
     "url": "https://www.ysscores.com/ar/match/60051252/El-Masry-SC-vs-Smouha-SC",
     "info": {
@@ -562,35 +562,6 @@
     ]
   },
   {
-    "id": "31896367",
-    "url": "https://www.ysscores.com/ar/match/31896367/Bank-El-Ahly-vs-Wadi-Degla-FC",
-    "info": {
-      "championship": "كأس الرابطة المصرية",
-      "round": "5",
-      "stadium": "استاد هيئة قناة السويس الجديد",
-      "time": "19:00",
-      "date": "الاثنين 05-01-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "البنك الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/7591694081941.png"
-      },
-      "away": {
-        "name": "وادي دجلة",
-        "logo": "https://imgs.ysscores.com/teams/128/2161728755640.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "Kora Plus",
-        "commentator": "طارق حسن"
-      }
-    ]
-  },
-  {
     "id": "75848651",
     "url": "https://www.ysscores.com/ar/match/75848651/El-Mokawloon-SC-vs-Ghazl-El-Mahalla",
     "info": {
@@ -616,6 +587,35 @@
       {
         "channel": "Kora Plus",
         "commentator": "هشام معمر"
+      }
+    ]
+  },
+  {
+    "id": "31896367",
+    "url": "https://www.ysscores.com/ar/match/31896367/Bank-El-Ahly-vs-Wadi-Degla-FC",
+    "info": {
+      "championship": "كأس الرابطة المصرية",
+      "round": "5",
+      "stadium": "استاد هيئة قناة السويس الجديد",
+      "time": "19:00",
+      "date": "الاثنين 05-01-2026",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "البنك الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/7591694081941.png"
+      },
+      "away": {
+        "name": "وادي دجلة",
+        "logo": "https://imgs.ysscores.com/teams/128/2161728755640.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "Kora Plus",
+        "commentator": "طارق حسن"
       }
     ]
   },
