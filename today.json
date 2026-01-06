@@ -53,39 +53,6 @@
     "channels": []
   },
   {
-    "id": "5041046",
-    "url": "https://www.ysscores.com/ar/match/5041046/Al-Wahda-FC-vs-FC-Baniyas",
-    "info": {
-      "championship": "الدوري الإماراتي للمحترفين",
-      "round": "12 - مباراة الذهاب",
-      "stadium": "استاد آل نهيان",
-      "time": "16:45",
-      "date": "الثلاثاء 06-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الوحدة",
-        "logo": "https://imgs.ysscores.com/teams/128/8811690300661.png"
-      },
-      "away": {
-        "name": "بني ياس",
-        "logo": "https://imgs.ysscores.com/teams/128/211690300900.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "أبو ظبي الرياضية 1",
-        "commentator": "محمد الشامسي"
-      },
-      {
-        "channel": "دبي الرياضية 1",
-        "commentator": "راشد عبدالرحمن"
-      }
-    ]
-  },
-  {
     "id": "5041045",
     "url": "https://www.ysscores.com/ar/match/5041045/Al-Nasr-SC-(UAE)-vs-Sharjah-FC",
     "info": {
@@ -119,6 +86,39 @@
       {
         "channel": "الشارقة الرياضية",
         "commentator": "موسى عيد"
+      }
+    ]
+  },
+  {
+    "id": "5041046",
+    "url": "https://www.ysscores.com/ar/match/5041046/Al-Wahda-FC-vs-FC-Baniyas",
+    "info": {
+      "championship": "الدوري الإماراتي للمحترفين",
+      "round": "12 - مباراة الذهاب",
+      "stadium": "استاد آل نهيان",
+      "time": "16:45",
+      "date": "الثلاثاء 06-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الوحدة",
+        "logo": "https://imgs.ysscores.com/teams/128/8811690300661.png"
+      },
+      "away": {
+        "name": "بني ياس",
+        "logo": "https://imgs.ysscores.com/teams/128/211690300900.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "أبو ظبي الرياضية 1",
+        "commentator": "محمد الشامسي"
+      },
+      {
+        "channel": "دبي الرياضية 1",
+        "commentator": "راشد عبدالرحمن"
       }
     ]
   },
@@ -454,12 +454,12 @@
     "channels": []
   },
   {
-    "id": "86382485",
-    "url": "https://www.ysscores.com/ar/match/86382485/Al-Jabalain-FC-vs-Al-Faisaly-FC",
+    "id": "86427213",
+    "url": "https://www.ysscores.com/ar/match/86427213/Al-Bukiryah-FC-vs-Al-Batin-FC",
     "info": {
       "championship": "دوري الدرجة الأولى السعودي",
       "round": "15 - مباراة الذهاب",
-      "stadium": "استاد الأمير عبدالعزيز بن مساعد بن جلوي",
+      "stadium": "ملعب نادي البكيرية",
       "time": "13:35",
       "date": "الثلاثاء 06-01-2026",
       "current_score": "- : -",
@@ -467,22 +467,22 @@
     },
     "teams": {
       "home": {
-        "name": "الجبلين",
-        "logo": "https://imgs.ysscores.com/teams/128/7651691930547.png"
+        "name": "البكيرية",
+        "logo": "https://imgs.ysscores.com/teams/128/8331719153467.png"
       },
       "away": {
-        "name": "الفيصلي",
-        "logo": "https://imgs.ysscores.com/teams/128/5731692998559.png"
+        "name": "الباطن",
+        "logo": "https://imgs.ysscores.com/teams/128/6791724146986.png"
       }
     },
     "channels": [
       {
-        "channel": "ثمانية 2",
-        "commentator": "مشعل الشمري"
+        "channel": "ثمانية 3",
+        "commentator": "سلطان الحربي"
       },
       {
         "channel": "تطبيق ثمانية",
-        "commentator": "مشعل الشمري"
+        "commentator": "سلطان الحربي"
       }
     ]
   },
@@ -520,12 +520,12 @@
     ]
   },
   {
-    "id": "86427213",
-    "url": "https://www.ysscores.com/ar/match/86427213/Al-Bukiryah-FC-vs-Al-Batin-FC",
+    "id": "86382485",
+    "url": "https://www.ysscores.com/ar/match/86382485/Al-Jabalain-FC-vs-Al-Faisaly-FC",
     "info": {
       "championship": "دوري الدرجة الأولى السعودي",
       "round": "15 - مباراة الذهاب",
-      "stadium": "ملعب نادي البكيرية",
+      "stadium": "استاد الأمير عبدالعزيز بن مساعد بن جلوي",
       "time": "13:35",
       "date": "الثلاثاء 06-01-2026",
       "current_score": "- : -",
@@ -533,48 +533,24 @@
     },
     "teams": {
       "home": {
-        "name": "البكيرية",
-        "logo": "https://imgs.ysscores.com/teams/128/8331719153467.png"
+        "name": "الجبلين",
+        "logo": "https://imgs.ysscores.com/teams/128/7651691930547.png"
       },
       "away": {
-        "name": "الباطن",
-        "logo": "https://imgs.ysscores.com/teams/128/6791724146986.png"
+        "name": "الفيصلي",
+        "logo": "https://imgs.ysscores.com/teams/128/5731692998559.png"
       }
     },
     "channels": [
       {
-        "channel": "ثمانية 3",
-        "commentator": "سلطان الحربي"
+        "channel": "ثمانية 2",
+        "commentator": "مشعل الشمري"
       },
       {
         "channel": "تطبيق ثمانية",
-        "commentator": "سلطان الحربي"
+        "commentator": "مشعل الشمري"
       }
     ]
-  },
-  {
-    "id": "5103858",
-    "url": "https://www.ysscores.com/ar/match/5103858/Al-Khaboura-Sports-Club-vs-Samail-SC",
-    "info": {
-      "championship": "دوري المحترفين العماني",
-      "round": "9 - مباراة الذهاب",
-      "stadium": "مجمع الرستاق الرياضي",
-      "time": "13:55",
-      "date": "الثلاثاء 06-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الخابورة",
-        "logo": "https://imgs.ysscores.com/teams/128/6041722176228.png"
-      },
-      "away": {
-        "name": "سمائل",
-        "logo": "https://imgs.ysscores.com/teams/128/7331753867950.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "5103859",
@@ -596,6 +572,30 @@
       "away": {
         "name": "النصر",
         "logo": "https://imgs.ysscores.com/teams/128/5661691930849.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5103858",
+    "url": "https://www.ysscores.com/ar/match/5103858/Al-Khaboura-Sports-Club-vs-Samail-SC",
+    "info": {
+      "championship": "دوري المحترفين العماني",
+      "round": "9 - مباراة الذهاب",
+      "stadium": "مجمع الرستاق الرياضي",
+      "time": "13:55",
+      "date": "الثلاثاء 06-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الخابورة",
+        "logo": "https://imgs.ysscores.com/teams/128/6041722176228.png"
+      },
+      "away": {
+        "name": "سمائل",
+        "logo": "https://imgs.ysscores.com/teams/128/7331753867950.png"
       }
     },
     "channels": []
