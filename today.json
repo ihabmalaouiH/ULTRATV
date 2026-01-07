@@ -99,6 +99,35 @@
     ]
   },
   {
+    "id": "4813579",
+    "url": "https://www.ysscores.com/ar/match/4813579/Crystal-Palace-vs-Aston-Villa",
+    "info": {
+      "championship": "الدوري الإنجليزي الممتاز",
+      "round": "21 - مباراة الاياب",
+      "stadium": "سيلهرست بارك",
+      "time": "20:30",
+      "date": "الأربعاء 07-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "كريستال بالاس",
+        "logo": "https://imgs.ysscores.com/teams/128/6121690118883.png"
+      },
+      "away": {
+        "name": "أستون فيلا",
+        "logo": "https://imgs.ysscores.com/teams/128/9921723414870.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "نوفل باشي"
+      }
+    ]
+  },
+  {
     "id": "4813578",
     "url": "https://www.ysscores.com/ar/match/4813578/Burnley-FC-vs-Manchester-United",
     "info": {
@@ -157,35 +186,6 @@
       {
         "channel": "بي إن سبورت 1",
         "commentator": "حفيظ دراجي"
-      }
-    ]
-  },
-  {
-    "id": "4813579",
-    "url": "https://www.ysscores.com/ar/match/4813579/Crystal-Palace-vs-Aston-Villa",
-    "info": {
-      "championship": "الدوري الإنجليزي الممتاز",
-      "round": "21 - مباراة الاياب",
-      "stadium": "سيلهرست بارك",
-      "time": "20:30",
-      "date": "الأربعاء 07-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "كريستال بالاس",
-        "logo": "https://imgs.ysscores.com/teams/128/6121690118883.png"
-      },
-      "away": {
-        "name": "أستون فيلا",
-        "logo": "https://imgs.ysscores.com/teams/128/9921723414870.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "نوفل باشي"
       }
     ]
   },
@@ -745,30 +745,6 @@
     ]
   },
   {
-    "id": "5103863",
-    "url": "https://www.ysscores.com/ar/match/5103863/Al-Seeb-Club-vs-Al-Rustaq-Club",
-    "info": {
-      "championship": "دوري المحترفين العماني",
-      "round": "9 - مباراة الذهاب",
-      "stadium": "استاد السيب",
-      "time": "16:55",
-      "date": "الأربعاء 07-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "السيب",
-        "logo": "https://imgs.ysscores.com/teams/128/5401691931087.png"
-      },
-      "away": {
-        "name": "الرستاق",
-        "logo": "https://imgs.ysscores.com/teams/128/3451691931983.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5103861",
     "url": "https://www.ysscores.com/ar/match/5103861/Ibri-Club-vs-Saham-Club",
     "info": {
@@ -788,6 +764,30 @@
       "away": {
         "name": "صحم",
         "logo": "https://imgs.ysscores.com/teams/128/1541722176368.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5103863",
+    "url": "https://www.ysscores.com/ar/match/5103863/Al-Seeb-Club-vs-Al-Rustaq-Club",
+    "info": {
+      "championship": "دوري المحترفين العماني",
+      "round": "9 - مباراة الذهاب",
+      "stadium": "استاد السيب",
+      "time": "16:55",
+      "date": "الأربعاء 07-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "السيب",
+        "logo": "https://imgs.ysscores.com/teams/128/5401691931087.png"
+      },
+      "away": {
+        "name": "الرستاق",
+        "logo": "https://imgs.ysscores.com/teams/128/3451691931983.png"
       }
     },
     "channels": []
@@ -1019,7 +1019,7 @@
       "stadium": "ملعب الإنماء",
       "time": "20:00",
       "date": "الأربعاء 07-01-2026",
-      "current_score": "0 - 0",
+      "current_score": "1 - 0",
       "match_status": "الشوط الأول"
     },
     "teams": {
