@@ -314,8 +314,8 @@
       "stadium": "استاد دييغو أرماندو مارادونا",
       "time": "18:30",
       "date": "الأربعاء 07-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -593,30 +593,6 @@
     "channels": []
   },
   {
-    "id": "5111196",
-    "url": "https://www.ysscores.com/ar/match/5111196/Al-Wefaq-Ly-SC-vs-Al-Murooj",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "ملعب 10 يونيو إجدابيا",
-      "time": "14:00",
-      "date": "الأربعاء 07-01-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الوفاق",
-        "logo": "https://imgs.ysscores.com/teams/128/17656302717639.png"
-      },
-      "away": {
-        "name": "المروج",
-        "logo": "https://imgs.ysscores.com/teams/128/17656616941618.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111176",
     "url": "https://www.ysscores.com/ar/match/5111176/Al-Tersana-Tripoli-vs-Abelashhar-SC",
     "info": {
@@ -642,6 +618,63 @@
       {
         "channel": "ليبيا الوطنية",
         "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5111196",
+    "url": "https://www.ysscores.com/ar/match/5111196/Al-Wefaq-Ly-SC-vs-Al-Murooj",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "ملعب 10 يونيو إجدابيا",
+      "time": "14:00",
+      "date": "الأربعاء 07-01-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الوفاق",
+        "logo": "https://imgs.ysscores.com/teams/128/17656302717639.png"
+      },
+      "away": {
+        "name": "المروج",
+        "logo": "https://imgs.ysscores.com/teams/128/17656616941618.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "40069494",
+    "url": "https://www.ysscores.com/ar/match/40069494/Al-Raed-SFC-vs-Al-Ula-FC",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "ملعب نادي الرائد",
+      "time": "13:30",
+      "date": "الأربعاء 07-01-2026",
+      "current_score": "3 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الرائد",
+        "logo": "https://imgs.ysscores.com/teams/128/251724712283.png"
+      },
+      "away": {
+        "name": "العلا",
+        "logo": "https://imgs.ysscores.com/teams/128/1691755364441.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 1",
+        "commentator": "سلطان الحربي"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "سلطان الحربي"
       }
     ]
   },
@@ -675,39 +708,6 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "أحمد المنتشري"
-      }
-    ]
-  },
-  {
-    "id": "40069494",
-    "url": "https://www.ysscores.com/ar/match/40069494/Al-Raed-SFC-vs-Al-Ula-FC",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "ملعب نادي الرائد",
-      "time": "13:30",
-      "date": "الأربعاء 07-01-2026",
-      "current_score": "3 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الرائد",
-        "logo": "https://imgs.ysscores.com/teams/128/251724712283.png"
-      },
-      "away": {
-        "name": "العلا",
-        "logo": "https://imgs.ysscores.com/teams/128/1691755364441.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 1",
-        "commentator": "سلطان الحربي"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "سلطان الحربي"
       }
     ]
   },
@@ -846,39 +846,6 @@
     "channels": []
   },
   {
-    "id": "26266333",
-    "url": "https://www.ysscores.com/ar/match/26266333/Qatar-U23-vs-United-Arab-Emirates-U23",
-    "info": {
-      "championship": "كأس آسيا تحت 23 سنة",
-      "round": "1",
-      "stadium": "استاد الأمير عبدالله الفيصل",
-      "time": "17:30",
-      "date": "الأربعاء 07-01-2026",
-      "current_score": "0 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "قطر",
-        "logo": "https://imgs.ysscores.com/teams/128/3451763085544.png"
-      },
-      "away": {
-        "name": "الإمارات",
-        "logo": "https://imgs.ysscores.com/teams/128/9431763117463.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 6",
-        "commentator": "أحمد البلوشي"
-      },
-      {
-        "channel": "الكأس 5",
-        "commentator": "سمير اليعقوبي"
-      }
-    ]
-  },
-  {
     "id": "56379368",
     "url": "https://www.ysscores.com/ar/match/56379368/South-Korea-U23-vs-Iran-U23",
     "info": {
@@ -912,35 +879,35 @@
     ]
   },
   {
-    "id": "77509630",
-    "url": "https://www.ysscores.com/ar/match/77509630/Uzbekistan-U23-vs-Lebanon-U23",
+    "id": "26266333",
+    "url": "https://www.ysscores.com/ar/match/26266333/Qatar-U23-vs-United-Arab-Emirates-U23",
     "info": {
       "championship": "كأس آسيا تحت 23 سنة",
       "round": "1",
-      "stadium": "استاد الأمير فيصل بن فهد (الملز)",
-      "time": "15:00",
+      "stadium": "استاد الأمير عبدالله الفيصل",
+      "time": "17:30",
       "date": "الأربعاء 07-01-2026",
-      "current_score": "3 - 2",
+      "current_score": "0 - 2",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "أوزبكستان",
-        "logo": "https://imgs.ysscores.com/teams/128/981763117755.png"
+        "name": "قطر",
+        "logo": "https://imgs.ysscores.com/teams/128/3451763085544.png"
       },
       "away": {
-        "name": "لبنان",
-        "logo": "https://imgs.ysscores.com/teams/128/7871763082271.png"
+        "name": "الإمارات",
+        "logo": "https://imgs.ysscores.com/teams/128/9431763117463.png"
       }
     },
     "channels": [
       {
         "channel": "بي إن سبورت 6",
-        "commentator": "محمد المبروكي"
+        "commentator": "أحمد البلوشي"
       },
       {
         "channel": "الكأس 5",
-        "commentator": "أحمد المعمري"
+        "commentator": "سمير اليعقوبي"
       }
     ]
   },
@@ -974,6 +941,39 @@
       {
         "channel": "الكأس 5",
         "commentator": "هيكل الصغير"
+      }
+    ]
+  },
+  {
+    "id": "77509630",
+    "url": "https://www.ysscores.com/ar/match/77509630/Uzbekistan-U23-vs-Lebanon-U23",
+    "info": {
+      "championship": "كأس آسيا تحت 23 سنة",
+      "round": "1",
+      "stadium": "استاد الأمير فيصل بن فهد (الملز)",
+      "time": "15:00",
+      "date": "الأربعاء 07-01-2026",
+      "current_score": "3 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أوزبكستان",
+        "logo": "https://imgs.ysscores.com/teams/128/981763117755.png"
+      },
+      "away": {
+        "name": "لبنان",
+        "logo": "https://imgs.ysscores.com/teams/128/7871763082271.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 6",
+        "commentator": "محمد المبروكي"
+      },
+      {
+        "channel": "الكأس 5",
+        "commentator": "أحمد المعمري"
       }
     ]
   },
