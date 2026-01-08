@@ -178,7 +178,7 @@
       "time": "18:30",
       "date": "الخميس 08-01-2026",
       "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -475,39 +475,6 @@
     ]
   },
   {
-    "id": "5098999",
-    "url": "https://www.ysscores.com/ar/match/5098999/Qatar-SC-vs-Al-Sadd-SC",
-    "info": {
-      "championship": "الدوري القطري",
-      "round": "12 - مباراة الاياب",
-      "stadium": "استاد سحيم بن حمد",
-      "time": "17:30",
-      "date": "الخميس 08-01-2026",
-      "current_score": "2 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "قطر",
-        "logo": "https://imgs.ysscores.com/teams/128/5761752963369.png"
-      },
-      "away": {
-        "name": "السد",
-        "logo": "https://imgs.ysscores.com/teams/128/6901727693223.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الكأس 3",
-        "commentator": "أحمد الطيب"
-      },
-      {
-        "channel": "بي إن سبورت 4",
-        "commentator": "باسم الزير"
-      }
-    ]
-  },
-  {
     "id": "5098998",
     "url": "https://www.ysscores.com/ar/match/5098998/Al-Shahania-SC-vs-Al-Duhail-SC",
     "info": {
@@ -541,55 +508,35 @@
     ]
   },
   {
-    "id": "5111197",
-    "url": "https://www.ysscores.com/ar/match/5111197/Andalus-FC-vs-Khaleej-Sirte-SC",
+    "id": "5098999",
+    "url": "https://www.ysscores.com/ar/match/5098999/Qatar-SC-vs-Al-Sadd-SC",
     "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "ملعب مساعد",
-      "time": "13:30",
+      "championship": "الدوري القطري",
+      "round": "12 - مباراة الاياب",
+      "stadium": "استاد سحيم بن حمد",
+      "time": "17:30",
       "date": "الخميس 08-01-2026",
-      "current_score": "0 - 2",
+      "current_score": "2 - 3",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الأندلس",
-        "logo": "https://imgs.ysscores.com/teams/128/17656299811885.png"
+        "name": "قطر",
+        "logo": "https://imgs.ysscores.com/teams/128/5761752963369.png"
       },
       "away": {
-        "name": "الخليج",
-        "logo": "https://imgs.ysscores.com/teams/128/17656560805023.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5111177",
-    "url": "https://www.ysscores.com/ar/match/5111177/El-Ettihad-Al-Misraty-SC-vs-Al-Majd-SCC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "ملعب مصراتة",
-      "time": "14:30",
-      "date": "الخميس 08-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الاتحاد",
-        "logo": "https://imgs.ysscores.com/teams/128/1321718521131.png"
-      },
-      "away": {
-        "name": "المجد",
-        "logo": "https://imgs.ysscores.com/teams/128/17656495347608.png"
+        "name": "السد",
+        "logo": "https://imgs.ysscores.com/teams/128/6901727693223.png"
       }
     },
     "channels": [
       {
-        "channel": "ليبيا الوطنية",
-        "commentator": "غير مدرج"
+        "channel": "الكأس 3",
+        "commentator": "أحمد الطيب"
+      },
+      {
+        "channel": "بي إن سبورت 4",
+        "commentator": "باسم الزير"
       }
     ]
   },
@@ -647,6 +594,59 @@
     "channels": []
   },
   {
+    "id": "5111197",
+    "url": "https://www.ysscores.com/ar/match/5111197/Andalus-FC-vs-Khaleej-Sirte-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "ملعب مساعد",
+      "time": "13:30",
+      "date": "الخميس 08-01-2026",
+      "current_score": "0 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الأندلس",
+        "logo": "https://imgs.ysscores.com/teams/128/17656299811885.png"
+      },
+      "away": {
+        "name": "الخليج",
+        "logo": "https://imgs.ysscores.com/teams/128/17656560805023.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111177",
+    "url": "https://www.ysscores.com/ar/match/5111177/El-Ettihad-Al-Misraty-SC-vs-Al-Majd-SCC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "ملعب مصراتة",
+      "time": "14:30",
+      "date": "الخميس 08-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الاتحاد",
+        "logo": "https://imgs.ysscores.com/teams/128/1321718521131.png"
+      },
+      "away": {
+        "name": "المجد",
+        "logo": "https://imgs.ysscores.com/teams/128/17656495347608.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ليبيا الوطنية",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
     "id": "4946315",
     "url": "https://www.ysscores.com/ar/match/4946315/Mansoura-SC-vs-Abo-Qir-Fertilizers",
     "info": {
@@ -700,30 +700,6 @@
     ]
   },
   {
-    "id": "4946319",
-    "url": "https://www.ysscores.com/ar/match/4946319/WE-Sports-Club-vs-Qanah-FC",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "18 - مباراة الاياب",
-      "stadium": "ستاد المصرية للاتصالات بالمعادي",
-      "time": "13:30",
-      "date": "الخميس 08-01-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "وي",
-        "logo": "https://imgs.ysscores.com/teams/128/9521696285165.png"
-      },
-      "away": {
-        "name": "القناة",
-        "logo": "https://imgs.ysscores.com/teams/128/5821715097236.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4946316",
     "url": "https://www.ysscores.com/ar/match/4946316/La-Viena-FC-vs-FC-Masar",
     "info": {
@@ -743,6 +719,30 @@
       "away": {
         "name": "مسار",
         "logo": "https://imgs.ysscores.com/teams/128/9871753647957.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4946319",
+    "url": "https://www.ysscores.com/ar/match/4946319/WE-Sports-Club-vs-Qanah-FC",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "18 - مباراة الاياب",
+      "stadium": "ستاد المصرية للاتصالات بالمعادي",
+      "time": "13:30",
+      "date": "الخميس 08-01-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "وي",
+        "logo": "https://imgs.ysscores.com/teams/128/9521696285165.png"
+      },
+      "away": {
+        "name": "القناة",
+        "logo": "https://imgs.ysscores.com/teams/128/5821715097236.png"
       }
     },
     "channels": []
@@ -794,6 +794,35 @@
       }
     },
     "channels": []
+  },
+  {
+    "id": "4907750",
+    "url": "https://www.ysscores.com/ar/match/4907750/MC-El-Bayadh-vs-ES-Mostaganem",
+    "info": {
+      "championship": "الرابطة المحترفة الجزائرية الأولى",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "زكريا مجدوب",
+      "time": "14:00",
+      "date": "الخميس 08-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "مولودية البيض",
+        "logo": "https://imgs.ysscores.com/teams/128/6821693418375.png"
+      },
+      "away": {
+        "name": "ترجي مستغانم",
+        "logo": "https://imgs.ysscores.com/teams/128/8081721202117.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الرياضية ويب",
+        "commentator": "غير مدرج"
+      }
+    ]
   },
   {
     "id": "4907753",
@@ -850,35 +879,6 @@
       {
         "channel": "الجزائرية الرابعة",
         "commentator": "فريد بوساحية"
-      }
-    ]
-  },
-  {
-    "id": "4907750",
-    "url": "https://www.ysscores.com/ar/match/4907750/MC-El-Bayadh-vs-ES-Mostaganem",
-    "info": {
-      "championship": "الرابطة المحترفة الجزائرية الأولى",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "زكريا مجدوب",
-      "time": "14:00",
-      "date": "الخميس 08-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "مولودية البيض",
-        "logo": "https://imgs.ysscores.com/teams/128/6821693418375.png"
-      },
-      "away": {
-        "name": "ترجي مستغانم",
-        "logo": "https://imgs.ysscores.com/teams/128/8081721202117.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الرياضية ويب",
-        "commentator": "غير مدرج"
       }
     ]
   },
@@ -1064,6 +1064,29 @@
     ]
   },
   {
+    "id": "20369778",
+    "url": "https://www.ysscores.com/ar/match/20369778/Zamalek-SC-vs-Cleopatra-FC",
+    "info": {
+      "championship": "كأس مصر",
+      "round": "دور الـ 16",
+      "time": "18:00",
+      "date": "الخميس 08-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الزمالك",
+        "logo": "https://imgs.ysscores.com/teams/128/7971694082496.png"
+      },
+      "away": {
+        "name": "سيراميكا",
+        "logo": "https://imgs.ysscores.com/teams/128/631694081965.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "52969158",
     "url": "https://www.ysscores.com/ar/match/52969158/El-Gouna-FC-vs-Pyramids-FC",
     "info": {
@@ -1105,29 +1128,6 @@
       "away": {
         "name": "المصري",
         "logo": "https://imgs.ysscores.com/teams/128/1521694644423.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "20369778",
-    "url": "https://www.ysscores.com/ar/match/20369778/Zamalek-SC-vs-Cleopatra-FC",
-    "info": {
-      "championship": "كأس مصر",
-      "round": "دور الـ 16",
-      "time": "18:00",
-      "date": "الخميس 08-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الزمالك",
-        "logo": "https://imgs.ysscores.com/teams/128/7971694082496.png"
-      },
-      "away": {
-        "name": "سيراميكا",
-        "logo": "https://imgs.ysscores.com/teams/128/631694081965.png"
       }
     },
     "channels": []
