@@ -475,39 +475,6 @@
     ]
   },
   {
-    "id": "5098998",
-    "url": "https://www.ysscores.com/ar/match/5098998/Al-Shahania-SC-vs-Al-Duhail-SC",
-    "info": {
-      "championship": "الدوري القطري",
-      "round": "12 - مباراة الاياب",
-      "stadium": "استاد الخور",
-      "time": "15:30",
-      "date": "الخميس 08-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الشحانية",
-        "logo": "https://imgs.ysscores.com/teams/128/9711722879334.png"
-      },
-      "away": {
-        "name": "الدحيل",
-        "logo": "https://imgs.ysscores.com/teams/128/3211693170386.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الكأس 1",
-        "commentator": "منتصر الأزهري"
-      },
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "أحمد البلوشي"
-      }
-    ]
-  },
-  {
     "id": "5098999",
     "url": "https://www.ysscores.com/ar/match/5098999/Qatar-SC-vs-Al-Sadd-SC",
     "info": {
@@ -537,6 +504,39 @@
       {
         "channel": "بي إن سبورت HD",
         "commentator": "باسم الزير"
+      }
+    ]
+  },
+  {
+    "id": "5098998",
+    "url": "https://www.ysscores.com/ar/match/5098998/Al-Shahania-SC-vs-Al-Duhail-SC",
+    "info": {
+      "championship": "الدوري القطري",
+      "round": "12 - مباراة الاياب",
+      "stadium": "استاد الخور",
+      "time": "15:30",
+      "date": "الخميس 08-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الشحانية",
+        "logo": "https://imgs.ysscores.com/teams/128/9711722879334.png"
+      },
+      "away": {
+        "name": "الدحيل",
+        "logo": "https://imgs.ysscores.com/teams/128/3211693170386.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الكأس 1",
+        "commentator": "منتصر الأزهري"
+      },
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "أحمد البلوشي"
       }
     ]
   },
@@ -610,7 +610,12 @@
         "logo": "https://imgs.ysscores.com/teams/128/17656495347608.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "ليبيا الوطنية",
+        "commentator": "غير مدرج"
+      }
+    ]
   },
   {
     "id": "5111198",
@@ -632,6 +637,30 @@
       "away": {
         "name": "الأخضر",
         "logo": "https://imgs.ysscores.com/teams/128/17659994074616.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4946315",
+    "url": "https://www.ysscores.com/ar/match/4946315/Mansoura-SC-vs-Abo-Qir-Fertilizers",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "18 - مباراة الاياب",
+      "stadium": "استاد المنصورة",
+      "time": "13:30",
+      "date": "الخميس 08-01-2026",
+      "current_score": "1 - 1",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "المنصورة",
+        "logo": "https://imgs.ysscores.com/teams/128/8231728755782.png"
+      },
+      "away": {
+        "name": "أبو قير",
+        "logo": "https://imgs.ysscores.com/teams/128/8611715098753.png"
       }
     },
     "channels": []
@@ -664,30 +693,6 @@
         "commentator": "هيثم هيبة"
       }
     ]
-  },
-  {
-    "id": "4946315",
-    "url": "https://www.ysscores.com/ar/match/4946315/Mansoura-SC-vs-Abo-Qir-Fertilizers",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "18 - مباراة الاياب",
-      "stadium": "استاد المنصورة",
-      "time": "13:30",
-      "date": "الخميس 08-01-2026",
-      "current_score": "1 - 1",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "المنصورة",
-        "logo": "https://imgs.ysscores.com/teams/128/8231728755782.png"
-      },
-      "away": {
-        "name": "أبو قير",
-        "logo": "https://imgs.ysscores.com/teams/128/8611715098753.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "4946319",
@@ -1077,29 +1082,6 @@
     "channels": []
   },
   {
-    "id": "65922124",
-    "url": "https://www.ysscores.com/ar/match/65922124/Zed-FC-vs-El-Masry-SC",
-    "info": {
-      "championship": "كأس مصر",
-      "round": "دور الـ 16",
-      "time": "18:00",
-      "date": "الخميس 08-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "نادي زد",
-        "logo": "https://imgs.ysscores.com/teams/128/8411694619351.png"
-      },
-      "away": {
-        "name": "المصري",
-        "logo": "https://imgs.ysscores.com/teams/128/1521694644423.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "19914975",
     "url": "https://www.ysscores.com/ar/match/19914975/Petrojet-vs-Modern-Sport-Club",
     "info": {
@@ -1141,6 +1123,29 @@
       "away": {
         "name": "سيراميكا",
         "logo": "https://imgs.ysscores.com/teams/128/631694081965.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "65922124",
+    "url": "https://www.ysscores.com/ar/match/65922124/Zed-FC-vs-El-Masry-SC",
+    "info": {
+      "championship": "كأس مصر",
+      "round": "دور الـ 16",
+      "time": "18:00",
+      "date": "الخميس 08-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "نادي زد",
+        "logo": "https://imgs.ysscores.com/teams/128/8411694619351.png"
+      },
+      "away": {
+        "name": "المصري",
+        "logo": "https://imgs.ysscores.com/teams/128/1521694644423.png"
       }
     },
     "channels": []
