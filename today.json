@@ -301,8 +301,8 @@
       "stadium": "المملكة أرينا",
       "time": "15:55",
       "date": "الخميس 08-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -359,35 +359,6 @@
     ]
   },
   {
-    "id": "22180389",
-    "url": "https://www.ysscores.com/ar/match/22180389/Jableh-SC-vs-Omayya-SC",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "استاد جبلة",
-      "time": "12:00",
-      "date": "الخميس 08-01-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "جبلة",
-        "logo": "https://imgs.ysscores.com/teams/128/5911694349320.png"
-      },
-      "away": {
-        "name": "أمية",
-        "logo": "https://imgs.ysscores.com/teams/128/17676429915147.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "تلفزيون برايم",
-        "commentator": "يونس الفاعوري"
-      }
-    ]
-  },
-  {
     "id": "39782966",
     "url": "https://www.ysscores.com/ar/match/39782966/Al-Jaish-SC-vs-Al-Shorta-SC-(Syria)",
     "info": {
@@ -413,6 +384,35 @@
       {
         "channel": "تلفزيون برايم",
         "commentator": "أدونيس حسن"
+      }
+    ]
+  },
+  {
+    "id": "22180389",
+    "url": "https://www.ysscores.com/ar/match/22180389/Jableh-SC-vs-Omayya-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "استاد جبلة",
+      "time": "12:00",
+      "date": "الخميس 08-01-2026",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "جبلة",
+        "logo": "https://imgs.ysscores.com/teams/128/5911694349320.png"
+      },
+      "away": {
+        "name": "أمية",
+        "logo": "https://imgs.ysscores.com/teams/128/17676429915147.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "تلفزيون برايم",
+        "commentator": "يونس الفاعوري"
       }
     ]
   },
@@ -475,39 +475,6 @@
     ]
   },
   {
-    "id": "5098999",
-    "url": "https://www.ysscores.com/ar/match/5098999/Qatar-SC-vs-Al-Sadd-SC",
-    "info": {
-      "championship": "الدوري القطري",
-      "round": "12 - مباراة الاياب",
-      "stadium": "استاد سحيم بن حمد",
-      "time": "17:30",
-      "date": "الخميس 08-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "قطر",
-        "logo": "https://imgs.ysscores.com/teams/128/5761752963369.png"
-      },
-      "away": {
-        "name": "السد",
-        "logo": "https://imgs.ysscores.com/teams/128/6901727693223.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الكأس 3",
-        "commentator": "أحمد الطيب"
-      },
-      {
-        "channel": "بي إن سبورت HD",
-        "commentator": "باسم الزير"
-      }
-    ]
-  },
-  {
     "id": "5098998",
     "url": "https://www.ysscores.com/ar/match/5098998/Al-Shahania-SC-vs-Al-Duhail-SC",
     "info": {
@@ -541,6 +508,39 @@
     ]
   },
   {
+    "id": "5098999",
+    "url": "https://www.ysscores.com/ar/match/5098999/Qatar-SC-vs-Al-Sadd-SC",
+    "info": {
+      "championship": "الدوري القطري",
+      "round": "12 - مباراة الاياب",
+      "stadium": "استاد سحيم بن حمد",
+      "time": "17:30",
+      "date": "الخميس 08-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "قطر",
+        "logo": "https://imgs.ysscores.com/teams/128/5761752963369.png"
+      },
+      "away": {
+        "name": "السد",
+        "logo": "https://imgs.ysscores.com/teams/128/6901727693223.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الكأس 3",
+        "commentator": "أحمد الطيب"
+      },
+      {
+        "channel": "بي إن سبورت HD",
+        "commentator": "باسم الزير"
+      }
+    ]
+  },
+  {
     "id": "5111198",
     "url": "https://www.ysscores.com/ar/match/5111198/Al-Tahaddy-SC-vs-Al-Akhdar-SC",
     "info": {
@@ -560,30 +560,6 @@
       "away": {
         "name": "الأخضر",
         "logo": "https://imgs.ysscores.com/teams/128/17659994074616.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5111178",
-    "url": "https://www.ysscores.com/ar/match/5111178/Al-Ittihad-SC-vs-Olympic-Azzawiya-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "ملعب طرابلس الدولي",
-      "time": "17:30",
-      "date": "الخميس 08-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الاتحاد",
-        "logo": "https://imgs.ysscores.com/teams/128/6541718836505.png"
-      },
-      "away": {
-        "name": "الأولمبي",
-        "logo": "https://imgs.ysscores.com/teams/128/17656610718608.png"
       }
     },
     "channels": []
@@ -637,6 +613,30 @@
       "away": {
         "name": "الخليج",
         "logo": "https://imgs.ysscores.com/teams/128/17656560805023.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111178",
+    "url": "https://www.ysscores.com/ar/match/5111178/Al-Ittihad-SC-vs-Olympic-Azzawiya-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "ملعب طرابلس الدولي",
+      "time": "17:30",
+      "date": "الخميس 08-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الاتحاد",
+        "logo": "https://imgs.ysscores.com/teams/128/6541718836505.png"
+      },
+      "away": {
+        "name": "الأولمبي",
+        "logo": "https://imgs.ysscores.com/teams/128/17656610718608.png"
       }
     },
     "channels": []
@@ -719,30 +719,6 @@
     "channels": []
   },
   {
-    "id": "4946316",
-    "url": "https://www.ysscores.com/ar/match/4946316/La-Viena-FC-vs-FC-Masar",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "18 - مباراة الاياب",
-      "stadium": "استاد الأسيوطي",
-      "time": "13:30",
-      "date": "الخميس 08-01-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "لا فينا",
-        "logo": "https://imgs.ysscores.com/teams/128/1541696284458.png"
-      },
-      "away": {
-        "name": "مسار",
-        "logo": "https://imgs.ysscores.com/teams/128/9871753647957.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4946317",
     "url": "https://www.ysscores.com/ar/match/4946317/Raya-SC-vs-Entag-El-Harby",
     "info": {
@@ -762,6 +738,30 @@
       "away": {
         "name": "الإنتاج الحربي",
         "logo": "https://imgs.ysscores.com/teams/128/7141753648124.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4946316",
+    "url": "https://www.ysscores.com/ar/match/4946316/La-Viena-FC-vs-FC-Masar",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "18 - مباراة الاياب",
+      "stadium": "استاد الأسيوطي",
+      "time": "13:30",
+      "date": "الخميس 08-01-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "لا فينا",
+        "logo": "https://imgs.ysscores.com/teams/128/1541696284458.png"
+      },
+      "away": {
+        "name": "مسار",
+        "logo": "https://imgs.ysscores.com/teams/128/9871753647957.png"
       }
     },
     "channels": []
@@ -1059,8 +1059,8 @@
     ]
   },
   {
-    "id": "52969158",
-    "url": "https://www.ysscores.com/ar/match/52969158/El-Gouna-FC-vs-Pyramids-FC",
+    "id": "19914975",
+    "url": "https://www.ysscores.com/ar/match/19914975/Petrojet-vs-Modern-Sport-Club",
     "info": {
       "championship": "كأس مصر",
       "round": "دور الـ 16",
@@ -1071,12 +1071,12 @@
     },
     "teams": {
       "home": {
-        "name": "الجونة",
-        "logo": "https://imgs.ysscores.com/teams/128/3751731169729.png"
+        "name": "بتروجيت",
+        "logo": "https://imgs.ysscores.com/teams/128/5911730303226.png"
       },
       "away": {
-        "name": "بيراميدز",
-        "logo": "https://imgs.ysscores.com/teams/128/5771692283569.png"
+        "name": "مودرن سبورت",
+        "logo": "https://imgs.ysscores.com/teams/128/5391724147326.png"
       }
     },
     "channels": []
@@ -1128,8 +1128,8 @@
     "channels": []
   },
   {
-    "id": "19914975",
-    "url": "https://www.ysscores.com/ar/match/19914975/Petrojet-vs-Modern-Sport-Club",
+    "id": "52969158",
+    "url": "https://www.ysscores.com/ar/match/52969158/El-Gouna-FC-vs-Pyramids-FC",
     "info": {
       "championship": "كأس مصر",
       "round": "دور الـ 16",
@@ -1140,12 +1140,12 @@
     },
     "teams": {
       "home": {
-        "name": "بتروجيت",
-        "logo": "https://imgs.ysscores.com/teams/128/5911730303226.png"
+        "name": "الجونة",
+        "logo": "https://imgs.ysscores.com/teams/128/3751731169729.png"
       },
       "away": {
-        "name": "مودرن سبورت",
-        "logo": "https://imgs.ysscores.com/teams/128/5391724147326.png"
+        "name": "بيراميدز",
+        "logo": "https://imgs.ysscores.com/teams/128/5771692283569.png"
       }
     },
     "channels": []
