@@ -239,30 +239,6 @@
     "channels": []
   },
   {
-    "id": "76171837",
-    "url": "https://www.ysscores.com/ar/match/76171837/Al-Fotuwa-SC-vs-Tishreen-SC",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "ملعب البلدي - دير الزور",
-      "time": "12:30",
-      "date": "الجمعة 09-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الفتوة",
-        "logo": "https://imgs.ysscores.com/teams/128/8021694349814.png"
-      },
-      "away": {
-        "name": "تشرين",
-        "logo": "https://imgs.ysscores.com/teams/128/9051694349706.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "53548254",
     "url": "https://www.ysscores.com/ar/match/53548254/Khan-Shekhoun-vs-Taliya-SC",
     "info": {
@@ -290,6 +266,30 @@
         "commentator": "يزن العزي"
       }
     ]
+  },
+  {
+    "id": "76171837",
+    "url": "https://www.ysscores.com/ar/match/76171837/Al-Fotuwa-SC-vs-Tishreen-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "ملعب البلدي - دير الزور",
+      "time": "12:30",
+      "date": "الجمعة 09-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الفتوة",
+        "logo": "https://imgs.ysscores.com/teams/128/8021694349814.png"
+      },
+      "away": {
+        "name": "تشرين",
+        "logo": "https://imgs.ysscores.com/teams/128/9051694349706.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "37483349",
@@ -551,31 +551,35 @@
     "channels": []
   },
   {
-    "id": "4907751",
-    "url": "https://www.ysscores.com/ar/match/4907751/CS-Constantine-vs-JS-Saoura",
+    "id": "4907754",
+    "url": "https://www.ysscores.com/ar/match/4907754/ASO-Chlef-vs-MC-Algiers",
     "info": {
       "championship": "الرابطة المحترفة الجزائرية الأولى",
       "round": "15 - مباراة الذهاب",
-      "stadium": "استاد محمد حملاوي",
+      "stadium": "استاد محمد بومزراق",
       "time": "16:00",
       "date": "الجمعة 09-01-2026",
-      "current_score": "1 - 0",
+      "current_score": "0 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "النادي القسنطيني",
-        "logo": "https://imgs.ysscores.com/teams/128/1891724622719.png"
+        "name": "أولمبي الشلف",
+        "logo": "https://imgs.ysscores.com/teams/128/2291693417692.png"
       },
       "away": {
-        "name": "شبيبة الساورة",
-        "logo": "https://imgs.ysscores.com/teams/128/6231693417939.png"
+        "name": "مولودية الجزائر",
+        "logo": "https://imgs.ysscores.com/teams/128/7391693665631.png"
       }
     },
     "channels": [
       {
-        "channel": "الرياضية ويب",
-        "commentator": "علي جعفر"
+        "channel": "الجزائرية الأولى",
+        "commentator": "غير مدرج"
+      },
+      {
+        "channel": "الجزائرية الثانية",
+        "commentator": "غير مدرج"
       }
     ]
   },
@@ -609,35 +613,31 @@
     ]
   },
   {
-    "id": "4907754",
-    "url": "https://www.ysscores.com/ar/match/4907754/ASO-Chlef-vs-MC-Algiers",
+    "id": "4907751",
+    "url": "https://www.ysscores.com/ar/match/4907751/CS-Constantine-vs-JS-Saoura",
     "info": {
       "championship": "الرابطة المحترفة الجزائرية الأولى",
       "round": "15 - مباراة الذهاب",
-      "stadium": "استاد محمد بومزراق",
+      "stadium": "استاد محمد حملاوي",
       "time": "16:00",
       "date": "الجمعة 09-01-2026",
-      "current_score": "0 - 0",
+      "current_score": "1 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "أولمبي الشلف",
-        "logo": "https://imgs.ysscores.com/teams/128/2291693417692.png"
+        "name": "النادي القسنطيني",
+        "logo": "https://imgs.ysscores.com/teams/128/1891724622719.png"
       },
       "away": {
-        "name": "مولودية الجزائر",
-        "logo": "https://imgs.ysscores.com/teams/128/7391693665631.png"
+        "name": "شبيبة الساورة",
+        "logo": "https://imgs.ysscores.com/teams/128/6231693417939.png"
       }
     },
     "channels": [
       {
-        "channel": "الجزائرية الأولى",
-        "commentator": "غير مدرج"
-      },
-      {
-        "channel": "الجزائرية الثانية",
-        "commentator": "غير مدرج"
+        "channel": "الرياضية ويب",
+        "commentator": "علي جعفر"
       }
     ]
   },
