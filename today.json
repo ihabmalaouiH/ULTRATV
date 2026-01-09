@@ -475,39 +475,6 @@
     ]
   },
   {
-    "id": "5098998",
-    "url": "https://www.ysscores.com/ar/match/5098998/Al-Shahania-SC-vs-Al-Duhail-SC",
-    "info": {
-      "championship": "الدوري القطري",
-      "round": "12 - مباراة الاياب",
-      "stadium": "استاد الخور",
-      "time": "15:30",
-      "date": "الخميس 08-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الشحانية",
-        "logo": "https://imgs.ysscores.com/teams/128/9711722879334.png"
-      },
-      "away": {
-        "name": "الدحيل",
-        "logo": "https://imgs.ysscores.com/teams/128/3211693170386.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الكأس 1",
-        "commentator": "منتصر الأزهري"
-      },
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "أحمد البلوشي"
-      }
-    ]
-  },
-  {
     "id": "5098999",
     "url": "https://www.ysscores.com/ar/match/5098999/Qatar-SC-vs-Al-Sadd-SC",
     "info": {
@@ -537,6 +504,39 @@
       {
         "channel": "بي إن سبورت 4",
         "commentator": "باسم الزير"
+      }
+    ]
+  },
+  {
+    "id": "5098998",
+    "url": "https://www.ysscores.com/ar/match/5098998/Al-Shahania-SC-vs-Al-Duhail-SC",
+    "info": {
+      "championship": "الدوري القطري",
+      "round": "12 - مباراة الاياب",
+      "stadium": "استاد الخور",
+      "time": "15:30",
+      "date": "الخميس 08-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الشحانية",
+        "logo": "https://imgs.ysscores.com/teams/128/9711722879334.png"
+      },
+      "away": {
+        "name": "الدحيل",
+        "logo": "https://imgs.ysscores.com/teams/128/3211693170386.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الكأس 1",
+        "commentator": "منتصر الأزهري"
+      },
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "أحمد البلوشي"
       }
     ]
   },
@@ -796,35 +796,6 @@
     "channels": []
   },
   {
-    "id": "4907750",
-    "url": "https://www.ysscores.com/ar/match/4907750/MC-El-Bayadh-vs-ES-Mostaganem",
-    "info": {
-      "championship": "الرابطة المحترفة الجزائرية الأولى",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "زكريا مجدوب",
-      "time": "14:00",
-      "date": "الخميس 08-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "مولودية البيض",
-        "logo": "https://imgs.ysscores.com/teams/128/6821693418375.png"
-      },
-      "away": {
-        "name": "ترجي مستغانم",
-        "logo": "https://imgs.ysscores.com/teams/128/8081721202117.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الرياضية ويب",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "4907757",
     "url": "https://www.ysscores.com/ar/match/4907757/ES-Ben-Aknoun-vs-Olympique-Akbou",
     "info": {
@@ -878,6 +849,35 @@
     "channels": [
       {
         "channel": "الجزائرية الأولى",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "4907750",
+    "url": "https://www.ysscores.com/ar/match/4907750/MC-El-Bayadh-vs-ES-Mostaganem",
+    "info": {
+      "championship": "الرابطة المحترفة الجزائرية الأولى",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "زكريا مجدوب",
+      "time": "14:00",
+      "date": "الخميس 08-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "مولودية البيض",
+        "logo": "https://imgs.ysscores.com/teams/128/6821693418375.png"
+      },
+      "away": {
+        "name": "ترجي مستغانم",
+        "logo": "https://imgs.ysscores.com/teams/128/8081721202117.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الرياضية ويب",
         "commentator": "غير مدرج"
       }
     ]
@@ -1087,8 +1087,8 @@
     "channels": []
   },
   {
-    "id": "65922124",
-    "url": "https://www.ysscores.com/ar/match/65922124/Zed-FC-vs-El-Masry-SC",
+    "id": "20369778",
+    "url": "https://www.ysscores.com/ar/match/20369778/Zamalek-SC-vs-Cleopatra-FC",
     "info": {
       "championship": "كأس مصر",
       "round": "دور الـ 16",
@@ -1099,12 +1099,12 @@
     },
     "teams": {
       "home": {
-        "name": "نادي زد",
-        "logo": "https://imgs.ysscores.com/teams/128/8411694619351.png"
+        "name": "الزمالك",
+        "logo": "https://imgs.ysscores.com/teams/128/7971694082496.png"
       },
       "away": {
-        "name": "المصري",
-        "logo": "https://imgs.ysscores.com/teams/128/1521694644423.png"
+        "name": "سيراميكا",
+        "logo": "https://imgs.ysscores.com/teams/128/631694081965.png"
       }
     },
     "channels": []
@@ -1133,8 +1133,8 @@
     "channels": []
   },
   {
-    "id": "20369778",
-    "url": "https://www.ysscores.com/ar/match/20369778/Zamalek-SC-vs-Cleopatra-FC",
+    "id": "65922124",
+    "url": "https://www.ysscores.com/ar/match/65922124/Zed-FC-vs-El-Masry-SC",
     "info": {
       "championship": "كأس مصر",
       "round": "دور الـ 16",
@@ -1145,12 +1145,12 @@
     },
     "teams": {
       "home": {
-        "name": "الزمالك",
-        "logo": "https://imgs.ysscores.com/teams/128/7971694082496.png"
+        "name": "نادي زد",
+        "logo": "https://imgs.ysscores.com/teams/128/8411694619351.png"
       },
       "away": {
-        "name": "سيراميكا",
-        "logo": "https://imgs.ysscores.com/teams/128/631694081965.png"
+        "name": "المصري",
+        "logo": "https://imgs.ysscores.com/teams/128/1521694644423.png"
       }
     },
     "channels": []
