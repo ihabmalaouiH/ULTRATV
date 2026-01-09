@@ -33,39 +33,6 @@
     ]
   },
   {
-    "id": "5041050",
-    "url": "https://www.ysscores.com/ar/match/5041050/Dibba-SCC-vs-Khor-Fakkan-SSC",
-    "info": {
-      "championship": "الدوري الإماراتي للمحترفين",
-      "round": "12 - مباراة الذهاب",
-      "stadium": "استاد دبا الفجيرة",
-      "time": "14:00",
-      "date": "الخميس 08-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "دبا الفجيرة",
-        "logo": "https://imgs.ysscores.com/teams/128/3931758629187.png"
-      },
-      "away": {
-        "name": "خورفكان",
-        "logo": "https://imgs.ysscores.com/teams/128/8671756044964.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "أبو ظبي الرياضية 2",
-        "commentator": "أحمد الحامد"
-      },
-      {
-        "channel": "دبي الرياضية 2",
-        "commentator": "راشد عبدالرحمن"
-      }
-    ]
-  },
-  {
     "id": "5041051",
     "url": "https://www.ysscores.com/ar/match/5041051/Al-Dhafra-FC-vs-Al-Ain-FC",
     "info": {
@@ -95,6 +62,39 @@
       {
         "channel": "دبي الرياضية 1",
         "commentator": "أحمد الشحي"
+      }
+    ]
+  },
+  {
+    "id": "5041050",
+    "url": "https://www.ysscores.com/ar/match/5041050/Dibba-SCC-vs-Khor-Fakkan-SSC",
+    "info": {
+      "championship": "الدوري الإماراتي للمحترفين",
+      "round": "12 - مباراة الذهاب",
+      "stadium": "استاد دبا الفجيرة",
+      "time": "14:00",
+      "date": "الخميس 08-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "دبا الفجيرة",
+        "logo": "https://imgs.ysscores.com/teams/128/3931758629187.png"
+      },
+      "away": {
+        "name": "خورفكان",
+        "logo": "https://imgs.ysscores.com/teams/128/8671756044964.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "أبو ظبي الرياضية 2",
+        "commentator": "أحمد الحامد"
+      },
+      {
+        "channel": "دبي الرياضية 2",
+        "commentator": "راشد عبدالرحمن"
       }
     ]
   },
@@ -475,39 +475,6 @@
     ]
   },
   {
-    "id": "5098998",
-    "url": "https://www.ysscores.com/ar/match/5098998/Al-Shahania-SC-vs-Al-Duhail-SC",
-    "info": {
-      "championship": "الدوري القطري",
-      "round": "12 - مباراة الاياب",
-      "stadium": "استاد الخور",
-      "time": "15:30",
-      "date": "الخميس 08-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الشحانية",
-        "logo": "https://imgs.ysscores.com/teams/128/9711722879334.png"
-      },
-      "away": {
-        "name": "الدحيل",
-        "logo": "https://imgs.ysscores.com/teams/128/3211693170386.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الكأس 1",
-        "commentator": "منتصر الأزهري"
-      },
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "أحمد البلوشي"
-      }
-    ]
-  },
-  {
     "id": "5098999",
     "url": "https://www.ysscores.com/ar/match/5098999/Qatar-SC-vs-Al-Sadd-SC",
     "info": {
@@ -541,6 +508,63 @@
     ]
   },
   {
+    "id": "5098998",
+    "url": "https://www.ysscores.com/ar/match/5098998/Al-Shahania-SC-vs-Al-Duhail-SC",
+    "info": {
+      "championship": "الدوري القطري",
+      "round": "12 - مباراة الاياب",
+      "stadium": "استاد الخور",
+      "time": "15:30",
+      "date": "الخميس 08-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الشحانية",
+        "logo": "https://imgs.ysscores.com/teams/128/9711722879334.png"
+      },
+      "away": {
+        "name": "الدحيل",
+        "logo": "https://imgs.ysscores.com/teams/128/3211693170386.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الكأس 1",
+        "commentator": "منتصر الأزهري"
+      },
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "أحمد البلوشي"
+      }
+    ]
+  },
+  {
+    "id": "5111198",
+    "url": "https://www.ysscores.com/ar/match/5111198/Al-Tahaddy-SC-vs-Al-Akhdar-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "ملعب شهداء بنينا",
+      "time": "17:00",
+      "date": "الخميس 08-01-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "التحدي",
+        "logo": "https://imgs.ysscores.com/teams/128/17656600447081.png"
+      },
+      "away": {
+        "name": "الأخضر",
+        "logo": "https://imgs.ysscores.com/teams/128/17659994074616.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5111177",
     "url": "https://www.ysscores.com/ar/match/5111177/El-Ettihad-Al-Misraty-SC-vs-Al-Majd-SCC",
     "info": {
@@ -560,6 +584,35 @@
       "away": {
         "name": "المجد",
         "logo": "https://imgs.ysscores.com/teams/128/17656495347608.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ليبيا الوطنية",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5111178",
+    "url": "https://www.ysscores.com/ar/match/5111178/Al-Ittihad-SC-vs-Olympic-Azzawiya-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "ملعب طرابلس الدولي",
+      "time": "17:30",
+      "date": "الخميس 08-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الاتحاد",
+        "logo": "https://imgs.ysscores.com/teams/128/6541718836505.png"
+      },
+      "away": {
+        "name": "الأولمبي",
+        "logo": "https://imgs.ysscores.com/teams/128/17656610718608.png"
       }
     },
     "channels": [
@@ -592,59 +645,6 @@
       }
     },
     "channels": []
-  },
-  {
-    "id": "5111198",
-    "url": "https://www.ysscores.com/ar/match/5111198/Al-Tahaddy-SC-vs-Al-Akhdar-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "ملعب شهداء بنينا",
-      "time": "17:00",
-      "date": "الخميس 08-01-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "التحدي",
-        "logo": "https://imgs.ysscores.com/teams/128/17656600447081.png"
-      },
-      "away": {
-        "name": "الأخضر",
-        "logo": "https://imgs.ysscores.com/teams/128/17659994074616.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5111178",
-    "url": "https://www.ysscores.com/ar/match/5111178/Al-Ittihad-SC-vs-Olympic-Azzawiya-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "ملعب طرابلس الدولي",
-      "time": "17:30",
-      "date": "الخميس 08-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الاتحاد",
-        "logo": "https://imgs.ysscores.com/teams/128/6541718836505.png"
-      },
-      "away": {
-        "name": "الأولمبي",
-        "logo": "https://imgs.ysscores.com/teams/128/17656610718608.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ليبيا الوطنية",
-        "commentator": "غير مدرج"
-      }
-    ]
   },
   {
     "id": "4946314",
@@ -936,39 +936,6 @@
     "channels": []
   },
   {
-    "id": "24098302",
-    "url": "https://www.ysscores.com/ar/match/24098302/Iraq-U23-vs-China-U23",
-    "info": {
-      "championship": "كأس آسيا تحت 23 سنة",
-      "round": "1",
-      "stadium": "استاد الأمير فيصل بن فهد (الملز)",
-      "time": "15:00",
-      "date": "الخميس 08-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "العراق",
-        "logo": "https://imgs.ysscores.com/teams/128/8191763081021.png"
-      },
-      "away": {
-        "name": "الصين",
-        "logo": "https://imgs.ysscores.com/teams/128/1921763070825.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 6",
-        "commentator": "عامر الخوذيري"
-      },
-      {
-        "channel": "الكأس 5",
-        "commentator": "مصطفى ناظم"
-      }
-    ]
-  },
-  {
     "id": "53832424",
     "url": "https://www.ysscores.com/ar/match/53832424/Australia-U23-vs-Thailand-U23",
     "info": {
@@ -998,6 +965,39 @@
       {
         "channel": "الكأس 5",
         "commentator": "قاسم الشمري"
+      }
+    ]
+  },
+  {
+    "id": "24098302",
+    "url": "https://www.ysscores.com/ar/match/24098302/Iraq-U23-vs-China-U23",
+    "info": {
+      "championship": "كأس آسيا تحت 23 سنة",
+      "round": "1",
+      "stadium": "استاد الأمير فيصل بن فهد (الملز)",
+      "time": "15:00",
+      "date": "الخميس 08-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "العراق",
+        "logo": "https://imgs.ysscores.com/teams/128/8191763081021.png"
+      },
+      "away": {
+        "name": "الصين",
+        "logo": "https://imgs.ysscores.com/teams/128/1921763070825.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 6",
+        "commentator": "عامر الخوذيري"
+      },
+      {
+        "channel": "الكأس 5",
+        "commentator": "مصطفى ناظم"
       }
     ]
   },
@@ -1064,6 +1064,29 @@
     ]
   },
   {
+    "id": "65922124",
+    "url": "https://www.ysscores.com/ar/match/65922124/Zed-FC-vs-El-Masry-SC",
+    "info": {
+      "championship": "كأس مصر",
+      "round": "دور الـ 16",
+      "time": "18:00",
+      "date": "الخميس 08-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "نادي زد",
+        "logo": "https://imgs.ysscores.com/teams/128/8411694619351.png"
+      },
+      "away": {
+        "name": "المصري",
+        "logo": "https://imgs.ysscores.com/teams/128/1521694644423.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "20369778",
     "url": "https://www.ysscores.com/ar/match/20369778/Zamalek-SC-vs-Cleopatra-FC",
     "info": {
@@ -1128,29 +1151,6 @@
       "away": {
         "name": "بيراميدز",
         "logo": "https://imgs.ysscores.com/teams/128/5771692283569.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "65922124",
-    "url": "https://www.ysscores.com/ar/match/65922124/Zed-FC-vs-El-Masry-SC",
-    "info": {
-      "championship": "كأس مصر",
-      "round": "دور الـ 16",
-      "time": "18:00",
-      "date": "الخميس 08-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "نادي زد",
-        "logo": "https://imgs.ysscores.com/teams/128/8411694619351.png"
-      },
-      "away": {
-        "name": "المصري",
-        "logo": "https://imgs.ysscores.com/teams/128/1521694644423.png"
       }
     },
     "channels": []
