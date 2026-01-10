@@ -239,6 +239,30 @@
     "channels": []
   },
   {
+    "id": "76171837",
+    "url": "https://www.ysscores.com/ar/match/76171837/Al-Fotuwa-SC-vs-Tishreen-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "ملعب البلدي - دير الزور",
+      "time": "12:30",
+      "date": "الجمعة 09-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الفتوة",
+        "logo": "https://imgs.ysscores.com/teams/128/8021694349814.png"
+      },
+      "away": {
+        "name": "تشرين",
+        "logo": "https://imgs.ysscores.com/teams/128/9051694349706.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "53548254",
     "url": "https://www.ysscores.com/ar/match/53548254/Khan-Shekhoun-vs-Taliya-SC",
     "info": {
@@ -266,30 +290,6 @@
         "commentator": "يزن العزي"
       }
     ]
-  },
-  {
-    "id": "76171837",
-    "url": "https://www.ysscores.com/ar/match/76171837/Al-Fotuwa-SC-vs-Tishreen-SC",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "ملعب البلدي - دير الزور",
-      "time": "12:30",
-      "date": "الجمعة 09-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الفتوة",
-        "logo": "https://imgs.ysscores.com/teams/128/8021694349814.png"
-      },
-      "away": {
-        "name": "تشرين",
-        "logo": "https://imgs.ysscores.com/teams/128/9051694349706.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "37483349",
@@ -354,35 +354,6 @@
     ]
   },
   {
-    "id": "42163064",
-    "url": "https://www.ysscores.com/ar/match/42163064/Naft-Missan-vs-Al-Zawraa-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "11 - مباراة الذهاب",
-      "stadium": "ملعب ميسان",
-      "time": "13:00",
-      "date": "الجمعة 09-01-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "نفط ميسان",
-        "logo": "https://imgs.ysscores.com/teams/128/711695656259.png"
-      },
-      "away": {
-        "name": "الزوراء",
-        "logo": "https://imgs.ysscores.com/teams/128/2961729878835.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية الرياضية",
-        "commentator": "حسين سمير"
-      }
-    ]
-  },
-  {
     "id": "95372989",
     "url": "https://www.ysscores.com/ar/match/95372989/Al-Quwa-Al-Jawiya-vs-Al-Karma",
     "info": {
@@ -412,6 +383,35 @@
       {
         "channel": "الكأس 3",
         "commentator": "خالد الحدي"
+      }
+    ]
+  },
+  {
+    "id": "42163064",
+    "url": "https://www.ysscores.com/ar/match/42163064/Naft-Missan-vs-Al-Zawraa-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "11 - مباراة الذهاب",
+      "stadium": "ملعب ميسان",
+      "time": "13:00",
+      "date": "الجمعة 09-01-2026",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "نفط ميسان",
+        "logo": "https://imgs.ysscores.com/teams/128/711695656259.png"
+      },
+      "away": {
+        "name": "الزوراء",
+        "logo": "https://imgs.ysscores.com/teams/128/2961729878835.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "حسين سمير"
       }
     ]
   },
@@ -551,6 +551,39 @@
     "channels": []
   },
   {
+    "id": "4907754",
+    "url": "https://www.ysscores.com/ar/match/4907754/ASO-Chlef-vs-MC-Algiers",
+    "info": {
+      "championship": "الرابطة المحترفة الجزائرية الأولى",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "استاد محمد بومزراق",
+      "time": "16:00",
+      "date": "الجمعة 09-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أولمبي الشلف",
+        "logo": "https://imgs.ysscores.com/teams/128/2291693417692.png"
+      },
+      "away": {
+        "name": "مولودية الجزائر",
+        "logo": "https://imgs.ysscores.com/teams/128/7391693665631.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الجزائرية الأولى",
+        "commentator": "غير مدرج"
+      },
+      {
+        "channel": "الجزائرية الثانية",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
     "id": "4907751",
     "url": "https://www.ysscores.com/ar/match/4907751/CS-Constantine-vs-JS-Saoura",
     "info": {
@@ -604,39 +637,6 @@
     "channels": [
       {
         "channel": "الرياضية ويب",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "4907754",
-    "url": "https://www.ysscores.com/ar/match/4907754/ASO-Chlef-vs-MC-Algiers",
-    "info": {
-      "championship": "الرابطة المحترفة الجزائرية الأولى",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "استاد محمد بومزراق",
-      "time": "16:00",
-      "date": "الجمعة 09-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أولمبي الشلف",
-        "logo": "https://imgs.ysscores.com/teams/128/2291693417692.png"
-      },
-      "away": {
-        "name": "مولودية الجزائر",
-        "logo": "https://imgs.ysscores.com/teams/128/7391693665631.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الجزائرية الأولى",
-        "commentator": "غير مدرج"
-      },
-      {
-        "channel": "الجزائرية الثانية",
         "commentator": "غير مدرج"
       }
     ]
@@ -737,47 +737,6 @@
     ]
   },
   {
-    "id": "5073471",
-    "url": "https://www.ysscores.com/ar/match/5073471/Mali-vs-Senegal",
-    "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "ربع نهائي",
-      "stadium": "استاد ابن بطوطة",
-      "time": "17:00",
-      "date": "الجمعة 09-01-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "مالي",
-        "logo": "https://imgs.ysscores.com/teams/128/7571763083037.png"
-      },
-      "away": {
-        "name": "السنغال",
-        "logo": "https://imgs.ysscores.com/teams/128/1831763086441.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Max 2",
-        "commentator": "عصام الشوالي"
-      },
-      {
-        "channel": "beIN Max 3",
-        "commentator": "عصام الشوالي"
-      },
-      {
-        "channel": "beIN Max 4",
-        "commentator": "عصام الشوالي"
-      },
-      {
-        "channel": "المغربية (بث أرضي)",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5073472",
     "url": "https://www.ysscores.com/ar/match/5073472/Cameroon-vs-Morocco",
     "info": {
@@ -815,6 +774,47 @@
       {
         "channel": "beIN Max 4",
         "commentator": "جواد بدة"
+      },
+      {
+        "channel": "المغربية (بث أرضي)",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5073471",
+    "url": "https://www.ysscores.com/ar/match/5073471/Mali-vs-Senegal",
+    "info": {
+      "championship": "كأس الأمم الأفريقية",
+      "round": "ربع نهائي",
+      "stadium": "استاد ابن بطوطة",
+      "time": "17:00",
+      "date": "الجمعة 09-01-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "مالي",
+        "logo": "https://imgs.ysscores.com/teams/128/7571763083037.png"
+      },
+      "away": {
+        "name": "السنغال",
+        "logo": "https://imgs.ysscores.com/teams/128/1831763086441.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Max 2",
+        "commentator": "عصام الشوالي"
+      },
+      {
+        "channel": "beIN Max 3",
+        "commentator": "عصام الشوالي"
+      },
+      {
+        "channel": "beIN Max 4",
+        "commentator": "عصام الشوالي"
       },
       {
         "channel": "المغربية (بث أرضي)",
