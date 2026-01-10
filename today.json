@@ -1,34 +1,5 @@
 [
   {
-    "id": "4829455",
-    "url": "https://www.ysscores.com/ar/match/4829455/1.FC-Heidenheim-1846-vs-1.FC-Köln",
-    "info": {
-      "championship": "الدوري الألماني",
-      "round": "16 - مباراة الذهاب",
-      "stadium": "فويت أرينا",
-      "time": "15:30",
-      "date": "السبت 10-01-2026",
-      "current_score": "2 - 1",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "هايدنهايم",
-        "logo": "https://imgs.ysscores.com/teams/128/3761690288819.png"
-      },
-      "away": {
-        "name": "كولن",
-        "logo": "https://imgs.ysscores.com/teams/128/2071690288818.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "شاهد - VIP | رياضة",
-        "commentator": "محمد الخامسي"
-      }
-    ]
-  },
-  {
     "id": "4829457",
     "url": "https://www.ysscores.com/ar/match/4829457/1.FC-Union-Berlin-vs-1.FSV-Mainz-05",
     "info": {
@@ -54,6 +25,35 @@
       {
         "channel": "شاهد - VIP | رياضة",
         "commentator": "عبد العزيز الزيد"
+      }
+    ]
+  },
+  {
+    "id": "4829455",
+    "url": "https://www.ysscores.com/ar/match/4829455/1.FC-Heidenheim-1846-vs-1.FC-Köln",
+    "info": {
+      "championship": "الدوري الألماني",
+      "round": "16 - مباراة الذهاب",
+      "stadium": "فويت أرينا",
+      "time": "15:30",
+      "date": "السبت 10-01-2026",
+      "current_score": "2 - 1",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "هايدنهايم",
+        "logo": "https://imgs.ysscores.com/teams/128/3761690288819.png"
+      },
+      "away": {
+        "name": "كولن",
+        "logo": "https://imgs.ysscores.com/teams/128/2071690288818.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "شاهد - VIP | رياضة",
+        "commentator": "محمد الخامسي"
       }
     ]
   },
@@ -222,35 +222,6 @@
     ]
   },
   {
-    "id": "4837293",
-    "url": "https://www.ysscores.com/ar/match/4837293/Villarreal-CF-vs-Deportivo-Alavés",
-    "info": {
-      "championship": "الدوري الإسباني",
-      "round": "19 - مباراة الذهاب",
-      "stadium": "لا سيراميكا",
-      "time": "16:15",
-      "date": "السبت 10-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "فياريال",
-        "logo": "https://imgs.ysscores.com/teams/128/7121690196747.png"
-      },
-      "away": {
-        "name": "ألافيس",
-        "logo": "https://imgs.ysscores.com/teams/128/2381690196746.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "بكر علوان"
-      }
-    ]
-  },
-  {
     "id": "4837292",
     "url": "https://www.ysscores.com/ar/match/4837292/Girona-FC-vs-CA-Osasuna",
     "info": {
@@ -280,28 +251,33 @@
     ]
   },
   {
-    "id": "4818883",
-    "url": "https://www.ysscores.com/ar/match/4818883/Celtic-FC-vs-Dundee-United-FC",
+    "id": "4837293",
+    "url": "https://www.ysscores.com/ar/match/4837293/Villarreal-CF-vs-Deportivo-Alavés",
     "info": {
-      "championship": "الدوري الإسكتلندي الممتاز",
-      "round": "22 - مباراة الاياب",
-      "stadium": "سيلتك بارك",
-      "time": "16:00",
+      "championship": "الدوري الإسباني",
+      "round": "19 - مباراة الذهاب",
+      "stadium": "لا سيراميكا",
+      "time": "16:15",
       "date": "السبت 10-01-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "سيلتك",
-        "logo": "https://imgs.ysscores.com/teams/128/9291690387713.png"
+        "name": "فياريال",
+        "logo": "https://imgs.ysscores.com/teams/128/7121690196747.png"
       },
       "away": {
-        "name": "دندي يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/1541754872814.png"
+        "name": "ألافيس",
+        "logo": "https://imgs.ysscores.com/teams/128/2381690196746.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "بكر علوان"
+      }
+    ]
   },
   {
     "id": "4818887",
@@ -323,6 +299,30 @@
       "away": {
         "name": "فالكريك",
         "logo": "https://imgs.ysscores.com/teams/128/6361739396113.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4818883",
+    "url": "https://www.ysscores.com/ar/match/4818883/Celtic-FC-vs-Dundee-United-FC",
+    "info": {
+      "championship": "الدوري الإسكتلندي الممتاز",
+      "round": "22 - مباراة الاياب",
+      "stadium": "سيلتك بارك",
+      "time": "16:00",
+      "date": "السبت 10-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "سيلتك",
+        "logo": "https://imgs.ysscores.com/teams/128/9291690387713.png"
+      },
+      "away": {
+        "name": "دندي يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/1541754872814.png"
       }
     },
     "channels": []
@@ -479,39 +479,6 @@
     ]
   },
   {
-    "id": "4803228",
-    "url": "https://www.ysscores.com/ar/match/4803228/Atalanta-BC-vs-Torino-FC",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "20 - مباراة الاياب",
-      "stadium": "نيو بالانس أرينا",
-      "time": "20:45",
-      "date": "السبت 10-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أتلانتا",
-        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
-      },
-      "away": {
-        "name": "تورينو",
-        "logo": "https://imgs.ysscores.com/teams/128/7501690283003.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "StarzPlay",
-        "commentator": "محمد الشامسي"
-      },
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "محمد الشامسي"
-      }
-    ]
-  },
-  {
     "id": "4803235",
     "url": "https://www.ysscores.com/ar/match/4803235/AS-Roma-vs-US-Sassuolo",
     "info": {
@@ -545,6 +512,39 @@
       {
         "channel": "منصة شاشا",
         "commentator": "هاني الشهري"
+      }
+    ]
+  },
+  {
+    "id": "4803228",
+    "url": "https://www.ysscores.com/ar/match/4803228/Atalanta-BC-vs-Torino-FC",
+    "info": {
+      "championship": "الدوري الإيطالي",
+      "round": "20 - مباراة الاياب",
+      "stadium": "نيو بالانس أرينا",
+      "time": "20:45",
+      "date": "السبت 10-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أتلانتا",
+        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
+      },
+      "away": {
+        "name": "تورينو",
+        "logo": "https://imgs.ysscores.com/teams/128/7501690283003.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "StarzPlay",
+        "commentator": "محمد الشامسي"
+      },
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "محمد الشامسي"
       }
     ]
   },
@@ -788,6 +788,35 @@
     ]
   },
   {
+    "id": "16570059",
+    "url": "https://www.ysscores.com/ar/match/16570059/Al-Talaba-SC-vs-Al-Kahrbaa-Club",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "11 - مباراة الذهاب",
+      "stadium": "استاد المدينة الدولي",
+      "time": "15:30",
+      "date": "السبت 10-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "الطلبة",
+        "logo": "https://imgs.ysscores.com/teams/128/9541695656866.png"
+      },
+      "away": {
+        "name": "الكهرباء",
+        "logo": "https://imgs.ysscores.com/teams/128/8081715870157.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "جمال الدراجي"
+      }
+    ]
+  },
+  {
     "id": "17951035",
     "url": "https://www.ysscores.com/ar/match/17951035/Al-Karkh-SC-vs-Al-Najaf-FC",
     "info": {
@@ -817,33 +846,28 @@
     ]
   },
   {
-    "id": "16570059",
-    "url": "https://www.ysscores.com/ar/match/16570059/Al-Talaba-SC-vs-Al-Kahrbaa-Club",
+    "id": "4815388",
+    "url": "https://www.ysscores.com/ar/match/4815388/Twente-Enschede-FC-vs-PEC-Zwolle",
     "info": {
-      "championship": "الدوري العراقي",
-      "round": "11 - مباراة الذهاب",
-      "stadium": "استاد المدينة الدولي",
-      "time": "15:30",
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "18 - مباراة الاياب",
+      "stadium": "دي غرولش فيست",
+      "time": "18:45",
       "date": "السبت 10-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "الطلبة",
-        "logo": "https://imgs.ysscores.com/teams/128/9541695656866.png"
+        "name": "تفينتي أنشخيده",
+        "logo": "https://imgs.ysscores.com/teams/128/7451690996868.png"
       },
       "away": {
-        "name": "الكهرباء",
-        "logo": "https://imgs.ysscores.com/teams/128/8081715870157.png"
+        "name": "زفوله",
+        "logo": "https://imgs.ysscores.com/teams/128/6691690996577.png"
       }
     },
-    "channels": [
-      {
-        "channel": "العراقية الرياضية",
-        "commentator": "جمال الدراجي"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "4815379",
@@ -875,25 +899,25 @@
     ]
   },
   {
-    "id": "4815388",
-    "url": "https://www.ysscores.com/ar/match/4815388/Twente-Enschede-FC-vs-PEC-Zwolle",
+    "id": "4815381",
+    "url": "https://www.ysscores.com/ar/match/4815381/FC-Groningen-vs-NAC-Breda",
     "info": {
       "championship": "الدوري الهولندي الممتاز",
       "round": "18 - مباراة الاياب",
-      "stadium": "دي غرولش فيست",
-      "time": "18:45",
+      "stadium": "استاد يوروبوج",
+      "time": "21:00",
       "date": "السبت 10-01-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "تفينتي أنشخيده",
-        "logo": "https://imgs.ysscores.com/teams/128/7451690996868.png"
+        "name": "غرونينغن",
+        "logo": "https://imgs.ysscores.com/teams/128/10001690370535.png"
       },
       "away": {
-        "name": "زفوله",
-        "logo": "https://imgs.ysscores.com/teams/128/6691690996577.png"
+        "name": "ناك بريدا",
+        "logo": "https://imgs.ysscores.com/teams/128/6521690370538.png"
       }
     },
     "channels": []
@@ -928,25 +952,25 @@
     ]
   },
   {
-    "id": "4815381",
-    "url": "https://www.ysscores.com/ar/match/4815381/FC-Groningen-vs-NAC-Breda",
+    "id": "4859106",
+    "url": "https://www.ysscores.com/ar/match/4859106/AE-Kifisias-vs-AE-Larisa",
     "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "18 - مباراة الاياب",
-      "stadium": "استاد يوروبوج",
-      "time": "21:00",
+      "championship": "الدوري اليوناني",
+      "round": "16 - مباراة الاياب",
+      "stadium": "ملعب نيابولي",
+      "time": "16:00",
       "date": "السبت 10-01-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "غرونينغن",
-        "logo": "https://imgs.ysscores.com/teams/128/10001690370535.png"
+        "name": "كيفيسياس",
+        "logo": "https://imgs.ysscores.com/teams/128/7671718348243.png"
       },
       "away": {
-        "name": "ناك بريدا",
-        "logo": "https://imgs.ysscores.com/teams/128/6521690370538.png"
+        "name": "لاريسا",
+        "logo": "https://imgs.ysscores.com/teams/128/411754000668.png"
       }
     },
     "channels": []
@@ -971,30 +995,6 @@
       "away": {
         "name": "أولمبياكوس",
         "logo": "https://imgs.ysscores.com/teams/128/1401690370533.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4859106",
-    "url": "https://www.ysscores.com/ar/match/4859106/AE-Kifisias-vs-AE-Larisa",
-    "info": {
-      "championship": "الدوري اليوناني",
-      "round": "16 - مباراة الاياب",
-      "stadium": "ملعب نيابولي",
-      "time": "16:00",
-      "date": "السبت 10-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "كيفيسياس",
-        "logo": "https://imgs.ysscores.com/teams/128/7671718348243.png"
-      },
-      "away": {
-        "name": "لاريسا",
-        "logo": "https://imgs.ysscores.com/teams/128/411754000668.png"
       }
     },
     "channels": []
@@ -1257,47 +1257,6 @@
     ]
   },
   {
-    "id": "5073474",
-    "url": "https://www.ysscores.com/ar/match/5073474/Egypt-vs-Ivory-Coast",
-    "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "ربع نهائي",
-      "stadium": "ملعب أدرار",
-      "time": "20:00",
-      "date": "السبت 10-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "مصر",
-        "logo": "https://imgs.ysscores.com/teams/128/9301763071949.png"
-      },
-      "away": {
-        "name": "كوت ديفوار",
-        "logo": "https://imgs.ysscores.com/teams/128/391763071210.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Max 1",
-        "commentator": "علي محمد علي"
-      },
-      {
-        "channel": "beIN Max 2",
-        "commentator": "علي محمد علي"
-      },
-      {
-        "channel": "beIN Max 3",
-        "commentator": "علي محمد علي"
-      },
-      {
-        "channel": "المغربية (بث أرضي)",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5073473",
     "url": "https://www.ysscores.com/ar/match/5073473/Algeria-vs-Nigeria",
     "info": {
@@ -1339,6 +1298,47 @@
     ]
   },
   {
+    "id": "5073474",
+    "url": "https://www.ysscores.com/ar/match/5073474/Egypt-vs-Ivory-Coast",
+    "info": {
+      "championship": "كأس الأمم الأفريقية",
+      "round": "ربع نهائي",
+      "stadium": "ملعب أدرار",
+      "time": "20:00",
+      "date": "السبت 10-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "مصر",
+        "logo": "https://imgs.ysscores.com/teams/128/9301763071949.png"
+      },
+      "away": {
+        "name": "كوت ديفوار",
+        "logo": "https://imgs.ysscores.com/teams/128/391763071210.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Max 1",
+        "commentator": "علي محمد علي"
+      },
+      {
+        "channel": "beIN Max 2",
+        "commentator": "علي محمد علي"
+      },
+      {
+        "channel": "beIN Max 3",
+        "commentator": "علي محمد علي"
+      },
+      {
+        "channel": "المغربية (بث أرضي)",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
     "id": "5089894",
     "url": "https://www.ysscores.com/ar/match/5089894/Doncaster-Rovers-vs-Southampton-FC",
     "info": {
@@ -1358,6 +1358,30 @@
       "away": {
         "name": "ساوثهامبتون",
         "logo": "https://imgs.ysscores.com/teams/128/3521690370525.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5089903",
+    "url": "https://www.ysscores.com/ar/match/5089903/Sheffield-Wednesday-vs-Brentford-FC",
+    "info": {
+      "championship": "كأس الاتحاد الإنجليزي",
+      "round": "الدور الثالث",
+      "stadium": "هيلزبره",
+      "time": "16:00",
+      "date": "السبت 10-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "شيفيلد وينزداي",
+        "logo": "https://imgs.ysscores.com/teams/128/2131690370554.png"
+      },
+      "away": {
+        "name": "برينتفورد",
+        "logo": "https://imgs.ysscores.com/teams/128/4791690118957.png"
       }
     },
     "channels": []
@@ -1392,12 +1416,12 @@
     ]
   },
   {
-    "id": "5089903",
-    "url": "https://www.ysscores.com/ar/match/5089903/Sheffield-Wednesday-vs-Brentford-FC",
+    "id": "5089904",
+    "url": "https://www.ysscores.com/ar/match/5089904/Fulham-FC-vs-Middlesbrough-FC",
     "info": {
       "championship": "كأس الاتحاد الإنجليزي",
       "round": "الدور الثالث",
-      "stadium": "هيلزبره",
+      "stadium": "كرافن كوتيج",
       "time": "16:00",
       "date": "السبت 10-01-2026",
       "current_score": "- : -",
@@ -1405,39 +1429,20 @@
     },
     "teams": {
       "home": {
-        "name": "شيفيلد وينزداي",
-        "logo": "https://imgs.ysscores.com/teams/128/2131690370554.png"
+        "name": "فولهام",
+        "logo": "https://imgs.ysscores.com/teams/128/4711690118927.png"
       },
       "away": {
-        "name": "برينتفورد",
-        "logo": "https://imgs.ysscores.com/teams/128/4791690118957.png"
+        "name": "ميدلزبره",
+        "logo": "https://imgs.ysscores.com/teams/128/7871690370529.png"
       }
     },
-    "channels": []
-  },
-  {
-    "id": "5089918",
-    "url": "https://www.ysscores.com/ar/match/5089918/Cambridge-United-vs-Birmingham-City",
-    "info": {
-      "championship": "كأس الاتحاد الإنجليزي",
-      "round": "الدور الثالث",
-      "stadium": "استاد آبي",
-      "time": "18:45",
-      "date": "السبت 10-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "كامبريدج يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/6571758655746.png"
-      },
-      "away": {
-        "name": "برمنغهام",
-        "logo": "https://imgs.ysscores.com/teams/128/3121690370534.png"
+    "channels": [
+      {
+        "channel": "بي إن سبورت 7",
+        "commentator": "محمد السعدي"
       }
-    },
-    "channels": []
+    ]
   },
   {
     "id": "5089900",
@@ -1469,33 +1474,28 @@
     ]
   },
   {
-    "id": "5089904",
-    "url": "https://www.ysscores.com/ar/match/5089904/Fulham-FC-vs-Middlesbrough-FC",
+    "id": "5089918",
+    "url": "https://www.ysscores.com/ar/match/5089918/Cambridge-United-vs-Birmingham-City",
     "info": {
       "championship": "كأس الاتحاد الإنجليزي",
       "round": "الدور الثالث",
-      "stadium": "كرافن كوتيج",
-      "time": "16:00",
+      "stadium": "استاد آبي",
+      "time": "18:45",
       "date": "السبت 10-01-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "فولهام",
-        "logo": "https://imgs.ysscores.com/teams/128/4711690118927.png"
+        "name": "كامبريدج يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/6571758655746.png"
       },
       "away": {
-        "name": "ميدلزبره",
-        "logo": "https://imgs.ysscores.com/teams/128/7871690370529.png"
+        "name": "برمنغهام",
+        "logo": "https://imgs.ysscores.com/teams/128/3121690370534.png"
       }
     },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 7",
-        "commentator": "محمد السعدي"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "5089893",
@@ -1522,6 +1522,64 @@
     "channels": []
   },
   {
+    "id": "5089895",
+    "url": "https://www.ysscores.com/ar/match/5089895/Tottenham-Hotspur-vs-Aston-Villa",
+    "info": {
+      "championship": "كأس الاتحاد الإنجليزي",
+      "round": "الدور الثالث",
+      "stadium": "استاد توتنهام هوتسبير",
+      "time": "18:45",
+      "date": "السبت 10-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "توتنهام",
+        "logo": "https://imgs.ysscores.com/teams/128/2501692467226.png"
+      },
+      "away": {
+        "name": "أستون فيلا",
+        "logo": "https://imgs.ysscores.com/teams/128/9921723414870.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "حسن العيدروس"
+      }
+    ]
+  },
+  {
+    "id": "5089901",
+    "url": "https://www.ysscores.com/ar/match/5089901/Manchester-City-vs-Exeter-City",
+    "info": {
+      "championship": "كأس الاتحاد الإنجليزي",
+      "round": "الدور الثالث",
+      "stadium": "استاد الاتحاد",
+      "time": "16:00",
+      "date": "السبت 10-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "مان سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/4481690118308.png"
+      },
+      "away": {
+        "name": "إكستر سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/5581690370542.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "علي سعيد الكعبي"
+      }
+    ]
+  },
+  {
     "id": "5089913",
     "url": "https://www.ysscores.com/ar/match/5089913/Grimsby-Town-vs-Weston-super-Mare-AFC",
     "info": {
@@ -1541,6 +1599,30 @@
       "away": {
         "name": "ويستون سوبر مار",
         "logo": "https://imgs.ysscores.com/teams/128/5321730490159.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5089917",
+    "url": "https://www.ysscores.com/ar/match/5089917/Cheltenham-Town-vs-Leicester-City",
+    "info": {
+      "championship": "كأس الاتحاد الإنجليزي",
+      "round": "الدور الثالث",
+      "stadium": "استاد سوزوكي",
+      "time": "13:15",
+      "date": "السبت 10-01-2026",
+      "current_score": "0 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "تشيلتنهام",
+        "logo": "https://imgs.ysscores.com/teams/128/1501690370536.png"
+      },
+      "away": {
+        "name": "ليستر سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/5531690711879.png"
       }
     },
     "channels": []
@@ -1575,12 +1657,12 @@
     ]
   },
   {
-    "id": "5089901",
-    "url": "https://www.ysscores.com/ar/match/5089901/Manchester-City-vs-Exeter-City",
+    "id": "5089898",
+    "url": "https://www.ysscores.com/ar/match/5089898/Ipswich-Town-vs-Blackpool-FC",
     "info": {
       "championship": "كأس الاتحاد الإنجليزي",
       "round": "الدور الثالث",
-      "stadium": "استاد الاتحاد",
+      "stadium": "بورتمان رود",
       "time": "16:00",
       "date": "السبت 10-01-2026",
       "current_score": "- : -",
@@ -1588,70 +1670,12 @@
     },
     "teams": {
       "home": {
-        "name": "مان سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/4481690118308.png"
+        "name": "إيبسويتش",
+        "logo": "https://imgs.ysscores.com/teams/128/8291690370545.png"
       },
       "away": {
-        "name": "إكستر سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/5581690370542.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "علي سعيد الكعبي"
-      }
-    ]
-  },
-  {
-    "id": "5089895",
-    "url": "https://www.ysscores.com/ar/match/5089895/Tottenham-Hotspur-vs-Aston-Villa",
-    "info": {
-      "championship": "كأس الاتحاد الإنجليزي",
-      "round": "الدور الثالث",
-      "stadium": "استاد توتنهام هوتسبير",
-      "time": "18:45",
-      "date": "السبت 10-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "توتنهام",
-        "logo": "https://imgs.ysscores.com/teams/128/2501692467226.png"
-      },
-      "away": {
-        "name": "أستون فيلا",
-        "logo": "https://imgs.ysscores.com/teams/128/9921723414870.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "حسن العيدروس"
-      }
-    ]
-  },
-  {
-    "id": "5089917",
-    "url": "https://www.ysscores.com/ar/match/5089917/Cheltenham-Town-vs-Leicester-City",
-    "info": {
-      "championship": "كأس الاتحاد الإنجليزي",
-      "round": "الدور الثالث",
-      "stadium": "استاد سوزوكي",
-      "time": "13:15",
-      "date": "السبت 10-01-2026",
-      "current_score": "0 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "تشيلتنهام",
-        "logo": "https://imgs.ysscores.com/teams/128/1501690370536.png"
-      },
-      "away": {
-        "name": "ليستر سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/5531690711879.png"
+        "name": "بلاكبول",
+        "logo": "https://imgs.ysscores.com/teams/128/4761693482598.png"
       }
     },
     "channels": []
@@ -1686,30 +1710,6 @@
     ]
   },
   {
-    "id": "5089898",
-    "url": "https://www.ysscores.com/ar/match/5089898/Ipswich-Town-vs-Blackpool-FC",
-    "info": {
-      "championship": "كأس الاتحاد الإنجليزي",
-      "round": "الدور الثالث",
-      "stadium": "بورتمان رود",
-      "time": "16:00",
-      "date": "السبت 10-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "إيبسويتش",
-        "logo": "https://imgs.ysscores.com/teams/128/8291690370545.png"
-      },
-      "away": {
-        "name": "بلاكبول",
-        "logo": "https://imgs.ysscores.com/teams/128/4761693482598.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5034522",
     "url": "https://www.ysscores.com/ar/match/5034522/Vitória-Guimarães-SC-vs-SC-Braga",
     "info": {
@@ -1739,35 +1739,6 @@
     ]
   },
   {
-    "id": "44539110",
-    "url": "https://www.ysscores.com/ar/match/44539110/Kahraba-Ismailia-vs-El-Masry-SC",
-    "info": {
-      "championship": "كأس الرابطة المصرية",
-      "round": "6",
-      "stadium": "استاد السويس الجديد",
-      "time": "18:00",
-      "date": "السبت 10-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "كهرباء الإسماعيلية",
-        "logo": "https://imgs.ysscores.com/teams/128/2391753649516.png"
-      },
-      "away": {
-        "name": "المصري",
-        "logo": "https://imgs.ysscores.com/teams/128/1521694644423.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "Kora Plus",
-        "commentator": "محمد الغياتي"
-      }
-    ]
-  },
-  {
     "id": "32062056",
     "url": "https://www.ysscores.com/ar/match/32062056/Pharco-FC-vs-Al-Ahly-FC",
     "info": {
@@ -1793,6 +1764,35 @@
       {
         "channel": "ON Sport 1",
         "commentator": "محمد مصطفى عفيفي"
+      }
+    ]
+  },
+  {
+    "id": "44539110",
+    "url": "https://www.ysscores.com/ar/match/44539110/Kahraba-Ismailia-vs-El-Masry-SC",
+    "info": {
+      "championship": "كأس الرابطة المصرية",
+      "round": "6",
+      "stadium": "استاد السويس الجديد",
+      "time": "18:00",
+      "date": "السبت 10-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "كهرباء الإسماعيلية",
+        "logo": "https://imgs.ysscores.com/teams/128/2391753649516.png"
+      },
+      "away": {
+        "name": "المصري",
+        "logo": "https://imgs.ysscores.com/teams/128/1521694644423.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "Kora Plus",
+        "commentator": "محمد الغياتي"
       }
     ]
   },
@@ -1857,6 +1857,30 @@
         "commentator": "محمد الكواليني"
       }
     ]
+  },
+  {
+    "id": "5108150",
+    "url": "https://www.ysscores.com/ar/match/5108150/Le-Puy-Foot-43-Auvergne-vs-Stade-Reims",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 32",
+      "stadium": "ملعب تشارلز ماسوت",
+      "time": "18:00",
+      "date": "السبت 10-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "لو بوي",
+        "logo": "https://imgs.ysscores.com/teams/128/2951703615777.png"
+      },
+      "away": {
+        "name": "ريمس",
+        "logo": "https://imgs.ysscores.com/teams/128/8361690287842.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "5108151",
@@ -1941,30 +1965,6 @@
     ]
   },
   {
-    "id": "5108150",
-    "url": "https://www.ysscores.com/ar/match/5108150/Le-Puy-Foot-43-Auvergne-vs-Stade-Reims",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 32",
-      "stadium": "ملعب تشارلز ماسوت",
-      "time": "18:00",
-      "date": "السبت 10-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "لو بوي",
-        "logo": "https://imgs.ysscores.com/teams/128/2951703615777.png"
-      },
-      "away": {
-        "name": "ريمس",
-        "logo": "https://imgs.ysscores.com/teams/128/8361690287842.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5108152",
     "url": "https://www.ysscores.com/ar/match/5108152/Istres-Football-Club-vs-Stade-Lavallois",
     "info": {
@@ -2018,29 +2018,6 @@
     ]
   },
   {
-    "id": "5108146",
-    "url": "https://www.ysscores.com/ar/match/5108146/Montreuil-FC-vs-Amiens-SC",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 32",
-      "time": "15:30",
-      "date": "السبت 10-01-2026",
-      "current_score": "1 - 2",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "مونتروي",
-        "logo": "https://imgs.ysscores.com/teams/128/17648500644736.png"
-      },
-      "away": {
-        "name": "أميان",
-        "logo": "https://imgs.ysscores.com/teams/128/611690370530.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5108148",
     "url": "https://www.ysscores.com/ar/match/5108148/SC-Bastia-vs-ESTAC-Troyes",
     "info": {
@@ -2060,6 +2037,29 @@
       "away": {
         "name": "تروا",
         "logo": "https://imgs.ysscores.com/teams/128/6871690370557.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5108146",
+    "url": "https://www.ysscores.com/ar/match/5108146/Montreuil-FC-vs-Amiens-SC",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 32",
+      "time": "15:30",
+      "date": "السبت 10-01-2026",
+      "current_score": "1 - 2",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "مونتروي",
+        "logo": "https://imgs.ysscores.com/teams/128/17648500644736.png"
+      },
+      "away": {
+        "name": "أميان",
+        "logo": "https://imgs.ysscores.com/teams/128/611690370530.png"
       }
     },
     "channels": []
