@@ -99,8 +99,8 @@
       "stadium": "تيريزا ريفيرو",
       "time": "14:00",
       "date": "الأحد 11-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "1 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -505,30 +505,6 @@
     ]
   },
   {
-    "id": "4859104",
-    "url": "https://www.ysscores.com/ar/match/4859104/Aris-Thessaloniki-vs-AEK-Athens",
-    "info": {
-      "championship": "الدوري اليوناني",
-      "round": "16 - مباراة الاياب",
-      "stadium": "ملعب كليانثيس فيكيليديس",
-      "time": "18:30",
-      "date": "الأحد 11-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أريس",
-        "logo": "https://imgs.ysscores.com/teams/128/9711721769286.png"
-      },
-      "away": {
-        "name": "أيك أثينا",
-        "logo": "https://imgs.ysscores.com/teams/128/6901694359099.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4859109",
     "url": "https://www.ysscores.com/ar/match/4859109/Panathinaikos-FC-vs-Panserraikos",
     "info": {
@@ -572,6 +548,30 @@
       "away": {
         "name": "فولوس",
         "logo": "https://imgs.ysscores.com/teams/128/3431754000844.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4859104",
+    "url": "https://www.ysscores.com/ar/match/4859104/Aris-Thessaloniki-vs-AEK-Athens",
+    "info": {
+      "championship": "الدوري اليوناني",
+      "round": "16 - مباراة الاياب",
+      "stadium": "ملعب كليانثيس فيكيليديس",
+      "time": "18:30",
+      "date": "الأحد 11-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أريس",
+        "logo": "https://imgs.ysscores.com/teams/128/9711721769286.png"
+      },
+      "away": {
+        "name": "أيك أثينا",
+        "logo": "https://imgs.ysscores.com/teams/128/6901694359099.png"
       }
     },
     "channels": []
@@ -843,12 +843,12 @@
     ]
   },
   {
-    "id": "5089923",
-    "url": "https://www.ysscores.com/ar/match/5089923/Sheffield-United-vs-Mansfield-Town",
+    "id": "5089902",
+    "url": "https://www.ysscores.com/ar/match/5089902/West-Ham-United-vs-Queens-Park-Rangers",
     "info": {
       "championship": "كأس الاتحاد الإنجليزي",
       "round": "الدور الثالث",
-      "stadium": "برامول لين",
+      "stadium": "استاد لندن الأولمبي",
       "time": "15:30",
       "date": "الأحد 11-01-2026",
       "current_score": "- : -",
@@ -856,15 +856,20 @@
     },
     "teams": {
       "home": {
-        "name": "شيفيلد",
-        "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
+        "name": "وست هام",
+        "logo": "https://imgs.ysscores.com/teams/128/7191690118603.png"
       },
       "away": {
-        "name": "مانسفيلد تاون",
-        "logo": "https://imgs.ysscores.com/teams/128/7011690370542.png"
+        "name": "كوينز بارك رينجرز",
+        "logo": "https://imgs.ysscores.com/teams/128/9791690370554.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "باسم الزير"
+      }
+    ]
   },
   {
     "id": "5089909",
@@ -896,12 +901,12 @@
     ]
   },
   {
-    "id": "5089902",
-    "url": "https://www.ysscores.com/ar/match/5089902/West-Ham-United-vs-Queens-Park-Rangers",
+    "id": "5089923",
+    "url": "https://www.ysscores.com/ar/match/5089923/Sheffield-United-vs-Mansfield-Town",
     "info": {
       "championship": "كأس الاتحاد الإنجليزي",
       "round": "الدور الثالث",
-      "stadium": "استاد لندن الأولمبي",
+      "stadium": "برامول لين",
       "time": "15:30",
       "date": "الأحد 11-01-2026",
       "current_score": "- : -",
@@ -909,20 +914,15 @@
     },
     "teams": {
       "home": {
-        "name": "وست هام",
-        "logo": "https://imgs.ysscores.com/teams/128/7191690118603.png"
+        "name": "شيفيلد",
+        "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
       },
       "away": {
-        "name": "كوينز بارك رينجرز",
-        "logo": "https://imgs.ysscores.com/teams/128/9791690370554.png"
+        "name": "مانسفيلد تاون",
+        "logo": "https://imgs.ysscores.com/teams/128/7011690370542.png"
       }
     },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "باسم الزير"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "5089908",
@@ -1175,6 +1175,30 @@
     "channels": []
   },
   {
+    "id": "5108158",
+    "url": "https://www.ysscores.com/ar/match/5108158/US-Chantilly-vs-Stade-Rennais-FC",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 32",
+      "stadium": "استاد بيير بريسون",
+      "time": "18:00",
+      "date": "الأحد 11-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "شانتيي",
+        "logo": "https://imgs.ysscores.com/teams/128/4851718444491.png"
+      },
+      "away": {
+        "name": "رين",
+        "logo": "https://imgs.ysscores.com/teams/128/5061690287944.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5108157",
     "url": "https://www.ysscores.com/ar/match/5108157/FC-Metz-vs-Montpellier-HSC",
     "info": {
@@ -1207,8 +1231,8 @@
       "stadium": "استاد أوغست بونال",
       "time": "14:00",
       "date": "الأحد 11-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
@@ -1226,30 +1250,6 @@
         "commentator": "جواد بدة"
       }
     ]
-  },
-  {
-    "id": "5108158",
-    "url": "https://www.ysscores.com/ar/match/5108158/US-Chantilly-vs-Stade-Rennais-FC",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 32",
-      "stadium": "استاد بيير بريسون",
-      "time": "18:00",
-      "date": "الأحد 11-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "شانتيي",
-        "logo": "https://imgs.ysscores.com/teams/128/4851718444491.png"
-      },
-      "away": {
-        "name": "رين",
-        "logo": "https://imgs.ysscores.com/teams/128/5061690287944.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "5108155",
