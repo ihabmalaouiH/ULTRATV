@@ -71,7 +71,7 @@
       "time": "16:15",
       "date": "الأحد 11-01-2026",
       "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -423,30 +423,6 @@
     "channels": []
   },
   {
-    "id": "4815380",
-    "url": "https://www.ysscores.com/ar/match/4815380/Go-Ahead-Eagles-vs-Fortuna-Sittard",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "18 - مباراة الاياب",
-      "stadium": "دي اديلارشورست",
-      "time": "14:30",
-      "date": "الأحد 11-01-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "جو أهيد إيجلز",
-        "logo": "https://imgs.ysscores.com/teams/128/3951690996987.png"
-      },
-      "away": {
-        "name": "فورتونا سيتارد",
-        "logo": "https://imgs.ysscores.com/teams/128/1881690997103.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4815387",
     "url": "https://www.ysscores.com/ar/match/4815387/SC-Telstar-vs-Ajax-Amsterdam",
     "info": {
@@ -474,6 +450,30 @@
         "commentator": "رؤوف خليف"
       }
     ]
+  },
+  {
+    "id": "4815380",
+    "url": "https://www.ysscores.com/ar/match/4815380/Go-Ahead-Eagles-vs-Fortuna-Sittard",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "18 - مباراة الاياب",
+      "stadium": "دي اديلارشورست",
+      "time": "14:30",
+      "date": "الأحد 11-01-2026",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "جو أهيد إيجلز",
+        "logo": "https://imgs.ysscores.com/teams/128/3951690996987.png"
+      },
+      "away": {
+        "name": "فورتونا سيتارد",
+        "logo": "https://imgs.ysscores.com/teams/128/1881690997103.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "4815382",
@@ -711,39 +711,6 @@
     ]
   },
   {
-    "id": "30936096",
-    "url": "https://www.ysscores.com/ar/match/30936096/Al-Diraiyah-FC-vs-Al-Anwar-Club",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "16 - مباراة الذهاب",
-      "stadium": "ملعب نادي الرياض",
-      "time": "13:25",
-      "date": "الأحد 11-01-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الدرعية",
-        "logo": "https://imgs.ysscores.com/teams/128/6711757968926.png"
-      },
-      "away": {
-        "name": "الأنوار",
-        "logo": "https://imgs.ysscores.com/teams/128/471755364570.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 1",
-        "commentator": "فهد العنزي"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "فهد العنزي"
-      }
-    ]
-  },
-  {
     "id": "24683421",
     "url": "https://www.ysscores.com/ar/match/24683421/Al-Faisaly-FC-vs-Al-Bukiryah-FC",
     "info": {
@@ -773,6 +740,39 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "هيثم طحطوح"
+      }
+    ]
+  },
+  {
+    "id": "30936096",
+    "url": "https://www.ysscores.com/ar/match/30936096/Al-Diraiyah-FC-vs-Al-Anwar-Club",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "16 - مباراة الذهاب",
+      "stadium": "ملعب نادي الرياض",
+      "time": "13:25",
+      "date": "الأحد 11-01-2026",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الدرعية",
+        "logo": "https://imgs.ysscores.com/teams/128/6711757968926.png"
+      },
+      "away": {
+        "name": "الأنوار",
+        "logo": "https://imgs.ysscores.com/teams/128/471755364570.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 1",
+        "commentator": "فهد العنزي"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "فهد العنزي"
       }
     ]
   },
@@ -1175,30 +1175,6 @@
     "channels": []
   },
   {
-    "id": "5108158",
-    "url": "https://www.ysscores.com/ar/match/5108158/US-Chantilly-vs-Stade-Rennais-FC",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 32",
-      "stadium": "استاد بيير بريسون",
-      "time": "18:00",
-      "date": "الأحد 11-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "شانتيي",
-        "logo": "https://imgs.ysscores.com/teams/128/4851718444491.png"
-      },
-      "away": {
-        "name": "رين",
-        "logo": "https://imgs.ysscores.com/teams/128/5061690287944.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5108157",
     "url": "https://www.ysscores.com/ar/match/5108157/FC-Metz-vs-Montpellier-HSC",
     "info": {
@@ -1218,6 +1194,30 @@
       "away": {
         "name": "مونبلييه",
         "logo": "https://imgs.ysscores.com/teams/128/691720799295.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5108158",
+    "url": "https://www.ysscores.com/ar/match/5108158/US-Chantilly-vs-Stade-Rennais-FC",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 32",
+      "stadium": "استاد بيير بريسون",
+      "time": "18:00",
+      "date": "الأحد 11-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "شانتيي",
+        "logo": "https://imgs.ysscores.com/teams/128/4851718444491.png"
+      },
+      "away": {
+        "name": "رين",
+        "logo": "https://imgs.ysscores.com/teams/128/5061690287944.png"
       }
     },
     "channels": []
