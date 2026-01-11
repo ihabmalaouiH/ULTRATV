@@ -8,7 +8,7 @@
       "stadium": "أليانز أرينا",
       "time": "17:30",
       "date": "الأحد 11-01-2026",
-      "current_score": "1 - 0",
+      "current_score": "1 - 1",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -505,6 +505,30 @@
     ]
   },
   {
+    "id": "4859104",
+    "url": "https://www.ysscores.com/ar/match/4859104/Aris-Thessaloniki-vs-AEK-Athens",
+    "info": {
+      "championship": "الدوري اليوناني",
+      "round": "16 - مباراة الاياب",
+      "stadium": "ملعب كليانثيس فيكيليديس",
+      "time": "18:30",
+      "date": "الأحد 11-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أريس",
+        "logo": "https://imgs.ysscores.com/teams/128/9711721769286.png"
+      },
+      "away": {
+        "name": "أيك أثينا",
+        "logo": "https://imgs.ysscores.com/teams/128/6901694359099.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4859109",
     "url": "https://www.ysscores.com/ar/match/4859109/Panathinaikos-FC-vs-Panserraikos",
     "info": {
@@ -553,30 +577,6 @@
     "channels": []
   },
   {
-    "id": "4859104",
-    "url": "https://www.ysscores.com/ar/match/4859104/Aris-Thessaloniki-vs-AEK-Athens",
-    "info": {
-      "championship": "الدوري اليوناني",
-      "round": "16 - مباراة الاياب",
-      "stadium": "ملعب كليانثيس فيكيليديس",
-      "time": "18:30",
-      "date": "الأحد 11-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أريس",
-        "logo": "https://imgs.ysscores.com/teams/128/9711721769286.png"
-      },
-      "away": {
-        "name": "أيك أثينا",
-        "logo": "https://imgs.ysscores.com/teams/128/6901694359099.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4859108",
     "url": "https://www.ysscores.com/ar/match/4859108/OFI-Crete-FC-vs-Asteras-Aktor",
     "info": {
@@ -599,6 +599,35 @@
       }
     },
     "channels": []
+  },
+  {
+    "id": "5089910",
+    "url": "https://www.ysscores.com/ar/match/5089910/Derby-County-vs-Leeds-United",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "الدور الثالث",
+      "stadium": "برايد بارك",
+      "time": "13:00",
+      "date": "الأحد 11-01-2026",
+      "current_score": "1 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ديربي كاونتي",
+        "logo": "https://imgs.ysscores.com/teams/128/8071690370554.png"
+      },
+      "away": {
+        "name": "ليدز يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/4691690458244.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "جواد بدة"
+      }
+    ]
   },
   {
     "id": "5089911",
@@ -647,35 +676,6 @@
       }
     },
     "channels": []
-  },
-  {
-    "id": "5089910",
-    "url": "https://www.ysscores.com/ar/match/5089910/Derby-County-vs-Leeds-United",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "الدور الثالث",
-      "stadium": "برايد بارك",
-      "time": "13:00",
-      "date": "الأحد 11-01-2026",
-      "current_score": "1 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ديربي كاونتي",
-        "logo": "https://imgs.ysscores.com/teams/128/8071690370554.png"
-      },
-      "away": {
-        "name": "ليدز يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/4691690458244.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "جواد بدة"
-      }
-    ]
   },
   {
     "id": "42209820",
@@ -872,6 +872,30 @@
     ]
   },
   {
+    "id": "5089923",
+    "url": "https://www.ysscores.com/ar/match/5089923/Sheffield-United-vs-Mansfield-Town",
+    "info": {
+      "championship": "كأس الاتحاد الإنجليزي",
+      "round": "الدور الثالث",
+      "stadium": "برامول لين",
+      "time": "15:30",
+      "date": "الأحد 11-01-2026",
+      "current_score": "3 - 4",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "شيفيلد",
+        "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
+      },
+      "away": {
+        "name": "مانسفيلد تاون",
+        "logo": "https://imgs.ysscores.com/teams/128/7011690370542.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5089909",
     "url": "https://www.ysscores.com/ar/match/5089909/Portsmouth-FC-vs-Arsenal-FC",
     "info": {
@@ -901,25 +925,25 @@
     ]
   },
   {
-    "id": "5089923",
-    "url": "https://www.ysscores.com/ar/match/5089923/Sheffield-United-vs-Mansfield-Town",
+    "id": "5089908",
+    "url": "https://www.ysscores.com/ar/match/5089908/Norwich-City-vs-Walsall-FC",
     "info": {
       "championship": "كأس الاتحاد الإنجليزي",
       "round": "الدور الثالث",
-      "stadium": "برامول لين",
+      "stadium": "كارو رود",
       "time": "15:30",
       "date": "الأحد 11-01-2026",
-      "current_score": "3 - 4",
+      "current_score": "5 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "شيفيلد",
-        "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
+        "name": "نوريتش سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/5201690370543.png"
       },
       "away": {
-        "name": "مانسفيلد تاون",
-        "logo": "https://imgs.ysscores.com/teams/128/7011690370542.png"
+        "name": "والسول",
+        "logo": "https://imgs.ysscores.com/teams/128/2831690370551.png"
       }
     },
     "channels": []
@@ -952,30 +976,6 @@
         "commentator": "علي محمد علي"
       }
     ]
-  },
-  {
-    "id": "5089908",
-    "url": "https://www.ysscores.com/ar/match/5089908/Norwich-City-vs-Walsall-FC",
-    "info": {
-      "championship": "كأس الاتحاد الإنجليزي",
-      "round": "الدور الثالث",
-      "stadium": "كارو رود",
-      "time": "15:30",
-      "date": "الأحد 11-01-2026",
-      "current_score": "5 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "نوريتش سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/5201690370543.png"
-      },
-      "away": {
-        "name": "والسول",
-        "logo": "https://imgs.ysscores.com/teams/128/2831690370551.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "5074289",
@@ -1175,30 +1175,6 @@
     "channels": []
   },
   {
-    "id": "5108157",
-    "url": "https://www.ysscores.com/ar/match/5108157/FC-Metz-vs-Montpellier-HSC",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 32",
-      "stadium": "سانت سيمفورين",
-      "time": "18:00",
-      "date": "الأحد 11-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ميتز",
-        "logo": "https://imgs.ysscores.com/teams/128/5631690287157.png"
-      },
-      "away": {
-        "name": "مونبلييه",
-        "logo": "https://imgs.ysscores.com/teams/128/691720799295.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5108158",
     "url": "https://www.ysscores.com/ar/match/5108158/US-Chantilly-vs-Stade-Rennais-FC",
     "info": {
@@ -1218,6 +1194,30 @@
       "away": {
         "name": "رين",
         "logo": "https://imgs.ysscores.com/teams/128/5061690287944.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5108157",
+    "url": "https://www.ysscores.com/ar/match/5108157/FC-Metz-vs-Montpellier-HSC",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 32",
+      "stadium": "سانت سيمفورين",
+      "time": "18:00",
+      "date": "الأحد 11-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ميتز",
+        "logo": "https://imgs.ysscores.com/teams/128/5631690287157.png"
+      },
+      "away": {
+        "name": "مونبلييه",
+        "logo": "https://imgs.ysscores.com/teams/128/691720799295.png"
       }
     },
     "channels": []
