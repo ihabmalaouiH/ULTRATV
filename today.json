@@ -407,7 +407,7 @@
       "stadium": "ستاد هيت كاستيل",
       "time": "16:45",
       "date": "الأحد 11-01-2026",
-      "current_score": "1 - 0",
+      "current_score": "2 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -529,30 +529,6 @@
     "channels": []
   },
   {
-    "id": "4859104",
-    "url": "https://www.ysscores.com/ar/match/4859104/Aris-Thessaloniki-vs-AEK-Athens",
-    "info": {
-      "championship": "الدوري اليوناني",
-      "round": "16 - مباراة الاياب",
-      "stadium": "ملعب كليانثيس فيكيليديس",
-      "time": "18:30",
-      "date": "الأحد 11-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "أريس",
-        "logo": "https://imgs.ysscores.com/teams/128/9711721769286.png"
-      },
-      "away": {
-        "name": "أيك أثينا",
-        "logo": "https://imgs.ysscores.com/teams/128/6901694359099.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4859107",
     "url": "https://www.ysscores.com/ar/match/4859107/APO-Levadiakos-vs-Volos-NPS",
     "info": {
@@ -572,6 +548,30 @@
       "away": {
         "name": "فولوس",
         "logo": "https://imgs.ysscores.com/teams/128/3431754000844.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4859104",
+    "url": "https://www.ysscores.com/ar/match/4859104/Aris-Thessaloniki-vs-AEK-Athens",
+    "info": {
+      "championship": "الدوري اليوناني",
+      "round": "16 - مباراة الاياب",
+      "stadium": "ملعب كليانثيس فيكيليديس",
+      "time": "18:30",
+      "date": "الأحد 11-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "أريس",
+        "logo": "https://imgs.ysscores.com/teams/128/9711721769286.png"
+      },
+      "away": {
+        "name": "أيك أثينا",
+        "logo": "https://imgs.ysscores.com/teams/128/6901694359099.png"
       }
     },
     "channels": []
@@ -843,6 +843,35 @@
     ]
   },
   {
+    "id": "5089909",
+    "url": "https://www.ysscores.com/ar/match/5089909/Portsmouth-FC-vs-Arsenal-FC",
+    "info": {
+      "championship": "كأس الاتحاد الإنجليزي",
+      "round": "الدور الثالث",
+      "stadium": "فراتون بارك",
+      "time": "15:00",
+      "date": "الأحد 11-01-2026",
+      "current_score": "1 - 4",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بورتسموث",
+        "logo": "https://imgs.ysscores.com/teams/128/5401690370525.png"
+      },
+      "away": {
+        "name": "أرسنال",
+        "logo": "https://imgs.ysscores.com/teams/128/1701690118820.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "عصام الشوالي"
+      }
+    ]
+  },
+  {
     "id": "5089923",
     "url": "https://www.ysscores.com/ar/match/5089923/Sheffield-United-vs-Mansfield-Town",
     "info": {
@@ -892,35 +921,6 @@
       {
         "channel": "بي إن سبورت 5",
         "commentator": "باسم الزير"
-      }
-    ]
-  },
-  {
-    "id": "5089909",
-    "url": "https://www.ysscores.com/ar/match/5089909/Portsmouth-FC-vs-Arsenal-FC",
-    "info": {
-      "championship": "كأس الاتحاد الإنجليزي",
-      "round": "الدور الثالث",
-      "stadium": "فراتون بارك",
-      "time": "15:00",
-      "date": "الأحد 11-01-2026",
-      "current_score": "1 - 4",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بورتسموث",
-        "logo": "https://imgs.ysscores.com/teams/128/5401690370525.png"
-      },
-      "away": {
-        "name": "أرسنال",
-        "logo": "https://imgs.ysscores.com/teams/128/1701690118820.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "عصام الشوالي"
       }
     ]
   },
@@ -1122,30 +1122,6 @@
     ]
   },
   {
-    "id": "81006122",
-    "url": "https://www.ysscores.com/ar/match/81006122/Al-Nahda-Club-vs-Sur-SC",
-    "info": {
-      "championship": "كأس جلالة السلطان المعظم",
-      "round": "ربع نهائي - مباراة الاياب",
-      "stadium": "مجمع البريمي (النهضة)",
-      "time": "14:05",
-      "date": "الأحد 11-01-2026",
-      "current_score": "4 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "النهضة",
-        "logo": "https://imgs.ysscores.com/teams/128/4141691930732.png"
-      },
-      "away": {
-        "name": "صور",
-        "logo": "https://imgs.ysscores.com/teams/128/3801691931317.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "33288346",
     "url": "https://www.ysscores.com/ar/match/33288346/Sohar-SC-vs-Al-Nasr-Club",
     "info": {
@@ -1173,6 +1149,54 @@
         "commentator": "أحمد الكعبي"
       }
     ]
+  },
+  {
+    "id": "81006122",
+    "url": "https://www.ysscores.com/ar/match/81006122/Al-Nahda-Club-vs-Sur-SC",
+    "info": {
+      "championship": "كأس جلالة السلطان المعظم",
+      "round": "ربع نهائي - مباراة الاياب",
+      "stadium": "مجمع البريمي (النهضة)",
+      "time": "14:05",
+      "date": "الأحد 11-01-2026",
+      "current_score": "4 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "النهضة",
+        "logo": "https://imgs.ysscores.com/teams/128/4141691930732.png"
+      },
+      "away": {
+        "name": "صور",
+        "logo": "https://imgs.ysscores.com/teams/128/3801691931317.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5108158",
+    "url": "https://www.ysscores.com/ar/match/5108158/US-Chantilly-vs-Stade-Rennais-FC",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 32",
+      "stadium": "استاد بيير بريسون",
+      "time": "18:00",
+      "date": "الأحد 11-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "شانتيي",
+        "logo": "https://imgs.ysscores.com/teams/128/4851718444491.png"
+      },
+      "away": {
+        "name": "رين",
+        "logo": "https://imgs.ysscores.com/teams/128/5061690287944.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "5108154",
@@ -1223,30 +1247,6 @@
       "away": {
         "name": "مونبلييه",
         "logo": "https://imgs.ysscores.com/teams/128/691720799295.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5108158",
-    "url": "https://www.ysscores.com/ar/match/5108158/US-Chantilly-vs-Stade-Rennais-FC",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 32",
-      "stadium": "استاد بيير بريسون",
-      "time": "18:00",
-      "date": "الأحد 11-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "شانتيي",
-        "logo": "https://imgs.ysscores.com/teams/128/4851718444491.png"
-      },
-      "away": {
-        "name": "رين",
-        "logo": "https://imgs.ysscores.com/teams/128/5061690287944.png"
       }
     },
     "channels": []
