@@ -128,7 +128,7 @@
       "stadium": "بيتودري",
       "time": "17:30",
       "date": "الأحد 11-01-2026",
-      "current_score": "0 - 1",
+      "current_score": "0 - 2",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -383,8 +383,8 @@
       "stadium": "باركي خواكيم دي ألميدا فريتاس",
       "time": "19:00",
       "date": "الأحد 11-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -630,30 +630,6 @@
     ]
   },
   {
-    "id": "5089911",
-    "url": "https://www.ysscores.com/ar/match/5089911/Swansea-City-vs-West-Bromwich-Albion",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "الدور الثالث",
-      "stadium": "سوانزي دوت كوم",
-      "time": "15:30",
-      "date": "الأحد 11-01-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "سوانزي",
-        "logo": "https://imgs.ysscores.com/teams/128/4561723590559.png"
-      },
-      "away": {
-        "name": "وست بروميتش",
-        "logo": "https://imgs.ysscores.com/teams/128/9971690370534.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5089914",
     "url": "https://www.ysscores.com/ar/match/5089914/Hull-City-vs-Blackburn-Rovers",
     "info": {
@@ -673,6 +649,30 @@
       "away": {
         "name": "بلاكبيرن روفرز",
         "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5089911",
+    "url": "https://www.ysscores.com/ar/match/5089911/Swansea-City-vs-West-Bromwich-Albion",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "الدور الثالث",
+      "stadium": "سوانزي دوت كوم",
+      "time": "15:30",
+      "date": "الأحد 11-01-2026",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "سوانزي",
+        "logo": "https://imgs.ysscores.com/teams/128/4561723590559.png"
+      },
+      "away": {
+        "name": "وست بروميتش",
+        "logo": "https://imgs.ysscores.com/teams/128/9971690370534.png"
       }
     },
     "channels": []
@@ -867,35 +867,6 @@
     "channels": []
   },
   {
-    "id": "5089902",
-    "url": "https://www.ysscores.com/ar/match/5089902/West-Ham-United-vs-Queens-Park-Rangers",
-    "info": {
-      "championship": "كأس الاتحاد الإنجليزي",
-      "round": "الدور الثالث",
-      "stadium": "استاد لندن الأولمبي",
-      "time": "15:30",
-      "date": "الأحد 11-01-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "وست هام",
-        "logo": "https://imgs.ysscores.com/teams/128/7191690118603.png"
-      },
-      "away": {
-        "name": "كوينز بارك رينجرز",
-        "logo": "https://imgs.ysscores.com/teams/128/9791690370554.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "باسم الزير"
-      }
-    ]
-  },
-  {
     "id": "5089909",
     "url": "https://www.ysscores.com/ar/match/5089909/Portsmouth-FC-vs-Arsenal-FC",
     "info": {
@@ -921,6 +892,35 @@
       {
         "channel": "بي إن سبورت 1",
         "commentator": "عصام الشوالي"
+      }
+    ]
+  },
+  {
+    "id": "5089902",
+    "url": "https://www.ysscores.com/ar/match/5089902/West-Ham-United-vs-Queens-Park-Rangers",
+    "info": {
+      "championship": "كأس الاتحاد الإنجليزي",
+      "round": "الدور الثالث",
+      "stadium": "استاد لندن الأولمبي",
+      "time": "15:30",
+      "date": "الأحد 11-01-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "وست هام",
+        "logo": "https://imgs.ysscores.com/teams/128/7191690118603.png"
+      },
+      "away": {
+        "name": "كوينز بارك رينجرز",
+        "logo": "https://imgs.ysscores.com/teams/128/9791690370554.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "باسم الزير"
       }
     ]
   },
