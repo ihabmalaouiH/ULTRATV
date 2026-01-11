@@ -8,7 +8,7 @@
       "stadium": "بوروسيا بارك",
       "time": "15:30",
       "date": "الأحد 11-01-2026",
-      "current_score": "1 - 0",
+      "current_score": "2 - 0",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -423,30 +423,6 @@
     "channels": []
   },
   {
-    "id": "4815380",
-    "url": "https://www.ysscores.com/ar/match/4815380/Go-Ahead-Eagles-vs-Fortuna-Sittard",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "18 - مباراة الاياب",
-      "stadium": "دي اديلارشورست",
-      "time": "14:30",
-      "date": "الأحد 11-01-2026",
-      "current_score": "1 - 1",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "جو أهيد إيجلز",
-        "logo": "https://imgs.ysscores.com/teams/128/3951690996987.png"
-      },
-      "away": {
-        "name": "فورتونا سيتارد",
-        "logo": "https://imgs.ysscores.com/teams/128/1881690997103.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4815387",
     "url": "https://www.ysscores.com/ar/match/4815387/SC-Telstar-vs-Ajax-Amsterdam",
     "info": {
@@ -474,6 +450,30 @@
         "commentator": "رؤوف خليف"
       }
     ]
+  },
+  {
+    "id": "4815380",
+    "url": "https://www.ysscores.com/ar/match/4815380/Go-Ahead-Eagles-vs-Fortuna-Sittard",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "18 - مباراة الاياب",
+      "stadium": "دي اديلارشورست",
+      "time": "14:30",
+      "date": "الأحد 11-01-2026",
+      "current_score": "1 - 1",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "جو أهيد إيجلز",
+        "logo": "https://imgs.ysscores.com/teams/128/3951690996987.png"
+      },
+      "away": {
+        "name": "فورتونا سيتارد",
+        "logo": "https://imgs.ysscores.com/teams/128/1881690997103.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "4815382",
@@ -777,6 +777,39 @@
     ]
   },
   {
+    "id": "98527457",
+    "url": "https://www.ysscores.com/ar/match/98527457/Thailand-U23-vs-Iraq-U23",
+    "info": {
+      "championship": "كأس آسيا تحت 23 سنة",
+      "round": "2",
+      "stadium": "استاد الأمير فيصل بن فهد (الملز)",
+      "time": "15:00",
+      "date": "الأحد 11-01-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "تايلاند",
+        "logo": "https://imgs.ysscores.com/teams/128/7571763040399.png"
+      },
+      "away": {
+        "name": "العراق",
+        "logo": "https://imgs.ysscores.com/teams/128/8191763081021.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 6",
+        "commentator": "حسن العيدروس"
+      },
+      {
+        "channel": "الكأس 5",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
     "id": "37394384",
     "url": "https://www.ysscores.com/ar/match/37394384/China-U23-vs-Australia-U23",
     "info": {
@@ -810,37 +843,28 @@
     ]
   },
   {
-    "id": "98527457",
-    "url": "https://www.ysscores.com/ar/match/98527457/Thailand-U23-vs-Iraq-U23",
+    "id": "5089923",
+    "url": "https://www.ysscores.com/ar/match/5089923/Sheffield-United-vs-Mansfield-Town",
     "info": {
-      "championship": "كأس آسيا تحت 23 سنة",
-      "round": "2",
-      "stadium": "استاد الأمير فيصل بن فهد (الملز)",
-      "time": "15:00",
+      "championship": "كأس الاتحاد الإنجليزي",
+      "round": "الدور الثالث",
+      "stadium": "برامول لين",
+      "time": "15:30",
       "date": "الأحد 11-01-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
+      "current_score": "1 - 1",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
-        "name": "تايلاند",
-        "logo": "https://imgs.ysscores.com/teams/128/7571763040399.png"
+        "name": "شيفيلد",
+        "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
       },
       "away": {
-        "name": "العراق",
-        "logo": "https://imgs.ysscores.com/teams/128/8191763081021.png"
+        "name": "مانسفيلد تاون",
+        "logo": "https://imgs.ysscores.com/teams/128/7011690370542.png"
       }
     },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 6",
-        "commentator": "حسن العيدروس"
-      },
-      {
-        "channel": "الكأس 5",
-        "commentator": "غير مدرج"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "5089902",
@@ -899,30 +923,6 @@
         "commentator": "عصام الشوالي"
       }
     ]
-  },
-  {
-    "id": "5089923",
-    "url": "https://www.ysscores.com/ar/match/5089923/Sheffield-United-vs-Mansfield-Town",
-    "info": {
-      "championship": "كأس الاتحاد الإنجليزي",
-      "round": "الدور الثالث",
-      "stadium": "برامول لين",
-      "time": "15:30",
-      "date": "الأحد 11-01-2026",
-      "current_score": "0 - 1",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "شيفيلد",
-        "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
-      },
-      "away": {
-        "name": "مانسفيلد تاون",
-        "logo": "https://imgs.ysscores.com/teams/128/7011690370542.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "5089908",
@@ -1159,7 +1159,7 @@
       "stadium": "مجمع البريمي (النهضة)",
       "time": "14:05",
       "date": "الأحد 11-01-2026",
-      "current_score": "3 - 2",
+      "current_score": "4 - 2",
       "match_status": "الشوط الثاني"
     },
     "teams": {
