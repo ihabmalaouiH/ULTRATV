@@ -187,7 +187,7 @@
       "time": "16:45",
       "date": "الأحد 11-01-2026",
       "current_score": "0 - 1",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -447,35 +447,6 @@
     "channels": []
   },
   {
-    "id": "4815387",
-    "url": "https://www.ysscores.com/ar/match/4815387/SC-Telstar-vs-Ajax-Amsterdam",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "18 - مباراة الاياب",
-      "stadium": "استاد بوكو",
-      "time": "14:30",
-      "date": "الأحد 11-01-2026",
-      "current_score": "2 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "تلستار",
-        "logo": "https://imgs.ysscores.com/teams/128/4281739337303.png"
-      },
-      "away": {
-        "name": "أياكس أمستردام",
-        "logo": "https://imgs.ysscores.com/teams/128/1361751718344.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "دبي الرياضية 2",
-        "commentator": "رؤوف خليف"
-      }
-    ]
-  },
-  {
     "id": "4815382",
     "url": "https://www.ysscores.com/ar/match/4815382/SC-Heerenveen-vs-Feyenoord-Rotterdam",
     "info": {
@@ -505,28 +476,33 @@
     ]
   },
   {
-    "id": "4859109",
-    "url": "https://www.ysscores.com/ar/match/4859109/Panathinaikos-FC-vs-Panserraikos",
+    "id": "4815387",
+    "url": "https://www.ysscores.com/ar/match/4815387/SC-Telstar-vs-Ajax-Amsterdam",
     "info": {
-      "championship": "الدوري اليوناني",
-      "round": "16 - مباراة الاياب",
-      "stadium": "استاد أبوستولوس نيكولايديس",
-      "time": "20:00",
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "18 - مباراة الاياب",
+      "stadium": "استاد بوكو",
+      "time": "14:30",
       "date": "الأحد 11-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "2 - 3",
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "باناثينايكوس",
-        "logo": "https://imgs.ysscores.com/teams/128/8301690821553.png"
+        "name": "تلستار",
+        "logo": "https://imgs.ysscores.com/teams/128/4281739337303.png"
       },
       "away": {
-        "name": "بانسيررايكوس",
-        "logo": "https://imgs.ysscores.com/teams/128/7481754000611.png"
+        "name": "أياكس أمستردام",
+        "logo": "https://imgs.ysscores.com/teams/128/1361751718344.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "دبي الرياضية 2",
+        "commentator": "رؤوف خليف"
+      }
+    ]
   },
   {
     "id": "4859104",
@@ -548,6 +524,30 @@
       "away": {
         "name": "أيك أثينا",
         "logo": "https://imgs.ysscores.com/teams/128/6901694359099.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4859109",
+    "url": "https://www.ysscores.com/ar/match/4859109/Panathinaikos-FC-vs-Panserraikos",
+    "info": {
+      "championship": "الدوري اليوناني",
+      "round": "16 - مباراة الاياب",
+      "stadium": "استاد أبوستولوس نيكولايديس",
+      "time": "20:00",
+      "date": "الأحد 11-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "باناثينايكوس",
+        "logo": "https://imgs.ysscores.com/teams/128/8301690821553.png"
+      },
+      "away": {
+        "name": "بانسيررايكوس",
+        "logo": "https://imgs.ysscores.com/teams/128/7481754000611.png"
       }
     },
     "channels": []
@@ -630,30 +630,6 @@
     ]
   },
   {
-    "id": "5089911",
-    "url": "https://www.ysscores.com/ar/match/5089911/Swansea-City-vs-West-Bromwich-Albion",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "الدور الثالث",
-      "stadium": "سوانزي دوت كوم",
-      "time": "15:30",
-      "date": "الأحد 11-01-2026",
-      "current_score": "1 - 1",
-      "match_status": "الشوط الإضافي الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "سوانزي",
-        "logo": "https://imgs.ysscores.com/teams/128/4561723590559.png"
-      },
-      "away": {
-        "name": "وست بروميتش",
-        "logo": "https://imgs.ysscores.com/teams/128/9971690370534.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5089914",
     "url": "https://www.ysscores.com/ar/match/5089914/Hull-City-vs-Blackburn-Rovers",
     "info": {
@@ -673,6 +649,30 @@
       "away": {
         "name": "بلاكبيرن روفرز",
         "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5089911",
+    "url": "https://www.ysscores.com/ar/match/5089911/Swansea-City-vs-West-Bromwich-Albion",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "الدور الثالث",
+      "stadium": "سوانزي دوت كوم",
+      "time": "15:30",
+      "date": "الأحد 11-01-2026",
+      "current_score": "1 - 1",
+      "match_status": "الشوط الإضافي الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "سوانزي",
+        "logo": "https://imgs.ysscores.com/teams/128/4561723590559.png"
+      },
+      "away": {
+        "name": "وست بروميتش",
+        "logo": "https://imgs.ysscores.com/teams/128/9971690370534.png"
       }
     },
     "channels": []
@@ -852,7 +852,7 @@
       "time": "15:30",
       "date": "الأحد 11-01-2026",
       "current_score": "1 - 1",
-      "match_status": "الانتقال الي الأشواط الإضافية"
+      "match_status": "الشوط الإضافي الأول"
     },
     "teams": {
       "home": {
@@ -870,30 +870,6 @@
         "commentator": "باسم الزير"
       }
     ]
-  },
-  {
-    "id": "5089923",
-    "url": "https://www.ysscores.com/ar/match/5089923/Sheffield-United-vs-Mansfield-Town",
-    "info": {
-      "championship": "كأس الاتحاد الإنجليزي",
-      "round": "الدور الثالث",
-      "stadium": "برامول لين",
-      "time": "15:30",
-      "date": "الأحد 11-01-2026",
-      "current_score": "3 - 4",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "شيفيلد",
-        "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
-      },
-      "away": {
-        "name": "مانسفيلد تاون",
-        "logo": "https://imgs.ysscores.com/teams/128/7011690370542.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "5089909",
@@ -923,6 +899,30 @@
         "commentator": "عصام الشوالي"
       }
     ]
+  },
+  {
+    "id": "5089923",
+    "url": "https://www.ysscores.com/ar/match/5089923/Sheffield-United-vs-Mansfield-Town",
+    "info": {
+      "championship": "كأس الاتحاد الإنجليزي",
+      "round": "الدور الثالث",
+      "stadium": "برامول لين",
+      "time": "15:30",
+      "date": "الأحد 11-01-2026",
+      "current_score": "3 - 4",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "شيفيلد",
+        "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
+      },
+      "away": {
+        "name": "مانسفيلد تاون",
+        "logo": "https://imgs.ysscores.com/teams/128/7011690370542.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "5089922",
@@ -1002,35 +1002,6 @@
     "channels": []
   },
   {
-    "id": "78409495",
-    "url": "https://www.ysscores.com/ar/match/78409495/Zamalek-SC-vs-Zed-FC",
-    "info": {
-      "championship": "كأس الرابطة المصرية",
-      "round": "6",
-      "stadium": "استاد السلام",
-      "time": "16:00",
-      "date": "الأحد 11-01-2026",
-      "current_score": "0 - 1",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "الزمالك",
-        "logo": "https://imgs.ysscores.com/teams/128/7971694082496.png"
-      },
-      "away": {
-        "name": "نادي زد",
-        "logo": "https://imgs.ysscores.com/teams/128/8411694619351.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ON Sport 1",
-        "commentator": "أيمن الكاشف"
-      }
-    ]
-  },
-  {
     "id": "65382754",
     "url": "https://www.ysscores.com/ar/match/65382754/Smouha-SC-vs-Harras-El-Hodoud",
     "info": {
@@ -1056,6 +1027,35 @@
       {
         "channel": "ON Sport 1",
         "commentator": "طارق الأدور"
+      }
+    ]
+  },
+  {
+    "id": "78409495",
+    "url": "https://www.ysscores.com/ar/match/78409495/Zamalek-SC-vs-Zed-FC",
+    "info": {
+      "championship": "كأس الرابطة المصرية",
+      "round": "6",
+      "stadium": "استاد السلام",
+      "time": "16:00",
+      "date": "الأحد 11-01-2026",
+      "current_score": "0 - 1",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "الزمالك",
+        "logo": "https://imgs.ysscores.com/teams/128/7971694082496.png"
+      },
+      "away": {
+        "name": "نادي زد",
+        "logo": "https://imgs.ysscores.com/teams/128/8411694619351.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 1",
+        "commentator": "أيمن الكاشف"
       }
     ]
   },
@@ -1199,35 +1199,6 @@
     "channels": []
   },
   {
-    "id": "5108154",
-    "url": "https://www.ysscores.com/ar/match/5108154/FC-Sochaux-Montbéliard-vs-RC-Lens",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 32",
-      "stadium": "استاد أوغست بونال",
-      "time": "14:00",
-      "date": "الأحد 11-01-2026",
-      "current_score": "0 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "سوشو",
-        "logo": "https://imgs.ysscores.com/teams/128/6061690370544.png"
-      },
-      "away": {
-        "name": "لانس",
-        "logo": "https://imgs.ysscores.com/teams/128/1281690287063.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 4",
-        "commentator": "جواد بدة"
-      }
-    ]
-  },
-  {
     "id": "5108157",
     "url": "https://www.ysscores.com/ar/match/5108157/FC-Metz-vs-Montpellier-HSC",
     "info": {
@@ -1277,6 +1248,35 @@
       {
         "channel": "بي إن سبورت 4",
         "commentator": "محمد بركات"
+      }
+    ]
+  },
+  {
+    "id": "5108154",
+    "url": "https://www.ysscores.com/ar/match/5108154/FC-Sochaux-Montbéliard-vs-RC-Lens",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 32",
+      "stadium": "استاد أوغست بونال",
+      "time": "14:00",
+      "date": "الأحد 11-01-2026",
+      "current_score": "0 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "سوشو",
+        "logo": "https://imgs.ysscores.com/teams/128/6061690370544.png"
+      },
+      "away": {
+        "name": "لانس",
+        "logo": "https://imgs.ysscores.com/teams/128/1281690287063.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 4",
+        "commentator": "جواد بدة"
       }
     ]
   },
