@@ -323,7 +323,7 @@
       "time": "15:00",
       "date": "الأحد 11-01-2026",
       "current_score": "1 - 1",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -925,30 +925,6 @@
     ]
   },
   {
-    "id": "5089908",
-    "url": "https://www.ysscores.com/ar/match/5089908/Norwich-City-vs-Walsall-FC",
-    "info": {
-      "championship": "كأس الاتحاد الإنجليزي",
-      "round": "الدور الثالث",
-      "stadium": "كارو رود",
-      "time": "15:30",
-      "date": "الأحد 11-01-2026",
-      "current_score": "4 - 1",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "نوريتش سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/5201690370543.png"
-      },
-      "away": {
-        "name": "والسول",
-        "logo": "https://imgs.ysscores.com/teams/128/2831690370551.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5089922",
     "url": "https://www.ysscores.com/ar/match/5089922/Manchester-United-vs-Brighton-&-Hove-Albion",
     "info": {
@@ -976,6 +952,30 @@
         "commentator": "علي محمد علي"
       }
     ]
+  },
+  {
+    "id": "5089908",
+    "url": "https://www.ysscores.com/ar/match/5089908/Norwich-City-vs-Walsall-FC",
+    "info": {
+      "championship": "كأس الاتحاد الإنجليزي",
+      "round": "الدور الثالث",
+      "stadium": "كارو رود",
+      "time": "15:30",
+      "date": "الأحد 11-01-2026",
+      "current_score": "4 - 1",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "نوريتش سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/5201690370543.png"
+      },
+      "away": {
+        "name": "والسول",
+        "logo": "https://imgs.ysscores.com/teams/128/2831690370551.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "5074289",
@@ -1175,30 +1175,6 @@
     "channels": []
   },
   {
-    "id": "5108157",
-    "url": "https://www.ysscores.com/ar/match/5108157/FC-Metz-vs-Montpellier-HSC",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 32",
-      "stadium": "سانت سيمفورين",
-      "time": "18:00",
-      "date": "الأحد 11-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ميتز",
-        "logo": "https://imgs.ysscores.com/teams/128/5631690287157.png"
-      },
-      "away": {
-        "name": "مونبلييه",
-        "logo": "https://imgs.ysscores.com/teams/128/691720799295.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5108158",
     "url": "https://www.ysscores.com/ar/match/5108158/US-Chantilly-vs-Stade-Rennais-FC",
     "info": {
@@ -1218,6 +1194,30 @@
       "away": {
         "name": "رين",
         "logo": "https://imgs.ysscores.com/teams/128/5061690287944.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5108157",
+    "url": "https://www.ysscores.com/ar/match/5108157/FC-Metz-vs-Montpellier-HSC",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 32",
+      "stadium": "سانت سيمفورين",
+      "time": "18:00",
+      "date": "الأحد 11-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ميتز",
+        "logo": "https://imgs.ysscores.com/teams/128/5631690287157.png"
+      },
+      "away": {
+        "name": "مونبلييه",
+        "logo": "https://imgs.ysscores.com/teams/128/691720799295.png"
       }
     },
     "channels": []
