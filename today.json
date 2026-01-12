@@ -206,7 +206,7 @@
       "stadium": "استاد بروكسي",
       "time": "13:30",
       "date": "الاثنين 12-01-2026",
-      "current_score": "1 - 0",
+      "current_score": "1 - 1",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -457,35 +457,6 @@
     "channels": []
   },
   {
-    "id": "47567665",
-    "url": "https://www.ysscores.com/ar/match/47567665/El-Mokawloon-SC-vs-Enppi-SC",
-    "info": {
-      "championship": "كأس الرابطة المصرية",
-      "round": "6",
-      "stadium": "استاد المقاولون العرب",
-      "time": "16:00",
-      "date": "الاثنين 12-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "المقاولون العرب",
-        "logo": "https://imgs.ysscores.com/teams/128/2721694082551.png"
-      },
-      "away": {
-        "name": "إنبي",
-        "logo": "https://imgs.ysscores.com/teams/128/1161694082612.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ON Sport 2",
-        "commentator": "محمود أبو الركب"
-      }
-    ]
-  },
-  {
     "id": "23420503",
     "url": "https://www.ysscores.com/ar/match/23420503/Ghazl-El-Mahalla-vs-Cleopatra-FC",
     "info": {
@@ -511,6 +482,35 @@
       {
         "channel": "ON Sport 1",
         "commentator": "محمد الكواليني"
+      }
+    ]
+  },
+  {
+    "id": "47567665",
+    "url": "https://www.ysscores.com/ar/match/47567665/El-Mokawloon-SC-vs-Enppi-SC",
+    "info": {
+      "championship": "كأس الرابطة المصرية",
+      "round": "6",
+      "stadium": "استاد المقاولون العرب",
+      "time": "16:00",
+      "date": "الاثنين 12-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "المقاولون العرب",
+        "logo": "https://imgs.ysscores.com/teams/128/2721694082551.png"
+      },
+      "away": {
+        "name": "إنبي",
+        "logo": "https://imgs.ysscores.com/teams/128/1161694082612.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 2",
+        "commentator": "محمود أبو الركب"
       }
     ]
   },
