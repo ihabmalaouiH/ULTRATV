@@ -108,7 +108,7 @@
       "time": "18:30",
       "date": "الاثنين 12-01-2026",
       "current_score": "1 - 2",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -222,35 +222,6 @@
     "channels": []
   },
   {
-    "id": "27463316",
-    "url": "https://www.ysscores.com/ar/match/27463316/Al-Ula-FC-vs-Al-Jubail-Club",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "16 - مباراة الذهاب",
-      "stadium": "استاد الأمير محمد بن عبدالعزيز (المدينة المنورة)",
-      "time": "13:50",
-      "date": "الاثنين 12-01-2026",
-      "current_score": "3 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "العلا",
-        "logo": "https://imgs.ysscores.com/teams/128/1691755364441.png"
-      },
-      "away": {
-        "name": "الجبيل",
-        "logo": "https://imgs.ysscores.com/teams/128/6841751106535.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "أحمد المنتشري"
-      }
-    ]
-  },
-  {
     "id": "79178005",
     "url": "https://www.ysscores.com/ar/match/79178005/Al-Wehda-FC-vs-Al-Jandal-SC",
     "info": {
@@ -305,6 +276,35 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "سلطان الحربي"
+      }
+    ]
+  },
+  {
+    "id": "27463316",
+    "url": "https://www.ysscores.com/ar/match/27463316/Al-Ula-FC-vs-Al-Jubail-Club",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "16 - مباراة الذهاب",
+      "stadium": "استاد الأمير محمد بن عبدالعزيز (المدينة المنورة)",
+      "time": "13:50",
+      "date": "الاثنين 12-01-2026",
+      "current_score": "3 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "العلا",
+        "logo": "https://imgs.ysscores.com/teams/128/1691755364441.png"
+      },
+      "away": {
+        "name": "الجبيل",
+        "logo": "https://imgs.ysscores.com/teams/128/6841751106535.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "أحمد المنتشري"
       }
     ]
   },
