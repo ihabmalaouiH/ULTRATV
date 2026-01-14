@@ -365,7 +365,7 @@
     },
     "channels": [
       {
-        "channel": "قنوات ثمانية",
+        "channel": "ثمانية 1",
         "commentator": "عبدالله الحربي"
       },
       {
@@ -398,7 +398,7 @@
     },
     "channels": [
       {
-        "channel": "قنوات ثمانية",
+        "channel": "ثمانية 2",
         "commentator": "مشاري القرني"
       },
       {
@@ -431,7 +431,7 @@
     },
     "channels": [
       {
-        "channel": "قنوات ثمانية",
+        "channel": "ثمانية 3",
         "commentator": "خالد المديفر"
       },
       {
@@ -441,35 +441,31 @@
     ]
   },
   {
-    "id": "71674528",
-    "url": "https://www.ysscores.com/ar/match/71674528/Newroz-SC-vs-Al-Talaba-SC",
+    "id": "81486909",
+    "url": "https://www.ysscores.com/ar/match/81486909/Al-Minaa-SC-vs-Al-Karkh-SC",
     "info": {
       "championship": "الدوري العراقي",
       "round": "12 - مباراة الذهاب",
-      "stadium": "استاد نوروز",
-      "time": "13:00",
+      "stadium": "استاد الفيحاء",
+      "time": "15:30",
       "date": "الأربعاء 14-01-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "نوروز",
-        "logo": "https://imgs.ysscores.com/teams/128/1311754243359.png"
+        "name": "الميناء",
+        "logo": "https://imgs.ysscores.com/teams/128/7791709127942.png"
       },
       "away": {
-        "name": "الطلبة",
-        "logo": "https://imgs.ysscores.com/teams/128/9541695656866.png"
+        "name": "الكرخ",
+        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
       }
     },
     "channels": [
       {
-        "channel": "العراقية السريانية",
-        "commentator": "عباس هادي"
-      },
-      {
-        "channel": "الكأس 1",
-        "commentator": "يزن اللبابنة"
+        "channel": "العراقية الرياضية",
+        "commentator": "حسين الساعدي"
       }
     ]
   },
@@ -503,31 +499,35 @@
     ]
   },
   {
-    "id": "81486909",
-    "url": "https://www.ysscores.com/ar/match/81486909/Al-Minaa-SC-vs-Al-Karkh-SC",
+    "id": "71674528",
+    "url": "https://www.ysscores.com/ar/match/71674528/Newroz-SC-vs-Al-Talaba-SC",
     "info": {
       "championship": "الدوري العراقي",
       "round": "12 - مباراة الذهاب",
-      "stadium": "استاد الفيحاء",
-      "time": "15:30",
+      "stadium": "استاد نوروز",
+      "time": "13:00",
       "date": "الأربعاء 14-01-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "الميناء",
-        "logo": "https://imgs.ysscores.com/teams/128/7791709127942.png"
+        "name": "نوروز",
+        "logo": "https://imgs.ysscores.com/teams/128/1311754243359.png"
       },
       "away": {
-        "name": "الكرخ",
-        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
+        "name": "الطلبة",
+        "logo": "https://imgs.ysscores.com/teams/128/9541695656866.png"
       }
     },
     "channels": [
       {
-        "channel": "العراقية الرياضية",
-        "commentator": "حسين الساعدي"
+        "channel": "العراقية السريانية",
+        "commentator": "عباس هادي"
+      },
+      {
+        "channel": "الكأس 1",
+        "commentator": "يزن اللبابنة"
       }
     ]
   },
@@ -652,30 +652,6 @@
     ]
   },
   {
-    "id": "5111117",
-    "url": "https://www.ysscores.com/ar/match/5111117/Al-Khums-SC-vs-Libyan-Stadium",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "5 - مباراة الذهاب",
-      "stadium": "ملعب الخمس",
-      "time": "14:30",
-      "date": "الأربعاء 14-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الخمس",
-        "logo": "https://imgs.ysscores.com/teams/128/17656575035545.png"
-      },
-      "away": {
-        "name": "الملعب الليبي",
-        "logo": "https://imgs.ysscores.com/teams/128/17656589037683.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111154",
     "url": "https://www.ysscores.com/ar/match/5111154/Al-Soqour-Tobruk-vs-Al-Borouq-FC",
     "info": {
@@ -695,6 +671,30 @@
       "away": {
         "name": "البروق",
         "logo": "https://imgs.ysscores.com/teams/128/17656432533307.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111117",
+    "url": "https://www.ysscores.com/ar/match/5111117/Al-Khums-SC-vs-Libyan-Stadium",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "5 - مباراة الذهاب",
+      "stadium": "ملعب الخمس",
+      "time": "14:30",
+      "date": "الأربعاء 14-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الخمس",
+        "logo": "https://imgs.ysscores.com/teams/128/17656575035545.png"
+      },
+      "away": {
+        "name": "الملعب الليبي",
+        "logo": "https://imgs.ysscores.com/teams/128/17656589037683.png"
       }
     },
     "channels": []
@@ -862,47 +862,6 @@
     ]
   },
   {
-    "id": "5073476",
-    "url": "https://www.ysscores.com/ar/match/5073476/Nigeria-vs-Morocco",
-    "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "نصف نهائي",
-      "stadium": "المجمع الرياضي الأمير مولاي عبد الله",
-      "time": "21:00",
-      "date": "الأربعاء 14-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "نيجيريا",
-        "logo": "https://imgs.ysscores.com/teams/128/9961763084205.png"
-      },
-      "away": {
-        "name": "المغرب",
-        "logo": "https://imgs.ysscores.com/teams/128/6291763083538.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Max 1",
-        "commentator": "جواد بدة"
-      },
-      {
-        "channel": "beIN Max 2",
-        "commentator": "جواد بدة"
-      },
-      {
-        "channel": "beIN Max 3",
-        "commentator": "جواد بدة"
-      },
-      {
-        "channel": "المغربية (بث أرضي)",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5073475",
     "url": "https://www.ysscores.com/ar/match/5073475/Senegal-vs-Egypt",
     "info": {
@@ -940,6 +899,47 @@
       {
         "channel": "القناة الأرضية الجزائرية",
         "commentator": "علي جعفر"
+      }
+    ]
+  },
+  {
+    "id": "5073476",
+    "url": "https://www.ysscores.com/ar/match/5073476/Nigeria-vs-Morocco",
+    "info": {
+      "championship": "كأس الأمم الأفريقية",
+      "round": "نصف نهائي",
+      "stadium": "المجمع الرياضي الأمير مولاي عبد الله",
+      "time": "21:00",
+      "date": "الأربعاء 14-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "نيجيريا",
+        "logo": "https://imgs.ysscores.com/teams/128/9961763084205.png"
+      },
+      "away": {
+        "name": "المغرب",
+        "logo": "https://imgs.ysscores.com/teams/128/6291763083538.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Max 1",
+        "commentator": "جواد بدة"
+      },
+      {
+        "channel": "beIN Max 2",
+        "commentator": "جواد بدة"
+      },
+      {
+        "channel": "beIN Max 3",
+        "commentator": "جواد بدة"
+      },
+      {
+        "channel": "المغربية (بث أرضي)",
+        "commentator": "غير مدرج"
       }
     ]
   },
@@ -1021,35 +1021,6 @@
     ]
   },
   {
-    "id": "5085915",
-    "url": "https://www.ysscores.com/ar/match/5085915/Aliaga-FK-vs-Samsunspor",
-    "info": {
-      "championship": "كأس تركيا",
-      "round": "2",
-      "stadium": "ملعب مدينة ألياغا",
-      "time": "11:00",
-      "date": "الأربعاء 14-01-2026",
-      "current_score": "0 - 2",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "ألياجا",
-        "logo": "https://imgs.ysscores.com/teams/128/9221761599684.png"
-      },
-      "away": {
-        "name": "سامسون سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/4911690127919.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "A Spor",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5085839",
     "url": "https://www.ysscores.com/ar/match/5085839/Istanbulspor-vs-Trabzonspor",
     "info": {
@@ -1069,6 +1040,35 @@
       "away": {
         "name": "طرابزون سبور",
         "logo": "https://imgs.ysscores.com/teams/128/7531690127980.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "A Spor",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5085915",
+    "url": "https://www.ysscores.com/ar/match/5085915/Aliaga-FK-vs-Samsunspor",
+    "info": {
+      "championship": "كأس تركيا",
+      "round": "2",
+      "stadium": "ملعب مدينة ألياغا",
+      "time": "11:00",
+      "date": "الأربعاء 14-01-2026",
+      "current_score": "0 - 2",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "ألياجا",
+        "logo": "https://imgs.ysscores.com/teams/128/9221761599684.png"
+      },
+      "away": {
+        "name": "سامسون سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/4911690127919.png"
       }
     },
     "channels": [
@@ -1137,35 +1137,6 @@
     ]
   },
   {
-    "id": "5125327",
-    "url": "https://www.ysscores.com/ar/match/5125327/Real-Betis-Balompié-vs-Elche-CF",
-    "info": {
-      "championship": "كأس ملك إسبانيا",
-      "round": "دور الـ 16",
-      "stadium": "بينيتو فيامارين",
-      "time": "21:00",
-      "date": "الأربعاء 14-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ريال بيتيس",
-        "logo": "https://imgs.ysscores.com/teams/128/17645945054618.png"
-      },
-      "away": {
-        "name": "إلتشي",
-        "logo": "https://imgs.ysscores.com/teams/128/6441698766179.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "شاهد - VIP | رياضة",
-        "commentator": "محمد الخامسي"
-      }
-    ]
-  },
-  {
     "id": "5125321",
     "url": "https://www.ysscores.com/ar/match/5125321/Deportivo-Alavés-vs-Rayo-Vallecano",
     "info": {
@@ -1191,6 +1162,35 @@
       {
         "channel": "شاهد - VIP | رياضة",
         "commentator": "عبدالله المحيسن"
+      }
+    ]
+  },
+  {
+    "id": "5125327",
+    "url": "https://www.ysscores.com/ar/match/5125327/Real-Betis-Balompié-vs-Elche-CF",
+    "info": {
+      "championship": "كأس ملك إسبانيا",
+      "round": "دور الـ 16",
+      "stadium": "بينيتو فيامارين",
+      "time": "21:00",
+      "date": "الأربعاء 14-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ريال بيتيس",
+        "logo": "https://imgs.ysscores.com/teams/128/17645945054618.png"
+      },
+      "away": {
+        "name": "إلتشي",
+        "logo": "https://imgs.ysscores.com/teams/128/6441698766179.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "شاهد - VIP | رياضة",
+        "commentator": "محمد الخامسي"
       }
     ]
   },
