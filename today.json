@@ -745,30 +745,6 @@
     "channels": []
   },
   {
-    "id": "4820833",
-    "url": "https://www.ysscores.com/ar/match/4820833/FC-Sion-vs-FC-Winterthur",
-    "info": {
-      "championship": "دوري السوبر السويسري",
-      "round": "19 - مباراة الاياب",
-      "stadium": "توربيلون",
-      "time": "20:30",
-      "date": "الأربعاء 14-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "سيون",
-        "logo": "https://imgs.ysscores.com/teams/128/631690370555.png"
-      },
-      "away": {
-        "name": "فينترتور",
-        "logo": "https://imgs.ysscores.com/teams/128/1711717483087.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4820830",
     "url": "https://www.ysscores.com/ar/match/4820830/Servette-FC-vs-FC-Lausanne-Sport",
     "info": {
@@ -788,6 +764,30 @@
       "away": {
         "name": "لوزان",
         "logo": "https://imgs.ysscores.com/teams/128/1471690370506.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4820833",
+    "url": "https://www.ysscores.com/ar/match/4820833/FC-Sion-vs-FC-Winterthur",
+    "info": {
+      "championship": "دوري السوبر السويسري",
+      "round": "19 - مباراة الاياب",
+      "stadium": "توربيلون",
+      "time": "20:30",
+      "date": "الأربعاء 14-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "سيون",
+        "logo": "https://imgs.ysscores.com/teams/128/631690370555.png"
+      },
+      "away": {
+        "name": "فينترتور",
+        "logo": "https://imgs.ysscores.com/teams/128/1711717483087.png"
       }
     },
     "channels": []
@@ -1072,35 +1072,6 @@
     ]
   },
   {
-    "id": "5085839",
-    "url": "https://www.ysscores.com/ar/match/5085839/Istanbulspor-vs-Trabzonspor",
-    "info": {
-      "championship": "كأس تركيا",
-      "round": "2",
-      "stadium": "نجمي قاضي أوغلو",
-      "time": "16:00",
-      "date": "الأربعاء 14-01-2026",
-      "current_score": "1 - 6",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "اسطنبول سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/7061690128485.png"
-      },
-      "away": {
-        "name": "طرابزون سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/7531690127980.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "A Spor",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5085946",
     "url": "https://www.ysscores.com/ar/match/5085946/Beyoglu-Yeni-Carsi-FK-vs-Fenerbahce",
     "info": {
@@ -1120,6 +1091,35 @@
       "away": {
         "name": "فنربخشة",
         "logo": "https://imgs.ysscores.com/teams/128/681690127723.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "A Spor",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5085839",
+    "url": "https://www.ysscores.com/ar/match/5085839/Istanbulspor-vs-Trabzonspor",
+    "info": {
+      "championship": "كأس تركيا",
+      "round": "2",
+      "stadium": "نجمي قاضي أوغلو",
+      "time": "16:00",
+      "date": "الأربعاء 14-01-2026",
+      "current_score": "1 - 6",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "اسطنبول سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/7061690128485.png"
+      },
+      "away": {
+        "name": "طرابزون سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/7531690127980.png"
       }
     },
     "channels": [
