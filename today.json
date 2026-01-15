@@ -668,30 +668,6 @@
     "channels": []
   },
   {
-    "id": "5111151",
-    "url": "https://www.ysscores.com/ar/match/5111151/Darnes-SC-vs-Al-Ahly-SCSC-(Benghazi)",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "5 - مباراة الذهاب",
-      "stadium": "ملعب درنة",
-      "time": "14:00",
-      "date": "الأربعاء 14-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "دارنس",
-        "logo": "https://imgs.ysscores.com/teams/128/17656437439520.png"
-      },
-      "away": {
-        "name": "الأهلي بنغازي",
-        "logo": "https://imgs.ysscores.com/teams/128/17666732344755.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111117",
     "url": "https://www.ysscores.com/ar/match/5111117/Al-Khums-SC-vs-Libyan-Stadium",
     "info": {
@@ -719,6 +695,30 @@
         "commentator": "غير مدرج"
       }
     ]
+  },
+  {
+    "id": "5111151",
+    "url": "https://www.ysscores.com/ar/match/5111151/Darnes-SC-vs-Al-Ahly-SCSC-(Benghazi)",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "5 - مباراة الذهاب",
+      "stadium": "ملعب درنة",
+      "time": "14:00",
+      "date": "الأربعاء 14-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "دارنس",
+        "logo": "https://imgs.ysscores.com/teams/128/17656437439520.png"
+      },
+      "away": {
+        "name": "الأهلي بنغازي",
+        "logo": "https://imgs.ysscores.com/teams/128/17666732344755.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "5111118",
@@ -859,6 +859,43 @@
     ]
   },
   {
+    "id": "5073475",
+    "url": "https://www.ysscores.com/ar/match/5073475/Senegal-vs-Egypt",
+    "info": {
+      "championship": "كأس الأمم الأفريقية",
+      "round": "نصف نهائي",
+      "stadium": "استاد ابن بطوطة",
+      "time": "18:00",
+      "date": "الأربعاء 14-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "السنغال",
+        "logo": "https://imgs.ysscores.com/teams/128/1831763086441.png"
+      },
+      "away": {
+        "name": "مصر",
+        "logo": "https://imgs.ysscores.com/teams/128/9301763071949.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Max 2",
+        "commentator": "علي محمد علي"
+      },
+      {
+        "channel": "beIN Max 3",
+        "commentator": "علي محمد علي"
+      },
+      {
+        "channel": "القناة الأرضية الجزائرية",
+        "commentator": "علي جعفر"
+      }
+    ]
+  },
+  {
     "id": "5073476",
     "url": "https://www.ysscores.com/ar/match/5073476/Nigeria-vs-Morocco",
     "info": {
@@ -896,43 +933,6 @@
       {
         "channel": "المغربية (بث أرضي)",
         "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "5073475",
-    "url": "https://www.ysscores.com/ar/match/5073475/Senegal-vs-Egypt",
-    "info": {
-      "championship": "كأس الأمم الأفريقية",
-      "round": "نصف نهائي",
-      "stadium": "استاد ابن بطوطة",
-      "time": "18:00",
-      "date": "الأربعاء 14-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "السنغال",
-        "logo": "https://imgs.ysscores.com/teams/128/1831763086441.png"
-      },
-      "away": {
-        "name": "مصر",
-        "logo": "https://imgs.ysscores.com/teams/128/9301763071949.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Max 2",
-        "commentator": "علي محمد علي"
-      },
-      {
-        "channel": "beIN Max 3",
-        "commentator": "علي محمد علي"
-      },
-      {
-        "channel": "القناة الأرضية الجزائرية",
-        "commentator": "علي جعفر"
       }
     ]
   },
