@@ -156,6 +156,7 @@
             
             <div class="form-group" style="display: flex; gap: 10px; flex-wrap: wrap;">
                 <button id="firebase-sync-btn" class="firebase-btn" style="flex: 2;">🔥 حفظ التغييرات في Firebase</button>
+                <button id="add-json-pkg-btn" style="background-color: #673ab7; color: white; border-color: #673ab7; flex: 1;">📝 إضافة كود باقة</button>
                 <button id="import-btn" style="flex: 1;">📂 استيراد JSON</button>
                 <button id="export-btn" style="flex: 1;">📁 تصدير JSON</button>
             </div>
@@ -239,6 +240,17 @@
         </div>
     </div>
 
+    <div id="addJsonPkgModal" class="modal">
+        <div class="modal-content">
+           <div class="modal-header"><span class="close-btn" data-modal="jsonPkg">&times;</span><h2>إضافة باقة بالكود (JSON)</h2></div>
+           <div style="padding: 20px 0;">
+               <label>ضع كود الباقة هنا (JSON Object):</label>
+               <textarea id="json-pkg-input" rows="10" style="margin-top: 10px;" placeholder='{"name": "اسم الباقة", "logoUrl": "...", "channels": [...]}'></textarea>
+           </div>
+           <button id="confirm-add-json-btn" style="background-color: #673ab7; color: white; border-color: #673ab7;">دمج الباقة</button>
+       </div>
+   </div>
+
     <div id="toast-container"></div>
 
     <script>
@@ -272,7 +284,8 @@
             server: document.getElementById('editServerModal'),
             copy: document.getElementById('copyChannelModal'),
             bulk: document.getElementById('bulkAddServerModal'),
-            move: document.getElementById('moveItemModal')
+            move: document.getElementById('moveItemModal'),
+            jsonPkg: document.getElementById('addJsonPkgModal') // Added new modal
         };
         
         let data = [];
@@ -732,6 +745,36 @@
             input.click();
         });
 
+        // 🆕 NEW LOGIC: Add Package via Code Button 🆕
+        document.getElementById('add-json-pkg-btn').addEventListener('click', () => {
+             document.getElementById('json-pkg-input').value = '';
+             modals.jsonPkg.style.display = 'block';
+        });
+
+        document.getElementById('confirm-add-json-btn').addEventListener('click', () => {
+             const raw = document.getElementById('json-pkg-input').value;
+             try {
+                 const parsed = JSON.parse(raw);
+                 // Support adding single object or array of objects
+                 const items = Array.isArray(parsed) ? parsed : [parsed];
+                 
+                 items.forEach(item => {
+                     // Basic validation/sanitization to match existing structure
+                     // Ensure channels array exists so it doesn't break render()
+                     if(!item.channels) item.channels = [];
+                     data.push(item);
+                 });
+                 
+                 render();
+                 updateJsonOutput();
+                 showToast('تم دمج الباقة/الباقات بنجاح ✅');
+                 modals.jsonPkg.style.display = 'none';
+             } catch(e) {
+                 showToast('كود غير صحيح (Invalid JSON)', 'error');
+             }
+        });
+        // 🆕 END NEW LOGIC 🆕
+
         document.querySelectorAll('.close-btn').forEach(btn => {
             btn.onclick = () => { modals[btn.dataset.modal].style.display = 'none'; };
         });
@@ -808,4 +851,4 @@
     });
     </script>
 </body>
-    </html>
+</html>
