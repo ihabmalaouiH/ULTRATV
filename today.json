@@ -444,6 +444,30 @@
     "channels": []
   },
   {
+    "id": "4946328",
+    "url": "https://www.ysscores.com/ar/match/4946328/FC-Masar-vs-Tersana-FC",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "19 - مباراة الاياب",
+      "stadium": "ستاد بتروسبورت",
+      "time": "13:30",
+      "date": "الخميس 15-01-2026",
+      "current_score": "0 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "مسار",
+        "logo": "https://imgs.ysscores.com/teams/128/9871753647957.png"
+      },
+      "away": {
+        "name": "الترسانة",
+        "logo": "https://imgs.ysscores.com/teams/128/1081715096208.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4946323",
     "url": "https://www.ysscores.com/ar/match/4946323/Abo-Qir-Fertilizers-vs-Petrol-Asyut",
     "info": {
@@ -471,30 +495,6 @@
         "commentator": "أمير محروس"
       }
     ]
-  },
-  {
-    "id": "4946328",
-    "url": "https://www.ysscores.com/ar/match/4946328/FC-Masar-vs-Tersana-FC",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "19 - مباراة الاياب",
-      "stadium": "ستاد بتروسبورت",
-      "time": "13:30",
-      "date": "الخميس 15-01-2026",
-      "current_score": "0 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "مسار",
-        "logo": "https://imgs.ysscores.com/teams/128/9871753647957.png"
-      },
-      "away": {
-        "name": "الترسانة",
-        "logo": "https://imgs.ysscores.com/teams/128/1081715096208.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "4946324",
@@ -685,35 +685,6 @@
     ]
   },
   {
-    "id": "99986290",
-    "url": "https://www.ysscores.com/ar/match/99986290/CR-Belouizdad-vs-ASM-Oran",
-    "info": {
-      "championship": "كأس الجزائر",
-      "round": "ثمن النهائي",
-      "stadium": "استاد نيلسون مانديلا",
-      "time": "19:00",
-      "date": "الخميس 15-01-2026",
-      "current_score": "3 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "شباب بلوزداد",
-        "logo": "https://imgs.ysscores.com/teams/128/4951692205804.png"
-      },
-      "away": {
-        "name": "جمعية وهران",
-        "logo": "https://imgs.ysscores.com/teams/128/5851744508290.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الرياضية ويب",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "31209511",
     "url": "https://www.ysscores.com/ar/match/31209511/CA-Batna-vs-Paradou-AC",
     "info": {
@@ -733,6 +704,35 @@
       "away": {
         "name": "بارادو",
         "logo": "https://imgs.ysscores.com/teams/128/3511693418113.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الرياضية ويب",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "99986290",
+    "url": "https://www.ysscores.com/ar/match/99986290/CR-Belouizdad-vs-ASM-Oran",
+    "info": {
+      "championship": "كأس الجزائر",
+      "round": "ثمن النهائي",
+      "stadium": "استاد نيلسون مانديلا",
+      "time": "19:00",
+      "date": "الخميس 15-01-2026",
+      "current_score": "3 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "شباب بلوزداد",
+        "logo": "https://imgs.ysscores.com/teams/128/4951692205804.png"
+      },
+      "away": {
+        "name": "جمعية وهران",
+        "logo": "https://imgs.ysscores.com/teams/128/5851744508290.png"
       }
     },
     "channels": [
