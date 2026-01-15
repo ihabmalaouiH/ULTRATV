@@ -227,7 +227,7 @@
       "stadium": "ملعب اللاذقية البلدي",
       "time": "12:00",
       "date": "الخميس 15-01-2026",
-      "current_score": "0 - 0",
+      "current_score": "1 - 0",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -444,30 +444,6 @@
     "channels": []
   },
   {
-    "id": "4946328",
-    "url": "https://www.ysscores.com/ar/match/4946328/FC-Masar-vs-Tersana-FC",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "19 - مباراة الاياب",
-      "stadium": "ستاد بتروسبورت",
-      "time": "13:30",
-      "date": "الخميس 15-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "مسار",
-        "logo": "https://imgs.ysscores.com/teams/128/9871753647957.png"
-      },
-      "away": {
-        "name": "الترسانة",
-        "logo": "https://imgs.ysscores.com/teams/128/1081715096208.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4946327",
     "url": "https://www.ysscores.com/ar/match/4946327/Maleyat-Kafr-Elzayat-vs-Dayrout-SC",
     "info": {
@@ -487,30 +463,6 @@
       "away": {
         "name": "ديروط",
         "logo": "https://imgs.ysscores.com/teams/128/4951728755572.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4946324",
-    "url": "https://www.ysscores.com/ar/match/4946324/Qanah-FC-vs-La-Viena-FC",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "19 - مباراة الاياب",
-      "stadium": "استاد القناة",
-      "time": "13:30",
-      "date": "الخميس 15-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "القناة",
-        "logo": "https://imgs.ysscores.com/teams/128/5821715097236.png"
-      },
-      "away": {
-        "name": "لا فينا",
-        "logo": "https://imgs.ysscores.com/teams/128/1541696284458.png"
       }
     },
     "channels": []
@@ -543,6 +495,54 @@
         "commentator": "أمير محروس"
       }
     ]
+  },
+  {
+    "id": "4946324",
+    "url": "https://www.ysscores.com/ar/match/4946324/Qanah-FC-vs-La-Viena-FC",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "19 - مباراة الاياب",
+      "stadium": "استاد القناة",
+      "time": "13:30",
+      "date": "الخميس 15-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "القناة",
+        "logo": "https://imgs.ysscores.com/teams/128/5821715097236.png"
+      },
+      "away": {
+        "name": "لا فينا",
+        "logo": "https://imgs.ysscores.com/teams/128/1541696284458.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4946328",
+    "url": "https://www.ysscores.com/ar/match/4946328/FC-Masar-vs-Tersana-FC",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "19 - مباراة الاياب",
+      "stadium": "ستاد بتروسبورت",
+      "time": "13:30",
+      "date": "الخميس 15-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "مسار",
+        "logo": "https://imgs.ysscores.com/teams/128/9871753647957.png"
+      },
+      "away": {
+        "name": "الترسانة",
+        "logo": "https://imgs.ysscores.com/teams/128/1081715096208.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "4946329",
@@ -902,35 +902,6 @@
     ]
   },
   {
-    "id": "5085917",
-    "url": "https://www.ysscores.com/ar/match/5085917/Bodrum-FK-vs-Konyaspor",
-    "info": {
-      "championship": "كأس تركيا",
-      "round": "2",
-      "stadium": "ملعب منطقة بودروم",
-      "time": "16:00",
-      "date": "الخميس 15-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "بودروم سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/2311700667812.png"
-      },
-      "away": {
-        "name": "قونيا سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/8771690127634.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "A Spor",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5085948",
     "url": "https://www.ysscores.com/ar/match/5085948/Erzurumspor-FK-vs-Caykur-Rizespor",
     "info": {
@@ -950,6 +921,35 @@
       "away": {
         "name": "ريزه سبور",
         "logo": "https://imgs.ysscores.com/teams/128/5931690127362.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "A Spor",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5085917",
+    "url": "https://www.ysscores.com/ar/match/5085917/Bodrum-FK-vs-Konyaspor",
+    "info": {
+      "championship": "كأس تركيا",
+      "round": "2",
+      "stadium": "ملعب منطقة بودروم",
+      "time": "16:00",
+      "date": "الخميس 15-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "بودروم سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/2311700667812.png"
+      },
+      "away": {
+        "name": "قونيا سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/8771690127634.png"
       }
     },
     "channels": [
@@ -1022,30 +1022,6 @@
     ]
   },
   {
-    "id": "5104606",
-    "url": "https://www.ysscores.com/ar/match/5104606/SC-Heerenveen-vs-RKC-Waalwijk",
-    "info": {
-      "championship": "كأس هولندا",
-      "round": "دور الـ 16",
-      "stadium": "ايب لنسترا",
-      "time": "18:45",
-      "date": "الخميس 15-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "هيرينفين",
-        "logo": "https://imgs.ysscores.com/teams/128/6771725055096.png"
-      },
-      "away": {
-        "name": "فالفيك",
-        "logo": "https://imgs.ysscores.com/teams/128/6061690457395.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5104609",
     "url": "https://www.ysscores.com/ar/match/5104609/Sparta-Rotterdam-vs-FC-Volendam",
     "info": {
@@ -1065,6 +1041,30 @@
       "away": {
         "name": "فولندام",
         "logo": "https://imgs.ysscores.com/teams/128/7791690824589.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5104606",
+    "url": "https://www.ysscores.com/ar/match/5104606/SC-Heerenveen-vs-RKC-Waalwijk",
+    "info": {
+      "championship": "كأس هولندا",
+      "round": "دور الـ 16",
+      "stadium": "ايب لنسترا",
+      "time": "18:45",
+      "date": "الخميس 15-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "هيرينفين",
+        "logo": "https://imgs.ysscores.com/teams/128/6771725055096.png"
+      },
+      "away": {
+        "name": "فالفيك",
+        "logo": "https://imgs.ysscores.com/teams/128/6061690457395.png"
       }
     },
     "channels": []
