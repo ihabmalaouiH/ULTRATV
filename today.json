@@ -415,7 +415,7 @@
       "time": "17:30",
       "date": "الجمعة 16-01-2026",
       "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -651,30 +651,6 @@
     "channels": []
   },
   {
-    "id": "4946326",
-    "url": "https://www.ysscores.com/ar/match/4946326/El-Dakhlia-SC-vs-WE-Sports-Club",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "19 - مباراة الاياب",
-      "stadium": "استاد كلية الشرطة",
-      "time": "13:30",
-      "date": "الجمعة 16-01-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الداخلية",
-        "logo": "https://imgs.ysscores.com/teams/128/7881694082064.png"
-      },
-      "away": {
-        "name": "وي",
-        "logo": "https://imgs.ysscores.com/teams/128/9521696285165.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4946330",
     "url": "https://www.ysscores.com/ar/match/4946330/Entag-El-Harby-vs-Mansoura-SC",
     "info": {
@@ -694,6 +670,30 @@
       "away": {
         "name": "المنصورة",
         "logo": "https://imgs.ysscores.com/teams/128/8231728755782.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4946326",
+    "url": "https://www.ysscores.com/ar/match/4946326/El-Dakhlia-SC-vs-WE-Sports-Club",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "19 - مباراة الاياب",
+      "stadium": "استاد كلية الشرطة",
+      "time": "13:30",
+      "date": "الجمعة 16-01-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الداخلية",
+        "logo": "https://imgs.ysscores.com/teams/128/7881694082064.png"
+      },
+      "away": {
+        "name": "وي",
+        "logo": "https://imgs.ysscores.com/teams/128/9521696285165.png"
       }
     },
     "channels": []
@@ -848,35 +848,6 @@
     ]
   },
   {
-    "id": "33646399",
-    "url": "https://www.ysscores.com/ar/match/33646399/Al-Jandal-SC-vs-Al-Arabi-SC-Saudi",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "17 - مباراة الذهاب",
-      "stadium": "استاد جامعة الجوف",
-      "time": "13:45",
-      "date": "الجمعة 16-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الجندل",
-        "logo": "https://imgs.ysscores.com/teams/128/2821724146928.png"
-      },
-      "away": {
-        "name": "العربي",
-        "logo": "https://imgs.ysscores.com/teams/128/7351691930572.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "هاني الشهري"
-      }
-    ]
-  },
-  {
     "id": "50922317",
     "url": "https://www.ysscores.com/ar/match/50922317/Al-Jubail-Club-vs-Al-Adalah-FC",
     "info": {
@@ -902,6 +873,35 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "عبدالإله العمري"
+      }
+    ]
+  },
+  {
+    "id": "33646399",
+    "url": "https://www.ysscores.com/ar/match/33646399/Al-Jandal-SC-vs-Al-Arabi-SC-Saudi",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "17 - مباراة الذهاب",
+      "stadium": "استاد جامعة الجوف",
+      "time": "13:45",
+      "date": "الجمعة 16-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الجندل",
+        "logo": "https://imgs.ysscores.com/teams/128/2821724146928.png"
+      },
+      "away": {
+        "name": "العربي",
+        "logo": "https://imgs.ysscores.com/teams/128/7351691930572.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "هاني الشهري"
       }
     ]
   },
@@ -964,30 +964,6 @@
     ]
   },
   {
-    "id": "5103868",
-    "url": "https://www.ysscores.com/ar/match/5103868/Samail-SC-vs-Oman-Club",
-    "info": {
-      "championship": "دوري المحترفين العماني",
-      "round": "10 - مباراة الذهاب",
-      "stadium": "المجمع الرياضي بنزوي",
-      "time": "14:05",
-      "date": "الجمعة 16-01-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "سمائل",
-        "logo": "https://imgs.ysscores.com/teams/128/7331753867950.png"
-      },
-      "away": {
-        "name": "نادي عُمان",
-        "logo": "https://imgs.ysscores.com/teams/128/9041691931536.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5103871",
     "url": "https://www.ysscores.com/ar/match/5103871/Dhofar-Club-vs-Al-Seeb-Club",
     "info": {
@@ -1017,25 +993,25 @@
     ]
   },
   {
-    "id": "5103867",
-    "url": "https://www.ysscores.com/ar/match/5103867/Sur-SC-vs-Ibri-Club",
+    "id": "5103868",
+    "url": "https://www.ysscores.com/ar/match/5103868/Samail-SC-vs-Oman-Club",
     "info": {
       "championship": "دوري المحترفين العماني",
       "round": "10 - مباراة الذهاب",
-      "stadium": "مجمع صور الرياضي",
-      "time": "13:55",
+      "stadium": "المجمع الرياضي بنزوي",
+      "time": "14:05",
       "date": "الجمعة 16-01-2026",
-      "current_score": "1 - 2",
+      "current_score": "1 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "صور",
-        "logo": "https://imgs.ysscores.com/teams/128/3801691931317.png"
+        "name": "سمائل",
+        "logo": "https://imgs.ysscores.com/teams/128/7331753867950.png"
       },
       "away": {
-        "name": "عبري",
-        "logo": "https://imgs.ysscores.com/teams/128/801691932066.png"
+        "name": "نادي عُمان",
+        "logo": "https://imgs.ysscores.com/teams/128/9041691931536.png"
       }
     },
     "channels": []
@@ -1060,6 +1036,30 @@
       "away": {
         "name": "الشباب",
         "logo": "https://imgs.ysscores.com/teams/128/8431691931857.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5103867",
+    "url": "https://www.ysscores.com/ar/match/5103867/Sur-SC-vs-Ibri-Club",
+    "info": {
+      "championship": "دوري المحترفين العماني",
+      "round": "10 - مباراة الذهاب",
+      "stadium": "مجمع صور الرياضي",
+      "time": "13:55",
+      "date": "الجمعة 16-01-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "صور",
+        "logo": "https://imgs.ysscores.com/teams/128/3801691931317.png"
+      },
+      "away": {
+        "name": "عبري",
+        "logo": "https://imgs.ysscores.com/teams/128/801691932066.png"
       }
     },
     "channels": []
@@ -1192,7 +1192,7 @@
       "stadium": "استاد محمد حملاوي",
       "time": "16:00",
       "date": "الجمعة 16-01-2026",
-      "current_score": "1 - 1",
+      "current_score": "2 - 1",
       "match_status": "الشوط الإضافي الثاني"
     },
     "teams": {
