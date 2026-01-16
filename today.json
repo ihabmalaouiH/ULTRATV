@@ -323,8 +323,8 @@
       "stadium": "بارك دي برانس",
       "time": "21:00",
       "date": "الجمعة 16-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -815,6 +815,39 @@
     ]
   },
   {
+    "id": "33030572",
+    "url": "https://www.ysscores.com/ar/match/33030572/Al-Bukiryah-FC-vs-Al-Diraiyah-FC",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "17 - مباراة الذهاب",
+      "stadium": "ملعب نادي البكيرية",
+      "time": "16:15",
+      "date": "الجمعة 16-01-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "البكيرية",
+        "logo": "https://imgs.ysscores.com/teams/128/8331719153467.png"
+      },
+      "away": {
+        "name": "الدرعية",
+        "logo": "https://imgs.ysscores.com/teams/128/6711757968926.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 3",
+        "commentator": "سلطان الحربي"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "سلطان الحربي"
+      }
+    ]
+  },
+  {
     "id": "33646399",
     "url": "https://www.ysscores.com/ar/match/33646399/Al-Jandal-SC-vs-Al-Arabi-SC-Saudi",
     "info": {
@@ -869,39 +902,6 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "عبدالإله العمري"
-      }
-    ]
-  },
-  {
-    "id": "33030572",
-    "url": "https://www.ysscores.com/ar/match/33030572/Al-Bukiryah-FC-vs-Al-Diraiyah-FC",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "17 - مباراة الذهاب",
-      "stadium": "ملعب نادي البكيرية",
-      "time": "16:15",
-      "date": "الجمعة 16-01-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "البكيرية",
-        "logo": "https://imgs.ysscores.com/teams/128/8331719153467.png"
-      },
-      "away": {
-        "name": "الدرعية",
-        "logo": "https://imgs.ysscores.com/teams/128/6711757968926.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 3",
-        "commentator": "سلطان الحربي"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "سلطان الحربي"
       }
     ]
   },
@@ -964,54 +964,6 @@
     ]
   },
   {
-    "id": "5103866",
-    "url": "https://www.ysscores.com/ar/match/5103866/Saham-Club-vs-Al-Khaboura-Sports-Club",
-    "info": {
-      "championship": "دوري المحترفين العماني",
-      "round": "10 - مباراة الذهاب",
-      "stadium": "المجمع الشبابي بصحار",
-      "time": "15:20",
-      "date": "الجمعة 16-01-2026",
-      "current_score": "0 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "صحم",
-        "logo": "https://imgs.ysscores.com/teams/128/1541722176368.png"
-      },
-      "away": {
-        "name": "الخابورة",
-        "logo": "https://imgs.ysscores.com/teams/128/6041722176228.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5103867",
-    "url": "https://www.ysscores.com/ar/match/5103867/Sur-SC-vs-Ibri-Club",
-    "info": {
-      "championship": "دوري المحترفين العماني",
-      "round": "10 - مباراة الذهاب",
-      "stadium": "مجمع صور الرياضي",
-      "time": "13:55",
-      "date": "الجمعة 16-01-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "صور",
-        "logo": "https://imgs.ysscores.com/teams/128/3801691931317.png"
-      },
-      "away": {
-        "name": "عبري",
-        "logo": "https://imgs.ysscores.com/teams/128/801691932066.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5103871",
     "url": "https://www.ysscores.com/ar/match/5103871/Dhofar-Club-vs-Al-Seeb-Club",
     "info": {
@@ -1041,6 +993,30 @@
     ]
   },
   {
+    "id": "5103867",
+    "url": "https://www.ysscores.com/ar/match/5103867/Sur-SC-vs-Ibri-Club",
+    "info": {
+      "championship": "دوري المحترفين العماني",
+      "round": "10 - مباراة الذهاب",
+      "stadium": "مجمع صور الرياضي",
+      "time": "13:55",
+      "date": "الجمعة 16-01-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "صور",
+        "logo": "https://imgs.ysscores.com/teams/128/3801691931317.png"
+      },
+      "away": {
+        "name": "عبري",
+        "logo": "https://imgs.ysscores.com/teams/128/801691932066.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5103868",
     "url": "https://www.ysscores.com/ar/match/5103868/Samail-SC-vs-Oman-Club",
     "info": {
@@ -1060,6 +1036,30 @@
       "away": {
         "name": "نادي عُمان",
         "logo": "https://imgs.ysscores.com/teams/128/9041691931536.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5103866",
+    "url": "https://www.ysscores.com/ar/match/5103866/Saham-Club-vs-Al-Khaboura-Sports-Club",
+    "info": {
+      "championship": "دوري المحترفين العماني",
+      "round": "10 - مباراة الذهاب",
+      "stadium": "المجمع الشبابي بصحار",
+      "time": "15:20",
+      "date": "الجمعة 16-01-2026",
+      "current_score": "0 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "صحم",
+        "logo": "https://imgs.ysscores.com/teams/128/1541722176368.png"
+      },
+      "away": {
+        "name": "الخابورة",
+        "logo": "https://imgs.ysscores.com/teams/128/6041722176228.png"
       }
     },
     "channels": []
@@ -1118,39 +1118,6 @@
     ]
   },
   {
-    "id": "18178670",
-    "url": "https://www.ysscores.com/ar/match/18178670/Japan-U23-vs-Jordan-U23",
-    "info": {
-      "championship": "كأس آسيا تحت 23 سنة",
-      "round": "ربع نهائي",
-      "stadium": "ملعب الصالة الرياضية بمدينة الملك عبدالله الرياضية (جدة)",
-      "time": "12:30",
-      "date": "الجمعة 16-01-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "اليابان",
-        "logo": "https://imgs.ysscores.com/teams/128/6361763081321.png"
-      },
-      "away": {
-        "name": "الأردن",
-        "logo": "https://imgs.ysscores.com/teams/128/1821763081406.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 6",
-        "commentator": "عامر الخوذيري"
-      },
-      {
-        "channel": "الكأس 6",
-        "commentator": "منتصر الأزهري"
-      }
-    ]
-  },
-  {
     "id": "18543238",
     "url": "https://www.ysscores.com/ar/match/18543238/Vietnam-U23-vs-United-Arab-Emirates-U23",
     "info": {
@@ -1180,6 +1147,39 @@
       {
         "channel": "الكأس 6",
         "commentator": "سمير اليعقوبي"
+      }
+    ]
+  },
+  {
+    "id": "18178670",
+    "url": "https://www.ysscores.com/ar/match/18178670/Japan-U23-vs-Jordan-U23",
+    "info": {
+      "championship": "كأس آسيا تحت 23 سنة",
+      "round": "ربع نهائي",
+      "stadium": "ملعب الصالة الرياضية بمدينة الملك عبدالله الرياضية (جدة)",
+      "time": "12:30",
+      "date": "الجمعة 16-01-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "اليابان",
+        "logo": "https://imgs.ysscores.com/teams/128/6361763081321.png"
+      },
+      "away": {
+        "name": "الأردن",
+        "logo": "https://imgs.ysscores.com/teams/128/1821763081406.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 6",
+        "commentator": "عامر الخوذيري"
+      },
+      {
+        "channel": "الكأس 6",
+        "commentator": "منتصر الأزهري"
       }
     ]
   },
