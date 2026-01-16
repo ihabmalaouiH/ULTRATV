@@ -243,30 +243,6 @@
     ]
   },
   {
-    "id": "38711434",
-    "url": "https://www.ysscores.com/ar/match/38711434/Omayya-SC-vs-Al-Fotuwa-SC",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "5 - مباراة الذهاب",
-      "stadium": "الملعب البلدي بإدلب",
-      "time": "12:30",
-      "date": "الجمعة 16-01-2026",
-      "current_score": "1 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أمية",
-        "logo": "https://imgs.ysscores.com/teams/128/17676429915147.png"
-      },
-      "away": {
-        "name": "الفتوة",
-        "logo": "https://imgs.ysscores.com/teams/128/8021694349814.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "52537611",
     "url": "https://www.ysscores.com/ar/match/52537611/Al-Hurriya-SC-vs-Hutteen-SC",
     "info": {
@@ -286,6 +262,30 @@
       "away": {
         "name": "حطين",
         "logo": "https://imgs.ysscores.com/teams/128/8091694349674.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "38711434",
+    "url": "https://www.ysscores.com/ar/match/38711434/Omayya-SC-vs-Al-Fotuwa-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "5 - مباراة الذهاب",
+      "stadium": "الملعب البلدي بإدلب",
+      "time": "12:30",
+      "date": "الجمعة 16-01-2026",
+      "current_score": "1 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أمية",
+        "logo": "https://imgs.ysscores.com/teams/128/17676429915147.png"
+      },
+      "away": {
+        "name": "الفتوة",
+        "logo": "https://imgs.ysscores.com/teams/128/8021694349814.png"
       }
     },
     "channels": []
@@ -723,35 +723,6 @@
     ]
   },
   {
-    "id": "5129087",
-    "url": "https://www.ysscores.com/ar/match/5129087/Stade-Tunisien-vs-US-Monastir",
-    "info": {
-      "championship": "الرابطة التونسية لكرة القدم",
-      "round": "16 - مباراة الاياب",
-      "stadium": "استاد هادي النيفر",
-      "time": "14:00",
-      "date": "الجمعة 16-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الملعب التونسي",
-        "logo": "https://imgs.ysscores.com/teams/128/861692795979.png"
-      },
-      "away": {
-        "name": "المنستيري",
-        "logo": "https://imgs.ysscores.com/teams/128/9111692796285.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الوطنية 1",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5129088",
     "url": "https://www.ysscores.com/ar/match/5129088/ES-Zarzis-vs-CS-Sfaxien",
     "info": {
@@ -776,6 +747,35 @@
     "channels": [
       {
         "channel": "الوطنية 2",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5129087",
+    "url": "https://www.ysscores.com/ar/match/5129087/Stade-Tunisien-vs-US-Monastir",
+    "info": {
+      "championship": "الرابطة التونسية لكرة القدم",
+      "round": "16 - مباراة الاياب",
+      "stadium": "استاد هادي النيفر",
+      "time": "14:00",
+      "date": "الجمعة 16-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الملعب التونسي",
+        "logo": "https://imgs.ysscores.com/teams/128/861692795979.png"
+      },
+      "away": {
+        "name": "المنستيري",
+        "logo": "https://imgs.ysscores.com/teams/128/9111692796285.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الوطنية 1",
         "commentator": "غير مدرج"
       }
     ]
@@ -959,25 +959,49 @@
     ]
   },
   {
-    "id": "5103867",
-    "url": "https://www.ysscores.com/ar/match/5103867/Sur-SC-vs-Ibri-Club",
+    "id": "5103866",
+    "url": "https://www.ysscores.com/ar/match/5103866/Saham-Club-vs-Al-Khaboura-Sports-Club",
     "info": {
       "championship": "دوري المحترفين العماني",
       "round": "10 - مباراة الذهاب",
-      "stadium": "مجمع صور الرياضي",
-      "time": "13:55",
+      "stadium": "المجمع الشبابي بصحار",
+      "time": "15:20",
       "date": "الجمعة 16-01-2026",
-      "current_score": "1 - 2",
+      "current_score": "0 - 2",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "صحم",
+        "logo": "https://imgs.ysscores.com/teams/128/1541722176368.png"
+      },
+      "away": {
+        "name": "الخابورة",
+        "logo": "https://imgs.ysscores.com/teams/128/6041722176228.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5103868",
+    "url": "https://www.ysscores.com/ar/match/5103868/Samail-SC-vs-Oman-Club",
+    "info": {
+      "championship": "دوري المحترفين العماني",
+      "round": "10 - مباراة الذهاب",
+      "stadium": "المجمع الرياضي بنزوي",
+      "time": "14:05",
+      "date": "الجمعة 16-01-2026",
+      "current_score": "1 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "صور",
-        "logo": "https://imgs.ysscores.com/teams/128/3801691931317.png"
+        "name": "سمائل",
+        "logo": "https://imgs.ysscores.com/teams/128/7331753867950.png"
       },
       "away": {
-        "name": "عبري",
-        "logo": "https://imgs.ysscores.com/teams/128/801691932066.png"
+        "name": "نادي عُمان",
+        "logo": "https://imgs.ysscores.com/teams/128/9041691931536.png"
       }
     },
     "channels": []
@@ -1002,6 +1026,30 @@
       "away": {
         "name": "الشباب",
         "logo": "https://imgs.ysscores.com/teams/128/8431691931857.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5103867",
+    "url": "https://www.ysscores.com/ar/match/5103867/Sur-SC-vs-Ibri-Club",
+    "info": {
+      "championship": "دوري المحترفين العماني",
+      "round": "10 - مباراة الذهاب",
+      "stadium": "مجمع صور الرياضي",
+      "time": "13:55",
+      "date": "الجمعة 16-01-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "صور",
+        "logo": "https://imgs.ysscores.com/teams/128/3801691931317.png"
+      },
+      "away": {
+        "name": "عبري",
+        "logo": "https://imgs.ysscores.com/teams/128/801691932066.png"
       }
     },
     "channels": []
@@ -1034,54 +1082,6 @@
         "commentator": "سهيل جعبوب"
       }
     ]
-  },
-  {
-    "id": "5103868",
-    "url": "https://www.ysscores.com/ar/match/5103868/Samail-SC-vs-Oman-Club",
-    "info": {
-      "championship": "دوري المحترفين العماني",
-      "round": "10 - مباراة الذهاب",
-      "stadium": "المجمع الرياضي بنزوي",
-      "time": "14:05",
-      "date": "الجمعة 16-01-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "سمائل",
-        "logo": "https://imgs.ysscores.com/teams/128/7331753867950.png"
-      },
-      "away": {
-        "name": "نادي عُمان",
-        "logo": "https://imgs.ysscores.com/teams/128/9041691931536.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5103866",
-    "url": "https://www.ysscores.com/ar/match/5103866/Saham-Club-vs-Al-Khaboura-Sports-Club",
-    "info": {
-      "championship": "دوري المحترفين العماني",
-      "round": "10 - مباراة الذهاب",
-      "stadium": "المجمع الشبابي بصحار",
-      "time": "15:20",
-      "date": "الجمعة 16-01-2026",
-      "current_score": "0 - 2",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "صحم",
-        "logo": "https://imgs.ysscores.com/teams/128/1541722176368.png"
-      },
-      "away": {
-        "name": "الخابورة",
-        "logo": "https://imgs.ysscores.com/teams/128/6041722176228.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "5103870",
@@ -1188,7 +1188,7 @@
       "time": "16:00",
       "date": "الجمعة 16-01-2026",
       "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
