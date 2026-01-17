@@ -158,7 +158,7 @@
       "time": "18:30",
       "date": "السبت 17-01-2026",
       "current_score": "1 - 5",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -525,35 +525,6 @@
     ]
   },
   {
-    "id": "4813587",
-    "url": "https://www.ysscores.com/ar/match/4813587/Chelsea-FC-vs-Brentford-FC",
-    "info": {
-      "championship": "الدوري الإنجليزي الممتاز",
-      "round": "22 - مباراة الاياب",
-      "stadium": "ستامفورد بريدج",
-      "time": "16:00",
-      "date": "السبت 17-01-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "تشيلسي",
-        "logo": "https://imgs.ysscores.com/teams/128/2571690118280.png"
-      },
-      "away": {
-        "name": "برينتفورد",
-        "logo": "https://imgs.ysscores.com/teams/128/4791690118957.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "أحمد البلوشي"
-      }
-    ]
-  },
-  {
     "id": "4813589",
     "url": "https://www.ysscores.com/ar/match/4813589/Liverpool-FC-vs-Burnley-FC",
     "info": {
@@ -579,6 +550,35 @@
       {
         "channel": "بي إن سبورت 1",
         "commentator": "عامر الخوذيري"
+      }
+    ]
+  },
+  {
+    "id": "4813587",
+    "url": "https://www.ysscores.com/ar/match/4813587/Chelsea-FC-vs-Brentford-FC",
+    "info": {
+      "championship": "الدوري الإنجليزي الممتاز",
+      "round": "22 - مباراة الاياب",
+      "stadium": "ستامفورد بريدج",
+      "time": "16:00",
+      "date": "السبت 17-01-2026",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "تشيلسي",
+        "logo": "https://imgs.ysscores.com/teams/128/2571690118280.png"
+      },
+      "away": {
+        "name": "برينتفورد",
+        "logo": "https://imgs.ysscores.com/teams/128/4791690118957.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "أحمد البلوشي"
       }
     ]
   },
@@ -653,43 +653,6 @@
     ]
   },
   {
-    "id": "4803245",
-    "url": "https://www.ysscores.com/ar/match/4803245/Udinese-Calcio-vs-Inter-Milan",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "21 - مباراة الاياب",
-      "stadium": "ملعب فريولي",
-      "time": "15:00",
-      "date": "السبت 17-01-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أودينيزي",
-        "logo": "https://imgs.ysscores.com/teams/128/8741690284718.png"
-      },
-      "away": {
-        "name": "إنتر ميلان",
-        "logo": "https://imgs.ysscores.com/teams/128/3101690283003.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "StarzPlay",
-        "commentator": "فيصل الهندي"
-      },
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "فيصل الهندي"
-      },
-      {
-        "channel": "منصة شاشا",
-        "commentator": "هاني الشهري"
-      }
-    ]
-  },
-  {
     "id": "4803247",
     "url": "https://www.ysscores.com/ar/match/4803247/Cagliari-Calcio-vs-Juventus-FC",
     "info": {
@@ -723,6 +686,43 @@
       {
         "channel": "منصة شاشا",
         "commentator": "علي دراج"
+      }
+    ]
+  },
+  {
+    "id": "4803245",
+    "url": "https://www.ysscores.com/ar/match/4803245/Udinese-Calcio-vs-Inter-Milan",
+    "info": {
+      "championship": "الدوري الإيطالي",
+      "round": "21 - مباراة الاياب",
+      "stadium": "ملعب فريولي",
+      "time": "15:00",
+      "date": "السبت 17-01-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أودينيزي",
+        "logo": "https://imgs.ysscores.com/teams/128/8741690284718.png"
+      },
+      "away": {
+        "name": "إنتر ميلان",
+        "logo": "https://imgs.ysscores.com/teams/128/3101690283003.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "StarzPlay",
+        "commentator": "فيصل الهندي"
+      },
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "فيصل الهندي"
+      },
+      {
+        "channel": "منصة شاشا",
+        "commentator": "هاني الشهري"
       }
     ]
   },
@@ -1687,33 +1687,28 @@
     ]
   },
   {
-    "id": "4825354",
-    "url": "https://www.ysscores.com/ar/match/4825354/Swansea-City-vs-Birmingham-City",
+    "id": "4825353",
+    "url": "https://www.ysscores.com/ar/match/4825353/Stoke-City-vs-Queens-Park-Rangers",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "27 - مباراة الاياب",
-      "stadium": "سوانزي دوت كوم",
-      "time": "18:30",
+      "stadium": "بت 365",
+      "time": "16:00",
       "date": "السبت 17-01-2026",
-      "current_score": "1 - 1",
+      "current_score": "0 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "سوانزي",
-        "logo": "https://imgs.ysscores.com/teams/128/4561723590559.png"
+        "name": "ستوك سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/6781690388673.png"
       },
       "away": {
-        "name": "برمنغهام",
-        "logo": "https://imgs.ysscores.com/teams/128/3121690370534.png"
+        "name": "كوينز بارك رينجرز",
+        "logo": "https://imgs.ysscores.com/teams/128/9791690370554.png"
       }
     },
-    "channels": [
-      {
-        "channel": "beIN Xtra 1",
-        "commentator": "غير مدرج"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "4825347",
@@ -1745,28 +1740,33 @@
     ]
   },
   {
-    "id": "4825353",
-    "url": "https://www.ysscores.com/ar/match/4825353/Stoke-City-vs-Queens-Park-Rangers",
+    "id": "4825354",
+    "url": "https://www.ysscores.com/ar/match/4825354/Swansea-City-vs-Birmingham-City",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "27 - مباراة الاياب",
-      "stadium": "بت 365",
-      "time": "16:00",
+      "stadium": "سوانزي دوت كوم",
+      "time": "18:30",
       "date": "السبت 17-01-2026",
-      "current_score": "0 - 0",
+      "current_score": "1 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "ستوك سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/6781690388673.png"
+        "name": "سوانزي",
+        "logo": "https://imgs.ysscores.com/teams/128/4561723590559.png"
       },
       "away": {
-        "name": "كوينز بارك رينجرز",
-        "logo": "https://imgs.ysscores.com/teams/128/9791690370554.png"
+        "name": "برمنغهام",
+        "logo": "https://imgs.ysscores.com/teams/128/3121690370534.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "beIN Xtra 1",
+        "commentator": "غير مدرج"
+      }
+    ]
   },
   {
     "id": "4825348",
@@ -2077,30 +2077,6 @@
     "channels": []
   },
   {
-    "id": "4820841",
-    "url": "https://www.ysscores.com/ar/match/4820841/FC-Luzern-vs-FC-Lugano",
-    "info": {
-      "championship": "دوري السوبر السويسري",
-      "round": "20 - مباراة الاياب",
-      "stadium": "سويسبور أرينا",
-      "time": "18:00",
-      "date": "السبت 17-01-2026",
-      "current_score": "2 - 5",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "لوسرن",
-        "logo": "https://imgs.ysscores.com/teams/128/7211690370556.png"
-      },
-      "away": {
-        "name": "لوجانو",
-        "logo": "https://imgs.ysscores.com/teams/128/571690370510.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4820838",
     "url": "https://www.ysscores.com/ar/match/4820838/BSC-Young-Boys-vs-FC-Lausanne-Sport",
     "info": {
@@ -2120,6 +2096,30 @@
       "away": {
         "name": "لوزان",
         "logo": "https://imgs.ysscores.com/teams/128/1471690370506.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4820841",
+    "url": "https://www.ysscores.com/ar/match/4820841/FC-Luzern-vs-FC-Lugano",
+    "info": {
+      "championship": "دوري السوبر السويسري",
+      "round": "20 - مباراة الاياب",
+      "stadium": "سويسبور أرينا",
+      "time": "18:00",
+      "date": "السبت 17-01-2026",
+      "current_score": "2 - 5",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "لوسرن",
+        "logo": "https://imgs.ysscores.com/teams/128/7211690370556.png"
+      },
+      "away": {
+        "name": "لوجانو",
+        "logo": "https://imgs.ysscores.com/teams/128/571690370510.png"
       }
     },
     "channels": []
