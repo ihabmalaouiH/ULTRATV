@@ -376,8 +376,8 @@
       "stadium": "استاد هزاع بن زايد",
       "time": "16:45",
       "date": "السبت 17-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -434,35 +434,6 @@
     ]
   },
   {
-    "id": "4813592",
-    "url": "https://www.ysscores.com/ar/match/4813592/Sunderland-AFC-vs-Crystal-Palace",
-    "info": {
-      "championship": "الدوري الإنجليزي الممتاز",
-      "round": "22 - مباراة الاياب",
-      "stadium": "استاد أوف لايت",
-      "time": "16:00",
-      "date": "السبت 17-01-2026",
-      "current_score": "1 - 1",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "سندرلاند",
-        "logo": "https://imgs.ysscores.com/teams/128/10001690823905.png"
-      },
-      "away": {
-        "name": "كريستال بالاس",
-        "logo": "https://imgs.ysscores.com/teams/128/6121690118883.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "أحمد عبده"
-      }
-    ]
-  },
-  {
     "id": "4813593",
     "url": "https://www.ysscores.com/ar/match/4813593/Tottenham-Hotspur-vs-West-Ham-United",
     "info": {
@@ -488,6 +459,35 @@
       {
         "channel": "بي إن سبورت 6",
         "commentator": "حسن العيدروس"
+      }
+    ]
+  },
+  {
+    "id": "4813592",
+    "url": "https://www.ysscores.com/ar/match/4813592/Sunderland-AFC-vs-Crystal-Palace",
+    "info": {
+      "championship": "الدوري الإنجليزي الممتاز",
+      "round": "22 - مباراة الاياب",
+      "stadium": "استاد أوف لايت",
+      "time": "16:00",
+      "date": "السبت 17-01-2026",
+      "current_score": "1 - 1",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "سندرلاند",
+        "logo": "https://imgs.ysscores.com/teams/128/10001690823905.png"
+      },
+      "away": {
+        "name": "كريستال بالاس",
+        "logo": "https://imgs.ysscores.com/teams/128/6121690118883.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "أحمد عبده"
       }
     ]
   },
@@ -996,39 +996,6 @@
     ]
   },
   {
-    "id": "4927445",
-    "url": "https://www.ysscores.com/ar/match/4927445/Al-Kholood-Club-vs-Al-Ahli-SFC",
-    "info": {
-      "championship": "الدوري السعودي للمحترفين",
-      "round": "16 - مباراة الذهاب",
-      "stadium": "استاد مدينة الملك عبد الله الرياضية (بريدة)",
-      "time": "16:10",
-      "date": "السبت 17-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "الخلود",
-        "logo": "https://imgs.ysscores.com/teams/128/5501757530062.png"
-      },
-      "away": {
-        "name": "الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/9091751485160.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 3",
-        "commentator": "سليمان الشريف"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "سليمان الشريف"
-      }
-    ]
-  },
-  {
     "id": "4927441",
     "url": "https://www.ysscores.com/ar/match/4927441/Al-Fayha-FC-vs-Damac-FC",
     "info": {
@@ -1058,6 +1025,39 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "محمد حسين"
+      }
+    ]
+  },
+  {
+    "id": "4927445",
+    "url": "https://www.ysscores.com/ar/match/4927445/Al-Kholood-Club-vs-Al-Ahli-SFC",
+    "info": {
+      "championship": "الدوري السعودي للمحترفين",
+      "round": "16 - مباراة الذهاب",
+      "stadium": "استاد مدينة الملك عبد الله الرياضية (بريدة)",
+      "time": "16:10",
+      "date": "السبت 17-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "الخلود",
+        "logo": "https://imgs.ysscores.com/teams/128/5501757530062.png"
+      },
+      "away": {
+        "name": "الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/9091751485160.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 3",
+        "commentator": "سليمان الشريف"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "سليمان الشريف"
       }
     ]
   },
@@ -1339,7 +1339,7 @@
       "stadium": "استاد أحمد بن علي",
       "time": "15:30",
       "date": "السبت 17-01-2026",
-      "current_score": "0 - 0",
+      "current_score": "0 - 1",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -1502,7 +1502,7 @@
       "stadium": "يوهان كرويف أرينا",
       "time": "16:30",
       "date": "السبت 17-01-2026",
-      "current_score": "0 - 0",
+      "current_score": "1 - 0",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -1716,35 +1716,6 @@
     ]
   },
   {
-    "id": "4825347",
-    "url": "https://www.ysscores.com/ar/match/4825347/Coventry-City-vs-Leicester-City",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "27 - مباراة الاياب",
-      "stadium": "كوفنتري أرينا",
-      "time": "13:30",
-      "date": "السبت 17-01-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "كوفنتري",
-        "logo": "https://imgs.ysscores.com/teams/128/3861690370535.png"
-      },
-      "away": {
-        "name": "ليستر سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/5531690711879.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "محمد بركات"
-      }
-    ]
-  },
-  {
     "id": "4825353",
     "url": "https://www.ysscores.com/ar/match/4825353/Stoke-City-vs-Queens-Park-Rangers",
     "info": {
@@ -1764,6 +1735,30 @@
       "away": {
         "name": "كوينز بارك رينجرز",
         "logo": "https://imgs.ysscores.com/teams/128/9791690370554.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825348",
+    "url": "https://www.ysscores.com/ar/match/4825348/Ipswich-Town-vs-Blackburn-Rovers",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "27 - مباراة الاياب",
+      "stadium": "بورتمان رود",
+      "time": "13:30",
+      "date": "السبت 17-01-2026",
+      "current_score": "3 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "إيبسويتش",
+        "logo": "https://imgs.ysscores.com/teams/128/8291690370545.png"
+      },
+      "away": {
+        "name": "بلاكبيرن روفرز",
+        "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
       }
     },
     "channels": []
@@ -1793,28 +1788,33 @@
     "channels": []
   },
   {
-    "id": "4825348",
-    "url": "https://www.ysscores.com/ar/match/4825348/Ipswich-Town-vs-Blackburn-Rovers",
+    "id": "4825347",
+    "url": "https://www.ysscores.com/ar/match/4825347/Coventry-City-vs-Leicester-City",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "27 - مباراة الاياب",
-      "stadium": "بورتمان رود",
+      "stadium": "كوفنتري أرينا",
       "time": "13:30",
       "date": "السبت 17-01-2026",
-      "current_score": "3 - 0",
+      "current_score": "2 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "إيبسويتش",
-        "logo": "https://imgs.ysscores.com/teams/128/8291690370545.png"
+        "name": "كوفنتري",
+        "logo": "https://imgs.ysscores.com/teams/128/3861690370535.png"
       },
       "away": {
-        "name": "بلاكبيرن روفرز",
-        "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
+        "name": "ليستر سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/5531690711879.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "محمد بركات"
+      }
+    ]
   },
   {
     "id": "4825350",
@@ -2077,30 +2077,6 @@
     "channels": []
   },
   {
-    "id": "4820838",
-    "url": "https://www.ysscores.com/ar/match/4820838/BSC-Young-Boys-vs-FC-Lausanne-Sport",
-    "info": {
-      "championship": "دوري السوبر السويسري",
-      "round": "20 - مباراة الاياب",
-      "stadium": "وانكدورف",
-      "time": "20:30",
-      "date": "السبت 17-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "يانغ بويز",
-        "logo": "https://imgs.ysscores.com/teams/128/851690370555.png"
-      },
-      "away": {
-        "name": "لوزان",
-        "logo": "https://imgs.ysscores.com/teams/128/1471690370506.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4820839",
     "url": "https://www.ysscores.com/ar/match/4820839/FC-Winterthur-vs-FC-St.-Gallen-1879",
     "info": {
@@ -2120,6 +2096,30 @@
       "away": {
         "name": "سانت جالين",
         "logo": "https://imgs.ysscores.com/teams/128/9231690370555.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4820838",
+    "url": "https://www.ysscores.com/ar/match/4820838/BSC-Young-Boys-vs-FC-Lausanne-Sport",
+    "info": {
+      "championship": "دوري السوبر السويسري",
+      "round": "20 - مباراة الاياب",
+      "stadium": "وانكدورف",
+      "time": "20:30",
+      "date": "السبت 17-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "يانغ بويز",
+        "logo": "https://imgs.ysscores.com/teams/128/851690370555.png"
+      },
+      "away": {
+        "name": "لوزان",
+        "logo": "https://imgs.ysscores.com/teams/128/1471690370506.png"
       }
     },
     "channels": []
