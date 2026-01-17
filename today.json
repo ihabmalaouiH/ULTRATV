@@ -492,31 +492,35 @@
     ]
   },
   {
-    "id": "4813587",
-    "url": "https://www.ysscores.com/ar/match/4813587/Chelsea-FC-vs-Brentford-FC",
+    "id": "4813590",
+    "url": "https://www.ysscores.com/ar/match/4813590/Manchester-United-vs-Manchester-City",
     "info": {
       "championship": "الدوري الإنجليزي الممتاز",
       "round": "22 - مباراة الاياب",
-      "stadium": "ستامفورد بريدج",
-      "time": "16:00",
+      "stadium": "أولد ترافورد",
+      "time": "13:30",
       "date": "السبت 17-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "تشيلسي",
-        "logo": "https://imgs.ysscores.com/teams/128/2571690118280.png"
+        "name": "مان يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/4871690119302.png"
       },
       "away": {
-        "name": "برينتفورد",
-        "logo": "https://imgs.ysscores.com/teams/128/4791690118957.png"
+        "name": "مان سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/4481690118308.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 3",
-        "commentator": "أحمد البلوشي"
+        "channel": "بي إن سبورت 1",
+        "commentator": "حفيظ دراجي"
+      },
+      {
+        "channel": "beIN 4K",
+        "commentator": "حفيظ دراجي"
       }
     ]
   },
@@ -550,35 +554,31 @@
     ]
   },
   {
-    "id": "4813590",
-    "url": "https://www.ysscores.com/ar/match/4813590/Manchester-United-vs-Manchester-City",
+    "id": "4813587",
+    "url": "https://www.ysscores.com/ar/match/4813587/Chelsea-FC-vs-Brentford-FC",
     "info": {
       "championship": "الدوري الإنجليزي الممتاز",
       "round": "22 - مباراة الاياب",
-      "stadium": "أولد ترافورد",
-      "time": "13:30",
+      "stadium": "ستامفورد بريدج",
+      "time": "16:00",
       "date": "السبت 17-01-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "مان يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/4871690119302.png"
+        "name": "تشيلسي",
+        "logo": "https://imgs.ysscores.com/teams/128/2571690118280.png"
       },
       "away": {
-        "name": "مان سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/4481690118308.png"
+        "name": "برينتفورد",
+        "logo": "https://imgs.ysscores.com/teams/128/4791690118957.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 1",
-        "commentator": "حفيظ دراجي"
-      },
-      {
-        "channel": "beIN 4K",
-        "commentator": "حفيظ دراجي"
+        "channel": "بي إن سبورت 3",
+        "commentator": "أحمد البلوشي"
       }
     ]
   },
@@ -2314,35 +2314,6 @@
     ]
   },
   {
-    "id": "64682160",
-    "url": "https://www.ysscores.com/ar/match/64682160/Harras-El-Hodoud-vs-Ittihad-Alexandria-SC",
-    "info": {
-      "championship": "كأس الرابطة المصرية",
-      "round": "7",
-      "stadium": "ستاد جهاز الرياضة العسكري",
-      "time": "15:00",
-      "date": "السبت 17-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "حرس الحدود",
-        "logo": "https://imgs.ysscores.com/teams/128/4381694082139.png"
-      },
-      "away": {
-        "name": "الإتحاد",
-        "logo": "https://imgs.ysscores.com/teams/128/3771694082184.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ON Sport 2",
-        "commentator": "محمد مصطفى عفيفي"
-      }
-    ]
-  },
-  {
     "id": "17218476",
     "url": "https://www.ysscores.com/ar/match/17218476/Zed-FC-vs-Kahraba-Ismailia",
     "info": {
@@ -2368,6 +2339,35 @@
       {
         "channel": "Kora Plus",
         "commentator": "زياد الدكروري"
+      }
+    ]
+  },
+  {
+    "id": "64682160",
+    "url": "https://www.ysscores.com/ar/match/64682160/Harras-El-Hodoud-vs-Ittihad-Alexandria-SC",
+    "info": {
+      "championship": "كأس الرابطة المصرية",
+      "round": "7",
+      "stadium": "ستاد جهاز الرياضة العسكري",
+      "time": "15:00",
+      "date": "السبت 17-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "حرس الحدود",
+        "logo": "https://imgs.ysscores.com/teams/128/4381694082139.png"
+      },
+      "away": {
+        "name": "الإتحاد",
+        "logo": "https://imgs.ysscores.com/teams/128/3771694082184.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 2",
+        "commentator": "محمد مصطفى عفيفي"
       }
     ]
   },
