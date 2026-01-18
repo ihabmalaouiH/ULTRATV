@@ -561,7 +561,7 @@
       "time": "19:15",
       "date": "الأحد 18-01-2026",
       "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -629,35 +629,6 @@
     "channels": []
   },
   {
-    "id": "4842474",
-    "url": "https://www.ysscores.com/ar/match/4842474/Kasimpasa-vs-Antalyaspor",
-    "info": {
-      "championship": "الدوري التركي الممتاز",
-      "round": "18 - مباراة الاياب",
-      "stadium": "استاد رجب طيب أردوغان",
-      "time": "12:30",
-      "date": "الأحد 18-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "قاسم باشا",
-        "logo": "https://imgs.ysscores.com/teams/128/8131690127512.png"
-      },
-      "away": {
-        "name": "أنطاليا سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/6611690127092.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Sports HD 2 TR",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "4842472",
     "url": "https://www.ysscores.com/ar/match/4842472/Genclerbirligi-Ankara-vs-Samsunspor",
     "info": {
@@ -677,6 +648,35 @@
       "away": {
         "name": "سامسون سبور",
         "logo": "https://imgs.ysscores.com/teams/128/4911690127919.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Sports HD 2 TR",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "4842474",
+    "url": "https://www.ysscores.com/ar/match/4842474/Kasimpasa-vs-Antalyaspor",
+    "info": {
+      "championship": "الدوري التركي الممتاز",
+      "round": "18 - مباراة الاياب",
+      "stadium": "استاد رجب طيب أردوغان",
+      "time": "12:30",
+      "date": "الأحد 18-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "قاسم باشا",
+        "logo": "https://imgs.ysscores.com/teams/128/8131690127512.png"
+      },
+      "away": {
+        "name": "أنطاليا سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/6611690127092.png"
       }
     },
     "channels": [
@@ -749,39 +749,6 @@
     ]
   },
   {
-    "id": "4927442",
-    "url": "https://www.ysscores.com/ar/match/4927442/Al-Hazem-SC-vs-Al-Qadsiah-FC",
-    "info": {
-      "championship": "الدوري السعودي للمحترفين",
-      "round": "16 - مباراة الذهاب",
-      "stadium": "استاد مدينة الملك عبد الله الرياضية (بريدة)",
-      "time": "16:15",
-      "date": "الأحد 18-01-2026",
-      "current_score": "1 - 5",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الحزم",
-        "logo": "https://imgs.ysscores.com/teams/128/111690298803.png"
-      },
-      "away": {
-        "name": "القادسية",
-        "logo": "https://imgs.ysscores.com/teams/128/6611724280721.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 3",
-        "commentator": "راشد الدوسري"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "راشد الدوسري"
-      }
-    ]
-  },
-  {
     "id": "4927448",
     "url": "https://www.ysscores.com/ar/match/4927448/Al-Riyadh-SC-vs-Al-Taawoun-FC",
     "info": {
@@ -811,6 +778,39 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "خالد المديفر"
+      }
+    ]
+  },
+  {
+    "id": "4927442",
+    "url": "https://www.ysscores.com/ar/match/4927442/Al-Hazem-SC-vs-Al-Qadsiah-FC",
+    "info": {
+      "championship": "الدوري السعودي للمحترفين",
+      "round": "16 - مباراة الذهاب",
+      "stadium": "استاد مدينة الملك عبد الله الرياضية (بريدة)",
+      "time": "16:15",
+      "date": "الأحد 18-01-2026",
+      "current_score": "1 - 5",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الحزم",
+        "logo": "https://imgs.ysscores.com/teams/128/111690298803.png"
+      },
+      "away": {
+        "name": "القادسية",
+        "logo": "https://imgs.ysscores.com/teams/128/6611724280721.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 3",
+        "commentator": "راشد الدوسري"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "راشد الدوسري"
       }
     ]
   },
@@ -1138,30 +1138,6 @@
     ]
   },
   {
-    "id": "4815391",
-    "url": "https://www.ysscores.com/ar/match/4815391/FC-Volendam-vs-FC-Utrecht",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "19 - مباراة الاياب",
-      "stadium": "كراس",
-      "time": "14:30",
-      "date": "الأحد 18-01-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "فولندام",
-        "logo": "https://imgs.ysscores.com/teams/128/7791690824589.png"
-      },
-      "away": {
-        "name": "أوترخت",
-        "logo": "https://imgs.ysscores.com/teams/128/3101690475899.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4815395",
     "url": "https://www.ysscores.com/ar/match/4815395/Heracles-Almelo-vs-Twente-Enschede-FC",
     "info": {
@@ -1181,6 +1157,30 @@
       "away": {
         "name": "تفينتي أنشخيده",
         "logo": "https://imgs.ysscores.com/teams/128/7451690996868.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4815391",
+    "url": "https://www.ysscores.com/ar/match/4815391/FC-Volendam-vs-FC-Utrecht",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "19 - مباراة الاياب",
+      "stadium": "كراس",
+      "time": "14:30",
+      "date": "الأحد 18-01-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "فولندام",
+        "logo": "https://imgs.ysscores.com/teams/128/7791690824589.png"
+      },
+      "away": {
+        "name": "أوترخت",
+        "logo": "https://imgs.ysscores.com/teams/128/3101690475899.png"
       }
     },
     "channels": []
