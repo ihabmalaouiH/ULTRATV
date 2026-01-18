@@ -157,8 +157,8 @@
       "stadium": "كولوسيوم",
       "time": "14:00",
       "date": "الأحد 18-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -347,6 +347,43 @@
     ]
   },
   {
+    "id": "4803240",
+    "url": "https://www.ysscores.com/ar/match/4803240/AC-Milan-vs-US-Lecce",
+    "info": {
+      "championship": "الدوري الإيطالي",
+      "round": "21 - مباراة الاياب",
+      "stadium": "سان سيرو",
+      "time": "20:45",
+      "date": "الأحد 18-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ميلان",
+        "logo": "https://imgs.ysscores.com/teams/128/3181690283002.png"
+      },
+      "away": {
+        "name": "ليتشي",
+        "logo": "https://imgs.ysscores.com/teams/128/9031690283003.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "StarzPlay",
+        "commentator": "فيصل الهندي"
+      },
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "فيصل الهندي"
+      },
+      {
+        "channel": "منصة شاشا",
+        "commentator": "رؤوف خليف"
+      }
+    ]
+  },
+  {
     "id": "4803242",
     "url": "https://www.ysscores.com/ar/match/4803242/Parma-Calcio-1913-vs-Genoa-CFC",
     "info": {
@@ -409,43 +446,6 @@
       {
         "channel": "تطبيق STC TV",
         "commentator": "عيسى الحربين"
-      }
-    ]
-  },
-  {
-    "id": "4803240",
-    "url": "https://www.ysscores.com/ar/match/4803240/AC-Milan-vs-US-Lecce",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "21 - مباراة الاياب",
-      "stadium": "سان سيرو",
-      "time": "20:45",
-      "date": "الأحد 18-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ميلان",
-        "logo": "https://imgs.ysscores.com/teams/128/3181690283002.png"
-      },
-      "away": {
-        "name": "ليتشي",
-        "logo": "https://imgs.ysscores.com/teams/128/9031690283003.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "StarzPlay",
-        "commentator": "فيصل الهندي"
-      },
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "فيصل الهندي"
-      },
-      {
-        "channel": "منصة شاشا",
-        "commentator": "رؤوف خليف"
       }
     ]
   },
@@ -786,39 +786,6 @@
     ]
   },
   {
-    "id": "4927448",
-    "url": "https://www.ysscores.com/ar/match/4927448/Al-Riyadh-SC-vs-Al-Taawoun-FC",
-    "info": {
-      "championship": "الدوري السعودي للمحترفين",
-      "round": "16 - مباراة الذهاب",
-      "stadium": "استاد الأمير فيصل بن فهد (الملز)",
-      "time": "18:30",
-      "date": "الأحد 18-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الرياض",
-        "logo": "https://imgs.ysscores.com/teams/128/7341730889148.png"
-      },
-      "away": {
-        "name": "التعاون",
-        "logo": "https://imgs.ysscores.com/teams/128/9971724321815.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 2",
-        "commentator": "خالد المديفر"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "خالد المديفر"
-      }
-    ]
-  },
-  {
     "id": "4927449",
     "url": "https://www.ysscores.com/ar/match/4927449/NEOM-SC-vs-Al-Hilal-SFC",
     "info": {
@@ -852,6 +819,39 @@
     ]
   },
   {
+    "id": "4927448",
+    "url": "https://www.ysscores.com/ar/match/4927448/Al-Riyadh-SC-vs-Al-Taawoun-FC",
+    "info": {
+      "championship": "الدوري السعودي للمحترفين",
+      "round": "16 - مباراة الذهاب",
+      "stadium": "استاد الأمير فيصل بن فهد (الملز)",
+      "time": "18:30",
+      "date": "الأحد 18-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الرياض",
+        "logo": "https://imgs.ysscores.com/teams/128/7341730889148.png"
+      },
+      "away": {
+        "name": "التعاون",
+        "logo": "https://imgs.ysscores.com/teams/128/9971724321815.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 2",
+        "commentator": "خالد المديفر"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "خالد المديفر"
+      }
+    ]
+  },
+  {
     "id": "19800710",
     "url": "https://www.ysscores.com/ar/match/19800710/Al-Karamah-SC-vs-Jableh-SC",
     "info": {
@@ -877,35 +877,6 @@
       {
         "channel": "تلفزيون برايم",
         "commentator": "مصطفى محمد"
-      }
-    ]
-  },
-  {
-    "id": "70292821",
-    "url": "https://www.ysscores.com/ar/match/70292821/Mosul-SC-vs-Al-Karma",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "13 - مباراة الذهاب",
-      "stadium": "استاد دهوك",
-      "time": "15:30",
-      "date": "الأحد 18-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الموصل",
-        "logo": "https://imgs.ysscores.com/teams/128/3631734618198.png"
-      },
-      "away": {
-        "name": "الكرمة",
-        "logo": "https://imgs.ysscores.com/teams/128/2331726654564.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية الرياضية",
-        "commentator": "أمير علي"
       }
     ]
   },
@@ -939,31 +910,31 @@
     ]
   },
   {
-    "id": "63019084",
-    "url": "https://www.ysscores.com/ar/match/63019084/Amanat-Baghdad-vs-Al-Karkh-SC",
+    "id": "70292821",
+    "url": "https://www.ysscores.com/ar/match/70292821/Mosul-SC-vs-Al-Karma",
     "info": {
       "championship": "الدوري العراقي",
       "round": "13 - مباراة الذهاب",
-      "stadium": "ملعب شرار حيدر",
-      "time": "13:00",
+      "stadium": "استاد دهوك",
+      "time": "15:30",
       "date": "الأحد 18-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "أمانة بغداد",
-        "logo": "https://imgs.ysscores.com/teams/128/3211698196458.png"
+        "name": "الموصل",
+        "logo": "https://imgs.ysscores.com/teams/128/3631734618198.png"
       },
       "away": {
-        "name": "الكرخ",
-        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
+        "name": "الكرمة",
+        "logo": "https://imgs.ysscores.com/teams/128/2331726654564.png"
       }
     },
     "channels": [
       {
         "channel": "العراقية الرياضية",
-        "commentator": "جمال الدراجي"
+        "commentator": "أمير علي"
       }
     ]
   },
@@ -1026,6 +997,35 @@
     ]
   },
   {
+    "id": "63019084",
+    "url": "https://www.ysscores.com/ar/match/63019084/Amanat-Baghdad-vs-Al-Karkh-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "13 - مباراة الذهاب",
+      "stadium": "ملعب شرار حيدر",
+      "time": "13:00",
+      "date": "الأحد 18-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أمانة بغداد",
+        "logo": "https://imgs.ysscores.com/teams/128/3211698196458.png"
+      },
+      "away": {
+        "name": "الكرخ",
+        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "جمال الدراجي"
+      }
+    ]
+  },
+  {
     "id": "4830613",
     "url": "https://www.ysscores.com/ar/match/4830613/Olympique-Lyon-vs-Stade-Brestois-29",
     "info": {
@@ -1055,31 +1055,31 @@
     ]
   },
   {
-    "id": "4830615",
-    "url": "https://www.ysscores.com/ar/match/4830615/FC-Nantes-vs-Paris-FC",
+    "id": "4830618",
+    "url": "https://www.ysscores.com/ar/match/4830618/RC-Strasbourg-Alsace-vs-FC-Metz",
     "info": {
       "championship": "الدوري الفرنسي",
       "round": "18 - مباراة الاياب",
-      "stadium": "لا بوجوار",
-      "time": "17:15",
+      "stadium": "دو لامينو",
+      "time": "15:00",
       "date": "الأحد 18-01-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "نانت",
-        "logo": "https://imgs.ysscores.com/teams/128/6071690287626.png"
+        "name": "ستراسبورغ",
+        "logo": "https://imgs.ysscores.com/teams/128/8951690287872.png"
       },
       "away": {
-        "name": "نادي باريس",
-        "logo": "https://imgs.ysscores.com/teams/128/6551690370501.png"
+        "name": "ميتز",
+        "logo": "https://imgs.ysscores.com/teams/128/5631690287157.png"
       }
     },
     "channels": [
       {
         "channel": "بي إن سبورت 4",
-        "commentator": "أحمد عبده"
+        "commentator": "محمد المبروكي"
       }
     ]
   },
@@ -1113,31 +1113,31 @@
     ]
   },
   {
-    "id": "4830618",
-    "url": "https://www.ysscores.com/ar/match/4830618/RC-Strasbourg-Alsace-vs-FC-Metz",
+    "id": "4830615",
+    "url": "https://www.ysscores.com/ar/match/4830615/FC-Nantes-vs-Paris-FC",
     "info": {
       "championship": "الدوري الفرنسي",
       "round": "18 - مباراة الاياب",
-      "stadium": "دو لامينو",
-      "time": "15:00",
+      "stadium": "لا بوجوار",
+      "time": "17:15",
       "date": "الأحد 18-01-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "ستراسبورغ",
-        "logo": "https://imgs.ysscores.com/teams/128/8951690287872.png"
+        "name": "نانت",
+        "logo": "https://imgs.ysscores.com/teams/128/6071690287626.png"
       },
       "away": {
-        "name": "ميتز",
-        "logo": "https://imgs.ysscores.com/teams/128/5631690287157.png"
+        "name": "نادي باريس",
+        "logo": "https://imgs.ysscores.com/teams/128/6551690370501.png"
       }
     },
     "channels": [
       {
         "channel": "بي إن سبورت 4",
-        "commentator": "محمد المبروكي"
+        "commentator": "أحمد عبده"
       }
     ]
   },
@@ -1190,30 +1190,6 @@
     "channels": []
   },
   {
-    "id": "4815394",
-    "url": "https://www.ysscores.com/ar/match/4815394/SC-Heerenveen-vs-FC-Groningen",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "19 - مباراة الاياب",
-      "stadium": "ايب لنسترا",
-      "time": "12:15",
-      "date": "الأحد 18-01-2026",
-      "current_score": "0 - 2",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "هيرينفين",
-        "logo": "https://imgs.ysscores.com/teams/128/6771725055096.png"
-      },
-      "away": {
-        "name": "غرونينغن",
-        "logo": "https://imgs.ysscores.com/teams/128/10001690370535.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4815393",
     "url": "https://www.ysscores.com/ar/match/4815393/Feyenoord-Rotterdam-vs-Sparta-Rotterdam",
     "info": {
@@ -1243,6 +1219,30 @@
     ]
   },
   {
+    "id": "4815394",
+    "url": "https://www.ysscores.com/ar/match/4815394/SC-Heerenveen-vs-FC-Groningen",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "19 - مباراة الاياب",
+      "stadium": "ايب لنسترا",
+      "time": "12:15",
+      "date": "الأحد 18-01-2026",
+      "current_score": "0 - 2",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "هيرينفين",
+        "logo": "https://imgs.ysscores.com/teams/128/6771725055096.png"
+      },
+      "away": {
+        "name": "غرونينغن",
+        "logo": "https://imgs.ysscores.com/teams/128/10001690370535.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4859112",
     "url": "https://www.ysscores.com/ar/match/4859112/AE-Larisa-vs-Aris-Thessaloniki",
     "info": {
@@ -1262,30 +1262,6 @@
       "away": {
         "name": "أريس",
         "logo": "https://imgs.ysscores.com/teams/128/9711721769286.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4859116",
-    "url": "https://www.ysscores.com/ar/match/4859116/PAOK-Thessaloniki-vs-OFI-Crete-FC",
-    "info": {
-      "championship": "الدوري اليوناني",
-      "round": "17 - مباراة الاياب",
-      "stadium": "تومبا",
-      "time": "18:00",
-      "date": "الأحد 18-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "باوك",
-        "logo": "https://imgs.ysscores.com/teams/128/2801690370532.png"
-      },
-      "away": {
-        "name": "أوفي كريت",
-        "logo": "https://imgs.ysscores.com/teams/128/7821690370506.png"
       }
     },
     "channels": []
@@ -1315,25 +1291,25 @@
     "channels": []
   },
   {
-    "id": "4820843",
-    "url": "https://www.ysscores.com/ar/match/4820843/FC-Basel-1893-vs-FC-Sion",
+    "id": "4859116",
+    "url": "https://www.ysscores.com/ar/match/4859116/PAOK-Thessaloniki-vs-OFI-Crete-FC",
     "info": {
-      "championship": "دوري السوبر السويسري",
-      "round": "20 - مباراة الاياب",
-      "stadium": "سانت جاكوب بارك",
-      "time": "16:30",
+      "championship": "الدوري اليوناني",
+      "round": "17 - مباراة الاياب",
+      "stadium": "تومبا",
+      "time": "18:00",
       "date": "الأحد 18-01-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "بازل",
-        "logo": "https://imgs.ysscores.com/teams/128/6771690370548.png"
+        "name": "باوك",
+        "logo": "https://imgs.ysscores.com/teams/128/2801690370532.png"
       },
       "away": {
-        "name": "سيون",
-        "logo": "https://imgs.ysscores.com/teams/128/631690370555.png"
+        "name": "أوفي كريت",
+        "logo": "https://imgs.ysscores.com/teams/128/7821690370506.png"
       }
     },
     "channels": []
@@ -1363,6 +1339,30 @@
     "channels": []
   },
   {
+    "id": "4820843",
+    "url": "https://www.ysscores.com/ar/match/4820843/FC-Basel-1893-vs-FC-Sion",
+    "info": {
+      "championship": "دوري السوبر السويسري",
+      "round": "20 - مباراة الاياب",
+      "stadium": "سانت جاكوب بارك",
+      "time": "16:30",
+      "date": "الأحد 18-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "بازل",
+        "logo": "https://imgs.ysscores.com/teams/128/6771690370548.png"
+      },
+      "away": {
+        "name": "سيون",
+        "logo": "https://imgs.ysscores.com/teams/128/631690370555.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4820840",
     "url": "https://www.ysscores.com/ar/match/4820840/Servette-FC-vs-FC-Zürich",
     "info": {
@@ -1371,8 +1371,8 @@
       "stadium": "استاد جنيف",
       "time": "14:00",
       "date": "الأحد 18-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
