@@ -70,8 +70,8 @@
       "stadium": "بالايدوس",
       "time": "18:30",
       "date": "الأحد 18-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -306,39 +306,6 @@
     ]
   },
   {
-    "id": "4803242",
-    "url": "https://www.ysscores.com/ar/match/4803242/Parma-Calcio-1913-vs-Genoa-CFC",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "21 - مباراة الاياب",
-      "stadium": "إنيو تارديني",
-      "time": "12:30",
-      "date": "الأحد 18-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بارما",
-        "logo": "https://imgs.ysscores.com/teams/128/4061690823331.png"
-      },
-      "away": {
-        "name": "جنوى",
-        "logo": "https://imgs.ysscores.com/teams/128/1891690283004.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "StarzPlay",
-        "commentator": "حازم عبدالسلام"
-      },
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "حازم عبدالسلام"
-      }
-    ]
-  },
-  {
     "id": "4803244",
     "url": "https://www.ysscores.com/ar/match/4803244/Torino-FC-vs-AS-Roma",
     "info": {
@@ -372,6 +339,39 @@
       {
         "channel": "منصة شاشا",
         "commentator": "علي دراج"
+      }
+    ]
+  },
+  {
+    "id": "4803242",
+    "url": "https://www.ysscores.com/ar/match/4803242/Parma-Calcio-1913-vs-Genoa-CFC",
+    "info": {
+      "championship": "الدوري الإيطالي",
+      "round": "21 - مباراة الاياب",
+      "stadium": "إنيو تارديني",
+      "time": "12:30",
+      "date": "الأحد 18-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بارما",
+        "logo": "https://imgs.ysscores.com/teams/128/4061690823331.png"
+      },
+      "away": {
+        "name": "جنوى",
+        "logo": "https://imgs.ysscores.com/teams/128/1891690283004.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "StarzPlay",
+        "commentator": "حازم عبدالسلام"
+      },
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "حازم عبدالسلام"
       }
     ]
   },
@@ -470,6 +470,30 @@
     "channels": []
   },
   {
+    "id": "4844315",
+    "url": "https://www.ysscores.com/ar/match/4844315/CD-Tondela-vs-SC-Braga",
+    "info": {
+      "championship": "الدوري البرتغالي الممتاز",
+      "round": "18 - مباراة الاياب",
+      "stadium": "ملعب جواو كاردوسو",
+      "time": "19:00",
+      "date": "الأحد 18-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "تونديلا",
+        "logo": "https://imgs.ysscores.com/teams/128/3081690370568.png"
+      },
+      "away": {
+        "name": "سبورتينغ براغا",
+        "logo": "https://imgs.ysscores.com/teams/128/2631690385875.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4844322",
     "url": "https://www.ysscores.com/ar/match/4844322/Vitória-Guimarães-SC-vs-FC-Porto",
     "info": {
@@ -497,30 +521,6 @@
         "commentator": "محمد العتيبي"
       }
     ]
-  },
-  {
-    "id": "4844315",
-    "url": "https://www.ysscores.com/ar/match/4844315/CD-Tondela-vs-SC-Braga",
-    "info": {
-      "championship": "الدوري البرتغالي الممتاز",
-      "round": "18 - مباراة الاياب",
-      "stadium": "ملعب جواو كاردوسو",
-      "time": "19:00",
-      "date": "الأحد 18-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "تونديلا",
-        "logo": "https://imgs.ysscores.com/teams/128/3081690370568.png"
-      },
-      "away": {
-        "name": "سبورتينغ براغا",
-        "logo": "https://imgs.ysscores.com/teams/128/2631690385875.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "4818477",
@@ -576,30 +576,6 @@
     "channels": []
   },
   {
-    "id": "4818479",
-    "url": "https://www.ysscores.com/ar/match/4818479/FCV-Dender-EH-vs-Royal-Antwerp-FC",
-    "info": {
-      "championship": "الدوري البلجيكي",
-      "round": "21 - مباراة الاياب",
-      "stadium": "استاد فان روي",
-      "time": "16:00",
-      "date": "الأحد 18-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ديندر",
-        "logo": "https://imgs.ysscores.com/teams/128/3071716579177.png"
-      },
-      "away": {
-        "name": "رويال أنتويرب",
-        "logo": "https://imgs.ysscores.com/teams/128/1151690370549.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4818480",
     "url": "https://www.ysscores.com/ar/match/4818480/KAA-Gent-vs-RSC-Anderlecht",
     "info": {
@@ -627,6 +603,30 @@
         "commentator": "غير مدرج"
       }
     ]
+  },
+  {
+    "id": "4818479",
+    "url": "https://www.ysscores.com/ar/match/4818479/FCV-Dender-EH-vs-Royal-Antwerp-FC",
+    "info": {
+      "championship": "الدوري البلجيكي",
+      "round": "21 - مباراة الاياب",
+      "stadium": "استاد فان روي",
+      "time": "16:00",
+      "date": "الأحد 18-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ديندر",
+        "logo": "https://imgs.ysscores.com/teams/128/3071716579177.png"
+      },
+      "away": {
+        "name": "رويال أنتويرب",
+        "logo": "https://imgs.ysscores.com/teams/128/1151690370549.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "4842468",
@@ -749,6 +749,39 @@
     ]
   },
   {
+    "id": "4927449",
+    "url": "https://www.ysscores.com/ar/match/4927449/NEOM-SC-vs-Al-Hilal-SFC",
+    "info": {
+      "championship": "الدوري السعودي للمحترفين",
+      "round": "16 - مباراة الذهاب",
+      "stadium": "استاد مدينة الملك خالد الرياضية (تبوك)",
+      "time": "18:30",
+      "date": "الأحد 18-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "نيوم",
+        "logo": "https://imgs.ysscores.com/teams/128/9361751106662.png"
+      },
+      "away": {
+        "name": "الهلال",
+        "logo": "https://imgs.ysscores.com/teams/128/8761690298716.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 1",
+        "commentator": "مشاري القرني"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "مشاري القرني"
+      }
+    ]
+  },
+  {
     "id": "4927442",
     "url": "https://www.ysscores.com/ar/match/4927442/Al-Hazem-SC-vs-Al-Qadsiah-FC",
     "info": {
@@ -811,39 +844,6 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "خالد المديفر"
-      }
-    ]
-  },
-  {
-    "id": "4927449",
-    "url": "https://www.ysscores.com/ar/match/4927449/NEOM-SC-vs-Al-Hilal-SFC",
-    "info": {
-      "championship": "الدوري السعودي للمحترفين",
-      "round": "16 - مباراة الذهاب",
-      "stadium": "استاد مدينة الملك خالد الرياضية (تبوك)",
-      "time": "18:30",
-      "date": "الأحد 18-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "نيوم",
-        "logo": "https://imgs.ysscores.com/teams/128/9361751106662.png"
-      },
-      "away": {
-        "name": "الهلال",
-        "logo": "https://imgs.ysscores.com/teams/128/8761690298716.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 1",
-        "commentator": "مشاري القرني"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "مشاري القرني"
       }
     ]
   },
@@ -1218,7 +1218,7 @@
       "stadium": "دي كويب",
       "time": "16:45",
       "date": "الأحد 18-01-2026",
-      "current_score": "1 - 3",
+      "current_score": "2 - 3",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -1311,30 +1311,6 @@
     "channels": []
   },
   {
-    "id": "4820842",
-    "url": "https://www.ysscores.com/ar/match/4820842/Grasshopper-Club-Zurich-vs-FC-Thun",
-    "info": {
-      "championship": "دوري السوبر السويسري",
-      "round": "20 - مباراة الاياب",
-      "stadium": "استاد ليتزيغروند",
-      "time": "16:30",
-      "date": "الأحد 18-01-2026",
-      "current_score": "1 - 3",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "جراسهوبرز",
-        "logo": "https://imgs.ysscores.com/teams/128/5311690370548.png"
-      },
-      "away": {
-        "name": "ثون",
-        "logo": "https://imgs.ysscores.com/teams/128/9991690370555.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4820843",
     "url": "https://www.ysscores.com/ar/match/4820843/FC-Basel-1893-vs-FC-Sion",
     "info": {
@@ -1354,6 +1330,30 @@
       "away": {
         "name": "سيون",
         "logo": "https://imgs.ysscores.com/teams/128/631690370555.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4820842",
+    "url": "https://www.ysscores.com/ar/match/4820842/Grasshopper-Club-Zurich-vs-FC-Thun",
+    "info": {
+      "championship": "دوري السوبر السويسري",
+      "round": "20 - مباراة الاياب",
+      "stadium": "استاد ليتزيغروند",
+      "time": "16:30",
+      "date": "الأحد 18-01-2026",
+      "current_score": "1 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "جراسهوبرز",
+        "logo": "https://imgs.ysscores.com/teams/128/5311690370548.png"
+      },
+      "away": {
+        "name": "ثون",
+        "logo": "https://imgs.ysscores.com/teams/128/9991690370555.png"
       }
     },
     "channels": []
