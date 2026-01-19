@@ -166,7 +166,7 @@
       "time": "18:30",
       "date": "الاثنين 19-01-2026",
       "current_score": "0 - 0",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -212,35 +212,6 @@
       }
     },
     "channels": []
-  },
-  {
-    "id": "4842470",
-    "url": "https://www.ysscores.com/ar/match/4842470/Besiktas-JK-vs-Kayserispor",
-    "info": {
-      "championship": "الدوري التركي الممتاز",
-      "round": "18 - مباراة الاياب",
-      "stadium": "استاد توبراس",
-      "time": "18:00",
-      "date": "الاثنين 19-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بشكتاش",
-        "logo": "https://imgs.ysscores.com/teams/128/2171690128210.png"
-      },
-      "away": {
-        "name": "قيصري سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/5091690128127.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Sports HD 1 TR",
-        "commentator": "غير مدرج"
-      }
-    ]
   },
   {
     "id": "4842473",
@@ -291,6 +262,35 @@
       "away": {
         "name": "أيوب سبور",
         "logo": "https://imgs.ysscores.com/teams/128/891700669405.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Sports HD 1 TR",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "4842470",
+    "url": "https://www.ysscores.com/ar/match/4842470/Besiktas-JK-vs-Kayserispor",
+    "info": {
+      "championship": "الدوري التركي الممتاز",
+      "round": "18 - مباراة الاياب",
+      "stadium": "استاد توبراس",
+      "time": "18:00",
+      "date": "الاثنين 19-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بشكتاش",
+        "logo": "https://imgs.ysscores.com/teams/128/2171690128210.png"
+      },
+      "away": {
+        "name": "قيصري سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/5091690128127.png"
       }
     },
     "channels": [
