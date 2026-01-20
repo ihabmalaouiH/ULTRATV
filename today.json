@@ -152,30 +152,6 @@
     ]
   },
   {
-    "id": "5111123",
-    "url": "https://www.ysscores.com/ar/match/5111123/Al-Dahra-Tripoli-FC-vs-Al-Ahli-SC-Libya",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "6 - مباراة الذهاب",
-      "stadium": "ملعب النهر الصناعي",
-      "time": "17:30",
-      "date": "الثلاثاء 20-01-2026",
-      "current_score": "1 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الظهرة",
-        "logo": "https://imgs.ysscores.com/teams/128/17656551628632.png"
-      },
-      "away": {
-        "name": "الأهلي طرابلس",
-        "logo": "https://imgs.ysscores.com/teams/128/9531692282352.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111122",
     "url": "https://www.ysscores.com/ar/match/5111122/Assabah-SC-vs-Al-Khums-SC",
     "info": {
@@ -195,6 +171,30 @@
       "away": {
         "name": "الخمس",
         "logo": "https://imgs.ysscores.com/teams/128/17656575035545.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111123",
+    "url": "https://www.ysscores.com/ar/match/5111123/Al-Dahra-Tripoli-FC-vs-Al-Ahli-SC-Libya",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "6 - مباراة الذهاب",
+      "stadium": "ملعب النهر الصناعي",
+      "time": "17:30",
+      "date": "الثلاثاء 20-01-2026",
+      "current_score": "1 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الظهرة",
+        "logo": "https://imgs.ysscores.com/teams/128/17656551628632.png"
+      },
+      "away": {
+        "name": "الأهلي طرابلس",
+        "logo": "https://imgs.ysscores.com/teams/128/9531692282352.png"
       }
     },
     "channels": []
@@ -229,64 +229,6 @@
     ]
   },
   {
-    "id": "4947240",
-    "url": "https://www.ysscores.com/ar/match/4947240/FC-Copenhagen-vs-SSC-Napoli",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "7",
-      "stadium": "استاد باركن",
-      "time": "21:00",
-      "date": "الثلاثاء 20-01-2026",
-      "current_score": "0 - 1",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "كوبنهاغن",
-        "logo": "https://imgs.ysscores.com/teams/128/1701690822703.png"
-      },
-      "away": {
-        "name": "نابولي",
-        "logo": "https://imgs.ysscores.com/teams/128/9521720636634.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "حسن العيدروس"
-      }
-    ]
-  },
-  {
-    "id": "4947208",
-    "url": "https://www.ysscores.com/ar/match/4947208/Villarreal-CF-vs-Ajax-Amsterdam",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "7",
-      "stadium": "لا سيراميكا",
-      "time": "21:00",
-      "date": "الثلاثاء 20-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "فياريال",
-        "logo": "https://imgs.ysscores.com/teams/128/7121690196747.png"
-      },
-      "away": {
-        "name": "أياكس أمستردام",
-        "logo": "https://imgs.ysscores.com/teams/128/1361751718344.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 7",
-        "commentator": "عبدالله الغامدي"
-      }
-    ]
-  },
-  {
     "id": "4947157",
     "url": "https://www.ysscores.com/ar/match/4947157/Sporting-CP-vs-Paris-Saint-Germain",
     "info": {
@@ -312,6 +254,35 @@
       {
         "channel": "بي إن سبورت 3",
         "commentator": "عامر الخوذيري"
+      }
+    ]
+  },
+  {
+    "id": "4947240",
+    "url": "https://www.ysscores.com/ar/match/4947240/FC-Copenhagen-vs-SSC-Napoli",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "7",
+      "stadium": "استاد باركن",
+      "time": "21:00",
+      "date": "الثلاثاء 20-01-2026",
+      "current_score": "0 - 1",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "كوبنهاغن",
+        "logo": "https://imgs.ysscores.com/teams/128/1701690822703.png"
+      },
+      "away": {
+        "name": "نابولي",
+        "logo": "https://imgs.ysscores.com/teams/128/9521720636634.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "حسن العيدروس"
       }
     ]
   },
@@ -345,60 +316,60 @@
     ]
   },
   {
-    "id": "4947163",
-    "url": "https://www.ysscores.com/ar/match/4947163/FK-Bodø-Glimt-vs-Manchester-City",
+    "id": "4947170",
+    "url": "https://www.ysscores.com/ar/match/4947170/Olympiacos-Piraeus-vs-Bayer-04-Leverkusen",
     "info": {
       "championship": "دوري أبطال أوروبا",
       "round": "7",
-      "stadium": "استاد أسبميرا",
-      "time": "18:45",
-      "date": "الثلاثاء 20-01-2026",
-      "current_score": "3 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بودو/غليمت",
-        "logo": "https://imgs.ysscores.com/teams/128/8781690370522.png"
-      },
-      "away": {
-        "name": "مان سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/4481690118308.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "أحمد البلوشي"
-      }
-    ]
-  },
-  {
-    "id": "4947122",
-    "url": "https://www.ysscores.com/ar/match/4947122/Real-Madrid-vs-AS-Monaco",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "7",
-      "stadium": "ملعب سانتياغو برنابيو",
+      "stadium": "كارايسكاكيس",
       "time": "21:00",
       "date": "الثلاثاء 20-01-2026",
-      "current_score": "4 - 0",
+      "current_score": "2 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
-        "name": "ريال مدريد",
-        "logo": "https://imgs.ysscores.com/teams/128/1871690196746.png"
+        "name": "أولمبياكوس",
+        "logo": "https://imgs.ysscores.com/teams/128/1401690370533.png"
       },
       "away": {
-        "name": "موناكو",
-        "logo": "https://imgs.ysscores.com/teams/128/3861690287583.png"
+        "name": "باير ليفركوزن",
+        "logo": "https://imgs.ysscores.com/teams/128/7151690288816.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 2",
-        "commentator": "حفيظ دراجي"
+        "channel": "بي إن سبورت 6",
+        "commentator": "نوفل باشي"
+      }
+    ]
+  },
+  {
+    "id": "4947208",
+    "url": "https://www.ysscores.com/ar/match/4947208/Villarreal-CF-vs-Ajax-Amsterdam",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "7",
+      "stadium": "لا سيراميكا",
+      "time": "21:00",
+      "date": "الثلاثاء 20-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "فياريال",
+        "logo": "https://imgs.ysscores.com/teams/128/7121690196747.png"
+      },
+      "away": {
+        "name": "أياكس أمستردام",
+        "logo": "https://imgs.ysscores.com/teams/128/1361751718344.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 7",
+        "commentator": "عبدالله الغامدي"
       }
     ]
   },
@@ -461,57 +432,62 @@
     ]
   },
   {
-    "id": "4947170",
-    "url": "https://www.ysscores.com/ar/match/4947170/Olympiacos-Piraeus-vs-Bayer-04-Leverkusen",
+    "id": "4947122",
+    "url": "https://www.ysscores.com/ar/match/4947122/Real-Madrid-vs-AS-Monaco",
     "info": {
       "championship": "دوري أبطال أوروبا",
       "round": "7",
-      "stadium": "كارايسكاكيس",
+      "stadium": "ملعب سانتياغو برنابيو",
       "time": "21:00",
       "date": "الثلاثاء 20-01-2026",
-      "current_score": "2 - 0",
+      "current_score": "4 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
-        "name": "أولمبياكوس",
-        "logo": "https://imgs.ysscores.com/teams/128/1401690370533.png"
+        "name": "ريال مدريد",
+        "logo": "https://imgs.ysscores.com/teams/128/1871690196746.png"
       },
       "away": {
-        "name": "باير ليفركوزن",
-        "logo": "https://imgs.ysscores.com/teams/128/7151690288816.png"
+        "name": "موناكو",
+        "logo": "https://imgs.ysscores.com/teams/128/3861690287583.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 6",
-        "commentator": "نوفل باشي"
+        "channel": "بي إن سبورت 2",
+        "commentator": "حفيظ دراجي"
       }
     ]
   },
   {
-    "id": "4825366",
-    "url": "https://www.ysscores.com/ar/match/4825366/Charlton-Athletic-vs-Derby-County",
+    "id": "4947163",
+    "url": "https://www.ysscores.com/ar/match/4947163/FK-Bodø-Glimt-vs-Manchester-City",
     "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "28 - مباراة الاياب",
-      "stadium": "ذا فالي",
-      "time": "20:45",
+      "championship": "دوري أبطال أوروبا",
+      "round": "7",
+      "stadium": "استاد أسبميرا",
+      "time": "18:45",
       "date": "الثلاثاء 20-01-2026",
-      "current_score": "1 - 2",
-      "match_status": "الشوط الثاني"
+      "current_score": "3 - 1",
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "تشارلتون أثلتيك",
-        "logo": "https://imgs.ysscores.com/teams/128/7791690370524.png"
+        "name": "بودو/غليمت",
+        "logo": "https://imgs.ysscores.com/teams/128/8781690370522.png"
       },
       "away": {
-        "name": "ديربي كاونتي",
-        "logo": "https://imgs.ysscores.com/teams/128/8071690370554.png"
+        "name": "مان سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/4481690118308.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "أحمد البلوشي"
+      }
+    ]
   },
   {
     "id": "4825361",
@@ -533,6 +509,30 @@
       "away": {
         "name": "هال سيتي",
         "logo": "https://imgs.ysscores.com/teams/128/3801690370535.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825366",
+    "url": "https://www.ysscores.com/ar/match/4825366/Charlton-Athletic-vs-Derby-County",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "28 - مباراة الاياب",
+      "stadium": "ذا فالي",
+      "time": "20:45",
+      "date": "الثلاثاء 20-01-2026",
+      "current_score": "1 - 2",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "تشارلتون أثلتيك",
+        "logo": "https://imgs.ysscores.com/teams/128/7791690370524.png"
+      },
+      "away": {
+        "name": "ديربي كاونتي",
+        "logo": "https://imgs.ysscores.com/teams/128/8071690370554.png"
       }
     },
     "channels": []
@@ -586,30 +586,6 @@
       "away": {
         "name": "ميلوول",
         "logo": "https://imgs.ysscores.com/teams/128/2181690370550.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4825362",
-    "url": "https://www.ysscores.com/ar/match/4825362/Sheffield-Wednesday-vs-Birmingham-City",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "28 - مباراة الاياب",
-      "stadium": "هيلزبره",
-      "time": "20:45",
-      "date": "الثلاثاء 20-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "شيفيلد وينزداي",
-        "logo": "https://imgs.ysscores.com/teams/128/2131690370554.png"
-      },
-      "away": {
-        "name": "برمنغهام",
-        "logo": "https://imgs.ysscores.com/teams/128/3121690370534.png"
       }
     },
     "channels": []
@@ -711,6 +687,30 @@
     "channels": []
   },
   {
+    "id": "4825362",
+    "url": "https://www.ysscores.com/ar/match/4825362/Sheffield-Wednesday-vs-Birmingham-City",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "28 - مباراة الاياب",
+      "stadium": "هيلزبره",
+      "time": "20:45",
+      "date": "الثلاثاء 20-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "شيفيلد وينزداي",
+        "logo": "https://imgs.ysscores.com/teams/128/2131690370554.png"
+      },
+      "away": {
+        "name": "برمنغهام",
+        "logo": "https://imgs.ysscores.com/teams/128/3121690370534.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "63612762",
     "url": "https://www.ysscores.com/ar/match/63612762/Japan-U23-vs-South-Korea-U23",
     "info": {
@@ -785,7 +785,7 @@
       "stadium": "استاد بيننسولا",
       "time": "20:45",
       "date": "الثلاثاء 20-01-2026",
-      "current_score": "2 - 2",
+      "current_score": "3 - 2",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -799,35 +799,6 @@
       }
     },
     "channels": []
-  },
-  {
-    "id": "68180995",
-    "url": "https://www.ysscores.com/ar/match/68180995/Oman-Club-vs-Al-Nasr-Club",
-    "info": {
-      "championship": "كأس جلالة السلطان المعظم",
-      "round": "نصف نهائي - مباراة الذهاب",
-      "stadium": "استاد السيب",
-      "time": "14:00",
-      "date": "الثلاثاء 20-01-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "نادي عُمان",
-        "logo": "https://imgs.ysscores.com/teams/128/9041691931536.png"
-      },
-      "away": {
-        "name": "النصر",
-        "logo": "https://imgs.ysscores.com/teams/128/5661691930849.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "عمان الرياضية",
-        "commentator": "يونس الرواحي"
-      }
-    ]
   },
   {
     "id": "84778320",
@@ -855,6 +826,35 @@
       {
         "channel": "عمان الرياضية",
         "commentator": "سالم السالمي"
+      }
+    ]
+  },
+  {
+    "id": "68180995",
+    "url": "https://www.ysscores.com/ar/match/68180995/Oman-Club-vs-Al-Nasr-Club",
+    "info": {
+      "championship": "كأس جلالة السلطان المعظم",
+      "round": "نصف نهائي - مباراة الذهاب",
+      "stadium": "استاد السيب",
+      "time": "14:00",
+      "date": "الثلاثاء 20-01-2026",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "نادي عُمان",
+        "logo": "https://imgs.ysscores.com/teams/128/9041691931536.png"
+      },
+      "away": {
+        "name": "النصر",
+        "logo": "https://imgs.ysscores.com/teams/128/5661691930849.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "عمان الرياضية",
+        "commentator": "يونس الرواحي"
       }
     ]
   },
