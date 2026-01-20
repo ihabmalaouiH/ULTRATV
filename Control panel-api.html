@@ -274,9 +274,10 @@ const config = {
     apiUrl: "https://raw.githubusercontent.com/ihabmalaouiH/ULTRATV/refs/heads/main/today.json"
 };
 
-// --- Xtream Configuration (تم التعديل للرابط الصحيح) ---
+// --- Xtream Configuration (Fetch from Worker, Gen Link from HTTP) ---
 const xtreamConfig = {
-    url: "https://api-ultra.dzandz496.workers.dev", // ✅ الرابط الصحيح (HTTPS)
+    fetchUrl: "https://api-ultra.dzandz496.workers.dev", // 🛡️ Worker URL (HTTPS) for fetching list
+    streamHost: "http://dns.ultrav.me",                  // 📺 Stream Host (HTTP) for generated links
     username: "M_IhabDev",       
     password: "UltraTVCAFM"      
 };
@@ -775,7 +776,8 @@ async function autoFillFromXtream() {
     showToast("جاري الاتصال بسيرفر Xtream...", "info");
 
     try {
-        const api = `${xtreamConfig.url}/player_api.php?username=${xtreamConfig.username}&password=${xtreamConfig.password}&action=get_live_streams`;
+        // 1. Fetch List (From HTTPS Worker)
+        const api = `${xtreamConfig.fetchUrl}/player_api.php?username=${xtreamConfig.username}&password=${xtreamConfig.password}&action=get_live_streams`;
         const res = await fetch(api);
         
         if(!res.ok) throw new Error("فشل الاتصال بسيرفر Xtream (Status: " + res.status + ")");
@@ -798,53 +800,52 @@ async function autoFillFromXtream() {
             
             if(!channelName || channelName === "غير معروف") return;
 
-            // Normalize: Remove special chars, spaces, lowercase
+            // ⚠️ 1. Restrict to "beIN Sport" only
+            if (!channelName.toLowerCase().includes("bein sport")) return;
+
+            // Normalize: Remove special chars, spaces, lowercase for matching
             const cleanName = channelName.toLowerCase().replace(/[^a-z0-9]/g, '');
             
             // Filter channels
             const matchedChannels = channelsData.filter(ch => {
-                const chStreamName = ch.name.toLowerCase();
-                const chStreamNameClean = chStreamName.replace(/[^a-z0-9]/g, '');
-                
-                // 1. Basic Match
-                if(!chStreamNameClean.includes(cleanName)) return false;
-
-                // 2. Anti-FR filter (إذا لم يكن في اسم القناة كلمة FR، لا تقبل قناة تبدأ بـ FR)
-                if(chStreamName.startsWith('fr') && !cleanName.startsWith('fr')) return false;
-                if(chStreamName.startsWith('uk') && !cleanName.startsWith('uk')) return false;
-
-                return true;
+                const chStreamName = ch.name.toLowerCase().replace(/[^a-z0-9]/g, '');
+                return chStreamName.includes(cleanName);
             });
 
             if(matchedChannels.length > 0) {
                 const servers = [];
-                const qualityPriority = ['4k', 'fhd', 'hevc', 'hd', 'sd'];
+                const qualityPriority = ['4k', 'fhd', 'hevc', 'hd', 'sd', 'low'];
                 
+                // Sort Priority
                 matchedChannels.sort((a, b) => {
                     const nameA = a.name.toLowerCase();
                     const nameB = b.name.toLowerCase();
-                    
                     let idxA = qualityPriority.findIndex(q => nameA.includes(q));
                     let idxB = qualityPriority.findIndex(q => nameB.includes(q));
-                    
                     if(idxA === -1) idxA = 99;
                     if(idxB === -1) idxB = 99;
-                    
                     return idxA - idxB;
                 });
 
                 matchedChannels.forEach(ch => {
-                    // ⚠️ تصحيح الامتداد إلى .m3u8 ⚠️
-                    const streamUrl = `${xtreamConfig.url}/live/${xtreamConfig.username}/${xtreamConfig.password}/${ch.stream_id}.m3u8`;
+                    const lowName = ch.name.toLowerCase();
+                    let label = null;
+
+                    // ⚠️ 2. Filter Qualities Only (Strict)
+                    if(lowName.includes("4k")) label = "4K";
+                    else if(lowName.includes("fhd")) label = "FHD";
+                    else if(lowName.includes("hd")) label = "HD";
+                    else if(lowName.includes("sd")) label = "SD";
+                    else if(lowName.includes("low")) label = "LOW";
+
+                    if (!label) return; // Skip if quality not found
+
+                    // ⚠️ 3. Construct URL (Using HTTP Host + .m3u8)
+                    const streamUrl = `${xtreamConfig.streamHost}/live/${xtreamConfig.username}/${xtreamConfig.password}/${ch.stream_id}.m3u8`;
                     
-                    let label = "SD";
-                    if(ch.name.toLowerCase().includes("4k")) label = "4K";
-                    else if(ch.name.toLowerCase().includes("fhd")) label = "FHD";
-                    else if(ch.name.toLowerCase().includes("hevc")) label = "HEVC";
-                    else if(ch.name.toLowerCase().includes("hd")) label = "HD";
-                    
+                    // ⚠️ 4. Server Name = Label Only
                     const obj = {};
-                    obj[`${channelName} (${label})`] = streamUrl;
+                    obj[label] = streamUrl; 
                     servers.push(obj);
                 });
 
@@ -855,7 +856,8 @@ async function autoFillFromXtream() {
                     badge.innerText = servers.length;
                     badge.style.display = "inline-block";
                     
-                    row.querySelector("input[type='checkbox']").checked = true;
+                    // ⚠️ 5. Removed Auto-Check
+                    // row.querySelector("input[type='checkbox']").checked = true; // DELETED
                     filledCount++;
                 }
             }
@@ -865,13 +867,12 @@ async function autoFillFromXtream() {
         if(filledCount > 0) {
             showToast(`✅ تم إضافة السيرفرات لـ ${filledCount} مباراة تلقائياً!`, "success");
         } else {
-            alert("تم جلب القنوات ولكن لم يتم العثور على أي تطابق.\n\nتأكد أن أسماء القنوات في الجدول تطابق الأسماء في سيرفرك.");
+            alert("لم يتم العثور على أي قنوات مطابقة. تأكد أن القنوات في الجدول تحتوي على 'beIN Sports'.");
         }
 
     } catch (e) {
         console.error(e);
         showToast("⚠️ خطأ: " + e.message, "error");
-        alert("فشل جلب القنوات:\n" + e.message + "\n\nتأكد من وضع رابط Worker الصحيح (HTTPS) في الكود.");
     }
 }
 
