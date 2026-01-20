@@ -411,11 +411,27 @@ async function loadFromFirebase() {
                 if(commInput) commInput.value = savedMatch.commentator;
 
                 if(savedMatch.servers) {
-                    row.dataset.servers = JSON.stringify(savedMatch.servers);
+                    // 🔄 [تحديث جديد] تنظيف أسماء السيرفرات عند التحميل
+                    // تحويل الأسماء الطويلة "beIN (SD)" إلى "SD" فقط
+                    const cleanedServers = savedMatch.servers.map(srv => {
+                        const key = Object.keys(srv)[0];
+                        const val = Object.values(srv)[0];
+                        
+                        // استخراج ما بداخل الأقواس () إن وجد
+                        const match = key.match(/\(([^)]+)\)$/);
+                        const newName = match ? match[1] : key; 
+                        
+                        const obj = {};
+                        obj[newName] = val;
+                        return obj;
+                    });
+
+                    row.dataset.servers = JSON.stringify(cleanedServers);
+                    
                     const badge = row.querySelector(".server-count-badge");
                     if(badge) {
-                        badge.innerText = savedMatch.servers.length;
-                        badge.style.display = savedMatch.servers.length > 0 ? "inline-block" : "none";
+                        badge.innerText = cleanedServers.length;
+                        badge.style.display = cleanedServers.length > 0 ? "inline-block" : "none";
                     }
                 }
             }
