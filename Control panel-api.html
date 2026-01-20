@@ -411,13 +411,12 @@ async function loadFromFirebase() {
                 if(commInput) commInput.value = savedMatch.commentator;
 
                 if(savedMatch.servers) {
-                    // 🔄 [تحديث جديد] تنظيف أسماء السيرفرات عند التحميل
-                    // تحويل الأسماء الطويلة "beIN (SD)" إلى "SD" فقط
+                    // تنظيف أسماء السيرفرات عند التحميل (التحويل إلى الصيغة القصيرة)
                     const cleanedServers = savedMatch.servers.map(srv => {
                         const key = Object.keys(srv)[0];
                         const val = Object.values(srv)[0];
                         
-                        // استخراج ما بداخل الأقواس () إن وجد
+                        // استخراج ما بداخل الأقواس () إن وجد، وإلا إبقاء الاسم كما هو
                         const match = key.match(/\(([^)]+)\)$/);
                         const newName = match ? match[1] : key; 
                         
@@ -444,7 +443,7 @@ async function loadFromFirebase() {
     }
 }
 
-// --- Helper: Parse Arabic Date ---
+// --- Helper: Parse Arabic Date (FIXED to keep original time) ---
 function parseArabicMatchTime(dateStr, timeStr) {
     try {
         const dateParts = dateStr.match(/(\d{2})-(\d{2})-(\d{4})/);
@@ -475,7 +474,7 @@ function parseArabicMatchTime(dateStr, timeStr) {
     }
 }
 
-// --- Main Fetch Logic ---
+// --- Main Fetch Logic (FIXED) ---
 async function fetchMatches() {
     matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">⏳ جاري جلب البيانات...</td></tr>`;
     try {
@@ -488,6 +487,7 @@ async function fetchMatches() {
         }
 
         allMatches.forEach(m => {
+            // استخدام الوقت الأصلي دائماً بغض النظر عن الحالة
             const dateObj = parseArabicMatchTime(m.info.date, m.info.time);
             m._timestamp = dateObj ? dateObj.getTime() : 0;
         });
@@ -525,6 +525,7 @@ function renderMatches(matches) {
         const team2 = match.teams.away;
         const info = match.info;
         
+        // حساب وقت البداية بناءً على الوقت الأصلي الذي تم تحليله
         const startTime = Math.floor(match._timestamp / 1000);
         const matchDate = new Date(match._timestamp);
         const timeStr = matchDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
