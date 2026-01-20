@@ -426,7 +426,7 @@ async function loadFromFirebase() {
     }
 }
 
-// --- Helper: Parse Arabic Date (NO Timezone conversion) ---
+// --- Helper: Parse Arabic Date (MODIFIED TO FIX 12:30 PM BUG) ---
 function parseArabicMatchTime(dateStr, timeStr) {
     try {
         const dateParts = dateStr.match(/(\d{2})-(\d{2})-(\d{4})/);
@@ -435,17 +435,23 @@ function parseArabicMatchTime(dateStr, timeStr) {
         const month = parseInt(dateParts[2]) - 1;
         const day = parseInt(dateParts[1]);
 
+        // Clean text (Handle Arabic AM/PM)
         let time = timeStr.replace('مساءً', 'PM').replace('صباحاً', 'AM')
                           .replace('مساء', 'PM').replace('صباح', 'AM')
                           .trim();
-            
-        let [timeRaw, modifier] = time.split(' ');
+        
+        // Detect PM explicitly (Works even if there is no space like "12:30PM")
+        const isPM = time.toUpperCase().includes('PM');
+        
+        // Remove AM/PM to get pure time string
+        let timeRaw = time.replace(/PM|AM/gi, '').trim();
         let [hoursStr, minutes] = timeRaw.split(':');
         
         let hours = parseInt(hoursStr, 10);
             
-        if (hours === 12) hours = 0;
-        if (modifier === 'PM') hours += 12;
+        // Correct 12-hour to 24-hour logic
+        if (isPM && hours < 12) hours += 12;      // PM: 1->13, 11->23, 12->12 (Kept as is)
+        if (!isPM && hours === 12) hours = 0;     // AM: 12->0 (Midnight)
         
         const dateObj = new Date(year, month, day, hours, parseInt(minutes));
         return dateObj;
