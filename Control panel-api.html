@@ -20,7 +20,7 @@
     --danger: #ef4444;
     --text: #f8fafc;
     --text-muted: #94a3b8;
-    --xtream: #8b5cf6; /* لون جديد لزر الاكستريم */
+    --xtream: #8b5cf6;
   }
   * { box-sizing: border-box; outline: none; }
   body {
@@ -38,7 +38,7 @@
   .dashboard-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
   @media (min-width: 1200px) { .dashboard-grid { grid-template-columns: 3fr 1fr; } }
 
-  /* --- شريط التحكم (Organized Controls) --- */
+  /* --- شريط التحكم --- */
   .controls {
     background: var(--bg-card); padding: 15px; border-radius: 12px; border: 1px solid var(--border);
     display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
@@ -60,13 +60,13 @@
   .btn-success { background: var(--success); border-color: var(--success); color: white; }
   .btn-danger { background: var(--danger); border-color: var(--danger); color: white; }
   .btn-firebase { background: #ffca28; border-color: #ffca28; color: #000; } 
-  .btn-xtream { background: var(--xtream); border-color: var(--xtream); color: white; } /* زر الاكستريم */
+  .btn-xtream { background: var(--xtream); border-color: var(--xtream); color: white; }
 
   /* --- شريط الإحصائيات --- */
   .stats-bar { display: flex; gap: 15px; margin-top: 10px; font-weight: bold; color: var(--text-muted); font-size: 13px; flex-wrap: wrap; }
   .stat-item b { color: var(--text); margin-left: 4px; }
 
-  /* --- الجدول (Organized Table) --- */
+  /* --- الجدول --- */
   .table-container { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border); width: 100%; background: var(--bg-card); }
   table { width: 100%; border-collapse: collapse; min-width: 1000px; }
   th { background: #162032; padding: 12px; text-align: center; color: var(--text-muted); font-weight: 600; white-space: nowrap; }
@@ -80,7 +80,7 @@
   .status-live { background: rgba(220, 38, 38, 0.2); color: #fca5a5; border: 1px solid #7f1d1d; animation: pulse 2s infinite; }
   .status-upcoming { background: rgba(14, 165, 233, 0.2); color: #7dd3fc; border: 1px solid #075985; }
 
-  /* --- تنسيق القوائم المنسدلة للقنوات (Organized Dropdown) --- */
+  /* --- القوائم المنسدلة --- */
   .channel-select {
     appearance: none;
     background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23fbbf24%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
@@ -109,7 +109,7 @@
   .output-area { position: sticky; top: 20px; }
   textarea#output { width: 100%; height: 400px; font-family: monospace; line-height: 1.5; color: #a5b4fc; resize: vertical; padding: 10px; }
 
-  /* --- المودال (Modal) --- */
+  /* --- المودال --- */
   .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); backdrop-filter: blur(5px); }
   .modal-content { background-color: var(--bg-card); margin: 5% auto; padding: 20px; border: 1px solid var(--border); width: 95%; max-width: 600px; border-radius: 12px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.5); }
   .modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 15px; }
@@ -117,7 +117,7 @@
   .server-row input { flex: 1; }
   .server-count-badge { background: var(--primary); color: white; padding: 2px 6px; border-radius: 4px; font-size: 10px; margin-right: 5px; display: none; }
 
-  /* --- Login Overlay --- */
+  /* --- تسجيل الدخول --- */
   #login-overlay {
         position: fixed; top: 0; left: 0; width: 100%; height: 100%;
         background: var(--bg-dark); z-index: 9999;
@@ -139,7 +139,7 @@
   @keyframes fadeOut { to { opacity: 0; transform: translateY(10px); } }
   @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.6; } 100% { opacity: 1; } }
 
-  /* --- التجاوب (Responsive) --- */
+  /* --- التجاوب --- */
   @media (max-width: 992px) {
     .dashboard-grid { grid-template-columns: 1fr; }
     .output-area { position: static; height: auto; }
@@ -274,11 +274,12 @@ const config = {
     apiUrl: "https://raw.githubusercontent.com/ihabmalaouiH/ULTRATV/refs/heads/main/today.json"
 };
 
-// --- Xtream Configuration (NEW) ---
+// --- Xtream Configuration (LINKED TO YOUR WORKER CODE) ---
+// ⚠️ هام: تأكد أن الرابط هو رابط Cloudflare Worker الذي رفعت عليه الكود
 const xtreamConfig = {
-    url: "http://dns.ultrav.me",
-    username: "M_IhabDev",
-    password: "UltraTVCAFM"
+    url: "http://dns.ultrav.me", // 👈 ضع رابط السكريبت الخاص بك هنا إذا كان مختلفاً
+    username: "M_IhabDev",       // ✅ تم أخذه من كود الباك-إند
+    password: "UltraTVCAFM"      // ✅ تم أخذه من كود الباك-إند
 };
 
 // --- Elements ---
@@ -321,7 +322,7 @@ function initialize() {
     fetchMatches(); // Default Fetch from API
 }
 
-// --- Firebase Functions (Replacing GitHub) ---
+// --- Firebase Functions ---
 
 async function saveToFirebase() {
     const val = outputTextarea.value;
@@ -370,7 +371,6 @@ async function clearFirebase() {
     }
 }
 
-// ⚠️⚠️⚠️ تم تعديل هذه الدالة لاستعادة التحديد في الجدول ⚠️⚠️⚠️
 async function loadFromFirebase() {
     showToast("جاري جلب المحفوظ من Firebase...", "info");
     try {
@@ -383,18 +383,15 @@ async function loadFromFirebase() {
         
         const matches = snapshot.docs.map(doc => doc.data());
         
-        // هنا نبدأ عملية المطابقة مع الجدول الحالي
         const rows = document.querySelectorAll("#matchesTable tbody tr");
         let restoredCount = 0;
 
-        // إلغاء تحديد الكل أولاً لتجنب التكرار
         rows.forEach(r => {
              const chk = r.querySelector("input[type='checkbox']");
              if(chk) chk.checked = false;
         });
 
         matches.forEach(savedMatch => {
-            // البحث عن الصف المطابق (الفريق 1 و الفريق 2)
             const row = Array.from(rows).find(r => 
                 r.dataset.team1Name === savedMatch.team1Name && 
                 r.dataset.team2Name === savedMatch.team2Name
@@ -402,21 +399,17 @@ async function loadFromFirebase() {
 
             if (row) {
                 restoredCount++;
-                // 1. تحديد الـ Checkbox
                 const checkbox = row.querySelector("input[type='checkbox']");
                 if(checkbox) checkbox.checked = true;
 
-                // 2. استعادة القناة
                 const chInput = row.querySelector(".channel-input");
                 const chSelect = row.querySelector(".channel-select");
                 if(chInput) chInput.value = savedMatch.channel;
                 if(chSelect) chSelect.value = savedMatch.channel;
 
-                // 3. استعادة المعلق
                 const commInput = row.querySelector(".comm-input");
                 if(commInput) commInput.value = savedMatch.commentator;
 
-                // 4. استعادة السيرفرات والبادج
                 if(savedMatch.servers) {
                     row.dataset.servers = JSON.stringify(savedMatch.servers);
                     const badge = row.querySelector(".server-count-badge");
@@ -428,7 +421,6 @@ async function loadFromFirebase() {
             }
         });
 
-        // تحديث النص والإحصائيات بناءً على ما تم استعادته
         updateStatsAndJSON();
         showToast(`📥 تم استعادة ${restoredCount} مباراة وتحديدها في الجدول`, "success");
     } catch (e) {
@@ -436,7 +428,7 @@ async function loadFromFirebase() {
     }
 }
 
-// --- Helper: Parse Arabic Date (MODIFIED TO FIX 12:30 PM BUG) ---
+// --- Helper: Parse Arabic Date ---
 function parseArabicMatchTime(dateStr, timeStr) {
     try {
         const dateParts = dateStr.match(/(\d{2})-(\d{2})-(\d{4})/);
@@ -445,23 +437,19 @@ function parseArabicMatchTime(dateStr, timeStr) {
         const month = parseInt(dateParts[2]) - 1;
         const day = parseInt(dateParts[1]);
 
-        // Clean text (Handle Arabic AM/PM)
         let time = timeStr.replace('مساءً', 'PM').replace('صباحاً', 'AM')
                           .replace('مساء', 'PM').replace('صباح', 'AM')
                           .trim();
         
-        // Detect PM explicitly (Works even if there is no space like "12:30PM")
         const isPM = time.toUpperCase().includes('PM');
         
-        // Remove AM/PM to get pure time string
         let timeRaw = time.replace(/PM|AM/gi, '').trim();
         let [hoursStr, minutes] = timeRaw.split(':');
         
         let hours = parseInt(hoursStr, 10);
             
-        // Correct 12-hour to 24-hour logic
-        if (isPM && hours < 12) hours += 12;      // PM: 1->13, 11->23, 12->12 (Kept as is)
-        if (!isPM && hours === 12) hours = 0;     // AM: 12->0 (Midnight)
+        if (isPM && hours < 12) hours += 12;
+        if (!isPM && hours === 12) hours = 0;
         
         const dateObj = new Date(year, month, day, hours, parseInt(minutes));
         return dateObj;
@@ -525,7 +513,7 @@ function renderMatches(matches) {
         const matchDate = new Date(match._timestamp);
         const timeStr = matchDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
 
-        // --- STATUS LOGIC START (PURE API) ---
+        // --- STATUS LOGIC ---
         let rawStatus = info.match_status || "لم تبدأ";
         let apiScore = info.current_score || "VS";
 
@@ -543,7 +531,6 @@ function renderMatches(matches) {
             jsonStatus = "Live";
             if (!apiScore || apiScore === "VS") apiScore = "0 - 0";
         }
-        // --- STATUS LOGIC END ---
 
         const defaultLogo = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z'/%3E%3C/svg%3E";
 
@@ -632,7 +619,6 @@ function openServerModal(btn) {
     document.getElementById("serverModal").style.display = "block";
 }
 
-// ⚠️⚠️⚠️ دالة إضافة سطر السيرفر (تم تعديلها لإضافة أزرار الترتيب) ⚠️⚠️⚠️
 function addServerLine(name = "", url = "") {
     const div = document.createElement("div");
     div.className = "server-row";
@@ -646,7 +632,6 @@ function addServerLine(name = "", url = "") {
     document.getElementById("serverList").appendChild(div);
 }
 
-// ⚠️⚠️⚠️ دالتين جديدتين للترتيب (أعلى وأسفل) ⚠️⚠️⚠️
 function moveServerUp(btn) {
     const row = btn.parentElement;
     if (row.previousElementSibling) {
@@ -736,8 +721,8 @@ function updateStatsAndJSON() {
             league: d.league, 
             channel: channelValue,
             commentator: commInput,
-            status: d.jsonStatus, // تمت إضافتها للتأكد
-            score: "", // <--- تم التعديل هنا ليكون فارغاً دائماً
+            status: d.jsonStatus, 
+            score: "", 
             servers: servers 
         });
     });
@@ -785,14 +770,12 @@ function processBulkInput() {
 
 // --- NEW FUNCTION: Auto Fill From Xtream ---
 async function autoFillFromXtream() {
-    // 1. Check if there are matches
     const allRows = matchesTbody.querySelectorAll('tr');
     if(allRows.length === 0) return showToast("لا توجد مباريات في الجدول", "error");
 
     showToast("جاري الاتصال بسيرفر Xtream...", "info");
 
     try {
-        // 2. Fetch Xtream Data
         const api = `${xtreamConfig.url}/player_api.php?username=${xtreamConfig.username}&password=${xtreamConfig.password}&action=get_live_streams`;
         const res = await fetch(api);
         
@@ -806,10 +789,7 @@ async function autoFillFromXtream() {
 
         let filledCount = 0;
 
-        // 3. Loop through matches
         allRows.forEach(row => {
-            // Check if selected or wants to be selected
-            // We will process all rows, but prioritizing ones with channel names
             let chInput = row.querySelector(".channel-input");
             let chSelect = row.querySelector(".channel-select");
             
@@ -819,21 +799,13 @@ async function autoFillFromXtream() {
             
             if(!channelName || channelName === "غير معروف") return;
 
-            // 4. Clean Channel Name for matching (e.g. "beIN SPORTS 1" -> "bein sports 1")
             const cleanName = channelName.toLowerCase().replace(/\s+/g, ' ');
-            
-            // Filter Xtream channels that contain this name
-            // Strict check: Must contain the channel name. 
-            // Better logic: "beIN SPORTS 1" should match "AR: beIN SPORTS 1 FHD" but not "beIN SPORTS 10"
             
             const matchedChannels = channelsData.filter(ch => {
                 const chStreamName = ch.name.toLowerCase();
                 
-                // Simple inclusion check
                 if(!chStreamName.includes(cleanName.toLowerCase())) return false;
                 
-                // Extra check to avoid 1 matching 10, 11 etc. (Basic logic)
-                // If channel ends with a number, ensure the stream name has that number not followed by another digit immediately
                 const lastDigit = cleanName.match(/\d+$/);
                 if(lastDigit) {
                    const regex = new RegExp(`${lastDigit[0]}(?!\\d)`);
@@ -844,10 +816,7 @@ async function autoFillFromXtream() {
             });
 
             if(matchedChannels.length > 0) {
-                // 5. Generate Server Objects
                 const servers = [];
-                
-                // Sort by quality preference
                 const qualityPriority = ['4k', 'fhd', 'hevc', 'hd', 'sd'];
                 
                 matchedChannels.sort((a, b) => {
@@ -863,33 +832,27 @@ async function autoFillFromXtream() {
                     return idxA - idxB;
                 });
 
-                // Add to list
                 matchedChannels.forEach(ch => {
                     const streamUrl = `${xtreamConfig.url}/live/${xtreamConfig.username}/${xtreamConfig.password}/${ch.stream_id}.ts`;
                     
-                    // Detect Quality for Label
                     let label = "SD";
                     if(ch.name.toLowerCase().includes("4k")) label = "4K";
                     else if(ch.name.toLowerCase().includes("fhd")) label = "FHD";
                     else if(ch.name.toLowerCase().includes("hevc")) label = "HEVC";
                     else if(ch.name.toLowerCase().includes("hd")) label = "HD";
                     
-                    // Create object key:value -> "ServerName (Quality)": "URL"
                     const obj = {};
                     obj[`${channelName} (${label})`] = streamUrl;
                     servers.push(obj);
                 });
 
-                // 6. Save to Row
                 if(servers.length > 0) {
                     row.dataset.servers = JSON.stringify(servers);
                     
-                    // Update Badge
                     const badge = row.querySelector(".server-count-badge");
                     badge.innerText = servers.length;
                     badge.style.display = "inline-block";
                     
-                    // Auto-check the row if found
                     row.querySelector("input[type='checkbox']").checked = true;
                     filledCount++;
                 }
