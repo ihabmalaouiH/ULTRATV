@@ -516,7 +516,7 @@ function formatChannelName(name) {
     return formatted.replace(/\s+/g, ' ').trim();
 }
 
-// --- Render Table ---
+// --- Render Table (FIXED Half Time Bug) ---
 function renderMatches(matches) {
     matchesTbody.innerHTML = "";
     
@@ -530,14 +530,18 @@ function renderMatches(matches) {
         const matchDate = new Date(match._timestamp);
         const timeStr = matchDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
 
-        // --- STATUS LOGIC ---
+        // --- STATUS LOGIC (FIXED) ---
         let rawStatus = info.match_status || "لم تبدأ";
         let apiScore = info.current_score || "VS";
 
         let statusBadgeClass = "status-upcoming";
         let jsonStatus = "Not Started";
 
-        if (rawStatus.includes("انتهت") || rawStatus.includes("إنتهت") || rawStatus.includes("نهاية")) {
+        // ✅ إصلاح مشكلة بين الشوطين (تجاهل كلمة "شوط" عند فحص الانتهاء)
+        const isFinished = (rawStatus.includes("انتهت") || rawStatus.includes("إنتهت") || rawStatus.includes("نهاية")) 
+                           && !rawStatus.includes("شوط") && !rawStatus.includes("استراحة");
+
+        if (isFinished) {
             statusBadgeClass = "status-finished";
             jsonStatus = "Finished";
         } else if (rawStatus.includes("لم تبدأ")) {
