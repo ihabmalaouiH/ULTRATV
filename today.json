@@ -99,6 +99,30 @@
     ]
   },
   {
+    "id": "5111160",
+    "url": "https://www.ysscores.com/ar/match/5111160/Al-Sadaqa-Shahat-SC-vs-Al-Taawon-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "6 - مباراة الذهاب",
+      "stadium": "الوادي الكبير",
+      "time": "14:00",
+      "date": "الأربعاء 21-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الصداقة",
+        "logo": "https://imgs.ysscores.com/teams/128/17656583462234.png"
+      },
+      "away": {
+        "name": "التعاون",
+        "logo": "https://imgs.ysscores.com/teams/128/17656571434987.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5111124",
     "url": "https://www.ysscores.com/ar/match/5111124/Al-Watan-SC-vs-Abu-Salim-SC",
     "info": {
@@ -123,12 +147,12 @@
     "channels": []
   },
   {
-    "id": "5111160",
-    "url": "https://www.ysscores.com/ar/match/5111160/Al-Sadaqa-Shahat-SC-vs-Al-Taawon-SC",
+    "id": "5111161",
+    "url": "https://www.ysscores.com/ar/match/5111161/Al-Anwar-Al-Abyar-SC-vs-Al-Hilal-SC",
     "info": {
       "championship": "الدوري الليبي الممتاز",
       "round": "6 - مباراة الذهاب",
-      "stadium": "الوادي الكبير",
+      "stadium": "ملعب المرج",
       "time": "14:00",
       "date": "الأربعاء 21-01-2026",
       "current_score": "- : -",
@@ -136,12 +160,12 @@
     },
     "teams": {
       "home": {
-        "name": "الصداقة",
-        "logo": "https://imgs.ysscores.com/teams/128/17656583462234.png"
+        "name": "الأنوار",
+        "logo": "https://imgs.ysscores.com/teams/128/17656568995248.png"
       },
       "away": {
-        "name": "التعاون",
-        "logo": "https://imgs.ysscores.com/teams/128/17656571434987.png"
+        "name": "الهلال",
+        "logo": "https://imgs.ysscores.com/teams/128/7131696628343.png"
       }
     },
     "channels": []
@@ -195,30 +219,6 @@
     "channels": []
   },
   {
-    "id": "5111161",
-    "url": "https://www.ysscores.com/ar/match/5111161/Al-Anwar-Al-Abyar-SC-vs-Al-Hilal-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "6 - مباراة الذهاب",
-      "stadium": "ملعب المرج",
-      "time": "14:00",
-      "date": "الأربعاء 21-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الأنوار",
-        "logo": "https://imgs.ysscores.com/teams/128/17656568995248.png"
-      },
-      "away": {
-        "name": "الهلال",
-        "logo": "https://imgs.ysscores.com/teams/128/7131696628343.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111125",
     "url": "https://www.ysscores.com/ar/match/5111125/Libyan-Stadium-vs-Asswehly-SC",
     "info": {
@@ -267,35 +267,6 @@
     "channels": []
   },
   {
-    "id": "4899587",
-    "url": "https://www.ysscores.com/ar/match/4899587/Smouha-SC-vs-Pharco-FC",
-    "info": {
-      "championship": "الدوري المصري",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "استاد الجيش ببرج العرب",
-      "time": "19:00",
-      "date": "الأربعاء 21-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "سموحة",
-        "logo": "https://imgs.ysscores.com/teams/128/481694082088.png"
-      },
-      "away": {
-        "name": "فاركو",
-        "logo": "https://imgs.ysscores.com/teams/128/5821694082005.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ON Sport 1",
-        "commentator": "عصام عبده"
-      }
-    ]
-  },
-  {
     "id": "4899582",
     "url": "https://www.ysscores.com/ar/match/4899582/Cleopatra-FC-vs-Ittihad-Alexandria-SC",
     "info": {
@@ -321,6 +292,35 @@
       {
         "channel": "ON Sport 1",
         "commentator": "أيمن الكاشف"
+      }
+    ]
+  },
+  {
+    "id": "4899587",
+    "url": "https://www.ysscores.com/ar/match/4899587/Smouha-SC-vs-Pharco-FC",
+    "info": {
+      "championship": "الدوري المصري",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "استاد الجيش ببرج العرب",
+      "time": "19:00",
+      "date": "الأربعاء 21-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "سموحة",
+        "logo": "https://imgs.ysscores.com/teams/128/481694082088.png"
+      },
+      "away": {
+        "name": "فاركو",
+        "logo": "https://imgs.ysscores.com/teams/128/5821694082005.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 1",
+        "commentator": "عصام عبده"
       }
     ]
   },
@@ -402,12 +402,12 @@
     "channels": []
   },
   {
-    "id": "4947151",
-    "url": "https://www.ysscores.com/ar/match/4947151/SK-Slavia-Prague-vs-FC-Barcelona",
+    "id": "4947142",
+    "url": "https://www.ysscores.com/ar/match/4947142/Olympique-Marseille-vs-Liverpool-FC",
     "info": {
       "championship": "دوري أبطال أوروبا",
       "round": "7",
-      "stadium": "إيدن أرينا",
+      "stadium": "فيلودروم",
       "time": "21:00",
       "date": "الأربعاء 21-01-2026",
       "current_score": "- : -",
@@ -415,18 +415,18 @@
     },
     "teams": {
       "home": {
-        "name": "سلافيا براغ",
-        "logo": "https://imgs.ysscores.com/teams/128/9621690370507.png"
+        "name": "مارسيليا",
+        "logo": "https://imgs.ysscores.com/teams/128/6031690287269.png"
       },
       "away": {
-        "name": "برشلونة",
-        "logo": "https://imgs.ysscores.com/teams/128/9541690196746.png"
+        "name": "ليفربول",
+        "logo": "https://imgs.ysscores.com/teams/128/4081724601375.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 2",
-        "commentator": "عامر الخوذيري"
+        "channel": "بي إن سبورت 1",
+        "commentator": "عصام الشوالي"
       }
     ]
   },
@@ -460,64 +460,6 @@
     ]
   },
   {
-    "id": "4947183",
-    "url": "https://www.ysscores.com/ar/match/4947183/Atalanta-BC-vs-Athletic-Bilbao",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "7",
-      "stadium": "نيو بالانس أرينا",
-      "time": "21:00",
-      "date": "الأربعاء 21-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أتلانتا",
-        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
-      },
-      "away": {
-        "name": "أتلتيك بلباو",
-        "logo": "https://imgs.ysscores.com/teams/128/1061690197944.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 7",
-        "commentator": "باسم الزير"
-      }
-    ]
-  },
-  {
-    "id": "4947142",
-    "url": "https://www.ysscores.com/ar/match/4947142/Olympique-Marseille-vs-Liverpool-FC",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "7",
-      "stadium": "فيلودروم",
-      "time": "21:00",
-      "date": "الأربعاء 21-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "مارسيليا",
-        "logo": "https://imgs.ysscores.com/teams/128/6031690287269.png"
-      },
-      "away": {
-        "name": "ليفربول",
-        "logo": "https://imgs.ysscores.com/teams/128/4081724601375.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "عصام الشوالي"
-      }
-    ]
-  },
-  {
     "id": "4947107",
     "url": "https://www.ysscores.com/ar/match/4947107/Bayern-Munich-vs-Union-Saint-Gilloise",
     "info": {
@@ -547,41 +489,41 @@
     ]
   },
   {
-    "id": "4947207",
-    "url": "https://www.ysscores.com/ar/match/4947207/Galatasaray-vs-Atlético-de-Madrid",
+    "id": "4947151",
+    "url": "https://www.ysscores.com/ar/match/4947151/SK-Slavia-Prague-vs-FC-Barcelona",
     "info": {
       "championship": "دوري أبطال أوروبا",
       "round": "7",
-      "stadium": "علي سامي ين سبور",
-      "time": "18:45",
+      "stadium": "إيدن أرينا",
+      "time": "21:00",
       "date": "الأربعاء 21-01-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "غلطة سراي",
-        "logo": "https://imgs.ysscores.com/teams/128/2081756067376.png"
+        "name": "سلافيا براغ",
+        "logo": "https://imgs.ysscores.com/teams/128/9621690370507.png"
       },
       "away": {
-        "name": "أتلتيكو مدريد",
-        "logo": "https://imgs.ysscores.com/teams/128/1431719588699.png"
+        "name": "برشلونة",
+        "logo": "https://imgs.ysscores.com/teams/128/9541690196746.png"
       }
     },
     "channels": [
       {
         "channel": "بي إن سبورت 2",
-        "commentator": "علي محمد علي"
+        "commentator": "عامر الخوذيري"
       }
     ]
   },
   {
-    "id": "4947238",
-    "url": "https://www.ysscores.com/ar/match/4947238/Newcastle-United-vs-PSV-Eindhoven",
+    "id": "4947183",
+    "url": "https://www.ysscores.com/ar/match/4947183/Atalanta-BC-vs-Athletic-Bilbao",
     "info": {
       "championship": "دوري أبطال أوروبا",
       "round": "7",
-      "stadium": "سانت جيمس بارك",
+      "stadium": "نيو بالانس أرينا",
       "time": "21:00",
       "date": "الأربعاء 21-01-2026",
       "current_score": "- : -",
@@ -589,47 +531,18 @@
     },
     "teams": {
       "home": {
-        "name": "نيوكاسل",
-        "logo": "https://imgs.ysscores.com/teams/128/3721690119405.png"
+        "name": "أتلانتا",
+        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
       },
       "away": {
-        "name": "آيندهوفن",
-        "logo": "https://imgs.ysscores.com/teams/128/3391690378187.png"
+        "name": "أتلتيك بلباو",
+        "logo": "https://imgs.ysscores.com/teams/128/1061690197944.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 4",
-        "commentator": "أحمد عبده"
-      }
-    ]
-  },
-  {
-    "id": "4947114",
-    "url": "https://www.ysscores.com/ar/match/4947114/Chelsea-FC-vs-Pafos-FC",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "7",
-      "stadium": "ستامفورد بريدج",
-      "time": "21:00",
-      "date": "الأربعاء 21-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "تشيلسي",
-        "logo": "https://imgs.ysscores.com/teams/128/2571690118280.png"
-      },
-      "away": {
-        "name": "بافوس",
-        "logo": "https://imgs.ysscores.com/teams/128/4071690370494.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "محمد بركات"
+        "channel": "بي إن سبورت 7",
+        "commentator": "باسم الزير"
       }
     ]
   },
@@ -663,6 +576,117 @@
     ]
   },
   {
+    "id": "4947207",
+    "url": "https://www.ysscores.com/ar/match/4947207/Galatasaray-vs-Atlético-de-Madrid",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "7",
+      "stadium": "علي سامي ين سبور",
+      "time": "18:45",
+      "date": "الأربعاء 21-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "غلطة سراي",
+        "logo": "https://imgs.ysscores.com/teams/128/2081756067376.png"
+      },
+      "away": {
+        "name": "أتلتيكو مدريد",
+        "logo": "https://imgs.ysscores.com/teams/128/1431719588699.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "علي محمد علي"
+      }
+    ]
+  },
+  {
+    "id": "4947114",
+    "url": "https://www.ysscores.com/ar/match/4947114/Chelsea-FC-vs-Pafos-FC",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "7",
+      "stadium": "ستامفورد بريدج",
+      "time": "21:00",
+      "date": "الأربعاء 21-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "تشيلسي",
+        "logo": "https://imgs.ysscores.com/teams/128/2571690118280.png"
+      },
+      "away": {
+        "name": "بافوس",
+        "logo": "https://imgs.ysscores.com/teams/128/4071690370494.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "محمد بركات"
+      }
+    ]
+  },
+  {
+    "id": "4947238",
+    "url": "https://www.ysscores.com/ar/match/4947238/Newcastle-United-vs-PSV-Eindhoven",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "7",
+      "stadium": "سانت جيمس بارك",
+      "time": "21:00",
+      "date": "الأربعاء 21-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "نيوكاسل",
+        "logo": "https://imgs.ysscores.com/teams/128/3721690119405.png"
+      },
+      "away": {
+        "name": "آيندهوفن",
+        "logo": "https://imgs.ysscores.com/teams/128/3391690378187.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 4",
+        "commentator": "أحمد عبده"
+      }
+    ]
+  },
+  {
+    "id": "4825367",
+    "url": "https://www.ysscores.com/ar/match/4825367/Southampton-FC-vs-Sheffield-United",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "28 - مباراة الاياب",
+      "stadium": "سانت ماري",
+      "time": "20:45",
+      "date": "الأربعاء 21-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ساوثهامبتون",
+        "logo": "https://imgs.ysscores.com/teams/128/3521690370525.png"
+      },
+      "away": {
+        "name": "شيفيلد",
+        "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4825368",
     "url": "https://www.ysscores.com/ar/match/4825368/Stoke-City-vs-Middlesbrough-FC",
     "info": {
@@ -690,30 +714,6 @@
         "commentator": "جواد بدة"
       }
     ]
-  },
-  {
-    "id": "4825367",
-    "url": "https://www.ysscores.com/ar/match/4825367/Southampton-FC-vs-Sheffield-United",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "28 - مباراة الاياب",
-      "stadium": "سانت ماري",
-      "time": "20:45",
-      "date": "الأربعاء 21-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ساوثهامبتون",
-        "logo": "https://imgs.ysscores.com/teams/128/3521690370525.png"
-      },
-      "away": {
-        "name": "شيفيلد",
-        "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "4825369",
@@ -827,35 +827,6 @@
     ]
   },
   {
-    "id": "68649350",
-    "url": "https://www.ysscores.com/ar/match/68649350/Al-Anwar-Club-vs-Al-Arabi-SC-Saudi",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "18 - مباراة الاياب",
-      "stadium": "ملعب نادي الأنوار",
-      "time": "13:35",
-      "date": "الأربعاء 21-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الأنوار",
-        "logo": "https://imgs.ysscores.com/teams/128/471755364570.png"
-      },
-      "away": {
-        "name": "العربي",
-        "logo": "https://imgs.ysscores.com/teams/128/7351691930572.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "محمد حسين"
-      }
-    ]
-  },
-  {
     "id": "69583430",
     "url": "https://www.ysscores.com/ar/match/69583430/Al-Jabalain-FC-vs-Al-Batin-FC",
     "info": {
@@ -881,6 +852,35 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "مشعل الشمري"
+      }
+    ]
+  },
+  {
+    "id": "68649350",
+    "url": "https://www.ysscores.com/ar/match/68649350/Al-Anwar-Club-vs-Al-Arabi-SC-Saudi",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "18 - مباراة الاياب",
+      "stadium": "ملعب نادي الأنوار",
+      "time": "13:35",
+      "date": "الأربعاء 21-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الأنوار",
+        "logo": "https://imgs.ysscores.com/teams/128/471755364570.png"
+      },
+      "away": {
+        "name": "العربي",
+        "logo": "https://imgs.ysscores.com/teams/128/7351691930572.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "محمد حسين"
       }
     ]
   },
