@@ -123,6 +123,30 @@
     "channels": []
   },
   {
+    "id": "5111161",
+    "url": "https://www.ysscores.com/ar/match/5111161/Al-Anwar-Al-Abyar-SC-vs-Al-Hilal-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "6 - مباراة الذهاب",
+      "stadium": "ملعب المرج",
+      "time": "14:00",
+      "date": "الأربعاء 21-01-2026",
+      "current_score": "0 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الأنوار",
+        "logo": "https://imgs.ysscores.com/teams/128/17656568995248.png"
+      },
+      "away": {
+        "name": "الهلال",
+        "logo": "https://imgs.ysscores.com/teams/128/7131696628343.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5111124",
     "url": "https://www.ysscores.com/ar/match/5111124/Al-Watan-SC-vs-Abu-Salim-SC",
     "info": {
@@ -176,25 +200,25 @@
     "channels": []
   },
   {
-    "id": "5111161",
-    "url": "https://www.ysscores.com/ar/match/5111161/Al-Anwar-Al-Abyar-SC-vs-Al-Hilal-SC",
+    "id": "5111125",
+    "url": "https://www.ysscores.com/ar/match/5111125/Libyan-Stadium-vs-Asswehly-SC",
     "info": {
       "championship": "الدوري الليبي الممتاز",
       "round": "6 - مباراة الذهاب",
-      "stadium": "ملعب المرج",
-      "time": "14:00",
+      "stadium": "ملعب النهر الصناعي",
+      "time": "14:30",
       "date": "الأربعاء 21-01-2026",
-      "current_score": "0 - 2",
+      "current_score": "2 - 2",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الأنوار",
-        "logo": "https://imgs.ysscores.com/teams/128/17656568995248.png"
+        "name": "الملعب الليبي",
+        "logo": "https://imgs.ysscores.com/teams/128/17656589037683.png"
       },
       "away": {
-        "name": "الهلال",
-        "logo": "https://imgs.ysscores.com/teams/128/7131696628343.png"
+        "name": "السويحلي",
+        "logo": "https://imgs.ysscores.com/teams/128/17656587578495.png"
       }
     },
     "channels": []
@@ -219,30 +243,6 @@
       "away": {
         "name": "الصقور",
         "logo": "https://imgs.ysscores.com/teams/128/17656577952914.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5111125",
-    "url": "https://www.ysscores.com/ar/match/5111125/Libyan-Stadium-vs-Asswehly-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "6 - مباراة الذهاب",
-      "stadium": "ملعب النهر الصناعي",
-      "time": "14:30",
-      "date": "الأربعاء 21-01-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الملعب الليبي",
-        "logo": "https://imgs.ysscores.com/teams/128/17656589037683.png"
-      },
-      "away": {
-        "name": "السويحلي",
-        "logo": "https://imgs.ysscores.com/teams/128/17656587578495.png"
       }
     },
     "channels": []
@@ -412,6 +412,35 @@
     ]
   },
   {
+    "id": "4947183",
+    "url": "https://www.ysscores.com/ar/match/4947183/Atalanta-BC-vs-Athletic-Bilbao",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "7",
+      "stadium": "نيو بالانس أرينا",
+      "time": "21:00",
+      "date": "الأربعاء 21-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أتلانتا",
+        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
+      },
+      "away": {
+        "name": "أتلتيك بلباو",
+        "logo": "https://imgs.ysscores.com/teams/128/1061690197944.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 7",
+        "commentator": "باسم الزير"
+      }
+    ]
+  },
+  {
     "id": "4947142",
     "url": "https://www.ysscores.com/ar/match/4947142/Olympique-Marseille-vs-Liverpool-FC",
     "info": {
@@ -495,35 +524,6 @@
       {
         "channel": "بي إن سبورت 6",
         "commentator": "علي سعيد الكعبي"
-      }
-    ]
-  },
-  {
-    "id": "4947183",
-    "url": "https://www.ysscores.com/ar/match/4947183/Atalanta-BC-vs-Athletic-Bilbao",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "7",
-      "stadium": "نيو بالانس أرينا",
-      "time": "21:00",
-      "date": "الأربعاء 21-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أتلانتا",
-        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
-      },
-      "away": {
-        "name": "أتلتيك بلباو",
-        "logo": "https://imgs.ysscores.com/teams/128/1061690197944.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 7",
-        "commentator": "باسم الزير"
       }
     ]
   },
