@@ -1,34 +1,5 @@
 [
   {
-    "id": "4947835",
-    "url": "https://www.ysscores.com/ar/match/4947835/Ferencvárosi-TC-vs-Panathinaikos-FC",
-    "info": {
-      "championship": "الدوري الأوروبي",
-      "round": "7",
-      "stadium": "غروباما أرينا",
-      "time": "21:00",
-      "date": "الخميس 22-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "فرينكفاروزي",
-        "logo": "https://imgs.ysscores.com/teams/128/6411690370517.png"
-      },
-      "away": {
-        "name": "باناثينايكوس",
-        "logo": "https://imgs.ysscores.com/teams/128/8301690821553.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 6",
-        "commentator": "منتصر الأزهري"
-      }
-    ]
-  },
-  {
     "id": "4947828",
     "url": "https://www.ysscores.com/ar/match/4947828/FC-Viktoria-Plzen-vs-FC-Porto",
     "info": {
@@ -54,35 +25,6 @@
       {
         "channel": "بي إن سبورت 4",
         "commentator": "محمد نضال"
-      }
-    ]
-  },
-  {
-    "id": "4947814",
-    "url": "https://www.ysscores.com/ar/match/4947814/SC-Braga-vs-Nottingham-Forest",
-    "info": {
-      "championship": "الدوري الأوروبي",
-      "round": "7",
-      "stadium": "ملعب بلدية براغا",
-      "time": "21:00",
-      "date": "الخميس 22-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "سبورتينغ براغا",
-        "logo": "https://imgs.ysscores.com/teams/128/2631690385875.png"
-      },
-      "away": {
-        "name": "نوتينغهام",
-        "logo": "https://imgs.ysscores.com/teams/128/7741690119007.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "Bein Sport 1 EN",
-        "commentator": "غير مدرج"
       }
     ]
   },
@@ -116,12 +58,41 @@
     ]
   },
   {
-    "id": "4947915",
-    "url": "https://www.ysscores.com/ar/match/4947915/SK-Brann-vs-FC-Midtjylland",
+    "id": "4947814",
+    "url": "https://www.ysscores.com/ar/match/4947814/SC-Braga-vs-Nottingham-Forest",
     "info": {
       "championship": "الدوري الأوروبي",
       "round": "7",
-      "stadium": "استاد بران",
+      "stadium": "ملعب بلدية براغا",
+      "time": "21:00",
+      "date": "الخميس 22-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "سبورتينغ براغا",
+        "logo": "https://imgs.ysscores.com/teams/128/2631690385875.png"
+      },
+      "away": {
+        "name": "نوتينغهام",
+        "logo": "https://imgs.ysscores.com/teams/128/7741690119007.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "Bein Sport 1 EN",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "4947857",
+    "url": "https://www.ysscores.com/ar/match/4947857/SC-Freiburg-vs-Maccabi-Tel-Aviv",
+    "info": {
+      "championship": "الدوري الأوروبي",
+      "round": "7",
+      "stadium": "يوروبا بارك",
       "time": "18:45",
       "date": "الخميس 22-01-2026",
       "current_score": "- : -",
@@ -129,18 +100,47 @@
     },
     "teams": {
       "home": {
-        "name": "بران",
-        "logo": "https://imgs.ysscores.com/teams/128/9801690370526.png"
+        "name": "فرايبورج",
+        "logo": "https://imgs.ysscores.com/teams/128/4771690288817.png"
       },
       "away": {
-        "name": "ميتييلاند",
-        "logo": "https://imgs.ysscores.com/teams/128/7731691095830.png"
+        "name": "مكابي تل أبيب",
+        "logo": "https://imgs.ysscores.com/teams/128/4811690370509.png"
       }
     },
     "channels": [
       {
-        "channel": "beIN Xtra 1",
-        "commentator": "بكر علوان"
+        "channel": "Bein Sport 1 EN",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "4947835",
+    "url": "https://www.ysscores.com/ar/match/4947835/Ferencvárosi-TC-vs-Panathinaikos-FC",
+    "info": {
+      "championship": "الدوري الأوروبي",
+      "round": "7",
+      "stadium": "غروباما أرينا",
+      "time": "21:00",
+      "date": "الخميس 22-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "فرينكفاروزي",
+        "logo": "https://imgs.ysscores.com/teams/128/6411690370517.png"
+      },
+      "away": {
+        "name": "باناثينايكوس",
+        "logo": "https://imgs.ysscores.com/teams/128/8301690821553.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 6",
+        "commentator": "منتصر الأزهري"
       }
     ]
   },
@@ -174,12 +174,12 @@
     ]
   },
   {
-    "id": "4947857",
-    "url": "https://www.ysscores.com/ar/match/4947857/SC-Freiburg-vs-Maccabi-Tel-Aviv",
+    "id": "4947915",
+    "url": "https://www.ysscores.com/ar/match/4947915/SK-Brann-vs-FC-Midtjylland",
     "info": {
       "championship": "الدوري الأوروبي",
       "round": "7",
-      "stadium": "يوروبا بارك",
+      "stadium": "استاد بران",
       "time": "18:45",
       "date": "الخميس 22-01-2026",
       "current_score": "- : -",
@@ -187,18 +187,18 @@
     },
     "teams": {
       "home": {
-        "name": "فرايبورج",
-        "logo": "https://imgs.ysscores.com/teams/128/4771690288817.png"
+        "name": "بران",
+        "logo": "https://imgs.ysscores.com/teams/128/9801690370526.png"
       },
       "away": {
-        "name": "مكابي تل أبيب",
-        "logo": "https://imgs.ysscores.com/teams/128/4811690370509.png"
+        "name": "ميتييلاند",
+        "logo": "https://imgs.ysscores.com/teams/128/7731691095830.png"
       }
     },
     "channels": [
       {
-        "channel": "Bein Sport 1 EN",
-        "commentator": "غير مدرج"
+        "channel": "beIN Xtra 1",
+        "commentator": "بكر علوان"
       }
     ]
   },
@@ -290,6 +290,64 @@
     ]
   },
   {
+    "id": "4947908",
+    "url": "https://www.ysscores.com/ar/match/4947908/FC-Utrecht-vs-KRC-Genk",
+    "info": {
+      "championship": "الدوري الأوروبي",
+      "round": "7",
+      "stadium": "جالينوارد",
+      "time": "21:00",
+      "date": "الخميس 22-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أوترخت",
+        "logo": "https://imgs.ysscores.com/teams/128/3101690475899.png"
+      },
+      "away": {
+        "name": "جينك",
+        "logo": "https://imgs.ysscores.com/teams/128/8001690823226.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "باسم الزير"
+      }
+    ]
+  },
+  {
+    "id": "4947794",
+    "url": "https://www.ysscores.com/ar/match/4947794/GNK-Dinamo-Zagreb-vs-FCSB",
+    "info": {
+      "championship": "الدوري الأوروبي",
+      "round": "7",
+      "stadium": "ماكسيمير",
+      "time": "21:00",
+      "date": "الخميس 22-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "دينامو زغرب",
+        "logo": "https://imgs.ysscores.com/teams/128/7051690823026.png"
+      },
+      "away": {
+        "name": "ستيوا بوخارست",
+        "logo": "https://imgs.ysscores.com/teams/128/7831718094765.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 7",
+        "commentator": "حسن العيدروس"
+      }
+    ]
+  },
+  {
     "id": "4947802",
     "url": "https://www.ysscores.com/ar/match/4947802/Red-Bull-Salzburg-vs-FC-Basel-1893",
     "info": {
@@ -348,64 +406,6 @@
     ]
   },
   {
-    "id": "4947879",
-    "url": "https://www.ysscores.com/ar/match/4947879/OGC-Nice-vs-Go-Ahead-Eagles",
-    "info": {
-      "championship": "الدوري الأوروبي",
-      "round": "7",
-      "stadium": "أليانز ريفييرا",
-      "time": "21:00",
-      "date": "الخميس 22-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "نيس",
-        "logo": "https://imgs.ysscores.com/teams/128/7361690287672.png"
-      },
-      "away": {
-        "name": "جو أهيد إيجلز",
-        "logo": "https://imgs.ysscores.com/teams/128/3951690996987.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 8",
-        "commentator": "محمد المبروكي"
-      }
-    ]
-  },
-  {
-    "id": "4947794",
-    "url": "https://www.ysscores.com/ar/match/4947794/GNK-Dinamo-Zagreb-vs-FCSB",
-    "info": {
-      "championship": "الدوري الأوروبي",
-      "round": "7",
-      "stadium": "ماكسيمير",
-      "time": "21:00",
-      "date": "الخميس 22-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "دينامو زغرب",
-        "logo": "https://imgs.ysscores.com/teams/128/7051690823026.png"
-      },
-      "away": {
-        "name": "ستيوا بوخارست",
-        "logo": "https://imgs.ysscores.com/teams/128/7831718094765.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 7",
-        "commentator": "حسن العيدروس"
-      }
-    ]
-  },
-  {
     "id": "4947790",
     "url": "https://www.ysscores.com/ar/match/4947790/Rangers-FC-vs-Ludogorets-Razgrad",
     "info": {
@@ -431,35 +431,6 @@
       {
         "channel": "بي إن سبورت 9",
         "commentator": "جواد بدة"
-      }
-    ]
-  },
-  {
-    "id": "4947908",
-    "url": "https://www.ysscores.com/ar/match/4947908/FC-Utrecht-vs-KRC-Genk",
-    "info": {
-      "championship": "الدوري الأوروبي",
-      "round": "7",
-      "stadium": "جالينوارد",
-      "time": "21:00",
-      "date": "الخميس 22-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أوترخت",
-        "logo": "https://imgs.ysscores.com/teams/128/3101690475899.png"
-      },
-      "away": {
-        "name": "جينك",
-        "logo": "https://imgs.ysscores.com/teams/128/8001690823226.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "باسم الزير"
       }
     ]
   },
@@ -522,35 +493,31 @@
     ]
   },
   {
-    "id": "4927457",
-    "url": "https://www.ysscores.com/ar/match/4927457/Al-Taawoun-FC-vs-Al-Hazem-SC",
+    "id": "4947879",
+    "url": "https://www.ysscores.com/ar/match/4947879/OGC-Nice-vs-Go-Ahead-Eagles",
     "info": {
-      "championship": "الدوري السعودي للمحترفين",
-      "round": "17 - مباراة الذهاب",
-      "stadium": "ملعب نادي التعاون",
-      "time": "16:15",
+      "championship": "الدوري الأوروبي",
+      "round": "7",
+      "stadium": "أليانز ريفييرا",
+      "time": "21:00",
       "date": "الخميس 22-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "التعاون",
-        "logo": "https://imgs.ysscores.com/teams/128/9971724321815.png"
+        "name": "نيس",
+        "logo": "https://imgs.ysscores.com/teams/128/7361690287672.png"
       },
       "away": {
-        "name": "الحزم",
-        "logo": "https://imgs.ysscores.com/teams/128/111690298803.png"
+        "name": "جو أهيد إيجلز",
+        "logo": "https://imgs.ysscores.com/teams/128/3951690996987.png"
       }
     },
     "channels": [
       {
-        "channel": "ثمانية 2",
-        "commentator": "عبدالله الحربي"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "عبدالله الحربي"
+        "channel": "بي إن سبورت 8",
+        "commentator": "محمد المبروكي"
       }
     ]
   },
@@ -588,6 +555,39 @@
     ]
   },
   {
+    "id": "4927457",
+    "url": "https://www.ysscores.com/ar/match/4927457/Al-Taawoun-FC-vs-Al-Hazem-SC",
+    "info": {
+      "championship": "الدوري السعودي للمحترفين",
+      "round": "17 - مباراة الذهاب",
+      "stadium": "ملعب نادي التعاون",
+      "time": "16:15",
+      "date": "الخميس 22-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "التعاون",
+        "logo": "https://imgs.ysscores.com/teams/128/9971724321815.png"
+      },
+      "away": {
+        "name": "الحزم",
+        "logo": "https://imgs.ysscores.com/teams/128/111690298803.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 2",
+        "commentator": "عبدالله الحربي"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "عبدالله الحربي"
+      }
+    ]
+  },
+  {
     "id": "4927453",
     "url": "https://www.ysscores.com/ar/match/4927453/Al-Hilal-SFC-vs-Al-Fayha-FC",
     "info": {
@@ -617,6 +617,39 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "فارس عوض"
+      }
+    ]
+  },
+  {
+    "id": "28363186",
+    "url": "https://www.ysscores.com/ar/match/28363186/Al-Zawraa-SC-vs-Al-Najaf-FC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "14 - مباراة الذهاب",
+      "stadium": "ملعب شرار حيدر",
+      "time": "17:30",
+      "date": "الخميس 22-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الزوراء",
+        "logo": "https://imgs.ysscores.com/teams/128/2961729878835.png"
+      },
+      "away": {
+        "name": "النجف",
+        "logo": "https://imgs.ysscores.com/teams/128/8851752617745.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "حسين الساعدي"
+      },
+      {
+        "channel": "قنوات الكأس",
+        "commentator": "منتصر الأزهري"
       }
     ]
   },
@@ -675,39 +708,6 @@
       {
         "channel": "العراقية السريانية",
         "commentator": "عباس هادي"
-      }
-    ]
-  },
-  {
-    "id": "28363186",
-    "url": "https://www.ysscores.com/ar/match/28363186/Al-Zawraa-SC-vs-Al-Najaf-FC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "14 - مباراة الذهاب",
-      "stadium": "ملعب شرار حيدر",
-      "time": "17:30",
-      "date": "الخميس 22-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الزوراء",
-        "logo": "https://imgs.ysscores.com/teams/128/2961729878835.png"
-      },
-      "away": {
-        "name": "النجف",
-        "logo": "https://imgs.ysscores.com/teams/128/8851752617745.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية الرياضية",
-        "commentator": "حسين الساعدي"
-      },
-      {
-        "channel": "قنوات الكأس",
-        "commentator": "منتصر الأزهري"
       }
     ]
   },
@@ -806,7 +806,7 @@
       "stadium": "ملعب الزنتان",
       "time": "14:30",
       "date": "الخميس 22-01-2026",
-      "current_score": "1 - 0",
+      "current_score": "1 - 1",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -1029,30 +1029,6 @@
     "channels": []
   },
   {
-    "id": "4946337",
-    "url": "https://www.ysscores.com/ar/match/4946337/Tersana-FC-vs-Qanah-FC",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "20 - مباراة الاياب",
-      "stadium": "استاد الترسانة",
-      "time": "13:30",
-      "date": "الخميس 22-01-2026",
-      "current_score": "0 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الترسانة",
-        "logo": "https://imgs.ysscores.com/teams/128/1081715096208.png"
-      },
-      "away": {
-        "name": "القناة",
-        "logo": "https://imgs.ysscores.com/teams/128/5821715097236.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4946335",
     "url": "https://www.ysscores.com/ar/match/4946335/Raya-SC-vs-FC-Masar",
     "info": {
@@ -1072,6 +1048,30 @@
       "away": {
         "name": "مسار",
         "logo": "https://imgs.ysscores.com/teams/128/9871753647957.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4946337",
+    "url": "https://www.ysscores.com/ar/match/4946337/Tersana-FC-vs-Qanah-FC",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "20 - مباراة الاياب",
+      "stadium": "استاد الترسانة",
+      "time": "13:30",
+      "date": "الخميس 22-01-2026",
+      "current_score": "0 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الترسانة",
+        "logo": "https://imgs.ysscores.com/teams/128/1081715096208.png"
+      },
+      "away": {
+        "name": "القناة",
+        "logo": "https://imgs.ysscores.com/teams/128/5821715097236.png"
       }
     },
     "channels": []
@@ -1171,25 +1171,25 @@
     ]
   },
   {
-    "id": "5101884",
-    "url": "https://www.ysscores.com/ar/match/5101884/CA-Central-Córdoba-(SdE)-vs-Gimnasia-y-Esgrima-de-Mendoza",
+    "id": "5101879",
+    "url": "https://www.ysscores.com/ar/match/5101879/CA-Aldosivi-vs-Defensa-y-Justicia",
     "info": {
       "championship": "دوري الدرجة الأولى الأرجنتيني",
       "round": "1 - مباراة الذهاب",
-      "stadium": "استاد ألفريدو تيريرا",
-      "time": "02:15",
+      "stadium": "استاد خوسيه ماريا مينيلا",
+      "time": "21:00",
       "date": "الخميس 22-01-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "كوردوبا",
-        "logo": "https://imgs.ysscores.com/teams/128/6201717935912.png"
+        "name": "إلدوسيفي",
+        "logo": "https://imgs.ysscores.com/teams/128/1451735322474.png"
       },
       "away": {
-        "name": "جيمناسيا",
-        "logo": "https://imgs.ysscores.com/teams/128/17673035697322.png"
+        "name": "خوستيكا",
+        "logo": "https://imgs.ysscores.com/teams/128/8621711750295.png"
       }
     },
     "channels": []
@@ -1219,49 +1219,25 @@
     "channels": []
   },
   {
-    "id": "5101879",
-    "url": "https://www.ysscores.com/ar/match/5101879/CA-Aldosivi-vs-Defensa-y-Justicia",
+    "id": "5101884",
+    "url": "https://www.ysscores.com/ar/match/5101884/CA-Central-Córdoba-(SdE)-vs-Gimnasia-y-Esgrima-de-Mendoza",
     "info": {
       "championship": "دوري الدرجة الأولى الأرجنتيني",
       "round": "1 - مباراة الذهاب",
-      "stadium": "استاد خوسيه ماريا مينيلا",
-      "time": "21:00",
+      "stadium": "استاد ألفريدو تيريرا",
+      "time": "02:15",
       "date": "الخميس 22-01-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "إلدوسيفي",
-        "logo": "https://imgs.ysscores.com/teams/128/1451735322474.png"
+        "name": "كوردوبا",
+        "logo": "https://imgs.ysscores.com/teams/128/6201717935912.png"
       },
       "away": {
-        "name": "خوستيكا",
-        "logo": "https://imgs.ysscores.com/teams/128/8621711750295.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5101881",
-    "url": "https://www.ysscores.com/ar/match/5101881/CA-Banfield-vs-CA-Huracán",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "1 - مباراة الذهاب",
-      "stadium": "استاد فلورنسيو سولا",
-      "time": "00:00",
-      "date": "الخميس 22-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "بانفيلد",
-        "logo": "https://imgs.ysscores.com/teams/128/3521717933590.png"
-      },
-      "away": {
-        "name": "أوراكان",
-        "logo": "https://imgs.ysscores.com/teams/128/2031717933556.png"
+        "name": "جيمناسيا",
+        "logo": "https://imgs.ysscores.com/teams/128/17673035697322.png"
       }
     },
     "channels": []
@@ -1286,6 +1262,30 @@
       "away": {
         "name": "سارسفيلد",
         "logo": "https://imgs.ysscores.com/teams/128/4581717933514.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5101881",
+    "url": "https://www.ysscores.com/ar/match/5101881/CA-Banfield-vs-CA-Huracán",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "1 - مباراة الذهاب",
+      "stadium": "استاد فلورنسيو سولا",
+      "time": "00:00",
+      "date": "الخميس 22-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "بانفيلد",
+        "logo": "https://imgs.ysscores.com/teams/128/3521717933590.png"
+      },
+      "away": {
+        "name": "أوراكان",
+        "logo": "https://imgs.ysscores.com/teams/128/2031717933556.png"
       }
     },
     "channels": []
