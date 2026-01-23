@@ -8,8 +8,8 @@
       "stadium": "استاد عمّان الدولي",
       "time": "16:30",
       "date": "الجمعة 23-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -571,30 +571,6 @@
     "channels": []
   },
   {
-    "id": "4946338",
-    "url": "https://www.ysscores.com/ar/match/4946338/Baladiyat-El-Mahalla-vs-Proxy-FC",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "20 - مباراة الاياب",
-      "stadium": "استاد بلدية المحلة",
-      "time": "13:30",
-      "date": "الجمعة 23-01-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بلدية المحلة",
-        "logo": "https://imgs.ysscores.com/teams/128/3151694619467.png"
-      },
-      "away": {
-        "name": "بروكسي",
-        "logo": "https://imgs.ysscores.com/teams/128/1761696284692.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4946340",
     "url": "https://www.ysscores.com/ar/match/4946340/WE-Sports-Club-vs-Maleyat-Kafr-Elzayat",
     "info": {
@@ -622,6 +598,30 @@
         "commentator": "هشام فرحات"
       }
     ]
+  },
+  {
+    "id": "4946338",
+    "url": "https://www.ysscores.com/ar/match/4946338/Baladiyat-El-Mahalla-vs-Proxy-FC",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "20 - مباراة الاياب",
+      "stadium": "استاد بلدية المحلة",
+      "time": "13:30",
+      "date": "الجمعة 23-01-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بلدية المحلة",
+        "logo": "https://imgs.ysscores.com/teams/128/3151694619467.png"
+      },
+      "away": {
+        "name": "بروكسي",
+        "logo": "https://imgs.ysscores.com/teams/128/1761696284692.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "4946339",
@@ -864,35 +864,6 @@
     ]
   },
   {
-    "id": "5045224",
-    "url": "https://www.ysscores.com/ar/match/5045224/Al-Ahly-FC-vs-Young-Africans-SC",
-    "info": {
-      "championship": "دوري أبطال أفريقيا",
-      "round": "3 - مباراة الذهاب",
-      "stadium": "استاد الجيش ببرج العرب",
-      "time": "17:00",
-      "date": "الجمعة 23-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/9591694714907.png"
-      },
-      "away": {
-        "name": "يانغ أفريكانز",
-        "logo": "https://imgs.ysscores.com/teams/128/2951692283216.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "أحمد عبده"
-      }
-    ]
-  },
-  {
     "id": "5045242",
     "url": "https://www.ysscores.com/ar/match/5045242/Mamelodi-Sundowns-FC-vs-Al-Hilal-Club-(Omdurman)",
     "info": {
@@ -922,6 +893,35 @@
     ]
   },
   {
+    "id": "5045224",
+    "url": "https://www.ysscores.com/ar/match/5045224/Al-Ahly-FC-vs-Young-Africans-SC",
+    "info": {
+      "championship": "دوري أبطال أفريقيا",
+      "round": "3 - مباراة الذهاب",
+      "stadium": "استاد الجيش ببرج العرب",
+      "time": "17:00",
+      "date": "الجمعة 23-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/9591694714907.png"
+      },
+      "away": {
+        "name": "يانغ أفريكانز",
+        "logo": "https://imgs.ysscores.com/teams/128/2951692283216.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "أحمد عبده"
+      }
+    ]
+  },
+  {
     "id": "4825373",
     "url": "https://www.ysscores.com/ar/match/4825373/Derby-County-vs-West-Bromwich-Albion",
     "info": {
@@ -947,35 +947,6 @@
       {
         "channel": "بي إن سبورت 5",
         "commentator": "جواد بدة"
-      }
-    ]
-  },
-  {
-    "id": "5101886",
-    "url": "https://www.ysscores.com/ar/match/5101886/CA-Independiente-vs-Club-Estudiantes-de-La-Plata",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "1 - مباراة الذهاب",
-      "stadium": "ملعب ليبرتادوريس دي أمريكا",
-      "time": "00:00",
-      "date": "الجمعة 23-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "إنديبندينتي",
-        "logo": "https://imgs.ysscores.com/teams/128/1241723538068.png"
-      },
-      "away": {
-        "name": "إستوديانتيس",
-        "logo": "https://imgs.ysscores.com/teams/128/9621711808779.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "دبي الرياضية 1",
-        "commentator": "راشد عبدالرحمن"
       }
     ]
   },
@@ -1028,6 +999,35 @@
     "channels": []
   },
   {
+    "id": "5101886",
+    "url": "https://www.ysscores.com/ar/match/5101886/CA-Independiente-vs-Club-Estudiantes-de-La-Plata",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "1 - مباراة الذهاب",
+      "stadium": "ملعب ليبرتادوريس دي أمريكا",
+      "time": "00:00",
+      "date": "الجمعة 23-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "إنديبندينتي",
+        "logo": "https://imgs.ysscores.com/teams/128/1241723538068.png"
+      },
+      "away": {
+        "name": "إستوديانتيس",
+        "logo": "https://imgs.ysscores.com/teams/128/9621711808779.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "دبي الرياضية 1",
+        "commentator": "راشد عبدالرحمن"
+      }
+    ]
+  },
+  {
     "id": "5101887",
     "url": "https://www.ysscores.com/ar/match/5101887/CS-Independiente-Rivadavia-vs-Club-Atlético-Tucumán",
     "info": {
@@ -1060,7 +1060,7 @@
       "stadium": "اس اتش جي ارينا",
       "time": "14:40",
       "date": "الجمعة 23-01-2026",
-      "current_score": "1 - 0",
+      "current_score": "2 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
