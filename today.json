@@ -125,7 +125,7 @@
       "time": "20:45",
       "date": "الجمعة 23-01-2026",
       "current_score": "3 - 2",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -396,7 +396,7 @@
       "stadium": "ملعب آبي ديشامب",
       "time": "20:00",
       "date": "الجمعة 23-01-2026",
-      "current_score": "0 - 0",
+      "current_score": "0 - 1",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -740,35 +740,6 @@
     ]
   },
   {
-    "id": "5137878",
-    "url": "https://www.ysscores.com/ar/match/5137878/ASO-Chlef-vs-Paradou-AC",
-    "info": {
-      "championship": "الرابطة المحترفة الجزائرية الأولى",
-      "round": "16 - مباراة الاياب",
-      "stadium": "استاد محمد بومزراق",
-      "time": "16:00",
-      "date": "الجمعة 23-01-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أولمبي الشلف",
-        "logo": "https://imgs.ysscores.com/teams/128/2291693417692.png"
-      },
-      "away": {
-        "name": "بارادو",
-        "logo": "https://imgs.ysscores.com/teams/128/3511693418113.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الرياضية ويب",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5137879",
     "url": "https://www.ysscores.com/ar/match/5137879/ES-Sétif-vs-USM-Khenchela",
     "info": {
@@ -788,6 +759,35 @@
       "away": {
         "name": "اتحاد خنشلة",
         "logo": "https://imgs.ysscores.com/teams/128/3231693418426.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الرياضية ويب",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5137878",
+    "url": "https://www.ysscores.com/ar/match/5137878/ASO-Chlef-vs-Paradou-AC",
+    "info": {
+      "championship": "الرابطة المحترفة الجزائرية الأولى",
+      "round": "16 - مباراة الاياب",
+      "stadium": "استاد محمد بومزراق",
+      "time": "16:00",
+      "date": "الجمعة 23-01-2026",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أولمبي الشلف",
+        "logo": "https://imgs.ysscores.com/teams/128/2291693417692.png"
+      },
+      "away": {
+        "name": "بارادو",
+        "logo": "https://imgs.ysscores.com/teams/128/3511693418113.png"
       }
     },
     "channels": [
