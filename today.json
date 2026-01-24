@@ -1567,6 +1567,35 @@
     ]
   },
   {
+    "id": "5045254",
+    "url": "https://www.ysscores.com/ar/match/5045254/Esperance-Tunis-vs-Simba-SC",
+    "info": {
+      "championship": "دوري أبطال أفريقيا",
+      "round": "3 - مباراة الذهاب",
+      "stadium": "الملعب الأولمبي حمادي العقربي",
+      "time": "17:00",
+      "date": "السبت 24-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الترجي",
+        "logo": "https://imgs.ysscores.com/teams/128/9451695299186.png"
+      },
+      "away": {
+        "name": "سيمبا",
+        "logo": "https://imgs.ysscores.com/teams/128/821694715302.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 7",
+        "commentator": "عصام الشوالي"
+      }
+    ]
+  },
+  {
     "id": "5045209",
     "url": "https://www.ysscores.com/ar/match/5045209/Renaissance-de-Berkane-vs-Pyramids-FC",
     "info": {
@@ -1596,35 +1625,6 @@
       {
         "channel": "المغربية (بث أرضي)",
         "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "5045254",
-    "url": "https://www.ysscores.com/ar/match/5045254/Esperance-Tunis-vs-Simba-SC",
-    "info": {
-      "championship": "دوري أبطال أفريقيا",
-      "round": "3 - مباراة الذهاب",
-      "stadium": "الملعب الأولمبي حمادي العقربي",
-      "time": "17:00",
-      "date": "السبت 24-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الترجي",
-        "logo": "https://imgs.ysscores.com/teams/128/9451695299186.png"
-      },
-      "away": {
-        "name": "سيمبا",
-        "logo": "https://imgs.ysscores.com/teams/128/821694715302.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 7",
-        "commentator": "عصام الشوالي"
       }
     ]
   },
@@ -1735,30 +1735,6 @@
     "channels": []
   },
   {
-    "id": "4825372",
-    "url": "https://www.ysscores.com/ar/match/4825372/Bristol-City-vs-Sheffield-Wednesday",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "29 - مباراة الاياب",
-      "stadium": "أشتون جيت",
-      "time": "16:00",
-      "date": "السبت 24-01-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بريستول",
-        "logo": "https://imgs.ysscores.com/teams/128/4621690370523.png"
-      },
-      "away": {
-        "name": "شيفيلد وينزداي",
-        "logo": "https://imgs.ysscores.com/teams/128/2131690370554.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4825381",
     "url": "https://www.ysscores.com/ar/match/4825381/Sheffield-United-vs-Ipswich-Town",
     "info": {
@@ -1778,6 +1754,54 @@
       "away": {
         "name": "إيبسويتش",
         "logo": "https://imgs.ysscores.com/teams/128/8291690370545.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825370",
+    "url": "https://www.ysscores.com/ar/match/4825370/Birmingham-City-vs-Stoke-City",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "29 - مباراة الاياب",
+      "stadium": "سانت أندراوس",
+      "time": "16:00",
+      "date": "السبت 24-01-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "برمنغهام",
+        "logo": "https://imgs.ysscores.com/teams/128/3121690370534.png"
+      },
+      "away": {
+        "name": "ستوك سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/6781690388673.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825372",
+    "url": "https://www.ysscores.com/ar/match/4825372/Bristol-City-vs-Sheffield-Wednesday",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "29 - مباراة الاياب",
+      "stadium": "أشتون جيت",
+      "time": "16:00",
+      "date": "السبت 24-01-2026",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بريستول",
+        "logo": "https://imgs.ysscores.com/teams/128/4621690370523.png"
+      },
+      "away": {
+        "name": "شيفيلد وينزداي",
+        "logo": "https://imgs.ysscores.com/teams/128/2131690370554.png"
       }
     },
     "channels": []
@@ -1826,30 +1850,6 @@
       "away": {
         "name": "واتفورد",
         "logo": "https://imgs.ysscores.com/teams/128/3341690370541.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4825370",
-    "url": "https://www.ysscores.com/ar/match/4825370/Birmingham-City-vs-Stoke-City",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "29 - مباراة الاياب",
-      "stadium": "سانت أندراوس",
-      "time": "16:00",
-      "date": "السبت 24-01-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "برمنغهام",
-        "logo": "https://imgs.ysscores.com/teams/128/3121690370534.png"
-      },
-      "away": {
-        "name": "ستوك سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/6781690388673.png"
       }
     },
     "channels": []
