@@ -511,39 +511,6 @@
     ]
   },
   {
-    "id": "4803256",
-    "url": "https://www.ysscores.com/ar/match/4803256/US-Sassuolo-vs-US-Cremonese",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "22 - مباراة الاياب",
-      "stadium": "استاد مابي",
-      "time": "12:30",
-      "date": "الأحد 25-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "ساسولو",
-        "logo": "https://imgs.ysscores.com/teams/128/731690283001.png"
-      },
-      "away": {
-        "name": "كريمونيسي",
-        "logo": "https://imgs.ysscores.com/teams/128/5011690370508.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "StarzPlay",
-        "commentator": "حازم عبدالسلام"
-      },
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "حازم عبدالسلام"
-      }
-    ]
-  },
-  {
     "id": "4803253",
     "url": "https://www.ysscores.com/ar/match/4803253/Juventus-FC-vs-SSC-Napoli",
     "info": {
@@ -581,28 +548,37 @@
     ]
   },
   {
-    "id": "4844327",
-    "url": "https://www.ysscores.com/ar/match/4844327/CD-Nacional-vs-Rio-Ave-FC",
+    "id": "4803256",
+    "url": "https://www.ysscores.com/ar/match/4803256/US-Sassuolo-vs-US-Cremonese",
     "info": {
-      "championship": "الدوري البرتغالي الممتاز",
-      "round": "19 - مباراة الاياب",
-      "stadium": "ملعب ماديرا",
-      "time": "16:30",
+      "championship": "الدوري الإيطالي",
+      "round": "22 - مباراة الاياب",
+      "stadium": "استاد مابي",
+      "time": "12:30",
       "date": "الأحد 25-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "1 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
-        "name": "ناسيونال ماديرا",
-        "logo": "https://imgs.ysscores.com/teams/128/8491698965785.png"
+        "name": "ساسولو",
+        "logo": "https://imgs.ysscores.com/teams/128/731690283001.png"
       },
       "away": {
-        "name": "ريو آفي",
-        "logo": "https://imgs.ysscores.com/teams/128/2641690386792.png"
+        "name": "كريمونيسي",
+        "logo": "https://imgs.ysscores.com/teams/128/5011690370508.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "StarzPlay",
+        "commentator": "حازم عبدالسلام"
+      },
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "حازم عبدالسلام"
+      }
+    ]
   },
   {
     "id": "4844324",
@@ -624,6 +600,30 @@
       "away": {
         "name": "ألفيركا",
         "logo": "https://imgs.ysscores.com/teams/128/3031717489561.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4844327",
+    "url": "https://www.ysscores.com/ar/match/4844327/CD-Nacional-vs-Rio-Ave-FC",
+    "info": {
+      "championship": "الدوري البرتغالي الممتاز",
+      "round": "19 - مباراة الاياب",
+      "stadium": "ملعب ماديرا",
+      "time": "16:30",
+      "date": "الأحد 25-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ناسيونال ماديرا",
+        "logo": "https://imgs.ysscores.com/teams/128/8491698965785.png"
+      },
+      "away": {
+        "name": "ريو آفي",
+        "logo": "https://imgs.ysscores.com/teams/128/2641690386792.png"
       }
     },
     "channels": []
@@ -706,30 +706,6 @@
     "channels": []
   },
   {
-    "id": "4818488",
-    "url": "https://www.ysscores.com/ar/match/4818488/KRC-Genk-vs-Cercle-Brugge",
-    "info": {
-      "championship": "الدوري البلجيكي",
-      "round": "22 - مباراة الاياب",
-      "stadium": "سيجيكا أرينا",
-      "time": "16:00",
-      "date": "الأحد 25-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "جينك",
-        "logo": "https://imgs.ysscores.com/teams/128/8001690823226.png"
-      },
-      "away": {
-        "name": "سيركل بروج",
-        "logo": "https://imgs.ysscores.com/teams/128/7651716578158.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4818485",
     "url": "https://www.ysscores.com/ar/match/4818485/RSC-Anderlecht-vs-FCV-Dender-EH",
     "info": {
@@ -749,6 +725,30 @@
       "away": {
         "name": "ديندر",
         "logo": "https://imgs.ysscores.com/teams/128/3071716579177.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4818488",
+    "url": "https://www.ysscores.com/ar/match/4818488/KRC-Genk-vs-Cercle-Brugge",
+    "info": {
+      "championship": "الدوري البلجيكي",
+      "round": "22 - مباراة الاياب",
+      "stadium": "سيجيكا أرينا",
+      "time": "16:00",
+      "date": "الأحد 25-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "جينك",
+        "logo": "https://imgs.ysscores.com/teams/128/8001690823226.png"
+      },
+      "away": {
+        "name": "سيركل بروج",
+        "logo": "https://imgs.ysscores.com/teams/128/7651716578158.png"
       }
     },
     "channels": []
@@ -776,35 +776,6 @@
       }
     },
     "channels": []
-  },
-  {
-    "id": "4842480",
-    "url": "https://www.ysscores.com/ar/match/4842480/Gaziantep-FK-vs-Konyaspor",
-    "info": {
-      "championship": "الدوري التركي الممتاز",
-      "round": "19 - مباراة الاياب",
-      "stadium": "استاد غازي عنتاب",
-      "time": "12:30",
-      "date": "الأحد 25-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "غازي عنتاب",
-        "logo": "https://imgs.ysscores.com/teams/128/3061690127435.png"
-      },
-      "away": {
-        "name": "قونيا سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/8771690127634.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Sports HD 1 TR",
-        "commentator": "غير مدرج"
-      }
-    ]
   },
   {
     "id": "4842483",
@@ -836,25 +807,25 @@
     ]
   },
   {
-    "id": "4842479",
-    "url": "https://www.ysscores.com/ar/match/4842479/Fenerbahce-vs-Göztepe",
+    "id": "4842480",
+    "url": "https://www.ysscores.com/ar/match/4842480/Gaziantep-FK-vs-Konyaspor",
     "info": {
       "championship": "الدوري التركي الممتاز",
       "round": "19 - مباراة الاياب",
-      "stadium": "مجمع شكري سراج أوغلو الرياضي",
-      "time": "18:00",
+      "stadium": "استاد غازي عنتاب",
+      "time": "12:30",
       "date": "الأحد 25-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
-        "name": "فنربخشة",
-        "logo": "https://imgs.ysscores.com/teams/128/681690127723.png"
+        "name": "غازي عنتاب",
+        "logo": "https://imgs.ysscores.com/teams/128/3061690127435.png"
       },
       "away": {
-        "name": "جوزتيبي",
-        "logo": "https://imgs.ysscores.com/teams/128/8741690370493.png"
+        "name": "قونيا سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/8771690127634.png"
       }
     },
     "channels": [
@@ -889,6 +860,35 @@
     "channels": [
       {
         "channel": "beIN Sports HD 2 TR",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "4842479",
+    "url": "https://www.ysscores.com/ar/match/4842479/Fenerbahce-vs-Göztepe",
+    "info": {
+      "championship": "الدوري التركي الممتاز",
+      "round": "19 - مباراة الاياب",
+      "stadium": "مجمع شكري سراج أوغلو الرياضي",
+      "time": "18:00",
+      "date": "الأحد 25-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "فنربخشة",
+        "logo": "https://imgs.ysscores.com/teams/128/681690127723.png"
+      },
+      "away": {
+        "name": "جوزتيبي",
+        "logo": "https://imgs.ysscores.com/teams/128/8741690370493.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Sports HD 1 TR",
         "commentator": "غير مدرج"
       }
     ]
@@ -993,35 +993,6 @@
     ]
   },
   {
-    "id": "4830627",
-    "url": "https://www.ysscores.com/ar/match/4830627/Paris-FC-vs-Angers-SCO",
-    "info": {
-      "championship": "الدوري الفرنسي",
-      "round": "19 - مباراة الاياب",
-      "stadium": "ملعب جان بوين",
-      "time": "17:15",
-      "date": "الأحد 25-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "نادي باريس",
-        "logo": "https://imgs.ysscores.com/teams/128/6551690370501.png"
-      },
-      "away": {
-        "name": "أنجيه",
-        "logo": "https://imgs.ysscores.com/teams/128/1121690370513.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "مصطفى ناظم"
-      }
-    ]
-  },
-  {
     "id": "4830625",
     "url": "https://www.ysscores.com/ar/match/4830625/FC-Metz-vs-Olympique-Lyon",
     "info": {
@@ -1047,6 +1018,35 @@
       {
         "channel": "بي إن سبورت 3",
         "commentator": "عامر الخوذيري"
+      }
+    ]
+  },
+  {
+    "id": "4830627",
+    "url": "https://www.ysscores.com/ar/match/4830627/Paris-FC-vs-Angers-SCO",
+    "info": {
+      "championship": "الدوري الفرنسي",
+      "round": "19 - مباراة الاياب",
+      "stadium": "ملعب جان بوين",
+      "time": "17:15",
+      "date": "الأحد 25-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "نادي باريس",
+        "logo": "https://imgs.ysscores.com/teams/128/6551690370501.png"
+      },
+      "away": {
+        "name": "أنجيه",
+        "logo": "https://imgs.ysscores.com/teams/128/1121690370513.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "مصطفى ناظم"
       }
     ]
   },
@@ -1138,35 +1138,6 @@
     ]
   },
   {
-    "id": "5121483",
-    "url": "https://www.ysscores.com/ar/match/5121483/Al-Nasr-SC-(Kuwait)-vs-Al-Shabab",
-    "info": {
-      "championship": "الدوري الكويتي",
-      "round": "12 - مباراة الاياب",
-      "stadium": "استاد علي صباح السالم",
-      "time": "14:30",
-      "date": "الأحد 25-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "النصر",
-        "logo": "https://imgs.ysscores.com/teams/128/9001723156578.png"
-      },
-      "away": {
-        "name": "الشباب",
-        "logo": "https://imgs.ysscores.com/teams/128/4011756846304.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الكويت الرياضية",
-        "commentator": "محمد العتيبي"
-      }
-    ]
-  },
-  {
     "id": "5121484",
     "url": "https://www.ysscores.com/ar/match/5121484/Kazma-SC-vs-Al-Jahra",
     "info": {
@@ -1192,6 +1163,35 @@
       {
         "channel": "الكويت الرياضية",
         "commentator": "طارق الملا"
+      }
+    ]
+  },
+  {
+    "id": "5121483",
+    "url": "https://www.ysscores.com/ar/match/5121483/Al-Nasr-SC-(Kuwait)-vs-Al-Shabab",
+    "info": {
+      "championship": "الدوري الكويتي",
+      "round": "12 - مباراة الاياب",
+      "stadium": "استاد علي صباح السالم",
+      "time": "14:30",
+      "date": "الأحد 25-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "النصر",
+        "logo": "https://imgs.ysscores.com/teams/128/9001723156578.png"
+      },
+      "away": {
+        "name": "الشباب",
+        "logo": "https://imgs.ysscores.com/teams/128/4011756846304.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الكويت الرياضية",
+        "commentator": "محمد العتيبي"
       }
     ]
   },
@@ -1835,6 +1835,35 @@
     ]
   },
   {
+    "id": "5045306",
+    "url": "https://www.ysscores.com/ar/match/5045306/Singida-Black-Stars-Sports-Club-vs-AS-Otôho",
+    "info": {
+      "championship": "كأس الكونفيدرالية",
+      "round": "3 - مباراة الذهاب",
+      "stadium": "استاد أمان",
+      "time": "17:00",
+      "date": "الأحد 25-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "سينجيدا",
+        "logo": "https://imgs.ysscores.com/teams/128/17637695655524.png"
+      },
+      "away": {
+        "name": "أوتوهو",
+        "logo": "https://imgs.ysscores.com/teams/128/7021692284067.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 7",
+        "commentator": "أحمد سوكو"
+      }
+    ]
+  },
+  {
     "id": "5045305",
     "url": "https://www.ysscores.com/ar/match/5045305/CR-Belouizdad-vs-Stellenbosch-FC",
     "info": {
@@ -1893,35 +1922,6 @@
       {
         "channel": "المغربية (بث أرضي)",
         "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "5045306",
-    "url": "https://www.ysscores.com/ar/match/5045306/Singida-Black-Stars-Sports-Club-vs-AS-Otôho",
-    "info": {
-      "championship": "كأس الكونفيدرالية",
-      "round": "3 - مباراة الذهاب",
-      "stadium": "استاد أمان",
-      "time": "17:00",
-      "date": "الأحد 25-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "سينجيدا",
-        "logo": "https://imgs.ysscores.com/teams/128/17637695655524.png"
-      },
-      "away": {
-        "name": "أوتوهو",
-        "logo": "https://imgs.ysscores.com/teams/128/7021692284067.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 7",
-        "commentator": "أحمد سوكو"
       }
     ]
   },
