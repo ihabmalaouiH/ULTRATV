@@ -67,7 +67,7 @@
       "time": "15:30",
       "date": "الأحد 25-01-2026",
       "current_score": "0 - 3",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -158,7 +158,7 @@
       "time": "16:15",
       "date": "الأحد 25-01-2026",
       "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -783,35 +783,6 @@
     "channels": []
   },
   {
-    "id": "4842483",
-    "url": "https://www.ysscores.com/ar/match/4842483/Caykur-Rizespor-vs-Alanyaspor",
-    "info": {
-      "championship": "الدوري التركي الممتاز",
-      "round": "19 - مباراة الاياب",
-      "stadium": "كايكور ديدي",
-      "time": "15:00",
-      "date": "الأحد 25-01-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ريزه سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/5931690127362.png"
-      },
-      "away": {
-        "name": "ألانيا سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/9541690127467.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Sports HD 1 TR",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "4842480",
     "url": "https://www.ysscores.com/ar/match/4842480/Gaziantep-FK-vs-Konyaspor",
     "info": {
@@ -831,35 +802,6 @@
       "away": {
         "name": "قونيا سبور",
         "logo": "https://imgs.ysscores.com/teams/128/8771690127634.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Sports HD 1 TR",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "4842479",
-    "url": "https://www.ysscores.com/ar/match/4842479/Fenerbahce-vs-Göztepe",
-    "info": {
-      "championship": "الدوري التركي الممتاز",
-      "round": "19 - مباراة الاياب",
-      "stadium": "مجمع شكري سراج أوغلو الرياضي",
-      "time": "18:00",
-      "date": "الأحد 25-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "فنربخشة",
-        "logo": "https://imgs.ysscores.com/teams/128/681690127723.png"
-      },
-      "away": {
-        "name": "جوزتيبي",
-        "logo": "https://imgs.ysscores.com/teams/128/8741690370493.png"
       }
     },
     "channels": [
@@ -894,6 +836,64 @@
     "channels": [
       {
         "channel": "beIN Sports HD 2 TR",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "4842483",
+    "url": "https://www.ysscores.com/ar/match/4842483/Caykur-Rizespor-vs-Alanyaspor",
+    "info": {
+      "championship": "الدوري التركي الممتاز",
+      "round": "19 - مباراة الاياب",
+      "stadium": "كايكور ديدي",
+      "time": "15:00",
+      "date": "الأحد 25-01-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ريزه سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/5931690127362.png"
+      },
+      "away": {
+        "name": "ألانيا سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/9541690127467.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Sports HD 1 TR",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "4842479",
+    "url": "https://www.ysscores.com/ar/match/4842479/Fenerbahce-vs-Göztepe",
+    "info": {
+      "championship": "الدوري التركي الممتاز",
+      "round": "19 - مباراة الاياب",
+      "stadium": "مجمع شكري سراج أوغلو الرياضي",
+      "time": "18:00",
+      "date": "الأحد 25-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "فنربخشة",
+        "logo": "https://imgs.ysscores.com/teams/128/681690127723.png"
+      },
+      "away": {
+        "name": "جوزتيبي",
+        "logo": "https://imgs.ysscores.com/teams/128/8741690370493.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Sports HD 1 TR",
         "commentator": "غير مدرج"
       }
     ]
@@ -1085,35 +1085,6 @@
     ]
   },
   {
-    "id": "4830621",
-    "url": "https://www.ysscores.com/ar/match/4830621/Stade-Brestois-29-vs-FC-Toulouse",
-    "info": {
-      "championship": "الدوري الفرنسي",
-      "round": "19 - مباراة الاياب",
-      "stadium": "فرانسيس لو بلي",
-      "time": "17:15",
-      "date": "الأحد 25-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "بريست",
-        "logo": "https://imgs.ysscores.com/teams/128/7551690287380.png"
-      },
-      "away": {
-        "name": "تولوز",
-        "logo": "https://imgs.ysscores.com/teams/128/5161690287967.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 4",
-        "commentator": "محمد نضال"
-      }
-    ]
-  },
-  {
     "id": "4830626",
     "url": "https://www.ysscores.com/ar/match/4830626/FC-Nantes-vs-OGC-Nice",
     "info": {
@@ -1139,6 +1110,35 @@
       {
         "channel": "بي إن سبورت 4",
         "commentator": "سمير اليعقوبي"
+      }
+    ]
+  },
+  {
+    "id": "4830621",
+    "url": "https://www.ysscores.com/ar/match/4830621/Stade-Brestois-29-vs-FC-Toulouse",
+    "info": {
+      "championship": "الدوري الفرنسي",
+      "round": "19 - مباراة الاياب",
+      "stadium": "فرانسيس لو بلي",
+      "time": "17:15",
+      "date": "الأحد 25-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "بريست",
+        "logo": "https://imgs.ysscores.com/teams/128/7551690287380.png"
+      },
+      "away": {
+        "name": "تولوز",
+        "logo": "https://imgs.ysscores.com/teams/128/5161690287967.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 4",
+        "commentator": "محمد نضال"
       }
     ]
   },
@@ -1238,7 +1238,7 @@
       "stadium": "ملعب أحمد شكري",
       "time": "16:00",
       "date": "الأحد 25-01-2026",
-      "current_score": "1 - 0",
+      "current_score": "1 - 1",
       "match_status": "الشوط الثاني"
     },
     "teams": {
