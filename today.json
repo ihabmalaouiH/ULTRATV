@@ -99,7 +99,7 @@
       "stadium": "استاد الشيخ علي بن محمد آل خليفة",
       "time": "17:00",
       "date": "الاثنين 26-01-2026",
-      "current_score": "1 - 0",
+      "current_score": "0 - 0",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -411,30 +411,6 @@
     "channels": []
   },
   {
-    "id": "5111167",
-    "url": "https://www.ysscores.com/ar/match/5111167/Al-Taawon-SC-vs-Al-Anwar-Al-Abyar-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "7 - مباراة الذهاب",
-      "stadium": "ملعب 10 يونيو إجدابيا",
-      "time": "14:00",
-      "date": "الاثنين 26-01-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "التعاون",
-        "logo": "https://imgs.ysscores.com/teams/128/17656571434987.png"
-      },
-      "away": {
-        "name": "الأنوار",
-        "logo": "https://imgs.ysscores.com/teams/128/17656568995248.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111169",
     "url": "https://www.ysscores.com/ar/match/5111169/Darnes-SC-vs-Union-Military-SC",
     "info": {
@@ -454,6 +430,30 @@
       "away": {
         "name": "العسكري",
         "logo": "https://imgs.ysscores.com/teams/128/17660522935721.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111167",
+    "url": "https://www.ysscores.com/ar/match/5111167/Al-Taawon-SC-vs-Al-Anwar-Al-Abyar-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "7 - مباراة الذهاب",
+      "stadium": "ملعب 10 يونيو إجدابيا",
+      "time": "14:00",
+      "date": "الاثنين 26-01-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "التعاون",
+        "logo": "https://imgs.ysscores.com/teams/128/17656571434987.png"
+      },
+      "away": {
+        "name": "الأنوار",
+        "logo": "https://imgs.ysscores.com/teams/128/17656568995248.png"
       }
     },
     "channels": []
@@ -510,6 +510,39 @@
       }
     },
     "channels": []
+  },
+  {
+    "id": "95126719",
+    "url": "https://www.ysscores.com/ar/match/95126719/Al-Batin-FC-vs-Al-Raed-SFC",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "19 - مباراة الاياب",
+      "stadium": "ملعب نادي الباطن",
+      "time": "13:30",
+      "date": "الاثنين 26-01-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الباطن",
+        "logo": "https://imgs.ysscores.com/teams/128/6791724146986.png"
+      },
+      "away": {
+        "name": "الرائد",
+        "logo": "https://imgs.ysscores.com/teams/128/251724712283.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 1",
+        "commentator": "سليمان الشريف"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "سليمان الشريف"
+      }
+    ]
   },
   {
     "id": "17317744",
@@ -570,39 +603,6 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "سلطان الحربي"
-      }
-    ]
-  },
-  {
-    "id": "95126719",
-    "url": "https://www.ysscores.com/ar/match/95126719/Al-Batin-FC-vs-Al-Raed-SFC",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "19 - مباراة الاياب",
-      "stadium": "ملعب نادي الباطن",
-      "time": "13:30",
-      "date": "الاثنين 26-01-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الباطن",
-        "logo": "https://imgs.ysscores.com/teams/128/6791724146986.png"
-      },
-      "away": {
-        "name": "الرائد",
-        "logo": "https://imgs.ysscores.com/teams/128/251724712283.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 1",
-        "commentator": "سليمان الشريف"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "سليمان الشريف"
       }
     ]
   },
