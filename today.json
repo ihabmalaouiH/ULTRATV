@@ -411,30 +411,6 @@
     "channels": []
   },
   {
-    "id": "5111167",
-    "url": "https://www.ysscores.com/ar/match/5111167/Al-Taawon-SC-vs-Al-Anwar-Al-Abyar-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "7 - مباراة الذهاب",
-      "stadium": "ملعب 10 يونيو إجدابيا",
-      "time": "14:00",
-      "date": "الاثنين 26-01-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "التعاون",
-        "logo": "https://imgs.ysscores.com/teams/128/17656571434987.png"
-      },
-      "away": {
-        "name": "الأنوار",
-        "logo": "https://imgs.ysscores.com/teams/128/17656568995248.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111169",
     "url": "https://www.ysscores.com/ar/match/5111169/Darnes-SC-vs-Union-Military-SC",
     "info": {
@@ -454,6 +430,30 @@
       "away": {
         "name": "العسكري",
         "logo": "https://imgs.ysscores.com/teams/128/17660522935721.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111167",
+    "url": "https://www.ysscores.com/ar/match/5111167/Al-Taawon-SC-vs-Al-Anwar-Al-Abyar-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "7 - مباراة الذهاب",
+      "stadium": "ملعب 10 يونيو إجدابيا",
+      "time": "14:00",
+      "date": "الاثنين 26-01-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "التعاون",
+        "logo": "https://imgs.ysscores.com/teams/128/17656571434987.png"
+      },
+      "away": {
+        "name": "الأنوار",
+        "logo": "https://imgs.ysscores.com/teams/128/17656568995248.png"
       }
     },
     "channels": []
@@ -512,6 +512,35 @@
     "channels": []
   },
   {
+    "id": "17317744",
+    "url": "https://www.ysscores.com/ar/match/17317744/Al-Jubail-Club-vs-Al-Zulfi-SFC",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "19 - مباراة الاياب",
+      "stadium": "استاد مدينة الأمير نايف بن عبدالعزيز الرياضية",
+      "time": "15:55",
+      "date": "الاثنين 26-01-2026",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الجبيل",
+        "logo": "https://imgs.ysscores.com/teams/128/6841751106535.png"
+      },
+      "away": {
+        "name": "الزلفي",
+        "logo": "https://imgs.ysscores.com/teams/128/6151751106732.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "عبدالإله العمري"
+      }
+    ]
+  },
+  {
     "id": "77453715",
     "url": "https://www.ysscores.com/ar/match/77453715/Al-Arabi-SC-Saudi-vs-Al-Faisaly-FC",
     "info": {
@@ -541,35 +570,6 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "سلطان الحربي"
-      }
-    ]
-  },
-  {
-    "id": "17317744",
-    "url": "https://www.ysscores.com/ar/match/17317744/Al-Jubail-Club-vs-Al-Zulfi-SFC",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "19 - مباراة الاياب",
-      "stadium": "استاد مدينة الأمير نايف بن عبدالعزيز الرياضية",
-      "time": "15:55",
-      "date": "الاثنين 26-01-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الجبيل",
-        "logo": "https://imgs.ysscores.com/teams/128/6841751106535.png"
-      },
-      "away": {
-        "name": "الزلفي",
-        "logo": "https://imgs.ysscores.com/teams/128/6151751106732.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "عبدالإله العمري"
       }
     ]
   },
