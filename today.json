@@ -67,7 +67,7 @@
       "time": "17:00",
       "date": "الثلاثاء 27-01-2026",
       "current_score": "1 - 0",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -133,7 +133,7 @@
       "time": "17:00",
       "date": "الثلاثاء 27-01-2026",
       "current_score": "3 - 0",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -244,35 +244,6 @@
     ]
   },
   {
-    "id": "95409393",
-    "url": "https://www.ysscores.com/ar/match/95409393/Al-Karkh-SC-vs-Erbil-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "ملعب شرار حيدر",
-      "time": "13:00",
-      "date": "الثلاثاء 27-01-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الكرخ",
-        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
-      },
-      "away": {
-        "name": "أربيل",
-        "logo": "https://imgs.ysscores.com/teams/128/2581695657262.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية الرياضية",
-        "commentator": "علي الشمري"
-      }
-    ]
-  },
-  {
     "id": "96352188",
     "url": "https://www.ysscores.com/ar/match/96352188/Al-Najaf-FC-vs-Zakho-SC",
     "info": {
@@ -302,6 +273,35 @@
       {
         "channel": "الكأس 3",
         "commentator": "قاسم الشمري"
+      }
+    ]
+  },
+  {
+    "id": "95409393",
+    "url": "https://www.ysscores.com/ar/match/95409393/Al-Karkh-SC-vs-Erbil-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "ملعب شرار حيدر",
+      "time": "13:00",
+      "date": "الثلاثاء 27-01-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الكرخ",
+        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
+      },
+      "away": {
+        "name": "أربيل",
+        "logo": "https://imgs.ysscores.com/teams/128/2581695657262.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "علي الشمري"
       }
     ]
   },
@@ -368,7 +368,7 @@
       "time": "18:00",
       "date": "الثلاثاء 27-01-2026",
       "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -576,6 +576,30 @@
     ]
   },
   {
+    "id": "5101901",
+    "url": "https://www.ysscores.com/ar/match/5101901/CA-Huracán-vs-CS-Independiente-Rivadavia",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "2 - مباراة الذهاب",
+      "stadium": "ملعب توماس أدولفو دوكو",
+      "time": "00:00",
+      "date": "الثلاثاء 27-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أوراكان",
+        "logo": "https://imgs.ysscores.com/teams/128/2031717933556.png"
+      },
+      "away": {
+        "name": "ريفادافيا",
+        "logo": "https://imgs.ysscores.com/teams/128/2411718579396.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5101903",
     "url": "https://www.ysscores.com/ar/match/5101903/CA-Newells-Old-Boys-vs-CA-Independiente",
     "info": {
@@ -629,30 +653,6 @@
     ]
   },
   {
-    "id": "5101901",
-    "url": "https://www.ysscores.com/ar/match/5101901/CA-Huracán-vs-CS-Independiente-Rivadavia",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "2 - مباراة الذهاب",
-      "stadium": "ملعب توماس أدولفو دوكو",
-      "time": "00:00",
-      "date": "الثلاثاء 27-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أوراكان",
-        "logo": "https://imgs.ysscores.com/teams/128/2031717933556.png"
-      },
-      "away": {
-        "name": "ريفادافيا",
-        "logo": "https://imgs.ysscores.com/teams/128/2411718579396.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5101895",
     "url": "https://www.ysscores.com/ar/match/5101895/Club-Atlético-Tucumán-vs-CA-Central-Córdoba-(SdE)",
     "info": {
@@ -701,39 +701,6 @@
     "channels": []
   },
   {
-    "id": "64001065",
-    "url": "https://www.ysscores.com/ar/match/64001065/Al-Jandal-SC-vs-Al-Anwar-Club",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "19 - مباراة الاياب",
-      "stadium": "استاد جامعة الجوف",
-      "time": "13:55",
-      "date": "الثلاثاء 27-01-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الجندل",
-        "logo": "https://imgs.ysscores.com/teams/128/2821724146928.png"
-      },
-      "away": {
-        "name": "الأنوار",
-        "logo": "https://imgs.ysscores.com/teams/128/471755364570.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 2",
-        "commentator": "فهد العنزي"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "فهد العنزي"
-      }
-    ]
-  },
-  {
     "id": "24218263",
     "url": "https://www.ysscores.com/ar/match/24218263/Abha-Club-vs-Al-Jabalain-FC",
     "info": {
@@ -763,6 +730,39 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "هيثم طحطوح"
+      }
+    ]
+  },
+  {
+    "id": "64001065",
+    "url": "https://www.ysscores.com/ar/match/64001065/Al-Jandal-SC-vs-Al-Anwar-Club",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "19 - مباراة الاياب",
+      "stadium": "استاد جامعة الجوف",
+      "time": "13:55",
+      "date": "الثلاثاء 27-01-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الجندل",
+        "logo": "https://imgs.ysscores.com/teams/128/2821724146928.png"
+      },
+      "away": {
+        "name": "الأنوار",
+        "logo": "https://imgs.ysscores.com/teams/128/471755364570.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 2",
+        "commentator": "فهد العنزي"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "فهد العنزي"
       }
     ]
   },
