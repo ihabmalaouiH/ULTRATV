@@ -99,7 +99,7 @@
       "stadium": "استاد إتحاد كلباء",
       "time": "14:15",
       "date": "الثلاثاء 27-01-2026",
-      "current_score": "0 - 2",
+      "current_score": "1 - 2",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -182,35 +182,6 @@
     ]
   },
   {
-    "id": "99013112",
-    "url": "https://www.ysscores.com/ar/match/99013112/Al-Talaba-SC-vs-Diyala-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "ملعب شرار حيدر",
-      "time": "17:30",
-      "date": "الثلاثاء 27-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الطلبة",
-        "logo": "https://imgs.ysscores.com/teams/128/9541695656866.png"
-      },
-      "away": {
-        "name": "ديالى",
-        "logo": "https://imgs.ysscores.com/teams/128/7671726654821.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية الرياضية",
-        "commentator": "عباس هادي"
-      }
-    ]
-  },
-  {
     "id": "95409393",
     "url": "https://www.ysscores.com/ar/match/95409393/Al-Karkh-SC-vs-Erbil-SC",
     "info": {
@@ -236,6 +207,35 @@
       {
         "channel": "العراقية الرياضية",
         "commentator": "علي الشمري"
+      }
+    ]
+  },
+  {
+    "id": "99013112",
+    "url": "https://www.ysscores.com/ar/match/99013112/Al-Talaba-SC-vs-Diyala-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "ملعب شرار حيدر",
+      "time": "17:30",
+      "date": "الثلاثاء 27-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الطلبة",
+        "logo": "https://imgs.ysscores.com/teams/128/9541695656866.png"
+      },
+      "away": {
+        "name": "ديالى",
+        "logo": "https://imgs.ysscores.com/teams/128/7671726654821.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "عباس هادي"
       }
     ]
   },
@@ -335,30 +335,6 @@
     ]
   },
   {
-    "id": "5111135",
-    "url": "https://www.ysscores.com/ar/match/5111135/Abu-Salim-SC-vs-Al-Ahli-SC-Libya",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "7 - مباراة الذهاب",
-      "stadium": "ملعب النهر الصناعي",
-      "time": "18:00",
-      "date": "الثلاثاء 27-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أبو سليم",
-        "logo": "https://imgs.ysscores.com/teams/128/17656585223558.png"
-      },
-      "away": {
-        "name": "الأهلي طرابلس",
-        "logo": "https://imgs.ysscores.com/teams/128/9531692282352.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111170",
     "url": "https://www.ysscores.com/ar/match/5111170/Al-Soqour-Tobruk-vs-Al-Sadaqa-Shahat-SC",
     "info": {
@@ -386,6 +362,30 @@
         "commentator": "غير مدرج"
       }
     ]
+  },
+  {
+    "id": "5111135",
+    "url": "https://www.ysscores.com/ar/match/5111135/Abu-Salim-SC-vs-Al-Ahli-SC-Libya",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "7 - مباراة الذهاب",
+      "stadium": "ملعب النهر الصناعي",
+      "time": "18:00",
+      "date": "الثلاثاء 27-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أبو سليم",
+        "logo": "https://imgs.ysscores.com/teams/128/17656585223558.png"
+      },
+      "away": {
+        "name": "الأهلي طرابلس",
+        "logo": "https://imgs.ysscores.com/teams/128/9531692282352.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "5111155",
@@ -465,28 +465,33 @@
     ]
   },
   {
-    "id": "5147312",
-    "url": "https://www.ysscores.com/ar/match/5147312/Club-Athlétique-Bizertin-vs-Jeunesse-Sportive-Omrane",
+    "id": "5147315",
+    "url": "https://www.ysscores.com/ar/match/5147315/ES-Zarzis-vs-Club-Africain",
     "info": {
       "championship": "الرابطة التونسية لكرة القدم",
       "round": "18 - مباراة الاياب",
-      "stadium": "استاد 15 أكتوبر",
+      "stadium": "المركب الرياضي بجرجيس",
       "time": "14:00",
       "date": "الثلاثاء 27-01-2026",
-      "current_score": "1 - 0",
+      "current_score": "0 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
-        "name": "البنزرتي",
-        "logo": "https://imgs.ysscores.com/teams/128/2171692796264.png"
+        "name": "الجرجيسي",
+        "logo": "https://imgs.ysscores.com/teams/128/7511723790588.png"
       },
       "away": {
-        "name": "شبيبة العمران",
-        "logo": "https://imgs.ysscores.com/teams/128/1351723790666.png"
+        "name": "الإفريقي",
+        "logo": "https://imgs.ysscores.com/teams/128/5191692795665.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "الوطنية 2",
+        "commentator": "غير مدرج"
+      }
+    ]
   },
   {
     "id": "5147313",
@@ -513,35 +518,6 @@
     "channels": [
       {
         "channel": "الوطـنية 2",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "5147315",
-    "url": "https://www.ysscores.com/ar/match/5147315/ES-Zarzis-vs-Club-Africain",
-    "info": {
-      "championship": "الرابطة التونسية لكرة القدم",
-      "round": "18 - مباراة الاياب",
-      "stadium": "المركب الرياضي بجرجيس",
-      "time": "14:00",
-      "date": "الثلاثاء 27-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "الجرجيسي",
-        "logo": "https://imgs.ysscores.com/teams/128/7511723790588.png"
-      },
-      "away": {
-        "name": "الإفريقي",
-        "logo": "https://imgs.ysscores.com/teams/128/5191692795665.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الوطنية 2",
         "commentator": "غير مدرج"
       }
     ]
@@ -574,6 +550,30 @@
         "commentator": "غير مدرج"
       }
     ]
+  },
+  {
+    "id": "5147312",
+    "url": "https://www.ysscores.com/ar/match/5147312/Club-Athlétique-Bizertin-vs-Jeunesse-Sportive-Omrane",
+    "info": {
+      "championship": "الرابطة التونسية لكرة القدم",
+      "round": "18 - مباراة الاياب",
+      "stadium": "استاد 15 أكتوبر",
+      "time": "14:00",
+      "date": "الثلاثاء 27-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "البنزرتي",
+        "logo": "https://imgs.ysscores.com/teams/128/2171692796264.png"
+      },
+      "away": {
+        "name": "شبيبة العمران",
+        "logo": "https://imgs.ysscores.com/teams/128/1351723790666.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "5101901",
@@ -624,6 +624,30 @@
     "channels": []
   },
   {
+    "id": "5101900",
+    "url": "https://www.ysscores.com/ar/match/5101900/Gimnasia-y-Esgrima-de-Mendoza-vs-CA-San-Lorenzo-de-Almagro",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "2 - مباراة الذهاب",
+      "stadium": "استاد فيكتور أنطونيو ليغروتاغلي",
+      "time": "00:00",
+      "date": "الثلاثاء 27-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "جيمناسيا",
+        "logo": "https://imgs.ysscores.com/teams/128/17673035697322.png"
+      },
+      "away": {
+        "name": "سان لورينزو",
+        "logo": "https://imgs.ysscores.com/teams/128/8421711808886.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5101908",
     "url": "https://www.ysscores.com/ar/match/5101908/CA-Vélez-Sarsfield-vs-CA-Talleres",
     "info": {
@@ -651,30 +675,6 @@
         "commentator": "رؤوف خليف"
       }
     ]
-  },
-  {
-    "id": "5101900",
-    "url": "https://www.ysscores.com/ar/match/5101900/Gimnasia-y-Esgrima-de-Mendoza-vs-CA-San-Lorenzo-de-Almagro",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "2 - مباراة الذهاب",
-      "stadium": "استاد فيكتور أنطونيو ليغروتاغلي",
-      "time": "00:00",
-      "date": "الثلاثاء 27-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "جيمناسيا",
-        "logo": "https://imgs.ysscores.com/teams/128/17673035697322.png"
-      },
-      "away": {
-        "name": "سان لورينزو",
-        "logo": "https://imgs.ysscores.com/teams/128/8421711808886.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "5101895",
