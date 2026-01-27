@@ -194,7 +194,7 @@
       "stadium": "استاد النجف الدولي",
       "time": "13:00",
       "date": "الثلاثاء 27-01-2026",
-      "current_score": "0 - 0",
+      "current_score": "1 - 0",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -215,68 +215,6 @@
       {
         "channel": "الكأس 3",
         "commentator": "قاسم الشمري"
-      }
-    ]
-  },
-  {
-    "id": "87085561",
-    "url": "https://www.ysscores.com/ar/match/87085561/Al-Shorta-SC-vs-Naft-Missan",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "استاد القفص",
-      "time": "15:30",
-      "date": "الثلاثاء 27-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الشرطة",
-        "logo": "https://imgs.ysscores.com/teams/128/8281729976264.png"
-      },
-      "away": {
-        "name": "نفط ميسان",
-        "logo": "https://imgs.ysscores.com/teams/128/711695656259.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية الرياضية",
-        "commentator": "رعد ناهي"
-      }
-    ]
-  },
-  {
-    "id": "36552088",
-    "url": "https://www.ysscores.com/ar/match/36552088/Newroz-SC-vs-Al-Karma",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "15 - مباراة الذهاب",
-      "stadium": "استاد نوروز",
-      "time": "15:30",
-      "date": "الثلاثاء 27-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "نوروز",
-        "logo": "https://imgs.ysscores.com/teams/128/1311754243359.png"
-      },
-      "away": {
-        "name": "الكرمة",
-        "logo": "https://imgs.ysscores.com/teams/128/2331726654564.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية السريانية",
-        "commentator": "أمير علي"
-      },
-      {
-        "channel": "الكأس 3",
-        "commentator": "سمير اليعقوبي"
       }
     ]
   },
@@ -310,6 +248,35 @@
     ]
   },
   {
+    "id": "87085561",
+    "url": "https://www.ysscores.com/ar/match/87085561/Al-Shorta-SC-vs-Naft-Missan",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "استاد القفص",
+      "time": "15:30",
+      "date": "الثلاثاء 27-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الشرطة",
+        "logo": "https://imgs.ysscores.com/teams/128/8281729976264.png"
+      },
+      "away": {
+        "name": "نفط ميسان",
+        "logo": "https://imgs.ysscores.com/teams/128/711695656259.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "رعد ناهي"
+      }
+    ]
+  },
+  {
     "id": "95409393",
     "url": "https://www.ysscores.com/ar/match/95409393/Al-Karkh-SC-vs-Erbil-SC",
     "info": {
@@ -335,6 +302,39 @@
       {
         "channel": "العراقية الرياضية",
         "commentator": "علي الشمري"
+      }
+    ]
+  },
+  {
+    "id": "36552088",
+    "url": "https://www.ysscores.com/ar/match/36552088/Newroz-SC-vs-Al-Karma",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "15 - مباراة الذهاب",
+      "stadium": "استاد نوروز",
+      "time": "15:30",
+      "date": "الثلاثاء 27-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "نوروز",
+        "logo": "https://imgs.ysscores.com/teams/128/1311754243359.png"
+      },
+      "away": {
+        "name": "الكرمة",
+        "logo": "https://imgs.ysscores.com/teams/128/2331726654564.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية السريانية",
+        "commentator": "أمير علي"
+      },
+      {
+        "channel": "الكأس 3",
+        "commentator": "سمير اليعقوبي"
       }
     ]
   },
@@ -652,30 +652,6 @@
     "channels": []
   },
   {
-    "id": "5101901",
-    "url": "https://www.ysscores.com/ar/match/5101901/CA-Huracán-vs-CS-Independiente-Rivadavia",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "2 - مباراة الذهاب",
-      "stadium": "ملعب توماس أدولفو دوكو",
-      "time": "00:00",
-      "date": "الثلاثاء 27-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أوراكان",
-        "logo": "https://imgs.ysscores.com/teams/128/2031717933556.png"
-      },
-      "away": {
-        "name": "ريفادافيا",
-        "logo": "https://imgs.ysscores.com/teams/128/2411718579396.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5101895",
     "url": "https://www.ysscores.com/ar/match/5101895/Club-Atlético-Tucumán-vs-CA-Central-Córdoba-(SdE)",
     "info": {
@@ -695,6 +671,30 @@
       "away": {
         "name": "كوردوبا",
         "logo": "https://imgs.ysscores.com/teams/128/6201717935912.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5101901",
+    "url": "https://www.ysscores.com/ar/match/5101901/CA-Huracán-vs-CS-Independiente-Rivadavia",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "2 - مباراة الذهاب",
+      "stadium": "ملعب توماس أدولفو دوكو",
+      "time": "00:00",
+      "date": "الثلاثاء 27-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أوراكان",
+        "logo": "https://imgs.ysscores.com/teams/128/2031717933556.png"
+      },
+      "away": {
+        "name": "ريفادافيا",
+        "logo": "https://imgs.ysscores.com/teams/128/2411718579396.png"
       }
     },
     "channels": []
