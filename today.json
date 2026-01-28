@@ -71,7 +71,7 @@
       "time": "17:00",
       "date": "الأربعاء 28-01-2026",
       "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -144,7 +144,7 @@
       "stadium": "استاد الشيخ علي بن محمد آل خليفة",
       "time": "17:00",
       "date": "الأربعاء 28-01-2026",
-      "current_score": "0 - 0",
+      "current_score": "1 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -192,30 +192,6 @@
         "commentator": "غير مدرج"
       }
     ]
-  },
-  {
-    "id": "5103373",
-    "url": "https://www.ysscores.com/ar/match/5103373/Associação-Chapecoense-de-Futebol-vs-Santos-FC",
-    "info": {
-      "championship": "الدوري البرازيلي",
-      "round": "1 - مباراة الذهاب",
-      "stadium": "أرينا كوندا",
-      "time": "00:00",
-      "date": "الأربعاء 28-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "شابيكوينسي",
-        "logo": "https://imgs.ysscores.com/teams/128/17694232458462.png"
-      },
-      "away": {
-        "name": "سانتوس",
-        "logo": "https://imgs.ysscores.com/teams/128/241691418709.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "5103370",
@@ -271,25 +247,25 @@
     ]
   },
   {
-    "id": "5103366",
-    "url": "https://www.ysscores.com/ar/match/5103366/São-Paulo-Futebol-Clube-vs-CR-Flamengo",
+    "id": "5103373",
+    "url": "https://www.ysscores.com/ar/match/5103373/Associação-Chapecoense-de-Futebol-vs-Santos-FC",
     "info": {
       "championship": "الدوري البرازيلي",
       "round": "1 - مباراة الذهاب",
-      "stadium": "استاد مورومبي",
-      "time": "01:30",
+      "stadium": "أرينا كوندا",
+      "time": "00:00",
       "date": "الأربعاء 28-01-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "ساو باولو",
-        "logo": "https://imgs.ysscores.com/teams/128/3781691418711.png"
+        "name": "شابيكوينسي",
+        "logo": "https://imgs.ysscores.com/teams/128/17694232458462.png"
       },
       "away": {
-        "name": "فلامينغو",
-        "logo": "https://imgs.ysscores.com/teams/128/6861691418710.png"
+        "name": "سانتوس",
+        "logo": "https://imgs.ysscores.com/teams/128/241691418709.png"
       }
     },
     "channels": []
@@ -314,6 +290,30 @@
       "away": {
         "name": "باهيا",
         "logo": "https://imgs.ysscores.com/teams/128/3961691418709.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5103366",
+    "url": "https://www.ysscores.com/ar/match/5103366/São-Paulo-Futebol-Clube-vs-CR-Flamengo",
+    "info": {
+      "championship": "الدوري البرازيلي",
+      "round": "1 - مباراة الذهاب",
+      "stadium": "استاد مورومبي",
+      "time": "01:30",
+      "date": "الأربعاء 28-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ساو باولو",
+        "logo": "https://imgs.ysscores.com/teams/128/3781691418711.png"
+      },
+      "away": {
+        "name": "فلامينغو",
+        "logo": "https://imgs.ysscores.com/teams/128/6861691418710.png"
       }
     },
     "channels": []
@@ -658,30 +658,6 @@
     "channels": []
   },
   {
-    "id": "5111204",
-    "url": "https://www.ysscores.com/ar/match/5111204/Al-Nasr-SC-vs-Khaleej-Sirte-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "6 - مباراة الذهاب",
-      "stadium": "ملعب بنغازي الدولي",
-      "time": "17:30",
-      "date": "الأربعاء 28-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "النصر",
-        "logo": "https://imgs.ysscores.com/teams/128/1781760955603.png"
-      },
-      "away": {
-        "name": "الخليج",
-        "logo": "https://imgs.ysscores.com/teams/128/17656560805023.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111203",
     "url": "https://www.ysscores.com/ar/match/5111203/Al-Wefaq-Ly-SC-vs-Al-Tahaddy-SC",
     "info": {
@@ -706,33 +682,28 @@
     "channels": []
   },
   {
-    "id": "4899596",
-    "url": "https://www.ysscores.com/ar/match/4899596/El-Masry-SC-vs-Cleopatra-FC",
+    "id": "5111204",
+    "url": "https://www.ysscores.com/ar/match/5111204/Al-Nasr-SC-vs-Khaleej-Sirte-SC",
     "info": {
-      "championship": "الدوري المصري",
-      "round": "16 - مباراة الذهاب",
-      "stadium": "استاد السويس الجديد",
-      "time": "19:00",
+      "championship": "الدوري الليبي الممتاز",
+      "round": "6 - مباراة الذهاب",
+      "stadium": "ملعب بنغازي الدولي",
+      "time": "17:30",
       "date": "الأربعاء 28-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
-        "name": "المصري",
-        "logo": "https://imgs.ysscores.com/teams/128/1521694644423.png"
+        "name": "النصر",
+        "logo": "https://imgs.ysscores.com/teams/128/1781760955603.png"
       },
       "away": {
-        "name": "سيراميكا",
-        "logo": "https://imgs.ysscores.com/teams/128/631694081965.png"
+        "name": "الخليج",
+        "logo": "https://imgs.ysscores.com/teams/128/17656560805023.png"
       }
     },
-    "channels": [
-      {
-        "channel": "ON Sport 1",
-        "commentator": "أيمن الكاشف"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "4899592",
@@ -764,6 +735,35 @@
     ]
   },
   {
+    "id": "4899596",
+    "url": "https://www.ysscores.com/ar/match/4899596/El-Masry-SC-vs-Cleopatra-FC",
+    "info": {
+      "championship": "الدوري المصري",
+      "round": "16 - مباراة الذهاب",
+      "stadium": "استاد السويس الجديد",
+      "time": "19:00",
+      "date": "الأربعاء 28-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "المصري",
+        "logo": "https://imgs.ysscores.com/teams/128/1521694644423.png"
+      },
+      "away": {
+        "name": "سيراميكا",
+        "logo": "https://imgs.ysscores.com/teams/128/631694081965.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 1",
+        "commentator": "أيمن الكاشف"
+      }
+    ]
+  },
+  {
     "id": "4899591",
     "url": "https://www.ysscores.com/ar/match/4899591/Zamalek-SC-vs-Petrojet",
     "info": {
@@ -791,30 +791,6 @@
         "commentator": "محمد الشاذلي"
       }
     ]
-  },
-  {
-    "id": "5147318",
-    "url": "https://www.ysscores.com/ar/match/5147318/Olympique-Beja-vs-US-Monastir",
-    "info": {
-      "championship": "الرابطة التونسية لكرة القدم",
-      "round": "18 - مباراة الاياب",
-      "stadium": "ملعب بوجمعة الكميتي",
-      "time": "14:00",
-      "date": "الأربعاء 28-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الأولمبي الباجي",
-        "logo": "https://imgs.ysscores.com/teams/128/821692795939.png"
-      },
-      "away": {
-        "name": "المنستيري",
-        "logo": "https://imgs.ysscores.com/teams/128/9111692796285.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "5147319",
@@ -870,6 +846,30 @@
     "channels": []
   },
   {
+    "id": "5147318",
+    "url": "https://www.ysscores.com/ar/match/5147318/Olympique-Beja-vs-US-Monastir",
+    "info": {
+      "championship": "الرابطة التونسية لكرة القدم",
+      "round": "18 - مباراة الاياب",
+      "stadium": "ملعب بوجمعة الكميتي",
+      "time": "14:00",
+      "date": "الأربعاء 28-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الأولمبي الباجي",
+        "logo": "https://imgs.ysscores.com/teams/128/821692795939.png"
+      },
+      "away": {
+        "name": "المنستيري",
+        "logo": "https://imgs.ysscores.com/teams/128/9111692796285.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5147317",
     "url": "https://www.ysscores.com/ar/match/5147317/Etoile-Sportive-du-Sahel-vs-Union-Sportive-de-Ben-Guerdane",
     "info": {
@@ -895,35 +895,6 @@
       {
         "channel": "الوطنية 1",
         "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "4947203",
-    "url": "https://www.ysscores.com/ar/match/4947203/AS-Monaco-vs-Juventus-FC",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "8",
-      "stadium": "لويس الثاني",
-      "time": "21:00",
-      "date": "الأربعاء 28-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "موناكو",
-        "logo": "https://imgs.ysscores.com/teams/128/3861690287583.png"
-      },
-      "away": {
-        "name": "يوفنتوس",
-        "logo": "https://imgs.ysscores.com/teams/128/9331690283003.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Xtra 2",
-        "commentator": "جواد بدة"
       }
     ]
   },
@@ -982,6 +953,35 @@
       {
         "channel": "beIN Xtra 4",
         "commentator": "عبدالله الغامدي"
+      }
+    ]
+  },
+  {
+    "id": "4947203",
+    "url": "https://www.ysscores.com/ar/match/4947203/AS-Monaco-vs-Juventus-FC",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "8",
+      "stadium": "لويس الثاني",
+      "time": "21:00",
+      "date": "الأربعاء 28-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "موناكو",
+        "logo": "https://imgs.ysscores.com/teams/128/3861690287583.png"
+      },
+      "away": {
+        "name": "يوفنتوس",
+        "logo": "https://imgs.ysscores.com/teams/128/9331690283003.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Xtra 2",
+        "commentator": "جواد بدة"
       }
     ]
   },
@@ -1131,12 +1131,12 @@
     ]
   },
   {
-    "id": "4947229",
-    "url": "https://www.ysscores.com/ar/match/4947229/Ajax-Amsterdam-vs-Olympiacos-Piraeus",
+    "id": "4947152",
+    "url": "https://www.ysscores.com/ar/match/4947152/FC-Barcelona-vs-FC-Copenhagen",
     "info": {
       "championship": "دوري أبطال أوروبا",
       "round": "8",
-      "stadium": "يوهان كرويف أرينا",
+      "stadium": "سبوتيفاي كامب نو",
       "time": "21:00",
       "date": "الأربعاء 28-01-2026",
       "current_score": "- : -",
@@ -1144,47 +1144,18 @@
     },
     "teams": {
       "home": {
-        "name": "أياكس أمستردام",
-        "logo": "https://imgs.ysscores.com/teams/128/1361751718344.png"
+        "name": "برشلونة",
+        "logo": "https://imgs.ysscores.com/teams/128/9541690196746.png"
       },
       "away": {
-        "name": "أولمبياكوس",
-        "logo": "https://imgs.ysscores.com/teams/128/1401690370533.png"
+        "name": "كوبنهاغن",
+        "logo": "https://imgs.ysscores.com/teams/128/1701690822703.png"
       }
     },
     "channels": [
       {
-        "channel": "beIN Xtra 8",
-        "commentator": "باسم الزير"
-      }
-    ]
-  },
-  {
-    "id": "4947195",
-    "url": "https://www.ysscores.com/ar/match/4947195/Eintracht-Frankfurt-vs-Tottenham-Hotspur",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "8",
-      "stadium": "دوتش بانك بارك",
-      "time": "21:00",
-      "date": "الأربعاء 28-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "فرانكفورت",
-        "logo": "https://imgs.ysscores.com/teams/128/231690288818.png"
-      },
-      "away": {
-        "name": "توتنهام",
-        "logo": "https://imgs.ysscores.com/teams/128/2501692467226.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Xtra 1",
-        "commentator": "منتصر الأزهري"
+        "channel": "بي إن سبورت 3",
+        "commentator": "حفيظ دراجي"
       }
     ]
   },
@@ -1218,6 +1189,35 @@
     ]
   },
   {
+    "id": "4947229",
+    "url": "https://www.ysscores.com/ar/match/4947229/Ajax-Amsterdam-vs-Olympiacos-Piraeus",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "8",
+      "stadium": "يوهان كرويف أرينا",
+      "time": "21:00",
+      "date": "الأربعاء 28-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أياكس أمستردام",
+        "logo": "https://imgs.ysscores.com/teams/128/1361751718344.png"
+      },
+      "away": {
+        "name": "أولمبياكوس",
+        "logo": "https://imgs.ysscores.com/teams/128/1401690370533.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Xtra 8",
+        "commentator": "باسم الزير"
+      }
+    ]
+  },
+  {
     "id": "4947164",
     "url": "https://www.ysscores.com/ar/match/4947164/Manchester-City-vs-Galatasaray",
     "info": {
@@ -1243,35 +1243,6 @@
       {
         "channel": "بي إن سبورت 5",
         "commentator": "محمد بركات"
-      }
-    ]
-  },
-  {
-    "id": "4947152",
-    "url": "https://www.ysscores.com/ar/match/4947152/FC-Barcelona-vs-FC-Copenhagen",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "8",
-      "stadium": "سبوتيفاي كامب نو",
-      "time": "21:00",
-      "date": "الأربعاء 28-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "برشلونة",
-        "logo": "https://imgs.ysscores.com/teams/128/9541690196746.png"
-      },
-      "away": {
-        "name": "كوبنهاغن",
-        "logo": "https://imgs.ysscores.com/teams/128/1701690822703.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "حفيظ دراجي"
       }
     ]
   },
@@ -1334,6 +1305,64 @@
     ]
   },
   {
+    "id": "4947195",
+    "url": "https://www.ysscores.com/ar/match/4947195/Eintracht-Frankfurt-vs-Tottenham-Hotspur",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "8",
+      "stadium": "دوتش بانك بارك",
+      "time": "21:00",
+      "date": "الأربعاء 28-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "فرانكفورت",
+        "logo": "https://imgs.ysscores.com/teams/128/231690288818.png"
+      },
+      "away": {
+        "name": "توتنهام",
+        "logo": "https://imgs.ysscores.com/teams/128/2501692467226.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Xtra 1",
+        "commentator": "منتصر الأزهري"
+      }
+    ]
+  },
+  {
+    "id": "4947190",
+    "url": "https://www.ysscores.com/ar/match/4947190/Club-Brugge-KV-vs-Olympique-Marseille",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "8",
+      "stadium": "استاد يان بريدل",
+      "time": "21:00",
+      "date": "الأربعاء 28-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "كلوب بروج",
+        "logo": "https://imgs.ysscores.com/teams/128/121690370520.png"
+      },
+      "away": {
+        "name": "مارسيليا",
+        "logo": "https://imgs.ysscores.com/teams/128/6031690287269.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Xtra 3",
+        "commentator": "أحمد فؤاد"
+      }
+    ]
+  },
+  {
     "id": "4947227",
     "url": "https://www.ysscores.com/ar/match/4947227/Athletic-Bilbao-vs-Sporting-CP",
     "info": {
@@ -1392,12 +1421,12 @@
     ]
   },
   {
-    "id": "4947190",
-    "url": "https://www.ysscores.com/ar/match/4947190/Club-Brugge-KV-vs-Olympique-Marseille",
+    "id": "5101894",
+    "url": "https://www.ysscores.com/ar/match/5101894/CA-Aldosivi-vs-CA-Barracas-Central",
     "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "8",
-      "stadium": "استاد يان بريدل",
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "2 - مباراة الذهاب",
+      "stadium": "استاد خوسيه ماريا مينيلا",
       "time": "21:00",
       "date": "الأربعاء 28-01-2026",
       "current_score": "- : -",
@@ -1405,20 +1434,15 @@
     },
     "teams": {
       "home": {
-        "name": "كلوب بروج",
-        "logo": "https://imgs.ysscores.com/teams/128/121690370520.png"
+        "name": "إلدوسيفي",
+        "logo": "https://imgs.ysscores.com/teams/128/1451735322474.png"
       },
       "away": {
-        "name": "مارسيليا",
-        "logo": "https://imgs.ysscores.com/teams/128/6031690287269.png"
+        "name": "باراكاس",
+        "logo": "https://imgs.ysscores.com/teams/128/1021717935858.png"
       }
     },
-    "channels": [
-      {
-        "channel": "beIN Xtra 3",
-        "commentator": "أحمد فؤاد"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "5101898",
@@ -1440,30 +1464,6 @@
       "away": {
         "name": "بوكا جونيورز",
         "logo": "https://imgs.ysscores.com/teams/128/8341695765777.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5101894",
-    "url": "https://www.ysscores.com/ar/match/5101894/CA-Aldosivi-vs-CA-Barracas-Central",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "2 - مباراة الذهاب",
-      "stadium": "استاد خوسيه ماريا مينيلا",
-      "time": "21:00",
-      "date": "الأربعاء 28-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "إلدوسيفي",
-        "logo": "https://imgs.ysscores.com/teams/128/1451735322474.png"
-      },
-      "away": {
-        "name": "باراكاس",
-        "logo": "https://imgs.ysscores.com/teams/128/1021717935858.png"
       }
     },
     "channels": []
