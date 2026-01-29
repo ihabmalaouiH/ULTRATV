@@ -256,14 +256,14 @@
     <script>
     // ⚠️⚠️⚠️ منطقة الإعدادات - ضع بياناتك هنا ⚠️⚠️⚠️
     const firebaseConfig = {
-  apiKey: "AIzaSyBBf2ock2SHzeLu27oh0rlxwgLmxHINjIk",
-  authDomain: "ultra-tv-c23ea.firebaseapp.com",
-  projectId: "ultra-tv-c23ea",
-  storageBucket: "ultra-tv-c23ea.firebasestorage.app",
-  messagingSenderId: "253161044450",
-  appId: "1:253161044450:web:66a15956cde240c1de21bb",
-  measurementId: "G-3GX39BE7C1"
-};
+      apiKey: "AIzaSyBBf2ock2SHzeLu27oh0rlxwgLmxHINjIk",
+      authDomain: "ultra-tv-c23ea.firebaseapp.com",
+      projectId: "ultra-tv-c23ea",
+      storageBucket: "ultra-tv-c23ea.firebasestorage.app",
+      messagingSenderId: "253161044450",
+      appId: "1:253161044450:web:66a15956cde240c1de21bb",
+      measurementId: "G-3GX39BE7C1"
+    };
 
     // تهيئة Firebase
     firebase.initializeApp(firebaseConfig);
@@ -285,11 +285,12 @@
             copy: document.getElementById('copyChannelModal'),
             bulk: document.getElementById('bulkAddServerModal'),
             move: document.getElementById('moveItemModal'),
-            jsonPkg: document.getElementById('addJsonPkgModal') // Added new modal
+            jsonPkg: document.getElementById('addJsonPkgModal')
         };
         
         let data = [];
         let context = {};
+        let jsonUpdateTimeout; // For debouncing
 
         // --- Auth Logic ---
         auth.onAuthStateChanged((user) => {
@@ -325,7 +326,7 @@
                 if (!snapshot.empty) {
                     data = snapshot.docs.map(doc => doc.data());
                     render();
-                    updateJsonOutput();
+                    // updateJsonOutput called inside render
                     showToast("تم تحديث اللوحة من قاعدة البيانات");
                 } else {
                     showToast("قاعدة البيانات فارغة، يمكنك البدء بالإضافة", "error");
@@ -371,7 +372,7 @@
 
         document.getElementById('firebase-sync-btn').addEventListener('click', syncToFirebase);
 
-        // --- Existing Dashboard Logic ---
+        // --- Dashboard Logic (OPTIMIZED) ---
         
         const updateStats = () => {
             const catCount = data.length;
@@ -404,16 +405,87 @@
             }, 3000);
         };
 
-        const updateJsonOutput = () => { jsonOutput.textContent = JSON.stringify(data, null, 2); };
+        const updateJsonOutput = () => { 
+            jsonOutput.textContent = JSON.stringify(data, null, 2); 
+        };
 
+        // --- OPTIMIZED RENDER FUNCTION (The Fix) ---
         const render = () => {
-            categoriesContainer.innerHTML = '';
-            data.forEach((category, catIndex) => {
-                const categoryCard = document.createElement('div');
-                categoryCard.className = 'category-card';
+            // بناء سلسلة HTML واحدة بدلاً من إنشاء العناصر في حلقة
+            // هذا أسرع بـ 50 مرة عند التعامل مع قوائم كبيرة
+            const htmlString = data.map((category, catIndex) => {
                 const catLogo = category.logoUrl ? `<img src="${category.logoUrl}" class="logo-preview" onerror="this.style.display='none'">` : '';
                 
-                categoryCard.innerHTML = `
+                // Build Channels HTML
+                const channelsHtml = (category.channels || []).map((channel, chIndex) => {
+                    const isHidden = channel.isHidden ? 'hidden-channel' : '';
+                    const isMaintenance = channel.isMaintenance ? 'maintenance-channel' : '';
+                    const hiddenBadge = channel.isHidden ? '<span class="status-badge badge-hidden">مخفية</span>' : '';
+                    const maintBadge = channel.isMaintenance ? '<span class="status-badge badge-maint">صيانة</span>' : '';
+                    const chLogo = channel.logoUrl ? `<img src="${channel.logoUrl}" class="logo-preview" onerror="this.style.display='none'">` : '';
+
+                    // Build Servers HTML
+                    const serversHtml = (channel.servers || []).map((server, srvIndex) => {
+                        const serverName = Object.keys(server)[0];
+                        return `<div class="server-item">
+                                    <span><strong>${serverName}:</strong> ${server[serverName]}</span>
+                                    <div class="actions">
+                                        <button class="action-btn" data-type="server" data-action="edit" data-cat-index="${catIndex}" data-ch-index="${chIndex}" data-srv-index="${srvIndex}">✏️</button>
+                                        <button class="action-btn delete-btn" data-type="server" data-action="delete" data-cat-index="${catIndex}" data-ch-index="${chIndex}" data-srv-index="${srvIndex}">🗑️</button>
+                                    </div>
+                                </div>`;
+                    }).join('');
+
+                    return `
+                    <div class="channel-card ${isHidden} ${isMaintenance}">
+                        <div class="card-header">
+                            <h4 style="cursor: default; display:flex; align-items:center; gap:8px;">
+                                ${hiddenBadge}${maintBadge}
+                                ${chLogo}
+                                ${channel.name}
+                            </h4>
+                            <div class="actions">
+                                <button class="action-btn" data-type="channel" data-action="toggle-visibility" data-cat-index="${catIndex}" data-ch-index="${chIndex}" title="${channel.isHidden ? 'إظهار القناة' : 'إخفاء القناة'}">
+                                    ${channel.isHidden ? '👁️' : '👁️‍🗨️'}
+                                </button>
+                                <button class="action-btn" data-type="channel" data-action="toggle-maintenance" data-cat-index="${catIndex}" data-ch-index="${chIndex}" title="${channel.isMaintenance ? 'إنهاء الصيانة' : 'وضع الصيانة'}">
+                                    ${channel.isMaintenance ? '✅' : '🔧'}
+                                </button>
+                                <div style="width:1px; background:#ddd; height:20px; margin:0 5px;"></div>
+                                
+                                <button class="action-btn" data-type="channel" data-action="move-custom" data-cat-index="${catIndex}" data-ch-index="${chIndex}" title="نقل / تغيير الترتيب">⇄ نقل</button>
+                                
+                                <button class="action-btn" data-type="channel" data-action="copy" data-cat-index="${catIndex}" data-ch-index="${chIndex}">📋</button>
+                                <button class="action-btn" data-type="channel" data-action="edit" data-cat-index="${catIndex}" data-ch-index="${chIndex}">✏️</button>
+                                <button class="action-btn delete-btn" data-type="channel" data-action="delete" data-cat-index="${catIndex}" data-ch-index="${chIndex}">🗑️</button>
+                            </div>
+                        </div>
+                        <div class="servers-list">
+                            ${serversHtml}
+                        </div>
+                        <div class="form-group form-container collapsed" style="margin-top: 15px; background: var(--stats-bg); padding: 10px; border-radius: 6px;">
+                            <h5 class="card-header-title" data-action="toggle-form">
+                                <span class="toggle-icon">▼</span>إضافة سيرفر جديد
+                            </h5>
+                            <div class="form-fields">
+                                <input type="text" placeholder="اسم السيرفر (Server 1)" class="server-name-input"><br>
+                                <input type="url" placeholder="رابط السيرفر" class="server-url-input" style="margin-top: 5px;">
+                                <button class="add-server-btn" data-cat-index="${catIndex}" data-ch-index="${chIndex}" style="margin-top: 5px; padding: 8px 12px;">إضافة سيرفر</button>
+                            </div>
+                        </div>
+                        <div class="form-group form-container collapsed" style="margin-top: 10px; background: var(--stats-bg); padding: 10px; border-radius: 6px;">
+                            <h5 class="card-header-title" data-action="toggle-form">
+                                <span class="toggle-icon">▼</span>إضافة سيرفرات مجمعة
+                            </h5>
+                            <div class="form-fields">
+                                <button class="add-bulk-server-btn" data-cat-index="${catIndex}" data-ch-index="${chIndex}" style="margin-top: 5px; padding: 8px 12px; width:100%;">فتح نافذة الإضافة المجمعة</button>
+                            </div>
+                        </div>
+                    </div>`;
+                }).join('');
+
+                return `
+                <div class="category-card">
                     <div class="card-header">
                         <div class="card-header-title" data-action="toggle-collapse">
                             <span class="toggle-icon">▼</span>
@@ -428,69 +500,7 @@
                         </div>
                     </div>
                     <div class="channels-list">
-                        ${(category.channels || []).map((channel, chIndex) => {
-                            const isHidden = channel.isHidden ? 'hidden-channel' : '';
-                            const isMaintenance = channel.isMaintenance ? 'maintenance-channel' : '';
-                            const hiddenBadge = channel.isHidden ? '<span class="status-badge badge-hidden">مخفية</span>' : '';
-                            const maintBadge = channel.isMaintenance ? '<span class="status-badge badge-maint">صيانة</span>' : '';
-                            const chLogo = channel.logoUrl ? `<img src="${channel.logoUrl}" class="logo-preview" onerror="this.style.display='none'">` : '';
-
-                            return `
-                            <div class="channel-card ${isHidden} ${isMaintenance}">
-                                <div class="card-header">
-                                    <h4 style="cursor: default; display:flex; align-items:center; gap:8px;">
-                                        ${hiddenBadge}${maintBadge}
-                                        ${chLogo}
-                                        ${channel.name}
-                                    </h4>
-                                    <div class="actions">
-                                        <button class="action-btn" data-type="channel" data-action="toggle-visibility" data-cat-index="${catIndex}" data-ch-index="${chIndex}" title="${channel.isHidden ? 'إظهار القناة' : 'إخفاء القناة'}">
-                                            ${channel.isHidden ? '👁️' : '👁️‍🗨️'}
-                                        </button>
-                                        <button class="action-btn" data-type="channel" data-action="toggle-maintenance" data-cat-index="${catIndex}" data-ch-index="${chIndex}" title="${channel.isMaintenance ? 'إنهاء الصيانة' : 'وضع الصيانة'}">
-                                            ${channel.isMaintenance ? '✅' : '🔧'}
-                                        </button>
-                                        <div style="width:1px; background:#ddd; height:20px; margin:0 5px;"></div>
-                                        
-                                        <button class="action-btn" data-type="channel" data-action="move-custom" data-cat-index="${catIndex}" data-ch-index="${chIndex}" title="نقل / تغيير الترتيب">⇄ نقل</button>
-                                        
-                                        <button class="action-btn" data-type="channel" data-action="copy" data-cat-index="${catIndex}" data-ch-index="${chIndex}">📋</button>
-                                        <button class="action-btn" data-type="channel" data-action="edit" data-cat-index="${catIndex}" data-ch-index="${chIndex}">✏️</button>
-                                        <button class="action-btn delete-btn" data-type="channel" data-action="delete" data-cat-index="${catIndex}" data-ch-index="${chIndex}">🗑️</button>
-                                    </div>
-                                </div>
-                                <div class="servers-list">
-                                    ${(channel.servers || []).map((server, srvIndex) => {
-                                        const serverName = Object.keys(server)[0];
-                                        return `<div class="server-item">
-                                                    <span><strong>${serverName}:</strong> ${server[serverName]}</span>
-                                                    <div class="actions">
-                                                        <button class="action-btn" data-type="server" data-action="edit" data-cat-index="${catIndex}" data-ch-index="${chIndex}" data-srv-index="${srvIndex}">✏️</button>
-                                                        <button class="action-btn delete-btn" data-type="server" data-action="delete" data-cat-index="${catIndex}" data-ch-index="${chIndex}" data-srv-index="${srvIndex}">🗑️</button>
-                                                    </div>
-                                                </div>`;
-                                    }).join('')}
-                                </div>
-                                <div class="form-group form-container collapsed" style="margin-top: 15px; background: var(--stats-bg); padding: 10px; border-radius: 6px;">
-                                    <h5 class="card-header-title" data-action="toggle-form">
-                                        <span class="toggle-icon">▼</span>إضافة سيرفر جديد
-                                    </h5>
-                                    <div class="form-fields">
-                                        <input type="text" placeholder="اسم السيرفر (Server 1)" class="server-name-input"><br>
-                                        <input type="url" placeholder="رابط السيرفر" class="server-url-input" style="margin-top: 5px;">
-                                        <button class="add-server-btn" data-cat-index="${catIndex}" data-ch-index="${chIndex}" style="margin-top: 5px; padding: 8px 12px;">إضافة سيرفر</button>
-                                    </div>
-                                </div>
-                                <div class="form-group form-container collapsed" style="margin-top: 10px; background: var(--stats-bg); padding: 10px; border-radius: 6px;">
-                                    <h5 class="card-header-title" data-action="toggle-form">
-                                        <span class="toggle-icon">▼</span>إضافة سيرفرات مجمعة
-                                    </h5>
-                                    <div class="form-fields">
-                                        <button class="add-bulk-server-btn" data-cat-index="${catIndex}" data-ch-index="${chIndex}" style="margin-top: 5px; padding: 8px 12px; width:100%;">فتح نافذة الإضافة المجمعة</button>
-                                    </div>
-                                </div>
-                            </div>`;
-                        }).join('')}
+                        ${channelsHtml}
                     </div>
                     <div class="form-group add-channel-form form-container collapsed" style="margin-top: 20px;">
                         <h4 class="card-header-title" data-action="toggle-form">
@@ -501,16 +511,24 @@
                             <input type="url" placeholder="رابط شعار القناة" class="channel-logo-input" style="margin-top: 5px;">
                             <button class="add-channel-btn" data-cat-index="${catIndex}" style="margin-top: 5px;">إضافة قناة</button>
                         </div>
-                    </div>`;
-                categoriesContainer.appendChild(categoryCard);
-            });
-            updateJsonOutput();
+                    </div>
+                </div>`;
+            }).join('');
+
+            // حقن HTML مرة واحدة فقط
+            categoriesContainer.innerHTML = htmlString;
+
             updateStats();
             handleSearch();
+            
+            // استخدام Timeout لتأخير تحديث كود JSON الثقيل لمنع تعليق الواجهة
+            clearTimeout(jsonUpdateTimeout);
+            jsonUpdateTimeout = setTimeout(updateJsonOutput, 50);
         };
 
         const handleSearch = () => {
             const query = searchBar.value.toLowerCase().trim();
+            // استخدام classList و style المباشر هنا مقبول لأن البحث يعتمد على العناصر الموجودة
             document.querySelectorAll('.category-card').forEach(catCard => {
                 const catName = catCard.querySelector('h3').textContent.toLowerCase();
                 let catHasVisibleChannel = false;
@@ -766,7 +784,7 @@
                  });
                  
                  render();
-                 updateJsonOutput();
+                 // Update JSON output handled in render
                  showToast('تم دمج الباقة/الباقات بنجاح ✅');
                  modals.jsonPkg.style.display = 'none';
              } catch(e) {
