@@ -1,25 +1,21 @@
-name: UltraTV Cloud Streamer
-
+name: UltraTV-Live-Streamer
 on:
   workflow_dispatch:
     inputs:
       video_url:
-        description: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8'
+        description: 'ضع رابط القرآن أو المباراة هنا'
         required: true
+        default: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8'
 
 jobs:
-  streaming_job:
+  stream:
     runs-on: ubuntu-latest
     steps:
-      - name: Install FFmpeg
-        run: sudo apt-get update && sudo apt-get install -y ffmpeg
-
-      - name: Start Cloud Streaming
-        run: |
-          # استبدل كلمة "ضع_مفتاح_البث_هنا" بالمفتاح الحقيقي الذي أخذته من فيسبوك
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: |
           ffmpeg -re -i "${{ github.event.inputs.video_url }}" \
-          -c:v libx264 -preset veryfast -b:v 3000k \
-          -maxrate 3000k -bufsize 6000k \
+          -c:v libx264 -preset superfast -b:v 2500k \
+          -maxrate 2500k -bufsize 5000k \
           -pix_fmt yuv420p -g 50 \
           -c:a aac -b:a 128k -ar 44100 \
           -f flv "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183286428765411-0-Ab435TgzcA5MC0mrfByJ-r4H"
