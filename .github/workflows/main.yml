@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       video_url:
-        description: 'http://ibo.lynxiptv.com/334188914694/VzDd0nBIgq/67742'
+        description: 'https://archive.org/download/quran-4k-nature/Surah%20Al-Baqarah%204K.mp4'
         required: true
 
 jobs:
