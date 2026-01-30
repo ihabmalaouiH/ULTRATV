@@ -1,10 +1,10 @@
-name: UltraTV-Dynamic-Streamer
+name: UltraTV-Cloud-Broadcaster
 
 on:
   workflow_dispatch:
     inputs:
       video_url:
-        description: 'رابط القرآن أو المباراة'
+        description: 'رابط فيديو القرآن أو المباراة'
         required: true
         default: 'http://ibo.lynxiptv.com/334188914694/VzDd0nBIgq/66384'
 
@@ -13,17 +13,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install FFmpeg
-        run: sudo apt-get update && sudo apt-get install -y ffmpeg
-
-      - name: Force Start Stream
         run: |
-          # نستخدم rtmp بدلاً من rtmps لتجاوز مشاكل الأمان TLS
-          # ونضيف خيارات لتثبيت الإرسال ومنع الانقطاع
-          ffmpeg -re -i "${{ github.event.inputs.video_url }}" \
-          -user_agent "Mozilla/5.0" \
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Start Continuous Streaming
+        run: |
+          # الكود يدعم الإعادة التلقائية وتثبيت الاتصال
+          ffmpeg -re -stream_loop -1 -i "${{ github.event.inputs.video_url }}" \
           -c:v libx264 -preset superfast -b:v 2500k \
           -maxrate 2500k -bufsize 5000k \
           -pix_fmt yuv420p -g 50 \
           -c:a aac -b:a 128k -ar 44100 \
           -f flv -flvflags no_duration_filesize \
-          "rtmp://live-api-s.facebook.com:80/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
+          "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
