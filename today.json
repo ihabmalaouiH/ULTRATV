@@ -406,35 +406,6 @@
     "channels": []
   },
   {
-    "id": "12282745",
-    "url": "https://www.ysscores.com/ar/match/12282745/Al-Ahli-SC-(Syria)-vs-Al-Karamah-SC",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "6 - مباراة الذهاب",
-      "stadium": "ملعب الحمدانية",
-      "time": "12:30",
-      "date": "الجمعة 30-01-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أهلي حلب",
-        "logo": "https://imgs.ysscores.com/teams/128/5401744895680.png"
-      },
-      "away": {
-        "name": "الكرامة",
-        "logo": "https://imgs.ysscores.com/teams/128/8581694349512.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "أنا سوريا",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "46946056",
     "url": "https://www.ysscores.com/ar/match/46946056/Damascus-Al-Ahli-Club-vs-Taliya-SC",
     "info": {
@@ -464,12 +435,12 @@
     ]
   },
   {
-    "id": "21779483",
-    "url": "https://www.ysscores.com/ar/match/21779483/Al-Fotuwa-SC-vs-Al-Shouleh-SC",
+    "id": "12282745",
+    "url": "https://www.ysscores.com/ar/match/12282745/Al-Ahli-SC-(Syria)-vs-Al-Karamah-SC",
     "info": {
       "championship": "الدوري السوري الممتاز",
       "round": "6 - مباراة الذهاب",
-      "stadium": "ملعب البلدي - دير الزور",
+      "stadium": "ملعب الحمدانية",
       "time": "12:30",
       "date": "الجمعة 30-01-2026",
       "current_score": "1 - 0",
@@ -477,15 +448,20 @@
     },
     "teams": {
       "home": {
-        "name": "الفتوة",
-        "logo": "https://imgs.ysscores.com/teams/128/8021694349814.png"
+        "name": "أهلي حلب",
+        "logo": "https://imgs.ysscores.com/teams/128/5401744895680.png"
       },
       "away": {
-        "name": "الشعلة",
-        "logo": "https://imgs.ysscores.com/teams/128/2471723130553.png"
+        "name": "الكرامة",
+        "logo": "https://imgs.ysscores.com/teams/128/8581694349512.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "أنا سوريا",
+        "commentator": "غير مدرج"
+      }
+    ]
   },
   {
     "id": "67043039",
@@ -536,6 +512,30 @@
     "channels": []
   },
   {
+    "id": "21779483",
+    "url": "https://www.ysscores.com/ar/match/21779483/Al-Fotuwa-SC-vs-Al-Shouleh-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "6 - مباراة الذهاب",
+      "stadium": "ملعب البلدي - دير الزور",
+      "time": "12:30",
+      "date": "الجمعة 30-01-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الفتوة",
+        "logo": "https://imgs.ysscores.com/teams/128/8021694349814.png"
+      },
+      "away": {
+        "name": "الشعلة",
+        "logo": "https://imgs.ysscores.com/teams/128/2471723130553.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4830630",
     "url": "https://www.ysscores.com/ar/match/4830630/RC-Lens-vs-Le-Havre-AC",
     "info": {
@@ -561,6 +561,39 @@
       {
         "channel": "بي إن سبورت 4",
         "commentator": "نوفل باشي"
+      }
+    ]
+  },
+  {
+    "id": "5099008",
+    "url": "https://www.ysscores.com/ar/match/5099008/Al-Shamal-SC-vs-Al-Sailiya-SC",
+    "info": {
+      "championship": "الدوري القطري",
+      "round": "14 - مباراة الاياب",
+      "stadium": "ملعب الشمال",
+      "time": "15:45",
+      "date": "الجمعة 30-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "الشمال",
+        "logo": "https://imgs.ysscores.com/teams/128/2961722879498.png"
+      },
+      "away": {
+        "name": "السيلية",
+        "logo": "https://imgs.ysscores.com/teams/128/17693712784865.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الكأس 1",
+        "commentator": "منتصر الأزهري"
+      },
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "حسن العيدروس"
       }
     ]
   },
@@ -594,39 +627,6 @@
       {
         "channel": "بي إن سبورت 2",
         "commentator": "عامر الخوذيري"
-      }
-    ]
-  },
-  {
-    "id": "5099008",
-    "url": "https://www.ysscores.com/ar/match/5099008/Al-Shamal-SC-vs-Al-Sailiya-SC",
-    "info": {
-      "championship": "الدوري القطري",
-      "round": "14 - مباراة الاياب",
-      "stadium": "ملعب الشمال",
-      "time": "15:45",
-      "date": "الجمعة 30-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الشمال",
-        "logo": "https://imgs.ysscores.com/teams/128/2961722879498.png"
-      },
-      "away": {
-        "name": "السيلية",
-        "logo": "https://imgs.ysscores.com/teams/128/17693712784865.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الكأس 1",
-        "commentator": "منتصر الأزهري"
-      },
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "حسن العيدروس"
       }
     ]
   },
