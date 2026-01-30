@@ -6,7 +6,7 @@ on:
       video_url:
         description: 'رابط الفيديو (m3u8)'
         required: true
-        default: 'https://live.kwikmotion.com/ksa1live/ksa1.smil/playlist_dvr.m3u8?hdnts=exp=1769767640~acl=/ksa1live/ksa1.smil/*~hmac=6d450dd43e884a7514e575ff6a396847870f4b2fcdac73c3342bfc6c86426707'
+        default: 'http://ibo.lynxiptv.com/334188914694/VzDd0nBIgq/67742'
 
 jobs:
   streaming_job:
