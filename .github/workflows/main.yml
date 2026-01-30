@@ -1,4 +1,4 @@
-name: UltraTV-Ultimate-Broadcaster
+name: UltraTV-Final-Success
 
 on:
   workflow_dispatch:
@@ -12,15 +12,12 @@ jobs:
   streaming_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Install FFmpeg
-        run: sudo apt-get update && sudo apt-get install -y ffmpeg
-
-      - name: Start Stream
+      - name: Start Streaming with Docker
         run: |
-          # نستخدم خيارات لفرض الاتصال وتجاوز حظر الـ SSL
-          ffmpeg -re -i "${{ github.event.inputs.video_url }}" \
+          # تشغيل حاوية مخصصة للبث مع تحديث شهادات SSL فوراً
+          docker run --rm jrottenberg/ffmpeg:4.4-ubuntu \
+          -re -i "${{ github.event.inputs.video_url }}" \
           -user_agent "Mozilla/5.0" \
           -c:v libx264 -preset superfast -b:v 2500k -maxrate 2500k -bufsize 5000k \
           -pix_fmt yuv420p -g 50 -c:a aac -b:a 128k -ar 44100 \
-          -f flv -tls_verify 0 \
-          "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183779100765411-0-Ab7v39IgoaRptZQUG0784OcT"
+          -f flv "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183779916765411-0-Ab7AHzV47Gn0sQotY5C_kIMZ"
