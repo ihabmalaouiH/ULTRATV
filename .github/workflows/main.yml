@@ -11,7 +11,6 @@ on:
 jobs:
   streaming_job:
     runs-on: ubuntu-latest
-    # نستخدم حاوية مجهزة بأحدث مكتبات SSL و FFmpeg
     container:
       image: jrottenberg/ffmpeg:4.4-ubuntu
     steps:
