@@ -1,11 +1,12 @@
-name: UltraTV-Cloud-Broadcaster
+name: UltraTV-Quran-Streamer
 
 on:
   workflow_dispatch:
     inputs:
       video_url:
-        description: 'http://ibo.lynxiptv.com/334188914694/VzDd0nBIgq/66384'
+        description: 'رابط قناة القرآن'
         required: true
+        default: 'http://ibo.lynxiptv.com/334188914694/VzDd0nBIgq/66384'
 
 jobs:
   streaming_job:
@@ -14,10 +15,11 @@ jobs:
       - name: Install FFmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
-      - name: Start Robust Stream
+      - name: Start Quran Stream
         run: |
-          # إضافة ميزات لإصلاح مشاكل الاتصال مع فيسبوك
+          # نستخدم إعدادات تضمن استقرار البث من روابط IPTV
           ffmpeg -re -i "${{ github.event.inputs.video_url }}" \
+          -user_agent "Mozilla/5.0" \
           -c:v libx264 -preset superfast -b:v 2500k -maxrate 2500k -bufsize 5000k \
           -pix_fmt yuv420p -g 50 -c:a aac -b:a 128k -ar 44100 \
           -f flv -flvflags no_duration_filesize \
