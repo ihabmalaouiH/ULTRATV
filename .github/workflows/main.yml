@@ -14,10 +14,10 @@ jobs:
     steps:
       - name: Start Streaming with Docker
         run: |
-          # تشغيل حاوية مخصصة للبث مع تحديث شهادات SSL فوراً
+          # التغيير الجذري: نستخدم rtmp والمنفذ 80 للهروب من تعقيدات SSL
           docker run --rm jrottenberg/ffmpeg:4.4-ubuntu \
           -re -i "${{ github.event.inputs.video_url }}" \
           -user_agent "Mozilla/5.0" \
           -c:v libx264 -preset superfast -b:v 2500k -maxrate 2500k -bufsize 5000k \
           -pix_fmt yuv420p -g 50 -c:a aac -b:a 128k -ar 44100 \
-          -f flv "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183779916765411-0-Ab7AHzV47Gn0sQotY5C_kIMZ"
+          -f flv "rtmp://live-api-s.facebook.com:80/rtmp/FB-122183780054765411-0-Ab76j3TGkplb9jtJApfmOK1F"
