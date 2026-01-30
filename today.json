@@ -348,6 +348,30 @@
     ]
   },
   {
+    "id": "76205246",
+    "url": "https://www.ysscores.com/ar/match/76205246/Al-Jaish-SC-vs-Omayya-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "6 - مباراة الذهاب",
+      "stadium": "ملعب الفيحاء - دمشق",
+      "time": "12:30",
+      "date": "الجمعة 30-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الجيش",
+        "logo": "https://imgs.ysscores.com/teams/128/17648885948055.png"
+      },
+      "away": {
+        "name": "أمية",
+        "logo": "https://imgs.ysscores.com/teams/128/17676429915147.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "12282745",
     "url": "https://www.ysscores.com/ar/match/12282745/Al-Ahli-SC-(Syria)-vs-Al-Karamah-SC",
     "info": {
@@ -430,54 +454,6 @@
     "channels": []
   },
   {
-    "id": "76205246",
-    "url": "https://www.ysscores.com/ar/match/76205246/Al-Jaish-SC-vs-Omayya-SC",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "6 - مباراة الذهاب",
-      "stadium": "ملعب الفيحاء - دمشق",
-      "time": "12:30",
-      "date": "الجمعة 30-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الجيش",
-        "logo": "https://imgs.ysscores.com/teams/128/17648885948055.png"
-      },
-      "away": {
-        "name": "أمية",
-        "logo": "https://imgs.ysscores.com/teams/128/17676429915147.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "38976496",
-    "url": "https://www.ysscores.com/ar/match/38976496/Khan-Shekhoun-vs-Al-Shorta-SC-(Syria)",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "6 - مباراة الذهاب",
-      "stadium": "الملعب البلدي بإدلب",
-      "time": "12:30",
-      "date": "الجمعة 30-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "خان شيخون",
-        "logo": "https://imgs.ysscores.com/teams/128/17648858602326.png"
-      },
-      "away": {
-        "name": "الشرطة",
-        "logo": "https://imgs.ysscores.com/teams/128/17648892592497.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "21779483",
     "url": "https://www.ysscores.com/ar/match/21779483/Al-Fotuwa-SC-vs-Al-Shouleh-SC",
     "info": {
@@ -521,6 +497,30 @@
       "away": {
         "name": "الوحدة",
         "logo": "https://imgs.ysscores.com/teams/128/8991694349969.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "38976496",
+    "url": "https://www.ysscores.com/ar/match/38976496/Khan-Shekhoun-vs-Al-Shorta-SC-(Syria)",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "6 - مباراة الذهاب",
+      "stadium": "الملعب البلدي بإدلب",
+      "time": "12:30",
+      "date": "الجمعة 30-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "خان شيخون",
+        "logo": "https://imgs.ysscores.com/teams/128/17648858602326.png"
+      },
+      "away": {
+        "name": "الشرطة",
+        "logo": "https://imgs.ysscores.com/teams/128/17648892592497.png"
       }
     },
     "channels": []
@@ -621,35 +621,6 @@
     ]
   },
   {
-    "id": "4899597",
-    "url": "https://www.ysscores.com/ar/match/4899597/Ittihad-Alexandria-SC-vs-Harras-El-Hodoud",
-    "info": {
-      "championship": "الدوري المصري",
-      "round": "16 - مباراة الذهاب",
-      "stadium": "استاد الإسكندرية",
-      "time": "19:00",
-      "date": "الجمعة 30-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الإتحاد",
-        "logo": "https://imgs.ysscores.com/teams/128/3771694082184.png"
-      },
-      "away": {
-        "name": "حرس الحدود",
-        "logo": "https://imgs.ysscores.com/teams/128/4381694082139.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ON Sport 1",
-        "commentator": "بلال علام"
-      }
-    ]
-  },
-  {
     "id": "4899598",
     "url": "https://www.ysscores.com/ar/match/4899598/Pharco-FC-vs-Zed-FC",
     "info": {
@@ -675,6 +646,35 @@
       {
         "channel": "ON Sport 1",
         "commentator": "محمد الكواليني"
+      }
+    ]
+  },
+  {
+    "id": "4899597",
+    "url": "https://www.ysscores.com/ar/match/4899597/Ittihad-Alexandria-SC-vs-Harras-El-Hodoud",
+    "info": {
+      "championship": "الدوري المصري",
+      "round": "16 - مباراة الذهاب",
+      "stadium": "استاد الإسكندرية",
+      "time": "19:00",
+      "date": "الجمعة 30-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الإتحاد",
+        "logo": "https://imgs.ysscores.com/teams/128/3771694082184.png"
+      },
+      "away": {
+        "name": "حرس الحدود",
+        "logo": "https://imgs.ysscores.com/teams/128/4381694082139.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 1",
+        "commentator": "بلال علام"
       }
     ]
   },
@@ -732,30 +732,6 @@
     "channels": []
   },
   {
-    "id": "4946348",
-    "url": "https://www.ysscores.com/ar/match/4946348/Qanah-FC-vs-Raya-SC",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "21 - مباراة الاياب",
-      "stadium": "استاد القناة",
-      "time": "13:30",
-      "date": "الجمعة 30-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "القناة",
-        "logo": "https://imgs.ysscores.com/teams/128/5821715097236.png"
-      },
-      "away": {
-        "name": "راية",
-        "logo": "https://imgs.ysscores.com/teams/128/6531696285484.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4946341",
     "url": "https://www.ysscores.com/ar/match/4946341/Sekka-El-Hadid-vs-Petrol-Asyut",
     "info": {
@@ -799,6 +775,30 @@
       "away": {
         "name": "بلدية المحلة",
         "logo": "https://imgs.ysscores.com/teams/128/3151694619467.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4946348",
+    "url": "https://www.ysscores.com/ar/match/4946348/Qanah-FC-vs-Raya-SC",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "21 - مباراة الاياب",
+      "stadium": "استاد القناة",
+      "time": "13:30",
+      "date": "الجمعة 30-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "القناة",
+        "logo": "https://imgs.ysscores.com/teams/128/5821715097236.png"
+      },
+      "away": {
+        "name": "راية",
+        "logo": "https://imgs.ysscores.com/teams/128/6531696285484.png"
       }
     },
     "channels": []
