@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       video_url:
-        description: 'رابط القرآن أو المباراة'
+        description: 'رابط القرآن أو المباراة (HLS / MP4)'
         required: true
         default: 'http://ibo.lynxiptv.com/334188914694/VzDd0nBIgq/66384'
 
@@ -13,12 +13,16 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: jrottenberg/ffmpeg:4.4-ubuntu
+
     steps:
-      - name: Start Final Stream
+      - name: Start UltraTV Live Stream
         run: |
-          # لاحظ التغيير هنا: استخدمنا rtmp بدلاً من rtmps والمنفذ 80
+          echo "🚀 Starting UltraTV Broadcast..."
+
           ffmpeg -re -i "${{ github.event.inputs.video_url }}" \
           -user_agent "Mozilla/5.0" \
+          -flags low_delay -fflags nobuffer -rtbufsize 100M \
           -c:v libx264 -preset superfast -b:v 2500k -maxrate 2500k -bufsize 5000k \
-          -pix_fmt yuv420p -g 50 -c:a aac -b:a 128k -ar 44100 \
-          -f flv "rtmp://live-api-s.facebook.com:80/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
+          -pix_fmt yuv420p -profile:v baseline -level 3.1 -g 50 \
+          -c:a aac -b:a 128k -ar 44100 \
+          -f flv "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
