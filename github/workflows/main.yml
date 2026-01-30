@@ -18,4 +18,4 @@ jobs:
           -maxrate 2500k -bufsize 5000k \
           -pix_fmt yuv420p -g 50 \
           -c:a aac -b:a 128k -ar 44100 \
-          -f flv "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183286428765411-0-Ab435TgzcA5MC0mrfByJ-r4H"
+          -f flv "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
