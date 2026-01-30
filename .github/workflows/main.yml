@@ -1,28 +1,29 @@
-name: UltraTV-Final-Broadcaster
+name: UltraTV-Cloud-Broadcaster
 
 on:
   workflow_dispatch:
     inputs:
       video_url:
-        description: 'رابط القرآن أو المباراة (HLS / MP4)'
+        description: 'رابط فيديو القرآن أو المباراة'
         required: true
-        default: 'http://ibo.lynxiptv.com/334188914694/VzDd0nBIgq/66384'
+        default: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8'
 
 jobs:
   streaming_job:
     runs-on: ubuntu-latest
-    container:
-      image: jrottenberg/ffmpeg:4.4-ubuntu
-
     steps:
-      - name: Start UltraTV Live Stream
+      - name: Install FFmpeg
         run: |
-          echo "🚀 Starting UltraTV Broadcast..."
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
 
-          ffmpeg -re -i "${{ github.event.inputs.video_url }}" \
-          -user_agent "Mozilla/5.0" \
-          -flags low_delay -fflags nobuffer -rtbufsize 100M \
-          -c:v libx264 -preset superfast -b:v 2500k -maxrate 2500k -bufsize 5000k \
-          -pix_fmt yuv420p -profile:v baseline -level 3.1 -g 50 \
+      - name: Start Continuous Streaming
+        run: |
+          # الكود يدعم الإعادة التلقائية وتثبيت الاتصال
+          ffmpeg -re -stream_loop -1 -i "${{ github.event.inputs.video_url }}" \
+          -c:v libx264 -preset superfast -b:v 2500k \
+          -maxrate 2500k -bufsize 5000k \
+          -pix_fmt yuv420p -g 50 \
           -c:a aac -b:a 128k -ar 44100 \
-          -f flv "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
+          -f flv -flvflags no_duration_filesize \
+          "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
