@@ -15,9 +15,10 @@ jobs:
       - name: Install FFmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
-      - name: Robust Broadcasting
+      - name: Force Start Stream
         run: |
-          # نستخدم خيارات لثبيت الاتصال وتجاوز مشاكل الأمان TLS
+          # نستخدم rtmp بدلاً من rtmps لتجاوز مشاكل الأمان TLS
+          # ونضيف خيارات لتثبيت الإرسال ومنع الانقطاع
           ffmpeg -re -i "${{ github.event.inputs.video_url }}" \
           -user_agent "Mozilla/5.0" \
           -c:v libx264 -preset superfast -b:v 2500k \
@@ -25,4 +26,4 @@ jobs:
           -pix_fmt yuv420p -g 50 \
           -c:a aac -b:a 128k -ar 44100 \
           -f flv -flvflags no_duration_filesize \
-          "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
+          "rtmp://live-api-s.facebook.com:80/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
