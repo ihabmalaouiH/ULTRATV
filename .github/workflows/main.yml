@@ -1,25 +1,30 @@
-name: UltraTV-Cloud-Broadcaster
+name: UltraTV-YouTube-to-FB
 
 on:
   workflow_dispatch:
     inputs:
-      video_url:
-        description: 'https://archive.org/download/quran-4k-nature/Surah%20Al-Baqarah%204K.mp4'
+      youtube_url:
+        description: 'رابط بث اليوتيوب'
         required: true
+        default: 'https://www.youtube.com/live/avk9JJS7qEs?si=tBHE3wuDMohnMAi5'
 
 jobs:
   streaming_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Install FFmpeg
-        run: sudo apt-get update && sudo apt-get install -y ffmpeg
-
-      - name: Start Robust Stream
+      - name: Install Tools (FFmpeg & yt-dlp)
         run: |
-          # إضافة ميزات لإصلاح مشاكل الاتصال مع فيسبوك
-          ffmpeg -re -i "${{ github.event.inputs.video_url }}" \
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+          sudo chmod a+rx /usr/local/bin/yt-dlp
+
+      - name: Start Streaming from YouTube to Facebook
+        run: |
+          # استخراج الرابط المباشر من يوتيوب وتمريره لـ FFmpeg
+          yt-dlp -g -f "best" "${{ github.event.inputs.youtube_url }}" | xargs -I {} \
+          ffmpeg -re -i {} \
           -c:v libx264 -preset superfast -b:v 2500k -maxrate 2500k -bufsize 5000k \
           -pix_fmt yuv420p -g 50 -c:a aac -b:a 128k -ar 44100 \
           -f flv -flvflags no_duration_filesize \
-          -rtmp_tcurl "rtmps://live-api-s.facebook.com:443/rtmp/" \
           "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
