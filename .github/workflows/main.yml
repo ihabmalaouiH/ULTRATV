@@ -1,4 +1,4 @@
-name: UltraTV-Dynamic-Streamer
+name: UltraTV-Final-Broadcaster
 
 on:
   workflow_dispatch:
@@ -11,26 +11,14 @@ on:
 jobs:
   streaming_job:
     runs-on: ubuntu-latest
+    # نستخدم حاوية مجهزة بأحدث مكتبات SSL و FFmpeg
+    container:
+      image: jrottenberg/ffmpeg:4.4-ubuntu
     steps:
-      - name: Install Tools
-        run: sudo apt-get update && sudo apt-get install -y ffmpeg stunnel4
-
-      - name: Setup Secure Tunnel
+      - name: Start Final Stream
         run: |
-          # إنشاء نفق يدوي لفيسبوك لتجاوز أخطاء TLS في FFmpeg
-          echo "[fb-live]" > fb.conf
-          echo "client = yes" >> fb.conf
-          echo "accept = 127.0.0.1:1935" >> fb.conf
-          echo "connect = live-api-s.facebook.com:443" >> fb.conf
-          echo "verifyChain = no" >> fb.conf
-          sudo stunnel4 fb.conf &
-          sleep 3
-
-      - name: Start Stream via Tunnel
-        run: |
-          # الآن نرسل لـ localhost والTunnel ينقله لفيسبوك
           ffmpeg -re -i "${{ github.event.inputs.video_url }}" \
           -user_agent "Mozilla/5.0" \
           -c:v libx264 -preset superfast -b:v 2500k -maxrate 2500k -bufsize 5000k \
           -pix_fmt yuv420p -g 50 -c:a aac -b:a 128k -ar 44100 \
-          -f flv "rtmp://127.0.0.1:1935/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
+          -f flv "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
