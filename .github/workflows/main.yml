@@ -4,9 +4,8 @@ on:
   workflow_dispatch:
     inputs:
       video_url:
-        description: 'رابط الفيديو (m3u8)'
+        description: 'http://ibo.lynxiptv.com/334188914694/VzDd0nBIgq/67742'
         required: true
-        default: 'http://ibo.lynxiptv.com/334188914694/VzDd0nBIgq/67742'
 
 jobs:
   streaming_job:
@@ -15,16 +14,12 @@ jobs:
       - name: Install FFmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
-      - name: Start Protected Stream
+      - name: Start Robust Stream
         run: |
-          # إضافة User-Agent وهيدرز لمحاكاة المتصفح وتجاوز حماية 403
-          ffmpeg -re -stream_loop -1 \
-          -user_agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
-          -headers "Referer: https://www.google.com/" \
-          -i "${{ github.event.inputs.video_url }}" \
-          -c:v libx264 -preset superfast -b:v 2500k \
-          -maxrate 2500k -bufsize 5000k \
-          -pix_fmt yuv420p -g 50 \
-          -c:a aac -b:a 128k -ar 44100 \
+          # إضافة ميزات لإصلاح مشاكل الاتصال مع فيسبوك
+          ffmpeg -re -i "${{ github.event.inputs.video_url }}" \
+          -c:v libx264 -preset superfast -b:v 2500k -maxrate 2500k -bufsize 5000k \
+          -pix_fmt yuv420p -g 50 -c:a aac -b:a 128k -ar 44100 \
           -f flv -flvflags no_duration_filesize \
+          -rtmp_tcurl "rtmps://live-api-s.facebook.com:443/rtmp/" \
           "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
