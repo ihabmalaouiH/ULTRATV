@@ -1,24 +1,29 @@
-name: UltraTV-Live-Streamer
+name: UltraTV-Cloud-Broadcaster
+
 on:
   workflow_dispatch:
     inputs:
       video_url:
-        description: 'رابط الفيديو'
+        description: 'رابط فيديو القرآن أو المباراة'
         required: true
         default: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8'
 
 jobs:
-  stream:
+  streaming_job:
     runs-on: ubuntu-latest
     steps:
       - name: Install FFmpeg
-        run: sudo apt-get update && sudo apt-get install -y ffmpeg
-
-      - name: Start Streaming
         run: |
-          ffmpeg -re -i "${{ github.event.inputs.video_url }}" \
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Start Continuous Streaming
+        run: |
+          # الكود يدعم الإعادة التلقائية وتثبيت الاتصال
+          ffmpeg -re -stream_loop -1 -i "${{ github.event.inputs.video_url }}" \
           -c:v libx264 -preset superfast -b:v 2500k \
           -maxrate 2500k -bufsize 5000k \
           -pix_fmt yuv420p -g 50 \
           -c:a aac -b:a 128k -ar 44100 \
-          -f flv "rtmps://live-api-s.facebook.com:443/rtmp/ضع_مفتاح_البث_هنا"
+          -f flv -flvflags no_duration_filesize \
+          "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
