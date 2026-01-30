@@ -16,8 +16,9 @@ jobs:
     steps:
       - name: Start Final Stream
         run: |
+          # لاحظ التغيير هنا: استخدمنا rtmp بدلاً من rtmps والمنفذ 80
           ffmpeg -re -i "${{ github.event.inputs.video_url }}" \
           -user_agent "Mozilla/5.0" \
           -c:v libx264 -preset superfast -b:v 2500k -maxrate 2500k -bufsize 5000k \
           -pix_fmt yuv420p -g 50 -c:a aac -b:a 128k -ar 44100 \
-          -f flv "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
+          -f flv "rtmp://live-api-s.facebook.com:80/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
