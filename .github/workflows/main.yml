@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       video_url:
-        description: 'ضع رابط (القرآن) أو (المباراة) هنا'
+        description: 'رابط القرآن أو المباراة'
         required: true
         default: 'http://ibo.lynxiptv.com/334188914694/VzDd0nBIgq/66384'
 
@@ -15,11 +15,11 @@ jobs:
       - name: Install FFmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
-      - name: Dynamic Broadcasting
+      - name: Robust Broadcasting
         run: |
-          # الكود مصمم ليكون "عنيداً" في الاتصال ويقبل الروابط المتغيرة
+          # نستخدم خيارات لثبيت الاتصال وتجاوز مشاكل الأمان TLS
           ffmpeg -re -i "${{ github.event.inputs.video_url }}" \
-          -user_agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
+          -user_agent "Mozilla/5.0" \
           -c:v libx264 -preset superfast -b:v 2500k \
           -maxrate 2500k -bufsize 5000k \
           -pix_fmt yuv420p -g 50 \
