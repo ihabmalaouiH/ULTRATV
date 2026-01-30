@@ -1,10 +1,10 @@
-name: UltraTV-Quran-Streamer
+name: UltraTV-Dynamic-Streamer
 
 on:
   workflow_dispatch:
     inputs:
       video_url:
-        description: 'رابط قناة القرآن'
+        description: 'ضع رابط (القرآن) أو (المباراة) هنا'
         required: true
         default: 'http://ibo.lynxiptv.com/334188914694/VzDd0nBIgq/66384'
 
@@ -15,13 +15,14 @@ jobs:
       - name: Install FFmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
-      - name: Start Quran Stream
+      - name: Dynamic Broadcasting
         run: |
-          # نستخدم إعدادات تضمن استقرار البث من روابط IPTV
+          # الكود مصمم ليكون "عنيداً" في الاتصال ويقبل الروابط المتغيرة
           ffmpeg -re -i "${{ github.event.inputs.video_url }}" \
-          -user_agent "Mozilla/5.0" \
-          -c:v libx264 -preset superfast -b:v 2500k -maxrate 2500k -bufsize 5000k \
-          -pix_fmt yuv420p -g 50 -c:a aac -b:a 128k -ar 44100 \
+          -user_agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
+          -c:v libx264 -preset superfast -b:v 2500k \
+          -maxrate 2500k -bufsize 5000k \
+          -pix_fmt yuv420p -g 50 \
+          -c:a aac -b:a 128k -ar 44100 \
           -f flv -flvflags no_duration_filesize \
-          -rtmp_tcurl "rtmps://live-api-s.facebook.com:443/rtmp/" \
           "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
