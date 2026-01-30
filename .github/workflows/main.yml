@@ -1,10 +1,10 @@
-name: UltraTV-Cloud-Broadcaster
+name: UltraTV-Dynamic-Streamer
 
 on:
   workflow_dispatch:
     inputs:
       video_url:
-        description: 'رابط فيديو القرآن أو المباراة'
+        description: 'رابط القرآن أو المباراة'
         required: true
         default: 'http://ibo.lynxiptv.com/334188914694/VzDd0nBIgq/66384'
 
@@ -12,18 +12,17 @@ jobs:
   streaming_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Install FFmpeg
+      - name: Update System & Install FFmpeg
         run: |
           sudo apt-get update
-          sudo apt-get install -y ffmpeg
+          sudo apt-get install -y ffmpeg ca-certificates
+          sudo update-ca-certificates
 
-      - name: Start Continuous Streaming
+      - name: Start Robust Stream
         run: |
-          # الكود يدعم الإعادة التلقائية وتثبيت الاتصال
-          ffmpeg -re -stream_loop -1 -i "${{ github.event.inputs.video_url }}" \
-          -c:v libx264 -preset superfast -b:v 2500k \
-          -maxrate 2500k -bufsize 5000k \
-          -pix_fmt yuv420p -g 50 \
-          -c:a aac -b:a 128k -ar 44100 \
-          -f flv -flvflags no_duration_filesize \
-          "rtmps://live-api-s.facebook.com:443/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
+          # نستخدم rtmp المباشر لتجاوز مشاكل الأمان التي تسبب فشل الاتصال
+          ffmpeg -re -i "${{ github.event.inputs.video_url }}" \
+          -user_agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" \
+          -c:v libx264 -preset superfast -b:v 2500k -maxrate 2500k -bufsize 5000k \
+          -pix_fmt yuv420p -g 50 -c:a aac -b:a 128k -ar 44100 \
+          -f flv "rtmp://live-api-s.facebook.com:80/rtmp/FB-122183660390765411-0-Ab6BxXZD6RCKMGxdmzfqy8BT"
