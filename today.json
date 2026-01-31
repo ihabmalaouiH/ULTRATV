@@ -100,7 +100,7 @@
       "time": "15:30",
       "date": "السبت 31-01-2026",
       "current_score": "1 - 2",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -351,30 +351,6 @@
     "channels": []
   },
   {
-    "id": "4818899",
-    "url": "https://www.ysscores.com/ar/match/4818899/St.-Mirren-FC-vs-Dundee-FC",
-    "info": {
-      "championship": "الدوري الإسكتلندي الممتاز",
-      "round": "24 - مباراة الاياب",
-      "stadium": "سانت ميرين بارك",
-      "time": "16:00",
-      "date": "السبت 31-01-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "سانت ميرين",
-        "logo": "https://imgs.ysscores.com/teams/128/1661690370541.png"
-      },
-      "away": {
-        "name": "دندي",
-        "logo": "https://imgs.ysscores.com/teams/128/2331690370518.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4818897",
     "url": "https://www.ysscores.com/ar/match/4818897/Kilmarnock-FC-vs-Aberdeen-FC",
     "info": {
@@ -399,12 +375,12 @@
     "channels": []
   },
   {
-    "id": "4813606",
-    "url": "https://www.ysscores.com/ar/match/4813606/Brighton-&-Hove-Albion-vs-Everton-FC",
+    "id": "4818899",
+    "url": "https://www.ysscores.com/ar/match/4818899/St.-Mirren-FC-vs-Dundee-FC",
     "info": {
-      "championship": "الدوري الإنجليزي الممتاز",
+      "championship": "الدوري الإسكتلندي الممتاز",
       "round": "24 - مباراة الاياب",
-      "stadium": "أميكس ستاديوم",
+      "stadium": "سانت ميرين بارك",
       "time": "16:00",
       "date": "السبت 31-01-2026",
       "current_score": "0 - 0",
@@ -412,20 +388,15 @@
     },
     "teams": {
       "home": {
-        "name": "برايتون",
-        "logo": "https://imgs.ysscores.com/teams/128/2271696710594.png"
+        "name": "سانت ميرين",
+        "logo": "https://imgs.ysscores.com/teams/128/1661690370541.png"
       },
       "away": {
-        "name": "إيفرتون",
-        "logo": "https://imgs.ysscores.com/teams/128/8461690118694.png"
+        "name": "دندي",
+        "logo": "https://imgs.ysscores.com/teams/128/2331690370518.png"
       }
     },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 4",
-        "commentator": "محمد بركات"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "4813607",
@@ -457,6 +428,35 @@
       {
         "channel": "beIN 4K",
         "commentator": "عامر الخوذيري"
+      }
+    ]
+  },
+  {
+    "id": "4813606",
+    "url": "https://www.ysscores.com/ar/match/4813606/Brighton-&-Hove-Albion-vs-Everton-FC",
+    "info": {
+      "championship": "الدوري الإنجليزي الممتاز",
+      "round": "24 - مباراة الاياب",
+      "stadium": "أميكس ستاديوم",
+      "time": "16:00",
+      "date": "السبت 31-01-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "برايتون",
+        "logo": "https://imgs.ysscores.com/teams/128/2271696710594.png"
+      },
+      "away": {
+        "name": "إيفرتون",
+        "logo": "https://imgs.ysscores.com/teams/128/8461690118694.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 4",
+        "commentator": "محمد بركات"
       }
     ]
   },
@@ -727,30 +727,6 @@
     "channels": []
   },
   {
-    "id": "4818500",
-    "url": "https://www.ysscores.com/ar/match/4818500/Zulte-Waregem-vs-KVC-Westerlo",
-    "info": {
-      "championship": "الدوري البلجيكي",
-      "round": "23 - مباراة الاياب",
-      "stadium": "إليندوس أرينا",
-      "time": "18:15",
-      "date": "السبت 31-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "زولته فاريجيم",
-        "logo": "https://imgs.ysscores.com/teams/128/8641755447668.png"
-      },
-      "away": {
-        "name": "فيستيرلو",
-        "logo": "https://imgs.ysscores.com/teams/128/131690370550.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4818499",
     "url": "https://www.ysscores.com/ar/match/4818499/Sint-Truidense-VV-vs-Royal-Charleroi-SC",
     "info": {
@@ -770,6 +746,30 @@
       "away": {
         "name": "رويال شارلروا",
         "logo": "https://imgs.ysscores.com/teams/128/3521690370549.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4818500",
+    "url": "https://www.ysscores.com/ar/match/4818500/Zulte-Waregem-vs-KVC-Westerlo",
+    "info": {
+      "championship": "الدوري البلجيكي",
+      "round": "23 - مباراة الاياب",
+      "stadium": "إليندوس أرينا",
+      "time": "18:15",
+      "date": "السبت 31-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "زولته فاريجيم",
+        "logo": "https://imgs.ysscores.com/teams/128/8641755447668.png"
+      },
+      "away": {
+        "name": "فيستيرلو",
+        "logo": "https://imgs.ysscores.com/teams/128/131690370550.png"
       }
     },
     "channels": []
@@ -828,35 +828,6 @@
     ]
   },
   {
-    "id": "4842489",
-    "url": "https://www.ysscores.com/ar/match/4842489/Besiktas-JK-vs-Konyaspor",
-    "info": {
-      "championship": "الدوري التركي الممتاز",
-      "round": "20 - مباراة الاياب",
-      "stadium": "استاد توبراس",
-      "time": "18:00",
-      "date": "السبت 31-01-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "بشكتاش",
-        "logo": "https://imgs.ysscores.com/teams/128/2171690128210.png"
-      },
-      "away": {
-        "name": "قونيا سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/8771690127634.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Sports HD 1 TR",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "4842492",
     "url": "https://www.ysscores.com/ar/match/4842492/Göztepe-vs-Fatih-Karagümrük",
     "info": {
@@ -881,6 +852,35 @@
     "channels": [
       {
         "channel": "beIN Sports HD 2 TR",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "4842489",
+    "url": "https://www.ysscores.com/ar/match/4842489/Besiktas-JK-vs-Konyaspor",
+    "info": {
+      "championship": "الدوري التركي الممتاز",
+      "round": "20 - مباراة الاياب",
+      "stadium": "استاد توبراس",
+      "time": "18:00",
+      "date": "السبت 31-01-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "بشكتاش",
+        "logo": "https://imgs.ysscores.com/teams/128/2171690128210.png"
+      },
+      "away": {
+        "name": "قونيا سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/8771690127634.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Sports HD 1 TR",
         "commentator": "غير مدرج"
       }
     ]
@@ -1113,35 +1113,6 @@
     ]
   },
   {
-    "id": "4830635",
-    "url": "https://www.ysscores.com/ar/match/4830635/Paris-FC-vs-Olympique-Marseille",
-    "info": {
-      "championship": "الدوري الفرنسي",
-      "round": "20 - مباراة الاياب",
-      "stadium": "ملعب جان بوين",
-      "time": "17:00",
-      "date": "السبت 31-01-2026",
-      "current_score": "0 - 1",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "نادي باريس",
-        "logo": "https://imgs.ysscores.com/teams/128/6551690370501.png"
-      },
-      "away": {
-        "name": "مارسيليا",
-        "logo": "https://imgs.ysscores.com/teams/128/6031690287269.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 6",
-        "commentator": "باسم الزير"
-      }
-    ]
-  },
-  {
     "id": "4830631",
     "url": "https://www.ysscores.com/ar/match/4830631/FC-Lorient-vs-FC-Nantes",
     "info": {
@@ -1167,6 +1138,35 @@
       {
         "channel": "بي إن سبورت 5",
         "commentator": "منتصر الأزهري"
+      }
+    ]
+  },
+  {
+    "id": "4830635",
+    "url": "https://www.ysscores.com/ar/match/4830635/Paris-FC-vs-Olympique-Marseille",
+    "info": {
+      "championship": "الدوري الفرنسي",
+      "round": "20 - مباراة الاياب",
+      "stadium": "ملعب جان بوين",
+      "time": "17:00",
+      "date": "السبت 31-01-2026",
+      "current_score": "0 - 1",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "نادي باريس",
+        "logo": "https://imgs.ysscores.com/teams/128/6551690370501.png"
+      },
+      "away": {
+        "name": "مارسيليا",
+        "logo": "https://imgs.ysscores.com/teams/128/6031690287269.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 6",
+        "commentator": "باسم الزير"
       }
     ]
   },
@@ -1678,25 +1678,73 @@
     ]
   },
   {
-    "id": "4825387",
-    "url": "https://www.ysscores.com/ar/match/4825387/Millwall-FC-vs-Sheffield-United",
+    "id": "4825386",
+    "url": "https://www.ysscores.com/ar/match/4825386/Middlesbrough-FC-vs-Norwich-City",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "30 - مباراة الاياب",
-      "stadium": "استاد ذا دان",
+      "stadium": "ريفرسايد",
       "time": "16:00",
       "date": "السبت 31-01-2026",
-      "current_score": "1 - 1",
+      "current_score": "1 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
-        "name": "ميلوول",
-        "logo": "https://imgs.ysscores.com/teams/128/2181690370550.png"
+        "name": "ميدلزبره",
+        "logo": "https://imgs.ysscores.com/teams/128/7871690370529.png"
       },
       "away": {
-        "name": "شيفيلد",
-        "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
+        "name": "نوريتش سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/5201690370543.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825388",
+    "url": "https://www.ysscores.com/ar/match/4825388/Oxford-United-vs-Birmingham-City",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "30 - مباراة الاياب",
+      "stadium": "استاد كاسام",
+      "time": "16:00",
+      "date": "السبت 31-01-2026",
+      "current_score": "0 - 2",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "أكسفورد يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/151690370534.png"
+      },
+      "away": {
+        "name": "برمنغهام",
+        "logo": "https://imgs.ysscores.com/teams/128/3121690370534.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825393",
+    "url": "https://www.ysscores.com/ar/match/4825393/Watford-FC-vs-Swansea-City",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "30 - مباراة الاياب",
+      "stadium": "فيكارج رود",
+      "time": "16:00",
+      "date": "السبت 31-01-2026",
+      "current_score": "0 - 1",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "واتفورد",
+        "logo": "https://imgs.ysscores.com/teams/128/3341690370541.png"
+      },
+      "away": {
+        "name": "سوانزي",
+        "logo": "https://imgs.ysscores.com/teams/128/4561723590559.png"
       }
     },
     "channels": []
@@ -1731,73 +1779,25 @@
     ]
   },
   {
-    "id": "4825386",
-    "url": "https://www.ysscores.com/ar/match/4825386/Middlesbrough-FC-vs-Norwich-City",
+    "id": "4825387",
+    "url": "https://www.ysscores.com/ar/match/4825387/Millwall-FC-vs-Sheffield-United",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "30 - مباراة الاياب",
-      "stadium": "ريفرسايد",
+      "stadium": "استاد ذا دان",
       "time": "16:00",
       "date": "السبت 31-01-2026",
-      "current_score": "1 - 0",
+      "current_score": "1 - 1",
       "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
-        "name": "ميدلزبره",
-        "logo": "https://imgs.ysscores.com/teams/128/7871690370529.png"
+        "name": "ميلوول",
+        "logo": "https://imgs.ysscores.com/teams/128/2181690370550.png"
       },
       "away": {
-        "name": "نوريتش سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/5201690370543.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4825393",
-    "url": "https://www.ysscores.com/ar/match/4825393/Watford-FC-vs-Swansea-City",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "30 - مباراة الاياب",
-      "stadium": "فيكارج رود",
-      "time": "16:00",
-      "date": "السبت 31-01-2026",
-      "current_score": "0 - 1",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "واتفورد",
-        "logo": "https://imgs.ysscores.com/teams/128/3341690370541.png"
-      },
-      "away": {
-        "name": "سوانزي",
-        "logo": "https://imgs.ysscores.com/teams/128/4561723590559.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4825388",
-    "url": "https://www.ysscores.com/ar/match/4825388/Oxford-United-vs-Birmingham-City",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "30 - مباراة الاياب",
-      "stadium": "استاد كاسام",
-      "time": "16:00",
-      "date": "السبت 31-01-2026",
-      "current_score": "0 - 2",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "أكسفورد يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/151690370534.png"
-      },
-      "away": {
-        "name": "برمنغهام",
-        "logo": "https://imgs.ysscores.com/teams/128/3121690370534.png"
+        "name": "شيفيلد",
+        "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
       }
     },
     "channels": []
