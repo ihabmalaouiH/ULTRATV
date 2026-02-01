@@ -231,35 +231,6 @@
     "channels": []
   },
   {
-    "id": "4813611",
-    "url": "https://www.ysscores.com/ar/match/4813611/Nottingham-Forest-vs-Crystal-Palace",
-    "info": {
-      "championship": "الدوري الإنجليزي الممتاز",
-      "round": "24 - مباراة الاياب",
-      "stadium": "سيتي غراوند",
-      "time": "15:00",
-      "date": "الأحد 01-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "نوتينغهام",
-        "logo": "https://imgs.ysscores.com/teams/128/7741690119007.png"
-      },
-      "away": {
-        "name": "كريستال بالاس",
-        "logo": "https://imgs.ysscores.com/teams/128/6121690118883.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 8",
-        "commentator": "باسم الزير"
-      }
-    ]
-  },
-  {
     "id": "4813610",
     "url": "https://www.ysscores.com/ar/match/4813610/Manchester-United-vs-Fulham-FC",
     "info": {
@@ -285,6 +256,35 @@
       {
         "channel": "بي إن سبورت 1",
         "commentator": "علي محمد علي"
+      }
+    ]
+  },
+  {
+    "id": "4813611",
+    "url": "https://www.ysscores.com/ar/match/4813611/Nottingham-Forest-vs-Crystal-Palace",
+    "info": {
+      "championship": "الدوري الإنجليزي الممتاز",
+      "round": "24 - مباراة الاياب",
+      "stadium": "سيتي غراوند",
+      "time": "15:00",
+      "date": "الأحد 01-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "نوتينغهام",
+        "logo": "https://imgs.ysscores.com/teams/128/7741690119007.png"
+      },
+      "away": {
+        "name": "كريستال بالاس",
+        "logo": "https://imgs.ysscores.com/teams/128/6121690118883.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 8",
+        "commentator": "باسم الزير"
       }
     ]
   },
@@ -327,7 +327,7 @@
       "time": "17:30",
       "date": "الأحد 01-02-2026",
       "current_score": "0 - 2",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -859,35 +859,6 @@
     ]
   },
   {
-    "id": "15203118",
-    "url": "https://www.ysscores.com/ar/match/15203118/Al-Qasim-SC-vs-Duhok-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "16 - مباراة الذهاب",
-      "stadium": "استاد النجف الدولي",
-      "time": "13:00",
-      "date": "الأحد 01-02-2026",
-      "current_score": "0 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "القاسم",
-        "logo": "https://imgs.ysscores.com/teams/128/2661722928239.png"
-      },
-      "away": {
-        "name": "دهوك",
-        "logo": "https://imgs.ysscores.com/teams/128/7641716672160.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية السريانية",
-        "commentator": "رعد ناهي"
-      }
-    ]
-  },
-  {
     "id": "87396241",
     "url": "https://www.ysscores.com/ar/match/87396241/Naft-Missan-vs-Al-Kahrbaa-Club",
     "info": {
@@ -913,6 +884,35 @@
       {
         "channel": "العراقية الكردية",
         "commentator": "يوسف جميل"
+      }
+    ]
+  },
+  {
+    "id": "15203118",
+    "url": "https://www.ysscores.com/ar/match/15203118/Al-Qasim-SC-vs-Duhok-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "16 - مباراة الذهاب",
+      "stadium": "استاد النجف الدولي",
+      "time": "13:00",
+      "date": "الأحد 01-02-2026",
+      "current_score": "0 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "القاسم",
+        "logo": "https://imgs.ysscores.com/teams/128/2661722928239.png"
+      },
+      "away": {
+        "name": "دهوك",
+        "logo": "https://imgs.ysscores.com/teams/128/7641716672160.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية السريانية",
+        "commentator": "رعد ناهي"
       }
     ]
   },
@@ -1459,7 +1459,7 @@
       "stadium": "استاد أبوستولوس نيكولايديس",
       "time": "16:30",
       "date": "الأحد 01-02-2026",
-      "current_score": "2 - 0",
+      "current_score": "3 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -1915,7 +1915,7 @@
       "time": "17:30",
       "date": "الأحد 01-02-2026",
       "current_score": "0 - 1",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1964,6 +1964,35 @@
     ]
   },
   {
+    "id": "5045283",
+    "url": "https://www.ysscores.com/ar/match/5045283/Azam-FC-vs-Nairobi-United-FC",
+    "info": {
+      "championship": "كأس الكونفيدرالية",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "استاد أمان",
+      "time": "17:00",
+      "date": "الأحد 01-02-2026",
+      "current_score": "1 - 0",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "عزام يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/1591757108437.png"
+      },
+      "away": {
+        "name": "نيروبي",
+        "logo": "https://imgs.ysscores.com/teams/128/5761762179753.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Xtra 3",
+        "commentator": "أحمد سوكو"
+      }
+    ]
+  },
+  {
     "id": "5045295",
     "url": "https://www.ysscores.com/ar/match/5045295/El-Masry-SC-vs-Zamalek-SC",
     "info": {
@@ -1997,31 +2026,31 @@
     ]
   },
   {
-    "id": "5045283",
-    "url": "https://www.ysscores.com/ar/match/5045283/Azam-FC-vs-Nairobi-United-FC",
+    "id": "5045307",
+    "url": "https://www.ysscores.com/ar/match/5045307/AS-Otôho-vs-Singida-Black-Stars-Sports-Club",
     "info": {
       "championship": "كأس الكونفيدرالية",
       "round": "4 - مباراة الذهاب",
-      "stadium": "استاد أمان",
-      "time": "17:00",
+      "stadium": "ملعب ألفونس ماسيمبا",
+      "time": "14:00",
       "date": "الأحد 01-02-2026",
-      "current_score": "1 - 0",
-      "match_status": "الشوط الثاني"
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "عزام يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/1591757108437.png"
+        "name": "أوتوهو",
+        "logo": "https://imgs.ysscores.com/teams/128/7021692284067.png"
       },
       "away": {
-        "name": "نيروبي",
-        "logo": "https://imgs.ysscores.com/teams/128/5761762179753.png"
+        "name": "سينجيدا",
+        "logo": "https://imgs.ysscores.com/teams/128/17637695655524.png"
       }
     },
     "channels": [
       {
-        "channel": "beIN Xtra 3",
-        "commentator": "أحمد سوكو"
+        "channel": "beIN Xtra 1",
+        "commentator": "أحمد عبده"
       }
     ]
   },
@@ -2055,35 +2084,6 @@
     ]
   },
   {
-    "id": "5045307",
-    "url": "https://www.ysscores.com/ar/match/5045307/AS-Otôho-vs-Singida-Black-Stars-Sports-Club",
-    "info": {
-      "championship": "كأس الكونفيدرالية",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "ملعب ألفونس ماسيمبا",
-      "time": "14:00",
-      "date": "الأحد 01-02-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أوتوهو",
-        "logo": "https://imgs.ysscores.com/teams/128/7021692284067.png"
-      },
-      "away": {
-        "name": "سينجيدا",
-        "logo": "https://imgs.ysscores.com/teams/128/17637695655524.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Xtra 1",
-        "commentator": "أحمد عبده"
-      }
-    ]
-  },
-  {
     "id": "5045271",
     "url": "https://www.ysscores.com/ar/match/5045271/Djoliba-AC-vs-USM-Alger",
     "info": {
@@ -2113,35 +2113,6 @@
     ]
   },
   {
-    "id": "5045272",
-    "url": "https://www.ysscores.com/ar/match/5045272/Olympique-Safi-vs-FC-San-Pedro",
-    "info": {
-      "championship": "كأس الكونفيدرالية",
-      "round": "4 - مباراة الاياب",
-      "stadium": "ملعب المسيرة",
-      "time": "20:00",
-      "date": "الأحد 01-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أولمبيك آسفي",
-        "logo": "https://imgs.ysscores.com/teams/128/9281692794337.png"
-      },
-      "away": {
-        "name": "سان بيدرو",
-        "logo": "https://imgs.ysscores.com/teams/128/3171762182492.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 4",
-        "commentator": "جواد بدة"
-      }
-    ]
-  },
-  {
     "id": "5045284",
     "url": "https://www.ysscores.com/ar/match/5045284/AS-Maniema-Union-vs-Wydad-Casablanca",
     "info": {
@@ -2166,6 +2137,35 @@
     "channels": [
       {
         "channel": "beIN Xtra 3",
+        "commentator": "جواد بدة"
+      }
+    ]
+  },
+  {
+    "id": "5045272",
+    "url": "https://www.ysscores.com/ar/match/5045272/Olympique-Safi-vs-FC-San-Pedro",
+    "info": {
+      "championship": "كأس الكونفيدرالية",
+      "round": "4 - مباراة الاياب",
+      "stadium": "ملعب المسيرة",
+      "time": "20:00",
+      "date": "الأحد 01-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أولمبيك آسفي",
+        "logo": "https://imgs.ysscores.com/teams/128/9281692794337.png"
+      },
+      "away": {
+        "name": "سان بيدرو",
+        "logo": "https://imgs.ysscores.com/teams/128/3171762182492.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 4",
         "commentator": "جواد بدة"
       }
     ]
