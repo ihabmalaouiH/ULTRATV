@@ -867,8 +867,8 @@
       "stadium": "استاد النجف الدولي",
       "time": "13:00",
       "date": "الأحد 01-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -896,8 +896,8 @@
       "stadium": "ملعب ميسان",
       "time": "13:00",
       "date": "الأحد 01-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -1124,30 +1124,6 @@
     ]
   },
   {
-    "id": "5111136",
-    "url": "https://www.ysscores.com/ar/match/5111136/Assabah-SC-vs-Al-Qadisiyah-Bani-Walid",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "ملعب مصراتة",
-      "time": "14:30",
-      "date": "الأحد 01-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الصباح",
-        "logo": "https://imgs.ysscores.com/teams/128/17656497128732.png"
-      },
-      "away": {
-        "name": "القادسية",
-        "logo": "https://imgs.ysscores.com/teams/128/17656592901185.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111137",
     "url": "https://www.ysscores.com/ar/match/5111137/Libyan-Stadium-vs-Al-Madina-SC",
     "info": {
@@ -1167,6 +1143,30 @@
       "away": {
         "name": "المدينة",
         "logo": "https://imgs.ysscores.com/teams/128/17656572186049.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111136",
+    "url": "https://www.ysscores.com/ar/match/5111136/Assabah-SC-vs-Al-Qadisiyah-Bani-Walid",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "ملعب مصراتة",
+      "time": "14:30",
+      "date": "الأحد 01-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الصباح",
+        "logo": "https://imgs.ysscores.com/teams/128/17656497128732.png"
+      },
+      "away": {
+        "name": "القادسية",
+        "logo": "https://imgs.ysscores.com/teams/128/17656592901185.png"
       }
     },
     "channels": []
@@ -1326,6 +1326,30 @@
     "channels": []
   },
   {
+    "id": "4815415",
+    "url": "https://www.ysscores.com/ar/match/4815415/SC-Heerenveen-vs-FC-Utrecht",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "21 - مباراة الاياب",
+      "stadium": "ايب لنسترا",
+      "time": "16:45",
+      "date": "الأحد 01-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "هيرينفين",
+        "logo": "https://imgs.ysscores.com/teams/128/6771725055096.png"
+      },
+      "away": {
+        "name": "أوترخت",
+        "logo": "https://imgs.ysscores.com/teams/128/3101690475899.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4815412",
     "url": "https://www.ysscores.com/ar/match/4815412/Excelsior-Rotterdam-vs-Ajax-Amsterdam",
     "info": {
@@ -1335,7 +1359,7 @@
       "time": "12:15",
       "date": "الأحد 01-02-2026",
       "current_score": "0 - 2",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1377,30 +1401,6 @@
         "commentator": "رؤوف خليف"
       }
     ]
-  },
-  {
-    "id": "4815415",
-    "url": "https://www.ysscores.com/ar/match/4815415/SC-Heerenveen-vs-FC-Utrecht",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "21 - مباراة الاياب",
-      "stadium": "ايب لنسترا",
-      "time": "16:45",
-      "date": "الأحد 01-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "هيرينفين",
-        "logo": "https://imgs.ysscores.com/teams/128/6771725055096.png"
-      },
-      "away": {
-        "name": "أوترخت",
-        "logo": "https://imgs.ysscores.com/teams/128/3101690475899.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "4859130",
@@ -1499,6 +1499,35 @@
     "channels": []
   },
   {
+    "id": "5147325",
+    "url": "https://www.ysscores.com/ar/match/5147325/Jeunesse-Sportive-Omrane-vs-CS-Sfaxien",
+    "info": {
+      "championship": "الرابطة التونسية لكرة القدم",
+      "round": "19 - مباراة الاياب",
+      "stadium": "ملعب الشاذلي زويتن",
+      "time": "14:00",
+      "date": "الأحد 01-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "شبيبة العمران",
+        "logo": "https://imgs.ysscores.com/teams/128/1351723790666.png"
+      },
+      "away": {
+        "name": "الصفاقسي",
+        "logo": "https://imgs.ysscores.com/teams/128/6131692796238.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الوطنية 1",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
     "id": "5147327",
     "url": "https://www.ysscores.com/ar/match/5147327/US-Monastir-vs-AS-Marsa",
     "info": {
@@ -1547,35 +1576,6 @@
     "channels": [
       {
         "channel": "الوطنية 2",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "5147325",
-    "url": "https://www.ysscores.com/ar/match/5147325/Jeunesse-Sportive-Omrane-vs-CS-Sfaxien",
-    "info": {
-      "championship": "الرابطة التونسية لكرة القدم",
-      "round": "19 - مباراة الاياب",
-      "stadium": "ملعب الشاذلي زويتن",
-      "time": "14:00",
-      "date": "الأحد 01-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "شبيبة العمران",
-        "logo": "https://imgs.ysscores.com/teams/128/1351723790666.png"
-      },
-      "away": {
-        "name": "الصفاقسي",
-        "logo": "https://imgs.ysscores.com/teams/128/6131692796238.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الوطنية 1",
         "commentator": "غير مدرج"
       }
     ]
@@ -1955,31 +1955,35 @@
     ]
   },
   {
-    "id": "5045308",
-    "url": "https://www.ysscores.com/ar/match/5045308/Stellenbosch-FC-vs-CR-Belouizdad",
+    "id": "5045295",
+    "url": "https://www.ysscores.com/ar/match/5045295/El-Masry-SC-vs-Zamalek-SC",
     "info": {
       "championship": "كأس الكونفيدرالية",
       "round": "4 - مباراة الذهاب",
-      "stadium": "استاد كيب تاون",
-      "time": "14:00",
+      "stadium": "استاد السويس الجديد",
+      "time": "20:00",
       "date": "الأحد 01-02-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "ستيلينبوش",
-        "logo": "https://imgs.ysscores.com/teams/128/2801728321045.png"
+        "name": "المصري",
+        "logo": "https://imgs.ysscores.com/teams/128/1521694644423.png"
       },
       "away": {
-        "name": "شباب بلوزداد",
-        "logo": "https://imgs.ysscores.com/teams/128/4951692205804.png"
+        "name": "الزمالك",
+        "logo": "https://imgs.ysscores.com/teams/128/7971694082496.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 9",
-        "commentator": "محمد المبروكي"
+        "channel": "بي إن سبورت 2",
+        "commentator": "محمد فوزي"
+      },
+      {
+        "channel": "Time Sport (بث أرضي)",
+        "commentator": "زياد الدكروري"
       }
     ]
   },
@@ -2013,6 +2017,35 @@
     ]
   },
   {
+    "id": "5045308",
+    "url": "https://www.ysscores.com/ar/match/5045308/Stellenbosch-FC-vs-CR-Belouizdad",
+    "info": {
+      "championship": "كأس الكونفيدرالية",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "استاد كيب تاون",
+      "time": "14:00",
+      "date": "الأحد 01-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ستيلينبوش",
+        "logo": "https://imgs.ysscores.com/teams/128/2801728321045.png"
+      },
+      "away": {
+        "name": "شباب بلوزداد",
+        "logo": "https://imgs.ysscores.com/teams/128/4951692205804.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 9",
+        "commentator": "محمد المبروكي"
+      }
+    ]
+  },
+  {
     "id": "5045296",
     "url": "https://www.ysscores.com/ar/match/5045296/Kaizer-Chiefs-vs-ZESCO-United-FC",
     "info": {
@@ -2038,39 +2071,6 @@
       {
         "channel": "beIN Xtra 2",
         "commentator": "نوفل باشي"
-      }
-    ]
-  },
-  {
-    "id": "5045295",
-    "url": "https://www.ysscores.com/ar/match/5045295/El-Masry-SC-vs-Zamalek-SC",
-    "info": {
-      "championship": "كأس الكونفيدرالية",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "استاد السويس الجديد",
-      "time": "20:00",
-      "date": "الأحد 01-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "المصري",
-        "logo": "https://imgs.ysscores.com/teams/128/1521694644423.png"
-      },
-      "away": {
-        "name": "الزمالك",
-        "logo": "https://imgs.ysscores.com/teams/128/7971694082496.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "محمد فوزي"
-      },
-      {
-        "channel": "Time Sport (بث أرضي)",
-        "commentator": "زياد الدكروري"
       }
     ]
   },
