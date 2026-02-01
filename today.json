@@ -240,7 +240,7 @@
       "time": "15:00",
       "date": "الأحد 01-02-2026",
       "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -360,7 +360,7 @@
       "time": "15:00",
       "date": "الأحد 01-02-2026",
       "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -653,7 +653,7 @@
       "stadium": "استاد فان روي",
       "time": "16:00",
       "date": "الأحد 01-02-2026",
-      "current_score": "0 - 0",
+      "current_score": "0 - 1",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -859,35 +859,6 @@
     ]
   },
   {
-    "id": "87396241",
-    "url": "https://www.ysscores.com/ar/match/87396241/Naft-Missan-vs-Al-Kahrbaa-Club",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "16 - مباراة الذهاب",
-      "stadium": "ملعب ميسان",
-      "time": "13:00",
-      "date": "الأحد 01-02-2026",
-      "current_score": "0 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "نفط ميسان",
-        "logo": "https://imgs.ysscores.com/teams/128/711695656259.png"
-      },
-      "away": {
-        "name": "الكهرباء",
-        "logo": "https://imgs.ysscores.com/teams/128/8081715870157.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية الكردية",
-        "commentator": "يوسف جميل"
-      }
-    ]
-  },
-  {
     "id": "15203118",
     "url": "https://www.ysscores.com/ar/match/15203118/Al-Qasim-SC-vs-Duhok-SC",
     "info": {
@@ -913,6 +884,35 @@
       {
         "channel": "العراقية السريانية",
         "commentator": "رعد ناهي"
+      }
+    ]
+  },
+  {
+    "id": "87396241",
+    "url": "https://www.ysscores.com/ar/match/87396241/Naft-Missan-vs-Al-Kahrbaa-Club",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "16 - مباراة الذهاب",
+      "stadium": "ملعب ميسان",
+      "time": "13:00",
+      "date": "الأحد 01-02-2026",
+      "current_score": "0 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "نفط ميسان",
+        "logo": "https://imgs.ysscores.com/teams/128/711695656259.png"
+      },
+      "away": {
+        "name": "الكهرباء",
+        "logo": "https://imgs.ysscores.com/teams/128/8081715870157.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الكردية",
+        "commentator": "يوسف جميل"
       }
     ]
   },
@@ -988,7 +988,7 @@
       "time": "15:00",
       "date": "الأحد 01-02-2026",
       "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -1436,7 +1436,7 @@
       "time": "15:00",
       "date": "الأحد 01-02-2026",
       "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -1499,30 +1499,6 @@
     "channels": []
   },
   {
-    "id": "5147327",
-    "url": "https://www.ysscores.com/ar/match/5147327/US-Monastir-vs-AS-Marsa",
-    "info": {
-      "championship": "الرابطة التونسية لكرة القدم",
-      "round": "19 - مباراة الاياب",
-      "stadium": "مصطفى بن جنات",
-      "time": "14:00",
-      "date": "الأحد 01-02-2026",
-      "current_score": "1 - 0",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "المنستيري",
-        "logo": "https://imgs.ysscores.com/teams/128/9111692796285.png"
-      },
-      "away": {
-        "name": "المرسى",
-        "logo": "https://imgs.ysscores.com/teams/128/4311753401308.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5147325",
     "url": "https://www.ysscores.com/ar/match/5147325/Jeunesse-Sportive-Omrane-vs-CS-Sfaxien",
     "info": {
@@ -1550,6 +1526,30 @@
         "commentator": "غير مدرج"
       }
     ]
+  },
+  {
+    "id": "5147327",
+    "url": "https://www.ysscores.com/ar/match/5147327/US-Monastir-vs-AS-Marsa",
+    "info": {
+      "championship": "الرابطة التونسية لكرة القدم",
+      "round": "19 - مباراة الاياب",
+      "stadium": "مصطفى بن جنات",
+      "time": "14:00",
+      "date": "الأحد 01-02-2026",
+      "current_score": "1 - 0",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "المنستيري",
+        "logo": "https://imgs.ysscores.com/teams/128/9111692796285.png"
+      },
+      "away": {
+        "name": "المرسى",
+        "logo": "https://imgs.ysscores.com/teams/128/4311753401308.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "5147324",
@@ -1825,30 +1825,6 @@
     "channels": []
   },
   {
-    "id": "4820853",
-    "url": "https://www.ysscores.com/ar/match/4820853/FC-Luzern-vs-FC-St.-Gallen-1879",
-    "info": {
-      "championship": "دوري السوبر السويسري",
-      "round": "22 - مباراة الاياب",
-      "stadium": "سويسبور أرينا",
-      "time": "14:00",
-      "date": "الأحد 01-02-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "لوسرن",
-        "logo": "https://imgs.ysscores.com/teams/128/7211690370556.png"
-      },
-      "away": {
-        "name": "سانت جالين",
-        "logo": "https://imgs.ysscores.com/teams/128/9231690370555.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4820850",
     "url": "https://www.ysscores.com/ar/match/4820850/BSC-Young-Boys-vs-FC-Zürich",
     "info": {
@@ -1868,6 +1844,30 @@
       "away": {
         "name": "زيورخ",
         "logo": "https://imgs.ysscores.com/teams/128/4531690370557.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4820853",
+    "url": "https://www.ysscores.com/ar/match/4820853/FC-Luzern-vs-FC-St.-Gallen-1879",
+    "info": {
+      "championship": "دوري السوبر السويسري",
+      "round": "22 - مباراة الاياب",
+      "stadium": "سويسبور أرينا",
+      "time": "14:00",
+      "date": "الأحد 01-02-2026",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "لوسرن",
+        "logo": "https://imgs.ysscores.com/teams/128/7211690370556.png"
+      },
+      "away": {
+        "name": "سانت جالين",
+        "logo": "https://imgs.ysscores.com/teams/128/9231690370555.png"
       }
     },
     "channels": []
@@ -2104,35 +2104,6 @@
     ]
   },
   {
-    "id": "5045284",
-    "url": "https://www.ysscores.com/ar/match/5045284/AS-Maniema-Union-vs-Wydad-Casablanca",
-    "info": {
-      "championship": "كأس الكونفيدرالية",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "استاد مازيمبي",
-      "time": "13:00",
-      "date": "الأحد 01-02-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "مانيما",
-        "logo": "https://imgs.ysscores.com/teams/128/6691732567930.png"
-      },
-      "away": {
-        "name": "الوداد الرياضي",
-        "logo": "https://imgs.ysscores.com/teams/128/3131694715431.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Xtra 3",
-        "commentator": "جواد بدة"
-      }
-    ]
-  },
-  {
     "id": "5045272",
     "url": "https://www.ysscores.com/ar/match/5045272/Olympique-Safi-vs-FC-San-Pedro",
     "info": {
@@ -2157,6 +2128,35 @@
     "channels": [
       {
         "channel": "بي إن سبورت 4",
+        "commentator": "جواد بدة"
+      }
+    ]
+  },
+  {
+    "id": "5045284",
+    "url": "https://www.ysscores.com/ar/match/5045284/AS-Maniema-Union-vs-Wydad-Casablanca",
+    "info": {
+      "championship": "كأس الكونفيدرالية",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "استاد مازيمبي",
+      "time": "13:00",
+      "date": "الأحد 01-02-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "مانيما",
+        "logo": "https://imgs.ysscores.com/teams/128/6691732567930.png"
+      },
+      "away": {
+        "name": "الوداد الرياضي",
+        "logo": "https://imgs.ysscores.com/teams/128/3131694715431.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Xtra 3",
         "commentator": "جواد بدة"
       }
     ]
