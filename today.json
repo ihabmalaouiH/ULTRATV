@@ -124,6 +124,30 @@
     ]
   },
   {
+    "id": "4844336",
+    "url": "https://www.ysscores.com/ar/match/4844336/Avs-Futebol-vs-SC-Braga",
+    "info": {
+      "championship": "الدوري البرتغالي الممتاز",
+      "round": "20 - مباراة الاياب",
+      "stadium": "ملعب سي دي أفيس",
+      "time": "19:45",
+      "date": "الاثنين 02-02-2026",
+      "current_score": "0 - 4",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "فوتبول",
+        "logo": "https://imgs.ysscores.com/teams/128/9461698965717.png"
+      },
+      "away": {
+        "name": "سبورتينغ براغا",
+        "logo": "https://imgs.ysscores.com/teams/128/2631690385875.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4844337",
     "url": "https://www.ysscores.com/ar/match/4844337/Casa-Pia-AC-vs-FC-Porto",
     "info": {
@@ -153,30 +177,6 @@
     ]
   },
   {
-    "id": "4844336",
-    "url": "https://www.ysscores.com/ar/match/4844336/Avs-Futebol-vs-SC-Braga",
-    "info": {
-      "championship": "الدوري البرتغالي الممتاز",
-      "round": "20 - مباراة الاياب",
-      "stadium": "ملعب سي دي أفيس",
-      "time": "19:45",
-      "date": "الاثنين 02-02-2026",
-      "current_score": "0 - 4",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "فوتبول",
-        "logo": "https://imgs.ysscores.com/teams/128/9461698965717.png"
-      },
-      "away": {
-        "name": "سبورتينغ براغا",
-        "logo": "https://imgs.ysscores.com/teams/128/2631690385875.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4842494",
     "url": "https://www.ysscores.com/ar/match/4842494/Kocaelispor-vs-Fenerbahce",
     "info": {
@@ -202,39 +202,6 @@
       {
         "channel": "beIN Sports HD 1 TR",
         "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "4927479",
-    "url": "https://www.ysscores.com/ar/match/4927479/Al-Hilal-SFC-vs-Al-Ahli-SFC",
-    "info": {
-      "championship": "الدوري السعودي للمحترفين",
-      "round": "20 - مباراة الاياب",
-      "stadium": "المملكة أرينا",
-      "time": "18:30",
-      "date": "الاثنين 02-02-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الهلال",
-        "logo": "https://imgs.ysscores.com/teams/128/8761690298716.png"
-      },
-      "away": {
-        "name": "الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/9091751485160.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 1",
-        "commentator": "فارس عوض"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "فارس عوض"
       }
     ]
   },
@@ -305,28 +272,37 @@
     ]
   },
   {
-    "id": "5111162",
-    "url": "https://www.ysscores.com/ar/match/5111162/Union-Military-SC-vs-Al-Ahly-SCSC-(Benghazi)",
+    "id": "4927479",
+    "url": "https://www.ysscores.com/ar/match/4927479/Al-Hilal-SFC-vs-Al-Ahli-SFC",
     "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "ملعب بنغازي الدولي",
-      "time": "17:30",
+      "championship": "الدوري السعودي للمحترفين",
+      "round": "20 - مباراة الاياب",
+      "stadium": "المملكة أرينا",
+      "time": "18:30",
       "date": "الاثنين 02-02-2026",
-      "current_score": "1 - 0",
+      "current_score": "0 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "العسكري",
-        "logo": "https://imgs.ysscores.com/teams/128/17660522935721.png"
+        "name": "الهلال",
+        "logo": "https://imgs.ysscores.com/teams/128/8761690298716.png"
       },
       "away": {
-        "name": "الأهلي بنغازي",
-        "logo": "https://imgs.ysscores.com/teams/128/17666732344755.png"
+        "name": "الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/9091751485160.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "ثمانية 1",
+        "commentator": "فارس عوض"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "فارس عوض"
+      }
+    ]
   },
   {
     "id": "5111138",
@@ -353,25 +329,25 @@
     "channels": []
   },
   {
-    "id": "5111139",
-    "url": "https://www.ysscores.com/ar/match/5111139/Al-Ahli-SC-Libya-vs-Al-Khums-SC",
+    "id": "5111162",
+    "url": "https://www.ysscores.com/ar/match/5111162/Union-Military-SC-vs-Al-Ahly-SCSC-(Benghazi)",
     "info": {
       "championship": "الدوري الليبي الممتاز",
       "round": "8 - مباراة الذهاب",
-      "stadium": "ملعب طرابلس الدولي",
-      "time": "14:30",
+      "stadium": "ملعب بنغازي الدولي",
+      "time": "17:30",
       "date": "الاثنين 02-02-2026",
-      "current_score": "5 - 2",
+      "current_score": "1 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الأهلي طرابلس",
-        "logo": "https://imgs.ysscores.com/teams/128/9531692282352.png"
+        "name": "العسكري",
+        "logo": "https://imgs.ysscores.com/teams/128/17660522935721.png"
       },
       "away": {
-        "name": "الخمس",
-        "logo": "https://imgs.ysscores.com/teams/128/17656575035545.png"
+        "name": "الأهلي بنغازي",
+        "logo": "https://imgs.ysscores.com/teams/128/17666732344755.png"
       }
     },
     "channels": []
@@ -425,6 +401,30 @@
     "channels": []
   },
   {
+    "id": "5111139",
+    "url": "https://www.ysscores.com/ar/match/5111139/Al-Ahli-SC-Libya-vs-Al-Khums-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "ملعب طرابلس الدولي",
+      "time": "14:30",
+      "date": "الاثنين 02-02-2026",
+      "current_score": "5 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الأهلي طرابلس",
+        "logo": "https://imgs.ysscores.com/teams/128/9531692282352.png"
+      },
+      "away": {
+        "name": "الخمس",
+        "logo": "https://imgs.ysscores.com/teams/128/17656575035545.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4813612",
     "url": "https://www.ysscores.com/ar/match/4813612/Sunderland-AFC-vs-Burnley-FC",
     "info": {
@@ -452,6 +452,30 @@
         "commentator": "عبدالله الغامدي"
       }
     ]
+  },
+  {
+    "id": "5101909",
+    "url": "https://www.ysscores.com/ar/match/5101909/AA-Argentinos-Juniors-vs-Club-Atlético-Belgrano",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "3 - مباراة الذهاب",
+      "stadium": "استاد دييغو أرماندو مارادونا (الأرجنتين)",
+      "time": "02:00",
+      "date": "الاثنين 02-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أرجنتينوس",
+        "logo": "https://imgs.ysscores.com/teams/128/4771695765901.png"
+      },
+      "away": {
+        "name": "بيلغرانو",
+        "logo": "https://imgs.ysscores.com/teams/128/6861705166944.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "5101915",
@@ -511,7 +535,7 @@
       "time": "23:45",
       "date": "الاثنين 02-02-2026",
       "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -535,7 +559,7 @@
       "time": "23:45",
       "date": "الاثنين 02-02-2026",
       "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -545,30 +569,6 @@
       "away": {
         "name": "إستوديانتيس",
         "logo": "https://imgs.ysscores.com/teams/128/9621711808779.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5101909",
-    "url": "https://www.ysscores.com/ar/match/5101909/AA-Argentinos-Juniors-vs-Club-Atlético-Belgrano",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "3 - مباراة الذهاب",
-      "stadium": "استاد دييغو أرماندو مارادونا (الأرجنتين)",
-      "time": "02:00",
-      "date": "الاثنين 02-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أرجنتينوس",
-        "logo": "https://imgs.ysscores.com/teams/128/4771695765901.png"
-      },
-      "away": {
-        "name": "بيلغرانو",
-        "logo": "https://imgs.ysscores.com/teams/128/6861705166944.png"
       }
     },
     "channels": []
