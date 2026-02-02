@@ -95,8 +95,8 @@
       "stadium": "ملعب فريولي",
       "time": "20:45",
       "date": "الاثنين 02-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -239,39 +239,6 @@
     ]
   },
   {
-    "id": "4927482",
-    "url": "https://www.ysscores.com/ar/match/4927482/Al-Okhdood-Club-vs-NEOM-SC",
-    "info": {
-      "championship": "الدوري السعودي للمحترفين",
-      "round": "20 - مباراة الاياب",
-      "stadium": "استاد مدينة الأمير هذلول بن عبد العزيز الرياضية",
-      "time": "18:30",
-      "date": "الاثنين 02-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الأخدود",
-        "logo": "https://imgs.ysscores.com/teams/128/3611724280948.png"
-      },
-      "away": {
-        "name": "نيوم",
-        "logo": "https://imgs.ysscores.com/teams/128/9361751106662.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 2",
-        "commentator": "محمد حسين"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "محمد حسين"
-      }
-    ]
-  },
-  {
     "id": "4927483",
     "url": "https://www.ysscores.com/ar/match/4927483/Al-Riyadh-SC-vs-Al-Nassr-FC",
     "info": {
@@ -301,6 +268,39 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "مشاري القرني"
+      }
+    ]
+  },
+  {
+    "id": "4927482",
+    "url": "https://www.ysscores.com/ar/match/4927482/Al-Okhdood-Club-vs-NEOM-SC",
+    "info": {
+      "championship": "الدوري السعودي للمحترفين",
+      "round": "20 - مباراة الاياب",
+      "stadium": "استاد مدينة الأمير هذلول بن عبد العزيز الرياضية",
+      "time": "18:30",
+      "date": "الاثنين 02-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الأخدود",
+        "logo": "https://imgs.ysscores.com/teams/128/3611724280948.png"
+      },
+      "away": {
+        "name": "نيوم",
+        "logo": "https://imgs.ysscores.com/teams/128/9361751106662.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 2",
+        "commentator": "محمد حسين"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "محمد حسين"
       }
     ]
   },
