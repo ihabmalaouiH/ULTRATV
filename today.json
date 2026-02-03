@@ -38,7 +38,7 @@
       "time": "14:00",
       "date": "الثلاثاء 03-02-2026",
       "current_score": "0 - 1",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -295,6 +295,30 @@
     "channels": []
   },
   {
+    "id": "5111212",
+    "url": "https://www.ysscores.com/ar/match/5111212/Al-Tersana-Tripoli-vs-Shabab-Al-Ghar",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "ملعب النهر الصناعي",
+      "time": "14:30",
+      "date": "الثلاثاء 03-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الترسانة",
+        "logo": "https://imgs.ysscores.com/teams/128/17656496443244.png"
+      },
+      "away": {
+        "name": "الغار",
+        "logo": "https://imgs.ysscores.com/teams/128/17656492902173.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5111211",
     "url": "https://www.ysscores.com/ar/match/5111211/Ittihad-Gharyan-SC-vs-Olympic-Azzawiya-SC",
     "info": {
@@ -338,30 +362,6 @@
       "away": {
         "name": "الوفاق",
         "logo": "https://imgs.ysscores.com/teams/128/17656302717639.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5111212",
-    "url": "https://www.ysscores.com/ar/match/5111212/Al-Tersana-Tripoli-vs-Shabab-Al-Ghar",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "ملعب النهر الصناعي",
-      "time": "14:30",
-      "date": "الثلاثاء 03-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الترسانة",
-        "logo": "https://imgs.ysscores.com/teams/128/17656496443244.png"
-      },
-      "away": {
-        "name": "الغار",
-        "logo": "https://imgs.ysscores.com/teams/128/17656492902173.png"
       }
     },
     "channels": []
@@ -683,6 +683,35 @@
     ]
   },
   {
+    "id": "54164655",
+    "url": "https://www.ysscores.com/ar/match/54164655/Al-Adalah-FC-vs-Al-Tai-FC",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "20 - مباراة الاياب",
+      "stadium": "ملعب مدينة الأمير عبدالله بن جلوي الرياضية",
+      "time": "16:05",
+      "date": "الثلاثاء 03-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "العدالة",
+        "logo": "https://imgs.ysscores.com/teams/128/7331691930420.png"
+      },
+      "away": {
+        "name": "الطائي",
+        "logo": "https://imgs.ysscores.com/teams/128/1111690298932.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "عبدالإله العمري"
+      }
+    ]
+  },
+  {
     "id": "57126926",
     "url": "https://www.ysscores.com/ar/match/57126926/Al-Ula-FC-vs-Al-Arabi-SC-Saudi",
     "info": {
@@ -712,35 +741,6 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "أحمد المنتشري"
-      }
-    ]
-  },
-  {
-    "id": "54164655",
-    "url": "https://www.ysscores.com/ar/match/54164655/Al-Adalah-FC-vs-Al-Tai-FC",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "20 - مباراة الاياب",
-      "stadium": "ملعب مدينة الأمير عبدالله بن جلوي الرياضية",
-      "time": "16:05",
-      "date": "الثلاثاء 03-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "العدالة",
-        "logo": "https://imgs.ysscores.com/teams/128/7331691930420.png"
-      },
-      "away": {
-        "name": "الطائي",
-        "logo": "https://imgs.ysscores.com/teams/128/1111690298932.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "عبدالإله العمري"
       }
     ]
   },
@@ -846,30 +846,6 @@
     "channels": []
   },
   {
-    "id": "5098858",
-    "url": "https://www.ysscores.com/ar/match/5098858/San-Diego-FC-vs-UNAM-Pumas",
-    "info": {
-      "championship": "كأس أبطال الكونكاكاف",
-      "round": "دور الـ 32 - مباراة الذهاب",
-      "stadium": "استاد سناب دراغون",
-      "time": "05:00",
-      "date": "الثلاثاء 03-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "سان دييغو",
-        "logo": "https://imgs.ysscores.com/teams/128/7471734730240.png"
-      },
-      "away": {
-        "name": "بوماس",
-        "logo": "https://imgs.ysscores.com/teams/128/541722733792.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5098856",
     "url": "https://www.ysscores.com/ar/match/5098856/Forge-FC-vs-Tigres-UANL",
     "info": {
@@ -913,6 +889,30 @@
       "away": {
         "name": "كلوب أمريكا",
         "logo": "https://imgs.ysscores.com/teams/128/7881703173149.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5098858",
+    "url": "https://www.ysscores.com/ar/match/5098858/San-Diego-FC-vs-UNAM-Pumas",
+    "info": {
+      "championship": "كأس أبطال الكونكاكاف",
+      "round": "دور الـ 32 - مباراة الذهاب",
+      "stadium": "استاد سناب دراغون",
+      "time": "05:00",
+      "date": "الثلاثاء 03-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "سان دييغو",
+        "logo": "https://imgs.ysscores.com/teams/128/7471734730240.png"
+      },
+      "away": {
+        "name": "بوماس",
+        "logo": "https://imgs.ysscores.com/teams/128/541722733792.png"
       }
     },
     "channels": []
@@ -1076,35 +1076,6 @@
     "channels": []
   },
   {
-    "id": "5138481",
-    "url": "https://www.ysscores.com/ar/match/5138481/Stade-Reims-vs-Le-Mans-FC",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 16",
-      "stadium": "أوغيست دولون",
-      "time": "20:30",
-      "date": "الثلاثاء 03-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ريمس",
-        "logo": "https://imgs.ysscores.com/teams/128/8361690287842.png"
-      },
-      "away": {
-        "name": "لو مان",
-        "logo": "https://imgs.ysscores.com/teams/128/7281718366884.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "جواد بدة"
-      }
-    ]
-  },
-  {
     "id": "5138482",
     "url": "https://www.ysscores.com/ar/match/5138482/Olympique-Marseille-vs-Stade-Rennais-FC",
     "info": {
@@ -1130,6 +1101,35 @@
       {
         "channel": "بي إن سبورت 2",
         "commentator": "نوفل باشي"
+      }
+    ]
+  },
+  {
+    "id": "5138481",
+    "url": "https://www.ysscores.com/ar/match/5138481/Stade-Reims-vs-Le-Mans-FC",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 16",
+      "stadium": "أوغيست دولون",
+      "time": "20:30",
+      "date": "الثلاثاء 03-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ريمس",
+        "logo": "https://imgs.ysscores.com/teams/128/8361690287842.png"
+      },
+      "away": {
+        "name": "لو مان",
+        "logo": "https://imgs.ysscores.com/teams/128/7281718366884.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "جواد بدة"
       }
     ]
   },
