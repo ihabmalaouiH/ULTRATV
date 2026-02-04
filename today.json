@@ -8,8 +8,8 @@
       "stadium": "استاد عمّان الدولي",
       "time": "15:00",
       "date": "الأربعاء 04-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -608,8 +608,8 @@
       "stadium": "حمّام عمار",
       "time": "15:00",
       "date": "الأربعاء 04-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -632,8 +632,8 @@
       "stadium": "زكريا مجدوب",
       "time": "15:00",
       "date": "الأربعاء 04-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -804,35 +804,6 @@
     ]
   },
   {
-    "id": "5098859",
-    "url": "https://www.ysscores.com/ar/match/5098859/CSD-Xelajú-MC-vs-CF-Monterrey",
-    "info": {
-      "championship": "كأس أبطال الكونكاكاف",
-      "round": "دور الـ 32 - مباراة الذهاب",
-      "stadium": "استاد سيمينتوس بروجريسو",
-      "time": "02:00",
-      "date": "الأربعاء 04-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "اكسلاجو",
-        "logo": "https://imgs.ysscores.com/teams/128/8111751060112.png"
-      },
-      "away": {
-        "name": "مونتيري",
-        "logo": "https://imgs.ysscores.com/teams/128/2211709821895.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "Concacaf YouTube",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5098860",
     "url": "https://www.ysscores.com/ar/match/5098860/Vancouver-FC-vs-CD-Cruz-Azul",
     "info": {
@@ -852,6 +823,35 @@
       "away": {
         "name": "كروز أزول",
         "logo": "https://imgs.ysscores.com/teams/128/3351722759708.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "Concacaf YouTube",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5098859",
+    "url": "https://www.ysscores.com/ar/match/5098859/CSD-Xelajú-MC-vs-CF-Monterrey",
+    "info": {
+      "championship": "كأس أبطال الكونكاكاف",
+      "round": "دور الـ 32 - مباراة الذهاب",
+      "stadium": "استاد سيمينتوس بروجريسو",
+      "time": "02:00",
+      "date": "الأربعاء 04-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "اكسلاجو",
+        "logo": "https://imgs.ysscores.com/teams/128/8111751060112.png"
+      },
+      "away": {
+        "name": "مونتيري",
+        "logo": "https://imgs.ysscores.com/teams/128/2211709821895.png"
       }
     },
     "channels": [
@@ -977,35 +977,6 @@
     ]
   },
   {
-    "id": "5085922",
-    "url": "https://www.ysscores.com/ar/match/5085922/Genclerbirligi-Ankara-vs-Eyüpspor",
-    "info": {
-      "championship": "كأس تركيا",
-      "round": "3",
-      "stadium": "استاد إريامان",
-      "time": "16:00",
-      "date": "الأربعاء 04-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "غنتشلربيرليغي",
-        "logo": "https://imgs.ysscores.com/teams/128/3881690370508.png"
-      },
-      "away": {
-        "name": "أيوب سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/891700669405.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "A Spor",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5085843",
     "url": "https://www.ysscores.com/ar/match/5085843/Boluspor-vs-Alanyaspor",
     "info": {
@@ -1025,6 +996,35 @@
       "away": {
         "name": "ألانيا سبور",
         "logo": "https://imgs.ysscores.com/teams/128/9541690127467.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "A Spor",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5085922",
+    "url": "https://www.ysscores.com/ar/match/5085922/Genclerbirligi-Ankara-vs-Eyüpspor",
+    "info": {
+      "championship": "كأس تركيا",
+      "round": "3",
+      "stadium": "استاد إريامان",
+      "time": "16:00",
+      "date": "الأربعاء 04-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "غنتشلربيرليغي",
+        "logo": "https://imgs.ysscores.com/teams/128/3881690370508.png"
+      },
+      "away": {
+        "name": "أيوب سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/891700669405.png"
       }
     },
     "channels": [
@@ -1089,6 +1089,35 @@
       {
         "channel": "A Spor",
         "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5138484",
+    "url": "https://www.ysscores.com/ar/match/5138484/OGC-Nice-vs-Montpellier-HSC",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 16",
+      "stadium": "أليانز ريفييرا",
+      "time": "20:30",
+      "date": "الأربعاء 04-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "نيس",
+        "logo": "https://imgs.ysscores.com/teams/128/7361690287672.png"
+      },
+      "away": {
+        "name": "مونبلييه",
+        "logo": "https://imgs.ysscores.com/teams/128/691720799295.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "أحمد عبده"
       }
     ]
   },
@@ -1209,31 +1238,31 @@
     ]
   },
   {
-    "id": "5138484",
-    "url": "https://www.ysscores.com/ar/match/5138484/OGC-Nice-vs-Montpellier-HSC",
+    "id": "5144837",
+    "url": "https://www.ysscores.com/ar/match/5144837/Deportivo-Alavés-vs-Real-Sociedad",
     "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 16",
-      "stadium": "أليانز ريفييرا",
-      "time": "20:30",
+      "championship": "كأس ملك إسبانيا",
+      "round": "ربع نهائي",
+      "stadium": "مينديزوروزا",
+      "time": "21:00",
       "date": "الأربعاء 04-02-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "نيس",
-        "logo": "https://imgs.ysscores.com/teams/128/7361690287672.png"
+        "name": "ألافيس",
+        "logo": "https://imgs.ysscores.com/teams/128/2381690196746.png"
       },
       "away": {
-        "name": "مونبلييه",
-        "logo": "https://imgs.ysscores.com/teams/128/691720799295.png"
+        "name": "ريال سوسيداد",
+        "logo": "https://imgs.ysscores.com/teams/128/9441690196745.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 3",
-        "commentator": "أحمد عبده"
+        "channel": "شاهد - VIP | رياضة",
+        "commentator": "منير العتيبي"
       }
     ]
   },
@@ -1263,35 +1292,6 @@
       {
         "channel": "شاهد - VIP | رياضة",
         "commentator": "أحمد النفيسة"
-      }
-    ]
-  },
-  {
-    "id": "5144837",
-    "url": "https://www.ysscores.com/ar/match/5144837/Deportivo-Alavés-vs-Real-Sociedad",
-    "info": {
-      "championship": "كأس ملك إسبانيا",
-      "round": "ربع نهائي",
-      "stadium": "مينديزوروزا",
-      "time": "21:00",
-      "date": "الأربعاء 04-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ألافيس",
-        "logo": "https://imgs.ysscores.com/teams/128/2381690196746.png"
-      },
-      "away": {
-        "name": "ريال سوسيداد",
-        "logo": "https://imgs.ysscores.com/teams/128/9441690196745.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "شاهد - VIP | رياضة",
-        "commentator": "منير العتيبي"
       }
     ]
   },
