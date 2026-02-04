@@ -77,30 +77,6 @@
     "channels": []
   },
   {
-    "id": "4818902",
-    "url": "https://www.ysscores.com/ar/match/4818902/Hibernian-FC-vs-Dundee-United-FC",
-    "info": {
-      "championship": "الدوري الإسكتلندي الممتاز",
-      "round": "25 - مباراة الاياب",
-      "stadium": "إيستر رود",
-      "time": "20:45",
-      "date": "الأربعاء 04-02-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "هيبرنيان",
-        "logo": "https://imgs.ysscores.com/teams/128/1801690370558.png"
-      },
-      "away": {
-        "name": "دندي يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/1541754872814.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4818900",
     "url": "https://www.ysscores.com/ar/match/4818900/Aberdeen-FC-vs-Celtic-FC",
     "info": {
@@ -128,6 +104,30 @@
         "commentator": "سالم السالمي"
       }
     ]
+  },
+  {
+    "id": "4818902",
+    "url": "https://www.ysscores.com/ar/match/4818902/Hibernian-FC-vs-Dundee-United-FC",
+    "info": {
+      "championship": "الدوري الإسكتلندي الممتاز",
+      "round": "25 - مباراة الاياب",
+      "stadium": "إيستر رود",
+      "time": "20:45",
+      "date": "الأربعاء 04-02-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "هيبرنيان",
+        "logo": "https://imgs.ysscores.com/teams/128/1801690370558.png"
+      },
+      "away": {
+        "name": "دندي يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/1541754872814.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "4818903",
@@ -393,30 +393,6 @@
     ]
   },
   {
-    "id": "5111210",
-    "url": "https://www.ysscores.com/ar/match/5111210/Al-Murooj-vs-Al-Afreeki-Sports-Club",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "7 - مباراة الذهاب",
-      "stadium": "ملعب المرج",
-      "time": "14:00",
-      "date": "الأربعاء 04-02-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "المروج",
-        "logo": "https://imgs.ysscores.com/teams/128/17690805539189.png"
-      },
-      "away": {
-        "name": "الإفريقي",
-        "logo": "https://imgs.ysscores.com/teams/128/17656295573662.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111209",
     "url": "https://www.ysscores.com/ar/match/5111209/Al-Akhdar-SC-vs-Al-Nasr-SC",
     "info": {
@@ -436,6 +412,30 @@
       "away": {
         "name": "النصر",
         "logo": "https://imgs.ysscores.com/teams/128/1781760955603.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111210",
+    "url": "https://www.ysscores.com/ar/match/5111210/Al-Murooj-vs-Al-Afreeki-Sports-Club",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "7 - مباراة الذهاب",
+      "stadium": "ملعب المرج",
+      "time": "14:00",
+      "date": "الأربعاء 04-02-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "المروج",
+        "logo": "https://imgs.ysscores.com/teams/128/17690805539189.png"
+      },
+      "away": {
+        "name": "الإفريقي",
+        "logo": "https://imgs.ysscores.com/teams/128/17656295573662.png"
       }
     },
     "channels": []
@@ -489,35 +489,6 @@
     "channels": []
   },
   {
-    "id": "4899602",
-    "url": "https://www.ysscores.com/ar/match/4899602/Zed-FC-vs-El-Masry-SC",
-    "info": {
-      "championship": "الدوري المصري",
-      "round": "17 - مباراة الذهاب",
-      "stadium": "استاد السويس الجديد",
-      "time": "16:00",
-      "date": "الأربعاء 04-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "نادي زد",
-        "logo": "https://imgs.ysscores.com/teams/128/8411694619351.png"
-      },
-      "away": {
-        "name": "المصري",
-        "logo": "https://imgs.ysscores.com/teams/128/1521694644423.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ON Sport 1",
-        "commentator": "محمد الكواليني"
-      }
-    ]
-  },
-  {
     "id": "4899607",
     "url": "https://www.ysscores.com/ar/match/4899607/Kahraba-Ismailia-vs-Zamalek-SC",
     "info": {
@@ -543,6 +514,35 @@
       {
         "channel": "ON Sport 1",
         "commentator": "مؤمن حسن"
+      }
+    ]
+  },
+  {
+    "id": "4899602",
+    "url": "https://www.ysscores.com/ar/match/4899602/Zed-FC-vs-El-Masry-SC",
+    "info": {
+      "championship": "الدوري المصري",
+      "round": "17 - مباراة الذهاب",
+      "stadium": "استاد السويس الجديد",
+      "time": "16:00",
+      "date": "الأربعاء 04-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "نادي زد",
+        "logo": "https://imgs.ysscores.com/teams/128/8411694619351.png"
+      },
+      "away": {
+        "name": "المصري",
+        "logo": "https://imgs.ysscores.com/teams/128/1521694644423.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 1",
+        "commentator": "محمد الكواليني"
       }
     ]
   },
@@ -691,6 +691,39 @@
     ]
   },
   {
+    "id": "34816626",
+    "url": "https://www.ysscores.com/ar/match/34816626/Al-Diraiyah-FC-vs-Al-Wehda-FC",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "20 - مباراة الاياب",
+      "stadium": "اس اتش جي ارينا",
+      "time": "16:15",
+      "date": "الأربعاء 04-02-2026",
+      "current_score": "5 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الدرعية",
+        "logo": "https://imgs.ysscores.com/teams/128/6711757968926.png"
+      },
+      "away": {
+        "name": "الوحدة",
+        "logo": "https://imgs.ysscores.com/teams/128/6451690292495.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 1",
+        "commentator": "خالد المديفر"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "خالد المديفر"
+      }
+    ]
+  },
+  {
     "id": "43847785",
     "url": "https://www.ysscores.com/ar/match/43847785/Al-Zulfi-SFC-vs-Al-Batin-FC",
     "info": {
@@ -720,39 +753,6 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "سلطان الحربي"
-      }
-    ]
-  },
-  {
-    "id": "46108793",
-    "url": "https://www.ysscores.com/ar/match/46108793/Al-Faisaly-FC-vs-Al-Jandal-SC",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "20 - مباراة الاياب",
-      "stadium": "استاد مدينة المجمعة الرياضية",
-      "time": "13:45",
-      "date": "الأربعاء 04-02-2026",
-      "current_score": "4 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الفيصلي",
-        "logo": "https://imgs.ysscores.com/teams/128/5731692998559.png"
-      },
-      "away": {
-        "name": "الجندل",
-        "logo": "https://imgs.ysscores.com/teams/128/2821724146928.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 3",
-        "commentator": "هيثم طحطوح"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "هيثم طحطوح"
       }
     ]
   },
@@ -790,35 +790,35 @@
     ]
   },
   {
-    "id": "34816626",
-    "url": "https://www.ysscores.com/ar/match/34816626/Al-Diraiyah-FC-vs-Al-Wehda-FC",
+    "id": "46108793",
+    "url": "https://www.ysscores.com/ar/match/46108793/Al-Faisaly-FC-vs-Al-Jandal-SC",
     "info": {
       "championship": "دوري الدرجة الأولى السعودي",
       "round": "20 - مباراة الاياب",
-      "stadium": "اس اتش جي ارينا",
-      "time": "16:15",
+      "stadium": "استاد مدينة المجمعة الرياضية",
+      "time": "13:45",
       "date": "الأربعاء 04-02-2026",
-      "current_score": "5 - 0",
+      "current_score": "4 - 2",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الدرعية",
-        "logo": "https://imgs.ysscores.com/teams/128/6711757968926.png"
+        "name": "الفيصلي",
+        "logo": "https://imgs.ysscores.com/teams/128/5731692998559.png"
       },
       "away": {
-        "name": "الوحدة",
-        "logo": "https://imgs.ysscores.com/teams/128/6451690292495.png"
+        "name": "الجندل",
+        "logo": "https://imgs.ysscores.com/teams/128/2821724146928.png"
       }
     },
     "channels": [
       {
-        "channel": "ثمانية 1",
-        "commentator": "خالد المديفر"
+        "channel": "ثمانية 3",
+        "commentator": "هيثم طحطوح"
       },
       {
         "channel": "تطبيق ثمانية",
-        "commentator": "خالد المديفر"
+        "commentator": "هيثم طحطوح"
       }
     ]
   },
@@ -1000,6 +1000,35 @@
     ]
   },
   {
+    "id": "5085844",
+    "url": "https://www.ysscores.com/ar/match/5085844/Fatih-Karagümrük-vs-Basaksehir-FK",
+    "info": {
+      "championship": "كأس تركيا",
+      "round": "3",
+      "stadium": "ملعب أتاتورك الأولمبي",
+      "time": "13:30",
+      "date": "الأربعاء 04-02-2026",
+      "current_score": "1 - 4",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "فاتح قرا جمرك",
+        "logo": "https://imgs.ysscores.com/teams/128/951690127270.png"
+      },
+      "away": {
+        "name": "باشاك شهير",
+        "logo": "https://imgs.ysscores.com/teams/128/6801690127203.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "A Spor",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
     "id": "5085843",
     "url": "https://www.ysscores.com/ar/match/5085843/Boluspor-vs-Alanyaspor",
     "info": {
@@ -1048,35 +1077,6 @@
       "away": {
         "name": "أيوب سبور",
         "logo": "https://imgs.ysscores.com/teams/128/891700669405.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "A Spor",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "5085844",
-    "url": "https://www.ysscores.com/ar/match/5085844/Fatih-Karagümrük-vs-Basaksehir-FK",
-    "info": {
-      "championship": "كأس تركيا",
-      "round": "3",
-      "stadium": "ملعب أتاتورك الأولمبي",
-      "time": "13:30",
-      "date": "الأربعاء 04-02-2026",
-      "current_score": "1 - 4",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "فاتح قرا جمرك",
-        "logo": "https://imgs.ysscores.com/teams/128/951690127270.png"
-      },
-      "away": {
-        "name": "باشاك شهير",
-        "logo": "https://imgs.ysscores.com/teams/128/6801690127203.png"
       }
     },
     "channels": [
@@ -1145,6 +1145,35 @@
     ]
   },
   {
+    "id": "5138485",
+    "url": "https://www.ysscores.com/ar/match/5138485/Olympique-Lyon-vs-Stade-Lavallois",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 16",
+      "stadium": "غروباما",
+      "time": "20:30",
+      "date": "الأربعاء 04-02-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "ليون",
+        "logo": "https://imgs.ysscores.com/teams/128/4081690287528.png"
+      },
+      "away": {
+        "name": "ستاد لافالوا",
+        "logo": "https://imgs.ysscores.com/teams/128/8581690370509.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 6",
+        "commentator": "محمد المبروكي"
+      }
+    ]
+  },
+  {
     "id": "5138484",
     "url": "https://www.ysscores.com/ar/match/5138484/OGC-Nice-vs-Montpellier-HSC",
     "info": {
@@ -1170,35 +1199,6 @@
       {
         "channel": "بي إن سبورت 3",
         "commentator": "أحمد عبده"
-      }
-    ]
-  },
-  {
-    "id": "5138486",
-    "url": "https://www.ysscores.com/ar/match/5138486/FC-Lorient-vs-Paris-FC",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 16",
-      "stadium": "دو موستوار",
-      "time": "20:30",
-      "date": "الأربعاء 04-02-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "لوريان",
-        "logo": "https://imgs.ysscores.com/teams/128/6891690287722.png"
-      },
-      "away": {
-        "name": "نادي باريس",
-        "logo": "https://imgs.ysscores.com/teams/128/6551690370501.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "جواد بدة"
       }
     ]
   },
@@ -1232,12 +1232,12 @@
     ]
   },
   {
-    "id": "5138485",
-    "url": "https://www.ysscores.com/ar/match/5138485/Olympique-Lyon-vs-Stade-Lavallois",
+    "id": "5138486",
+    "url": "https://www.ysscores.com/ar/match/5138486/FC-Lorient-vs-Paris-FC",
     "info": {
       "championship": "كأس فرنسا",
       "round": "دور الـ 16",
-      "stadium": "غروباما",
+      "stadium": "دو موستوار",
       "time": "20:30",
       "date": "الأربعاء 04-02-2026",
       "current_score": "0 - 0",
@@ -1245,18 +1245,18 @@
     },
     "teams": {
       "home": {
-        "name": "ليون",
-        "logo": "https://imgs.ysscores.com/teams/128/4081690287528.png"
+        "name": "لوريان",
+        "logo": "https://imgs.ysscores.com/teams/128/6891690287722.png"
       },
       "away": {
-        "name": "ستاد لافالوا",
-        "logo": "https://imgs.ysscores.com/teams/128/8581690370509.png"
+        "name": "نادي باريس",
+        "logo": "https://imgs.ysscores.com/teams/128/6551690370501.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 6",
-        "commentator": "محمد المبروكي"
+        "channel": "بي إن سبورت 2",
+        "commentator": "جواد بدة"
       }
     ]
   },
