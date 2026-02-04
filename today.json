@@ -417,30 +417,6 @@
     "channels": []
   },
   {
-    "id": "5111210",
-    "url": "https://www.ysscores.com/ar/match/5111210/Al-Murooj-vs-Al-Afreeki-Sports-Club",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "7 - مباراة الذهاب",
-      "stadium": "ملعب المرج",
-      "time": "14:00",
-      "date": "الأربعاء 04-02-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "المروج",
-        "logo": "https://imgs.ysscores.com/teams/128/17690805539189.png"
-      },
-      "away": {
-        "name": "الإفريقي",
-        "logo": "https://imgs.ysscores.com/teams/128/17656295573662.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111214",
     "url": "https://www.ysscores.com/ar/match/5111214/El-Ettihad-Al-Misraty-SC-vs-Al-Ittihad-SC",
     "info": {
@@ -460,6 +436,30 @@
       "away": {
         "name": "الاتحاد",
         "logo": "https://imgs.ysscores.com/teams/128/6541718836505.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111210",
+    "url": "https://www.ysscores.com/ar/match/5111210/Al-Murooj-vs-Al-Afreeki-Sports-Club",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "7 - مباراة الذهاب",
+      "stadium": "ملعب المرج",
+      "time": "14:00",
+      "date": "الأربعاء 04-02-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "المروج",
+        "logo": "https://imgs.ysscores.com/teams/128/17690805539189.png"
+      },
+      "away": {
+        "name": "الإفريقي",
+        "logo": "https://imgs.ysscores.com/teams/128/17656295573662.png"
       }
     },
     "channels": []
@@ -1000,35 +1000,6 @@
     ]
   },
   {
-    "id": "5085844",
-    "url": "https://www.ysscores.com/ar/match/5085844/Fatih-Karagümrük-vs-Basaksehir-FK",
-    "info": {
-      "championship": "كأس تركيا",
-      "round": "3",
-      "stadium": "ملعب أتاتورك الأولمبي",
-      "time": "13:30",
-      "date": "الأربعاء 04-02-2026",
-      "current_score": "1 - 4",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "فاتح قرا جمرك",
-        "logo": "https://imgs.ysscores.com/teams/128/951690127270.png"
-      },
-      "away": {
-        "name": "باشاك شهير",
-        "logo": "https://imgs.ysscores.com/teams/128/6801690127203.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "A Spor",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5085843",
     "url": "https://www.ysscores.com/ar/match/5085843/Boluspor-vs-Alanyaspor",
     "info": {
@@ -1067,7 +1038,7 @@
       "time": "16:00",
       "date": "الأربعاء 04-02-2026",
       "current_score": "2 - 2",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1116,6 +1087,35 @@
     ]
   },
   {
+    "id": "5085844",
+    "url": "https://www.ysscores.com/ar/match/5085844/Fatih-Karagümrük-vs-Basaksehir-FK",
+    "info": {
+      "championship": "كأس تركيا",
+      "round": "3",
+      "stadium": "ملعب أتاتورك الأولمبي",
+      "time": "13:30",
+      "date": "الأربعاء 04-02-2026",
+      "current_score": "1 - 4",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "فاتح قرا جمرك",
+        "logo": "https://imgs.ysscores.com/teams/128/951690127270.png"
+      },
+      "away": {
+        "name": "باشاك شهير",
+        "logo": "https://imgs.ysscores.com/teams/128/6801690127203.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "A Spor",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
     "id": "5138486",
     "url": "https://www.ysscores.com/ar/match/5138486/FC-Lorient-vs-Paris-FC",
     "info": {
@@ -1145,12 +1145,12 @@
     ]
   },
   {
-    "id": "5138484",
-    "url": "https://www.ysscores.com/ar/match/5138484/OGC-Nice-vs-Montpellier-HSC",
+    "id": "5138483",
+    "url": "https://www.ysscores.com/ar/match/5138483/FC-Toulouse-vs-Amiens-SC",
     "info": {
       "championship": "كأس فرنسا",
       "round": "دور الـ 16",
-      "stadium": "أليانز ريفييرا",
+      "stadium": "استاد تولوز",
       "time": "20:30",
       "date": "الأربعاء 04-02-2026",
       "current_score": "- : -",
@@ -1158,18 +1158,18 @@
     },
     "teams": {
       "home": {
-        "name": "نيس",
-        "logo": "https://imgs.ysscores.com/teams/128/7361690287672.png"
+        "name": "تولوز",
+        "logo": "https://imgs.ysscores.com/teams/128/5161690287967.png"
       },
       "away": {
-        "name": "مونبلييه",
-        "logo": "https://imgs.ysscores.com/teams/128/691720799295.png"
+        "name": "أميان",
+        "logo": "https://imgs.ysscores.com/teams/128/611690370530.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 3",
-        "commentator": "أحمد عبده"
+        "channel": "بي إن سبورت 5",
+        "commentator": "محمد بركات"
       }
     ]
   },
@@ -1203,6 +1203,35 @@
     ]
   },
   {
+    "id": "5138484",
+    "url": "https://www.ysscores.com/ar/match/5138484/OGC-Nice-vs-Montpellier-HSC",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 16",
+      "stadium": "أليانز ريفييرا",
+      "time": "20:30",
+      "date": "الأربعاء 04-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "نيس",
+        "logo": "https://imgs.ysscores.com/teams/128/7361690287672.png"
+      },
+      "away": {
+        "name": "مونبلييه",
+        "logo": "https://imgs.ysscores.com/teams/128/691720799295.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "أحمد عبده"
+      }
+    ]
+  },
+  {
     "id": "5138487",
     "url": "https://www.ysscores.com/ar/match/5138487/ESTAC-Troyes-vs-RC-Lens",
     "info": {
@@ -1228,35 +1257,6 @@
       {
         "channel": "بي إن سبورت 8",
         "commentator": "محمد فوزي"
-      }
-    ]
-  },
-  {
-    "id": "5138483",
-    "url": "https://www.ysscores.com/ar/match/5138483/FC-Toulouse-vs-Amiens-SC",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 16",
-      "stadium": "استاد تولوز",
-      "time": "20:30",
-      "date": "الأربعاء 04-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "تولوز",
-        "logo": "https://imgs.ysscores.com/teams/128/5161690287967.png"
-      },
-      "away": {
-        "name": "أميان",
-        "logo": "https://imgs.ysscores.com/teams/128/611690370530.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "محمد بركات"
       }
     ]
   },
