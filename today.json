@@ -319,30 +319,6 @@
     "channels": []
   },
   {
-    "id": "5111207",
-    "url": "https://www.ysscores.com/ar/match/5111207/Khaleej-Sirte-SC-vs-Al-Wefaq-Ly-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "7 - مباراة الذهاب",
-      "stadium": "ملعب المدينة الرياضية سرت",
-      "time": "14:00",
-      "date": "الثلاثاء 03-02-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الخليج",
-        "logo": "https://imgs.ysscores.com/teams/128/17656560805023.png"
-      },
-      "away": {
-        "name": "الوفاق",
-        "logo": "https://imgs.ysscores.com/teams/128/17656302717639.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111211",
     "url": "https://www.ysscores.com/ar/match/5111211/Ittihad-Gharyan-SC-vs-Olympic-Azzawiya-SC",
     "info": {
@@ -362,6 +338,30 @@
       "away": {
         "name": "الأولمبي",
         "logo": "https://imgs.ysscores.com/teams/128/17656610718608.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111207",
+    "url": "https://www.ysscores.com/ar/match/5111207/Khaleej-Sirte-SC-vs-Al-Wefaq-Ly-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "7 - مباراة الذهاب",
+      "stadium": "ملعب المدينة الرياضية سرت",
+      "time": "14:00",
+      "date": "الثلاثاء 03-02-2026",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الخليج",
+        "logo": "https://imgs.ysscores.com/teams/128/17656560805023.png"
+      },
+      "away": {
+        "name": "الوفاق",
+        "logo": "https://imgs.ysscores.com/teams/128/17656302717639.png"
       }
     },
     "channels": []
@@ -420,6 +420,35 @@
     ]
   },
   {
+    "id": "5156336",
+    "url": "https://www.ysscores.com/ar/match/5156336/CS-Constantine-vs-ES-Mostaganem",
+    "info": {
+      "championship": "الرابطة المحترفة الجزائرية الأولى",
+      "round": "17 - مباراة الاياب",
+      "stadium": "استاد محمد حملاوي",
+      "time": "17:00",
+      "date": "الثلاثاء 03-02-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "النادي القسنطيني",
+        "logo": "https://imgs.ysscores.com/teams/128/1891724622719.png"
+      },
+      "away": {
+        "name": "ترجي مستغانم",
+        "logo": "https://imgs.ysscores.com/teams/128/8081721202117.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الجزائرية الأولى",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
     "id": "5156337",
     "url": "https://www.ysscores.com/ar/match/5156337/MC-Oran-vs-Olympique-Akbou",
     "info": {
@@ -449,35 +478,6 @@
       {
         "channel": "الجزائرية السادسة",
         "commentator": "فريد بوساحية"
-      }
-    ]
-  },
-  {
-    "id": "5156336",
-    "url": "https://www.ysscores.com/ar/match/5156336/CS-Constantine-vs-ES-Mostaganem",
-    "info": {
-      "championship": "الرابطة المحترفة الجزائرية الأولى",
-      "round": "17 - مباراة الاياب",
-      "stadium": "استاد محمد حملاوي",
-      "time": "17:00",
-      "date": "الثلاثاء 03-02-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "النادي القسنطيني",
-        "logo": "https://imgs.ysscores.com/teams/128/1891724622719.png"
-      },
-      "away": {
-        "name": "ترجي مستغانم",
-        "logo": "https://imgs.ysscores.com/teams/128/8081721202117.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الجزائرية الأولى",
-        "commentator": "غير مدرج"
       }
     ]
   },
@@ -655,39 +655,6 @@
     "channels": []
   },
   {
-    "id": "57126926",
-    "url": "https://www.ysscores.com/ar/match/57126926/Al-Ula-FC-vs-Al-Arabi-SC-Saudi",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "20 - مباراة الاياب",
-      "stadium": "استاد الأمير محمد بن عبدالعزيز (المدينة المنورة)",
-      "time": "14:10",
-      "date": "الثلاثاء 03-02-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "العلا",
-        "logo": "https://imgs.ysscores.com/teams/128/1691755364441.png"
-      },
-      "away": {
-        "name": "العربي",
-        "logo": "https://imgs.ysscores.com/teams/128/7351691930572.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 3",
-        "commentator": "أحمد المنتشري"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "أحمد المنتشري"
-      }
-    ]
-  },
-  {
     "id": "16231835",
     "url": "https://www.ysscores.com/ar/match/16231835/Al-Orobah-FC-vs-Abha-Club",
     "info": {
@@ -746,6 +713,39 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "عبدالإله العمري"
+      }
+    ]
+  },
+  {
+    "id": "57126926",
+    "url": "https://www.ysscores.com/ar/match/57126926/Al-Ula-FC-vs-Al-Arabi-SC-Saudi",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "20 - مباراة الاياب",
+      "stadium": "استاد الأمير محمد بن عبدالعزيز (المدينة المنورة)",
+      "time": "14:10",
+      "date": "الثلاثاء 03-02-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "العلا",
+        "logo": "https://imgs.ysscores.com/teams/128/1691755364441.png"
+      },
+      "away": {
+        "name": "العربي",
+        "logo": "https://imgs.ysscores.com/teams/128/7351691930572.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 3",
+        "commentator": "أحمد المنتشري"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "أحمد المنتشري"
       }
     ]
   },
@@ -851,25 +851,25 @@
     "channels": []
   },
   {
-    "id": "5098856",
-    "url": "https://www.ysscores.com/ar/match/5098856/Forge-FC-vs-Tigres-UANL",
+    "id": "5098857",
+    "url": "https://www.ysscores.com/ar/match/5098857/CD-Olimpia-vs-CF-América",
     "info": {
       "championship": "كأس أبطال الكونكاكاف",
       "round": "دور الـ 32 - مباراة الذهاب",
-      "stadium": "ملعب تيم هورتونز",
-      "time": "01:00",
+      "stadium": "استاد تشيلاتو أوكليس",
+      "time": "03:00",
       "date": "الثلاثاء 03-02-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "فورج",
-        "logo": "https://imgs.ysscores.com/teams/128/1451738616982.png"
+        "name": "أوليمبيا",
+        "logo": "https://imgs.ysscores.com/teams/128/3091722928998.png"
       },
       "away": {
-        "name": "تايجرز أونال",
-        "logo": "https://imgs.ysscores.com/teams/128/3241709822141.png"
+        "name": "كلوب أمريكا",
+        "logo": "https://imgs.ysscores.com/teams/128/7881703173149.png"
       }
     },
     "channels": []
@@ -899,25 +899,25 @@
     "channels": []
   },
   {
-    "id": "5098857",
-    "url": "https://www.ysscores.com/ar/match/5098857/CD-Olimpia-vs-CF-América",
+    "id": "5098856",
+    "url": "https://www.ysscores.com/ar/match/5098856/Forge-FC-vs-Tigres-UANL",
     "info": {
       "championship": "كأس أبطال الكونكاكاف",
       "round": "دور الـ 32 - مباراة الذهاب",
-      "stadium": "استاد تشيلاتو أوكليس",
-      "time": "03:00",
+      "stadium": "ملعب تيم هورتونز",
+      "time": "01:00",
       "date": "الثلاثاء 03-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
-        "name": "أوليمبيا",
-        "logo": "https://imgs.ysscores.com/teams/128/3091722928998.png"
+        "name": "فورج",
+        "logo": "https://imgs.ysscores.com/teams/128/1451738616982.png"
       },
       "away": {
-        "name": "كلوب أمريكا",
-        "logo": "https://imgs.ysscores.com/teams/128/7881703173149.png"
+        "name": "تايجرز أونال",
+        "logo": "https://imgs.ysscores.com/teams/128/3241709822141.png"
       }
     },
     "channels": []
@@ -1009,30 +1009,6 @@
     "channels": []
   },
   {
-    "id": "5085921",
-    "url": "https://www.ysscores.com/ar/match/5085921/Igdir-FK-vs-Antalyaspor",
-    "info": {
-      "championship": "كأس تركيا",
-      "round": "3",
-      "stadium": "استاد إغدير",
-      "time": "11:00",
-      "date": "الثلاثاء 03-02-2026",
-      "current_score": "6 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "إغدير",
-        "logo": "https://imgs.ysscores.com/teams/128/4711718030263.png"
-      },
-      "away": {
-        "name": "أنطاليا سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/6611690127092.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5085919",
     "url": "https://www.ysscores.com/ar/match/5085919/Samsunspor-vs-Bodrum-FK",
     "info": {
@@ -1052,6 +1028,30 @@
       "away": {
         "name": "بودروم سبور",
         "logo": "https://imgs.ysscores.com/teams/128/2311700667812.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5085921",
+    "url": "https://www.ysscores.com/ar/match/5085921/Igdir-FK-vs-Antalyaspor",
+    "info": {
+      "championship": "كأس تركيا",
+      "round": "3",
+      "stadium": "استاد إغدير",
+      "time": "11:00",
+      "date": "الثلاثاء 03-02-2026",
+      "current_score": "6 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "إغدير",
+        "logo": "https://imgs.ysscores.com/teams/128/4711718030263.png"
+      },
+      "away": {
+        "name": "أنطاليا سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/6611690127092.png"
       }
     },
     "channels": []
