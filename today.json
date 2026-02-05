@@ -279,35 +279,6 @@
     ]
   },
   {
-    "id": "63739347",
-    "url": "https://www.ysscores.com/ar/match/63739347/Al-Najaf-FC-vs-Al-Qasim-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "17 - مباراة الذهاب",
-      "stadium": "استاد النجف الدولي",
-      "time": "13:00",
-      "date": "الخميس 05-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "النجف",
-        "logo": "https://imgs.ysscores.com/teams/128/8851752617745.png"
-      },
-      "away": {
-        "name": "القاسم",
-        "logo": "https://imgs.ysscores.com/teams/128/2661722928239.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية السريانية",
-        "commentator": "يوسف جميل"
-      }
-    ]
-  },
-  {
     "id": "65681029",
     "url": "https://www.ysscores.com/ar/match/65681029/Al-Karma-vs-Al-Talaba-SC",
     "info": {
@@ -337,31 +308,31 @@
     ]
   },
   {
-    "id": "19545432",
-    "url": "https://www.ysscores.com/ar/match/19545432/Erbil-SC-vs-Al-Naft-SC",
+    "id": "63739347",
+    "url": "https://www.ysscores.com/ar/match/63739347/Al-Najaf-FC-vs-Al-Qasim-SC",
     "info": {
       "championship": "الدوري العراقي",
       "round": "17 - مباراة الذهاب",
-      "stadium": "استاد فرانسوا حريري",
+      "stadium": "استاد النجف الدولي",
       "time": "13:00",
       "date": "الخميس 05-02-2026",
-      "current_score": "3 - 1",
+      "current_score": "1 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "أربيل",
-        "logo": "https://imgs.ysscores.com/teams/128/2581695657262.png"
+        "name": "النجف",
+        "logo": "https://imgs.ysscores.com/teams/128/8851752617745.png"
       },
       "away": {
-        "name": "النفط",
-        "logo": "https://imgs.ysscores.com/teams/128/7661722514776.png"
+        "name": "القاسم",
+        "logo": "https://imgs.ysscores.com/teams/128/2661722928239.png"
       }
     },
     "channels": [
       {
-        "channel": "العراقية الرياضية",
-        "commentator": "عباس هادي"
+        "channel": "العراقية السريانية",
+        "commentator": "يوسف جميل"
       }
     ]
   },
@@ -389,12 +360,41 @@
     },
     "channels": [
       {
-        "channel": "العراقية السريانية",
-        "commentator": "حسين الساعدي"
+        "channel": "الكأس 4",
+        "commentator": "غير مدرج"
       },
       {
-        "channel": "الكأس 4",
-        "commentator": "خالد الحدي"
+        "channel": "العراقية السريانية",
+        "commentator": "حسين الساعدي"
+      }
+    ]
+  },
+  {
+    "id": "19545432",
+    "url": "https://www.ysscores.com/ar/match/19545432/Erbil-SC-vs-Al-Naft-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "17 - مباراة الذهاب",
+      "stadium": "استاد فرانسوا حريري",
+      "time": "13:00",
+      "date": "الخميس 05-02-2026",
+      "current_score": "3 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أربيل",
+        "logo": "https://imgs.ysscores.com/teams/128/2581695657262.png"
+      },
+      "away": {
+        "name": "النفط",
+        "logo": "https://imgs.ysscores.com/teams/128/7661722514776.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "عباس هادي"
       }
     ]
   },
@@ -556,35 +556,6 @@
     ]
   },
   {
-    "id": "4899610",
-    "url": "https://www.ysscores.com/ar/match/4899610/Wadi-Degla-FC-vs-El-Mokawloon-SC",
-    "info": {
-      "championship": "الدوري المصري",
-      "round": "17 - مباراة الذهاب",
-      "stadium": "استاد السلام",
-      "time": "19:00",
-      "date": "الخميس 05-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "وادي دجلة",
-        "logo": "https://imgs.ysscores.com/teams/128/2161728755640.png"
-      },
-      "away": {
-        "name": "المقاولون العرب",
-        "logo": "https://imgs.ysscores.com/teams/128/2721694082551.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ON Sport 2",
-        "commentator": "محمود أبو الركب"
-      }
-    ]
-  },
-  {
     "id": "4899606",
     "url": "https://www.ysscores.com/ar/match/4899606/Harras-El-Hodoud-vs-Pharco-FC",
     "info": {
@@ -639,6 +610,35 @@
       {
         "channel": "ON Sport 1",
         "commentator": "محمد مصطفى عفيفي"
+      }
+    ]
+  },
+  {
+    "id": "4899610",
+    "url": "https://www.ysscores.com/ar/match/4899610/Wadi-Degla-FC-vs-El-Mokawloon-SC",
+    "info": {
+      "championship": "الدوري المصري",
+      "round": "17 - مباراة الذهاب",
+      "stadium": "استاد السلام",
+      "time": "19:00",
+      "date": "الخميس 05-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "وادي دجلة",
+        "logo": "https://imgs.ysscores.com/teams/128/2161728755640.png"
+      },
+      "away": {
+        "name": "المقاولون العرب",
+        "logo": "https://imgs.ysscores.com/teams/128/2721694082551.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 2",
+        "commentator": "محمود أبو الركب"
       }
     ]
   },
@@ -744,30 +744,6 @@
     "channels": []
   },
   {
-    "id": "4946353",
-    "url": "https://www.ysscores.com/ar/match/4946353/Raya-SC-vs-El-Dakhlia-SC",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "22 - مباراة الاياب",
-      "stadium": "استاد الإسكندرية",
-      "time": "13:30",
-      "date": "الخميس 05-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "راية",
-        "logo": "https://imgs.ysscores.com/teams/128/6531696285484.png"
-      },
-      "away": {
-        "name": "الداخلية",
-        "logo": "https://imgs.ysscores.com/teams/128/7881694082064.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4946351",
     "url": "https://www.ysscores.com/ar/match/4946351/Petrol-Asyut-vs-FC-Masar",
     "info": {
@@ -795,6 +771,30 @@
         "commentator": "هيثم هيبة"
       }
     ]
+  },
+  {
+    "id": "4946353",
+    "url": "https://www.ysscores.com/ar/match/4946353/Raya-SC-vs-El-Dakhlia-SC",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "22 - مباراة الاياب",
+      "stadium": "استاد الإسكندرية",
+      "time": "13:30",
+      "date": "الخميس 05-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "راية",
+        "logo": "https://imgs.ysscores.com/teams/128/6531696285484.png"
+      },
+      "away": {
+        "name": "الداخلية",
+        "logo": "https://imgs.ysscores.com/teams/128/7881694082064.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "4935226",
@@ -879,35 +879,6 @@
     ]
   },
   {
-    "id": "5085920",
-    "url": "https://www.ysscores.com/ar/match/5085920/Konyaspor-vs-Aliaga-FK",
-    "info": {
-      "championship": "كأس تركيا",
-      "round": "3",
-      "stadium": "استاد قونيا أرينا",
-      "time": "13:30",
-      "date": "الخميس 05-02-2026",
-      "current_score": "5 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "قونيا سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/8771690127634.png"
-      },
-      "away": {
-        "name": "ألياجا",
-        "logo": "https://imgs.ysscores.com/teams/128/9221761599684.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "A Spor",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5085952",
     "url": "https://www.ysscores.com/ar/match/5085952/Ankara-Keciörengücü-vs-Gaziantep-FK",
     "info": {
@@ -937,6 +908,35 @@
     ]
   },
   {
+    "id": "5085920",
+    "url": "https://www.ysscores.com/ar/match/5085920/Konyaspor-vs-Aliaga-FK",
+    "info": {
+      "championship": "كأس تركيا",
+      "round": "3",
+      "stadium": "استاد قونيا أرينا",
+      "time": "13:30",
+      "date": "الخميس 05-02-2026",
+      "current_score": "5 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "قونيا سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/8771690127634.png"
+      },
+      "away": {
+        "name": "ألياجا",
+        "logo": "https://imgs.ysscores.com/teams/128/9221761599684.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "A Spor",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
     "id": "5085953",
     "url": "https://www.ysscores.com/ar/match/5085953/Kocaelispor-vs-Besiktas-JK",
     "info": {
@@ -945,8 +945,8 @@
       "stadium": "استاد كوجالي",
       "time": "16:00",
       "date": "الخميس 05-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
