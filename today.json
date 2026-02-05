@@ -202,30 +202,6 @@
     "channels": []
   },
   {
-    "id": "5103378",
-    "url": "https://www.ysscores.com/ar/match/5103378/Red-Bull-Bragantino-vs-Clube-Atlético-Mineiro",
-    "info": {
-      "championship": "الدوري البرازيلي",
-      "round": "2 - مباراة الذهاب",
-      "stadium": "استاد سيسيرو دي سوزا ماركيز",
-      "time": "23:00",
-      "date": "الأربعاء 04-02-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "براغانتينو",
-        "logo": "https://imgs.ysscores.com/teams/128/4731690370563.png"
-      },
-      "away": {
-        "name": "أتلتيكو مينيرو",
-        "logo": "https://imgs.ysscores.com/teams/128/9181691418710.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5103383",
     "url": "https://www.ysscores.com/ar/match/5103383/Clube-do-Remo-(PA)-vs-Mirassol-Futebol-Clube-(SP)",
     "info": {
@@ -250,6 +226,30 @@
     "channels": []
   },
   {
+    "id": "5103378",
+    "url": "https://www.ysscores.com/ar/match/5103378/Red-Bull-Bragantino-vs-Clube-Atlético-Mineiro",
+    "info": {
+      "championship": "الدوري البرازيلي",
+      "round": "2 - مباراة الذهاب",
+      "stadium": "استاد سيسيرو دي سوزا ماركيز",
+      "time": "23:00",
+      "date": "الأربعاء 04-02-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "براغانتينو",
+        "logo": "https://imgs.ysscores.com/teams/128/4731690370563.png"
+      },
+      "away": {
+        "name": "أتلتيكو مينيرو",
+        "logo": "https://imgs.ysscores.com/teams/128/9181691418710.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5103377",
     "url": "https://www.ysscores.com/ar/match/5103377/Sociedade-Esportiva-Palmeiras-vs-Esporte-Clube-Vitória",
     "info": {
@@ -259,7 +259,7 @@
       "time": "01:30",
       "date": "الأربعاء 04-02-2026",
       "current_score": "3 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -1000,35 +1000,6 @@
     ]
   },
   {
-    "id": "5085922",
-    "url": "https://www.ysscores.com/ar/match/5085922/Genclerbirligi-Ankara-vs-Eyüpspor",
-    "info": {
-      "championship": "كأس تركيا",
-      "round": "3",
-      "stadium": "استاد إريامان",
-      "time": "16:00",
-      "date": "الأربعاء 04-02-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "غنتشلربيرليغي",
-        "logo": "https://imgs.ysscores.com/teams/128/3881690370508.png"
-      },
-      "away": {
-        "name": "أيوب سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/891700669405.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "A Spor",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5085843",
     "url": "https://www.ysscores.com/ar/match/5085843/Boluspor-vs-Alanyaspor",
     "info": {
@@ -1087,6 +1058,35 @@
     ]
   },
   {
+    "id": "5085922",
+    "url": "https://www.ysscores.com/ar/match/5085922/Genclerbirligi-Ankara-vs-Eyüpspor",
+    "info": {
+      "championship": "كأس تركيا",
+      "round": "3",
+      "stadium": "استاد إريامان",
+      "time": "16:00",
+      "date": "الأربعاء 04-02-2026",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "غنتشلربيرليغي",
+        "logo": "https://imgs.ysscores.com/teams/128/3881690370508.png"
+      },
+      "away": {
+        "name": "أيوب سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/891700669405.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "A Spor",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
     "id": "5085841",
     "url": "https://www.ysscores.com/ar/match/5085841/Galatasaray-vs-Istanbulspor",
     "info": {
@@ -1112,6 +1112,35 @@
       {
         "channel": "A Spor",
         "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5138484",
+    "url": "https://www.ysscores.com/ar/match/5138484/OGC-Nice-vs-Montpellier-HSC",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 16",
+      "stadium": "أليانز ريفييرا",
+      "time": "20:30",
+      "date": "الأربعاء 04-02-2026",
+      "current_score": "3 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "نيس",
+        "logo": "https://imgs.ysscores.com/teams/128/7361690287672.png"
+      },
+      "away": {
+        "name": "مونبلييه",
+        "logo": "https://imgs.ysscores.com/teams/128/691720799295.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "أحمد عبده"
       }
     ]
   },
@@ -1199,35 +1228,6 @@
       {
         "channel": "بي إن سبورت 5",
         "commentator": "محمد بركات"
-      }
-    ]
-  },
-  {
-    "id": "5138484",
-    "url": "https://www.ysscores.com/ar/match/5138484/OGC-Nice-vs-Montpellier-HSC",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 16",
-      "stadium": "أليانز ريفييرا",
-      "time": "20:30",
-      "date": "الأربعاء 04-02-2026",
-      "current_score": "3 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "نيس",
-        "logo": "https://imgs.ysscores.com/teams/128/7361690287672.png"
-      },
-      "away": {
-        "name": "مونبلييه",
-        "logo": "https://imgs.ysscores.com/teams/128/691720799295.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "أحمد عبده"
       }
     ]
   },
