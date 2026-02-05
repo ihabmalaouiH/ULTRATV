@@ -393,30 +393,6 @@
     ]
   },
   {
-    "id": "5111209",
-    "url": "https://www.ysscores.com/ar/match/5111209/Al-Akhdar-SC-vs-Al-Nasr-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "7 - مباراة الذهاب",
-      "stadium": "الوادي الكبير",
-      "time": "14:00",
-      "date": "الأربعاء 04-02-2026",
-      "current_score": "1 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الأخضر",
-        "logo": "https://imgs.ysscores.com/teams/128/17659994074616.png"
-      },
-      "away": {
-        "name": "النصر",
-        "logo": "https://imgs.ysscores.com/teams/128/1781760955603.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111210",
     "url": "https://www.ysscores.com/ar/match/5111210/Al-Murooj-vs-Al-Afreeki-Sports-Club",
     "info": {
@@ -436,6 +412,30 @@
       "away": {
         "name": "الإفريقي",
         "logo": "https://imgs.ysscores.com/teams/128/17656295573662.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111209",
+    "url": "https://www.ysscores.com/ar/match/5111209/Al-Akhdar-SC-vs-Al-Nasr-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "7 - مباراة الذهاب",
+      "stadium": "الوادي الكبير",
+      "time": "14:00",
+      "date": "الأربعاء 04-02-2026",
+      "current_score": "1 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الأخضر",
+        "logo": "https://imgs.ysscores.com/teams/128/17659994074616.png"
+      },
+      "away": {
+        "name": "النصر",
+        "logo": "https://imgs.ysscores.com/teams/128/1781760955603.png"
       }
     },
     "channels": []
@@ -861,7 +861,7 @@
       "time": "02:00",
       "date": "الأربعاء 04-02-2026",
       "current_score": "1 - 1",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1116,31 +1116,31 @@
     ]
   },
   {
-    "id": "5138487",
-    "url": "https://www.ysscores.com/ar/match/5138487/ESTAC-Troyes-vs-RC-Lens",
+    "id": "5138483",
+    "url": "https://www.ysscores.com/ar/match/5138483/FC-Toulouse-vs-Amiens-SC",
     "info": {
       "championship": "كأس فرنسا",
       "round": "دور الـ 16",
-      "stadium": "ستاد دي لا أوبي",
-      "time": "21:00",
+      "stadium": "استاد تولوز",
+      "time": "20:30",
       "date": "الأربعاء 04-02-2026",
-      "current_score": "2 - 4",
+      "current_score": "1 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "تروا",
-        "logo": "https://imgs.ysscores.com/teams/128/6871690370557.png"
+        "name": "تولوز",
+        "logo": "https://imgs.ysscores.com/teams/128/5161690287967.png"
       },
       "away": {
-        "name": "لانس",
-        "logo": "https://imgs.ysscores.com/teams/128/1281690287063.png"
+        "name": "أميان",
+        "logo": "https://imgs.ysscores.com/teams/128/611690370530.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 8",
-        "commentator": "محمد فوزي"
+        "channel": "بي إن سبورت 5",
+        "commentator": "محمد بركات"
       }
     ]
   },
@@ -1170,35 +1170,6 @@
       {
         "channel": "بي إن سبورت 6",
         "commentator": "محمد المبروكي"
-      }
-    ]
-  },
-  {
-    "id": "5138483",
-    "url": "https://www.ysscores.com/ar/match/5138483/FC-Toulouse-vs-Amiens-SC",
-    "info": {
-      "championship": "كأس فرنسا",
-      "round": "دور الـ 16",
-      "stadium": "استاد تولوز",
-      "time": "20:30",
-      "date": "الأربعاء 04-02-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "تولوز",
-        "logo": "https://imgs.ysscores.com/teams/128/5161690287967.png"
-      },
-      "away": {
-        "name": "أميان",
-        "logo": "https://imgs.ysscores.com/teams/128/611690370530.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "محمد بركات"
       }
     ]
   },
@@ -1257,6 +1228,35 @@
       {
         "channel": "بي إن سبورت 3",
         "commentator": "أحمد عبده"
+      }
+    ]
+  },
+  {
+    "id": "5138487",
+    "url": "https://www.ysscores.com/ar/match/5138487/ESTAC-Troyes-vs-RC-Lens",
+    "info": {
+      "championship": "كأس فرنسا",
+      "round": "دور الـ 16",
+      "stadium": "ستاد دي لا أوبي",
+      "time": "21:00",
+      "date": "الأربعاء 04-02-2026",
+      "current_score": "2 - 4",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "تروا",
+        "logo": "https://imgs.ysscores.com/teams/128/6871690370557.png"
+      },
+      "away": {
+        "name": "لانس",
+        "logo": "https://imgs.ysscores.com/teams/128/1281690287063.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 8",
+        "commentator": "محمد فوزي"
       }
     ]
   },
