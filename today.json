@@ -140,8 +140,8 @@
       "stadium": "استاد مينيراو",
       "time": "01:30",
       "date": "الخميس 05-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -213,39 +213,6 @@
     ]
   },
   {
-    "id": "4927488",
-    "url": "https://www.ysscores.com/ar/match/4927488/Al-Fayha-FC-vs-Al-Najma-SC",
-    "info": {
-      "championship": "الدوري السعودي للمحترفين",
-      "round": "21 - مباراة الاياب",
-      "stadium": "استاد مدينة المجمعة الرياضية",
-      "time": "16:20",
-      "date": "الخميس 05-02-2026",
-      "current_score": "3 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الفيحاء",
-        "logo": "https://imgs.ysscores.com/teams/128/9981690292497.png"
-      },
-      "away": {
-        "name": "النجمة",
-        "logo": "https://imgs.ysscores.com/teams/128/8571691930620.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 2",
-        "commentator": "محمد حسين"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "محمد حسين"
-      }
-    ]
-  },
-  {
     "id": "4927491",
     "url": "https://www.ysscores.com/ar/match/4927491/Al-Okhdood-Club-vs-Al-Hilal-SFC",
     "info": {
@@ -279,31 +246,35 @@
     ]
   },
   {
-    "id": "65681029",
-    "url": "https://www.ysscores.com/ar/match/65681029/Al-Karma-vs-Al-Talaba-SC",
+    "id": "4927488",
+    "url": "https://www.ysscores.com/ar/match/4927488/Al-Fayha-FC-vs-Al-Najma-SC",
     "info": {
-      "championship": "الدوري العراقي",
-      "round": "17 - مباراة الذهاب",
-      "stadium": "استاد الجولان",
-      "time": "15:30",
+      "championship": "الدوري السعودي للمحترفين",
+      "round": "21 - مباراة الاياب",
+      "stadium": "استاد مدينة المجمعة الرياضية",
+      "time": "16:20",
       "date": "الخميس 05-02-2026",
-      "current_score": "1 - 1",
+      "current_score": "3 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الكرمة",
-        "logo": "https://imgs.ysscores.com/teams/128/2331726654564.png"
+        "name": "الفيحاء",
+        "logo": "https://imgs.ysscores.com/teams/128/9981690292497.png"
       },
       "away": {
-        "name": "الطلبة",
-        "logo": "https://imgs.ysscores.com/teams/128/9541695656866.png"
+        "name": "النجمة",
+        "logo": "https://imgs.ysscores.com/teams/128/8571691930620.png"
       }
     },
     "channels": [
       {
-        "channel": "العراقية الرياضية",
-        "commentator": "جمال الدراجي"
+        "channel": "ثمانية 2",
+        "commentator": "محمد حسين"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "محمد حسين"
       }
     ]
   },
@@ -333,6 +304,35 @@
       {
         "channel": "العراقية السريانية",
         "commentator": "يوسف جميل"
+      }
+    ]
+  },
+  {
+    "id": "65681029",
+    "url": "https://www.ysscores.com/ar/match/65681029/Al-Karma-vs-Al-Talaba-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "17 - مباراة الذهاب",
+      "stadium": "استاد الجولان",
+      "time": "15:30",
+      "date": "الخميس 05-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الكرمة",
+        "logo": "https://imgs.ysscores.com/teams/128/2331726654564.png"
+      },
+      "away": {
+        "name": "الطلبة",
+        "logo": "https://imgs.ysscores.com/teams/128/9541695656866.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "جمال الدراجي"
       }
     ]
   },
@@ -850,35 +850,6 @@
     "channels": []
   },
   {
-    "id": "5085952",
-    "url": "https://www.ysscores.com/ar/match/5085952/Ankara-Keciörengücü-vs-Gaziantep-FK",
-    "info": {
-      "championship": "كأس تركيا",
-      "round": "3",
-      "stadium": "استاد أنقرة أكتيبي",
-      "time": "11:00",
-      "date": "الخميس 05-02-2026",
-      "current_score": "1 - 5",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "كجيرنكوجي",
-        "logo": "https://imgs.ysscores.com/teams/128/8671700665352.png"
-      },
-      "away": {
-        "name": "غازي عنتاب",
-        "logo": "https://imgs.ysscores.com/teams/128/3061690127435.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "A Spor",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5085920",
     "url": "https://www.ysscores.com/ar/match/5085920/Konyaspor-vs-Aliaga-FK",
     "info": {
@@ -898,6 +869,35 @@
       "away": {
         "name": "ألياجا",
         "logo": "https://imgs.ysscores.com/teams/128/9221761599684.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "A Spor",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5085952",
+    "url": "https://www.ysscores.com/ar/match/5085952/Ankara-Keciörengücü-vs-Gaziantep-FK",
+    "info": {
+      "championship": "كأس تركيا",
+      "round": "3",
+      "stadium": "استاد أنقرة أكتيبي",
+      "time": "11:00",
+      "date": "الخميس 05-02-2026",
+      "current_score": "1 - 5",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "كجيرنكوجي",
+        "logo": "https://imgs.ysscores.com/teams/128/8671700665352.png"
+      },
+      "away": {
+        "name": "غازي عنتاب",
+        "logo": "https://imgs.ysscores.com/teams/128/3061690127435.png"
       }
     },
     "channels": [
@@ -1056,8 +1056,8 @@
       "stadium": "ملعب سينتيناريو",
       "time": "01:30",
       "date": "الخميس 05-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
