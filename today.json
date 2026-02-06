@@ -223,7 +223,7 @@
       "stadium": "هيت كوبي",
       "time": "20:45",
       "date": "الجمعة 06-02-2026",
-      "current_score": "0 - 2",
+      "current_score": "0 - 3",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -362,30 +362,6 @@
     "channels": []
   },
   {
-    "id": "69992186",
-    "url": "https://www.ysscores.com/ar/match/69992186/Tishreen-SC-vs-Taliya-SC",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "7 - مباراة الذهاب",
-      "stadium": "ملعب اللاذقية البلدي",
-      "time": "13:00",
-      "date": "الجمعة 06-02-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "تشرين",
-        "logo": "https://imgs.ysscores.com/teams/128/9051694349706.png"
-      },
-      "away": {
-        "name": "الطليعة",
-        "logo": "https://imgs.ysscores.com/teams/128/17648896107718.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "38469484",
     "url": "https://www.ysscores.com/ar/match/38469484/Al-Wahda-SC-(Syria)-vs-Khan-Shekhoun",
     "info": {
@@ -405,6 +381,30 @@
       "away": {
         "name": "خان شيخون",
         "logo": "https://imgs.ysscores.com/teams/128/17648858602326.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "69992186",
+    "url": "https://www.ysscores.com/ar/match/69992186/Tishreen-SC-vs-Taliya-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "7 - مباراة الذهاب",
+      "stadium": "ملعب اللاذقية البلدي",
+      "time": "13:00",
+      "date": "الجمعة 06-02-2026",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "تشرين",
+        "logo": "https://imgs.ysscores.com/teams/128/9051694349706.png"
+      },
+      "away": {
+        "name": "الطليعة",
+        "logo": "https://imgs.ysscores.com/teams/128/17648896107718.png"
       }
     },
     "channels": []
@@ -432,35 +432,6 @@
       }
     },
     "channels": []
-  },
-  {
-    "id": "48516641",
-    "url": "https://www.ysscores.com/ar/match/48516641/Mosul-SC-vs-Newroz-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "17 - مباراة الذهاب",
-      "stadium": "استاد دهوك",
-      "time": "15:30",
-      "date": "الجمعة 06-02-2026",
-      "current_score": "0 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الموصل",
-        "logo": "https://imgs.ysscores.com/teams/128/3631734618198.png"
-      },
-      "away": {
-        "name": "نوروز",
-        "logo": "https://imgs.ysscores.com/teams/128/1311754243359.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية السريانية",
-        "commentator": "علي لفته"
-      }
-    ]
   },
   {
     "id": "10224946",
@@ -492,31 +463,31 @@
     ]
   },
   {
-    "id": "71503744",
-    "url": "https://www.ysscores.com/ar/match/71503744/Al-Quwa-Al-Jawiya-vs-Naft-Missan",
+    "id": "48516641",
+    "url": "https://www.ysscores.com/ar/match/48516641/Mosul-SC-vs-Newroz-SC",
     "info": {
       "championship": "الدوري العراقي",
       "round": "17 - مباراة الذهاب",
-      "stadium": "استاد كربلاء الدولي",
+      "stadium": "استاد دهوك",
       "time": "15:30",
       "date": "الجمعة 06-02-2026",
-      "current_score": "2 - 1",
+      "current_score": "0 - 2",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "القوة الجوية",
-        "logo": "https://imgs.ysscores.com/teams/128/4301729966980.png"
+        "name": "الموصل",
+        "logo": "https://imgs.ysscores.com/teams/128/3631734618198.png"
       },
       "away": {
-        "name": "نفط ميسان",
-        "logo": "https://imgs.ysscores.com/teams/128/711695656259.png"
+        "name": "نوروز",
+        "logo": "https://imgs.ysscores.com/teams/128/1311754243359.png"
       }
     },
     "channels": [
       {
-        "channel": "العراقية الرياضية",
-        "commentator": "رعد ناهي"
+        "channel": "العراقية السريانية",
+        "commentator": "علي لفته"
       }
     ]
   },
@@ -546,6 +517,35 @@
       {
         "channel": "العراقية الرياضية",
         "commentator": "حسين الساعدي"
+      }
+    ]
+  },
+  {
+    "id": "71503744",
+    "url": "https://www.ysscores.com/ar/match/71503744/Al-Quwa-Al-Jawiya-vs-Naft-Missan",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "17 - مباراة الذهاب",
+      "stadium": "استاد كربلاء الدولي",
+      "time": "15:30",
+      "date": "الجمعة 06-02-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "القوة الجوية",
+        "logo": "https://imgs.ysscores.com/teams/128/4301729966980.png"
+      },
+      "away": {
+        "name": "نفط ميسان",
+        "logo": "https://imgs.ysscores.com/teams/128/711695656259.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "رعد ناهي"
       }
     ]
   },
@@ -703,35 +703,6 @@
     ]
   },
   {
-    "id": "4899609",
-    "url": "https://www.ysscores.com/ar/match/4899609/El-Gouna-FC-vs-Modern-Sport-Club",
-    "info": {
-      "championship": "الدوري المصري",
-      "round": "17 - مباراة الذهاب",
-      "stadium": "استاد خالد بشارة",
-      "time": "16:00",
-      "date": "الجمعة 06-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الجونة",
-        "logo": "https://imgs.ysscores.com/teams/128/3751731169729.png"
-      },
-      "away": {
-        "name": "مودرن سبورت",
-        "logo": "https://imgs.ysscores.com/teams/128/5391724147326.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ON Sport 1",
-        "commentator": "مؤمن حسن"
-      }
-    ]
-  },
-  {
     "id": "4899608",
     "url": "https://www.ysscores.com/ar/match/4899608/Talaea-El-Gaish-vs-Ittihad-Alexandria-SC",
     "info": {
@@ -757,6 +728,35 @@
       {
         "channel": "ON Sport 1",
         "commentator": "محمد الغياتي"
+      }
+    ]
+  },
+  {
+    "id": "4899609",
+    "url": "https://www.ysscores.com/ar/match/4899609/El-Gouna-FC-vs-Modern-Sport-Club",
+    "info": {
+      "championship": "الدوري المصري",
+      "round": "17 - مباراة الذهاب",
+      "stadium": "استاد خالد بشارة",
+      "time": "16:00",
+      "date": "الجمعة 06-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الجونة",
+        "logo": "https://imgs.ysscores.com/teams/128/3751731169729.png"
+      },
+      "away": {
+        "name": "مودرن سبورت",
+        "logo": "https://imgs.ysscores.com/teams/128/5391724147326.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 1",
+        "commentator": "مؤمن حسن"
       }
     ]
   },
