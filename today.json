@@ -397,8 +397,8 @@
       "stadium": "استاد دبا الفجيرة",
       "time": "14:25",
       "date": "السبت 07-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -418,6 +418,35 @@
       {
         "channel": "دبي الرياضية 1",
         "commentator": "أحمد الشحي"
+      }
+    ]
+  },
+  {
+    "id": "4813619",
+    "url": "https://www.ysscores.com/ar/match/4813619/Fulham-FC-vs-Everton-FC",
+    "info": {
+      "championship": "الدوري الإنجليزي الممتاز",
+      "round": "25 - مباراة الاياب",
+      "stadium": "كرافن كوتيج",
+      "time": "16:00",
+      "date": "السبت 07-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "فولهام",
+        "logo": "https://imgs.ysscores.com/teams/128/4711690118927.png"
+      },
+      "away": {
+        "name": "إيفرتون",
+        "logo": "https://imgs.ysscores.com/teams/128/8461690118694.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "عامر الخوذيري"
       }
     ]
   },
@@ -455,35 +484,6 @@
     ]
   },
   {
-    "id": "4813619",
-    "url": "https://www.ysscores.com/ar/match/4813619/Fulham-FC-vs-Everton-FC",
-    "info": {
-      "championship": "الدوري الإنجليزي الممتاز",
-      "round": "25 - مباراة الاياب",
-      "stadium": "كرافن كوتيج",
-      "time": "16:00",
-      "date": "السبت 07-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "فولهام",
-        "logo": "https://imgs.ysscores.com/teams/128/4711690118927.png"
-      },
-      "away": {
-        "name": "إيفرتون",
-        "logo": "https://imgs.ysscores.com/teams/128/8461690118694.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "عامر الخوذيري"
-      }
-    ]
-  },
-  {
     "id": "4813618",
     "url": "https://www.ysscores.com/ar/match/4813618/Burnley-FC-vs-West-Ham-United",
     "info": {
@@ -509,35 +509,6 @@
       {
         "channel": "بي إن سبورت 6",
         "commentator": "أحمد عبده"
-      }
-    ]
-  },
-  {
-    "id": "4813624",
-    "url": "https://www.ysscores.com/ar/match/4813624/Wolverhampton-Wanderers-vs-Chelsea-FC",
-    "info": {
-      "championship": "الدوري الإنجليزي الممتاز",
-      "round": "25 - مباراة الاياب",
-      "stadium": "استاد مولينيو",
-      "time": "16:00",
-      "date": "السبت 07-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "وولفرهامبتون",
-        "logo": "https://imgs.ysscores.com/teams/128/9631690118479.png"
-      },
-      "away": {
-        "name": "تشيلسي",
-        "logo": "https://imgs.ysscores.com/teams/128/2571690118280.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "عبدالله الغامدي"
       }
     ]
   },
@@ -575,31 +546,31 @@
     ]
   },
   {
-    "id": "4813623",
-    "url": "https://www.ysscores.com/ar/match/4813623/Newcastle-United-vs-Brentford-FC",
+    "id": "4813624",
+    "url": "https://www.ysscores.com/ar/match/4813624/Wolverhampton-Wanderers-vs-Chelsea-FC",
     "info": {
       "championship": "الدوري الإنجليزي الممتاز",
       "round": "25 - مباراة الاياب",
-      "stadium": "سانت جيمس بارك",
-      "time": "18:30",
+      "stadium": "استاد مولينيو",
+      "time": "16:00",
       "date": "السبت 07-02-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "نيوكاسل",
-        "logo": "https://imgs.ysscores.com/teams/128/3721690119405.png"
+        "name": "وولفرهامبتون",
+        "logo": "https://imgs.ysscores.com/teams/128/9631690118479.png"
       },
       "away": {
-        "name": "برينتفورد",
-        "logo": "https://imgs.ysscores.com/teams/128/4791690118957.png"
+        "name": "تشيلسي",
+        "logo": "https://imgs.ysscores.com/teams/128/2571690118280.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 1",
-        "commentator": "باسم الزير"
+        "channel": "بي إن سبورت 3",
+        "commentator": "عبدالله الغامدي"
       }
     ]
   },
@@ -629,6 +600,68 @@
       {
         "channel": "بي إن سبورت 4",
         "commentator": "أحمد البلوشي"
+      }
+    ]
+  },
+  {
+    "id": "4813623",
+    "url": "https://www.ysscores.com/ar/match/4813623/Newcastle-United-vs-Brentford-FC",
+    "info": {
+      "championship": "الدوري الإنجليزي الممتاز",
+      "round": "25 - مباراة الاياب",
+      "stadium": "سانت جيمس بارك",
+      "time": "18:30",
+      "date": "السبت 07-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "نيوكاسل",
+        "logo": "https://imgs.ysscores.com/teams/128/3721690119405.png"
+      },
+      "away": {
+        "name": "برينتفورد",
+        "logo": "https://imgs.ysscores.com/teams/128/4791690118957.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "باسم الزير"
+      }
+    ]
+  },
+  {
+    "id": "4803273",
+    "url": "https://www.ysscores.com/ar/match/4803273/ACF-Fiorentina-vs-Torino-FC",
+    "info": {
+      "championship": "الدوري الإيطالي",
+      "round": "24 - مباراة الاياب",
+      "stadium": "أرتيميو فرانكي",
+      "time": "20:45",
+      "date": "السبت 07-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "فيورنتينا",
+        "logo": "https://imgs.ysscores.com/teams/128/1231690283002.png"
+      },
+      "away": {
+        "name": "تورينو",
+        "logo": "https://imgs.ysscores.com/teams/128/7501690283003.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "StarzPlay",
+        "commentator": "حازم عبدالسلام"
+      },
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "حازم عبدالسلام"
       }
     ]
   },
@@ -666,39 +699,6 @@
       {
         "channel": "منصة شاشا",
         "commentator": "هاني الشهري"
-      }
-    ]
-  },
-  {
-    "id": "4803273",
-    "url": "https://www.ysscores.com/ar/match/4803273/ACF-Fiorentina-vs-Torino-FC",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "24 - مباراة الاياب",
-      "stadium": "أرتيميو فرانكي",
-      "time": "20:45",
-      "date": "السبت 07-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "فيورنتينا",
-        "logo": "https://imgs.ysscores.com/teams/128/1231690283002.png"
-      },
-      "away": {
-        "name": "تورينو",
-        "logo": "https://imgs.ysscores.com/teams/128/7501690283003.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "StarzPlay",
-        "commentator": "حازم عبدالسلام"
-      },
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "حازم عبدالسلام"
       }
     ]
   },
@@ -1331,30 +1331,6 @@
     "channels": []
   },
   {
-    "id": "10769776",
-    "url": "https://www.ysscores.com/ar/match/10769776/Al-Borouq-FC-vs-Union-Military-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "9 - مباراة الذهاب",
-      "stadium": "الوادي الكبير",
-      "time": "14:00",
-      "date": "السبت 07-02-2026",
-      "current_score": "0 - 1",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "البروق",
-        "logo": "https://imgs.ysscores.com/teams/128/17656432533307.png"
-      },
-      "away": {
-        "name": "العسكري",
-        "logo": "https://imgs.ysscores.com/teams/128/17660522935721.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "32419124",
     "url": "https://www.ysscores.com/ar/match/32419124/Al-Soqour-Tobruk-vs-Al-Hilal-SC",
     "info": {
@@ -1398,6 +1374,30 @@
       "away": {
         "name": "الوطن",
         "logo": "https://imgs.ysscores.com/teams/128/17656564492479.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "10769776",
+    "url": "https://www.ysscores.com/ar/match/10769776/Al-Borouq-FC-vs-Union-Military-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "9 - مباراة الذهاب",
+      "stadium": "الوادي الكبير",
+      "time": "14:00",
+      "date": "السبت 07-02-2026",
+      "current_score": "0 - 1",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "البروق",
+        "logo": "https://imgs.ysscores.com/teams/128/17656432533307.png"
+      },
+      "away": {
+        "name": "العسكري",
+        "logo": "https://imgs.ysscores.com/teams/128/17660522935721.png"
       }
     },
     "channels": []
@@ -1658,35 +1658,6 @@
     "channels": []
   },
   {
-    "id": "5169114",
-    "url": "https://www.ysscores.com/ar/match/5169114/Etoile-Sportive-du-Sahel-vs-US-Monastir",
-    "info": {
-      "championship": "الرابطة التونسية لكرة القدم",
-      "round": "20 - مباراة الاياب",
-      "stadium": "الملعب الأولمبي بسوسة",
-      "time": "14:00",
-      "date": "السبت 07-02-2026",
-      "current_score": "1 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "النجم الساحلي",
-        "logo": "https://imgs.ysscores.com/teams/128/1161692205578.png"
-      },
-      "away": {
-        "name": "المنستيري",
-        "logo": "https://imgs.ysscores.com/teams/128/9111692796285.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الوطنية 1",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5169115",
     "url": "https://www.ysscores.com/ar/match/5169115/Olympique-Beja-vs-AS-Soliman",
     "info": {
@@ -1711,6 +1682,35 @@
     "channels": [
       {
         "channel": "الوطنية 2",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5169114",
+    "url": "https://www.ysscores.com/ar/match/5169114/Etoile-Sportive-du-Sahel-vs-US-Monastir",
+    "info": {
+      "championship": "الرابطة التونسية لكرة القدم",
+      "round": "20 - مباراة الاياب",
+      "stadium": "الملعب الأولمبي بسوسة",
+      "time": "14:00",
+      "date": "السبت 07-02-2026",
+      "current_score": "1 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "النجم الساحلي",
+        "logo": "https://imgs.ysscores.com/teams/128/1161692205578.png"
+      },
+      "away": {
+        "name": "المنستيري",
+        "logo": "https://imgs.ysscores.com/teams/128/9111692796285.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الوطنية 1",
         "commentator": "غير مدرج"
       }
     ]
@@ -2062,30 +2062,6 @@
     ]
   },
   {
-    "id": "4825402",
-    "url": "https://www.ysscores.com/ar/match/4825402/Southampton-FC-vs-Watford-FC",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "31 - مباراة الاياب",
-      "stadium": "سانت ماري",
-      "time": "13:31",
-      "date": "السبت 07-02-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ساوثهامبتون",
-        "logo": "https://imgs.ysscores.com/teams/128/3521690370525.png"
-      },
-      "away": {
-        "name": "واتفورد",
-        "logo": "https://imgs.ysscores.com/teams/128/3341690370541.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4825396",
     "url": "https://www.ysscores.com/ar/match/4825396/Coventry-City-vs-Oxford-United",
     "info": {
@@ -2134,6 +2110,30 @@
       "away": {
         "name": "بلاكبيرن روفرز",
         "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825402",
+    "url": "https://www.ysscores.com/ar/match/4825402/Southampton-FC-vs-Watford-FC",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "31 - مباراة الاياب",
+      "stadium": "سانت ماري",
+      "time": "13:31",
+      "date": "السبت 07-02-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ساوثهامبتون",
+        "logo": "https://imgs.ysscores.com/teams/128/3521690370525.png"
+      },
+      "away": {
+        "name": "واتفورد",
+        "logo": "https://imgs.ysscores.com/teams/128/3341690370541.png"
       }
     },
     "channels": []
@@ -2264,6 +2264,30 @@
     ]
   },
   {
+    "id": "5165021",
+    "url": "https://www.ysscores.com/ar/match/5165021/Bahla-Club-vs-Samail-SC",
+    "info": {
+      "championship": "دوري المحترفين العماني",
+      "round": "13 - مباراة الذهاب",
+      "stadium": "المجمع الرياضي بنزوي",
+      "time": "16:45",
+      "date": "السبت 07-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "بهلاء",
+        "logo": "https://imgs.ysscores.com/teams/128/3291691931416.png"
+      },
+      "away": {
+        "name": "سمائل",
+        "logo": "https://imgs.ysscores.com/teams/128/7331753867950.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5103891",
     "url": "https://www.ysscores.com/ar/match/5103891/Oman-Club-vs-Al-Rustaq-Club",
     "info": {
@@ -2293,30 +2317,6 @@
     ]
   },
   {
-    "id": "5165021",
-    "url": "https://www.ysscores.com/ar/match/5165021/Bahla-Club-vs-Samail-SC",
-    "info": {
-      "championship": "دوري المحترفين العماني",
-      "round": "13 - مباراة الذهاب",
-      "stadium": "المجمع الرياضي بنزوي",
-      "time": "16:45",
-      "date": "السبت 07-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "بهلاء",
-        "logo": "https://imgs.ysscores.com/teams/128/3291691931416.png"
-      },
-      "away": {
-        "name": "سمائل",
-        "logo": "https://imgs.ysscores.com/teams/128/7331753867950.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5103887",
     "url": "https://www.ysscores.com/ar/match/5103887/Ibri-Club-vs-Al-Seeb-Club",
     "info": {
@@ -2325,8 +2325,8 @@
       "stadium": "مجمع البريمي (النهضة)",
       "time": "14:25",
       "date": "السبت 07-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
