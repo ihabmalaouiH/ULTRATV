@@ -178,35 +178,6 @@
     ]
   },
   {
-    "id": "4829501",
-    "url": "https://www.ysscores.com/ar/match/4829501/FC-St.-Pauli-vs-VfB-Stuttgart",
-    "info": {
-      "championship": "الدوري الألماني",
-      "round": "21 - مباراة الاياب",
-      "stadium": "ملعب ميلرنتور",
-      "time": "15:30",
-      "date": "السبت 07-02-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "سانت باولي",
-        "logo": "https://imgs.ysscores.com/teams/128/6091690370514.png"
-      },
-      "away": {
-        "name": "شتوتجارت",
-        "logo": "https://imgs.ysscores.com/teams/128/8731690288819.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "شاهد - VIP | رياضة",
-        "commentator": "عبد العزيز الزيد"
-      }
-    ]
-  },
-  {
     "id": "4829496",
     "url": "https://www.ysscores.com/ar/match/4829496/Borussia-Mönchengladbach-vs-Bayer-04-Leverkusen",
     "info": {
@@ -236,6 +207,35 @@
       {
         "channel": "شاهد - VIP | رياضة",
         "commentator": "أحمد النفيسة"
+      }
+    ]
+  },
+  {
+    "id": "4829501",
+    "url": "https://www.ysscores.com/ar/match/4829501/FC-St.-Pauli-vs-VfB-Stuttgart",
+    "info": {
+      "championship": "الدوري الألماني",
+      "round": "21 - مباراة الاياب",
+      "stadium": "ملعب ميلرنتور",
+      "time": "15:30",
+      "date": "السبت 07-02-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "سانت باولي",
+        "logo": "https://imgs.ysscores.com/teams/128/6091690370514.png"
+      },
+      "away": {
+        "name": "شتوتجارت",
+        "logo": "https://imgs.ysscores.com/teams/128/8731690288819.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "شاهد - VIP | رياضة",
+        "commentator": "عبد العزيز الزيد"
       }
     ]
   },
@@ -306,7 +306,7 @@
       "stadium": "سبوتيفاي كامب نو",
       "time": "16:15",
       "date": "السبت 07-02-2026",
-      "current_score": "2 - 0",
+      "current_score": "3 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -365,7 +365,7 @@
       "time": "17:00",
       "date": "السبت 07-02-2026",
       "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -674,8 +674,8 @@
       "stadium": "لويجي فيراريس",
       "time": "18:00",
       "date": "السبت 07-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -712,7 +712,7 @@
       "time": "17:00",
       "date": "السبت 07-02-2026",
       "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -1355,30 +1355,6 @@
     "channels": []
   },
   {
-    "id": "32419124",
-    "url": "https://www.ysscores.com/ar/match/32419124/Al-Soqour-Tobruk-vs-Al-Hilal-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "9 - مباراة الذهاب",
-      "stadium": "ملعب طبرق البلدي",
-      "time": "14:00",
-      "date": "السبت 07-02-2026",
-      "current_score": "1 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الصقور",
-        "logo": "https://imgs.ysscores.com/teams/128/17656577952914.png"
-      },
-      "away": {
-        "name": "الهلال",
-        "logo": "https://imgs.ysscores.com/teams/128/7131696628343.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111142",
     "url": "https://www.ysscores.com/ar/match/5111142/Al-Qadisiyah-Bani-Walid-vs-Al-Watan-SC",
     "info": {
@@ -1398,6 +1374,30 @@
       "away": {
         "name": "الوطن",
         "logo": "https://imgs.ysscores.com/teams/128/17656564492479.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "32419124",
+    "url": "https://www.ysscores.com/ar/match/32419124/Al-Soqour-Tobruk-vs-Al-Hilal-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "9 - مباراة الذهاب",
+      "stadium": "ملعب طبرق البلدي",
+      "time": "14:00",
+      "date": "السبت 07-02-2026",
+      "current_score": "1 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الصقور",
+        "logo": "https://imgs.ysscores.com/teams/128/17656577952914.png"
+      },
+      "away": {
+        "name": "الهلال",
+        "logo": "https://imgs.ysscores.com/teams/128/7131696628343.png"
       }
     },
     "channels": []
@@ -1435,8 +1435,8 @@
       "stadium": "استاد المدينة",
       "time": "18:00",
       "date": "السبت 07-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -1643,7 +1643,7 @@
       "time": "16:00",
       "date": "السبت 07-02-2026",
       "current_score": "1 - 4",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1942,30 +1942,6 @@
     "channels": []
   },
   {
-    "id": "4825394",
-    "url": "https://www.ysscores.com/ar/match/4825394/Birmingham-City-vs-Leicester-City",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "31 - مباراة الاياب",
-      "stadium": "سانت أندراوس",
-      "time": "16:01",
-      "date": "السبت 07-02-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "برمنغهام",
-        "logo": "https://imgs.ysscores.com/teams/128/3121690370534.png"
-      },
-      "away": {
-        "name": "ليستر سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/5531690711879.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4825405",
     "url": "https://www.ysscores.com/ar/match/4825405/Wrexham-AFC-vs-Millwall-FC",
     "info": {
@@ -1990,6 +1966,30 @@
     "channels": []
   },
   {
+    "id": "4825394",
+    "url": "https://www.ysscores.com/ar/match/4825394/Birmingham-City-vs-Leicester-City",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "31 - مباراة الاياب",
+      "stadium": "سانت أندراوس",
+      "time": "16:01",
+      "date": "السبت 07-02-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "برمنغهام",
+        "logo": "https://imgs.ysscores.com/teams/128/3121690370534.png"
+      },
+      "away": {
+        "name": "ليستر سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/5531690711879.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4825400",
     "url": "https://www.ysscores.com/ar/match/4825400/Preston-North-End-vs-Portsmouth-FC",
     "info": {
@@ -2009,30 +2009,6 @@
       "away": {
         "name": "بورتسموث",
         "logo": "https://imgs.ysscores.com/teams/128/5401690370525.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4825398",
-    "url": "https://www.ysscores.com/ar/match/4825398/Hull-City-vs-Bristol-City",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "31 - مباراة الاياب",
-      "stadium": "استاد ام كي ام",
-      "time": "16:01",
-      "date": "السبت 07-02-2026",
-      "current_score": "2 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "هال سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/3801690370535.png"
-      },
-      "away": {
-        "name": "بريستول",
-        "logo": "https://imgs.ysscores.com/teams/128/4621690370523.png"
       }
     },
     "channels": []
@@ -2067,6 +2043,30 @@
     ]
   },
   {
+    "id": "4825398",
+    "url": "https://www.ysscores.com/ar/match/4825398/Hull-City-vs-Bristol-City",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "31 - مباراة الاياب",
+      "stadium": "استاد ام كي ام",
+      "time": "16:01",
+      "date": "السبت 07-02-2026",
+      "current_score": "2 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "هال سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/3801690370535.png"
+      },
+      "away": {
+        "name": "بريستول",
+        "logo": "https://imgs.ysscores.com/teams/128/4621690370523.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4825402",
     "url": "https://www.ysscores.com/ar/match/4825402/Southampton-FC-vs-Watford-FC",
     "info": {
@@ -2086,30 +2086,6 @@
       "away": {
         "name": "واتفورد",
         "logo": "https://imgs.ysscores.com/teams/128/3341690370541.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4825399",
-    "url": "https://www.ysscores.com/ar/match/4825399/Norwich-City-vs-Blackburn-Rovers",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "31 - مباراة الاياب",
-      "stadium": "كارو رود",
-      "time": "13:31",
-      "date": "السبت 07-02-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "نوريتش سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/5201690370543.png"
-      },
-      "away": {
-        "name": "بلاكبيرن روفرز",
-        "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
       }
     },
     "channels": []
@@ -2142,6 +2118,30 @@
         "commentator": "محمد نضال"
       }
     ]
+  },
+  {
+    "id": "4825399",
+    "url": "https://www.ysscores.com/ar/match/4825399/Norwich-City-vs-Blackburn-Rovers",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "31 - مباراة الاياب",
+      "stadium": "كارو رود",
+      "time": "13:31",
+      "date": "السبت 07-02-2026",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "نوريتش سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/5201690370543.png"
+      },
+      "away": {
+        "name": "بلاكبيرن روفرز",
+        "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "5101924",
