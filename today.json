@@ -58,35 +58,6 @@
     ]
   },
   {
-    "id": "4829500",
-    "url": "https://www.ysscores.com/ar/match/4829500/1.FSV-Mainz-05-vs-FC-Augsburg",
-    "info": {
-      "championship": "الدوري الألماني",
-      "round": "21 - مباراة الاياب",
-      "stadium": "أوبل أرينا",
-      "time": "15:30",
-      "date": "السبت 07-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ماينتس",
-        "logo": "https://imgs.ysscores.com/teams/128/8131690288819.png"
-      },
-      "away": {
-        "name": "أوجسبورغ",
-        "logo": "https://imgs.ysscores.com/teams/128/7221690288817.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "شاهد - VIP | رياضة",
-        "commentator": "عبدالله الشهري"
-      }
-    ]
-  },
-  {
     "id": "4829499",
     "url": "https://www.ysscores.com/ar/match/4829499/1.FC-Heidenheim-1846-vs-Hamburger-SV",
     "info": {
@@ -112,6 +83,35 @@
       {
         "channel": "شاهد - VIP | رياضة",
         "commentator": "نور الدين آيت علي"
+      }
+    ]
+  },
+  {
+    "id": "4829500",
+    "url": "https://www.ysscores.com/ar/match/4829500/1.FSV-Mainz-05-vs-FC-Augsburg",
+    "info": {
+      "championship": "الدوري الألماني",
+      "round": "21 - مباراة الاياب",
+      "stadium": "أوبل أرينا",
+      "time": "15:30",
+      "date": "السبت 07-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ماينتس",
+        "logo": "https://imgs.ysscores.com/teams/128/8131690288819.png"
+      },
+      "away": {
+        "name": "أوجسبورغ",
+        "logo": "https://imgs.ysscores.com/teams/128/7221690288817.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "شاهد - VIP | رياضة",
+        "commentator": "عبدالله الشهري"
       }
     ]
   },
@@ -1287,7 +1287,7 @@
       "time": "14:40",
       "date": "السبت 07-02-2026",
       "current_score": "0 - 1",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1331,54 +1331,6 @@
     "channels": []
   },
   {
-    "id": "32419124",
-    "url": "https://www.ysscores.com/ar/match/32419124/Al-Soqour-Tobruk-vs-Al-Hilal-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "9 - مباراة الذهاب",
-      "stadium": "ملعب طبرق البلدي",
-      "time": "14:00",
-      "date": "السبت 07-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "الصقور",
-        "logo": "https://imgs.ysscores.com/teams/128/17656577952914.png"
-      },
-      "away": {
-        "name": "الهلال",
-        "logo": "https://imgs.ysscores.com/teams/128/7131696628343.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5111142",
-    "url": "https://www.ysscores.com/ar/match/5111142/Al-Qadisiyah-Bani-Walid-vs-Al-Watan-SC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "9 - مباراة الذهاب",
-      "stadium": "ملعب الزاوية",
-      "time": "14:30",
-      "date": "السبت 07-02-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "القادسية",
-        "logo": "https://imgs.ysscores.com/teams/128/17656592901185.png"
-      },
-      "away": {
-        "name": "الوطن",
-        "logo": "https://imgs.ysscores.com/teams/128/17656564492479.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "10769776",
     "url": "https://www.ysscores.com/ar/match/10769776/Al-Borouq-FC-vs-Union-Military-SC",
     "info": {
@@ -1398,6 +1350,54 @@
       "away": {
         "name": "العسكري",
         "logo": "https://imgs.ysscores.com/teams/128/17660522935721.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111142",
+    "url": "https://www.ysscores.com/ar/match/5111142/Al-Qadisiyah-Bani-Walid-vs-Al-Watan-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "9 - مباراة الذهاب",
+      "stadium": "ملعب الزاوية",
+      "time": "14:30",
+      "date": "السبت 07-02-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "القادسية",
+        "logo": "https://imgs.ysscores.com/teams/128/17656592901185.png"
+      },
+      "away": {
+        "name": "الوطن",
+        "logo": "https://imgs.ysscores.com/teams/128/17656564492479.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "32419124",
+    "url": "https://www.ysscores.com/ar/match/32419124/Al-Soqour-Tobruk-vs-Al-Hilal-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "9 - مباراة الذهاب",
+      "stadium": "ملعب طبرق البلدي",
+      "time": "14:00",
+      "date": "السبت 07-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "الصقور",
+        "logo": "https://imgs.ysscores.com/teams/128/17656577952914.png"
+      },
+      "away": {
+        "name": "الهلال",
+        "logo": "https://imgs.ysscores.com/teams/128/7131696628343.png"
       }
     },
     "channels": []
@@ -1485,30 +1485,6 @@
     ]
   },
   {
-    "id": "4815428",
-    "url": "https://www.ysscores.com/ar/match/4815428/Twente-Enschede-FC-vs-SC-Heerenveen",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "22 - مباراة الاياب",
-      "stadium": "دي غرولش فيست",
-      "time": "20:00",
-      "date": "السبت 07-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "تفينتي أنشخيده",
-        "logo": "https://imgs.ysscores.com/teams/128/7451690996868.png"
-      },
-      "away": {
-        "name": "هيرينفين",
-        "logo": "https://imgs.ysscores.com/teams/128/6771725055096.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4815427",
     "url": "https://www.ysscores.com/ar/match/4815427/Fortuna-Sittard-vs-Sparta-Rotterdam",
     "info": {
@@ -1528,6 +1504,30 @@
       "away": {
         "name": "روتردام",
         "logo": "https://imgs.ysscores.com/teams/128/111690824096.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4815428",
+    "url": "https://www.ysscores.com/ar/match/4815428/Twente-Enschede-FC-vs-SC-Heerenveen",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "22 - مباراة الاياب",
+      "stadium": "دي غرولش فيست",
+      "time": "20:00",
+      "date": "السبت 07-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "تفينتي أنشخيده",
+        "logo": "https://imgs.ysscores.com/teams/128/7451690996868.png"
+      },
+      "away": {
+        "name": "هيرينفين",
+        "logo": "https://imgs.ysscores.com/teams/128/6771725055096.png"
       }
     },
     "channels": []
@@ -1586,30 +1586,6 @@
     ]
   },
   {
-    "id": "4859135",
-    "url": "https://www.ysscores.com/ar/match/4859135/AE-Kifisias-vs-Atromitos-Athens",
-    "info": {
-      "championship": "الدوري اليوناني",
-      "round": "20 - مباراة الاياب",
-      "stadium": "ملعب نيابولي",
-      "time": "19:00",
-      "date": "السبت 07-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "كيفيسياس",
-        "logo": "https://imgs.ysscores.com/teams/128/7671718348243.png"
-      },
-      "away": {
-        "name": "أتروميتوس",
-        "logo": "https://imgs.ysscores.com/teams/128/6741739396654.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4859134",
     "url": "https://www.ysscores.com/ar/match/4859134/Asteras-Aktor-vs-Volos-NPS",
     "info": {
@@ -1629,6 +1605,30 @@
       "away": {
         "name": "فولوس",
         "logo": "https://imgs.ysscores.com/teams/128/3431754000844.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4859135",
+    "url": "https://www.ysscores.com/ar/match/4859135/AE-Kifisias-vs-Atromitos-Athens",
+    "info": {
+      "championship": "الدوري اليوناني",
+      "round": "20 - مباراة الاياب",
+      "stadium": "ملعب نيابولي",
+      "time": "19:00",
+      "date": "السبت 07-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "كيفيسياس",
+        "logo": "https://imgs.ysscores.com/teams/128/7671718348243.png"
+      },
+      "away": {
+        "name": "أتروميتوس",
+        "logo": "https://imgs.ysscores.com/teams/128/6741739396654.png"
       }
     },
     "channels": []
@@ -2096,30 +2096,6 @@
     ]
   },
   {
-    "id": "4825399",
-    "url": "https://www.ysscores.com/ar/match/4825399/Norwich-City-vs-Blackburn-Rovers",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "31 - مباراة الاياب",
-      "stadium": "كارو رود",
-      "time": "13:31",
-      "date": "السبت 07-02-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "نوريتش سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/5201690370543.png"
-      },
-      "away": {
-        "name": "بلاكبيرن روفرز",
-        "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4825402",
     "url": "https://www.ysscores.com/ar/match/4825402/Southampton-FC-vs-Watford-FC",
     "info": {
@@ -2139,6 +2115,30 @@
       "away": {
         "name": "واتفورد",
         "logo": "https://imgs.ysscores.com/teams/128/3341690370541.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825399",
+    "url": "https://www.ysscores.com/ar/match/4825399/Norwich-City-vs-Blackburn-Rovers",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "31 - مباراة الاياب",
+      "stadium": "كارو رود",
+      "time": "13:31",
+      "date": "السبت 07-02-2026",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "نوريتش سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/5201690370543.png"
+      },
+      "away": {
+        "name": "بلاكبيرن روفرز",
+        "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
       }
     },
     "channels": []
