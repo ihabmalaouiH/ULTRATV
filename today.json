@@ -833,7 +833,7 @@
       "time": "17:15",
       "date": "الأحد 08-02-2026",
       "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -1253,30 +1253,6 @@
     "channels": []
   },
   {
-    "id": "4859133",
-    "url": "https://www.ysscores.com/ar/match/4859133/Aris-Thessaloniki-vs-PAOK-Thessaloniki",
-    "info": {
-      "championship": "الدوري اليوناني",
-      "round": "20 - مباراة الاياب",
-      "stadium": "ملعب كليانثيس فيكيليديس",
-      "time": "18:00",
-      "date": "الأحد 08-02-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "أريس",
-        "logo": "https://imgs.ysscores.com/teams/128/9711721769286.png"
-      },
-      "away": {
-        "name": "باوك",
-        "logo": "https://imgs.ysscores.com/teams/128/2801690370532.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4859137",
     "url": "https://www.ysscores.com/ar/match/4859137/Olympiacos-Piraeus-vs-Panathinaikos-FC",
     "info": {
@@ -1296,6 +1272,30 @@
       "away": {
         "name": "باناثينايكوس",
         "logo": "https://imgs.ysscores.com/teams/128/8301690821553.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4859133",
+    "url": "https://www.ysscores.com/ar/match/4859133/Aris-Thessaloniki-vs-PAOK-Thessaloniki",
+    "info": {
+      "championship": "الدوري اليوناني",
+      "round": "20 - مباراة الاياب",
+      "stadium": "ملعب كليانثيس فيكيليديس",
+      "time": "18:00",
+      "date": "الأحد 08-02-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "أريس",
+        "logo": "https://imgs.ysscores.com/teams/128/9711721769286.png"
+      },
+      "away": {
+        "name": "باوك",
+        "logo": "https://imgs.ysscores.com/teams/128/2801690370532.png"
       }
     },
     "channels": []
@@ -2016,6 +2016,35 @@
     ]
   },
   {
+    "id": "5045274",
+    "url": "https://www.ysscores.com/ar/match/5045274/FC-San-Pedro-vs-USM-Alger",
+    "info": {
+      "championship": "كأس الكونفيدرالية",
+      "round": "5 - مباراة الاياب",
+      "stadium": "استاد لوران بوكو",
+      "time": "17:00",
+      "date": "الأحد 08-02-2026",
+      "current_score": "2 - 2",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "سان بيدرو",
+        "logo": "https://imgs.ysscores.com/teams/128/3171762182492.png"
+      },
+      "away": {
+        "name": "اتحاد العاصمة",
+        "logo": "https://imgs.ysscores.com/teams/128/9611695834503.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "محمد المبروكي"
+      }
+    ]
+  },
+  {
     "id": "5045273",
     "url": "https://www.ysscores.com/ar/match/5045273/Olympique-Safi-vs-Djoliba-AC",
     "info": {
@@ -2045,35 +2074,6 @@
       {
         "channel": "المغربية (بث أرضي)",
         "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "5045274",
-    "url": "https://www.ysscores.com/ar/match/5045274/FC-San-Pedro-vs-USM-Alger",
-    "info": {
-      "championship": "كأس الكونفيدرالية",
-      "round": "5 - مباراة الاياب",
-      "stadium": "استاد لوران بوكو",
-      "time": "17:00",
-      "date": "الأحد 08-02-2026",
-      "current_score": "2 - 2",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "سان بيدرو",
-        "logo": "https://imgs.ysscores.com/teams/128/3171762182492.png"
-      },
-      "away": {
-        "name": "اتحاد العاصمة",
-        "logo": "https://imgs.ysscores.com/teams/128/9611695834503.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "محمد المبروكي"
       }
     ]
   },
