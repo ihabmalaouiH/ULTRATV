@@ -669,7 +669,7 @@
       "time": "15:00",
       "date": "الأحد 08-02-2026",
       "current_score": "0 - 3",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -896,7 +896,7 @@
       "time": "15:00",
       "date": "الأحد 08-02-2026",
       "current_score": "0 - 0",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -914,30 +914,6 @@
         "commentator": "أحمد البلوشي"
       }
     ]
-  },
-  {
-    "id": "5111146",
-    "url": "https://www.ysscores.com/ar/match/5111146/Libyan-Stadium-vs-Al-Dahra-Tripoli-FC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "9 - مباراة الذهاب",
-      "stadium": "ملعب النهر الصناعي",
-      "time": "18:00",
-      "date": "الأحد 08-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الملعب الليبي",
-        "logo": "https://imgs.ysscores.com/teams/128/17656589037683.png"
-      },
-      "away": {
-        "name": "الظهرة",
-        "logo": "https://imgs.ysscores.com/teams/128/17656551628632.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "75494568",
@@ -959,6 +935,30 @@
       "away": {
         "name": "الصداقة",
         "logo": "https://imgs.ysscores.com/teams/128/17656583462234.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5111146",
+    "url": "https://www.ysscores.com/ar/match/5111146/Libyan-Stadium-vs-Al-Dahra-Tripoli-FC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "9 - مباراة الذهاب",
+      "stadium": "ملعب النهر الصناعي",
+      "time": "18:00",
+      "date": "الأحد 08-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الملعب الليبي",
+        "logo": "https://imgs.ysscores.com/teams/128/17656589037683.png"
+      },
+      "away": {
+        "name": "الظهرة",
+        "logo": "https://imgs.ysscores.com/teams/128/17656551628632.png"
       }
     },
     "channels": []
