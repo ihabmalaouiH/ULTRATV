@@ -108,7 +108,7 @@
       "time": "21:45",
       "date": "الاثنين 09-02-2026",
       "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -150,35 +150,6 @@
       }
     },
     "channels": []
-  },
-  {
-    "id": "4842500",
-    "url": "https://www.ysscores.com/ar/match/4842500/Kayserispor-vs-Kocaelispor",
-    "info": {
-      "championship": "الدوري التركي الممتاز",
-      "round": "21 - مباراة الاياب",
-      "stadium": "قادر هاس",
-      "time": "15:00",
-      "date": "الاثنين 09-02-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "قيصري سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/5091690128127.png"
-      },
-      "away": {
-        "name": "كوجالي",
-        "logo": "https://imgs.ysscores.com/teams/128/2131690371662.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Sports HD 1 TR",
-        "commentator": "غير مدرج"
-      }
-    ]
   },
   {
     "id": "4842497",
@@ -238,6 +209,35 @@
     "channels": [
       {
         "channel": "beIN Sports HD 2 TR",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "4842500",
+    "url": "https://www.ysscores.com/ar/match/4842500/Kayserispor-vs-Kocaelispor",
+    "info": {
+      "championship": "الدوري التركي الممتاز",
+      "round": "21 - مباراة الاياب",
+      "stadium": "قادر هاس",
+      "time": "15:00",
+      "date": "الاثنين 09-02-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "قيصري سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/5091690128127.png"
+      },
+      "away": {
+        "name": "كوجالي",
+        "logo": "https://imgs.ysscores.com/teams/128/2131690371662.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Sports HD 1 TR",
         "commentator": "غير مدرج"
       }
     ]
@@ -339,39 +339,6 @@
     "channels": []
   },
   {
-    "id": "4933497",
-    "url": "https://www.ysscores.com/ar/match/4933497/Al-Duhail-SC-vs-Sharjah-FC",
-    "info": {
-      "championship": "دوري أبطال آسيا للنخبة",
-      "round": "7",
-      "stadium": "استاد عبدالله بن خليفة",
-      "time": "17:00",
-      "date": "الاثنين 09-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الدحيل",
-        "logo": "https://imgs.ysscores.com/teams/128/3211693170386.png"
-      },
-      "away": {
-        "name": "الشارقة",
-        "logo": "https://imgs.ysscores.com/teams/128/1811690300800.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "حسن العيدروس"
-      },
-      {
-        "channel": "الكأس 6",
-        "commentator": "خالد الحدي"
-      }
-    ]
-  },
-  {
     "id": "4933498",
     "url": "https://www.ysscores.com/ar/match/4933498/Shabab-Al-Ahli-Club-vs-Al-Hilal-SFC",
     "info": {
@@ -401,6 +368,39 @@
       {
         "channel": "الكأس 7",
         "commentator": "خليل البلوشي"
+      }
+    ]
+  },
+  {
+    "id": "4933497",
+    "url": "https://www.ysscores.com/ar/match/4933497/Al-Duhail-SC-vs-Sharjah-FC",
+    "info": {
+      "championship": "دوري أبطال آسيا للنخبة",
+      "round": "7",
+      "stadium": "استاد عبدالله بن خليفة",
+      "time": "17:00",
+      "date": "الاثنين 09-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الدحيل",
+        "logo": "https://imgs.ysscores.com/teams/128/3211693170386.png"
+      },
+      "away": {
+        "name": "الشارقة",
+        "logo": "https://imgs.ysscores.com/teams/128/1811690300800.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "حسن العيدروس"
+      },
+      {
+        "channel": "الكأس 6",
+        "commentator": "خالد الحدي"
       }
     ]
   },
@@ -596,6 +596,35 @@
     ]
   },
   {
+    "id": "44075838",
+    "url": "https://www.ysscores.com/ar/match/44075838/Al-Jabalain-FC-vs-Al-Bukiryah-FC",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "21 - مباراة الاياب",
+      "stadium": "استاد الأمير عبدالعزيز بن مساعد بن جلوي",
+      "time": "14:00",
+      "date": "الاثنين 09-02-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الجبلين",
+        "logo": "https://imgs.ysscores.com/teams/128/7651691930547.png"
+      },
+      "away": {
+        "name": "البكيرية",
+        "logo": "https://imgs.ysscores.com/teams/128/8331719153467.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "مشعل الشمري"
+      }
+    ]
+  },
+  {
     "id": "30829984",
     "url": "https://www.ysscores.com/ar/match/30829984/Al-Jubail-Club-vs-Al-Orobah-FC",
     "info": {
@@ -654,35 +683,6 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "أحمد المنتشري"
-      }
-    ]
-  },
-  {
-    "id": "44075838",
-    "url": "https://www.ysscores.com/ar/match/44075838/Al-Jabalain-FC-vs-Al-Bukiryah-FC",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "21 - مباراة الاياب",
-      "stadium": "استاد الأمير عبدالعزيز بن مساعد بن جلوي",
-      "time": "14:00",
-      "date": "الاثنين 09-02-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الجبلين",
-        "logo": "https://imgs.ysscores.com/teams/128/7651691930547.png"
-      },
-      "away": {
-        "name": "البكيرية",
-        "logo": "https://imgs.ysscores.com/teams/128/8331719153467.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "مشعل الشمري"
       }
     ]
   },
@@ -753,30 +753,6 @@
     ]
   },
   {
-    "id": "4802045",
-    "url": "https://www.ysscores.com/ar/match/4802045/Vejle-Boldklub-vs-FC-Fredericia",
-    "info": {
-      "championship": "دوري السوبر الدنماركي",
-      "round": "19 - مباراة الاياب",
-      "stadium": "استاد فايله",
-      "time": "19:00",
-      "date": "الاثنين 09-02-2026",
-      "current_score": "2 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "فايله",
-        "logo": "https://imgs.ysscores.com/teams/128/3091691095893.png"
-      },
-      "away": {
-        "name": "فريديريشيا",
-        "logo": "https://imgs.ysscores.com/teams/128/6891690370524.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4802040",
     "url": "https://www.ysscores.com/ar/match/4802040/Aarhus-GF-vs-Odense-Boldklub",
     "info": {
@@ -796,6 +772,30 @@
       "away": {
         "name": "أودنسه",
         "logo": "https://imgs.ysscores.com/teams/128/9931691096090.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4802045",
+    "url": "https://www.ysscores.com/ar/match/4802045/Vejle-Boldklub-vs-FC-Fredericia",
+    "info": {
+      "championship": "دوري السوبر الدنماركي",
+      "round": "19 - مباراة الاياب",
+      "stadium": "استاد فايله",
+      "time": "19:00",
+      "date": "الاثنين 09-02-2026",
+      "current_score": "2 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "فايله",
+        "logo": "https://imgs.ysscores.com/teams/128/3091691095893.png"
+      },
+      "away": {
+        "name": "فريديريشيا",
+        "logo": "https://imgs.ysscores.com/teams/128/6891690370524.png"
       }
     },
     "channels": []
