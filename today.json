@@ -8,7 +8,7 @@
       "stadium": "لا سيراميكا",
       "time": "21:00",
       "date": "الاثنين 09-02-2026",
-      "current_score": "2 - 0",
+      "current_score": "3 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -37,7 +37,7 @@
       "stadium": "الأولمبيكو",
       "time": "20:45",
       "date": "الاثنين 09-02-2026",
-      "current_score": "1 - 0",
+      "current_score": "2 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -339,39 +339,6 @@
     "channels": []
   },
   {
-    "id": "4933498",
-    "url": "https://www.ysscores.com/ar/match/4933498/Shabab-Al-Ahli-Club-vs-Al-Hilal-SFC",
-    "info": {
-      "championship": "دوري أبطال آسيا للنخبة",
-      "round": "7",
-      "stadium": "استاد راشد بالنادي الأهلي",
-      "time": "17:00",
-      "date": "الاثنين 09-02-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "شباب الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/5261690300570.png"
-      },
-      "away": {
-        "name": "الهلال",
-        "logo": "https://imgs.ysscores.com/teams/128/8761690298716.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "أحمد البلوشي"
-      },
-      {
-        "channel": "الكأس 7",
-        "commentator": "خليل البلوشي"
-      }
-    ]
-  },
-  {
     "id": "4933495",
     "url": "https://www.ysscores.com/ar/match/4933495/Al-Wahda-FC-vs-Al-Ahli-SFC",
     "info": {
@@ -401,6 +368,39 @@
       {
         "channel": "الكأس 7",
         "commentator": "سمير اليعقوبي"
+      }
+    ]
+  },
+  {
+    "id": "4933498",
+    "url": "https://www.ysscores.com/ar/match/4933498/Shabab-Al-Ahli-Club-vs-Al-Hilal-SFC",
+    "info": {
+      "championship": "دوري أبطال آسيا للنخبة",
+      "round": "7",
+      "stadium": "استاد راشد بالنادي الأهلي",
+      "time": "17:00",
+      "date": "الاثنين 09-02-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "شباب الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/5261690300570.png"
+      },
+      "away": {
+        "name": "الهلال",
+        "logo": "https://imgs.ysscores.com/teams/128/8761690298716.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "أحمد البلوشي"
+      },
+      {
+        "channel": "الكأس 7",
+        "commentator": "خليل البلوشي"
       }
     ]
   },
@@ -495,35 +495,6 @@
     "channels": []
   },
   {
-    "id": "5101932",
-    "url": "https://www.ysscores.com/ar/match/5101932/CA-Lanús-vs-CA-Talleres",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "استاد سيوداد دي لانوس",
-      "time": "23:15",
-      "date": "الاثنين 09-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "لانوس",
-        "logo": "https://imgs.ysscores.com/teams/128/6881711750373.png"
-      },
-      "away": {
-        "name": "تاليريس",
-        "logo": "https://imgs.ysscores.com/teams/128/2661711809310.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "دبي الرياضية 1",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5101928",
     "url": "https://www.ysscores.com/ar/match/5101928/Club-Estudiantes-de-La-Plata-vs-Club-Deportivo-Riestra",
     "info": {
@@ -570,6 +541,35 @@
       }
     },
     "channels": []
+  },
+  {
+    "id": "5101932",
+    "url": "https://www.ysscores.com/ar/match/5101932/CA-Lanús-vs-CA-Talleres",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "استاد سيوداد دي لانوس",
+      "time": "23:15",
+      "date": "الاثنين 09-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "لانوس",
+        "logo": "https://imgs.ysscores.com/teams/128/6881711750373.png"
+      },
+      "away": {
+        "name": "تاليريس",
+        "logo": "https://imgs.ysscores.com/teams/128/2661711809310.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "دبي الرياضية 1",
+        "commentator": "غير مدرج"
+      }
+    ]
   },
   {
     "id": "5101925",
@@ -753,30 +753,6 @@
     ]
   },
   {
-    "id": "4802045",
-    "url": "https://www.ysscores.com/ar/match/4802045/Vejle-Boldklub-vs-FC-Fredericia",
-    "info": {
-      "championship": "دوري السوبر الدنماركي",
-      "round": "19 - مباراة الاياب",
-      "stadium": "استاد فايله",
-      "time": "19:00",
-      "date": "الاثنين 09-02-2026",
-      "current_score": "2 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "فايله",
-        "logo": "https://imgs.ysscores.com/teams/128/3091691095893.png"
-      },
-      "away": {
-        "name": "فريديريشيا",
-        "logo": "https://imgs.ysscores.com/teams/128/6891690370524.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4802040",
     "url": "https://www.ysscores.com/ar/match/4802040/Aarhus-GF-vs-Odense-Boldklub",
     "info": {
@@ -796,6 +772,30 @@
       "away": {
         "name": "أودنسه",
         "logo": "https://imgs.ysscores.com/teams/128/9931691096090.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4802045",
+    "url": "https://www.ysscores.com/ar/match/4802045/Vejle-Boldklub-vs-FC-Fredericia",
+    "info": {
+      "championship": "دوري السوبر الدنماركي",
+      "round": "19 - مباراة الاياب",
+      "stadium": "استاد فايله",
+      "time": "19:00",
+      "date": "الاثنين 09-02-2026",
+      "current_score": "2 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "فايله",
+        "logo": "https://imgs.ysscores.com/teams/128/3091691095893.png"
+      },
+      "away": {
+        "name": "فريديريشيا",
+        "logo": "https://imgs.ysscores.com/teams/128/6891690370524.png"
       }
     },
     "channels": []
