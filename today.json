@@ -243,30 +243,6 @@
     ]
   },
   {
-    "id": "5111215",
-    "url": "https://www.ysscores.com/ar/match/5111215/Olympic-Azzawiya-SC-vs-Al-Majd-SCC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "9 - مباراة الذهاب",
-      "stadium": "ملعب الزاوية",
-      "time": "14:30",
-      "date": "الاثنين 09-02-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الأولمبي",
-        "logo": "https://imgs.ysscores.com/teams/128/17656610718608.png"
-      },
-      "away": {
-        "name": "المجد",
-        "logo": "https://imgs.ysscores.com/teams/128/17656495347608.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5111217",
     "url": "https://www.ysscores.com/ar/match/5111217/Al-Shomooa-SC-vs-Abelashhar-SC",
     "info": {
@@ -291,25 +267,25 @@
     "channels": []
   },
   {
-    "id": "5111218",
-    "url": "https://www.ysscores.com/ar/match/5111218/Al-Ittihad-SC-vs-Ittihad-Gharyan-SC",
+    "id": "5111215",
+    "url": "https://www.ysscores.com/ar/match/5111215/Olympic-Azzawiya-SC-vs-Al-Majd-SCC",
     "info": {
       "championship": "الدوري الليبي الممتاز",
       "round": "9 - مباراة الذهاب",
-      "stadium": "ملعب طرابلس الدولي",
-      "time": "18:00",
+      "stadium": "ملعب الزاوية",
+      "time": "14:30",
       "date": "الاثنين 09-02-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الاتحاد",
-        "logo": "https://imgs.ysscores.com/teams/128/6541718836505.png"
+        "name": "الأولمبي",
+        "logo": "https://imgs.ysscores.com/teams/128/17656610718608.png"
       },
       "away": {
-        "name": "اتحاد غريان",
-        "logo": "https://imgs.ysscores.com/teams/128/17656442401945.png"
+        "name": "المجد",
+        "logo": "https://imgs.ysscores.com/teams/128/17656495347608.png"
       }
     },
     "channels": []
@@ -339,37 +315,28 @@
     "channels": []
   },
   {
-    "id": "4933498",
-    "url": "https://www.ysscores.com/ar/match/4933498/Shabab-Al-Ahli-Club-vs-Al-Hilal-SFC",
+    "id": "5111218",
+    "url": "https://www.ysscores.com/ar/match/5111218/Al-Ittihad-SC-vs-Ittihad-Gharyan-SC",
     "info": {
-      "championship": "دوري أبطال آسيا للنخبة",
-      "round": "7",
-      "stadium": "استاد راشد بالنادي الأهلي",
-      "time": "17:00",
+      "championship": "الدوري الليبي الممتاز",
+      "round": "9 - مباراة الذهاب",
+      "stadium": "ملعب طرابلس الدولي",
+      "time": "18:00",
       "date": "الاثنين 09-02-2026",
       "current_score": "0 - 0",
-      "match_status": "الشوط الثاني"
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
-        "name": "شباب الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/5261690300570.png"
+        "name": "الاتحاد",
+        "logo": "https://imgs.ysscores.com/teams/128/6541718836505.png"
       },
       "away": {
-        "name": "الهلال",
-        "logo": "https://imgs.ysscores.com/teams/128/8761690298716.png"
+        "name": "اتحاد غريان",
+        "logo": "https://imgs.ysscores.com/teams/128/17656442401945.png"
       }
     },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "أحمد البلوشي"
-      },
-      {
-        "channel": "الكأس 7",
-        "commentator": "خليل البلوشي"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "4933497",
@@ -401,6 +368,39 @@
       {
         "channel": "الكأس 6",
         "commentator": "خالد الحدي"
+      }
+    ]
+  },
+  {
+    "id": "4933498",
+    "url": "https://www.ysscores.com/ar/match/4933498/Shabab-Al-Ahli-Club-vs-Al-Hilal-SFC",
+    "info": {
+      "championship": "دوري أبطال آسيا للنخبة",
+      "round": "7",
+      "stadium": "استاد راشد بالنادي الأهلي",
+      "time": "17:00",
+      "date": "الاثنين 09-02-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "شباب الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/5261690300570.png"
+      },
+      "away": {
+        "name": "الهلال",
+        "logo": "https://imgs.ysscores.com/teams/128/8761690298716.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "أحمد البلوشي"
+      },
+      {
+        "channel": "الكأس 7",
+        "commentator": "خليل البلوشي"
       }
     ]
   },
@@ -519,6 +519,54 @@
     "channels": []
   },
   {
+    "id": "5101929",
+    "url": "https://www.ysscores.com/ar/match/5101929/AA-Estudiantes-(Río-Cuarto)-vs-CS-Independiente-Rivadavia",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "استاد سيوداد دي ريو كوارتو",
+      "time": "01:30",
+      "date": "الاثنين 09-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ريو كوارتو",
+        "logo": "https://imgs.ysscores.com/teams/128/17673036447889.png"
+      },
+      "away": {
+        "name": "ريفادافيا",
+        "logo": "https://imgs.ysscores.com/teams/128/2411718579396.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5101925",
+    "url": "https://www.ysscores.com/ar/match/5101925/CA-Barracas-Central-vs-Club-de-Gimnasia-y-Esgrima-La-Plata",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "استاد كلاوديو تابيا",
+      "time": "21:00",
+      "date": "الاثنين 09-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "باراكاس",
+        "logo": "https://imgs.ysscores.com/teams/128/1021717935858.png"
+      },
+      "away": {
+        "name": "جيمناسيا لابلاتا",
+        "logo": "https://imgs.ysscores.com/teams/128/8591717935654.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5101932",
     "url": "https://www.ysscores.com/ar/match/5101932/CA-Lanús-vs-CA-Talleres",
     "info": {
@@ -548,54 +596,6 @@
     ]
   },
   {
-    "id": "5101925",
-    "url": "https://www.ysscores.com/ar/match/5101925/CA-Barracas-Central-vs-Club-de-Gimnasia-y-Esgrima-La-Plata",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "استاد كلاوديو تابيا",
-      "time": "21:00",
-      "date": "الاثنين 09-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "باراكاس",
-        "logo": "https://imgs.ysscores.com/teams/128/1021717935858.png"
-      },
-      "away": {
-        "name": "جيمناسيا لابلاتا",
-        "logo": "https://imgs.ysscores.com/teams/128/8591717935654.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5101929",
-    "url": "https://www.ysscores.com/ar/match/5101929/AA-Estudiantes-(Río-Cuarto)-vs-CS-Independiente-Rivadavia",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "استاد سيوداد دي ريو كوارتو",
-      "time": "01:30",
-      "date": "الاثنين 09-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ريو كوارتو",
-        "logo": "https://imgs.ysscores.com/teams/128/17673036447889.png"
-      },
-      "away": {
-        "name": "ريفادافيا",
-        "logo": "https://imgs.ysscores.com/teams/128/2411718579396.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "44075838",
     "url": "https://www.ysscores.com/ar/match/44075838/Al-Jabalain-FC-vs-Al-Bukiryah-FC",
     "info": {
@@ -621,6 +621,35 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "مشعل الشمري"
+      }
+    ]
+  },
+  {
+    "id": "30829984",
+    "url": "https://www.ysscores.com/ar/match/30829984/Al-Jubail-Club-vs-Al-Orobah-FC",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "21 - مباراة الاياب",
+      "stadium": "استاد مدينة الأمير نايف بن عبدالعزيز الرياضية",
+      "time": "16:05",
+      "date": "الاثنين 09-02-2026",
+      "current_score": "2 - 3",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "الجبيل",
+        "logo": "https://imgs.ysscores.com/teams/128/6841751106535.png"
+      },
+      "away": {
+        "name": "العروبة",
+        "logo": "https://imgs.ysscores.com/teams/128/7481755420969.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "عبدالإله العمري"
       }
     ]
   },
@@ -654,35 +683,6 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "أحمد المنتشري"
-      }
-    ]
-  },
-  {
-    "id": "30829984",
-    "url": "https://www.ysscores.com/ar/match/30829984/Al-Jubail-Club-vs-Al-Orobah-FC",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "21 - مباراة الاياب",
-      "stadium": "استاد مدينة الأمير نايف بن عبدالعزيز الرياضية",
-      "time": "16:05",
-      "date": "الاثنين 09-02-2026",
-      "current_score": "2 - 3",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "الجبيل",
-        "logo": "https://imgs.ysscores.com/teams/128/6841751106535.png"
-      },
-      "away": {
-        "name": "العروبة",
-        "logo": "https://imgs.ysscores.com/teams/128/7481755420969.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "عبدالإله العمري"
       }
     ]
   },
@@ -753,30 +753,6 @@
     ]
   },
   {
-    "id": "4802040",
-    "url": "https://www.ysscores.com/ar/match/4802040/Aarhus-GF-vs-Odense-Boldklub",
-    "info": {
-      "championship": "دوري السوبر الدنماركي",
-      "round": "19 - مباراة الاياب",
-      "stadium": "استاد فيجلبي",
-      "time": "21:00",
-      "date": "الاثنين 09-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "اوروس",
-        "logo": "https://imgs.ysscores.com/teams/128/5081691095768.png"
-      },
-      "away": {
-        "name": "أودنسه",
-        "logo": "https://imgs.ysscores.com/teams/128/9931691096090.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4802045",
     "url": "https://www.ysscores.com/ar/match/4802045/Vejle-Boldklub-vs-FC-Fredericia",
     "info": {
@@ -796,6 +772,30 @@
       "away": {
         "name": "فريديريشيا",
         "logo": "https://imgs.ysscores.com/teams/128/6891690370524.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4802040",
+    "url": "https://www.ysscores.com/ar/match/4802040/Aarhus-GF-vs-Odense-Boldklub",
+    "info": {
+      "championship": "دوري السوبر الدنماركي",
+      "round": "19 - مباراة الاياب",
+      "stadium": "استاد فيجلبي",
+      "time": "21:00",
+      "date": "الاثنين 09-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "اوروس",
+        "logo": "https://imgs.ysscores.com/teams/128/5081691095768.png"
+      },
+      "away": {
+        "name": "أودنسه",
+        "logo": "https://imgs.ysscores.com/teams/128/9931691096090.png"
       }
     },
     "channels": []
