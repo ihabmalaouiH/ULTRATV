@@ -29,39 +29,6 @@
     ]
   },
   {
-    "id": "4803271",
-    "url": "https://www.ysscores.com/ar/match/4803271/Atalanta-BC-vs-US-Cremonese",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "24 - مباراة الاياب",
-      "stadium": "نيو بالانس أرينا",
-      "time": "18:30",
-      "date": "الاثنين 09-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أتلانتا",
-        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
-      },
-      "away": {
-        "name": "كريمونيسي",
-        "logo": "https://imgs.ysscores.com/teams/128/5011690370508.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "StarzPlay",
-        "commentator": "أحمد الحامد"
-      },
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "أحمد الحامد"
-      }
-    ]
-  },
-  {
     "id": "4803270",
     "url": "https://www.ysscores.com/ar/match/4803270/AS-Roma-vs-Cagliari-Calcio",
     "info": {
@@ -95,6 +62,39 @@
       {
         "channel": "منصة شاشا",
         "commentator": "رؤوف خليف"
+      }
+    ]
+  },
+  {
+    "id": "4803271",
+    "url": "https://www.ysscores.com/ar/match/4803271/Atalanta-BC-vs-US-Cremonese",
+    "info": {
+      "championship": "الدوري الإيطالي",
+      "round": "24 - مباراة الاياب",
+      "stadium": "نيو بالانس أرينا",
+      "time": "18:30",
+      "date": "الاثنين 09-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أتلانتا",
+        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
+      },
+      "away": {
+        "name": "كريمونيسي",
+        "logo": "https://imgs.ysscores.com/teams/128/5011690370508.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "StarzPlay",
+        "commentator": "أحمد الحامد"
+      },
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "أحمد الحامد"
       }
     ]
   },
@@ -152,12 +152,12 @@
     "channels": []
   },
   {
-    "id": "4842497",
-    "url": "https://www.ysscores.com/ar/match/4842497/Fenerbahce-vs-Genclerbirligi-Ankara",
+    "id": "4842498",
+    "url": "https://www.ysscores.com/ar/match/4842498/Gaziantep-FK-vs-Kasimpasa",
     "info": {
       "championship": "الدوري التركي الممتاز",
       "round": "21 - مباراة الاياب",
-      "stadium": "مجمع شكري سراج أوغلو الرياضي",
+      "stadium": "استاد غازي عنتاب",
       "time": "18:00",
       "date": "الاثنين 09-02-2026",
       "current_score": "- : -",
@@ -165,21 +165,17 @@
     },
     "teams": {
       "home": {
-        "name": "فنربخشة",
-        "logo": "https://imgs.ysscores.com/teams/128/681690127723.png"
+        "name": "غازي عنتاب",
+        "logo": "https://imgs.ysscores.com/teams/128/3061690127435.png"
       },
       "away": {
-        "name": "غنتشلربيرليغي",
-        "logo": "https://imgs.ysscores.com/teams/128/3881690370508.png"
+        "name": "قاسم باشا",
+        "logo": "https://imgs.ysscores.com/teams/128/8131690127512.png"
       }
     },
     "channels": [
       {
-        "channel": "تطبيق TOD",
-        "commentator": "غير مدرج"
-      },
-      {
-        "channel": "beIN Sports HD 1 TR",
+        "channel": "beIN Sports HD 2 TR",
         "commentator": "غير مدرج"
       }
     ]
@@ -214,12 +210,12 @@
     ]
   },
   {
-    "id": "4842498",
-    "url": "https://www.ysscores.com/ar/match/4842498/Gaziantep-FK-vs-Kasimpasa",
+    "id": "4842497",
+    "url": "https://www.ysscores.com/ar/match/4842497/Fenerbahce-vs-Genclerbirligi-Ankara",
     "info": {
       "championship": "الدوري التركي الممتاز",
       "round": "21 - مباراة الاياب",
-      "stadium": "استاد غازي عنتاب",
+      "stadium": "مجمع شكري سراج أوغلو الرياضي",
       "time": "18:00",
       "date": "الاثنين 09-02-2026",
       "current_score": "- : -",
@@ -227,17 +223,21 @@
     },
     "teams": {
       "home": {
-        "name": "غازي عنتاب",
-        "logo": "https://imgs.ysscores.com/teams/128/3061690127435.png"
+        "name": "فنربخشة",
+        "logo": "https://imgs.ysscores.com/teams/128/681690127723.png"
       },
       "away": {
-        "name": "قاسم باشا",
-        "logo": "https://imgs.ysscores.com/teams/128/8131690127512.png"
+        "name": "غنتشلربيرليغي",
+        "logo": "https://imgs.ysscores.com/teams/128/3881690370508.png"
       }
     },
     "channels": [
       {
-        "channel": "beIN Sports HD 2 TR",
+        "channel": "تطبيق TOD",
+        "commentator": "غير مدرج"
+      },
+      {
+        "channel": "beIN Sports HD 1 TR",
         "commentator": "غير مدرج"
       }
     ]
@@ -339,39 +339,6 @@
     "channels": []
   },
   {
-    "id": "4933495",
-    "url": "https://www.ysscores.com/ar/match/4933495/Al-Wahda-FC-vs-Al-Ahli-SFC",
-    "info": {
-      "championship": "دوري أبطال آسيا للنخبة",
-      "round": "7",
-      "stadium": "استاد آل نهيان",
-      "time": "14:45",
-      "date": "الاثنين 09-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الوحدة",
-        "logo": "https://imgs.ysscores.com/teams/128/8811690300661.png"
-      },
-      "away": {
-        "name": "الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/9091751485160.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "عامر الخوذيري"
-      },
-      {
-        "channel": "الكأس 7",
-        "commentator": "سمير اليعقوبي"
-      }
-    ]
-  },
-  {
     "id": "4933497",
     "url": "https://www.ysscores.com/ar/match/4933497/Al-Duhail-SC-vs-Sharjah-FC",
     "info": {
@@ -401,6 +368,39 @@
       {
         "channel": "الكأس 6",
         "commentator": "خالد الحدي"
+      }
+    ]
+  },
+  {
+    "id": "4933495",
+    "url": "https://www.ysscores.com/ar/match/4933495/Al-Wahda-FC-vs-Al-Ahli-SFC",
+    "info": {
+      "championship": "دوري أبطال آسيا للنخبة",
+      "round": "7",
+      "stadium": "استاد آل نهيان",
+      "time": "14:45",
+      "date": "الاثنين 09-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الوحدة",
+        "logo": "https://imgs.ysscores.com/teams/128/8811690300661.png"
+      },
+      "away": {
+        "name": "الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/9091751485160.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "عامر الخوذيري"
+      },
+      {
+        "channel": "الكأس 7",
+        "commentator": "سمير اليعقوبي"
       }
     ]
   },
@@ -495,25 +495,54 @@
     "channels": []
   },
   {
-    "id": "5101929",
-    "url": "https://www.ysscores.com/ar/match/5101929/AA-Estudiantes-(Río-Cuarto)-vs-CS-Independiente-Rivadavia",
+    "id": "5101932",
+    "url": "https://www.ysscores.com/ar/match/5101932/CA-Lanús-vs-CA-Talleres",
     "info": {
       "championship": "دوري الدرجة الأولى الأرجنتيني",
       "round": "4 - مباراة الذهاب",
-      "stadium": "استاد سيوداد دي ريو كوارتو",
-      "time": "01:30",
+      "stadium": "استاد سيوداد دي لانوس",
+      "time": "23:15",
       "date": "الاثنين 09-02-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "ريو كوارتو",
-        "logo": "https://imgs.ysscores.com/teams/128/17673036447889.png"
+        "name": "لانوس",
+        "logo": "https://imgs.ysscores.com/teams/128/6881711750373.png"
       },
       "away": {
-        "name": "ريفادافيا",
-        "logo": "https://imgs.ysscores.com/teams/128/2411718579396.png"
+        "name": "تاليريس",
+        "logo": "https://imgs.ysscores.com/teams/128/2661711809310.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "دبي الرياضية 1",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5101925",
+    "url": "https://www.ysscores.com/ar/match/5101925/CA-Barracas-Central-vs-Club-de-Gimnasia-y-Esgrima-La-Plata",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "استاد كلاوديو تابيا",
+      "time": "21:00",
+      "date": "الاثنين 09-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "باراكاس",
+        "logo": "https://imgs.ysscores.com/teams/128/1021717935858.png"
+      },
+      "away": {
+        "name": "جيمناسيا لابلاتا",
+        "logo": "https://imgs.ysscores.com/teams/128/8591717935654.png"
       }
     },
     "channels": []
@@ -543,57 +572,28 @@
     "channels": []
   },
   {
-    "id": "5101925",
-    "url": "https://www.ysscores.com/ar/match/5101925/CA-Barracas-Central-vs-Club-de-Gimnasia-y-Esgrima-La-Plata",
+    "id": "5101929",
+    "url": "https://www.ysscores.com/ar/match/5101929/AA-Estudiantes-(Río-Cuarto)-vs-CS-Independiente-Rivadavia",
     "info": {
       "championship": "دوري الدرجة الأولى الأرجنتيني",
       "round": "4 - مباراة الذهاب",
-      "stadium": "استاد كلاوديو تابيا",
-      "time": "21:00",
+      "stadium": "استاد سيوداد دي ريو كوارتو",
+      "time": "01:30",
       "date": "الاثنين 09-02-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "باراكاس",
-        "logo": "https://imgs.ysscores.com/teams/128/1021717935858.png"
+        "name": "ريو كوارتو",
+        "logo": "https://imgs.ysscores.com/teams/128/17673036447889.png"
       },
       "away": {
-        "name": "جيمناسيا لابلاتا",
-        "logo": "https://imgs.ysscores.com/teams/128/8591717935654.png"
+        "name": "ريفادافيا",
+        "logo": "https://imgs.ysscores.com/teams/128/2411718579396.png"
       }
     },
     "channels": []
-  },
-  {
-    "id": "5101932",
-    "url": "https://www.ysscores.com/ar/match/5101932/CA-Lanús-vs-CA-Talleres",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "استاد سيوداد دي لانوس",
-      "time": "23:15",
-      "date": "الاثنين 09-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "لانوس",
-        "logo": "https://imgs.ysscores.com/teams/128/6881711750373.png"
-      },
-      "away": {
-        "name": "تاليريس",
-        "logo": "https://imgs.ysscores.com/teams/128/2661711809310.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "دبي الرياضية 1",
-        "commentator": "غير مدرج"
-      }
-    ]
   },
   {
     "id": "44075838",
@@ -625,35 +625,6 @@
     ]
   },
   {
-    "id": "19243495",
-    "url": "https://www.ysscores.com/ar/match/19243495/Al-Jandal-SC-vs-Al-Diraiyah-FC",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "21 - مباراة الاياب",
-      "stadium": "استاد جامعة الجوف",
-      "time": "14:05",
-      "date": "الاثنين 09-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الجندل",
-        "logo": "https://imgs.ysscores.com/teams/128/2821724146928.png"
-      },
-      "away": {
-        "name": "الدرعية",
-        "logo": "https://imgs.ysscores.com/teams/128/6711757968926.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "أحمد المنتشري"
-      }
-    ]
-  },
-  {
     "id": "30829984",
     "url": "https://www.ysscores.com/ar/match/30829984/Al-Jubail-Club-vs-Al-Orobah-FC",
     "info": {
@@ -679,6 +650,35 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "عبدالإله العمري"
+      }
+    ]
+  },
+  {
+    "id": "19243495",
+    "url": "https://www.ysscores.com/ar/match/19243495/Al-Jandal-SC-vs-Al-Diraiyah-FC",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "21 - مباراة الاياب",
+      "stadium": "استاد جامعة الجوف",
+      "time": "14:05",
+      "date": "الاثنين 09-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الجندل",
+        "logo": "https://imgs.ysscores.com/teams/128/2821724146928.png"
+      },
+      "away": {
+        "name": "الدرعية",
+        "logo": "https://imgs.ysscores.com/teams/128/6711757968926.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "أحمد المنتشري"
       }
     ]
   },
