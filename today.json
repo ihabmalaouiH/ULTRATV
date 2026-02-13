@@ -477,30 +477,6 @@
     "channels": []
   },
   {
-    "id": "87387936",
-    "url": "https://www.ysscores.com/ar/match/87387936/Hutteen-SC-vs-Jableh-SC",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "ملعب اللاذقية البلدي",
-      "time": "13:00",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "حطين",
-        "logo": "https://imgs.ysscores.com/teams/128/8091694349674.png"
-      },
-      "away": {
-        "name": "جبلة",
-        "logo": "https://imgs.ysscores.com/teams/128/5911694349320.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "46521371",
     "url": "https://www.ysscores.com/ar/match/46521371/Khan-Shekhoun-vs-Omayya-SC",
     "info": {
@@ -520,6 +496,30 @@
       "away": {
         "name": "أمية",
         "logo": "https://imgs.ysscores.com/teams/128/17709364854946.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "87387936",
+    "url": "https://www.ysscores.com/ar/match/87387936/Hutteen-SC-vs-Jableh-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "ملعب اللاذقية البلدي",
+      "time": "13:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "حطين",
+        "logo": "https://imgs.ysscores.com/teams/128/8091694349674.png"
+      },
+      "away": {
+        "name": "جبلة",
+        "logo": "https://imgs.ysscores.com/teams/128/5911694349320.png"
       }
     },
     "channels": []
@@ -597,35 +597,6 @@
     "channels": []
   },
   {
-    "id": "92879399",
-    "url": "https://www.ysscores.com/ar/match/92879399/Al-Minaa-SC-vs-Al-Gharraf-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "18 - مباراة الذهاب",
-      "stadium": "ملعب الميناء",
-      "time": "13:00",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الميناء",
-        "logo": "https://imgs.ysscores.com/teams/128/7791709127942.png"
-      },
-      "away": {
-        "name": "الغراف",
-        "logo": "https://imgs.ysscores.com/teams/128/6311734617665.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية السريانية",
-        "commentator": "أمير علي"
-      }
-    ]
-  },
-  {
     "id": "92193622",
     "url": "https://www.ysscores.com/ar/match/92193622/Al-Quwa-Al-Jawiya-vs-Newroz-SC",
     "info": {
@@ -651,6 +622,35 @@
       {
         "channel": "العراقية الرياضية",
         "commentator": "حسين سمير"
+      }
+    ]
+  },
+  {
+    "id": "92879399",
+    "url": "https://www.ysscores.com/ar/match/92879399/Al-Minaa-SC-vs-Al-Gharraf-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "18 - مباراة الذهاب",
+      "stadium": "ملعب الميناء",
+      "time": "13:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الميناء",
+        "logo": "https://imgs.ysscores.com/teams/128/7791709127942.png"
+      },
+      "away": {
+        "name": "الغراف",
+        "logo": "https://imgs.ysscores.com/teams/128/6311734617665.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية السريانية",
+        "commentator": "أمير علي"
       }
     ]
   },
