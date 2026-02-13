@@ -124,7 +124,7 @@
       "stadium": "استاد محمد بن زايد",
       "time": "17:00",
       "date": "الجمعة 13-02-2026",
-      "current_score": "1 - 1",
+      "current_score": "2 - 1",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -481,6 +481,30 @@
     "channels": []
   },
   {
+    "id": "87387936",
+    "url": "https://www.ysscores.com/ar/match/87387936/Hutteen-SC-vs-Jableh-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "ملعب اللاذقية البلدي",
+      "time": "13:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "4 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "حطين",
+        "logo": "https://imgs.ysscores.com/teams/128/8091694349674.png"
+      },
+      "away": {
+        "name": "جبلة",
+        "logo": "https://imgs.ysscores.com/teams/128/5911694349320.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "46521371",
     "url": "https://www.ysscores.com/ar/match/46521371/Khan-Shekhoun-vs-Omayya-SC",
     "info": {
@@ -524,30 +548,6 @@
       "away": {
         "name": "الوحدة",
         "logo": "https://imgs.ysscores.com/teams/128/8991694349969.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "87387936",
-    "url": "https://www.ysscores.com/ar/match/87387936/Hutteen-SC-vs-Jableh-SC",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "ملعب اللاذقية البلدي",
-      "time": "13:00",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "4 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "حطين",
-        "logo": "https://imgs.ysscores.com/teams/128/8091694349674.png"
-      },
-      "away": {
-        "name": "جبلة",
-        "logo": "https://imgs.ysscores.com/teams/128/5911694349320.png"
       }
     },
     "channels": []
@@ -601,35 +601,6 @@
     "channels": []
   },
   {
-    "id": "19198629",
-    "url": "https://www.ysscores.com/ar/match/19198629/Al-Karkh-SC-vs-Al-Talaba-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "18 - مباراة الذهاب",
-      "stadium": "ملعب شرار حيدر",
-      "time": "15:30",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "0 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الكرخ",
-        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
-      },
-      "away": {
-        "name": "الطلبة",
-        "logo": "https://imgs.ysscores.com/teams/128/9541695656866.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية الرياضية",
-        "commentator": "علي الشمري"
-      }
-    ]
-  },
-  {
     "id": "92193622",
     "url": "https://www.ysscores.com/ar/match/92193622/Al-Quwa-Al-Jawiya-vs-Newroz-SC",
     "info": {
@@ -655,6 +626,35 @@
       {
         "channel": "العراقية الرياضية",
         "commentator": "حسين سمير"
+      }
+    ]
+  },
+  {
+    "id": "19198629",
+    "url": "https://www.ysscores.com/ar/match/19198629/Al-Karkh-SC-vs-Al-Talaba-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "18 - مباراة الذهاب",
+      "stadium": "ملعب شرار حيدر",
+      "time": "15:30",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "0 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الكرخ",
+        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
+      },
+      "away": {
+        "name": "الطلبة",
+        "logo": "https://imgs.ysscores.com/teams/128/9541695656866.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "علي الشمري"
       }
     ]
   },
