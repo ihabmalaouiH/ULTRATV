@@ -387,39 +387,6 @@
     ]
   },
   {
-    "id": "4927498",
-    "url": "https://www.ysscores.com/ar/match/4927498/Al-Ittihad-Club-vs-Al-Fayha-FC",
-    "info": {
-      "championship": "الدوري السعودي للمحترفين",
-      "round": "22 - مباراة الاياب",
-      "stadium": "ملعب الإنماء",
-      "time": "18:30",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "الاتحاد",
-        "logo": "https://imgs.ysscores.com/teams/128/2231690298782.png"
-      },
-      "away": {
-        "name": "الفيحاء",
-        "logo": "https://imgs.ysscores.com/teams/128/9981690292497.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 1",
-        "commentator": "فارس عوض"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "فارس عوض"
-      }
-    ]
-  },
-  {
     "id": "4927502",
     "url": "https://www.ysscores.com/ar/match/4927502/Al-Shabab-FC-vs-Al-Ahli-SFC",
     "info": {
@@ -457,28 +424,37 @@
     ]
   },
   {
-    "id": "70480845",
-    "url": "https://www.ysscores.com/ar/match/70480845/Taliya-SC-vs-Al-Karamah-SC",
+    "id": "4927498",
+    "url": "https://www.ysscores.com/ar/match/4927498/Al-Ittihad-Club-vs-Al-Fayha-FC",
     "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "الملعب البلدي حماة",
-      "time": "13:00",
+      "championship": "الدوري السعودي للمحترفين",
+      "round": "22 - مباراة الاياب",
+      "stadium": "ملعب الإنماء",
+      "time": "18:30",
       "date": "الجمعة 13-02-2026",
       "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
-        "name": "الطليعة",
-        "logo": "https://imgs.ysscores.com/teams/128/17648896107718.png"
+        "name": "الاتحاد",
+        "logo": "https://imgs.ysscores.com/teams/128/2231690298782.png"
       },
       "away": {
-        "name": "الكرامة",
-        "logo": "https://imgs.ysscores.com/teams/128/8581694349512.png"
+        "name": "الفيحاء",
+        "logo": "https://imgs.ysscores.com/teams/128/9981690292497.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "ثمانية 1",
+        "commentator": "فارس عوض"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "فارس عوض"
+      }
+    ]
   },
   {
     "id": "46521371",
@@ -500,6 +476,30 @@
       "away": {
         "name": "أمية",
         "logo": "https://imgs.ysscores.com/teams/128/17709364854946.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "70480845",
+    "url": "https://www.ysscores.com/ar/match/70480845/Taliya-SC-vs-Al-Karamah-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "الملعب البلدي حماة",
+      "time": "13:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الطليعة",
+        "logo": "https://imgs.ysscores.com/teams/128/17648896107718.png"
+      },
+      "away": {
+        "name": "الكرامة",
+        "logo": "https://imgs.ysscores.com/teams/128/8581694349512.png"
       }
     },
     "channels": []
@@ -601,6 +601,35 @@
     "channels": []
   },
   {
+    "id": "92879399",
+    "url": "https://www.ysscores.com/ar/match/92879399/Al-Minaa-SC-vs-Al-Gharraf-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "18 - مباراة الذهاب",
+      "stadium": "ملعب الميناء",
+      "time": "13:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الميناء",
+        "logo": "https://imgs.ysscores.com/teams/128/7791709127942.png"
+      },
+      "away": {
+        "name": "الغراف",
+        "logo": "https://imgs.ysscores.com/teams/128/6311734617665.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية السريانية",
+        "commentator": "أمير علي"
+      }
+    ]
+  },
+  {
     "id": "92193622",
     "url": "https://www.ysscores.com/ar/match/92193622/Al-Quwa-Al-Jawiya-vs-Newroz-SC",
     "info": {
@@ -655,35 +684,6 @@
       {
         "channel": "العراقية الرياضية",
         "commentator": "علي الشمري"
-      }
-    ]
-  },
-  {
-    "id": "92879399",
-    "url": "https://www.ysscores.com/ar/match/92879399/Al-Minaa-SC-vs-Al-Gharraf-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "18 - مباراة الذهاب",
-      "stadium": "ملعب الميناء",
-      "time": "13:00",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الميناء",
-        "logo": "https://imgs.ysscores.com/teams/128/7791709127942.png"
-      },
-      "away": {
-        "name": "الغراف",
-        "logo": "https://imgs.ysscores.com/teams/128/6311734617665.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية السريانية",
-        "commentator": "أمير علي"
       }
     ]
   },
