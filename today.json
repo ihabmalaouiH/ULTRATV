@@ -114,6 +114,30 @@
     ]
   },
   {
+    "id": "5103387",
+    "url": "https://www.ysscores.com/ar/match/5103387/Sport-Club-Corinthians-Paulista-vs-Red-Bull-Bragantino",
+    "info": {
+      "championship": "الدوري البرازيلي",
+      "round": "3 - مباراة الذهاب",
+      "stadium": "أرينا كورنثيانز",
+      "time": "00:00",
+      "date": "الخميس 12-02-2026",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "كورينثيانز",
+        "logo": "https://imgs.ysscores.com/teams/128/6101691418710.png"
+      },
+      "away": {
+        "name": "براغانتينو",
+        "logo": "https://imgs.ysscores.com/teams/128/4731690370563.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5103390",
     "url": "https://www.ysscores.com/ar/match/5103390/Sport-Club-Internacional-vs-Sociedade-Esportiva-Palmeiras",
     "info": {
@@ -157,30 +181,6 @@
       "away": {
         "name": "بوتافوغو",
         "logo": "https://imgs.ysscores.com/teams/128/2731691418709.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5103387",
-    "url": "https://www.ysscores.com/ar/match/5103387/Sport-Club-Corinthians-Paulista-vs-Red-Bull-Bragantino",
-    "info": {
-      "championship": "الدوري البرازيلي",
-      "round": "3 - مباراة الذهاب",
-      "stadium": "أرينا كورنثيانز",
-      "time": "00:00",
-      "date": "الخميس 12-02-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "كورينثيانز",
-        "logo": "https://imgs.ysscores.com/teams/128/6101691418710.png"
-      },
-      "away": {
-        "name": "براغانتينو",
-        "logo": "https://imgs.ysscores.com/teams/128/4731690370563.png"
       }
     },
     "channels": []
@@ -333,36 +333,12 @@
     "channels": []
   },
   {
-    "id": "4946359",
-    "url": "https://www.ysscores.com/ar/match/4946359/Qanah-FC-vs-Petrol-Asyut",
+    "id": "4946364",
+    "url": "https://www.ysscores.com/ar/match/4946364/Proxy-FC-vs-La-Viena-FC",
     "info": {
       "championship": "الدوري المصري - القسم الثاني",
       "round": "23 - مباراة الاياب",
-      "stadium": "استاد القناة",
-      "time": "13:30",
-      "date": "الخميس 12-02-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "القناة",
-        "logo": "https://imgs.ysscores.com/teams/128/5821715097236.png"
-      },
-      "away": {
-        "name": "بترول أسيوط",
-        "logo": "https://imgs.ysscores.com/teams/128/5831736286055.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4946360",
-    "url": "https://www.ysscores.com/ar/match/4946360/Sekka-El-Hadid-vs-Abo-Qir-Fertilizers",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "23 - مباراة الاياب",
-      "stadium": "استاد كلية الشرطة",
+      "stadium": "ستاد بني سويف",
       "time": "13:30",
       "date": "الخميس 12-02-2026",
       "current_score": "0 - 0",
@@ -370,15 +346,20 @@
     },
     "teams": {
       "home": {
-        "name": "السكة الحديد",
-        "logo": "https://imgs.ysscores.com/teams/128/8381696284624.png"
+        "name": "بروكسي",
+        "logo": "https://imgs.ysscores.com/teams/128/1761696284692.png"
       },
       "away": {
-        "name": "أبو قير",
-        "logo": "https://imgs.ysscores.com/teams/128/8611715098753.png"
+        "name": "لا فينا",
+        "logo": "https://imgs.ysscores.com/teams/128/1541696284458.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "ON Sport 2",
+        "commentator": "هشام فرحات"
+      }
+    ]
   },
   {
     "id": "4946363",
@@ -429,6 +410,30 @@
     "channels": []
   },
   {
+    "id": "4946359",
+    "url": "https://www.ysscores.com/ar/match/4946359/Qanah-FC-vs-Petrol-Asyut",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "23 - مباراة الاياب",
+      "stadium": "استاد القناة",
+      "time": "13:30",
+      "date": "الخميس 12-02-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "القناة",
+        "logo": "https://imgs.ysscores.com/teams/128/5821715097236.png"
+      },
+      "away": {
+        "name": "بترول أسيوط",
+        "logo": "https://imgs.ysscores.com/teams/128/5831736286055.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4946362",
     "url": "https://www.ysscores.com/ar/match/4946362/Dayrout-SC-vs-WE-Sports-Club",
     "info": {
@@ -453,12 +458,12 @@
     "channels": []
   },
   {
-    "id": "4946364",
-    "url": "https://www.ysscores.com/ar/match/4946364/Proxy-FC-vs-La-Viena-FC",
+    "id": "4946360",
+    "url": "https://www.ysscores.com/ar/match/4946360/Sekka-El-Hadid-vs-Abo-Qir-Fertilizers",
     "info": {
       "championship": "الدوري المصري - القسم الثاني",
       "round": "23 - مباراة الاياب",
-      "stadium": "ستاد بني سويف",
+      "stadium": "استاد كلية الشرطة",
       "time": "13:30",
       "date": "الخميس 12-02-2026",
       "current_score": "0 - 0",
@@ -466,20 +471,15 @@
     },
     "teams": {
       "home": {
-        "name": "بروكسي",
-        "logo": "https://imgs.ysscores.com/teams/128/1761696284692.png"
+        "name": "السكة الحديد",
+        "logo": "https://imgs.ysscores.com/teams/128/8381696284624.png"
       },
       "away": {
-        "name": "لا فينا",
-        "logo": "https://imgs.ysscores.com/teams/128/1541696284458.png"
+        "name": "أبو قير",
+        "logo": "https://imgs.ysscores.com/teams/128/8611715098753.png"
       }
     },
-    "channels": [
-      {
-        "channel": "ON Sport 2",
-        "commentator": "هشام فرحات"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "5118297",
@@ -540,30 +540,6 @@
     ]
   },
   {
-    "id": "5101952",
-    "url": "https://www.ysscores.com/ar/match/5101952/Club-Atlético-Tigre-vs-CA-Aldosivi",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "5 - مباراة الذهاب",
-      "stadium": "استاد خوسيه ديلاجيوفانا",
-      "time": "23:00",
-      "date": "الخميس 12-02-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "تيغري",
-        "logo": "https://imgs.ysscores.com/teams/128/6041717935703.png"
-      },
-      "away": {
-        "name": "إلدوسيفي",
-        "logo": "https://imgs.ysscores.com/teams/128/1451735322474.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5101939",
     "url": "https://www.ysscores.com/ar/match/5101939/AA-Argentinos-Juniors-vs-CA-River-Plate",
     "info": {
@@ -583,6 +559,30 @@
       "away": {
         "name": "ريفر بليت",
         "logo": "https://imgs.ysscores.com/teams/128/7481694223524.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5101952",
+    "url": "https://www.ysscores.com/ar/match/5101952/Club-Atlético-Tigre-vs-CA-Aldosivi",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "5 - مباراة الذهاب",
+      "stadium": "استاد خوسيه ديلاجيوفانا",
+      "time": "23:00",
+      "date": "الخميس 12-02-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "تيغري",
+        "logo": "https://imgs.ysscores.com/teams/128/6041717935703.png"
+      },
+      "away": {
+        "name": "إلدوسيفي",
+        "logo": "https://imgs.ysscores.com/teams/128/1451735322474.png"
       }
     },
     "channels": []
