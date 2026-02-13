@@ -227,8 +227,8 @@
       "stadium": "استاد ساو ميغول",
       "time": "19:30",
       "date": "الجمعة 13-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -304,7 +304,7 @@
       "stadium": "أنطاليا الجديد",
       "time": "18:00",
       "date": "الجمعة 13-02-2026",
-      "current_score": "2 - 0",
+      "current_score": "3 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -333,7 +333,7 @@
       "stadium": "علي سامي ين سبور",
       "time": "18:00",
       "date": "الجمعة 13-02-2026",
-      "current_score": "4 - 0",
+      "current_score": "4 - 1",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -601,31 +601,31 @@
     "channels": []
   },
   {
-    "id": "19198629",
-    "url": "https://www.ysscores.com/ar/match/19198629/Al-Karkh-SC-vs-Al-Talaba-SC",
+    "id": "92879399",
+    "url": "https://www.ysscores.com/ar/match/92879399/Al-Minaa-SC-vs-Al-Gharraf-SC",
     "info": {
       "championship": "الدوري العراقي",
       "round": "18 - مباراة الذهاب",
-      "stadium": "ملعب شرار حيدر",
-      "time": "15:30",
+      "stadium": "ملعب الميناء",
+      "time": "13:00",
       "date": "الجمعة 13-02-2026",
-      "current_score": "0 - 2",
+      "current_score": "0 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الكرخ",
-        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
+        "name": "الميناء",
+        "logo": "https://imgs.ysscores.com/teams/128/7791709127942.png"
       },
       "away": {
-        "name": "الطلبة",
-        "logo": "https://imgs.ysscores.com/teams/128/9541695656866.png"
+        "name": "الغراف",
+        "logo": "https://imgs.ysscores.com/teams/128/6311734617665.png"
       }
     },
     "channels": [
       {
-        "channel": "العراقية الرياضية",
-        "commentator": "علي الشمري"
+        "channel": "العراقية السريانية",
+        "commentator": "أمير علي"
       }
     ]
   },
@@ -659,31 +659,31 @@
     ]
   },
   {
-    "id": "92879399",
-    "url": "https://www.ysscores.com/ar/match/92879399/Al-Minaa-SC-vs-Al-Gharraf-SC",
+    "id": "19198629",
+    "url": "https://www.ysscores.com/ar/match/19198629/Al-Karkh-SC-vs-Al-Talaba-SC",
     "info": {
       "championship": "الدوري العراقي",
       "round": "18 - مباراة الذهاب",
-      "stadium": "ملعب الميناء",
-      "time": "13:00",
+      "stadium": "ملعب شرار حيدر",
+      "time": "15:30",
       "date": "الجمعة 13-02-2026",
-      "current_score": "0 - 1",
+      "current_score": "0 - 2",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الميناء",
-        "logo": "https://imgs.ysscores.com/teams/128/7791709127942.png"
+        "name": "الكرخ",
+        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
       },
       "away": {
-        "name": "الغراف",
-        "logo": "https://imgs.ysscores.com/teams/128/6311734617665.png"
+        "name": "الطلبة",
+        "logo": "https://imgs.ysscores.com/teams/128/9541695656866.png"
       }
     },
     "channels": [
       {
-        "channel": "العراقية السريانية",
-        "commentator": "أمير علي"
+        "channel": "العراقية الرياضية",
+        "commentator": "علي الشمري"
       }
     ]
   },
@@ -957,35 +957,6 @@
     "channels": []
   },
   {
-    "id": "5178447",
-    "url": "https://www.ysscores.com/ar/match/5178447/Stade-Tunisien-vs-Olympique-Beja",
-    "info": {
-      "championship": "الرابطة التونسية لكرة القدم",
-      "round": "21 - مباراة الاياب",
-      "stadium": "استاد هادي النيفر",
-      "time": "14:00",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "3 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الملعب التونسي",
-        "logo": "https://imgs.ysscores.com/teams/128/861692795979.png"
-      },
-      "away": {
-        "name": "الأولمبي الباجي",
-        "logo": "https://imgs.ysscores.com/teams/128/821692795939.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الوطنية 1",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5178445",
     "url": "https://www.ysscores.com/ar/match/5178445/JS-Kairouanaise-vs-Etoile-Sportive-du-Sahel",
     "info": {
@@ -1010,6 +981,35 @@
     "channels": [
       {
         "channel": "الوطنية 2",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5178447",
+    "url": "https://www.ysscores.com/ar/match/5178447/Stade-Tunisien-vs-Olympique-Beja",
+    "info": {
+      "championship": "الرابطة التونسية لكرة القدم",
+      "round": "21 - مباراة الاياب",
+      "stadium": "استاد هادي النيفر",
+      "time": "14:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "3 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الملعب التونسي",
+        "logo": "https://imgs.ysscores.com/teams/128/861692795979.png"
+      },
+      "away": {
+        "name": "الأولمبي الباجي",
+        "logo": "https://imgs.ysscores.com/teams/128/821692795939.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الوطنية 1",
         "commentator": "غير مدرج"
       }
     ]
@@ -1274,39 +1274,6 @@
     "channels": []
   },
   {
-    "id": "27244682",
-    "url": "https://www.ysscores.com/ar/match/27244682/Al-Shamal-SC-vs-Qatar-SC",
-    "info": {
-      "championship": "كأس الأمير",
-      "round": "دور الـ 16",
-      "stadium": "استاد حمد الكبير",
-      "time": "14:30",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الشمال",
-        "logo": "https://imgs.ysscores.com/teams/128/2961722879498.png"
-      },
-      "away": {
-        "name": "قطر",
-        "logo": "https://imgs.ysscores.com/teams/128/5761752963369.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت HD",
-        "commentator": "حسن العيدروس"
-      },
-      {
-        "channel": "الكأس 1",
-        "commentator": "خليل البلوشي"
-      }
-    ]
-  },
-  {
     "id": "80757089",
     "url": "https://www.ysscores.com/ar/match/80757089/Al-Shahania-SC-vs-Al-Arabi-SC",
     "info": {
@@ -1336,6 +1303,39 @@
       {
         "channel": "الكأس 1",
         "commentator": "سمير اليعقوبي"
+      }
+    ]
+  },
+  {
+    "id": "27244682",
+    "url": "https://www.ysscores.com/ar/match/27244682/Al-Shamal-SC-vs-Qatar-SC",
+    "info": {
+      "championship": "كأس الأمير",
+      "round": "دور الـ 16",
+      "stadium": "استاد حمد الكبير",
+      "time": "14:30",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الشمال",
+        "logo": "https://imgs.ysscores.com/teams/128/2961722879498.png"
+      },
+      "away": {
+        "name": "قطر",
+        "logo": "https://imgs.ysscores.com/teams/128/5761752963369.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت HD",
+        "commentator": "حسن العيدروس"
+      },
+      {
+        "channel": "الكأس 1",
+        "commentator": "خليل البلوشي"
       }
     ]
   },
