@@ -333,7 +333,7 @@
       "stadium": "علي سامي ين سبور",
       "time": "18:00",
       "date": "الجمعة 13-02-2026",
-      "current_score": "0 - 0",
+      "current_score": "1 - 0",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -957,35 +957,6 @@
     "channels": []
   },
   {
-    "id": "5178447",
-    "url": "https://www.ysscores.com/ar/match/5178447/Stade-Tunisien-vs-Olympique-Beja",
-    "info": {
-      "championship": "الرابطة التونسية لكرة القدم",
-      "round": "21 - مباراة الاياب",
-      "stadium": "استاد هادي النيفر",
-      "time": "14:00",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "3 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الملعب التونسي",
-        "logo": "https://imgs.ysscores.com/teams/128/861692795979.png"
-      },
-      "away": {
-        "name": "الأولمبي الباجي",
-        "logo": "https://imgs.ysscores.com/teams/128/821692795939.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الوطنية 1",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5178445",
     "url": "https://www.ysscores.com/ar/match/5178445/JS-Kairouanaise-vs-Etoile-Sportive-du-Sahel",
     "info": {
@@ -1010,6 +981,35 @@
     "channels": [
       {
         "channel": "الوطنية 2",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5178447",
+    "url": "https://www.ysscores.com/ar/match/5178447/Stade-Tunisien-vs-Olympique-Beja",
+    "info": {
+      "championship": "الرابطة التونسية لكرة القدم",
+      "round": "21 - مباراة الاياب",
+      "stadium": "استاد هادي النيفر",
+      "time": "14:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "3 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الملعب التونسي",
+        "logo": "https://imgs.ysscores.com/teams/128/861692795979.png"
+      },
+      "away": {
+        "name": "الأولمبي الباجي",
+        "logo": "https://imgs.ysscores.com/teams/128/821692795939.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الوطنية 1",
         "commentator": "غير مدرج"
       }
     ]
@@ -1274,6 +1274,39 @@
     "channels": []
   },
   {
+    "id": "80757089",
+    "url": "https://www.ysscores.com/ar/match/80757089/Al-Shahania-SC-vs-Al-Arabi-SC",
+    "info": {
+      "championship": "كأس الأمير",
+      "round": "دور الـ 16",
+      "stadium": "استاد عبدالله بن خليفة",
+      "time": "17:15",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "0 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الشحانية",
+        "logo": "https://imgs.ysscores.com/teams/128/9711722879334.png"
+      },
+      "away": {
+        "name": "العربي",
+        "logo": "https://imgs.ysscores.com/teams/128/8311692708094.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت HD",
+        "commentator": "عامر الخوذيري"
+      },
+      {
+        "channel": "الكأس 1",
+        "commentator": "سمير اليعقوبي"
+      }
+    ]
+  },
+  {
     "id": "27244682",
     "url": "https://www.ysscores.com/ar/match/27244682/Al-Shamal-SC-vs-Qatar-SC",
     "info": {
@@ -1303,39 +1336,6 @@
       {
         "channel": "الكأس 1",
         "commentator": "خليل البلوشي"
-      }
-    ]
-  },
-  {
-    "id": "80757089",
-    "url": "https://www.ysscores.com/ar/match/80757089/Al-Shahania-SC-vs-Al-Arabi-SC",
-    "info": {
-      "championship": "كأس الأمير",
-      "round": "دور الـ 16",
-      "stadium": "استاد عبدالله بن خليفة",
-      "time": "17:15",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "0 - 2",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "الشحانية",
-        "logo": "https://imgs.ysscores.com/teams/128/9711722879334.png"
-      },
-      "away": {
-        "name": "العربي",
-        "logo": "https://imgs.ysscores.com/teams/128/8311692708094.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت HD",
-        "commentator": "عامر الخوذيري"
-      },
-      {
-        "channel": "الكأس 1",
-        "commentator": "سمير اليعقوبي"
       }
     ]
   },
