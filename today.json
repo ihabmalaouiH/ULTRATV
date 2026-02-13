@@ -553,30 +553,6 @@
     "channels": []
   },
   {
-    "id": "19081915",
-    "url": "https://www.ysscores.com/ar/match/19081915/Al-Ahli-SC-(Syria)-vs-Tishreen-SC",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "ملعب 7 نيسان حلب",
-      "time": "13:00",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "6 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أهلي حلب",
-        "logo": "https://imgs.ysscores.com/teams/128/5401744895680.png"
-      },
-      "away": {
-        "name": "تشرين",
-        "logo": "https://imgs.ysscores.com/teams/128/9051694349706.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "66346314",
     "url": "https://www.ysscores.com/ar/match/66346314/Al-Jaish-SC-vs-Al-Hurriya-SC",
     "info": {
@@ -596,6 +572,30 @@
       "away": {
         "name": "الحرية",
         "logo": "https://imgs.ysscores.com/teams/128/4731694350116.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "19081915",
+    "url": "https://www.ysscores.com/ar/match/19081915/Al-Ahli-SC-(Syria)-vs-Tishreen-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "ملعب 7 نيسان حلب",
+      "time": "13:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "6 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أهلي حلب",
+        "logo": "https://imgs.ysscores.com/teams/128/5401744895680.png"
+      },
+      "away": {
+        "name": "تشرين",
+        "logo": "https://imgs.ysscores.com/teams/128/9051694349706.png"
       }
     },
     "channels": []
@@ -957,35 +957,6 @@
     "channels": []
   },
   {
-    "id": "5178447",
-    "url": "https://www.ysscores.com/ar/match/5178447/Stade-Tunisien-vs-Olympique-Beja",
-    "info": {
-      "championship": "الرابطة التونسية لكرة القدم",
-      "round": "21 - مباراة الاياب",
-      "stadium": "استاد هادي النيفر",
-      "time": "14:00",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "3 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الملعب التونسي",
-        "logo": "https://imgs.ysscores.com/teams/128/861692795979.png"
-      },
-      "away": {
-        "name": "الأولمبي الباجي",
-        "logo": "https://imgs.ysscores.com/teams/128/821692795939.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الوطنية 1",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5178445",
     "url": "https://www.ysscores.com/ar/match/5178445/JS-Kairouanaise-vs-Etoile-Sportive-du-Sahel",
     "info": {
@@ -1010,6 +981,35 @@
     "channels": [
       {
         "channel": "الوطنية 2",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5178447",
+    "url": "https://www.ysscores.com/ar/match/5178447/Stade-Tunisien-vs-Olympique-Beja",
+    "info": {
+      "championship": "الرابطة التونسية لكرة القدم",
+      "round": "21 - مباراة الاياب",
+      "stadium": "استاد هادي النيفر",
+      "time": "14:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "3 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الملعب التونسي",
+        "logo": "https://imgs.ysscores.com/teams/128/861692795979.png"
+      },
+      "away": {
+        "name": "الأولمبي الباجي",
+        "logo": "https://imgs.ysscores.com/teams/128/821692795939.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الوطنية 1",
         "commentator": "غير مدرج"
       }
     ]
@@ -1124,8 +1124,8 @@
       "stadium": "ملعب ليبرتادوريس دي أمريكا",
       "time": "00:00",
       "date": "الجمعة 13-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
