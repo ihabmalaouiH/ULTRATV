@@ -525,30 +525,6 @@
     "channels": []
   },
   {
-    "id": "19081915",
-    "url": "https://www.ysscores.com/ar/match/19081915/Al-Ahli-SC-(Syria)-vs-Tishreen-SC",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "ملعب 7 نيسان حلب",
-      "time": "13:00",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أهلي حلب",
-        "logo": "https://imgs.ysscores.com/teams/128/5401744895680.png"
-      },
-      "away": {
-        "name": "تشرين",
-        "logo": "https://imgs.ysscores.com/teams/128/9051694349706.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "81304944",
     "url": "https://www.ysscores.com/ar/match/81304944/Al-Fotuwa-SC-vs-Al-Wahda-SC-(Syria)",
     "info": {
@@ -597,6 +573,30 @@
     "channels": []
   },
   {
+    "id": "19081915",
+    "url": "https://www.ysscores.com/ar/match/19081915/Al-Ahli-SC-(Syria)-vs-Tishreen-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "ملعب 7 نيسان حلب",
+      "time": "13:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أهلي حلب",
+        "logo": "https://imgs.ysscores.com/teams/128/5401744895680.png"
+      },
+      "away": {
+        "name": "تشرين",
+        "logo": "https://imgs.ysscores.com/teams/128/9051694349706.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "92879399",
     "url": "https://www.ysscores.com/ar/match/92879399/Al-Minaa-SC-vs-Al-Gharraf-SC",
     "info": {
@@ -626,35 +626,6 @@
     ]
   },
   {
-    "id": "92193622",
-    "url": "https://www.ysscores.com/ar/match/92193622/Al-Quwa-Al-Jawiya-vs-Newroz-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "18 - مباراة الذهاب",
-      "stadium": "استاد الشعب الدولي",
-      "time": "13:00",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "القوة الجوية",
-        "logo": "https://imgs.ysscores.com/teams/128/4301729966980.png"
-      },
-      "away": {
-        "name": "نوروز",
-        "logo": "https://imgs.ysscores.com/teams/128/1311754243359.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية الرياضية",
-        "commentator": "حسين سمير"
-      }
-    ]
-  },
-  {
     "id": "19198629",
     "url": "https://www.ysscores.com/ar/match/19198629/Al-Karkh-SC-vs-Al-Talaba-SC",
     "info": {
@@ -680,6 +651,35 @@
       {
         "channel": "العراقية الرياضية",
         "commentator": "علي الشمري"
+      }
+    ]
+  },
+  {
+    "id": "92193622",
+    "url": "https://www.ysscores.com/ar/match/92193622/Al-Quwa-Al-Jawiya-vs-Newroz-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "18 - مباراة الذهاب",
+      "stadium": "استاد الشعب الدولي",
+      "time": "13:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "القوة الجوية",
+        "logo": "https://imgs.ysscores.com/teams/128/4301729966980.png"
+      },
+      "away": {
+        "name": "نوروز",
+        "logo": "https://imgs.ysscores.com/teams/128/1311754243359.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "حسين سمير"
       }
     ]
   },
