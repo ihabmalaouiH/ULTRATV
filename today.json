@@ -191,7 +191,7 @@
       "time": "20:45",
       "date": "الجمعة 13-02-2026",
       "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -256,7 +256,7 @@
       "stadium": "ملعب جواو كاردوسو",
       "time": "21:45",
       "date": "الجمعة 13-02-2026",
-      "current_score": "0 - 0",
+      "current_score": "0 - 1",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -354,39 +354,6 @@
     ]
   },
   {
-    "id": "4927497",
-    "url": "https://www.ysscores.com/ar/match/4927497/Al-Hilal-SFC-vs-Al-Ettifaq-FC",
-    "info": {
-      "championship": "الدوري السعودي للمحترفين",
-      "round": "22 - مباراة الاياب",
-      "stadium": "المملكة أرينا",
-      "time": "16:25",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الهلال",
-        "logo": "https://imgs.ysscores.com/teams/128/8761690298716.png"
-      },
-      "away": {
-        "name": "الاتفاق",
-        "logo": "https://imgs.ysscores.com/teams/128/1151690298845.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 3",
-        "commentator": "عبدالله الحربي"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "عبدالله الحربي"
-      }
-    ]
-  },
-  {
     "id": "4927502",
     "url": "https://www.ysscores.com/ar/match/4927502/Al-Shabab-FC-vs-Al-Ahli-SFC",
     "info": {
@@ -424,6 +391,39 @@
     ]
   },
   {
+    "id": "4927497",
+    "url": "https://www.ysscores.com/ar/match/4927497/Al-Hilal-SFC-vs-Al-Ettifaq-FC",
+    "info": {
+      "championship": "الدوري السعودي للمحترفين",
+      "round": "22 - مباراة الاياب",
+      "stadium": "المملكة أرينا",
+      "time": "16:25",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الهلال",
+        "logo": "https://imgs.ysscores.com/teams/128/8761690298716.png"
+      },
+      "away": {
+        "name": "الاتفاق",
+        "logo": "https://imgs.ysscores.com/teams/128/1151690298845.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 3",
+        "commentator": "عبدالله الحربي"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "عبدالله الحربي"
+      }
+    ]
+  },
+  {
     "id": "4927498",
     "url": "https://www.ysscores.com/ar/match/4927498/Al-Ittihad-Club-vs-Al-Fayha-FC",
     "info": {
@@ -457,30 +457,6 @@
     ]
   },
   {
-    "id": "70480845",
-    "url": "https://www.ysscores.com/ar/match/70480845/Taliya-SC-vs-Al-Karamah-SC",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "الملعب البلدي حماة",
-      "time": "13:00",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الطليعة",
-        "logo": "https://imgs.ysscores.com/teams/128/17648896107718.png"
-      },
-      "away": {
-        "name": "الكرامة",
-        "logo": "https://imgs.ysscores.com/teams/128/8581694349512.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "46521371",
     "url": "https://www.ysscores.com/ar/match/46521371/Khan-Shekhoun-vs-Omayya-SC",
     "info": {
@@ -500,6 +476,30 @@
       "away": {
         "name": "أمية",
         "logo": "https://imgs.ysscores.com/teams/128/17709364854946.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "70480845",
+    "url": "https://www.ysscores.com/ar/match/70480845/Taliya-SC-vs-Al-Karamah-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "الملعب البلدي حماة",
+      "time": "13:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الطليعة",
+        "logo": "https://imgs.ysscores.com/teams/128/17648896107718.png"
+      },
+      "away": {
+        "name": "الكرامة",
+        "logo": "https://imgs.ysscores.com/teams/128/8581694349512.png"
       }
     },
     "channels": []
@@ -601,35 +601,6 @@
     "channels": []
   },
   {
-    "id": "92193622",
-    "url": "https://www.ysscores.com/ar/match/92193622/Al-Quwa-Al-Jawiya-vs-Newroz-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "18 - مباراة الذهاب",
-      "stadium": "استاد الشعب الدولي",
-      "time": "13:00",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "القوة الجوية",
-        "logo": "https://imgs.ysscores.com/teams/128/4301729966980.png"
-      },
-      "away": {
-        "name": "نوروز",
-        "logo": "https://imgs.ysscores.com/teams/128/1311754243359.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية الرياضية",
-        "commentator": "حسين سمير"
-      }
-    ]
-  },
-  {
     "id": "19198629",
     "url": "https://www.ysscores.com/ar/match/19198629/Al-Karkh-SC-vs-Al-Talaba-SC",
     "info": {
@@ -655,6 +626,35 @@
       {
         "channel": "العراقية الرياضية",
         "commentator": "علي الشمري"
+      }
+    ]
+  },
+  {
+    "id": "92193622",
+    "url": "https://www.ysscores.com/ar/match/92193622/Al-Quwa-Al-Jawiya-vs-Newroz-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "18 - مباراة الذهاب",
+      "stadium": "استاد الشعب الدولي",
+      "time": "13:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "القوة الجوية",
+        "logo": "https://imgs.ysscores.com/teams/128/4301729966980.png"
+      },
+      "away": {
+        "name": "نوروز",
+        "logo": "https://imgs.ysscores.com/teams/128/1311754243359.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "حسين سمير"
       }
     ]
   },
@@ -957,35 +957,6 @@
     "channels": []
   },
   {
-    "id": "5178445",
-    "url": "https://www.ysscores.com/ar/match/5178445/JS-Kairouanaise-vs-Etoile-Sportive-du-Sahel",
-    "info": {
-      "championship": "الرابطة التونسية لكرة القدم",
-      "round": "21 - مباراة الاياب",
-      "stadium": "ملعب حمدة العواني",
-      "time": "14:00",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "القيروان",
-        "logo": "https://imgs.ysscores.com/teams/128/731753310886.png"
-      },
-      "away": {
-        "name": "النجم الساحلي",
-        "logo": "https://imgs.ysscores.com/teams/128/1161692205578.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الوطنية 2",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5178447",
     "url": "https://www.ysscores.com/ar/match/5178447/Stade-Tunisien-vs-Olympique-Beja",
     "info": {
@@ -1010,6 +981,35 @@
     "channels": [
       {
         "channel": "الوطنية 1",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5178445",
+    "url": "https://www.ysscores.com/ar/match/5178445/JS-Kairouanaise-vs-Etoile-Sportive-du-Sahel",
+    "info": {
+      "championship": "الرابطة التونسية لكرة القدم",
+      "round": "21 - مباراة الاياب",
+      "stadium": "ملعب حمدة العواني",
+      "time": "14:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "القيروان",
+        "logo": "https://imgs.ysscores.com/teams/128/731753310886.png"
+      },
+      "away": {
+        "name": "النجم الساحلي",
+        "logo": "https://imgs.ysscores.com/teams/128/1161692205578.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الوطنية 2",
         "commentator": "غير مدرج"
       }
     ]
@@ -1092,30 +1092,6 @@
     "channels": []
   },
   {
-    "id": "5101953",
-    "url": "https://www.ysscores.com/ar/match/5101953/CA-Unión-(Santa-Fe)-vs-CA-San-Lorenzo-de-Almagro",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "5 - مباراة الذهاب",
-      "stadium": "استاد 15 أبريل",
-      "time": "02:15",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "سانتا في",
-        "logo": "https://imgs.ysscores.com/teams/128/3311717935522.png"
-      },
-      "away": {
-        "name": "سان لورينزو",
-        "logo": "https://imgs.ysscores.com/teams/128/8421711808886.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5101947",
     "url": "https://www.ysscores.com/ar/match/5101947/CA-Independiente-vs-CA-Lanús",
     "info": {
@@ -1135,6 +1111,30 @@
       "away": {
         "name": "لانوس",
         "logo": "https://imgs.ysscores.com/teams/128/6881711750373.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5101953",
+    "url": "https://www.ysscores.com/ar/match/5101953/CA-Unión-(Santa-Fe)-vs-CA-San-Lorenzo-de-Almagro",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "5 - مباراة الذهاب",
+      "stadium": "استاد 15 أبريل",
+      "time": "02:15",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "سانتا في",
+        "logo": "https://imgs.ysscores.com/teams/128/3311717935522.png"
+      },
+      "away": {
+        "name": "سان لورينزو",
+        "logo": "https://imgs.ysscores.com/teams/128/8421711808886.png"
       }
     },
     "channels": []
