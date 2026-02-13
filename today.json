@@ -66,7 +66,7 @@
       "stadium": "سيغنال إيدونا بارك",
       "time": "20:30",
       "date": "الجمعة 13-02-2026",
-      "current_score": "2 - 0",
+      "current_score": "3 - 0",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -280,7 +280,7 @@
       "stadium": "آشتر دي كازيرن",
       "time": "20:45",
       "date": "الجمعة 13-02-2026",
-      "current_score": "1 - 0",
+      "current_score": "1 - 1",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -457,30 +457,6 @@
     ]
   },
   {
-    "id": "46521371",
-    "url": "https://www.ysscores.com/ar/match/46521371/Khan-Shekhoun-vs-Omayya-SC",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "الملعب البلدي بإدلب",
-      "time": "13:00",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "خان شيخون",
-        "logo": "https://imgs.ysscores.com/teams/128/17648858602326.png"
-      },
-      "away": {
-        "name": "أمية",
-        "logo": "https://imgs.ysscores.com/teams/128/17709364854946.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "70480845",
     "url": "https://www.ysscores.com/ar/match/70480845/Taliya-SC-vs-Al-Karamah-SC",
     "info": {
@@ -500,6 +476,30 @@
       "away": {
         "name": "الكرامة",
         "logo": "https://imgs.ysscores.com/teams/128/8581694349512.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "46521371",
+    "url": "https://www.ysscores.com/ar/match/46521371/Khan-Shekhoun-vs-Omayya-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "الملعب البلدي بإدلب",
+      "time": "13:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "خان شيخون",
+        "logo": "https://imgs.ysscores.com/teams/128/17648858602326.png"
+      },
+      "away": {
+        "name": "أمية",
+        "logo": "https://imgs.ysscores.com/teams/128/17709364854946.png"
       }
     },
     "channels": []
@@ -553,6 +553,30 @@
     "channels": []
   },
   {
+    "id": "66346314",
+    "url": "https://www.ysscores.com/ar/match/66346314/Al-Jaish-SC-vs-Al-Hurriya-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "ملعب الفيحاء - دمشق",
+      "time": "13:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الجيش",
+        "logo": "https://imgs.ysscores.com/teams/128/17648885948055.png"
+      },
+      "away": {
+        "name": "الحرية",
+        "logo": "https://imgs.ysscores.com/teams/128/4731694350116.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "19081915",
     "url": "https://www.ysscores.com/ar/match/19081915/Al-Ahli-SC-(Syria)-vs-Tishreen-SC",
     "info": {
@@ -577,28 +601,33 @@
     "channels": []
   },
   {
-    "id": "66346314",
-    "url": "https://www.ysscores.com/ar/match/66346314/Al-Jaish-SC-vs-Al-Hurriya-SC",
+    "id": "19198629",
+    "url": "https://www.ysscores.com/ar/match/19198629/Al-Karkh-SC-vs-Al-Talaba-SC",
     "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "ملعب الفيحاء - دمشق",
-      "time": "13:00",
+      "championship": "الدوري العراقي",
+      "round": "18 - مباراة الذهاب",
+      "stadium": "ملعب شرار حيدر",
+      "time": "15:30",
       "date": "الجمعة 13-02-2026",
-      "current_score": "0 - 1",
+      "current_score": "0 - 2",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الجيش",
-        "logo": "https://imgs.ysscores.com/teams/128/17648885948055.png"
+        "name": "الكرخ",
+        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
       },
       "away": {
-        "name": "الحرية",
-        "logo": "https://imgs.ysscores.com/teams/128/4731694350116.png"
+        "name": "الطلبة",
+        "logo": "https://imgs.ysscores.com/teams/128/9541695656866.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "علي الشمري"
+      }
+    ]
   },
   {
     "id": "92193622",
@@ -655,35 +684,6 @@
       {
         "channel": "العراقية السريانية",
         "commentator": "أمير علي"
-      }
-    ]
-  },
-  {
-    "id": "19198629",
-    "url": "https://www.ysscores.com/ar/match/19198629/Al-Karkh-SC-vs-Al-Talaba-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "18 - مباراة الذهاب",
-      "stadium": "ملعب شرار حيدر",
-      "time": "15:30",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "0 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الكرخ",
-        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
-      },
-      "away": {
-        "name": "الطلبة",
-        "logo": "https://imgs.ysscores.com/teams/128/9541695656866.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية الرياضية",
-        "commentator": "علي الشمري"
       }
     ]
   },
