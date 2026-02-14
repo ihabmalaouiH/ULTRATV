@@ -529,30 +529,6 @@
     "channels": []
   },
   {
-    "id": "81304944",
-    "url": "https://www.ysscores.com/ar/match/81304944/Al-Fotuwa-SC-vs-Al-Wahda-SC-(Syria)",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "ملعب البلدي - دير الزور",
-      "time": "13:00",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "0 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الفتوة",
-        "logo": "https://imgs.ysscores.com/teams/128/8021694349814.png"
-      },
-      "away": {
-        "name": "الوحدة",
-        "logo": "https://imgs.ysscores.com/teams/128/8991694349969.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "19081915",
     "url": "https://www.ysscores.com/ar/match/19081915/Al-Ahli-SC-(Syria)-vs-Tishreen-SC",
     "info": {
@@ -572,6 +548,30 @@
       "away": {
         "name": "تشرين",
         "logo": "https://imgs.ysscores.com/teams/128/9051694349706.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "81304944",
+    "url": "https://www.ysscores.com/ar/match/81304944/Al-Fotuwa-SC-vs-Al-Wahda-SC-(Syria)",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "ملعب البلدي - دير الزور",
+      "time": "13:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "0 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الفتوة",
+        "logo": "https://imgs.ysscores.com/teams/128/8021694349814.png"
+      },
+      "away": {
+        "name": "الوحدة",
+        "logo": "https://imgs.ysscores.com/teams/128/8991694349969.png"
       }
     },
     "channels": []
@@ -599,35 +599,6 @@
       }
     },
     "channels": []
-  },
-  {
-    "id": "92879399",
-    "url": "https://www.ysscores.com/ar/match/92879399/Al-Minaa-SC-vs-Al-Gharraf-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "18 - مباراة الذهاب",
-      "stadium": "ملعب الميناء",
-      "time": "13:00",
-      "date": "الجمعة 13-02-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الميناء",
-        "logo": "https://imgs.ysscores.com/teams/128/7791709127942.png"
-      },
-      "away": {
-        "name": "الغراف",
-        "logo": "https://imgs.ysscores.com/teams/128/6311734617665.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية السريانية",
-        "commentator": "أمير علي"
-      }
-    ]
   },
   {
     "id": "19198629",
@@ -684,6 +655,35 @@
       {
         "channel": "العراقية الرياضية",
         "commentator": "حسين سمير"
+      }
+    ]
+  },
+  {
+    "id": "92879399",
+    "url": "https://www.ysscores.com/ar/match/92879399/Al-Minaa-SC-vs-Al-Gharraf-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "18 - مباراة الذهاب",
+      "stadium": "ملعب الميناء",
+      "time": "13:00",
+      "date": "الجمعة 13-02-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الميناء",
+        "logo": "https://imgs.ysscores.com/teams/128/7791709127942.png"
+      },
+      "away": {
+        "name": "الغراف",
+        "logo": "https://imgs.ysscores.com/teams/128/6311734617665.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية السريانية",
+        "commentator": "أمير علي"
       }
     ]
   },
