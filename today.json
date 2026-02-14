@@ -355,7 +355,7 @@
       "stadium": "دينس بارك",
       "time": "16:00",
       "date": "السبت 14-02-2026",
-      "current_score": "0 - 0",
+      "current_score": "1 - 0",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -480,30 +480,6 @@
     ]
   },
   {
-    "id": "5134948",
-    "url": "https://www.ysscores.com/ar/match/5134948/Shabab-Al-Ahli-Club-vs-Al-Wahda-FC",
-    "info": {
-      "championship": "الدوري الإماراتي للمحترفين",
-      "round": "16 - مباراة الاياب",
-      "stadium": "استاد راشد بالنادي الأهلي",
-      "time": "17:00",
-      "date": "السبت 14-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "شباب الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/5261690300570.png"
-      },
-      "away": {
-        "name": "الوحدة",
-        "logo": "https://imgs.ysscores.com/teams/128/8811690300661.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5134944",
     "url": "https://www.ysscores.com/ar/match/5134944/Khor-Fakkan-SSC-vs-Ajman-Club",
     "info": {
@@ -535,6 +511,30 @@
         "commentator": "راشد عبدالرحمن"
       }
     ]
+  },
+  {
+    "id": "5134948",
+    "url": "https://www.ysscores.com/ar/match/5134948/Shabab-Al-Ahli-Club-vs-Al-Wahda-FC",
+    "info": {
+      "championship": "الدوري الإماراتي للمحترفين",
+      "round": "16 - مباراة الاياب",
+      "stadium": "استاد راشد بالنادي الأهلي",
+      "time": "17:00",
+      "date": "السبت 14-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "شباب الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/5261690300570.png"
+      },
+      "away": {
+        "name": "الوحدة",
+        "logo": "https://imgs.ysscores.com/teams/128/8811690300661.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "4803281",
@@ -1094,6 +1094,35 @@
     ]
   },
   {
+    "id": "59864391",
+    "url": "https://www.ysscores.com/ar/match/59864391/Naft-Missan-vs-Al-Qasim-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "18 - مباراة الذهاب",
+      "stadium": "ملعب ميسان",
+      "time": "13:00",
+      "date": "السبت 14-02-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "نفط ميسان",
+        "logo": "https://imgs.ysscores.com/teams/128/711695656259.png"
+      },
+      "away": {
+        "name": "القاسم",
+        "logo": "https://imgs.ysscores.com/teams/128/2661722928239.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية السريانية",
+        "commentator": "حسين الساعدي"
+      }
+    ]
+  },
+  {
     "id": "46222021",
     "url": "https://www.ysscores.com/ar/match/46222021/Diyala-SC-vs-Al-Karma",
     "info": {
@@ -1123,35 +1152,6 @@
       {
         "channel": "الكأس 5",
         "commentator": "مصطفى ناظم"
-      }
-    ]
-  },
-  {
-    "id": "59864391",
-    "url": "https://www.ysscores.com/ar/match/59864391/Naft-Missan-vs-Al-Qasim-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "18 - مباراة الذهاب",
-      "stadium": "ملعب ميسان",
-      "time": "13:00",
-      "date": "السبت 14-02-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "نفط ميسان",
-        "logo": "https://imgs.ysscores.com/teams/128/711695656259.png"
-      },
-      "away": {
-        "name": "القاسم",
-        "logo": "https://imgs.ysscores.com/teams/128/2661722928239.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية السريانية",
-        "commentator": "حسين الساعدي"
       }
     ]
   },
@@ -1492,8 +1492,8 @@
       "stadium": "إستاديو بانيتوليكوس",
       "time": "16:00",
       "date": "السبت 14-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -1546,7 +1546,7 @@
       "time": "15:00",
       "date": "السبت 14-02-2026",
       "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -1690,39 +1690,6 @@
     ]
   },
   {
-    "id": "5045260",
-    "url": "https://www.ysscores.com/ar/match/5045260/Esperance-Tunis-vs-CA-Petróleos-Luanda",
-    "info": {
-      "championship": "دوري أبطال أفريقيا",
-      "round": "6 - مباراة الذهاب",
-      "stadium": "الملعب الأولمبي حمادي العقربي",
-      "time": "17:00",
-      "date": "السبت 14-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الترجي",
-        "logo": "https://imgs.ysscores.com/teams/128/9451695299186.png"
-      },
-      "away": {
-        "name": "بيترو أتلتيكو",
-        "logo": "https://imgs.ysscores.com/teams/128/8531690370562.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "عصام الشوالي"
-      },
-      {
-        "channel": "الوطنية (بث أرضي)",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5045249",
     "url": "https://www.ysscores.com/ar/match/5045249/Mamelodi-Sundowns-FC-vs-MC-Algiers",
     "info": {
@@ -1781,6 +1748,63 @@
     ]
   },
   {
+    "id": "5045260",
+    "url": "https://www.ysscores.com/ar/match/5045260/Esperance-Tunis-vs-CA-Petróleos-Luanda",
+    "info": {
+      "championship": "دوري أبطال أفريقيا",
+      "round": "6 - مباراة الذهاب",
+      "stadium": "الملعب الأولمبي حمادي العقربي",
+      "time": "17:00",
+      "date": "السبت 14-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الترجي",
+        "logo": "https://imgs.ysscores.com/teams/128/9451695299186.png"
+      },
+      "away": {
+        "name": "بيترو أتلتيكو",
+        "logo": "https://imgs.ysscores.com/teams/128/8531690370562.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "عصام الشوالي"
+      },
+      {
+        "channel": "الوطنية (بث أرضي)",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "4825416",
+    "url": "https://www.ysscores.com/ar/match/4825416/Queens-Park-Rangers-vs-Blackburn-Rovers",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "32 - مباراة الاياب",
+      "stadium": "لوفتس رود",
+      "time": "16:00",
+      "date": "السبت 14-02-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "كوينز بارك رينجرز",
+        "logo": "https://imgs.ysscores.com/teams/128/9791690370554.png"
+      },
+      "away": {
+        "name": "بلاكبيرن روفرز",
+        "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4825417",
     "url": "https://www.ysscores.com/ar/match/4825417/Sheffield-Wednesday-vs-Millwall-FC",
     "info": {
@@ -1834,12 +1858,12 @@
     ]
   },
   {
-    "id": "4825416",
-    "url": "https://www.ysscores.com/ar/match/4825416/Queens-Park-Rangers-vs-Blackburn-Rovers",
+    "id": "5135164",
+    "url": "https://www.ysscores.com/ar/match/5135164/Southampton-FC-vs-Leicester-City",
     "info": {
       "championship": "دوري الإنجليزية",
-      "round": "32 - مباراة الاياب",
-      "stadium": "لوفتس رود",
+      "round": "الدور الرابع",
+      "stadium": "سانت ماري",
       "time": "16:00",
       "date": "السبت 14-02-2026",
       "current_score": "0 - 0",
@@ -1847,12 +1871,12 @@
     },
     "teams": {
       "home": {
-        "name": "كوينز بارك رينجرز",
-        "logo": "https://imgs.ysscores.com/teams/128/9791690370554.png"
+        "name": "ساوثهامبتون",
+        "logo": "https://imgs.ysscores.com/teams/128/3521690370525.png"
       },
       "away": {
-        "name": "بلاكبيرن روفرز",
-        "logo": "https://imgs.ysscores.com/teams/128/781690370534.png"
+        "name": "ليستر سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/5531690711879.png"
       }
     },
     "channels": []
@@ -1877,30 +1901,6 @@
       "away": {
         "name": "شيفيلد",
         "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5135164",
-    "url": "https://www.ysscores.com/ar/match/5135164/Southampton-FC-vs-Leicester-City",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "الدور الرابع",
-      "stadium": "سانت ماري",
-      "time": "16:00",
-      "date": "السبت 14-02-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "ساوثهامبتون",
-        "logo": "https://imgs.ysscores.com/teams/128/3521690370525.png"
-      },
-      "away": {
-        "name": "ليستر سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/5531690711879.png"
       }
     },
     "channels": []
@@ -2082,7 +2082,7 @@
       "stadium": "ملعب نادي العروبة",
       "time": "14:05",
       "date": "السبت 14-02-2026",
-      "current_score": "1 - 2",
+      "current_score": "2 - 2",
       "match_status": "الشوط الثاني"
     },
     "teams": {
