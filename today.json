@@ -545,7 +545,7 @@
       "stadium": "استاد جوزيبي مياتزا",
       "time": "20:45",
       "date": "السبت 14-02-2026",
-      "current_score": "0 - 0",
+      "current_score": "1 - 0",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -1185,6 +1185,35 @@
     ]
   },
   {
+    "id": "4830654",
+    "url": "https://www.ysscores.com/ar/match/4830654/Paris-FC-vs-RC-Lens",
+    "info": {
+      "championship": "الدوري الفرنسي",
+      "round": "22 - مباراة الاياب",
+      "stadium": "ملعب جان بوين",
+      "time": "21:05",
+      "date": "السبت 14-02-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "نادي باريس",
+        "logo": "https://imgs.ysscores.com/teams/128/6551690370501.png"
+      },
+      "away": {
+        "name": "لانس",
+        "logo": "https://imgs.ysscores.com/teams/128/1281690287063.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 4",
+        "commentator": "باسم الزير"
+      }
+    ]
+  },
+  {
     "id": "4830648",
     "url": "https://www.ysscores.com/ar/match/4830648/LOSC-Lille-vs-Stade-Brestois-29",
     "info": {
@@ -1210,35 +1239,6 @@
       {
         "channel": "بي إن سبورت 8",
         "commentator": "منتصر الأزهري"
-      }
-    ]
-  },
-  {
-    "id": "4830654",
-    "url": "https://www.ysscores.com/ar/match/4830654/Paris-FC-vs-RC-Lens",
-    "info": {
-      "championship": "الدوري الفرنسي",
-      "round": "22 - مباراة الاياب",
-      "stadium": "ملعب جان بوين",
-      "time": "21:05",
-      "date": "السبت 14-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "نادي باريس",
-        "logo": "https://imgs.ysscores.com/teams/128/6551690370501.png"
-      },
-      "away": {
-        "name": "لانس",
-        "logo": "https://imgs.ysscores.com/teams/128/1281690287063.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 4",
-        "commentator": "باسم الزير"
       }
     ]
   },
@@ -1604,7 +1604,7 @@
       "time": "20:00",
       "date": "السبت 14-02-2026",
       "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -1785,6 +1785,30 @@
     ]
   },
   {
+    "id": "4825417",
+    "url": "https://www.ysscores.com/ar/match/4825417/Sheffield-Wednesday-vs-Millwall-FC",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "32 - مباراة الاياب",
+      "stadium": "هيلزبره",
+      "time": "16:00",
+      "date": "السبت 14-02-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "شيفيلد وينزداي",
+        "logo": "https://imgs.ysscores.com/teams/128/2131690370554.png"
+      },
+      "away": {
+        "name": "ميلوول",
+        "logo": "https://imgs.ysscores.com/teams/128/2181690370550.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4825416",
     "url": "https://www.ysscores.com/ar/match/4825416/Queens-Park-Rangers-vs-Blackburn-Rovers",
     "info": {
@@ -1838,30 +1862,6 @@
     ]
   },
   {
-    "id": "4825417",
-    "url": "https://www.ysscores.com/ar/match/4825417/Sheffield-Wednesday-vs-Millwall-FC",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "32 - مباراة الاياب",
-      "stadium": "هيلزبره",
-      "time": "16:00",
-      "date": "السبت 14-02-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "شيفيلد وينزداي",
-        "logo": "https://imgs.ysscores.com/teams/128/2131690370554.png"
-      },
-      "away": {
-        "name": "ميلوول",
-        "logo": "https://imgs.ysscores.com/teams/128/2181690370550.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4825414",
     "url": "https://www.ysscores.com/ar/match/4825414/Portsmouth-FC-vs-Sheffield-United",
     "info": {
@@ -1886,30 +1886,6 @@
     "channels": []
   },
   {
-    "id": "5135164",
-    "url": "https://www.ysscores.com/ar/match/5135164/Southampton-FC-vs-Leicester-City",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "الدور الرابع",
-      "stadium": "سانت ماري",
-      "time": "16:00",
-      "date": "السبت 14-02-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ساوثهامبتون",
-        "logo": "https://imgs.ysscores.com/teams/128/3521690370525.png"
-      },
-      "away": {
-        "name": "ليستر سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/5531690711879.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4825415",
     "url": "https://www.ysscores.com/ar/match/4825415/Preston-North-End-vs-Watford-FC",
     "info": {
@@ -1929,6 +1905,30 @@
       "away": {
         "name": "واتفورد",
         "logo": "https://imgs.ysscores.com/teams/128/3341690370541.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5135164",
+    "url": "https://www.ysscores.com/ar/match/5135164/Southampton-FC-vs-Leicester-City",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "الدور الرابع",
+      "stadium": "سانت ماري",
+      "time": "16:00",
+      "date": "السبت 14-02-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ساوثهامبتون",
+        "logo": "https://imgs.ysscores.com/teams/128/3521690370525.png"
+      },
+      "away": {
+        "name": "ليستر سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/5531690711879.png"
       }
     },
     "channels": []
@@ -2006,30 +2006,6 @@
     "channels": []
   },
   {
-    "id": "5101940",
-    "url": "https://www.ysscores.com/ar/match/5101940/Club-Atlético-Tucumán-vs-AA-Estudiantes-(Río-Cuarto)",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "5 - مباراة الذهاب",
-      "stadium": "استاد مونومينتال خوسيه فيرو",
-      "time": "02:00",
-      "date": "السبت 14-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "توكومان",
-        "logo": "https://imgs.ysscores.com/teams/128/3641717935741.png"
-      },
-      "away": {
-        "name": "ريو كوارتو",
-        "logo": "https://imgs.ysscores.com/teams/128/17673036447889.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5101951",
     "url": "https://www.ysscores.com/ar/match/5101951/CA-Talleres-vs-Gimnasia-y-Esgrima-de-Mendoza",
     "info": {
@@ -2049,6 +2025,30 @@
       "away": {
         "name": "جيمناسيا",
         "logo": "https://imgs.ysscores.com/teams/128/17673035697322.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5101940",
+    "url": "https://www.ysscores.com/ar/match/5101940/Club-Atlético-Tucumán-vs-AA-Estudiantes-(Río-Cuarto)",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "5 - مباراة الذهاب",
+      "stadium": "استاد مونومينتال خوسيه فيرو",
+      "time": "02:00",
+      "date": "السبت 14-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "توكومان",
+        "logo": "https://imgs.ysscores.com/teams/128/3641717935741.png"
+      },
+      "away": {
+        "name": "ريو كوارتو",
+        "logo": "https://imgs.ysscores.com/teams/128/17673036447889.png"
       }
     },
     "channels": []
@@ -2076,6 +2076,35 @@
       }
     },
     "channels": []
+  },
+  {
+    "id": "75825730",
+    "url": "https://www.ysscores.com/ar/match/75825730/Al-Orobah-FC-vs-Al-Adalah-FC",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "22 - مباراة الاياب",
+      "stadium": "ملعب نادي العروبة",
+      "time": "14:05",
+      "date": "السبت 14-02-2026",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "العروبة",
+        "logo": "https://imgs.ysscores.com/teams/128/7481755420969.png"
+      },
+      "away": {
+        "name": "العدالة",
+        "logo": "https://imgs.ysscores.com/teams/128/7331691930420.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "فهد العنزي"
+      }
+    ]
   },
   {
     "id": "94187492",
@@ -2107,35 +2136,6 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "مشعل الشمري"
-      }
-    ]
-  },
-  {
-    "id": "75825730",
-    "url": "https://www.ysscores.com/ar/match/75825730/Al-Orobah-FC-vs-Al-Adalah-FC",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "22 - مباراة الاياب",
-      "stadium": "ملعب نادي العروبة",
-      "time": "14:05",
-      "date": "السبت 14-02-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "العروبة",
-        "logo": "https://imgs.ysscores.com/teams/128/7481755420969.png"
-      },
-      "away": {
-        "name": "العدالة",
-        "logo": "https://imgs.ysscores.com/teams/128/7331691930420.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "فهد العنزي"
       }
     ]
   },
