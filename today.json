@@ -302,7 +302,7 @@
       "time": "12:30",
       "date": "الأحد 15-02-2026",
       "current_score": "1 - 0",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1310,6 +1310,30 @@
     ]
   },
   {
+    "id": "5101949",
+    "url": "https://www.ysscores.com/ar/match/5101949/Instituto-ACC-vs-CA-Central-Córdoba-(SdE)",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "5 - مباراة الذهاب",
+      "stadium": "استاد خوان دومينغو بيرون",
+      "time": "02:00",
+      "date": "الأحد 15-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "انيستتوتو",
+        "logo": "https://imgs.ysscores.com/teams/128/3131717933825.png"
+      },
+      "away": {
+        "name": "كوردوبا",
+        "logo": "https://imgs.ysscores.com/teams/128/6201717935912.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5101945",
     "url": "https://www.ysscores.com/ar/match/5101945/Club-de-Gimnasia-y-Esgrima-La-Plata-vs-Club-Estudiantes-de-La-Plata",
     "info": {
@@ -1337,30 +1361,6 @@
         "commentator": "عبدالحميد الجسمي"
       }
     ]
-  },
-  {
-    "id": "5101949",
-    "url": "https://www.ysscores.com/ar/match/5101949/Instituto-ACC-vs-CA-Central-Córdoba-(SdE)",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "5 - مباراة الذهاب",
-      "stadium": "استاد خوان دومينغو بيرون",
-      "time": "02:00",
-      "date": "الأحد 15-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "انيستتوتو",
-        "logo": "https://imgs.ysscores.com/teams/128/3131717933825.png"
-      },
-      "away": {
-        "name": "كوردوبا",
-        "logo": "https://imgs.ysscores.com/teams/128/6201717935912.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "27473353",
@@ -1396,39 +1396,6 @@
     ]
   },
   {
-    "id": "86854437",
-    "url": "https://www.ysscores.com/ar/match/86854437/Al-Faisaly-FC-vs-Al-Anwar-Club",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "22 - مباراة الاياب",
-      "stadium": "استاد مدينة المجمعة الرياضية",
-      "time": "13:50",
-      "date": "الأحد 15-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الفيصلي",
-        "logo": "https://imgs.ysscores.com/teams/128/5731692998559.png"
-      },
-      "away": {
-        "name": "الأنوار",
-        "logo": "https://imgs.ysscores.com/teams/128/471755364570.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 1",
-        "commentator": "فهد العنزي"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "فهد العنزي"
-      }
-    ]
-  },
-  {
     "id": "77426735",
     "url": "https://www.ysscores.com/ar/match/77426735/Al-Diraiyah-FC-vs-Al-Ula-FC",
     "info": {
@@ -1458,6 +1425,39 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "فهد العتيبي"
+      }
+    ]
+  },
+  {
+    "id": "86854437",
+    "url": "https://www.ysscores.com/ar/match/86854437/Al-Faisaly-FC-vs-Al-Anwar-Club",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "22 - مباراة الاياب",
+      "stadium": "استاد مدينة المجمعة الرياضية",
+      "time": "13:50",
+      "date": "الأحد 15-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الفيصلي",
+        "logo": "https://imgs.ysscores.com/teams/128/5731692998559.png"
+      },
+      "away": {
+        "name": "الأنوار",
+        "logo": "https://imgs.ysscores.com/teams/128/471755364570.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 1",
+        "commentator": "فهد العنزي"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "فهد العنزي"
       }
     ]
   },
