@@ -335,7 +335,7 @@
       "time": "15:00",
       "date": "الأحد 15-02-2026",
       "current_score": "0 - 0",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -540,30 +540,6 @@
     ]
   },
   {
-    "id": "4818510",
-    "url": "https://www.ysscores.com/ar/match/4818510/Royal-Antwerp-FC-vs-KVC-Westerlo",
-    "info": {
-      "championship": "الدوري البلجيكي",
-      "round": "25 - مباراة الاياب",
-      "stadium": "بوسويل",
-      "time": "16:00",
-      "date": "الأحد 15-02-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "رويال أنتويرب",
-        "logo": "https://imgs.ysscores.com/teams/128/1151690370549.png"
-      },
-      "away": {
-        "name": "فيستيرلو",
-        "logo": "https://imgs.ysscores.com/teams/128/131690370550.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4818516",
     "url": "https://www.ysscores.com/ar/match/4818516/Sint-Truidense-VV-vs-Zulte-Waregem",
     "info": {
@@ -583,6 +559,30 @@
       "away": {
         "name": "زولته فاريجيم",
         "logo": "https://imgs.ysscores.com/teams/128/8641755447668.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4818510",
+    "url": "https://www.ysscores.com/ar/match/4818510/Royal-Antwerp-FC-vs-KVC-Westerlo",
+    "info": {
+      "championship": "الدوري البلجيكي",
+      "round": "25 - مباراة الاياب",
+      "stadium": "بوسويل",
+      "time": "16:00",
+      "date": "الأحد 15-02-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "رويال أنتويرب",
+        "logo": "https://imgs.ysscores.com/teams/128/1151690370549.png"
+      },
+      "away": {
+        "name": "فيستيرلو",
+        "logo": "https://imgs.ysscores.com/teams/128/131690370550.png"
       }
     },
     "channels": []
@@ -890,8 +890,8 @@
       "stadium": "ستاد هيت كاستيل",
       "time": "16:45",
       "date": "الأحد 15-02-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
@@ -1396,39 +1396,6 @@
     ]
   },
   {
-    "id": "77426735",
-    "url": "https://www.ysscores.com/ar/match/77426735/Al-Diraiyah-FC-vs-Al-Ula-FC",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "22 - مباراة الاياب",
-      "stadium": "اس اتش جي ارينا",
-      "time": "16:25",
-      "date": "الأحد 15-02-2026",
-      "current_score": "0 - 1",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "الدرعية",
-        "logo": "https://imgs.ysscores.com/teams/128/6711757968926.png"
-      },
-      "away": {
-        "name": "العلا",
-        "logo": "https://imgs.ysscores.com/teams/128/1691755364441.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 3",
-        "commentator": "فهد العتيبي"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "فهد العتيبي"
-      }
-    ]
-  },
-  {
     "id": "86854437",
     "url": "https://www.ysscores.com/ar/match/86854437/Al-Faisaly-FC-vs-Al-Anwar-Club",
     "info": {
@@ -1458,6 +1425,39 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "فهد العنزي"
+      }
+    ]
+  },
+  {
+    "id": "77426735",
+    "url": "https://www.ysscores.com/ar/match/77426735/Al-Diraiyah-FC-vs-Al-Ula-FC",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "22 - مباراة الاياب",
+      "stadium": "اس اتش جي ارينا",
+      "time": "16:25",
+      "date": "الأحد 15-02-2026",
+      "current_score": "0 - 1",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "الدرعية",
+        "logo": "https://imgs.ysscores.com/teams/128/6711757968926.png"
+      },
+      "away": {
+        "name": "العلا",
+        "logo": "https://imgs.ysscores.com/teams/128/1691755364441.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 3",
+        "commentator": "فهد العتيبي"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "فهد العتيبي"
       }
     ]
   },
@@ -1558,30 +1558,6 @@
     "channels": []
   },
   {
-    "id": "5106002",
-    "url": "https://www.ysscores.com/ar/match/5106002/FC-Lausanne-Sport-vs-Servette-FC",
-    "info": {
-      "championship": "دوري السوبر السويسري",
-      "round": "25 - مباراة الاياب",
-      "stadium": "استاد دي لا تويلير",
-      "time": "16:30",
-      "date": "الأحد 15-02-2026",
-      "current_score": "0 - 1",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "لوزان",
-        "logo": "https://imgs.ysscores.com/teams/128/1471690370506.png"
-      },
-      "away": {
-        "name": "سيرفيت",
-        "logo": "https://imgs.ysscores.com/teams/128/4521690823157.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5106000",
     "url": "https://www.ysscores.com/ar/match/5106000/FC-Thun-vs-FC-Sion",
     "info": {
@@ -1601,6 +1577,30 @@
       "away": {
         "name": "سيون",
         "logo": "https://imgs.ysscores.com/teams/128/631690370555.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5106002",
+    "url": "https://www.ysscores.com/ar/match/5106002/FC-Lausanne-Sport-vs-Servette-FC",
+    "info": {
+      "championship": "دوري السوبر السويسري",
+      "round": "25 - مباراة الاياب",
+      "stadium": "استاد دي لا تويلير",
+      "time": "16:30",
+      "date": "الأحد 15-02-2026",
+      "current_score": "0 - 1",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "لوزان",
+        "logo": "https://imgs.ysscores.com/teams/128/1471690370506.png"
+      },
+      "away": {
+        "name": "سيرفيت",
+        "logo": "https://imgs.ysscores.com/teams/128/4521690823157.png"
       }
     },
     "channels": []
