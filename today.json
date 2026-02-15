@@ -157,7 +157,7 @@
       "stadium": "تيريزا ريفيرو",
       "time": "16:15",
       "date": "الأحد 15-02-2026",
-      "current_score": "2 - 0",
+      "current_score": "3 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -239,7 +239,7 @@
       "stadium": "إيبروكس",
       "time": "17:30",
       "date": "الأحد 15-02-2026",
-      "current_score": "0 - 1",
+      "current_score": "1 - 1",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -540,30 +540,6 @@
     ]
   },
   {
-    "id": "4818510",
-    "url": "https://www.ysscores.com/ar/match/4818510/Royal-Antwerp-FC-vs-KVC-Westerlo",
-    "info": {
-      "championship": "الدوري البلجيكي",
-      "round": "25 - مباراة الاياب",
-      "stadium": "بوسويل",
-      "time": "16:00",
-      "date": "الأحد 15-02-2026",
-      "current_score": "0 - 2",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "رويال أنتويرب",
-        "logo": "https://imgs.ysscores.com/teams/128/1151690370549.png"
-      },
-      "away": {
-        "name": "فيستيرلو",
-        "logo": "https://imgs.ysscores.com/teams/128/131690370550.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4818516",
     "url": "https://www.ysscores.com/ar/match/4818516/Sint-Truidense-VV-vs-Zulte-Waregem",
     "info": {
@@ -583,6 +559,30 @@
       "away": {
         "name": "زولته فاريجيم",
         "logo": "https://imgs.ysscores.com/teams/128/8641755447668.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4818510",
+    "url": "https://www.ysscores.com/ar/match/4818510/Royal-Antwerp-FC-vs-KVC-Westerlo",
+    "info": {
+      "championship": "الدوري البلجيكي",
+      "round": "25 - مباراة الاياب",
+      "stadium": "بوسويل",
+      "time": "16:00",
+      "date": "الأحد 15-02-2026",
+      "current_score": "0 - 2",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "رويال أنتويرب",
+        "logo": "https://imgs.ysscores.com/teams/128/1151690370549.png"
+      },
+      "away": {
+        "name": "فيستيرلو",
+        "logo": "https://imgs.ysscores.com/teams/128/131690370550.png"
       }
     },
     "channels": []
@@ -1079,35 +1079,6 @@
     "channels": []
   },
   {
-    "id": "5178451",
-    "url": "https://www.ysscores.com/ar/match/5178451/US-Monastir-vs-ES-Zarzis",
-    "info": {
-      "championship": "الرابطة التونسية لكرة القدم",
-      "round": "21 - مباراة الاياب",
-      "stadium": "مصطفى بن جنات",
-      "time": "14:00",
-      "date": "الأحد 15-02-2026",
-      "current_score": "3 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "المنستيري",
-        "logo": "https://imgs.ysscores.com/teams/128/9111692796285.png"
-      },
-      "away": {
-        "name": "الجرجيسي",
-        "logo": "https://imgs.ysscores.com/teams/128/7511723790588.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الوطنية 2",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5178450",
     "url": "https://www.ysscores.com/ar/match/5178450/Club-Africain-vs-Jeunesse-Sportive-Omrane",
     "info": {
@@ -1132,6 +1103,35 @@
     "channels": [
       {
         "channel": "الوطنية 1",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5178451",
+    "url": "https://www.ysscores.com/ar/match/5178451/US-Monastir-vs-ES-Zarzis",
+    "info": {
+      "championship": "الرابطة التونسية لكرة القدم",
+      "round": "21 - مباراة الاياب",
+      "stadium": "مصطفى بن جنات",
+      "time": "14:00",
+      "date": "الأحد 15-02-2026",
+      "current_score": "3 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "المنستيري",
+        "logo": "https://imgs.ysscores.com/teams/128/9111692796285.png"
+      },
+      "away": {
+        "name": "الجرجيسي",
+        "logo": "https://imgs.ysscores.com/teams/128/7511723790588.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الوطنية 2",
         "commentator": "غير مدرج"
       }
     ]
@@ -1175,7 +1175,7 @@
       "time": "17:00",
       "date": "الأحد 15-02-2026",
       "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1486,30 +1486,6 @@
     "channels": []
   },
   {
-    "id": "4802050",
-    "url": "https://www.ysscores.com/ar/match/4802050/Odense-Boldklub-vs-FC-Midtjylland",
-    "info": {
-      "championship": "دوري السوبر الدنماركي",
-      "round": "20 - مباراة الاياب",
-      "stadium": "نيتشر إينرجي بارك",
-      "time": "16:00",
-      "date": "الأحد 15-02-2026",
-      "current_score": "1 - 4",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "أودنسه",
-        "logo": "https://imgs.ysscores.com/teams/128/9931691096090.png"
-      },
-      "away": {
-        "name": "ميتييلاند",
-        "logo": "https://imgs.ysscores.com/teams/128/7731691095830.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4802049",
     "url": "https://www.ysscores.com/ar/match/4802049/Viborg-FF-vs-Bröndby-IF",
     "info": {
@@ -1529,6 +1505,30 @@
       "away": {
         "name": "بروندبي",
         "logo": "https://imgs.ysscores.com/teams/128/6351691096295.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4802050",
+    "url": "https://www.ysscores.com/ar/match/4802050/Odense-Boldklub-vs-FC-Midtjylland",
+    "info": {
+      "championship": "دوري السوبر الدنماركي",
+      "round": "20 - مباراة الاياب",
+      "stadium": "نيتشر إينرجي بارك",
+      "time": "16:00",
+      "date": "الأحد 15-02-2026",
+      "current_score": "1 - 4",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "أودنسه",
+        "logo": "https://imgs.ysscores.com/teams/128/9931691096090.png"
+      },
+      "away": {
+        "name": "ميتييلاند",
+        "logo": "https://imgs.ysscores.com/teams/128/7731691095830.png"
       }
     },
     "channels": []
@@ -1558,6 +1558,30 @@
     "channels": []
   },
   {
+    "id": "5106002",
+    "url": "https://www.ysscores.com/ar/match/5106002/FC-Lausanne-Sport-vs-Servette-FC",
+    "info": {
+      "championship": "دوري السوبر السويسري",
+      "round": "25 - مباراة الاياب",
+      "stadium": "استاد دي لا تويلير",
+      "time": "16:30",
+      "date": "الأحد 15-02-2026",
+      "current_score": "2 - 2",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "لوزان",
+        "logo": "https://imgs.ysscores.com/teams/128/1471690370506.png"
+      },
+      "away": {
+        "name": "سيرفيت",
+        "logo": "https://imgs.ysscores.com/teams/128/4521690823157.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5106000",
     "url": "https://www.ysscores.com/ar/match/5106000/FC-Thun-vs-FC-Sion",
     "info": {
@@ -1577,30 +1601,6 @@
       "away": {
         "name": "سيون",
         "logo": "https://imgs.ysscores.com/teams/128/631690370555.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5106002",
-    "url": "https://www.ysscores.com/ar/match/5106002/FC-Lausanne-Sport-vs-Servette-FC",
-    "info": {
-      "championship": "دوري السوبر السويسري",
-      "round": "25 - مباراة الاياب",
-      "stadium": "استاد دي لا تويلير",
-      "time": "16:30",
-      "date": "الأحد 15-02-2026",
-      "current_score": "2 - 1",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "لوزان",
-        "logo": "https://imgs.ysscores.com/teams/128/1471690370506.png"
-      },
-      "away": {
-        "name": "سيرفيت",
-        "logo": "https://imgs.ysscores.com/teams/128/4521690823157.png"
       }
     },
     "channels": []
@@ -1812,7 +1812,7 @@
       "time": "17:00",
       "date": "الأحد 15-02-2026",
       "current_score": "2 - 0",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1828,35 +1828,6 @@
       {
         "channel": "beIN Xtra 6",
         "commentator": "أحمد سوكو"
-      }
-    ]
-  },
-  {
-    "id": "5045287",
-    "url": "https://www.ysscores.com/ar/match/5045287/AS-Maniema-Union-vs-Nairobi-United-FC",
-    "info": {
-      "championship": "كأس الكونفيدرالية",
-      "round": "6 - مباراة الذهاب",
-      "stadium": "استاد مازيمبي",
-      "time": "15:00",
-      "date": "الأحد 15-02-2026",
-      "current_score": "3 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "مانيما",
-        "logo": "https://imgs.ysscores.com/teams/128/6691732567930.png"
-      },
-      "away": {
-        "name": "نيروبي",
-        "logo": "https://imgs.ysscores.com/teams/128/5761762179753.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Xtra 4",
-        "commentator": "أحمد عبده"
       }
     ]
   },
@@ -1890,6 +1861,35 @@
     ]
   },
   {
+    "id": "5045287",
+    "url": "https://www.ysscores.com/ar/match/5045287/AS-Maniema-Union-vs-Nairobi-United-FC",
+    "info": {
+      "championship": "كأس الكونفيدرالية",
+      "round": "6 - مباراة الذهاب",
+      "stadium": "استاد مازيمبي",
+      "time": "15:00",
+      "date": "الأحد 15-02-2026",
+      "current_score": "3 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "مانيما",
+        "logo": "https://imgs.ysscores.com/teams/128/6691732567930.png"
+      },
+      "away": {
+        "name": "نيروبي",
+        "logo": "https://imgs.ysscores.com/teams/128/5761762179753.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Xtra 4",
+        "commentator": "أحمد عبده"
+      }
+    ]
+  },
+  {
     "id": "5045311",
     "url": "https://www.ysscores.com/ar/match/5045311/CR-Belouizdad-vs-AS-Otôho",
     "info": {
@@ -1899,7 +1899,7 @@
       "time": "17:00",
       "date": "الأحد 15-02-2026",
       "current_score": "2 - 0",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
