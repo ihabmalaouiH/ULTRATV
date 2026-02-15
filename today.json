@@ -359,6 +359,39 @@
     ]
   },
   {
+    "id": "4803286",
+    "url": "https://www.ysscores.com/ar/match/4803286/Torino-FC-vs-Bologna-FC-1909",
+    "info": {
+      "championship": "الدوري الإيطالي",
+      "round": "25 - مباراة الاياب",
+      "stadium": "أولمبيكو دي تورينو",
+      "time": "18:00",
+      "date": "الأحد 15-02-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "تورينو",
+        "logo": "https://imgs.ysscores.com/teams/128/7501690283003.png"
+      },
+      "away": {
+        "name": "بولونيا",
+        "logo": "https://imgs.ysscores.com/teams/128/4281690283003.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "StarzPlay",
+        "commentator": "حازم عبدالسلام"
+      },
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "حازم عبدالسلام"
+      }
+    ]
+  },
+  {
     "id": "4803283",
     "url": "https://www.ysscores.com/ar/match/4803283/SSC-Napoli-vs-AS-Roma",
     "info": {
@@ -392,39 +425,6 @@
       {
         "channel": "منصة شاشا",
         "commentator": "علي الدراج"
-      }
-    ]
-  },
-  {
-    "id": "4803286",
-    "url": "https://www.ysscores.com/ar/match/4803286/Torino-FC-vs-Bologna-FC-1909",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "25 - مباراة الاياب",
-      "stadium": "أولمبيكو دي تورينو",
-      "time": "18:00",
-      "date": "الأحد 15-02-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "تورينو",
-        "logo": "https://imgs.ysscores.com/teams/128/7501690283003.png"
-      },
-      "away": {
-        "name": "بولونيا",
-        "logo": "https://imgs.ysscores.com/teams/128/4281690283003.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "StarzPlay",
-        "commentator": "حازم عبدالسلام"
-      },
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "حازم عبدالسلام"
       }
     ]
   },
@@ -1294,8 +1294,8 @@
       "stadium": "استاد خوان كارميلو زيريلو",
       "time": "21:00",
       "date": "الأحد 15-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -1462,30 +1462,6 @@
     "channels": []
   },
   {
-    "id": "4802050",
-    "url": "https://www.ysscores.com/ar/match/4802050/Odense-Boldklub-vs-FC-Midtjylland",
-    "info": {
-      "championship": "دوري السوبر الدنماركي",
-      "round": "20 - مباراة الاياب",
-      "stadium": "نيتشر إينرجي بارك",
-      "time": "16:00",
-      "date": "الأحد 15-02-2026",
-      "current_score": "1 - 4",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أودنسه",
-        "logo": "https://imgs.ysscores.com/teams/128/9931691096090.png"
-      },
-      "away": {
-        "name": "ميتييلاند",
-        "logo": "https://imgs.ysscores.com/teams/128/7731691095830.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4802049",
     "url": "https://www.ysscores.com/ar/match/4802049/Viborg-FF-vs-Bröndby-IF",
     "info": {
@@ -1505,6 +1481,30 @@
       "away": {
         "name": "بروندبي",
         "logo": "https://imgs.ysscores.com/teams/128/6351691096295.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4802050",
+    "url": "https://www.ysscores.com/ar/match/4802050/Odense-Boldklub-vs-FC-Midtjylland",
+    "info": {
+      "championship": "دوري السوبر الدنماركي",
+      "round": "20 - مباراة الاياب",
+      "stadium": "نيتشر إينرجي بارك",
+      "time": "16:00",
+      "date": "الأحد 15-02-2026",
+      "current_score": "1 - 4",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أودنسه",
+        "logo": "https://imgs.ysscores.com/teams/128/9931691096090.png"
+      },
+      "away": {
+        "name": "ميتييلاند",
+        "logo": "https://imgs.ysscores.com/teams/128/7731691095830.png"
       }
     },
     "channels": []
