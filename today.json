@@ -1518,7 +1518,7 @@
       "stadium": "نيتشر إينرجي بارك",
       "time": "16:00",
       "date": "الأحد 15-02-2026",
-      "current_score": "0 - 2",
+      "current_score": "0 - 3",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -1558,30 +1558,6 @@
     "channels": []
   },
   {
-    "id": "5106000",
-    "url": "https://www.ysscores.com/ar/match/5106000/FC-Thun-vs-FC-Sion",
-    "info": {
-      "championship": "دوري السوبر السويسري",
-      "round": "25 - مباراة الاياب",
-      "stadium": "ستوكهورن أرينا",
-      "time": "14:00",
-      "date": "الأحد 15-02-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ثون",
-        "logo": "https://imgs.ysscores.com/teams/128/9991690370555.png"
-      },
-      "away": {
-        "name": "سيون",
-        "logo": "https://imgs.ysscores.com/teams/128/631690370555.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5106002",
     "url": "https://www.ysscores.com/ar/match/5106002/FC-Lausanne-Sport-vs-Servette-FC",
     "info": {
@@ -1601,6 +1577,30 @@
       "away": {
         "name": "سيرفيت",
         "logo": "https://imgs.ysscores.com/teams/128/4521690823157.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5106000",
+    "url": "https://www.ysscores.com/ar/match/5106000/FC-Thun-vs-FC-Sion",
+    "info": {
+      "championship": "دوري السوبر السويسري",
+      "round": "25 - مباراة الاياب",
+      "stadium": "ستوكهورن أرينا",
+      "time": "14:00",
+      "date": "الأحد 15-02-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ثون",
+        "logo": "https://imgs.ysscores.com/teams/128/9991690370555.png"
+      },
+      "away": {
+        "name": "سيون",
+        "logo": "https://imgs.ysscores.com/teams/128/631690370555.png"
       }
     },
     "channels": []
@@ -1783,7 +1783,7 @@
       "time": "14:30",
       "date": "الأحد 15-02-2026",
       "current_score": "0 - 1",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1832,35 +1832,6 @@
     ]
   },
   {
-    "id": "5045287",
-    "url": "https://www.ysscores.com/ar/match/5045287/AS-Maniema-Union-vs-Nairobi-United-FC",
-    "info": {
-      "championship": "كأس الكونفيدرالية",
-      "round": "6 - مباراة الذهاب",
-      "stadium": "استاد مازيمبي",
-      "time": "15:00",
-      "date": "الأحد 15-02-2026",
-      "current_score": "3 - 0",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "مانيما",
-        "logo": "https://imgs.ysscores.com/teams/128/6691732567930.png"
-      },
-      "away": {
-        "name": "نيروبي",
-        "logo": "https://imgs.ysscores.com/teams/128/5761762179753.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Xtra 4",
-        "commentator": "أحمد عبده"
-      }
-    ]
-  },
-  {
     "id": "5045312",
     "url": "https://www.ysscores.com/ar/match/5045312/Stellenbosch-FC-vs-Singida-Black-Stars-Sports-Club",
     "info": {
@@ -1886,6 +1857,35 @@
       {
         "channel": "beIN Xtra 5",
         "commentator": "منتصر الأزهري"
+      }
+    ]
+  },
+  {
+    "id": "5045287",
+    "url": "https://www.ysscores.com/ar/match/5045287/AS-Maniema-Union-vs-Nairobi-United-FC",
+    "info": {
+      "championship": "كأس الكونفيدرالية",
+      "round": "6 - مباراة الذهاب",
+      "stadium": "استاد مازيمبي",
+      "time": "15:00",
+      "date": "الأحد 15-02-2026",
+      "current_score": "3 - 0",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "مانيما",
+        "logo": "https://imgs.ysscores.com/teams/128/6691732567930.png"
+      },
+      "away": {
+        "name": "نيروبي",
+        "logo": "https://imgs.ysscores.com/teams/128/5761762179753.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Xtra 4",
+        "commentator": "أحمد عبده"
       }
     ]
   },
