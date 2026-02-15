@@ -467,7 +467,7 @@
       "time": "16:30",
       "date": "الأحد 15-02-2026",
       "current_score": "0 - 1",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -716,7 +716,7 @@
       "stadium": "دو موستوار",
       "time": "17:15",
       "date": "الأحد 15-02-2026",
-      "current_score": "1 - 0",
+      "current_score": "2 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -906,30 +906,6 @@
     "channels": []
   },
   {
-    "id": "4815438",
-    "url": "https://www.ysscores.com/ar/match/4815438/SC-Heerenveen-vs-PEC-Zwolle",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "23 - مباراة الاياب",
-      "stadium": "ايب لنسترا",
-      "time": "14:30",
-      "date": "الأحد 15-02-2026",
-      "current_score": "4 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "هيرينفين",
-        "logo": "https://imgs.ysscores.com/teams/128/6771725055096.png"
-      },
-      "away": {
-        "name": "زفوله",
-        "logo": "https://imgs.ysscores.com/teams/128/6691690996577.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4815436",
     "url": "https://www.ysscores.com/ar/match/4815436/Feyenoord-Rotterdam-vs-Go-Ahead-Eagles",
     "info": {
@@ -957,6 +933,30 @@
         "commentator": "رؤوف خليف"
       }
     ]
+  },
+  {
+    "id": "4815438",
+    "url": "https://www.ysscores.com/ar/match/4815438/SC-Heerenveen-vs-PEC-Zwolle",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "23 - مباراة الاياب",
+      "stadium": "ايب لنسترا",
+      "time": "14:30",
+      "date": "الأحد 15-02-2026",
+      "current_score": "4 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "هيرينفين",
+        "logo": "https://imgs.ysscores.com/teams/128/6771725055096.png"
+      },
+      "away": {
+        "name": "زفوله",
+        "logo": "https://imgs.ysscores.com/teams/128/6691690996577.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "4859140",
@@ -1510,30 +1510,6 @@
     "channels": []
   },
   {
-    "id": "5106001",
-    "url": "https://www.ysscores.com/ar/match/5106001/FC-Basel-1893-vs-FC-Lugano",
-    "info": {
-      "championship": "دوري السوبر السويسري",
-      "round": "25 - مباراة الاياب",
-      "stadium": "سانت جاكوب بارك",
-      "time": "16:30",
-      "date": "الأحد 15-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بازل",
-        "logo": "https://imgs.ysscores.com/teams/128/6771690370548.png"
-      },
-      "away": {
-        "name": "لوجانو",
-        "logo": "https://imgs.ysscores.com/teams/128/571690370510.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5106000",
     "url": "https://www.ysscores.com/ar/match/5106000/FC-Thun-vs-FC-Sion",
     "info": {
@@ -1553,6 +1529,30 @@
       "away": {
         "name": "سيون",
         "logo": "https://imgs.ysscores.com/teams/128/631690370555.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5106001",
+    "url": "https://www.ysscores.com/ar/match/5106001/FC-Basel-1893-vs-FC-Lugano",
+    "info": {
+      "championship": "دوري السوبر السويسري",
+      "round": "25 - مباراة الاياب",
+      "stadium": "سانت جاكوب بارك",
+      "time": "16:30",
+      "date": "الأحد 15-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بازل",
+        "logo": "https://imgs.ysscores.com/teams/128/6771690370548.png"
+      },
+      "away": {
+        "name": "لوجانو",
+        "logo": "https://imgs.ysscores.com/teams/128/571690370510.png"
       }
     },
     "channels": []
@@ -1701,7 +1701,7 @@
       "time": "17:30",
       "date": "الأحد 15-02-2026",
       "current_score": "4 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
