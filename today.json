@@ -1474,30 +1474,6 @@
     "channels": []
   },
   {
-    "id": "4802050",
-    "url": "https://www.ysscores.com/ar/match/4802050/Odense-Boldklub-vs-FC-Midtjylland",
-    "info": {
-      "championship": "دوري السوبر الدنماركي",
-      "round": "20 - مباراة الاياب",
-      "stadium": "نيتشر إينرجي بارك",
-      "time": "16:00",
-      "date": "الأحد 15-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أودنسه",
-        "logo": "https://imgs.ysscores.com/teams/128/9931691096090.png"
-      },
-      "away": {
-        "name": "ميتييلاند",
-        "logo": "https://imgs.ysscores.com/teams/128/7731691095830.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4802049",
     "url": "https://www.ysscores.com/ar/match/4802049/Viborg-FF-vs-Bröndby-IF",
     "info": {
@@ -1517,6 +1493,30 @@
       "away": {
         "name": "بروندبي",
         "logo": "https://imgs.ysscores.com/teams/128/6351691096295.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4802050",
+    "url": "https://www.ysscores.com/ar/match/4802050/Odense-Boldklub-vs-FC-Midtjylland",
+    "info": {
+      "championship": "دوري السوبر الدنماركي",
+      "round": "20 - مباراة الاياب",
+      "stadium": "نيتشر إينرجي بارك",
+      "time": "16:00",
+      "date": "الأحد 15-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أودنسه",
+        "logo": "https://imgs.ysscores.com/teams/128/9931691096090.png"
+      },
+      "away": {
+        "name": "ميتييلاند",
+        "logo": "https://imgs.ysscores.com/teams/128/7731691095830.png"
       }
     },
     "channels": []
@@ -1743,35 +1743,6 @@
     ]
   },
   {
-    "id": "5045312",
-    "url": "https://www.ysscores.com/ar/match/5045312/Stellenbosch-FC-vs-Singida-Black-Stars-Sports-Club",
-    "info": {
-      "championship": "كأس الكونفيدرالية",
-      "round": "6 - مباراة الذهاب",
-      "stadium": "ملعب كوتزينبورغ",
-      "time": "17:00",
-      "date": "الأحد 15-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ستيلينبوش",
-        "logo": "https://imgs.ysscores.com/teams/128/2801728321045.png"
-      },
-      "away": {
-        "name": "سينجيدا",
-        "logo": "https://imgs.ysscores.com/teams/128/17637695655524.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Xtra 5",
-        "commentator": "منتصر الأزهري"
-      }
-    ]
-  },
-  {
     "id": "5045287",
     "url": "https://www.ysscores.com/ar/match/5045287/AS-Maniema-Union-vs-Nairobi-United-FC",
     "info": {
@@ -1797,6 +1768,35 @@
       {
         "channel": "beIN Xtra 4",
         "commentator": "أحمد عبده"
+      }
+    ]
+  },
+  {
+    "id": "5045312",
+    "url": "https://www.ysscores.com/ar/match/5045312/Stellenbosch-FC-vs-Singida-Black-Stars-Sports-Club",
+    "info": {
+      "championship": "كأس الكونفيدرالية",
+      "round": "6 - مباراة الذهاب",
+      "stadium": "ملعب كوتزينبورغ",
+      "time": "17:00",
+      "date": "الأحد 15-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ستيلينبوش",
+        "logo": "https://imgs.ysscores.com/teams/128/2801728321045.png"
+      },
+      "away": {
+        "name": "سينجيدا",
+        "logo": "https://imgs.ysscores.com/teams/128/17637695655524.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Xtra 5",
+        "commentator": "منتصر الأزهري"
       }
     ]
   },
