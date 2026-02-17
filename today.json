@@ -1,29 +1,5 @@
 [
   {
-    "id": "76171837",
-    "url": "https://www.ysscores.com/ar/match/76171837/Al-Fotuwa-SC-vs-Tishreen-SC",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "ملعب البلدي - دير الزور",
-      "time": "13:00",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الفتوة",
-        "logo": "https://imgs.ysscores.com/teams/128/8021694349814.png"
-      },
-      "away": {
-        "name": "تشرين",
-        "logo": "https://imgs.ysscores.com/teams/128/9051694349706.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "88893614",
     "url": "https://www.ysscores.com/ar/match/88893614/Homs-Al-Jadid-SC-vs-Al-Karamah-SC",
     "info": {
@@ -43,6 +19,30 @@
       "away": {
         "name": "الكرامة",
         "logo": "https://imgs.ysscores.com/teams/128/8581694349512.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "76171837",
+    "url": "https://www.ysscores.com/ar/match/76171837/Al-Fotuwa-SC-vs-Tishreen-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "ملعب البلدي - دير الزور",
+      "time": "13:00",
+      "date": "الثلاثاء 17-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الفتوة",
+        "logo": "https://imgs.ysscores.com/teams/128/8021694349814.png"
+      },
+      "away": {
+        "name": "تشرين",
+        "logo": "https://imgs.ysscores.com/teams/128/9051694349706.png"
       }
     },
     "channels": []
@@ -195,6 +195,35 @@
     ]
   },
   {
+    "id": "4933610",
+    "url": "https://www.ysscores.com/ar/match/4933610/FC-Seoul-vs-Sanfrecce-Hiroshima",
+    "info": {
+      "championship": "دوري أبطال آسيا للنخبة",
+      "round": "8",
+      "stadium": "استاد موكدونغ",
+      "time": "11:00",
+      "date": "الثلاثاء 17-02-2026",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "سيول",
+        "logo": "https://imgs.ysscores.com/teams/128/8881751235958.png"
+      },
+      "away": {
+        "name": "هيروشيما",
+        "logo": "https://imgs.ysscores.com/teams/128/6631690370500.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 4",
+        "commentator": "نوفل باشي"
+      }
+    ]
+  },
+  {
     "id": "4933506",
     "url": "https://www.ysscores.com/ar/match/4933506/Al-Sadd-SC-vs-Al-Ittihad-Club",
     "info": {
@@ -228,64 +257,31 @@
     ]
   },
   {
-    "id": "4933505",
-    "url": "https://www.ysscores.com/ar/match/4933505/Al-Gharafa-SC-vs-Tractor-FC",
+    "id": "4933612",
+    "url": "https://www.ysscores.com/ar/match/4933612/Buriram-United-vs-Shanghai-Shenhua",
     "info": {
       "championship": "دوري أبطال آسيا للنخبة",
       "round": "8",
-      "stadium": "استاد ثاني بن جاسم",
-      "time": "17:00",
+      "stadium": "تشانج أرينا",
+      "time": "13:15",
       "date": "الثلاثاء 17-02-2026",
-      "current_score": "0 - 2",
+      "current_score": "2 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الغرافة",
-        "logo": "https://imgs.ysscores.com/teams/128/3761719156653.png"
+        "name": "بوريرام",
+        "logo": "https://imgs.ysscores.com/teams/128/4051693170735.png"
       },
       "away": {
-        "name": "تراكتور",
-        "logo": "https://imgs.ysscores.com/teams/128/5391722862680.png"
+        "name": "شانغهاي",
+        "logo": "https://imgs.ysscores.com/teams/128/1941690370505.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 4",
-        "commentator": "باسم الزير"
-      },
-      {
-        "channel": "الكأس 6",
-        "commentator": "سمير اليعقوبي"
-      }
-    ]
-  },
-  {
-    "id": "4933610",
-    "url": "https://www.ysscores.com/ar/match/4933610/FC-Seoul-vs-Sanfrecce-Hiroshima",
-    "info": {
-      "championship": "دوري أبطال آسيا للنخبة",
-      "round": "8",
-      "stadium": "استاد موكدونغ",
-      "time": "11:00",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "سيول",
-        "logo": "https://imgs.ysscores.com/teams/128/8881751235958.png"
-      },
-      "away": {
-        "name": "هيروشيما",
-        "logo": "https://imgs.ysscores.com/teams/128/6631690370500.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 4",
-        "commentator": "نوفل باشي"
+        "channel": "بي إن سبورت 5",
+        "commentator": "أحمد عبده"
       }
     ]
   },
@@ -319,31 +315,35 @@
     ]
   },
   {
-    "id": "4933612",
-    "url": "https://www.ysscores.com/ar/match/4933612/Buriram-United-vs-Shanghai-Shenhua",
+    "id": "4933505",
+    "url": "https://www.ysscores.com/ar/match/4933505/Al-Gharafa-SC-vs-Tractor-FC",
     "info": {
       "championship": "دوري أبطال آسيا للنخبة",
       "round": "8",
-      "stadium": "تشانج أرينا",
-      "time": "13:15",
+      "stadium": "استاد ثاني بن جاسم",
+      "time": "17:00",
       "date": "الثلاثاء 17-02-2026",
-      "current_score": "2 - 0",
+      "current_score": "0 - 2",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "بوريرام",
-        "logo": "https://imgs.ysscores.com/teams/128/4051693170735.png"
+        "name": "الغرافة",
+        "logo": "https://imgs.ysscores.com/teams/128/3761719156653.png"
       },
       "away": {
-        "name": "شانغهاي",
-        "logo": "https://imgs.ysscores.com/teams/128/1941690370505.png"
+        "name": "تراكتور",
+        "logo": "https://imgs.ysscores.com/teams/128/5391722862680.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 5",
-        "commentator": "أحمد عبده"
+        "channel": "بي إن سبورت 4",
+        "commentator": "باسم الزير"
+      },
+      {
+        "channel": "الكأس 6",
+        "commentator": "سمير اليعقوبي"
       }
     ]
   },
@@ -631,35 +631,6 @@
     "channels": []
   },
   {
-    "id": "5098861",
-    "url": "https://www.ysscores.com/ar/match/5098861/Atlético-Ottawa-vs-Nashville-SC",
-    "info": {
-      "championship": "كأس أبطال الكونكاكاف",
-      "round": "دور الـ 32 - مباراة الذهاب",
-      "stadium": "ملعب تيم هورتونز",
-      "time": "02:00",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أتلتيكو أوتاوا",
-        "logo": "https://imgs.ysscores.com/teams/128/2801743695210.png"
-      },
-      "away": {
-        "name": "ناشفيل",
-        "logo": "https://imgs.ysscores.com/teams/128/8971691410554.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "Concacaf YouTube",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5098862",
     "url": "https://www.ysscores.com/ar/match/5098862/Real-CD-España-vs-Los-Angeles-FC",
     "info": {
@@ -679,6 +650,35 @@
       "away": {
         "name": "لوس أنجلوس",
         "logo": "https://imgs.ysscores.com/teams/128/4571691410080.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "Concacaf YouTube",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5098861",
+    "url": "https://www.ysscores.com/ar/match/5098861/Atlético-Ottawa-vs-Nashville-SC",
+    "info": {
+      "championship": "كأس أبطال الكونكاكاف",
+      "round": "دور الـ 32 - مباراة الذهاب",
+      "stadium": "ملعب تيم هورتونز",
+      "time": "02:00",
+      "date": "الثلاثاء 17-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أتلتيكو أوتاوا",
+        "logo": "https://imgs.ysscores.com/teams/128/2801743695210.png"
+      },
+      "away": {
+        "name": "ناشفيل",
+        "logo": "https://imgs.ysscores.com/teams/128/8971691410554.png"
       }
     },
     "channels": [
