@@ -1,29 +1,5 @@
 [
   {
-    "id": "88893614",
-    "url": "https://www.ysscores.com/ar/match/88893614/Homs-Al-Jadid-SC-vs-Al-Karamah-SC",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "2 - مباراة الذهاب",
-      "stadium": "ملعب الفيحاء - دمشق",
-      "time": "13:00",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "حمص الفداء",
-        "logo": "https://imgs.ysscores.com/teams/128/17675574985681.png"
-      },
-      "away": {
-        "name": "الكرامة",
-        "logo": "https://imgs.ysscores.com/teams/128/8581694349512.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "76171837",
     "url": "https://www.ysscores.com/ar/match/76171837/Al-Fotuwa-SC-vs-Tishreen-SC",
     "info": {
@@ -43,6 +19,30 @@
       "away": {
         "name": "تشرين",
         "logo": "https://imgs.ysscores.com/teams/128/9051694349706.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "88893614",
+    "url": "https://www.ysscores.com/ar/match/88893614/Homs-Al-Jadid-SC-vs-Al-Karamah-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "2 - مباراة الذهاب",
+      "stadium": "ملعب الفيحاء - دمشق",
+      "time": "13:00",
+      "date": "الثلاثاء 17-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "حمص الفداء",
+        "logo": "https://imgs.ysscores.com/teams/128/17675574985681.png"
+      },
+      "away": {
+        "name": "الكرامة",
+        "logo": "https://imgs.ysscores.com/teams/128/8581694349512.png"
       }
     },
     "channels": []
@@ -129,39 +129,6 @@
     ]
   },
   {
-    "id": "5118290",
-    "url": "https://www.ysscores.com/ar/match/5118290/Al-Wasl-FC-vs-Al-Zawraa-SC",
-    "info": {
-      "championship": "دوري أبطال آسيا 2",
-      "round": "دور الـ 16 - مباراة الاياب",
-      "stadium": "استاد زعبيل",
-      "time": "17:00",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الوصل",
-        "logo": "https://imgs.ysscores.com/teams/128/5291690300472.png"
-      },
-      "away": {
-        "name": "الزوراء",
-        "logo": "https://imgs.ysscores.com/teams/128/2961729878835.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "عبدالله الغامدي"
-      },
-      {
-        "channel": "الكأس 7",
-        "commentator": "أحمد المعمري"
-      }
-    ]
-  },
-  {
     "id": "5118296",
     "url": "https://www.ysscores.com/ar/match/5118296/Al-Hussein-SC-(Irbid)-vs-Esteghlal-FC",
     "info": {
@@ -195,12 +162,12 @@
     ]
   },
   {
-    "id": "4933505",
-    "url": "https://www.ysscores.com/ar/match/4933505/Al-Gharafa-SC-vs-Tractor-FC",
+    "id": "5118290",
+    "url": "https://www.ysscores.com/ar/match/5118290/Al-Wasl-FC-vs-Al-Zawraa-SC",
     "info": {
-      "championship": "دوري أبطال آسيا للنخبة",
-      "round": "8",
-      "stadium": "استاد ثاني بن جاسم",
+      "championship": "دوري أبطال آسيا 2",
+      "round": "دور الـ 16 - مباراة الاياب",
+      "stadium": "استاد زعبيل",
       "time": "17:00",
       "date": "الثلاثاء 17-02-2026",
       "current_score": "- : -",
@@ -208,22 +175,22 @@
     },
     "teams": {
       "home": {
-        "name": "الغرافة",
-        "logo": "https://imgs.ysscores.com/teams/128/3761719156653.png"
+        "name": "الوصل",
+        "logo": "https://imgs.ysscores.com/teams/128/5291690300472.png"
       },
       "away": {
-        "name": "تراكتور",
-        "logo": "https://imgs.ysscores.com/teams/128/5391722862680.png"
+        "name": "الزوراء",
+        "logo": "https://imgs.ysscores.com/teams/128/2961729878835.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 4",
-        "commentator": "باسم الزير"
+        "channel": "بي إن سبورت 5",
+        "commentator": "عبدالله الغامدي"
       },
       {
-        "channel": "الكأس 6",
-        "commentator": "سمير اليعقوبي"
+        "channel": "الكأس 7",
+        "commentator": "أحمد المعمري"
       }
     ]
   },
@@ -286,6 +253,39 @@
       {
         "channel": "بي إن سبورت 5",
         "commentator": "أحمد عبده"
+      }
+    ]
+  },
+  {
+    "id": "4933505",
+    "url": "https://www.ysscores.com/ar/match/4933505/Al-Gharafa-SC-vs-Tractor-FC",
+    "info": {
+      "championship": "دوري أبطال آسيا للنخبة",
+      "round": "8",
+      "stadium": "استاد ثاني بن جاسم",
+      "time": "17:00",
+      "date": "الثلاثاء 17-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الغرافة",
+        "logo": "https://imgs.ysscores.com/teams/128/3761719156653.png"
+      },
+      "away": {
+        "name": "تراكتور",
+        "logo": "https://imgs.ysscores.com/teams/128/5391722862680.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 4",
+        "commentator": "باسم الزير"
+      },
+      {
+        "channel": "الكأس 6",
+        "commentator": "سمير اليعقوبي"
       }
     ]
   },
@@ -377,35 +377,6 @@
     ]
   },
   {
-    "id": "5161863",
-    "url": "https://www.ysscores.com/ar/match/5161863/AS-Monaco-vs-Paris-Saint-Germain",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "دور الإقصائيات - مباراة الذهاب",
-      "stadium": "لويس الثاني",
-      "time": "21:00",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "موناكو",
-        "logo": "https://imgs.ysscores.com/teams/128/3861690287583.png"
-      },
-      "away": {
-        "name": "باريس",
-        "logo": "https://imgs.ysscores.com/teams/128/4461690287785.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "عامر الخوذيري"
-      }
-    ]
-  },
-  {
     "id": "5161859",
     "url": "https://www.ysscores.com/ar/match/5161859/SL-Benfica-vs-Real-Madrid",
     "info": {
@@ -489,6 +460,35 @@
       {
         "channel": "بي إن سبورت 4",
         "commentator": "محمد بركات"
+      }
+    ]
+  },
+  {
+    "id": "5161863",
+    "url": "https://www.ysscores.com/ar/match/5161863/AS-Monaco-vs-Paris-Saint-Germain",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "دور الإقصائيات - مباراة الذهاب",
+      "stadium": "لويس الثاني",
+      "time": "21:00",
+      "date": "الثلاثاء 17-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "موناكو",
+        "logo": "https://imgs.ysscores.com/teams/128/3861690287583.png"
+      },
+      "away": {
+        "name": "باريس",
+        "logo": "https://imgs.ysscores.com/teams/128/4461690287785.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "عامر الخوذيري"
       }
     ]
   },
@@ -701,8 +701,8 @@
       "stadium": "استاد هيئة قناة السويس الجديد",
       "time": "16:00",
       "date": "الثلاثاء 17-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
