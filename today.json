@@ -6,7 +6,7 @@
       "championship": "الدوري السوري الممتاز",
       "round": "2 - مباراة الذهاب",
       "stadium": "ملعب الفيحاء - دمشق",
-      "time": "13:00",
+      "time": "19:00",
       "date": "الثلاثاء 17-02-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
@@ -30,7 +30,7 @@
       "championship": "الدوري السوري الممتاز",
       "round": "4 - مباراة الذهاب",
       "stadium": "ملعب البلدي - دير الزور",
-      "time": "13:00",
+      "time": "19:00",
       "date": "الثلاثاء 17-02-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
@@ -54,7 +54,7 @@
       "championship": "الدوري الكويتي",
       "round": "11 - مباراة الاياب",
       "stadium": "استاد علي صباح السالم",
-      "time": "14:50",
+      "time": "20:50",
       "date": "الثلاثاء 17-02-2026",
       "current_score": "1 - 0",
       "match_status": "إنتهت المباراة"
@@ -83,7 +83,7 @@
       "championship": "الدوري الهولندي الممتاز",
       "round": "23 - مباراة الاياب",
       "stadium": "ستاد هيت كاستيل",
-      "time": "20:00",
+      "time": "04:00",
       "date": "الثلاثاء 17-02-2026",
       "current_score": "1 - 1",
       "match_status": "الشوط الثاني"
@@ -106,7 +106,7 @@
     "info": {
       "championship": "الرابطة التونسية لكرة القدم",
       "round": "19 - مباراة الاياب",
-      "time": "14:00",
+      "time": "20:00",
       "date": "الثلاثاء 17-02-2026",
       "current_score": "0 - 3",
       "match_status": "إنتهت المباراة"
@@ -201,7 +201,7 @@
       "championship": "دوري أبطال آسيا للنخبة",
       "round": "8",
       "stadium": "استاد ثاني بن جاسم",
-      "time": "17:00",
+      "time": "01:00",
       "date": "الثلاثاء 17-02-2026",
       "current_score": "0 - 2",
       "match_status": "إنتهت المباراة"
@@ -292,7 +292,7 @@
       "championship": "دوري أبطال آسيا للنخبة",
       "round": "8",
       "stadium": "استاد جاسم بن حمد",
-      "time": "17:00",
+      "time": "01:00",
       "date": "الثلاثاء 17-02-2026",
       "current_score": "1 - 4",
       "match_status": "إنتهت المباراة"
@@ -315,35 +315,6 @@
       {
         "channel": "الكأس 5",
         "commentator": "خليل البلوشي"
-      }
-    ]
-  },
-  {
-    "id": "4933612",
-    "url": "https://www.ysscores.com/ar/match/4933612/Buriram-United-vs-Shanghai-Shenhua",
-    "info": {
-      "championship": "دوري أبطال آسيا للنخبة",
-      "round": "8",
-      "stadium": "تشانج أرينا",
-      "time": "13:15",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بوريرام",
-        "logo": "https://imgs.ysscores.com/teams/128/4051693170735.png"
-      },
-      "away": {
-        "name": "شانغهاي",
-        "logo": "https://imgs.ysscores.com/teams/128/1941690370505.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "أحمد عبده"
       }
     ]
   },
@@ -377,13 +348,42 @@
     ]
   },
   {
+    "id": "4933612",
+    "url": "https://www.ysscores.com/ar/match/4933612/Buriram-United-vs-Shanghai-Shenhua",
+    "info": {
+      "championship": "دوري أبطال آسيا للنخبة",
+      "round": "8",
+      "stadium": "تشانج أرينا",
+      "time": "13:15",
+      "date": "الثلاثاء 17-02-2026",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بوريرام",
+        "logo": "https://imgs.ysscores.com/teams/128/4051693170735.png"
+      },
+      "away": {
+        "name": "شانغهاي",
+        "logo": "https://imgs.ysscores.com/teams/128/1941690370505.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "أحمد عبده"
+      }
+    ]
+  },
+  {
     "id": "5161859",
     "url": "https://www.ysscores.com/ar/match/5161859/SL-Benfica-vs-Real-Madrid",
     "info": {
       "championship": "دوري أبطال أوروبا",
       "round": "دور الإقصائيات - مباراة الذهاب",
       "stadium": "ملعب النور",
-      "time": "21:00",
+      "time": "02:00",
       "date": "الثلاثاء 17-02-2026",
       "current_score": "0 - 0",
       "match_status": "الشوط الأول"
@@ -412,7 +412,7 @@
       "championship": "دوري أبطال أوروبا",
       "round": "دور الإقصائيات - مباراة الذهاب",
       "stadium": "لويس الثاني",
-      "time": "21:00",
+      "time": "05:00",
       "date": "الثلاثاء 17-02-2026",
       "current_score": "2 - 0",
       "match_status": "الشوط الأول"
@@ -435,42 +435,13 @@
     ]
   },
   {
-    "id": "5161871",
-    "url": "https://www.ysscores.com/ar/match/5161871/Borussia-Dortmund-vs-Atalanta-BC",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "دور الإقصائيات - مباراة الذهاب",
-      "stadium": "سيغنال إيدونا بارك",
-      "time": "21:15",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "1 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "دورتموند",
-        "logo": "https://imgs.ysscores.com/teams/128/4201690288818.png"
-      },
-      "away": {
-        "name": "أتلانتا",
-        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 4",
-        "commentator": "محمد بركات"
-      }
-    ]
-  },
-  {
     "id": "5161867",
     "url": "https://www.ysscores.com/ar/match/5161867/Galatasaray-vs-Juventus-FC",
     "info": {
       "championship": "دوري أبطال أوروبا",
       "round": "دور الإقصائيات - مباراة الذهاب",
       "stadium": "علي سامي ين سبور",
-      "time": "18:45",
+      "time": "23:45",
       "date": "الثلاثاء 17-02-2026",
       "current_score": "5 - 2",
       "match_status": "إنتهت المباراة"
@@ -489,6 +460,35 @@
       {
         "channel": "بي إن سبورت 3",
         "commentator": "علي سعيد الكعبي"
+      }
+    ]
+  },
+  {
+    "id": "5161871",
+    "url": "https://www.ysscores.com/ar/match/5161871/Borussia-Dortmund-vs-Atalanta-BC",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "دور الإقصائيات - مباراة الذهاب",
+      "stadium": "سيغنال إيدونا بارك",
+      "time": "05:15",
+      "date": "الثلاثاء 17-02-2026",
+      "current_score": "1 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "دورتموند",
+        "logo": "https://imgs.ysscores.com/teams/128/4201690288818.png"
+      },
+      "away": {
+        "name": "أتلانتا",
+        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 4",
+        "commentator": "محمد بركات"
       }
     ]
   },
@@ -585,7 +585,7 @@
       "championship": "دوري الإنجليزية",
       "round": "19 - مباراة الاياب",
       "stadium": "ذا فالي",
-      "time": "20:45",
+      "time": "03:45",
       "date": "الثلاثاء 17-02-2026",
       "current_score": "0 - 2",
       "match_status": "الشوط الأول"
@@ -609,7 +609,7 @@
       "championship": "دوري الإنجليزية",
       "round": "32 - مباراة الاياب",
       "stadium": "أشتون جيت",
-      "time": "20:45",
+      "time": "02:45",
       "date": "الثلاثاء 17-02-2026",
       "current_score": "0 - 1",
       "match_status": "الشوط الأول"
@@ -627,62 +627,28 @@
     "channels": []
   },
   {
-    "id": "5098861",
-    "url": "https://www.ysscores.com/ar/match/5098861/Atlético-Ottawa-vs-Nashville-SC",
+    "id": "5101944",
+    "url": "https://www.ysscores.com/ar/match/5101944/Club-Deportivo-Riestra-vs-CA-Newells-Old-Boys",
     "info": {
-      "championship": "كأس أبطال الكونكاكاف",
-      "round": "دور الـ 32 - مباراة الذهاب",
-      "stadium": "ملعب تيم هورتونز",
-      "time": "02:00",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "5 - مباراة الذهاب",
+      "stadium": "استاد غييرمو لازا",
+      "time": "05:00",
+      "date": "الاثنين 16-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "أتلتيكو أوتاوا",
-        "logo": "https://imgs.ysscores.com/teams/128/2801743695210.png"
+        "name": "ريسترا",
+        "logo": "https://imgs.ysscores.com/teams/128/1081718579454.png"
       },
       "away": {
-        "name": "ناشفيل",
-        "logo": "https://imgs.ysscores.com/teams/128/8971691410554.png"
+        "name": "نيولز",
+        "logo": "https://imgs.ysscores.com/teams/128/5511706892334.png"
       }
     },
-    "channels": [
-      {
-        "channel": "Concacaf YouTube",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "5098862",
-    "url": "https://www.ysscores.com/ar/match/5098862/Real-CD-España-vs-Los-Angeles-FC",
-    "info": {
-      "championship": "كأس أبطال الكونكاكاف",
-      "round": "دور الـ 32 - مباراة الذهاب",
-      "stadium": "استاد فرانسيسكو مورازان",
-      "time": "04:00",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ريال إسبانيا",
-        "logo": "https://imgs.ysscores.com/teams/128/8311751060481.png"
-      },
-      "away": {
-        "name": "لوس أنجلوس",
-        "logo": "https://imgs.ysscores.com/teams/128/4571691410080.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "Concacaf YouTube",
-        "commentator": "غير مدرج"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "20369778",
@@ -691,7 +657,7 @@
       "championship": "كأس مصر",
       "round": "دور الـ 16",
       "stadium": "استاد هيئة قناة السويس الجديد",
-      "time": "16:00",
+      "time": "22:00",
       "date": "الثلاثاء 17-02-2026",
       "current_score": "1 - 2",
       "match_status": "إنتهت المباراة"
@@ -710,93 +676,6 @@
       {
         "channel": "ON Sport 1",
         "commentator": "بلال علام"
-      }
-    ]
-  },
-  {
-    "id": "5103760",
-    "url": "https://www.ysscores.com/ar/match/5103760/Liverpool-FC-Montevideo-vs-Independiente-Medellín",
-    "info": {
-      "championship": "كوبا ليبرتادوريس | الأدوار الإقصائية",
-      "round": "الدور الثاني - مباراة الذهاب",
-      "stadium": "استاد ألفريدو تيريرا",
-      "time": "01:30",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ليفربول",
-        "logo": "https://imgs.ysscores.com/teams/128/3671695764903.png"
-      },
-      "away": {
-        "name": "إنديبيندينتي ميديلين",
-        "logo": "https://imgs.ysscores.com/teams/128/3121695763920.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "Bein Sport 2 EN",
-        "commentator": "أحمد سوكو"
-      }
-    ]
-  },
-  {
-    "id": "5103756",
-    "url": "https://www.ysscores.com/ar/match/5103756/Carabobo-FC-vs-Huachipato-FC",
-    "info": {
-      "championship": "كوبا ليبرتادوريس | الأدوار الإقصائية",
-      "round": "الدور الثاني - مباراة الذهاب",
-      "stadium": "ملعب ميشيل ديلجادو",
-      "time": "23:00",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "كارابوبو",
-        "logo": "https://imgs.ysscores.com/teams/128/4391742313365.png"
-      },
-      "away": {
-        "name": "هوتشيباتو",
-        "logo": "https://imgs.ysscores.com/teams/128/931711808668.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "مصطفى ناظم"
-      }
-    ]
-  },
-  {
-    "id": "5180555",
-    "url": "https://www.ysscores.com/ar/match/5180555/Club-Sportivo-2-de-Mayo-vs-Club-Sporting-Cristal",
-    "info": {
-      "championship": "كوبا ليبرتادوريس | الأدوار الإقصائية",
-      "round": "الدور الثاني - مباراة الذهاب",
-      "stadium": "استاد مونومنتال ريو بارابيتى",
-      "time": "01:30",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "2 دي مايو",
-        "logo": "https://imgs.ysscores.com/teams/128/8601736450798.png"
-      },
-      "away": {
-        "name": "سبورتينج كريستال",
-        "logo": "https://imgs.ysscores.com/teams/128/9941695764756.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "محمد السعدي"
       }
     ]
   }
