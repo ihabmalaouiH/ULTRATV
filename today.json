@@ -1,29 +1,5 @@
 [
   {
-    "id": "76171837",
-    "url": "https://www.ysscores.com/ar/match/76171837/Al-Fotuwa-SC-vs-Tishreen-SC",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "ملعب البلدي - دير الزور",
-      "time": "13:00",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الفتوة",
-        "logo": "https://imgs.ysscores.com/teams/128/8021694349814.png"
-      },
-      "away": {
-        "name": "تشرين",
-        "logo": "https://imgs.ysscores.com/teams/128/9051694349706.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "88893614",
     "url": "https://www.ysscores.com/ar/match/88893614/Homs-Al-Jadid-SC-vs-Al-Karamah-SC",
     "info": {
@@ -43,6 +19,30 @@
       "away": {
         "name": "الكرامة",
         "logo": "https://imgs.ysscores.com/teams/128/8581694349512.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "76171837",
+    "url": "https://www.ysscores.com/ar/match/76171837/Al-Fotuwa-SC-vs-Tishreen-SC",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "ملعب البلدي - دير الزور",
+      "time": "13:00",
+      "date": "الثلاثاء 17-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الفتوة",
+        "logo": "https://imgs.ysscores.com/teams/128/8021694349814.png"
+      },
+      "away": {
+        "name": "تشرين",
+        "logo": "https://imgs.ysscores.com/teams/128/9051694349706.png"
       }
     },
     "channels": []
@@ -195,39 +195,6 @@
     ]
   },
   {
-    "id": "4933505",
-    "url": "https://www.ysscores.com/ar/match/4933505/Al-Gharafa-SC-vs-Tractor-FC",
-    "info": {
-      "championship": "دوري أبطال آسيا للنخبة",
-      "round": "8",
-      "stadium": "استاد ثاني بن جاسم",
-      "time": "17:00",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الغرافة",
-        "logo": "https://imgs.ysscores.com/teams/128/3761719156653.png"
-      },
-      "away": {
-        "name": "تراكتور",
-        "logo": "https://imgs.ysscores.com/teams/128/5391722862680.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 4",
-        "commentator": "باسم الزير"
-      },
-      {
-        "channel": "الكأس 6",
-        "commentator": "سمير اليعقوبي"
-      }
-    ]
-  },
-  {
     "id": "4933506",
     "url": "https://www.ysscores.com/ar/match/4933506/Al-Sadd-SC-vs-Al-Ittihad-Club",
     "info": {
@@ -261,31 +228,35 @@
     ]
   },
   {
-    "id": "4933609",
-    "url": "https://www.ysscores.com/ar/match/4933609/Johor-Darul-Tazim-vs-Vissel-Kobe",
+    "id": "4933505",
+    "url": "https://www.ysscores.com/ar/match/4933505/Al-Gharafa-SC-vs-Tractor-FC",
     "info": {
       "championship": "دوري أبطال آسيا للنخبة",
       "round": "8",
-      "stadium": "ستاد سلطان إبراهيم لاركين",
-      "time": "13:15",
+      "stadium": "استاد ثاني بن جاسم",
+      "time": "17:00",
       "date": "الثلاثاء 17-02-2026",
-      "current_score": "1 - 0",
-      "match_status": "الشوط الثاني"
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "جوهور",
-        "logo": "https://imgs.ysscores.com/teams/128/6821690370566.png"
+        "name": "الغرافة",
+        "logo": "https://imgs.ysscores.com/teams/128/3761719156653.png"
       },
       "away": {
-        "name": "فيسيل كوبي",
-        "logo": "https://imgs.ysscores.com/teams/128/6111690370498.png"
+        "name": "تراكتور",
+        "logo": "https://imgs.ysscores.com/teams/128/5391722862680.png"
       }
     },
     "channels": [
       {
         "channel": "بي إن سبورت 4",
-        "commentator": "أحمد فؤاد"
+        "commentator": "باسم الزير"
+      },
+      {
+        "channel": "الكأس 6",
+        "commentator": "سمير اليعقوبي"
       }
     ]
   },
@@ -315,6 +286,35 @@
       {
         "channel": "بي إن سبورت 5",
         "commentator": "أحمد عبده"
+      }
+    ]
+  },
+  {
+    "id": "4933609",
+    "url": "https://www.ysscores.com/ar/match/4933609/Johor-Darul-Tazim-vs-Vissel-Kobe",
+    "info": {
+      "championship": "دوري أبطال آسيا للنخبة",
+      "round": "8",
+      "stadium": "ستاد سلطان إبراهيم لاركين",
+      "time": "13:15",
+      "date": "الثلاثاء 17-02-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "جوهور",
+        "logo": "https://imgs.ysscores.com/teams/128/6821690370566.png"
+      },
+      "away": {
+        "name": "فيسيل كوبي",
+        "logo": "https://imgs.ysscores.com/teams/128/6111690370498.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 4",
+        "commentator": "أحمد فؤاد"
       }
     ]
   },
@@ -377,35 +377,6 @@
     ]
   },
   {
-    "id": "5161867",
-    "url": "https://www.ysscores.com/ar/match/5161867/Galatasaray-vs-Juventus-FC",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "دور الإقصائيات - مباراة الذهاب",
-      "stadium": "علي سامي ين سبور",
-      "time": "18:45",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "غلطة سراي",
-        "logo": "https://imgs.ysscores.com/teams/128/2081756067376.png"
-      },
-      "away": {
-        "name": "يوفنتوس",
-        "logo": "https://imgs.ysscores.com/teams/128/9331690283003.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "علي سعيد الكعبي"
-      }
-    ]
-  },
-  {
     "id": "5161859",
     "url": "https://www.ysscores.com/ar/match/5161859/SL-Benfica-vs-Real-Madrid",
     "info": {
@@ -431,6 +402,35 @@
       {
         "channel": "بي إن سبورت 1",
         "commentator": "حفيظ دراجي"
+      }
+    ]
+  },
+  {
+    "id": "5161867",
+    "url": "https://www.ysscores.com/ar/match/5161867/Galatasaray-vs-Juventus-FC",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "دور الإقصائيات - مباراة الذهاب",
+      "stadium": "علي سامي ين سبور",
+      "time": "18:45",
+      "date": "الثلاثاء 17-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "غلطة سراي",
+        "logo": "https://imgs.ysscores.com/teams/128/2081756067376.png"
+      },
+      "away": {
+        "name": "يوفنتوس",
+        "logo": "https://imgs.ysscores.com/teams/128/9331690283003.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "علي سعيد الكعبي"
       }
     ]
   },
@@ -493,51 +493,6 @@
     ]
   },
   {
-    "id": "95769282",
-    "url": "https://www.ysscores.com/ar/match/95769282/Al-Rayyan-SC-vs-Al-Nahda-Club",
-    "info": {
-      "championship": "دوري أبطال الخليج",
-      "round": "6 - مباراة الاياب",
-      "stadium": "استاد أحمد بن علي",
-      "time": "18:30",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الريان",
-        "logo": "https://imgs.ysscores.com/teams/128/8521718101575.png"
-      },
-      "away": {
-        "name": "النهضة",
-        "logo": "https://imgs.ysscores.com/teams/128/4141691930732.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الكأس 1",
-        "commentator": "منتصر الأزهري"
-      },
-      {
-        "channel": "عمان الرياضية",
-        "commentator": "أحمد الكعبي"
-      },
-      {
-        "channel": "أبو ظبي الرياضية 2",
-        "commentator": "أحمد الحوسني"
-      },
-      {
-        "channel": "دبي الرياضية 2",
-        "commentator": "أحمد الشحي"
-      },
-      {
-        "channel": "العراقية السريانية",
-        "commentator": "يوسف جميل"
-      }
-    ]
-  },
-  {
     "id": "69751700",
     "url": "https://www.ysscores.com/ar/match/69751700/Al-Shabab-FC-vs-Al-Tadamon-Mukalla",
     "info": {
@@ -583,6 +538,51 @@
       {
         "channel": "عمان مباشر",
         "commentator": "عيسى الزدجالي"
+      }
+    ]
+  },
+  {
+    "id": "95769282",
+    "url": "https://www.ysscores.com/ar/match/95769282/Al-Rayyan-SC-vs-Al-Nahda-Club",
+    "info": {
+      "championship": "دوري أبطال الخليج",
+      "round": "6 - مباراة الاياب",
+      "stadium": "استاد أحمد بن علي",
+      "time": "18:30",
+      "date": "الثلاثاء 17-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الريان",
+        "logo": "https://imgs.ysscores.com/teams/128/8521718101575.png"
+      },
+      "away": {
+        "name": "النهضة",
+        "logo": "https://imgs.ysscores.com/teams/128/4141691930732.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الكأس 1",
+        "commentator": "منتصر الأزهري"
+      },
+      {
+        "channel": "عمان الرياضية",
+        "commentator": "أحمد الكعبي"
+      },
+      {
+        "channel": "أبو ظبي الرياضية 2",
+        "commentator": "أحمد الحوسني"
+      },
+      {
+        "channel": "دبي الرياضية 2",
+        "commentator": "أحمد الشحي"
+      },
+      {
+        "channel": "العراقية السريانية",
+        "commentator": "يوسف جميل"
       }
     ]
   },
