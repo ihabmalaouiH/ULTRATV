@@ -406,6 +406,35 @@
     ]
   },
   {
+    "id": "5161859",
+    "url": "https://www.ysscores.com/ar/match/5161859/SL-Benfica-vs-Real-Madrid",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "دور الإقصائيات - مباراة الذهاب",
+      "stadium": "ملعب النور",
+      "time": "21:00",
+      "date": "الثلاثاء 17-02-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بنفيكا",
+        "logo": "https://imgs.ysscores.com/teams/128/4491690386690.png"
+      },
+      "away": {
+        "name": "ريال مدريد",
+        "logo": "https://imgs.ysscores.com/teams/128/1871690196746.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "حفيظ دراجي"
+      }
+    ]
+  },
+  {
     "id": "5161863",
     "url": "https://www.ysscores.com/ar/match/5161863/AS-Monaco-vs-Paris-Saint-Germain",
     "info": {
@@ -464,76 +493,6 @@
     ]
   },
   {
-    "id": "5161859",
-    "url": "https://www.ysscores.com/ar/match/5161859/SL-Benfica-vs-Real-Madrid",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "دور الإقصائيات - مباراة الذهاب",
-      "stadium": "ملعب النور",
-      "time": "21:00",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بنفيكا",
-        "logo": "https://imgs.ysscores.com/teams/128/4491690386690.png"
-      },
-      "away": {
-        "name": "ريال مدريد",
-        "logo": "https://imgs.ysscores.com/teams/128/1871690196746.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "حفيظ دراجي"
-      }
-    ]
-  },
-  {
-    "id": "95769282",
-    "url": "https://www.ysscores.com/ar/match/95769282/Al-Rayyan-SC-vs-Al-Nahda-Club",
-    "info": {
-      "championship": "دوري أبطال الخليج",
-      "round": "6 - مباراة الاياب",
-      "stadium": "استاد أحمد بن علي",
-      "time": "18:30",
-      "date": "الثلاثاء 17-02-2026",
-      "current_score": "3 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الريان",
-        "logo": "https://imgs.ysscores.com/teams/128/8521718101575.png"
-      },
-      "away": {
-        "name": "النهضة",
-        "logo": "https://imgs.ysscores.com/teams/128/4141691930732.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الكأس 1",
-        "commentator": "منتصر الأزهري"
-      },
-      {
-        "channel": "عمان الرياضية",
-        "commentator": "أحمد الكعبي"
-      },
-      {
-        "channel": "أبو ظبي الرياضية 2",
-        "commentator": "أحمد الحوسني"
-      },
-      {
-        "channel": "العراقية السريانية",
-        "commentator": "يوسف جميل"
-      }
-    ]
-  },
-  {
     "id": "69751700",
     "url": "https://www.ysscores.com/ar/match/69751700/Al-Shabab-FC-vs-Al-Tadamon-Mukalla",
     "info": {
@@ -575,6 +534,47 @@
       {
         "channel": "عمان مباشر",
         "commentator": "عيسى الزدجالي"
+      }
+    ]
+  },
+  {
+    "id": "95769282",
+    "url": "https://www.ysscores.com/ar/match/95769282/Al-Rayyan-SC-vs-Al-Nahda-Club",
+    "info": {
+      "championship": "دوري أبطال الخليج",
+      "round": "6 - مباراة الاياب",
+      "stadium": "استاد أحمد بن علي",
+      "time": "18:30",
+      "date": "الثلاثاء 17-02-2026",
+      "current_score": "3 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الريان",
+        "logo": "https://imgs.ysscores.com/teams/128/8521718101575.png"
+      },
+      "away": {
+        "name": "النهضة",
+        "logo": "https://imgs.ysscores.com/teams/128/4141691930732.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الكأس 1",
+        "commentator": "منتصر الأزهري"
+      },
+      {
+        "channel": "عمان الرياضية",
+        "commentator": "أحمد الكعبي"
+      },
+      {
+        "channel": "أبو ظبي الرياضية 2",
+        "commentator": "أحمد الحوسني"
+      },
+      {
+        "channel": "العراقية السريانية",
+        "commentator": "يوسف جميل"
       }
     ]
   },
