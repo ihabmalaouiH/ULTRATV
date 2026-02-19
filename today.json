@@ -537,7 +537,7 @@
       "time": "04:00",
       "date": "الأربعاء 18-02-2026",
       "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -615,35 +615,6 @@
     ]
   },
   {
-    "id": "5110786",
-    "url": "https://www.ysscores.com/ar/match/5110786/CA-Nacional-Potosí-vs-Botafogo-de-Futebol-e-Regatas",
-    "info": {
-      "championship": "كوبا ليبرتادوريس | الأدوار الإقصائية",
-      "round": "الدور الثاني - مباراة الذهاب",
-      "stadium": "استاد فيكتور أغوستين أوغارت",
-      "time": "01:30",
-      "date": "الأربعاء 18-02-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ناسيونال بوتوسي",
-        "logo": "https://imgs.ysscores.com/teams/128/3571711750448.png"
-      },
-      "away": {
-        "name": "بوتافوغو",
-        "logo": "https://imgs.ysscores.com/teams/128/2731691418709.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "أحمد فؤاد"
-      }
-    ]
-  },
-  {
     "id": "5110785",
     "url": "https://www.ysscores.com/ar/match/5110785/Barcelona-SC-Guayaquil-vs-AA-Argentinos-Juniors",
     "info": {
@@ -669,6 +640,35 @@
       {
         "channel": "بي إن سبورت 2",
         "commentator": "بكر علوان"
+      }
+    ]
+  },
+  {
+    "id": "5110786",
+    "url": "https://www.ysscores.com/ar/match/5110786/CA-Nacional-Potosí-vs-Botafogo-de-Futebol-e-Regatas",
+    "info": {
+      "championship": "كوبا ليبرتادوريس | الأدوار الإقصائية",
+      "round": "الدور الثاني - مباراة الذهاب",
+      "stadium": "استاد فيكتور أغوستين أوغارت",
+      "time": "01:30",
+      "date": "الأربعاء 18-02-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ناسيونال بوتوسي",
+        "logo": "https://imgs.ysscores.com/teams/128/3571711750448.png"
+      },
+      "away": {
+        "name": "بوتافوغو",
+        "logo": "https://imgs.ysscores.com/teams/128/2731691418709.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "أحمد فؤاد"
       }
     ]
   },
