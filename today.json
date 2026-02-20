@@ -654,6 +654,35 @@
     "channels": []
   },
   {
+    "id": "72774788",
+    "url": "https://www.ysscores.com/ar/match/72774788/Newroz-SC-vs-Al-Najaf-FC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "19 - مباراة الذهاب",
+      "stadium": "استاد نوروز",
+      "time": "19:00",
+      "date": "الجمعة 20-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "نوروز",
+        "logo": "https://imgs.ysscores.com/teams/128/1311754243359.png"
+      },
+      "away": {
+        "name": "النجف",
+        "logo": "https://imgs.ysscores.com/teams/128/17714621785978.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية الرياضية",
+        "commentator": "جمال الدراجي"
+      }
+    ]
+  },
+  {
     "id": "52145676",
     "url": "https://www.ysscores.com/ar/match/52145676/Al-Gharraf-SC-vs-Duhok-SC",
     "info": {
@@ -683,35 +712,6 @@
       {
         "channel": "الكأس 6",
         "commentator": "مصطفى ناظم"
-      }
-    ]
-  },
-  {
-    "id": "72774788",
-    "url": "https://www.ysscores.com/ar/match/72774788/Newroz-SC-vs-Al-Najaf-FC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "19 - مباراة الذهاب",
-      "stadium": "استاد نوروز",
-      "time": "19:00",
-      "date": "الجمعة 20-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "نوروز",
-        "logo": "https://imgs.ysscores.com/teams/128/1311754243359.png"
-      },
-      "away": {
-        "name": "النجف",
-        "logo": "https://imgs.ysscores.com/teams/128/17714621785978.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية الرياضية",
-        "commentator": "جمال الدراجي"
       }
     ]
   },
@@ -1342,30 +1342,6 @@
     "channels": []
   },
   {
-    "id": "5101958",
-    "url": "https://www.ysscores.com/ar/match/5101958/Defensa-y-Justicia-vs-Club-Atlético-Belgrano",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "6 - مباراة الذهاب",
-      "stadium": "استاد نوربرتو تيتو توماغيلو",
-      "time": "21:15",
-      "date": "الجمعة 20-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "خوستيكا",
-        "logo": "https://imgs.ysscores.com/teams/128/8621711750295.png"
-      },
-      "away": {
-        "name": "بيلغرانو",
-        "logo": "https://imgs.ysscores.com/teams/128/6861705166944.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5101965",
     "url": "https://www.ysscores.com/ar/match/5101965/CA-Rosario-Central-vs-CA-Talleres",
     "info": {
@@ -1409,6 +1385,30 @@
       "away": {
         "name": "سارمينتو",
         "logo": "https://imgs.ysscores.com/teams/128/2911717935810.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5101958",
+    "url": "https://www.ysscores.com/ar/match/5101958/Defensa-y-Justicia-vs-Club-Atlético-Belgrano",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "6 - مباراة الذهاب",
+      "stadium": "استاد نوربرتو تيتو توماغيلو",
+      "time": "21:15",
+      "date": "الجمعة 20-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "خوستيكا",
+        "logo": "https://imgs.ysscores.com/teams/128/8621711750295.png"
+      },
+      "away": {
+        "name": "بيلغرانو",
+        "logo": "https://imgs.ysscores.com/teams/128/6861705166944.png"
       }
     },
     "channels": []
