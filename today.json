@@ -372,6 +372,39 @@
     "channels": []
   },
   {
+    "id": "4927508",
+    "url": "https://www.ysscores.com/ar/match/4927508/Al-Kholood-Club-vs-Al-Riyadh-SC",
+    "info": {
+      "championship": "الدوري السعودي للمحترفين",
+      "round": "23 - مباراة الاياب",
+      "stadium": "ملعب نادي الحزم",
+      "time": "20:00",
+      "date": "الخميس 19-02-2026",
+      "current_score": "0 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الخلود",
+        "logo": "https://imgs.ysscores.com/teams/128/5501757530062.png"
+      },
+      "away": {
+        "name": "الرياض",
+        "logo": "https://imgs.ysscores.com/teams/128/7341730889148.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 2",
+        "commentator": "سلطان الحربي"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "سلطان الحربي"
+      }
+    ]
+  },
+  {
     "id": "4927504",
     "url": "https://www.ysscores.com/ar/match/4927504/Al-Ahli-SFC-vs-Al-Najma-SC",
     "info": {
@@ -434,39 +467,6 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "راشد الدوسري"
-      }
-    ]
-  },
-  {
-    "id": "4927508",
-    "url": "https://www.ysscores.com/ar/match/4927508/Al-Kholood-Club-vs-Al-Riyadh-SC",
-    "info": {
-      "championship": "الدوري السعودي للمحترفين",
-      "round": "23 - مباراة الاياب",
-      "stadium": "ملعب نادي الحزم",
-      "time": "20:00",
-      "date": "الخميس 19-02-2026",
-      "current_score": "0 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الخلود",
-        "logo": "https://imgs.ysscores.com/teams/128/5501757530062.png"
-      },
-      "away": {
-        "name": "الرياض",
-        "logo": "https://imgs.ysscores.com/teams/128/7341730889148.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 2",
-        "commentator": "سلطان الحربي"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "سلطان الحربي"
       }
     ]
   },
@@ -582,35 +582,6 @@
     ]
   },
   {
-    "id": "5118302",
-    "url": "https://www.ysscores.com/ar/match/5118302/Macarthur-FC-vs-True-Bangkok-United",
-    "info": {
-      "championship": "دوري أبطال آسيا 2",
-      "round": "دور الـ 16 - مباراة الاياب",
-      "stadium": "استاد كامبل تاون",
-      "time": "08:45",
-      "date": "الخميس 19-02-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ماكارثر",
-        "logo": "https://imgs.ysscores.com/teams/128/5061694356027.png"
-      },
-      "away": {
-        "name": "بانكوك",
-        "logo": "https://imgs.ysscores.com/teams/128/1641693170526.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "أحمد سوكو"
-      }
-    ]
-  },
-  {
     "id": "5118298",
     "url": "https://www.ysscores.com/ar/match/5118298/Gamba-Osaka-vs-Pohang-Steelers",
     "info": {
@@ -636,6 +607,35 @@
       {
         "channel": "بي إن سبورت 2",
         "commentator": "عبدالله الغامدي"
+      }
+    ]
+  },
+  {
+    "id": "5118302",
+    "url": "https://www.ysscores.com/ar/match/5118302/Macarthur-FC-vs-True-Bangkok-United",
+    "info": {
+      "championship": "دوري أبطال آسيا 2",
+      "round": "دور الـ 16 - مباراة الاياب",
+      "stadium": "استاد كامبل تاون",
+      "time": "08:45",
+      "date": "الخميس 19-02-2026",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ماكارثر",
+        "logo": "https://imgs.ysscores.com/teams/128/5061694356027.png"
+      },
+      "away": {
+        "name": "بانكوك",
+        "logo": "https://imgs.ysscores.com/teams/128/1641693170526.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "أحمد سوكو"
       }
     ]
   },
@@ -818,64 +818,6 @@
     ]
   },
   {
-    "id": "5141717",
-    "url": "https://www.ysscores.com/ar/match/5141717/SK-Sigma-Olomouc-vs-FC-Lausanne-Sport",
-    "info": {
-      "championship": "دوري المؤتمر الأوروبي",
-      "round": "دور الإقصائيات - مباراة الذهاب",
-      "stadium": "إستاد أندروف",
-      "time": "18:45",
-      "date": "الخميس 19-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "سيغما",
-        "logo": "https://imgs.ysscores.com/teams/128/4961690370503.png"
-      },
-      "away": {
-        "name": "لوزان",
-        "logo": "https://imgs.ysscores.com/teams/128/1471690370506.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Xtra 5",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "5141719",
-    "url": "https://www.ysscores.com/ar/match/5141719/Shkendija-Tetovo-vs-Samsunspor",
-    "info": {
-      "championship": "دوري المؤتمر الأوروبي",
-      "round": "دور الإقصائيات - مباراة الذهاب",
-      "stadium": "تودور برويسكي أرينا",
-      "time": "21:00",
-      "date": "الخميس 19-02-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "شكينديا",
-        "logo": "https://imgs.ysscores.com/teams/128/4991751841669.png"
-      },
-      "away": {
-        "name": "سامسون سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/4911690127919.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Xtra 8",
-        "commentator": "باسم الزير"
-      }
-    ]
-  },
-  {
     "id": "5141718",
     "url": "https://www.ysscores.com/ar/match/5141718/Kuopion-Palloseura-vs-Lech-Poznan",
     "info": {
@@ -930,6 +872,64 @@
       {
         "channel": "بي إن سبورت 2",
         "commentator": "محمد السعدي"
+      }
+    ]
+  },
+  {
+    "id": "5141717",
+    "url": "https://www.ysscores.com/ar/match/5141717/SK-Sigma-Olomouc-vs-FC-Lausanne-Sport",
+    "info": {
+      "championship": "دوري المؤتمر الأوروبي",
+      "round": "دور الإقصائيات - مباراة الذهاب",
+      "stadium": "إستاد أندروف",
+      "time": "18:45",
+      "date": "الخميس 19-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "سيغما",
+        "logo": "https://imgs.ysscores.com/teams/128/4961690370503.png"
+      },
+      "away": {
+        "name": "لوزان",
+        "logo": "https://imgs.ysscores.com/teams/128/1471690370506.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Xtra 5",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5141719",
+    "url": "https://www.ysscores.com/ar/match/5141719/Shkendija-Tetovo-vs-Samsunspor",
+    "info": {
+      "championship": "دوري المؤتمر الأوروبي",
+      "round": "دور الإقصائيات - مباراة الذهاب",
+      "stadium": "تودور برويسكي أرينا",
+      "time": "21:00",
+      "date": "الخميس 19-02-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "شكينديا",
+        "logo": "https://imgs.ysscores.com/teams/128/4991751841669.png"
+      },
+      "away": {
+        "name": "سامسون سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/4911690127919.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Xtra 8",
+        "commentator": "باسم الزير"
       }
     ]
   },
@@ -1079,35 +1079,6 @@
     ]
   },
   {
-    "id": "5181545",
-    "url": "https://www.ysscores.com/ar/match/5181545/CA-Juventud-vs-Club-Guaraní",
-    "info": {
-      "championship": "كوبا ليبرتادوريس | الأدوار الإقصائية",
-      "round": "الدور الثاني - مباراة الذهاب",
-      "stadium": "استاد ألفريدو فيكتور فييرا",
-      "time": "23:00",
-      "date": "الخميس 19-02-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "جوفينتود",
-        "logo": "https://imgs.ysscores.com/teams/128/17673062138870.png"
-      },
-      "away": {
-        "name": "غواراني",
-        "logo": "https://imgs.ysscores.com/teams/128/7611736450699.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 7",
-        "commentator": "محمد المبروكي"
-      }
-    ]
-  },
-  {
     "id": "5180383",
     "url": "https://www.ysscores.com/ar/match/5180383/Deportivo-Táchira-vs-Deportes-Tolima",
     "info": {
@@ -1133,6 +1104,35 @@
       {
         "channel": "بي إن سبورت 3",
         "commentator": "أحمد سوكو"
+      }
+    ]
+  },
+  {
+    "id": "5181545",
+    "url": "https://www.ysscores.com/ar/match/5181545/CA-Juventud-vs-Club-Guaraní",
+    "info": {
+      "championship": "كوبا ليبرتادوريس | الأدوار الإقصائية",
+      "round": "الدور الثاني - مباراة الذهاب",
+      "stadium": "استاد ألفريدو فيكتور فييرا",
+      "time": "23:00",
+      "date": "الخميس 19-02-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "جوفينتود",
+        "logo": "https://imgs.ysscores.com/teams/128/17673062138870.png"
+      },
+      "away": {
+        "name": "غواراني",
+        "logo": "https://imgs.ysscores.com/teams/128/7611736450699.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 7",
+        "commentator": "محمد المبروكي"
       }
     ]
   }
