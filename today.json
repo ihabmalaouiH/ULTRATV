@@ -124,7 +124,7 @@
       "stadium": "استاد حمدان بن زايد",
       "time": "18:30",
       "date": "الجمعة 20-02-2026",
-      "current_score": "0 - 2",
+      "current_score": "0 - 3",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -145,39 +145,6 @@
       {
         "channel": "دبي الرياضية 1",
         "commentator": "عمر الطنيجي"
-      }
-    ]
-  },
-  {
-    "id": "5134951",
-    "url": "https://www.ysscores.com/ar/match/5134951/Al-Wahda-FC-vs-Al-Jazira-Club",
-    "info": {
-      "championship": "الدوري الإماراتي للمحترفين",
-      "round": "17 - مباراة الاياب",
-      "stadium": "استاد آل نهيان",
-      "time": "18:30",
-      "date": "الجمعة 20-02-2026",
-      "current_score": "0 - 1",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "الوحدة",
-        "logo": "https://imgs.ysscores.com/teams/128/8811690300661.png"
-      },
-      "away": {
-        "name": "الجزيرة",
-        "logo": "https://imgs.ysscores.com/teams/128/4171716154082.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "أبو ظبي الرياضية 1",
-        "commentator": "فارس عوض"
-      },
-      {
-        "channel": "دبي الرياضية 2",
-        "commentator": "عبدالحميد الجسمي"
       }
     ]
   },
@@ -211,6 +178,39 @@
       {
         "channel": "الشارقة الرياضية",
         "commentator": "موسى عيد"
+      }
+    ]
+  },
+  {
+    "id": "5134951",
+    "url": "https://www.ysscores.com/ar/match/5134951/Al-Wahda-FC-vs-Al-Jazira-Club",
+    "info": {
+      "championship": "الدوري الإماراتي للمحترفين",
+      "round": "17 - مباراة الاياب",
+      "stadium": "استاد آل نهيان",
+      "time": "18:30",
+      "date": "الجمعة 20-02-2026",
+      "current_score": "0 - 1",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "الوحدة",
+        "logo": "https://imgs.ysscores.com/teams/128/8811690300661.png"
+      },
+      "away": {
+        "name": "الجزيرة",
+        "logo": "https://imgs.ysscores.com/teams/128/4171716154082.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "أبو ظبي الرياضية 1",
+        "commentator": "فارس عوض"
+      },
+      {
+        "channel": "دبي الرياضية 2",
+        "commentator": "عبدالحميد الجسمي"
       }
     ]
   },
@@ -650,35 +650,6 @@
     "channels": []
   },
   {
-    "id": "72774788",
-    "url": "https://www.ysscores.com/ar/match/72774788/Newroz-SC-vs-Al-Najaf-FC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "19 - مباراة الذهاب",
-      "stadium": "استاد نوروز",
-      "time": "19:00",
-      "date": "الجمعة 20-02-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "نوروز",
-        "logo": "https://imgs.ysscores.com/teams/128/1311754243359.png"
-      },
-      "away": {
-        "name": "النجف",
-        "logo": "https://imgs.ysscores.com/teams/128/17714621785978.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية السريانية",
-        "commentator": "جمال الدراجي"
-      }
-    ]
-  },
-  {
     "id": "52145676",
     "url": "https://www.ysscores.com/ar/match/52145676/Al-Gharraf-SC-vs-Duhok-SC",
     "info": {
@@ -708,6 +679,35 @@
       {
         "channel": "الكأس 6",
         "commentator": "مصطفى ناظم"
+      }
+    ]
+  },
+  {
+    "id": "72774788",
+    "url": "https://www.ysscores.com/ar/match/72774788/Newroz-SC-vs-Al-Najaf-FC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "19 - مباراة الذهاب",
+      "stadium": "استاد نوروز",
+      "time": "19:00",
+      "date": "الجمعة 20-02-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "نوروز",
+        "logo": "https://imgs.ysscores.com/teams/128/1311754243359.png"
+      },
+      "away": {
+        "name": "النجف",
+        "logo": "https://imgs.ysscores.com/teams/128/17714621785978.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية السريانية",
+        "commentator": "جمال الدراجي"
       }
     ]
   },
