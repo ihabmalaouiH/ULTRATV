@@ -374,30 +374,6 @@
     "channels": []
   },
   {
-    "id": "5070996",
-    "url": "https://www.ysscores.com/ar/match/5070996/Los-Angeles-FC-vs-Inter-Miami-CF",
-    "info": {
-      "championship": "الدوري الأمريكي لكرة القدم",
-      "round": "1 - مباراة الذهاب",
-      "stadium": "مدرج لوس أنجلوس التذكاري",
-      "time": "03:30",
-      "date": "السبت 21-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "لوس أنجلوس",
-        "logo": "https://imgs.ysscores.com/teams/128/4571691410080.png"
-      },
-      "away": {
-        "name": "إنتر ميامي",
-        "logo": "https://imgs.ysscores.com/teams/128/571691409672.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5071002",
     "url": "https://www.ysscores.com/ar/match/5071002/Vancouver-Whitecaps-FC-vs-Real-Salt-Lake-City",
     "info": {
@@ -422,25 +398,25 @@
     "channels": []
   },
   {
-    "id": "5070993",
-    "url": "https://www.ysscores.com/ar/match/5070993/FC-Dallas-vs-Toronto-FC",
+    "id": "5070996",
+    "url": "https://www.ysscores.com/ar/match/5070996/Los-Angeles-FC-vs-Inter-Miami-CF",
     "info": {
       "championship": "الدوري الأمريكي لكرة القدم",
       "round": "1 - مباراة الذهاب",
-      "stadium": "تويوتا",
-      "time": "02:30",
+      "stadium": "مدرج لوس أنجلوس التذكاري",
+      "time": "03:30",
       "date": "السبت 21-02-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "دالاس",
-        "logo": "https://imgs.ysscores.com/teams/128/781691410999.png"
+        "name": "لوس أنجلوس",
+        "logo": "https://imgs.ysscores.com/teams/128/4571691410080.png"
       },
       "away": {
-        "name": "تورونتو",
-        "logo": "https://imgs.ysscores.com/teams/128/6161691411599.png"
+        "name": "إنتر ميامي",
+        "logo": "https://imgs.ysscores.com/teams/128/571691409672.png"
       }
     },
     "channels": []
@@ -465,6 +441,30 @@
       "away": {
         "name": "نيويورك ريدبول",
         "logo": "https://imgs.ysscores.com/teams/128/9311691411424.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5070993",
+    "url": "https://www.ysscores.com/ar/match/5070993/FC-Dallas-vs-Toronto-FC",
+    "info": {
+      "championship": "الدوري الأمريكي لكرة القدم",
+      "round": "1 - مباراة الذهاب",
+      "stadium": "تويوتا",
+      "time": "02:30",
+      "date": "السبت 21-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "دالاس",
+        "logo": "https://imgs.ysscores.com/teams/128/781691410999.png"
+      },
+      "away": {
+        "name": "تورونتو",
+        "logo": "https://imgs.ysscores.com/teams/128/6161691411599.png"
       }
     },
     "channels": []
@@ -777,35 +777,6 @@
     ]
   },
   {
-    "id": "4813635",
-    "url": "https://www.ysscores.com/ar/match/4813635/Aston-Villa-vs-Leeds-United",
-    "info": {
-      "championship": "الدوري الإنجليزي الممتاز",
-      "round": "27 - مباراة الاياب",
-      "stadium": "فيلا بارك",
-      "time": "16:00",
-      "date": "السبت 21-02-2026",
-      "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "أستون فيلا",
-        "logo": "https://imgs.ysscores.com/teams/128/9921723414870.png"
-      },
-      "away": {
-        "name": "ليدز يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/4691690458244.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "علي محمد علي"
-      }
-    ]
-  },
-  {
     "id": "4813637",
     "url": "https://www.ysscores.com/ar/match/4813637/Chelsea-FC-vs-Burnley-FC",
     "info": {
@@ -831,6 +802,35 @@
       {
         "channel": "بي إن سبورت 1",
         "commentator": "حسن العيدروس"
+      }
+    ]
+  },
+  {
+    "id": "4813635",
+    "url": "https://www.ysscores.com/ar/match/4813635/Aston-Villa-vs-Leeds-United",
+    "info": {
+      "championship": "الدوري الإنجليزي الممتاز",
+      "round": "27 - مباراة الاياب",
+      "stadium": "فيلا بارك",
+      "time": "16:00",
+      "date": "السبت 21-02-2026",
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "أستون فيلا",
+        "logo": "https://imgs.ysscores.com/teams/128/9921723414870.png"
+      },
+      "away": {
+        "name": "ليدز يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/4691690458244.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "علي محمد علي"
       }
     ]
   },
@@ -1389,39 +1389,6 @@
     ]
   },
   {
-    "id": "4927507",
-    "url": "https://www.ysscores.com/ar/match/4927507/Al-Khaleej-FC-vs-NEOM-SC",
-    "info": {
-      "championship": "الدوري السعودي للمحترفين",
-      "round": "23 - مباراة الاياب",
-      "stadium": "استاد الأمير محمد بن فهد",
-      "time": "20:00",
-      "date": "السبت 21-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الخليج",
-        "logo": "https://imgs.ysscores.com/teams/128/7451690299071.png"
-      },
-      "away": {
-        "name": "نيوم",
-        "logo": "https://imgs.ysscores.com/teams/128/9361751106662.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 2",
-        "commentator": "جعفر الصليح"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "جعفر الصليح"
-      }
-    ]
-  },
-  {
     "id": "4927509",
     "url": "https://www.ysscores.com/ar/match/4927509/Al-Nassr-FC-vs-Al-Hazem-SC",
     "info": {
@@ -1455,31 +1422,35 @@
     ]
   },
   {
-    "id": "65083112",
-    "url": "https://www.ysscores.com/ar/match/65083112/Al-Qasim-SC-vs-Erbil-SC",
+    "id": "4927507",
+    "url": "https://www.ysscores.com/ar/match/4927507/Al-Khaleej-FC-vs-NEOM-SC",
     "info": {
-      "championship": "الدوري العراقي",
-      "round": "19 - مباراة الذهاب",
-      "stadium": "استاد النجف الدولي",
-      "time": "19:00",
+      "championship": "الدوري السعودي للمحترفين",
+      "round": "23 - مباراة الاياب",
+      "stadium": "استاد الأمير محمد بن فهد",
+      "time": "20:00",
       "date": "السبت 21-02-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "القاسم",
-        "logo": "https://imgs.ysscores.com/teams/128/2661722928239.png"
+        "name": "الخليج",
+        "logo": "https://imgs.ysscores.com/teams/128/7451690299071.png"
       },
       "away": {
-        "name": "أربيل",
-        "logo": "https://imgs.ysscores.com/teams/128/2581695657262.png"
+        "name": "نيوم",
+        "logo": "https://imgs.ysscores.com/teams/128/9361751106662.png"
       }
     },
     "channels": [
       {
-        "channel": "العراقية السريانية",
-        "commentator": "يوسف جميل"
+        "channel": "ثمانية 2",
+        "commentator": "جعفر الصليح"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "جعفر الصليح"
       }
     ]
   },
@@ -1509,6 +1480,35 @@
       {
         "channel": "العراقية السريانية",
         "commentator": "عباس هادي"
+      }
+    ]
+  },
+  {
+    "id": "65083112",
+    "url": "https://www.ysscores.com/ar/match/65083112/Al-Qasim-SC-vs-Erbil-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "19 - مباراة الذهاب",
+      "stadium": "استاد النجف الدولي",
+      "time": "19:00",
+      "date": "السبت 21-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "القاسم",
+        "logo": "https://imgs.ysscores.com/teams/128/2661722928239.png"
+      },
+      "away": {
+        "name": "أربيل",
+        "logo": "https://imgs.ysscores.com/teams/128/2581695657262.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية السريانية",
+        "commentator": "يوسف جميل"
       }
     ]
   },
@@ -2088,6 +2088,35 @@
     ]
   },
   {
+    "id": "5156354",
+    "url": "https://www.ysscores.com/ar/match/5156354/ES-Mostaganem-vs-JS-Kabylie",
+    "info": {
+      "championship": "الرابطة المحترفة الجزائرية الأولى",
+      "round": "20 - مباراة الاياب",
+      "stadium": "مجمع بلحميتي العربي",
+      "time": "14:30",
+      "date": "السبت 21-02-2026",
+      "current_score": "2 - 2",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "ترجي مستغانم",
+        "logo": "https://imgs.ysscores.com/teams/128/8081721202117.png"
+      },
+      "away": {
+        "name": "شبيبة القبائل",
+        "logo": "https://imgs.ysscores.com/teams/128/2261693417840.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الرياضية ويب",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
     "id": "5156355",
     "url": "https://www.ysscores.com/ar/match/5156355/Olympique-Akbou-vs-Paradou-AC",
     "info": {
@@ -2113,35 +2142,6 @@
       {
         "channel": "الرياضية ويب",
         "commentator": "عبد القادر طاسين"
-      }
-    ]
-  },
-  {
-    "id": "5156354",
-    "url": "https://www.ysscores.com/ar/match/5156354/ES-Mostaganem-vs-JS-Kabylie",
-    "info": {
-      "championship": "الرابطة المحترفة الجزائرية الأولى",
-      "round": "20 - مباراة الاياب",
-      "stadium": "مجمع بلحميتي العربي",
-      "time": "14:30",
-      "date": "السبت 21-02-2026",
-      "current_score": "1 - 2",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "ترجي مستغانم",
-        "logo": "https://imgs.ysscores.com/teams/128/8081721202117.png"
-      },
-      "away": {
-        "name": "شبيبة القبائل",
-        "logo": "https://imgs.ysscores.com/teams/128/2261693417840.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الرياضية ويب",
-        "commentator": "غير مدرج"
       }
     ]
   },
@@ -2228,30 +2228,6 @@
     "channels": []
   },
   {
-    "id": "4825429",
-    "url": "https://www.ysscores.com/ar/match/4825429/Wrexham-AFC-vs-Ipswich-Town",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "33 - مباراة الاياب",
-      "stadium": "ملعب ستوك كاي راس",
-      "time": "16:00",
-      "date": "السبت 21-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "ريكسهام",
-        "logo": "https://imgs.ysscores.com/teams/128/2611690377870.png"
-      },
-      "away": {
-        "name": "إيبسويتش",
-        "logo": "https://imgs.ysscores.com/teams/128/8291690370545.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4825428",
     "url": "https://www.ysscores.com/ar/match/4825428/West-Bromwich-Albion-vs-Coventry-City",
     "info": {
@@ -2281,25 +2257,25 @@
     ]
   },
   {
-    "id": "4825427",
-    "url": "https://www.ysscores.com/ar/match/4825427/Watford-FC-vs-Derby-County",
+    "id": "4825429",
+    "url": "https://www.ysscores.com/ar/match/4825429/Wrexham-AFC-vs-Ipswich-Town",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "33 - مباراة الاياب",
-      "stadium": "فيكارج رود",
+      "stadium": "ملعب ستوك كاي راس",
       "time": "16:00",
       "date": "السبت 21-02-2026",
-      "current_score": "1 - 0",
+      "current_score": "1 - 1",
       "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
-        "name": "واتفورد",
-        "logo": "https://imgs.ysscores.com/teams/128/3341690370541.png"
+        "name": "ريكسهام",
+        "logo": "https://imgs.ysscores.com/teams/128/2611690377870.png"
       },
       "away": {
-        "name": "ديربي كاونتي",
-        "logo": "https://imgs.ysscores.com/teams/128/8071690370554.png"
+        "name": "إيبسويتش",
+        "logo": "https://imgs.ysscores.com/teams/128/8291690370545.png"
       }
     },
     "channels": []
@@ -2329,6 +2305,30 @@
     "channels": []
   },
   {
+    "id": "4825427",
+    "url": "https://www.ysscores.com/ar/match/4825427/Watford-FC-vs-Derby-County",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "33 - مباراة الاياب",
+      "stadium": "فيكارج رود",
+      "time": "16:00",
+      "date": "السبت 21-02-2026",
+      "current_score": "1 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "واتفورد",
+        "logo": "https://imgs.ysscores.com/teams/128/3341690370541.png"
+      },
+      "away": {
+        "name": "ديربي كاونتي",
+        "logo": "https://imgs.ysscores.com/teams/128/8071690370554.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4825426",
     "url": "https://www.ysscores.com/ar/match/4825426/Swansea-City-vs-Bristol-City",
     "info": {
@@ -2348,6 +2348,30 @@
       "away": {
         "name": "بريستول",
         "logo": "https://imgs.ysscores.com/teams/128/4621690370523.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825425",
+    "url": "https://www.ysscores.com/ar/match/4825425/Stoke-City-vs-Leicester-City",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "33 - مباراة الاياب",
+      "stadium": "بت 365",
+      "time": "13:30",
+      "date": "السبت 21-02-2026",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ستوك سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/6781690388673.png"
+      },
+      "away": {
+        "name": "ليستر سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/5531690711879.png"
       }
     },
     "channels": []
@@ -2380,30 +2404,6 @@
         "commentator": "محمد نضال"
       }
     ]
-  },
-  {
-    "id": "4825425",
-    "url": "https://www.ysscores.com/ar/match/4825425/Stoke-City-vs-Leicester-City",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "33 - مباراة الاياب",
-      "stadium": "بت 365",
-      "time": "13:30",
-      "date": "السبت 21-02-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ستوك سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/6781690388673.png"
-      },
-      "away": {
-        "name": "ليستر سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/5531690711879.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "4825421",
