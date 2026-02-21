@@ -554,25 +554,25 @@
     "channels": []
   },
   {
-    "id": "89510612",
-    "url": "https://www.ysscores.com/ar/match/89510612/Omayya-SC-vs-Al-Ahli-SC-(Syria)",
+    "id": "85699097",
+    "url": "https://www.ysscores.com/ar/match/85699097/Jableh-SC-vs-Khan-Shekhoun",
     "info": {
       "championship": "الدوري السوري الممتاز",
       "round": "9 - مباراة الذهاب",
-      "stadium": "ملعب الجلاء - دمشق",
+      "stadium": "استاد جبلة",
       "time": "13:00",
       "date": "الجمعة 20-02-2026",
-      "current_score": "2 - 3",
+      "current_score": "1 - 2",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "أمية",
-        "logo": "https://imgs.ysscores.com/teams/128/17709364854946.png"
+        "name": "جبلة",
+        "logo": "https://imgs.ysscores.com/teams/128/5911694349320.png"
       },
       "away": {
-        "name": "أهلي حلب",
-        "logo": "https://imgs.ysscores.com/teams/128/5401744895680.png"
+        "name": "خان شيخون",
+        "logo": "https://imgs.ysscores.com/teams/128/17648858602326.png"
       }
     },
     "channels": []
@@ -602,30 +602,6 @@
     "channels": []
   },
   {
-    "id": "85699097",
-    "url": "https://www.ysscores.com/ar/match/85699097/Jableh-SC-vs-Khan-Shekhoun",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "9 - مباراة الذهاب",
-      "stadium": "استاد جبلة",
-      "time": "13:00",
-      "date": "الجمعة 20-02-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "جبلة",
-        "logo": "https://imgs.ysscores.com/teams/128/5911694349320.png"
-      },
-      "away": {
-        "name": "خان شيخون",
-        "logo": "https://imgs.ysscores.com/teams/128/17648858602326.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "91966517",
     "url": "https://www.ysscores.com/ar/match/91966517/Al-Hurriya-SC-vs-Homs-Al-Jadid-SC",
     "info": {
@@ -648,6 +624,59 @@
       }
     },
     "channels": []
+  },
+  {
+    "id": "89510612",
+    "url": "https://www.ysscores.com/ar/match/89510612/Omayya-SC-vs-Al-Ahli-SC-(Syria)",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "9 - مباراة الذهاب",
+      "stadium": "ملعب الجلاء - دمشق",
+      "time": "13:00",
+      "date": "الجمعة 20-02-2026",
+      "current_score": "2 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أمية",
+        "logo": "https://imgs.ysscores.com/teams/128/17709364854946.png"
+      },
+      "away": {
+        "name": "أهلي حلب",
+        "logo": "https://imgs.ysscores.com/teams/128/5401744895680.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "72774788",
+    "url": "https://www.ysscores.com/ar/match/72774788/Newroz-SC-vs-Al-Najaf-FC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "19 - مباراة الذهاب",
+      "stadium": "استاد نوروز",
+      "time": "19:00",
+      "date": "الجمعة 20-02-2026",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "نوروز",
+        "logo": "https://imgs.ysscores.com/teams/128/1311754243359.png"
+      },
+      "away": {
+        "name": "النجف",
+        "logo": "https://imgs.ysscores.com/teams/128/17714621785978.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية السريانية",
+        "commentator": "جمال الدراجي"
+      }
+    ]
   },
   {
     "id": "52145676",
@@ -679,35 +708,6 @@
       {
         "channel": "الكأس 6",
         "commentator": "مصطفى ناظم"
-      }
-    ]
-  },
-  {
-    "id": "72774788",
-    "url": "https://www.ysscores.com/ar/match/72774788/Newroz-SC-vs-Al-Najaf-FC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "19 - مباراة الذهاب",
-      "stadium": "استاد نوروز",
-      "time": "19:00",
-      "date": "الجمعة 20-02-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "نوروز",
-        "logo": "https://imgs.ysscores.com/teams/128/1311754243359.png"
-      },
-      "away": {
-        "name": "النجف",
-        "logo": "https://imgs.ysscores.com/teams/128/17714621785978.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية السريانية",
-        "commentator": "جمال الدراجي"
       }
     ]
   },
@@ -832,25 +832,25 @@
     ]
   },
   {
-    "id": "77253190",
-    "url": "https://www.ysscores.com/ar/match/77253190/Al-Khums-SC-vs-Al-Dahra-Tripoli-FC",
+    "id": "18828570",
+    "url": "https://www.ysscores.com/ar/match/18828570/Al-Soqour-Tobruk-vs-Al-Taawon-SC",
     "info": {
       "championship": "الدوري الليبي الممتاز",
       "round": "1 - مباراة الاياب",
-      "stadium": "ملعب الخمس",
-      "time": "22:00",
+      "stadium": "ملعب درنة",
+      "time": "21:30",
       "date": "الجمعة 20-02-2026",
-      "current_score": "3 - 2",
+      "current_score": "0 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الخمس",
-        "logo": "https://imgs.ysscores.com/teams/128/17656575035545.png"
+        "name": "الصقور",
+        "logo": "https://imgs.ysscores.com/teams/128/17656577952914.png"
       },
       "away": {
-        "name": "الظهرة",
-        "logo": "https://imgs.ysscores.com/teams/128/17656551628632.png"
+        "name": "التعاون",
+        "logo": "https://imgs.ysscores.com/teams/128/17656571434987.png"
       }
     },
     "channels": []
@@ -880,25 +880,25 @@
     "channels": []
   },
   {
-    "id": "18828570",
-    "url": "https://www.ysscores.com/ar/match/18828570/Al-Soqour-Tobruk-vs-Al-Taawon-SC",
+    "id": "77253190",
+    "url": "https://www.ysscores.com/ar/match/77253190/Al-Khums-SC-vs-Al-Dahra-Tripoli-FC",
     "info": {
       "championship": "الدوري الليبي الممتاز",
       "round": "1 - مباراة الاياب",
-      "stadium": "ملعب درنة",
-      "time": "21:30",
+      "stadium": "ملعب الخمس",
+      "time": "22:00",
       "date": "الجمعة 20-02-2026",
-      "current_score": "0 - 1",
+      "current_score": "3 - 2",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الصقور",
-        "logo": "https://imgs.ysscores.com/teams/128/17656577952914.png"
+        "name": "الخمس",
+        "logo": "https://imgs.ysscores.com/teams/128/17656575035545.png"
       },
       "away": {
-        "name": "التعاون",
-        "logo": "https://imgs.ysscores.com/teams/128/17656571434987.png"
+        "name": "الظهرة",
+        "logo": "https://imgs.ysscores.com/teams/128/17656551628632.png"
       }
     },
     "channels": []
@@ -1251,6 +1251,30 @@
     ]
   },
   {
+    "id": "5101963",
+    "url": "https://www.ysscores.com/ar/match/5101963/Instituto-ACC-vs-Club-Atlético-Tucumán",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "6 - مباراة الذهاب",
+      "stadium": "استاد خوان دومينغو بيرون",
+      "time": "00:00",
+      "date": "الجمعة 20-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "انيستتوتو",
+        "logo": "https://imgs.ysscores.com/teams/128/3131717933825.png"
+      },
+      "away": {
+        "name": "توكومان",
+        "logo": "https://imgs.ysscores.com/teams/128/3641717935741.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5101956",
     "url": "https://www.ysscores.com/ar/match/5101956/CA-Boca-Juniors-vs-Racing-Club",
     "info": {
@@ -1278,30 +1302,6 @@
         "commentator": "رؤوف خليف"
       }
     ]
-  },
-  {
-    "id": "5101963",
-    "url": "https://www.ysscores.com/ar/match/5101963/Instituto-ACC-vs-Club-Atlético-Tucumán",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "6 - مباراة الذهاب",
-      "stadium": "استاد خوان دومينغو بيرون",
-      "time": "00:00",
-      "date": "الجمعة 20-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "انيستتوتو",
-        "logo": "https://imgs.ysscores.com/teams/128/3131717933825.png"
-      },
-      "away": {
-        "name": "توكومان",
-        "logo": "https://imgs.ysscores.com/teams/128/3641717935741.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "5101961",
