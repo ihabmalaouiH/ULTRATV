@@ -8,8 +8,8 @@
       "stadium": "استاد الحسن",
       "time": "19:45",
       "date": "السبت 21-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -25,6 +25,39 @@
       {
         "channel": "الأردن الرياضية",
         "commentator": "أحمد الخلايلة"
+      }
+    ]
+  },
+  {
+    "id": "4829518",
+    "url": "https://www.ysscores.com/ar/match/4829518/RB-Leipzig-vs-Borussia-Dortmund",
+    "info": {
+      "championship": "الدوري الألماني",
+      "round": "23 - مباراة الاياب",
+      "stadium": "ريد بول أرينا لايبزيج",
+      "time": "18:30",
+      "date": "السبت 21-02-2026",
+      "current_score": "2 - 1",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "لايبزيج",
+        "logo": "https://imgs.ysscores.com/teams/128/8361734715237.png"
+      },
+      "away": {
+        "name": "دورتموند",
+        "logo": "https://imgs.ysscores.com/teams/128/4201690288818.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "MBC Action",
+        "commentator": "عصام عبده"
+      },
+      {
+        "channel": "MBC شاهد | رياضة",
+        "commentator": "عصام عبده"
       }
     ]
   },
@@ -87,39 +120,6 @@
       {
         "channel": "MBC شاهد | رياضة",
         "commentator": "أحمد النفيسة"
-      }
-    ]
-  },
-  {
-    "id": "4829518",
-    "url": "https://www.ysscores.com/ar/match/4829518/RB-Leipzig-vs-Borussia-Dortmund",
-    "info": {
-      "championship": "الدوري الألماني",
-      "round": "23 - مباراة الاياب",
-      "stadium": "ريد بول أرينا لايبزيج",
-      "time": "18:30",
-      "date": "السبت 21-02-2026",
-      "current_score": "2 - 1",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "لايبزيج",
-        "logo": "https://imgs.ysscores.com/teams/128/8361734715237.png"
-      },
-      "away": {
-        "name": "دورتموند",
-        "logo": "https://imgs.ysscores.com/teams/128/4201690288818.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "MBC Action",
-        "commentator": "عصام عبده"
-      },
-      {
-        "channel": "MBC شاهد | رياضة",
-        "commentator": "عصام عبده"
       }
     ]
   },
@@ -206,30 +206,6 @@
     "channels": []
   },
   {
-    "id": "5070999",
-    "url": "https://www.ysscores.com/ar/match/5070999/Portland-Timbers-vs-Columbus-Crew",
-    "info": {
-      "championship": "الدوري الأمريكي لكرة القدم",
-      "round": "1 - مباراة الذهاب",
-      "stadium": "بروفايدنس بارك",
-      "time": "04:30",
-      "date": "السبت 21-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "بورتلاند تمبرز",
-        "logo": "https://imgs.ysscores.com/teams/128/3221691410811.png"
-      },
-      "away": {
-        "name": "كولومبوس كرو",
-        "logo": "https://imgs.ysscores.com/teams/128/7611691409915.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5071000",
     "url": "https://www.ysscores.com/ar/match/5071000/San-Diego-FC-vs-CF-Montréal",
     "info": {
@@ -249,6 +225,30 @@
       "away": {
         "name": "مونتريال",
         "logo": "https://imgs.ysscores.com/teams/128/1021691411750.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5070999",
+    "url": "https://www.ysscores.com/ar/match/5070999/Portland-Timbers-vs-Columbus-Crew",
+    "info": {
+      "championship": "الدوري الأمريكي لكرة القدم",
+      "round": "1 - مباراة الذهاب",
+      "stadium": "بروفايدنس بارك",
+      "time": "04:30",
+      "date": "السبت 21-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "بورتلاند تمبرز",
+        "logo": "https://imgs.ysscores.com/teams/128/3221691410811.png"
+      },
+      "away": {
+        "name": "كولومبوس كرو",
+        "logo": "https://imgs.ysscores.com/teams/128/7611691409915.png"
       }
     },
     "channels": []
@@ -398,30 +398,6 @@
     "channels": []
   },
   {
-    "id": "5070996",
-    "url": "https://www.ysscores.com/ar/match/5070996/Los-Angeles-FC-vs-Inter-Miami-CF",
-    "info": {
-      "championship": "الدوري الأمريكي لكرة القدم",
-      "round": "1 - مباراة الذهاب",
-      "stadium": "مدرج لوس أنجلوس التذكاري",
-      "time": "03:30",
-      "date": "السبت 21-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "لوس أنجلوس",
-        "logo": "https://imgs.ysscores.com/teams/128/4571691410080.png"
-      },
-      "away": {
-        "name": "إنتر ميامي",
-        "logo": "https://imgs.ysscores.com/teams/128/571691409672.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5070993",
     "url": "https://www.ysscores.com/ar/match/5070993/FC-Dallas-vs-Toronto-FC",
     "info": {
@@ -441,6 +417,30 @@
       "away": {
         "name": "تورونتو",
         "logo": "https://imgs.ysscores.com/teams/128/6161691411599.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5070996",
+    "url": "https://www.ysscores.com/ar/match/5070996/Los-Angeles-FC-vs-Inter-Miami-CF",
+    "info": {
+      "championship": "الدوري الأمريكي لكرة القدم",
+      "round": "1 - مباراة الذهاب",
+      "stadium": "مدرج لوس أنجلوس التذكاري",
+      "time": "03:30",
+      "date": "السبت 21-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "لوس أنجلوس",
+        "logo": "https://imgs.ysscores.com/teams/128/4571691410080.png"
+      },
+      "away": {
+        "name": "إنتر ميامي",
+        "logo": "https://imgs.ysscores.com/teams/128/571691409672.png"
       }
     },
     "channels": []
@@ -663,30 +663,6 @@
     "channels": []
   },
   {
-    "id": "4818920",
-    "url": "https://www.ysscores.com/ar/match/4818920/Dundee-United-FC-vs-Kilmarnock-FC",
-    "info": {
-      "championship": "الدوري الإسكتلندي الممتاز",
-      "round": "28 - مباراة الاياب",
-      "stadium": "تاناديس بارك",
-      "time": "16:00",
-      "date": "السبت 21-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "دندي يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/1541754872814.png"
-      },
-      "away": {
-        "name": "كيلمارنوك",
-        "logo": "https://imgs.ysscores.com/teams/128/4141690370531.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4818918",
     "url": "https://www.ysscores.com/ar/match/4818918/Aberdeen-FC-vs-Dundee-FC",
     "info": {
@@ -706,6 +682,30 @@
       "away": {
         "name": "دندي",
         "logo": "https://imgs.ysscores.com/teams/128/2331690370518.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4818920",
+    "url": "https://www.ysscores.com/ar/match/4818920/Dundee-United-FC-vs-Kilmarnock-FC",
+    "info": {
+      "championship": "الدوري الإسكتلندي الممتاز",
+      "round": "28 - مباراة الاياب",
+      "stadium": "تاناديس بارك",
+      "time": "16:00",
+      "date": "السبت 21-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "دندي يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/1541754872814.png"
+      },
+      "away": {
+        "name": "كيلمارنوك",
+        "logo": "https://imgs.ysscores.com/teams/128/4141690370531.png"
       }
     },
     "channels": []
@@ -773,35 +773,6 @@
     ]
   },
   {
-    "id": "4813635",
-    "url": "https://www.ysscores.com/ar/match/4813635/Aston-Villa-vs-Leeds-United",
-    "info": {
-      "championship": "الدوري الإنجليزي الممتاز",
-      "round": "27 - مباراة الاياب",
-      "stadium": "فيلا بارك",
-      "time": "16:00",
-      "date": "السبت 21-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أستون فيلا",
-        "logo": "https://imgs.ysscores.com/teams/128/9921723414870.png"
-      },
-      "away": {
-        "name": "ليدز يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/4691690458244.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "علي محمد علي"
-      }
-    ]
-  },
-  {
     "id": "4813637",
     "url": "https://www.ysscores.com/ar/match/4813637/Chelsea-FC-vs-Burnley-FC",
     "info": {
@@ -827,6 +798,35 @@
       {
         "channel": "بي إن سبورت 1",
         "commentator": "حسن العيدروس"
+      }
+    ]
+  },
+  {
+    "id": "4813635",
+    "url": "https://www.ysscores.com/ar/match/4813635/Aston-Villa-vs-Leeds-United",
+    "info": {
+      "championship": "الدوري الإنجليزي الممتاز",
+      "round": "27 - مباراة الاياب",
+      "stadium": "فيلا بارك",
+      "time": "16:00",
+      "date": "السبت 21-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أستون فيلا",
+        "logo": "https://imgs.ysscores.com/teams/128/9921723414870.png"
+      },
+      "away": {
+        "name": "ليدز يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/4691690458244.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "علي محمد علي"
       }
     ]
   },
@@ -2700,30 +2700,6 @@
     ]
   },
   {
-    "id": "5180591",
-    "url": "https://www.ysscores.com/ar/match/5180591/Al-Rustaq-Club-vs-Al-Nasr-Club",
-    "info": {
-      "championship": "دوري المحترفين العماني",
-      "round": "15 - مباراة الاياب",
-      "stadium": "مجمع الرستاق الرياضي",
-      "time": "19:00",
-      "date": "السبت 21-02-2026",
-      "current_score": "1 - 0",
-      "match_status": "الشوط الأول"
-    },
-    "teams": {
-      "home": {
-        "name": "الرستاق",
-        "logo": "https://imgs.ysscores.com/teams/128/3451691931983.png"
-      },
-      "away": {
-        "name": "النصر",
-        "logo": "https://imgs.ysscores.com/teams/128/5661691930849.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5180592",
     "url": "https://www.ysscores.com/ar/match/5180592/Al-Seeb-Club-vs-Oman-Club",
     "info": {
@@ -2751,6 +2727,30 @@
         "commentator": "محمد الريامي"
       }
     ]
+  },
+  {
+    "id": "5180591",
+    "url": "https://www.ysscores.com/ar/match/5180591/Al-Rustaq-Club-vs-Al-Nasr-Club",
+    "info": {
+      "championship": "دوري المحترفين العماني",
+      "round": "15 - مباراة الاياب",
+      "stadium": "مجمع الرستاق الرياضي",
+      "time": "19:00",
+      "date": "السبت 21-02-2026",
+      "current_score": "1 - 0",
+      "match_status": "الشوط الأول"
+    },
+    "teams": {
+      "home": {
+        "name": "الرستاق",
+        "logo": "https://imgs.ysscores.com/teams/128/3451691931983.png"
+      },
+      "away": {
+        "name": "النصر",
+        "logo": "https://imgs.ysscores.com/teams/128/5661691930849.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "47850739",
