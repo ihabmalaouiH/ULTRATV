@@ -91,28 +91,33 @@
     ]
   },
   {
-    "id": "5071004",
-    "url": "https://www.ysscores.com/ar/match/5071004/Seattle-Sounders-FC-vs-Colorado-Rapids",
+    "id": "5071001",
+    "url": "https://www.ysscores.com/ar/match/5071001/San-Jose-Earthquakes-vs-Sporting-Kansas-City",
     "info": {
       "championship": "الدوري الأمريكي لكرة القدم",
       "round": "1 - مباراة الذهاب",
-      "stadium": "لومن فيلد",
-      "time": "03:15",
-      "date": "الأحد 22-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "stadium": "باي بال بارك",
+      "time": "04:30",
+      "date": "السبت 21-02-2026",
+      "current_score": "3 - 0",
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
-        "name": "سياتل",
-        "logo": "https://imgs.ysscores.com/teams/128/241740040401.png"
+        "name": "سان خوسيه",
+        "logo": "https://imgs.ysscores.com/teams/128/7781691411961.png"
       },
       "away": {
-        "name": "كولورادو",
-        "logo": "https://imgs.ysscores.com/teams/128/7481691410134.png"
+        "name": "كانساس سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/4641691408719.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "Apple TV",
+        "commentator": "غير مدرج"
+      }
+    ]
   },
   {
     "id": "5071000",
@@ -134,35 +139,6 @@
       "away": {
         "name": "مونتريال",
         "logo": "https://imgs.ysscores.com/teams/128/1021691411750.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "Apple TV",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "5071001",
-    "url": "https://www.ysscores.com/ar/match/5071001/San-Jose-Earthquakes-vs-Sporting-Kansas-City",
-    "info": {
-      "championship": "الدوري الأمريكي لكرة القدم",
-      "round": "1 - مباراة الذهاب",
-      "stadium": "باي بال بارك",
-      "time": "04:30",
-      "date": "السبت 21-02-2026",
-      "current_score": "3 - 0",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "سان خوسيه",
-        "logo": "https://imgs.ysscores.com/teams/128/7781691411961.png"
-      },
-      "away": {
-        "name": "كانساس سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/4641691408719.png"
       }
     },
     "channels": [
@@ -200,6 +176,30 @@
         "commentator": "غير مدرج"
       }
     ]
+  },
+  {
+    "id": "5071004",
+    "url": "https://www.ysscores.com/ar/match/5071004/Seattle-Sounders-FC-vs-Colorado-Rapids",
+    "info": {
+      "championship": "الدوري الأمريكي لكرة القدم",
+      "round": "1 - مباراة الذهاب",
+      "stadium": "لومن فيلد",
+      "time": "03:15",
+      "date": "الأحد 22-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "سياتل",
+        "logo": "https://imgs.ysscores.com/teams/128/241740040401.png"
+      },
+      "away": {
+        "name": "كولورادو",
+        "logo": "https://imgs.ysscores.com/teams/128/7481691410134.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "5071003",
@@ -1673,30 +1673,6 @@
     "channels": []
   },
   {
-    "id": "4859152",
-    "url": "https://www.ysscores.com/ar/match/4859152/Panserraikos-vs-Volos-NPS",
-    "info": {
-      "championship": "الدوري اليوناني",
-      "round": "22 - مباراة الاياب",
-      "stadium": "إستاديو سيرّس المُدنّي",
-      "time": "15:00",
-      "date": "الأحد 22-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "بانسيررايكوس",
-        "logo": "https://imgs.ysscores.com/teams/128/7481754000611.png"
-      },
-      "away": {
-        "name": "فولوس",
-        "logo": "https://imgs.ysscores.com/teams/128/3431754000844.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4859150",
     "url": "https://www.ysscores.com/ar/match/4859150/OFI-Crete-FC-vs-Panathinaikos-FC",
     "info": {
@@ -1716,6 +1692,30 @@
       "away": {
         "name": "باناثينايكوس",
         "logo": "https://imgs.ysscores.com/teams/128/8301690821553.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4859152",
+    "url": "https://www.ysscores.com/ar/match/4859152/Panserraikos-vs-Volos-NPS",
+    "info": {
+      "championship": "الدوري اليوناني",
+      "round": "22 - مباراة الاياب",
+      "stadium": "إستاديو سيرّس المُدنّي",
+      "time": "15:00",
+      "date": "الأحد 22-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "بانسيررايكوس",
+        "logo": "https://imgs.ysscores.com/teams/128/7481754000611.png"
+      },
+      "away": {
+        "name": "فولوس",
+        "logo": "https://imgs.ysscores.com/teams/128/3431754000844.png"
       }
     },
     "channels": []
@@ -1846,30 +1846,6 @@
     "channels": []
   },
   {
-    "id": "5101966",
-    "url": "https://www.ysscores.com/ar/match/5101966/CA-San-Lorenzo-de-Almagro-vs-AA-Estudiantes-(Río-Cuarto)",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "6 - مباراة الذهاب",
-      "stadium": "لستاد بيدرو بيديجين",
-      "time": "21:00",
-      "date": "الأحد 22-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "سان لورينزو",
-        "logo": "https://imgs.ysscores.com/teams/128/8421711808886.png"
-      },
-      "away": {
-        "name": "ريو كوارتو",
-        "logo": "https://imgs.ysscores.com/teams/128/17673036447889.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5101967",
     "url": "https://www.ysscores.com/ar/match/5101967/CA-Unión-(Santa-Fe)-vs-CA-Aldosivi",
     "info": {
@@ -1889,6 +1865,30 @@
       "away": {
         "name": "إلدوسيفي",
         "logo": "https://imgs.ysscores.com/teams/128/1451735322474.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5101966",
+    "url": "https://www.ysscores.com/ar/match/5101966/CA-San-Lorenzo-de-Almagro-vs-AA-Estudiantes-(Río-Cuarto)",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "6 - مباراة الذهاب",
+      "stadium": "لستاد بيدرو بيديجين",
+      "time": "21:00",
+      "date": "الأحد 22-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "سان لورينزو",
+        "logo": "https://imgs.ysscores.com/teams/128/8421711808886.png"
+      },
+      "away": {
+        "name": "ريو كوارتو",
+        "logo": "https://imgs.ysscores.com/teams/128/17673036447889.png"
       }
     },
     "channels": []
@@ -2091,35 +2091,6 @@
     "channels": []
   },
   {
-    "id": "5180593",
-    "url": "https://www.ysscores.com/ar/match/5180593/Dhofar-Club-vs-Sohar-SC",
-    "info": {
-      "championship": "دوري المحترفين العماني",
-      "round": "15 - مباراة الاياب",
-      "stadium": "مجمع السعادة الرياضي",
-      "time": "19:00",
-      "date": "الأحد 22-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ظفار",
-        "logo": "https://imgs.ysscores.com/teams/128/3391691930804.png"
-      },
-      "away": {
-        "name": "صحار",
-        "logo": "https://imgs.ysscores.com/teams/128/3001691931931.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "عمان الرياضية",
-        "commentator": "سهيل جعبوب"
-      }
-    ]
-  },
-  {
     "id": "5180594",
     "url": "https://www.ysscores.com/ar/match/5180594/Saham-Club-vs-Samail-SC",
     "info": {
@@ -2145,6 +2116,35 @@
       {
         "channel": "عمان مباشر",
         "commentator": "شبيب الحبسي"
+      }
+    ]
+  },
+  {
+    "id": "5180593",
+    "url": "https://www.ysscores.com/ar/match/5180593/Dhofar-Club-vs-Sohar-SC",
+    "info": {
+      "championship": "دوري المحترفين العماني",
+      "round": "15 - مباراة الاياب",
+      "stadium": "مجمع السعادة الرياضي",
+      "time": "19:00",
+      "date": "الأحد 22-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ظفار",
+        "logo": "https://imgs.ysscores.com/teams/128/3391691930804.png"
+      },
+      "away": {
+        "name": "صحار",
+        "logo": "https://imgs.ysscores.com/teams/128/3001691931931.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "عمان الرياضية",
+        "commentator": "سهيل جعبوب"
       }
     ]
   }
