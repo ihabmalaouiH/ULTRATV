@@ -8,7 +8,7 @@
       "stadium": "فويت أرينا",
       "time": "19:30",
       "date": "الأحد 22-02-2026",
-      "current_score": "1 - 1",
+      "current_score": "1 - 2",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -197,35 +197,6 @@
     ]
   },
   {
-    "id": "4837356",
-    "url": "https://www.ysscores.com/ar/match/4837356/Getafe-CF-vs-Sevilla-FC",
-    "info": {
-      "championship": "الدوري الإسباني",
-      "round": "25 - مباراة الاياب",
-      "stadium": "كولوسيوم",
-      "time": "14:00",
-      "date": "الأحد 22-02-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "خيتافي",
-        "logo": "https://imgs.ysscores.com/teams/128/3451691957863.png"
-      },
-      "away": {
-        "name": "إشبيلية",
-        "logo": "https://imgs.ysscores.com/teams/128/6931690196743.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "عبدالله الغامدي"
-      }
-    ]
-  },
-  {
     "id": "4837355",
     "url": "https://www.ysscores.com/ar/match/4837355/Celta-de-Vigo-vs-RCD-Mallorca",
     "info": {
@@ -251,6 +222,35 @@
       {
         "channel": "بي إن سبورت 3",
         "commentator": "محمد السعدي"
+      }
+    ]
+  },
+  {
+    "id": "4837356",
+    "url": "https://www.ysscores.com/ar/match/4837356/Getafe-CF-vs-Sevilla-FC",
+    "info": {
+      "championship": "الدوري الإسباني",
+      "round": "25 - مباراة الاياب",
+      "stadium": "كولوسيوم",
+      "time": "14:00",
+      "date": "الأحد 22-02-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "خيتافي",
+        "logo": "https://imgs.ysscores.com/teams/128/3451691957863.png"
+      },
+      "away": {
+        "name": "إشبيلية",
+        "logo": "https://imgs.ysscores.com/teams/128/6931690196743.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "عبدالله الغامدي"
       }
     ]
   },
@@ -490,43 +490,6 @@
     ]
   },
   {
-    "id": "4803288",
-    "url": "https://www.ysscores.com/ar/match/4803288/Atalanta-BC-vs-SSC-Napoli",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "26 - مباراة الاياب",
-      "stadium": "نيو بالانس أرينا",
-      "time": "15:00",
-      "date": "الأحد 22-02-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أتلانتا",
-        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
-      },
-      "away": {
-        "name": "نابولي",
-        "logo": "https://imgs.ysscores.com/teams/128/9521720636634.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "StarzPlay",
-        "commentator": "عيسى الحربين"
-      },
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "عيسى الحربين"
-      },
-      {
-        "channel": "منصة شاشا",
-        "commentator": "هاني الشهري"
-      }
-    ]
-  },
-  {
     "id": "4803295",
     "url": "https://www.ysscores.com/ar/match/4803295/AC-Milan-vs-Parma-Calcio-1913",
     "info": {
@@ -560,6 +523,43 @@
       {
         "channel": "منصة شاشا",
         "commentator": "علي دراج"
+      }
+    ]
+  },
+  {
+    "id": "4803288",
+    "url": "https://www.ysscores.com/ar/match/4803288/Atalanta-BC-vs-SSC-Napoli",
+    "info": {
+      "championship": "الدوري الإيطالي",
+      "round": "26 - مباراة الاياب",
+      "stadium": "نيو بالانس أرينا",
+      "time": "15:00",
+      "date": "الأحد 22-02-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أتلانتا",
+        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
+      },
+      "away": {
+        "name": "نابولي",
+        "logo": "https://imgs.ysscores.com/teams/128/9521720636634.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "StarzPlay",
+        "commentator": "عيسى الحربين"
+      },
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "عيسى الحربين"
+      },
+      {
+        "channel": "منصة شاشا",
+        "commentator": "هاني الشهري"
       }
     ]
   },
@@ -1157,7 +1157,7 @@
       "stadium": "استاد سعود بن عبدالرحمن",
       "time": "19:30",
       "date": "الأحد 22-02-2026",
-      "current_score": "0 - 1",
+      "current_score": "0 - 2",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -1586,30 +1586,6 @@
     "channels": []
   },
   {
-    "id": "4859152",
-    "url": "https://www.ysscores.com/ar/match/4859152/Panserraikos-vs-Volos-NPS",
-    "info": {
-      "championship": "الدوري اليوناني",
-      "round": "22 - مباراة الاياب",
-      "stadium": "إستاديو سيرّس المُدنّي",
-      "time": "15:00",
-      "date": "الأحد 22-02-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بانسيررايكوس",
-        "logo": "https://imgs.ysscores.com/teams/128/7481754000611.png"
-      },
-      "away": {
-        "name": "فولوس",
-        "logo": "https://imgs.ysscores.com/teams/128/3431754000844.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4859150",
     "url": "https://www.ysscores.com/ar/match/4859150/OFI-Crete-FC-vs-Panathinaikos-FC",
     "info": {
@@ -1629,6 +1605,30 @@
       "away": {
         "name": "باناثينايكوس",
         "logo": "https://imgs.ysscores.com/teams/128/8301690821553.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4859152",
+    "url": "https://www.ysscores.com/ar/match/4859152/Panserraikos-vs-Volos-NPS",
+    "info": {
+      "championship": "الدوري اليوناني",
+      "round": "22 - مباراة الاياب",
+      "stadium": "إستاديو سيرّس المُدنّي",
+      "time": "15:00",
+      "date": "الأحد 22-02-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بانسيررايكوس",
+        "logo": "https://imgs.ysscores.com/teams/128/7481754000611.png"
+      },
+      "away": {
+        "name": "فولوس",
+        "logo": "https://imgs.ysscores.com/teams/128/3431754000844.png"
       }
     },
     "channels": []
@@ -1869,7 +1869,7 @@
       "time": "18:00",
       "date": "الأحد 22-02-2026",
       "current_score": "5 - 2",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
