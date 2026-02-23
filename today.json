@@ -100,7 +100,7 @@
       "time": "01:00",
       "date": "الأحد 22-02-2026",
       "current_score": "1 - 1",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -318,6 +318,35 @@
     ]
   },
   {
+    "id": "5134955",
+    "url": "https://www.ysscores.com/ar/match/5134955/FC-Baniyas-vs-Al-Ain-FC",
+    "info": {
+      "championship": "الدوري الإماراتي للمحترفين",
+      "round": "17 - مباراة الاياب",
+      "stadium": "استاد بني ياس",
+      "time": "18:30",
+      "date": "الأحد 22-02-2026",
+      "current_score": "2 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بني ياس",
+        "logo": "https://imgs.ysscores.com/teams/128/211690300900.png"
+      },
+      "away": {
+        "name": "العين",
+        "logo": "https://imgs.ysscores.com/teams/128/4661724620117.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "أبو ظبي الرياضية 1",
+        "commentator": "عامر عبدالله"
+      }
+    ]
+  },
+  {
     "id": "5134954",
     "url": "https://www.ysscores.com/ar/match/5134954/Al-Nasr-SC-(UAE)-vs-Khor-Fakkan-SSC",
     "info": {
@@ -347,35 +376,6 @@
       {
         "channel": "دبي الرياضية 1",
         "commentator": "عبدالحميد الجسمي"
-      }
-    ]
-  },
-  {
-    "id": "5134955",
-    "url": "https://www.ysscores.com/ar/match/5134955/FC-Baniyas-vs-Al-Ain-FC",
-    "info": {
-      "championship": "الدوري الإماراتي للمحترفين",
-      "round": "17 - مباراة الاياب",
-      "stadium": "استاد بني ياس",
-      "time": "18:30",
-      "date": "الأحد 22-02-2026",
-      "current_score": "2 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بني ياس",
-        "logo": "https://imgs.ysscores.com/teams/128/211690300900.png"
-      },
-      "away": {
-        "name": "العين",
-        "logo": "https://imgs.ysscores.com/teams/128/4661724620117.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "أبو ظبي الرياضية 1",
-        "commentator": "عامر عبدالله"
       }
     ]
   },
@@ -500,43 +500,6 @@
     ]
   },
   {
-    "id": "4803288",
-    "url": "https://www.ysscores.com/ar/match/4803288/Atalanta-BC-vs-SSC-Napoli",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "26 - مباراة الاياب",
-      "stadium": "نيو بالانس أرينا",
-      "time": "15:00",
-      "date": "الأحد 22-02-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أتلانتا",
-        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
-      },
-      "away": {
-        "name": "نابولي",
-        "logo": "https://imgs.ysscores.com/teams/128/9521720636634.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "StarzPlay",
-        "commentator": "عيسى الحربين"
-      },
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "عيسى الحربين"
-      },
-      {
-        "channel": "منصة شاشا",
-        "commentator": "هاني الشهري"
-      }
-    ]
-  },
-  {
     "id": "4803295",
     "url": "https://www.ysscores.com/ar/match/4803295/AC-Milan-vs-Parma-Calcio-1913",
     "info": {
@@ -570,6 +533,43 @@
       {
         "channel": "منصة شاشا",
         "commentator": "علي دراج"
+      }
+    ]
+  },
+  {
+    "id": "4803288",
+    "url": "https://www.ysscores.com/ar/match/4803288/Atalanta-BC-vs-SSC-Napoli",
+    "info": {
+      "championship": "الدوري الإيطالي",
+      "round": "26 - مباراة الاياب",
+      "stadium": "نيو بالانس أرينا",
+      "time": "15:00",
+      "date": "الأحد 22-02-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أتلانتا",
+        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
+      },
+      "away": {
+        "name": "نابولي",
+        "logo": "https://imgs.ysscores.com/teams/128/9521720636634.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "StarzPlay",
+        "commentator": "عيسى الحربين"
+      },
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "عيسى الحربين"
+      },
+      {
+        "channel": "منصة شاشا",
+        "commentator": "هاني الشهري"
       }
     ]
   },
@@ -697,30 +697,6 @@
     "channels": []
   },
   {
-    "id": "4818521",
-    "url": "https://www.ysscores.com/ar/match/4818521/RAAL-La-Louvière-vs-KV-Mechelen",
-    "info": {
-      "championship": "الدوري البلجيكي",
-      "round": "26 - مباراة الاياب",
-      "stadium": "إيسي أرينا",
-      "time": "16:00",
-      "date": "الأحد 22-02-2026",
-      "current_score": "0 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "رايل لا لوفيير",
-        "logo": "https://imgs.ysscores.com/teams/128/8571753474720.png"
-      },
-      "away": {
-        "name": "ميخيلين",
-        "logo": "https://imgs.ysscores.com/teams/128/3721690370516.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4818524",
     "url": "https://www.ysscores.com/ar/match/4818524/KVC-Westerlo-vs-Royal-Charleroi-SC",
     "info": {
@@ -740,6 +716,30 @@
       "away": {
         "name": "رويال شارلروا",
         "logo": "https://imgs.ysscores.com/teams/128/3521690370549.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4818521",
+    "url": "https://www.ysscores.com/ar/match/4818521/RAAL-La-Louvière-vs-KV-Mechelen",
+    "info": {
+      "championship": "الدوري البلجيكي",
+      "round": "26 - مباراة الاياب",
+      "stadium": "إيسي أرينا",
+      "time": "16:00",
+      "date": "الأحد 22-02-2026",
+      "current_score": "0 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "رايل لا لوفيير",
+        "logo": "https://imgs.ysscores.com/teams/128/8571753474720.png"
+      },
+      "away": {
+        "name": "ميخيلين",
+        "logo": "https://imgs.ysscores.com/teams/128/3721690370516.png"
       }
     },
     "channels": []
@@ -1010,35 +1010,6 @@
     ]
   },
   {
-    "id": "4830657",
-    "url": "https://www.ysscores.com/ar/match/4830657/AJ-Auxerre-vs-Stade-Rennais-FC",
-    "info": {
-      "championship": "الدوري الفرنسي",
-      "round": "23 - مباراة الاياب",
-      "stadium": "ملعب آبي ديشامب",
-      "time": "15:00",
-      "date": "الأحد 22-02-2026",
-      "current_score": "0 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أوكسير",
-        "logo": "https://imgs.ysscores.com/teams/128/8671690370530.png"
-      },
-      "away": {
-        "name": "رين",
-        "logo": "https://imgs.ysscores.com/teams/128/5061690287944.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "مصطفى ناظم"
-      }
-    ]
-  },
-  {
     "id": "4830656",
     "url": "https://www.ysscores.com/ar/match/4830656/Angers-SCO-vs-LOSC-Lille",
     "info": {
@@ -1064,6 +1035,35 @@
       {
         "channel": "بي إن سبورت 6",
         "commentator": "أحمد عبده"
+      }
+    ]
+  },
+  {
+    "id": "4830657",
+    "url": "https://www.ysscores.com/ar/match/4830657/AJ-Auxerre-vs-Stade-Rennais-FC",
+    "info": {
+      "championship": "الدوري الفرنسي",
+      "round": "23 - مباراة الاياب",
+      "stadium": "ملعب آبي ديشامب",
+      "time": "15:00",
+      "date": "الأحد 22-02-2026",
+      "current_score": "0 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أوكسير",
+        "logo": "https://imgs.ysscores.com/teams/128/8671690370530.png"
+      },
+      "away": {
+        "name": "رين",
+        "logo": "https://imgs.ysscores.com/teams/128/5061690287944.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "مصطفى ناظم"
       }
     ]
   },
@@ -1408,35 +1408,6 @@
     ]
   },
   {
-    "id": "89208205",
-    "url": "https://www.ysscores.com/ar/match/89208205/Renaissance-de-Berkane-vs-FUS-Rabat",
-    "info": {
-      "championship": "الدوري المغربي",
-      "round": "13 - مباراة الذهاب",
-      "stadium": "الملعب البلدي لبركان",
-      "time": "23:00",
-      "date": "الأحد 22-02-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "نهضة بركان",
-        "logo": "https://imgs.ysscores.com/teams/128/1121692794477.png"
-      },
-      "away": {
-        "name": "الفتح الرباطي",
-        "logo": "https://imgs.ysscores.com/teams/128/1811692794174.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "المغربية {5}",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "46053728",
     "url": "https://www.ysscores.com/ar/match/46053728/Raja-Club-Athletic-vs-Ittihad-Tanger",
     "info": {
@@ -1461,6 +1432,35 @@
     "channels": [
       {
         "channel": "المغربية الرياضية",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "89208205",
+    "url": "https://www.ysscores.com/ar/match/89208205/Renaissance-de-Berkane-vs-FUS-Rabat",
+    "info": {
+      "championship": "الدوري المغربي",
+      "round": "13 - مباراة الذهاب",
+      "stadium": "الملعب البلدي لبركان",
+      "time": "23:00",
+      "date": "الأحد 22-02-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "نهضة بركان",
+        "logo": "https://imgs.ysscores.com/teams/128/1121692794477.png"
+      },
+      "away": {
+        "name": "الفتح الرباطي",
+        "logo": "https://imgs.ysscores.com/teams/128/1811692794174.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "المغربية {5}",
         "commentator": "غير مدرج"
       }
     ]
@@ -1548,30 +1548,6 @@
     "channels": []
   },
   {
-    "id": "4815450",
-    "url": "https://www.ysscores.com/ar/match/4815450/Twente-Enschede-FC-vs-FC-Groningen",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "24 - مباراة الاياب",
-      "stadium": "دي غرولش فيست",
-      "time": "12:15",
-      "date": "الأحد 22-02-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "تفينتي أنشخيده",
-        "logo": "https://imgs.ysscores.com/teams/128/7451690996868.png"
-      },
-      "away": {
-        "name": "غرونينغن",
-        "logo": "https://imgs.ysscores.com/teams/128/10001690370535.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4815451",
     "url": "https://www.ysscores.com/ar/match/4815451/FC-Utrecht-vs-PEC-Zwolle",
     "info": {
@@ -1596,25 +1572,25 @@
     "channels": []
   },
   {
-    "id": "4859152",
-    "url": "https://www.ysscores.com/ar/match/4859152/Panserraikos-vs-Volos-NPS",
+    "id": "4815450",
+    "url": "https://www.ysscores.com/ar/match/4815450/Twente-Enschede-FC-vs-FC-Groningen",
     "info": {
-      "championship": "الدوري اليوناني",
-      "round": "22 - مباراة الاياب",
-      "stadium": "إستاديو سيرّس المُدنّي",
-      "time": "15:00",
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "24 - مباراة الاياب",
+      "stadium": "دي غرولش فيست",
+      "time": "12:15",
       "date": "الأحد 22-02-2026",
       "current_score": "2 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "بانسيررايكوس",
-        "logo": "https://imgs.ysscores.com/teams/128/7481754000611.png"
+        "name": "تفينتي أنشخيده",
+        "logo": "https://imgs.ysscores.com/teams/128/7451690996868.png"
       },
       "away": {
-        "name": "فولوس",
-        "logo": "https://imgs.ysscores.com/teams/128/3431754000844.png"
+        "name": "غرونينغن",
+        "logo": "https://imgs.ysscores.com/teams/128/10001690370535.png"
       }
     },
     "channels": []
@@ -1639,6 +1615,30 @@
       "away": {
         "name": "باناثينايكوس",
         "logo": "https://imgs.ysscores.com/teams/128/8301690821553.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4859152",
+    "url": "https://www.ysscores.com/ar/match/4859152/Panserraikos-vs-Volos-NPS",
+    "info": {
+      "championship": "الدوري اليوناني",
+      "round": "22 - مباراة الاياب",
+      "stadium": "إستاديو سيرّس المُدنّي",
+      "time": "15:00",
+      "date": "الأحد 22-02-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بانسيررايكوس",
+        "logo": "https://imgs.ysscores.com/teams/128/7481754000611.png"
+      },
+      "away": {
+        "name": "فولوس",
+        "logo": "https://imgs.ysscores.com/teams/128/3431754000844.png"
       }
     },
     "channels": []
@@ -1774,25 +1774,25 @@
     ]
   },
   {
-    "id": "5101966",
-    "url": "https://www.ysscores.com/ar/match/5101966/CA-San-Lorenzo-de-Almagro-vs-AA-Estudiantes-(Río-Cuarto)",
+    "id": "5101967",
+    "url": "https://www.ysscores.com/ar/match/5101967/CA-Unión-(Santa-Fe)-vs-CA-Aldosivi",
     "info": {
       "championship": "دوري الدرجة الأولى الأرجنتيني",
       "round": "6 - مباراة الذهاب",
-      "stadium": "لستاد بيدرو بيديجين",
-      "time": "21:00",
+      "stadium": "استاد 15 أبريل",
+      "time": "01:30",
       "date": "الأحد 22-02-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
+      "current_score": "1 - 0",
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
-        "name": "سان لورينزو",
-        "logo": "https://imgs.ysscores.com/teams/128/8421711808886.png"
+        "name": "سانتا في",
+        "logo": "https://imgs.ysscores.com/teams/128/3311717935522.png"
       },
       "away": {
-        "name": "ريو كوارتو",
-        "logo": "https://imgs.ysscores.com/teams/128/17673036447889.png"
+        "name": "إلدوسيفي",
+        "logo": "https://imgs.ysscores.com/teams/128/1451735322474.png"
       }
     },
     "channels": []
@@ -1822,49 +1822,25 @@
     "channels": []
   },
   {
-    "id": "5101967",
-    "url": "https://www.ysscores.com/ar/match/5101967/CA-Unión-(Santa-Fe)-vs-CA-Aldosivi",
+    "id": "5101966",
+    "url": "https://www.ysscores.com/ar/match/5101966/CA-San-Lorenzo-de-Almagro-vs-AA-Estudiantes-(Río-Cuarto)",
     "info": {
       "championship": "دوري الدرجة الأولى الأرجنتيني",
       "round": "6 - مباراة الذهاب",
-      "stadium": "استاد 15 أبريل",
-      "time": "01:30",
+      "stadium": "لستاد بيدرو بيديجين",
+      "time": "21:00",
       "date": "الأحد 22-02-2026",
-      "current_score": "1 - 0",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "سانتا في",
-        "logo": "https://imgs.ysscores.com/teams/128/3311717935522.png"
-      },
-      "away": {
-        "name": "إلدوسيفي",
-        "logo": "https://imgs.ysscores.com/teams/128/1451735322474.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4802052",
-    "url": "https://www.ysscores.com/ar/match/4802052/Aarhus-GF-vs-Viborg-FF",
-    "info": {
-      "championship": "دوري السوبر الدنماركي",
-      "round": "21 - مباراة الاياب",
-      "stadium": "استاد فيجلبي",
-      "time": "18:00",
-      "date": "الأحد 22-02-2026",
-      "current_score": "5 - 2",
+      "current_score": "2 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "اوروس",
-        "logo": "https://imgs.ysscores.com/teams/128/5081691095768.png"
+        "name": "سان لورينزو",
+        "logo": "https://imgs.ysscores.com/teams/128/8421711808886.png"
       },
       "away": {
-        "name": "فيبورج",
-        "logo": "https://imgs.ysscores.com/teams/128/9161691096437.png"
+        "name": "ريو كوارتو",
+        "logo": "https://imgs.ysscores.com/teams/128/17673036447889.png"
       }
     },
     "channels": []
@@ -1889,6 +1865,30 @@
       "away": {
         "name": "ميتييلاند",
         "logo": "https://imgs.ysscores.com/teams/128/7731691095830.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4802052",
+    "url": "https://www.ysscores.com/ar/match/4802052/Aarhus-GF-vs-Viborg-FF",
+    "info": {
+      "championship": "دوري السوبر الدنماركي",
+      "round": "21 - مباراة الاياب",
+      "stadium": "استاد فيجلبي",
+      "time": "18:00",
+      "date": "الأحد 22-02-2026",
+      "current_score": "5 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "اوروس",
+        "logo": "https://imgs.ysscores.com/teams/128/5081691095768.png"
+      },
+      "away": {
+        "name": "فيبورج",
+        "logo": "https://imgs.ysscores.com/teams/128/9161691096437.png"
       }
     },
     "channels": []
