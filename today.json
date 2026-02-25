@@ -424,30 +424,6 @@
     "channels": []
   },
   {
-    "id": "10410930",
-    "url": "https://www.ysscores.com/ar/match/10410930/Al-Anwar-Al-Abyar-SC-vs-Al-Borouq-FC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "2 - مباراة الاياب",
-      "stadium": "ملعب المرج",
-      "time": "21:30",
-      "date": "الأربعاء 25-02-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الأنوار",
-        "logo": "https://imgs.ysscores.com/teams/128/17656568995248.png"
-      },
-      "away": {
-        "name": "البروق",
-        "logo": "https://imgs.ysscores.com/teams/128/17656432533307.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "25626378",
     "url": "https://www.ysscores.com/ar/match/25626378/Al-Sadaqa-Shahat-SC-vs-Union-Military-SC",
     "info": {
@@ -467,6 +443,30 @@
       "away": {
         "name": "العسكري",
         "logo": "https://imgs.ysscores.com/teams/128/17660522935721.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "10410930",
+    "url": "https://www.ysscores.com/ar/match/10410930/Al-Anwar-Al-Abyar-SC-vs-Al-Borouq-FC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "2 - مباراة الاياب",
+      "stadium": "ملعب المرج",
+      "time": "21:30",
+      "date": "الأربعاء 25-02-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الأنوار",
+        "logo": "https://imgs.ysscores.com/teams/128/17656568995248.png"
+      },
+      "away": {
+        "name": "البروق",
+        "logo": "https://imgs.ysscores.com/teams/128/17656432533307.png"
       }
     },
     "channels": []
@@ -665,35 +665,6 @@
     ]
   },
   {
-    "id": "5161868",
-    "url": "https://www.ysscores.com/ar/match/5161868/Juventus-FC-vs-Galatasaray",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "دور الإقصائيات - مباراة الاياب",
-      "stadium": "أليانز ستاديوم",
-      "time": "21:00",
-      "date": "الأربعاء 25-02-2026",
-      "current_score": "3 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "يوفنتوس",
-        "logo": "https://imgs.ysscores.com/teams/128/9331690283003.png"
-      },
-      "away": {
-        "name": "غلطة سراي",
-        "logo": "https://imgs.ysscores.com/teams/128/2081756067376.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "خليل البلوشي"
-      }
-    ]
-  },
-  {
     "id": "5161860",
     "url": "https://www.ysscores.com/ar/match/5161860/Real-Madrid-vs-SL-Benfica",
     "info": {
@@ -723,35 +694,6 @@
     ]
   },
   {
-    "id": "5161864",
-    "url": "https://www.ysscores.com/ar/match/5161864/Paris-Saint-Germain-vs-AS-Monaco",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "دور الإقصائيات - مباراة الاياب",
-      "stadium": "بارك دي برانس",
-      "time": "21:00",
-      "date": "الأربعاء 25-02-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "باريس",
-        "logo": "https://imgs.ysscores.com/teams/128/4461690287785.png"
-      },
-      "away": {
-        "name": "موناكو",
-        "logo": "https://imgs.ysscores.com/teams/128/3861690287583.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "حسن العيدروس"
-      }
-    ]
-  },
-  {
     "id": "5161872",
     "url": "https://www.ysscores.com/ar/match/5161872/Atalanta-BC-vs-Borussia-Dortmund",
     "info": {
@@ -777,6 +719,64 @@
       {
         "channel": "بي إن سبورت 4",
         "commentator": "علي محمد علي"
+      }
+    ]
+  },
+  {
+    "id": "5161868",
+    "url": "https://www.ysscores.com/ar/match/5161868/Juventus-FC-vs-Galatasaray",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "دور الإقصائيات - مباراة الاياب",
+      "stadium": "أليانز ستاديوم",
+      "time": "21:00",
+      "date": "الأربعاء 25-02-2026",
+      "current_score": "3 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "يوفنتوس",
+        "logo": "https://imgs.ysscores.com/teams/128/9331690283003.png"
+      },
+      "away": {
+        "name": "غلطة سراي",
+        "logo": "https://imgs.ysscores.com/teams/128/2081756067376.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "خليل البلوشي"
+      }
+    ]
+  },
+  {
+    "id": "5161864",
+    "url": "https://www.ysscores.com/ar/match/5161864/Paris-Saint-Germain-vs-AS-Monaco",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "دور الإقصائيات - مباراة الاياب",
+      "stadium": "بارك دي برانس",
+      "time": "21:00",
+      "date": "الأربعاء 25-02-2026",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "باريس",
+        "logo": "https://imgs.ysscores.com/teams/128/4461690287785.png"
+      },
+      "away": {
+        "name": "موناكو",
+        "logo": "https://imgs.ysscores.com/teams/128/3861690287583.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "حسن العيدروس"
       }
     ]
   },
@@ -1271,35 +1271,6 @@
     ]
   },
   {
-    "id": "5103759",
-    "url": "https://www.ysscores.com/ar/match/5103759/Esporte-Clube-Bahia-vs-CD-OHiggins",
-    "info": {
-      "championship": "كوبا ليبرتادوريس | الأدوار الإقصائية",
-      "round": "الدور الثاني - مباراة الاياب",
-      "stadium": "أرينا فونتي نوفا",
-      "time": "23:00",
-      "date": "الأربعاء 25-02-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "باهيا",
-        "logo": "https://imgs.ysscores.com/teams/128/3961691418709.png"
-      },
-      "away": {
-        "name": "أوهيجينس",
-        "logo": "https://imgs.ysscores.com/teams/128/6421738573375.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "أحمد البلوشي"
-      }
-    ]
-  },
-  {
     "id": "5110787",
     "url": "https://www.ysscores.com/ar/match/5110787/AA-Argentinos-Juniors-vs-Barcelona-SC-Guayaquil",
     "info": {
@@ -1325,6 +1296,35 @@
       {
         "channel": "بي إن سبورت 2",
         "commentator": "باسم الزير"
+      }
+    ]
+  },
+  {
+    "id": "5103759",
+    "url": "https://www.ysscores.com/ar/match/5103759/Esporte-Clube-Bahia-vs-CD-OHiggins",
+    "info": {
+      "championship": "كوبا ليبرتادوريس | الأدوار الإقصائية",
+      "round": "الدور الثاني - مباراة الاياب",
+      "stadium": "أرينا فونتي نوفا",
+      "time": "23:00",
+      "date": "الأربعاء 25-02-2026",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "باهيا",
+        "logo": "https://imgs.ysscores.com/teams/128/3961691418709.png"
+      },
+      "away": {
+        "name": "أوهيجينس",
+        "logo": "https://imgs.ysscores.com/teams/128/6421738573375.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "أحمد البلوشي"
       }
     ]
   },
