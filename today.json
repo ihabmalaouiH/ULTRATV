@@ -144,6 +144,30 @@
     "channels": []
   },
   {
+    "id": "5103401",
+    "url": "https://www.ysscores.com/ar/match/5103401/Coritiba-Foot-Ball-Club-vs-São-Paulo-Futebol-Clube",
+    "info": {
+      "championship": "الدوري البرازيلي",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "استاد كوتو بيريرا",
+      "time": "23:30",
+      "date": "الأربعاء 25-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "كوريتيبا",
+        "logo": "https://imgs.ysscores.com/teams/128/4391691431942.png"
+      },
+      "away": {
+        "name": "ساو باولو",
+        "logo": "https://imgs.ysscores.com/teams/128/3781691418711.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5103399",
     "url": "https://www.ysscores.com/ar/match/5103399/Cruzeiro-Esporte-Clube-vs-Sport-Club-Corinthians-Paulista",
     "info": {
@@ -192,25 +216,24 @@
     "channels": []
   },
   {
-    "id": "5103401",
-    "url": "https://www.ysscores.com/ar/match/5103401/Coritiba-Foot-Ball-Club-vs-São-Paulo-Futebol-Clube",
+    "id": "5103394",
+    "url": "https://www.ysscores.com/ar/match/5103394/CR-Flamengo-vs-Mirassol-Futebol-Clube-(SP)",
     "info": {
       "championship": "الدوري البرازيلي",
       "round": "4 - مباراة الذهاب",
-      "stadium": "استاد كوتو بيريرا",
-      "time": "23:30",
+      "time": "16:00",
       "date": "الأربعاء 25-02-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "كوريتيبا",
-        "logo": "https://imgs.ysscores.com/teams/128/4391691431942.png"
+        "name": "فلامينغو",
+        "logo": "https://imgs.ysscores.com/teams/128/6861691418710.png"
       },
       "away": {
-        "name": "ساو باولو",
-        "logo": "https://imgs.ysscores.com/teams/128/3781691418711.png"
+        "name": "ميراسول",
+        "logo": "https://imgs.ysscores.com/teams/128/3731739640033.png"
       }
     },
     "channels": []
@@ -259,29 +282,6 @@
       "away": {
         "name": "باراناينسي",
         "logo": "https://imgs.ysscores.com/teams/128/5811691418710.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5103394",
-    "url": "https://www.ysscores.com/ar/match/5103394/CR-Flamengo-vs-Mirassol-Futebol-Clube-(SP)",
-    "info": {
-      "championship": "الدوري البرازيلي",
-      "round": "4 - مباراة الذهاب",
-      "time": "16:00",
-      "date": "الأربعاء 25-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "فلامينغو",
-        "logo": "https://imgs.ysscores.com/teams/128/6861691418710.png"
-      },
-      "away": {
-        "name": "ميراسول",
-        "logo": "https://imgs.ysscores.com/teams/128/3731739640033.png"
       }
     },
     "channels": []
@@ -723,35 +723,6 @@
     ]
   },
   {
-    "id": "5161872",
-    "url": "https://www.ysscores.com/ar/match/5161872/Atalanta-BC-vs-Borussia-Dortmund",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "دور الإقصائيات - مباراة الاياب",
-      "stadium": "نيو بالانس أرينا",
-      "time": "18:45",
-      "date": "الأربعاء 25-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أتلانتا",
-        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
-      },
-      "away": {
-        "name": "دورتموند",
-        "logo": "https://imgs.ysscores.com/teams/128/4201690288818.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 4",
-        "commentator": "علي محمد علي"
-      }
-    ]
-  },
-  {
     "id": "5161864",
     "url": "https://www.ysscores.com/ar/match/5161864/Paris-Saint-Germain-vs-AS-Monaco",
     "info": {
@@ -777,6 +748,35 @@
       {
         "channel": "بي إن سبورت 1",
         "commentator": "حسن العيدروس"
+      }
+    ]
+  },
+  {
+    "id": "5161872",
+    "url": "https://www.ysscores.com/ar/match/5161872/Atalanta-BC-vs-Borussia-Dortmund",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "دور الإقصائيات - مباراة الاياب",
+      "stadium": "نيو بالانس أرينا",
+      "time": "18:45",
+      "date": "الأربعاء 25-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أتلانتا",
+        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
+      },
+      "away": {
+        "name": "دورتموند",
+        "logo": "https://imgs.ysscores.com/teams/128/4201690288818.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 4",
+        "commentator": "علي محمد علي"
       }
     ]
   },
@@ -882,30 +882,6 @@
     "channels": []
   },
   {
-    "id": "5101970",
-    "url": "https://www.ysscores.com/ar/match/5101970/CA-Barracas-Central-vs-Club-Atlético-Tigre",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "7 - مباراة الذهاب",
-      "stadium": "استاد كلاوديو تابيا",
-      "time": "21:00",
-      "date": "الأربعاء 25-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "باراكاس",
-        "logo": "https://imgs.ysscores.com/teams/128/1021717935858.png"
-      },
-      "away": {
-        "name": "تيغري",
-        "logo": "https://imgs.ysscores.com/teams/128/6041717935703.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5101977",
     "url": "https://www.ysscores.com/ar/match/5101977/CA-Newells-Old-Boys-vs-Club-Estudiantes-de-La-Plata",
     "info": {
@@ -925,6 +901,30 @@
       "away": {
         "name": "إستوديانتيس",
         "logo": "https://imgs.ysscores.com/teams/128/9621711808779.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5101970",
+    "url": "https://www.ysscores.com/ar/match/5101970/CA-Barracas-Central-vs-Club-Atlético-Tigre",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "7 - مباراة الذهاب",
+      "stadium": "استاد كلاوديو تابيا",
+      "time": "21:00",
+      "date": "الأربعاء 25-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "باراكاس",
+        "logo": "https://imgs.ysscores.com/teams/128/1021717935858.png"
+      },
+      "away": {
+        "name": "تيغري",
+        "logo": "https://imgs.ysscores.com/teams/128/6041717935703.png"
       }
     },
     "channels": []
