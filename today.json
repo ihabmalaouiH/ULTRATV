@@ -192,54 +192,6 @@
     "channels": []
   },
   {
-    "id": "5103399",
-    "url": "https://www.ysscores.com/ar/match/5103399/Cruzeiro-Esporte-Clube-vs-Sport-Club-Corinthians-Paulista",
-    "info": {
-      "championship": "الدوري البرازيلي",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "استاد مينيراو",
-      "time": "00:00",
-      "date": "الأربعاء 25-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "كروزيرو",
-        "logo": "https://imgs.ysscores.com/teams/128/1871690370540.png"
-      },
-      "away": {
-        "name": "كورينثيانز",
-        "logo": "https://imgs.ysscores.com/teams/128/6101691418710.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5103397",
-    "url": "https://www.ysscores.com/ar/match/5103397/Sociedade-Esportiva-Palmeiras-vs-Fluminense-Football-Club",
-    "info": {
-      "championship": "الدوري البرازيلي",
-      "round": "4 - مباراة الذهاب",
-      "stadium": "استاد أرينا باروري",
-      "time": "01:30",
-      "date": "الأربعاء 25-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "بالميراس",
-        "logo": "https://imgs.ysscores.com/teams/128/7971691418711.png"
-      },
-      "away": {
-        "name": "فلومينينسي",
-        "logo": "https://imgs.ysscores.com/teams/128/9451691418710.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5103394",
     "url": "https://www.ysscores.com/ar/match/5103394/CR-Flamengo-vs-Mirassol-Futebol-Clube-(SP)",
     "info": {
@@ -282,6 +234,54 @@
       "away": {
         "name": "باراناينسي",
         "logo": "https://imgs.ysscores.com/teams/128/5811691418710.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5103397",
+    "url": "https://www.ysscores.com/ar/match/5103397/Sociedade-Esportiva-Palmeiras-vs-Fluminense-Football-Club",
+    "info": {
+      "championship": "الدوري البرازيلي",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "استاد أرينا باروري",
+      "time": "01:30",
+      "date": "الأربعاء 25-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "بالميراس",
+        "logo": "https://imgs.ysscores.com/teams/128/7971691418711.png"
+      },
+      "away": {
+        "name": "فلومينينسي",
+        "logo": "https://imgs.ysscores.com/teams/128/9451691418710.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5103399",
+    "url": "https://www.ysscores.com/ar/match/5103399/Cruzeiro-Esporte-Clube-vs-Sport-Club-Corinthians-Paulista",
+    "info": {
+      "championship": "الدوري البرازيلي",
+      "round": "4 - مباراة الذهاب",
+      "stadium": "استاد مينيراو",
+      "time": "00:00",
+      "date": "الأربعاء 25-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "كروزيرو",
+        "logo": "https://imgs.ysscores.com/teams/128/1871690370540.png"
+      },
+      "away": {
+        "name": "كورينثيانز",
+        "logo": "https://imgs.ysscores.com/teams/128/6101691418710.png"
       }
     },
     "channels": []
@@ -655,6 +655,35 @@
     "channels": []
   },
   {
+    "id": "5161864",
+    "url": "https://www.ysscores.com/ar/match/5161864/Paris-Saint-Germain-vs-AS-Monaco",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "دور الإقصائيات - مباراة الاياب",
+      "stadium": "بارك دي برانس",
+      "time": "21:00",
+      "date": "الأربعاء 25-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "باريس",
+        "logo": "https://imgs.ysscores.com/teams/128/4461690287785.png"
+      },
+      "away": {
+        "name": "موناكو",
+        "logo": "https://imgs.ysscores.com/teams/128/3861690287583.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "حسن العيدروس"
+      }
+    ]
+  },
+  {
     "id": "5161872",
     "url": "https://www.ysscores.com/ar/match/5161872/Atalanta-BC-vs-Borussia-Dortmund",
     "info": {
@@ -680,35 +709,6 @@
       {
         "channel": "بي إن سبورت 4",
         "commentator": "علي محمد علي"
-      }
-    ]
-  },
-  {
-    "id": "5161860",
-    "url": "https://www.ysscores.com/ar/match/5161860/Real-Madrid-vs-SL-Benfica",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "دور الإقصائيات - مباراة الاياب",
-      "stadium": "ملعب سانتياغو برنابيو",
-      "time": "21:00",
-      "date": "الأربعاء 25-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ريال مدريد",
-        "logo": "https://imgs.ysscores.com/teams/128/1871690196746.png"
-      },
-      "away": {
-        "name": "بنفيكا",
-        "logo": "https://imgs.ysscores.com/teams/128/4491690386690.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "عصام الشوالي"
       }
     ]
   },
@@ -742,12 +742,12 @@
     ]
   },
   {
-    "id": "5161864",
-    "url": "https://www.ysscores.com/ar/match/5161864/Paris-Saint-Germain-vs-AS-Monaco",
+    "id": "5161860",
+    "url": "https://www.ysscores.com/ar/match/5161860/Real-Madrid-vs-SL-Benfica",
     "info": {
       "championship": "دوري أبطال أوروبا",
       "round": "دور الإقصائيات - مباراة الاياب",
-      "stadium": "بارك دي برانس",
+      "stadium": "ملعب سانتياغو برنابيو",
       "time": "21:00",
       "date": "الأربعاء 25-02-2026",
       "current_score": "- : -",
@@ -755,18 +755,18 @@
     },
     "teams": {
       "home": {
-        "name": "باريس",
-        "logo": "https://imgs.ysscores.com/teams/128/4461690287785.png"
+        "name": "ريال مدريد",
+        "logo": "https://imgs.ysscores.com/teams/128/1871690196746.png"
       },
       "away": {
-        "name": "موناكو",
-        "logo": "https://imgs.ysscores.com/teams/128/3861690287583.png"
+        "name": "بنفيكا",
+        "logo": "https://imgs.ysscores.com/teams/128/4491690386690.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 1",
-        "commentator": "حسن العيدروس"
+        "channel": "بي إن سبورت 2",
+        "commentator": "عصام الشوالي"
       }
     ]
   },
@@ -793,6 +793,35 @@
       }
     },
     "channels": []
+  },
+  {
+    "id": "4825433",
+    "url": "https://www.ysscores.com/ar/match/4825433/Stoke-City-vs-Oxford-United",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "34 - مباراة الاياب",
+      "stadium": "بت 365",
+      "time": "21:00",
+      "date": "الأربعاء 25-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ستوك سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/6781690388673.png"
+      },
+      "away": {
+        "name": "أكسفورد يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/151690370534.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 5",
+        "commentator": "بكر علوان"
+      }
+    ]
   },
   {
     "id": "4825440",
@@ -841,35 +870,6 @@
       }
     },
     "channels": []
-  },
-  {
-    "id": "4825433",
-    "url": "https://www.ysscores.com/ar/match/4825433/Stoke-City-vs-Oxford-United",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "34 - مباراة الاياب",
-      "stadium": "بت 365",
-      "time": "21:00",
-      "date": "الأربعاء 25-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ستوك سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/6781690388673.png"
-      },
-      "away": {
-        "name": "أكسفورد يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/151690370534.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "بكر علوان"
-      }
-    ]
   },
   {
     "id": "5101977",
@@ -1026,35 +1026,6 @@
     ]
   },
   {
-    "id": "99369624",
-    "url": "https://www.ysscores.com/ar/match/99369624/Al-Zulfi-SFC-vs-Al-Adalah-FC",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "24 - مباراة الاياب",
-      "stadium": "ملعب نادي الزلفي",
-      "time": "19:45",
-      "date": "الأربعاء 25-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الزلفي",
-        "logo": "https://imgs.ysscores.com/teams/128/6151751106732.png"
-      },
-      "away": {
-        "name": "العدالة",
-        "logo": "https://imgs.ysscores.com/teams/128/7331691930420.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "أحمد المنتشري"
-      }
-    ]
-  },
-  {
     "id": "43936635",
     "url": "https://www.ysscores.com/ar/match/43936635/Al-Tai-FC-vs-Al-Arabi-SC-Saudi",
     "info": {
@@ -1080,6 +1051,35 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "مشعل الشمري"
+      }
+    ]
+  },
+  {
+    "id": "99369624",
+    "url": "https://www.ysscores.com/ar/match/99369624/Al-Zulfi-SFC-vs-Al-Adalah-FC",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "24 - مباراة الاياب",
+      "stadium": "ملعب نادي الزلفي",
+      "time": "19:45",
+      "date": "الأربعاء 25-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الزلفي",
+        "logo": "https://imgs.ysscores.com/teams/128/6151751106732.png"
+      },
+      "away": {
+        "name": "العدالة",
+        "logo": "https://imgs.ysscores.com/teams/128/7331691930420.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "أحمد المنتشري"
       }
     ]
   },
@@ -1248,12 +1248,12 @@
     ]
   },
   {
-    "id": "5110788",
-    "url": "https://www.ysscores.com/ar/match/5110788/Botafogo-de-Futebol-e-Regatas-vs-CA-Nacional-Potosí",
+    "id": "5110787",
+    "url": "https://www.ysscores.com/ar/match/5110787/AA-Argentinos-Juniors-vs-Barcelona-SC-Guayaquil",
     "info": {
       "championship": "كوبا ليبرتادوريس | الأدوار الإقصائية",
       "round": "الدور الثاني - مباراة الاياب",
-      "stadium": "استاد نيلتون سانتوس",
+      "stadium": "استاد دييغو أرماندو مارادونا (الأرجنتين)",
       "time": "01:30",
       "date": "الأربعاء 25-02-2026",
       "current_score": "- : -",
@@ -1261,18 +1261,18 @@
     },
     "teams": {
       "home": {
-        "name": "بوتافوغو",
-        "logo": "https://imgs.ysscores.com/teams/128/2731691418709.png"
+        "name": "أرجنتينوس",
+        "logo": "https://imgs.ysscores.com/teams/128/4771695765901.png"
       },
       "away": {
-        "name": "ناسيونال بوتوسي",
-        "logo": "https://imgs.ysscores.com/teams/128/3571711750448.png"
+        "name": "بارسيلونا",
+        "logo": "https://imgs.ysscores.com/teams/128/6571743591177.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 3",
-        "commentator": "محمد نضال"
+        "channel": "بي إن سبورت 2",
+        "commentator": "باسم الزير"
       }
     ]
   },
@@ -1306,12 +1306,12 @@
     ]
   },
   {
-    "id": "5110787",
-    "url": "https://www.ysscores.com/ar/match/5110787/AA-Argentinos-Juniors-vs-Barcelona-SC-Guayaquil",
+    "id": "5110788",
+    "url": "https://www.ysscores.com/ar/match/5110788/Botafogo-de-Futebol-e-Regatas-vs-CA-Nacional-Potosí",
     "info": {
       "championship": "كوبا ليبرتادوريس | الأدوار الإقصائية",
       "round": "الدور الثاني - مباراة الاياب",
-      "stadium": "استاد دييغو أرماندو مارادونا (الأرجنتين)",
+      "stadium": "استاد نيلتون سانتوس",
       "time": "01:30",
       "date": "الأربعاء 25-02-2026",
       "current_score": "- : -",
@@ -1319,18 +1319,18 @@
     },
     "teams": {
       "home": {
-        "name": "أرجنتينوس",
-        "logo": "https://imgs.ysscores.com/teams/128/4771695765901.png"
+        "name": "بوتافوغو",
+        "logo": "https://imgs.ysscores.com/teams/128/2731691418709.png"
       },
       "away": {
-        "name": "بارسيلونا",
-        "logo": "https://imgs.ysscores.com/teams/128/6571743591177.png"
+        "name": "ناسيونال بوتوسي",
+        "logo": "https://imgs.ysscores.com/teams/128/3571711750448.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 2",
-        "commentator": "باسم الزير"
+        "channel": "بي إن سبورت 3",
+        "commentator": "محمد نضال"
       }
     ]
   },
