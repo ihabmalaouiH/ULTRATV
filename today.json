@@ -482,6 +482,30 @@
     "channels": []
   },
   {
+    "id": "46291740",
+    "url": "https://www.ysscores.com/ar/match/46291740/Al-Shouleh-SC-vs-Al-Shorta-SC-(Syria)",
+    "info": {
+      "championship": "الدوري السوري الممتاز",
+      "round": "11 - مباراة الذهاب",
+      "stadium": "ملعب درعا",
+      "time": "13:00",
+      "date": "الجمعة 27-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الشعلة",
+        "logo": "https://imgs.ysscores.com/teams/128/2471723130553.png"
+      },
+      "away": {
+        "name": "الشرطة",
+        "logo": "https://imgs.ysscores.com/teams/128/17648892592497.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "31628580",
     "url": "https://www.ysscores.com/ar/match/31628580/Omayya-SC-vs-Tishreen-SC",
     "info": {
@@ -506,25 +530,25 @@
     "channels": []
   },
   {
-    "id": "46291740",
-    "url": "https://www.ysscores.com/ar/match/46291740/Al-Shouleh-SC-vs-Al-Shorta-SC-(Syria)",
+    "id": "61930397",
+    "url": "https://www.ysscores.com/ar/match/61930397/Al-Jaish-SC-vs-Khan-Shekhoun",
     "info": {
       "championship": "الدوري السوري الممتاز",
       "round": "11 - مباراة الذهاب",
-      "stadium": "ملعب درعا",
+      "stadium": "ملعب الفيحاء - دمشق",
       "time": "13:00",
       "date": "الجمعة 27-02-2026",
-      "current_score": "1 - 1",
+      "current_score": "3 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الشعلة",
-        "logo": "https://imgs.ysscores.com/teams/128/2471723130553.png"
+        "name": "الجيش",
+        "logo": "https://imgs.ysscores.com/teams/128/17648885948055.png"
       },
       "away": {
-        "name": "الشرطة",
-        "logo": "https://imgs.ysscores.com/teams/128/17648892592497.png"
+        "name": "خان شيخون",
+        "logo": "https://imgs.ysscores.com/teams/128/17648858602326.png"
       }
     },
     "channels": []
@@ -559,30 +583,6 @@
     ]
   },
   {
-    "id": "61930397",
-    "url": "https://www.ysscores.com/ar/match/61930397/Al-Jaish-SC-vs-Khan-Shekhoun",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "11 - مباراة الذهاب",
-      "stadium": "ملعب الفيحاء - دمشق",
-      "time": "13:00",
-      "date": "الجمعة 27-02-2026",
-      "current_score": "3 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الجيش",
-        "logo": "https://imgs.ysscores.com/teams/128/17648885948055.png"
-      },
-      "away": {
-        "name": "خان شيخون",
-        "logo": "https://imgs.ysscores.com/teams/128/17648858602326.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4830673",
     "url": "https://www.ysscores.com/ar/match/4830673/RC-Strasbourg-Alsace-vs-RC-Lens",
     "info": {
@@ -608,39 +608,6 @@
       {
         "channel": "بي إن سبورت 4",
         "commentator": "محمد المبروكي"
-      }
-    ]
-  },
-  {
-    "id": "5099026",
-    "url": "https://www.ysscores.com/ar/match/5099026/Al-Ahli-SC-vs-Al-Shahania-SC",
-    "info": {
-      "championship": "الدوري القطري",
-      "round": "17 - مباراة الاياب",
-      "stadium": "استاد الثمامة",
-      "time": "19:30",
-      "date": "الجمعة 27-02-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/5031722879444.png"
-      },
-      "away": {
-        "name": "الشحانية",
-        "logo": "https://imgs.ysscores.com/teams/128/9711722879334.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت HD",
-        "commentator": "عامر الخوذيري"
-      },
-      {
-        "channel": "الكأس 2",
-        "commentator": "منتصر الأزهري"
       }
     ]
   },
@@ -674,6 +641,39 @@
       {
         "channel": "بي إن سبورت 5",
         "commentator": "حسن العيدروس"
+      }
+    ]
+  },
+  {
+    "id": "5099026",
+    "url": "https://www.ysscores.com/ar/match/5099026/Al-Ahli-SC-vs-Al-Shahania-SC",
+    "info": {
+      "championship": "الدوري القطري",
+      "round": "17 - مباراة الاياب",
+      "stadium": "استاد الثمامة",
+      "time": "19:30",
+      "date": "الجمعة 27-02-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/5031722879444.png"
+      },
+      "away": {
+        "name": "الشحانية",
+        "logo": "https://imgs.ysscores.com/teams/128/9711722879334.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت HD",
+        "commentator": "عامر الخوذيري"
+      },
+      {
+        "channel": "الكأس 2",
+        "commentator": "منتصر الأزهري"
       }
     ]
   },
@@ -890,35 +890,6 @@
     "channels": []
   },
   {
-    "id": "5191070",
-    "url": "https://www.ysscores.com/ar/match/5191070/ES-Zarzis-vs-JS-Kairouanaise",
-    "info": {
-      "championship": "الرابطة التونسية لكرة القدم",
-      "round": "22 - مباراة الاياب",
-      "stadium": "المركب الرياضي بجرجيس",
-      "time": "13:00",
-      "date": "الجمعة 27-02-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الجرجيسي",
-        "logo": "https://imgs.ysscores.com/teams/128/7511723790588.png"
-      },
-      "away": {
-        "name": "القيروان",
-        "logo": "https://imgs.ysscores.com/teams/128/731753310886.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الوطنية 1",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5191068",
     "url": "https://www.ysscores.com/ar/match/5191068/Jeunesse-Sportive-Omrane-vs-Union-Sportive-de-Ben-Guerdane",
     "info": {
@@ -943,6 +914,35 @@
     "channels": [
       {
         "channel": "الوطنية 2",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5191070",
+    "url": "https://www.ysscores.com/ar/match/5191070/ES-Zarzis-vs-JS-Kairouanaise",
+    "info": {
+      "championship": "الرابطة التونسية لكرة القدم",
+      "round": "22 - مباراة الاياب",
+      "stadium": "المركب الرياضي بجرجيس",
+      "time": "13:00",
+      "date": "الجمعة 27-02-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الجرجيسي",
+        "logo": "https://imgs.ysscores.com/teams/128/7511723790588.png"
+      },
+      "away": {
+        "name": "القيروان",
+        "logo": "https://imgs.ysscores.com/teams/128/731753310886.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الوطنية 1",
         "commentator": "غير مدرج"
       }
     ]
