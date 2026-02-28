@@ -153,35 +153,6 @@
     ]
   },
   {
-    "id": "5071010",
-    "url": "https://www.ysscores.com/ar/match/5071010/FC-Dallas-vs-Nashville-SC",
-    "info": {
-      "championship": "الدوري الأمريكي لكرة القدم",
-      "round": "2 - مباراة الذهاب",
-      "stadium": "تويوتا",
-      "time": "02:30",
-      "date": "السبت 28-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "دالاس",
-        "logo": "https://imgs.ysscores.com/teams/128/781691410999.png"
-      },
-      "away": {
-        "name": "ناشفيل",
-        "logo": "https://imgs.ysscores.com/teams/128/8971691410554.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "Apple TV",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5071014",
     "url": "https://www.ysscores.com/ar/match/5071014/Real-Salt-Lake-City-vs-Seattle-Sounders-FC",
     "info": {
@@ -201,6 +172,35 @@
       "away": {
         "name": "سياتل",
         "logo": "https://imgs.ysscores.com/teams/128/241740040401.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "Apple TV",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5071016",
+    "url": "https://www.ysscores.com/ar/match/5071016/Vancouver-Whitecaps-FC-vs-Toronto-FC",
+    "info": {
+      "championship": "الدوري الأمريكي لكرة القدم",
+      "round": "2 - مباراة الذهاب",
+      "stadium": "بي سي بلايس",
+      "time": "03:30",
+      "date": "السبت 28-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "فانكوفر",
+        "logo": "https://imgs.ysscores.com/teams/128/5091691411892.png"
+      },
+      "away": {
+        "name": "تورونتو",
+        "logo": "https://imgs.ysscores.com/teams/128/6161691411599.png"
       }
     },
     "channels": [
@@ -240,25 +240,25 @@
     ]
   },
   {
-    "id": "5071016",
-    "url": "https://www.ysscores.com/ar/match/5071016/Vancouver-Whitecaps-FC-vs-Toronto-FC",
+    "id": "5071010",
+    "url": "https://www.ysscores.com/ar/match/5071010/FC-Dallas-vs-Nashville-SC",
     "info": {
       "championship": "الدوري الأمريكي لكرة القدم",
       "round": "2 - مباراة الذهاب",
-      "stadium": "بي سي بلايس",
-      "time": "03:30",
+      "stadium": "تويوتا",
+      "time": "02:30",
       "date": "السبت 28-02-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "فانكوفر",
-        "logo": "https://imgs.ysscores.com/teams/128/5091691411892.png"
+        "name": "دالاس",
+        "logo": "https://imgs.ysscores.com/teams/128/781691410999.png"
       },
       "away": {
-        "name": "تورونتو",
-        "logo": "https://imgs.ysscores.com/teams/128/6161691411599.png"
+        "name": "ناشفيل",
+        "logo": "https://imgs.ysscores.com/teams/128/8971691410554.png"
       }
     },
     "channels": [
@@ -612,30 +612,6 @@
     "channels": []
   },
   {
-    "id": "4818924",
-    "url": "https://www.ysscores.com/ar/match/4818924/Dundee-FC-vs-Hibernian-FC",
-    "info": {
-      "championship": "الدوري الإسكتلندي الممتاز",
-      "round": "29 - مباراة الاياب",
-      "stadium": "دينس بارك",
-      "time": "16:00",
-      "date": "السبت 28-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "دندي",
-        "logo": "https://imgs.ysscores.com/teams/128/2331690370518.png"
-      },
-      "away": {
-        "name": "هيبرنيان",
-        "logo": "https://imgs.ysscores.com/teams/128/1801690370558.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4818926",
     "url": "https://www.ysscores.com/ar/match/4818926/Heart-of-Midlothian-FC-vs-Aberdeen-FC",
     "info": {
@@ -655,6 +631,30 @@
       "away": {
         "name": "أبردين",
         "logo": "https://imgs.ysscores.com/teams/128/711690370527.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4818924",
+    "url": "https://www.ysscores.com/ar/match/4818924/Dundee-FC-vs-Hibernian-FC",
+    "info": {
+      "championship": "الدوري الإسكتلندي الممتاز",
+      "round": "29 - مباراة الاياب",
+      "stadium": "دينس بارك",
+      "time": "16:00",
+      "date": "السبت 28-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "دندي",
+        "logo": "https://imgs.ysscores.com/teams/128/2331690370518.png"
+      },
+      "away": {
+        "name": "هيبرنيان",
+        "logo": "https://imgs.ysscores.com/teams/128/1801690370558.png"
       }
     },
     "channels": []
@@ -907,7 +907,7 @@
       "time": "15:00",
       "date": "السبت 28-02-2026",
       "current_score": "3 - 1",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1146,35 +1146,6 @@
     ]
   },
   {
-    "id": "4842526",
-    "url": "https://www.ysscores.com/ar/match/4842526/Göztepe-vs-Eyüpspor",
-    "info": {
-      "championship": "الدوري التركي الممتاز",
-      "round": "24 - مباراة الاياب",
-      "stadium": "ملعب غورسل أكسل",
-      "time": "18:00",
-      "date": "السبت 28-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "جوزتيبي",
-        "logo": "https://imgs.ysscores.com/teams/128/8741690370493.png"
-      },
-      "away": {
-        "name": "أيوب سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/891700669405.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Sports HD 2 TR",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "4842527",
     "url": "https://www.ysscores.com/ar/match/4842527/Kasimpasa-vs-Caykur-Rizespor",
     "info": {
@@ -1194,6 +1165,35 @@
       "away": {
         "name": "ريزه سبور",
         "logo": "https://imgs.ysscores.com/teams/128/5931690127362.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Sports HD 2 TR",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "4842526",
+    "url": "https://www.ysscores.com/ar/match/4842526/Göztepe-vs-Eyüpspor",
+    "info": {
+      "championship": "الدوري التركي الممتاز",
+      "round": "24 - مباراة الاياب",
+      "stadium": "ملعب غورسل أكسل",
+      "time": "18:00",
+      "date": "السبت 28-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "جوزتيبي",
+        "logo": "https://imgs.ysscores.com/teams/128/8741690370493.png"
+      },
+      "away": {
+        "name": "أيوب سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/891700669405.png"
       }
     },
     "channels": [
@@ -1442,35 +1442,6 @@
     ]
   },
   {
-    "id": "82543500",
-    "url": "https://www.ysscores.com/ar/match/82543500/Al-Quwa-Al-Jawiya-vs-Al-Najaf-FC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "20 - مباراة الاياب",
-      "stadium": "استاد المدينة الدولي",
-      "time": "21:15",
-      "date": "السبت 28-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "القوة الجوية",
-        "logo": "https://imgs.ysscores.com/teams/128/4301729966980.png"
-      },
-      "away": {
-        "name": "النجف",
-        "logo": "https://imgs.ysscores.com/teams/128/17714621785978.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية الرياضية",
-        "commentator": "رعد ناهي"
-      }
-    ]
-  },
-  {
     "id": "18223452",
     "url": "https://www.ysscores.com/ar/match/18223452/Naft-Missan-vs-Al-Talaba-SC",
     "info": {
@@ -1500,31 +1471,31 @@
     ]
   },
   {
-    "id": "4830665",
-    "url": "https://www.ysscores.com/ar/match/4830665/Le-Havre-AC-vs-Paris-Saint-Germain",
+    "id": "82543500",
+    "url": "https://www.ysscores.com/ar/match/82543500/Al-Quwa-Al-Jawiya-vs-Al-Najaf-FC",
     "info": {
-      "championship": "الدوري الفرنسي",
-      "round": "24 - مباراة الاياب",
-      "stadium": "ستاد أوسيان",
-      "time": "21:05",
+      "championship": "الدوري العراقي",
+      "round": "20 - مباراة الاياب",
+      "stadium": "استاد المدينة الدولي",
+      "time": "21:15",
       "date": "السبت 28-02-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "لوهافر",
-        "logo": "https://imgs.ysscores.com/teams/128/6941691927287.png"
+        "name": "القوة الجوية",
+        "logo": "https://imgs.ysscores.com/teams/128/4301729966980.png"
       },
       "away": {
-        "name": "باريس",
-        "logo": "https://imgs.ysscores.com/teams/128/4461690287785.png"
+        "name": "النجف",
+        "logo": "https://imgs.ysscores.com/teams/128/17714621785978.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 1",
-        "commentator": "عامر الخوذيري"
+        "channel": "العراقية الرياضية",
+        "commentator": "رعد ناهي"
       }
     ]
   },
@@ -1554,6 +1525,35 @@
       {
         "channel": "بي إن سبورت 4",
         "commentator": "نوفل باشي"
+      }
+    ]
+  },
+  {
+    "id": "4830665",
+    "url": "https://www.ysscores.com/ar/match/4830665/Le-Havre-AC-vs-Paris-Saint-Germain",
+    "info": {
+      "championship": "الدوري الفرنسي",
+      "round": "24 - مباراة الاياب",
+      "stadium": "ستاد أوسيان",
+      "time": "21:05",
+      "date": "السبت 28-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "لوهافر",
+        "logo": "https://imgs.ysscores.com/teams/128/6941691927287.png"
+      },
+      "away": {
+        "name": "باريس",
+        "logo": "https://imgs.ysscores.com/teams/128/4461690287785.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "عامر الخوذيري"
       }
     ]
   },
@@ -1981,30 +1981,6 @@
     ]
   },
   {
-    "id": "4815456",
-    "url": "https://www.ysscores.com/ar/match/4815456/NEC-Nijmegen-vs-Fortuna-Sittard",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "25 - مباراة الاياب",
-      "stadium": "دي جوفير",
-      "time": "21:00",
-      "date": "السبت 28-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "نيميخن",
-        "logo": "https://imgs.ysscores.com/teams/128/2531690996921.png"
-      },
-      "away": {
-        "name": "فورتونا سيتارد",
-        "logo": "https://imgs.ysscores.com/teams/128/1881690997103.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4815454",
     "url": "https://www.ysscores.com/ar/match/4815454/SC-Heerenveen-vs-Sparta-Rotterdam",
     "info": {
@@ -2024,6 +2000,30 @@
       "away": {
         "name": "روتردام",
         "logo": "https://imgs.ysscores.com/teams/128/111690824096.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4815456",
+    "url": "https://www.ysscores.com/ar/match/4815456/NEC-Nijmegen-vs-Fortuna-Sittard",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "25 - مباراة الاياب",
+      "stadium": "دي جوفير",
+      "time": "21:00",
+      "date": "السبت 28-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "نيميخن",
+        "logo": "https://imgs.ysscores.com/teams/128/2531690996921.png"
+      },
+      "away": {
+        "name": "فورتونا سيتارد",
+        "logo": "https://imgs.ysscores.com/teams/128/1881690997103.png"
       }
     },
     "channels": []
@@ -2183,35 +2183,6 @@
     ]
   },
   {
-    "id": "5156364",
-    "url": "https://www.ysscores.com/ar/match/5156364/MB-Rouissat-vs-ASO-Chlef",
-    "info": {
-      "championship": "الرابطة المحترفة الجزائرية الأولى",
-      "round": "21 - مباراة الاياب",
-      "stadium": "الملعب الولائي ورقلة 18 فبراير",
-      "time": "22:00",
-      "date": "السبت 28-02-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "مستقبل الرويسات",
-        "logo": "https://imgs.ysscores.com/teams/128/7271753996876.png"
-      },
-      "away": {
-        "name": "أولمبي الشلف",
-        "logo": "https://imgs.ysscores.com/teams/128/2291693417692.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الرياضية ويب",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5156363",
     "url": "https://www.ysscores.com/ar/match/5156363/USM-Khenchela-vs-Olympique-Akbou",
     "info": {
@@ -2231,6 +2202,35 @@
       "away": {
         "name": "أولمبيك أقبو",
         "logo": "https://imgs.ysscores.com/teams/128/5351721202195.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الرياضية ويب",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5156364",
+    "url": "https://www.ysscores.com/ar/match/5156364/MB-Rouissat-vs-ASO-Chlef",
+    "info": {
+      "championship": "الرابطة المحترفة الجزائرية الأولى",
+      "round": "21 - مباراة الاياب",
+      "stadium": "الملعب الولائي ورقلة 18 فبراير",
+      "time": "22:00",
+      "date": "السبت 28-02-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "مستقبل الرويسات",
+        "logo": "https://imgs.ysscores.com/teams/128/7271753996876.png"
+      },
+      "away": {
+        "name": "أولمبي الشلف",
+        "logo": "https://imgs.ysscores.com/teams/128/2291693417692.png"
       }
     },
     "channels": [
@@ -2347,30 +2347,6 @@
     "channels": []
   },
   {
-    "id": "4825450",
-    "url": "https://www.ysscores.com/ar/match/4825450/Portsmouth-FC-vs-Hull-City",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "35 - مباراة الاياب",
-      "stadium": "فراتون بارك",
-      "time": "13:30",
-      "date": "السبت 28-02-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بورتسموث",
-        "logo": "https://imgs.ysscores.com/teams/128/5401690370525.png"
-      },
-      "away": {
-        "name": "هال سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/3801690370535.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4825452",
     "url": "https://www.ysscores.com/ar/match/4825452/Queens-Park-Rangers-vs-Sheffield-United",
     "info": {
@@ -2390,6 +2366,30 @@
       "away": {
         "name": "شيفيلد",
         "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825450",
+    "url": "https://www.ysscores.com/ar/match/4825450/Portsmouth-FC-vs-Hull-City",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "35 - مباراة الاياب",
+      "stadium": "فراتون بارك",
+      "time": "13:30",
+      "date": "السبت 28-02-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بورتسموث",
+        "logo": "https://imgs.ysscores.com/teams/128/5401690370525.png"
+      },
+      "away": {
+        "name": "هال سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/3801690370535.png"
       }
     },
     "channels": []
