@@ -881,7 +881,7 @@
       "time": "18:00",
       "date": "الأحد 01-03-2026",
       "current_score": "2 - 2",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1036,35 +1036,6 @@
     ]
   },
   {
-    "id": "4830669",
-    "url": "https://www.ysscores.com/ar/match/4830669/FC-Metz-vs-Stade-Brestois-29",
-    "info": {
-      "championship": "الدوري الفرنسي",
-      "round": "24 - مباراة الاياب",
-      "stadium": "سانت سيمفورين",
-      "time": "17:15",
-      "date": "الأحد 01-03-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ميتز",
-        "logo": "https://imgs.ysscores.com/teams/128/5631690287157.png"
-      },
-      "away": {
-        "name": "بريست",
-        "logo": "https://imgs.ysscores.com/teams/128/7551690287380.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "محمد نضال"
-      }
-    ]
-  },
-  {
     "id": "4830671",
     "url": "https://www.ysscores.com/ar/match/4830671/Paris-FC-vs-OGC-Nice",
     "info": {
@@ -1090,6 +1061,35 @@
       {
         "channel": "بي إن سبورت 3",
         "commentator": "محمد بركات"
+      }
+    ]
+  },
+  {
+    "id": "4830669",
+    "url": "https://www.ysscores.com/ar/match/4830669/FC-Metz-vs-Stade-Brestois-29",
+    "info": {
+      "championship": "الدوري الفرنسي",
+      "round": "24 - مباراة الاياب",
+      "stadium": "سانت سيمفورين",
+      "time": "17:15",
+      "date": "الأحد 01-03-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ميتز",
+        "logo": "https://imgs.ysscores.com/teams/128/5631690287157.png"
+      },
+      "away": {
+        "name": "بريست",
+        "logo": "https://imgs.ysscores.com/teams/128/7551690287380.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "محمد نضال"
       }
     ]
   },
@@ -1411,8 +1411,8 @@
       "stadium": "فان دونغ دي رو",
       "time": "20:00",
       "date": "الأحد 01-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -1562,30 +1562,6 @@
     "channels": []
   },
   {
-    "id": "4859157",
-    "url": "https://www.ysscores.com/ar/match/4859157/Panserraikos-vs-Olympiacos-Piraeus",
-    "info": {
-      "championship": "الدوري اليوناني",
-      "round": "23 - مباراة الاياب",
-      "stadium": "إستاديو سيرّس المُدنّي",
-      "time": "15:00",
-      "date": "الأحد 01-03-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بانسيررايكوس",
-        "logo": "https://imgs.ysscores.com/teams/128/7481754000611.png"
-      },
-      "away": {
-        "name": "أولمبياكوس",
-        "logo": "https://imgs.ysscores.com/teams/128/1401690370533.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4859158",
     "url": "https://www.ysscores.com/ar/match/4859158/PAOK-Thessaloniki-vs-Asteras-Aktor",
     "info": {
@@ -1605,6 +1581,30 @@
       "away": {
         "name": "تريبوليس",
         "logo": "https://imgs.ysscores.com/teams/128/9251721769414.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4859157",
+    "url": "https://www.ysscores.com/ar/match/4859157/Panserraikos-vs-Olympiacos-Piraeus",
+    "info": {
+      "championship": "الدوري اليوناني",
+      "round": "23 - مباراة الاياب",
+      "stadium": "إستاديو سيرّس المُدنّي",
+      "time": "15:00",
+      "date": "الأحد 01-03-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بانسيررايكوس",
+        "logo": "https://imgs.ysscores.com/teams/128/7481754000611.png"
+      },
+      "away": {
+        "name": "أولمبياكوس",
+        "logo": "https://imgs.ysscores.com/teams/128/1401690370533.png"
       }
     },
     "channels": []
