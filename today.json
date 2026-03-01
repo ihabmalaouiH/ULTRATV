@@ -1266,7 +1266,7 @@
       "stadium": "استاد هيئة قناة السويس الجديد",
       "time": "20:30",
       "date": "الأحد 01-03-2026",
-      "current_score": "0 - 0",
+      "current_score": "0 - 1",
       "match_status": "الشوط الأول"
     },
     "teams": {
@@ -1988,30 +1988,6 @@
     "channels": []
   },
   {
-    "id": "4802058",
-    "url": "https://www.ysscores.com/ar/match/4802058/FC-Copenhagen-vs-Randers-FC",
-    "info": {
-      "championship": "دوري السوبر الدنماركي",
-      "round": "22 - مباراة الاياب",
-      "stadium": "استاد باركن",
-      "time": "17:00",
-      "date": "الأحد 01-03-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "كوبنهاغن",
-        "logo": "https://imgs.ysscores.com/teams/128/1701690822703.png"
-      },
-      "away": {
-        "name": "راندرز",
-        "logo": "https://imgs.ysscores.com/teams/128/7291691095937.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4802059",
     "url": "https://www.ysscores.com/ar/match/4802059/FC-Fredericia-vs-Silkeborg-IF",
     "info": {
@@ -2031,6 +2007,30 @@
       "away": {
         "name": "سيلكيبورج",
         "logo": "https://imgs.ysscores.com/teams/128/9451691096235.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4802058",
+    "url": "https://www.ysscores.com/ar/match/4802058/FC-Copenhagen-vs-Randers-FC",
+    "info": {
+      "championship": "دوري السوبر الدنماركي",
+      "round": "22 - مباراة الاياب",
+      "stadium": "استاد باركن",
+      "time": "17:00",
+      "date": "الأحد 01-03-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "كوبنهاغن",
+        "logo": "https://imgs.ysscores.com/teams/128/1701690822703.png"
+      },
+      "away": {
+        "name": "راندرز",
+        "logo": "https://imgs.ysscores.com/teams/128/7291691095937.png"
       }
     },
     "channels": []
