@@ -8,8 +8,8 @@
       "stadium": "استاد عمّان الدولي",
       "time": "19:45",
       "date": "الأحد 01-03-2026",
-      "current_score": "0 - 3",
-      "match_status": "الشوط الثاني"
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
@@ -649,8 +649,8 @@
       "stadium": "دوس أركوس",
       "time": "21:30",
       "date": "الأحد 01-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "0 - 0",
+      "match_status": "الشوط الأول"
     },
     "teams": {
       "home": {
@@ -949,35 +949,6 @@
     "channels": []
   },
   {
-    "id": "70406945",
-    "url": "https://www.ysscores.com/ar/match/70406945/Amanat-Baghdad-vs-Al-Naft-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "20 - مباراة الاياب",
-      "stadium": "ملعب شرار حيدر",
-      "time": "19:00",
-      "date": "الأحد 01-03-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أمانة بغداد",
-        "logo": "https://imgs.ysscores.com/teams/128/3211698196458.png"
-      },
-      "away": {
-        "name": "النفط",
-        "logo": "https://imgs.ysscores.com/teams/128/7661722514776.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية السريانية",
-        "commentator": "يوسف جميل"
-      }
-    ]
-  },
-  {
     "id": "47447768",
     "url": "https://www.ysscores.com/ar/match/47447768/Al-Minaa-SC-vs-Al-Karma",
     "info": {
@@ -1003,6 +974,35 @@
       {
         "channel": "العراقية الرياضية",
         "commentator": "علي الشمري"
+      }
+    ]
+  },
+  {
+    "id": "70406945",
+    "url": "https://www.ysscores.com/ar/match/70406945/Amanat-Baghdad-vs-Al-Naft-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "20 - مباراة الاياب",
+      "stadium": "ملعب شرار حيدر",
+      "time": "19:00",
+      "date": "الأحد 01-03-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أمانة بغداد",
+        "logo": "https://imgs.ysscores.com/teams/128/3211698196458.png"
+      },
+      "away": {
+        "name": "النفط",
+        "logo": "https://imgs.ysscores.com/teams/128/7661722514776.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية السريانية",
+        "commentator": "يوسف جميل"
       }
     ]
   },
@@ -1634,30 +1634,6 @@
     "channels": []
   },
   {
-    "id": "5191066",
-    "url": "https://www.ysscores.com/ar/match/5191066/CS-Sfaxien-vs-Avenir-Sportif-de-Gabès",
-    "info": {
-      "championship": "الرابطة التونسية لكرة القدم",
-      "round": "22 - مباراة الاياب",
-      "stadium": "الطيب المهيري",
-      "time": "13:00",
-      "date": "الأحد 01-03-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الصفاقسي",
-        "logo": "https://imgs.ysscores.com/teams/128/6131692796238.png"
-      },
-      "away": {
-        "name": "الرياضي بقابس",
-        "logo": "https://imgs.ysscores.com/teams/128/7431718813697.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5191065",
     "url": "https://www.ysscores.com/ar/match/5191065/Club-Africain-vs-Etoile-Sportive-Metlaoui",
     "info": {
@@ -1685,6 +1661,30 @@
         "commentator": "غير مدرج"
       }
     ]
+  },
+  {
+    "id": "5191066",
+    "url": "https://www.ysscores.com/ar/match/5191066/CS-Sfaxien-vs-Avenir-Sportif-de-Gabès",
+    "info": {
+      "championship": "الرابطة التونسية لكرة القدم",
+      "round": "22 - مباراة الاياب",
+      "stadium": "الطيب المهيري",
+      "time": "13:00",
+      "date": "الأحد 01-03-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الصفاقسي",
+        "logo": "https://imgs.ysscores.com/teams/128/6131692796238.png"
+      },
+      "away": {
+        "name": "الرياضي بقابس",
+        "logo": "https://imgs.ysscores.com/teams/128/7431718813697.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "5191069",
