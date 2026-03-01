@@ -245,7 +245,7 @@
       "time": "21:00",
       "date": "الأحد 01-03-2026",
       "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
@@ -1015,7 +1015,7 @@
       "stadium": "فيلودروم",
       "time": "20:45",
       "date": "الأحد 01-03-2026",
-      "current_score": "0 - 1",
+      "current_score": "1 - 1",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -1032,35 +1032,6 @@
       {
         "channel": "بي إن سبورت 2",
         "commentator": "علي محمد علي"
-      }
-    ]
-  },
-  {
-    "id": "4830669",
-    "url": "https://www.ysscores.com/ar/match/4830669/FC-Metz-vs-Stade-Brestois-29",
-    "info": {
-      "championship": "الدوري الفرنسي",
-      "round": "24 - مباراة الاياب",
-      "stadium": "سانت سيمفورين",
-      "time": "17:15",
-      "date": "الأحد 01-03-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ميتز",
-        "logo": "https://imgs.ysscores.com/teams/128/5631690287157.png"
-      },
-      "away": {
-        "name": "بريست",
-        "logo": "https://imgs.ysscores.com/teams/128/7551690287380.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "محمد نضال"
       }
     ]
   },
@@ -1090,6 +1061,35 @@
       {
         "channel": "بي إن سبورت 3",
         "commentator": "محمد بركات"
+      }
+    ]
+  },
+  {
+    "id": "4830669",
+    "url": "https://www.ysscores.com/ar/match/4830669/FC-Metz-vs-Stade-Brestois-29",
+    "info": {
+      "championship": "الدوري الفرنسي",
+      "round": "24 - مباراة الاياب",
+      "stadium": "سانت سيمفورين",
+      "time": "17:15",
+      "date": "الأحد 01-03-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ميتز",
+        "logo": "https://imgs.ysscores.com/teams/128/5631690287157.png"
+      },
+      "away": {
+        "name": "بريست",
+        "logo": "https://imgs.ysscores.com/teams/128/7551690287380.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "محمد نضال"
       }
     ]
   },
@@ -1764,30 +1764,6 @@
     "channels": []
   },
   {
-    "id": "5101994",
-    "url": "https://www.ysscores.com/ar/match/5101994/Instituto-ACC-vs-CA-Unión-(Santa-Fe)",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "استاد ماريو ألبيرتو كيمبس",
-      "time": "23:15",
-      "date": "الأحد 01-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "انيستتوتو",
-        "logo": "https://imgs.ysscores.com/teams/128/3131717933825.png"
-      },
-      "away": {
-        "name": "سانتا في",
-        "logo": "https://imgs.ysscores.com/teams/128/3311717935522.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5101998",
     "url": "https://www.ysscores.com/ar/match/5101998/Club-Atlético-Tigre-vs-Club-de-Gimnasia-y-Esgrima-La-Plata",
     "info": {
@@ -1812,6 +1788,30 @@
     "channels": []
   },
   {
+    "id": "5101994",
+    "url": "https://www.ysscores.com/ar/match/5101994/Instituto-ACC-vs-CA-Unión-(Santa-Fe)",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "استاد ماريو ألبيرتو كيمبس",
+      "time": "23:15",
+      "date": "الأحد 01-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "انيستتوتو",
+        "logo": "https://imgs.ysscores.com/teams/128/3131717933825.png"
+      },
+      "away": {
+        "name": "سانتا في",
+        "logo": "https://imgs.ysscores.com/teams/128/3311717935522.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5101995",
     "url": "https://www.ysscores.com/ar/match/5101995/CA-Newells-Old-Boys-vs-CA-Rosario-Central",
     "info": {
@@ -1821,7 +1821,7 @@
       "time": "21:00",
       "date": "الأحد 01-03-2026",
       "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
+      "match_status": "الشوط الثاني"
     },
     "teams": {
       "home": {
