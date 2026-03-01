@@ -571,39 +571,6 @@
     ]
   },
   {
-    "id": "4803305",
-    "url": "https://www.ysscores.com/ar/match/4803305/Torino-FC-vs-SS-Lazio",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "27 - مباراة الاياب",
-      "stadium": "أولمبيكو دي تورينو",
-      "time": "18:00",
-      "date": "الأحد 01-03-2026",
-      "current_score": "2 - 0",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "تورينو",
-        "logo": "https://imgs.ysscores.com/teams/128/7501690283003.png"
-      },
-      "away": {
-        "name": "لاتسيو",
-        "logo": "https://imgs.ysscores.com/teams/128/5111690283002.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "عبدالله السعدي"
-      },
-      {
-        "channel": "StarzPlay",
-        "commentator": "عبدالله السعدي"
-      }
-    ]
-  },
-  {
     "id": "4803302",
     "url": "https://www.ysscores.com/ar/match/4803302/AS-Roma-vs-Juventus-FC",
     "info": {
@@ -637,6 +604,39 @@
       {
         "channel": "منصة شاشا",
         "commentator": "رؤوف خليف"
+      }
+    ]
+  },
+  {
+    "id": "4803305",
+    "url": "https://www.ysscores.com/ar/match/4803305/Torino-FC-vs-SS-Lazio",
+    "info": {
+      "championship": "الدوري الإيطالي",
+      "round": "27 - مباراة الاياب",
+      "stadium": "أولمبيكو دي تورينو",
+      "time": "18:00",
+      "date": "الأحد 01-03-2026",
+      "current_score": "2 - 0",
+      "match_status": "الشوط الثاني"
+    },
+    "teams": {
+      "home": {
+        "name": "تورينو",
+        "logo": "https://imgs.ysscores.com/teams/128/7501690283003.png"
+      },
+      "away": {
+        "name": "لاتسيو",
+        "logo": "https://imgs.ysscores.com/teams/128/5111690283002.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "عبدالله السعدي"
+      },
+      {
+        "channel": "StarzPlay",
+        "commentator": "عبدالله السعدي"
       }
     ]
   },
@@ -698,7 +698,7 @@
       "time": "19:00",
       "date": "الأحد 01-03-2026",
       "current_score": "1 - 0",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -987,7 +987,7 @@
       "time": "19:00",
       "date": "الأحد 01-03-2026",
       "current_score": "1 - 1",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1451,35 +1451,6 @@
     "channels": []
   },
   {
-    "id": "4815460",
-    "url": "https://www.ysscores.com/ar/match/4815460/PEC-Zwolle-vs-Ajax-Amsterdam",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "25 - مباراة الاياب",
-      "stadium": "ماك 3 بارك",
-      "time": "12:15",
-      "date": "الأحد 01-03-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "زفوله",
-        "logo": "https://imgs.ysscores.com/teams/128/6691690996577.png"
-      },
-      "away": {
-        "name": "أياكس أمستردام",
-        "logo": "https://imgs.ysscores.com/teams/128/1361751718344.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "دبي الرياضية 1",
-        "commentator": "راشد عبدالرحمن"
-      }
-    ]
-  },
-  {
     "id": "4815459",
     "url": "https://www.ysscores.com/ar/match/4815459/FC-Utrecht-vs-AZ-Alkmaar",
     "info": {
@@ -1505,6 +1476,35 @@
       {
         "channel": "دبي الرياضية 2",
         "commentator": "رؤوف خليف"
+      }
+    ]
+  },
+  {
+    "id": "4815460",
+    "url": "https://www.ysscores.com/ar/match/4815460/PEC-Zwolle-vs-Ajax-Amsterdam",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "25 - مباراة الاياب",
+      "stadium": "ماك 3 بارك",
+      "time": "12:15",
+      "date": "الأحد 01-03-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "زفوله",
+        "logo": "https://imgs.ysscores.com/teams/128/6691690996577.png"
+      },
+      "away": {
+        "name": "أياكس أمستردام",
+        "logo": "https://imgs.ysscores.com/teams/128/1361751718344.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "دبي الرياضية 1",
+        "commentator": "راشد عبدالرحمن"
       }
     ]
   },
@@ -1619,7 +1619,7 @@
       "time": "19:00",
       "date": "الأحد 01-03-2026",
       "current_score": "1 - 0",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -2036,30 +2036,6 @@
     "channels": []
   },
   {
-    "id": "4802062",
-    "url": "https://www.ysscores.com/ar/match/4802062/Viborg-FF-vs-FC-Nordsjaelland",
-    "info": {
-      "championship": "دوري السوبر الدنماركي",
-      "round": "22 - مباراة الاياب",
-      "stadium": "إنيرجي فيبورج أرينا",
-      "time": "17:00",
-      "date": "الأحد 01-03-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "فيبورج",
-        "logo": "https://imgs.ysscores.com/teams/128/9161691096437.png"
-      },
-      "away": {
-        "name": "نوردشيلاند",
-        "logo": "https://imgs.ysscores.com/teams/128/3791691096589.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4802063",
     "url": "https://www.ysscores.com/ar/match/4802063/Sönderjyske-Fodbold-vs-Odense-Boldklub",
     "info": {
@@ -2079,6 +2055,30 @@
       "away": {
         "name": "أودنسه",
         "logo": "https://imgs.ysscores.com/teams/128/9931691096090.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4802062",
+    "url": "https://www.ysscores.com/ar/match/4802062/Viborg-FF-vs-FC-Nordsjaelland",
+    "info": {
+      "championship": "دوري السوبر الدنماركي",
+      "round": "22 - مباراة الاياب",
+      "stadium": "إنيرجي فيبورج أرينا",
+      "time": "17:00",
+      "date": "الأحد 01-03-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "فيبورج",
+        "logo": "https://imgs.ysscores.com/teams/128/9161691096437.png"
+      },
+      "away": {
+        "name": "نوردشيلاند",
+        "logo": "https://imgs.ysscores.com/teams/128/3791691096589.png"
       }
     },
     "channels": []
