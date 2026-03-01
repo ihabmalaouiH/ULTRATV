@@ -120,35 +120,6 @@
     ]
   },
   {
-    "id": "5071013",
-    "url": "https://www.ysscores.com/ar/match/5071013/Los-Angeles-Galaxy-vs-Charlotte-FC",
-    "info": {
-      "championship": "الدوري الأمريكي لكرة القدم",
-      "round": "2 - مباراة الذهاب",
-      "stadium": "ديجنيتي هالث سبورتس بارك",
-      "time": "04:30",
-      "date": "السبت 28-02-2026",
-      "current_score": "3 - 0",
-      "match_status": "الشوط الثاني"
-    },
-    "teams": {
-      "home": {
-        "name": "غلاكسي",
-        "logo": "https://imgs.ysscores.com/teams/128/1931691410208.png"
-      },
-      "away": {
-        "name": "شارلوت",
-        "logo": "https://imgs.ysscores.com/teams/128/4701691409708.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "Apple TV",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5071017",
     "url": "https://www.ysscores.com/ar/match/5071017/Philadelphia-Union-vs-New-York-City-FC",
     "info": {
@@ -978,35 +949,6 @@
     "channels": []
   },
   {
-    "id": "70406945",
-    "url": "https://www.ysscores.com/ar/match/70406945/Amanat-Baghdad-vs-Al-Naft-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "20 - مباراة الاياب",
-      "stadium": "ملعب شرار حيدر",
-      "time": "19:00",
-      "date": "الأحد 01-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أمانة بغداد",
-        "logo": "https://imgs.ysscores.com/teams/128/3211698196458.png"
-      },
-      "away": {
-        "name": "النفط",
-        "logo": "https://imgs.ysscores.com/teams/128/7661722514776.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية السريانية",
-        "commentator": "يوسف جميل"
-      }
-    ]
-  },
-  {
     "id": "47447768",
     "url": "https://www.ysscores.com/ar/match/47447768/Al-Minaa-SC-vs-Al-Karma",
     "info": {
@@ -1032,6 +974,35 @@
       {
         "channel": "العراقية الرياضية",
         "commentator": "علي الشمري"
+      }
+    ]
+  },
+  {
+    "id": "70406945",
+    "url": "https://www.ysscores.com/ar/match/70406945/Amanat-Baghdad-vs-Al-Naft-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "20 - مباراة الاياب",
+      "stadium": "ملعب شرار حيدر",
+      "time": "19:00",
+      "date": "الأحد 01-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أمانة بغداد",
+        "logo": "https://imgs.ysscores.com/teams/128/3211698196458.png"
+      },
+      "away": {
+        "name": "النفط",
+        "logo": "https://imgs.ysscores.com/teams/128/7661722514776.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية السريانية",
+        "commentator": "يوسف جميل"
       }
     ]
   },
@@ -1591,30 +1562,6 @@
     "channels": []
   },
   {
-    "id": "4859158",
-    "url": "https://www.ysscores.com/ar/match/4859158/PAOK-Thessaloniki-vs-Asteras-Aktor",
-    "info": {
-      "championship": "الدوري اليوناني",
-      "round": "23 - مباراة الاياب",
-      "stadium": "تومبا",
-      "time": "18:00",
-      "date": "الأحد 01-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "باوك",
-        "logo": "https://imgs.ysscores.com/teams/128/2801690370532.png"
-      },
-      "away": {
-        "name": "تريبوليس",
-        "logo": "https://imgs.ysscores.com/teams/128/9251721769414.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4859157",
     "url": "https://www.ysscores.com/ar/match/4859157/Panserraikos-vs-Olympiacos-Piraeus",
     "info": {
@@ -1634,6 +1581,30 @@
       "away": {
         "name": "أولمبياكوس",
         "logo": "https://imgs.ysscores.com/teams/128/1401690370533.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4859158",
+    "url": "https://www.ysscores.com/ar/match/4859158/PAOK-Thessaloniki-vs-Asteras-Aktor",
+    "info": {
+      "championship": "الدوري اليوناني",
+      "round": "23 - مباراة الاياب",
+      "stadium": "تومبا",
+      "time": "18:00",
+      "date": "الأحد 01-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "باوك",
+        "logo": "https://imgs.ysscores.com/teams/128/2801690370532.png"
+      },
+      "away": {
+        "name": "تريبوليس",
+        "logo": "https://imgs.ysscores.com/teams/128/9251721769414.png"
       }
     },
     "channels": []
@@ -1663,30 +1634,6 @@
     "channels": []
   },
   {
-    "id": "5191065",
-    "url": "https://www.ysscores.com/ar/match/5191065/Club-Africain-vs-Etoile-Sportive-Metlaoui",
-    "info": {
-      "championship": "الرابطة التونسية لكرة القدم",
-      "round": "22 - مباراة الاياب",
-      "stadium": "الملعب الأولمبي حمادي العقربي",
-      "time": "13:00",
-      "date": "الأحد 01-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الإفريقي",
-        "logo": "https://imgs.ysscores.com/teams/128/5191692795665.png"
-      },
-      "away": {
-        "name": "نجم المتلوي",
-        "logo": "https://imgs.ysscores.com/teams/128/2821692796324.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5191066",
     "url": "https://www.ysscores.com/ar/match/5191066/CS-Sfaxien-vs-Avenir-Sportif-de-Gabès",
     "info": {
@@ -1706,6 +1653,30 @@
       "away": {
         "name": "الرياضي بقابس",
         "logo": "https://imgs.ysscores.com/teams/128/7431718813697.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5191065",
+    "url": "https://www.ysscores.com/ar/match/5191065/Club-Africain-vs-Etoile-Sportive-Metlaoui",
+    "info": {
+      "championship": "الرابطة التونسية لكرة القدم",
+      "round": "22 - مباراة الاياب",
+      "stadium": "الملعب الأولمبي حمادي العقربي",
+      "time": "13:00",
+      "date": "الأحد 01-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الإفريقي",
+        "logo": "https://imgs.ysscores.com/teams/128/5191692795665.png"
+      },
+      "away": {
+        "name": "نجم المتلوي",
+        "logo": "https://imgs.ysscores.com/teams/128/2821692796324.png"
       }
     },
     "channels": []
@@ -2012,30 +1983,6 @@
     "channels": []
   },
   {
-    "id": "4802058",
-    "url": "https://www.ysscores.com/ar/match/4802058/FC-Copenhagen-vs-Randers-FC",
-    "info": {
-      "championship": "دوري السوبر الدنماركي",
-      "round": "22 - مباراة الاياب",
-      "stadium": "استاد باركن",
-      "time": "17:00",
-      "date": "الأحد 01-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "كوبنهاغن",
-        "logo": "https://imgs.ysscores.com/teams/128/1701690822703.png"
-      },
-      "away": {
-        "name": "راندرز",
-        "logo": "https://imgs.ysscores.com/teams/128/7291691095937.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4802059",
     "url": "https://www.ysscores.com/ar/match/4802059/FC-Fredericia-vs-Silkeborg-IF",
     "info": {
@@ -2055,6 +2002,30 @@
       "away": {
         "name": "سيلكيبورج",
         "logo": "https://imgs.ysscores.com/teams/128/9451691096235.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4802058",
+    "url": "https://www.ysscores.com/ar/match/4802058/FC-Copenhagen-vs-Randers-FC",
+    "info": {
+      "championship": "دوري السوبر الدنماركي",
+      "round": "22 - مباراة الاياب",
+      "stadium": "استاد باركن",
+      "time": "17:00",
+      "date": "الأحد 01-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "كوبنهاغن",
+        "logo": "https://imgs.ysscores.com/teams/128/1701690822703.png"
+      },
+      "away": {
+        "name": "راندرز",
+        "logo": "https://imgs.ysscores.com/teams/128/7291691095937.png"
       }
     },
     "channels": []
