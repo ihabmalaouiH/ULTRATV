@@ -543,7 +543,7 @@
       "time": "12:30",
       "date": "الأحد 01-03-2026",
       "current_score": "0 - 0",
-      "match_status": "الشوط الأول"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -761,30 +761,6 @@
     "channels": []
   },
   {
-    "id": "4818529",
-    "url": "https://www.ysscores.com/ar/match/4818529/KRC-Genk-vs-KAA-Gent",
-    "info": {
-      "championship": "الدوري البلجيكي",
-      "round": "27 - مباراة الاياب",
-      "stadium": "سيجيكا أرينا",
-      "time": "13:30",
-      "date": "الأحد 01-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "جينك",
-        "logo": "https://imgs.ysscores.com/teams/128/8001690823226.png"
-      },
-      "away": {
-        "name": "جينت",
-        "logo": "https://imgs.ysscores.com/teams/128/1061690370549.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4818528",
     "url": "https://www.ysscores.com/ar/match/4818528/Royal-Charleroi-SC-vs-Club-Brugge-KV",
     "info": {
@@ -812,6 +788,30 @@
         "commentator": "غير مدرج"
       }
     ]
+  },
+  {
+    "id": "4818529",
+    "url": "https://www.ysscores.com/ar/match/4818529/KRC-Genk-vs-KAA-Gent",
+    "info": {
+      "championship": "الدوري البلجيكي",
+      "round": "27 - مباراة الاياب",
+      "stadium": "سيجيكا أرينا",
+      "time": "13:30",
+      "date": "الأحد 01-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "جينك",
+        "logo": "https://imgs.ysscores.com/teams/128/8001690823226.png"
+      },
+      "away": {
+        "name": "جينت",
+        "logo": "https://imgs.ysscores.com/teams/128/1061690370549.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "4842529",
@@ -1036,35 +1036,6 @@
     ]
   },
   {
-    "id": "4830671",
-    "url": "https://www.ysscores.com/ar/match/4830671/Paris-FC-vs-OGC-Nice",
-    "info": {
-      "championship": "الدوري الفرنسي",
-      "round": "24 - مباراة الاياب",
-      "stadium": "ملعب جان بوين",
-      "time": "15:00",
-      "date": "الأحد 01-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "نادي باريس",
-        "logo": "https://imgs.ysscores.com/teams/128/6551690370501.png"
-      },
-      "away": {
-        "name": "نيس",
-        "logo": "https://imgs.ysscores.com/teams/128/7361690287672.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "محمد بركات"
-      }
-    ]
-  },
-  {
     "id": "4830669",
     "url": "https://www.ysscores.com/ar/match/4830669/FC-Metz-vs-Stade-Brestois-29",
     "info": {
@@ -1090,6 +1061,35 @@
       {
         "channel": "بي إن سبورت 3",
         "commentator": "محمد نضال"
+      }
+    ]
+  },
+  {
+    "id": "4830671",
+    "url": "https://www.ysscores.com/ar/match/4830671/Paris-FC-vs-OGC-Nice",
+    "info": {
+      "championship": "الدوري الفرنسي",
+      "round": "24 - مباراة الاياب",
+      "stadium": "ملعب جان بوين",
+      "time": "15:00",
+      "date": "الأحد 01-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "نادي باريس",
+        "logo": "https://imgs.ysscores.com/teams/128/6551690370501.png"
+      },
+      "away": {
+        "name": "نيس",
+        "logo": "https://imgs.ysscores.com/teams/128/7361690287672.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "محمد بركات"
       }
     ]
   },
