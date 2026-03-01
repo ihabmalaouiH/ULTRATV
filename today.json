@@ -1016,7 +1016,7 @@
       "time": "20:45",
       "date": "الأحد 01-03-2026",
       "current_score": "3 - 2",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1184,7 +1184,7 @@
       "stadium": "ملعب درنة",
       "time": "21:30",
       "date": "الأحد 01-03-2026",
-      "current_score": "2 - 0",
+      "current_score": "3 - 0",
       "match_status": "الشوط الثاني"
     },
     "teams": {
@@ -1451,35 +1451,6 @@
     "channels": []
   },
   {
-    "id": "4815459",
-    "url": "https://www.ysscores.com/ar/match/4815459/FC-Utrecht-vs-AZ-Alkmaar",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "25 - مباراة الاياب",
-      "stadium": "جالينوارد",
-      "time": "16:45",
-      "date": "الأحد 01-03-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أوترخت",
-        "logo": "https://imgs.ysscores.com/teams/128/3101690475899.png"
-      },
-      "away": {
-        "name": "إي زد آلكمار",
-        "logo": "https://imgs.ysscores.com/teams/128/7771690996316.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "دبي الرياضية 2",
-        "commentator": "رؤوف خليف"
-      }
-    ]
-  },
-  {
     "id": "4815460",
     "url": "https://www.ysscores.com/ar/match/4815460/PEC-Zwolle-vs-Ajax-Amsterdam",
     "info": {
@@ -1505,6 +1476,35 @@
       {
         "channel": "دبي الرياضية 1",
         "commentator": "راشد عبدالرحمن"
+      }
+    ]
+  },
+  {
+    "id": "4815459",
+    "url": "https://www.ysscores.com/ar/match/4815459/FC-Utrecht-vs-AZ-Alkmaar",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "25 - مباراة الاياب",
+      "stadium": "جالينوارد",
+      "time": "16:45",
+      "date": "الأحد 01-03-2026",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أوترخت",
+        "logo": "https://imgs.ysscores.com/teams/128/3101690475899.png"
+      },
+      "away": {
+        "name": "إي زد آلكمار",
+        "logo": "https://imgs.ysscores.com/teams/128/7771690996316.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "دبي الرياضية 2",
+        "commentator": "رؤوف خليف"
       }
     ]
   },
@@ -2012,30 +2012,6 @@
     "channels": []
   },
   {
-    "id": "4802059",
-    "url": "https://www.ysscores.com/ar/match/4802059/FC-Fredericia-vs-Silkeborg-IF",
-    "info": {
-      "championship": "دوري السوبر الدنماركي",
-      "round": "22 - مباراة الاياب",
-      "stadium": "مونجاسا بارك",
-      "time": "17:00",
-      "date": "الأحد 01-03-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "فريديريشيا",
-        "logo": "https://imgs.ysscores.com/teams/128/6891690370524.png"
-      },
-      "away": {
-        "name": "سيلكيبورج",
-        "logo": "https://imgs.ysscores.com/teams/128/9451691096235.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4802063",
     "url": "https://www.ysscores.com/ar/match/4802063/Sönderjyske-Fodbold-vs-Odense-Boldklub",
     "info": {
@@ -2055,6 +2031,30 @@
       "away": {
         "name": "أودنسه",
         "logo": "https://imgs.ysscores.com/teams/128/9931691096090.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4802059",
+    "url": "https://www.ysscores.com/ar/match/4802059/FC-Fredericia-vs-Silkeborg-IF",
+    "info": {
+      "championship": "دوري السوبر الدنماركي",
+      "round": "22 - مباراة الاياب",
+      "stadium": "مونجاسا بارك",
+      "time": "17:00",
+      "date": "الأحد 01-03-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "فريديريشيا",
+        "logo": "https://imgs.ysscores.com/teams/128/6891690370524.png"
+      },
+      "away": {
+        "name": "سيلكيبورج",
+        "logo": "https://imgs.ysscores.com/teams/128/9451691096235.png"
       }
     },
     "channels": []
