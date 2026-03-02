@@ -1383,7 +1383,7 @@
       "time": "23:00",
       "date": "الأحد 01-03-2026",
       "current_score": "0 - 1",
-      "match_status": "الشوط الثاني"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -1401,30 +1401,6 @@
         "commentator": "غير مدرج"
       }
     ]
-  },
-  {
-    "id": "4815453",
-    "url": "https://www.ysscores.com/ar/match/4815453/FC-Volendam-vs-FC-Groningen",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "25 - مباراة الاياب",
-      "stadium": "كراس",
-      "time": "14:30",
-      "date": "الأحد 01-03-2026",
-      "current_score": "3 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "فولندام",
-        "logo": "https://imgs.ysscores.com/teams/128/7791690824589.png"
-      },
-      "away": {
-        "name": "غرونينغن",
-        "logo": "https://imgs.ysscores.com/teams/128/10001690370535.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "4815452",
@@ -1446,6 +1422,30 @@
       "away": {
         "name": "جو أهيد إيجلز",
         "logo": "https://imgs.ysscores.com/teams/128/3951690996987.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4815453",
+    "url": "https://www.ysscores.com/ar/match/4815453/FC-Volendam-vs-FC-Groningen",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "25 - مباراة الاياب",
+      "stadium": "كراس",
+      "time": "14:30",
+      "date": "الأحد 01-03-2026",
+      "current_score": "3 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "فولندام",
+        "logo": "https://imgs.ysscores.com/teams/128/7791690824589.png"
+      },
+      "away": {
+        "name": "غرونينغن",
+        "logo": "https://imgs.ysscores.com/teams/128/10001690370535.png"
       }
     },
     "channels": []
@@ -1988,30 +1988,6 @@
     "channels": []
   },
   {
-    "id": "4802058",
-    "url": "https://www.ysscores.com/ar/match/4802058/FC-Copenhagen-vs-Randers-FC",
-    "info": {
-      "championship": "دوري السوبر الدنماركي",
-      "round": "22 - مباراة الاياب",
-      "stadium": "استاد باركن",
-      "time": "17:00",
-      "date": "الأحد 01-03-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "كوبنهاغن",
-        "logo": "https://imgs.ysscores.com/teams/128/1701690822703.png"
-      },
-      "away": {
-        "name": "راندرز",
-        "logo": "https://imgs.ysscores.com/teams/128/7291691095937.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4802059",
     "url": "https://www.ysscores.com/ar/match/4802059/FC-Fredericia-vs-Silkeborg-IF",
     "info": {
@@ -2031,6 +2007,30 @@
       "away": {
         "name": "سيلكيبورج",
         "logo": "https://imgs.ysscores.com/teams/128/9451691096235.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4802058",
+    "url": "https://www.ysscores.com/ar/match/4802058/FC-Copenhagen-vs-Randers-FC",
+    "info": {
+      "championship": "دوري السوبر الدنماركي",
+      "round": "22 - مباراة الاياب",
+      "stadium": "استاد باركن",
+      "time": "17:00",
+      "date": "الأحد 01-03-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "كوبنهاغن",
+        "logo": "https://imgs.ysscores.com/teams/128/1701690822703.png"
+      },
+      "away": {
+        "name": "راندرز",
+        "logo": "https://imgs.ysscores.com/teams/128/7291691095937.png"
       }
     },
     "channels": []
