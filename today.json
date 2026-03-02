@@ -399,6 +399,30 @@
     ]
   },
   {
+    "id": "5101989",
+    "url": "https://www.ysscores.com/ar/match/5101989/Club-Deportivo-Riestra-vs-Club-Atlético-Platense",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "استاد غييرمو لازا",
+      "time": "23:15",
+      "date": "الاثنين 02-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ريسترا",
+        "logo": "https://imgs.ysscores.com/teams/128/1081718579454.png"
+      },
+      "away": {
+        "name": "بلاتينسي",
+        "logo": "https://imgs.ysscores.com/teams/128/6751717933744.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5101986",
     "url": "https://www.ysscores.com/ar/match/5101986/CA-Banfield-vs-CA-Aldosivi",
     "info": {
@@ -447,30 +471,6 @@
     "channels": []
   },
   {
-    "id": "5101989",
-    "url": "https://www.ysscores.com/ar/match/5101989/Club-Deportivo-Riestra-vs-Club-Atlético-Platense",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "استاد غييرمو لازا",
-      "time": "23:15",
-      "date": "الاثنين 02-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ريسترا",
-        "logo": "https://imgs.ysscores.com/teams/128/1081718579454.png"
-      },
-      "away": {
-        "name": "بلاتينسي",
-        "logo": "https://imgs.ysscores.com/teams/128/6751717933744.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5101990",
     "url": "https://www.ysscores.com/ar/match/5101990/Club-Estudiantes-de-La-Plata-vs-CA-Vélez-Sarsfield",
     "info": {
@@ -496,39 +496,6 @@
       {
         "channel": "دبي الرياضية",
         "commentator": "راشد عبدالرحمن"
-      }
-    ]
-  },
-  {
-    "id": "32648140",
-    "url": "https://www.ysscores.com/ar/match/32648140/Al-Adalah-FC-vs-Al-Faisaly-FC",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "25 - مباراة الاياب",
-      "stadium": "ملعب مدينة الأمير عبدالله بن جلوي الرياضية",
-      "time": "19:45",
-      "date": "الاثنين 02-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "العدالة",
-        "logo": "https://imgs.ysscores.com/teams/128/7331691930420.png"
-      },
-      "away": {
-        "name": "الفيصلي",
-        "logo": "https://imgs.ysscores.com/teams/128/5731692998559.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "قنوات ثمانية",
-        "commentator": "عبدالإله العمري"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "عبدالإله العمري"
       }
     ]
   },
@@ -621,5 +588,38 @@
       }
     },
     "channels": []
+  },
+  {
+    "id": "32648140",
+    "url": "https://www.ysscores.com/ar/match/32648140/Al-Adalah-FC-vs-Al-Faisaly-FC",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "25 - مباراة الاياب",
+      "stadium": "ملعب مدينة الأمير عبدالله بن جلوي الرياضية",
+      "time": "19:45",
+      "date": "الاثنين 02-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "العدالة",
+        "logo": "https://imgs.ysscores.com/teams/128/7331691930420.png"
+      },
+      "away": {
+        "name": "الفيصلي",
+        "logo": "https://imgs.ysscores.com/teams/128/5731692998559.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "قنوات ثمانية",
+        "commentator": "عبدالإله العمري"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "عبدالإله العمري"
+      }
+    ]
   }
 ]
