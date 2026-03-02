@@ -91,7 +91,7 @@
       "time": "20:45",
       "date": "الاثنين 02-03-2026",
       "current_score": "1 - 0",
-      "match_status": "لم تبدأ"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -423,6 +423,30 @@
     "channels": []
   },
   {
+    "id": "5101993",
+    "url": "https://www.ysscores.com/ar/match/5101993/CS-Independiente-Rivadavia-vs-CA-River-Plate",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "ملعب مالفيناس أرخنتيناس",
+      "time": "01:30",
+      "date": "الاثنين 02-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ريفادافيا",
+        "logo": "https://imgs.ysscores.com/teams/128/2411718579396.png"
+      },
+      "away": {
+        "name": "ريفر بليت",
+        "logo": "https://imgs.ysscores.com/teams/128/7481694223524.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5101990",
     "url": "https://www.ysscores.com/ar/match/5101990/Club-Estudiantes-de-La-Plata-vs-CA-Vélez-Sarsfield",
     "info": {
@@ -450,30 +474,6 @@
         "commentator": "راشد عبدالرحمن"
       }
     ]
-  },
-  {
-    "id": "5101993",
-    "url": "https://www.ysscores.com/ar/match/5101993/CS-Independiente-Rivadavia-vs-CA-River-Plate",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "ملعب مالفيناس أرخنتيناس",
-      "time": "01:30",
-      "date": "الاثنين 02-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ريفادافيا",
-        "logo": "https://imgs.ysscores.com/teams/128/2411718579396.png"
-      },
-      "away": {
-        "name": "ريفر بليت",
-        "logo": "https://imgs.ysscores.com/teams/128/7481694223524.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "5101989",
@@ -522,39 +522,6 @@
       }
     },
     "channels": []
-  },
-  {
-    "id": "51392080",
-    "url": "https://www.ysscores.com/ar/match/51392080/Al-Jabalain-FC-vs-Al-Zulfi-SFC",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "25 - مباراة الاياب",
-      "stadium": "استاد الأمير عبدالعزيز بن مساعد بن جلوي",
-      "time": "19:45",
-      "date": "الاثنين 02-03-2026",
-      "current_score": "1 - 1",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الجبلين",
-        "logo": "https://imgs.ysscores.com/teams/128/7651691930547.png"
-      },
-      "away": {
-        "name": "الزلفي",
-        "logo": "https://imgs.ysscores.com/teams/128/6151751106732.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 3",
-        "commentator": "مشعل الشمري"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "مشعل الشمري"
-      }
-    ]
   },
   {
     "id": "53310956",
@@ -619,6 +586,39 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "راشد الدوسري"
+      }
+    ]
+  },
+  {
+    "id": "51392080",
+    "url": "https://www.ysscores.com/ar/match/51392080/Al-Jabalain-FC-vs-Al-Zulfi-SFC",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "25 - مباراة الاياب",
+      "stadium": "استاد الأمير عبدالعزيز بن مساعد بن جلوي",
+      "time": "19:45",
+      "date": "الاثنين 02-03-2026",
+      "current_score": "1 - 1",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الجبلين",
+        "logo": "https://imgs.ysscores.com/teams/128/7651691930547.png"
+      },
+      "away": {
+        "name": "الزلفي",
+        "logo": "https://imgs.ysscores.com/teams/128/6151751106732.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 3",
+        "commentator": "مشعل الشمري"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "مشعل الشمري"
       }
     ]
   }
