@@ -186,7 +186,7 @@
       "time": "19:00",
       "date": "الاثنين 02-03-2026",
       "current_score": "2 - 0",
-      "match_status": "لم تبدأ"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -214,7 +214,7 @@
       "stadium": "استاد دهوك",
       "time": "19:00",
       "date": "الاثنين 02-03-2026",
-      "current_score": "1 - 1",
+      "current_score": "1 - 2",
       "match_status": "لم تبدأ"
     },
     "teams": {
@@ -524,39 +524,6 @@
     "channels": []
   },
   {
-    "id": "51392080",
-    "url": "https://www.ysscores.com/ar/match/51392080/Al-Jabalain-FC-vs-Al-Zulfi-SFC",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "25 - مباراة الاياب",
-      "stadium": "استاد الأمير عبدالعزيز بن مساعد بن جلوي",
-      "time": "19:45",
-      "date": "الاثنين 02-03-2026",
-      "current_score": "0 - 0",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الجبلين",
-        "logo": "https://imgs.ysscores.com/teams/128/7651691930547.png"
-      },
-      "away": {
-        "name": "الزلفي",
-        "logo": "https://imgs.ysscores.com/teams/128/6151751106732.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 3",
-        "commentator": "مشعل الشمري"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "مشعل الشمري"
-      }
-    ]
-  },
-  {
     "id": "53310956",
     "url": "https://www.ysscores.com/ar/match/53310956/Al-Arabi-SC-Saudi-vs-Jeddah-SC",
     "info": {
@@ -586,6 +553,39 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "سلطان الحربي"
+      }
+    ]
+  },
+  {
+    "id": "51392080",
+    "url": "https://www.ysscores.com/ar/match/51392080/Al-Jabalain-FC-vs-Al-Zulfi-SFC",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "25 - مباراة الاياب",
+      "stadium": "استاد الأمير عبدالعزيز بن مساعد بن جلوي",
+      "time": "19:45",
+      "date": "الاثنين 02-03-2026",
+      "current_score": "0 - 0",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الجبلين",
+        "logo": "https://imgs.ysscores.com/teams/128/7651691930547.png"
+      },
+      "away": {
+        "name": "الزلفي",
+        "logo": "https://imgs.ysscores.com/teams/128/6151751106732.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 3",
+        "commentator": "مشعل الشمري"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "مشعل الشمري"
       }
     ]
   },
