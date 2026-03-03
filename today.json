@@ -423,30 +423,6 @@
     "channels": []
   },
   {
-    "id": "5101986",
-    "url": "https://www.ysscores.com/ar/match/5101986/CA-Banfield-vs-CA-Aldosivi",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "8 - مباراة الذهاب",
-      "stadium": "استاد فلورنسيو سولا",
-      "time": "01:30",
-      "date": "الاثنين 02-03-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بانفيلد",
-        "logo": "https://imgs.ysscores.com/teams/128/3521717933590.png"
-      },
-      "away": {
-        "name": "إلدوسيفي",
-        "logo": "https://imgs.ysscores.com/teams/128/1451735322474.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5101993",
     "url": "https://www.ysscores.com/ar/match/5101993/CS-Independiente-Rivadavia-vs-CA-River-Plate",
     "info": {
@@ -466,6 +442,30 @@
       "away": {
         "name": "ريفر بليت",
         "logo": "https://imgs.ysscores.com/teams/128/7481694223524.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5101986",
+    "url": "https://www.ysscores.com/ar/match/5101986/CA-Banfield-vs-CA-Aldosivi",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "8 - مباراة الذهاب",
+      "stadium": "استاد فلورنسيو سولا",
+      "time": "01:30",
+      "date": "الاثنين 02-03-2026",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بانفيلد",
+        "logo": "https://imgs.ysscores.com/teams/128/3521717933590.png"
+      },
+      "away": {
+        "name": "إلدوسيفي",
+        "logo": "https://imgs.ysscores.com/teams/128/1451735322474.png"
       }
     },
     "channels": []
@@ -524,39 +524,6 @@
     "channels": []
   },
   {
-    "id": "32648140",
-    "url": "https://www.ysscores.com/ar/match/32648140/Al-Adalah-FC-vs-Al-Faisaly-FC",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "25 - مباراة الاياب",
-      "stadium": "استاد مدينة الملك عبد الله الرياضية (بريدة)",
-      "time": "19:45",
-      "date": "الاثنين 02-03-2026",
-      "current_score": "1 - 6",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "العدالة",
-        "logo": "https://imgs.ysscores.com/teams/128/7331691930420.png"
-      },
-      "away": {
-        "name": "الفيصلي",
-        "logo": "https://imgs.ysscores.com/teams/128/5731692998559.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 2",
-        "commentator": "راشد الدوسري"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "راشد الدوسري"
-      }
-    ]
-  },
-  {
     "id": "51392080",
     "url": "https://www.ysscores.com/ar/match/51392080/Al-Jabalain-FC-vs-Al-Zulfi-SFC",
     "info": {
@@ -586,6 +553,39 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "مشعل الشمري"
+      }
+    ]
+  },
+  {
+    "id": "32648140",
+    "url": "https://www.ysscores.com/ar/match/32648140/Al-Adalah-FC-vs-Al-Faisaly-FC",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "25 - مباراة الاياب",
+      "stadium": "استاد مدينة الملك عبد الله الرياضية (بريدة)",
+      "time": "19:45",
+      "date": "الاثنين 02-03-2026",
+      "current_score": "1 - 6",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "العدالة",
+        "logo": "https://imgs.ysscores.com/teams/128/7331691930420.png"
+      },
+      "away": {
+        "name": "الفيصلي",
+        "logo": "https://imgs.ysscores.com/teams/128/5731692998559.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 2",
+        "commentator": "راشد الدوسري"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "راشد الدوسري"
       }
     ]
   },
