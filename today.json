@@ -489,7 +489,7 @@
       "stadium": "استاد مونومينتال خوسيه فيرو",
       "time": "01:15",
       "date": "الثلاثاء 03-03-2026",
-      "current_score": "0 - 1",
+      "current_score": "0 - 2",
       "match_status": "لم تبدأ"
     },
     "teams": {
@@ -744,35 +744,6 @@
     "channels": []
   },
   {
-    "id": "59817473",
-    "url": "https://www.ysscores.com/ar/match/59817473/CR-Belouizdad-vs-MC-Algiers",
-    "info": {
-      "championship": "كأس الجزائر",
-      "round": "ربع نهائي",
-      "stadium": "استاد نيلسون مانديلا",
-      "time": "22:00",
-      "date": "الثلاثاء 03-03-2026",
-      "current_score": "3 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "شباب بلوزداد",
-        "logo": "https://imgs.ysscores.com/teams/128/4951692205804.png"
-      },
-      "away": {
-        "name": "مولودية الجزائر",
-        "logo": "https://imgs.ysscores.com/teams/128/7391693665631.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الجزائرية السادسة",
-        "commentator": "وليد فرحاني"
-      }
-    ]
-  },
-  {
     "id": "21813569",
     "url": "https://www.ysscores.com/ar/match/21813569/CS-Constantine-vs-JSM-Bejaia",
     "info": {
@@ -802,31 +773,31 @@
     ]
   },
   {
-    "id": "5085845",
-    "url": "https://www.ysscores.com/ar/match/5085845/Alanyaspor-vs-Galatasaray",
+    "id": "59817473",
+    "url": "https://www.ysscores.com/ar/match/59817473/CR-Belouizdad-vs-MC-Algiers",
     "info": {
-      "championship": "كأس تركيا",
-      "round": "4",
-      "stadium": "ملعب جين بارك",
-      "time": "18:30",
+      "championship": "كأس الجزائر",
+      "round": "ربع نهائي",
+      "stadium": "استاد نيلسون مانديلا",
+      "time": "22:00",
       "date": "الثلاثاء 03-03-2026",
-      "current_score": "1 - 2",
+      "current_score": "3 - 2",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "ألانيا سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/9541690127467.png"
+        "name": "شباب بلوزداد",
+        "logo": "https://imgs.ysscores.com/teams/128/4951692205804.png"
       },
       "away": {
-        "name": "غلطة سراي",
-        "logo": "https://imgs.ysscores.com/teams/128/2081756067376.png"
+        "name": "مولودية الجزائر",
+        "logo": "https://imgs.ysscores.com/teams/128/7391693665631.png"
       }
     },
     "channels": [
       {
-        "channel": "A Spor",
-        "commentator": "غير مدرج"
+        "channel": "الجزائرية السادسة",
+        "commentator": "وليد فرحاني"
       }
     ]
   },
@@ -850,6 +821,35 @@
       "away": {
         "name": "بولو سبور",
         "logo": "https://imgs.ysscores.com/teams/128/5401700668616.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "A Spor",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5085845",
+    "url": "https://www.ysscores.com/ar/match/5085845/Alanyaspor-vs-Galatasaray",
+    "info": {
+      "championship": "كأس تركيا",
+      "round": "4",
+      "stadium": "ملعب جين بارك",
+      "time": "18:30",
+      "date": "الثلاثاء 03-03-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ألانيا سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/9541690127467.png"
+      },
+      "away": {
+        "name": "غلطة سراي",
+        "logo": "https://imgs.ysscores.com/teams/128/2081756067376.png"
       }
     },
     "channels": [
@@ -1058,6 +1058,30 @@
     ]
   },
   {
+    "id": "5103776",
+    "url": "https://www.ysscores.com/ar/match/5103776/Academia-Puerto-Cabello-vs-Monagas-SC",
+    "info": {
+      "championship": "كوبا سودا أمريكانا | الأدوار الإقصائية",
+      "round": "النهائي",
+      "stadium": "ملعب ميشيل ديلجادو",
+      "time": "01:30",
+      "date": "الثلاثاء 03-03-2026",
+      "current_score": "0 - 0",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "بويرتو كابيللو",
+        "logo": "https://imgs.ysscores.com/teams/128/4421708270349.png"
+      },
+      "away": {
+        "name": "موناغاس",
+        "logo": "https://imgs.ysscores.com/teams/128/2391695765013.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5114958",
     "url": "https://www.ysscores.com/ar/match/5114958/Club-Independiente-Petrolero-vs-Club-Deportivo-Guabirá",
     "info": {
@@ -1109,30 +1133,6 @@
         "commentator": "غير مدرج"
       }
     ]
-  },
-  {
-    "id": "5103776",
-    "url": "https://www.ysscores.com/ar/match/5103776/Academia-Puerto-Cabello-vs-Monagas-SC",
-    "info": {
-      "championship": "كوبا سودا أمريكانا | الأدوار الإقصائية",
-      "round": "النهائي",
-      "stadium": "ملعب ميشيل ديلجادو",
-      "time": "01:30",
-      "date": "الثلاثاء 03-03-2026",
-      "current_score": "0 - 0",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "بويرتو كابيللو",
-        "logo": "https://imgs.ysscores.com/teams/128/4421708270349.png"
-      },
-      "away": {
-        "name": "موناغاس",
-        "logo": "https://imgs.ysscores.com/teams/128/2391695765013.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "5203736",
