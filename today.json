@@ -168,7 +168,7 @@
       "stadium": "أرينا إم آر في",
       "time": "00:00",
       "date": "الأربعاء 11-03-2026",
-      "current_score": "0 - 0",
+      "current_score": "1 - 0",
       "match_status": "لم تبدأ"
     },
     "teams": {
@@ -179,30 +179,6 @@
       "away": {
         "name": "إنترناسيونال",
         "logo": "https://imgs.ysscores.com/teams/128/3841691418709.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "48089995",
-    "url": "https://www.ysscores.com/ar/match/48089995/Al-Wahda-SC-(Syria)-vs-Al-Shorta-SC-(Syria)",
-    "info": {
-      "championship": "الدوري السوري الممتاز",
-      "round": "13 - مباراة الذهاب",
-      "stadium": "ملعب الفيحاء - دمشق",
-      "time": "14:00",
-      "date": "الأربعاء 11-03-2026",
-      "current_score": "3 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الوحدة",
-        "logo": "https://imgs.ysscores.com/teams/128/8991694349969.png"
-      },
-      "away": {
-        "name": "الشرطة",
-        "logo": "https://imgs.ysscores.com/teams/128/17648892592497.png"
       }
     },
     "channels": []
@@ -232,25 +208,25 @@
     "channels": []
   },
   {
-    "id": "23362031",
-    "url": "https://www.ysscores.com/ar/match/23362031/Al-Shomooa-SC-vs-Shabab-Al-Ghar",
+    "id": "48089995",
+    "url": "https://www.ysscores.com/ar/match/48089995/Al-Wahda-SC-(Syria)-vs-Al-Shorta-SC-(Syria)",
     "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "4 - مباراة الاياب",
-      "stadium": "ملعب مصراتة",
-      "time": "23:00",
+      "championship": "الدوري السوري الممتاز",
+      "round": "13 - مباراة الذهاب",
+      "stadium": "ملعب الفيحاء - دمشق",
+      "time": "14:00",
       "date": "الأربعاء 11-03-2026",
-      "current_score": "0 - 1",
-      "match_status": "لم تبدأ"
+      "current_score": "3 - 0",
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الشموع",
-        "logo": "https://imgs.ysscores.com/teams/128/17660527227320.png"
+        "name": "الوحدة",
+        "logo": "https://imgs.ysscores.com/teams/128/8991694349969.png"
       },
       "away": {
-        "name": "الغار",
-        "logo": "https://imgs.ysscores.com/teams/128/17656492902173.png"
+        "name": "الشرطة",
+        "logo": "https://imgs.ysscores.com/teams/128/17648892592497.png"
       }
     },
     "channels": []
@@ -415,35 +391,6 @@
     ]
   },
   {
-    "id": "5189754",
-    "url": "https://www.ysscores.com/ar/match/5189754/Vissel-Kobe-vs-FC-Seoul",
-    "info": {
-      "championship": "دوري أبطال آسيا للنخبة",
-      "round": "دور الـ 16 - مباراة الاياب",
-      "stadium": "استاد نوفير",
-      "time": "12:00",
-      "date": "الأربعاء 11-03-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "فيسيل كوبي",
-        "logo": "https://imgs.ysscores.com/teams/128/6111690370498.png"
-      },
-      "away": {
-        "name": "سيول",
-        "logo": "https://imgs.ysscores.com/teams/128/8881751235958.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "أحمد سوكو"
-      }
-    ]
-  },
-  {
     "id": "5189753",
     "url": "https://www.ysscores.com/ar/match/5189753/Sanfrecce-Hiroshima-vs-Johor-Darul-Tazim",
     "info": {
@@ -469,6 +416,35 @@
       {
         "channel": "بي إن سبورت 2",
         "commentator": "محمد نضال"
+      }
+    ]
+  },
+  {
+    "id": "5189754",
+    "url": "https://www.ysscores.com/ar/match/5189754/Vissel-Kobe-vs-FC-Seoul",
+    "info": {
+      "championship": "دوري أبطال آسيا للنخبة",
+      "round": "دور الـ 16 - مباراة الاياب",
+      "stadium": "استاد نوفير",
+      "time": "12:00",
+      "date": "الأربعاء 11-03-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "فيسيل كوبي",
+        "logo": "https://imgs.ysscores.com/teams/128/6111690370498.png"
+      },
+      "away": {
+        "name": "سيول",
+        "logo": "https://imgs.ysscores.com/teams/128/8881751235958.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "أحمد سوكو"
       }
     ]
   },
@@ -531,35 +507,6 @@
     ]
   },
   {
-    "id": "5205731",
-    "url": "https://www.ysscores.com/ar/match/5205731/Real-Madrid-vs-Manchester-City",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "دور الـ 16 - مباراة الذهاب",
-      "stadium": "ملعب سانتياغو برنابيو",
-      "time": "22:00",
-      "date": "الأربعاء 11-03-2026",
-      "current_score": "3 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ريال مدريد",
-        "logo": "https://imgs.ysscores.com/teams/128/1871690196746.png"
-      },
-      "away": {
-        "name": "مان سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/4481690118308.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "عصام الشوالي"
-      }
-    ]
-  },
-  {
     "id": "5205729",
     "url": "https://www.ysscores.com/ar/match/5205729/Paris-Saint-Germain-vs-Chelsea-FC",
     "info": {
@@ -589,6 +536,35 @@
     ]
   },
   {
+    "id": "5205731",
+    "url": "https://www.ysscores.com/ar/match/5205731/Real-Madrid-vs-Manchester-City",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "دور الـ 16 - مباراة الذهاب",
+      "stadium": "ملعب سانتياغو برنابيو",
+      "time": "22:00",
+      "date": "الأربعاء 11-03-2026",
+      "current_score": "3 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ريال مدريد",
+        "logo": "https://imgs.ysscores.com/teams/128/1871690196746.png"
+      },
+      "away": {
+        "name": "مان سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/4481690118308.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "عصام الشوالي"
+      }
+    ]
+  },
+  {
     "id": "21759679",
     "url": "https://www.ysscores.com/ar/match/21759679/Al-Rayyan-SC-vs-Qadsia-SC",
     "info": {
@@ -613,25 +589,25 @@
     "channels": []
   },
   {
-    "id": "4825475",
-    "url": "https://www.ysscores.com/ar/match/4825475/Middlesbrough-FC-vs-Charlton-Athletic",
+    "id": "4825477",
+    "url": "https://www.ysscores.com/ar/match/4825477/West-Bromwich-Albion-vs-Southampton-FC",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "37 - مباراة الاياب",
-      "stadium": "ريفرسايد",
+      "stadium": "ذا هاوثورنس",
       "time": "21:45",
       "date": "الأربعاء 11-03-2026",
-      "current_score": "0 - 1",
+      "current_score": "1 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "ميدلزبره",
-        "logo": "https://imgs.ysscores.com/teams/128/7871690370529.png"
+        "name": "وست بروميتش",
+        "logo": "https://imgs.ysscores.com/teams/128/9971690370534.png"
       },
       "away": {
-        "name": "تشارلتون أثلتيك",
-        "logo": "https://imgs.ysscores.com/teams/128/7791690370524.png"
+        "name": "ساوثهامبتون",
+        "logo": "https://imgs.ysscores.com/teams/128/3521690370525.png"
       }
     },
     "channels": []
@@ -714,25 +690,25 @@
     "channels": []
   },
   {
-    "id": "4825477",
-    "url": "https://www.ysscores.com/ar/match/4825477/West-Bromwich-Albion-vs-Southampton-FC",
+    "id": "4825475",
+    "url": "https://www.ysscores.com/ar/match/4825475/Middlesbrough-FC-vs-Charlton-Athletic",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "37 - مباراة الاياب",
-      "stadium": "ذا هاوثورنس",
+      "stadium": "ريفرسايد",
       "time": "21:45",
       "date": "الأربعاء 11-03-2026",
-      "current_score": "1 - 1",
+      "current_score": "0 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "وست بروميتش",
-        "logo": "https://imgs.ysscores.com/teams/128/9971690370534.png"
+        "name": "ميدلزبره",
+        "logo": "https://imgs.ysscores.com/teams/128/7871690370529.png"
       },
       "away": {
-        "name": "ساوثهامبتون",
-        "logo": "https://imgs.ysscores.com/teams/128/3521690370525.png"
+        "name": "تشارلتون أثلتيك",
+        "logo": "https://imgs.ysscores.com/teams/128/7791690370524.png"
       }
     },
     "channels": []
@@ -805,6 +781,30 @@
       "away": {
         "name": "الشباب",
         "logo": "https://imgs.ysscores.com/teams/128/8431691931857.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5102028",
+    "url": "https://www.ysscores.com/ar/match/5102028/Club-Atlético-Tigre-vs-CA-Vélez-Sarsfield",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "10 - مباراة الذهاب",
+      "stadium": "استاد خوسيه ديلاجيوفانا",
+      "time": "00:45",
+      "date": "الثلاثاء 10-03-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "تيغري",
+        "logo": "https://imgs.ysscores.com/teams/128/6041717935703.png"
+      },
+      "away": {
+        "name": "سارسفيلد",
+        "logo": "https://imgs.ysscores.com/teams/128/4581717933514.png"
       }
     },
     "channels": []
@@ -906,30 +906,6 @@
     "channels": []
   },
   {
-    "id": "5102028",
-    "url": "https://www.ysscores.com/ar/match/5102028/Club-Atlético-Tigre-vs-CA-Vélez-Sarsfield",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "10 - مباراة الذهاب",
-      "stadium": "استاد خوسيه ديلاجيوفانا",
-      "time": "00:45",
-      "date": "الثلاثاء 10-03-2026",
-      "current_score": "1 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "تيغري",
-        "logo": "https://imgs.ysscores.com/teams/128/6041717935703.png"
-      },
-      "away": {
-        "name": "سارسفيلد",
-        "logo": "https://imgs.ysscores.com/teams/128/4581717933514.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5102023",
     "url": "https://www.ysscores.com/ar/match/5102023/CA-Independiente-vs-CA-Unión-(Santa-Fe)",
     "info": {
@@ -954,28 +930,33 @@
     "channels": []
   },
   {
-    "id": "5180596",
-    "url": "https://www.ysscores.com/ar/match/5180596/Ibri-Club-vs-Oman-Club",
+    "id": "5180597",
+    "url": "https://www.ysscores.com/ar/match/5180597/Sur-SC-vs-Saham-Club",
     "info": {
       "championship": "دوري المحترفين العماني",
       "round": "17 - مباراة الاياب",
-      "stadium": "مجمع البريمي (النهضة)",
+      "stadium": "مجمع صور الرياضي",
       "time": "20:00",
       "date": "الأربعاء 11-03-2026",
-      "current_score": "1 - 2",
+      "current_score": "0 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "عبري",
-        "logo": "https://imgs.ysscores.com/teams/128/801691932066.png"
+        "name": "صور",
+        "logo": "https://imgs.ysscores.com/teams/128/3801691931317.png"
       },
       "away": {
-        "name": "نادي عُمان",
-        "logo": "https://imgs.ysscores.com/teams/128/9041691931536.png"
+        "name": "صحم",
+        "logo": "https://imgs.ysscores.com/teams/128/1541722176368.png"
       }
     },
-    "channels": []
+    "channels": [
+      {
+        "channel": "عمان مباشر",
+        "commentator": "غير مدرج"
+      }
+    ]
   },
   {
     "id": "5180602",
@@ -1007,33 +988,28 @@
     ]
   },
   {
-    "id": "5180597",
-    "url": "https://www.ysscores.com/ar/match/5180597/Sur-SC-vs-Saham-Club",
+    "id": "5180596",
+    "url": "https://www.ysscores.com/ar/match/5180596/Ibri-Club-vs-Oman-Club",
     "info": {
       "championship": "دوري المحترفين العماني",
       "round": "17 - مباراة الاياب",
-      "stadium": "مجمع صور الرياضي",
+      "stadium": "مجمع البريمي (النهضة)",
       "time": "20:00",
       "date": "الأربعاء 11-03-2026",
-      "current_score": "0 - 0",
+      "current_score": "1 - 2",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "صور",
-        "logo": "https://imgs.ysscores.com/teams/128/3801691931317.png"
+        "name": "عبري",
+        "logo": "https://imgs.ysscores.com/teams/128/801691932066.png"
       },
       "away": {
-        "name": "صحم",
-        "logo": "https://imgs.ysscores.com/teams/128/1541722176368.png"
+        "name": "نادي عُمان",
+        "logo": "https://imgs.ysscores.com/teams/128/9041691931536.png"
       }
     },
-    "channels": [
-      {
-        "channel": "عمان مباشر",
-        "commentator": "غير مدرج"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "5180598",
@@ -1089,35 +1065,6 @@
     ]
   },
   {
-    "id": "5165092",
-    "url": "https://www.ysscores.com/ar/match/5165092/CF-Monterrey-vs-CD-Cruz-Azul",
-    "info": {
-      "championship": "كأس أبطال الكونكاكاف",
-      "round": "دور الـ 16 - مباراة الذهاب",
-      "stadium": "بي بي في آي",
-      "time": "03:00",
-      "date": "الثلاثاء 10-03-2026",
-      "current_score": "2 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "مونتيري",
-        "logo": "https://imgs.ysscores.com/teams/128/2211709821895.png"
-      },
-      "away": {
-        "name": "كروز أزول",
-        "logo": "https://imgs.ysscores.com/teams/128/3351722759708.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "Concacaf YouTube",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5165094",
     "url": "https://www.ysscores.com/ar/match/5165094/Los-Angeles-FC-vs-LD-Alajuelense",
     "info": {
@@ -1137,6 +1084,35 @@
       "away": {
         "name": "ألاجولينسي",
         "logo": "https://imgs.ysscores.com/teams/128/6811709823414.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "Concacaf YouTube",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5165092",
+    "url": "https://www.ysscores.com/ar/match/5165092/CF-Monterrey-vs-CD-Cruz-Azul",
+    "info": {
+      "championship": "كأس أبطال الكونكاكاف",
+      "round": "دور الـ 16 - مباراة الذهاب",
+      "stadium": "بي بي في آي",
+      "time": "03:00",
+      "date": "الثلاثاء 10-03-2026",
+      "current_score": "2 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "مونتيري",
+        "logo": "https://imgs.ysscores.com/teams/128/2211709821895.png"
+      },
+      "away": {
+        "name": "كروز أزول",
+        "logo": "https://imgs.ysscores.com/teams/128/3351722759708.png"
       }
     },
     "channels": [
