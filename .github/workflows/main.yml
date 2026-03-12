@@ -6,7 +6,7 @@ on:
       video_url:
         description: 'رابط الفيديو (IPTV)'
         required: true
-        default: 'http://ibo.lynxiptv.com/334188914694/VzDd0nBIgq/66384'
+        default: 'http://cyber4k.sytes.net:8080/primetv6885/Telegram@primetvoff/2381'
       stream_key:
         description: 'مفتاح بث فيسبوك (Stream Key)'
         required: true
@@ -22,4 +22,4 @@ jobs:
           -user_agent "Mozilla/5.0" \
           -c:v libx264 -preset superfast -b:v 2500k -maxrate 2500k -bufsize 5000k \
           -pix_fmt yuv420p -g 50 -c:a aac -b:a 128k -ar 44100 \
-          -f flv "rtmp://live-api-s.facebook.com:80/rtmp/${{ github.event.inputs.stream_key }}"
+          -f flv "rtmps://live-api-s.facebook.com:443/rtmp/${{ github.event.inputs.stream_key }}"
