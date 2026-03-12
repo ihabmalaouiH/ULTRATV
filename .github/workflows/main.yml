@@ -18,8 +18,9 @@ jobs:
       - name: Start Streaming with Docker
         run: |
           docker run --rm jrottenberg/ffmpeg:4.4-ubuntu \
-          -re -i "${{ github.event.inputs.video_url }}" \
+          -thread_queue_size 1024 \
+          -re -fflags +genpts+igndts \
+          -i "${{ github.event.inputs.video_url }}" \
           -user_agent "Mozilla/5.0" \
-          -c:v libx264 -preset superfast -b:v 2500k -maxrate 2500k -bufsize 5000k \
-          -pix_fmt yuv420p -g 50 -c:a aac -b:a 128k -ar 44100 \
+          -c:v copy -c:a copy \
           -f flv "rtmps://live-api-s.facebook.com:443/rtmp/${{ github.event.inputs.stream_key }}"
