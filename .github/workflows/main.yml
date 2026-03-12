@@ -15,9 +15,12 @@ jobs:
   streaming_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Start Streaming Relay (Bridge Mode)
+      - name: Start Streaming Relay with Max Buffer
         run: |
           docker run --rm jrottenberg/ffmpeg:4.4-ubuntu \
+          -thread_queue_size 5120 \
+          -rw_timeout 15000000 \
           -re -i "${{ github.event.inputs.hf_url }}" \
           -c:v copy -c:a copy \
+          -max_muxing_queue_size 9999 \
           -f flv "rtmps://live-api-s.facebook.com:443/rtmp/${{ github.event.inputs.stream_key }}"
