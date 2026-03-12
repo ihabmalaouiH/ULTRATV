@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       hf_url:
-        description: 'رابط Hugging Face (مثال: https://user-space.hf.space/stream.flv)'
+        description: 'رابط Hugging Face المباشر (m3u8)'
         required: true
+        default: 'https://ihab-ultra-1-biensport1.hf.space/stream.m3u8'
       stream_key:
         description: 'مفتاح بث فيسبوك (Stream Key)'
         required: true
@@ -14,7 +15,7 @@ jobs:
   streaming_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Start Streaming with Docker
+      - name: Start Streaming Relay (Bridge Mode)
         run: |
           docker run --rm jrottenberg/ffmpeg:4.4-ubuntu \
           -re -i "${{ github.event.inputs.hf_url }}" \
