@@ -1,1 +1,25 @@
+name: UltraTV-Final-Success
 
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: 'رابط الفيديو (IPTV)'
+        required: true
+        default: 'http://ibo.lynxiptv.com/334188914694/VzDd0nBIgq/66384'
+      stream_key:
+        description: 'مفتاح بث فيسبوك (Stream Key)'
+        required: true
+
+jobs:
+  streaming_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start Streaming with Docker
+        run: |
+          docker run --rm jrottenberg/ffmpeg:4.4-ubuntu \
+          -re -i "${{ github.event.inputs.video_url }}" \
+          -user_agent "Mozilla/5.0" \
+          -c:v libx264 -preset superfast -b:v 2500k -maxrate 2500k -bufsize 5000k \
+          -pix_fmt yuv420p -g 50 -c:a aac -b:a 128k -ar 44100 \
+          -f flv "rtmp://live-api-s.facebook.com:80/rtmp/${{ github.event.inputs.stream_key }}"
