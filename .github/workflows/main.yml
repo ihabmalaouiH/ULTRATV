@@ -6,7 +6,7 @@ on:
       video_url:
         description: 'رابط الفيديو (IPTV)'
         required: true
-        default: 'http://cyber4k.sytes.net:8080/primetv6885/Telegram@primetvoff/2381'
+        default: ''
       stream_key:
         description: 'مفتاح بث فيسبوك (Stream Key)'
         required: true
