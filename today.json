@@ -226,30 +226,6 @@
     "channels": []
   },
   {
-    "id": "5103413",
-    "url": "https://www.ysscores.com/ar/match/5103413/Clube-do-Remo-(PA)-vs-Fluminense-Football-Club",
-    "info": {
-      "championship": "الدوري البرازيلي",
-      "round": "5 - مباراة الذهاب",
-      "stadium": "استاد مانجويراو",
-      "time": "00:00",
-      "date": "الخميس 12-03-2026",
-      "current_score": "0 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ريمو",
-        "logo": "https://imgs.ysscores.com/teams/128/17673059547919.png"
-      },
-      "away": {
-        "name": "فلومينينسي",
-        "logo": "https://imgs.ysscores.com/teams/128/9451691418710.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5103406",
     "url": "https://www.ysscores.com/ar/match/5103406/São-Paulo-Futebol-Clube-vs-Associação-Chapecoense-de-Futebol",
     "info": {
@@ -274,25 +250,25 @@
     "channels": []
   },
   {
-    "id": "5103410",
-    "url": "https://www.ysscores.com/ar/match/5103410/Grêmio-Foot-Ball-Porto-Alegrense-vs-Red-Bull-Bragantino",
+    "id": "5103413",
+    "url": "https://www.ysscores.com/ar/match/5103413/Clube-do-Remo-(PA)-vs-Fluminense-Football-Club",
     "info": {
       "championship": "الدوري البرازيلي",
       "round": "5 - مباراة الذهاب",
-      "stadium": "أرينا دي غريميو",
-      "time": "02:30",
+      "stadium": "استاد مانجويراو",
+      "time": "00:00",
       "date": "الخميس 12-03-2026",
-      "current_score": "1 - 1",
+      "current_score": "0 - 2",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "غريميو",
-        "logo": "https://imgs.ysscores.com/teams/128/4321691418710.png"
+        "name": "ريمو",
+        "logo": "https://imgs.ysscores.com/teams/128/17673059547919.png"
       },
       "away": {
-        "name": "براغانتينو",
-        "logo": "https://imgs.ysscores.com/teams/128/4731690370563.png"
+        "name": "فلومينينسي",
+        "logo": "https://imgs.ysscores.com/teams/128/9451691418710.png"
       }
     },
     "channels": []
@@ -317,6 +293,30 @@
       "away": {
         "name": "بالميراس",
         "logo": "https://imgs.ysscores.com/teams/128/7971691418711.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5103410",
+    "url": "https://www.ysscores.com/ar/match/5103410/Grêmio-Foot-Ball-Porto-Alegrense-vs-Red-Bull-Bragantino",
+    "info": {
+      "championship": "الدوري البرازيلي",
+      "round": "5 - مباراة الذهاب",
+      "stadium": "أرينا دي غريميو",
+      "time": "02:30",
+      "date": "الخميس 12-03-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "غريميو",
+        "logo": "https://imgs.ysscores.com/teams/128/4321691418710.png"
+      },
+      "away": {
+        "name": "براغانتينو",
+        "logo": "https://imgs.ysscores.com/teams/128/4731690370563.png"
       }
     },
     "channels": []
@@ -478,7 +478,7 @@
       "stadium": "استاد مدينة المجمعة الرياضية",
       "time": "21:00",
       "date": "الجمعة 13-03-2026",
-      "current_score": "2 - 0",
+      "current_score": "1 - 0",
       "match_status": "لم تبدأ"
     },
     "teams": {
@@ -648,6 +648,39 @@
     ]
   },
   {
+    "id": "5099030",
+    "url": "https://www.ysscores.com/ar/match/5099030/Al-Ahli-SC-vs-Al-Arabi-SC",
+    "info": {
+      "championship": "الدوري القطري",
+      "round": "18 - مباراة الاياب",
+      "stadium": "استاد الثمامة",
+      "time": "20:30",
+      "date": "الجمعة 13-03-2026",
+      "current_score": "1 - 1",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/5031722879444.png"
+      },
+      "away": {
+        "name": "العربي",
+        "logo": "https://imgs.ysscores.com/teams/128/8311692708094.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الكأس 3",
+        "commentator": "خالد الحدي"
+      },
+      {
+        "channel": "بي إن سبورت 7",
+        "commentator": "حسن العيدروس"
+      }
+    ]
+  },
+  {
     "id": "5099031",
     "url": "https://www.ysscores.com/ar/match/5099031/Al-Rayyan-SC-vs-Al-Shahania-SC",
     "info": {
@@ -677,39 +710,6 @@
       {
         "channel": "بي إن سبورت 6",
         "commentator": "عبدالله الغامدي"
-      }
-    ]
-  },
-  {
-    "id": "5099030",
-    "url": "https://www.ysscores.com/ar/match/5099030/Al-Ahli-SC-vs-Al-Arabi-SC",
-    "info": {
-      "championship": "الدوري القطري",
-      "round": "18 - مباراة الاياب",
-      "stadium": "استاد الثمامة",
-      "time": "20:30",
-      "date": "الجمعة 13-03-2026",
-      "current_score": "0 - 1",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/5031722879444.png"
-      },
-      "away": {
-        "name": "العربي",
-        "logo": "https://imgs.ysscores.com/teams/128/8311692708094.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الكأس 3",
-        "commentator": "خالد الحدي"
-      },
-      {
-        "channel": "بي إن سبورت 7",
-        "commentator": "حسن العيدروس"
       }
     ]
   },
@@ -747,30 +747,6 @@
     ]
   },
   {
-    "id": "23935269",
-    "url": "https://www.ysscores.com/ar/match/23935269/Khaleej-Sirte-SC-vs-Andalus-FC",
-    "info": {
-      "championship": "الدوري الليبي الممتاز",
-      "round": "4 - مباراة الاياب",
-      "stadium": "ملعب المدينة الرياضية سرت",
-      "time": "22:30",
-      "date": "الجمعة 13-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الخليج",
-        "logo": "https://imgs.ysscores.com/teams/128/17656560805023.png"
-      },
-      "away": {
-        "name": "الأندلس",
-        "logo": "https://imgs.ysscores.com/teams/128/17656299811885.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "43641825",
     "url": "https://www.ysscores.com/ar/match/43641825/Abelashhar-SC-vs-Al-Tersana-Tripoli",
     "info": {
@@ -795,25 +771,25 @@
     "channels": []
   },
   {
-    "id": "97317991",
-    "url": "https://www.ysscores.com/ar/match/97317991/Olympic-Azzawiya-SC-vs-Al-Ittihad-SC",
+    "id": "23935269",
+    "url": "https://www.ysscores.com/ar/match/23935269/Khaleej-Sirte-SC-vs-Andalus-FC",
     "info": {
       "championship": "الدوري الليبي الممتاز",
       "round": "4 - مباراة الاياب",
-      "stadium": "ملعب الزاوية",
-      "time": "23:00",
-      "date": "الخميس 12-03-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
+      "stadium": "ملعب المدينة الرياضية سرت",
+      "time": "22:30",
+      "date": "الجمعة 13-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "الأولمبي",
-        "logo": "https://imgs.ysscores.com/teams/128/17656610718608.png"
+        "name": "الخليج",
+        "logo": "https://imgs.ysscores.com/teams/128/17656560805023.png"
       },
       "away": {
-        "name": "الاتحاد",
-        "logo": "https://imgs.ysscores.com/teams/128/6541718836505.png"
+        "name": "الأندلس",
+        "logo": "https://imgs.ysscores.com/teams/128/17656299811885.png"
       }
     },
     "channels": []
@@ -843,6 +819,54 @@
     "channels": []
   },
   {
+    "id": "97317991",
+    "url": "https://www.ysscores.com/ar/match/97317991/Olympic-Azzawiya-SC-vs-Al-Ittihad-SC",
+    "info": {
+      "championship": "الدوري الليبي الممتاز",
+      "round": "4 - مباراة الاياب",
+      "stadium": "ملعب الزاوية",
+      "time": "23:00",
+      "date": "الخميس 12-03-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الأولمبي",
+        "logo": "https://imgs.ysscores.com/teams/128/17656610718608.png"
+      },
+      "away": {
+        "name": "الاتحاد",
+        "logo": "https://imgs.ysscores.com/teams/128/6541718836505.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4946394",
+    "url": "https://www.ysscores.com/ar/match/4946394/Tersana-FC-vs-WE-Sports-Club",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "26 - مباراة الاياب",
+      "stadium": "استاد الترسانة",
+      "time": "21:30",
+      "date": "الجمعة 13-03-2026",
+      "current_score": "0 - 1",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الترسانة",
+        "logo": "https://imgs.ysscores.com/teams/128/1081715096208.png"
+      },
+      "away": {
+        "name": "وي",
+        "logo": "https://imgs.ysscores.com/teams/128/9521696285165.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4946393",
     "url": "https://www.ysscores.com/ar/match/4946393/Raya-SC-vs-Dayrout-SC",
     "info": {
@@ -862,30 +886,6 @@
       "away": {
         "name": "ديروط",
         "logo": "https://imgs.ysscores.com/teams/128/4951728755572.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4946394",
-    "url": "https://www.ysscores.com/ar/match/4946394/Tersana-FC-vs-WE-Sports-Club",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "26 - مباراة الاياب",
-      "stadium": "استاد الترسانة",
-      "time": "21:30",
-      "date": "الجمعة 13-03-2026",
-      "current_score": "0 - 0",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الترسانة",
-        "logo": "https://imgs.ysscores.com/teams/128/1081715096208.png"
-      },
-      "away": {
-        "name": "وي",
-        "logo": "https://imgs.ysscores.com/teams/128/9521696285165.png"
       }
     },
     "channels": []
@@ -962,6 +962,30 @@
     "channels": []
   },
   {
+    "id": "5156377",
+    "url": "https://www.ysscores.com/ar/match/5156377/USM-Khenchela-vs-JS-Kabylie",
+    "info": {
+      "championship": "الرابطة المحترفة الجزائرية الأولى",
+      "round": "23 - مباراة الاياب",
+      "stadium": "حمّام عمار",
+      "time": "16:15",
+      "date": "الجمعة 13-03-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "اتحاد خنشلة",
+        "logo": "https://imgs.ysscores.com/teams/128/3231693418426.png"
+      },
+      "away": {
+        "name": "شبيبة القبائل",
+        "logo": "https://imgs.ysscores.com/teams/128/2261693417840.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5156378",
     "url": "https://www.ysscores.com/ar/match/5156378/Paradou-AC-vs-MC-Algiers",
     "info": {
@@ -989,30 +1013,6 @@
         "commentator": "غير مدرج"
       }
     ]
-  },
-  {
-    "id": "5156377",
-    "url": "https://www.ysscores.com/ar/match/5156377/USM-Khenchela-vs-JS-Kabylie",
-    "info": {
-      "championship": "الرابطة المحترفة الجزائرية الأولى",
-      "round": "23 - مباراة الاياب",
-      "stadium": "حمّام عمار",
-      "time": "16:15",
-      "date": "الجمعة 13-03-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "اتحاد خنشلة",
-        "logo": "https://imgs.ysscores.com/teams/128/3231693418426.png"
-      },
-      "away": {
-        "name": "شبيبة القبائل",
-        "logo": "https://imgs.ysscores.com/teams/128/2261693417840.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "5156376",
@@ -1197,35 +1197,6 @@
     ]
   },
   {
-    "id": "5165102",
-    "url": "https://www.ysscores.com/ar/match/5165102/Vancouver-Whitecaps-FC-vs-Seattle-Sounders-FC",
-    "info": {
-      "championship": "كأس أبطال الكونكاكاف",
-      "round": "دور الـ 16 - مباراة الذهاب",
-      "stadium": "بي سي بلايس",
-      "time": "04:00",
-      "date": "الخميس 12-03-2026",
-      "current_score": "0 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "فانكوفر",
-        "logo": "https://imgs.ysscores.com/teams/128/5091691411892.png"
-      },
-      "away": {
-        "name": "سياتل",
-        "logo": "https://imgs.ysscores.com/teams/128/241740040401.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "Concacaf YouTube",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5165100",
     "url": "https://www.ysscores.com/ar/match/5165100/FC-Cincinnati-vs-Tigres-UANL",
     "info": {
@@ -1245,6 +1216,35 @@
       "away": {
         "name": "تايجرز أونال",
         "logo": "https://imgs.ysscores.com/teams/128/3241709822141.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "Concacaf YouTube",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5165102",
+    "url": "https://www.ysscores.com/ar/match/5165102/Vancouver-Whitecaps-FC-vs-Seattle-Sounders-FC",
+    "info": {
+      "championship": "كأس أبطال الكونكاكاف",
+      "round": "دور الـ 16 - مباراة الذهاب",
+      "stadium": "بي سي بلايس",
+      "time": "04:00",
+      "date": "الخميس 12-03-2026",
+      "current_score": "0 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "فانكوفر",
+        "logo": "https://imgs.ysscores.com/teams/128/5091691411892.png"
+      },
+      "away": {
+        "name": "سياتل",
+        "logo": "https://imgs.ysscores.com/teams/128/241740040401.png"
       }
     },
     "channels": [
