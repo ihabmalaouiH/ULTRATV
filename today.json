@@ -259,30 +259,6 @@
     "channels": []
   },
   {
-    "id": "4842554",
-    "url": "https://www.ysscores.com/ar/match/4842554/Göztepe-vs-Galatasaray",
-    "info": {
-      "championship": "الدوري التركي الممتاز",
-      "round": "27 - مباراة الاياب",
-      "stadium": "ملعب غورسل أكسل",
-      "time": "20:00",
-      "date": "الأربعاء 18-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "جوزتيبي",
-        "logo": "https://imgs.ysscores.com/teams/128/8741690370493.png"
-      },
-      "away": {
-        "name": "غلطة سراي",
-        "logo": "https://imgs.ysscores.com/teams/128/2081756067376.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4842557",
     "url": "https://www.ysscores.com/ar/match/4842557/Caykur-Rizespor-vs-Samsunspor",
     "info": {
@@ -340,33 +316,28 @@
     ]
   },
   {
-    "id": "4842549",
-    "url": "https://www.ysscores.com/ar/match/4842549/Alanyaspor-vs-Kocaelispor",
+    "id": "4842554",
+    "url": "https://www.ysscores.com/ar/match/4842554/Göztepe-vs-Galatasaray",
     "info": {
       "championship": "الدوري التركي الممتاز",
       "round": "27 - مباراة الاياب",
-      "stadium": "ملعب جين بارك",
-      "time": "15:00",
+      "stadium": "ملعب غورسل أكسل",
+      "time": "20:00",
       "date": "الأربعاء 18-03-2026",
-      "current_score": "5 - 0",
-      "match_status": "إنتهت المباراة"
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "ألانيا سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/9541690127467.png"
+        "name": "جوزتيبي",
+        "logo": "https://imgs.ysscores.com/teams/128/8741690370493.png"
       },
       "away": {
-        "name": "كوجالي",
-        "logo": "https://imgs.ysscores.com/teams/128/2131690371662.png"
+        "name": "غلطة سراي",
+        "logo": "https://imgs.ysscores.com/teams/128/2081756067376.png"
       }
     },
-    "channels": [
-      {
-        "channel": "beIN Sports HD 1 TR",
-        "commentator": "غير مدرج"
-      }
-    ]
+    "channels": []
   },
   {
     "id": "4842550",
@@ -398,31 +369,31 @@
     ]
   },
   {
-    "id": "96680147",
-    "url": "https://www.ysscores.com/ar/match/96680147/Al-Karkh-SC-vs-Naft-Missan",
+    "id": "4842549",
+    "url": "https://www.ysscores.com/ar/match/4842549/Alanyaspor-vs-Kocaelispor",
     "info": {
-      "championship": "الدوري العراقي",
-      "round": "23 - مباراة الاياب",
-      "stadium": "ملعب شرار حيدر",
-      "time": "20:00",
+      "championship": "الدوري التركي الممتاز",
+      "round": "27 - مباراة الاياب",
+      "stadium": "ملعب جين بارك",
+      "time": "15:00",
       "date": "الأربعاء 18-03-2026",
-      "current_score": "1 - 1",
+      "current_score": "5 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "الكرخ",
-        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
+        "name": "ألانيا سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/9541690127467.png"
       },
       "away": {
-        "name": "نفط ميسان",
-        "logo": "https://imgs.ysscores.com/teams/128/711695656259.png"
+        "name": "كوجالي",
+        "logo": "https://imgs.ysscores.com/teams/128/2131690371662.png"
       }
     },
     "channels": [
       {
-        "channel": "العراقية السريانية",
-        "commentator": "رعد ناهي"
+        "channel": "beIN Sports HD 1 TR",
+        "commentator": "غير مدرج"
       }
     ]
   },
@@ -452,6 +423,35 @@
       {
         "channel": "العراقية الرياضية",
         "commentator": "جمال الدراجي"
+      }
+    ]
+  },
+  {
+    "id": "96680147",
+    "url": "https://www.ysscores.com/ar/match/96680147/Al-Karkh-SC-vs-Naft-Missan",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "23 - مباراة الاياب",
+      "stadium": "ملعب شرار حيدر",
+      "time": "20:00",
+      "date": "الأربعاء 18-03-2026",
+      "current_score": "1 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الكرخ",
+        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
+      },
+      "away": {
+        "name": "نفط ميسان",
+        "logo": "https://imgs.ysscores.com/teams/128/711695656259.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية السريانية",
+        "commentator": "رعد ناهي"
       }
     ]
   },
@@ -710,35 +710,6 @@
     ]
   },
   {
-    "id": "5156381",
-    "url": "https://www.ysscores.com/ar/match/5156381/ES-Ben-Aknoun-vs-MB-Rouissat",
-    "info": {
-      "championship": "الرابطة المحترفة الجزائرية الأولى",
-      "round": "24 - مباراة الاياب",
-      "stadium": "استاد 20 أوت 1955",
-      "time": "16:00",
-      "date": "الأربعاء 18-03-2026",
-      "current_score": "3 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بن عكنون",
-        "logo": "https://imgs.ysscores.com/teams/128/9561693418601.png"
-      },
-      "away": {
-        "name": "مستقبل الرويسات",
-        "logo": "https://imgs.ysscores.com/teams/128/7271753996876.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "الرياضية ويب",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5156382",
     "url": "https://www.ysscores.com/ar/match/5156382/CR-Belouizdad-vs-ASO-Chlef",
     "info": {
@@ -826,6 +797,35 @@
     ]
   },
   {
+    "id": "5156381",
+    "url": "https://www.ysscores.com/ar/match/5156381/ES-Ben-Aknoun-vs-MB-Rouissat",
+    "info": {
+      "championship": "الرابطة المحترفة الجزائرية الأولى",
+      "round": "24 - مباراة الاياب",
+      "stadium": "استاد 20 أوت 1955",
+      "time": "16:00",
+      "date": "الأربعاء 18-03-2026",
+      "current_score": "3 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بن عكنون",
+        "logo": "https://imgs.ysscores.com/teams/128/9561693418601.png"
+      },
+      "away": {
+        "name": "مستقبل الرويسات",
+        "logo": "https://imgs.ysscores.com/teams/128/7271753996876.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "الرياضية ويب",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
     "id": "5156384",
     "url": "https://www.ysscores.com/ar/match/5156384/MC-Algiers-vs-USM-Khenchela",
     "info": {
@@ -855,35 +855,6 @@
     ]
   },
   {
-    "id": "5205738",
-    "url": "https://www.ysscores.com/ar/match/5205738/Liverpool-FC-vs-Galatasaray",
-    "info": {
-      "championship": "دوري أبطال أوروبا",
-      "round": "دور الـ 16 - مباراة الاياب",
-      "stadium": "أنفيلد",
-      "time": "22:00",
-      "date": "الأربعاء 18-03-2026",
-      "current_score": "4 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ليفربول",
-        "logo": "https://imgs.ysscores.com/teams/128/4081724601375.png"
-      },
-      "away": {
-        "name": "غلطة سراي",
-        "logo": "https://imgs.ysscores.com/teams/128/2081756067376.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "علي محمد علي"
-      }
-    ]
-  },
-  {
     "id": "5205742",
     "url": "https://www.ysscores.com/ar/match/5205742/Tottenham-Hotspur-vs-Atlético-de-Madrid",
     "info": {
@@ -909,6 +880,35 @@
       {
         "channel": "بي إن سبورت 3",
         "commentator": "محمد بركات"
+      }
+    ]
+  },
+  {
+    "id": "5205738",
+    "url": "https://www.ysscores.com/ar/match/5205738/Liverpool-FC-vs-Galatasaray",
+    "info": {
+      "championship": "دوري أبطال أوروبا",
+      "round": "دور الـ 16 - مباراة الاياب",
+      "stadium": "أنفيلد",
+      "time": "22:00",
+      "date": "الأربعاء 18-03-2026",
+      "current_score": "4 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ليفربول",
+        "logo": "https://imgs.ysscores.com/teams/128/4081724601375.png"
+      },
+      "away": {
+        "name": "غلطة سراي",
+        "logo": "https://imgs.ysscores.com/teams/128/2081756067376.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "علي محمد علي"
       }
     ]
   },
