@@ -67,7 +67,7 @@
       "time": "22:00",
       "date": "الخميس 19-03-2026",
       "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
+      "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
@@ -116,35 +116,6 @@
     ]
   },
   {
-    "id": "5206104",
-    "url": "https://www.ysscores.com/ar/match/5206104/FC-Midtjylland-vs-Nottingham-Forest",
-    "info": {
-      "championship": "الدوري الأوروبي",
-      "round": "دور الـ 16 - مباراة الاياب",
-      "stadium": "إم سي إتش أرينا",
-      "time": "19:45",
-      "date": "الخميس 19-03-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ميتييلاند",
-        "logo": "https://imgs.ysscores.com/teams/128/7731691095830.png"
-      },
-      "away": {
-        "name": "نوتينغهام",
-        "logo": "https://imgs.ysscores.com/teams/128/7741690119007.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "أحمد فؤاد"
-      }
-    ]
-  },
-  {
     "id": "5206099",
     "url": "https://www.ysscores.com/ar/match/5206099/SC-Freiburg-vs-KRC-Genk",
     "info": {
@@ -170,6 +141,35 @@
       {
         "channel": "بي إن سبورت 8",
         "commentator": "أحمد عبده"
+      }
+    ]
+  },
+  {
+    "id": "5206104",
+    "url": "https://www.ysscores.com/ar/match/5206104/FC-Midtjylland-vs-Nottingham-Forest",
+    "info": {
+      "championship": "الدوري الأوروبي",
+      "round": "دور الـ 16 - مباراة الاياب",
+      "stadium": "إم سي إتش أرينا",
+      "time": "19:45",
+      "date": "الخميس 19-03-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ميتييلاند",
+        "logo": "https://imgs.ysscores.com/teams/128/7731691095830.png"
+      },
+      "away": {
+        "name": "نوتينغهام",
+        "logo": "https://imgs.ysscores.com/teams/128/7741690119007.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "أحمد فؤاد"
       }
     ]
   },
@@ -201,6 +201,78 @@
         "commentator": "علي محمد علي"
       }
     ]
+  },
+  {
+    "id": "5103428",
+    "url": "https://www.ysscores.com/ar/match/5103428/Mirassol-Futebol-Clube-(SP)-vs-Coritiba-Foot-Ball-Club",
+    "info": {
+      "championship": "الدوري البرازيلي",
+      "round": "7 - مباراة الذهاب",
+      "stadium": "استاد خوسيه ماريا دي كامبوس",
+      "time": "01:00",
+      "date": "الأربعاء 18-03-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ميراسول",
+        "logo": "https://imgs.ysscores.com/teams/128/3731739640033.png"
+      },
+      "away": {
+        "name": "كوريتيبا",
+        "logo": "https://imgs.ysscores.com/teams/128/4391691431942.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5103429",
+    "url": "https://www.ysscores.com/ar/match/5103429/Clube-Atlético-Mineiro-vs-São-Paulo-Futebol-Clube",
+    "info": {
+      "championship": "الدوري البرازيلي",
+      "round": "7 - مباراة الذهاب",
+      "stadium": "أرينا إم آر في",
+      "time": "01:00",
+      "date": "الأربعاء 18-03-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أتلتيكو مينيرو",
+        "logo": "https://imgs.ysscores.com/teams/128/9181691418710.png"
+      },
+      "away": {
+        "name": "ساو باولو",
+        "logo": "https://imgs.ysscores.com/teams/128/3781691418711.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5103425",
+    "url": "https://www.ysscores.com/ar/match/5103425/Clube-de-Regatas-Vasco-da-Gama-vs-Fluminense-Football-Club",
+    "info": {
+      "championship": "الدوري البرازيلي",
+      "round": "7 - مباراة الذهاب",
+      "stadium": "استاد ساو جانواريو",
+      "time": "02:30",
+      "date": "الأربعاء 18-03-2026",
+      "current_score": "3 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "فاسكو دا غاما",
+        "logo": "https://imgs.ysscores.com/teams/128/7741691418711.png"
+      },
+      "away": {
+        "name": "فلومينينسي",
+        "logo": "https://imgs.ysscores.com/teams/128/9451691418710.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "5103432",
@@ -251,73 +323,25 @@
     "channels": []
   },
   {
-    "id": "5103429",
-    "url": "https://www.ysscores.com/ar/match/5103429/Clube-Atlético-Mineiro-vs-São-Paulo-Futebol-Clube",
+    "id": "5103431",
+    "url": "https://www.ysscores.com/ar/match/5103431/Club-Athletico-Paranaense-vs-Cruzeiro-Esporte-Clube",
     "info": {
       "championship": "الدوري البرازيلي",
       "round": "7 - مباراة الذهاب",
-      "stadium": "أرينا إم آر في",
-      "time": "01:00",
+      "stadium": "استاد أرينا دي بايكسادا",
+      "time": "00:30",
       "date": "الأربعاء 18-03-2026",
-      "current_score": "1 - 0",
+      "current_score": "2 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "أتلتيكو مينيرو",
-        "logo": "https://imgs.ysscores.com/teams/128/9181691418710.png"
+        "name": "باراناينسي",
+        "logo": "https://imgs.ysscores.com/teams/128/5811691418710.png"
       },
       "away": {
-        "name": "ساو باولو",
-        "logo": "https://imgs.ysscores.com/teams/128/3781691418711.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5103428",
-    "url": "https://www.ysscores.com/ar/match/5103428/Mirassol-Futebol-Clube-(SP)-vs-Coritiba-Foot-Ball-Club",
-    "info": {
-      "championship": "الدوري البرازيلي",
-      "round": "7 - مباراة الذهاب",
-      "stadium": "استاد خوسيه ماريا دي كامبوس",
-      "time": "01:00",
-      "date": "الأربعاء 18-03-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ميراسول",
-        "logo": "https://imgs.ysscores.com/teams/128/3731739640033.png"
-      },
-      "away": {
-        "name": "كوريتيبا",
-        "logo": "https://imgs.ysscores.com/teams/128/4391691431942.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5103425",
-    "url": "https://www.ysscores.com/ar/match/5103425/Clube-de-Regatas-Vasco-da-Gama-vs-Fluminense-Football-Club",
-    "info": {
-      "championship": "الدوري البرازيلي",
-      "round": "7 - مباراة الذهاب",
-      "stadium": "استاد ساو جانواريو",
-      "time": "02:30",
-      "date": "الأربعاء 18-03-2026",
-      "current_score": "3 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "فاسكو دا غاما",
-        "logo": "https://imgs.ysscores.com/teams/128/7741691418711.png"
-      },
-      "away": {
-        "name": "فلومينينسي",
-        "logo": "https://imgs.ysscores.com/teams/128/9451691418710.png"
+        "name": "كروزيرو",
+        "logo": "https://imgs.ysscores.com/teams/128/1871690370540.png"
       }
     },
     "channels": []
@@ -345,59 +369,6 @@
       }
     },
     "channels": []
-  },
-  {
-    "id": "5103431",
-    "url": "https://www.ysscores.com/ar/match/5103431/Club-Athletico-Paranaense-vs-Cruzeiro-Esporte-Clube",
-    "info": {
-      "championship": "الدوري البرازيلي",
-      "round": "7 - مباراة الذهاب",
-      "stadium": "استاد أرينا دي بايكسادا",
-      "time": "00:30",
-      "date": "الأربعاء 18-03-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "باراناينسي",
-        "logo": "https://imgs.ysscores.com/teams/128/5811691418710.png"
-      },
-      "away": {
-        "name": "كروزيرو",
-        "logo": "https://imgs.ysscores.com/teams/128/1871690370540.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4842556",
-    "url": "https://www.ysscores.com/ar/match/4842556/Konyaspor-vs-Genclerbirligi-Ankara",
-    "info": {
-      "championship": "الدوري التركي الممتاز",
-      "round": "27 - مباراة الاياب",
-      "stadium": "استاد قونيا أرينا",
-      "time": "19:00",
-      "date": "الخميس 19-03-2026",
-      "current_score": "1 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "قونيا سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/8771690127634.png"
-      },
-      "away": {
-        "name": "غنتشلربيرليغي",
-        "logo": "https://imgs.ysscores.com/teams/128/3881690370508.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Sports HD 2 TR",
-        "commentator": "غير مدرج"
-      }
-    ]
   },
   {
     "id": "4842551",
@@ -453,6 +424,35 @@
     "channels": [
       {
         "channel": "beIN Sports HD 1 TR",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "4842556",
+    "url": "https://www.ysscores.com/ar/match/4842556/Konyaspor-vs-Genclerbirligi-Ankara",
+    "info": {
+      "championship": "الدوري التركي الممتاز",
+      "round": "27 - مباراة الاياب",
+      "stadium": "استاد قونيا أرينا",
+      "time": "19:00",
+      "date": "الخميس 19-03-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "قونيا سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/8771690127634.png"
+      },
+      "away": {
+        "name": "غنتشلربيرليغي",
+        "logo": "https://imgs.ysscores.com/teams/128/3881690370508.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Sports HD 2 TR",
         "commentator": "غير مدرج"
       }
     ]
@@ -603,31 +603,60 @@
     ]
   },
   {
-    "id": "5206230",
-    "url": "https://www.ysscores.com/ar/match/5206230/AEK-Athens-vs-NK-Celje",
+    "id": "5206226",
+    "url": "https://www.ysscores.com/ar/match/5206226/Rayo-Vallecano-vs-Samsunspor",
     "info": {
       "championship": "دوري المؤتمر الأوروبي",
       "round": "دور الـ 16 - مباراة الاياب",
-      "stadium": "آيا صوفيا",
-      "time": "19:45",
+      "stadium": "تيريزا ريفيرو",
+      "time": "22:00",
       "date": "الخميس 19-03-2026",
-      "current_score": "0 - 2",
+      "current_score": "0 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "أيك أثينا",
-        "logo": "https://imgs.ysscores.com/teams/128/6901694359099.png"
+        "name": "رايو فاليكانو",
+        "logo": "https://imgs.ysscores.com/teams/128/1511690196745.png"
       },
       "away": {
-        "name": "سيليي",
-        "logo": "https://imgs.ysscores.com/teams/128/5451690370497.png"
+        "name": "سامسون سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/4911690127919.png"
       }
     },
     "channels": [
       {
-        "channel": "beIN Xtra 2",
-        "commentator": "منتصر الأزهري"
+        "channel": "beIN Xtra 3",
+        "commentator": "بكر علوان"
+      }
+    ]
+  },
+  {
+    "id": "5206225",
+    "url": "https://www.ysscores.com/ar/match/5206225/AEK-Larnaca-vs-Crystal-Palace",
+    "info": {
+      "championship": "دوري المؤتمر الأوروبي",
+      "round": "دور الـ 16 - مباراة الاياب",
+      "stadium": "آيك أرينا",
+      "time": "19:45",
+      "date": "الخميس 19-03-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "آيك لارناكا",
+        "logo": "https://imgs.ysscores.com/teams/128/4111750186389.png"
+      },
+      "away": {
+        "name": "كريستال بالاس",
+        "logo": "https://imgs.ysscores.com/teams/128/6121690118883.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 4",
+        "commentator": "نوفل باشي"
       }
     ]
   },
@@ -661,35 +690,6 @@
     ]
   },
   {
-    "id": "5206227",
-    "url": "https://www.ysscores.com/ar/match/5206227/1.FSV-Mainz-05-vs-SK-Sigma-Olomouc",
-    "info": {
-      "championship": "دوري المؤتمر الأوروبي",
-      "round": "دور الـ 16 - مباراة الاياب",
-      "stadium": "أوبل أرينا",
-      "time": "19:45",
-      "date": "الخميس 19-03-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ماينتس",
-        "logo": "https://imgs.ysscores.com/teams/128/8131690288819.png"
-      },
-      "away": {
-        "name": "سيغما",
-        "logo": "https://imgs.ysscores.com/teams/128/4961690370503.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Xtra 1",
-        "commentator": "باسم الزير"
-      }
-    ]
-  },
-  {
     "id": "5206231",
     "url": "https://www.ysscores.com/ar/match/5206231/RC-Strasbourg-Alsace-vs-HNK-Rijeka",
     "info": {
@@ -719,60 +719,31 @@
     ]
   },
   {
-    "id": "5206229",
-    "url": "https://www.ysscores.com/ar/match/5206229/Raków-Częstochowa-vs-ACF-Fiorentina",
+    "id": "5206230",
+    "url": "https://www.ysscores.com/ar/match/5206230/AEK-Athens-vs-NK-Celje",
     "info": {
       "championship": "دوري المؤتمر الأوروبي",
       "round": "دور الـ 16 - مباراة الاياب",
-      "stadium": "استاد راكوف",
+      "stadium": "آيا صوفيا",
       "time": "19:45",
       "date": "الخميس 19-03-2026",
-      "current_score": "1 - 2",
+      "current_score": "0 - 2",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "راكوف تشيستوخوفا",
-        "logo": "https://imgs.ysscores.com/teams/128/3981690821864.png"
+        "name": "أيك أثينا",
+        "logo": "https://imgs.ysscores.com/teams/128/6901694359099.png"
       },
       "away": {
-        "name": "فيورنتينا",
-        "logo": "https://imgs.ysscores.com/teams/128/1231690283002.png"
+        "name": "سيليي",
+        "logo": "https://imgs.ysscores.com/teams/128/5451690370497.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 5",
-        "commentator": "أحمد البلوشي"
-      }
-    ]
-  },
-  {
-    "id": "5206226",
-    "url": "https://www.ysscores.com/ar/match/5206226/Rayo-Vallecano-vs-Samsunspor",
-    "info": {
-      "championship": "دوري المؤتمر الأوروبي",
-      "round": "دور الـ 16 - مباراة الاياب",
-      "stadium": "تيريزا ريفيرو",
-      "time": "22:00",
-      "date": "الخميس 19-03-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "رايو فاليكانو",
-        "logo": "https://imgs.ysscores.com/teams/128/1511690196745.png"
-      },
-      "away": {
-        "name": "سامسون سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/4911690127919.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Xtra 3",
-        "commentator": "بكر علوان"
+        "channel": "beIN Xtra 2",
+        "commentator": "منتصر الأزهري"
       }
     ]
   },
@@ -806,12 +777,12 @@
     ]
   },
   {
-    "id": "5206225",
-    "url": "https://www.ysscores.com/ar/match/5206225/AEK-Larnaca-vs-Crystal-Palace",
+    "id": "5206229",
+    "url": "https://www.ysscores.com/ar/match/5206229/Raków-Częstochowa-vs-ACF-Fiorentina",
     "info": {
       "championship": "دوري المؤتمر الأوروبي",
       "round": "دور الـ 16 - مباراة الاياب",
-      "stadium": "آيك أرينا",
+      "stadium": "استاد راكوف",
       "time": "19:45",
       "date": "الخميس 19-03-2026",
       "current_score": "1 - 2",
@@ -819,18 +790,47 @@
     },
     "teams": {
       "home": {
-        "name": "آيك لارناكا",
-        "logo": "https://imgs.ysscores.com/teams/128/4111750186389.png"
+        "name": "راكوف تشيستوخوفا",
+        "logo": "https://imgs.ysscores.com/teams/128/3981690821864.png"
       },
       "away": {
-        "name": "كريستال بالاس",
-        "logo": "https://imgs.ysscores.com/teams/128/6121690118883.png"
+        "name": "فيورنتينا",
+        "logo": "https://imgs.ysscores.com/teams/128/1231690283002.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 4",
-        "commentator": "نوفل باشي"
+        "channel": "بي إن سبورت 5",
+        "commentator": "أحمد البلوشي"
+      }
+    ]
+  },
+  {
+    "id": "5206227",
+    "url": "https://www.ysscores.com/ar/match/5206227/1.FSV-Mainz-05-vs-SK-Sigma-Olomouc",
+    "info": {
+      "championship": "دوري المؤتمر الأوروبي",
+      "round": "دور الـ 16 - مباراة الاياب",
+      "stadium": "أوبل أرينا",
+      "time": "19:45",
+      "date": "الخميس 19-03-2026",
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "ماينتس",
+        "logo": "https://imgs.ysscores.com/teams/128/8131690288819.png"
+      },
+      "away": {
+        "name": "سيغما",
+        "logo": "https://imgs.ysscores.com/teams/128/4961690370503.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Xtra 1",
+        "commentator": "باسم الزير"
       }
     ]
   },
