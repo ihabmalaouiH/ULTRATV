@@ -133,7 +133,7 @@
       "time": "19:30",
       "date": "الجمعة 20-03-2026",
       "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
+      "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
@@ -161,25 +161,25 @@
     ]
   },
   {
-    "id": "5103430",
-    "url": "https://www.ysscores.com/ar/match/5103430/Grêmio-Foot-Ball-Porto-Alegrense-vs-Esporte-Clube-Vitória",
+    "id": "5103424",
+    "url": "https://www.ysscores.com/ar/match/5103424/CR-Flamengo-vs-Clube-do-Remo-(PA)",
     "info": {
       "championship": "الدوري البرازيلي",
       "round": "7 - مباراة الذهاب",
-      "stadium": "أرينا دي غريميو",
-      "time": "00:00",
+      "stadium": "ماراكانا",
+      "time": "01:00",
       "date": "الخميس 19-03-2026",
-      "current_score": "2 - 0",
+      "current_score": "3 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "غريميو",
-        "logo": "https://imgs.ysscores.com/teams/128/4321691418710.png"
+        "name": "فلامينغو",
+        "logo": "https://imgs.ysscores.com/teams/128/6861691418710.png"
       },
       "away": {
-        "name": "فيتوريا",
-        "logo": "https://imgs.ysscores.com/teams/128/2251710687063.png"
+        "name": "ريمو",
+        "logo": "https://imgs.ysscores.com/teams/128/17673059547919.png"
       }
     },
     "channels": []
@@ -209,25 +209,25 @@
     "channels": []
   },
   {
-    "id": "5103424",
-    "url": "https://www.ysscores.com/ar/match/5103424/CR-Flamengo-vs-Clube-do-Remo-(PA)",
+    "id": "5103430",
+    "url": "https://www.ysscores.com/ar/match/5103430/Grêmio-Foot-Ball-Porto-Alegrense-vs-Esporte-Clube-Vitória",
     "info": {
       "championship": "الدوري البرازيلي",
       "round": "7 - مباراة الذهاب",
-      "stadium": "ماراكانا",
-      "time": "01:00",
+      "stadium": "أرينا دي غريميو",
+      "time": "00:00",
       "date": "الخميس 19-03-2026",
-      "current_score": "3 - 0",
+      "current_score": "2 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "فلامينغو",
-        "logo": "https://imgs.ysscores.com/teams/128/6861691418710.png"
+        "name": "غريميو",
+        "logo": "https://imgs.ysscores.com/teams/128/4321691418710.png"
       },
       "away": {
-        "name": "ريمو",
-        "logo": "https://imgs.ysscores.com/teams/128/17673059547919.png"
+        "name": "فيتوريا",
+        "logo": "https://imgs.ysscores.com/teams/128/2251710687063.png"
       }
     },
     "channels": []
@@ -421,35 +421,6 @@
     "channels": []
   },
   {
-    "id": "5165090",
-    "url": "https://www.ysscores.com/ar/match/5165090/Mount-Pleasant-FA-vs-Los-Angeles-Galaxy",
-    "info": {
-      "championship": "كأس أبطال الكونكاكاف",
-      "round": "دور الـ 16 - مباراة الاياب",
-      "stadium": "مجمع فيردي نيتا الرياضي",
-      "time": "01:00",
-      "date": "الخميس 19-03-2026",
-      "current_score": "0 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بليزانت",
-        "logo": "https://imgs.ysscores.com/teams/128/17715132873500.png"
-      },
-      "away": {
-        "name": "غلاكسي",
-        "logo": "https://imgs.ysscores.com/teams/128/1931691410208.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "Concacaf YouTube",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5165101",
     "url": "https://www.ysscores.com/ar/match/5165101/Tigres-UANL-vs-FC-Cincinnati",
     "info": {
@@ -469,6 +440,35 @@
       "away": {
         "name": "سينسيناتي",
         "logo": "https://imgs.ysscores.com/teams/128/6371691409829.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "Concacaf YouTube",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5165090",
+    "url": "https://www.ysscores.com/ar/match/5165090/Mount-Pleasant-FA-vs-Los-Angeles-Galaxy",
+    "info": {
+      "championship": "كأس أبطال الكونكاكاف",
+      "round": "دور الـ 16 - مباراة الاياب",
+      "stadium": "مجمع فيردي نيتا الرياضي",
+      "time": "01:00",
+      "date": "الخميس 19-03-2026",
+      "current_score": "0 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بليزانت",
+        "logo": "https://imgs.ysscores.com/teams/128/17715132873500.png"
+      },
+      "away": {
+        "name": "غلاكسي",
+        "logo": "https://imgs.ysscores.com/teams/128/1931691410208.png"
       }
     },
     "channels": [
