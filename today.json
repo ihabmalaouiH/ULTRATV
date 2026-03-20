@@ -38,7 +38,7 @@
       "time": "22:00",
       "date": "الجمعة 20-03-2026",
       "current_score": "3 - 0",
-      "match_status": "لم تبدأ"
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
@@ -161,6 +161,30 @@
     ]
   },
   {
+    "id": "5103424",
+    "url": "https://www.ysscores.com/ar/match/5103424/CR-Flamengo-vs-Clube-do-Remo-(PA)",
+    "info": {
+      "championship": "الدوري البرازيلي",
+      "round": "7 - مباراة الذهاب",
+      "stadium": "ماراكانا",
+      "time": "01:00",
+      "date": "الخميس 19-03-2026",
+      "current_score": "3 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "فلامينغو",
+        "logo": "https://imgs.ysscores.com/teams/128/6861691418710.png"
+      },
+      "away": {
+        "name": "ريمو",
+        "logo": "https://imgs.ysscores.com/teams/128/17673059547919.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5103433",
     "url": "https://www.ysscores.com/ar/match/5103433/Associação-Chapecoense-de-Futebol-vs-Sport-Club-Corinthians-Paulista",
     "info": {
@@ -209,30 +233,6 @@
     "channels": []
   },
   {
-    "id": "5103424",
-    "url": "https://www.ysscores.com/ar/match/5103424/CR-Flamengo-vs-Clube-do-Remo-(PA)",
-    "info": {
-      "championship": "الدوري البرازيلي",
-      "round": "7 - مباراة الذهاب",
-      "stadium": "ماراكانا",
-      "time": "01:00",
-      "date": "الخميس 19-03-2026",
-      "current_score": "3 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "فلامينغو",
-        "logo": "https://imgs.ysscores.com/teams/128/6861691418710.png"
-      },
-      "away": {
-        "name": "ريمو",
-        "logo": "https://imgs.ysscores.com/teams/128/17673059547919.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4844396",
     "url": "https://www.ysscores.com/ar/match/4844396/CF-Estrela-Amadora-vs-Casa-Pia-AC",
     "info": {
@@ -265,7 +265,7 @@
       "stadium": "بوليرت ديليليس",
       "time": "21:45",
       "date": "الجمعة 20-03-2026",
-      "current_score": "3 - 0",
+      "current_score": "4 - 0",
       "match_status": "لم تبدأ"
     },
     "teams": {
@@ -282,35 +282,6 @@
       {
         "channel": "بي إن سبورت 4",
         "commentator": "جواد بدة"
-      }
-    ]
-  },
-  {
-    "id": "71731416",
-    "url": "https://www.ysscores.com/ar/match/71731416/Wadi-Degla-FC-vs-El-Gouna-FC",
-    "info": {
-      "championship": "الدوري المصري",
-      "round": "1",
-      "stadium": "استاد السلام",
-      "time": "20:00",
-      "date": "الجمعة 20-03-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "وادي دجلة",
-        "logo": "https://imgs.ysscores.com/teams/128/2161728755640.png"
-      },
-      "away": {
-        "name": "الجونة",
-        "logo": "https://imgs.ysscores.com/teams/128/3751731169729.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ON Sport 1",
-        "commentator": "محمد الغياتي"
       }
     ]
   },
@@ -340,6 +311,35 @@
       {
         "channel": "ON Sport 1",
         "commentator": "عصام عبده"
+      }
+    ]
+  },
+  {
+    "id": "71731416",
+    "url": "https://www.ysscores.com/ar/match/71731416/Wadi-Degla-FC-vs-El-Gouna-FC",
+    "info": {
+      "championship": "الدوري المصري",
+      "round": "1",
+      "stadium": "استاد السلام",
+      "time": "20:00",
+      "date": "الجمعة 20-03-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "وادي دجلة",
+        "logo": "https://imgs.ysscores.com/teams/128/2161728755640.png"
+      },
+      "away": {
+        "name": "الجونة",
+        "logo": "https://imgs.ysscores.com/teams/128/3751731169729.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ON Sport 1",
+        "commentator": "محمد الغياتي"
       }
     ]
   },
