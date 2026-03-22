@@ -1,34 +1,5 @@
 [
   {
-    "id": "4829554",
-    "url": "https://www.ysscores.com/ar/match/4829554/1.FSV-Mainz-05-vs-Eintracht-Frankfurt",
-    "info": {
-      "championship": "الدوري الألماني",
-      "round": "27 - مباراة الاياب",
-      "stadium": "أوبل أرينا",
-      "time": "16:30",
-      "date": "الأحد 22-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ماينتس",
-        "logo": "https://imgs.ysscores.com/teams/128/8131690288819.png"
-      },
-      "away": {
-        "name": "فرانكفورت",
-        "logo": "https://imgs.ysscores.com/teams/128/231690288818.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "MBC شاهد | رياضة",
-        "commentator": "أنيس السحباني"
-      }
-    ]
-  },
-  {
     "id": "4829556",
     "url": "https://www.ysscores.com/ar/match/4829556/FC-St.-Pauli-vs-SC-Freiburg",
     "info": {
@@ -91,6 +62,64 @@
     ]
   },
   {
+    "id": "4829554",
+    "url": "https://www.ysscores.com/ar/match/4829554/1.FSV-Mainz-05-vs-Eintracht-Frankfurt",
+    "info": {
+      "championship": "الدوري الألماني",
+      "round": "27 - مباراة الاياب",
+      "stadium": "أوبل أرينا",
+      "time": "16:30",
+      "date": "الأحد 22-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ماينتس",
+        "logo": "https://imgs.ysscores.com/teams/128/8131690288819.png"
+      },
+      "away": {
+        "name": "فرانكفورت",
+        "logo": "https://imgs.ysscores.com/teams/128/231690288818.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "MBC شاهد | رياضة",
+        "commentator": "أنيس السحباني"
+      }
+    ]
+  },
+  {
+    "id": "5071061",
+    "url": "https://www.ysscores.com/ar/match/5071061/Minnesota-United-FC-vs-Seattle-Sounders-FC",
+    "info": {
+      "championship": "الدوري الأمريكي لكرة القدم",
+      "round": "5 - مباراة الذهاب",
+      "stadium": "أليانز فيلد",
+      "time": "20:30",
+      "date": "الأحد 22-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "مينيسوتا",
+        "logo": "https://imgs.ysscores.com/teams/128/4161691411071.png"
+      },
+      "away": {
+        "name": "سياتل",
+        "logo": "https://imgs.ysscores.com/teams/128/241740040401.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "Apple TV",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
     "id": "5071062",
     "url": "https://www.ysscores.com/ar/match/5071062/New-York-City-FC-vs-Inter-Miami-CF",
     "info": {
@@ -110,35 +139,6 @@
       "away": {
         "name": "إنتر ميامي",
         "logo": "https://imgs.ysscores.com/teams/128/571691409672.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "Apple TV",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "5071051",
-    "url": "https://www.ysscores.com/ar/match/5071051/Charlotte-FC-vs-New-York-Red-Bulls",
-    "info": {
-      "championship": "الدوري الأمريكي لكرة القدم",
-      "round": "5 - مباراة الذهاب",
-      "stadium": "بنك أوف امريكا",
-      "time": "01:30",
-      "date": "السبت 21-03-2026",
-      "current_score": "6 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "شارلوت",
-        "logo": "https://imgs.ysscores.com/teams/128/4701691409708.png"
-      },
-      "away": {
-        "name": "نيويورك ريدبول",
-        "logo": "https://imgs.ysscores.com/teams/128/9311691411424.png"
       }
     },
     "channels": [
@@ -178,25 +178,25 @@
     ]
   },
   {
-    "id": "5071061",
-    "url": "https://www.ysscores.com/ar/match/5071061/Minnesota-United-FC-vs-Seattle-Sounders-FC",
+    "id": "5071051",
+    "url": "https://www.ysscores.com/ar/match/5071051/Charlotte-FC-vs-New-York-Red-Bulls",
     "info": {
       "championship": "الدوري الأمريكي لكرة القدم",
       "round": "5 - مباراة الذهاب",
-      "stadium": "أليانز فيلد",
-      "time": "20:30",
-      "date": "الأحد 22-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "stadium": "بنك أوف امريكا",
+      "time": "01:30",
+      "date": "السبت 21-03-2026",
+      "current_score": "6 - 1",
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "مينيسوتا",
-        "logo": "https://imgs.ysscores.com/teams/128/4161691411071.png"
+        "name": "شارلوت",
+        "logo": "https://imgs.ysscores.com/teams/128/4701691409708.png"
       },
       "away": {
-        "name": "سياتل",
-        "logo": "https://imgs.ysscores.com/teams/128/241740040401.png"
+        "name": "نيويورك ريدبول",
+        "logo": "https://imgs.ysscores.com/teams/128/9311691411424.png"
       }
     },
     "channels": [
@@ -265,35 +265,6 @@
     ]
   },
   {
-    "id": "5071057",
-    "url": "https://www.ysscores.com/ar/match/5071057/FC-Dallas-vs-Houston-Dynamo-FC",
-    "info": {
-      "championship": "الدوري الأمريكي لكرة القدم",
-      "round": "5 - مباراة الذهاب",
-      "stadium": "تويوتا",
-      "time": "02:30",
-      "date": "السبت 21-03-2026",
-      "current_score": "4 - 3",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "دالاس",
-        "logo": "https://imgs.ysscores.com/teams/128/781691410999.png"
-      },
-      "away": {
-        "name": "هيوستن دينامو",
-        "logo": "https://imgs.ysscores.com/teams/128/121691410757.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "Apple TV",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5071059",
     "url": "https://www.ysscores.com/ar/match/5071059/St.-Louis-CITY-SC-vs-New-England-Revolution",
     "info": {
@@ -323,25 +294,25 @@
     ]
   },
   {
-    "id": "5071058",
-    "url": "https://www.ysscores.com/ar/match/5071058/Sporting-Kansas-City-vs-Colorado-Rapids",
+    "id": "5071057",
+    "url": "https://www.ysscores.com/ar/match/5071057/FC-Dallas-vs-Houston-Dynamo-FC",
     "info": {
       "championship": "الدوري الأمريكي لكرة القدم",
       "round": "5 - مباراة الذهاب",
-      "stadium": "سبورتينغ بارك",
+      "stadium": "تويوتا",
       "time": "02:30",
       "date": "السبت 21-03-2026",
-      "current_score": "1 - 4",
+      "current_score": "4 - 3",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "كانساس سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/4641691408719.png"
+        "name": "دالاس",
+        "logo": "https://imgs.ysscores.com/teams/128/781691410999.png"
       },
       "away": {
-        "name": "كولورادو",
-        "logo": "https://imgs.ysscores.com/teams/128/7481691410134.png"
+        "name": "هيوستن دينامو",
+        "logo": "https://imgs.ysscores.com/teams/128/121691410757.png"
       }
     },
     "channels": [
@@ -381,35 +352,6 @@
     ]
   },
   {
-    "id": "5071050",
-    "url": "https://www.ysscores.com/ar/match/5071050/Atlanta-United-FC-vs-D.C.-United",
-    "info": {
-      "championship": "الدوري الأمريكي لكرة القدم",
-      "round": "5 - مباراة الذهاب",
-      "stadium": "مرسيدس بنز",
-      "time": "01:30",
-      "date": "السبت 21-03-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أتلانتا يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/5501691410013.png"
-      },
-      "away": {
-        "name": "دي سي يونايتد",
-        "logo": "https://imgs.ysscores.com/teams/128/5391691411214.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "Apple TV",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
     "id": "5071053",
     "url": "https://www.ysscores.com/ar/match/5071053/Nashville-SC-vs-Orlando-City-SC",
     "info": {
@@ -429,6 +371,64 @@
       "away": {
         "name": "أورلاندو سيتي",
         "logo": "https://imgs.ysscores.com/teams/128/6901691410921.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "Apple TV",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5071058",
+    "url": "https://www.ysscores.com/ar/match/5071058/Sporting-Kansas-City-vs-Colorado-Rapids",
+    "info": {
+      "championship": "الدوري الأمريكي لكرة القدم",
+      "round": "5 - مباراة الذهاب",
+      "stadium": "سبورتينغ بارك",
+      "time": "02:30",
+      "date": "السبت 21-03-2026",
+      "current_score": "1 - 4",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "كانساس سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/4641691408719.png"
+      },
+      "away": {
+        "name": "كولورادو",
+        "logo": "https://imgs.ysscores.com/teams/128/7481691410134.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "Apple TV",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "5071050",
+    "url": "https://www.ysscores.com/ar/match/5071050/Atlanta-United-FC-vs-D.C.-United",
+    "info": {
+      "championship": "الدوري الأمريكي لكرة القدم",
+      "round": "5 - مباراة الذهاب",
+      "stadium": "مرسيدس بنز",
+      "time": "01:30",
+      "date": "السبت 21-03-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أتلانتا يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/5501691410013.png"
+      },
+      "away": {
+        "name": "دي سي يونايتد",
+        "logo": "https://imgs.ysscores.com/teams/128/5391691411214.png"
       }
     },
     "channels": [
@@ -708,6 +708,39 @@
     ]
   },
   {
+    "id": "4803328",
+    "url": "https://www.ysscores.com/ar/match/4803328/Atalanta-BC-vs-Hellas-Verona",
+    "info": {
+      "championship": "الدوري الإيطالي",
+      "round": "30 - مباراة الاياب",
+      "stadium": "نيو بالانس أرينا",
+      "time": "16:00",
+      "date": "الأحد 22-03-2026",
+      "current_score": "0 - 0",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أتلانتا",
+        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
+      },
+      "away": {
+        "name": "هيلاس فيرونا",
+        "logo": "https://imgs.ysscores.com/teams/128/3871690283003.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "StarzPlay",
+        "commentator": "عيسى الحربين"
+      },
+      {
+        "channel": "تطبيق STC TV",
+        "commentator": "عيسى الحربين"
+      }
+    ]
+  },
+  {
     "id": "4803332",
     "url": "https://www.ysscores.com/ar/match/4803332/ACF-Fiorentina-vs-Inter-Milan",
     "info": {
@@ -741,39 +774,6 @@
       {
         "channel": "منصة شاشا",
         "commentator": "هاني الشهري"
-      }
-    ]
-  },
-  {
-    "id": "4803328",
-    "url": "https://www.ysscores.com/ar/match/4803328/Atalanta-BC-vs-Hellas-Verona",
-    "info": {
-      "championship": "الدوري الإيطالي",
-      "round": "30 - مباراة الاياب",
-      "stadium": "نيو بالانس أرينا",
-      "time": "16:00",
-      "date": "الأحد 22-03-2026",
-      "current_score": "0 - 0",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أتلانتا",
-        "logo": "https://imgs.ysscores.com/teams/128/3541690283001.png"
-      },
-      "away": {
-        "name": "هيلاس فيرونا",
-        "logo": "https://imgs.ysscores.com/teams/128/3871690283003.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "StarzPlay",
-        "commentator": "عيسى الحربين"
-      },
-      {
-        "channel": "تطبيق STC TV",
-        "commentator": "عيسى الحربين"
       }
     ]
   },
@@ -1079,30 +1079,6 @@
     ]
   },
   {
-    "id": "4818554",
-    "url": "https://www.ysscores.com/ar/match/4818554/Standard-Liège-vs-KVC-Westerlo",
-    "info": {
-      "championship": "الدوري البلجيكي",
-      "round": "30 - مباراة الاياب",
-      "stadium": "موريس دوفراسن",
-      "time": "19:30",
-      "date": "الأحد 22-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ستاندارد لييج",
-        "logo": "https://imgs.ysscores.com/teams/128/4911690370549.png"
-      },
-      "away": {
-        "name": "فيستيرلو",
-        "logo": "https://imgs.ysscores.com/teams/128/131690370550.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4818550",
     "url": "https://www.ysscores.com/ar/match/4818550/Club-Brugge-KV-vs-KV-Mechelen",
     "info": {
@@ -1151,12 +1127,12 @@
     "channels": []
   },
   {
-    "id": "4818549",
-    "url": "https://www.ysscores.com/ar/match/4818549/RSC-Anderlecht-vs-Cercle-Brugge",
+    "id": "4818554",
+    "url": "https://www.ysscores.com/ar/match/4818554/Standard-Liège-vs-KVC-Westerlo",
     "info": {
       "championship": "الدوري البلجيكي",
       "round": "30 - مباراة الاياب",
-      "stadium": "لوتو بارك",
+      "stadium": "موريس دوفراسن",
       "time": "19:30",
       "date": "الأحد 22-03-2026",
       "current_score": "- : -",
@@ -1164,12 +1140,12 @@
     },
     "teams": {
       "home": {
-        "name": "أندرلخت",
-        "logo": "https://imgs.ysscores.com/teams/128/1651733919643.png"
+        "name": "ستاندارد لييج",
+        "logo": "https://imgs.ysscores.com/teams/128/4911690370549.png"
       },
       "away": {
-        "name": "سيركل بروج",
-        "logo": "https://imgs.ysscores.com/teams/128/7651716578158.png"
+        "name": "فيستيرلو",
+        "logo": "https://imgs.ysscores.com/teams/128/131690370550.png"
       }
     },
     "channels": []
@@ -1194,6 +1170,30 @@
       "away": {
         "name": "رويال أنتويرب",
         "logo": "https://imgs.ysscores.com/teams/128/1151690370549.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4818549",
+    "url": "https://www.ysscores.com/ar/match/4818549/RSC-Anderlecht-vs-Cercle-Brugge",
+    "info": {
+      "championship": "الدوري البلجيكي",
+      "round": "30 - مباراة الاياب",
+      "stadium": "لوتو بارك",
+      "time": "19:30",
+      "date": "الأحد 22-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أندرلخت",
+        "logo": "https://imgs.ysscores.com/teams/128/1651733919643.png"
+      },
+      "away": {
+        "name": "سيركل بروج",
+        "logo": "https://imgs.ysscores.com/teams/128/7651716578158.png"
       }
     },
     "channels": []
@@ -1561,6 +1561,30 @@
     ]
   },
   {
+    "id": "4815480",
+    "url": "https://www.ysscores.com/ar/match/4815480/FC-Groningen-vs-AZ-Alkmaar",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "28 - مباراة الاياب",
+      "stadium": "استاد يوروبوج",
+      "time": "17:45",
+      "date": "الأحد 22-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "غرونينغن",
+        "logo": "https://imgs.ysscores.com/teams/128/10001690370535.png"
+      },
+      "away": {
+        "name": "إي زد آلكمار",
+        "logo": "https://imgs.ysscores.com/teams/128/7771690996316.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4815485",
     "url": "https://www.ysscores.com/ar/match/4815485/SC-Telstar-vs-PSV-Eindhoven",
     "info": {
@@ -1588,30 +1612,6 @@
         "commentator": "عبدالحميد الجسمي"
       }
     ]
-  },
-  {
-    "id": "4815486",
-    "url": "https://www.ysscores.com/ar/match/4815486/FC-Utrecht-vs-Go-Ahead-Eagles",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "28 - مباراة الاياب",
-      "stadium": "جالينوارد",
-      "time": "15:30",
-      "date": "الأحد 22-03-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أوترخت",
-        "logo": "https://imgs.ysscores.com/teams/128/3101690475899.png"
-      },
-      "away": {
-        "name": "جو أهيد إيجلز",
-        "logo": "https://imgs.ysscores.com/teams/128/3951690996987.png"
-      }
-    },
-    "channels": []
   },
   {
     "id": "4815479",
@@ -1643,25 +1643,25 @@
     ]
   },
   {
-    "id": "4815480",
-    "url": "https://www.ysscores.com/ar/match/4815480/FC-Groningen-vs-AZ-Alkmaar",
+    "id": "4815486",
+    "url": "https://www.ysscores.com/ar/match/4815486/FC-Utrecht-vs-Go-Ahead-Eagles",
     "info": {
       "championship": "الدوري الهولندي الممتاز",
       "round": "28 - مباراة الاياب",
-      "stadium": "استاد يوروبوج",
-      "time": "17:45",
+      "stadium": "جالينوارد",
+      "time": "15:30",
       "date": "الأحد 22-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "current_score": "2 - 0",
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "غرونينغن",
-        "logo": "https://imgs.ysscores.com/teams/128/10001690370535.png"
+        "name": "أوترخت",
+        "logo": "https://imgs.ysscores.com/teams/128/3101690475899.png"
       },
       "away": {
-        "name": "إي زد آلكمار",
-        "logo": "https://imgs.ysscores.com/teams/128/7771690996316.png"
+        "name": "جو أهيد إيجلز",
+        "logo": "https://imgs.ysscores.com/teams/128/3951690996987.png"
       }
     },
     "channels": []
@@ -1792,30 +1792,6 @@
     "channels": []
   },
   {
-    "id": "4859178",
-    "url": "https://www.ysscores.com/ar/match/4859178/Olympiacos-Piraeus-vs-AE-Larisa",
-    "info": {
-      "championship": "الدوري اليوناني",
-      "round": "26 - مباراة الاياب",
-      "stadium": "كارايسكاكيس",
-      "time": "19:00",
-      "date": "الأحد 22-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أولمبياكوس",
-        "logo": "https://imgs.ysscores.com/teams/128/1401690370533.png"
-      },
-      "away": {
-        "name": "لاريسا",
-        "logo": "https://imgs.ysscores.com/teams/128/411754000668.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4859175",
     "url": "https://www.ysscores.com/ar/match/4859175/Aris-Thessaloniki-vs-OFI-Crete-FC",
     "info": {
@@ -1835,6 +1811,30 @@
       "away": {
         "name": "أوفي كريت",
         "logo": "https://imgs.ysscores.com/teams/128/7821690370506.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4859178",
+    "url": "https://www.ysscores.com/ar/match/4859178/Olympiacos-Piraeus-vs-AE-Larisa",
+    "info": {
+      "championship": "الدوري اليوناني",
+      "round": "26 - مباراة الاياب",
+      "stadium": "كارايسكاكيس",
+      "time": "19:00",
+      "date": "الأحد 22-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أولمبياكوس",
+        "logo": "https://imgs.ysscores.com/teams/128/1401690370533.png"
+      },
+      "away": {
+        "name": "لاريسا",
+        "logo": "https://imgs.ysscores.com/teams/128/411754000668.png"
       }
     },
     "channels": []
@@ -1946,30 +1946,6 @@
     "channels": []
   },
   {
-    "id": "5102047",
-    "url": "https://www.ysscores.com/ar/match/5102047/Club-Atlético-Belgrano-vs-Racing-Club",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "12 - مباراة الذهاب",
-      "stadium": "استاد خوليو سيزار فيلاجرا",
-      "time": "03:15",
-      "date": "السبت 21-03-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بيلغرانو",
-        "logo": "https://imgs.ysscores.com/teams/128/6861705166944.png"
-      },
-      "away": {
-        "name": "راسينغ",
-        "logo": "https://imgs.ysscores.com/teams/128/2551715593780.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5102054",
     "url": "https://www.ysscores.com/ar/match/5102054/CA-Independiente-vs-CA-Talleres",
     "info": {
@@ -1989,6 +1965,30 @@
       "away": {
         "name": "تاليريس",
         "logo": "https://imgs.ysscores.com/teams/128/2661711809310.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5102047",
+    "url": "https://www.ysscores.com/ar/match/5102047/Club-Atlético-Belgrano-vs-Racing-Club",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "12 - مباراة الذهاب",
+      "stadium": "استاد خوليو سيزار فيلاجرا",
+      "time": "03:15",
+      "date": "السبت 21-03-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بيلغرانو",
+        "logo": "https://imgs.ysscores.com/teams/128/6861705166944.png"
+      },
+      "away": {
+        "name": "راسينغ",
+        "logo": "https://imgs.ysscores.com/teams/128/2551715593780.png"
       }
     },
     "channels": []
@@ -2506,7 +2506,7 @@
       "stadium": "ملعب قفصة",
       "time": "14:30",
       "date": "الأحد 22-03-2026",
-      "current_score": "0 - 4",
+      "current_score": "0 - 5",
       "match_status": "لم تبدأ"
     },
     "teams": {
