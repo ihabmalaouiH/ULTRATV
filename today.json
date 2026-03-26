@@ -87,6 +87,30 @@
     ]
   },
   {
+    "id": "4946396",
+    "url": "https://www.ysscores.com/ar/match/4946396/El-Dakhlia-SC-vs-Entag-El-Harby",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "27 - مباراة الاياب",
+      "stadium": "استاد كلية الشرطة",
+      "time": "15:30",
+      "date": "الخميس 26-03-2026",
+      "current_score": "0 - 0",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الداخلية",
+        "logo": "https://imgs.ysscores.com/teams/128/7881694082064.png"
+      },
+      "away": {
+        "name": "الإنتاج الحربي",
+        "logo": "https://imgs.ysscores.com/teams/128/7141753648124.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4946395",
     "url": "https://www.ysscores.com/ar/match/4946395/Aswan-SC-vs-Tanta-SC",
     "info": {
@@ -159,30 +183,6 @@
       "away": {
         "name": "أبو قير",
         "logo": "https://imgs.ysscores.com/teams/128/8611715098753.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4946396",
-    "url": "https://www.ysscores.com/ar/match/4946396/El-Dakhlia-SC-vs-Entag-El-Harby",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "27 - مباراة الاياب",
-      "stadium": "استاد كلية الشرطة",
-      "time": "15:30",
-      "date": "الخميس 26-03-2026",
-      "current_score": "0 - 0",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الداخلية",
-        "logo": "https://imgs.ysscores.com/teams/128/7881694082064.png"
-      },
-      "away": {
-        "name": "الإنتاج الحربي",
-        "logo": "https://imgs.ysscores.com/teams/128/7141753648124.png"
       }
     },
     "channels": []
@@ -356,12 +356,12 @@
     "channels": []
   },
   {
-    "id": "5067290",
-    "url": "https://www.ysscores.com/ar/match/5067290/Denmark-vs-North-Macedonia",
+    "id": "5067293",
+    "url": "https://www.ysscores.com/ar/match/5067293/Slovakia-vs-Kosovo",
     "info": {
       "championship": "تصفيات كأس العالم: أوروبا",
       "round": "نصف نهائي",
-      "stadium": "استاد باركن",
+      "stadium": "الملعب الوطني بسلوفاكيا",
       "time": "21:45",
       "date": "الخميس 26-03-2026",
       "current_score": "- : -",
@@ -369,18 +369,18 @@
     },
     "teams": {
       "home": {
-        "name": "الدنمارك",
-        "logo": "https://imgs.ysscores.com/teams/128/5741763071628.png"
+        "name": "سلوفاكيا",
+        "logo": "https://imgs.ysscores.com/teams/128/1581763086691.png"
       },
       "away": {
-        "name": "مقدونيا الشمالية",
-        "logo": "https://imgs.ysscores.com/teams/128/5571763082782.png"
+        "name": "كوسوفو",
+        "logo": "https://imgs.ysscores.com/teams/128/9471763081695.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 9",
-        "commentator": "محمد بركات"
+        "channel": "بي إن سبورت 8",
+        "commentator": "أحمد فؤاد"
       }
     ]
   },
@@ -414,35 +414,6 @@
     ]
   },
   {
-    "id": "5067292",
-    "url": "https://www.ysscores.com/ar/match/5067292/Poland-vs-Albania",
-    "info": {
-      "championship": "تصفيات كأس العالم: أوروبا",
-      "round": "نصف نهائي",
-      "stadium": "الملعب الوطني - وارسو",
-      "time": "21:45",
-      "date": "الخميس 26-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "بولندا",
-        "logo": "https://imgs.ysscores.com/teams/128/7861763085396.png"
-      },
-      "away": {
-        "name": "ألبانيا",
-        "logo": "https://imgs.ysscores.com/teams/128/1681763066722.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "محمد فوزي"
-      }
-    ]
-  },
-  {
     "id": "5067289",
     "url": "https://www.ysscores.com/ar/match/5067289/Turkiye-vs-Romania",
     "info": {
@@ -468,6 +439,64 @@
       {
         "channel": "بي إن سبورت 2",
         "commentator": "علي محمد علي"
+      }
+    ]
+  },
+  {
+    "id": "5067290",
+    "url": "https://www.ysscores.com/ar/match/5067290/Denmark-vs-North-Macedonia",
+    "info": {
+      "championship": "تصفيات كأس العالم: أوروبا",
+      "round": "نصف نهائي",
+      "stadium": "استاد باركن",
+      "time": "21:45",
+      "date": "الخميس 26-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الدنمارك",
+        "logo": "https://imgs.ysscores.com/teams/128/5741763071628.png"
+      },
+      "away": {
+        "name": "مقدونيا الشمالية",
+        "logo": "https://imgs.ysscores.com/teams/128/5571763082782.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 9",
+        "commentator": "محمد بركات"
+      }
+    ]
+  },
+  {
+    "id": "5067292",
+    "url": "https://www.ysscores.com/ar/match/5067292/Poland-vs-Albania",
+    "info": {
+      "championship": "تصفيات كأس العالم: أوروبا",
+      "round": "نصف نهائي",
+      "stadium": "الملعب الوطني - وارسو",
+      "time": "21:45",
+      "date": "الخميس 26-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "بولندا",
+        "logo": "https://imgs.ysscores.com/teams/128/7861763085396.png"
+      },
+      "away": {
+        "name": "ألبانيا",
+        "logo": "https://imgs.ysscores.com/teams/128/1681763066722.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "محمد فوزي"
       }
     ]
   },
@@ -501,12 +530,12 @@
     ]
   },
   {
-    "id": "5067293",
-    "url": "https://www.ysscores.com/ar/match/5067293/Slovakia-vs-Kosovo",
+    "id": "5067294",
+    "url": "https://www.ysscores.com/ar/match/5067294/Czech-Republic-vs-Republic-of-Ireland",
     "info": {
       "championship": "تصفيات كأس العالم: أوروبا",
       "round": "نصف نهائي",
-      "stadium": "الملعب الوطني بسلوفاكيا",
+      "stadium": "إيدن أرينا",
       "time": "21:45",
       "date": "الخميس 26-03-2026",
       "current_score": "- : -",
@@ -514,18 +543,18 @@
     },
     "teams": {
       "home": {
-        "name": "سلوفاكيا",
-        "logo": "https://imgs.ysscores.com/teams/128/1581763086691.png"
+        "name": "تشيكيا",
+        "logo": "https://imgs.ysscores.com/teams/128/1641763071555.png"
       },
       "away": {
-        "name": "كوسوفو",
-        "logo": "https://imgs.ysscores.com/teams/128/9471763081695.png"
+        "name": "أيرلندا",
+        "logo": "https://imgs.ysscores.com/teams/128/7511763081085.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 8",
-        "commentator": "أحمد فؤاد"
+        "channel": "بي إن سبورت 5",
+        "commentator": "محمد المبروكي"
       }
     ]
   },
@@ -555,35 +584,6 @@
       {
         "channel": "بي إن سبورت 2",
         "commentator": "أحمد عبده"
-      }
-    ]
-  },
-  {
-    "id": "5067294",
-    "url": "https://www.ysscores.com/ar/match/5067294/Czech-Republic-vs-Republic-of-Ireland",
-    "info": {
-      "championship": "تصفيات كأس العالم: أوروبا",
-      "round": "نصف نهائي",
-      "stadium": "إيدن أرينا",
-      "time": "21:45",
-      "date": "الخميس 26-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "تشيكيا",
-        "logo": "https://imgs.ysscores.com/teams/128/1641763071555.png"
-      },
-      "away": {
-        "name": "أيرلندا",
-        "logo": "https://imgs.ysscores.com/teams/128/7511763081085.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 5",
-        "commentator": "محمد المبروكي"
       }
     ]
   },
@@ -728,52 +728,24 @@
     ]
   },
   {
-    "id": "5099917",
-    "url": "https://www.ysscores.com/ar/match/5099917/Georgia-vs-Israel",
+    "id": "5210339",
+    "url": "https://www.ysscores.com/ar/match/5210339/Puerto-Rico-vs-Guam",
     "info": {
       "championship": "مباراة ودية",
-      "stadium": "ملعب ميخائيل ميسكي",
-      "time": "19:00",
-      "date": "الخميس 26-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
+      "stadium": "استاد خوان رامون لوبريل",
+      "time": "02:00",
+      "date": "الأربعاء 25-03-2026",
+      "current_score": "4 - 0",
+      "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "جورجيا",
-        "logo": "https://imgs.ysscores.com/teams/128/2021763078387.png"
+        "name": "بورتوريكو",
+        "logo": "https://imgs.ysscores.com/teams/128/7561763085516.png"
       },
       "away": {
-        "name": "الكيان الصهيوني",
-        "logo": "https://imgs.ysscores.com/teams/128/3971693419326.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "Bein Sport 2 EN",
-        "commentator": "غير مدرج"
-      }
-    ]
-  },
-  {
-    "id": "5276126",
-    "url": "https://www.ysscores.com/ar/match/5276126/Saint-Martin-vs-Barbados",
-    "info": {
-      "championship": "مباراة ودية",
-      "round": "الدور الأول",
-      "time": "22:00",
-      "date": "الخميس 26-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "سانت مارتن",
-        "logo": "https://imgs.ysscores.com/teams/128/2501763087287.png"
-      },
-      "away": {
-        "name": "باربادوس",
-        "logo": "https://imgs.ysscores.com/teams/128/4401763068786.png"
+        "name": "غوام",
+        "logo": "https://imgs.ysscores.com/teams/128/3171763079081.png"
       }
     },
     "channels": []
@@ -807,6 +779,56 @@
     ]
   },
   {
+    "id": "5213029",
+    "url": "https://www.ysscores.com/ar/match/5213029/United-Arab-Emirates-vs-Armenia",
+    "info": {
+      "championship": "مباراة ودية",
+      "time": "17:25",
+      "date": "الخميس 26-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الإمارات",
+        "logo": "https://imgs.ysscores.com/teams/128/9431763117463.png"
+      },
+      "away": {
+        "name": "أرمينيا",
+        "logo": "https://imgs.ysscores.com/teams/128/7481763067332.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5099917",
+    "url": "https://www.ysscores.com/ar/match/5099917/Georgia-vs-Israel",
+    "info": {
+      "championship": "مباراة ودية",
+      "stadium": "ملعب ميخائيل ميسكي",
+      "time": "19:00",
+      "date": "الخميس 26-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "جورجيا",
+        "logo": "https://imgs.ysscores.com/teams/128/2021763078387.png"
+      },
+      "away": {
+        "name": "الكيان الصهيوني",
+        "logo": "https://imgs.ysscores.com/teams/128/3971693419326.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "Bein Sport 2 EN",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
     "id": "5272311",
     "url": "https://www.ysscores.com/ar/match/5272311/Democratic-Republic-of-the-Congo-vs-Bermuda",
     "info": {
@@ -824,29 +846,6 @@
       "away": {
         "name": "برمودا",
         "logo": "https://imgs.ysscores.com/teams/128/17744353997477.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5159757",
-    "url": "https://www.ysscores.com/ar/match/5159757/Qatar-vs-Serbia",
-    "info": {
-      "championship": "مباراة ودية",
-      "stadium": "استاد جاسم بن حمد",
-      "time": "21:00",
-      "date": "الخميس 26-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "قطر",
-        "logo": "https://imgs.ysscores.com/teams/128/3451763085544.png"
-      },
-      "away": {
-        "name": "صربيا",
-        "logo": "https://imgs.ysscores.com/teams/128/431763086461.png"
       }
     },
     "channels": []
@@ -880,11 +879,34 @@
     ]
   },
   {
-    "id": "5213028",
-    "url": "https://www.ysscores.com/ar/match/5213028/Singapore-vs-Faroe-Islands",
+    "id": "5276126",
+    "url": "https://www.ysscores.com/ar/match/5276126/Saint-Martin-vs-Barbados",
     "info": {
       "championship": "مباراة ودية",
-      "stadium": "استاد راشد بالنادي الأهلي",
+      "round": "الدور الأول",
+      "time": "22:00",
+      "date": "الخميس 26-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "سانت مارتن",
+        "logo": "https://imgs.ysscores.com/teams/128/2501763087287.png"
+      },
+      "away": {
+        "name": "باربادوس",
+        "logo": "https://imgs.ysscores.com/teams/128/4401763068786.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5159757",
+    "url": "https://www.ysscores.com/ar/match/5159757/Qatar-vs-Serbia",
+    "info": {
+      "championship": "مباراة ودية",
+      "stadium": "استاد جاسم بن حمد",
       "time": "21:00",
       "date": "الخميس 26-03-2026",
       "current_score": "- : -",
@@ -892,57 +914,12 @@
     },
     "teams": {
       "home": {
-        "name": "سنغافورة",
-        "logo": "https://imgs.ysscores.com/teams/128/7001763086653.png"
+        "name": "قطر",
+        "logo": "https://imgs.ysscores.com/teams/128/3451763085544.png"
       },
       "away": {
-        "name": "جزر فارو",
-        "logo": "https://imgs.ysscores.com/teams/128/8601763077818.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5213029",
-    "url": "https://www.ysscores.com/ar/match/5213029/United-Arab-Emirates-vs-Armenia",
-    "info": {
-      "championship": "مباراة ودية",
-      "time": "17:25",
-      "date": "الخميس 26-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الإمارات",
-        "logo": "https://imgs.ysscores.com/teams/128/9431763117463.png"
-      },
-      "away": {
-        "name": "أرمينيا",
-        "logo": "https://imgs.ysscores.com/teams/128/7481763067332.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5210339",
-    "url": "https://www.ysscores.com/ar/match/5210339/Puerto-Rico-vs-Guam",
-    "info": {
-      "championship": "مباراة ودية",
-      "stadium": "استاد خوان رامون لوبريل",
-      "time": "02:00",
-      "date": "الأربعاء 25-03-2026",
-      "current_score": "4 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بورتوريكو",
-        "logo": "https://imgs.ysscores.com/teams/128/7561763085516.png"
-      },
-      "away": {
-        "name": "غوام",
-        "logo": "https://imgs.ysscores.com/teams/128/3171763079081.png"
+        "name": "صربيا",
+        "logo": "https://imgs.ysscores.com/teams/128/431763086461.png"
       }
     },
     "channels": []
@@ -966,6 +943,51 @@
       "away": {
         "name": "ماكاو",
         "logo": "https://imgs.ysscores.com/teams/128/3451763082740.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5213028",
+    "url": "https://www.ysscores.com/ar/match/5213028/Singapore-vs-Faroe-Islands",
+    "info": {
+      "championship": "مباراة ودية",
+      "stadium": "استاد راشد بالنادي الأهلي",
+      "time": "21:00",
+      "date": "الخميس 26-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "سنغافورة",
+        "logo": "https://imgs.ysscores.com/teams/128/7001763086653.png"
+      },
+      "away": {
+        "name": "جزر فارو",
+        "logo": "https://imgs.ysscores.com/teams/128/8601763077818.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5272727",
+    "url": "https://www.ysscores.com/ar/match/5272727/Vietnam-vs-Bangladesh",
+    "info": {
+      "championship": "مباراة ودية",
+      "time": "14:00",
+      "date": "الخميس 26-03-2026",
+      "current_score": "3 - 0",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "فيتنام",
+        "logo": "https://imgs.ysscores.com/teams/128/7021763117993.png"
+      },
+      "away": {
+        "name": "بنجلاديش",
+        "logo": "https://imgs.ysscores.com/teams/128/2791763068710.png"
       }
     },
     "channels": []
@@ -1020,27 +1042,5 @@
         "commentator": "بكر علوان"
       }
     ]
-  },
-  {
-    "id": "5272727",
-    "url": "https://www.ysscores.com/ar/match/5272727/Vietnam-vs-Bangladesh",
-    "info": {
-      "championship": "مباراة ودية",
-      "time": "14:00",
-      "date": "الخميس 26-03-2026",
-      "current_score": "3 - 0",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "فيتنام",
-        "logo": "https://imgs.ysscores.com/teams/128/7021763117993.png"
-      },
-      "away": {
-        "name": "بنجلاديش",
-        "logo": "https://imgs.ysscores.com/teams/128/2791763068710.png"
-      }
-    },
-    "channels": []
   }
 ]
