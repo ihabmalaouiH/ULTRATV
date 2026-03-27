@@ -111,6 +111,30 @@
     "channels": []
   },
   {
+    "id": "4946395",
+    "url": "https://www.ysscores.com/ar/match/4946395/Aswan-SC-vs-Tanta-SC",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "27 - مباراة الاياب",
+      "stadium": "استاد أسوان",
+      "time": "15:30",
+      "date": "الخميس 26-03-2026",
+      "current_score": "0 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "أسوان",
+        "logo": "https://imgs.ysscores.com/teams/128/4811694082039.png"
+      },
+      "away": {
+        "name": "طنطا",
+        "logo": "https://imgs.ysscores.com/teams/128/8591728755099.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "4946399",
     "url": "https://www.ysscores.com/ar/match/4946399/FC-Masar-vs-Baladiyat-El-Mahalla",
     "info": {
@@ -159,30 +183,6 @@
       "away": {
         "name": "الإنتاج الحربي",
         "logo": "https://imgs.ysscores.com/teams/128/7141753648124.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4946395",
-    "url": "https://www.ysscores.com/ar/match/4946395/Aswan-SC-vs-Tanta-SC",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "27 - مباراة الاياب",
-      "stadium": "استاد أسوان",
-      "time": "15:30",
-      "date": "الخميس 26-03-2026",
-      "current_score": "0 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أسوان",
-        "logo": "https://imgs.ysscores.com/teams/128/4811694082039.png"
-      },
-      "away": {
-        "name": "طنطا",
-        "logo": "https://imgs.ysscores.com/teams/128/8591728755099.png"
       }
     },
     "channels": []
@@ -356,64 +356,6 @@
     "channels": []
   },
   {
-    "id": "5067292",
-    "url": "https://www.ysscores.com/ar/match/5067292/Poland-vs-Albania",
-    "info": {
-      "championship": "تصفيات كأس العالم: أوروبا",
-      "round": "نصف نهائي",
-      "stadium": "الملعب الوطني - وارسو",
-      "time": "21:45",
-      "date": "الخميس 26-03-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بولندا",
-        "logo": "https://imgs.ysscores.com/teams/128/7861763085396.png"
-      },
-      "away": {
-        "name": "ألبانيا",
-        "logo": "https://imgs.ysscores.com/teams/128/1681763066722.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 3",
-        "commentator": "محمد فوزي"
-      }
-    ]
-  },
-  {
-    "id": "5067290",
-    "url": "https://www.ysscores.com/ar/match/5067290/Denmark-vs-North-Macedonia",
-    "info": {
-      "championship": "تصفيات كأس العالم: أوروبا",
-      "round": "نصف نهائي",
-      "stadium": "استاد باركن",
-      "time": "21:45",
-      "date": "الخميس 26-03-2026",
-      "current_score": "4 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الدنمارك",
-        "logo": "https://imgs.ysscores.com/teams/128/5741763071628.png"
-      },
-      "away": {
-        "name": "مقدونيا الشمالية",
-        "logo": "https://imgs.ysscores.com/teams/128/5571763082782.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 9",
-        "commentator": "محمد بركات"
-      }
-    ]
-  },
-  {
     "id": "5067287",
     "url": "https://www.ysscores.com/ar/match/5067287/Italy-vs-Northern-Ireland",
     "info": {
@@ -439,6 +381,64 @@
       {
         "channel": "بي إن سبورت 1",
         "commentator": "عصام الشوالي"
+      }
+    ]
+  },
+  {
+    "id": "5067289",
+    "url": "https://www.ysscores.com/ar/match/5067289/Turkiye-vs-Romania",
+    "info": {
+      "championship": "تصفيات كأس العالم: أوروبا",
+      "round": "نصف نهائي",
+      "stadium": "استاد توبراس",
+      "time": "19:00",
+      "date": "الخميس 26-03-2026",
+      "current_score": "1 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "تركيا",
+        "logo": "https://imgs.ysscores.com/teams/128/171763117169.png"
+      },
+      "away": {
+        "name": "رومانيا",
+        "logo": "https://imgs.ysscores.com/teams/128/6501763085627.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "علي محمد علي"
+      }
+    ]
+  },
+  {
+    "id": "5067292",
+    "url": "https://www.ysscores.com/ar/match/5067292/Poland-vs-Albania",
+    "info": {
+      "championship": "تصفيات كأس العالم: أوروبا",
+      "round": "نصف نهائي",
+      "stadium": "الملعب الوطني - وارسو",
+      "time": "21:45",
+      "date": "الخميس 26-03-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بولندا",
+        "logo": "https://imgs.ysscores.com/teams/128/7861763085396.png"
+      },
+      "away": {
+        "name": "ألبانيا",
+        "logo": "https://imgs.ysscores.com/teams/128/1681763066722.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 3",
+        "commentator": "محمد فوزي"
       }
     ]
   },
@@ -501,31 +501,31 @@
     ]
   },
   {
-    "id": "5067289",
-    "url": "https://www.ysscores.com/ar/match/5067289/Turkiye-vs-Romania",
+    "id": "5067290",
+    "url": "https://www.ysscores.com/ar/match/5067290/Denmark-vs-North-Macedonia",
     "info": {
       "championship": "تصفيات كأس العالم: أوروبا",
       "round": "نصف نهائي",
-      "stadium": "استاد توبراس",
-      "time": "19:00",
+      "stadium": "استاد باركن",
+      "time": "21:45",
       "date": "الخميس 26-03-2026",
-      "current_score": "1 - 0",
+      "current_score": "4 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "تركيا",
-        "logo": "https://imgs.ysscores.com/teams/128/171763117169.png"
+        "name": "الدنمارك",
+        "logo": "https://imgs.ysscores.com/teams/128/5741763071628.png"
       },
       "away": {
-        "name": "رومانيا",
-        "logo": "https://imgs.ysscores.com/teams/128/6501763085627.png"
+        "name": "مقدونيا الشمالية",
+        "logo": "https://imgs.ysscores.com/teams/128/5571763082782.png"
       }
     },
     "channels": [
       {
-        "channel": "بي إن سبورت 2",
-        "commentator": "علي محمد علي"
+        "channel": "بي إن سبورت 9",
+        "commentator": "محمد بركات"
       }
     ]
   },
@@ -588,35 +588,6 @@
     ]
   },
   {
-    "id": "4679405",
-    "url": "https://www.ysscores.com/ar/match/4679405/Gibraltar-vs-Latvia",
-    "info": {
-      "championship": "دوري الأمم الأوروبية",
-      "round": "النهائي - مباراة الذهاب",
-      "stadium": "أوروبا سبورتس بارك",
-      "time": "19:00",
-      "date": "الخميس 26-03-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "جبل طارق",
-        "logo": "https://imgs.ysscores.com/teams/128/9521763119258.png"
-      },
-      "away": {
-        "name": "لاتفيا",
-        "logo": "https://imgs.ysscores.com/teams/128/7561763082198.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 1",
-        "commentator": "باسم الزير"
-      }
-    ]
-  },
-  {
     "id": "4679407",
     "url": "https://www.ysscores.com/ar/match/4679407/Malta-vs-Luxembourg",
     "info": {
@@ -642,6 +613,35 @@
       {
         "channel": "بي إن سبورت 3",
         "commentator": "جواد بدة"
+      }
+    ]
+  },
+  {
+    "id": "4679405",
+    "url": "https://www.ysscores.com/ar/match/4679405/Gibraltar-vs-Latvia",
+    "info": {
+      "championship": "دوري الأمم الأوروبية",
+      "round": "النهائي - مباراة الذهاب",
+      "stadium": "أوروبا سبورتس بارك",
+      "time": "19:00",
+      "date": "الخميس 26-03-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "جبل طارق",
+        "logo": "https://imgs.ysscores.com/teams/128/9521763119258.png"
+      },
+      "away": {
+        "name": "لاتفيا",
+        "logo": "https://imgs.ysscores.com/teams/128/7561763082198.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 1",
+        "commentator": "باسم الزير"
       }
     ]
   },
@@ -773,29 +773,6 @@
     "channels": []
   },
   {
-    "id": "5210339",
-    "url": "https://www.ysscores.com/ar/match/5210339/Puerto-Rico-vs-Guam",
-    "info": {
-      "championship": "مباراة ودية",
-      "stadium": "استاد خوان رامون لوبريل",
-      "time": "02:00",
-      "date": "الأربعاء 25-03-2026",
-      "current_score": "4 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "بورتوريكو",
-        "logo": "https://imgs.ysscores.com/teams/128/7561763085516.png"
-      },
-      "away": {
-        "name": "غوام",
-        "logo": "https://imgs.ysscores.com/teams/128/3171763079081.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5276126",
     "url": "https://www.ysscores.com/ar/match/5276126/Saint-Martin-vs-Barbados",
     "info": {
@@ -817,6 +794,34 @@
       }
     },
     "channels": []
+  },
+  {
+    "id": "5089476",
+    "url": "https://www.ysscores.com/ar/match/5089476/Brazil-vs-France",
+    "info": {
+      "championship": "مباراة ودية",
+      "stadium": "جيليت",
+      "time": "22:00",
+      "date": "الخميس 26-03-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "البرازيل",
+        "logo": "https://imgs.ysscores.com/teams/128/4331763069849.png"
+      },
+      "away": {
+        "name": "فرنسا",
+        "logo": "https://imgs.ysscores.com/teams/128/2961763078000.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "أبو ظبي الرياضية 1",
+        "commentator": "عامر عبدالله"
+      }
+    ]
   },
   {
     "id": "5099917",
@@ -847,74 +852,6 @@
     ]
   },
   {
-    "id": "5159757",
-    "url": "https://www.ysscores.com/ar/match/5159757/Qatar-vs-Serbia",
-    "info": {
-      "championship": "مباراة ودية",
-      "stadium": "استاد جاسم بن حمد",
-      "time": "21:00",
-      "date": "الخميس 26-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "قطر",
-        "logo": "https://imgs.ysscores.com/teams/128/3451763085544.png"
-      },
-      "away": {
-        "name": "صربيا",
-        "logo": "https://imgs.ysscores.com/teams/128/431763086461.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5213029",
-    "url": "https://www.ysscores.com/ar/match/5213029/United-Arab-Emirates-vs-Armenia",
-    "info": {
-      "championship": "مباراة ودية",
-      "time": "17:25",
-      "date": "الخميس 26-03-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "الإمارات",
-        "logo": "https://imgs.ysscores.com/teams/128/9431763117463.png"
-      },
-      "away": {
-        "name": "أرمينيا",
-        "logo": "https://imgs.ysscores.com/teams/128/7481763067332.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "5210342",
-    "url": "https://www.ysscores.com/ar/match/5210342/Aruba-vs-Macau",
-    "info": {
-      "championship": "مباراة ودية",
-      "stadium": "ملعب نياميرامبو",
-      "time": "13:30",
-      "date": "الخميس 26-03-2026",
-      "current_score": "4 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "أروبا",
-        "logo": "https://imgs.ysscores.com/teams/128/4611763067408.png"
-      },
-      "away": {
-        "name": "ماكاو",
-        "logo": "https://imgs.ysscores.com/teams/128/3451763082740.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5124808",
     "url": "https://www.ysscores.com/ar/match/5124808/Moldova-vs-Lithuania",
     "info": {
@@ -943,30 +880,121 @@
     ]
   },
   {
-    "id": "5089476",
-    "url": "https://www.ysscores.com/ar/match/5089476/Brazil-vs-France",
+    "id": "5213029",
+    "url": "https://www.ysscores.com/ar/match/5213029/United-Arab-Emirates-vs-Armenia",
     "info": {
       "championship": "مباراة ودية",
-      "stadium": "جيليت",
-      "time": "22:00",
+      "time": "17:25",
       "date": "الخميس 26-03-2026",
-      "current_score": "1 - 2",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "الإمارات",
+        "logo": "https://imgs.ysscores.com/teams/128/9431763117463.png"
+      },
+      "away": {
+        "name": "أرمينيا",
+        "logo": "https://imgs.ysscores.com/teams/128/7481763067332.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5159757",
+    "url": "https://www.ysscores.com/ar/match/5159757/Qatar-vs-Serbia",
+    "info": {
+      "championship": "مباراة ودية",
+      "stadium": "استاد جاسم بن حمد",
+      "time": "21:00",
+      "date": "الخميس 26-03-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "قطر",
+        "logo": "https://imgs.ysscores.com/teams/128/3451763085544.png"
+      },
+      "away": {
+        "name": "صربيا",
+        "logo": "https://imgs.ysscores.com/teams/128/431763086461.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5210342",
+    "url": "https://www.ysscores.com/ar/match/5210342/Aruba-vs-Macau",
+    "info": {
+      "championship": "مباراة ودية",
+      "stadium": "ملعب نياميرامبو",
+      "time": "13:30",
+      "date": "الخميس 26-03-2026",
+      "current_score": "4 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "البرازيل",
-        "logo": "https://imgs.ysscores.com/teams/128/4331763069849.png"
+        "name": "أروبا",
+        "logo": "https://imgs.ysscores.com/teams/128/4611763067408.png"
       },
       "away": {
-        "name": "فرنسا",
-        "logo": "https://imgs.ysscores.com/teams/128/2961763078000.png"
+        "name": "ماكاو",
+        "logo": "https://imgs.ysscores.com/teams/128/3451763082740.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5210339",
+    "url": "https://www.ysscores.com/ar/match/5210339/Puerto-Rico-vs-Guam",
+    "info": {
+      "championship": "مباراة ودية",
+      "stadium": "استاد خوان رامون لوبريل",
+      "time": "02:00",
+      "date": "الأربعاء 25-03-2026",
+      "current_score": "4 - 0",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بورتوريكو",
+        "logo": "https://imgs.ysscores.com/teams/128/7561763085516.png"
+      },
+      "away": {
+        "name": "غوام",
+        "logo": "https://imgs.ysscores.com/teams/128/3171763079081.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5159758",
+    "url": "https://www.ysscores.com/ar/match/5159758/Cyprus-vs-Belarus",
+    "info": {
+      "championship": "مباراة ودية",
+      "stadium": "استاد نيو جي أس بي",
+      "time": "19:00",
+      "date": "الخميس 26-03-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "قبرص",
+        "logo": "https://imgs.ysscores.com/teams/128/1471763071520.png"
+      },
+      "away": {
+        "name": "روسيا البيضاء",
+        "logo": "https://imgs.ysscores.com/teams/128/7071763068899.png"
       }
     },
     "channels": [
       {
-        "channel": "أبو ظبي الرياضية 1",
-        "commentator": "عامر عبدالله"
+        "channel": "beIN Xtra 3",
+        "commentator": "بكر علوان"
       }
     ]
   },
@@ -1014,33 +1042,5 @@
       }
     },
     "channels": []
-  },
-  {
-    "id": "5159758",
-    "url": "https://www.ysscores.com/ar/match/5159758/Cyprus-vs-Belarus",
-    "info": {
-      "championship": "مباراة ودية",
-      "stadium": "استاد نيو جي أس بي",
-      "time": "19:00",
-      "date": "الخميس 26-03-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "قبرص",
-        "logo": "https://imgs.ysscores.com/teams/128/1471763071520.png"
-      },
-      "away": {
-        "name": "روسيا البيضاء",
-        "logo": "https://imgs.ysscores.com/teams/128/7071763068899.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Xtra 3",
-        "commentator": "بكر علوان"
-      }
-    ]
   }
 ]
