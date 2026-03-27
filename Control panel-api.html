@@ -461,7 +461,7 @@ function parseArabicMatchTime(dateStr, timeStr) {
         let timeRaw = time.replace(/PM|AM/gi, '').trim();
         let [hoursStr, minutes] = timeRaw.split(':');
         
-        let hours = parseInt(hoursStr, 10);
+        let hours = parseInt(hoursStr, 9);
             
         if (isPM && hours < 12) hours += 12;
         if (!isPM && hours === 12) hours = 0;
