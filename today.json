@@ -145,30 +145,6 @@
     ]
   },
   {
-    "id": "5103446",
-    "url": "https://www.ysscores.com/ar/match/5103446/Santos-FC-vs-Clube-do-Remo-(PA)",
-    "info": {
-      "championship": "الدوري البرازيلي",
-      "round": "9 - مباراة الذهاب",
-      "stadium": "ملعب أوربانو كالديرا",
-      "time": "00:00",
-      "date": "الخميس 02-04-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "سانتوس",
-        "logo": "https://imgs.ysscores.com/teams/128/241691418709.png"
-      },
-      "away": {
-        "name": "ريمو",
-        "logo": "https://imgs.ysscores.com/teams/128/17673059547919.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5103453",
     "url": "https://www.ysscores.com/ar/match/5103453/Associação-Chapecoense-de-Futebol-vs-Clube-Atlético-Mineiro",
     "info": {
@@ -193,25 +169,25 @@
     "channels": []
   },
   {
-    "id": "5103447",
-    "url": "https://www.ysscores.com/ar/match/5103447/Sociedade-Esportiva-Palmeiras-vs-Grêmio-Foot-Ball-Porto-Alegrense",
+    "id": "5103446",
+    "url": "https://www.ysscores.com/ar/match/5103446/Santos-FC-vs-Clube-do-Remo-(PA)",
     "info": {
       "championship": "الدوري البرازيلي",
       "round": "9 - مباراة الذهاب",
-      "stadium": "استاد أرينا باروري",
-      "time": "02:30",
+      "stadium": "ملعب أوربانو كالديرا",
+      "time": "00:00",
       "date": "الخميس 02-04-2026",
-      "current_score": "2 - 1",
+      "current_score": "2 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "بالميراس",
-        "logo": "https://imgs.ysscores.com/teams/128/7971691418711.png"
+        "name": "سانتوس",
+        "logo": "https://imgs.ysscores.com/teams/128/241691418709.png"
       },
       "away": {
-        "name": "غريميو",
-        "logo": "https://imgs.ysscores.com/teams/128/4321691418710.png"
+        "name": "ريمو",
+        "logo": "https://imgs.ysscores.com/teams/128/17673059547919.png"
       }
     },
     "channels": []
@@ -236,6 +212,30 @@
       "away": {
         "name": "فلامينغو",
         "logo": "https://imgs.ysscores.com/teams/128/6861691418710.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5103447",
+    "url": "https://www.ysscores.com/ar/match/5103447/Sociedade-Esportiva-Palmeiras-vs-Grêmio-Foot-Ball-Porto-Alegrense",
+    "info": {
+      "championship": "الدوري البرازيلي",
+      "round": "9 - مباراة الذهاب",
+      "stadium": "استاد أرينا باروري",
+      "time": "02:30",
+      "date": "الخميس 02-04-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "بالميراس",
+        "logo": "https://imgs.ysscores.com/teams/128/7971691418711.png"
+      },
+      "away": {
+        "name": "غريميو",
+        "logo": "https://imgs.ysscores.com/teams/128/4321691418710.png"
       }
     },
     "channels": []
@@ -446,35 +446,6 @@
     ]
   },
   {
-    "id": "76639449",
-    "url": "https://www.ysscores.com/ar/match/76639449/Mosul-SC-vs-Al-Karkh-SC",
-    "info": {
-      "championship": "الدوري العراقي",
-      "round": "26 - مباراة الاياب",
-      "stadium": "استاد دهوك",
-      "time": "16:00",
-      "date": "الجمعة 03-04-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "الموصل",
-        "logo": "https://imgs.ysscores.com/teams/128/17747232332165.png"
-      },
-      "away": {
-        "name": "الكرخ",
-        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "العراقية العامة",
-        "commentator": "حسين سمير"
-      }
-    ]
-  },
-  {
     "id": "44217906",
     "url": "https://www.ysscores.com/ar/match/44217906/Amanat-Baghdad-vs-Zakho-SC",
     "info": {
@@ -500,6 +471,35 @@
       {
         "channel": "العراقية العامة",
         "commentator": "علي لفته"
+      }
+    ]
+  },
+  {
+    "id": "76639449",
+    "url": "https://www.ysscores.com/ar/match/76639449/Mosul-SC-vs-Al-Karkh-SC",
+    "info": {
+      "championship": "الدوري العراقي",
+      "round": "26 - مباراة الاياب",
+      "stadium": "استاد دهوك",
+      "time": "16:00",
+      "date": "الجمعة 03-04-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "الموصل",
+        "logo": "https://imgs.ysscores.com/teams/128/17747232332165.png"
+      },
+      "away": {
+        "name": "الكرخ",
+        "logo": "https://imgs.ysscores.com/teams/128/3891695656397.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "العراقية العامة",
+        "commentator": "حسين سمير"
       }
     ]
   },
@@ -636,30 +636,6 @@
     ]
   },
   {
-    "id": "4946410",
-    "url": "https://www.ysscores.com/ar/match/4946410/Mansoura-SC-vs-WE-Sports-Club",
-    "info": {
-      "championship": "الدوري المصري - القسم الثاني",
-      "round": "28 - مباراة الاياب",
-      "stadium": "استاد المنصورة",
-      "time": "15:00",
-      "date": "الجمعة 03-04-2026",
-      "current_score": "2 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "المنصورة",
-        "logo": "https://imgs.ysscores.com/teams/128/8231728755782.png"
-      },
-      "away": {
-        "name": "وي",
-        "logo": "https://imgs.ysscores.com/teams/128/9521696285165.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "4946411",
     "url": "https://www.ysscores.com/ar/match/4946411/Raya-SC-vs-La-Viena-FC",
     "info": {
@@ -679,6 +655,30 @@
       "away": {
         "name": "لا فينا",
         "logo": "https://imgs.ysscores.com/teams/128/1541696284458.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4946410",
+    "url": "https://www.ysscores.com/ar/match/4946410/Mansoura-SC-vs-WE-Sports-Club",
+    "info": {
+      "championship": "الدوري المصري - القسم الثاني",
+      "round": "28 - مباراة الاياب",
+      "stadium": "استاد المنصورة",
+      "time": "15:00",
+      "date": "الجمعة 03-04-2026",
+      "current_score": "2 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "المنصورة",
+        "logo": "https://imgs.ysscores.com/teams/128/8231728755782.png"
+      },
+      "away": {
+        "name": "وي",
+        "logo": "https://imgs.ysscores.com/teams/128/9521696285165.png"
       }
     },
     "channels": []
@@ -934,73 +934,25 @@
     "channels": []
   },
   {
-    "id": "4825503",
-    "url": "https://www.ysscores.com/ar/match/4825503/Charlton-Athletic-vs-Bristol-City",
+    "id": "4825507",
+    "url": "https://www.ysscores.com/ar/match/4825507/Norwich-City-vs-Portsmouth-FC",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "40 - مباراة الاياب",
-      "stadium": "ذا فالي",
+      "stadium": "كارو رود",
       "time": "16:00",
       "date": "الجمعة 03-04-2026",
-      "current_score": "1 - 2",
+      "current_score": "1 - 1",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "تشارلتون أثلتيك",
-        "logo": "https://imgs.ysscores.com/teams/128/7791690370524.png"
+        "name": "نوريتش سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/5201690370543.png"
       },
       "away": {
-        "name": "بريستول",
-        "logo": "https://imgs.ysscores.com/teams/128/4621690370523.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4825512",
-    "url": "https://www.ysscores.com/ar/match/4825512/Stoke-City-vs-Sheffield-Wednesday",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "40 - مباراة الاياب",
-      "stadium": "بت 365",
-      "time": "16:00",
-      "date": "الجمعة 03-04-2026",
-      "current_score": "2 - 0",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "ستوك سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/6781690388673.png"
-      },
-      "away": {
-        "name": "شيفيلد وينزداي",
-        "logo": "https://imgs.ysscores.com/teams/128/2131690370554.png"
-      }
-    },
-    "channels": []
-  },
-  {
-    "id": "4825509",
-    "url": "https://www.ysscores.com/ar/match/4825509/Queens-Park-Rangers-vs-Watford-FC",
-    "info": {
-      "championship": "دوري الإنجليزية",
-      "round": "40 - مباراة الاياب",
-      "stadium": "لوفتس رود",
-      "time": "16:00",
-      "date": "الجمعة 03-04-2026",
-      "current_score": "2 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "كوينز بارك رينجرز",
-        "logo": "https://imgs.ysscores.com/teams/128/9791690370554.png"
-      },
-      "away": {
-        "name": "واتفورد",
-        "logo": "https://imgs.ysscores.com/teams/128/3341690370541.png"
+        "name": "بورتسموث",
+        "logo": "https://imgs.ysscores.com/teams/128/5401690370525.png"
       }
     },
     "channels": []
@@ -1025,6 +977,30 @@
       "away": {
         "name": "ريكسهام",
         "logo": "https://imgs.ysscores.com/teams/128/2611690377870.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "4825509",
+    "url": "https://www.ysscores.com/ar/match/4825509/Queens-Park-Rangers-vs-Watford-FC",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "40 - مباراة الاياب",
+      "stadium": "لوفتس رود",
+      "time": "16:00",
+      "date": "الجمعة 03-04-2026",
+      "current_score": "2 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "كوينز بارك رينجرز",
+        "logo": "https://imgs.ysscores.com/teams/128/9791690370554.png"
+      },
+      "away": {
+        "name": "واتفورد",
+        "logo": "https://imgs.ysscores.com/teams/128/3341690370541.png"
       }
     },
     "channels": []
@@ -1059,49 +1035,49 @@
     ]
   },
   {
-    "id": "4825507",
-    "url": "https://www.ysscores.com/ar/match/4825507/Norwich-City-vs-Portsmouth-FC",
+    "id": "4825512",
+    "url": "https://www.ysscores.com/ar/match/4825512/Stoke-City-vs-Sheffield-Wednesday",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "40 - مباراة الاياب",
-      "stadium": "كارو رود",
+      "stadium": "بت 365",
       "time": "16:00",
       "date": "الجمعة 03-04-2026",
-      "current_score": "1 - 1",
+      "current_score": "2 - 0",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "نوريتش سيتي",
-        "logo": "https://imgs.ysscores.com/teams/128/5201690370543.png"
+        "name": "ستوك سيتي",
+        "logo": "https://imgs.ysscores.com/teams/128/6781690388673.png"
       },
       "away": {
-        "name": "بورتسموث",
-        "logo": "https://imgs.ysscores.com/teams/128/5401690370525.png"
+        "name": "شيفيلد وينزداي",
+        "logo": "https://imgs.ysscores.com/teams/128/2131690370554.png"
       }
     },
     "channels": []
   },
   {
-    "id": "4825510",
-    "url": "https://www.ysscores.com/ar/match/4825510/Sheffield-United-vs-Swansea-City",
+    "id": "4825503",
+    "url": "https://www.ysscores.com/ar/match/4825503/Charlton-Athletic-vs-Bristol-City",
     "info": {
       "championship": "دوري الإنجليزية",
       "round": "40 - مباراة الاياب",
-      "stadium": "برامول لين",
+      "stadium": "ذا فالي",
       "time": "16:00",
       "date": "الجمعة 03-04-2026",
-      "current_score": "3 - 3",
+      "current_score": "1 - 2",
       "match_status": "إنتهت المباراة"
     },
     "teams": {
       "home": {
-        "name": "شيفيلد",
-        "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
+        "name": "تشارلتون أثلتيك",
+        "logo": "https://imgs.ysscores.com/teams/128/7791690370524.png"
       },
       "away": {
-        "name": "سوانزي",
-        "logo": "https://imgs.ysscores.com/teams/128/4561723590559.png"
+        "name": "بريستول",
+        "logo": "https://imgs.ysscores.com/teams/128/4621690370523.png"
       }
     },
     "channels": []
@@ -1134,6 +1110,30 @@
         "commentator": "محمد بركات"
       }
     ]
+  },
+  {
+    "id": "4825510",
+    "url": "https://www.ysscores.com/ar/match/4825510/Sheffield-United-vs-Swansea-City",
+    "info": {
+      "championship": "دوري الإنجليزية",
+      "round": "40 - مباراة الاياب",
+      "stadium": "برامول لين",
+      "time": "16:00",
+      "date": "الجمعة 03-04-2026",
+      "current_score": "3 - 3",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "شيفيلد",
+        "logo": "https://imgs.ysscores.com/teams/128/5951690118629.png"
+      },
+      "away": {
+        "name": "سوانزي",
+        "logo": "https://imgs.ysscores.com/teams/128/4561723590559.png"
+      }
+    },
+    "channels": []
   },
   {
     "id": "4825505",
@@ -1194,6 +1194,30 @@
     ]
   },
   {
+    "id": "5102071",
+    "url": "https://www.ysscores.com/ar/match/5102071/CA-Talleres-vs-CA-Boca-Juniors",
+    "info": {
+      "championship": "دوري الدرجة الأولى الأرجنتيني",
+      "round": "13 - مباراة الذهاب",
+      "stadium": "استاد ماريو ألبيرتو كيمبس",
+      "time": "01:30",
+      "date": "الخميس 02-04-2026",
+      "current_score": "0 - 1",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "تاليريس",
+        "logo": "https://imgs.ysscores.com/teams/128/2661711809310.png"
+      },
+      "away": {
+        "name": "بوكا جونيورز",
+        "logo": "https://imgs.ysscores.com/teams/128/8341695765777.png"
+      }
+    },
+    "channels": []
+  },
+  {
     "id": "5102064",
     "url": "https://www.ysscores.com/ar/match/5102064/Gimnasia-y-Esgrima-de-Mendoza-vs-CA-Vélez-Sarsfield",
     "info": {
@@ -1242,30 +1266,6 @@
     "channels": []
   },
   {
-    "id": "5102071",
-    "url": "https://www.ysscores.com/ar/match/5102071/CA-Talleres-vs-CA-Boca-Juniors",
-    "info": {
-      "championship": "دوري الدرجة الأولى الأرجنتيني",
-      "round": "13 - مباراة الذهاب",
-      "stadium": "استاد ماريو ألبيرتو كيمبس",
-      "time": "01:30",
-      "date": "الخميس 02-04-2026",
-      "current_score": "0 - 1",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "تاليريس",
-        "logo": "https://imgs.ysscores.com/teams/128/2661711809310.png"
-      },
-      "away": {
-        "name": "بوكا جونيورز",
-        "logo": "https://imgs.ysscores.com/teams/128/8341695765777.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5102070",
     "url": "https://www.ysscores.com/ar/match/5102070/CA-San-Lorenzo-de-Almagro-vs-Club-Estudiantes-de-La-Plata",
     "info": {
@@ -1288,6 +1288,39 @@
       }
     },
     "channels": []
+  },
+  {
+    "id": "45548550",
+    "url": "https://www.ysscores.com/ar/match/45548550/Al-Bukiryah-FC-vs-Abha-Club",
+    "info": {
+      "championship": "دوري الدرجة الأولى السعودي",
+      "round": "27 - مباراة الاياب",
+      "stadium": "ملعب نادي البكيرية",
+      "time": "18:00",
+      "date": "الجمعة 03-04-2026",
+      "current_score": "1 - 2",
+      "match_status": "إنتهت المباراة"
+    },
+    "teams": {
+      "home": {
+        "name": "البكيرية",
+        "logo": "https://imgs.ysscores.com/teams/128/8331719153467.png"
+      },
+      "away": {
+        "name": "أبها",
+        "logo": "https://imgs.ysscores.com/teams/128/9091690299913.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "ثمانية 4",
+        "commentator": "سلطان الحربي"
+      },
+      {
+        "channel": "تطبيق ثمانية",
+        "commentator": "سلطان الحربي"
+      }
+    ]
   },
   {
     "id": "41352584",
@@ -1344,39 +1377,6 @@
       {
         "channel": "تطبيق ثمانية",
         "commentator": "أحمد المنتشري"
-      }
-    ]
-  },
-  {
-    "id": "45548550",
-    "url": "https://www.ysscores.com/ar/match/45548550/Al-Bukiryah-FC-vs-Abha-Club",
-    "info": {
-      "championship": "دوري الدرجة الأولى السعودي",
-      "round": "27 - مباراة الاياب",
-      "stadium": "ملعب نادي البكيرية",
-      "time": "18:00",
-      "date": "الجمعة 03-04-2026",
-      "current_score": "1 - 2",
-      "match_status": "إنتهت المباراة"
-    },
-    "teams": {
-      "home": {
-        "name": "البكيرية",
-        "logo": "https://imgs.ysscores.com/teams/128/8331719153467.png"
-      },
-      "away": {
-        "name": "أبها",
-        "logo": "https://imgs.ysscores.com/teams/128/9091690299913.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "ثمانية 4",
-        "commentator": "سلطان الحربي"
-      },
-      {
-        "channel": "تطبيق ثمانية",
-        "commentator": "سلطان الحربي"
       }
     ]
   },
