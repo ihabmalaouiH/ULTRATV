@@ -58,35 +58,6 @@
     ]
   },
   {
-    "id": "4829561",
-    "url": "https://www.ysscores.com/ar/match/4829561/SC-Freiburg-vs-Bayern-Munich",
-    "info": {
-      "championship": "الدوري الألماني",
-      "round": "28 - مباراة الاياب",
-      "stadium": "يوروبا بارك",
-      "time": "15:30",
-      "date": "السبت 04-04-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "فرايبورج",
-        "logo": "https://imgs.ysscores.com/teams/128/4771690288817.png"
-      },
-      "away": {
-        "name": "بايرن ميونخ",
-        "logo": "https://imgs.ysscores.com/teams/128/2351690288818.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "MBC شاهد | رياضة",
-        "commentator": "أحمد النفيسة"
-      }
-    ]
-  },
-  {
     "id": "4829566",
     "url": "https://www.ysscores.com/ar/match/4829566/SV-Werder-Bremen-vs-RB-Leipzig",
     "info": {
@@ -178,6 +149,35 @@
       {
         "channel": "MBC شاهد | رياضة",
         "commentator": "فهد عريشي"
+      }
+    ]
+  },
+  {
+    "id": "4829561",
+    "url": "https://www.ysscores.com/ar/match/4829561/SC-Freiburg-vs-Bayern-Munich",
+    "info": {
+      "championship": "الدوري الألماني",
+      "round": "28 - مباراة الاياب",
+      "stadium": "يوروبا بارك",
+      "time": "15:30",
+      "date": "السبت 04-04-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "فرايبورج",
+        "logo": "https://imgs.ysscores.com/teams/128/4771690288817.png"
+      },
+      "away": {
+        "name": "بايرن ميونخ",
+        "logo": "https://imgs.ysscores.com/teams/128/2351690288818.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "MBC شاهد | رياضة",
+        "commentator": "أحمد النفيسة"
       }
     ]
   },
@@ -1010,39 +1010,6 @@
     "channels": []
   },
   {
-    "id": "4842561",
-    "url": "https://www.ysscores.com/ar/match/4842561/Genclerbirligi-Ankara-vs-Göztepe",
-    "info": {
-      "championship": "الدوري التركي الممتاز",
-      "round": "28 - مباراة الاياب",
-      "stadium": "استاد إريامان",
-      "time": "13:30",
-      "date": "السبت 04-04-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "غنتشلربيرليغي",
-        "logo": "https://imgs.ysscores.com/teams/128/3881690370508.png"
-      },
-      "away": {
-        "name": "جوزتيبي",
-        "logo": "https://imgs.ysscores.com/teams/128/8741690370493.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "beIN Sports HD 2 TR",
-        "commentator": "غير مدرج"
-      },
-      {
-        "channel": "بي إن سبورت 6",
-        "commentator": "باسم الزير"
-      }
-    ]
-  },
-  {
     "id": "4842566",
     "url": "https://www.ysscores.com/ar/match/4842566/Trabzonspor-vs-Galatasaray",
     "info": {
@@ -1076,12 +1043,12 @@
     ]
   },
   {
-    "id": "4842563",
-    "url": "https://www.ysscores.com/ar/match/4842563/Kasimpasa-vs-Kayserispor",
+    "id": "4842561",
+    "url": "https://www.ysscores.com/ar/match/4842561/Genclerbirligi-Ankara-vs-Göztepe",
     "info": {
       "championship": "الدوري التركي الممتاز",
       "round": "28 - مباراة الاياب",
-      "stadium": "استاد رجب طيب أردوغان",
+      "stadium": "استاد إريامان",
       "time": "13:30",
       "date": "السبت 04-04-2026",
       "current_score": "- : -",
@@ -1089,18 +1056,22 @@
     },
     "teams": {
       "home": {
-        "name": "قاسم باشا",
-        "logo": "https://imgs.ysscores.com/teams/128/8131690127512.png"
+        "name": "غنتشلربيرليغي",
+        "logo": "https://imgs.ysscores.com/teams/128/3881690370508.png"
       },
       "away": {
-        "name": "قيصري سبور",
-        "logo": "https://imgs.ysscores.com/teams/128/5091690128127.png"
+        "name": "جوزتيبي",
+        "logo": "https://imgs.ysscores.com/teams/128/8741690370493.png"
       }
     },
     "channels": [
       {
-        "channel": "beIN Sports HD 3 TR",
+        "channel": "beIN Sports HD 2 TR",
         "commentator": "غير مدرج"
+      },
+      {
+        "channel": "بي إن سبورت 6",
+        "commentator": "باسم الزير"
       }
     ]
   },
@@ -1129,6 +1100,35 @@
     "channels": [
       {
         "channel": "beIN Sports HD 2 TR",
+        "commentator": "غير مدرج"
+      }
+    ]
+  },
+  {
+    "id": "4842563",
+    "url": "https://www.ysscores.com/ar/match/4842563/Kasimpasa-vs-Kayserispor",
+    "info": {
+      "championship": "الدوري التركي الممتاز",
+      "round": "28 - مباراة الاياب",
+      "stadium": "استاد رجب طيب أردوغان",
+      "time": "13:30",
+      "date": "السبت 04-04-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "قاسم باشا",
+        "logo": "https://imgs.ysscores.com/teams/128/8131690127512.png"
+      },
+      "away": {
+        "name": "قيصري سبور",
+        "logo": "https://imgs.ysscores.com/teams/128/5091690128127.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "beIN Sports HD 3 TR",
         "commentator": "غير مدرج"
       }
     ]
@@ -1651,31 +1651,31 @@
     ]
   },
   {
-    "id": "4815488",
-    "url": "https://www.ysscores.com/ar/match/4815488/Ajax-Amsterdam-vs-Twente-Enschede-FC",
+    "id": "4815489",
+    "url": "https://www.ysscores.com/ar/match/4815489/AZ-Alkmaar-vs-Fortuna-Sittard",
     "info": {
       "championship": "الدوري الهولندي الممتاز",
       "round": "29 - مباراة الاياب",
-      "stadium": "يوهان كرويف أرينا",
-      "time": "21:00",
+      "stadium": "آفاس",
+      "time": "18:45",
       "date": "السبت 04-04-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "أياكس أمستردام",
-        "logo": "https://imgs.ysscores.com/teams/128/1361751718344.png"
+        "name": "إي زد آلكمار",
+        "logo": "https://imgs.ysscores.com/teams/128/7771690996316.png"
       },
       "away": {
-        "name": "تفينتي أنشخيده",
-        "logo": "https://imgs.ysscores.com/teams/128/7451690996868.png"
+        "name": "فورتونا سيتارد",
+        "logo": "https://imgs.ysscores.com/teams/128/1881690997103.png"
       }
     },
     "channels": [
       {
-        "channel": "دبي الرياضية 1",
-        "commentator": "عمر الطنيجي"
+        "channel": "دبي الرياضية",
+        "commentator": "رؤوف خليف"
       }
     ]
   },
@@ -1709,31 +1709,31 @@
     ]
   },
   {
-    "id": "4815489",
-    "url": "https://www.ysscores.com/ar/match/4815489/AZ-Alkmaar-vs-Fortuna-Sittard",
+    "id": "4815488",
+    "url": "https://www.ysscores.com/ar/match/4815488/Ajax-Amsterdam-vs-Twente-Enschede-FC",
     "info": {
       "championship": "الدوري الهولندي الممتاز",
       "round": "29 - مباراة الاياب",
-      "stadium": "آفاس",
-      "time": "18:45",
+      "stadium": "يوهان كرويف أرينا",
+      "time": "21:00",
       "date": "السبت 04-04-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "إي زد آلكمار",
-        "logo": "https://imgs.ysscores.com/teams/128/7771690996316.png"
+        "name": "أياكس أمستردام",
+        "logo": "https://imgs.ysscores.com/teams/128/1361751718344.png"
       },
       "away": {
-        "name": "فورتونا سيتارد",
-        "logo": "https://imgs.ysscores.com/teams/128/1881690997103.png"
+        "name": "تفينتي أنشخيده",
+        "logo": "https://imgs.ysscores.com/teams/128/7451690996868.png"
       }
     },
     "channels": [
       {
-        "channel": "دبي الرياضية",
-        "commentator": "رؤوف خليف"
+        "channel": "دبي الرياضية 1",
+        "commentator": "عمر الطنيجي"
       }
     ]
   },
@@ -2272,35 +2272,6 @@
     ]
   },
   {
-    "id": "5231045",
-    "url": "https://www.ysscores.com/ar/match/5231045/Southampton-FC-vs-Arsenal-FC",
-    "info": {
-      "championship": "كأس الاتحاد الإنجليزي",
-      "round": "ربع نهائي",
-      "stadium": "سانت ماري",
-      "time": "21:00",
-      "date": "السبت 04-04-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "ساوثهامبتون",
-        "logo": "https://imgs.ysscores.com/teams/128/3521690370525.png"
-      },
-      "away": {
-        "name": "أرسنال",
-        "logo": "https://imgs.ysscores.com/teams/128/1701690118820.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "بي إن سبورت 2",
-        "commentator": "حسن العيدروس"
-      }
-    ]
-  },
-  {
     "id": "5231047",
     "url": "https://www.ysscores.com/ar/match/5231047/Manchester-City-vs-Liverpool-FC",
     "info": {
@@ -2326,6 +2297,35 @@
       {
         "channel": "بي إن سبورت 1",
         "commentator": "عصام الشوالي"
+      }
+    ]
+  },
+  {
+    "id": "5231045",
+    "url": "https://www.ysscores.com/ar/match/5231045/Southampton-FC-vs-Arsenal-FC",
+    "info": {
+      "championship": "كأس الاتحاد الإنجليزي",
+      "round": "ربع نهائي",
+      "stadium": "سانت ماري",
+      "time": "21:00",
+      "date": "السبت 04-04-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "ساوثهامبتون",
+        "logo": "https://imgs.ysscores.com/teams/128/3521690370525.png"
+      },
+      "away": {
+        "name": "أرسنال",
+        "logo": "https://imgs.ysscores.com/teams/128/1701690118820.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "بي إن سبورت 2",
+        "commentator": "حسن العيدروس"
       }
     ]
   },
