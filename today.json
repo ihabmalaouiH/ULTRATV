@@ -120,6 +120,35 @@
     ]
   },
   {
+    "id": "4829561",
+    "url": "https://www.ysscores.com/ar/match/4829561/SC-Freiburg-vs-Bayern-Munich",
+    "info": {
+      "championship": "الدوري الألماني",
+      "round": "28 - مباراة الاياب",
+      "stadium": "يوروبا بارك",
+      "time": "15:30",
+      "date": "السبت 04-04-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "فرايبورج",
+        "logo": "https://imgs.ysscores.com/teams/128/4771690288817.png"
+      },
+      "away": {
+        "name": "بايرن ميونخ",
+        "logo": "https://imgs.ysscores.com/teams/128/2351690288818.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "MBC شاهد | رياضة",
+        "commentator": "أحمد النفيسة"
+      }
+    ]
+  },
+  {
     "id": "4829564",
     "url": "https://www.ysscores.com/ar/match/4829564/VfB-Stuttgart-vs-Borussia-Dortmund",
     "info": {
@@ -149,35 +178,6 @@
       {
         "channel": "MBC شاهد | رياضة",
         "commentator": "فهد عريشي"
-      }
-    ]
-  },
-  {
-    "id": "4829561",
-    "url": "https://www.ysscores.com/ar/match/4829561/SC-Freiburg-vs-Bayern-Munich",
-    "info": {
-      "championship": "الدوري الألماني",
-      "round": "28 - مباراة الاياب",
-      "stadium": "يوروبا بارك",
-      "time": "15:30",
-      "date": "السبت 04-04-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "فرايبورج",
-        "logo": "https://imgs.ysscores.com/teams/128/4771690288817.png"
-      },
-      "away": {
-        "name": "بايرن ميونخ",
-        "logo": "https://imgs.ysscores.com/teams/128/2351690288818.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "MBC شاهد | رياضة",
-        "commentator": "أحمد النفيسة"
       }
     ]
   },
@@ -601,43 +601,6 @@
     ]
   },
   {
-    "id": "5261242",
-    "url": "https://www.ysscores.com/ar/match/5261242/Shabab-Al-Ahli-Club-vs-Al-Jazira-Club",
-    "info": {
-      "championship": "الدوري الإماراتي للمحترفين",
-      "round": "21 - مباراة الاياب",
-      "stadium": "استاد راشد بالنادي الأهلي",
-      "time": "18:30",
-      "date": "السبت 04-04-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "شباب الأهلي",
-        "logo": "https://imgs.ysscores.com/teams/128/5261690300570.png"
-      },
-      "away": {
-        "name": "الجزيرة",
-        "logo": "https://imgs.ysscores.com/teams/128/4171716154082.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "أبو ظبي الرياضية 1",
-        "commentator": "عامر عبدالله"
-      },
-      {
-        "channel": "الشارقة الرياضية",
-        "commentator": "سالم السالمي"
-      },
-      {
-        "channel": "دبي الرياضية",
-        "commentator": "عبدالحميد الجسمي"
-      }
-    ]
-  },
-  {
     "id": "5261239",
     "url": "https://www.ysscores.com/ar/match/5261239/Al-Bataeh-CSC-vs-Kalba-FC",
     "info": {
@@ -671,6 +634,43 @@
       {
         "channel": "تطبيق مرايا 2",
         "commentator": "موسى عيد"
+      }
+    ]
+  },
+  {
+    "id": "5261242",
+    "url": "https://www.ysscores.com/ar/match/5261242/Shabab-Al-Ahli-Club-vs-Al-Jazira-Club",
+    "info": {
+      "championship": "الدوري الإماراتي للمحترفين",
+      "round": "21 - مباراة الاياب",
+      "stadium": "استاد راشد بالنادي الأهلي",
+      "time": "18:30",
+      "date": "السبت 04-04-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "شباب الأهلي",
+        "logo": "https://imgs.ysscores.com/teams/128/5261690300570.png"
+      },
+      "away": {
+        "name": "الجزيرة",
+        "logo": "https://imgs.ysscores.com/teams/128/4171716154082.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "أبو ظبي الرياضية 1",
+        "commentator": "عامر عبدالله"
+      },
+      {
+        "channel": "الشارقة الرياضية",
+        "commentator": "سالم السالمي"
+      },
+      {
+        "channel": "دبي الرياضية",
+        "commentator": "عبدالحميد الجسمي"
       }
     ]
   },
@@ -856,25 +856,25 @@
     "channels": []
   },
   {
-    "id": "4844405",
-    "url": "https://www.ysscores.com/ar/match/4844405/CD-Nacional-vs-CF-Estrela-Amadora",
+    "id": "4844409",
+    "url": "https://www.ysscores.com/ar/match/4844409/Moreirense-FC-vs-SC-Braga",
     "info": {
       "championship": "الدوري البرتغالي الممتاز",
       "round": "28 - مباراة الاياب",
-      "stadium": "ملعب ماديرا",
-      "time": "16:30",
+      "stadium": "باركي خواكيم دي ألميدا فريتاس",
+      "time": "19:00",
       "date": "السبت 04-04-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "ناسيونال ماديرا",
-        "logo": "https://imgs.ysscores.com/teams/128/8491698965785.png"
+        "name": "موريرنسي",
+        "logo": "https://imgs.ysscores.com/teams/128/7031690386044.png"
       },
       "away": {
-        "name": "إستريلا أمادورا",
-        "logo": "https://imgs.ysscores.com/teams/128/3151690385137.png"
+        "name": "سبورتينغ براغا",
+        "logo": "https://imgs.ysscores.com/teams/128/2631690385875.png"
       }
     },
     "channels": []
@@ -909,25 +909,25 @@
     ]
   },
   {
-    "id": "4844409",
-    "url": "https://www.ysscores.com/ar/match/4844409/Moreirense-FC-vs-SC-Braga",
+    "id": "4844405",
+    "url": "https://www.ysscores.com/ar/match/4844405/CD-Nacional-vs-CF-Estrela-Amadora",
     "info": {
       "championship": "الدوري البرتغالي الممتاز",
       "round": "28 - مباراة الاياب",
-      "stadium": "باركي خواكيم دي ألميدا فريتاس",
-      "time": "19:00",
+      "stadium": "ملعب ماديرا",
+      "time": "16:30",
       "date": "السبت 04-04-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "موريرنسي",
-        "logo": "https://imgs.ysscores.com/teams/128/7031690386044.png"
+        "name": "ناسيونال ماديرا",
+        "logo": "https://imgs.ysscores.com/teams/128/8491698965785.png"
       },
       "away": {
-        "name": "سبورتينغ براغا",
-        "logo": "https://imgs.ysscores.com/teams/128/2631690385875.png"
+        "name": "إستريلا أمادورا",
+        "logo": "https://imgs.ysscores.com/teams/128/3151690385137.png"
       }
     },
     "channels": []
@@ -962,30 +962,6 @@
     ]
   },
   {
-    "id": "5268781",
-    "url": "https://www.ysscores.com/ar/match/5268781/Oud-Heverlee-Leuven-vs-Standard-Liège",
-    "info": {
-      "championship": "الدوري البلجيكي",
-      "round": "1 - مباراة الذهاب",
-      "stadium": "كينغ باور دين دريف",
-      "time": "18:15",
-      "date": "السبت 04-04-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "أوود هيفرلي",
-        "logo": "https://imgs.ysscores.com/teams/128/8831690370492.png"
-      },
-      "away": {
-        "name": "ستاندارد لييج",
-        "logo": "https://imgs.ysscores.com/teams/128/4911690370549.png"
-      }
-    },
-    "channels": []
-  },
-  {
     "id": "5268810",
     "url": "https://www.ysscores.com/ar/match/5268810/Zulte-Waregem-vs-Cercle-Brugge",
     "info": {
@@ -1005,6 +981,30 @@
       "away": {
         "name": "سيركل بروج",
         "logo": "https://imgs.ysscores.com/teams/128/7651716578158.png"
+      }
+    },
+    "channels": []
+  },
+  {
+    "id": "5268781",
+    "url": "https://www.ysscores.com/ar/match/5268781/Oud-Heverlee-Leuven-vs-Standard-Liège",
+    "info": {
+      "championship": "الدوري البلجيكي",
+      "round": "1 - مباراة الذهاب",
+      "stadium": "كينغ باور دين دريف",
+      "time": "18:15",
+      "date": "السبت 04-04-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "أوود هيفرلي",
+        "logo": "https://imgs.ysscores.com/teams/128/8831690370492.png"
+      },
+      "away": {
+        "name": "ستاندارد لييج",
+        "logo": "https://imgs.ysscores.com/teams/128/4911690370549.png"
       }
     },
     "channels": []
@@ -1535,35 +1535,6 @@
     ]
   },
   {
-    "id": "35380943",
-    "url": "https://www.ysscores.com/ar/match/35380943/Modern-Sport-Club-vs-Wadi-Degla-FC",
-    "info": {
-      "championship": "الدوري المصري",
-      "round": "2",
-      "stadium": "استاد القاهرة الدولي",
-      "time": "20:00",
-      "date": "السبت 04-04-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "مودرن سبورت",
-        "logo": "https://imgs.ysscores.com/teams/128/5391724147326.png"
-      },
-      "away": {
-        "name": "وادي دجلة",
-        "logo": "https://imgs.ysscores.com/teams/128/2161728755640.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "On Sport Max",
-        "commentator": "مؤمن حسن"
-      }
-    ]
-  },
-  {
     "id": "76748244",
     "url": "https://www.ysscores.com/ar/match/76748244/Pharco-FC-vs-Ghazl-El-Mahalla",
     "info": {
@@ -1589,6 +1560,35 @@
       {
         "channel": "ON Sport 1",
         "commentator": "محمد الغياتي"
+      }
+    ]
+  },
+  {
+    "id": "35380943",
+    "url": "https://www.ysscores.com/ar/match/35380943/Modern-Sport-Club-vs-Wadi-Degla-FC",
+    "info": {
+      "championship": "الدوري المصري",
+      "round": "2",
+      "stadium": "استاد القاهرة الدولي",
+      "time": "20:00",
+      "date": "السبت 04-04-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "مودرن سبورت",
+        "logo": "https://imgs.ysscores.com/teams/128/5391724147326.png"
+      },
+      "away": {
+        "name": "وادي دجلة",
+        "logo": "https://imgs.ysscores.com/teams/128/2161728755640.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "On Sport Max",
+        "commentator": "مؤمن حسن"
       }
     ]
   },
@@ -1651,6 +1651,35 @@
     ]
   },
   {
+    "id": "4815489",
+    "url": "https://www.ysscores.com/ar/match/4815489/AZ-Alkmaar-vs-Fortuna-Sittard",
+    "info": {
+      "championship": "الدوري الهولندي الممتاز",
+      "round": "29 - مباراة الاياب",
+      "stadium": "آفاس",
+      "time": "18:45",
+      "date": "السبت 04-04-2026",
+      "current_score": "- : -",
+      "match_status": "لم تبدأ"
+    },
+    "teams": {
+      "home": {
+        "name": "إي زد آلكمار",
+        "logo": "https://imgs.ysscores.com/teams/128/7771690996316.png"
+      },
+      "away": {
+        "name": "فورتونا سيتارد",
+        "logo": "https://imgs.ysscores.com/teams/128/1881690997103.png"
+      }
+    },
+    "channels": [
+      {
+        "channel": "دبي الرياضية",
+        "commentator": "رؤوف خليف"
+      }
+    ]
+  },
+  {
     "id": "4815488",
     "url": "https://www.ysscores.com/ar/match/4815488/Ajax-Amsterdam-vs-Twente-Enschede-FC",
     "info": {
@@ -1709,35 +1738,6 @@
     ]
   },
   {
-    "id": "4815489",
-    "url": "https://www.ysscores.com/ar/match/4815489/AZ-Alkmaar-vs-Fortuna-Sittard",
-    "info": {
-      "championship": "الدوري الهولندي الممتاز",
-      "round": "29 - مباراة الاياب",
-      "stadium": "آفاس",
-      "time": "18:45",
-      "date": "السبت 04-04-2026",
-      "current_score": "- : -",
-      "match_status": "لم تبدأ"
-    },
-    "teams": {
-      "home": {
-        "name": "إي زد آلكمار",
-        "logo": "https://imgs.ysscores.com/teams/128/7771690996316.png"
-      },
-      "away": {
-        "name": "فورتونا سيتارد",
-        "logo": "https://imgs.ysscores.com/teams/128/1881690997103.png"
-      }
-    },
-    "channels": [
-      {
-        "channel": "دبي الرياضية",
-        "commentator": "رؤوف خليف"
-      }
-    ]
-  },
-  {
     "id": "4815496",
     "url": "https://www.ysscores.com/ar/match/4815496/SC-Telstar-vs-FC-Groningen",
     "info": {
@@ -1786,25 +1786,25 @@
     "channels": []
   },
   {
-    "id": "5271300",
-    "url": "https://www.ysscores.com/ar/match/5271300/AE-Kifisias-vs-Panserraikos",
+    "id": "5271301",
+    "url": "https://www.ysscores.com/ar/match/5271301/Panetolikos-GFS-vs-Atromitos-Athens",
     "info": {
       "championship": "الدوري اليوناني",
       "round": "1 - مباراة الذهاب",
-      "stadium": "إستاديو ميخاليس كريتيكوبولوس",
-      "time": "15:00",
+      "stadium": "إستاديو بانيتوليكوس",
+      "time": "19:00",
       "date": "السبت 04-04-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "كيفيسياس",
-        "logo": "https://imgs.ysscores.com/teams/128/7671718348243.png"
+        "name": "بانيوليكوس",
+        "logo": "https://imgs.ysscores.com/teams/128/9421739336574.png"
       },
       "away": {
-        "name": "بانسيررايكوس",
-        "logo": "https://imgs.ysscores.com/teams/128/7481754000611.png"
+        "name": "أتروميتوس",
+        "logo": "https://imgs.ysscores.com/teams/128/6741739396654.png"
       }
     },
     "channels": []
@@ -1834,25 +1834,25 @@
     "channels": []
   },
   {
-    "id": "5271301",
-    "url": "https://www.ysscores.com/ar/match/5271301/Panetolikos-GFS-vs-Atromitos-Athens",
+    "id": "5271300",
+    "url": "https://www.ysscores.com/ar/match/5271300/AE-Kifisias-vs-Panserraikos",
     "info": {
       "championship": "الدوري اليوناني",
       "round": "1 - مباراة الذهاب",
-      "stadium": "إستاديو بانيتوليكوس",
-      "time": "19:00",
+      "stadium": "إستاديو ميخاليس كريتيكوبولوس",
+      "time": "15:00",
       "date": "السبت 04-04-2026",
       "current_score": "- : -",
       "match_status": "لم تبدأ"
     },
     "teams": {
       "home": {
-        "name": "بانيوليكوس",
-        "logo": "https://imgs.ysscores.com/teams/128/9421739336574.png"
+        "name": "كيفيسياس",
+        "logo": "https://imgs.ysscores.com/teams/128/7671718348243.png"
       },
       "away": {
-        "name": "أتروميتوس",
-        "logo": "https://imgs.ysscores.com/teams/128/6741739396654.png"
+        "name": "بانسيررايكوس",
+        "logo": "https://imgs.ysscores.com/teams/128/7481754000611.png"
       }
     },
     "channels": []
