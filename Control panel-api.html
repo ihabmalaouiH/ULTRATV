@@ -209,9 +209,9 @@
                         <tr>
                             <th width="40">✔️</th>
                             <th width="70">الحالة</th>
-                            <th>الفريق 1</th>
+                            <th width="70">الفريق 1</th>
                             <th width="70">النتيجة</th>
-                            <th>الفريق 2</th>
+                            <th width="70">الفريق 2</th>
                             <th>الدوري</th>
                             <th width="90">الوقت</th>
                             <th>القناة الناقلة</th>
@@ -252,7 +252,7 @@
 <div id="toast-container"></div>
 
 <script>
-// ⚠️⚠️⚠️ إعدادات Firebase هنا ⚠️⚠️⚠️
+// ⚠️⚠️⚠️ إعدادات Firebase ⚠️⚠️⚠️
 const firebaseConfig = {
   apiKey: "AIzaSyBBf2ock2SHzeLu27oh0rlxwgLmxHINjIk",
   authDomain: "ultra-tv-c23ea.firebaseapp.com",
@@ -263,21 +263,15 @@ const firebaseConfig = {
   measurementId: "G-3GX39BE7C1"
 };
 
-
 // تهيئة Firebase
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const auth = firebase.auth();
 
-// --- Config (Original API kept) ---
-const config = {
-    apiUrl: "https://raw.githubusercontent.com/ihabmalaouiH/ULTRATV/refs/heads/main/today.json"
-};
-
-// --- Xtream Configuration (Fetch from Worker, Gen Link from HTTP) ---
+// --- Xtream Configuration ---
 const xtreamConfig = {
-    fetchUrl: "https://api-ultra.dzandz496.workers.dev", // 🛡️ Worker URL (HTTPS) for fetching list
-    streamHost: "http://api.ultrav.me",                  // 📺 Stream Host (HTTP) for generated links
+    fetchUrl: "https://api-ultra.dzandz496.workers.dev", 
+    streamHost: "http://api.ultrav.me",                  
     username: "AdminX99",       
     password: "PassUltra2026"      
 };
@@ -288,6 +282,28 @@ const statusFilter = document.getElementById("statusFilter");
 const matchesTbody = document.querySelector("#matchesTable tbody");
 const outputTextarea = document.getElementById("output");
 let currentMatchRow = null;
+
+// --- الحصول على تاريخ اليوم الديناميكي (YYYY-MM-DD) ---
+function getTodayDateString() {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
+// --- جدولة التحديث التلقائي عند منتصف الليل ---
+function scheduleMidnightRefresh() {
+    const now = new Date();
+    const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+    const msUntilMidnight = tomorrow - now;
+    
+    setTimeout(() => {
+        showToast("منتصف الليل! جاري تحديث مباريات اليوم الجديد...", "info");
+        fetchMatches();
+        scheduleMidnightRefresh(); // جدولة لليوم التالي
+    }, msUntilMidnight);
+}
 
 // --- Init & Auth ---
 document.addEventListener('DOMContentLoaded', () => {
@@ -319,30 +335,62 @@ function initialize() {
     matchesTbody.addEventListener('change', updateStatsAndJSON);
     matchesTbody.addEventListener('input', updateStatsAndJSON);
     searchInput.addEventListener('input', filterMatches);
-    fetchMatches(); // Default Fetch from API
+    fetchMatches(); 
+    scheduleMidnightRefresh(); // تفعيل مؤقت منتصف الليل
+}
+
+// --- تحديد قنوات beIN المطلوبة تلقائياً ---
+function autoSelectTargetBein() {
+    const rows = matchesTbody.querySelectorAll('tr');
+    let selectedCount = 0;
+
+    rows.forEach(row => {
+        let chInput = row.querySelector(".channel-input");
+        let chSelect = row.querySelector(".channel-select");
+        let channelName = "";
+        
+        if (chInput) channelName = chInput.value.toLowerCase();
+        else if (chSelect) channelName = chSelect.value.toLowerCase();
+
+        if (!channelName) return;
+
+        const isBein = channelName.includes("bein") || channelName.includes("بي ان") || channelName.includes("بي إن");
+        const isTurkish = channelName.includes("tr") || channelName.includes("ترك");
+        
+        // أرقام 1-9، إكسترا، فرنسي، إنجليزي
+        const targetPattern = /(1|2|3|4|5|6|7|8|9|extra|اكسترا|fr|فرنس|en|انجليز|إنجليز)/i;
+
+        if (isBein && targetPattern.test(channelName) && !isTurkish) {
+            const checkbox = row.querySelector("input[type='checkbox']");
+            if (checkbox && !checkbox.checked) {
+                checkbox.checked = true;
+                selectedCount++;
+            }
+        }
+    });
+
+    if (selectedCount > 0) {
+        updateStatsAndJSON();
+        showToast(`تم تحديد ${selectedCount} مباراة لقنوات beIN تلقائياً`, "success");
+    }
 }
 
 // --- Firebase Functions ---
-
 async function saveToFirebase() {
     const val = outputTextarea.value;
     if(!val || val==="[]") return showToast("لا توجد بيانات (JSON فارغ)", "error");
     
-    // تأكيد من المستخدم
     if(!confirm("سيتم حذف المباريات القديمة في Firebase واستبدالها بالقائمة الحالية. هل أنت متأكد؟")) return;
 
     showToast("جاري الحفظ في Firebase...", "info");
     
     try {
         const matches = JSON.parse(val);
-        
-        // 1. حذف المباريات القديمة (Batch Delete)
         const snapshot = await db.collection('matches').get();
         const batchDelete = db.batch();
         snapshot.docs.forEach(doc => batchDelete.delete(doc.ref));
         await batchDelete.commit();
 
-        // 2. إضافة المباريات الجديدة (Loop)
         let count = 0;
         for (const match of matches) {
             await db.collection('matches').add(match);
@@ -357,7 +405,6 @@ async function saveToFirebase() {
 
 async function clearFirebase() {
     if(!confirm("⚠️ تحذير: سيتم مسح جميع المباريات من قاعدة البيانات نهائياً!")) return;
-    
     try {
         const snapshot = await db.collection('matches').get();
         const batch = db.batch();
@@ -382,7 +429,6 @@ async function loadFromFirebase() {
         }
         
         const matches = snapshot.docs.map(doc => doc.data());
-        
         const rows = document.querySelectorAll("#matchesTable tbody tr");
         let restoredCount = 0;
 
@@ -411,12 +457,9 @@ async function loadFromFirebase() {
                 if(commInput) commInput.value = savedMatch.commentator;
 
                 if(savedMatch.servers) {
-                    // تنظيف أسماء السيرفرات عند التحميل (التحويل إلى الصيغة القصيرة)
                     const cleanedServers = savedMatch.servers.map(srv => {
                         const key = Object.keys(srv)[0];
                         const val = Object.values(srv)[0];
-                        
-                        // استخراج ما بداخل الأقواس () إن وجد، وإلا إبقاء الاسم كما هو
                         const match = key.match(/\(([^)]+)\)$/);
                         const newName = match ? match[1] : key; 
                         
@@ -426,7 +469,6 @@ async function loadFromFirebase() {
                     });
 
                     row.dataset.servers = JSON.stringify(cleanedServers);
-                    
                     const badge = row.querySelector(".server-count-badge");
                     if(badge) {
                         badge.innerText = cleanedServers.length;
@@ -443,7 +485,6 @@ async function loadFromFirebase() {
     }
 }
 
-// --- Helper: Parse Arabic Date (FIXED to keep original time) ---
 function parseArabicMatchTime(dateStr, timeStr) {
     try {
         const dateParts = dateStr.match(/(\d{2})-(\d{2})-(\d{4})/);
@@ -457,11 +498,10 @@ function parseArabicMatchTime(dateStr, timeStr) {
                           .trim();
         
         const isPM = time.toUpperCase().includes('PM');
-        
         let timeRaw = time.replace(/PM|AM/gi, '').trim();
         let [hoursStr, minutes] = timeRaw.split(':');
         
-        let hours = parseInt(hoursStr, 9);
+        let hours = parseInt(hoursStr, 10);
             
         if (isPM && hours < 12) hours += 12;
         if (!isPM && hours === 12) hours = 0;
@@ -474,35 +514,46 @@ function parseArabicMatchTime(dateStr, timeStr) {
     }
 }
 
-// --- Main Fetch Logic (FIXED) ---
+// --- جلب البيانات مع الرابط الجديد الديناميكي ---
 async function fetchMatches() {
-    matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">⏳ جاري جلب البيانات...</td></tr>`;
+    matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">⏳ جاري جلب البيانات من ysscores...</td></tr>`;
     try {
-        const res = await fetch(`${config.apiUrl}?t=${new Date().getTime()}`);
+        // تجهيز الرابط الجديد مع تاريخ اليوم
+        const todayStr = getTodayDateString();
+        const apiUrl = `https://api-ar.ysscores.com/api/matches/matches_date_get/${todayStr}/%5B%5D/%5B%5D/%5B%228634%22%5D/L/60`;
+
+        const res = await fetch(apiUrl);
         if (!res.ok) throw new Error(`HTTP Error: ${res.status}`);
-        const allMatches = await res.json(); 
+        
+        let allMatches = await res.json(); 
+        
+        // التحقق من بنية ysscores إذا كانت مصفوفة داخل كائن (مثل data)
+        if (allMatches.data && Array.isArray(allMatches.data)) {
+            allMatches = allMatches.data;
+        }
 
         if (!Array.isArray(allMatches) || allMatches.length === 0) {
-            return matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">لا توجد مباريات.</td></tr>`;
+            return matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">لا توجد مباريات لهذا اليوم.</td></tr>`;
         }
 
         allMatches.forEach(m => {
-            // استخدام الوقت الأصلي دائماً بغض النظر عن الحالة
             const dateObj = parseArabicMatchTime(m.info.date, m.info.time);
             m._timestamp = dateObj ? dateObj.getTime() : 0;
         });
 
         allMatches.sort((a, b) => a._timestamp - b._timestamp);
         renderMatches(allMatches);
-        showToast(`تم تحميل ${allMatches.length} مباراة`, 'success');
+        showToast(`تم تحميل ${allMatches.length} مباراة ليوم ${todayStr}`, 'success');
+
+        // استدعاء التحديد التلقائي لقنوات بي ان المطلوبة بعد جلب البيانات
+        autoSelectTargetBein();
 
     } catch (err) {
-        matchesTbody.innerHTML = `<tr><td colspan="10" style="color:var(--danger)">⚠️ خطأ: ${err.message}</td></tr>`;
+        matchesTbody.innerHTML = `<tr><td colspan="10" style="color:var(--danger)">⚠️ خطأ في الاتصال بالـ API: ${err.message}</td></tr>`;
         showToast("فشل الاتصال", 'error');
     }
 }
 
-// --- Helper to format channel names ---
 function formatChannelName(name) {
     if (!name) return name;
     let formatted = name;
@@ -516,7 +567,6 @@ function formatChannelName(name) {
     return formatted.replace(/\s+/g, ' ').trim();
 }
 
-// --- Render Table (FIXED Half Time Bug) ---
 function renderMatches(matches) {
     matchesTbody.innerHTML = "";
     
@@ -525,19 +575,16 @@ function renderMatches(matches) {
         const team2 = match.teams.away;
         const info = match.info;
         
-        // حساب وقت البداية بناءً على الوقت الأصلي الذي تم تحليله
         const startTime = Math.floor(match._timestamp / 1000);
         const matchDate = new Date(match._timestamp);
         const timeStr = matchDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
 
-        // --- STATUS LOGIC (FIXED) ---
         let rawStatus = info.match_status || "لم تبدأ";
         let apiScore = info.current_score || "VS";
 
         let statusBadgeClass = "status-upcoming";
         let jsonStatus = "Not Started";
 
-        // ✅ إصلاح مشكلة بين الشوطين (تجاهل كلمة "شوط" عند فحص الانتهاء)
         const isFinished = (rawStatus.includes("انتهت") || rawStatus.includes("إنتهت") || rawStatus.includes("نهاية")) 
                            && !rawStatus.includes("شوط") && !rawStatus.includes("استراحة");
 
@@ -711,7 +758,7 @@ function filterMatches() {
 function updateStatsAndJSON() {
     const allRows = matchesTbody.querySelectorAll('tr');
     const selectedRows = matchesTbody.querySelectorAll("input[type='checkbox']:checked");
-      
+        
     document.getElementById("statTotal").innerText = allRows.length;
     document.getElementById("statSelected").innerText = selectedRows.length;
     document.getElementById("statLive").innerText = Array.from(allRows).filter(r => r.dataset.jsonStatus === "Live").length;
@@ -789,7 +836,6 @@ function processBulkInput() {
     input.value = ""; input.parentElement.style.display = "none";
 }
 
-// --- NEW FUNCTION: Auto Fill From Xtream ---
 async function autoFillFromXtream() {
     const allRows = matchesTbody.querySelectorAll('tr');
     if(allRows.length === 0) return showToast("لا توجد مباريات في الجدول", "error");
@@ -797,7 +843,6 @@ async function autoFillFromXtream() {
     showToast("جاري الاتصال بسيرفر Xtream...", "info");
 
     try {
-        // 1. Fetch List (From HTTPS Worker)
         const api = `${xtreamConfig.fetchUrl}/player_api.php?username=${xtreamConfig.username}&password=${xtreamConfig.password}&action=get_live_streams`;
         const res = await fetch(api);
         
@@ -821,13 +866,10 @@ async function autoFillFromXtream() {
             
             if(!channelName || channelName === "غير معروف") return;
 
-            // ⚠️ 1. Restrict to "beIN Sport" only
             if (!channelName.toLowerCase().includes("bein sport")) return;
 
-            // Normalize: Remove special chars, spaces, lowercase for matching
             const cleanName = channelName.toLowerCase().replace(/[^a-z0-9]/g, '');
             
-            // Filter channels
             const matchedChannels = channelsData.filter(ch => {
                 const chStreamName = ch.name.toLowerCase().replace(/[^a-z0-9]/g, '');
                 return chStreamName.includes(cleanName);
@@ -837,7 +879,6 @@ async function autoFillFromXtream() {
                 const servers = [];
                 const qualityPriority = ['4k', 'fhd', 'hevc', 'hd', 'sd', 'low'];
                 
-                // Sort Priority
                 matchedChannels.sort((a, b) => {
                     const nameA = a.name.toLowerCase();
                     const nameB = b.name.toLowerCase();
@@ -852,19 +893,17 @@ async function autoFillFromXtream() {
                     const lowName = ch.name.toLowerCase();
                     let label = null;
 
-                    // ⚠️ 2. Filter Qualities Only (Strict)
                     if(lowName.includes("4k")) label = "4K";
                     else if(lowName.includes("fhd")) label = "FHD";
                     else if(lowName.includes("hd")) label = "HD";
                     else if(lowName.includes("sd")) label = "SD";
                     else if(lowName.includes("low")) label = "LOW";
 
-                    if (!label) return; // Skip if quality not found
+                    if (!label) return; 
 
-                    // ⚠️ 3. Construct URL (Using HTTP Host + .m3u8)
-                    const streamUrl = `${xtreamConfig.streamHost}/live/${xtreamConfig.username}/${xtreamConfig.password}/${ch.stream_id}.m3u8`;
+                    // الصيغة المباشرة بناءً على تعليماتك: host/user/password/id
+                    const streamUrl = `${xtreamConfig.streamHost}/${xtreamConfig.username}/${xtreamConfig.password}/${ch.stream_id}`;
                     
-                    // ⚠️ 4. Server Name = Label Only
                     const obj = {};
                     obj[label] = streamUrl; 
                     servers.push(obj);
@@ -877,8 +916,6 @@ async function autoFillFromXtream() {
                     badge.innerText = servers.length;
                     badge.style.display = "inline-block";
                     
-                    // ⚠️ 5. Removed Auto-Check
-                    // row.querySelector("input[type='checkbox']").checked = true; // DELETED
                     filledCount++;
                 }
             }
