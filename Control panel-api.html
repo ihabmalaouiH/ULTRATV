@@ -482,20 +482,35 @@ async function loadFromFirebase() {
     }
 }
 
-// --- جلب البيانات مع الرابط الجديد الديناميكي + حل مشكلة CORS ---
+// --- جلب البيانات بنظام (Fallback) لضمان تجاوز حماية CORS ---
 async function fetchMatches() {
     matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">⏳ جاري جلب البيانات من ysscores...</td></tr>`;
     try {
         const todayStr = getTodayDateString();
         const targetUrl = `https://api-ar.ysscores.com/api/matches/matches_date_get/${todayStr}/%5B%5D/%5B%5D/%5B%228634%22%5D/L/60`;
         
-        // استخدام بروكسي لتخطي مشكلة CORS (Failed to fetch)
-        const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`;
+        let responseData = null;
 
-        const res = await fetch(proxyUrl);
-        if (!res.ok) throw new Error(`HTTP Error: ${res.status}`);
-        
-        let responseData = await res.json(); 
+        try {
+            // المحاولة الأولى: جلب مباشر (إذا كان السيرفر يسمح)
+            const resDirect = await fetch(targetUrl);
+            if (!resDirect.ok) throw new Error("Direct fetch failed");
+            responseData = await resDirect.json();
+        } catch (e1) {
+            console.log("Direct fetch blocked by CORS, using secure proxy...");
+            // المحاولة الثانية: جلب عبر بروكسي مضمون (AllOrigins GET method) يتجاوز أي حماية
+            const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(targetUrl)}`;
+            const resProxy = await fetch(proxyUrl);
+            
+            if (!resProxy.ok) throw new Error("فشل الاتصال حتى باستخدام البروكسي");
+            
+            const proxyData = await resProxy.json();
+            if (!proxyData.contents) throw new Error("السيرفر لم يرجع أي بيانات");
+            
+            // تحويل النص (String) المرتجع من البروكسي إلى كائن JSON
+            responseData = JSON.parse(proxyData.contents);
+        }
+
         let allMatches = responseData.data || [];
 
         if (allMatches.length === 0) {
@@ -513,7 +528,7 @@ async function fetchMatches() {
 
     } catch (err) {
         matchesTbody.innerHTML = `<tr><td colspan="10" style="color:var(--danger)">⚠️ خطأ في الاتصال بالـ API: ${err.message}</td></tr>`;
-        showToast("فشل الاتصال", 'error');
+        showToast("فشل الاتصال نهائياً، تأكد من اتصالك بالإنترنت", 'error');
     }
 }
 
@@ -873,7 +888,6 @@ async function autoFillFromXtream() {
 
                     if (!label) return; 
 
-                    // تم تطبيق الصيغة المباشرة بناءً على تعليماتك: host/user/password/id
                     const streamUrl = `${xtreamConfig.streamHost}/${xtreamConfig.username}/${xtreamConfig.password}/${ch.stream_id}`;
                     
                     const obj = {};
