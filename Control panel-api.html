@@ -267,6 +267,9 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const auth = firebase.auth();
 
+// ⚠️ رابط البروكسي الخاص بك ⚠️
+const MY_PROXY = "https://ys-proxy.dzandz496.workers.dev/?url=";
+
 // --- Xtream Configuration ---
 const xtreamConfig = {
     fetchUrl: "https://api-ultra.dzandz496.workers.dev", 
@@ -281,27 +284,6 @@ const statusFilter = document.getElementById("statusFilter");
 const matchesTbody = document.querySelector("#matchesTable tbody");
 const outputTextarea = document.getElementById("output");
 let currentMatchRow = null;
-
-// دالة جلب البيانات مع تخطي حماية (CORS) عبر خوادم وسيطة
-async function fetchSecure(url) {
-    const proxies = [
-        `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
-        `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`
-    ];
-    
-    let lastError;
-    for (let proxy of proxies) {
-        try {
-            const res = await fetch(proxy);
-            if (res.ok) {
-                return await res.json();
-            }
-        } catch (err) {
-            lastError = err;
-        }
-    }
-    throw new Error("فشلت جميع محاولات الاتصال بالسيرفر بسبب الحماية.");
-}
 
 function getTodayDateString() {
     const now = new Date();
@@ -355,7 +337,7 @@ function initialize() {
     scheduleMidnightRefresh(); 
 }
 
-// التحديد التلقائي لصف واحد
+// التحديد التلقائي لقنوات beIN
 function autoSelectRowBein(row) {
     let chInput = row.querySelector(".channel-input");
     let chSelect = row.querySelector(".channel-select");
@@ -486,14 +468,17 @@ async function loadFromFirebase() {
     }
 }
 
-// جلب المباريات باستخدام بروكسي آمن
+// --- جلب المباريات باستخدام البروكسي الخاص بك ---
 async function fetchMatches() {
     matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">⏳ جاري جلب البيانات من ysscores...</td></tr>`;
     try {
         const todayStr = getTodayDateString();
         const targetUrl = `https://api-ar.ysscores.com/api/matches/matches_date_get/${todayStr}/%5B%5D/%5B%5D/%5B%228634%22%5D/L/60`;
         
-        let responseData = await fetchSecure(targetUrl);
+        const res = await fetch(MY_PROXY + encodeURIComponent(targetUrl));
+        if (!res.ok) throw new Error("فشل الاتصال بالسيرفر");
+        
+        let responseData = await res.json(); 
         let allMatches = responseData.data || [];
 
         if (allMatches.length === 0) {
@@ -567,7 +552,7 @@ function renderMatches(matches) {
         tr.dataset.team2Name = team2Name;
         tr.dataset.team2Logo = team2Logo;
         tr.dataset.league = league;
-        tr.dataset.startTime = match.match_timestamp; // حفظه كمرجع
+        tr.dataset.startTime = match.match_timestamp; 
         tr.dataset.jsonStatus = jsonStatus;
         tr.dataset.score = (apiScore === "VS") ? "" : apiScore;
         tr.dataset.servers = "[]"; 
@@ -598,11 +583,14 @@ function renderMatches(matches) {
     filterMatches();
 }
 
-// دالة جلب تفاصيل المباراة للحصول على القنوات والمعلقين
+// دالة جلب تفاصيل المباراة للحصول على القنوات والمعلقين باستخدام البروكسي
 async function fetchMatchDetails(matchId, tr) {
     try {
-        const url = `https://api-ar.ysscores.com/api/matches/match_info/${matchId}/L/60`;
-        const responseData = await fetchSecure(url);
+        const targetUrl = `https://api-ar.ysscores.com/api/matches/match_info/${matchId}/L/60`;
+        const res = await fetch(MY_PROXY + encodeURIComponent(targetUrl));
+        
+        if (!res.ok) throw new Error("Error");
+        const responseData = await res.json();
         
         const matchData = responseData.data;
         const channelsData = matchData.channel_commm || [];
@@ -630,7 +618,7 @@ async function fetchMatchDetails(matchId, tr) {
             commCell.innerHTML = `<input type="text" value="" placeholder="المعلق" class="comm-input">`;
         }
 
-        // تحديد المباراة تلقائياً إذا كانت على قنوات beIN الهدف
+        // تحديد المباراة تلقائياً إذا كانت على قنوات beIN
         autoSelectRowBein(tr);
         updateStatsAndJSON();
 
