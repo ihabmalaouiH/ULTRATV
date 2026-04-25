@@ -105,6 +105,7 @@
   .channel-input, .comm-input { width: 100%; min-width: 140px; height: 32px; font-size: 12px; text-align: center; }
   .channel-input { color: #4ade80; font-weight: bold; }
   .comm-input { color: #cbd5e1; }
+  .loading-ch { color: var(--warning); font-size: 11px; animation: pulse 1s infinite; }
     
   .output-area { position: sticky; top: 20px; }
   textarea#output { width: 100%; height: 400px; font-family: monospace; line-height: 1.5; color: #a5b4fc; resize: vertical; padding: 10px; }
@@ -139,7 +140,6 @@
   @keyframes fadeOut { to { opacity: 0; transform: translateY(10px); } }
   @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.6; } 100% { opacity: 1; } }
 
-  /* --- التجاوب --- */
   @media (max-width: 992px) {
     .dashboard-grid { grid-template-columns: 1fr; }
     .output-area { position: static; height: auto; }
@@ -282,7 +282,27 @@ const matchesTbody = document.querySelector("#matchesTable tbody");
 const outputTextarea = document.getElementById("output");
 let currentMatchRow = null;
 
-// --- الحصول على تاريخ اليوم الديناميكي (YYYY-MM-DD) ---
+// دالة جلب البيانات مع تخطي حماية (CORS) عبر خوادم وسيطة
+async function fetchSecure(url) {
+    const proxies = [
+        `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
+        `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`
+    ];
+    
+    let lastError;
+    for (let proxy of proxies) {
+        try {
+            const res = await fetch(proxy);
+            if (res.ok) {
+                return await res.json();
+            }
+        } catch (err) {
+            lastError = err;
+        }
+    }
+    throw new Error("فشلت جميع محاولات الاتصال بالسيرفر بسبب الحماية.");
+}
+
 function getTodayDateString() {
     const now = new Date();
     const year = now.getFullYear();
@@ -291,12 +311,10 @@ function getTodayDateString() {
     return `${year}-${month}-${day}`;
 }
 
-// --- جدولة التحديث التلقائي عند منتصف الليل ---
 function scheduleMidnightRefresh() {
     const now = new Date();
     const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
     const msUntilMidnight = tomorrow - now;
-    
     setTimeout(() => {
         showToast("منتصف الليل! جاري تحديث مباريات اليوم الجديد...", "info");
         fetchMatches();
@@ -304,7 +322,6 @@ function scheduleMidnightRefresh() {
     }, msUntilMidnight);
 }
 
-// --- Init & Auth ---
 document.addEventListener('DOMContentLoaded', () => {
     const loginOverlay = document.getElementById('login-overlay');
     const mainDashboard = document.getElementById('main-dashboard');
@@ -338,37 +355,26 @@ function initialize() {
     scheduleMidnightRefresh(); 
 }
 
-function autoSelectTargetBein() {
-    const rows = matchesTbody.querySelectorAll('tr');
-    let selectedCount = 0;
+// التحديد التلقائي لصف واحد
+function autoSelectRowBein(row) {
+    let chInput = row.querySelector(".channel-input");
+    let chSelect = row.querySelector(".channel-select");
+    let channelName = "";
+    
+    if (chInput) channelName = chInput.value.toLowerCase();
+    else if (chSelect) channelName = chSelect.value.toLowerCase();
 
-    rows.forEach(row => {
-        let chInput = row.querySelector(".channel-input");
-        let chSelect = row.querySelector(".channel-select");
-        let channelName = "";
-        
-        if (chInput) channelName = chInput.value.toLowerCase();
-        else if (chSelect) channelName = chSelect.value.toLowerCase();
+    if (!channelName) return;
 
-        if (!channelName) return;
+    const isBein = channelName.includes("bein") || channelName.includes("بي ان") || channelName.includes("بي إن");
+    const isTurkish = channelName.includes("tr") || channelName.includes("ترك");
+    const targetPattern = /(1|2|3|4|5|6|7|8|9|extra|اكسترا|fr|فرنس|en|انجليز|إنجليز)/i;
 
-        const isBein = channelName.includes("bein") || channelName.includes("بي ان") || channelName.includes("بي إن");
-        const isTurkish = channelName.includes("tr") || channelName.includes("ترك");
-        
-        const targetPattern = /(1|2|3|4|5|6|7|8|9|extra|اكسترا|fr|فرنس|en|انجليز|إنجليز)/i;
-
-        if (isBein && targetPattern.test(channelName) && !isTurkish) {
-            const checkbox = row.querySelector("input[type='checkbox']");
-            if (checkbox && !checkbox.checked) {
-                checkbox.checked = true;
-                selectedCount++;
-            }
+    if (isBein && targetPattern.test(channelName) && !isTurkish) {
+        const checkbox = row.querySelector("input[type='checkbox']");
+        if (checkbox && !checkbox.checked) {
+            checkbox.checked = true;
         }
-    });
-
-    if (selectedCount > 0) {
-        updateStatsAndJSON();
-        showToast(`تم تحديد ${selectedCount} مباراة لقنوات beIN تلقائياً`, "success");
     }
 }
 
@@ -376,7 +382,6 @@ function autoSelectTargetBein() {
 async function saveToFirebase() {
     const val = outputTextarea.value;
     if(!val || val==="[]") return showToast("لا توجد بيانات (JSON فارغ)", "error");
-    
     if(!confirm("سيتم حذف المباريات القديمة في Firebase واستبدالها بالقائمة الحالية. هل أنت متأكد؟")) return;
 
     showToast("جاري الحفظ في Firebase...", "info");
@@ -393,7 +398,6 @@ async function saveToFirebase() {
             await db.collection('matches').add(match);
             count++;
         }
-
         showToast(`✅ تم نشر ${count} مباراة بنجاح!`, "success");
     } catch (e) {
         showToast("❌ خطأ أثناء الحفظ: " + e.message, "error");
@@ -482,53 +486,27 @@ async function loadFromFirebase() {
     }
 }
 
-// --- جلب البيانات بنظام (Fallback) لضمان تجاوز حماية CORS ---
+// جلب المباريات باستخدام بروكسي آمن
 async function fetchMatches() {
     matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">⏳ جاري جلب البيانات من ysscores...</td></tr>`;
     try {
         const todayStr = getTodayDateString();
         const targetUrl = `https://api-ar.ysscores.com/api/matches/matches_date_get/${todayStr}/%5B%5D/%5B%5D/%5B%228634%22%5D/L/60`;
         
-        let responseData = null;
-
-        try {
-            // المحاولة الأولى: جلب مباشر (إذا كان السيرفر يسمح)
-            const resDirect = await fetch(targetUrl);
-            if (!resDirect.ok) throw new Error("Direct fetch failed");
-            responseData = await resDirect.json();
-        } catch (e1) {
-            console.log("Direct fetch blocked by CORS, using secure proxy...");
-            // المحاولة الثانية: جلب عبر بروكسي مضمون (AllOrigins GET method) يتجاوز أي حماية
-            const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(targetUrl)}`;
-            const resProxy = await fetch(proxyUrl);
-            
-            if (!resProxy.ok) throw new Error("فشل الاتصال حتى باستخدام البروكسي");
-            
-            const proxyData = await resProxy.json();
-            if (!proxyData.contents) throw new Error("السيرفر لم يرجع أي بيانات");
-            
-            // تحويل النص (String) المرتجع من البروكسي إلى كائن JSON
-            responseData = JSON.parse(proxyData.contents);
-        }
-
+        let responseData = await fetchSecure(targetUrl);
         let allMatches = responseData.data || [];
 
         if (allMatches.length === 0) {
             return matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">لا توجد مباريات لهذا اليوم.</td></tr>`;
         }
 
-        // الترتيب باستخدام match_timestamp الجاهز من الـ API
         allMatches.sort((a, b) => a.match_timestamp - b.match_timestamp);
-        
         renderMatches(allMatches);
         showToast(`تم تحميل ${allMatches.length} مباراة ليوم ${todayStr}`, 'success');
 
-        // استدعاء التحديد التلقائي لقنوات بي ان المطلوبة بعد جلب البيانات
-        autoSelectTargetBein();
-
     } catch (err) {
         matchesTbody.innerHTML = `<tr><td colspan="10" style="color:var(--danger)">⚠️ خطأ في الاتصال بالـ API: ${err.message}</td></tr>`;
-        showToast("فشل الاتصال نهائياً، تأكد من اتصالك بالإنترنت", 'error');
+        showToast("فشل الاتصال", 'error');
     }
 }
 
@@ -545,11 +523,9 @@ function formatChannelName(name) {
     return formatted.replace(/\s+/g, ' ').trim();
 }
 
-// --- عرض المباريات في الجدول مع ضبط دقيق للحالة والنتيجة والوقت ---
+// عرض الجدول واستخراج الوقت الأصلي كما هو بدون تحويل
 function renderMatches(matches) {
     matchesTbody.innerHTML = "";
-    
-    // رابط السيرفر الأساسي لصور الفرق والبطولات
     const imgBaseUrl = "https://admin.ysscores.com/uploads/teams/"; 
 
     matches.forEach(match => {
@@ -561,18 +537,15 @@ function renderMatches(matches) {
         
         const league = match.championship.title;
         
-        // تحويل Timestamp إلى وقت محلي
-        const startTimeMs = match.match_timestamp * 1000;
-        const matchDate = new Date(startTimeMs);
-        const timeStr = matchDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+        // استخراج الوقت الأصلي المباشر القادم من الـ API (مثل "17:15:00" نحولها لـ "17:15")
+        const timeStr = match.match_time ? match.match_time.substring(0, 5) : "00:00";
 
-        // --- منطق الحالة والنتيجة الدقيق بناءً على الـ API ---
+        // منطق الحالة بدقة استناداً لـ API
         let statusBadgeClass = "status-upcoming";
         let jsonStatus = "Not Started";
         let rawStatus = "لم تبدأ";
         let apiScore = "VS";
 
-        // رقم 4، 5 أو -1 في الـ APIs الرياضية يرمز لانتهت. ورقم 1 يرمز لمباشر
         if (match.status === 4 || match.status === 5 || match.status === -1) {
             statusBadgeClass = "status-finished";
             jsonStatus = "Finished";
@@ -587,38 +560,14 @@ function renderMatches(matches) {
 
         const defaultLogo = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z'/%3E%3C/svg%3E";
 
-        let channelCellHTML = '';
-        let commCellHTML = '';
-        const channelsData = match.channel_commm || [];
-        
-        if (channelsData.length > 1) {
-            let options = channelsData.map(ch => {
-                let displayChannel = formatChannelName(ch.channel_name || "غير معروف");
-                return `<option value="${displayChannel}" data-commentator="${ch.comm_name || ''}">${displayChannel}</option>`;
-            }).join('');
-            
-            channelCellHTML = `
-                <select class="channel-select" onchange="updateRowCommentator(this)">
-                    ${options}
-                </select>
-            `;
-            commCellHTML = `<input type="text" value="${channelsData[0].comm_name || ''}" class="comm-input">`;
-            
-        } else {
-            let chName = (channelsData.length > 0) ? formatChannelName(channelsData[0].channel_name) : "غير معروف";
-            let commName = (channelsData.length > 0) ? (channelsData[0].comm_name || "") : "";
-            
-            channelCellHTML = `<input type="text" value="${chName}" class="channel-input">`;
-            commCellHTML = `<input type="text" value="${commName}" placeholder="المعلق" class="comm-input">`;
-        }
-
         const tr = document.createElement("tr");
+        tr.dataset.matchId = match.match_id;
         tr.dataset.team1Name = team1Name;
         tr.dataset.team1Logo = team1Logo;
         tr.dataset.team2Name = team2Name;
         tr.dataset.team2Logo = team2Logo;
         tr.dataset.league = league;
-        tr.dataset.startTime = Math.floor(startTimeMs / 1000);
+        tr.dataset.startTime = match.match_timestamp; // حفظه كمرجع
         tr.dataset.jsonStatus = jsonStatus;
         tr.dataset.score = (apiScore === "VS") ? "" : apiScore;
         tr.dataset.servers = "[]"; 
@@ -630,9 +579,9 @@ function renderMatches(matches) {
             <td style="font-weight:bold; letter-spacing:2px; font-family:monospace;">${apiScore}</td>
             <td style="text-align:right">${team2Name} <img src="${team2Logo}" class="team-logo" referrerpolicy="no-referrer" onerror="this.src='${defaultLogo}'"></td>
             <td style="font-size:12px; color:#94a3b8">${league}</td>
-            <td dir="ltr" style="font-family:monospace; color:#fbbf24; white-space:nowrap;">${timeStr}</td>
-            <td>${channelCellHTML}</td>
-            <td>${commCellHTML}</td>
+            <td dir="ltr" style="font-family:monospace; color:#fbbf24; white-space:nowrap; font-size:14px;">${timeStr}</td>
+            <td class="channel-td"><span class="loading-ch">جاري الجلب...</span></td>
+            <td class="comm-td"><span class="loading-ch">...</span></td>
             <td>
                 <button onclick="openServerModal(this)" style="padding:4px 8px;" class="btn-github">
                     <span class="server-count-badge">0</span> 📡
@@ -640,10 +589,55 @@ function renderMatches(matches) {
             </td>
         `;
         matchesTbody.appendChild(tr);
+
+        // تشغيل جلب تفاصيل القناة والمعلق بشكل متزامن لهذه المباراة
+        fetchMatchDetails(match.match_id, tr);
     });
     
     updateStatsAndJSON();
     filterMatches();
+}
+
+// دالة جلب تفاصيل المباراة للحصول على القنوات والمعلقين
+async function fetchMatchDetails(matchId, tr) {
+    try {
+        const url = `https://api-ar.ysscores.com/api/matches/match_info/${matchId}/L/60`;
+        const responseData = await fetchSecure(url);
+        
+        const matchData = responseData.data;
+        const channelsData = matchData.channel_commm || [];
+        
+        let channelCell = tr.querySelector('.channel-td');
+        let commCell = tr.querySelector('.comm-td');
+        
+        if (channelsData.length > 1) {
+            let options = channelsData.map(ch => {
+                let displayChannel = formatChannelName(ch.channel_name || "غير معروف");
+                return `<option value="${displayChannel}" data-commentator="${ch.commentator_name || ''}">${displayChannel}</option>`;
+            }).join('');
+            
+            channelCell.innerHTML = `<select class="channel-select" onchange="updateRowCommentator(this)">${options}</select>`;
+            commCell.innerHTML = `<input type="text" value="${channelsData[0].commentator_name || ''}" class="comm-input">`;
+            
+        } else if (channelsData.length === 1) {
+            let chName = formatChannelName(channelsData[0].channel_name);
+            let commName = channelsData[0].commentator_name || "";
+            
+            channelCell.innerHTML = `<input type="text" value="${chName}" class="channel-input">`;
+            commCell.innerHTML = `<input type="text" value="${commName}" placeholder="المعلق" class="comm-input">`;
+        } else {
+            channelCell.innerHTML = `<input type="text" value="غير معروف" class="channel-input">`;
+            commCell.innerHTML = `<input type="text" value="" placeholder="المعلق" class="comm-input">`;
+        }
+
+        // تحديد المباراة تلقائياً إذا كانت على قنوات beIN الهدف
+        autoSelectRowBein(tr);
+        updateStatsAndJSON();
+
+    } catch (e) {
+        tr.querySelector('.channel-td').innerHTML = `<input type="text" value="خطأ بالاتصال" class="channel-input" style="color:var(--danger)">`;
+        tr.querySelector('.comm-td').innerHTML = `<input type="text" value="" class="comm-input">`;
+    }
 }
 
 function updateRowCommentator(selectElement) {
@@ -833,11 +827,10 @@ async function autoFillFromXtream() {
         const api = `${xtreamConfig.fetchUrl}/player_api.php?username=${xtreamConfig.username}&password=${xtreamConfig.password}&action=get_live_streams`;
         const res = await fetch(api);
         
-        if(!res.ok) throw new Error("فشل الاتصال بسيرفر Xtream (Status: " + res.status + ")");
+        if(!res.ok) throw new Error("فشل الاتصال بسيرفر Xtream");
         
         const channelsData = await res.json();
-        
-        if(!Array.isArray(channelsData)) throw new Error("صيغة البيانات غير صحيحة (ليست مصفوفة)");
+        if(!Array.isArray(channelsData)) throw new Error("صيغة البيانات غير صحيحة");
         
         showToast(`تم جلب ${channelsData.length} قناة. جاري المطابقة...`, "success");
 
