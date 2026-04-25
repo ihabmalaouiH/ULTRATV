@@ -263,7 +263,6 @@ const firebaseConfig = {
   measurementId: "G-3GX39BE7C1"
 };
 
-// تهيئة Firebase
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const auth = firebase.auth();
@@ -339,7 +338,6 @@ function initialize() {
     scheduleMidnightRefresh(); 
 }
 
-// --- تحديد قنوات beIN المطلوبة تلقائياً ---
 function autoSelectTargetBein() {
     const rows = matchesTbody.querySelectorAll('tr');
     let selectedCount = 0;
@@ -357,7 +355,6 @@ function autoSelectTargetBein() {
         const isBein = channelName.includes("bein") || channelName.includes("بي ان") || channelName.includes("بي إن");
         const isTurkish = channelName.includes("tr") || channelName.includes("ترك");
         
-        // أرقام 1-9، إكسترا، فرنسي، إنجليزي
         const targetPattern = /(1|2|3|4|5|6|7|8|9|extra|اكسترا|fr|فرنس|en|انجليز|إنجليز)/i;
 
         if (isBein && targetPattern.test(channelName) && !isTurkish) {
@@ -485,14 +482,17 @@ async function loadFromFirebase() {
     }
 }
 
-// --- جلب البيانات مع الرابط الجديد الديناميكي ---
+// --- جلب البيانات مع الرابط الجديد الديناميكي + حل مشكلة CORS ---
 async function fetchMatches() {
     matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">⏳ جاري جلب البيانات من ysscores...</td></tr>`;
     try {
         const todayStr = getTodayDateString();
-        const apiUrl = `https://api-ar.ysscores.com/api/matches/matches_date_get/${todayStr}/%5B%5D/%5B%5D/%5B%228634%22%5D/L/60`;
+        const targetUrl = `https://api-ar.ysscores.com/api/matches/matches_date_get/${todayStr}/%5B%5D/%5B%5D/%5B%228634%22%5D/L/60`;
+        
+        // استخدام بروكسي لتخطي مشكلة CORS (Failed to fetch)
+        const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`;
 
-        const res = await fetch(apiUrl);
+        const res = await fetch(proxyUrl);
         if (!res.ok) throw new Error(`HTTP Error: ${res.status}`);
         
         let responseData = await res.json(); 
@@ -530,10 +530,11 @@ function formatChannelName(name) {
     return formatted.replace(/\s+/g, ' ').trim();
 }
 
-// --- عرض المباريات في الجدول بناءً على هيكل ysscores ---
+// --- عرض المباريات في الجدول مع ضبط دقيق للحالة والنتيجة والوقت ---
 function renderMatches(matches) {
     matchesTbody.innerHTML = "";
     
+    // رابط السيرفر الأساسي لصور الفرق والبطولات
     const imgBaseUrl = "https://admin.ysscores.com/uploads/teams/"; 
 
     matches.forEach(match => {
@@ -545,21 +546,24 @@ function renderMatches(matches) {
         
         const league = match.championship.title;
         
+        // تحويل Timestamp إلى وقت محلي
         const startTimeMs = match.match_timestamp * 1000;
         const matchDate = new Date(startTimeMs);
         const timeStr = matchDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
 
+        // --- منطق الحالة والنتيجة الدقيق بناءً على الـ API ---
         let statusBadgeClass = "status-upcoming";
         let jsonStatus = "Not Started";
         let rawStatus = "لم تبدأ";
         let apiScore = "VS";
 
-        if (match.status === 4 || match.status === 5) {
+        // رقم 4، 5 أو -1 في الـ APIs الرياضية يرمز لانتهت. ورقم 1 يرمز لمباشر
+        if (match.status === 4 || match.status === 5 || match.status === -1) {
             statusBadgeClass = "status-finished";
             jsonStatus = "Finished";
             rawStatus = "انتهت";
             apiScore = `${match.home_scores} - ${match.away_scores}`;
-        } else if (match.live === 1) {
+        } else if (match.live === 1 || match.status === 1 || match.status === 2 || match.status === 3) {
             statusBadgeClass = "status-live";
             jsonStatus = "Live";
             rawStatus = "مباشر";
