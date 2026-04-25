@@ -346,7 +346,7 @@ function autoSelectRowBein(row) {
     if (chInput) channelName = chInput.value.toLowerCase();
     else if (chSelect) channelName = chSelect.value.toLowerCase();
 
-    if (!channelName) return;
+    if (!channelName) return false;
 
     const isBein = channelName.includes("bein") || channelName.includes("بي ان") || channelName.includes("بي إن");
     const isTurkish = channelName.includes("tr") || channelName.includes("ترك");
@@ -356,16 +356,17 @@ function autoSelectRowBein(row) {
         const checkbox = row.querySelector("input[type='checkbox']");
         if (checkbox && !checkbox.checked) {
             checkbox.checked = true;
+            return true; // تم التحديد
         }
     }
+    return false;
 }
 
 // --- Firebase Functions ---
-// المعامل isAuto لتخطي رسالة التأكيد عند النشر التلقائي
 async function saveToFirebase(isAuto = false) {
     const val = outputTextarea.value;
     if(!val || val==="[]") {
-        if (!isAuto) showToast("لا توجد بيانات (JSON فارغ)", "error");
+        if(!isAuto) showToast("لا توجد بيانات (JSON فارغ)", "error");
         return;
     }
     
@@ -385,7 +386,7 @@ async function saveToFirebase(isAuto = false) {
             await db.collection('matches').add(match);
             count++;
         }
-        showToast(`✅ تم نشر ${count} مباراة بنجاح في التطبيق!`, "success");
+        if(!isAuto) showToast(`✅ تم نشر ${count} مباراة بنجاح!`, "success");
     } catch (e) {
         showToast("❌ خطأ أثناء الحفظ: " + e.message, "error");
     }
@@ -473,9 +474,9 @@ async function loadFromFirebase() {
     }
 }
 
-// --- جلب المباريات باستخدام البروكسي الخاص بك ---
+// --- جلب المباريات ---
 async function fetchMatches() {
-    matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">⏳ جاري جلب المباريات والتفاصيل... يرجى الانتظار</td></tr>`;
+    matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">⏳ جاري جلب المباريات... يرجى الانتظار</td></tr>`;
     try {
         const todayStr = getTodayDateString();
         const targetUrl = `https://api-ar.ysscores.com/api/matches/matches_date_get/${todayStr}/%5B%5D/%5B%5D/%5B%228634%22%5D/L/60`;
@@ -492,23 +493,36 @@ async function fetchMatches() {
 
         allMatches.sort((a, b) => a.match_timestamp - b.match_timestamp);
         
-        // استدعاء دالة الرسم (وجعلها تنتظر جلب جميع القنوات)
+        // استدعاء دالة العرض التي ستقوم برسم الجدول ثم جلب التفاصيل بالتدريج
         await renderMatches(allMatches);
 
     } catch (err) {
         matchesTbody.innerHTML = `<tr><td colspan="10" style="color:var(--danger)">⚠️ خطأ في الاتصال بالـ API: ${err.message}</td></tr>`;
-        showToast("فشل الاتصال بالسيرفر", 'error');
+        showToast("فشل الاتصال", 'error');
     }
 }
 
-// عرض الجدول وتحديث البيانات بشكل متزامن
+function formatChannelName(name) {
+    if (!name) return name;
+    let formatted = name;
+    if (formatted.includes("بي إن سبورت") || formatted.includes("بي ان سبورت") || formatted.includes("beIN Sports")) {
+        formatted = formatted.replace(/بي [إا]ن سبورت|beIN Sports/gi, "beIN SPORTS");
+        formatted = formatted.replace(/HD/gi, "").trim();
+    }
+    if (formatted.includes("ثمانية")) {
+        formatted = formatted.replace("ثمانية", "Thmanyah").trim();
+    }
+    return formatted.replace(/\s+/g, ' ').trim();
+}
+
+// عرض الجدول ثم جلب التفاصيل بالتتابع لمنع حظر السيرفر (Rate Limit)
 async function renderMatches(matches) {
     matchesTbody.innerHTML = "";
     
-    // الرابط الصحيح والمطلوب لصور الشعارات
+    // الرابط الدقيق والمطلوب لشعارات الفرق
     const imgBaseUrl = "https://imgs.ysscores.com/teams/128/"; 
-    const detailPromises = [];
 
+    // 1. رسم الجدول فارغ التفاصيل أولاً لسرعة العرض
     matches.forEach(match => {
         const team1Name = match.home_team.title;
         const team2Name = match.away_team.title;
@@ -518,7 +532,7 @@ async function renderMatches(matches) {
         
         const league = match.championship.title;
         
-        // استخراج الوقت الأصلي المباشر (مثل "17:15") دون أي تحويل بتوقيت الجزائر
+        // استخراج الوقت الأصلي المباشر (توقيت الجزائر كما في الـ API) دون تحويل
         const timeStr = match.match_time ? match.match_time.substring(0, 5) : "00:00";
 
         let statusBadgeClass = "status-upcoming";
@@ -569,30 +583,36 @@ async function renderMatches(matches) {
             </td>
         `;
         matchesTbody.appendChild(tr);
-
-        // وضع كل عمليات الجلب في مصفوفة للانتظار حتى تكتمل كلها
-        detailPromises.push(fetchMatchDetails(match.match_id, tr));
     });
     
-    // الانتظار حتى يتم جلب كافة القنوات والمعلقين لكل المباريات
-    await Promise.all(detailPromises);
-
-    // بعد اكتمال جلب كل التفاصيل وتحديد المباريات تلقائياً
     updateStatsAndJSON();
     filterMatches();
 
-    // التحقق والنشر التلقائي
-    const selectedRows = matchesTbody.querySelectorAll("input[type='checkbox']:checked");
-    if (selectedRows.length > 0) {
-        showToast(`تم تحديد ${selectedRows.length} مباراة beIN تلقائياً. جاري النشر...`, "success");
-        // النشر التلقائي في Firebase بدون طلب تأكيد
-        await saveToFirebase(true);
+    // 2. جلب تفاصيل القنوات والمعلقين بالتتابع (لتجنب حظر السيرفر)
+    showToast("جاري جلب تفاصيل القنوات والمعلقين...", "info");
+    
+    let hasSelectedMatches = false;
+
+    for (const match of matches) {
+        const tr = document.querySelector(`tr[data-match-id='${match.match_id}']`);
+        if (tr) {
+            const isSelected = await fetchMatchDetails(match.match_id, tr);
+            if (isSelected) hasSelectedMatches = true;
+            // تأخير 250 ملي ثانية بين كل طلب وطلب ليبدو طبيعياً
+            await new Promise(r => setTimeout(r, 250)); 
+        }
+    }
+
+    // 3. النشر التلقائي في Firebase بمجرد انتهاء الفحص بالكامل
+    if (hasSelectedMatches) {
+        showToast("اكتمل التحديث. جاري النشر التلقائي في Firebase...", "success");
+        await saveToFirebase(true); // true = بدون رسالة تأكيد
     } else {
-        showToast("اكتمل التحميل. لم يتم العثور على مباريات beIN للنشر التلقائي.", "info");
+        showToast("اكتمل التحديث. لا توجد مباريات مطابقة للنشر التلقائي.", "info");
     }
 }
 
-// دالة جلب تفاصيل المباراة للحصول على القنوات والمعلقين باستخدام البروكسي
+// دالة جلب تفاصيل المباراة (ترجع true إذا تم تحديد المباراة تلقائياً)
 async function fetchMatchDetails(matchId, tr) {
     try {
         const targetUrl = `https://api-ar.ysscores.com/api/matches/match_info/${matchId}/L/60`;
@@ -602,7 +622,7 @@ async function fetchMatchDetails(matchId, tr) {
         const responseData = await res.json();
         
         const matchData = responseData.data;
-        const channelsData = matchData.channel_commm || [];
+        const channelsData = (matchData && matchData.channel_commm) ? matchData.channel_commm : [];
         
         let channelCell = tr.querySelector('.channel-td');
         let commCell = tr.querySelector('.comm-td');
@@ -617,22 +637,26 @@ async function fetchMatchDetails(matchId, tr) {
             commCell.innerHTML = `<input type="text" value="${channelsData[0].commentator_name || ''}" class="comm-input">`;
             
         } else if (channelsData.length === 1) {
-            let chName = formatChannelName(channelsData[0].channel_name);
+            let chName = formatChannelName(channelsData[0].channel_name || "غير معروف");
             let commName = channelsData[0].commentator_name || "";
             
             channelCell.innerHTML = `<input type="text" value="${chName}" class="channel-input">`;
             commCell.innerHTML = `<input type="text" value="${commName}" placeholder="المعلق" class="comm-input">`;
         } else {
-            channelCell.innerHTML = `<input type="text" value="غير معروف" class="channel-input">`;
+            channelCell.innerHTML = `<input type="text" value="غير متوفر" class="channel-input" style="color:var(--text-muted)">`;
             commCell.innerHTML = `<input type="text" value="" placeholder="المعلق" class="comm-input">`;
         }
 
-        // تحديد المباراة تلقائياً إذا كانت على قنوات beIN
-        autoSelectRowBein(tr);
+        // التحديد التلقائي
+        const isSelected = autoSelectRowBein(tr);
+        updateStatsAndJSON();
+        
+        return isSelected;
 
     } catch (e) {
         tr.querySelector('.channel-td').innerHTML = `<input type="text" value="خطأ" class="channel-input" style="color:var(--danger)">`;
         tr.querySelector('.comm-td').innerHTML = `<input type="text" value="" class="comm-input">`;
+        return false;
     }
 }
 
@@ -767,7 +791,7 @@ function updateStatsAndJSON() {
             channel: channelValue,
             commentator: commInput,
             status: d.jsonStatus, 
-            score: d.score, // النتيجة إن وجدت
+            score: d.score,
             servers: servers 
         });
     });
@@ -899,7 +923,7 @@ async function autoFillFromXtream() {
         updateStatsAndJSON();
         if(filledCount > 0) {
             showToast(`✅ تم إضافة السيرفرات لـ ${filledCount} مباراة تلقائياً!`, "success");
-            // بما أنه تم إضافة سيرفرات قد ترغب بالنشر التلقائي هنا أيضاً
+            // النشر التلقائي بعد إضافة السيرفرات
             saveToFirebase(true);
         } else {
             alert("لم يتم العثور على أي قنوات مطابقة. تأكد أن القنوات في الجدول تحتوي على 'beIN Sports'.");
