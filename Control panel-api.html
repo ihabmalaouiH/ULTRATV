@@ -252,7 +252,7 @@
 <div id="toast-container"></div>
 
 <script>
-// ⚠️⚠️⚠️ إعدادات Firebase ⚠️⚠️⚠️
+// ⚠️ إعدادات Firebase ⚠️
 const firebaseConfig = {
   apiKey: "AIzaSyBBf2ock2SHzeLu27oh0rlxwgLmxHINjIk",
   authDomain: "ultra-tv-c23ea.firebaseapp.com",
@@ -301,7 +301,7 @@ function scheduleMidnightRefresh() {
     setTimeout(() => {
         showToast("منتصف الليل! جاري تحديث مباريات اليوم الجديد...", "info");
         fetchMatches();
-        scheduleMidnightRefresh(); // جدولة لليوم التالي
+        scheduleMidnightRefresh(); 
     }, msUntilMidnight);
 }
 
@@ -336,7 +336,7 @@ function initialize() {
     matchesTbody.addEventListener('input', updateStatsAndJSON);
     searchInput.addEventListener('input', filterMatches);
     fetchMatches(); 
-    scheduleMidnightRefresh(); // تفعيل مؤقت منتصف الليل
+    scheduleMidnightRefresh(); 
 }
 
 // --- تحديد قنوات beIN المطلوبة تلقائياً ---
@@ -485,63 +485,26 @@ async function loadFromFirebase() {
     }
 }
 
-function parseArabicMatchTime(dateStr, timeStr) {
-    try {
-        const dateParts = dateStr.match(/(\d{2})-(\d{2})-(\d{4})/);
-        if (!dateParts) return null;
-        const year = parseInt(dateParts[3]);
-        const month = parseInt(dateParts[2]) - 1;
-        const day = parseInt(dateParts[1]);
-
-        let time = timeStr.replace('مساءً', 'PM').replace('صباحاً', 'AM')
-                          .replace('مساء', 'PM').replace('صباح', 'AM')
-                          .trim();
-        
-        const isPM = time.toUpperCase().includes('PM');
-        let timeRaw = time.replace(/PM|AM/gi, '').trim();
-        let [hoursStr, minutes] = timeRaw.split(':');
-        
-        let hours = parseInt(hoursStr, 10);
-            
-        if (isPM && hours < 12) hours += 12;
-        if (!isPM && hours === 12) hours = 0;
-        
-        const dateObj = new Date(year, month, day, hours, parseInt(minutes));
-        return dateObj;
-    } catch (e) {
-        console.error("Date Error", e);
-        return new Date();
-    }
-}
-
 // --- جلب البيانات مع الرابط الجديد الديناميكي ---
 async function fetchMatches() {
     matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">⏳ جاري جلب البيانات من ysscores...</td></tr>`;
     try {
-        // تجهيز الرابط الجديد مع تاريخ اليوم
         const todayStr = getTodayDateString();
         const apiUrl = `https://api-ar.ysscores.com/api/matches/matches_date_get/${todayStr}/%5B%5D/%5B%5D/%5B%228634%22%5D/L/60`;
 
         const res = await fetch(apiUrl);
         if (!res.ok) throw new Error(`HTTP Error: ${res.status}`);
         
-        let allMatches = await res.json(); 
-        
-        // التحقق من بنية ysscores إذا كانت مصفوفة داخل كائن (مثل data)
-        if (allMatches.data && Array.isArray(allMatches.data)) {
-            allMatches = allMatches.data;
-        }
+        let responseData = await res.json(); 
+        let allMatches = responseData.data || [];
 
-        if (!Array.isArray(allMatches) || allMatches.length === 0) {
+        if (allMatches.length === 0) {
             return matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">لا توجد مباريات لهذا اليوم.</td></tr>`;
         }
 
-        allMatches.forEach(m => {
-            const dateObj = parseArabicMatchTime(m.info.date, m.info.time);
-            m._timestamp = dateObj ? dateObj.getTime() : 0;
-        });
-
-        allMatches.sort((a, b) => a._timestamp - b._timestamp);
+        // الترتيب باستخدام match_timestamp الجاهز من الـ API
+        allMatches.sort((a, b) => a.match_timestamp - b.match_timestamp);
+        
         renderMatches(allMatches);
         showToast(`تم تحميل ${allMatches.length} مباراة ليوم ${todayStr}`, 'success');
 
@@ -567,48 +530,52 @@ function formatChannelName(name) {
     return formatted.replace(/\s+/g, ' ').trim();
 }
 
+// --- عرض المباريات في الجدول بناءً على هيكل ysscores ---
 function renderMatches(matches) {
     matchesTbody.innerHTML = "";
     
-    matches.forEach(match => {
-        const team1 = match.teams.home;
-        const team2 = match.teams.away;
-        const info = match.info;
-        
-        const startTime = Math.floor(match._timestamp / 1000);
-        const matchDate = new Date(match._timestamp);
-        const timeStr = matchDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+    const imgBaseUrl = "https://admin.ysscores.com/uploads/teams/"; 
 
-        let rawStatus = info.match_status || "لم تبدأ";
-        let apiScore = info.current_score || "VS";
+    matches.forEach(match => {
+        const team1Name = match.home_team.title;
+        const team2Name = match.away_team.title;
+        
+        const team1Logo = match.home_team.image.startsWith('http') ? match.home_team.image : imgBaseUrl + match.home_team.image;
+        const team2Logo = match.away_team.image.startsWith('http') ? match.away_team.image : imgBaseUrl + match.away_team.image;
+        
+        const league = match.championship.title;
+        
+        const startTimeMs = match.match_timestamp * 1000;
+        const matchDate = new Date(startTimeMs);
+        const timeStr = matchDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
 
         let statusBadgeClass = "status-upcoming";
         let jsonStatus = "Not Started";
+        let rawStatus = "لم تبدأ";
+        let apiScore = "VS";
 
-        const isFinished = (rawStatus.includes("انتهت") || rawStatus.includes("إنتهت") || rawStatus.includes("نهاية")) 
-                           && !rawStatus.includes("شوط") && !rawStatus.includes("استراحة");
-
-        if (isFinished) {
+        if (match.status === 4 || match.status === 5) {
             statusBadgeClass = "status-finished";
             jsonStatus = "Finished";
-        } else if (rawStatus.includes("لم تبدأ")) {
-            statusBadgeClass = "status-upcoming";
-            jsonStatus = "Not Started";
-        } else {
+            rawStatus = "انتهت";
+            apiScore = `${match.home_scores} - ${match.away_scores}`;
+        } else if (match.live === 1) {
             statusBadgeClass = "status-live";
             jsonStatus = "Live";
-            if (!apiScore || apiScore === "VS") apiScore = "0 - 0";
+            rawStatus = "مباشر";
+            apiScore = `${match.home_scores} - ${match.away_scores}`;
         }
 
         const defaultLogo = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z'/%3E%3C/svg%3E";
 
         let channelCellHTML = '';
         let commCellHTML = '';
+        const channelsData = match.channel_commm || [];
         
-        if (match.channels && match.channels.length > 1) {
-            let options = match.channels.map(ch => {
-                let displayChannel = formatChannelName(ch.channel);
-                return `<option value="${displayChannel}" data-commentator="${ch.commentator}">${displayChannel}</option>`;
+        if (channelsData.length > 1) {
+            let options = channelsData.map(ch => {
+                let displayChannel = formatChannelName(ch.channel_name || "غير معروف");
+                return `<option value="${displayChannel}" data-commentator="${ch.comm_name || ''}">${displayChannel}</option>`;
             }).join('');
             
             channelCellHTML = `
@@ -616,23 +583,23 @@ function renderMatches(matches) {
                     ${options}
                 </select>
             `;
-            commCellHTML = `<input type="text" value="${match.channels[0].commentator}" class="comm-input">`;
+            commCellHTML = `<input type="text" value="${channelsData[0].comm_name || ''}" class="comm-input">`;
             
         } else {
-            let chName = (match.channels && match.channels.length > 0) ? formatChannelName(match.channels[0].channel) : "غير معروف";
-            let commName = (match.channels && match.channels.length > 0) ? match.channels[0].commentator : "";
+            let chName = (channelsData.length > 0) ? formatChannelName(channelsData[0].channel_name) : "غير معروف";
+            let commName = (channelsData.length > 0) ? (channelsData[0].comm_name || "") : "";
             
             channelCellHTML = `<input type="text" value="${chName}" class="channel-input">`;
             commCellHTML = `<input type="text" value="${commName}" placeholder="المعلق" class="comm-input">`;
         }
 
         const tr = document.createElement("tr");
-        tr.dataset.team1Name = team1.name;
-        tr.dataset.team1Logo = team1.logo;
-        tr.dataset.team2Name = team2.name;
-        tr.dataset.team2Logo = team2.logo;
-        tr.dataset.league = info.championship;
-        tr.dataset.startTime = startTime;
+        tr.dataset.team1Name = team1Name;
+        tr.dataset.team1Logo = team1Logo;
+        tr.dataset.team2Name = team2Name;
+        tr.dataset.team2Logo = team2Logo;
+        tr.dataset.league = league;
+        tr.dataset.startTime = Math.floor(startTimeMs / 1000);
         tr.dataset.jsonStatus = jsonStatus;
         tr.dataset.score = (apiScore === "VS") ? "" : apiScore;
         tr.dataset.servers = "[]"; 
@@ -640,10 +607,10 @@ function renderMatches(matches) {
         tr.innerHTML = `
             <td><input type="checkbox"></td>
             <td><span class="status-badge ${statusBadgeClass}">${rawStatus}</span></td>
-            <td style="text-align:left"><img src="${team1.logo}" class="team-logo" referrerpolicy="no-referrer" onerror="this.src='${defaultLogo}'"> ${team1.name}</td>
+            <td style="text-align:left"><img src="${team1Logo}" class="team-logo" referrerpolicy="no-referrer" onerror="this.src='${defaultLogo}'"> ${team1Name}</td>
             <td style="font-weight:bold; letter-spacing:2px; font-family:monospace;">${apiScore}</td>
-            <td style="text-align:right">${team2.name} <img src="${team2.logo}" class="team-logo" referrerpolicy="no-referrer" onerror="this.src='${defaultLogo}'"></td>
-            <td style="font-size:12px; color:#94a3b8">${info.championship}</td>
+            <td style="text-align:right">${team2Name} <img src="${team2Logo}" class="team-logo" referrerpolicy="no-referrer" onerror="this.src='${defaultLogo}'"></td>
+            <td style="font-size:12px; color:#94a3b8">${league}</td>
             <td dir="ltr" style="font-family:monospace; color:#fbbf24; white-space:nowrap;">${timeStr}</td>
             <td>${channelCellHTML}</td>
             <td>${commCellHTML}</td>
@@ -655,6 +622,7 @@ function renderMatches(matches) {
         `;
         matchesTbody.appendChild(tr);
     });
+    
     updateStatsAndJSON();
     filterMatches();
 }
@@ -901,7 +869,7 @@ async function autoFillFromXtream() {
 
                     if (!label) return; 
 
-                    // الصيغة المباشرة بناءً على تعليماتك: host/user/password/id
+                    // تم تطبيق الصيغة المباشرة بناءً على تعليماتك: host/user/password/id
                     const streamUrl = `${xtreamConfig.streamHost}/${xtreamConfig.username}/${xtreamConfig.password}/${ch.stream_id}`;
                     
                     const obj = {};
