@@ -10,243 +10,243 @@
 <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
 
 <style>
-  :root {
-    --bg-dark: #0f172a;
-    --bg-card: #1e293b;
-    --border: #334155;
-    --primary: #3b82f6;
-    --success: #22c55e;
-    --warning: #eab308;
-    --danger: #ef4444;
-    --text: #f8fafc;
-    --text-muted: #94a3b8;
-    --xtream: #8b5cf6;
-  }
-  * { box-sizing: border-box; outline: none; }
-  body {
-    font-family: system-ui, -apple-system, sans-serif;
-    background: var(--bg-dark);
-    color: var(--text);
-    padding: 20px;
-    margin: 0;
-    font-size: 14px;
-  }
-    
-  h1 { font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; color: var(--primary); }
-  
-  /* --- تنسيق الشبكة (Grid) --- */
-  .dashboard-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
-  @media (min-width: 1200px) { .dashboard-grid { grid-template-columns: 3fr 1fr; } }
+  :root {
+    --bg-dark: #0f172a;
+    --bg-card: #1e293b;
+    --border: #334155;
+    --primary: #3b82f6;
+    --success: #22c55e;
+    --warning: #eab308;
+    --danger: #ef4444;
+    --text: #f8fafc;
+    --text-muted: #94a3b8;
+    --xtream: #8b5cf6;
+  }
+  * { box-sizing: border-box; outline: none; }
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: var(--bg-dark);
+    color: var(--text);
+    padding: 20px;
+    margin: 0;
+    font-size: 14px;
+  }
+    
+  h1 { font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; color: var(--primary); }
+  
+  /* --- تنسيق الشبكة (Grid) --- */
+  .dashboard-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+  @media (min-width: 1200px) { .dashboard-grid { grid-template-columns: 3fr 1fr; } }
 
-  /* --- شريط التحكم --- */
-  .controls {
-    background: var(--bg-card); padding: 15px; border-radius: 12px; border: 1px solid var(--border);
-    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-  }
-  .controls > * { margin-bottom: 0; }
+  /* --- شريط التحكم --- */
+  .controls {
+    background: var(--bg-card); padding: 15px; border-radius: 12px; border: 1px solid var(--border);
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  }
+  .controls > * { margin-bottom: 0; }
 
-  input, select, button, textarea {
-    padding: 0 14px; border-radius: 8px; border: 1px solid var(--border);
-    background: #0f172a; color: var(--text); font-size: 13px; transition: all 0.2s;
-    height: 40px; display: inline-flex; align-items: center;
-  }
-  input:focus, select:focus, textarea:focus { border-color: var(--primary); box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); }
-    
-  button { cursor: pointer; font-weight: 600; gap: 6px; justify-content: center; white-space: nowrap; }
-  button:hover { filter: brightness(1.1); transform: translateY(-1px); }
-    
-  .btn-primary { background: var(--primary); border-color: var(--primary); color: white; }
-  .btn-success { background: var(--success); border-color: var(--success); color: white; }
-  .btn-danger { background: var(--danger); border-color: var(--danger); color: white; }
-  .btn-firebase { background: #ffca28; border-color: #ffca28; color: #000; } 
-  .btn-xtream { background: var(--xtream); border-color: var(--xtream); color: white; }
+  input, select, button, textarea {
+    padding: 0 14px; border-radius: 8px; border: 1px solid var(--border);
+    background: #0f172a; color: var(--text); font-size: 13px; transition: all 0.2s;
+    height: 40px; display: inline-flex; align-items: center;
+  }
+  input:focus, select:focus, textarea:focus { border-color: var(--primary); box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); }
+    
+  button { cursor: pointer; font-weight: 600; gap: 6px; justify-content: center; white-space: nowrap; }
+  button:hover { filter: brightness(1.1); transform: translateY(-1px); }
+    
+  .btn-primary { background: var(--primary); border-color: var(--primary); color: white; }
+  .btn-success { background: var(--success); border-color: var(--success); color: white; }
+  .btn-danger { background: var(--danger); border-color: var(--danger); color: white; }
+  .btn-firebase { background: #ffca28; border-color: #ffca28; color: #000; } 
+  .btn-xtream { background: var(--xtream); border-color: var(--xtream); color: white; }
 
-  /* --- شريط الإحصائيات --- */
-  .stats-bar { display: flex; gap: 15px; margin-top: 10px; font-weight: bold; color: var(--text-muted); font-size: 13px; flex-wrap: wrap; }
-  .stat-item b { color: var(--text); margin-left: 4px; }
+  /* --- شريط الإحصائيات --- */
+  .stats-bar { display: flex; gap: 15px; margin-top: 10px; font-weight: bold; color: var(--text-muted); font-size: 13px; flex-wrap: wrap; }
+  .stat-item b { color: var(--text); margin-left: 4px; }
 
-  /* --- الجدول --- */
-  .table-container { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border); width: 100%; background: var(--bg-card); }
-  table { width: 100%; border-collapse: collapse; min-width: 1000px; }
-  th { background: #162032; padding: 12px; text-align: center; color: var(--text-muted); font-weight: 600; white-space: nowrap; }
-  td { padding: 8px 10px; border-top: 1px solid var(--border); text-align: center; vertical-align: middle; white-space: nowrap; }
-  tr:hover { background: rgba(255,255,255,0.02); }
+  /* --- الجدول --- */
+  .table-container { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border); width: 100%; background: var(--bg-card); }
+  table { width: 100%; border-collapse: collapse; min-width: 1000px; }
+  th { background: #162032; padding: 12px; text-align: center; color: var(--text-muted); font-weight: 600; white-space: nowrap; }
+  td { padding: 8px 10px; border-top: 1px solid var(--border); text-align: center; vertical-align: middle; white-space: nowrap; }
+  tr:hover { background: rgba(255,255,255,0.02); }
 
-  img.team-logo { width: 32px; height: 32px; object-fit: contain; vertical-align: middle; margin: 0 5px; background: #ffffff; border-radius: 50%; padding: 2px; }
-    
-  .status-badge { padding: 4px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; display: inline-block; min-width: 80px; }
-  .status-finished { background: rgba(51, 65, 85, 0.5); color: #cbd5e1; border: 1px solid #334155; }
-  .status-live { background: rgba(220, 38, 38, 0.2); color: #fca5a5; border: 1px solid #7f1d1d; animation: pulse 2s infinite; }
-  .status-upcoming { background: rgba(14, 165, 233, 0.2); color: #7dd3fc; border: 1px solid #075985; }
+  img.team-logo { width: 32px; height: 32px; object-fit: contain; vertical-align: middle; margin: 0 5px; background: #ffffff; border-radius: 50%; padding: 2px; }
+    
+  .status-badge { padding: 4px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; display: inline-block; min-width: 80px; }
+  .status-finished { background: rgba(51, 65, 85, 0.5); color: #cbd5e1; border: 1px solid #334155; }
+  .status-live { background: rgba(220, 38, 38, 0.2); color: #fca5a5; border: 1px solid #7f1d1d; animation: pulse 2s infinite; }
+  .status-upcoming { background: rgba(14, 165, 233, 0.2); color: #7dd3fc; border: 1px solid #075985; }
 
-  /* --- القوائم المنسدلة --- */
-  .channel-select {
-    appearance: none;
-    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23fbbf24%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
-    background-repeat: no-repeat;
-    background-position: left 10px center; 
-    background-size: 10px;
-    padding-left: 25px; 
-    text-align: center;
-    color: #fbbf24;
-    font-weight: bold;
-    cursor: pointer;
-    width: 100%;
-    min-width: 150px;
-    height: 32px;
-    font-size: 12px;
-    background-color: #162032; 
-    border-color: #334155;
-  }
-  .channel-select:hover { border-color: #fbbf24; }
-  .channel-select option { background-color: #0f172a; color: #f8fafc; padding: 10px; }
+  /* --- القوائم المنسدلة --- */
+  .channel-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23fbbf24%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: left 10px center; 
+    background-size: 10px;
+    padding-left: 25px; 
+    text-align: center;
+    color: #fbbf24;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    min-width: 150px;
+    height: 32px;
+    font-size: 12px;
+    background-color: #162032; 
+    border-color: #334155;
+  }
+  .channel-select:hover { border-color: #fbbf24; }
+  .channel-select option { background-color: #0f172a; color: #f8fafc; padding: 10px; }
 
-  .channel-input, .comm-input { width: 100%; min-width: 140px; height: 32px; font-size: 12px; text-align: center; }
-  .channel-input { color: #4ade80; font-weight: bold; }
-  .comm-input { color: #cbd5e1; }
-  .loading-ch { color: var(--warning); font-size: 11px; animation: pulse 1s infinite; }
-    
-  .output-area { position: sticky; top: 20px; }
-  textarea#output { width: 100%; height: 400px; font-family: monospace; line-height: 1.5; color: #a5b4fc; resize: vertical; padding: 10px; }
+  .channel-input, .comm-input { width: 100%; min-width: 140px; height: 32px; font-size: 12px; text-align: center; }
+  .channel-input { color: #4ade80; font-weight: bold; }
+  .comm-input { color: #cbd5e1; }
+  .loading-ch { color: var(--warning); font-size: 11px; animation: pulse 1s infinite; }
+    
+  .output-area { position: sticky; top: 20px; }
+  textarea#output { width: 100%; height: 400px; font-family: monospace; line-height: 1.5; color: #a5b4fc; resize: vertical; padding: 10px; }
 
-  /* --- المودال --- */
-  .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); backdrop-filter: blur(5px); }
-  .modal-content { background-color: var(--bg-card); margin: 5% auto; padding: 20px; border: 1px solid var(--border); width: 95%; max-width: 600px; border-radius: 12px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.5); }
-  .modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 15px; }
-  .server-row { display: flex; gap: 10px; margin-bottom: 10px; align-items: center; }
-  .server-row input { flex: 1; }
-  .server-count-badge { background: var(--primary); color: white; padding: 2px 6px; border-radius: 4px; font-size: 10px; margin-right: 5px; display: none; }
+  /* --- المودال --- */
+  .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); backdrop-filter: blur(5px); }
+  .modal-content { background-color: var(--bg-card); margin: 5% auto; padding: 20px; border: 1px solid var(--border); width: 95%; max-width: 600px; border-radius: 12px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.5); }
+  .modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 15px; }
+  .server-row { display: flex; gap: 10px; margin-bottom: 10px; align-items: center; }
+  .server-row input { flex: 1; }
+  .server-count-badge { background: var(--primary); color: white; padding: 2px 6px; border-radius: 4px; font-size: 10px; margin-right: 5px; display: none; }
 
-  /* --- تسجيل الدخول --- */
-  #login-overlay {
-        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-        background: var(--bg-dark); z-index: 9999;
-        display: flex; justify-content: center; align-items: center;
-        flex-direction: column; color: white;
-  }
-  #login-box {
-        background: var(--bg-card); padding: 40px; border-radius: 15px; border: 1px solid var(--border);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.5); width: 90%; max-width: 400px;
-        text-align: center;
-  }
+  /* --- تسجيل الدخول --- */
+  #login-overlay {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: var(--bg-dark); z-index: 9999;
+        display: flex; justify-content: center; align-items: center;
+        flex-direction: column; color: white;
+  }
+  #login-box {
+        background: var(--bg-card); padding: 40px; border-radius: 15px; border: 1px solid var(--border);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5); width: 90%; max-width: 400px;
+        text-align: center;
+  }
 
-  #toast-container { position: fixed; bottom: 20px; left: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px; }
-  .toast { background: var(--bg-card); border-left: 4px solid var(--primary); padding: 12px 20px; border-radius: 4px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 10px; animation: slideIn 0.3s ease-out forwards; color: #fff; }
-  .toast.success { border-color: var(--success); }
-  .toast.error { border-color: var(--danger); }
-    
-  @keyframes slideIn { from { transform: translateX(-100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
-  @keyframes fadeOut { to { opacity: 0; transform: translateY(10px); } }
-  @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.6; } 100% { opacity: 1; } }
+  #toast-container { position: fixed; bottom: 20px; left: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px; }
+  .toast { background: var(--bg-card); border-left: 4px solid var(--primary); padding: 12px 20px; border-radius: 4px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 10px; animation: slideIn 0.3s ease-out forwards; color: #fff; }
+  .toast.success { border-color: var(--success); }
+  .toast.error { border-color: var(--danger); }
+    
+  @keyframes slideIn { from { transform: translateX(-100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+  @keyframes fadeOut { to { opacity: 0; transform: translateY(10px); } }
+  @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.6; } 100% { opacity: 1; } }
 
-  @media (max-width: 992px) {
-    .dashboard-grid { grid-template-columns: 1fr; }
-    .output-area { position: static; height: auto; }
-  }
-  @media (max-width: 768px) {
-    body { padding: 10px; }
-    h1 { font-size: 20px; }
-    .controls { gap: 8px; justify-content: space-between; }
-    .controls input[type="text"] { width: 100%; order: 3; }
-    .controls select { flex-grow: 1; order: 2; }
-    .controls button:first-child { flex-grow: 1; order: 1; }
-    .controls .spacer { display: none; }
-    .controls button.btn-primary, .controls button.btn-firebase, .controls button.btn-danger, .controls button.btn-success, .controls button.btn-xtream { 
-        flex-grow: 1; order: 4; font-size: 12px; padding: 0 8px;
-    }
-  }
+  @media (max-width: 992px) {
+    .dashboard-grid { grid-template-columns: 1fr; }
+    .output-area { position: static; height: auto; }
+  }
+  @media (max-width: 768px) {
+    body { padding: 10px; }
+    h1 { font-size: 20px; }
+    .controls { gap: 8px; justify-content: space-between; }
+    .controls input[type="text"] { width: 100%; order: 3; }
+    .controls select { flex-grow: 1; order: 2; }
+    .controls button:first-child { flex-grow: 1; order: 1; }
+    .controls .spacer { display: none; }
+    .controls button.btn-primary, .controls button.btn-firebase, .controls button.btn-danger, .controls button.btn-success, .controls button.btn-xtream { 
+        flex-grow: 1; order: 4; font-size: 12px; padding: 0 8px;
+    }
+  }
 </style>
 </head>
 <body>
 
 <div id="login-overlay">
-    <div id="login-box">
-        <h2 style="color: var(--primary);">تسجيل دخول الأدمن 🔒</h2>
-        <input type="email" id="login-email" placeholder="البريد الإلكتروني" style="margin-bottom: 10px; width:100%;">
-        <input type="password" id="login-pass" placeholder="كلمة المرور" style="margin-bottom: 20px; width:100%;">
-        <button id="login-btn" class="btn-primary" style="width: 100%;">دخول</button>
-        <p id="login-error" style="color: var(--danger); margin-top: 10px; font-size: 0.9em;"></p>
-    </div>
+    <div id="login-box">
+        <h2 style="color: var(--primary);">تسجيل دخول الأدمن 🔒</h2>
+        <input type="email" id="login-email" placeholder="البريد الإلكتروني" style="margin-bottom: 10px; width:100%;">
+        <input type="password" id="login-pass" placeholder="كلمة المرور" style="margin-bottom: 20px; width:100%;">
+        <button id="login-btn" class="btn-primary" style="width: 100%;">دخول</button>
+        <p id="login-error" style="color: var(--danger); margin-top: 10px; font-size: 0.9em;"></p>
+    </div>
 </div>
 
 <div id="main-dashboard" style="display:none;"> <h1>🎯 لوحة التحكم <span style="font-size:14px; background:var(--success); color:black; padding:2px 8px; border-radius:4px;">ULTRA TV</span></h1>
 
-    <div class="dashboard-grid">
-        <div class="main-content">
-            <div class="controls">
-                <button class="btn-primary" onclick="fetchMatches()">🔄 تحديث (API)</button>
-                <select id="statusFilter" onchange="filterMatches()">
-                    <option value="all">🔍 الكل</option>
-                    <option value="Live">🔴 مباشر</option>
-                    <option value="Finished">🏁 انتهت</option>
-                    <option value="Not Started">⏳ قادمة</option>
-                </select>
-                <div class="spacer" style="flex-grow: 1;"></div> 
-                <input type="text" id="searchInput" placeholder="بحث (فريق، دوري)...">
-                <button class="btn-primary" onclick="processBulkInput()">📝 دمج</button>
-                <button class="btn-xtream" onclick="autoFillFromXtream()">⚡ ملء تلقائي (Xtream)</button>
-                <button class="btn-firebase" onclick="loadFromFirebase()">📥 عرض المحفوظ وتحديده</button>
-                <button class="btn-danger" onclick="clearFirebase()">🗑️ مسح الكل</button>
-                <button class="btn-success" onclick="saveToFirebase()">🔥 نشر في Firebase</button>
-                
-                <button onclick="firebase.auth().signOut()" style="background:transparent; border:1px solid #999;">خروج</button>
-            </div>
+    <div class="dashboard-grid">
+        <div class="main-content">
+            <div class="controls">
+                <button class="btn-primary" onclick="fetchMatches()">🔄 تحديث (API)</button>
+                <select id="statusFilter" onchange="filterMatches()">
+                    <option value="all">🔍 الكل</option>
+                    <option value="Live">🔴 مباشر</option>
+                    <option value="Finished">🏁 انتهت</option>
+                    <option value="Not Started">⏳ قادمة</option>
+                </select>
+                <div class="spacer" style="flex-grow: 1;"></div> 
+                <input type="text" id="searchInput" placeholder="بحث (فريق، دوري)...">
+                <button class="btn-primary" onclick="processBulkInput()">📝 دمج</button>
+                <button class="btn-xtream" onclick="autoFillFromXtream()">⚡ ملء تلقائي (Xtream)</button>
+                <button class="btn-firebase" onclick="loadFromFirebase()">📥 عرض المحفوظ وتحديده</button>
+                <button class="btn-danger" onclick="clearFirebase()">🗑️ مسح الكل</button>
+                <button class="btn-success" onclick="saveToFirebase()">🔥 نشر في Firebase</button>
+                
+                <button onclick="firebase.auth().signOut()" style="background:transparent; border:1px solid #999;">خروج</button>
+            </div>
 
-            <div class="stats-bar">
-                <span class="stat-item">المباريات: <b id="statTotal">0</b></span>
-                <span class="stat-item" style="color:#fca5a5">مباشر: <b id="statLive">0</b></span>
-                <span class="stat-item" style="color:#22c55e">تم تحديد: <b id="statSelected">0</b></span>
-            </div>
+            <div class="stats-bar">
+                <span class="stat-item">المباريات: <b id="statTotal">0</b></span>
+                <span class="stat-item" style="color:#fca5a5">مباشر: <b id="statLive">0</b></span>
+                <span class="stat-item" style="color:#22c55e">تم تحديد: <b id="statSelected">0</b></span>
+            </div>
 
-            <div class="bulk-container" style="margin-top:15px; display:none;" id="bulkSection">
-                <textarea id="bulkInput" placeholder="لصق بيانات يدوية: الفريق 1 ضد الفريق 2, القناة, المعلق" style="height:80px; width:100%;"></textarea>
-            </div>
+            <div class="bulk-container" style="margin-top:15px; display:none;" id="bulkSection">
+                <textarea id="bulkInput" placeholder="لصق بيانات يدوية: الفريق 1 ضد الفريق 2, القناة, المعلق" style="height:80px; width:100%;"></textarea>
+            </div>
 
-            <div class="table-container" style="margin-top: 15px;">
-                <table id="matchesTable">
-                    <thead>
-                        <tr>
-                            <th width="40">✔️</th>
-                            <th width="70">الحالة</th>
-                            <th width="70">الفريق 1</th>
-                            <th width="70">النتيجة</th>
-                            <th width="70">الفريق 2</th>
-                            <th>الدوري</th>
-                            <th width="90">الوقت</th>
-                            <th>القناة الناقلة</th>
-                            <th>المعلق</th>
-                            <th width="50">سرفرات</th>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
-            </div>
-        </div>
+            <div class="table-container" style="margin-top: 15px;">
+                <table id="matchesTable">
+                    <thead>
+                        <tr>
+                            <th width="40">✔️</th>
+                            <th width="70">الحالة</th>
+                            <th width="70">الفريق 1</th>
+                            <th width="70">النتيجة</th>
+                            <th width="70">الفريق 2</th>
+                            <th>الدوري</th>
+                            <th width="90">الوقت</th>
+                            <th>القناة الناقلة</th>
+                            <th>المعلق</th>
+                            <th width="50">سرفرات</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
 
-        <div class="output-area">
-            <div class="controls" style="margin-bottom: 10px; justify-content: space-between;">
-                <strong>📦 JSON الناتج</strong>
-                <button onclick="copyJSON()" style="padding: 4px 8px; font-size: 11px;">📋 نسخ</button>
-            </div>
-            <textarea id="output" readonly></textarea>
-        </div>
-    </div>
+        <div class="output-area">
+            <div class="controls" style="margin-bottom: 10px; justify-content: space-between;">
+                <strong>📦 JSON الناتج</strong>
+                <button onclick="copyJSON()" style="padding: 4px 8px; font-size: 11px;">📋 نسخ</button>
+            </div>
+            <textarea id="output" readonly></textarea>
+        </div>
+    </div>
 </div>
 
 <div id="serverModal" class="modal">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h3>📡 إدارة السيرفرات</h3>
-            <span style="cursor:pointer; font-size:24px;" onclick="closeServerModal()">&times;</span>
-        </div>
-        <div id="serverList"></div>
-        <div style="margin-top: 15px; display:flex; gap:10px;">
-            <button class="btn-primary" onclick="addServerLine()">+ إضافة سطر</button>
-            <div style="flex-grow:1"></div>
-            <button class="btn-success" onclick="saveServers()">حفظ وإغلاق</button>
-        </div>
-    </div>
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>📡 إدارة السيرفرات</h3>
+            <span style="cursor:pointer; font-size:24px;" onclick="closeServerModal()">&times;</span>
+        </div>
+        <div id="serverList"></div>
+        <div style="margin-top: 15px; display:flex; gap:10px;">
+            <button class="btn-primary" onclick="addServerLine()">+ إضافة سطر</button>
+            <div style="flex-grow:1"></div>
+            <button class="btn-success" onclick="saveServers()">حفظ وإغلاق</button>
+        </div>
+    </div>
 </div>
 
 <div id="toast-container"></div>
@@ -254,13 +254,13 @@
 <script>
 // ⚠️ إعدادات Firebase ⚠️
 const firebaseConfig = {
-  apiKey: "AIzaSyBBf2ock2SHzeLu27oh0rlxwgLmxHINjIk",
-  authDomain: "ultra-tv-c23ea.firebaseapp.com",
-  projectId: "ultra-tv-c23ea",
-  storageBucket: "ultra-tv-c23ea.firebasestorage.app",
-  messagingSenderId: "253161044450",
-  appId: "1:253161044450:web:66a15956cde240c1de21bb",
-  measurementId: "G-3GX39BE7C1"
+  apiKey: "AIzaSyBBf2ock2SHzeLu27oh0rlxwgLmxHINjIk",
+  authDomain: "ultra-tv-c23ea.firebaseapp.com",
+  projectId: "ultra-tv-c23ea",
+  storageBucket: "ultra-tv-c23ea.firebasestorage.app",
+  messagingSenderId: "253161044450",
+  appId: "1:253161044450:web:66a15956cde240c1de21bb",
+  measurementId: "G-3GX39BE7C1"
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -272,10 +272,10 @@ const MY_PROXY = "https://ys-proxy.dzandz496.workers.dev/?url=";
 
 // --- Xtream Configuration ---
 const xtreamConfig = {
-    fetchUrl: "https://api-ultra.dzandz496.workers.dev", 
-    streamHost: "http://api.ultrav.me",                  
-    username: "AdminX99",       
-    password: "PassUltra2026"      
+    fetchUrl: "https://api-ultra.dzandz496.workers.dev", 
+    streamHost: "http://api.ultrav.me",                  
+    username: "AdminX99",       
+    password: "PassUltra2026"      
 };
 
 // --- Elements ---
@@ -286,669 +286,657 @@ const outputTextarea = document.getElementById("output");
 let currentMatchRow = null;
 
 function getTodayDateString() {
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = String(now.getMonth() + 1).padStart(2, '0');
-    const day = String(now.getDate()).padStart(2, '0');
-    return `${year}-${month}-${day}`;
-}
-
-function scheduleMidnightRefresh() {
-    const now = new Date();
-    const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
-    const msUntilMidnight = tomorrow - now;
-    setTimeout(() => {
-        showToast("منتصف الليل! جاري التحديث التلقائي للمباريات...", "info");
-        fetchMatches();
-        scheduleMidnightRefresh(); 
-    }, msUntilMidnight);
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const loginOverlay = document.getElementById('login-overlay');
-    const mainDashboard = document.getElementById('main-dashboard');
+    const loginOverlay = document.getElementById('login-overlay');
+    const mainDashboard = document.getElementById('main-dashboard');
 
-    auth.onAuthStateChanged((user) => {
-        if (user) {
-            loginOverlay.style.display = 'none';
-            mainDashboard.style.display = 'block';
-            initialize();
-            showToast(`مرحباً ${user.email}`, 'success');
-        } else {
-            loginOverlay.style.display = 'flex';
-            mainDashboard.style.display = 'none';
-        }
-    });
+    auth.onAuthStateChanged((user) => {
+        if (user) {
+            loginOverlay.style.display = 'none';
+            mainDashboard.style.display = 'block';
+            initialize();
+            showToast(`مرحباً ${user.email}`, 'success');
+        } else {
+            loginOverlay.style.display = 'flex';
+            mainDashboard.style.display = 'none';
+        }
+    });
 
-    document.getElementById('login-btn').addEventListener('click', () => {
-        const email = document.getElementById('login-email').value;
-        const pass = document.getElementById('login-pass').value;
-        auth.signInWithEmailAndPassword(email, pass).catch(e => {
-            document.getElementById('login-error').textContent = "خطأ: " + e.message;
-        });
-    });
+    document.getElementById('login-btn').addEventListener('click', () => {
+        const email = document.getElementById('login-email').value;
+        const pass = document.getElementById('login-pass').value;
+        auth.signInWithEmailAndPassword(email, pass).catch(e => {
+            document.getElementById('login-error').textContent = "خطأ: " + e.message;
+        });
+    });
 });
 
 function initialize() {
-    matchesTbody.addEventListener('change', updateStatsAndJSON);
-    matchesTbody.addEventListener('input', updateStatsAndJSON);
-    searchInput.addEventListener('input', filterMatches);
-    fetchMatches(); 
-    scheduleMidnightRefresh(); 
+    matchesTbody.addEventListener('change', updateStatsAndJSON);
+    matchesTbody.addEventListener('input', updateStatsAndJSON);
+    searchInput.addEventListener('input', filterMatches);
+    fetchMatches(); 
 }
 
 // التحديد التلقائي لقنوات beIN
 function autoSelectRowBein(row) {
-    let chInput = row.querySelector(".channel-input");
-    let chSelect = row.querySelector(".channel-select");
-    let channelName = "";
-    
-    if (chInput) channelName = chInput.value.toLowerCase();
-    else if (chSelect) channelName = chSelect.value.toLowerCase();
+    let chInput = row.querySelector(".channel-input");
+    let chSelect = row.querySelector(".channel-select");
+    let channelName = "";
+    
+    if (chInput) channelName = chInput.value.toLowerCase();
+    else if (chSelect) channelName = chSelect.value.toLowerCase();
 
-    if (!channelName) return false;
+    if (!channelName) return false;
 
-    const isBein = channelName.includes("bein") || channelName.includes("بي ان") || channelName.includes("بي إن");
-    const isTurkish = channelName.includes("tr") || channelName.includes("ترك");
-    const targetPattern = /(1|2|3|4|5|6|7|8|9|extra|اكسترا|fr|فرنس|en|انجليز|إنجليز)/i;
+    const isBein = channelName.includes("bein") || channelName.includes("بي ان") || channelName.includes("بي إن");
+    const isTurkish = channelName.includes("tr") || channelName.includes("ترك");
+    const targetPattern = /(1|2|3|4|5|6|7|8|9|extra|اكسترا|fr|فرنس|en|انجليز|إنجليز)/i;
 
-    if (isBein && targetPattern.test(channelName) && !isTurkish) {
-        const checkbox = row.querySelector("input[type='checkbox']");
-        if (checkbox && !checkbox.checked) {
-            checkbox.checked = true;
-            return true; // تم التحديد
-        }
-    }
-    return false;
+    if (isBein && targetPattern.test(channelName) && !isTurkish) {
+        const checkbox = row.querySelector("input[type='checkbox']");
+        if (checkbox && !checkbox.checked) {
+            checkbox.checked = true;
+            return true; // تم التحديد
+        }
+    }
+    return false;
 }
 
 // --- Firebase Functions ---
 async function saveToFirebase(isAuto = false) {
-    const val = outputTextarea.value;
-    if(!val || val==="[]") {
-        if(!isAuto) showToast("لا توجد بيانات (JSON فارغ)", "error");
-        return;
-    }
-    
-    if(!isAuto && !confirm("سيتم حذف المباريات القديمة في Firebase واستبدالها بالقائمة الحالية. هل أنت متأكد؟")) return;
+    const val = outputTextarea.value;
+    if(!val || val==="[]") {
+        if(!isAuto) showToast("لا توجد بيانات (JSON فارغ)", "error");
+        return;
+    }
+    
+    if(!isAuto && !confirm("سيتم حذف المباريات القديمة في Firebase واستبدالها بالقائمة الحالية. هل أنت متأكد؟")) return;
 
-    if(!isAuto) showToast("جاري الحفظ في Firebase...", "info");
-    
-    try {
-        const matches = JSON.parse(val);
-        const snapshot = await db.collection('matches').get();
-        const batchDelete = db.batch();
-        snapshot.docs.forEach(doc => batchDelete.delete(doc.ref));
-        await batchDelete.commit();
+    if(!isAuto) showToast("جاري الحفظ في Firebase...", "info");
+    
+    try {
+        const matches = JSON.parse(val);
+        const snapshot = await db.collection('matches').get();
+        const batchDelete = db.batch();
+        snapshot.docs.forEach(doc => batchDelete.delete(doc.ref));
+        await batchDelete.commit();
 
-        let count = 0;
-        for (const match of matches) {
-            await db.collection('matches').add(match);
-            count++;
-        }
-        if(!isAuto) showToast(`✅ تم نشر ${count} مباراة بنجاح!`, "success");
-    } catch (e) {
-        showToast("❌ خطأ أثناء الحفظ: " + e.message, "error");
-    }
+        let count = 0;
+        for (const match of matches) {
+            await db.collection('matches').add(match);
+            count++;
+        }
+        if(!isAuto) showToast(`✅ تم نشر ${count} مباراة بنجاح!`, "success");
+    } catch (e) {
+        showToast("❌ خطأ أثناء الحفظ: " + e.message, "error");
+    }
 }
 
 async function clearFirebase() {
-    if(!confirm("⚠️ تحذير: سيتم مسح جميع المباريات من قاعدة البيانات نهائياً!")) return;
-    try {
-        const snapshot = await db.collection('matches').get();
-        const batch = db.batch();
-        snapshot.docs.forEach(doc => batch.delete(doc.ref));
-        await batch.commit();
-        
-        outputTextarea.value = "[]";
-        showToast("🗑️ تم مسح قاعدة البيانات", "success");
-    } catch (e) {
-        showToast("خطأ: " + e.message, "error");
-    }
+    if(!confirm("⚠️ تحذير: سيتم مسح جميع المباريات من قاعدة البيانات نهائياً!")) return;
+    try {
+        const snapshot = await db.collection('matches').get();
+        const batch = db.batch();
+        snapshot.docs.forEach(doc => batch.delete(doc.ref));
+        await batch.commit();
+        
+        outputTextarea.value = "[]";
+        showToast("🗑️ تم مسح قاعدة البيانات", "success");
+    } catch (e) {
+        showToast("خطأ: " + e.message, "error");
+    }
 }
 
 async function loadFromFirebase() {
-    showToast("جاري جلب المحفوظ من Firebase...", "info");
-    try {
-        const snapshot = await db.collection('matches').orderBy('startTime').get();
-        if (snapshot.empty) {
-            outputTextarea.value = "[]";
-            showToast("قاعدة البيانات فارغة", "warning");
-            return;
-        }
-        
-        const matches = snapshot.docs.map(doc => doc.data());
-        const rows = document.querySelectorAll("#matchesTable tbody tr");
-        let restoredCount = 0;
+    showToast("جاري جلب المحفوظ من Firebase...", "info");
+    try {
+        const snapshot = await db.collection('matches').orderBy('startTime').get();
+        if (snapshot.empty) {
+            outputTextarea.value = "[]";
+            showToast("قاعدة البيانات فارغة", "warning");
+            return;
+        }
+        
+        const matches = snapshot.docs.map(doc => doc.data());
+        const rows = document.querySelectorAll("#matchesTable tbody tr");
+        let restoredCount = 0;
 
-        rows.forEach(r => {
-             const chk = r.querySelector("input[type='checkbox']");
-             if(chk) chk.checked = false;
-        });
+        rows.forEach(r => {
+             const chk = r.querySelector("input[type='checkbox']");
+             if(chk) chk.checked = false;
+        });
 
-        matches.forEach(savedMatch => {
-            const row = Array.from(rows).find(r => 
-                r.dataset.team1Name === savedMatch.team1Name && 
-                r.dataset.team2Name === savedMatch.team2Name
-            );
+        matches.forEach(savedMatch => {
+            const row = Array.from(rows).find(r => 
+                r.dataset.team1Name === savedMatch.team1Name && 
+                r.dataset.team2Name === savedMatch.team2Name
+            );
 
-            if (row) {
-                restoredCount++;
-                const checkbox = row.querySelector("input[type='checkbox']");
-                if(checkbox) checkbox.checked = true;
+            if (row) {
+                restoredCount++;
+                const checkbox = row.querySelector("input[type='checkbox']");
+                if(checkbox) checkbox.checked = true;
 
-                const chInput = row.querySelector(".channel-input");
-                const chSelect = row.querySelector(".channel-select");
-                if(chInput) chInput.value = savedMatch.channel;
-                if(chSelect) chSelect.value = savedMatch.channel;
+                const chInput = row.querySelector(".channel-input");
+                const chSelect = row.querySelector(".channel-select");
+                if(chInput) chInput.value = savedMatch.channel;
+                if(chSelect) chSelect.value = savedMatch.channel;
 
-                const commInput = row.querySelector(".comm-input");
-                if(commInput) commInput.value = savedMatch.commentator;
+                const commInput = row.querySelector(".comm-input");
+                if(commInput) commInput.value = savedMatch.commentator;
 
-                if(savedMatch.servers) {
-                    const cleanedServers = savedMatch.servers.map(srv => {
-                        const key = Object.keys(srv)[0];
-                        const val = Object.values(srv)[0];
-                        const match = key.match(/\(([^)]+)\)$/);
-                        const newName = match ? match[1] : key; 
-                        
-                        const obj = {};
-                        obj[newName] = val;
-                        return obj;
-                    });
+                if(savedMatch.servers) {
+                    const cleanedServers = savedMatch.servers.map(srv => {
+                        const key = Object.keys(srv)[0];
+                        const val = Object.values(srv)[0];
+                        const match = key.match(/\(([^)]+)\)$/);
+                        const newName = match ? match[1] : key; 
+                        
+                        const obj = {};
+                        obj[newName] = val;
+                        return obj;
+                    });
 
-                    row.dataset.servers = JSON.stringify(cleanedServers);
-                    const badge = row.querySelector(".server-count-badge");
-                    if(badge) {
-                        badge.innerText = cleanedServers.length;
-                        badge.style.display = cleanedServers.length > 0 ? "inline-block" : "none";
-                    }
-                }
-            }
-        });
+                    row.dataset.servers = JSON.stringify(cleanedServers);
+                    const badge = row.querySelector(".server-count-badge");
+                    if(badge) {
+                        badge.innerText = cleanedServers.length;
+                        badge.style.display = cleanedServers.length > 0 ? "inline-block" : "none";
+                    }
+                }
+            }
+        });
 
-        updateStatsAndJSON();
-        showToast(`📥 تم استعادة ${restoredCount} مباراة وتحديدها في الجدول`, "success");
-    } catch (e) {
-        showToast("خطأ شبكة: " + e.message, "error");
-    }
+        updateStatsAndJSON();
+        showToast(`📥 تم استعادة ${restoredCount} مباراة وتحديدها في الجدول`, "success");
+    } catch (e) {
+        showToast("خطأ شبكة: " + e.message, "error");
+    }
 }
 
 // --- جلب المباريات ---
 async function fetchMatches() {
-    matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">⏳ جاري جلب المباريات... يرجى الانتظار</td></tr>`;
-    try {
-        const todayStr = getTodayDateString();
-        const targetUrl = `https://api-ar.ysscores.com/api/matches/matches_date_get/${todayStr}/%5B%5D/%5B%5D/%5B%228634%22%5D/L/60`;
-        
-        const res = await fetch(MY_PROXY + encodeURIComponent(targetUrl));
-        if (!res.ok) throw new Error("فشل الاتصال بالسيرفر");
-        
-        let responseData = await res.json(); 
-        let allMatches = responseData.data || [];
+    matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">⏳ جاري جلب المباريات... يرجى الانتظار</td></tr>`;
+    try {
+        const todayStr = getTodayDateString();
+        const targetUrl = `https://api-ar.ysscores.com/api/matches/matches_date_get/${todayStr}/%5B%5D/%5B%5D/%5B%228634%22%5D/L/60`;
+        
+        const res = await fetch(MY_PROXY + encodeURIComponent(targetUrl));
+        if (!res.ok) throw new Error("فشل الاتصال بالسيرفر");
+        
+        let responseData = await res.json(); 
+        let allMatches = responseData.data || [];
 
-        if (allMatches.length === 0) {
-            return matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">لا توجد مباريات لهذا اليوم.</td></tr>`;
-        }
+        if (allMatches.length === 0) {
+            return matchesTbody.innerHTML = `<tr><td colspan="10" style="padding:40px;">لا توجد مباريات لهذا اليوم.</td></tr>`;
+        }
 
-        allMatches.sort((a, b) => a.match_timestamp - b.match_timestamp);
-        
-        // استدعاء دالة العرض التي ستقوم برسم الجدول ثم جلب التفاصيل بالتدريج
-        await renderMatches(allMatches);
+        allMatches.sort((a, b) => a.match_timestamp - b.match_timestamp);
+        
+        // استدعاء دالة العرض التي ستقوم برسم الجدول ثم جلب التفاصيل بالتدريج
+        await renderMatches(allMatches);
 
-    } catch (err) {
-        matchesTbody.innerHTML = `<tr><td colspan="10" style="color:var(--danger)">⚠️ خطأ في الاتصال بالـ API: ${err.message}</td></tr>`;
-        showToast("فشل الاتصال", 'error');
-    }
+    } catch (err) {
+        matchesTbody.innerHTML = `<tr><td colspan="10" style="color:var(--danger)">⚠️ خطأ في الاتصال بالـ API: ${err.message}</td></tr>`;
+        showToast("فشل الاتصال", 'error');
+    }
 }
 
 function formatChannelName(name) {
-    if (!name) return name;
-    let formatted = name;
-    if (formatted.includes("بي إن سبورت") || formatted.includes("بي ان سبورت") || formatted.includes("beIN Sports")) {
-        formatted = formatted.replace(/بي [إا]ن سبورت|beIN Sports/gi, "beIN SPORTS");
-        formatted = formatted.replace(/HD/gi, "").trim();
-    }
-    if (formatted.includes("ثمانية")) {
-        formatted = formatted.replace("ثمانية", "Thmanyah").trim();
-    }
-    return formatted.replace(/\s+/g, ' ').trim();
+    if (!name) return name;
+    let formatted = name;
+    if (formatted.includes("بي إن سبورت") || formatted.includes("بي ان سبورت") || formatted.includes("beIN Sports")) {
+        formatted = formatted.replace(/بي [إا]ن سبورت|beIN Sports/gi, "beIN SPORTS");
+        formatted = formatted.replace(/HD/gi, "").trim();
+    }
+    if (formatted.includes("ثمانية")) {
+        formatted = formatted.replace("ثمانية", "Thmanyah").trim();
+    }
+    return formatted.replace(/\s+/g, ' ').trim();
 }
 
 // عرض الجدول ثم جلب التفاصيل بالتتابع لمنع حظر السيرفر (Rate Limit)
 async function renderMatches(matches) {
-    matchesTbody.innerHTML = "";
-    
-    // الرابط الدقيق والمطلوب لشعارات الفرق
-    const imgBaseUrl = "https://imgs.ysscores.com/teams/128/"; 
+    matchesTbody.innerHTML = "";
+    
+    // الرابط الدقيق والمطلوب لشعارات الفرق
+    const imgBaseUrl = "https://imgs.ysscores.com/teams/128/"; 
 
-    // 1. رسم الجدول فارغ التفاصيل أولاً لسرعة العرض
-    matches.forEach(match => {
-        const team1Name = match.home_team.title;
-        const team2Name = match.away_team.title;
-        
-        const team1Logo = match.home_team.image.startsWith('http') ? match.home_team.image : imgBaseUrl + match.home_team.image;
-        const team2Logo = match.away_team.image.startsWith('http') ? match.away_team.image : imgBaseUrl + match.away_team.image;
-        
-        const league = match.championship.title;
-        
-        // استخراج الوقت الأصلي المباشر (توقيت الجزائر كما في الـ API) دون تحويل
-        const timeStr = match.match_time ? match.match_time.substring(0, 5) : "00:00";
+    // 1. رسم الجدول فارغ التفاصيل أولاً لسرعة العرض
+    matches.forEach(match => {
+        const team1Name = match.home_team.title;
+        const team2Name = match.away_team.title;
+        
+        const team1Logo = match.home_team.image.startsWith('http') ? match.home_team.image : imgBaseUrl + match.home_team.image;
+        const team2Logo = match.away_team.image.startsWith('http') ? match.away_team.image : imgBaseUrl + match.away_team.image;
+        
+        const league = match.championship.title;
+        
+        // استخراج الوقت الأصلي المباشر (توقيت الجزائر كما في الـ API) دون تحويل
+        const timeStr = match.match_time ? match.match_time.substring(0, 5) : "00:00";
 
-        let statusBadgeClass = "status-upcoming";
-        let jsonStatus = "Not Started";
-        let rawStatus = "لم تبدأ";
-        let apiScore = "VS";
+        let statusBadgeClass = "status-upcoming";
+        let jsonStatus = "Not Started";
+        let rawStatus = "لم تبدأ";
+        let apiScore = "VS";
 
-        if (match.status === 4 || match.status === 5 || match.status === -1) {
-            statusBadgeClass = "status-finished";
-            jsonStatus = "Finished";
-            rawStatus = "انتهت";
-            apiScore = `${match.home_scores} - ${match.away_scores}`;
-        } else if (match.live === 1 || match.status === 1 || match.status === 2 || match.status === 3) {
-            statusBadgeClass = "status-live";
-            jsonStatus = "Live";
-            rawStatus = "مباشر";
-            apiScore = `${match.home_scores} - ${match.away_scores}`;
-        }
+        if (match.status === 4 || match.status === 5 || match.status === -1) {
+            statusBadgeClass = "status-finished";
+            jsonStatus = "Finished";
+            rawStatus = "انتهت";
+            apiScore = `${match.home_scores} - ${match.away_scores}`;
+        } else if (match.live === 1 || match.status === 1 || match.status === 2 || match.status === 3) {
+            statusBadgeClass = "status-live";
+            jsonStatus = "Live";
+            rawStatus = "مباشر";
+            apiScore = `${match.home_scores} - ${match.away_scores}`;
+        }
 
-        const defaultLogo = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z'/%3E%3C/svg%3E";
+        const defaultLogo = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z'/%3E%3C/svg%3E";
 
-        const tr = document.createElement("tr");
-        tr.dataset.matchId = match.match_id;
-        tr.dataset.team1Name = team1Name;
-        tr.dataset.team1Logo = team1Logo;
-        tr.dataset.team2Name = team2Name;
-        tr.dataset.team2Logo = team2Logo;
-        tr.dataset.league = league;
-        tr.dataset.startTime = match.match_timestamp; 
-        tr.dataset.jsonStatus = jsonStatus;
-        tr.dataset.score = (apiScore === "VS") ? "" : apiScore;
-        tr.dataset.servers = "[]"; 
+        const tr = document.createElement("tr");
+        tr.dataset.matchId = match.match_id;
+        tr.dataset.team1Name = team1Name;
+        tr.dataset.team1Logo = team1Logo;
+        tr.dataset.team2Name = team2Name;
+        tr.dataset.team2Logo = team2Logo;
+        tr.dataset.league = league;
+        tr.dataset.startTime = match.match_timestamp; 
+        tr.dataset.jsonStatus = jsonStatus;
+        tr.dataset.score = (apiScore === "VS") ? "" : apiScore;
+        tr.dataset.servers = "[]"; 
 
-        tr.innerHTML = `
-            <td><input type="checkbox"></td>
-            <td><span class="status-badge ${statusBadgeClass}">${rawStatus}</span></td>
-            <td style="text-align:left"><img src="${team1Logo}" class="team-logo" referrerpolicy="no-referrer" onerror="this.src='${defaultLogo}'"> ${team1Name}</td>
-            <td style="font-weight:bold; letter-spacing:2px; font-family:monospace;">${apiScore}</td>
-            <td style="text-align:right">${team2Name} <img src="${team2Logo}" class="team-logo" referrerpolicy="no-referrer" onerror="this.src='${defaultLogo}'"></td>
-            <td style="font-size:12px; color:#94a3b8">${league}</td>
-            <td dir="ltr" style="font-family:monospace; color:#fbbf24; white-space:nowrap; font-size:14px;">${timeStr}</td>
-            <td class="channel-td"><span class="loading-ch">جاري الجلب...</span></td>
-            <td class="comm-td"><span class="loading-ch">...</span></td>
-            <td>
-                <button onclick="openServerModal(this)" style="padding:4px 8px;" class="btn-github">
-                    <span class="server-count-badge">0</span> 📡
-                </button>
-            </td>
-        `;
-        matchesTbody.appendChild(tr);
-    });
-    
-    updateStatsAndJSON();
-    filterMatches();
+        tr.innerHTML = `
+            <td><input type="checkbox"></td>
+            <td><span class="status-badge ${statusBadgeClass}">${rawStatus}</span></td>
+            <td style="text-align:left"><img src="${team1Logo}" class="team-logo" referrerpolicy="no-referrer" onerror="this.src='${defaultLogo}'"> ${team1Name}</td>
+            <td style="font-weight:bold; letter-spacing:2px; font-family:monospace;">${apiScore}</td>
+            <td style="text-align:right">${team2Name} <img src="${team2Logo}" class="team-logo" referrerpolicy="no-referrer" onerror="this.src='${defaultLogo}'"></td>
+            <td style="font-size:12px; color:#94a3b8">${league}</td>
+            <td dir="ltr" style="font-family:monospace; color:#fbbf24; white-space:nowrap; font-size:14px;">${timeStr}</td>
+            <td class="channel-td"><span class="loading-ch">جاري الجلب...</span></td>
+            <td class="comm-td"><span class="loading-ch">...</span></td>
+            <td>
+                <button onclick="openServerModal(this)" style="padding:4px 8px;" class="btn-github">
+                    <span class="server-count-badge">0</span> 📡
+                </button>
+            </td>
+        `;
+        matchesTbody.appendChild(tr);
+    });
+    
+    updateStatsAndJSON();
+    filterMatches();
 
-    // 2. جلب تفاصيل القنوات والمعلقين بالتتابع (لتجنب حظر السيرفر)
-    showToast("جاري جلب تفاصيل القنوات والمعلقين...", "info");
-    
-    let hasSelectedMatches = false;
+    // 2. جلب تفاصيل القنوات والمعلقين بالتتابع (لتجنب حظر السيرفر)
+    showToast("جاري جلب تفاصيل القنوات والمعلقين...", "info");
+    
+    let hasSelectedMatches = false;
 
-    for (const match of matches) {
-        const tr = document.querySelector(`tr[data-match-id='${match.match_id}']`);
-        if (tr) {
-            const isSelected = await fetchMatchDetails(match.match_id, tr);
-            if (isSelected) hasSelectedMatches = true;
-            // تأخير 250 ملي ثانية بين كل طلب وطلب ليبدو طبيعياً
-            await new Promise(r => setTimeout(r, 250)); 
-        }
-    }
+    for (const match of matches) {
+        const tr = document.querySelector(`tr[data-match-id='${match.match_id}']`);
+        if (tr) {
+            const isSelected = await fetchMatchDetails(match.match_id, tr);
+            if (isSelected) hasSelectedMatches = true;
+            // تأخير 250 ملي ثانية بين كل طلب وطلب ليبدو طبيعياً
+            await new Promise(r => setTimeout(r, 250)); 
+        }
+    }
 
-    // 3. النشر التلقائي في Firebase بمجرد انتهاء الفحص بالكامل
-    if (hasSelectedMatches) {
-        showToast("اكتمل التحديث. جاري النشر التلقائي في Firebase...", "success");
-        await saveToFirebase(true); // true = بدون رسالة تأكيد
-    } else {
-        showToast("اكتمل التحديث. لا توجد مباريات مطابقة للنشر التلقائي.", "info");
-    }
+    // 3. النشر التلقائي في Firebase بمجرد انتهاء الفحص بالكامل
+    if (hasSelectedMatches) {
+        showToast("اكتمل التحديث. جاري النشر التلقائي في Firebase...", "success");
+        await saveToFirebase(true); // true = بدون رسالة تأكيد
+    } else {
+        showToast("اكتمل التحديث. لا توجد مباريات مطابقة للنشر التلقائي.", "info");
+    }
 }
 
 // دالة جلب تفاصيل المباراة (ترجع true إذا تم تحديد المباراة تلقائياً)
 async function fetchMatchDetails(matchId, tr) {
-    try {
-        const targetUrl = `https://api-ar.ysscores.com/api/matches/match_info/${matchId}/L/60`;
-        const res = await fetch(MY_PROXY + encodeURIComponent(targetUrl));
-        
-        if (!res.ok) throw new Error("Error");
-        const responseData = await res.json();
-        
-        const matchData = responseData.data;
-        const channelsData = (matchData && matchData.channel_commm) ? matchData.channel_commm : [];
-        
-        let channelCell = tr.querySelector('.channel-td');
-        let commCell = tr.querySelector('.comm-td');
-        
-        if (channelsData.length > 1) {
-            let options = channelsData.map(ch => {
-                let displayChannel = formatChannelName(ch.channel_name || "غير معروف");
-                return `<option value="${displayChannel}" data-commentator="${ch.commentator_name || ''}">${displayChannel}</option>`;
-            }).join('');
-            
-            channelCell.innerHTML = `<select class="channel-select" onchange="updateRowCommentator(this)">${options}</select>`;
-            commCell.innerHTML = `<input type="text" value="${channelsData[0].commentator_name || ''}" class="comm-input">`;
-            
-        } else if (channelsData.length === 1) {
-            let chName = formatChannelName(channelsData[0].channel_name || "غير معروف");
-            let commName = channelsData[0].commentator_name || "";
-            
-            channelCell.innerHTML = `<input type="text" value="${chName}" class="channel-input">`;
-            commCell.innerHTML = `<input type="text" value="${commName}" placeholder="المعلق" class="comm-input">`;
-        } else {
-            channelCell.innerHTML = `<input type="text" value="غير متوفر" class="channel-input" style="color:var(--text-muted)">`;
-            commCell.innerHTML = `<input type="text" value="" placeholder="المعلق" class="comm-input">`;
-        }
+    try {
+        const targetUrl = `https://api-ar.ysscores.com/api/matches/match_info/${matchId}/L/60`;
+        const res = await fetch(MY_PROXY + encodeURIComponent(targetUrl));
+        
+        if (!res.ok) throw new Error("Error");
+        const responseData = await res.json();
+        
+        const matchData = responseData.data;
+        const channelsData = (matchData && matchData.channel_commm) ? matchData.channel_commm : [];
+        
+        let channelCell = tr.querySelector('.channel-td');
+        let commCell = tr.querySelector('.comm-td');
+        
+        if (channelsData.length > 1) {
+            let options = channelsData.map(ch => {
+                let displayChannel = formatChannelName(ch.channel_name || "غير معروف");
+                return `<option value="${displayChannel}" data-commentator="${ch.commentator_name || ''}">${displayChannel}</option>`;
+            }).join('');
+            
+            channelCell.innerHTML = `<select class="channel-select" onchange="updateRowCommentator(this)">${options}</select>`;
+            commCell.innerHTML = `<input type="text" value="${channelsData[0].commentator_name || ''}" class="comm-input">`;
+            
+        } else if (channelsData.length === 1) {
+            let chName = formatChannelName(channelsData[0].channel_name || "غير معروف");
+            let commName = channelsData[0].commentator_name || "";
+            
+            channelCell.innerHTML = `<input type="text" value="${chName}" class="channel-input">`;
+            commCell.innerHTML = `<input type="text" value="${commName}" placeholder="المعلق" class="comm-input">`;
+        } else {
+            channelCell.innerHTML = `<input type="text" value="غير متوفر" class="channel-input" style="color:var(--text-muted)">`;
+            commCell.innerHTML = `<input type="text" value="" placeholder="المعلق" class="comm-input">`;
+        }
 
-        // التحديد التلقائي
-        const isSelected = autoSelectRowBein(tr);
-        updateStatsAndJSON();
-        
-        return isSelected;
+        // التحديد التلقائي
+        const isSelected = autoSelectRowBein(tr);
+        updateStatsAndJSON();
+        
+        return isSelected;
 
-    } catch (e) {
-        tr.querySelector('.channel-td').innerHTML = `<input type="text" value="خطأ" class="channel-input" style="color:var(--danger)">`;
-        tr.querySelector('.comm-td').innerHTML = `<input type="text" value="" class="comm-input">`;
-        return false;
-    }
+    } catch (e) {
+        tr.querySelector('.channel-td').innerHTML = `<input type="text" value="خطأ" class="channel-input" style="color:var(--danger)">`;
+        tr.querySelector('.comm-td').innerHTML = `<input type="text" value="" class="comm-input">`;
+        return false;
+    }
 }
 
 function updateRowCommentator(selectElement) {
-    const row = selectElement.closest('tr');
-    const commInput = row.querySelector('.comm-input');
-    const selectedOption = selectElement.options[selectElement.selectedIndex];
-    const newCommentator = selectedOption.getAttribute('data-commentator');
-    if (commInput) {
-        commInput.value = newCommentator;
-        updateStatsAndJSON();
-    }
+    const row = selectElement.closest('tr');
+    const commInput = row.querySelector('.comm-input');
+    const selectedOption = selectElement.options[selectElement.selectedIndex];
+    const newCommentator = selectedOption.getAttribute('data-commentator');
+    if (commInput) {
+        commInput.value = newCommentator;
+        updateStatsAndJSON();
+    }
 }
 
 function openServerModal(btn) {
-    currentMatchRow = btn.closest('tr');
-    const serversData = JSON.parse(currentMatchRow.dataset.servers || "[]");
-    const container = document.getElementById("serverList");
-    container.innerHTML = "";
-    if (serversData.length > 0) {
-        serversData.forEach(srv => {
-            const name = Object.keys(srv)[0];
-            const url = Object.values(srv)[0];
-            addServerLine(name, url);
-        });
-    } else {
-        addServerLine(); 
-    }
-    document.getElementById("serverModal").style.display = "block";
+    currentMatchRow = btn.closest('tr');
+    const serversData = JSON.parse(currentMatchRow.dataset.servers || "[]");
+    const container = document.getElementById("serverList");
+    container.innerHTML = "";
+    if (serversData.length > 0) {
+        serversData.forEach(srv => {
+            const name = Object.keys(srv)[0];
+            const url = Object.values(srv)[0];
+            addServerLine(name, url);
+        });
+    } else {
+        addServerLine(); 
+    }
+    document.getElementById("serverModal").style.display = "block";
 }
 
 function addServerLine(name = "", url = "") {
-    const div = document.createElement("div");
-    div.className = "server-row";
-    div.innerHTML = `
-        <input type="text" placeholder="اسم السيرفر" value="${name}" class="srv-name">
-        <input type="text" placeholder="رابط السيرفر" value="${url}" class="srv-url">
-        <button type="button" class="btn-primary" onclick="moveServerUp(this)" style="padding: 6px; font-size:10px; margin:0 2px;">▲</button>
-        <button type="button" class="btn-primary" onclick="moveServerDown(this)" style="padding: 6px; font-size:10px; margin:0 2px;">▼</button>
-        <button class="btn-danger" onclick="this.parentElement.remove()" style="padding: 5px 10px; margin-left: 5px;">🗑️</button>
-    `;
-    document.getElementById("serverList").appendChild(div);
+    const div = document.createElement("div");
+    div.className = "server-row";
+    div.innerHTML = `
+        <input type="text" placeholder="اسم السيرفر" value="${name}" class="srv-name">
+        <input type="text" placeholder="رابط السيرفر" value="${url}" class="srv-url">
+        <button type="button" class="btn-primary" onclick="moveServerUp(this)" style="padding: 6px; font-size:10px; margin:0 2px;">▲</button>
+        <button type="button" class="btn-primary" onclick="moveServerDown(this)" style="padding: 6px; font-size:10px; margin:0 2px;">▼</button>
+        <button class="btn-danger" onclick="this.parentElement.remove()" style="padding: 5px 10px; margin-left: 5px;">🗑️</button>
+    `;
+    document.getElementById("serverList").appendChild(div);
 }
 
 function moveServerUp(btn) {
-    const row = btn.parentElement;
-    if (row.previousElementSibling) {
-        row.parentNode.insertBefore(row, row.previousElementSibling);
-    }
+    const row = btn.parentElement;
+    if (row.previousElementSibling) {
+        row.parentNode.insertBefore(row, row.previousElementSibling);
+    }
 }
 
 function moveServerDown(btn) {
-    const row = btn.parentElement;
-    if (row.nextElementSibling) {
-        row.parentNode.insertBefore(row.nextElementSibling, row);
-    }
+    const row = btn.parentElement;
+    if (row.nextElementSibling) {
+        row.parentNode.insertBefore(row.nextElementSibling, row);
+    }
 }
 
 function saveServers() {
-    if (!currentMatchRow) return;
-    const rows = document.querySelectorAll("#serverList .server-row");
-    const serversArray = [];
-    rows.forEach(row => {
-        const name = row.querySelector(".srv-name").value.trim();
-        const url = row.querySelector(".srv-url").value.trim();
-        if (name && url) {
-            const obj = {};
-            obj[name] = url;
-            serversArray.push(obj);
-        }
-    });
-    currentMatchRow.dataset.servers = JSON.stringify(serversArray);
-    const badge = currentMatchRow.querySelector(".server-count-badge");
-    badge.innerText = serversArray.length;
-    badge.style.display = serversArray.length > 0 ? "inline-block" : "none";
-    if (serversArray.length > 0) {
-        currentMatchRow.querySelector("input[type='checkbox']").checked = true;
-    }
-    closeServerModal();
-    updateStatsAndJSON();
-    showToast("تم حفظ السيرفرات", "success");
+    if (!currentMatchRow) return;
+    const rows = document.querySelectorAll("#serverList .server-row");
+    const serversArray = [];
+    rows.forEach(row => {
+        const name = row.querySelector(".srv-name").value.trim();
+        const url = row.querySelector(".srv-url").value.trim();
+        if (name && url) {
+            const obj = {};
+            obj[name] = url;
+            serversArray.push(obj);
+        }
+    });
+    currentMatchRow.dataset.servers = JSON.stringify(serversArray);
+    const badge = currentMatchRow.querySelector(".server-count-badge");
+    badge.innerText = serversArray.length;
+    badge.style.display = serversArray.length > 0 ? "inline-block" : "none";
+    if (serversArray.length > 0) {
+        currentMatchRow.querySelector("input[type='checkbox']").checked = true;
+    }
+    closeServerModal();
+    updateStatsAndJSON();
+    showToast("تم حفظ السيرفرات", "success");
 }
 
 function closeServerModal() {
-    document.getElementById("serverModal").style.display = "none";
-    currentMatchRow = null;
+    document.getElementById("serverModal").style.display = "none";
+    currentMatchRow = null;
 }
 
 function filterMatches() {
-    const term = searchInput.value.toLowerCase().trim();
-    const status = statusFilter.value;
-    const rows = matchesTbody.querySelectorAll('tr');
-    rows.forEach(row => {
-        const textMatch = (row.dataset.team1Name + row.dataset.team2Name + row.dataset.league).toLowerCase().includes(term);
-        const statusMatch = status === 'all' || row.dataset.jsonStatus === status;
-        row.style.display = (textMatch && statusMatch) ? '' : 'none';
-    });
+    const term = searchInput.value.toLowerCase().trim();
+    const status = statusFilter.value;
+    const rows = matchesTbody.querySelectorAll('tr');
+    rows.forEach(row => {
+        const textMatch = (row.dataset.team1Name + row.dataset.team2Name + row.dataset.league).toLowerCase().includes(term);
+        const statusMatch = status === 'all' || row.dataset.jsonStatus === status;
+        row.style.display = (textMatch && statusMatch) ? '' : 'none';
+    });
 }
 
 function updateStatsAndJSON() {
-    const allRows = matchesTbody.querySelectorAll('tr');
-    const selectedRows = matchesTbody.querySelectorAll("input[type='checkbox']:checked");
-        
-    document.getElementById("statTotal").innerText = allRows.length;
-    document.getElementById("statSelected").innerText = selectedRows.length;
-    document.getElementById("statLive").innerText = Array.from(allRows).filter(r => r.dataset.jsonStatus === "Live").length;
+    const allRows = matchesTbody.querySelectorAll('tr');
+    const selectedRows = matchesTbody.querySelectorAll("input[type='checkbox']:checked");
+        
+    document.getElementById("statTotal").innerText = allRows.length;
+    document.getElementById("statSelected").innerText = selectedRows.length;
+    document.getElementById("statLive").innerText = Array.from(allRows).filter(r => r.dataset.jsonStatus === "Live").length;
 
-    const matchesArray = [];
-    selectedRows.forEach(checkbox => {
-        const row = checkbox.closest("tr");
-        if (row.style.display === 'none') return;
-        
-        const d = row.dataset;
-        let chInput = row.querySelector(".channel-input");
-        let channelValue = "";
-        
-        if (chInput) {
-            channelValue = chInput.value;
-        } else {
-            const chSelect = row.querySelector(".channel-select");
-            channelValue = chSelect ? chSelect.value : "غير معروف";
-        }
+    const matchesArray = [];
+    selectedRows.forEach(checkbox => {
+        const row = checkbox.closest("tr");
+        if (row.style.display === 'none') return;
+        
+        const d = row.dataset;
+        let chInput = row.querySelector(".channel-input");
+        let channelValue = "";
+        
+        if (chInput) {
+            channelValue = chInput.value;
+        } else {
+            const chSelect = row.querySelector(".channel-select");
+            channelValue = chSelect ? chSelect.value : "غير معروف";
+        }
 
-        const commInput = row.querySelector(".comm-input").value;
-        const servers = JSON.parse(d.servers || "[]");
+        const commInput = row.querySelector(".comm-input").value;
+        const servers = JSON.parse(d.servers || "[]");
 
-        matchesArray.push({
-            team1Name: d.team1Name, team1Logo: d.team1Logo,
-            team2Name: d.team2Name, team2Logo: d.team2Logo,
-            startTime: parseInt(d.startTime, 10),
-            league: d.league, 
-            channel: channelValue,
-            commentator: commInput,
-            status: d.jsonStatus, 
-            score: d.score,
-            servers: servers 
-        });
-    });
-    outputTextarea.value = JSON.stringify(matchesArray, null, 2);
+        matchesArray.push({
+            team1Name: d.team1Name, team1Logo: d.team1Logo,
+            team2Name: d.team2Name, team2Logo: d.team2Logo,
+            startTime: parseInt(d.startTime, 10),
+            league: d.league, 
+            channel: channelValue,
+            commentator: commInput,
+            status: d.jsonStatus, 
+            score: d.score,
+            servers: servers 
+        });
+    });
+    outputTextarea.value = JSON.stringify(matchesArray, null, 2);
 }
 
 function processBulkInput() {
-    const input = document.getElementById("bulkInput");
-    if(input.parentElement.style.display === "none") {
-        input.parentElement.style.display = "block"; input.focus(); return;
-    }
-    const lines = input.value.trim().split('\n');
-    if (!input.value.trim()) return;
-    let count = 0;
-    const rows = Array.from(matchesTbody.querySelectorAll('tr'));
-    lines.forEach(line => {
-        const parts = line.split(',');
-        if (parts.length < 3) return;
-        const [matchStr, ch, comm] = parts;
-        const [t1, t2] = matchStr.toLowerCase().split(' ضد ');
-        if(!t1 || !t2) return;
-        const row = rows.find(r => {
-            const n1 = r.dataset.team1Name.toLowerCase();
-            const n2 = r.dataset.team2Name.toLowerCase();
-            return (n1.includes(t1.trim()) && n2.includes(t2.trim())) || (n1.includes(t2.trim()) && n2.includes(t1.trim()));
-        });
-        if (row) {
-            row.querySelector("input[type='checkbox']").checked = true;
-            let chField = row.querySelector(".channel-input") || row.querySelector(".channel-select");
-            let formattedChannel = formatChannelName(ch.trim());
-            
-            if(chField.tagName === "INPUT") {
-                chField.value = formattedChannel;
-            }
-            
-            const commField = row.querySelector(".comm-input");
-            commField.value = comm.trim();
-            count++;
-        }
-    });
-    updateStatsAndJSON();
-    showToast(`تم دمج ${count} مباراة`, 'success');
-    input.value = ""; input.parentElement.style.display = "none";
+    const input = document.getElementById("bulkInput");
+    if(input.parentElement.style.display === "none") {
+        input.parentElement.style.display = "block"; input.focus(); return;
+    }
+    const lines = input.value.trim().split('\n');
+    if (!input.value.trim()) return;
+    let count = 0;
+    const rows = Array.from(matchesTbody.querySelectorAll('tr'));
+    lines.forEach(line => {
+        const parts = line.split(',');
+        if (parts.length < 3) return;
+        const [matchStr, ch, comm] = parts;
+        const [t1, t2] = matchStr.toLowerCase().split(' ضد ');
+        if(!t1 || !t2) return;
+        const row = rows.find(r => {
+            const n1 = r.dataset.team1Name.toLowerCase();
+            const n2 = r.dataset.team2Name.toLowerCase();
+            return (n1.includes(t1.trim()) && n2.includes(t2.trim())) || (n1.includes(t2.trim()) && n2.includes(t1.trim()));
+        });
+        if (row) {
+            row.querySelector("input[type='checkbox']").checked = true;
+            let chField = row.querySelector(".channel-input") || row.querySelector(".channel-select");
+            let formattedChannel = formatChannelName(ch.trim());
+            
+            if(chField.tagName === "INPUT") {
+                chField.value = formattedChannel;
+            }
+            
+            const commField = row.querySelector(".comm-input");
+            commField.value = comm.trim();
+            count++;
+        }
+    });
+    updateStatsAndJSON();
+    showToast(`تم دمج ${count} مباراة`, 'success');
+    input.value = ""; input.parentElement.style.display = "none";
 }
 
 async function autoFillFromXtream() {
-    const allRows = matchesTbody.querySelectorAll('tr');
-    if(allRows.length === 0) return showToast("لا توجد مباريات في الجدول", "error");
+    const allRows = matchesTbody.querySelectorAll('tr');
+    if(allRows.length === 0) return showToast("لا توجد مباريات في الجدول", "error");
 
-    showToast("جاري الاتصال بسيرفر Xtream...", "info");
+    showToast("جاري الاتصال بسيرفر Xtream...", "info");
 
-    try {
-        const api = `${xtreamConfig.fetchUrl}/player_api.php?username=${xtreamConfig.username}&password=${xtreamConfig.password}&action=get_live_streams`;
-        const res = await fetch(api);
-        
-        if(!res.ok) throw new Error("فشل الاتصال بسيرفر Xtream");
-        
-        const channelsData = await res.json();
-        if(!Array.isArray(channelsData)) throw new Error("صيغة البيانات غير صحيحة");
-        
-        showToast(`تم جلب ${channelsData.length} قناة. جاري المطابقة...`, "success");
+    try {
+        const api = `${xtreamConfig.fetchUrl}/player_api.php?username=${xtreamConfig.username}&password=${xtreamConfig.password}&action=get_live_streams`;
+        const res = await fetch(api);
+        
+        if(!res.ok) throw new Error("فشل الاتصال بسيرفر Xtream");
+        
+        const channelsData = await res.json();
+        if(!Array.isArray(channelsData)) throw new Error("صيغة البيانات غير صحيحة");
+        
+        showToast(`تم جلب ${channelsData.length} قناة. جاري المطابقة...`, "success");
 
-        let filledCount = 0;
+        let filledCount = 0;
 
-        allRows.forEach(row => {
-            let chInput = row.querySelector(".channel-input");
-            let chSelect = row.querySelector(".channel-select");
-            
-            let channelName = "";
-            if (chInput) channelName = chInput.value.trim();
-            else if (chSelect) channelName = chSelect.value.trim();
-            
-            if(!channelName || channelName === "غير معروف") return;
+        allRows.forEach(row => {
+            let chInput = row.querySelector(".channel-input");
+            let chSelect = row.querySelector(".channel-select");
+            
+            let channelName = "";
+            if (chInput) channelName = chInput.value.trim();
+            else if (chSelect) channelName = chSelect.value.trim();
+            
+            if(!channelName || channelName === "غير معروف") return;
 
-            if (!channelName.toLowerCase().includes("bein sport")) return;
+            if (!channelName.toLowerCase().includes("bein sport")) return;
 
-            const cleanName = channelName.toLowerCase().replace(/[^a-z0-9]/g, '');
-            
-            const matchedChannels = channelsData.filter(ch => {
-                const chStreamName = ch.name.toLowerCase().replace(/[^a-z0-9]/g, '');
-                return chStreamName.includes(cleanName);
-            });
+            const cleanName = channelName.toLowerCase().replace(/[^a-z0-9]/g, '');
+            
+            const matchedChannels = channelsData.filter(ch => {
+                const chStreamName = ch.name.toLowerCase().replace(/[^a-z0-9]/g, '');
+                return chStreamName.includes(cleanName);
+            });
 
-            if(matchedChannels.length > 0) {
-                const servers = [];
-                const qualityPriority = ['4k', 'fhd', 'hevc', 'hd', 'sd', 'low'];
-                
-                matchedChannels.sort((a, b) => {
-                    const nameA = a.name.toLowerCase();
-                    const nameB = b.name.toLowerCase();
-                    let idxA = qualityPriority.findIndex(q => nameA.includes(q));
-                    let idxB = qualityPriority.findIndex(q => nameB.includes(q));
-                    if(idxA === -1) idxA = 99;
-                    if(idxB === -1) idxB = 99;
-                    return idxA - idxB;
-                });
+            if(matchedChannels.length > 0) {
+                const servers = [];
+                const qualityPriority = ['4k', 'fhd', 'hevc', 'hd', 'sd', 'low'];
+                
+                matchedChannels.sort((a, b) => {
+                    const nameA = a.name.toLowerCase();
+                    const nameB = b.name.toLowerCase();
+                    let idxA = qualityPriority.findIndex(q => nameA.includes(q));
+                    let idxB = qualityPriority.findIndex(q => nameB.includes(q));
+                    if(idxA === -1) idxA = 99;
+                    if(idxB === -1) idxB = 99;
+                    return idxA - idxB;
+                });
 
-                matchedChannels.forEach(ch => {
-                    const lowName = ch.name.toLowerCase();
-                    let label = null;
+                matchedChannels.forEach(ch => {
+                    const lowName = ch.name.toLowerCase();
+                    let label = null;
 
-                    if(lowName.includes("4k")) label = "4K";
-                    else if(lowName.includes("fhd")) label = "FHD";
-                    else if(lowName.includes("hd")) label = "HD";
-                    else if(lowName.includes("sd")) label = "SD";
-                    else if(lowName.includes("low")) label = "LOW";
+                    if(lowName.includes("4k")) label = "4K";
+                    else if(lowName.includes("fhd")) label = "FHD";
+                    else if(lowName.includes("hd")) label = "HD";
+                    else if(lowName.includes("sd")) label = "SD";
+                    else if(lowName.includes("low")) label = "LOW";
 
-                    if (!label) return; 
+                    if (!label) return; 
 
-                    const streamUrl = `${xtreamConfig.streamHost}/${xtreamConfig.username}/${xtreamConfig.password}/${ch.stream_id}`;
-                    
-                    const obj = {};
-                    obj[label] = streamUrl; 
-                    servers.push(obj);
-                });
+                    const streamUrl = `${xtreamConfig.streamHost}/${xtreamConfig.username}/${xtreamConfig.password}/${ch.stream_id}`;
+                    
+                    const obj = {};
+                    obj[label] = streamUrl; 
+                    servers.push(obj);
+                });
 
-                if(servers.length > 0) {
-                    row.dataset.servers = JSON.stringify(servers);
-                    
-                    const badge = row.querySelector(".server-count-badge");
-                    badge.innerText = servers.length;
-                    badge.style.display = "inline-block";
-                    
-                    filledCount++;
-                }
-            }
-        });
+                if(servers.length > 0) {
+                    row.dataset.servers = JSON.stringify(servers);
+                    
+                    const badge = row.querySelector(".server-count-badge");
+                    badge.innerText = servers.length;
+                    badge.style.display = "inline-block";
+                    
+                    filledCount++;
+                }
+            }
+        });
 
-        updateStatsAndJSON();
-        if(filledCount > 0) {
-            showToast(`✅ تم إضافة السيرفرات لـ ${filledCount} مباراة تلقائياً!`, "success");
-            // النشر التلقائي بعد إضافة السيرفرات
-            saveToFirebase(true);
-        } else {
-            alert("لم يتم العثور على أي قنوات مطابقة. تأكد أن القنوات في الجدول تحتوي على 'beIN Sports'.");
-        }
+        updateStatsAndJSON();
+        if(filledCount > 0) {
+            showToast(`✅ تم إضافة السيرفرات لـ ${filledCount} مباراة تلقائياً!`, "success");
+            // النشر التلقائي بعد إضافة السيرفرات
+            saveToFirebase(true);
+        } else {
+            alert("لم يتم العثور على أي قنوات مطابقة. تأكد أن القنوات في الجدول تحتوي على 'beIN Sports'.");
+        }
 
-    } catch (e) {
-        console.error(e);
-        showToast("⚠️ خطأ: " + e.message, "error");
-    }
+    } catch (e) {
+        console.error(e);
+        showToast("⚠️ خطأ: " + e.message, "error");
+    }
 }
 
 function copyJSON() {
-    outputTextarea.select(); document.execCommand('copy');
-    showToast('تم نسخ الكود!', 'success');
+    outputTextarea.select(); document.execCommand('copy');
+    showToast('تم نسخ الكود!', 'success');
 }
 
 function showToast(msg, type = 'info') {
-    const toast = document.createElement('div');
-    toast.className = `toast ${type}`;
-    toast.innerHTML = `<span>${msg}</span>`;
-    document.getElementById('toast-container').appendChild(toast);
-    setTimeout(() => {
-        toast.style.animation = 'fadeOut 0.3s forwards';
-        setTimeout(() => toast.remove(), 300);
-    }, 3000);
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    toast.innerHTML = `<span>${msg}</span>`;
+    document.getElementById('toast-container').appendChild(toast);
+    setTimeout(() => {
+        toast.style.animation = 'fadeOut 0.3s forwards';
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
 }
 </script>
 </body>
