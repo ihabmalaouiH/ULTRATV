@@ -293,6 +293,17 @@ function getTodayDateString() {
     return `${year}-${month}-${day}`;
 }
 
+function scheduleMidnightRefresh() {
+    const now = new Date();
+    const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+    const msUntilMidnight = tomorrow - now;
+    setTimeout(() => {
+        showToast("منتصف الليل! جاري التحديث التلقائي للمباريات...", "info");
+        fetchMatches();
+        scheduleMidnightRefresh(); 
+    }, msUntilMidnight);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const loginOverlay = document.getElementById('login-overlay');
     const mainDashboard = document.getElementById('main-dashboard');
@@ -323,6 +334,7 @@ function initialize() {
     matchesTbody.addEventListener('input', updateStatsAndJSON);
     searchInput.addEventListener('input', filterMatches);
     fetchMatches(); 
+    scheduleMidnightRefresh(); 
 }
 
 // التحديد التلقائي لقنوات beIN
