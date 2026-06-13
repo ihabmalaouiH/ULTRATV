@@ -3,1259 +3,1148 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>لوحة التحكم - ULTRA TV</title>
-
+<title>ULTRA TV — لوحة التحكم</title>
 <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
-
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap');
+:root{
+  --bg:#05090f;--bg1:#080e18;--bg2:#0b1422;--bg3:#0f1c30;--bg4:#132036;
+  --brd:#192840;--brd2:#1f3354;--brd3:#274268;
+  --blue:#3b82f6;--blue-dim:rgba(59,130,246,.1);--blue-glow:rgba(59,130,246,.25);
+  --blue-hl:rgba(59,130,246,.06);
+  --cyan:#22d3ee;--gold:#f59e0b;--green:#10b981;--red:#ef4444;--purple:#a78bfa;
+  --orange:#f97316;
+  --text:#dde9f8;--text2:#6a8cad;--text3:#2e4a66;
+  --font:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',monospace;
+  --r:8px;--r2:12px;--r3:16px;
+  --sh:0 4px 24px rgba(0,0,0,.4);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;outline:none;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13px;min-height:100vh;overflow-x:hidden;}
+::-webkit-scrollbar{width:4px;height:4px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--brd3);border-radius:10px;}
+::-webkit-scrollbar-thumb:hover{background:var(--blue);}
 
-  :root {
-    --bg:       #080e1a;
-    --bg-card:  #0d1626;
-    --bg-row:   #111d2e;
-    --border:   #1e2f45;
-    --border-hi:#2a4060;
-    --primary:  #3b82f6;
-    --primary-dim: rgba(59,130,246,0.12);
-    --success:  #22c55e;
-    --warning:  #f59e0b;
-    --danger:   #ef4444;
-    --xtream:   #8b5cf6;
-    --text:     #e8f0fe;
-    --text-mid: #7a95b8;
-    --text-dim: #3a5270;
-    --live:     #ff3b3b;
-    --gold:     #fbbf24;
-    --font-main:'IBM Plex Sans Arabic', system-ui, sans-serif;
-    --font-mono:'JetBrains Mono', monospace;
-    --radius:   10px;
-  }
+/* ═══════ LOGIN ═══════ */
+#login-overlay{position:fixed;inset:0;background:radial-gradient(ellipse at 30% 60%,#0d1f3c 0%,var(--bg) 70%);z-index:9999;display:flex;justify-content:center;align-items:center;}
+.login-wrap{width:90%;max-width:380px;}
+.login-logo{text-align:center;margin-bottom:28px;}
+.login-logo .brand{font-size:30px;font-weight:800;background:linear-gradient(135deg,#60a5fa,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:3px;}
+.login-logo .sub{font-size:10px;color:var(--text3);margin-top:6px;letter-spacing:4px;text-transform:uppercase;}
+.login-card{background:var(--bg2);border:1px solid var(--brd2);border-radius:18px;padding:28px;box-shadow:0 0 80px rgba(59,130,246,.08),0 20px 40px rgba(0,0,0,.5);}
+.login-card label{display:block;font-size:10px;color:var(--text2);font-weight:700;letter-spacing:.8px;margin-bottom:5px;text-transform:uppercase;}
+.login-card input{width:100%;height:40px;background:var(--bg1);border:1px solid var(--brd);border-radius:var(--r);color:var(--text);padding:0 13px;font-size:13px;margin-bottom:14px;transition:border-color .2s,box-shadow .2s;font-family:var(--font);}
+.login-card input:focus{border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-dim);}
+.login-btn-main{width:100%;height:42px;background:linear-gradient(135deg,var(--blue),#2563eb);border:none;border-radius:var(--r);color:#fff;font-size:14px;font-weight:700;cursor:pointer;transition:all .2s;letter-spacing:.5px;font-family:var(--font);}
+.login-btn-main:hover{box-shadow:0 4px 20px var(--blue-glow);transform:translateY(-1px);}
+.login-err{color:var(--red);font-size:11px;margin-top:10px;text-align:center;min-height:16px;}
 
-  *, *::before, *::after { box-sizing: border-box; outline: none; margin: 0; padding: 0; }
+/* ═══════ APP SHELL ═══════ */
+#app{display:none;height:100vh;flex-direction:column;}
 
-  body {
-    font-family: var(--font-main);
-    background: var(--bg);
-    color: var(--text);
-    min-height: 100vh;
-    font-size: 13px;
-  }
+/* ═══════ TOPBAR ═══════ */
+.topbar{height:50px;background:rgba(8,14,24,.95);border-bottom:1px solid var(--brd);display:flex;align-items:center;gap:10px;padding:0 16px;flex-shrink:0;z-index:50;backdrop-filter:blur(10px);}
+.t-brand{display:flex;align-items:center;gap:8px;white-space:nowrap;}
+.t-brand .ico{width:26px;height:26px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;}
+.t-brand .name{font-weight:800;font-size:14px;letter-spacing:1px;background:linear-gradient(90deg,#dde9f8,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.t-brand .ver{font-size:9px;background:var(--green);color:#000;padding:2px 6px;border-radius:4px;font-weight:800;letter-spacing:1px;-webkit-text-fill-color:#000;}
+.t-space{flex:1;}
+.t-clock{font-family:var(--mono);font-size:11px;color:var(--text2);background:var(--bg2);border:1px solid var(--brd);padding:4px 10px;border-radius:6px;white-space:nowrap;}
+.t-user{font-size:11px;color:var(--text2);max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.t-btn{height:28px;padding:0 12px;border-radius:6px;border:1px solid var(--brd2);background:transparent;color:var(--text2);font-size:11px;cursor:pointer;transition:all .15s;font-family:var(--font);white-space:nowrap;}
+.t-btn:hover{border-color:var(--red);color:var(--red);}
 
-  /* ═══ TOP BAR ═══ */
-  .topbar {
-    background: var(--bg-card);
-    border-bottom: 1px solid var(--border);
-    padding: 0 24px;
-    height: 56px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.4);
-  }
-  .topbar-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--primary);
-    letter-spacing: 0.5px;
-    white-space: nowrap;
-  }
-  .topbar-logo .badge {
-    background: var(--success);
-    color: #000;
-    font-size: 9px;
-    font-weight: 800;
-    padding: 2px 7px;
-    border-radius: 4px;
-    letter-spacing: 1px;
-  }
-  .topbar-spacer { flex: 1; }
-  .topbar-date {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--text-mid);
-    background: var(--bg-row);
-    border: 1px solid var(--border);
-    padding: 4px 10px;
-    border-radius: 6px;
-    white-space: nowrap;
-  }
+/* ═══════ CONTENT GRID ═══════ */
+.content{display:flex;gap:0;flex:1;overflow:hidden;}
+.main-panel{flex:1;overflow-y:auto;padding:16px 18px;min-width:0;}
+.side-panel{width:300px;flex-shrink:0;background:var(--bg1);border-right:1px solid var(--brd);overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:12px;}
 
-  /* ═══ MAIN LAYOUT ═══ */
-  .page-wrap { display: grid; grid-template-columns: 1fr 320px; gap: 0; min-height: calc(100vh - 56px); }
-  @media (max-width: 1200px) { .page-wrap { grid-template-columns: 1fr; } }
+/* ═══════ SECTION TITLE ═══════ */
+.s-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:1.2px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:6px;}
+.s-title::after{content:'';flex:1;height:1px;background:var(--brd);}
 
-  .main-col { padding: 20px; overflow: hidden; }
-  .side-col {
-    background: var(--bg-card);
-    border-right: 1px solid var(--border);
-    padding: 20px;
-    position: sticky;
-    top: 56px;
-    height: calc(100vh - 56px);
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  @media (max-width: 1200px) { .side-col { position: static; height: auto; border-right: none; border-top: 1px solid var(--border); } }
+/* ═══════ TOOLBAR ═══════ */
+.toolbar{background:var(--bg2);border:1px solid var(--brd);border-radius:var(--r2);padding:10px 12px;margin-bottom:12px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+.tb-sep{width:1px;height:22px;background:var(--brd);margin:0 2px;}
 
-  /* ═══ SECTION HEADER ═══ */
-  .section-hdr {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 14px;
-  }
-  .section-hdr h2 { font-size: 13px; font-weight: 600; color: var(--text-mid); letter-spacing: 0.5px; text-transform: uppercase; }
-  .section-hdr .pill {
-    font-family: var(--font-mono);
-    font-size: 10px;
-    background: var(--primary-dim);
-    color: var(--primary);
-    border: 1px solid rgba(59,130,246,0.3);
-    padding: 2px 8px;
-    border-radius: 20px;
-  }
+/* Buttons */
+.btn{height:32px;padding:0 13px;border-radius:var(--r);border:1px solid transparent;font-size:11px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:5px;white-space:nowrap;transition:all .15s;font-family:var(--font);letter-spacing:.2px;}
+.btn:hover{filter:brightness(1.15);transform:translateY(-1px);}
+.btn:active{transform:translateY(0);filter:brightness(.95);}
+.btn-primary{background:var(--blue);border-color:var(--blue);color:#fff;}
+.btn-success{background:#065f46;border-color:#10b981;color:#34d399;}
+.btn-danger{background:#7f1d1d;border-color:#ef4444;color:#fca5a5;}
+.btn-fire{background:#78350f;border-color:var(--gold);color:var(--gold);}
+.btn-xtream{background:#2e1065;border-color:var(--purple);color:var(--purple);}
+.btn-ghost{background:transparent;border-color:var(--brd2);color:var(--text2);}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue);}
+.btn-sm{height:26px;padding:0 10px;font-size:10px;}
 
-  /* ═══ CONTROLS ═══ */
-  .controls-bar {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 12px 16px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    align-items: center;
-    margin-bottom: 14px;
-  }
+/* Search & Filter */
+.search-input,.filter-sel{height:32px;padding:0 10px;background:var(--bg1);border:1px solid var(--brd);border-radius:var(--r);color:var(--text);font-size:12px;font-family:var(--font);transition:border-color .2s;}
+.search-input{flex:1;min-width:120px;}
+.filter-sel{min-width:120px;}
+.search-input:focus,.filter-sel:focus{border-color:var(--blue);}
+.filter-sel option{background:var(--bg1);}
 
-  input, select, button, textarea {
-    font-family: var(--font-main);
-    background: var(--bg);
-    color: var(--text);
-    border: 1px solid var(--border);
-    border-radius: 7px;
-    font-size: 12px;
-    transition: border-color 0.15s, box-shadow 0.15s;
-  }
-  input:focus, select:focus, textarea:focus {
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
-  }
+/* ═══════ STATS STRIP ═══════ */
+.stats-strip{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;}
+.stat-chip{background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:10px;min-width:100px;}
+.stat-chip .sv{font-family:var(--mono);font-size:20px;font-weight:700;line-height:1;}
+.stat-chip .sl{font-size:9px;color:var(--text2);text-transform:uppercase;letter-spacing:.8px;margin-top:2px;}
+.sc-all .sv{color:var(--text);}
+.sc-live .sv{color:var(--red);}
+.sc-sel .sv{color:var(--green);}
+.sc-up .sv{color:var(--cyan);}
+.sc-done .sv{color:var(--text3);}
 
-  .ctrl-btn {
-    height: 34px;
-    padding: 0 14px;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-weight: 600;
-    cursor: pointer;
-    white-space: nowrap;
-    border-radius: 7px;
-  }
-  .ctrl-btn:hover { filter: brightness(1.12); transform: translateY(-1px); }
-  .ctrl-btn:active { transform: translateY(0); }
+/* ═══════ DAY TABS ═══════ */
+.day-tabs{display:flex;gap:6px;margin-bottom:12px;}
+.day-tab{height:30px;padding:0 14px;border-radius:7px;background:var(--bg2);border:1px solid var(--brd);color:var(--text2);font-size:11px;font-weight:600;cursor:pointer;transition:all .15s;display:flex;align-items:center;gap:6px;font-family:var(--font);}
+.day-tab:hover{border-color:var(--brd3);color:var(--text);}
+.day-tab.active{background:var(--blue-dim);border-color:var(--blue);color:var(--blue);}
+.day-tab .dt-ct{background:var(--brd);color:var(--text2);font-size:9px;padding:1px 5px;border-radius:8px;font-family:var(--mono);}
+.day-tab.active .dt-ct{background:var(--blue);color:#fff;}
 
-  .btn-primary   { background: var(--primary);  border-color: var(--primary);  color: #fff; }
-  .btn-success   { background: #15803d;          border-color: #16a34a;         color: #fff; }
-  .btn-danger    { background: #991b1b;          border-color: #ef4444;         color: #fff; }
-  .btn-xtream    { background: #5b21b6;          border-color: var(--xtream);   color: #fff; }
-  .btn-firebase  { background: #92400e;          border-color: var(--warning);  color: var(--gold); }
-  .btn-ghost     { background: transparent;      border-color: var(--border);   color: var(--text-mid); }
+/* ═══════ TABLE ═══════ */
+.tbl-wrap{background:var(--bg2);border:1px solid var(--brd);border-radius:var(--r2);overflow:hidden;}
+.tbl-scroll{overflow-x:auto;}
+table{width:100%;border-collapse:collapse;min-width:1020px;}
+thead th{background:var(--bg1);padding:9px 10px;text-align:center;color:var(--text3);font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;white-space:nowrap;border-bottom:1px solid var(--brd);}
+tbody tr{border-bottom:1px solid rgba(25,40,64,.5);transition:background .1s;}
+tbody tr:last-child{border-bottom:none;}
+tbody tr:hover{background:var(--blue-hl);}
+tbody tr.row-sel{background:rgba(59,130,246,.06);}
+tbody tr.row-sel td:first-child{box-shadow:inset 3px 0 0 var(--blue);}
+td{padding:6px 9px;text-align:center;vertical-align:middle;white-space:nowrap;}
 
-  .search-box {
-    height: 34px;
-    padding: 0 12px;
-    flex: 1;
-    min-width: 160px;
-  }
-  .filter-select {
-    height: 34px;
-    padding: 0 10px;
-    min-width: 130px;
-  }
+/* Checkbox */
+input[type="checkbox"]{width:15px;height:15px;accent-color:var(--blue);cursor:pointer;}
 
-  /* ═══ STATS ═══ */
-  .stats-row {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-bottom: 14px;
-  }
-  .stat-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 8px 14px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    min-width: 110px;
-  }
-  .stat-card .stat-val {
-    font-family: var(--font-mono);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1;
-  }
-  .stat-card .stat-lbl { font-size: 10px; color: var(--text-mid); text-transform: uppercase; letter-spacing: 0.5px; }
-  .stat-total .stat-val  { color: var(--text); }
-  .stat-live .stat-val   { color: var(--live); }
-  .stat-sel .stat-val    { color: var(--success); }
-  .stat-tmr .stat-val    { color: var(--gold); }
+/* Status badges */
+.badge{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:5px;font-size:9px;font-weight:700;letter-spacing:.5px;}
+.badge .dot{width:5px;height:5px;border-radius:50%;flex-shrink:0;}
+.b-live{background:rgba(239,68,68,.12);color:#fca5a5;border:1px solid rgba(239,68,68,.25);}
+.b-live .dot{background:var(--red);animation:pulse 1.4s infinite;}
+.b-done{background:rgba(46,74,102,.2);color:var(--text3);border:1px solid var(--brd);}
+.b-done .dot{background:var(--text3);}
+.b-soon{background:rgba(34,211,238,.08);color:#67e8f9;border:1px solid rgba(34,211,238,.2);}
+.b-soon .dot{background:var(--cyan);}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.2;}}
 
-  /* ═══ TABS (days) ═══ */
-  .day-tabs { display: flex; gap: 6px; margin-bottom: 14px; }
-  .day-tab {
-    height: 32px;
-    padding: 0 16px;
-    border-radius: 6px;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    color: var(--text-mid);
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.15s;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .day-tab:hover { border-color: var(--primary); color: var(--text); }
-  .day-tab.active { background: var(--primary-dim); border-color: var(--primary); color: var(--primary); }
-  .day-tab .badge-ct {
-    background: var(--border);
-    color: var(--text-mid);
-    font-size: 9px;
-    padding: 1px 5px;
-    border-radius: 10px;
-    font-family: var(--font-mono);
-  }
-  .day-tab.active .badge-ct { background: var(--primary); color: #fff; }
+/* Team cells */
+.tm{display:flex;align-items:center;gap:6px;}
+.tm.rev{flex-direction:row-reverse;}
+.tlogo{width:24px;height:24px;border-radius:50%;background:#fff;padding:2px;object-fit:contain;flex-shrink:0;}
+.tname{font-size:12px;font-weight:500;max-width:110px;overflow:hidden;text-overflow:ellipsis;}
+.score{font-family:var(--mono);font-size:14px;font-weight:700;color:var(--gold);letter-spacing:2px;}
+.time-val{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--gold);}
+.lg-name{font-size:10px;color:var(--text2);max-width:130px;overflow:hidden;text-overflow:ellipsis;}
 
-  /* ═══ TABLE ═══ */
-  .table-wrap {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
-  }
-  .table-scroll { overflow-x: auto; }
-  table { width: 100%; border-collapse: collapse; min-width: 980px; }
+/* Channel / commentator */
+.ch-select,.ch-input,.cm-input{
+  width:100%;min-width:140px;height:28px;font-size:11px;border-radius:5px;
+  background:var(--bg3);border:1px solid var(--brd);color:var(--text);padding:0 8px;
+  font-family:var(--font);transition:border-color .15s;
+}
+.ch-select{color:var(--gold);font-weight:600;appearance:none;
+  background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath fill='%23f59e0b' d='M4 5L0 1h8z'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:left 7px center;padding-left:20px;min-width:150px;}
+.ch-select option{background:var(--bg1);}
+.ch-input{color:#4ade80;font-weight:600;}
+.cm-input{color:var(--text2);}
+.ch-select:focus,.ch-input:focus,.cm-input:focus{border-color:var(--blue);}
+.loading-ch{color:var(--gold);font-size:10px;animation:pulse 1s infinite;}
 
-  thead th {
-    background: #0a1220;
-    padding: 10px 10px;
-    text-align: center;
-    color: var(--text-dim);
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    white-space: nowrap;
-    border-bottom: 1px solid var(--border);
-  }
+/* Server button */
+.srv-btn{background:var(--bg3);border:1px solid var(--brd);border-radius:6px;padding:3px 9px;font-size:10px;cursor:pointer;color:var(--text2);display:inline-flex;align-items:center;gap:4px;transition:all .15s;font-family:var(--font);}
+.srv-btn:hover{border-color:var(--purple);color:var(--purple);}
+.srv-ct{background:var(--blue);color:#fff;font-size:9px;padding:1px 5px;border-radius:8px;font-family:var(--mono);display:none;}
 
-  tbody tr {
-    border-bottom: 1px solid rgba(30,47,69,0.6);
-    transition: background 0.1s;
-  }
-  tbody tr:hover { background: rgba(59,130,246,0.04); }
-  tbody tr.selected-row { background: rgba(59,130,246,0.07); }
-  tbody tr.selected-row td:first-child { border-right: 3px solid var(--primary); }
+/* ═══════ SIDE PANEL ═══════ */
+.json-out{flex:1;min-height:250px;width:100%;font-family:var(--mono);font-size:10px;line-height:1.6;color:#7dd3fc;padding:10px;border-radius:var(--r);background:var(--bg);border:1px solid var(--brd);resize:none;}
+.side-info{background:var(--bg2);border:1px solid var(--brd);border-radius:var(--r);padding:10px 12px;font-size:11px;color:var(--text2);line-height:1.8;}
+.side-info b{color:var(--text);}
 
-  td {
-    padding: 7px 10px;
-    text-align: center;
-    vertical-align: middle;
-    white-space: nowrap;
-  }
+/* ═══════ MODALS (shared) ═══════ */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(6px);z-index:200;display:none;justify-content:center;align-items:center;padding:20px;}
+.modal-overlay.open{display:flex;}
+.modal-box{background:var(--bg2);border:1px solid var(--brd2);border-radius:18px;width:100%;box-shadow:0 30px 60px rgba(0,0,0,.6);max-height:85vh;overflow-y:auto;}
+.modal-head{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--brd);position:sticky;top:0;background:var(--bg2);z-index:1;}
+.modal-head h3{font-size:14px;font-weight:700;}
+.modal-body{padding:18px 20px;}
+.modal-foot{padding:12px 20px;border-top:1px solid var(--brd);display:flex;gap:8px;justify-content:flex-end;position:sticky;bottom:0;background:var(--bg2);}
+.m-close{background:none;border:none;color:var(--text2);font-size:20px;cursor:pointer;padding:0 4px;line-height:1;transition:color .15s;}
+.m-close:hover{color:var(--red);}
 
-  /* Checkbox */
-  .cb-wrap { display: flex; justify-content: center; align-items: center; }
-  input[type="checkbox"] {
-    width: 16px; height: 16px;
-    accent-color: var(--primary);
-    cursor: pointer;
-    border-radius: 4px;
-  }
+/* ═══════ SERVER MODAL ═══════ */
+#serverModal .modal-box{max-width:620px;}
+.srv-row-item{display:flex;gap:6px;margin-bottom:8px;align-items:center;}
+.srv-row-item input{flex:1;height:34px;padding:0 10px;background:var(--bg1);border:1px solid var(--brd);border-radius:var(--r);color:var(--text);font-size:12px;font-family:var(--font);}
+.srv-row-item input:focus{border-color:var(--blue);}
+.srv-row-item .sm-btn{height:28px;width:28px;padding:0;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;}
 
-  /* Status badges */
-  .status-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    padding: 3px 9px;
-    border-radius: 5px;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.4px;
-  }
-  .status-badge::before { content: ''; width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
-  .s-live     { background: rgba(255,59,59,0.15); color: #ff8080; border: 1px solid rgba(255,59,59,0.3); }
-  .s-live::before { background: var(--live); animation: blink 1.2s infinite; }
-  .s-finished { background: rgba(30,47,69,0.5); color: var(--text-dim); border: 1px solid var(--border); }
-  .s-finished::before { background: var(--text-dim); }
-  .s-upcoming { background: rgba(59,130,246,0.12); color: #60a5fa; border: 1px solid rgba(59,130,246,0.25); }
-  .s-upcoming::before { background: #60a5fa; }
+/* JSON Import for servers */
+.json-drop{border:2px dashed var(--brd2);border-radius:var(--r);padding:20px;text-align:center;color:var(--text2);font-size:12px;cursor:pointer;transition:all .2s;margin-bottom:12px;}
+.json-drop:hover,.json-drop.drag{border-color:var(--blue);color:var(--blue);background:var(--blue-dim);}
+.json-drop input[type=file]{display:none;}
+.json-preview{background:var(--bg1);border:1px solid var(--brd);border-radius:var(--r);padding:10px;font-family:var(--mono);font-size:10px;color:#7dd3fc;max-height:120px;overflow-y:auto;margin-bottom:10px;display:none;}
 
-  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+/* ═══════ PUBLISH CONFIRM MODAL ═══════ */
+#confirmModal .modal-box{max-width:420px;}
 
-  /* Teams */
-  .team-cell { display: flex; align-items: center; gap: 7px; }
-  .team-cell.rev { flex-direction: row-reverse; }
-  img.tlogo {
-    width: 26px; height: 26px;
-    object-fit: contain;
-    border-radius: 50%;
-    background: #fff;
-    padding: 2px;
-    flex-shrink: 0;
-  }
-  .team-name { font-size: 12px; font-weight: 500; max-width: 120px; overflow: hidden; text-overflow: ellipsis; }
+/* ═══════ BULK AREA ═══════ */
+.bulk-wrap{background:var(--bg2);border:1px solid var(--brd);border-radius:var(--r2);padding:12px;margin-bottom:12px;display:none;}
+.bulk-wrap textarea{width:100%;height:70px;padding:8px;font-size:12px;font-family:var(--mono);background:var(--bg1);border:1px solid var(--brd);border-radius:var(--r);color:var(--text);resize:none;}
+.bulk-wrap textarea:focus{border-color:var(--blue);}
 
-  /* Score */
-  .score-cell {
-    font-family: var(--font-mono);
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--gold);
-    letter-spacing: 2px;
-    min-width: 60px;
-  }
+/* ═══════ EMPTY / LOADING ═══════ */
+.empty-state{text-align:center;padding:50px 20px;color:var(--text3);}
+.empty-state .ei{font-size:36px;margin-bottom:12px;}
+.loading-state{text-align:center;padding:50px 20px;}
+.spin{width:32px;height:32px;border:3px solid var(--brd);border-top-color:var(--blue);border-radius:50%;animation:spin .7s linear infinite;margin:0 auto 14px;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.loading-state p{color:var(--text2);font-size:12px;}
 
-  /* Time */
-  .time-cell {
-    font-family: var(--font-mono);
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--gold);
-  }
+/* ═══════ TOASTS ═══════ */
+#toasts{position:fixed;bottom:16px;right:16px;z-index:9990;display:flex;flex-direction:column;gap:6px;max-width:300px;}
+.toast{background:var(--bg2);border:1px solid var(--brd);border-radius:9px;padding:9px 14px;font-size:11px;display:flex;align-items:flex-start;gap:8px;box-shadow:0 8px 24px rgba(0,0,0,.4);animation:tIn .2s ease-out;}
+.toast .tdot{width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:3px;}
+.toast.success .tdot{background:var(--green);}
+.toast.error .tdot{background:var(--red);}
+.toast.warning .tdot{background:var(--gold);}
+.toast.info .tdot{background:var(--blue);}
+.toast .tmsg{color:var(--text);line-height:1.4;}
+@keyframes tIn{from{transform:translateX(20px);opacity:0;}to{transform:none;opacity:1;}}
+@keyframes tOut{to{transform:translateX(20px);opacity:0;}}
 
-  /* League */
-  .league-cell { font-size: 11px; color: var(--text-mid); max-width: 140px; overflow: hidden; text-overflow: ellipsis; }
-
-  /* Channel input / select */
-  .channel-select, .channel-input {
-    width: 100%; min-width: 150px;
-    height: 30px; font-size: 11px;
-    text-align: center;
-    border-radius: 6px;
-    padding: 0 8px;
-  }
-  .channel-select {
-    color: var(--gold);
-    font-weight: 600;
-    background-color: var(--bg-row);
-    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10'%3E%3Cpath fill='%23fbbf24' d='M5 7L0 2h10z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: left 8px center;
-    background-size: 8px;
-    padding-left: 22px;
-    appearance: none;
-  }
-  .channel-select option { background: #0a1220; }
-  .channel-input { color: #4ade80; font-weight: 600; }
-  .comm-input  { width: 100%; min-width: 120px; height: 30px; font-size: 11px; text-align: center; border-radius: 6px; padding: 0 8px; color: var(--text-mid); }
-  .loading-ch { color: var(--warning); font-size: 10px; animation: blink 1s infinite; }
-
-  /* Server button */
-  .srv-btn {
-    background: var(--bg-row);
-    border: 1px solid var(--border);
-    color: var(--text-mid);
-    border-radius: 6px;
-    padding: 3px 9px;
-    font-size: 11px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    transition: border-color 0.15s;
-  }
-  .srv-btn:hover { border-color: var(--primary); color: var(--primary); }
-  .srv-count {
-    background: var(--primary);
-    color: #fff;
-    font-size: 9px;
-    padding: 1px 5px;
-    border-radius: 10px;
-    font-family: var(--font-mono);
-    display: none;
-  }
-
-  /* ═══ SIDE PANEL ═══ */
-  .side-label { font-size: 10px; font-weight: 700; color: var(--text-dim); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
-  #output {
-    flex: 1;
-    min-height: 300px;
-    width: 100%;
-    font-family: var(--font-mono);
-    font-size: 11px;
-    line-height: 1.6;
-    color: #93c5fd;
-    padding: 12px;
-    border-radius: 8px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    resize: vertical;
-  }
-  .copy-btn {
-    width: 100%;
-    height: 34px;
-    border-radius: 7px;
-    background: var(--bg-row);
-    border: 1px solid var(--border);
-    color: var(--text-mid);
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.15s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-  }
-  .copy-btn:hover { border-color: var(--primary); color: var(--primary); }
-
-  /* ═══ MODAL ═══ */
-  .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.75); backdrop-filter: blur(6px); z-index: 500; justify-content: center; align-items: center; }
-  .modal.open { display: flex; }
-  .modal-box {
-    background: var(--bg-card);
-    border: 1px solid var(--border-hi);
-    border-radius: 14px;
-    width: 95%;
-    max-width: 580px;
-    padding: 24px;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.6);
-  }
-  .modal-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
-  .modal-head h3 { font-size: 15px; font-weight: 700; color: var(--text); }
-  .modal-close { background: none; border: none; color: var(--text-mid); font-size: 22px; cursor: pointer; padding: 0 4px; line-height: 1; }
-  .modal-close:hover { color: var(--danger); }
-  .srv-row { display: flex; gap: 8px; margin-bottom: 8px; align-items: center; }
-  .srv-row input { flex: 1; height: 34px; padding: 0 10px; font-size: 12px; border-radius: 6px; }
-  .srv-row button { height: 34px; padding: 0 10px; border-radius: 6px; font-size: 12px; cursor: pointer; }
-
-  /* ═══ LOGIN ═══ */
-  #login-overlay {
-    position: fixed; inset: 0;
-    background: var(--bg);
-    z-index: 9999;
-    display: flex; justify-content: center; align-items: center;
-  }
-  .login-box {
-    background: var(--bg-card);
-    border: 1px solid var(--border-hi);
-    border-radius: 16px;
-    padding: 40px 36px;
-    width: 90%; max-width: 380px;
-    text-align: center;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-  }
-  .login-box h2 { font-size: 18px; color: var(--primary); margin-bottom: 24px; }
-  .login-box input {
-    width: 100%; height: 40px; padding: 0 14px;
-    margin-bottom: 10px; border-radius: 8px; font-size: 13px;
-    display: block;
-  }
-  .login-box .login-btn {
-    width: 100%; height: 42px; font-size: 14px; font-weight: 700;
-    border-radius: 8px; cursor: pointer; margin-top: 6px;
-  }
-  .login-err { color: var(--danger); font-size: 12px; margin-top: 10px; }
-
-  /* ═══ TOASTS ═══ */
-  #toasts { position: fixed; bottom: 20px; right: 20px; z-index: 9998; display: flex; flex-direction: column; gap: 8px; max-width: 320px; }
-  .toast {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 10px 16px;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-    animation: toastIn 0.25s ease-out;
-  }
-  .toast.success { border-color: var(--success); }
-  .toast.error   { border-color: var(--danger); }
-  .toast.warning { border-color: var(--warning); }
-  .toast-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
-  .toast.success .toast-dot { background: var(--success); }
-  .toast.error   .toast-dot { background: var(--danger); }
-  .toast.warning .toast-dot { background: var(--warning); }
-  .toast.info    .toast-dot { background: var(--primary); }
-
-  @keyframes toastIn { from { transform: translateX(30px); opacity: 0; } to { transform: none; opacity: 1; } }
-  @keyframes toastOut { to { transform: translateX(30px); opacity: 0; } }
-
-  /* Loading overlay */
-  .fetch-progress {
-    text-align: center;
-    padding: 60px 20px;
-    color: var(--text-mid);
-  }
-  .fetch-progress .spinner {
-    width: 36px; height: 36px;
-    border: 3px solid var(--border);
-    border-top-color: var(--primary);
-    border-radius: 50%;
-    animation: spin 0.8s linear infinite;
-    margin: 0 auto 16px;
-  }
-  @keyframes spin { to { transform: rotate(360deg); } }
-
-  /* Bulk */
-  .bulk-area { display: none; margin-bottom: 14px; }
-  .bulk-area textarea { width: 100%; height: 70px; padding: 10px; font-size: 12px; border-radius: 8px; resize: none; }
-
-  /* Empty */
-  .empty-state { text-align: center; padding: 60px 20px; color: var(--text-dim); }
-  .empty-state .empty-icon { font-size: 40px; margin-bottom: 12px; }
-  .empty-state p { font-size: 13px; }
-
-  @media (max-width: 768px) {
-    .topbar { padding: 0 14px; }
-    .main-col { padding: 12px; }
-    .controls-bar { gap: 6px; }
-    .ctrl-btn, .search-box, .filter-select { height: 36px; }
-    .stats-row .stat-card { min-width: 80px; }
-  }
+/* ═══════ PROGRESS BAR ═══════ */
+.fetch-bar{height:3px;background:var(--brd);border-radius:2px;overflow:hidden;margin-bottom:10px;}
+.fetch-bar-fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:2px;transition:width .3s;width:0%;}
 </style>
 </head>
 <body>
 
-<!-- ══════════ LOGIN ══════════ -->
+<!-- ────── LOGIN ────── -->
 <div id="login-overlay">
-  <div class="login-box">
-    <h2>🔒 تسجيل الدخول</h2>
-    <input type="email"    id="login-email" placeholder="البريد الإلكتروني">
-    <input type="password" id="login-pass"  placeholder="كلمة المرور">
-    <button id="login-btn" class="ctrl-btn btn-primary login-btn">دخول</button>
-    <p class="login-err" id="login-error"></p>
+  <div class="login-wrap">
+    <div class="login-logo">
+      <div class="brand">ULTRA TV</div>
+      <div class="sub">Admin Dashboard</div>
+    </div>
+    <div class="login-card">
+      <label>البريد الإلكتروني</label>
+      <input type="email" id="lemail" placeholder="admin@ultratv.dz">
+      <label>كلمة المرور</label>
+      <input type="password" id="lpass" placeholder="••••••••">
+      <button class="login-btn-main" id="lbtn">دخول إلى لوحة التحكم</button>
+      <p class="login-err" id="lerr"></p>
+    </div>
   </div>
 </div>
 
-<!-- ══════════ APP ══════════ -->
-<div id="app" style="display:none;">
+<!-- ────── APP ────── -->
+<div id="app" style="display:none;flex-direction:column;">
 
-  <!-- TOP BAR -->
+  <!-- TOPBAR -->
   <div class="topbar">
-    <div class="topbar-logo">
-      🎯 ULTRA TV <span class="badge">ADMIN</span>
+    <div class="t-brand">
+      <div class="ico">📡</div>
+      <span class="name">ULTRA TV</span>
+      <span class="ver">ADMIN</span>
     </div>
-    <div class="topbar-spacer"></div>
-    <div class="topbar-date" id="clockDisplay"></div>
-    <button class="ctrl-btn btn-ghost" style="height:32px; font-size:11px; padding:0 12px;" onclick="firebase.auth().signOut()">⏻ خروج</button>
+    <div class="t-space"></div>
+    <span class="t-clock" id="clockEl"></span>
+    <span class="t-user" id="userEl"></span>
+    <button class="t-btn" onclick="doSignOut()">⏻ خروج</button>
   </div>
 
-  <!-- PAGE GRID -->
-  <div class="page-wrap">
+  <!-- CONTENT -->
+  <div class="content" style="flex:1;overflow:hidden;">
 
-    <!-- ═══ MAIN COLUMN ═══ -->
-    <div class="main-col">
+    <!-- MAIN PANEL -->
+    <div class="main-panel">
 
-      <!-- Controls bar -->
-      <div class="controls-bar">
-        <button class="ctrl-btn btn-primary"  onclick="fetchMatchesForActiveDay()">🔄 تحديث</button>
-        <select class="filter-select" id="statusFilter" onchange="filterMatches()">
+      <!-- TOOLBAR -->
+      <div class="toolbar">
+        <button class="btn btn-primary" onclick="fetchActiveDay()">🔄 تحديث API</button>
+        <div class="tb-sep"></div>
+        <select class="filter-sel" id="sfStatus" onchange="filterRows()">
           <option value="all">🔍 الكل</option>
           <option value="Live">🔴 مباشر</option>
           <option value="Finished">🏁 انتهت</option>
           <option value="Not Started">⏳ قادمة</option>
         </select>
-        <input type="text" class="search-box" id="searchInput" placeholder="بحث بالفريق أو الدوري...">
-        <div style="flex:1; min-width:0;"></div>
-        <button class="ctrl-btn btn-ghost"     onclick="toggleBulk()">📝 إدخال يدوي</button>
-        <button class="ctrl-btn btn-xtream"    onclick="autoFillFromXtream()">⚡ Xtream</button>
-        <button class="ctrl-btn btn-firebase"  onclick="loadFromFirebase()">📥 استعادة</button>
-        <button class="ctrl-btn btn-danger"    onclick="clearFirebase()">🗑️ مسح DB</button>
-        <button class="ctrl-btn btn-success"   onclick="saveToFirebase()">🔥 نشر</button>
+        <input type="text" class="search-input" id="sfSearch" placeholder="بحث بالفريق أو الدوري…">
+        <div class="tb-sep"></div>
+        <button class="btn btn-ghost" onclick="toggleBulk()" title="إدخال يدوي">📝 يدوي</button>
+        <button class="btn btn-xtream" onclick="autoFillXtream()" title="ملء تلقائي من Xtream">⚡ Xtream</button>
+        <div class="tb-sep"></div>
+        <button class="btn btn-ghost" onclick="loadFromFB()">📥 استعادة</button>
+        <button class="btn btn-danger" onclick="clearFB()">🗑 مسح DB</button>
+        <button class="btn btn-fire" onclick="confirmPublish()">🔥 نشر Firebase</button>
       </div>
 
-      <!-- Bulk input -->
-      <div class="bulk-area" id="bulkArea">
-        <textarea id="bulkInput" placeholder="الفريق 1 ضد الفريق 2, القناة, المعلق (كل مباراة في سطر)"></textarea>
-        <button class="ctrl-btn btn-primary" style="margin-top:6px;" onclick="processBulkInput()">✅ تطبيق</button>
-      </div>
+      <!-- FETCH PROGRESS BAR -->
+      <div class="fetch-bar" id="fetchBar"><div class="fetch-bar-fill" id="fetchFill"></div></div>
 
-      <!-- Stats -->
-      <div class="stats-row">
-        <div class="stat-card stat-total">
-          <div><div class="stat-val" id="statTotal">0</div><div class="stat-lbl">مباريات</div></div>
-        </div>
-        <div class="stat-card stat-live">
-          <div><div class="stat-val" id="statLive">0</div><div class="stat-lbl">مباشر</div></div>
-        </div>
-        <div class="stat-card stat-sel">
-          <div><div class="stat-val" id="statSelected">0</div><div class="stat-lbl">محدد</div></div>
-        </div>
-        <div class="stat-card stat-tmr" id="statUpcomingCard">
-          <div><div class="stat-val" id="statUpcoming">0</div><div class="stat-lbl">قادمة</div></div>
+      <!-- BULK INPUT -->
+      <div class="bulk-wrap" id="bulkWrap">
+        <div class="s-title" style="margin-bottom:8px;">إدخال يدوي</div>
+        <textarea id="bulkInput" placeholder="الفريق 1 ضد الفريق 2, القناة, المعلق&#10;كل مباراة في سطر جديد…"></textarea>
+        <div style="display:flex;gap:6px;margin-top:8px;">
+          <button class="btn btn-primary btn-sm" onclick="processBulk()">✅ تطبيق</button>
+          <button class="btn btn-ghost btn-sm" onclick="toggleBulk()">إغلاق</button>
         </div>
       </div>
 
-      <!-- Day tabs -->
+      <!-- STATS -->
+      <div class="stats-strip">
+        <div class="stat-chip sc-all"><div><div class="sv" id="stTotal">0</div><div class="sl">مباريات</div></div></div>
+        <div class="stat-chip sc-live"><div><div class="sv" id="stLive">0</div><div class="sl">مباشر</div></div></div>
+        <div class="stat-chip sc-soon"><div><div class="sv" id="stSoon">0</div><div class="sl">قادمة</div></div></div>
+        <div class="stat-chip sc-sel"><div><div class="sv" id="stSel">0</div><div class="sl">محدد</div></div></div>
+        <div class="stat-chip sc-done"><div><div class="sv" id="stDone">0</div><div class="sl">انتهت</div></div></div>
+      </div>
+
+      <!-- DAY TABS -->
       <div class="day-tabs">
-        <button class="day-tab active" id="tab-today" onclick="switchDay(0)">اليوم <span class="badge-ct" id="ct-today">0</span></button>
-        <button class="day-tab" id="tab-tomorrow" onclick="switchDay(1)">الغد <span class="badge-ct" id="ct-tomorrow">0</span></button>
+        <button class="day-tab active" id="tab0" onclick="switchDay(0)">📅 اليوم <span class="dt-ct" id="ct0">0</span></button>
+        <button class="day-tab" id="tab1" onclick="switchDay(1)">🌙 الغد <span class="dt-ct" id="ct1">0</span></button>
       </div>
 
-      <!-- Table -->
-      <div class="table-wrap">
-        <div class="table-scroll">
-          <table id="matchesTable">
+      <!-- TABLE -->
+      <div class="tbl-wrap">
+        <div class="tbl-scroll">
+          <table>
             <thead>
               <tr>
-                <th width="40">✔</th>
-                <th width="80">الحالة</th>
-                <th>الفريق المضيف</th>
-                <th width="80">النتيجة</th>
-                <th>الفريق الضيف</th>
-                <th width="130">الدوري</th>
-                <th width="70">الوقت</th>
-                <th width="170">القناة</th>
+                <th width="36">✔</th>
+                <th width="75">الحالة</th>
+                <th>المضيف</th>
+                <th width="75">النتيجة</th>
+                <th>الضيف</th>
+                <th width="125">الدوري</th>
+                <th width="65">الوقت</th>
+                <th width="175">القناة</th>
                 <th width="140">المعلق</th>
-                <th width="70">سرفرات</th>
+                <th width="66">سرفرات</th>
               </tr>
             </thead>
-            <tbody id="matchesTbody"></tbody>
+            <tbody id="tbody"></tbody>
           </table>
         </div>
       </div>
 
-    </div><!-- /main-col -->
+    </div><!-- /main-panel -->
 
-    <!-- ═══ SIDE COLUMN ═══ -->
-    <div class="side-col">
-      <div class="side-label">📦 JSON الناتج</div>
-      <textarea id="output" readonly placeholder="اختر مباريات لتظهر هنا..."></textarea>
-      <button class="copy-btn" onclick="copyJSON()">📋 نسخ JSON</button>
+    <!-- SIDE PANEL -->
+    <div class="side-panel">
+      <div class="s-title">JSON الناتج</div>
+      <textarea class="json-out" id="jsonOut" readonly placeholder='اختر مباريات…'></textarea>
+      <button class="btn btn-ghost" style="width:100%;justify-content:center;" onclick="copyJSON()">📋 نسخ JSON</button>
 
-      <div style="margin-top:10px; padding-top:10px; border-top:1px solid var(--border);">
-        <div class="side-label">إحصاء Firebase</div>
-        <div id="fbStats" style="font-size:11px; color:var(--text-mid); line-height:1.8;">—</div>
-      </div>
+      <div class="s-title" style="margin-top:4px;">حالة Firebase</div>
+      <div class="side-info" id="fbInfo">—</div>
+
+      <div class="s-title" style="margin-top:4px;">ملاحظات سريعة</div>
+      <textarea id="quickNotes" style="width:100%;height:90px;background:var(--bg);border:1px solid var(--brd);border-radius:var(--r);color:var(--text2);font-size:11px;padding:8px;resize:none;font-family:var(--font);" placeholder="ملاحظات خاصة بك…" oninput="saveNotes()"></textarea>
     </div>
 
-  </div><!-- /page-wrap -->
+  </div><!-- /content -->
 </div><!-- /app -->
 
-<!-- ══════════ SERVER MODAL ══════════ -->
-<div class="modal" id="serverModal">
+<!-- ────── SERVER MODAL ────── -->
+<div class="modal-overlay" id="serverModal">
   <div class="modal-box">
     <div class="modal-head">
       <h3>📡 إدارة السيرفرات</h3>
-      <button class="modal-close" onclick="closeServerModal()">&times;</button>
+      <button class="m-close" onclick="closeModal('serverModal')">&times;</button>
     </div>
-    <div id="serverList"></div>
-    <div style="display:flex; gap:8px; margin-top:14px;">
-      <button class="ctrl-btn btn-primary" onclick="addServerLine()">+ سطر</button>
-      <div style="flex:1"></div>
-      <button class="ctrl-btn btn-success" onclick="saveServers()">💾 حفظ</button>
+    <div class="modal-body">
+
+      <!-- JSON Upload Section -->
+      <div class="s-title">📂 استيراد سيرفرات من ملف JSON</div>
+      <div class="json-drop" id="jsonDrop" onclick="document.getElementById('jsonFileIn').click()"
+           ondragover="event.preventDefault();this.classList.add('drag')"
+           ondragleave="this.classList.remove('drag')"
+           ondrop="handleJsonDrop(event)">
+        <div style="font-size:22px;margin-bottom:6px;">📁</div>
+        <div>اسحب ملف JSON هنا أو اضغط للاختيار</div>
+        <div style="font-size:10px;margin-top:4px;opacity:.6;">يجب أن يكون بصيغة: <code>{"HD":"url","FHD":"url"}</code> أو <code>[{"HD":"url"},{"FHD":"url"}]</code></div>
+        <input type="file" id="jsonFileIn" accept=".json" onchange="handleJsonFile(this)">
+      </div>
+      <pre class="json-preview" id="jsonPreview"></pre>
+      <div style="display:flex;gap:6px;margin-bottom:14px;" id="jsonImportBtns" style="display:none;">
+        <button class="btn btn-success btn-sm" onclick="applyJsonServers()">✅ تطبيق السيرفرات المستوردة</button>
+        <button class="btn btn-ghost btn-sm" onclick="clearJsonImport()">✖ إلغاء</button>
+      </div>
+
+      <div class="s-title" style="margin-top:4px;">✏️ إضافة / تعديل يدوي</div>
+      <div id="srvList"></div>
+      <button class="btn btn-ghost btn-sm" onclick="addSrvLine()" style="margin-top:4px;">+ سطر جديد</button>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-ghost" onclick="closeModal('serverModal')">إلغاء</button>
+      <button class="btn btn-success" onclick="saveServers()">💾 حفظ السيرفرات</button>
+    </div>
+  </div>
+</div>
+
+<!-- ────── PUBLISH CONFIRM MODAL ────── -->
+<div class="modal-overlay" id="confirmModal">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h3>🔥 تأكيد النشر</h3>
+      <button class="m-close" onclick="closeModal('confirmModal')">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p style="color:var(--text2);font-size:13px;line-height:1.7;" id="confirmMsg">سيتم استبدال جميع المباريات في Firebase بـ <b id="confirmCount" style="color:var(--blue)">0</b> مباراة جديدة.</p>
+      <div style="background:var(--bg3);border:1px solid var(--brd2);border-radius:var(--r);padding:10px 12px;margin-top:12px;font-size:11px;color:var(--text2);">
+        ⚠️ هذا الإجراء لا يمكن التراجع عنه. سيُحذف المحتوى القديم.
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-ghost" onclick="closeModal('confirmModal')">إلغاء</button>
+      <button class="btn btn-fire" onclick="doPublish()">🔥 نشر الآن</button>
     </div>
   </div>
 </div>
 
 <div id="toasts"></div>
 
-<!-- ══════════ SCRIPTS ══════════ -->
 <script>
-// ─────────── Config ───────────
-const firebaseConfig = {
-  apiKey: "AIzaSyBBf2ock2SHzeLu27oh0rlxwgLmxHINjIk",
-  authDomain: "ultra-tv-c23ea.firebaseapp.com",
-  projectId: "ultra-tv-c23ea",
-  storageBucket: "ultra-tv-c23ea.firebasestorage.app",
-  messagingSenderId: "253161044450",
-  appId: "1:253161044450:web:66a15956cde240c1de21bb"
+/* ═══════════════════════════════════════════
+   CONFIG
+═══════════════════════════════════════════ */
+const FBConfig = {
+  apiKey:"AIzaSyBBf2ock2SHzeLu27oh0rlxwgLmxHINjIk",
+  authDomain:"ultra-tv-c23ea.firebaseapp.com",
+  projectId:"ultra-tv-c23ea",
+  storageBucket:"ultra-tv-c23ea.firebasestorage.app",
+  messagingSenderId:"253161044450",
+  appId:"1:253161044450:web:66a15956cde240c1de21bb"
 };
-firebase.initializeApp(firebaseConfig);
-const db   = firebase.firestore();
+firebase.initializeApp(FBConfig);
+const db = firebase.firestore();
 const auth = firebase.auth();
 
-const MY_PROXY = "https://ys-proxy.dzandz496.workers.dev/?url=";
-const xtreamConfig = {
-  fetchUrl:   "https://api-ultra.dzandz496.workers.dev",
-  streamHost: "http://api.ultrav.me",
-  username:   "AdminX99",
-  password:   "PassUltra2026"
+const PROXY = "https://ys-proxy.dzandz496.workers.dev/?url=";
+const XTREAM = {
+  fetchUrl:"https://api-ultra.dzandz496.workers.dev",
+  host:"http://api.ultrav.me",
+  user:"AdminX99",
+  pass:"PassUltra2026"
 };
+const IMG_BASE = "https://imgs.ysscores.com/teams/128/";
+const NO_LOGO = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23334155'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3C/svg%3E";
 
-// ─────────── State ───────────
-let currentMatchRow = null;
-let activeDay = 0;     // 0=today, 1=tomorrow
-let dayCounts  = { 0: 0, 1: 0 };
-const imgBase  = "https://imgs.ysscores.com/teams/128/";
-const defaultLogo = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z'/%3E%3C/svg%3E";
+/* ═══════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════ */
+let activeDay = 0;
+// selectedByDay[day] = Set of matchIds
+const selectedByDay = { 0: new Set(), 1: new Set() };
+let currentRow = null;
+let pendingJsonServers = null;
 
-// ─────────── Helpers ───────────
-function getDateString(offsetDays = 0) {
-  const d = new Date();
-  d.setDate(d.getDate() + offsetDays);
-  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
-}
-
-function formatChannelName(name) {
-  if (!name) return name;
-  let f = name;
-  f = f.replace(/بي [إا]ن سبورت|beIN Sports/gi, "beIN SPORTS").replace(/HD/gi,'').trim();
-  f = f.replace(/ثمانية/g, "Thmanyah").trim();
-  return f.replace(/\s+/g,' ').trim();
-}
-
-// ─────────── Clock ───────────
-function startClock() {
-  function tick() {
-    const now = new Date();
-    const days = ['الأحد','الاثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'];
-    const ds = days[now.getDay()];
-    const ts = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')}`;
-    document.getElementById('clockDisplay').textContent = `${ds} — ${ts}`;
-  }
-  tick();
-  setInterval(tick, 1000);
-}
-
-// ─────────── Auth ───────────
+/* ═══════════════════════════════════════════
+   AUTH
+═══════════════════════════════════════════ */
 document.addEventListener('DOMContentLoaded', () => {
-  auth.onAuthStateChanged(user => {
-    if (user) {
+  auth.onAuthStateChanged(u => {
+    if (u) {
       document.getElementById('login-overlay').style.display = 'none';
-      document.getElementById('app').style.display = 'block';
+      const app = document.getElementById('app');
+      app.style.display = 'flex';
+      document.getElementById('userEl').textContent = u.email;
       startClock();
+      loadNotes();
       init();
-      showToast(`مرحباً ${user.email}`, 'success');
+      toast(`مرحباً ${u.email}`, 'success');
     } else {
       document.getElementById('login-overlay').style.display = 'flex';
       document.getElementById('app').style.display = 'none';
     }
   });
-  document.getElementById('login-btn').addEventListener('click', () => {
-    const e = document.getElementById('login-email').value;
-    const p = document.getElementById('login-pass').value;
-    auth.signInWithEmailAndPassword(e, p).catch(err => {
-      document.getElementById('login-error').textContent = '❌ ' + err.message;
-    });
-  });
-  document.getElementById('login-pass').addEventListener('keydown', e => {
-    if (e.key === 'Enter') document.getElementById('login-btn').click();
-  });
+  document.getElementById('lbtn').addEventListener('click', doLogin);
+  document.getElementById('lpass').addEventListener('keydown', e => { if(e.key==='Enter') doLogin(); });
 });
 
+function doLogin() {
+  const e = document.getElementById('lemail').value;
+  const p = document.getElementById('lpass').value;
+  document.getElementById('lerr').textContent = '';
+  auth.signInWithEmailAndPassword(e, p).catch(err => {
+    document.getElementById('lerr').textContent = '❌ ' + err.message;
+  });
+}
+
+function doSignOut() { auth.signOut(); }
+
+/* ═══════════════════════════════════════════
+   CLOCK
+═══════════════════════════════════════════ */
+function startClock() {
+  const days = ['الأحد','الاثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'];
+  function tick() {
+    const n = new Date();
+    const t = `${pad(n.getHours())}:${pad(n.getMinutes())}:${pad(n.getSeconds())}`;
+    document.getElementById('clockEl').textContent = `${days[n.getDay()]} — ${t}`;
+  }
+  tick(); setInterval(tick, 1000);
+}
+const pad = n => String(n).padStart(2,'0');
+
+/* ═══════════════════════════════════════════
+   INIT
+═══════════════════════════════════════════ */
 function init() {
-  const tbody = document.getElementById('matchesTbody');
-  tbody.addEventListener('change', updateStatsAndJSON);
-  tbody.addEventListener('input', updateStatsAndJSON);
-  document.getElementById('searchInput').addEventListener('input', filterMatches);
-  fetchMatchesForActiveDay();
+  document.getElementById('tbody').addEventListener('change', onTableChange);
+  document.getElementById('tbody').addEventListener('input', () => buildJSON());
+  document.getElementById('sfSearch').addEventListener('input', filterRows);
   scheduleMidnightRefresh();
+  fetchActiveDay();
 }
 
-// ─────────── Day switch ───────────
-function switchDay(day) {
-  activeDay = day;
-  document.getElementById('tab-today').classList.toggle('active', day === 0);
-  document.getElementById('tab-tomorrow').classList.toggle('active', day === 1);
-  fetchMatchesForActiveDay();
-}
-
-function fetchMatchesForActiveDay() {
-  fetchMatches(getDateString(activeDay));
-}
-
-// ─────────── Midnight refresh ───────────
 function scheduleMidnightRefresh() {
-  const now  = new Date();
-  const next = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
-  setTimeout(() => {
-    showToast('منتصف الليل — تحديث تلقائي...', 'info');
-    fetchMatchesForActiveDay();
-    scheduleMidnightRefresh();
-  }, next - now);
+  const n = new Date();
+  const midnight = new Date(n.getFullYear(), n.getMonth(), n.getDate()+1);
+  setTimeout(() => { fetchActiveDay(); scheduleMidnightRefresh(); }, midnight - n);
 }
 
-// ─────────── Fetch Matches ───────────
-async function fetchMatches(dateStr) {
-  const tbody = document.getElementById('matchesTbody');
-  tbody.innerHTML = `<tr><td colspan="10"><div class="fetch-progress"><div class="spinner"></div><p>جاري جلب المباريات ليوم ${dateStr}…</p></div></td></tr>`;
+/* ═══════════════════════════════════════════
+   DAY SWITCHING — KEY FEATURE
+   الحالة تُحفظ منفصلة لكل يوم
+═══════════════════════════════════════════ */
+function switchDay(day) {
+  // حفظ حالة الصفوف المحددة لليوم الحالي قبل التبديل
+  saveSelectionForDay(activeDay);
+  activeDay = day;
+  document.getElementById('tab0').classList.toggle('active', day===0);
+  document.getElementById('tab1').classList.toggle('active', day===1);
+  fetchActiveDay();
+}
 
+function saveSelectionForDay(day) {
+  const set = new Set();
+  document.querySelectorAll('#tbody tr').forEach(tr => {
+    const cb = tr.querySelector('input[type=checkbox]');
+    if (cb && cb.checked) set.add(tr.dataset.matchId);
+    // حفظ القناة والمعلق والسرفرات في dataset
+    snapshotRow(tr);
+  });
+  selectedByDay[day] = set;
+}
+
+function snapshotRow(tr) {
+  const ci = tr.querySelector('.ch-input');
+  const cs = tr.querySelector('.ch-select');
+  const cm = tr.querySelector('.cm-input');
+  if (ci) tr.dataset.savedCh = ci.value;
+  else if (cs) tr.dataset.savedCh = cs.value;
+  if (cm) tr.dataset.savedCm = cm.value;
+}
+
+function restoreSelectionForDay(day) {
+  const set = selectedByDay[day] || new Set();
+  document.querySelectorAll('#tbody tr').forEach(tr => {
+    const cb = tr.querySelector('input[type=checkbox]');
+    if (!cb) return;
+    const sel = set.has(tr.dataset.matchId);
+    cb.checked = sel;
+    tr.classList.toggle('row-sel', sel);
+  });
+}
+
+/* ═══════════════════════════════════════════
+   DATE HELPERS
+═══════════════════════════════════════════ */
+function dateStr(offset=0) {
+  const d = new Date(); d.setDate(d.getDate()+offset);
+  return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+}
+
+function fetchActiveDay() { fetchMatches(dateStr(activeDay)); }
+
+/* ═══════════════════════════════════════════
+   FETCH MATCHES
+═══════════════════════════════════════════ */
+async function fetchMatches(ds) {
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = `<tr><td colspan="10"><div class="loading-state"><div class="spin"></div><p>جاري جلب مباريات ${ds}…</p></div></td></tr>`;
+  setProgress(5);
   try {
-    const url = `https://api-ar.ysscores.com/api/matches/matches_date_get/${dateStr}/%5B%5D/%5B%5D/%5B%228634%22%5D/L/60`;
-    const res  = await fetch(MY_PROXY + encodeURIComponent(url));
+    const url = `https://api-ar.ysscores.com/api/matches/matches_date_get/${ds}/%5B%5D/%5B%5D/%5B%228634%22%5D/L/60`;
+    const res = await fetch(PROXY + encodeURIComponent(url));
     if (!res.ok) throw new Error('HTTP ' + res.status);
-
-    const data = await res.json();
-    let matches = data.data || [];
-
-    dayCounts[activeDay] = matches.length;
-    document.getElementById(`ct-${activeDay === 0 ? 'today' : 'tomorrow'}`).textContent = matches.length;
-
-    if (!matches.length) {
-      tbody.innerHTML = `<tr><td colspan="10"><div class="empty-state"><div class="empty-icon">📭</div><p>لا توجد مباريات لهذا اليوم</p></div></td></tr>`;
-      return;
+    const data = (await res.json()).data || [];
+    setProgress(20);
+    document.getElementById(`ct${activeDay}`).textContent = data.length;
+    if (!data.length) {
+      tbody.innerHTML = `<tr><td colspan="10"><div class="empty-state"><div class="ei">📭</div><p>لا توجد مباريات لهذا اليوم</p></div></td></tr>`;
+      setProgress(0); return;
     }
-
-    matches.sort((a,b) => a.match_timestamp - b.match_timestamp);
-    await renderMatches(matches);
-
-  } catch (err) {
-    tbody.innerHTML = `<tr><td colspan="10" style="padding:40px; color:var(--danger); text-align:center;">⚠️ فشل الاتصال: ${err.message}</td></tr>`;
-    showToast('فشل الاتصال بالـ API', 'error');
+    data.sort((a,b) => a.match_timestamp - b.match_timestamp);
+    await renderTable(data);
+  } catch(e) {
+    tbody.innerHTML = `<tr><td colspan="10"><div class="empty-state"><div class="ei">⚠️</div><p style="color:var(--red)">فشل الاتصال: ${e.message}</p></div></td></tr>`;
+    toast('فشل الاتصال بالـ API', 'error');
+    setProgress(0);
   }
 }
 
-// ─────────── Render Table ───────────
-async function renderMatches(matches) {
-  const tbody = document.getElementById('matchesTbody');
+function setProgress(pct) {
+  document.getElementById('fetchFill').style.width = pct + '%';
+  if (pct >= 100) setTimeout(() => setProgress(0), 600);
+}
+
+/* ═══════════════════════════════════════════
+   RENDER TABLE
+═══════════════════════════════════════════ */
+async function renderTable(matches) {
+  const tbody = document.getElementById('tbody');
   tbody.innerHTML = '';
 
   matches.forEach(m => {
-    const t1 = m.home_team.title;
-    const t2 = m.away_team.title;
-    const t1l = m.home_team.image.startsWith('http') ? m.home_team.image : imgBase + m.home_team.image;
-    const t2l = m.away_team.image.startsWith('http') ? m.away_team.image : imgBase + m.away_team.image;
-    const league   = m.championship.title;
-    const timeStr  = m.match_time ? m.match_time.substring(0,5) : '00:00';
+    const t1 = m.home_team.title, t2 = m.away_team.title;
+    const l1 = m.home_team.image.startsWith('http') ? m.home_team.image : IMG_BASE + m.home_team.image;
+    const l2 = m.away_team.image.startsWith('http') ? m.away_team.image : IMG_BASE + m.away_team.image;
+    const league = m.championship.title;
+    const timeStr = (m.match_time||'00:00').substring(0,5);
 
-    let sClass = 's-upcoming', jsonStatus = 'Not Started', statusLabel = 'قادمة';
-    let apiScore = 'VS';
-
+    let bClass='b-soon', jSt='Not Started', stLabel='قادمة', scoreHtml='VS';
     if ([4,5,-1].includes(m.status)) {
-      sClass='s-finished'; jsonStatus='Finished'; statusLabel='انتهت';
-      apiScore = `${m.home_scores} - ${m.away_scores}`;
-    } else if (m.live===1 || [1,2,3].includes(m.status)) {
-      sClass='s-live'; jsonStatus='Live'; statusLabel='مباشر';
-      apiScore = `${m.home_scores} - ${m.away_scores}`;
+      bClass='b-done'; jSt='Finished'; stLabel='انتهت';
+      scoreHtml = `${m.home_scores||0} - ${m.away_scores||0}`;
+    } else if (m.live===1||[1,2,3].includes(m.status)) {
+      bClass='b-live'; jSt='Live'; stLabel='مباشر';
+      scoreHtml = `${m.home_scores||0} - ${m.away_scores||0}`;
     }
 
     const tr = document.createElement('tr');
-    tr.dataset.matchId  = m.match_id;
-    tr.dataset.team1Name  = t1;
-    tr.dataset.team1Logo  = t1l;
-    tr.dataset.team2Name  = t2;
-    tr.dataset.team2Logo  = t2l;
-    tr.dataset.league     = league;
-    tr.dataset.startTime  = m.match_timestamp;
-    tr.dataset.jsonStatus = jsonStatus;
-    tr.dataset.score      = apiScore === 'VS' ? '' : apiScore;
-    tr.dataset.servers    = '[]';
+    tr.dataset.matchId   = m.match_id;
+    tr.dataset.t1n       = t1;
+    tr.dataset.t1l       = l1;
+    tr.dataset.t2n       = t2;
+    tr.dataset.t2l       = l2;
+    tr.dataset.league    = league;
+    tr.dataset.ts        = m.match_timestamp;
+    tr.dataset.jst       = jSt;
+    tr.dataset.servers   = '[]';
+    tr.dataset.savedCh   = '';
+    tr.dataset.savedCm   = '';
 
     tr.innerHTML = `
-      <td class="cb-wrap"><input type="checkbox" onchange="toggleRowStyle(this)"></td>
-      <td><span class="status-badge ${sClass}">${statusLabel}</span></td>
-      <td><div class="team-cell">
-        <img src="${t1l}" class="tlogo" referrerpolicy="no-referrer" onerror="this.src='${defaultLogo}'">
-        <span class="team-name">${t1}</span>
+      <td><input type="checkbox" onchange="onCbChange(this)"></td>
+      <td><span class="badge ${bClass}"><span class="dot"></span>${stLabel}</span></td>
+      <td><div class="tm">
+        <img class="tlogo" src="${l1}" referrerpolicy="no-referrer" onerror="this.src='${NO_LOGO}'">
+        <span class="tname" title="${t1}">${t1}</span>
       </div></td>
-      <td class="score-cell">${apiScore}</td>
-      <td><div class="team-cell rev">
-        <img src="${t2l}" class="tlogo" referrerpolicy="no-referrer" onerror="this.src='${defaultLogo}'">
-        <span class="team-name">${t2}</span>
+      <td class="score">${scoreHtml}</td>
+      <td><div class="tm rev">
+        <img class="tlogo" src="${l2}" referrerpolicy="no-referrer" onerror="this.src='${NO_LOGO}'">
+        <span class="tname" title="${t2}">${t2}</span>
       </div></td>
-      <td class="league-cell" title="${league}">${league}</td>
-      <td class="time-cell" dir="ltr">${timeStr}</td>
-      <td class="channel-td"><span class="loading-ch">جاري…</span></td>
-      <td class="comm-td"><span class="loading-ch">…</span></td>
-      <td>
-        <button class="srv-btn" onclick="openServerModal(this)">
-          <span class="srv-count">0</span> 📡
-        </button>
-      </td>`;
+      <td class="lg-name" title="${league}">${league}</td>
+      <td class="time-val" dir="ltr">${timeStr}</td>
+      <td class="chtd"><span class="loading-ch">جاري…</span></td>
+      <td class="cmtd"><span class="loading-ch">…</span></td>
+      <td><button class="srv-btn" onclick="openServerModal(this)"><span class="srv-ct">0</span>📡</button></td>`;
 
     tbody.appendChild(tr);
   });
 
-  updateStatsAndJSON();
-  filterMatches();
+  // Restore selection for this day
+  restoreSelectionForDay(activeDay);
+  updateStats();
+  filterRows();
+  buildJSON();
+  setProgress(30);
 
   // Fetch details sequentially
-  showToast('جاري جلب تفاصيل القنوات…', 'info');
+  const step = 60 / matches.length;
+  let prog = 30;
   for (const m of matches) {
-    const tr = document.querySelector(`tr[data-match-id='${m.match_id}']`);
+    const tr = document.querySelector(`tr[data-match-id="${m.match_id}"]`);
     if (tr) {
-      await fetchMatchDetails(m.match_id, tr);
-      await new Promise(r => setTimeout(r, 220));
+      await fetchDetails(m.match_id, tr);
+      prog += step;
+      setProgress(Math.min(prog, 90));
+      await delay(200);
     }
   }
-  showToast('✅ اكتمل جلب التفاصيل', 'success');
+  setProgress(100);
+  toast('✅ اكتملت بيانات الجدول', 'success');
 }
 
-// ─────────── Toggle Row Highlight ───────────
-function toggleRowStyle(cb) {
-  cb.closest('tr').classList.toggle('selected-row', cb.checked);
-  updateStatsAndJSON();
-}
+const delay = ms => new Promise(r => setTimeout(r, ms));
 
-// ─────────── Fetch Match Details ───────────
-async function fetchMatchDetails(matchId, tr) {
+/* ═══════════════════════════════════════════
+   FETCH DETAILS
+═══════════════════════════════════════════ */
+async function fetchDetails(matchId, tr) {
   try {
     const url = `https://api-ar.ysscores.com/api/matches/match_info/${matchId}/L/60`;
-    const res  = await fetch(MY_PROXY + encodeURIComponent(url));
-    if (!res.ok) throw new Error();
-    const data = (await res.json()).data;
-    const channels = data?.channel_commm || [];
+    const data = (await (await fetch(PROXY + encodeURIComponent(url))).json()).data;
+    const chs = data?.channel_commm || [];
+    const chtd = tr.querySelector('.chtd');
+    const cmtd = tr.querySelector('.cmtd');
+    const savedCh = tr.dataset.savedCh;
+    const savedCm = tr.dataset.savedCm;
 
-    const chCell   = tr.querySelector('.channel-td');
-    const commCell = tr.querySelector('.comm-td');
-
-    if (channels.length > 1) {
-      const opts = channels.map(c =>
-        `<option value="${formatChannelName(c.channel_name||'')}" data-comm="${c.commentator_name||''}">${formatChannelName(c.channel_name||'')}</option>`
-      ).join('');
-      chCell.innerHTML   = `<select class="channel-select" onchange="updateRowCommentator(this)">${opts}</select>`;
-      commCell.innerHTML = `<input type="text" class="comm-input" value="${channels[0].commentator_name||''}" placeholder="المعلق">`;
-    } else if (channels.length === 1) {
-      chCell.innerHTML   = `<input type="text" class="channel-input" value="${formatChannelName(channels[0].channel_name||'')}">`;
-      commCell.innerHTML = `<input type="text" class="comm-input" value="${channels[0].commentator_name||''}" placeholder="المعلق">`;
+    if (chs.length > 1) {
+      const opts = chs.map(c => {
+        const n = fmtCh(c.channel_name||'');
+        return `<option value="${n}" data-cm="${c.commentator_name||''}">${n}</option>`;
+      }).join('');
+      chtd.innerHTML = `<select class="ch-select" onchange="syncComment(this)">${opts}</select>`;
+      if (savedCh) {
+        const sel = chtd.querySelector('select');
+        sel.value = savedCh;
+        if (!sel.value) sel.selectedIndex = 0;
+      }
+      const firstCm = savedCm || chs[0].commentator_name || '';
+      cmtd.innerHTML = `<input type="text" class="cm-input" value="${firstCm}" placeholder="المعلق">`;
+    } else if (chs.length === 1) {
+      const n = fmtCh(chs[0].channel_name||'');
+      chtd.innerHTML = `<input type="text" class="ch-input" value="${savedCh||n}">`;
+      cmtd.innerHTML = `<input type="text" class="cm-input" value="${savedCm||chs[0].commentator_name||''}" placeholder="المعلق">`;
     } else {
-      chCell.innerHTML   = `<input type="text" class="channel-input" value="غير متوفر" style="color:var(--text-dim)">`;
-      commCell.innerHTML = `<input type="text" class="comm-input" value="" placeholder="المعلق">`;
+      chtd.innerHTML = `<input type="text" class="ch-input" value="${savedCh||'غير متوفر'}" style="color:var(--text3)">`;
+      cmtd.innerHTML = `<input type="text" class="cm-input" value="${savedCm||''}" placeholder="المعلق">`;
     }
-    updateStatsAndJSON();
+    buildJSON();
   } catch {
-    tr.querySelector('.channel-td').innerHTML  = `<input type="text" class="channel-input" value="خطأ" style="color:var(--danger)">`;
-    tr.querySelector('.comm-td').innerHTML     = `<input type="text" class="comm-input" value="">`;
+    tr.querySelector('.chtd').innerHTML = `<input type="text" class="ch-input" value="خطأ" style="color:var(--red)">`;
+    tr.querySelector('.cmtd').innerHTML = `<input type="text" class="cm-input" value="">`;
   }
 }
 
-function updateRowCommentator(sel) {
-  const row    = sel.closest('tr');
-  const comm   = row.querySelector('.comm-input');
-  const opt    = sel.options[sel.selectedIndex];
-  if (comm) { comm.value = opt.getAttribute('data-comm')||''; updateStatsAndJSON(); }
+function syncComment(sel) {
+  const tr = sel.closest('tr');
+  const cm = tr.querySelector('.cm-input');
+  if (cm) cm.value = sel.options[sel.selectedIndex].getAttribute('data-cm') || '';
+  buildJSON();
 }
 
-// ─────────── Filter / Stats / JSON ───────────
-function filterMatches() {
-  const term   = document.getElementById('searchInput').value.toLowerCase().trim();
-  const status = document.getElementById('statusFilter').value;
-  document.querySelectorAll('#matchesTbody tr').forEach(row => {
-    const txt = (row.dataset.team1Name+row.dataset.team2Name+row.dataset.league).toLowerCase();
-    row.style.display = (txt.includes(term) && (status==='all'||row.dataset.jsonStatus===status)) ? '' : 'none';
+function fmtCh(n) {
+  if (!n) return n;
+  n = n.replace(/بي [إا]ن سبورت|beIN Sports/gi,'beIN SPORTS').replace(/HD/gi,'').trim();
+  n = n.replace(/ثمانية/g,'Thmanyah').trim();
+  return n.replace(/\s+/g,' ').trim();
+}
+
+/* ═══════════════════════════════════════════
+   CHECKBOX HANDLING
+═══════════════════════════════════════════ */
+function onCbChange(cb) {
+  const tr = cb.closest('tr');
+  tr.classList.toggle('row-sel', cb.checked);
+  const id = tr.dataset.matchId;
+  if (cb.checked) selectedByDay[activeDay].add(id);
+  else selectedByDay[activeDay].delete(id);
+  updateStats();
+  buildJSON();
+}
+
+function onTableChange(e) {
+  if (e.target.type === 'checkbox') onCbChange(e.target);
+}
+
+/* ═══════════════════════════════════════════
+   FILTER + STATS
+═══════════════════════════════════════════ */
+function filterRows() {
+  const term = document.getElementById('sfSearch').value.toLowerCase().trim();
+  const st   = document.getElementById('sfStatus').value;
+  document.querySelectorAll('#tbody tr').forEach(tr => {
+    const txt = (tr.dataset.t1n+tr.dataset.t2n+tr.dataset.league).toLowerCase();
+    tr.style.display = (txt.includes(term) && (st==='all'||tr.dataset.jst===st)) ? '' : 'none';
   });
+  updateStats();
 }
 
-function updateStatsAndJSON() {
-  const allRows = document.querySelectorAll('#matchesTbody tr');
-  const selRows = document.querySelectorAll('#matchesTbody input[type="checkbox"]:checked');
+function updateStats() {
+  const rows = [...document.querySelectorAll('#tbody tr')];
+  document.getElementById('stTotal').textContent = rows.length;
+  document.getElementById('stLive').textContent  = rows.filter(r=>r.dataset.jst==='Live').length;
+  document.getElementById('stSoon').textContent  = rows.filter(r=>r.dataset.jst==='Not Started').length;
+  document.getElementById('stDone').textContent  = rows.filter(r=>r.dataset.jst==='Finished').length;
+  document.getElementById('stSel').textContent   = rows.filter(r=>r.querySelector('input[type=checkbox]')?.checked).length;
+}
 
-  document.getElementById('statTotal').textContent    = allRows.length;
-  document.getElementById('statSelected').textContent = selRows.length;
-  document.getElementById('statLive').textContent     = [...allRows].filter(r=>r.dataset.jsonStatus==='Live').length;
-  document.getElementById('statUpcoming').textContent = [...allRows].filter(r=>r.dataset.jsonStatus==='Not Started').length;
-
+/* ═══════════════════════════════════════════
+   BUILD JSON — بدون score
+═══════════════════════════════════════════ */
+function buildJSON() {
   const arr = [];
-  selRows.forEach(cb => {
-    const row = cb.closest('tr');
-    if (row.style.display === 'none') return;
-    const d = row.dataset;
-
-    let channel = '';
-    const chIn  = row.querySelector('.channel-input');
-    const chSel = row.querySelector('.channel-select');
-    if (chIn)  channel = chIn.value;
-    else if (chSel) channel = chSel.value;
-
-    const commentator = (row.querySelector('.comm-input')?.value) || '';
-    const servers     = JSON.parse(d.servers||'[]');
-
-    // ⚠️ score حذف من JSON المرفوع
+  document.querySelectorAll('#tbody tr').forEach(tr => {
+    const cb = tr.querySelector('input[type=checkbox]');
+    if (!cb?.checked || tr.style.display==='none') return;
+    const d = tr.dataset;
+    const ci = tr.querySelector('.ch-input');
+    const cs = tr.querySelector('.ch-select');
+    const cm = tr.querySelector('.cm-input');
+    const ch = ci?.value || cs?.value || '';
     arr.push({
-      team1Name:   d.team1Name,
-      team1Logo:   d.team1Logo,
-      team2Name:   d.team2Name,
-      team2Logo:   d.team2Logo,
-      startTime:   parseInt(d.startTime, 10),
-      league:      d.league,
-      channel,
-      commentator,
-      status:      d.jsonStatus,
-      servers
+      team1Name: d.t1n, team1Logo: d.t1l,
+      team2Name: d.t2n, team2Logo: d.t2l,
+      startTime: parseInt(d.ts,10),
+      league: d.league, channel: ch,
+      commentator: cm?.value||'',
+      status: d.jst,
+      servers: JSON.parse(d.servers||'[]')
     });
   });
-
-  document.getElementById('output').value = JSON.stringify(arr, null, 2);
+  document.getElementById('jsonOut').value = JSON.stringify(arr, null, 2);
 }
 
-// ─────────── Bulk Input ───────────
+/* ═══════════════════════════════════════════
+   SERVER MODAL + JSON IMPORT FEATURE
+═══════════════════════════════════════════ */
+function openServerModal(btn) {
+  currentRow = btn.closest('tr');
+  pendingJsonServers = null;
+  clearJsonImport();
+  const srvList = document.getElementById('srvList');
+  srvList.innerHTML = '';
+  const servers = JSON.parse(currentRow.dataset.servers || '[]');
+  if (servers.length) servers.forEach(s => addSrvLine(Object.keys(s)[0], Object.values(s)[0]));
+  else addSrvLine();
+  openModal('serverModal');
+}
+
+function addSrvLine(name='', url='') {
+  const div = document.createElement('div');
+  div.className = 'srv-row-item';
+  div.innerHTML = `
+    <input type="text" placeholder="الاسم (4K, FHD, HD…)" value="${name}" class="sname" style="max-width:110px;flex:0 0 110px;">
+    <input type="text" placeholder="رابط البث" value="${url}" class="surl">
+    <button type="button" class="btn btn-ghost sm-btn" onclick="moveSrv(this,-1)">▲</button>
+    <button type="button" class="btn btn-ghost sm-btn" onclick="moveSrv(this,1)">▼</button>
+    <button type="button" class="btn btn-danger sm-btn" onclick="this.closest('.srv-row-item').remove()">🗑</button>`;
+  document.getElementById('srvList').appendChild(div);
+}
+
+function moveSrv(btn, dir) {
+  const r = btn.closest('.srv-row-item');
+  if (dir===-1 && r.previousElementSibling) r.parentNode.insertBefore(r, r.previousElementSibling);
+  if (dir===1  && r.nextElementSibling)     r.parentNode.insertBefore(r.nextElementSibling, r);
+}
+
+/* ── JSON IMPORT FOR SERVERS ── */
+function handleJsonFile(input) {
+  const file = input.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => parseJsonServers(e.target.result);
+  reader.readAsText(file);
+  input.value = '';
+}
+
+function handleJsonDrop(e) {
+  e.preventDefault();
+  document.getElementById('jsonDrop').classList.remove('drag');
+  const file = e.dataTransfer.files[0];
+  if (!file || !file.name.endsWith('.json')) { toast('الملف يجب أن يكون .json', 'error'); return; }
+  const reader = new FileReader();
+  reader.onload = ev => parseJsonServers(ev.target.result);
+  reader.readAsText(file);
+}
+
+function parseJsonServers(text) {
+  try {
+    let parsed = JSON.parse(text);
+    let servers = [];
+    if (Array.isArray(parsed)) {
+      // [{HD:"url"}, {FHD:"url"}]
+      servers = parsed.filter(i => typeof i === 'object');
+    } else if (typeof parsed === 'object') {
+      // {"HD":"url","FHD":"url"}
+      servers = Object.entries(parsed).map(([k,v]) => {const o={}; o[k]=v; return o;});
+    }
+    if (!servers.length) throw new Error('لا توجد سيرفرات صالحة');
+    pendingJsonServers = servers;
+    const prev = document.getElementById('jsonPreview');
+    prev.style.display = 'block';
+    prev.textContent = JSON.stringify(servers, null, 2);
+    document.getElementById('jsonImportBtns').style.display = 'flex';
+    document.getElementById('jsonDrop').style.display = 'none';
+    toast(`تم قراءة ${servers.length} سيرفر من الملف`, 'success');
+  } catch(e) {
+    toast('خطأ في قراءة JSON: ' + e.message, 'error');
+  }
+}
+
+function applyJsonServers() {
+  if (!pendingJsonServers) return;
+  // امسح القائمة اليدوية وأضف السيرفرات المستوردة
+  const list = document.getElementById('srvList');
+  list.innerHTML = '';
+  pendingJsonServers.forEach(s => addSrvLine(Object.keys(s)[0], Object.values(s)[0]));
+  clearJsonImport();
+  toast('تم تعبئة السيرفرات في القائمة، اضغط حفظ', 'info');
+}
+
+function clearJsonImport() {
+  pendingJsonServers = null;
+  const prev = document.getElementById('jsonPreview');
+  prev.style.display = 'none';
+  prev.textContent = '';
+  document.getElementById('jsonImportBtns').style.display = 'none';
+  document.getElementById('jsonDrop').style.display = 'block';
+}
+
+function saveServers() {
+  if (!currentRow) return;
+  const rows = document.querySelectorAll('#srvList .srv-row-item');
+  const arr = [];
+  rows.forEach(r => {
+    const name = r.querySelector('.sname').value.trim();
+    const url  = r.querySelector('.surl').value.trim();
+    if (name && url) { const o={}; o[name]=url; arr.push(o); }
+  });
+  currentRow.dataset.servers = JSON.stringify(arr);
+  const badge = currentRow.querySelector('.srv-ct');
+  if (badge) { badge.textContent = arr.length; badge.style.display = arr.length ? 'inline-block' : 'none'; }
+  if (arr.length) {
+    const cb = currentRow.querySelector('input[type=checkbox]');
+    if (!cb.checked) { cb.checked = true; onCbChange(cb); }
+  }
+  closeModal('serverModal');
+  buildJSON();
+  toast('تم حفظ السيرفرات ✅', 'success');
+}
+
+/* ═══════════════════════════════════════════
+   FIREBASE
+═══════════════════════════════════════════ */
+function confirmPublish() {
+  const val = document.getElementById('jsonOut').value;
+  let count = 0;
+  try { count = JSON.parse(val).length; } catch{}
+  if (!count) { toast('لا توجد مباريات محددة', 'error'); return; }
+  document.getElementById('confirmCount').textContent = count;
+  openModal('confirmModal');
+}
+
+async function doPublish() {
+  closeModal('confirmModal');
+  const val = document.getElementById('jsonOut').value;
+  let matches;
+  try { matches = JSON.parse(val); } catch { toast('JSON غير صالح', 'error'); return; }
+  toast('جاري النشر…', 'info');
+  try {
+    const snap = await db.collection('matches').get();
+    const batch = db.batch();
+    snap.docs.forEach(d => batch.delete(d.ref));
+    await batch.commit();
+    for (const m of matches) await db.collection('matches').add(m);
+    const now = new Date().toLocaleTimeString('ar-DZ');
+    document.getElementById('fbInfo').innerHTML = `آخر نشر: <b style="color:var(--green)">${matches.length} مباراة</b><br>الوقت: <b>${now}</b>`;
+    toast(`✅ تم نشر ${matches.length} مباراة بنجاح`, 'success');
+  } catch(e) {
+    toast('❌ خطأ: ' + e.message, 'error');
+  }
+}
+
+async function clearFB() {
+  if (!confirm('⚠️ سيتم مسح جميع المباريات من Firebase نهائياً!')) return;
+  try {
+    const snap = await db.collection('matches').get();
+    const batch = db.batch();
+    snap.docs.forEach(d => batch.delete(d.ref));
+    await batch.commit();
+    document.getElementById('jsonOut').value = '[]';
+    document.getElementById('fbInfo').innerHTML = 'قاعدة البيانات <b style="color:var(--red)">فارغة</b>';
+    toast('🗑 تم مسح قاعدة البيانات', 'success');
+  } catch(e) { toast('خطأ: ' + e.message, 'error'); }
+}
+
+async function loadFromFB() {
+  toast('جاري الاستعادة من Firebase…', 'info');
+  try {
+    const snap = await db.collection('matches').orderBy('startTime').get();
+    if (snap.empty) { toast('قاعدة البيانات فارغة', 'warning'); return; }
+    const saved = snap.docs.map(d => d.data());
+    const rows = [...document.querySelectorAll('#tbody tr')];
+
+    // إلغاء التحديد أولاً
+    rows.forEach(tr => {
+      const cb = tr.querySelector('input[type=checkbox]');
+      if (cb) { cb.checked = false; tr.classList.remove('row-sel'); }
+    });
+    selectedByDay[activeDay].clear();
+
+    let restored = 0;
+    saved.forEach(sm => {
+      const tr = rows.find(r => r.dataset.t1n===sm.team1Name && r.dataset.t2n===sm.team2Name);
+      if (!tr) return;
+      restored++;
+      const cb = tr.querySelector('input[type=checkbox]');
+      cb.checked = true; tr.classList.add('row-sel');
+      selectedByDay[activeDay].add(tr.dataset.matchId);
+
+      const ci = tr.querySelector('.ch-input');
+      const cs = tr.querySelector('.ch-select');
+      if (ci) ci.value = sm.channel||'';
+      if (cs) { cs.value = sm.channel||''; if (!cs.value) cs.selectedIndex=0; }
+      const cm = tr.querySelector('.cm-input');
+      if (cm) cm.value = sm.commentator||'';
+      if (sm.servers?.length) {
+        tr.dataset.servers = JSON.stringify(sm.servers);
+        const badge = tr.querySelector('.srv-ct');
+        if (badge) { badge.textContent = sm.servers.length; badge.style.display='inline-block'; }
+      }
+    });
+    updateStats(); buildJSON();
+    toast(`📥 تمت استعادة ${restored} مباراة`, 'success');
+  } catch(e) { toast('خطأ: ' + e.message, 'error'); }
+}
+
+/* ═══════════════════════════════════════════
+   XTREAM
+═══════════════════════════════════════════ */
+async function autoFillXtream() {
+  const rows = [...document.querySelectorAll('#tbody tr')];
+  if (!rows.length) return toast('لا توجد مباريات', 'error');
+  toast('جاري الاتصال بـ Xtream…', 'info');
+  try {
+    const api = `${XTREAM.fetchUrl}/player_api.php?username=${XTREAM.user}&password=${XTREAM.pass}&action=get_live_streams`;
+    const chs = await (await fetch(api)).json();
+    if (!Array.isArray(chs)) throw new Error('بيانات غير صحيحة');
+    toast(`تم جلب ${chs.length} قناة`, 'success');
+    const priority = ['4k','fhd','hevc','hd','sd','low'];
+    let filled = 0;
+    rows.forEach(tr => {
+      const ci = tr.querySelector('.ch-input');
+      const cs = tr.querySelector('.ch-select');
+      const name = (ci?.value || cs?.value || '').trim();
+      if (!name.toLowerCase().includes('bein sport')) return;
+      const clean = name.toLowerCase().replace(/[^a-z0-9]/g,'');
+      const matched = chs.filter(c => c.name.toLowerCase().replace(/[^a-z0-9]/g,'').includes(clean));
+      if (!matched.length) return;
+      matched.sort((a,b) => {
+        let ia = priority.findIndex(q=>a.name.toLowerCase().includes(q));
+        let ib = priority.findIndex(q=>b.name.toLowerCase().includes(q));
+        if(ia===-1)ia=99; if(ib===-1)ib=99; return ia-ib;
+      });
+      const servers = [];
+      const labels = {fourk:'4K',fhd:'FHD',hd:'HD',sd:'SD',low:'LOW'};
+      matched.forEach(c => {
+        const l = c.name.toLowerCase();
+        let label = null;
+        if (l.includes('4k')) label='4K';
+        else if (l.includes('fhd')) label='FHD';
+        else if (l.includes('hd')) label='HD';
+        else if (l.includes('sd')) label='SD';
+        else if (l.includes('low')) label='LOW';
+        if (!label) return;
+        const o={}; o[label]=`${XTREAM.host}/${XTREAM.user}/${XTREAM.pass}/${c.stream_id}`;
+        servers.push(o);
+      });
+      if (servers.length) {
+        tr.dataset.servers = JSON.stringify(servers);
+        const badge = tr.querySelector('.srv-ct');
+        if (badge) { badge.textContent=servers.length; badge.style.display='inline-block'; }
+        filled++;
+      }
+    });
+    buildJSON();
+    filled ? toast(`✅ تم إضافة سيرفرات لـ ${filled} مباراة`, 'success')
+           : toast('لم يُعثر على قنوات beIN مطابقة', 'warning');
+  } catch(e) { toast('⚠️ ' + e.message, 'error'); }
+}
+
+/* ═══════════════════════════════════════════
+   BULK INPUT
+═══════════════════════════════════════════ */
 function toggleBulk() {
-  const area = document.getElementById('bulkArea');
-  area.style.display = area.style.display === 'none' ? 'block' : 'none';
+  const w = document.getElementById('bulkWrap');
+  w.style.display = w.style.display==='none'?'block':'none';
 }
 
-function processBulkInput() {
+function processBulk() {
   const lines = document.getElementById('bulkInput').value.trim().split('\n');
-  const rows  = [...document.querySelectorAll('#matchesTbody tr')];
+  const rows  = [...document.querySelectorAll('#tbody tr')];
   let count = 0;
   lines.forEach(line => {
     const parts = line.split(',');
     if (parts.length < 3) return;
-    const [matchStr, ch, comm] = parts;
+    const [matchStr, ch, cm] = parts;
     const sides = matchStr.split(' ضد ');
     if (sides.length < 2) return;
-    const [t1, t2] = sides.map(s => s.toLowerCase().trim());
-    const row = rows.find(r => {
-      const n1 = r.dataset.team1Name?.toLowerCase();
-      const n2 = r.dataset.team2Name?.toLowerCase();
-      return (n1?.includes(t1) && n2?.includes(t2)) || (n1?.includes(t2) && n2?.includes(t1));
+    const [t1, t2] = sides.map(s=>s.toLowerCase().trim());
+    const tr = rows.find(r => {
+      const n1=r.dataset.t1n?.toLowerCase(), n2=r.dataset.t2n?.toLowerCase();
+      return (n1?.includes(t1)&&n2?.includes(t2)) || (n1?.includes(t2)&&n2?.includes(t1));
     });
-    if (row) {
-      row.querySelector('input[type="checkbox"]').checked = true;
-      row.classList.add('selected-row');
-      const ci = row.querySelector('.channel-input');
-      const cs = row.querySelector('.channel-select');
-      const fc = formatChannelName(ch.trim());
-      if (ci) ci.value = fc;
-      if (cs) cs.value = fc;
-      const cm = row.querySelector('.comm-input');
-      if (cm) cm.value = comm.trim();
+    if (tr) {
+      const cb = tr.querySelector('input[type=checkbox]');
+      cb.checked=true; tr.classList.add('row-sel');
+      selectedByDay[activeDay].add(tr.dataset.matchId);
+      const ci=tr.querySelector('.ch-input'), cs=tr.querySelector('.ch-select');
+      const fc = fmtCh(ch.trim());
+      if (ci) ci.value=fc; if (cs) cs.value=fc;
+      const cmi=tr.querySelector('.cm-input');
+      if (cmi) cmi.value=cm.trim();
       count++;
     }
   });
-  updateStatsAndJSON();
-  showToast(`تم دمج ${count} مباراة`, 'success');
-  document.getElementById('bulkInput').value = '';
-  document.getElementById('bulkArea').style.display = 'none';
+  updateStats(); buildJSON();
+  toast(`تم دمج ${count} مباراة`, 'success');
+  document.getElementById('bulkInput').value='';
+  document.getElementById('bulkWrap').style.display='none';
 }
 
-// ─────────── Firebase ───────────
-async function saveToFirebase(silent = false) {
-  const val = document.getElementById('output').value;
-  if (!val || val === '[]') {
-    if (!silent) showToast('لا توجد مباريات محددة', 'error');
-    return;
-  }
-  if (!silent && !confirm('سيتم استبدال مباريات Firebase الحالية. هل أنت متأكد؟')) return;
-
-  if (!silent) showToast('جاري النشر في Firebase…', 'info');
+/* ═══════════════════════════════════════════
+   NOTES
+═══════════════════════════════════════════ */
+function saveNotes() {
+  try { localStorage.setItem('utv_notes', document.getElementById('quickNotes').value); } catch{}
+}
+function loadNotes() {
   try {
-    const matches  = JSON.parse(val);
-    const snap     = await db.collection('matches').get();
-    const batch    = db.batch();
-    snap.docs.forEach(doc => batch.delete(doc.ref));
-    await batch.commit();
-
-    for (const m of matches) await db.collection('matches').add(m);
-
-    if (!silent) showToast(`✅ تم نشر ${matches.length} مباراة`, 'success');
-    document.getElementById('fbStats').innerHTML = `آخر نشر: <b style="color:var(--success)">${matches.length} مباراة</b><br>الوقت: ${new Date().toLocaleTimeString('ar-DZ')}`;
-  } catch (e) {
-    showToast('❌ خطأ: ' + e.message, 'error');
-  }
+    const n = localStorage.getItem('utv_notes');
+    if (n) document.getElementById('quickNotes').value = n;
+  } catch{}
 }
 
-async function clearFirebase() {
-  if (!confirm('⚠️ سيتم مسح جميع المباريات من قاعدة البيانات!')) return;
-  try {
-    const snap  = await db.collection('matches').get();
-    const batch = db.batch();
-    snap.docs.forEach(doc => batch.delete(doc.ref));
-    await batch.commit();
-    document.getElementById('output').value = '[]';
-    document.getElementById('fbStats').innerHTML = 'قاعدة البيانات فارغة';
-    showToast('🗑️ تم المسح', 'success');
-  } catch (e) {
-    showToast('خطأ: ' + e.message, 'error');
-  }
-}
+/* ═══════════════════════════════════════════
+   MODAL HELPERS
+═══════════════════════════════════════════ */
+function openModal(id)  { document.getElementById(id).classList.add('open'); }
+function closeModal(id) { document.getElementById(id).classList.remove('open'); }
 
-async function loadFromFirebase() {
-  showToast('جاري الاستعادة من Firebase…', 'info');
-  try {
-    const snap = await db.collection('matches').orderBy('startTime').get();
-    if (snap.empty) { showToast('قاعدة البيانات فارغة', 'warning'); return; }
-
-    const saved = snap.docs.map(d => d.data());
-    const rows  = [...document.querySelectorAll('#matchesTbody tr')];
-
-    // uncheck all first
-    rows.forEach(r => {
-      const cb = r.querySelector('input[type="checkbox"]');
-      if (cb) { cb.checked = false; r.classList.remove('selected-row'); }
-    });
-
-    let restored = 0;
-    saved.forEach(sm => {
-      const row = rows.find(r => r.dataset.team1Name === sm.team1Name && r.dataset.team2Name === sm.team2Name);
-      if (!row) return;
-      restored++;
-      const cb = row.querySelector('input[type="checkbox"]');
-      if (cb) { cb.checked = true; row.classList.add('selected-row'); }
-
-      const ci = row.querySelector('.channel-input');
-      const cs = row.querySelector('.channel-select');
-      if (ci) ci.value = sm.channel || '';
-      if (cs) cs.value = sm.channel || '';
-
-      const cm = row.querySelector('.comm-input');
-      if (cm) cm.value = sm.commentator || '';
-
-      if (sm.servers?.length) {
-        row.dataset.servers = JSON.stringify(sm.servers);
-        const badge = row.querySelector('.srv-count');
-        if (badge) { badge.textContent = sm.servers.length; badge.style.display = 'inline-block'; }
-      }
-    });
-    updateStatsAndJSON();
-    showToast(`📥 تم استعادة ${restored} مباراة`, 'success');
-  } catch (e) {
-    showToast('خطأ: ' + e.message, 'error');
-  }
-}
-
-// ─────────── Xtream ───────────
-async function autoFillFromXtream() {
-  const allRows = document.querySelectorAll('#matchesTbody tr');
-  if (!allRows.length) return showToast('لا توجد مباريات', 'error');
-  showToast('جاري الاتصال بـ Xtream…', 'info');
-  try {
-    const api = `${xtreamConfig.fetchUrl}/player_api.php?username=${xtreamConfig.username}&password=${xtreamConfig.password}&action=get_live_streams`;
-    const res  = await fetch(api);
-    if (!res.ok) throw new Error('فشل الاتصال');
-    const chData = await res.json();
-    if (!Array.isArray(chData)) throw new Error('صيغة غير صحيحة');
-    showToast(`تم جلب ${chData.length} قناة. جاري المطابقة…`, 'success');
-
-    let filled = 0;
-    const priority = ['4k','fhd','hevc','hd','sd','low'];
-
-    allRows.forEach(row => {
-      let name = '';
-      const ci = row.querySelector('.channel-input');
-      const cs = row.querySelector('.channel-select');
-      if (ci) name = ci.value.trim();
-      else if (cs) name = cs.value.trim();
-      if (!name || !name.toLowerCase().includes('bein sport')) return;
-
-      const clean = name.toLowerCase().replace(/[^a-z0-9]/g,'');
-      const matched = chData.filter(c => c.name.toLowerCase().replace(/[^a-z0-9]/g,'').includes(clean));
-      if (!matched.length) return;
-
-      matched.sort((a,b) => {
-        let ia = priority.findIndex(q => a.name.toLowerCase().includes(q));
-        let ib = priority.findIndex(q => b.name.toLowerCase().includes(q));
-        if (ia===-1) ia=99; if (ib===-1) ib=99; return ia-ib;
-      });
-
-      const servers = [];
-      matched.forEach(c => {
-        const l = c.name.toLowerCase();
-        let label = null;
-        if (l.includes('4k'))  label='4K';
-        else if (l.includes('fhd')) label='FHD';
-        else if (l.includes('hd'))  label='HD';
-        else if (l.includes('sd'))  label='SD';
-        else if (l.includes('low')) label='LOW';
-        if (!label) return;
-        const obj = {};
-        obj[label] = `${xtreamConfig.streamHost}/${xtreamConfig.username}/${xtreamConfig.password}/${c.stream_id}`;
-        servers.push(obj);
-      });
-
-      if (servers.length) {
-        row.dataset.servers = JSON.stringify(servers);
-        const badge = row.querySelector('.srv-count');
-        if (badge) { badge.textContent = servers.length; badge.style.display = 'inline-block'; }
-        filled++;
-      }
-    });
-
-    updateStatsAndJSON();
-    if (filled > 0) showToast(`✅ تم إضافة سيرفرات لـ ${filled} مباراة`, 'success');
-    else alert('لم يُعثر على قنوات beIN Sports مطابقة.');
-  } catch (e) {
-    showToast('⚠️ ' + e.message, 'error');
-  }
-}
-
-// ─────────── Server Modal ───────────
-function openServerModal(btn) {
-  currentMatchRow = btn.closest('tr');
-  const servers = JSON.parse(currentMatchRow.dataset.servers || '[]');
-  const list = document.getElementById('serverList');
-  list.innerHTML = '';
-  if (servers.length) servers.forEach(s => addServerLine(Object.keys(s)[0], Object.values(s)[0]));
-  else addServerLine();
-  document.getElementById('serverModal').classList.add('open');
-}
-
-function addServerLine(name='', url='') {
-  const div = document.createElement('div');
-  div.className = 'srv-row';
-  div.innerHTML = `
-    <input type="text" placeholder="الاسم (مثل: HD)" value="${name}" class="srv-name" style="min-width:90px; max-width:110px;">
-    <input type="text" placeholder="رابط السيرفر" value="${url}" class="srv-url">
-    <button type="button" class="ctrl-btn btn-ghost" onclick="moveSrv(this,-1)" style="padding:0 8px; height:30px;">▲</button>
-    <button type="button" class="ctrl-btn btn-ghost" onclick="moveSrv(this,1)"  style="padding:0 8px; height:30px;">▼</button>
-    <button type="button" class="ctrl-btn btn-danger" onclick="this.parentElement.remove()" style="padding:0 10px; height:30px;">🗑</button>`;
-  document.getElementById('serverList').appendChild(div);
-}
-
-function moveSrv(btn, dir) {
-  const row = btn.parentElement;
-  if (dir===-1 && row.previousElementSibling) row.parentNode.insertBefore(row, row.previousElementSibling);
-  else if (dir===1 && row.nextElementSibling)  row.parentNode.insertBefore(row.nextElementSibling, row);
-}
-
-function saveServers() {
-  if (!currentMatchRow) return;
-  const srvArr = [];
-  document.querySelectorAll('#serverList .srv-row').forEach(r => {
-    const name = r.querySelector('.srv-name').value.trim();
-    const url  = r.querySelector('.srv-url').value.trim();
-    if (name && url) { const o={}; o[name]=url; srvArr.push(o); }
-  });
-  currentMatchRow.dataset.servers = JSON.stringify(srvArr);
-  const badge = currentMatchRow.querySelector('.srv-count');
-  if (badge) { badge.textContent = srvArr.length; badge.style.display = srvArr.length ? 'inline-block' : 'none'; }
-  if (srvArr.length) {
-    const cb = currentMatchRow.querySelector('input[type="checkbox"]');
-    cb.checked = true; currentMatchRow.classList.add('selected-row');
-  }
-  closeServerModal();
-  updateStatsAndJSON();
-  showToast('تم حفظ السيرفرات', 'success');
-}
-
-function closeServerModal() {
-  document.getElementById('serverModal').classList.remove('open');
-  currentMatchRow = null;
-}
-
-// Close modal on backdrop click
-document.getElementById('serverModal').addEventListener('click', e => {
-  if (e.target === document.getElementById('serverModal')) closeServerModal();
+// Close on backdrop
+document.querySelectorAll('.modal-overlay').forEach(m => {
+  m.addEventListener('click', e => { if(e.target===m) closeModal(m.id); });
 });
 
-// ─────────── Misc ───────────
+/* ═══════════════════════════════════════════
+   MISC
+═══════════════════════════════════════════ */
 function copyJSON() {
-  const out = document.getElementById('output');
-  out.select();
-  document.execCommand('copy');
-  showToast('✅ تم نسخ JSON', 'success');
+  const out = document.getElementById('jsonOut');
+  out.select(); document.execCommand('copy');
+  toast('✅ تم نسخ JSON', 'success');
 }
 
-function showToast(msg, type='info') {
+function toast(msg, type='info') {
   const t = document.createElement('div');
   t.className = `toast ${type}`;
-  t.innerHTML = `<span class="toast-dot"></span><span>${msg}</span>`;
+  t.innerHTML = `<span class="tdot"></span><span class="tmsg">${msg}</span>`;
   document.getElementById('toasts').appendChild(t);
-  setTimeout(() => { t.style.animation = 'toastOut 0.25s forwards'; setTimeout(()=>t.remove(), 250); }, 3000);
+  setTimeout(() => {
+    t.style.animation = 'tOut .2s forwards';
+    setTimeout(() => t.remove(), 200);
+  }, 3500);
 }
 </script>
 </body>
