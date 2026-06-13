@@ -202,6 +202,14 @@ input[type="checkbox"]{width:15px;height:15px;accent-color:var(--blue);cursor:po
 .bulk-wrap textarea{width:100%;height:70px;padding:8px;font-size:12px;font-family:var(--mono);background:var(--bg1);border:1px solid var(--brd);border-radius:var(--r);color:var(--text);resize:none;}
 .bulk-wrap textarea:focus{border-color:var(--blue);}
 
+/* ═══════ NIGHT MATCH ROW (مباريات الغد الليلية في تبويب اليوم) ═══════ */
+.night-sep td{background:rgba(139,92,246,.06);border-top:1px dashed rgba(139,92,246,.3);border-bottom:1px dashed rgba(139,92,246,.3);}
+.night-sep-label{display:flex;align-items:center;gap:8px;color:#a78bfa;font-size:10px;font-weight:700;letter-spacing:1px;padding:4px 0;}
+.night-sep-label::before,.night-sep-label::after{content:'';flex:1;height:1px;background:rgba(139,92,246,.25);}
+tr.row-night>td:first-child{box-shadow:inset 3px 0 0 #a78bfa;}
+tr.row-night .time-val{color:#a78bfa;}
+.night-tag{display:inline-flex;align-items:center;gap:3px;background:rgba(139,92,246,.15);color:#a78bfa;border:1px solid rgba(139,92,246,.3);border-radius:4px;font-size:8px;font-weight:700;padding:1px 5px;margin-right:4px;vertical-align:middle;}
+
 /* ═══════ EMPTY / LOADING ═══════ */
 .empty-state{text-align:center;padding:50px 20px;color:var(--text3);}
 .empty-state .ei{font-size:36px;margin-bottom:12px;}
@@ -313,8 +321,16 @@ input[type="checkbox"]{width:15px;height:15px;accent-color:var(--blue);cursor:po
 
       <!-- DAY TABS -->
       <div class="day-tabs">
-        <button class="day-tab active" id="tab0" onclick="switchDay(0)">📅 اليوم <span class="dt-ct" id="ct0">0</span></button>
+        <button class="day-tab active" id="tab0" onclick="switchDay(0)">
+          📅 اليوم <span class="dt-ct" id="ct0">0</span>
+          <span id="nightBadge" style="display:none;background:rgba(139,92,246,.25);color:#a78bfa;border:1px solid rgba(139,92,246,.4);font-size:9px;padding:1px 6px;border-radius:8px;font-family:var(--mono);">+<span id="nightCount">0</span> ليل</span>
+        </button>
         <button class="day-tab" id="tab1" onclick="switchDay(1)">🌙 الغد <span class="dt-ct" id="ct1">0</span></button>
+        <div style="flex:1;"></div>
+        <div style="font-size:10px;color:var(--text3);align-self:center;display:flex;align-items:center;gap:6px;">
+          <span style="width:8px;height:8px;border-radius:50%;background:#a78bfa;display:inline-block;"></span>
+          مباريات ما بعد منتصف الليل تظهر في تبويب اليوم
+        </div>
       </div>
 
       <!-- TABLE -->
@@ -403,9 +419,20 @@ input[type="checkbox"]{width:15px;height:15px;accent-color:var(--blue);cursor:po
       <button class="m-close" onclick="closeModal('confirmModal')">&times;</button>
     </div>
     <div class="modal-body">
-      <p style="color:var(--text2);font-size:13px;line-height:1.7;" id="confirmMsg">سيتم استبدال جميع المباريات في Firebase بـ <b id="confirmCount" style="color:var(--blue)">0</b> مباراة جديدة.</p>
-      <div style="background:var(--bg3);border:1px solid var(--brd2);border-radius:var(--r);padding:10px 12px;margin-top:12px;font-size:11px;color:var(--text2);">
-        ⚠️ هذا الإجراء لا يمكن التراجع عنه. سيُحذف المحتوى القديم.
+      <p style="color:var(--text2);font-size:13px;line-height:1.7;">سيتم نشر إجمالي <b id="confirmCount" style="color:var(--blue);font-size:16px;">0</b> مباراة في Firebase:</p>
+      <div style="display:flex;gap:8px;margin:12px 0;flex-wrap:wrap;" id="confirmBreakdown">
+        <div style="background:var(--bg3);border:1px solid var(--brd2);border-radius:var(--r);padding:8px 14px;font-size:11px;flex:1;min-width:130px;">
+          📅 مباريات اليوم: <b id="cToday" style="color:var(--cyan);">0</b>
+        </div>
+        <div style="background:rgba(139,92,246,.08);border:1px solid rgba(139,92,246,.25);border-radius:var(--r);padding:8px 14px;font-size:11px;flex:1;min-width:130px;">
+          🌙 مباريات الليل (غد): <b id="cNight" style="color:#a78bfa;">0</b>
+        </div>
+        <div style="background:var(--bg3);border:1px solid var(--brd2);border-radius:var(--r);padding:8px 14px;font-size:11px;flex:1;min-width:130px;">
+          🗓 مباريات الغد: <b id="cTomorrow" style="color:var(--gold);">0</b>
+        </div>
+      </div>
+      <div style="background:var(--bg3);border:1px solid var(--brd2);border-radius:var(--r);padding:10px 12px;font-size:11px;color:var(--text2);">
+        ⚠️ هذا الإجراء لا يمكن التراجع عنه. سيُحذف المحتوى القديم من Firebase.
       </div>
     </div>
     <div class="modal-foot">
@@ -449,6 +476,12 @@ const NO_LOGO = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' vi
 let activeDay = 0;
 // selectedByDay[day] = Set of matchIds
 const selectedByDay = { 0: new Set(), 1: new Set() };
+// مباريات الغد التي ساعتها قبل هذا الحد تُعرض في تبويب اليوم (مثلاً 06:00)
+const NIGHT_CUTOFF_HOUR = 6;
+// تخزين بيانات كل يوم منفصلاً
+let dayData = { 0: [], 1: [] };
+// rowSnapshots[matchId] = {ch, cm, servers} — لحفظ التعديلات عند التبديل
+const rowSnapshots = {};
 let currentRow = null;
 let pendingJsonServers = null;
 
