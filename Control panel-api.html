@@ -370,6 +370,22 @@ tr.row-night .srv-ct{background:var(--purple);}
   </div>
 </div>
 
+<!-- XTREAM DEBUG MODAL -->
+<div class="modal-overlay" id="xtreamDebugModal">
+  <div class="modal-box" style="max-width:700px;">
+    <div class="modal-head">
+      <h3>🔍 تقرير مطابقة Xtream</h3>
+      <button class="m-close" onclick="closeModal('xtreamDebugModal')">&times;</button>
+    </div>
+    <div class="modal-body" style="padding:14px 18px;">
+      <div id="debugTableWrap"></div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-ghost" onclick="closeModal('xtreamDebugModal')">إغلاق</button>
+    </div>
+  </div>
+</div>
+
 <!-- SERVER MODAL -->
 <div class="modal-overlay" id="serverModal">
   <div class="modal-box">
@@ -919,73 +935,191 @@ async function autoFillXtream(){
       '4k':'4K','fhd':'FHD','hevc':'HEVC','hd':'HD','sd':'SD','low':'LOW'
     };
 
-    let filled=0;
-    rows.forEach(tr=>{
-      const ci=tr.querySelector('.ch-input');
-      const cs=tr.querySelector('.ch-select');
-      let chName=(ci?.value||cs?.value||'').trim();
-      if(!chName||chName==='غير متوفر') return;
+    // ═══════════════════════════════════════════════════
+    // خوارزمية المطابقة الذكية
+    // المشكلة: API → "beIN Max 1" | Xtream → "Bein Sports Max 1 4K"
+    // الحل: استخراج "الجوهر" من كلا الاسمين ومقارنتهما
+    // ═══════════════════════════════════════════════════
 
-      // تنظيف اسم القناة للمطابقة
-      // يتعرف على مثل "beIN SPORTS 1" و "beIN Max 1" وغيرها
-      const cleanTarget = chName.toLowerCase()
-        .replace(/[^a-z0-9\s]/g,'')
-        .replace(/\s+/g,' ')
-        .trim();
+    // دالة تحويل اسم القناة إلى "بصمة" قابلة للمقارنة
+    function getChannelFingerprint(name) {
+      let s = name.toLowerCase();
 
-      // البحث في قائمة Xtream
+      // توحيد أسماء beIN بكل أشكالها
+      // "beIN Max" و "bein sports max" و "bein max" كلها → "bein max"
+      s = s.replace(/bein\s*sports\s*max/gi, 'bein max');
+      s = s.replace(/b[ei]+n\s*sports/gi, 'bein sports');
+      s = s.replace(/b[ei]+n\s*max/gi, 'bein max');
+      // عربي
+      s = s.replace(/بي\s*[إا]ن\s*سبورت[ز]?\s*ماكس/gi, 'bein max');
+      s = s.replace(/بي\s*[إا]ن\s*سبورت[ز]?/gi, 'bein sports');
+      s = s.replace(/بي\s*[إا]ن\s*ماكس/gi, 'bein max');
+
+      // إزالة كلمات الجودة (سنتعامل معها منفصلاً)
+      s = s.replace(/\b(4k|fhd|full\s*hd|hevc|hd|sd|low|ultra|premium)\b/gi, '');
+
+      // إزالة كلمات شائعة لا تُميّز
+      s = s.replace(/\b(sports?|sport|channel|ch|tv|ar|en|arabic|english|fr|french)\b/gi, '');
+
+      // إزالة كل ما ليس حرفاً أو رقماً
+      s = s.replace(/[^a-z0-9]/g, '');
+
+      return s.trim();
+    }
+
+    // استخراج رقم القناة من الاسم (مثلاً "1" من "beIN Max 1")
+    function getChannelNumber(name) {
+      // ابحث عن رقم في نهاية الاسم (بعد إزالة كلمات الجودة)
+      const clean = name.replace(/\b(4k|fhd|hevc|hd|sd|low)\b/gi, '');
+      const m = clean.match(/(\d+)\s*$/);
+      return m ? m[1] : null;
+    }
+
+    let filled = 0;
+    let debugLog = []; // لأغراض التشخيص
+
+    rows.forEach(tr => {
+      const ci = tr.querySelector('.ch-input');
+      const cs = tr.querySelector('.ch-select');
+      let chName = (ci?.value || cs?.value || '').trim();
+      if (!chName || chName === 'غير متوفر' || chName === 'خطأ') return;
+
+      const targetFP  = getChannelFingerprint(chName);
+      const targetNum = getChannelNumber(chName);
+
+      if (!targetFP || targetFP.length < 3) return;
+
+      // البحث في كل قنوات Xtream
       const matched = allChs.filter(c => {
-        const n = c.name.toLowerCase().replace(/[^a-z0-9\s]/g,'').replace(/\s+/g,' ').trim();
-        // تحقق إذا كان الاسم يحتوي على الجزء الأساسي من اسم القناة
-        // بعد إزالة كلمات الجودة
-        const baseTarget = cleanTarget.replace(/4k|fhd|hevc|hd|sd|low/gi,'').trim();
-        const baseCh     = n.replace(/4k|fhd|hevc|hd|sd|low/gi,'').trim();
-        return baseTarget.length>2 && baseCh.includes(baseTarget);
+        const fp  = getChannelFingerprint(c.name);
+        const num = getChannelNumber(c.name);
+
+        if (!fp || fp.length < 3) return false;
+
+        // شرط 1: الجوهر يحتوي على جوهر الهدف (أو العكس)
+        const fpMatch = fp.includes(targetFP) || targetFP.includes(fp);
+
+        // شرط 2: الرقم متطابق (إذا كان موجوداً في الاثنين)
+        const numMatch = (!targetNum && !num) ||
+                         (!targetNum) ||
+                         (!num) ||
+                         (targetNum === num);
+
+        return fpMatch && numMatch;
       });
 
-      if(!matched.length) return;
+      debugLog.push({ channel: chName, fp: targetFP, num: targetNum, found: matched.length });
 
-      // ترتيب حسب الجودة
-      matched.sort((a,b)=>{
-        const la=a.name.toLowerCase(), lb=b.name.toLowerCase();
-        let ia=QUALITY_ORDER.findIndex(q=>la.includes(q));
-        let ib=QUALITY_ORDER.findIndex(q=>lb.includes(q));
-        if(ia===-1) ia=99; if(ib===-1) ib=99;
-        return ia-ib;
+      if (!matched.length) return;
+
+      // ترتيب حسب الجودة: 4K أولاً ثم FHD ثم HD ثم SD
+      matched.sort((a, b) => {
+        const la = a.name.toLowerCase(), lb = b.name.toLowerCase();
+        let ia = QUALITY_ORDER.findIndex(q => la.includes(q));
+        let ib = QUALITY_ORDER.findIndex(q => lb.includes(q));
+        if (ia === -1) ia = 99;
+        if (ib === -1) ib = 99;
+        return ia - ib;
       });
 
-      // بناء مصفوفة السيرفرات مع الصيغة الصحيحة
-      const servers=[];
-      const usedLabels=new Set();
-      matched.forEach(c=>{
-        const l=c.name.toLowerCase();
-        let label=null;
-        for(const q of QUALITY_ORDER){
-          if(l.includes(q)){ label=QUALITY_LABELS[q]; break; }
+      // بناء السيرفرات
+      const servers = [];
+      const usedLabels = new Set();
+
+      matched.forEach(c => {
+        const l = c.name.toLowerCase();
+        let label = null;
+        for (const q of QUALITY_ORDER) {
+          if (l.includes(q)) { label = QUALITY_LABELS[q]; break; }
         }
-        if(!label) label='HD'; // افتراضي
-        if(usedLabels.has(label)) return; // تجنب التكرار
+        if (!label) label = 'HD';
+        if (usedLabels.has(label)) {
+          // إذا تكرر التصنيف أضف رقم تمييز
+          let i = 2;
+          while (usedLabels.has(label + i)) i++;
+          label = label + i;
+        }
         usedLabels.add(label);
-        const obj={};
-        // صيغة الرابط الصحيحة: host/live/user/pass/streamId.m3u8
-        obj[label]=`${XTREAM.host}/live/${XTREAM.user}/${XTREAM.pass}/${c.stream_id}.m3u8`;
+        const obj = {};
+        obj[label] = `${XTREAM.host}/live/${XTREAM.user}/${XTREAM.pass}/${c.stream_id}.m3u8`;
         servers.push(obj);
       });
 
-      if(servers.length){
-        tr.dataset.servers=JSON.stringify(servers);
-        const badge=tr.querySelector('.srv-ct');
-        if(badge){ badge.textContent=servers.length; badge.style.display='inline-block'; }
-        // تحديد المباراة تلقائياً إذا وُجدت سيرفرات
-        const cb=tr.querySelector('input[type=checkbox]');
-        if(cb&&!cb.checked){ cb.checked=true; onCbChange(cb); }
+      if (servers.length) {
+        tr.dataset.servers = JSON.stringify(servers);
+        const badge = tr.querySelector('.srv-ct');
+        if (badge) { badge.textContent = servers.length; badge.style.display = 'inline-block'; }
+        const cb = tr.querySelector('input[type=checkbox]');
+        if (cb && !cb.checked) { cb.checked = true; onCbChange(cb); }
         filled++;
       }
     });
 
     buildJSON();
+
+    // ═══ عرض تقرير المطابقة ═══
+    const matched_count = debugLog.filter(d=>d.found>0).length;
+    const unmatched     = debugLog.filter(d=>d.found===0);
+
+    let html = `
+      <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;">
+        <div style="background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.3);border-radius:8px;padding:10px 16px;flex:1;min-width:120px;">
+          <div style="font-family:var(--mono);font-size:22px;font-weight:700;color:var(--green);">${filled}</div>
+          <div style="font-size:10px;color:var(--text2);text-transform:uppercase;letter-spacing:.7px;">مباريات مكتملة</div>
+        </div>
+        <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:8px;padding:10px 16px;flex:1;min-width:120px;">
+          <div style="font-family:var(--mono);font-size:22px;font-weight:700;color:var(--red);">${unmatched.length}</div>
+          <div style="font-size:10px;color:var(--text2);text-transform:uppercase;letter-spacing:.7px;">غير مطابقة</div>
+        </div>
+        <div style="background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.25);border-radius:8px;padding:10px 16px;flex:1;min-width:120px;">
+          <div style="font-family:var(--mono);font-size:22px;font-weight:700;color:var(--blue);">${allChs.length}</div>
+          <div style="font-size:10px;color:var(--text2);text-transform:uppercase;letter-spacing:.7px;">قنوات Xtream</div>
+        </div>
+      </div>
+      <table style="width:100%;border-collapse:collapse;font-size:11px;">
+        <thead>
+          <tr style="background:var(--bg1);border-bottom:1px solid var(--brd);">
+            <th style="padding:7px 10px;text-align:right;color:var(--text3);font-weight:700;font-size:9px;letter-spacing:.8px;text-transform:uppercase;">القناة (API)</th>
+            <th style="padding:7px 10px;text-align:center;color:var(--text3);font-weight:700;font-size:9px;letter-spacing:.8px;text-transform:uppercase;">البصمة</th>
+            <th style="padding:7px 10px;text-align:center;color:var(--text3);font-weight:700;font-size:9px;letter-spacing:.8px;text-transform:uppercase;">قنوات مطابقة</th>
+            <th style="padding:7px 10px;text-align:center;color:var(--text3);font-weight:700;font-size:9px;letter-spacing:.8px;text-transform:uppercase;">النتيجة</th>
+          </tr>
+        </thead>
+        <tbody>`;
+
+    debugLog.forEach(d => {
+      const ok = d.found > 0;
+      html += `
+        <tr style="border-bottom:1px solid rgba(25,40,64,.4);">
+          <td style="padding:7px 10px;font-weight:600;color:${ok?'var(--text)':'var(--red)'};">${d.channel}</td>
+          <td style="padding:7px 10px;text-align:center;font-family:var(--mono);font-size:10px;color:var(--text2);">${d.fp}</td>
+          <td style="padding:7px 10px;text-align:center;font-family:var(--mono);color:${ok?'var(--cyan)':'var(--text3)'};">${d.found}</td>
+          <td style="padding:7px 10px;text-align:center;">
+            ${ok
+              ? `<span style="background:rgba(16,185,129,.12);color:#34d399;border:1px solid rgba(16,185,129,.3);padding:2px 8px;border-radius:4px;font-size:10px;font-weight:700;">✅ ${d.servers?.join(', ')||''}</span>`
+              : `<span style="background:rgba(239,68,68,.1);color:#fca5a5;border:1px solid rgba(239,68,68,.2);padding:2px 8px;border-radius:4px;font-size:10px;font-weight:700;">❌ لا يوجد</span>`
+            }
+          </td>
+        </tr>`;
+    });
+    html += '</tbody></table>';
+
+    if(unmatched.length>0){
+      html += `
+        <div style="margin-top:12px;background:rgba(245,158,11,.05);border:1px solid rgba(245,158,11,.2);border-radius:8px;padding:10px 14px;">
+          <div style="font-size:10px;font-weight:700;color:var(--gold);margin-bottom:6px;letter-spacing:.5px;">💡 تلميح — القنوات غير المطابقة:</div>
+          <div style="font-size:11px;color:var(--text2);line-height:1.8;">
+            ${unmatched.map(d=>`<code style="background:var(--bg3);padding:1px 5px;border-radius:3px;color:var(--text);">${d.channel}</code>`).join(' &nbsp; ')}
+          </div>
+          <div style="font-size:10px;color:var(--text3);margin-top:6px;">تأكد أن هذه القنوات موجودة في Xtream بنفس الاسم أو قريب منه.</div>
+        </div>`;
+    }
+
+    document.getElementById('debugTableWrap').innerHTML = html;
+    openModal('xtreamDebugModal');
+
     if(filled>0) toast(`✅ تم إضافة سيرفرات لـ ${filled} مباراة`,'success');
-    else toast('لم يُعثر على قنوات مطابقة في Xtream','warning');
+    else toast('لم يُعثر على قنوات مطابقة — شاهد التقرير','warning');
   } catch(e){
     console.error(e);
     toast('⚠️ '+e.message,'error');
