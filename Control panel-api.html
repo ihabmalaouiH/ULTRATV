@@ -10,16 +10,14 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap');
 :root{
-  --bg:#05090f;--bg1:#080e18;--bg2:#0b1422;--bg3:#0f1c30;--bg4:#132036;
+  --bg:#05090f;--bg1:#080e18;--bg2:#0b1422;--bg3:#0f1c30;
   --brd:#192840;--brd2:#1f3354;--brd3:#274268;
   --blue:#3b82f6;--blue-dim:rgba(59,130,246,.1);--blue-glow:rgba(59,130,246,.25);
-  --blue-hl:rgba(59,130,246,.06);
-  --cyan:#22d3ee;--gold:#f59e0b;--green:#10b981;--red:#ef4444;--purple:#a78bfa;
-  --orange:#f97316;
+  --cyan:#22d3ee;--gold:#f59e0b;--green:#10b981;--red:#ef4444;
+  --purple:#a78bfa;--purple-dim:rgba(167,139,250,.1);--purple-brd:rgba(167,139,250,.3);
   --text:#dde9f8;--text2:#6a8cad;--text3:#2e4a66;
   --font:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',monospace;
-  --r:8px;--r2:12px;--r3:16px;
-  --sh:0 4px 24px rgba(0,0,0,.4);
+  --r:8px;--r2:12px;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;outline:none;}
 html{scroll-behavior:smooth;}
@@ -27,52 +25,43 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
 ::-webkit-scrollbar{width:4px;height:4px;}
 ::-webkit-scrollbar-track{background:transparent;}
 ::-webkit-scrollbar-thumb{background:var(--brd3);border-radius:10px;}
-::-webkit-scrollbar-thumb:hover{background:var(--blue);}
 
 /* ═══════ LOGIN ═══════ */
-#login-overlay{position:fixed;inset:0;background:radial-gradient(ellipse at 30% 60%,#0d1f3c 0%,var(--bg) 70%);z-index:9999;display:flex;justify-content:center;align-items:center;}
+#login-overlay{position:fixed;inset:0;background:radial-gradient(ellipse at 30% 60%,#0d1f3c,var(--bg) 70%);z-index:9999;display:flex;justify-content:center;align-items:center;}
 .login-wrap{width:90%;max-width:380px;}
 .login-logo{text-align:center;margin-bottom:28px;}
 .login-logo .brand{font-size:30px;font-weight:800;background:linear-gradient(135deg,#60a5fa,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:3px;}
 .login-logo .sub{font-size:10px;color:var(--text3);margin-top:6px;letter-spacing:4px;text-transform:uppercase;}
 .login-card{background:var(--bg2);border:1px solid var(--brd2);border-radius:18px;padding:28px;box-shadow:0 0 80px rgba(59,130,246,.08),0 20px 40px rgba(0,0,0,.5);}
 .login-card label{display:block;font-size:10px;color:var(--text2);font-weight:700;letter-spacing:.8px;margin-bottom:5px;text-transform:uppercase;}
-.login-card input{width:100%;height:40px;background:var(--bg1);border:1px solid var(--brd);border-radius:var(--r);color:var(--text);padding:0 13px;font-size:13px;margin-bottom:14px;transition:border-color .2s,box-shadow .2s;font-family:var(--font);}
-.login-card input:focus{border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-dim);}
-.login-btn-main{width:100%;height:42px;background:linear-gradient(135deg,var(--blue),#2563eb);border:none;border-radius:var(--r);color:#fff;font-size:14px;font-weight:700;cursor:pointer;transition:all .2s;letter-spacing:.5px;font-family:var(--font);}
+.login-card input{width:100%;height:40px;background:var(--bg1);border:1px solid var(--brd);border-radius:var(--r);color:var(--text);padding:0 13px;font-size:13px;margin-bottom:14px;transition:border-color .2s;font-family:var(--font);}
+.login-card input:focus{border-color:var(--blue);}
+.login-btn-main{width:100%;height:42px;background:linear-gradient(135deg,var(--blue),#2563eb);border:none;border-radius:var(--r);color:#fff;font-size:14px;font-weight:700;cursor:pointer;transition:all .2s;font-family:var(--font);}
 .login-btn-main:hover{box-shadow:0 4px 20px var(--blue-glow);transform:translateY(-1px);}
 .login-err{color:var(--red);font-size:11px;margin-top:10px;text-align:center;min-height:16px;}
 
-/* ═══════ APP SHELL ═══════ */
+/* ═══════ SHELL ═══════ */
 #app{display:none;height:100vh;flex-direction:column;}
-
-/* ═══════ TOPBAR ═══════ */
 .topbar{height:50px;background:rgba(8,14,24,.95);border-bottom:1px solid var(--brd);display:flex;align-items:center;gap:10px;padding:0 16px;flex-shrink:0;z-index:50;backdrop-filter:blur(10px);}
 .t-brand{display:flex;align-items:center;gap:8px;white-space:nowrap;}
-.t-brand .ico{width:26px;height:26px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;}
+.t-brand .ico{width:26px;height:26px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:13px;}
 .t-brand .name{font-weight:800;font-size:14px;letter-spacing:1px;background:linear-gradient(90deg,#dde9f8,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
 .t-brand .ver{font-size:9px;background:var(--green);color:#000;padding:2px 6px;border-radius:4px;font-weight:800;letter-spacing:1px;-webkit-text-fill-color:#000;}
 .t-space{flex:1;}
 .t-clock{font-family:var(--mono);font-size:11px;color:var(--text2);background:var(--bg2);border:1px solid var(--brd);padding:4px 10px;border-radius:6px;white-space:nowrap;}
 .t-user{font-size:11px;color:var(--text2);max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-.t-btn{height:28px;padding:0 12px;border-radius:6px;border:1px solid var(--brd2);background:transparent;color:var(--text2);font-size:11px;cursor:pointer;transition:all .15s;font-family:var(--font);white-space:nowrap;}
+.t-btn{height:28px;padding:0 12px;border-radius:6px;border:1px solid var(--brd2);background:transparent;color:var(--text2);font-size:11px;cursor:pointer;transition:all .15s;font-family:var(--font);}
 .t-btn:hover{border-color:var(--red);color:var(--red);}
 
-/* ═══════ CONTENT GRID ═══════ */
-.content{display:flex;gap:0;flex:1;overflow:hidden;}
+/* ═══════ LAYOUT ═══════ */
+.content{display:flex;flex:1;overflow:hidden;}
 .main-panel{flex:1;overflow-y:auto;padding:16px 18px;min-width:0;}
 .side-panel{width:300px;flex-shrink:0;background:var(--bg1);border-right:1px solid var(--brd);overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:12px;}
-
-/* ═══════ SECTION TITLE ═══════ */
 .s-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:1.2px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:6px;}
 .s-title::after{content:'';flex:1;height:1px;background:var(--brd);}
 
-/* ═══════ TOOLBAR ═══════ */
-.toolbar{background:var(--bg2);border:1px solid var(--brd);border-radius:var(--r2);padding:10px 12px;margin-bottom:12px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
-.tb-sep{width:1px;height:22px;background:var(--brd);margin:0 2px;}
-
-/* Buttons */
-.btn{height:32px;padding:0 13px;border-radius:var(--r);border:1px solid transparent;font-size:11px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:5px;white-space:nowrap;transition:all .15s;font-family:var(--font);letter-spacing:.2px;}
+/* ═══════ BUTTONS ═══════ */
+.btn{height:32px;padding:0 13px;border-radius:var(--r);border:1px solid transparent;font-size:11px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:5px;white-space:nowrap;transition:all .15s;font-family:var(--font);}
 .btn:hover{filter:brightness(1.15);transform:translateY(-1px);}
 .btn:active{transform:translateY(0);filter:brightness(.95);}
 .btn-primary{background:var(--blue);border-color:var(--blue);color:#fff;}
@@ -83,15 +72,19 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
 .btn-ghost{background:transparent;border-color:var(--brd2);color:var(--text2);}
 .btn-ghost:hover{border-color:var(--blue);color:var(--blue);}
 .btn-sm{height:26px;padding:0 10px;font-size:10px;}
+.btn-night{background:rgba(139,92,246,.12);border-color:rgba(167,139,250,.4);color:#c4b5fd;}
+.btn-night:hover{background:rgba(139,92,246,.2);}
 
-/* Search & Filter */
+/* ═══════ TOOLBAR ═══════ */
+.toolbar{background:var(--bg2);border:1px solid var(--brd);border-radius:var(--r2);padding:10px 12px;margin-bottom:12px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+.tb-sep{width:1px;height:22px;background:var(--brd);margin:0 2px;}
 .search-input,.filter-sel{height:32px;padding:0 10px;background:var(--bg1);border:1px solid var(--brd);border-radius:var(--r);color:var(--text);font-size:12px;font-family:var(--font);transition:border-color .2s;}
 .search-input{flex:1;min-width:120px;}
 .filter-sel{min-width:120px;}
 .search-input:focus,.filter-sel:focus{border-color:var(--blue);}
 .filter-sel option{background:var(--bg1);}
 
-/* ═══════ STATS STRIP ═══════ */
+/* ═══════ STATS ═══════ */
 .stats-strip{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;}
 .stat-chip{background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:10px;min-width:100px;}
 .stat-chip .sv{font-family:var(--mono);font-size:20px;font-weight:700;line-height:1;}
@@ -100,15 +93,26 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13
 .sc-live .sv{color:var(--red);}
 .sc-sel .sv{color:var(--green);}
 .sc-up .sv{color:var(--cyan);}
-.sc-done .sv{color:var(--text3);}
+.sc-night .sv{color:var(--purple);}
+
+/* ═══════ FETCH PROGRESS ═══════ */
+.fetch-bar{height:3px;background:var(--brd);border-radius:2px;overflow:hidden;margin-bottom:10px;}
+.fetch-bar-fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:2px;transition:width .3s;width:0%;}
 
 /* ═══════ DAY TABS ═══════ */
-.day-tabs{display:flex;gap:6px;margin-bottom:12px;}
-.day-tab{height:30px;padding:0 14px;border-radius:7px;background:var(--bg2);border:1px solid var(--brd);color:var(--text2);font-size:11px;font-weight:600;cursor:pointer;transition:all .15s;display:flex;align-items:center;gap:6px;font-family:var(--font);}
+.day-tabs{display:flex;gap:6px;margin-bottom:12px;align-items:center;}
+.day-tab{height:32px;padding:0 14px;border-radius:7px;background:var(--bg2);border:1px solid var(--brd);color:var(--text2);font-size:11px;font-weight:600;cursor:pointer;transition:all .15s;display:flex;align-items:center;gap:6px;font-family:var(--font);}
 .day-tab:hover{border-color:var(--brd3);color:var(--text);}
 .day-tab.active{background:var(--blue-dim);border-color:var(--blue);color:var(--blue);}
-.day-tab .dt-ct{background:var(--brd);color:var(--text2);font-size:9px;padding:1px 5px;border-radius:8px;font-family:var(--mono);}
+.day-tab.active-night{background:var(--purple-dim);border-color:var(--purple-brd);color:var(--purple);}
+.dt-ct{background:var(--brd);color:var(--text2);font-size:9px;padding:1px 5px;border-radius:8px;font-family:var(--mono);}
 .day-tab.active .dt-ct{background:var(--blue);color:#fff;}
+.day-tab.active-night .dt-ct{background:var(--purple);color:#fff;}
+.night-pill{background:rgba(139,92,246,.2);color:#c4b5fd;border:1px solid rgba(167,139,250,.35);font-size:9px;padding:1px 7px;border-radius:10px;font-family:var(--mono);}
+
+/* ═══════ PUBLISH NOTICE ═══════ */
+.publish-notice{background:rgba(167,139,250,.06);border:1px solid rgba(167,139,250,.25);border-radius:var(--r);padding:8px 12px;margin-bottom:12px;font-size:11px;color:#c4b5fd;display:none;align-items:center;gap:8px;}
+.publish-notice .pn-icon{font-size:14px;}
 
 /* ═══════ TABLE ═══════ */
 .tbl-wrap{background:var(--bg2);border:1px solid var(--brd);border-radius:var(--r2);overflow:hidden;}
@@ -117,15 +121,23 @@ table{width:100%;border-collapse:collapse;min-width:1020px;}
 thead th{background:var(--bg1);padding:9px 10px;text-align:center;color:var(--text3);font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;white-space:nowrap;border-bottom:1px solid var(--brd);}
 tbody tr{border-bottom:1px solid rgba(25,40,64,.5);transition:background .1s;}
 tbody tr:last-child{border-bottom:none;}
-tbody tr:hover{background:var(--blue-hl);}
+tbody tr:hover{background:rgba(59,130,246,.04);}
 tbody tr.row-sel{background:rgba(59,130,246,.06);}
 tbody tr.row-sel td:first-child{box-shadow:inset 3px 0 0 var(--blue);}
+/* مباريات الليل (الغد) تظهر بلون بنفسجي */
+tbody tr.row-night{background:rgba(139,92,246,.04);}
+tbody tr.row-night:hover{background:rgba(139,92,246,.07);}
+tbody tr.row-night.row-sel{background:rgba(139,92,246,.09);}
+tbody tr.row-night.row-sel td:first-child{box-shadow:inset 3px 0 0 var(--purple);}
+/* فاصل بين مباريات اليوم ومباريات الليل */
+tr.night-divider td{padding:6px 10px;background:rgba(139,92,246,.08);border-top:1px dashed rgba(167,139,250,.3);border-bottom:1px dashed rgba(167,139,250,.3);}
+.night-divider-label{display:flex;align-items:center;gap:10px;color:#a78bfa;font-size:10px;font-weight:700;letter-spacing:.8px;}
+.night-divider-label .nd-line{flex:1;height:1px;background:rgba(167,139,250,.2);}
 td{padding:6px 9px;text-align:center;vertical-align:middle;white-space:nowrap;}
-
-/* Checkbox */
 input[type="checkbox"]{width:15px;height:15px;accent-color:var(--blue);cursor:pointer;}
+tr.row-night input[type="checkbox"]{accent-color:var(--purple);}
 
-/* Status badges */
+/* ═══════ BADGES ═══════ */
 .badge{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:5px;font-size:9px;font-weight:700;letter-spacing:.5px;}
 .badge .dot{width:5px;height:5px;border-radius:50%;flex-shrink:0;}
 .b-live{background:rgba(239,68,68,.12);color:#fca5a5;border:1px solid rgba(239,68,68,.25);}
@@ -134,46 +146,45 @@ input[type="checkbox"]{width:15px;height:15px;accent-color:var(--blue);cursor:po
 .b-done .dot{background:var(--text3);}
 .b-soon{background:rgba(34,211,238,.08);color:#67e8f9;border:1px solid rgba(34,211,238,.2);}
 .b-soon .dot{background:var(--cyan);}
+.night-tag{display:inline-flex;align-items:center;gap:3px;background:rgba(139,92,246,.15);color:#c4b5fd;border:1px solid var(--purple-brd);border-radius:4px;font-size:8px;font-weight:700;padding:1px 5px;margin-right:4px;vertical-align:middle;white-space:nowrap;}
 @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.2;}}
 
-/* Team cells */
+/* ═══════ TEAM CELLS ═══════ */
 .tm{display:flex;align-items:center;gap:6px;}
 .tm.rev{flex-direction:row-reverse;}
 .tlogo{width:24px;height:24px;border-radius:50%;background:#fff;padding:2px;object-fit:contain;flex-shrink:0;}
 .tname{font-size:12px;font-weight:500;max-width:110px;overflow:hidden;text-overflow:ellipsis;}
 .score{font-family:var(--mono);font-size:14px;font-weight:700;color:var(--gold);letter-spacing:2px;}
 .time-val{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--gold);}
+tr.row-night .time-val{color:#c4b5fd;}
 .lg-name{font-size:10px;color:var(--text2);max-width:130px;overflow:hidden;text-overflow:ellipsis;}
 
-/* Channel / commentator */
-.ch-select,.ch-input,.cm-input{
-  width:100%;min-width:140px;height:28px;font-size:11px;border-radius:5px;
-  background:var(--bg3);border:1px solid var(--brd);color:var(--text);padding:0 8px;
-  font-family:var(--font);transition:border-color .15s;
-}
-.ch-select{color:var(--gold);font-weight:600;appearance:none;
-  background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath fill='%23f59e0b' d='M4 5L0 1h8z'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;background-position:left 7px center;padding-left:20px;min-width:150px;}
+/* ═══════ INPUTS ═══════ */
+.ch-select,.ch-input,.cm-input{width:100%;min-width:140px;height:28px;font-size:11px;border-radius:5px;background:var(--bg3);border:1px solid var(--brd);color:var(--text);padding:0 8px;font-family:var(--font);transition:border-color .15s;}
+.ch-select{color:var(--gold);font-weight:600;appearance:none;background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath fill='%23f59e0b' d='M4 5L0 1h8z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:left 7px center;padding-left:20px;min-width:150px;}
 .ch-select option{background:var(--bg1);}
 .ch-input{color:#4ade80;font-weight:600;}
 .cm-input{color:var(--text2);}
 .ch-select:focus,.ch-input:focus,.cm-input:focus{border-color:var(--blue);}
 .loading-ch{color:var(--gold);font-size:10px;animation:pulse 1s infinite;}
-
-/* Server button */
 .srv-btn{background:var(--bg3);border:1px solid var(--brd);border-radius:6px;padding:3px 9px;font-size:10px;cursor:pointer;color:var(--text2);display:inline-flex;align-items:center;gap:4px;transition:all .15s;font-family:var(--font);}
 .srv-btn:hover{border-color:var(--purple);color:var(--purple);}
 .srv-ct{background:var(--blue);color:#fff;font-size:9px;padding:1px 5px;border-radius:8px;font-family:var(--mono);display:none;}
+tr.row-night .srv-ct{background:var(--purple);}
 
-/* ═══════ SIDE PANEL ═══════ */
+/* ═══════ BULK ═══════ */
+.bulk-wrap{background:var(--bg2);border:1px solid var(--brd);border-radius:var(--r2);padding:12px;margin-bottom:12px;display:none;}
+.bulk-wrap textarea{width:100%;height:70px;padding:8px;font-size:12px;font-family:var(--mono);background:var(--bg1);border:1px solid var(--brd);border-radius:var(--r);color:var(--text);resize:none;}
+
+/* ═══════ SIDE ═══════ */
 .json-out{flex:1;min-height:250px;width:100%;font-family:var(--mono);font-size:10px;line-height:1.6;color:#7dd3fc;padding:10px;border-radius:var(--r);background:var(--bg);border:1px solid var(--brd);resize:none;}
 .side-info{background:var(--bg2);border:1px solid var(--brd);border-radius:var(--r);padding:10px 12px;font-size:11px;color:var(--text2);line-height:1.8;}
 .side-info b{color:var(--text);}
 
-/* ═══════ MODALS (shared) ═══════ */
-.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(6px);z-index:200;display:none;justify-content:center;align-items:center;padding:20px;}
+/* ═══════ MODALS ═══════ */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.72);backdrop-filter:blur(6px);z-index:200;display:none;justify-content:center;align-items:center;padding:20px;}
 .modal-overlay.open{display:flex;}
-.modal-box{background:var(--bg2);border:1px solid var(--brd2);border-radius:18px;width:100%;box-shadow:0 30px 60px rgba(0,0,0,.6);max-height:85vh;overflow-y:auto;}
+.modal-box{background:var(--bg2);border:1px solid var(--brd2);border-radius:18px;width:100%;box-shadow:0 30px 60px rgba(0,0,0,.6);max-height:88vh;overflow-y:auto;}
 .modal-head{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--brd);position:sticky;top:0;background:var(--bg2);z-index:1;}
 .modal-head h3{font-size:14px;font-weight:700;}
 .modal-body{padding:18px 20px;}
@@ -181,42 +192,36 @@ input[type="checkbox"]{width:15px;height:15px;accent-color:var(--blue);cursor:po
 .m-close{background:none;border:none;color:var(--text2);font-size:20px;cursor:pointer;padding:0 4px;line-height:1;transition:color .15s;}
 .m-close:hover{color:var(--red);}
 
-/* ═══════ SERVER MODAL ═══════ */
-#serverModal .modal-box{max-width:620px;}
+/* Server modal */
+#serverModal .modal-box{max-width:640px;}
 .srv-row-item{display:flex;gap:6px;margin-bottom:8px;align-items:center;}
 .srv-row-item input{flex:1;height:34px;padding:0 10px;background:var(--bg1);border:1px solid var(--brd);border-radius:var(--r);color:var(--text);font-size:12px;font-family:var(--font);}
 .srv-row-item input:focus{border-color:var(--blue);}
 .srv-row-item .sm-btn{height:28px;width:28px;padding:0;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;}
-
-/* JSON Import for servers */
-.json-drop{border:2px dashed var(--brd2);border-radius:var(--r);padding:20px;text-align:center;color:var(--text2);font-size:12px;cursor:pointer;transition:all .2s;margin-bottom:12px;}
+.json-drop{border:2px dashed var(--brd2);border-radius:var(--r);padding:18px;text-align:center;color:var(--text2);font-size:12px;cursor:pointer;transition:all .2s;margin-bottom:12px;}
 .json-drop:hover,.json-drop.drag{border-color:var(--blue);color:var(--blue);background:var(--blue-dim);}
 .json-drop input[type=file]{display:none;}
-.json-preview{background:var(--bg1);border:1px solid var(--brd);border-radius:var(--r);padding:10px;font-family:var(--mono);font-size:10px;color:#7dd3fc;max-height:120px;overflow-y:auto;margin-bottom:10px;display:none;}
+.json-preview{background:var(--bg1);border:1px solid var(--brd);border-radius:var(--r);padding:10px;font-family:var(--mono);font-size:10px;color:#7dd3fc;max-height:120px;overflow-y:auto;margin-bottom:10px;display:none;white-space:pre-wrap;}
 
-/* ═══════ PUBLISH CONFIRM MODAL ═══════ */
-#confirmModal .modal-box{max-width:420px;}
+/* Confirm modal */
+#confirmModal .modal-box{max-width:460px;}
+.confirm-row{display:flex;gap:8px;margin:12px 0;flex-wrap:wrap;}
+.confirm-card{background:var(--bg3);border:1px solid var(--brd2);border-radius:var(--r);padding:10px 14px;font-size:12px;flex:1;min-width:120px;}
+.confirm-card .cc-num{font-family:var(--mono);font-size:22px;font-weight:700;line-height:1;margin-bottom:2px;}
+.confirm-card .cc-lbl{font-size:9px;color:var(--text2);text-transform:uppercase;letter-spacing:.7px;}
+.confirm-card.c-today .cc-num{color:var(--cyan);}
+.confirm-card.c-night .cc-num{color:var(--purple);}
+.confirm-card.c-tmr .cc-num{color:var(--gold);}
+.confirm-card.c-total{background:rgba(59,130,246,.08);border-color:rgba(59,130,246,.3);}
+.confirm-card.c-total .cc-num{color:var(--blue);font-size:28px;}
 
-/* ═══════ BULK AREA ═══════ */
-.bulk-wrap{background:var(--bg2);border:1px solid var(--brd);border-radius:var(--r2);padding:12px;margin-bottom:12px;display:none;}
-.bulk-wrap textarea{width:100%;height:70px;padding:8px;font-size:12px;font-family:var(--mono);background:var(--bg1);border:1px solid var(--brd);border-radius:var(--r);color:var(--text);resize:none;}
-.bulk-wrap textarea:focus{border-color:var(--blue);}
-
-/* ═══════ NIGHT MATCH ROW (مباريات الغد الليلية في تبويب اليوم) ═══════ */
-.night-sep td{background:rgba(139,92,246,.06);border-top:1px dashed rgba(139,92,246,.3);border-bottom:1px dashed rgba(139,92,246,.3);}
-.night-sep-label{display:flex;align-items:center;gap:8px;color:#a78bfa;font-size:10px;font-weight:700;letter-spacing:1px;padding:4px 0;}
-.night-sep-label::before,.night-sep-label::after{content:'';flex:1;height:1px;background:rgba(139,92,246,.25);}
-tr.row-night>td:first-child{box-shadow:inset 3px 0 0 #a78bfa;}
-tr.row-night .time-val{color:#a78bfa;}
-.night-tag{display:inline-flex;align-items:center;gap:3px;background:rgba(139,92,246,.15);color:#a78bfa;border:1px solid rgba(139,92,246,.3);border-radius:4px;font-size:8px;font-weight:700;padding:1px 5px;margin-right:4px;vertical-align:middle;}
-
-/* ═══════ EMPTY / LOADING ═══════ */
-.empty-state{text-align:center;padding:50px 20px;color:var(--text3);}
-.empty-state .ei{font-size:36px;margin-bottom:12px;}
+/* ═══════ LOADING ═══════ */
 .loading-state{text-align:center;padding:50px 20px;}
 .spin{width:32px;height:32px;border:3px solid var(--brd);border-top-color:var(--blue);border-radius:50%;animation:spin .7s linear infinite;margin:0 auto 14px;}
 @keyframes spin{to{transform:rotate(360deg);}}
 .loading-state p{color:var(--text2);font-size:12px;}
+.empty-state{text-align:center;padding:50px 20px;}
+.empty-state .ei{font-size:36px;margin-bottom:12px;}
 
 /* ═══════ TOASTS ═══════ */
 #toasts{position:fixed;bottom:16px;right:16px;z-index:9990;display:flex;flex-direction:column;gap:6px;max-width:300px;}
@@ -229,15 +234,11 @@ tr.row-night .time-val{color:#a78bfa;}
 .toast .tmsg{color:var(--text);line-height:1.4;}
 @keyframes tIn{from{transform:translateX(20px);opacity:0;}to{transform:none;opacity:1;}}
 @keyframes tOut{to{transform:translateX(20px);opacity:0;}}
-
-/* ═══════ PROGRESS BAR ═══════ */
-.fetch-bar{height:3px;background:var(--brd);border-radius:2px;overflow:hidden;margin-bottom:10px;}
-.fetch-bar-fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:2px;transition:width .3s;width:0%;}
 </style>
 </head>
 <body>
 
-<!-- ────── LOGIN ────── -->
+<!-- LOGIN -->
 <div id="login-overlay">
   <div class="login-wrap">
     <div class="login-logo">
@@ -249,16 +250,14 @@ tr.row-night .time-val{color:#a78bfa;}
       <input type="email" id="lemail" placeholder="admin@ultratv.dz">
       <label>كلمة المرور</label>
       <input type="password" id="lpass" placeholder="••••••••">
-      <button class="login-btn-main" id="lbtn">دخول إلى لوحة التحكم</button>
+      <button class="login-btn-main" id="lbtn">دخول</button>
       <p class="login-err" id="lerr"></p>
     </div>
   </div>
 </div>
 
-<!-- ────── APP ────── -->
+<!-- APP -->
 <div id="app" style="display:none;flex-direction:column;">
-
-  <!-- TOPBAR -->
   <div class="topbar">
     <div class="t-brand">
       <div class="ico">📡</div>
@@ -271,15 +270,12 @@ tr.row-night .time-val{color:#a78bfa;}
     <button class="t-btn" onclick="doSignOut()">⏻ خروج</button>
   </div>
 
-  <!-- CONTENT -->
   <div class="content" style="flex:1;overflow:hidden;">
-
-    <!-- MAIN PANEL -->
     <div class="main-panel">
 
       <!-- TOOLBAR -->
       <div class="toolbar">
-        <button class="btn btn-primary" onclick="fetchActiveDay()">🔄 تحديث API</button>
+        <button class="btn btn-primary" onclick="fetchActiveDay()">🔄 تحديث</button>
         <div class="tb-sep"></div>
         <select class="filter-sel" id="sfStatus" onchange="filterRows()">
           <option value="all">🔍 الكل</option>
@@ -289,18 +285,17 @@ tr.row-night .time-val{color:#a78bfa;}
         </select>
         <input type="text" class="search-input" id="sfSearch" placeholder="بحث بالفريق أو الدوري…">
         <div class="tb-sep"></div>
-        <button class="btn btn-ghost" onclick="toggleBulk()" title="إدخال يدوي">📝 يدوي</button>
-        <button class="btn btn-xtream" onclick="autoFillXtream()" title="ملء تلقائي من Xtream">⚡ Xtream</button>
+        <button class="btn btn-ghost" onclick="toggleBulk()">📝 يدوي</button>
+        <button class="btn btn-xtream" onclick="autoFillXtream()">⚡ Xtream</button>
         <div class="tb-sep"></div>
         <button class="btn btn-ghost" onclick="loadFromFB()">📥 استعادة</button>
         <button class="btn btn-danger" onclick="clearFB()">🗑 مسح DB</button>
         <button class="btn btn-fire" onclick="confirmPublish()">🔥 نشر Firebase</button>
       </div>
 
-      <!-- FETCH PROGRESS BAR -->
-      <div class="fetch-bar" id="fetchBar"><div class="fetch-bar-fill" id="fetchFill"></div></div>
+      <div class="fetch-bar"><div class="fetch-bar-fill" id="fetchFill"></div></div>
 
-      <!-- BULK INPUT -->
+      <!-- BULK -->
       <div class="bulk-wrap" id="bulkWrap">
         <div class="s-title" style="margin-bottom:8px;">إدخال يدوي</div>
         <textarea id="bulkInput" placeholder="الفريق 1 ضد الفريق 2, القناة, المعلق&#10;كل مباراة في سطر جديد…"></textarea>
@@ -314,23 +309,28 @@ tr.row-night .time-val{color:#a78bfa;}
       <div class="stats-strip">
         <div class="stat-chip sc-all"><div><div class="sv" id="stTotal">0</div><div class="sl">مباريات</div></div></div>
         <div class="stat-chip sc-live"><div><div class="sv" id="stLive">0</div><div class="sl">مباشر</div></div></div>
-        <div class="stat-chip sc-soon"><div><div class="sv" id="stSoon">0</div><div class="sl">قادمة</div></div></div>
+        <div class="stat-chip sc-up"><div><div class="sv" id="stSoon">0</div><div class="sl">قادمة</div></div></div>
+        <div class="stat-chip sc-night"><div><div class="sv" id="stNight">0</div><div class="sl">ليلية غد</div></div></div>
         <div class="stat-chip sc-sel"><div><div class="sv" id="stSel">0</div><div class="sl">محدد</div></div></div>
-        <div class="stat-chip sc-done"><div><div class="sv" id="stDone">0</div><div class="sl">انتهت</div></div></div>
+      </div>
+
+      <!-- PUBLISH NOTICE -->
+      <div class="publish-notice" id="publishNotice">
+        <span class="pn-icon">🌙</span>
+        <span>تبويب اليوم يتضمن مباريات الغد الليلية (قبل 06:00) — سيُنشر الكل معاً في Firebase</span>
       </div>
 
       <!-- DAY TABS -->
       <div class="day-tabs">
         <button class="day-tab active" id="tab0" onclick="switchDay(0)">
-          📅 اليوم <span class="dt-ct" id="ct0">0</span>
-          <span id="nightBadge" style="display:none;background:rgba(139,92,246,.25);color:#a78bfa;border:1px solid rgba(139,92,246,.4);font-size:9px;padding:1px 6px;border-radius:8px;font-family:var(--mono);">+<span id="nightCount">0</span> ليل</span>
+          📅 اليوم
+          <span class="dt-ct" id="ct0">0</span>
+          <span class="night-pill" id="nightPill" style="display:none;">+<span id="nightPillCt">0</span> ليل</span>
         </button>
-        <button class="day-tab" id="tab1" onclick="switchDay(1)">🌙 الغد <span class="dt-ct" id="ct1">0</span></button>
-        <div style="flex:1;"></div>
-        <div style="font-size:10px;color:var(--text3);align-self:center;display:flex;align-items:center;gap:6px;">
-          <span style="width:8px;height:8px;border-radius:50%;background:#a78bfa;display:inline-block;"></span>
-          مباريات ما بعد منتصف الليل تظهر في تبويب اليوم
-        </div>
+        <button class="day-tab" id="tab1" onclick="switchDay(1)">
+          🗓 الغد (نهار)
+          <span class="dt-ct" id="ct1">0</span>
+        </button>
       </div>
 
       <!-- TABLE -->
@@ -344,8 +344,8 @@ tr.row-night .time-val{color:#a78bfa;}
                 <th>المضيف</th>
                 <th width="75">النتيجة</th>
                 <th>الضيف</th>
-                <th width="125">الدوري</th>
-                <th width="65">الوقت</th>
+                <th width="120">الدوري</th>
+                <th width="80">الوقت</th>
                 <th width="175">القناة</th>
                 <th width="140">المعلق</th>
                 <th width="66">سرفرات</th>
@@ -355,26 +355,22 @@ tr.row-night .time-val{color:#a78bfa;}
           </table>
         </div>
       </div>
-
-    </div><!-- /main-panel -->
-
-    <!-- SIDE PANEL -->
-    <div class="side-panel">
-      <div class="s-title">JSON الناتج</div>
-      <textarea class="json-out" id="jsonOut" readonly placeholder='اختر مباريات…'></textarea>
-      <button class="btn btn-ghost" style="width:100%;justify-content:center;" onclick="copyJSON()">📋 نسخ JSON</button>
-
-      <div class="s-title" style="margin-top:4px;">حالة Firebase</div>
-      <div class="side-info" id="fbInfo">—</div>
-
-      <div class="s-title" style="margin-top:4px;">ملاحظات سريعة</div>
-      <textarea id="quickNotes" style="width:100%;height:90px;background:var(--bg);border:1px solid var(--brd);border-radius:var(--r);color:var(--text2);font-size:11px;padding:8px;resize:none;font-family:var(--font);" placeholder="ملاحظات خاصة بك…" oninput="saveNotes()"></textarea>
     </div>
 
-  </div><!-- /content -->
-</div><!-- /app -->
+    <!-- SIDE -->
+    <div class="side-panel">
+      <div class="s-title">JSON الناتج</div>
+      <textarea class="json-out" id="jsonOut" readonly placeholder="اختر مباريات…"></textarea>
+      <button class="btn btn-ghost" style="width:100%;justify-content:center;" onclick="copyJSON()">📋 نسخ JSON</button>
+      <div class="s-title" style="margin-top:4px;">حالة Firebase</div>
+      <div class="side-info" id="fbInfo">—</div>
+      <div class="s-title" style="margin-top:4px;">ملاحظات</div>
+      <textarea id="quickNotes" style="width:100%;height:90px;background:var(--bg);border:1px solid var(--brd);border-radius:var(--r);color:var(--text2);font-size:11px;padding:8px;resize:none;font-family:var(--font);" placeholder="ملاحظاتك…" oninput="saveNotes()"></textarea>
+    </div>
+  </div>
+</div>
 
-<!-- ────── SERVER MODAL ────── -->
+<!-- SERVER MODAL -->
 <div class="modal-overlay" id="serverModal">
   <div class="modal-box">
     <div class="modal-head">
@@ -382,57 +378,62 @@ tr.row-night .time-val{color:#a78bfa;}
       <button class="m-close" onclick="closeModal('serverModal')">&times;</button>
     </div>
     <div class="modal-body">
-
-      <!-- JSON Upload Section -->
-      <div class="s-title">📂 استيراد سيرفرات من ملف JSON</div>
-      <div class="json-drop" id="jsonDrop" onclick="document.getElementById('jsonFileIn').click()"
+      <div class="s-title">📂 استيراد من ملف JSON</div>
+      <div class="json-drop" id="jsonDrop"
+           onclick="document.getElementById('jsonFileIn').click()"
            ondragover="event.preventDefault();this.classList.add('drag')"
            ondragleave="this.classList.remove('drag')"
            ondrop="handleJsonDrop(event)">
         <div style="font-size:22px;margin-bottom:6px;">📁</div>
-        <div>اسحب ملف JSON هنا أو اضغط للاختيار</div>
-        <div style="font-size:10px;margin-top:4px;opacity:.6;">يجب أن يكون بصيغة: <code>{"HD":"url","FHD":"url"}</code> أو <code>[{"HD":"url"},{"FHD":"url"}]</code></div>
+        <div style="font-weight:600;">اسحب ملف JSON أو اضغط للاختيار</div>
+        <div style="font-size:10px;margin-top:4px;opacity:.6;">صيغة: <code>{"HD":"url"}</code> أو <code>[{"HD":"url"},{"FHD":"url"}]</code></div>
         <input type="file" id="jsonFileIn" accept=".json" onchange="handleJsonFile(this)">
       </div>
       <pre class="json-preview" id="jsonPreview"></pre>
-      <div style="display:flex;gap:6px;margin-bottom:14px;" id="jsonImportBtns" style="display:none;">
-        <button class="btn btn-success btn-sm" onclick="applyJsonServers()">✅ تطبيق السيرفرات المستوردة</button>
+      <div style="display:none;gap:6px;margin-bottom:14px;" id="jsonImportBtns">
+        <button class="btn btn-success btn-sm" onclick="applyJsonServers()">✅ تطبيق السيرفرات</button>
         <button class="btn btn-ghost btn-sm" onclick="clearJsonImport()">✖ إلغاء</button>
       </div>
-
-      <div class="s-title" style="margin-top:4px;">✏️ إضافة / تعديل يدوي</div>
+      <div class="s-title" style="margin-top:4px;">✏️ تعديل يدوي</div>
       <div id="srvList"></div>
-      <button class="btn btn-ghost btn-sm" onclick="addSrvLine()" style="margin-top:4px;">+ سطر جديد</button>
+      <button class="btn btn-ghost btn-sm" onclick="addSrvLine()" style="margin-top:6px;">+ إضافة سطر</button>
     </div>
     <div class="modal-foot">
       <button class="btn btn-ghost" onclick="closeModal('serverModal')">إلغاء</button>
-      <button class="btn btn-success" onclick="saveServers()">💾 حفظ السيرفرات</button>
+      <button class="btn btn-success" onclick="saveServers()">💾 حفظ</button>
     </div>
   </div>
 </div>
 
-<!-- ────── PUBLISH CONFIRM MODAL ────── -->
+<!-- CONFIRM MODAL -->
 <div class="modal-overlay" id="confirmModal">
   <div class="modal-box">
     <div class="modal-head">
-      <h3>🔥 تأكيد النشر</h3>
+      <h3>🔥 تأكيد النشر في Firebase</h3>
       <button class="m-close" onclick="closeModal('confirmModal')">&times;</button>
     </div>
     <div class="modal-body">
-      <p style="color:var(--text2);font-size:13px;line-height:1.7;">سيتم نشر إجمالي <b id="confirmCount" style="color:var(--blue);font-size:16px;">0</b> مباراة في Firebase:</p>
-      <div style="display:flex;gap:8px;margin:12px 0;flex-wrap:wrap;" id="confirmBreakdown">
-        <div style="background:var(--bg3);border:1px solid var(--brd2);border-radius:var(--r);padding:8px 14px;font-size:11px;flex:1;min-width:130px;">
-          📅 مباريات اليوم: <b id="cToday" style="color:var(--cyan);">0</b>
+      <p style="color:var(--text2);font-size:12px;margin-bottom:4px;">تفصيل المباريات التي ستُنشر:</p>
+      <div class="confirm-row">
+        <div class="confirm-card c-today">
+          <div class="cc-num" id="cToday">0</div>
+          <div class="cc-lbl">📅 مباريات اليوم</div>
         </div>
-        <div style="background:rgba(139,92,246,.08);border:1px solid rgba(139,92,246,.25);border-radius:var(--r);padding:8px 14px;font-size:11px;flex:1;min-width:130px;">
-          🌙 مباريات الليل (غد): <b id="cNight" style="color:#a78bfa;">0</b>
+        <div class="confirm-card c-night">
+          <div class="cc-num" id="cNight">0</div>
+          <div class="cc-lbl">🌙 ليل (غد &lt;06:00)</div>
         </div>
-        <div style="background:var(--bg3);border:1px solid var(--brd2);border-radius:var(--r);padding:8px 14px;font-size:11px;flex:1;min-width:130px;">
-          🗓 مباريات الغد: <b id="cTomorrow" style="color:var(--gold);">0</b>
+        <div class="confirm-card c-tmr">
+          <div class="cc-num" id="cTmr">0</div>
+          <div class="cc-lbl">🗓 نهار الغد</div>
+        </div>
+        <div class="confirm-card c-total">
+          <div class="cc-num" id="cTotal">0</div>
+          <div class="cc-lbl">📦 الإجمالي</div>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--brd2);border-radius:var(--r);padding:10px 12px;font-size:11px;color:var(--text2);">
-        ⚠️ هذا الإجراء لا يمكن التراجع عنه. سيُحذف المحتوى القديم من Firebase.
+      <div style="background:var(--bg3);border:1px solid var(--brd2);border-radius:var(--r);padding:10px 12px;font-size:11px;color:var(--text2);margin-top:4px;">
+        ⚠️ سيُحذف المحتوى القديم من Firebase ويُستبدل بهذه القائمة.
       </div>
     </div>
     <div class="modal-foot">
@@ -445,49 +446,51 @@ tr.row-night .time-val{color:#a78bfa;}
 <div id="toasts"></div>
 
 <script>
-/* ═══════════════════════════════════════════
+/* ════════════════════════════════════════
    CONFIG
-═══════════════════════════════════════════ */
-const FBConfig = {
+════════════════════════════════════════ */
+firebase.initializeApp({
   apiKey:"AIzaSyBBf2ock2SHzeLu27oh0rlxwgLmxHINjIk",
   authDomain:"ultra-tv-c23ea.firebaseapp.com",
   projectId:"ultra-tv-c23ea",
   storageBucket:"ultra-tv-c23ea.firebasestorage.app",
   messagingSenderId:"253161044450",
   appId:"1:253161044450:web:66a15956cde240c1de21bb"
-};
-firebase.initializeApp(FBConfig);
+});
 const db = firebase.firestore();
 const auth = firebase.auth();
 
 const PROXY = "https://ys-proxy.dzandz496.workers.dev/?url=";
+
+// ═══ إعداد Xtream الجديد ═══
 const XTREAM = {
-  fetchUrl:"https://api-ultra.dzandz496.workers.dev",
-  host:"http://api.ultrav.me",
-  user:"AdminX99",
-  pass:"PassUltra2026"
+  host: "http://core.itsall.pro",
+  user: "Allgoodlotfi",
+  pass: "hhDZSxCpeD"
 };
+
 const IMG_BASE = "https://imgs.ysscores.com/teams/128/";
-const NO_LOGO = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23334155'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3C/svg%3E";
+const NO_LOGO  = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23334155'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3C/svg%3E";
 
-/* ═══════════════════════════════════════════
+// مباريات الغد التي ساعتها < NIGHT_CUTOFF تُعرض مع اليوم
+const NIGHT_CUTOFF = 6; // 06:00 صباحاً
+
+/* ════════════════════════════════════════
    STATE
-═══════════════════════════════════════════ */
+════════════════════════════════════════ */
 let activeDay = 0;
-// selectedByDay[day] = Set of matchIds
-const selectedByDay = { 0: new Set(), 1: new Set() };
-// مباريات الغد التي ساعتها قبل هذا الحد تُعرض في تبويب اليوم (مثلاً 06:00)
-const NIGHT_CUTOFF_HOUR = 6;
-// تخزين بيانات كل يوم منفصلاً
-let dayData = { 0: [], 1: [] };
-// rowSnapshots[matchId] = {ch, cm, servers} — لحفظ التعديلات عند التبديل
-const rowSnapshots = {};
+// تخزين المباريات المحملة لكل يوم
+const dayMatches = { 0: [], 1: [] };
+// تحديدات كل يوم منفصلة (matchId → true)
+const daySelected = { 0: {}, 1: {} };
+// لحفظ قيم القناة/المعلق/السيرفرات أثناء التبديل
+const rowCache = {}; // matchId → {ch, cm, servers}
 let currentRow = null;
-let pendingJsonServers = null;
+let pendingJsonSrv = null;
 
-/* ═══════════════════════════════════════════
+/* ════════════════════════════════════════
    AUTH
-═══════════════════════════════════════════ */
+════════════════════════════════════════ */
 document.addEventListener('DOMContentLoaded', () => {
   auth.onAuthStateChanged(u => {
     if (u) {
@@ -495,10 +498,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const app = document.getElementById('app');
       app.style.display = 'flex';
       document.getElementById('userEl').textContent = u.email;
-      startClock();
-      loadNotes();
-      init();
-      toast(`مرحباً ${u.email}`, 'success');
+      startClock(); loadNotes(); init();
+      toast('مرحباً ' + u.email, 'success');
     } else {
       document.getElementById('login-overlay').style.display = 'flex';
       document.getElementById('app').style.display = 'none';
@@ -507,677 +508,773 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('lbtn').addEventListener('click', doLogin);
   document.getElementById('lpass').addEventListener('keydown', e => { if(e.key==='Enter') doLogin(); });
 });
-
 function doLogin() {
   const e = document.getElementById('lemail').value;
   const p = document.getElementById('lpass').value;
   document.getElementById('lerr').textContent = '';
-  auth.signInWithEmailAndPassword(e, p).catch(err => {
-    document.getElementById('lerr').textContent = '❌ ' + err.message;
-  });
+  auth.signInWithEmailAndPassword(e,p).catch(err => { document.getElementById('lerr').textContent = '❌ '+err.message; });
 }
-
 function doSignOut() { auth.signOut(); }
 
-/* ═══════════════════════════════════════════
+/* ════════════════════════════════════════
    CLOCK
-═══════════════════════════════════════════ */
+════════════════════════════════════════ */
 function startClock() {
-  const days = ['الأحد','الاثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'];
-  function tick() {
-    const n = new Date();
-    const t = `${pad(n.getHours())}:${pad(n.getMinutes())}:${pad(n.getSeconds())}`;
-    document.getElementById('clockEl').textContent = `${days[n.getDay()]} — ${t}`;
+  const days=['الأحد','الاثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'];
+  function tick(){
+    const n=new Date();
+    document.getElementById('clockEl').textContent=`${days[n.getDay()]} ${pad(n.getHours())}:${pad(n.getMinutes())}:${pad(n.getSeconds())}`;
   }
-  tick(); setInterval(tick, 1000);
+  tick(); setInterval(tick,1000);
 }
 const pad = n => String(n).padStart(2,'0');
 
-/* ═══════════════════════════════════════════
+/* ════════════════════════════════════════
    INIT
-═══════════════════════════════════════════ */
+════════════════════════════════════════ */
 function init() {
-  document.getElementById('tbody').addEventListener('change', onTableChange);
+  document.getElementById('tbody').addEventListener('change', e => { if(e.target.type==='checkbox') onCbChange(e.target); });
   document.getElementById('tbody').addEventListener('input', () => buildJSON());
   document.getElementById('sfSearch').addEventListener('input', filterRows);
   scheduleMidnightRefresh();
   fetchActiveDay();
 }
-
 function scheduleMidnightRefresh() {
-  const n = new Date();
-  const midnight = new Date(n.getFullYear(), n.getMonth(), n.getDate()+1);
-  setTimeout(() => { fetchActiveDay(); scheduleMidnightRefresh(); }, midnight - n);
+  const n=new Date(), m=new Date(n.getFullYear(),n.getMonth(),n.getDate()+1);
+  setTimeout(() => { fetchActiveDay(); scheduleMidnightRefresh(); }, m-n);
 }
 
-/* ═══════════════════════════════════════════
-   DAY SWITCHING — KEY FEATURE
-   الحالة تُحفظ منفصلة لكل يوم
-═══════════════════════════════════════════ */
+/* ════════════════════════════════════════
+   DATE HELPERS
+════════════════════════════════════════ */
+function dateStr(offset=0) {
+  const d=new Date(); d.setDate(d.getDate()+offset);
+  return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+}
+
+// هل ساعة المباراة تعتبر "ليلية" (تعود للغد لكن تُعرض مع اليوم)؟
+function isNightMatch(timeStr) {
+  // timeStr مثل "02:00" أو "00:30"
+  const h = parseInt((timeStr||'12:00').split(':')[0], 10);
+  return h < NIGHT_CUTOFF;
+}
+
+function fetchActiveDay() { fetchMatches(activeDay); }
+
+/* ════════════════════════════════════════
+   DAY SWITCHING — مع حفظ التحديد
+════════════════════════════════════════ */
 function switchDay(day) {
-  // حفظ حالة الصفوف المحددة لليوم الحالي قبل التبديل
-  saveSelectionForDay(activeDay);
+  snapshotCurrentRows(); // حفظ حالة الصفوف الحالية
   activeDay = day;
-  document.getElementById('tab0').classList.toggle('active', day===0);
-  document.getElementById('tab1').classList.toggle('active', day===1);
-  fetchActiveDay();
+  document.getElementById('tab0').className = 'day-tab' + (day===0?' active':'');
+  document.getElementById('tab1').className = 'day-tab' + (day===1?' active':'');
+  renderCurrentDay();
 }
 
-function saveSelectionForDay(day) {
-  const set = new Set();
-  document.querySelectorAll('#tbody tr').forEach(tr => {
+function snapshotCurrentRows() {
+  document.querySelectorAll('#tbody tr[data-mid]').forEach(tr => {
+    const id = tr.dataset.mid;
+    const ci = tr.querySelector('.ch-input');
+    const cs = tr.querySelector('.ch-select');
+    const cm = tr.querySelector('.cm-input');
+    rowCache[id] = {
+      ch: ci?.value ?? cs?.value ?? '',
+      cm: cm?.value ?? '',
+      servers: tr.dataset.servers || '[]',
+      srvCt: tr.querySelector('.srv-ct')?.textContent || '0'
+    };
     const cb = tr.querySelector('input[type=checkbox]');
-    if (cb && cb.checked) set.add(tr.dataset.matchId);
-    // حفظ القناة والمعلق والسرفرات في dataset
-    snapshotRow(tr);
+    if (cb) daySelected[tr.dataset.day][id] = cb.checked;
   });
-  selectedByDay[day] = set;
 }
 
-function snapshotRow(tr) {
-  const ci = tr.querySelector('.ch-input');
-  const cs = tr.querySelector('.ch-select');
-  const cm = tr.querySelector('.cm-input');
-  if (ci) tr.dataset.savedCh = ci.value;
-  else if (cs) tr.dataset.savedCh = cs.value;
-  if (cm) tr.dataset.savedCm = cm.value;
+/* ════════════════════════════════════════
+   FETCH MATCHES
+════════════════════════════════════════ */
+async function fetchMatches(day) {
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = `<tr><td colspan="10"><div class="loading-state"><div class="spin"></div><p>جاري جلب مباريات ${dateStr(day)}…</p></div></td></tr>`;
+  setProgress(5);
+  try {
+    const url = `https://api-ar.ysscores.com/api/matches/matches_date_get/${dateStr(day)}/%5B%5D/%5B%5D/%5B%228634%22%5D/L/60`;
+    const res = await fetch(PROXY + encodeURIComponent(url));
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data = (await res.json()).data || [];
+    data.sort((a,b)=>a.match_timestamp-b.match_timestamp);
+    dayMatches[day] = data;
+    document.getElementById('ct'+day).textContent = data.length;
+    setProgress(20);
+
+    if(day===0) {
+      // جلب مباريات الغد الليلية أيضاً
+      await fetchNightMatches();
+    } else {
+      renderCurrentDay();
+      await fetchDetailsSequential();
+    }
+  } catch(e) {
+    tbody.innerHTML = `<tr><td colspan="10"><div class="empty-state"><div class="ei">⚠️</div><p style="color:var(--red)">فشل: ${e.message}</p></div></td></tr>`;
+    toast('فشل الاتصال','error'); setProgress(0);
+  }
 }
 
-function restoreSelectionForDay(day) {
-  const set = selectedByDay[day] || new Set();
-  document.querySelectorAll('#tbody tr').forEach(tr => {
+// جلب مباريات الغد وتصفية الليلية منها
+async function fetchNightMatches() {
+  try {
+    const url = `https://api-ar.ysscores.com/api/matches/matches_date_get/${dateStr(1)}/%5B%5D/%5B%5D/%5B%228634%22%5D/L/60`;
+    const res = await fetch(PROXY + encodeURIComponent(url));
+    if(!res.ok) throw new Error('');
+    const data = (await res.json()).data || [];
+    // المباريات الليلية هي التي ساعتها < NIGHT_CUTOFF
+    const night = data.filter(m => isNightMatch(m.match_time));
+    const dayTime = data.filter(m => !isNightMatch(m.match_time));
+    dayMatches[1] = [...night, ...dayTime]; // حفظ كل الغد
+    // dayMatches[0] += night للعرض في تبويب اليوم
+    dayMatches[0]._nightMatches = night;
+    dayMatches[1]._nightMatches = night; // مرجع
+    document.getElementById('ct1').textContent = dayTime.length;
+    // شارة الليليات
+    const nightPill = document.getElementById('nightPill');
+    const nightCt   = document.getElementById('nightPillCt');
+    if(night.length > 0) {
+      nightPill.style.display='inline-flex';
+      nightCt.textContent = night.length;
+      document.getElementById('publishNotice').style.display='flex';
+      document.getElementById('stNight').textContent = night.length;
+    } else {
+      nightPill.style.display='none';
+      document.getElementById('publishNotice').style.display='none';
+    }
+  } catch { dayMatches[0]._nightMatches = []; }
+  renderCurrentDay();
+  await fetchDetailsSequential();
+}
+
+/* ════════════════════════════════════════
+   RENDER TABLE
+════════════════════════════════════════ */
+function renderCurrentDay() {
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = '';
+
+  let todayList = [...(dayMatches[activeDay]||[])];
+  let nightList = [];
+
+  if(activeDay === 0) {
+    nightList = dayMatches[0]._nightMatches || [];
+    // إزالة الليليات من قائمة اليوم إن كانت موجودة فيها (لتجنب التكرار)
+    const nightIds = new Set(nightList.map(m=>m.match_id));
+    todayList = todayList.filter(m=>!nightIds.has(m.match_id));
+  }
+
+  if(!todayList.length && !nightList.length) {
+    tbody.innerHTML=`<tr><td colspan="10"><div class="empty-state"><div class="ei">📭</div><p>لا توجد مباريات</p></div></td></tr>`;
+    updateStats(); setProgress(0); return;
+  }
+
+  // رسم مباريات اليوم أو الغد النهارية
+  todayList.forEach(m => tbody.appendChild(buildRow(m, activeDay, false)));
+
+  // إذا كنا في تبويب اليوم: رسم الفاصل ثم مباريات الليل
+  if(activeDay===0 && nightList.length > 0) {
+    const divRow = document.createElement('tr');
+    divRow.className = 'night-divider';
+    divRow.innerHTML = `<td colspan="10">
+      <div class="night-divider-label">
+        <span class="nd-line"></span>
+        🌙 مباريات الغد الليلية — ستُنشر مع اليوم
+        <span class="nd-line"></span>
+      </div></td>`;
+    tbody.appendChild(divRow);
+    nightList.sort((a,b)=>a.match_timestamp-b.match_timestamp);
+    nightList.forEach(m => tbody.appendChild(buildRow(m, 1, true)));
+  }
+
+  // استعادة التحديدات
+  restoreSelections();
+  updateStats();
+  filterRows();
+  buildJSON();
+}
+
+function buildRow(m, dayKey, isNight) {
+  const t1=m.home_team.title, t2=m.away_team.title;
+  const l1=m.home_team.image.startsWith('http')?m.home_team.image:IMG_BASE+m.home_team.image;
+  const l2=m.away_team.image.startsWith('http')?m.away_team.image:IMG_BASE+m.away_team.image;
+  const league=m.championship.title;
+  const timeStr=(m.match_time||'00:00').substring(0,5);
+
+  let bCls='b-soon', jSt='Not Started', stLbl='قادمة', score='VS';
+  if([4,5,-1].includes(m.status)){bCls='b-done';jSt='Finished';stLbl='انتهت';score=`${m.home_scores||0}-${m.away_scores||0}`;}
+  else if(m.live===1||[1,2,3].includes(m.status)){bCls='b-live';jSt='Live';stLbl='مباشر';score=`${m.home_scores||0}-${m.away_scores||0}`;}
+
+  const cached = rowCache[m.match_id];
+  const savedServers = cached?.servers || '[]';
+  const savedSrvCt   = cached?.srvCt   || '0';
+
+  const tr = document.createElement('tr');
+  tr.dataset.mid     = m.match_id;
+  tr.dataset.day     = dayKey;
+  tr.dataset.night   = isNight?'1':'0';
+  tr.dataset.t1n     = t1; tr.dataset.t1l = l1;
+  tr.dataset.t2n     = t2; tr.dataset.t2l = l2;
+  tr.dataset.league  = league;
+  tr.dataset.ts      = m.match_timestamp;
+  tr.dataset.jst     = jSt;
+  tr.dataset.time    = timeStr;
+  tr.dataset.servers = savedServers;
+  if(isNight) tr.classList.add('row-night');
+
+  const nightTagHtml = isNight ? `<span class="night-tag">🌙 ليل</span>` : '';
+
+  tr.innerHTML=`
+    <td><input type="checkbox" onchange="onCbChange(this)"></td>
+    <td><span class="badge ${bCls}"><span class="dot"></span>${stLbl}</span></td>
+    <td><div class="tm">
+      <img class="tlogo" src="${l1}" referrerpolicy="no-referrer" onerror="this.src='${NO_LOGO}'">
+      <span class="tname" title="${t1}">${t1}</span>
+    </div></td>
+    <td class="score">${score}</td>
+    <td><div class="tm rev">
+      <img class="tlogo" src="${l2}" referrerpolicy="no-referrer" onerror="this.src='${NO_LOGO}'">
+      <span class="tname" title="${t2}">${t2}</span>
+    </div></td>
+    <td class="lg-name" title="${league}">${league}</td>
+    <td>${nightTagHtml}<span class="time-val" dir="ltr">${timeStr}</span></td>
+    <td class="chtd"><span class="loading-ch">جاري…</span></td>
+    <td class="cmtd"><span class="loading-ch">…</span></td>
+    <td><button class="srv-btn" onclick="openServerModal(this)">
+      <span class="srv-ct" style="${parseInt(savedSrvCt)>0?'display:inline-block':''}">${savedSrvCt}</span>📡
+    </button></td>`;
+
+  return tr;
+}
+
+/* ════════════════════════════════════════
+   RESTORE SELECTIONS
+════════════════════════════════════════ */
+function restoreSelections() {
+  document.querySelectorAll('#tbody tr[data-mid]').forEach(tr => {
+    const id = tr.dataset.mid;
+    const day = parseInt(tr.dataset.day);
     const cb = tr.querySelector('input[type=checkbox]');
-    if (!cb) return;
-    const sel = set.has(tr.dataset.matchId);
+    if(!cb) return;
+    const sel = !!(daySelected[day]?.[id]);
     cb.checked = sel;
     tr.classList.toggle('row-sel', sel);
   });
 }
 
-/* ═══════════════════════════════════════════
-   DATE HELPERS
-═══════════════════════════════════════════ */
-function dateStr(offset=0) {
-  const d = new Date(); d.setDate(d.getDate()+offset);
-  return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
-}
-
-function fetchActiveDay() { fetchMatches(dateStr(activeDay)); }
-
-/* ═══════════════════════════════════════════
-   FETCH MATCHES
-═══════════════════════════════════════════ */
-async function fetchMatches(ds) {
-  const tbody = document.getElementById('tbody');
-  tbody.innerHTML = `<tr><td colspan="10"><div class="loading-state"><div class="spin"></div><p>جاري جلب مباريات ${ds}…</p></div></td></tr>`;
-  setProgress(5);
-  try {
-    const url = `https://api-ar.ysscores.com/api/matches/matches_date_get/${ds}/%5B%5D/%5B%5D/%5B%228634%22%5D/L/60`;
-    const res = await fetch(PROXY + encodeURIComponent(url));
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const data = (await res.json()).data || [];
-    setProgress(20);
-    document.getElementById(`ct${activeDay}`).textContent = data.length;
-    if (!data.length) {
-      tbody.innerHTML = `<tr><td colspan="10"><div class="empty-state"><div class="ei">📭</div><p>لا توجد مباريات لهذا اليوم</p></div></td></tr>`;
-      setProgress(0); return;
-    }
-    data.sort((a,b) => a.match_timestamp - b.match_timestamp);
-    await renderTable(data);
-  } catch(e) {
-    tbody.innerHTML = `<tr><td colspan="10"><div class="empty-state"><div class="ei">⚠️</div><p style="color:var(--red)">فشل الاتصال: ${e.message}</p></div></td></tr>`;
-    toast('فشل الاتصال بالـ API', 'error');
-    setProgress(0);
-  }
-}
-
-function setProgress(pct) {
-  document.getElementById('fetchFill').style.width = pct + '%';
-  if (pct >= 100) setTimeout(() => setProgress(0), 600);
-}
-
-/* ═══════════════════════════════════════════
-   RENDER TABLE
-═══════════════════════════════════════════ */
-async function renderTable(matches) {
-  const tbody = document.getElementById('tbody');
-  tbody.innerHTML = '';
-
-  matches.forEach(m => {
-    const t1 = m.home_team.title, t2 = m.away_team.title;
-    const l1 = m.home_team.image.startsWith('http') ? m.home_team.image : IMG_BASE + m.home_team.image;
-    const l2 = m.away_team.image.startsWith('http') ? m.away_team.image : IMG_BASE + m.away_team.image;
-    const league = m.championship.title;
-    const timeStr = (m.match_time||'00:00').substring(0,5);
-
-    let bClass='b-soon', jSt='Not Started', stLabel='قادمة', scoreHtml='VS';
-    if ([4,5,-1].includes(m.status)) {
-      bClass='b-done'; jSt='Finished'; stLabel='انتهت';
-      scoreHtml = `${m.home_scores||0} - ${m.away_scores||0}`;
-    } else if (m.live===1||[1,2,3].includes(m.status)) {
-      bClass='b-live'; jSt='Live'; stLabel='مباشر';
-      scoreHtml = `${m.home_scores||0} - ${m.away_scores||0}`;
-    }
-
-    const tr = document.createElement('tr');
-    tr.dataset.matchId   = m.match_id;
-    tr.dataset.t1n       = t1;
-    tr.dataset.t1l       = l1;
-    tr.dataset.t2n       = t2;
-    tr.dataset.t2l       = l2;
-    tr.dataset.league    = league;
-    tr.dataset.ts        = m.match_timestamp;
-    tr.dataset.jst       = jSt;
-    tr.dataset.servers   = '[]';
-    tr.dataset.savedCh   = '';
-    tr.dataset.savedCm   = '';
-
-    tr.innerHTML = `
-      <td><input type="checkbox" onchange="onCbChange(this)"></td>
-      <td><span class="badge ${bClass}"><span class="dot"></span>${stLabel}</span></td>
-      <td><div class="tm">
-        <img class="tlogo" src="${l1}" referrerpolicy="no-referrer" onerror="this.src='${NO_LOGO}'">
-        <span class="tname" title="${t1}">${t1}</span>
-      </div></td>
-      <td class="score">${scoreHtml}</td>
-      <td><div class="tm rev">
-        <img class="tlogo" src="${l2}" referrerpolicy="no-referrer" onerror="this.src='${NO_LOGO}'">
-        <span class="tname" title="${t2}">${t2}</span>
-      </div></td>
-      <td class="lg-name" title="${league}">${league}</td>
-      <td class="time-val" dir="ltr">${timeStr}</td>
-      <td class="chtd"><span class="loading-ch">جاري…</span></td>
-      <td class="cmtd"><span class="loading-ch">…</span></td>
-      <td><button class="srv-btn" onclick="openServerModal(this)"><span class="srv-ct">0</span>📡</button></td>`;
-
-    tbody.appendChild(tr);
-  });
-
-  // Restore selection for this day
-  restoreSelectionForDay(activeDay);
-  updateStats();
-  filterRows();
-  buildJSON();
-  setProgress(30);
-
-  // Fetch details sequentially
-  const step = 60 / matches.length;
-  let prog = 30;
-  for (const m of matches) {
-    const tr = document.querySelector(`tr[data-match-id="${m.match_id}"]`);
-    if (tr) {
-      await fetchDetails(m.match_id, tr);
-      prog += step;
-      setProgress(Math.min(prog, 90));
-      await delay(200);
-    }
+/* ════════════════════════════════════════
+   FETCH DETAILS SEQUENTIAL
+════════════════════════════════════════ */
+async function fetchDetailsSequential() {
+  const rows = [...document.querySelectorAll('#tbody tr[data-mid]')];
+  if(!rows.length){ setProgress(100); return; }
+  const step = 70/rows.length;
+  let prog = 25;
+  for(const tr of rows){
+    await fetchDetails(tr.dataset.mid, tr);
+    prog += step; setProgress(Math.min(prog,95));
+    await delay(180);
   }
   setProgress(100);
-  toast('✅ اكتملت بيانات الجدول', 'success');
+  toast('✅ اكتمل جلب التفاصيل','success');
 }
 
-const delay = ms => new Promise(r => setTimeout(r, ms));
-
-/* ═══════════════════════════════════════════
-   FETCH DETAILS
-═══════════════════════════════════════════ */
 async function fetchDetails(matchId, tr) {
   try {
-    const url = `https://api-ar.ysscores.com/api/matches/match_info/${matchId}/L/60`;
-    const data = (await (await fetch(PROXY + encodeURIComponent(url))).json()).data;
-    const chs = data?.channel_commm || [];
-    const chtd = tr.querySelector('.chtd');
-    const cmtd = tr.querySelector('.cmtd');
-    const savedCh = tr.dataset.savedCh;
-    const savedCm = tr.dataset.savedCm;
+    const url=`https://api-ar.ysscores.com/api/matches/match_info/${matchId}/L/60`;
+    const data=(await(await fetch(PROXY+encodeURIComponent(url))).json()).data;
+    const chs=data?.channel_commm||[];
+    const chtd=tr.querySelector('.chtd'), cmtd=tr.querySelector('.cmtd');
+    const cached=rowCache[matchId];
 
-    if (chs.length > 1) {
-      const opts = chs.map(c => {
-        const n = fmtCh(c.channel_name||'');
+    if(chs.length>1){
+      const opts=chs.map(c=>{
+        const n=fmtCh(c.channel_name||'');
         return `<option value="${n}" data-cm="${c.commentator_name||''}">${n}</option>`;
       }).join('');
-      chtd.innerHTML = `<select class="ch-select" onchange="syncComment(this)">${opts}</select>`;
-      if (savedCh) {
-        const sel = chtd.querySelector('select');
-        sel.value = savedCh;
-        if (!sel.value) sel.selectedIndex = 0;
-      }
-      const firstCm = savedCm || chs[0].commentator_name || '';
-      cmtd.innerHTML = `<input type="text" class="cm-input" value="${firstCm}" placeholder="المعلق">`;
-    } else if (chs.length === 1) {
-      const n = fmtCh(chs[0].channel_name||'');
-      chtd.innerHTML = `<input type="text" class="ch-input" value="${savedCh||n}">`;
-      cmtd.innerHTML = `<input type="text" class="cm-input" value="${savedCm||chs[0].commentator_name||''}" placeholder="المعلق">`;
+      chtd.innerHTML=`<select class="ch-select" onchange="syncCm(this)">${opts}</select>`;
+      const sel=chtd.querySelector('select');
+      if(cached?.ch){ sel.value=cached.ch; if(!sel.value) sel.selectedIndex=0; }
+      cmtd.innerHTML=`<input type="text" class="cm-input" value="${cached?.cm||chs[0].commentator_name||''}" placeholder="المعلق">`;
+    } else if(chs.length===1){
+      chtd.innerHTML=`<input type="text" class="ch-input" value="${cached?.ch||fmtCh(chs[0].channel_name||'')}">`;
+      cmtd.innerHTML=`<input type="text" class="cm-input" value="${cached?.cm||chs[0].commentator_name||''}" placeholder="المعلق">`;
     } else {
-      chtd.innerHTML = `<input type="text" class="ch-input" value="${savedCh||'غير متوفر'}" style="color:var(--text3)">`;
-      cmtd.innerHTML = `<input type="text" class="cm-input" value="${savedCm||''}" placeholder="المعلق">`;
+      chtd.innerHTML=`<input type="text" class="ch-input" value="${cached?.ch||'غير متوفر'}" style="color:var(--text3)">`;
+      cmtd.innerHTML=`<input type="text" class="cm-input" value="${cached?.cm||''}" placeholder="المعلق">`;
     }
     buildJSON();
   } catch {
-    tr.querySelector('.chtd').innerHTML = `<input type="text" class="ch-input" value="خطأ" style="color:var(--red)">`;
-    tr.querySelector('.cmtd').innerHTML = `<input type="text" class="cm-input" value="">`;
+    tr.querySelector('.chtd').innerHTML=`<input type="text" class="ch-input" value="خطأ" style="color:var(--red)">`;
+    tr.querySelector('.cmtd').innerHTML=`<input type="text" class="cm-input" value="">`;
   }
 }
 
-function syncComment(sel) {
-  const tr = sel.closest('tr');
-  const cm = tr.querySelector('.cm-input');
-  if (cm) cm.value = sel.options[sel.selectedIndex].getAttribute('data-cm') || '';
-  buildJSON();
+function syncCm(sel){
+  const tr=sel.closest('tr');
+  const cm=tr.querySelector('.cm-input');
+  if(cm){ cm.value=sel.options[sel.selectedIndex].getAttribute('data-cm')||''; buildJSON(); }
 }
-
-function fmtCh(n) {
-  if (!n) return n;
-  n = n.replace(/بي [إا]ن سبورت|beIN Sports/gi,'beIN SPORTS').replace(/HD/gi,'').trim();
-  n = n.replace(/ثمانية/g,'Thmanyah').trim();
+function fmtCh(n){
+  if(!n) return n;
+  n=n.replace(/بي [إا]ن سبورت|beIN Sports/gi,'beIN SPORTS').replace(/\bHD\b/gi,'').trim();
+  n=n.replace(/ثمانية/g,'Thmanyah').trim();
   return n.replace(/\s+/g,' ').trim();
 }
+const delay = ms => new Promise(r=>setTimeout(r,ms));
 
-/* ═══════════════════════════════════════════
-   CHECKBOX HANDLING
-═══════════════════════════════════════════ */
-function onCbChange(cb) {
-  const tr = cb.closest('tr');
+/* ════════════════════════════════════════
+   CHECKBOX
+════════════════════════════════════════ */
+function onCbChange(cb){
+  const tr=cb.closest('tr');
+  const id=tr.dataset.mid, day=parseInt(tr.dataset.day);
   tr.classList.toggle('row-sel', cb.checked);
-  const id = tr.dataset.matchId;
-  if (cb.checked) selectedByDay[activeDay].add(id);
-  else selectedByDay[activeDay].delete(id);
-  updateStats();
-  buildJSON();
+  if(!daySelected[day]) daySelected[day]={};
+  daySelected[day][id]=cb.checked;
+  updateStats(); buildJSON();
 }
 
-function onTableChange(e) {
-  if (e.target.type === 'checkbox') onCbChange(e.target);
-}
-
-/* ═══════════════════════════════════════════
+/* ════════════════════════════════════════
    FILTER + STATS
-═══════════════════════════════════════════ */
-function filterRows() {
-  const term = document.getElementById('sfSearch').value.toLowerCase().trim();
-  const st   = document.getElementById('sfStatus').value;
-  document.querySelectorAll('#tbody tr').forEach(tr => {
-    const txt = (tr.dataset.t1n+tr.dataset.t2n+tr.dataset.league).toLowerCase();
-    tr.style.display = (txt.includes(term) && (st==='all'||tr.dataset.jst===st)) ? '' : 'none';
+════════════════════════════════════════ */
+function filterRows(){
+  const term=document.getElementById('sfSearch').value.toLowerCase().trim();
+  const st=document.getElementById('sfStatus').value;
+  document.querySelectorAll('#tbody tr[data-mid]').forEach(tr=>{
+    const txt=(tr.dataset.t1n+tr.dataset.t2n+tr.dataset.league).toLowerCase();
+    tr.style.display=(txt.includes(term)&&(st==='all'||tr.dataset.jst===st))?'':'none';
   });
   updateStats();
 }
 
-function updateStats() {
-  const rows = [...document.querySelectorAll('#tbody tr')];
-  document.getElementById('stTotal').textContent = rows.length;
-  document.getElementById('stLive').textContent  = rows.filter(r=>r.dataset.jst==='Live').length;
-  document.getElementById('stSoon').textContent  = rows.filter(r=>r.dataset.jst==='Not Started').length;
-  document.getElementById('stDone').textContent  = rows.filter(r=>r.dataset.jst==='Finished').length;
-  document.getElementById('stSel').textContent   = rows.filter(r=>r.querySelector('input[type=checkbox]')?.checked).length;
+function updateStats(){
+  const rows=[...document.querySelectorAll('#tbody tr[data-mid]')];
+  document.getElementById('stTotal').textContent=rows.length;
+  document.getElementById('stLive').textContent=rows.filter(r=>r.dataset.jst==='Live').length;
+  document.getElementById('stSoon').textContent=rows.filter(r=>r.dataset.jst==='Not Started').length;
+  document.getElementById('stNight').textContent=rows.filter(r=>r.dataset.night==='1').length;
+  document.getElementById('stSel').textContent=rows.filter(r=>r.querySelector('input[type=checkbox]')?.checked).length;
 }
 
-/* ═══════════════════════════════════════════
+/* ════════════════════════════════════════
    BUILD JSON — بدون score
-═══════════════════════════════════════════ */
-function buildJSON() {
-  const arr = [];
-  document.querySelectorAll('#tbody tr').forEach(tr => {
-    const cb = tr.querySelector('input[type=checkbox]');
-    if (!cb?.checked || tr.style.display==='none') return;
-    const d = tr.dataset;
-    const ci = tr.querySelector('.ch-input');
-    const cs = tr.querySelector('.ch-select');
-    const cm = tr.querySelector('.cm-input');
-    const ch = ci?.value || cs?.value || '';
+════════════════════════════════════════ */
+function buildJSON(){
+  const arr=[];
+  document.querySelectorAll('#tbody tr[data-mid]').forEach(tr=>{
+    const cb=tr.querySelector('input[type=checkbox]');
+    if(!cb?.checked||tr.style.display==='none') return;
+    const d=tr.dataset;
+    const ci=tr.querySelector('.ch-input'), cs=tr.querySelector('.ch-select');
+    const cm=tr.querySelector('.cm-input');
     arr.push({
-      team1Name: d.t1n, team1Logo: d.t1l,
-      team2Name: d.t2n, team2Logo: d.t2l,
-      startTime: parseInt(d.ts,10),
-      league: d.league, channel: ch,
-      commentator: cm?.value||'',
-      status: d.jst,
-      servers: JSON.parse(d.servers||'[]')
+      team1Name:d.t1n, team1Logo:d.t1l,
+      team2Name:d.t2n, team2Logo:d.t2l,
+      startTime:parseInt(d.ts,10),
+      league:d.league,
+      channel:ci?.value||cs?.value||'',
+      commentator:cm?.value||'',
+      status:d.jst,
+      servers:JSON.parse(d.servers||'[]')
     });
   });
-  document.getElementById('jsonOut').value = JSON.stringify(arr, null, 2);
+  arr.sort((a,b)=>a.startTime-b.startTime);
+  document.getElementById('jsonOut').value=JSON.stringify(arr,null,2);
 }
 
-/* ═══════════════════════════════════════════
-   SERVER MODAL + JSON IMPORT FEATURE
-═══════════════════════════════════════════ */
-function openServerModal(btn) {
-  currentRow = btn.closest('tr');
-  pendingJsonServers = null;
+/* ════════════════════════════════════════
+   PROGRESS
+════════════════════════════════════════ */
+function setProgress(p){
+  document.getElementById('fetchFill').style.width=p+'%';
+  if(p>=100) setTimeout(()=>setProgress(0),700);
+}
+
+/* ════════════════════════════════════════
+   XTREAM AUTO-FILL
+   المنطق: جلب كل القنوات، ثم لكل مباراة
+   إيجاد القنوات المطابقة وترتيبها 4K>FHD>HD>SD
+   وبناء رابط البث بالصيغة الصحيحة
+════════════════════════════════════════ */
+async function autoFillXtream(){
+  const rows=[...document.querySelectorAll('#tbody tr[data-mid]')];
+  if(!rows.length) return toast('لا توجد مباريات','error');
+  toast('جاري جلب قائمة القنوات من Xtream…','info');
+  try {
+    const api=`${XTREAM.host}/player_api.php?username=${XTREAM.user}&password=${XTREAM.pass}&action=get_live_streams`;
+    const res=await fetch(api);
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const allChs=await res.json();
+    if(!Array.isArray(allChs)) throw new Error('بيانات غير صالحة من Xtream');
+    toast(`✅ تم جلب ${allChs.length} قناة، جاري المطابقة…`,'success');
+
+    // ترتيب الجودة
+    const QUALITY_ORDER = ['4k','fhd','hevc','hd','sd','low'];
+    const QUALITY_LABELS = {
+      '4k':'4K','fhd':'FHD','hevc':'HEVC','hd':'HD','sd':'SD','low':'LOW'
+    };
+
+    let filled=0;
+    rows.forEach(tr=>{
+      const ci=tr.querySelector('.ch-input');
+      const cs=tr.querySelector('.ch-select');
+      let chName=(ci?.value||cs?.value||'').trim();
+      if(!chName||chName==='غير متوفر') return;
+
+      // تنظيف اسم القناة للمطابقة
+      // يتعرف على مثل "beIN SPORTS 1" و "beIN Max 1" وغيرها
+      const cleanTarget = chName.toLowerCase()
+        .replace(/[^a-z0-9\s]/g,'')
+        .replace(/\s+/g,' ')
+        .trim();
+
+      // البحث في قائمة Xtream
+      const matched = allChs.filter(c => {
+        const n = c.name.toLowerCase().replace(/[^a-z0-9\s]/g,'').replace(/\s+/g,' ').trim();
+        // تحقق إذا كان الاسم يحتوي على الجزء الأساسي من اسم القناة
+        // بعد إزالة كلمات الجودة
+        const baseTarget = cleanTarget.replace(/4k|fhd|hevc|hd|sd|low/gi,'').trim();
+        const baseCh     = n.replace(/4k|fhd|hevc|hd|sd|low/gi,'').trim();
+        return baseTarget.length>2 && baseCh.includes(baseTarget);
+      });
+
+      if(!matched.length) return;
+
+      // ترتيب حسب الجودة
+      matched.sort((a,b)=>{
+        const la=a.name.toLowerCase(), lb=b.name.toLowerCase();
+        let ia=QUALITY_ORDER.findIndex(q=>la.includes(q));
+        let ib=QUALITY_ORDER.findIndex(q=>lb.includes(q));
+        if(ia===-1) ia=99; if(ib===-1) ib=99;
+        return ia-ib;
+      });
+
+      // بناء مصفوفة السيرفرات مع الصيغة الصحيحة
+      const servers=[];
+      const usedLabels=new Set();
+      matched.forEach(c=>{
+        const l=c.name.toLowerCase();
+        let label=null;
+        for(const q of QUALITY_ORDER){
+          if(l.includes(q)){ label=QUALITY_LABELS[q]; break; }
+        }
+        if(!label) label='HD'; // افتراضي
+        if(usedLabels.has(label)) return; // تجنب التكرار
+        usedLabels.add(label);
+        const obj={};
+        // صيغة الرابط الصحيحة: host/live/user/pass/streamId.m3u8
+        obj[label]=`${XTREAM.host}/live/${XTREAM.user}/${XTREAM.pass}/${c.stream_id}.m3u8`;
+        servers.push(obj);
+      });
+
+      if(servers.length){
+        tr.dataset.servers=JSON.stringify(servers);
+        const badge=tr.querySelector('.srv-ct');
+        if(badge){ badge.textContent=servers.length; badge.style.display='inline-block'; }
+        // تحديد المباراة تلقائياً إذا وُجدت سيرفرات
+        const cb=tr.querySelector('input[type=checkbox]');
+        if(cb&&!cb.checked){ cb.checked=true; onCbChange(cb); }
+        filled++;
+      }
+    });
+
+    buildJSON();
+    if(filled>0) toast(`✅ تم إضافة سيرفرات لـ ${filled} مباراة`,'success');
+    else toast('لم يُعثر على قنوات مطابقة في Xtream','warning');
+  } catch(e){
+    console.error(e);
+    toast('⚠️ '+e.message,'error');
+  }
+}
+
+/* ════════════════════════════════════════
+   SERVER MODAL
+════════════════════════════════════════ */
+function openServerModal(btn){
+  currentRow=btn.closest('tr');
+  pendingJsonSrv=null;
   clearJsonImport();
-  const srvList = document.getElementById('srvList');
-  srvList.innerHTML = '';
-  const servers = JSON.parse(currentRow.dataset.servers || '[]');
-  if (servers.length) servers.forEach(s => addSrvLine(Object.keys(s)[0], Object.values(s)[0]));
+  const list=document.getElementById('srvList');
+  list.innerHTML='';
+  const srvs=JSON.parse(currentRow.dataset.servers||'[]');
+  if(srvs.length) srvs.forEach(s=>addSrvLine(Object.keys(s)[0],Object.values(s)[0]));
   else addSrvLine();
   openModal('serverModal');
 }
-
-function addSrvLine(name='', url='') {
-  const div = document.createElement('div');
-  div.className = 'srv-row-item';
-  div.innerHTML = `
-    <input type="text" placeholder="الاسم (4K, FHD, HD…)" value="${name}" class="sname" style="max-width:110px;flex:0 0 110px;">
-    <input type="text" placeholder="رابط البث" value="${url}" class="surl">
+function addSrvLine(name='',url=''){
+  const div=document.createElement('div');
+  div.className='srv-row-item';
+  div.innerHTML=`
+    <input type="text" placeholder="الجودة (4K, FHD, HD…)" value="${name}" class="sname" style="max-width:100px;flex:0 0 100px;">
+    <input type="text" placeholder="رابط البث .m3u8" value="${url}" class="surl">
     <button type="button" class="btn btn-ghost sm-btn" onclick="moveSrv(this,-1)">▲</button>
     <button type="button" class="btn btn-ghost sm-btn" onclick="moveSrv(this,1)">▼</button>
     <button type="button" class="btn btn-danger sm-btn" onclick="this.closest('.srv-row-item').remove()">🗑</button>`;
   document.getElementById('srvList').appendChild(div);
 }
-
-function moveSrv(btn, dir) {
-  const r = btn.closest('.srv-row-item');
-  if (dir===-1 && r.previousElementSibling) r.parentNode.insertBefore(r, r.previousElementSibling);
-  if (dir===1  && r.nextElementSibling)     r.parentNode.insertBefore(r.nextElementSibling, r);
+function moveSrv(btn,dir){
+  const r=btn.closest('.srv-row-item');
+  if(dir===-1&&r.previousElementSibling) r.parentNode.insertBefore(r,r.previousElementSibling);
+  if(dir===1&&r.nextElementSibling)      r.parentNode.insertBefore(r.nextElementSibling,r);
 }
-
-/* ── JSON IMPORT FOR SERVERS ── */
-function handleJsonFile(input) {
-  const file = input.files[0];
-  if (!file) return;
-  const reader = new FileReader();
-  reader.onload = e => parseJsonServers(e.target.result);
-  reader.readAsText(file);
-  input.value = '';
-}
-
-function handleJsonDrop(e) {
-  e.preventDefault();
-  document.getElementById('jsonDrop').classList.remove('drag');
-  const file = e.dataTransfer.files[0];
-  if (!file || !file.name.endsWith('.json')) { toast('الملف يجب أن يكون .json', 'error'); return; }
-  const reader = new FileReader();
-  reader.onload = ev => parseJsonServers(ev.target.result);
-  reader.readAsText(file);
-}
-
-function parseJsonServers(text) {
-  try {
-    let parsed = JSON.parse(text);
-    let servers = [];
-    if (Array.isArray(parsed)) {
-      // [{HD:"url"}, {FHD:"url"}]
-      servers = parsed.filter(i => typeof i === 'object');
-    } else if (typeof parsed === 'object') {
-      // {"HD":"url","FHD":"url"}
-      servers = Object.entries(parsed).map(([k,v]) => {const o={}; o[k]=v; return o;});
-    }
-    if (!servers.length) throw new Error('لا توجد سيرفرات صالحة');
-    pendingJsonServers = servers;
-    const prev = document.getElementById('jsonPreview');
-    prev.style.display = 'block';
-    prev.textContent = JSON.stringify(servers, null, 2);
-    document.getElementById('jsonImportBtns').style.display = 'flex';
-    document.getElementById('jsonDrop').style.display = 'none';
-    toast(`تم قراءة ${servers.length} سيرفر من الملف`, 'success');
-  } catch(e) {
-    toast('خطأ في قراءة JSON: ' + e.message, 'error');
-  }
-}
-
-function applyJsonServers() {
-  if (!pendingJsonServers) return;
-  // امسح القائمة اليدوية وأضف السيرفرات المستوردة
-  const list = document.getElementById('srvList');
-  list.innerHTML = '';
-  pendingJsonServers.forEach(s => addSrvLine(Object.keys(s)[0], Object.values(s)[0]));
-  clearJsonImport();
-  toast('تم تعبئة السيرفرات في القائمة، اضغط حفظ', 'info');
-}
-
-function clearJsonImport() {
-  pendingJsonServers = null;
-  const prev = document.getElementById('jsonPreview');
-  prev.style.display = 'none';
-  prev.textContent = '';
-  document.getElementById('jsonImportBtns').style.display = 'none';
-  document.getElementById('jsonDrop').style.display = 'block';
-}
-
-function saveServers() {
-  if (!currentRow) return;
-  const rows = document.querySelectorAll('#srvList .srv-row-item');
-  const arr = [];
-  rows.forEach(r => {
-    const name = r.querySelector('.sname').value.trim();
-    const url  = r.querySelector('.surl').value.trim();
-    if (name && url) { const o={}; o[name]=url; arr.push(o); }
+function saveServers(){
+  if(!currentRow) return;
+  const arr=[];
+  document.querySelectorAll('#srvList .srv-row-item').forEach(r=>{
+    const n=r.querySelector('.sname').value.trim();
+    const u=r.querySelector('.surl').value.trim();
+    if(n&&u){ const o={}; o[n]=u; arr.push(o); }
   });
-  currentRow.dataset.servers = JSON.stringify(arr);
-  const badge = currentRow.querySelector('.srv-ct');
-  if (badge) { badge.textContent = arr.length; badge.style.display = arr.length ? 'inline-block' : 'none'; }
-  if (arr.length) {
-    const cb = currentRow.querySelector('input[type=checkbox]');
-    if (!cb.checked) { cb.checked = true; onCbChange(cb); }
+  currentRow.dataset.servers=JSON.stringify(arr);
+  const badge=currentRow.querySelector('.srv-ct');
+  if(badge){ badge.textContent=arr.length; badge.style.display=arr.length?'inline-block':'none'; }
+  if(arr.length){
+    const cb=currentRow.querySelector('input[type=checkbox]');
+    if(!cb.checked){ cb.checked=true; onCbChange(cb); }
   }
   closeModal('serverModal');
   buildJSON();
-  toast('تم حفظ السيرفرات ✅', 'success');
+  toast('تم حفظ السيرفرات ✅','success');
 }
 
-/* ═══════════════════════════════════════════
-   FIREBASE
-═══════════════════════════════════════════ */
-function confirmPublish() {
-  const val = document.getElementById('jsonOut').value;
-  let count = 0;
-  try { count = JSON.parse(val).length; } catch{}
-  if (!count) { toast('لا توجد مباريات محددة', 'error'); return; }
-  document.getElementById('confirmCount').textContent = count;
+/* JSON Import */
+function handleJsonFile(input){
+  const f=input.files[0]; if(!f) return;
+  const r=new FileReader();
+  r.onload=e=>parseJsonSrv(e.target.result);
+  r.readAsText(f); input.value='';
+}
+function handleJsonDrop(e){
+  e.preventDefault();
+  document.getElementById('jsonDrop').classList.remove('drag');
+  const f=e.dataTransfer.files[0];
+  if(!f||!f.name.endsWith('.json')){ toast('الملف يجب أن يكون .json','error'); return; }
+  const r=new FileReader(); r.onload=ev=>parseJsonSrv(ev.target.result); r.readAsText(f);
+}
+function parseJsonSrv(text){
+  try{
+    let p=JSON.parse(text), srvs=[];
+    if(Array.isArray(p)) srvs=p.filter(i=>typeof i==='object');
+    else if(typeof p==='object') srvs=Object.entries(p).map(([k,v])=>{const o={};o[k]=v;return o;});
+    if(!srvs.length) throw new Error('لا سيرفرات صالحة');
+    pendingJsonSrv=srvs;
+    const prev=document.getElementById('jsonPreview');
+    prev.style.display='block'; prev.textContent=JSON.stringify(srvs,null,2);
+    document.getElementById('jsonImportBtns').style.display='flex';
+    document.getElementById('jsonDrop').style.display='none';
+    toast(`تم قراءة ${srvs.length} سيرفر`,'success');
+  } catch(e){ toast('خطأ JSON: '+e.message,'error'); }
+}
+function applyJsonServers(){
+  if(!pendingJsonSrv) return;
+  const list=document.getElementById('srvList');
+  list.innerHTML='';
+  pendingJsonSrv.forEach(s=>addSrvLine(Object.keys(s)[0],Object.values(s)[0]));
+  clearJsonImport();
+  toast('تم تعبئة السيرفرات، اضغط حفظ','info');
+}
+function clearJsonImport(){
+  pendingJsonSrv=null;
+  const p=document.getElementById('jsonPreview');
+  p.style.display='none'; p.textContent='';
+  document.getElementById('jsonImportBtns').style.display='none';
+  document.getElementById('jsonDrop').style.display='block';
+}
+
+/* ════════════════════════════════════════
+   FIREBASE PUBLISH
+   يجمع مباريات اليوم + ليل الغد + نهار الغد
+════════════════════════════════════════ */
+function getAllSelectedMatches(){
+  // جمع من الجدول المرئي (اليوم + الليليات إذا كنا في tab0)
+  const fromTable=[];
+  document.querySelectorAll('#tbody tr[data-mid]').forEach(tr=>{
+    const cb=tr.querySelector('input[type=checkbox]');
+    if(!cb?.checked) return;
+    const d=tr.dataset;
+    const ci=tr.querySelector('.ch-input'), cs=tr.querySelector('.ch-select');
+    const cm=tr.querySelector('.cm-input');
+    fromTable.push({
+      matchId: d.mid,
+      day: parseInt(d.day),
+      night: d.night==='1',
+      team1Name:d.t1n, team1Logo:d.t1l,
+      team2Name:d.t2n, team2Logo:d.t2l,
+      startTime:parseInt(d.ts,10),
+      league:d.league,
+      channel:ci?.value||cs?.value||'',
+      commentator:cm?.value||'',
+      status:d.jst,
+      servers:JSON.parse(d.servers||'[]')
+    });
+  });
+  // إضافة المحددات من اليوم الثاني (غير المعروض حالياً)
+  // من daySelected[1] مع بيانات dayMatches[1]
+  const displayedIds=new Set(fromTable.map(m=>m.matchId));
+  const otherDay = activeDay===0 ? 1 : 0;
+  const otherSelected=daySelected[otherDay]||{};
+  Object.entries(otherSelected).forEach(([id,sel])=>{
+    if(!sel||displayedIds.has(id)) return;
+    // جلب بيانات المباراة من dayMatches
+    const allOther=[...(dayMatches[otherDay]||[]),...(dayMatches[otherDay]._nightMatches||[])];
+    const m=allOther.find(x=>String(x.match_id)===String(id));
+    if(!m) return;
+    const cached=rowCache[id]||{};
+    fromTable.push({
+      matchId:String(id), day:otherDay, night:false,
+      team1Name:m.home_team.title, team1Logo:m.home_team.image.startsWith('http')?m.home_team.image:IMG_BASE+m.home_team.image,
+      team2Name:m.away_team.title, team2Logo:m.away_team.image.startsWith('http')?m.away_team.image:IMG_BASE+m.away_team.image,
+      startTime:m.match_timestamp, league:m.championship.title,
+      channel:cached.ch||'', commentator:cached.cm||'',
+      status:'Not Started', servers:JSON.parse(cached.servers||'[]')
+    });
+  });
+  fromTable.sort((a,b)=>a.startTime-b.startTime);
+  return fromTable;
+}
+
+function confirmPublish(){
+  const all=getAllSelectedMatches();
+  if(!all.length){ toast('لا توجد مباريات محددة','error'); return; }
+  const todayM = all.filter(m=>m.day===0&&!m.night);
+  const nightM = all.filter(m=>m.night);
+  const tmrM   = all.filter(m=>m.day===1&&!m.night);
+  document.getElementById('cToday').textContent=todayM.length;
+  document.getElementById('cNight').textContent=nightM.length;
+  document.getElementById('cTmr').textContent=tmrM.length;
+  document.getElementById('cTotal').textContent=all.length;
   openModal('confirmModal');
 }
 
-async function doPublish() {
+async function doPublish(){
   closeModal('confirmModal');
-  const val = document.getElementById('jsonOut').value;
-  let matches;
-  try { matches = JSON.parse(val); } catch { toast('JSON غير صالح', 'error'); return; }
-  toast('جاري النشر…', 'info');
-  try {
-    const snap = await db.collection('matches').get();
-    const batch = db.batch();
-    snap.docs.forEach(d => batch.delete(d.ref));
+  const all=getAllSelectedMatches();
+  if(!all.length){ toast('لا توجد مباريات','error'); return; }
+  toast('جاري النشر في Firebase…','info');
+  try{
+    // حذف القديم
+    const snap=await db.collection('matches').get();
+    const batch=db.batch();
+    snap.docs.forEach(d=>batch.delete(d.ref));
     await batch.commit();
-    for (const m of matches) await db.collection('matches').add(m);
-    const now = new Date().toLocaleTimeString('ar-DZ');
-    document.getElementById('fbInfo').innerHTML = `آخر نشر: <b style="color:var(--green)">${matches.length} مباراة</b><br>الوقت: <b>${now}</b>`;
-    toast(`✅ تم نشر ${matches.length} مباراة بنجاح`, 'success');
-  } catch(e) {
-    toast('❌ خطأ: ' + e.message, 'error');
-  }
+    // إضافة الجديد (بدون matchId وday وnight كحقول)
+    for(const m of all){
+      const {matchId,day,night,...data}=m;
+      await db.collection('matches').add(data);
+    }
+    const now=new Date().toLocaleTimeString('ar-DZ');
+    document.getElementById('fbInfo').innerHTML=`آخر نشر: <b style="color:var(--green)">${all.length} مباراة</b><br>الوقت: <b>${now}</b>`;
+    toast(`✅ تم نشر ${all.length} مباراة بنجاح`,'success');
+  } catch(e){ toast('❌ '+e.message,'error'); }
 }
 
-async function clearFB() {
-  if (!confirm('⚠️ سيتم مسح جميع المباريات من Firebase نهائياً!')) return;
-  try {
-    const snap = await db.collection('matches').get();
-    const batch = db.batch();
-    snap.docs.forEach(d => batch.delete(d.ref));
+async function clearFB(){
+  if(!confirm('⚠️ سيتم مسح جميع المباريات من Firebase!')) return;
+  try{
+    const snap=await db.collection('matches').get();
+    const batch=db.batch();
+    snap.docs.forEach(d=>batch.delete(d.ref));
     await batch.commit();
-    document.getElementById('jsonOut').value = '[]';
-    document.getElementById('fbInfo').innerHTML = 'قاعدة البيانات <b style="color:var(--red)">فارغة</b>';
-    toast('🗑 تم مسح قاعدة البيانات', 'success');
-  } catch(e) { toast('خطأ: ' + e.message, 'error'); }
+    document.getElementById('jsonOut').value='[]';
+    document.getElementById('fbInfo').innerHTML='قاعدة البيانات <b style="color:var(--red)">فارغة</b>';
+    toast('🗑 تم المسح','success');
+  } catch(e){ toast('خطأ: '+e.message,'error'); }
 }
 
-async function loadFromFB() {
-  toast('جاري الاستعادة من Firebase…', 'info');
-  try {
-    const snap = await db.collection('matches').orderBy('startTime').get();
-    if (snap.empty) { toast('قاعدة البيانات فارغة', 'warning'); return; }
-    const saved = snap.docs.map(d => d.data());
-    const rows = [...document.querySelectorAll('#tbody tr')];
+async function loadFromFB(){
+  toast('جاري الاستعادة من Firebase…','info');
+  try{
+    const snap=await db.collection('matches').orderBy('startTime').get();
+    if(snap.empty){ toast('قاعدة البيانات فارغة','warning'); return; }
+    const saved=snap.docs.map(d=>d.data());
+    const rows=[...document.querySelectorAll('#tbody tr[data-mid]')];
+    // إلغاء تحديد الكل
+    rows.forEach(tr=>{ const cb=tr.querySelector('input[type=checkbox]'); if(cb){cb.checked=false;tr.classList.remove('row-sel');} });
+    Object.keys(daySelected).forEach(k=>{ daySelected[k]={}; });
 
-    // إلغاء التحديد أولاً
-    rows.forEach(tr => {
-      const cb = tr.querySelector('input[type=checkbox]');
-      if (cb) { cb.checked = false; tr.classList.remove('row-sel'); }
-    });
-    selectedByDay[activeDay].clear();
-
-    let restored = 0;
-    saved.forEach(sm => {
-      const tr = rows.find(r => r.dataset.t1n===sm.team1Name && r.dataset.t2n===sm.team2Name);
-      if (!tr) return;
+    let restored=0;
+    saved.forEach(sm=>{
+      const tr=rows.find(r=>r.dataset.t1n===sm.team1Name&&r.dataset.t2n===sm.team2Name);
+      if(!tr) return;
       restored++;
-      const cb = tr.querySelector('input[type=checkbox]');
-      cb.checked = true; tr.classList.add('row-sel');
-      selectedByDay[activeDay].add(tr.dataset.matchId);
-
-      const ci = tr.querySelector('.ch-input');
-      const cs = tr.querySelector('.ch-select');
-      if (ci) ci.value = sm.channel||'';
-      if (cs) { cs.value = sm.channel||''; if (!cs.value) cs.selectedIndex=0; }
-      const cm = tr.querySelector('.cm-input');
-      if (cm) cm.value = sm.commentator||'';
-      if (sm.servers?.length) {
-        tr.dataset.servers = JSON.stringify(sm.servers);
-        const badge = tr.querySelector('.srv-ct');
-        if (badge) { badge.textContent = sm.servers.length; badge.style.display='inline-block'; }
+      const cb=tr.querySelector('input[type=checkbox]');
+      if(cb){ cb.checked=true; tr.classList.add('row-sel'); daySelected[parseInt(tr.dataset.day)][tr.dataset.mid]=true; }
+      const ci=tr.querySelector('.ch-input'),cs=tr.querySelector('.ch-select'),cm=tr.querySelector('.cm-input');
+      if(ci) ci.value=sm.channel||'';
+      if(cs){ cs.value=sm.channel||''; if(!cs.value) cs.selectedIndex=0; }
+      if(cm) cm.value=sm.commentator||'';
+      if(sm.servers?.length){
+        tr.dataset.servers=JSON.stringify(sm.servers);
+        const badge=tr.querySelector('.srv-ct');
+        if(badge){ badge.textContent=sm.servers.length; badge.style.display='inline-block'; }
       }
     });
     updateStats(); buildJSON();
-    toast(`📥 تمت استعادة ${restored} مباراة`, 'success');
-  } catch(e) { toast('خطأ: ' + e.message, 'error'); }
+    toast(`📥 تمت استعادة ${restored} مباراة`,'success');
+  } catch(e){ toast('خطأ: '+e.message,'error'); }
 }
 
-/* ═══════════════════════════════════════════
-   XTREAM
-═══════════════════════════════════════════ */
-async function autoFillXtream() {
-  const rows = [...document.querySelectorAll('#tbody tr')];
-  if (!rows.length) return toast('لا توجد مباريات', 'error');
-  toast('جاري الاتصال بـ Xtream…', 'info');
-  try {
-    const api = `${XTREAM.fetchUrl}/player_api.php?username=${XTREAM.user}&password=${XTREAM.pass}&action=get_live_streams`;
-    const chs = await (await fetch(api)).json();
-    if (!Array.isArray(chs)) throw new Error('بيانات غير صحيحة');
-    toast(`تم جلب ${chs.length} قناة`, 'success');
-    const priority = ['4k','fhd','hevc','hd','sd','low'];
-    let filled = 0;
-    rows.forEach(tr => {
-      const ci = tr.querySelector('.ch-input');
-      const cs = tr.querySelector('.ch-select');
-      const name = (ci?.value || cs?.value || '').trim();
-      if (!name.toLowerCase().includes('bein sport')) return;
-      const clean = name.toLowerCase().replace(/[^a-z0-9]/g,'');
-      const matched = chs.filter(c => c.name.toLowerCase().replace(/[^a-z0-9]/g,'').includes(clean));
-      if (!matched.length) return;
-      matched.sort((a,b) => {
-        let ia = priority.findIndex(q=>a.name.toLowerCase().includes(q));
-        let ib = priority.findIndex(q=>b.name.toLowerCase().includes(q));
-        if(ia===-1)ia=99; if(ib===-1)ib=99; return ia-ib;
-      });
-      const servers = [];
-      const labels = {fourk:'4K',fhd:'FHD',hd:'HD',sd:'SD',low:'LOW'};
-      matched.forEach(c => {
-        const l = c.name.toLowerCase();
-        let label = null;
-        if (l.includes('4k')) label='4K';
-        else if (l.includes('fhd')) label='FHD';
-        else if (l.includes('hd')) label='HD';
-        else if (l.includes('sd')) label='SD';
-        else if (l.includes('low')) label='LOW';
-        if (!label) return;
-        const o={}; o[label]=`${XTREAM.host}/${XTREAM.user}/${XTREAM.pass}/${c.stream_id}`;
-        servers.push(o);
-      });
-      if (servers.length) {
-        tr.dataset.servers = JSON.stringify(servers);
-        const badge = tr.querySelector('.srv-ct');
-        if (badge) { badge.textContent=servers.length; badge.style.display='inline-block'; }
-        filled++;
-      }
-    });
-    buildJSON();
-    filled ? toast(`✅ تم إضافة سيرفرات لـ ${filled} مباراة`, 'success')
-           : toast('لم يُعثر على قنوات beIN مطابقة', 'warning');
-  } catch(e) { toast('⚠️ ' + e.message, 'error'); }
-}
-
-/* ═══════════════════════════════════════════
+/* ════════════════════════════════════════
    BULK INPUT
-═══════════════════════════════════════════ */
-function toggleBulk() {
-  const w = document.getElementById('bulkWrap');
-  w.style.display = w.style.display==='none'?'block':'none';
+════════════════════════════════════════ */
+function toggleBulk(){
+  const w=document.getElementById('bulkWrap');
+  w.style.display=w.style.display==='none'?'block':'none';
 }
-
-function processBulk() {
-  const lines = document.getElementById('bulkInput').value.trim().split('\n');
-  const rows  = [...document.querySelectorAll('#tbody tr')];
-  let count = 0;
-  lines.forEach(line => {
-    const parts = line.split(',');
-    if (parts.length < 3) return;
-    const [matchStr, ch, cm] = parts;
-    const sides = matchStr.split(' ضد ');
-    if (sides.length < 2) return;
-    const [t1, t2] = sides.map(s=>s.toLowerCase().trim());
-    const tr = rows.find(r => {
-      const n1=r.dataset.t1n?.toLowerCase(), n2=r.dataset.t2n?.toLowerCase();
-      return (n1?.includes(t1)&&n2?.includes(t2)) || (n1?.includes(t2)&&n2?.includes(t1));
+function processBulk(){
+  const lines=document.getElementById('bulkInput').value.trim().split('\n');
+  const rows=[...document.querySelectorAll('#tbody tr[data-mid]')];
+  let count=0;
+  lines.forEach(line=>{
+    const parts=line.split(','); if(parts.length<3) return;
+    const [ms,ch,cm]=parts;
+    const sides=ms.split(' ضد '); if(sides.length<2) return;
+    const [t1,t2]=sides.map(s=>s.toLowerCase().trim());
+    const tr=rows.find(r=>{
+      const n1=r.dataset.t1n?.toLowerCase(),n2=r.dataset.t2n?.toLowerCase();
+      return(n1?.includes(t1)&&n2?.includes(t2))||(n1?.includes(t2)&&n2?.includes(t1));
     });
-    if (tr) {
-      const cb = tr.querySelector('input[type=checkbox]');
-      cb.checked=true; tr.classList.add('row-sel');
-      selectedByDay[activeDay].add(tr.dataset.matchId);
-      const ci=tr.querySelector('.ch-input'), cs=tr.querySelector('.ch-select');
-      const fc = fmtCh(ch.trim());
-      if (ci) ci.value=fc; if (cs) cs.value=fc;
-      const cmi=tr.querySelector('.cm-input');
-      if (cmi) cmi.value=cm.trim();
+    if(tr){
+      const cb=tr.querySelector('input[type=checkbox]'); cb.checked=true; onCbChange(cb);
+      const ci=tr.querySelector('.ch-input'),cs=tr.querySelector('.ch-select');
+      const fc=fmtCh(ch.trim());
+      if(ci) ci.value=fc; if(cs) cs.value=fc;
+      const cmi=tr.querySelector('.cm-input'); if(cmi) cmi.value=cm.trim();
       count++;
     }
   });
   updateStats(); buildJSON();
-  toast(`تم دمج ${count} مباراة`, 'success');
+  toast(`تم دمج ${count} مباراة`,'success');
   document.getElementById('bulkInput').value='';
   document.getElementById('bulkWrap').style.display='none';
 }
 
-/* ═══════════════════════════════════════════
-   NOTES
-═══════════════════════════════════════════ */
-function saveNotes() {
-  try { localStorage.setItem('utv_notes', document.getElementById('quickNotes').value); } catch{}
-}
-function loadNotes() {
-  try {
-    const n = localStorage.getItem('utv_notes');
-    if (n) document.getElementById('quickNotes').value = n;
-  } catch{}
-}
-
-/* ═══════════════════════════════════════════
-   MODAL HELPERS
-═══════════════════════════════════════════ */
-function openModal(id)  { document.getElementById(id).classList.add('open'); }
-function closeModal(id) { document.getElementById(id).classList.remove('open'); }
-
-// Close on backdrop
-document.querySelectorAll('.modal-overlay').forEach(m => {
-  m.addEventListener('click', e => { if(e.target===m) closeModal(m.id); });
-});
-
-/* ═══════════════════════════════════════════
+/* ════════════════════════════════════════
    MISC
-═══════════════════════════════════════════ */
-function copyJSON() {
-  const out = document.getElementById('jsonOut');
-  out.select(); document.execCommand('copy');
-  toast('✅ تم نسخ JSON', 'success');
+════════════════════════════════════════ */
+function copyJSON(){
+  const o=document.getElementById('jsonOut'); o.select(); document.execCommand('copy');
+  toast('✅ تم نسخ JSON','success');
 }
+function openModal(id){ document.getElementById(id).classList.add('open'); }
+function closeModal(id){ document.getElementById(id).classList.remove('open'); }
+document.querySelectorAll('.modal-overlay').forEach(m=>{
+  m.addEventListener('click',e=>{ if(e.target===m) closeModal(m.id); });
+});
+function saveNotes(){ try{localStorage.setItem('utv_notes',document.getElementById('quickNotes').value);}catch{} }
+function loadNotes(){ try{const n=localStorage.getItem('utv_notes');if(n)document.getElementById('quickNotes').value=n;}catch{} }
 
-function toast(msg, type='info') {
-  const t = document.createElement('div');
-  t.className = `toast ${type}`;
-  t.innerHTML = `<span class="tdot"></span><span class="tmsg">${msg}</span>`;
+function toast(msg,type='info'){
+  const t=document.createElement('div');
+  t.className=`toast ${type}`;
+  t.innerHTML=`<span class="tdot"></span><span class="tmsg">${msg}</span>`;
   document.getElementById('toasts').appendChild(t);
-  setTimeout(() => {
-    t.style.animation = 'tOut .2s forwards';
-    setTimeout(() => t.remove(), 200);
-  }, 3500);
+  setTimeout(()=>{ t.style.animation='tOut .2s forwards'; setTimeout(()=>t.remove(),200); },3500);
 }
 </script>
 </body>
